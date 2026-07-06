@@ -25,10 +25,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-
-      - name: Instalar navegador Playwright (Chromium)
-        run: |
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium
 
       - name: Rodar scraper Chile principal
         run: |
@@ -42,11 +39,11 @@ jobs:
         run: |
           if [ -f adicionar_conmebol.py ]; then python adicionar_conmebol.py --dias 180 --dias-atras 30; fi
 
-      - name: Adicionar Brasil CBF FERJ FMF FPF
+      - name: Adicionar Brasil CBF PDFs FERJ FMF FPF
         run: |
           if [ -f adicionar_brasil_jogos.py ]; then python adicionar_brasil_jogos.py --dias 180 --dias-atras 30; fi
 
-      - name: Adicionar FPF via Playwright (API JSON)
+      - name: Adicionar Paulista FPF via API/Playwright
         run: |
           if [ -f scrap_fpf_playwright_api.py ]; then python scrap_fpf_playwright_api.py --dias 180 --dias-atras 30; fi
 
@@ -63,6 +60,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
-          git add data/debug_fpf_api_urls.json data/debug_fpf_matches_raw.json 2>/dev/null || true
           git commit -m "Atualiza jogos Chile Brasil completo" || echo "Sem mudanças"
           git push
