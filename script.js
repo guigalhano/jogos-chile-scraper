@@ -14,6 +14,7 @@ const I18N = {
     stat_updated: "última atualização",
     filters: "Filtros",
     clear: "Limpar",
+    country: "País",
     championship: "Campeonato",
     team: "Time",
     region: "Região",
@@ -73,6 +74,7 @@ const I18N = {
     stat_updated: "última actualización",
     filters: "Filtros",
     clear: "Limpiar",
+    country: "País",
     championship: "Campeonato",
     team: "Equipo",
     region: "Región",
@@ -130,6 +132,7 @@ const els = {
   totalNoMapa: document.getElementById("totalNoMapa"),
   totalCidades: document.getElementById("totalCidades"),
   ultimaAtualizacao: document.getElementById("ultimaAtualizacao"),
+  filtroPais: document.getElementById("filtroPais"),
   filtroCompeticao: document.getElementById("filtroCompeticao"),
   filtroTime: document.getElementById("filtroTime"),
   filtroRegiao: document.getElementById("filtroRegiao"),
@@ -295,6 +298,14 @@ function findStadiumInfo(estadioTexto) {
   return null;
 }
 
+function derivePais(j) {
+  if (j.pais) return j.pais;
+  const extra = String(j.extra || "");
+  if (/pais\s*=\s*brasil/i.test(extra)) return "Brasil";
+  if (/^brasil\s*-/i.test(j.competicao || "")) return "Brasil";
+  return "Chile";
+}
+
 function enrichGames(rawGames) {
   return rawGames.map((j, index) => {
     const stadium = findStadiumInfo(j.estadio || "");
@@ -302,6 +313,7 @@ function enrichGames(rawGames) {
       ...j,
       _idx: index,
       _stadiumInfo: stadium,
+      pais: derivePais(j),
       cidade: j.cidade || stadium?.cidade || "",
       regiao: j.regiao || stadium?.regiao || "",
       lat: j.lat || stadium?.lat || null,
@@ -318,15 +330,20 @@ function populateSelect(select, values, allLabel) {
 }
 
 function setupFilters() {
-  const comps = uniqueSorted(jogosEnriquecidos.map(j => j.competicao));
-  const times = uniqueSorted(jogosEnriquecidos.flatMap(j => [j.mandante, j.visitante]));
-  const regioes = uniqueSorted(jogosEnriquecidos.map(j => j.regiao));
-  const cidades = uniqueSorted(jogosEnriquecidos.map(j => j.cidade));
+  const paises = uniqueSorted(jogosEnriquecidos.map(j => j.pais));
+  populateSelect(els.filtroPais, paises, t("all_m"));
+
+  const pais = els.filtroPais.value;
+  const escopo = pais ? jogosEnriquecidos.filter(j => j.pais === pais) : jogosEnriquecidos;
+
+  const comps = uniqueSorted(escopo.map(j => j.competicao));
+  const times = uniqueSorted(escopo.flatMap(j => [j.mandante, j.visitante]));
+  const regioes = uniqueSorted(escopo.map(j => j.regiao));
 
   populateSelect(els.filtroCompeticao, comps, t("all_m"));
   populateSelect(els.filtroTime, times, t("all_m"));
   populateSelect(els.filtroRegiao, regioes, t("all_f"));
-  populateSelect(els.filtroCidade, cidades, t("all_f"));
+  updateDependentCityOptions();
   updateTeamButtonState();
 }
 
@@ -338,6 +355,7 @@ function updateTeamButtonState() {
 }
 
 function getFilteredGames() {
+  const pais = els.filtroPais.value;
   const comp = els.filtroCompeticao.value;
   const time = els.filtroTime.value;
   const regiao = els.filtroRegiao.value;
@@ -348,6 +366,7 @@ function getFilteredGames() {
   const end = activePeriodDays ? addDaysISO(activePeriodDays - 1) : "";
 
   let out = jogosEnriquecidos.filter(j => {
+    const matchPais = !pais || j.pais === pais;
     const matchComp = !comp || j.competicao === comp;
     const matchTime = !time || j.mandante === time || j.visitante === time;
     const matchRegiao = showAllTeamMode ? true : (!regiao || j.regiao === regiao);
@@ -375,9 +394,10 @@ function getFilteredGames() {
       j.fonte,
       j.cidade,
       j.regiao,
+      j.pais,
     ].join(" "));
 
-    return matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
+    return matchPais && matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
   });
 
   out.sort((a, b) => parseDateTime(a) - parseDateTime(b));
@@ -385,10 +405,11 @@ function getFilteredGames() {
 }
 
 function updateDependentCityOptions() {
+  const pais = els.filtroPais.value;
   const regiao = els.filtroRegiao.value;
   const cidades = uniqueSorted(
     jogosEnriquecidos
-      .filter(j => !regiao || j.regiao === regiao)
+      .filter(j => (!pais || j.pais === pais) && (!regiao || j.regiao === regiao))
       .map(j => j.cidade)
   );
   populateSelect(els.filtroCidade, cidades, t("all_f"));
@@ -471,6 +492,7 @@ function renderMatchCard(j) {
       </div>
 
       <div class="badges">
+        <span class="badge badge--${j.pais === "Brasil" ? "br" : "cl"}">${j.pais === "Brasil" ? "🇧🇷" : "🇨🇱"} ${escapeHtml(j.pais)}</span>
         ${j.temMapa ? `<span class="badge">${t("on_map")}</span>` : `<span class="badge noMap">${t("without_coords")}</span>`}
         ${j.url ? `<span class="badge"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("source")}</a></span>` : ""}
       </div>
@@ -570,6 +592,16 @@ function setupEvents() {
     renderAll();
   });
 
+  els.filtroPais.addEventListener("change", () => {
+    showAllTeamMode = false;
+    els.filtroCompeticao.value = "";
+    els.filtroTime.value = "";
+    els.filtroRegiao.value = "";
+    els.filtroCidade.value = "";
+    setupFilters();
+    renderAll();
+  });
+
   els.hojeBtn.addEventListener("click", () => {
     activePeriodDays = null;
     showAllTeamMode = false;
@@ -602,6 +634,7 @@ function setupEvents() {
   });
 
   els.limparBtn.addEventListener("click", () => {
+    els.filtroPais.value = "";
     els.filtroCompeticao.value = "";
     els.filtroTime.value = "";
     els.filtroRegiao.value = "";
