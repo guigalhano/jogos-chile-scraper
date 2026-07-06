@@ -15,30 +15,38 @@
   <header class="hero">
     <div class="hero__inner">
       <div>
-        <p class="eyebrow">Futebol chileno · agenda automática</p>
-        <h1>Mapa de jogos no Chile</h1>
-        <p class="subtitle">
+        <div class="topbar">
+          <p class="eyebrow" data-i18n="eyebrow">Futebol chileno · agenda automática</p>
+
+          <div class="languageSwitch" aria-label="Idioma">
+            <button id="ptBtn" type="button" class="langBtn active">PT</button>
+            <button id="esBtn" type="button" class="langBtn">ES</button>
+          </div>
+        </div>
+
+        <h1 data-i18n="title">Mapa de jogos no Chile</h1>
+        <p class="subtitle" data-i18n="subtitle">
           Jogos programados por campeonato, time, cidade, região, estádio e data.
-          A página lê automaticamente <code>data/jogos_programados.json</code>.
+          A página lê automaticamente data/jogos_programados.json.
         </p>
       </div>
 
       <div class="stats">
         <div>
           <strong id="totalJogos">0</strong>
-          <span>jogos filtrados</span>
+          <span data-i18n="stat_games">jogos filtrados</span>
         </div>
         <div>
           <strong id="totalNoMapa">0</strong>
-          <span>no mapa</span>
+          <span data-i18n="stat_map">no mapa</span>
         </div>
         <div>
           <strong id="totalCidades">0</strong>
-          <span>cidades</span>
+          <span data-i18n="stat_cities">cidades</span>
         </div>
         <div>
           <strong id="ultimaAtualizacao">—</strong>
-          <span>última atualização</span>
+          <span data-i18n="stat_updated">última atualização</span>
         </div>
       </div>
     </div>
@@ -48,62 +56,66 @@
     <aside class="sidebar">
       <section class="panel">
         <div class="panelTitle">
-          <h2>Filtros</h2>
-          <button id="limparBtn" type="button">Limpar</button>
+          <h2 data-i18n="filters">Filtros</h2>
+          <button id="limparBtn" type="button" data-i18n="clear">Limpar</button>
         </div>
 
         <label>
-          Campeonato
+          <span data-i18n="championship">Campeonato</span>
           <select id="filtroCompeticao">
-            <option value="">Todos</option>
+            <option value="" data-i18n="all_m">Todos</option>
           </select>
         </label>
 
         <label>
-          Time
+          <span data-i18n="team">Time</span>
           <select id="filtroTime">
-            <option value="">Todos</option>
+            <option value="" data-i18n="all_m">Todos</option>
           </select>
         </label>
 
         <label>
-          Região
+          <span data-i18n="region">Região</span>
           <select id="filtroRegiao">
-            <option value="">Todas</option>
+            <option value="" data-i18n="all_f">Todas</option>
           </select>
         </label>
 
         <label>
-          Cidade
+          <span data-i18n="city">Cidade</span>
           <select id="filtroCidade">
-            <option value="">Todas</option>
+            <option value="" data-i18n="all_f">Todas</option>
           </select>
         </label>
 
         <label>
-          Data
+          <span data-i18n="date">Data</span>
           <input id="filtroData" type="date" />
         </label>
 
         <label>
-          Buscar
-          <input id="busca" type="search" placeholder="Equipe, estádio, cidade, região..." />
+          <span data-i18n="search">Buscar</span>
+          <input id="busca" type="search" data-i18n-placeholder="search_placeholder" placeholder="Equipe, estádio, cidade, região..." />
         </label>
 
         <div class="buttons">
-          <button id="hojeBtn" type="button">Hoje</button>
-          <button id="semMapaBtn" type="button">Jogos sem coordenadas</button>
+          <button id="hojeBtn" type="button" data-i18n="today">Hoje</button>
+          <button id="proximos3Btn" type="button" data-i18n="next3">Próximos 3 dias</button>
+          <button id="proximos7Btn" type="button" data-i18n="next7">Próximos 7 dias</button>
+          <button id="semMapaBtn" type="button" data-i18n="no_coords">Jogos sem coordenadas</button>
         </div>
 
-        <p class="hint">
-          Para melhorar o mapa, edite <code>estadios.js</code> adicionando novos estádios
+        <p id="periodoAtivo" class="periodInfo" hidden></p>
+
+        <p class="hint" data-i18n="hint">
+          Para melhorar o mapa, edite estadios.js adicionando novos estádios
           com cidade, região, latitude e longitude.
         </p>
       </section>
 
       <section class="panel">
         <div class="panelTitle">
-          <h2>Calendário</h2>
+          <h2 data-i18n="calendar">Calendário</h2>
           <span id="contadorLista">0 jogos</span>
         </div>
         <div id="calendario" class="calendarList" aria-live="polite"></div>
@@ -118,7 +130,7 @@
 
   <footer class="footer">
     <p>
-      Dados gerados pelo scraper do repositório
+      <span data-i18n="footer_text">Dados gerados pelo scraper do repositório</span>
       <a href="https://github.com/guigalhano/jogos-chile-scraper" target="_blank" rel="noopener">jogos-chile-scraper</a>.
     </p>
   </footer>

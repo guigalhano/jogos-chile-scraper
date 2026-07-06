@@ -52,13 +52,44 @@ code {
   align-items: end;
 }
 
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
 .eyebrow {
-  margin: 0 0 8px;
+  margin: 0;
   text-transform: uppercase;
   letter-spacing: .14em;
   color: var(--accent);
   font-size: 12px;
   font-weight: 900;
+}
+
+.languageSwitch {
+  display: inline-flex;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(0,0,0,.22);
+}
+
+.langBtn {
+  padding: 7px 10px;
+  min-width: 42px;
+  border-radius: 999px;
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+}
+
+.langBtn.active {
+  background: var(--accent);
+  color: #07110d;
 }
 
 h1 {
@@ -193,6 +224,23 @@ button {
 }
 
 button:hover { border-color: var(--accent2); }
+
+button.isActive {
+  background: var(--accent);
+  color: #07110d;
+  border-color: var(--accent);
+}
+
+.periodInfo {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  border: 1px solid rgba(215,243,107,.35);
+  border-radius: 14px;
+  color: var(--accent);
+  background: rgba(215,243,107,.08);
+  font-size: 13px;
+  font-weight: 800;
+}
 
 .hint {
   margin: 14px 0 0;
@@ -378,6 +426,7 @@ button:hover { border-color: var(--accent2); }
 
 @media (max-width: 560px) {
   .hero__inner { padding: 30px 16px 24px; }
+  .topbar { align-items: flex-start; }
   .app { padding: 14px 12px 28px; }
   .stats div { min-width: calc(50% - 8px); }
   .panel { border-radius: 20px; }

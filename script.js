@@ -1,5 +1,125 @@
 const DATA_URL = "data/jogos_programados.json";
 
+const I18N = {
+  pt: {
+    locale: "pt-BR",
+    htmlLang: "pt-BR",
+    titleDoc: "Mapa de Jogos · Futebol Chileno",
+    eyebrow: "Futebol chileno · agenda automática",
+    title: "Mapa de jogos no Chile",
+    subtitle: "Jogos programados por campeonato, time, cidade, região, estádio e data. A página lê automaticamente data/jogos_programados.json.",
+    stat_games: "jogos filtrados",
+    stat_map: "no mapa",
+    stat_cities: "cidades",
+    stat_updated: "última atualização",
+    filters: "Filtros",
+    clear: "Limpar",
+    championship: "Campeonato",
+    team: "Time",
+    region: "Região",
+    city: "Cidade",
+    date: "Data",
+    search: "Buscar",
+    search_placeholder: "Equipe, estádio, cidade, região...",
+    today: "Hoje",
+    next3: "Próximos 3 dias",
+    next7: "Próximos 7 dias",
+    no_coords: "Jogos sem coordenadas",
+    show_all: "Mostrar todos",
+    all_m: "Todos",
+    all_f: "Todas",
+    calendar: "Calendário",
+    hint: "Para melhorar o mapa, edite estadios.js adicionando novos estádios com cidade, região, latitude e longitude.",
+    footer_text: "Dados gerados pelo scraper do repositório",
+    games: "jogos",
+    game: "jogo",
+    no_games_json: "Ainda não há jogos em data/jogos_programados.json. Rode o workflow ou verifique se o scraper encontrou partidas futuras.",
+    no_results: "Nenhum jogo encontrado com esses filtros.",
+    loading_map: "Carregando mapa...",
+    no_json: "Não consegui carregar data/jogos_programados.json. Verifique se o arquivo existe e se o GitHub Pages está ativo.",
+    map_json_error: "Erro ao carregar o JSON.",
+    no_json_map: "Sem jogos no JSON. Rode o workflow para atualizar.",
+    no_coords_filtered: "Nenhum jogo filtrado tem coordenadas de estádio. Complete o arquivo estadios.js.",
+    map_count: (mapped, total) => `${mapped} de ${total} jogos filtrados aparecem no mapa.`,
+    period3: "Filtro ativo: próximos 3 dias",
+    period7: "Filtro ativo: próximos 7 dias",
+    date_confirm: "Data a confirmar",
+    time_confirm: "Hora a confirmar",
+    stadium_confirm: "Estádio a confirmar",
+    city_confirm: "Cidade a confirmar",
+    round_confirm: "Rodada a confirmar",
+    source: "Fonte",
+    on_map: "No mapa",
+    without_coords: "Sem coordenadas",
+    championship_fallback: "Competição",
+    home_fallback: "Mandante",
+    away_fallback: "Visitante",
+    stadium: "Estádio",
+    round: "Rodada",
+    see_source: "Ver fonte",
+  },
+  es: {
+    locale: "es-CL",
+    htmlLang: "es-CL",
+    titleDoc: "Mapa de Partidos · Fútbol Chileno",
+    eyebrow: "Fútbol chileno · agenda automática",
+    title: "Mapa de partidos en Chile",
+    subtitle: "Partidos programados por campeonato, equipo, ciudad, región, estadio y fecha. La página lee automáticamente data/jogos_programados.json.",
+    stat_games: "partidos filtrados",
+    stat_map: "en el mapa",
+    stat_cities: "ciudades",
+    stat_updated: "última actualización",
+    filters: "Filtros",
+    clear: "Limpiar",
+    championship: "Campeonato",
+    team: "Equipo",
+    region: "Región",
+    city: "Ciudad",
+    date: "Fecha",
+    search: "Buscar",
+    search_placeholder: "Equipo, estadio, ciudad, región...",
+    today: "Hoy",
+    next3: "Próximos 3 días",
+    next7: "Próximos 7 días",
+    no_coords: "Partidos sin coordenadas",
+    show_all: "Mostrar todos",
+    all_m: "Todos",
+    all_f: "Todas",
+    calendar: "Calendario",
+    hint: "Para mejorar el mapa, edita estadios.js agregando nuevos estadios con ciudad, región, latitud y longitud.",
+    footer_text: "Datos generados por el scraper del repositorio",
+    games: "partidos",
+    game: "partido",
+    no_games_json: "Todavía no hay partidos en data/jogos_programados.json. Ejecuta el workflow o revisa si el scraper encontró partidos futuros.",
+    no_results: "No se encontraron partidos con esos filtros.",
+    loading_map: "Cargando mapa...",
+    no_json: "No pude cargar data/jogos_programados.json. Revisa si el archivo existe y si GitHub Pages está activo.",
+    map_json_error: "Error al cargar el JSON.",
+    no_json_map: "Sin partidos en el JSON. Ejecuta el workflow para actualizar.",
+    no_coords_filtered: "Ningún partido filtrado tiene coordenadas de estadio. Completa el archivo estadios.js.",
+    map_count: (mapped, total) => `${mapped} de ${total} partidos filtrados aparecen en el mapa.`,
+    period3: "Filtro activo: próximos 3 días",
+    period7: "Filtro activo: próximos 7 días",
+    date_confirm: "Fecha por confirmar",
+    time_confirm: "Hora por confirmar",
+    stadium_confirm: "Estadio por confirmar",
+    city_confirm: "Ciudad por confirmar",
+    round_confirm: "Fecha/rueda por confirmar",
+    source: "Fuente",
+    on_map: "En el mapa",
+    without_coords: "Sin coordenadas",
+    championship_fallback: "Competición",
+    home_fallback: "Local",
+    away_fallback: "Visitante",
+    stadium: "Estadio",
+    round: "Fecha",
+    see_source: "Ver fuente",
+  },
+};
+
+let currentLang = localStorage.getItem("jogosChileLang") || "pt";
+let activePeriodDays = null;
+
 const els = {
   totalJogos: document.getElementById("totalJogos"),
   totalNoMapa: document.getElementById("totalNoMapa"),
@@ -12,11 +132,16 @@ const els = {
   filtroData: document.getElementById("filtroData"),
   busca: document.getElementById("busca"),
   hojeBtn: document.getElementById("hojeBtn"),
+  proximos3Btn: document.getElementById("proximos3Btn"),
+  proximos7Btn: document.getElementById("proximos7Btn"),
   limparBtn: document.getElementById("limparBtn"),
   semMapaBtn: document.getElementById("semMapaBtn"),
   calendario: document.getElementById("calendario"),
   contadorLista: document.getElementById("contadorLista"),
   mapStatus: document.getElementById("mapStatus"),
+  periodoAtivo: document.getElementById("periodoAtivo"),
+  ptBtn: document.getElementById("ptBtn"),
+  esBtn: document.getElementById("esBtn"),
 };
 
 let jogosOriginais = [];
@@ -41,6 +166,32 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 markersLayer = L.layerGroup().addTo(map);
 
+function t(key, ...args) {
+  const value = I18N[currentLang][key] ?? I18N.pt[key] ?? key;
+  return typeof value === "function" ? value(...args) : value;
+}
+
+function applyLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem("jogosChileLang", lang);
+  document.documentElement.lang = t("htmlLang");
+  document.title = t("titleDoc");
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    el.textContent = t(el.dataset.i18n);
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    el.placeholder = t(el.dataset.i18nPlaceholder);
+  });
+
+  els.ptBtn.classList.toggle("active", lang === "pt");
+  els.esBtn.classList.toggle("active", lang === "es");
+
+  setupFilters();
+  renderAll();
+}
+
 function normalize(value) {
   return String(value || "")
     .normalize("NFD")
@@ -58,11 +209,21 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function todayISO() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function addDaysISO(days) {
+  const d = new Date();
+  d.setDate(d.getDate() + days);
+  return d.toISOString().slice(0, 10);
+}
+
 function formatDate(dataISO) {
-  if (!dataISO) return "Data a confirmar";
+  if (!dataISO) return t("date_confirm");
   const d = new Date(`${dataISO}T12:00:00`);
   if (Number.isNaN(d.getTime())) return dataISO;
-  return new Intl.DateTimeFormat("pt-BR", {
+  return new Intl.DateTimeFormat(t("locale"), {
     weekday: "short",
     day: "2-digit",
     month: "short",
@@ -70,11 +231,21 @@ function formatDate(dataISO) {
   }).format(d);
 }
 
+function formatShortDate(dataISO) {
+  if (!dataISO) return "";
+  const d = new Date(`${dataISO}T12:00:00`);
+  if (Number.isNaN(d.getTime())) return dataISO;
+  return new Intl.DateTimeFormat(t("locale"), {
+    day: "2-digit",
+    month: "2-digit",
+  }).format(d);
+}
+
 function formatUpdated(value) {
   if (!value) return "—";
   const d = new Date(value);
   if (Number.isNaN(d.getTime())) return value.split("T")[0] || "—";
-  return new Intl.DateTimeFormat("pt-BR", {
+  return new Intl.DateTimeFormat(t("locale"), {
     day: "2-digit",
     month: "2-digit",
     hour: "2-digit",
@@ -100,7 +271,6 @@ function findStadiumInfo(estadioTexto) {
 
   const stadiums = window.ESTADIOS_CHILE || [];
 
-  // 1) match exato/alias contido no texto
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])];
     if (names.some(n => txt.includes(normalize(n)) || normalize(n).includes(txt))) {
@@ -108,11 +278,10 @@ function findStadiumInfo(estadioTexto) {
     }
   }
 
-  // 2) match parcial por tokens relevantes
-  const txtTokens = txt.split(/\s+/).filter(t => t.length >= 5);
+  const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5);
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])].map(normalize).join(" ");
-    const hits = txtTokens.filter(t => names.includes(t)).length;
+    const hits = txtTokens.filter(token => names.includes(token)).length;
     if (hits >= 2) return s;
   }
 
@@ -147,10 +316,10 @@ function setupFilters() {
   const regioes = uniqueSorted(jogosEnriquecidos.map(j => j.regiao));
   const cidades = uniqueSorted(jogosEnriquecidos.map(j => j.cidade));
 
-  populateSelect(els.filtroCompeticao, comps, "Todos");
-  populateSelect(els.filtroTime, times, "Todos");
-  populateSelect(els.filtroRegiao, regioes, "Todas");
-  populateSelect(els.filtroCidade, cidades, "Todas");
+  populateSelect(els.filtroCompeticao, comps, t("all_m"));
+  populateSelect(els.filtroTime, times, t("all_m"));
+  populateSelect(els.filtroRegiao, regioes, t("all_f"));
+  populateSelect(els.filtroCidade, cidades, t("all_f"));
 }
 
 function getFilteredGames() {
@@ -160,6 +329,8 @@ function getFilteredGames() {
   const cidade = els.filtroCidade.value;
   const data = els.filtroData.value;
   const q = normalize(els.busca.value);
+  const start = todayISO();
+  const end = activePeriodDays ? addDaysISO(activePeriodDays - 1) : "";
 
   let out = jogosEnriquecidos.filter(j => {
     const matchComp = !comp || j.competicao === comp;
@@ -167,6 +338,7 @@ function getFilteredGames() {
     const matchRegiao = !regiao || j.regiao === regiao;
     const matchCidade = !cidade || j.cidade === cidade;
     const matchData = !data || j.data === data;
+    const matchPeriod = !activePeriodDays || (j.data >= start && j.data <= end);
     const matchMapa = !semMapaAtivo || !j.temMapa;
 
     const text = normalize([
@@ -180,7 +352,7 @@ function getFilteredGames() {
       j.regiao,
     ].join(" "));
 
-    return matchComp && matchTime && matchRegiao && matchCidade && matchData && matchMapa && (!q || text.includes(q));
+    return matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchMapa && (!q || text.includes(q));
   });
 
   out.sort((a, b) => parseDateTime(a) - parseDateTime(b));
@@ -194,7 +366,7 @@ function updateDependentCityOptions() {
       .filter(j => !regiao || j.regiao === regiao)
       .map(j => j.cidade)
   );
-  populateSelect(els.filtroCidade, cidades, "Todas");
+  populateSelect(els.filtroCidade, cidades, t("all_f"));
 }
 
 function groupedByDate(games) {
@@ -206,21 +378,32 @@ function groupedByDate(games) {
   }, {});
 }
 
+function renderPeriodInfo() {
+  els.proximos3Btn.classList.toggle("isActive", activePeriodDays === 3);
+  els.proximos7Btn.classList.toggle("isActive", activePeriodDays === 7);
+
+  if (!activePeriodDays) {
+    els.periodoAtivo.hidden = true;
+    els.periodoAtivo.textContent = "";
+    return;
+  }
+
+  const label = activePeriodDays === 3 ? t("period3") : t("period7");
+  const range = `${formatShortDate(todayISO())} – ${formatShortDate(addDaysISO(activePeriodDays - 1))}`;
+  els.periodoAtivo.hidden = false;
+  els.periodoAtivo.textContent = `${label}: ${range}`;
+}
+
 function renderCalendar(games) {
-  els.contadorLista.textContent = `${games.length} jogo${games.length === 1 ? "" : "s"}`;
+  els.contadorLista.textContent = `${games.length} ${games.length === 1 ? t("game") : t("games")}`;
 
   if (!jogosEnriquecidos.length) {
-    els.calendario.innerHTML = `
-      <div class="empty">
-        Ainda não há jogos em <code>data/jogos_programados.json</code>.
-        Rode o workflow ou verifique se o scraper encontrou partidas futuras.
-      </div>
-    `;
+    els.calendario.innerHTML = `<div class="empty">${t("no_games_json")}</div>`;
     return;
   }
 
   if (!games.length) {
-    els.calendario.innerHTML = `<div class="empty">Nenhum jogo encontrado com esses filtros.</div>`;
+    els.calendario.innerHTML = `<div class="empty">${t("no_results")}</div>`;
     return;
   }
 
@@ -239,21 +422,21 @@ function renderMatchCard(j) {
   return `
     <article class="matchCard" data-idx="${j._idx}">
       <div class="matchTop">
-        <div class="competition">${escapeHtml(j.competicao || "Competição")}</div>
-        <div class="time">${escapeHtml(j.hora || "Hora a confirmar")}</div>
+        <div class="competition">${escapeHtml(j.competicao || t("championship_fallback"))}</div>
+        <div class="time">${escapeHtml(j.hora || t("time_confirm"))}</div>
       </div>
 
-      <h4 class="teams">${escapeHtml(j.mandante || "Mandante")} × ${escapeHtml(j.visitante || "Visitante")}</h4>
+      <h4 class="teams">${escapeHtml(j.mandante || t("home_fallback"))} × ${escapeHtml(j.visitante || t("away_fallback"))}</h4>
 
       <div class="meta">
-        <span>🏟️ ${escapeHtml(j.estadio || "Estádio a confirmar")}</span>
-        <span>📍 ${escapeHtml(j.cidade || "Cidade a confirmar")} ${j.regiao ? "· " + escapeHtml(j.regiao) : ""}</span>
-        <span>🏆 ${escapeHtml(j.rodada || "Rodada a confirmar")}</span>
+        <span>🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}</span>
+        <span>📍 ${escapeHtml(j.cidade || t("city_confirm"))} ${j.regiao ? "· " + escapeHtml(j.regiao) : ""}</span>
+        <span>🏆 ${escapeHtml(j.rodada || t("round_confirm"))}</span>
       </div>
 
       <div class="badges">
-        ${j.temMapa ? `<span class="badge">No mapa</span>` : `<span class="badge noMap">Sem coordenadas</span>`}
-        ${j.url ? `<span class="badge"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">Fonte</a></span>` : ""}
+        ${j.temMapa ? `<span class="badge">${t("on_map")}</span>` : `<span class="badge noMap">${t("without_coords")}</span>`}
+        ${j.url ? `<span class="badge"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("source")}</a></span>` : ""}
       </div>
     </article>
   `;
@@ -261,13 +444,13 @@ function renderMatchCard(j) {
 
 function markerPopup(j) {
   return `
-    <div class="popupTitle">${escapeHtml(j.mandante || "Mandante")} × ${escapeHtml(j.visitante || "Visitante")}</div>
+    <div class="popupTitle">${escapeHtml(j.mandante || t("home_fallback"))} × ${escapeHtml(j.visitante || t("away_fallback"))}</div>
     <div class="popupMeta">
-      <b>${escapeHtml(j.competicao || "Competição")}</b><br>
-      ${escapeHtml(formatDate(j.data))} · ${escapeHtml(j.hora || "Hora a confirmar")}<br>
-      🏟️ ${escapeHtml(j.estadio || "Estádio a confirmar")}<br>
+      <b>${escapeHtml(j.competicao || t("championship_fallback"))}</b><br>
+      ${escapeHtml(formatDate(j.data))} · ${escapeHtml(j.hora || t("time_confirm"))}<br>
+      🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}<br>
       📍 ${escapeHtml(j.cidade || "")}${j.regiao ? " · " + escapeHtml(j.regiao) : ""}<br>
-      ${j.url ? `<a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">Ver fonte</a>` : ""}
+      ${j.url ? `<a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("see_source")}</a>` : ""}
     </div>
   `;
 }
@@ -278,9 +461,9 @@ function updateMap(games) {
   const withMap = games.filter(j => j.temMapa && j.lat && j.lng);
 
   for (const j of withMap) {
-    const marker = L.marker([Number(j.lat), Number(j.lng)])
-      .bindPopup(markerPopup(j));
-    marker.addTo(markersLayer);
+    L.marker([Number(j.lat), Number(j.lng)])
+      .bindPopup(markerPopup(j))
+      .addTo(markersLayer);
   }
 
   els.totalJogos.textContent = games.length;
@@ -288,26 +471,33 @@ function updateMap(games) {
   els.totalCidades.textContent = uniqueSorted(games.map(j => j.cidade)).length;
 
   if (!jogosEnriquecidos.length) {
-    els.mapStatus.textContent = "Sem jogos no JSON. Rode o workflow para atualizar.";
+    els.mapStatus.textContent = t("no_json_map");
     map.fitBounds(chileBounds);
     return;
   }
 
   if (!withMap.length) {
-    els.mapStatus.textContent = "Nenhum jogo filtrado tem coordenadas de estádio. Complete o arquivo estadios.js.";
+    els.mapStatus.textContent = t("no_coords_filtered");
     map.fitBounds(chileBounds);
     return;
   }
 
   const bounds = L.latLngBounds(withMap.map(j => [Number(j.lat), Number(j.lng)]));
   map.fitBounds(bounds.pad(0.25), { maxZoom: 12 });
-  els.mapStatus.textContent = `${withMap.length} de ${games.length} jogos filtrados aparecem no mapa.`;
+  els.mapStatus.textContent = t("map_count", withMap.length, games.length);
 }
 
 function renderAll() {
+  renderPeriodInfo();
   const filtered = getFilteredGames();
   renderCalendar(filtered);
   updateMap(filtered);
+}
+
+function setPeriod(days) {
+  activePeriodDays = activePeriodDays === days ? null : days;
+  els.filtroData.value = "";
+  renderAll();
 }
 
 function setupEvents() {
@@ -318,8 +508,14 @@ function setupEvents() {
     els.filtroData,
     els.busca,
   ].forEach(el => {
-    el.addEventListener("input", renderAll);
-    el.addEventListener("change", renderAll);
+    el.addEventListener("input", () => {
+      if (el === els.filtroData && els.filtroData.value) activePeriodDays = null;
+      renderAll();
+    });
+    el.addEventListener("change", () => {
+      if (el === els.filtroData && els.filtroData.value) activePeriodDays = null;
+      renderAll();
+    });
   });
 
   els.filtroRegiao.addEventListener("change", () => {
@@ -328,9 +524,13 @@ function setupEvents() {
   });
 
   els.hojeBtn.addEventListener("click", () => {
-    els.filtroData.value = new Date().toISOString().slice(0, 10);
+    activePeriodDays = null;
+    els.filtroData.value = todayISO();
     renderAll();
   });
+
+  els.proximos3Btn.addEventListener("click", () => setPeriod(3));
+  els.proximos7Btn.addEventListener("click", () => setPeriod(7));
 
   els.limparBtn.addEventListener("click", () => {
     els.filtroCompeticao.value = "";
@@ -339,17 +539,21 @@ function setupEvents() {
     els.filtroCidade.value = "";
     els.filtroData.value = "";
     els.busca.value = "";
+    activePeriodDays = null;
     semMapaAtivo = false;
-    els.semMapaBtn.textContent = "Jogos sem coordenadas";
+    els.semMapaBtn.textContent = t("no_coords");
     setupFilters();
     renderAll();
   });
 
   els.semMapaBtn.addEventListener("click", () => {
     semMapaAtivo = !semMapaAtivo;
-    els.semMapaBtn.textContent = semMapaAtivo ? "Mostrar todos" : "Jogos sem coordenadas";
+    els.semMapaBtn.textContent = semMapaAtivo ? t("show_all") : t("no_coords");
     renderAll();
   });
+
+  els.ptBtn.addEventListener("click", () => applyLanguage("pt"));
+  els.esBtn.addEventListener("click", () => applyLanguage("es"));
 
   els.calendario.addEventListener("click", event => {
     const card = event.target.closest(".matchCard");
@@ -372,22 +576,17 @@ async function loadData() {
     const latest = jogosEnriquecidos.map(j => j.atualizado_em).filter(Boolean).sort().at(-1);
     els.ultimaAtualizacao.textContent = formatUpdated(latest);
 
-    setupFilters();
-    renderAll();
+    applyLanguage(currentLang);
   } catch (err) {
     console.error(err);
-    els.calendario.innerHTML = `
-      <div class="empty">
-        Não consegui carregar <code>data/jogos_programados.json</code>.
-        Verifique se o arquivo existe e se o GitHub Pages está ativo.
-      </div>
-    `;
-    els.mapStatus.textContent = "Erro ao carregar o JSON.";
+    els.calendario.innerHTML = `<div class="empty">${t("no_json")}</div>`;
+    els.mapStatus.textContent = t("map_json_error");
     els.totalJogos.textContent = "0";
     els.totalNoMapa.textContent = "0";
     els.totalCidades.textContent = "0";
   }
 }
 
+els.mapStatus.textContent = t("loading_map");
 setupEvents();
 loadData();
