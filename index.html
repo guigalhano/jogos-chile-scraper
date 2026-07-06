@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jogos Programados · Futebol Chileno</title>
+  <meta name="description" content="Agenda atualizada de jogos programados do futebol chileno: Campeonato Chileno e ANFA Tercera División." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">Agenda automática</p>
+      <h1>Jogos Programados · Futebol Chileno</h1>
+      <p class="subtitle">
+        Partidas, horários e estádios atualizados automaticamente a partir dos dados coletados pelo scraper.
+      </p>
+
+      <div class="stats">
+        <div>
+          <strong id="totalJogos">0</strong>
+          <span>jogos</span>
+        </div>
+        <div>
+          <strong id="totalCompeticoes">0</strong>
+          <span>competições</span>
+        </div>
+        <div>
+          <strong id="ultimaAtualizacao">—</strong>
+          <span>última atualização</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls" aria-label="Filtros">
+      <label>
+        Competição
+        <select id="filtroCompeticao">
+          <option value="">Todas</option>
+        </select>
+      </label>
+
+      <label>
+        Buscar equipe/estádio
+        <input id="busca" type="search" placeholder="Ex.: Colo-Colo, Estadio Nacional..." />
+      </label>
+
+      <label>
+        Ordenar
+        <select id="ordenar">
+          <option value="data-asc">Data mais próxima</option>
+          <option value="data-desc">Data mais distante</option>
+          <option value="competicao">Competição</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="status" class="status">Carregando jogos...</section>
+
+    <section id="listaJogos" class="grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Fonte dos dados: scraper do repositório
+      <a href="https://github.com/guigalhano/jogos-chile-scraper" target="_blank" rel="noopener">jogos-chile-scraper</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
