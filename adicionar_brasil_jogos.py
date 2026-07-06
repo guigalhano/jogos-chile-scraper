@@ -128,7 +128,7 @@ CIDADES_BR = sorted([
 CBF_ROW_RE = re.compile(
     r"^(?P<ref>\d{2,4})\s+"
     r"(?:(?P<rod>\d{1,2})ª?\s+)?"
-    r"(?:(?P<dia>\d{2}/\d{2})|A\s?def\.?)\s*"
+    r"(?:(?P<dia>\d{2}/\d{2})|A\s?def(?:inir)?\.?)\s*"
     r"(?:(?P<diasem>seg|ter|qua|qui|sex|s[aá]b|dom)\s+)?"
     r"(?:(?P<hora>\d{2}:\d{2})\s+)?"
     r"(?P<resto>.+)$",
