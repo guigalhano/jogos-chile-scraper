@@ -1,0 +1,68 @@
+[
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão \"série a\" 2026 rodada pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+%22s%C3%A9rie+a%22+2026+rodada+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão \"série b\" 2026 rodada pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+%22s%C3%A9rie+b%22+2026+rodada+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão \"série c\" 2026 rodada pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+%22s%C3%A9rie+c%22+2026+rodada+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão \"série d\" 2026 fase pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+%22s%C3%A9rie+d%22+2026+fase+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" \"copa do brasil\" 2026 fase pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+%22copa+do+brasil%22+2026+fase+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" \"copa do brasil feminina\" 2026 pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+%22copa+do+brasil+feminina%22+2026+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão \"série a\" \"sub-20\" 2026 pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+%22s%C3%A9rie+a%22+%22sub-20%22+2026+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão \"série b\" \"sub-20\" 2026 pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+%22s%C3%A9rie+b%22+%22sub-20%22+2026+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão \"sub-17\" 2026 rodada pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+%22sub-17%22+2026+rodada+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão feminino \"sub 20\" 2026 pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+feminino+%22sub+20%22+2026+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  },
+  {
+    "query": "CBF \"tabela detalhada\" brasileirão feminino \"sub 17\" 2026 pdf",
+    "erro": "403 Client Error: Forbidden for url: https://www.googleapis.com/customsearch/v1?key=AIzaSyAMuCiL--uAwpZDqydxQe6f4rgBB2PKeZ4&cx=e3a257152e1704d88&q=CBF+%22tabela+detalhada%22+brasileir%C3%A3o+feminino+%22sub+17%22+2026+pdf&num=10",
+    "status": 403,
+    "body_snippet": "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"This project does not have the access to Custom Search JSON API.\",\n    \"errors\": [\n      {\n        \"message\": \"This project does not have the access to Custom Search JSON API.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ],\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n"
+  }
+]
