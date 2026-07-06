@@ -310,7 +310,7 @@ window.ESTADIOS_CHILE = [
     fonte: "manual/osm-like"
   },
   {
-    nome: "Estadio Municipal Alcaldesa Ester Roa Rebolledo / Las Golondrinas",
+    nome: "Estadio Las Golondrinas",
     aliases: ["las golondrinas", "municipal las golondrinas", "hualpén", "hualpen"],
     cidade: "Hualpén",
     regiao: "Biobío",
