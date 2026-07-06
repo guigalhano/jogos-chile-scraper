@@ -28,7 +28,7 @@ jobs:
 
       - name: Rodar scraper
         run: |
-          python atualizar_jogos_chile.py --once --dias 180
+          python atualizar_jogos_chile.py --once --dias 180 --dias-atras 14
 
       - name: Salvar arquivos atualizados
         run: |
