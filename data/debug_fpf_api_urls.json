@@ -1,0 +1,74 @@
+[
+  {
+    "url": "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800",
+    "status": 200,
+    "content_type": "text/css; charset=utf-8",
+    "json": false
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-74WKDM3EHH&gtm=45je66u1v9220151370za200zd9220151370&_p=1783345646459&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=1966599113.1783345647&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938465~115938469~119027224~119576881~119576885~119576891~119576895&sid=1783345646&sct=1&seg=0&dl=https%3A%2F%2Fwww.futebolpaulista.com.br%2FHome%2F&dt=Fan%C3%A1ticos%20por%20Futebol%20%7C%20Federa%C3%A7%C3%A3o%20Paulista%20de%20Futebol&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=737",
+    "status": 204,
+    "content_type": "text/plain",
+    "json": false
+  },
+  {
+    "url": "https://www.futebolpaulista.com.br/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZJYiloduZIapihEOP52chXBIF66bHaO_9mxz2HUjwfSjgVOwGhBS3k8tq6LRIUEnMw2&t=638568496745067788",
+    "status": 200,
+    "content_type": "application/x-javascript",
+    "json": false
+  },
+  {
+    "url": "https://www.futebolpaulista.com.br/Handlers/Home/LoadCapa.ashx",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "json": true
+  },
+  {
+    "url": "https://www.futebolpaulista.com.br/Handlers/Pbcd/BnrCamp.ashx?formato=0&_=1783345646457",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "json": true
+  },
+  {
+    "url": "https://www.futebolpaulista.com.br/Handlers/Placar/PlacarOnline.ashx?data=6%2F7%2F2026&codigo=189&jogo=",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "json": true
+  },
+  {
+    "url": "https://www.futebolpaulista.com.br/Handlers/Placar/Resultados.ashx?codigo=189&_=1783345646456",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "json": true
+  },
+  {
+    "url": "https://futebolpaulista.com.br/Repositorio/Imagem/ArtesCapa/thumbnail_competicoes.png",
+    "status": 200,
+    "content_type": "image/png",
+    "json": false
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-74WKDM3EHH&gtm=45je66u1v9220151370za200zd9220151370&_p=1783345646459&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&are=1&cid=1966599113.1783345647&frm=0&pscdl=noapi&rcb=0&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=2&tag_exp=115938465~115938469~119027224~119576881~119576885~119576891~119576895&sid=1783345646&sct=1&seg=1&dl=https%3A%2F%2Fwww.futebolpaulista.com.br%2FHome%2F&dt=Fan%C3%A1ticos%20por%20Futebol%20%7C%20Federa%C3%A7%C3%A3o%20Paulista%20de%20Futebol&en=scroll&epn.percent_scrolled=90&_et=16599&tfd=22339",
+    "status": 204,
+    "content_type": "text/plain",
+    "json": false
+  },
+  {
+    "url": "https://www.futebolpaulista.com.br/Jogos/",
+    "status": 307,
+    "content_type": "",
+    "json": false
+  },
+  {
+    "url": "https://challenges.cloudflare.com/turnstile/v0/b/80a697ecdece/api.js?onload=zzCI2&render=explicit",
+    "status": 200,
+    "content_type": "application/javascript; charset=UTF-8",
+    "json": false
+  },
+  {
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "status": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "json": false
+  }
+]
