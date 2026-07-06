@@ -375,11 +375,13 @@ def find_cbf_pdf_urls() -> list[tuple[str, str]]:
     """Retorna lista de (competicao_label, pdf_url) para as tabelas detalhadas
     mais recentes encontradas via busca de texto (não via crawling do site da CBF)."""
     found: list[tuple[str, str]] = []
+    search_debug: list[dict] = []
     for competicao, query in CBF_SEARCH_QUERIES:
         try:
             results = search_web(query)
         except Exception as e:
             print(f"[WARN] Busca falhou para {competicao}: {e}", file=sys.stderr)
+            search_debug.append({"competicao": competicao, "query": query, "erro": str(e)})
             continue
 
         pdf_candidates = [
@@ -393,6 +395,14 @@ def find_cbf_pdf_urls() -> list[tuple[str, str]]:
                 if u.lower().endswith(".pdf") and "blob.core.windows.net" in u.lower()
             ]
 
+        search_debug.append({
+            "competicao": competicao,
+            "query": query,
+            "resultados_brutos": len(results),
+            "primeiros_resultados": results[:5],
+            "pdf_candidatos": len(pdf_candidates),
+        })
+
         if pdf_candidates:
             found.append((competicao, pdf_candidates[0]))
             print(f"[OK] PDF encontrado via busca para {competicao}: {pdf_candidates[0]}")
@@ -403,6 +413,10 @@ def find_cbf_pdf_urls() -> list[tuple[str, str]]:
                 print(f"[INFO] Busca não retornou resultado para {competicao}; usando URL semente conhecida: {seed}")
             else:
                 print(f"[WARN] Nenhum PDF encontrado (busca ou semente) para {competicao}", file=sys.stderr)
+
+    (OUT_DIR / "debug_cbf_search.json").write_text(
+        json.dumps(search_debug, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
 
     return found
 
