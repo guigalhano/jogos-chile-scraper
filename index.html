@@ -3,27 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jogos Programados · Futebol Chileno</title>
-  <meta name="description" content="Agenda atualizada de jogos programados do futebol chileno: Campeonato Chileno e ANFA Tercera División." />
+  <title>Mapa de Jogos · Futebol Chileno</title>
+  <meta name="description" content="Mapa e calendário dos jogos programados do futebol chileno, com filtros por campeonato, time, cidade e região." />
+
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="hero">
     <div class="hero__inner">
-      <p class="eyebrow">Agenda automática</p>
-      <h1>Jogos Programados · Futebol Chileno</h1>
-      <p class="subtitle">
-        Partidas, horários e estádios atualizados automaticamente a partir dos dados coletados pelo scraper.
-      </p>
+      <div>
+        <p class="eyebrow">Futebol chileno · agenda automática</p>
+        <h1>Mapa de jogos no Chile</h1>
+        <p class="subtitle">
+          Jogos programados por campeonato, time, cidade, região, estádio e data.
+          A página lê automaticamente <code>data/jogos_programados.json</code>.
+        </p>
+      </div>
 
       <div class="stats">
         <div>
           <strong id="totalJogos">0</strong>
-          <span>jogos</span>
+          <span>jogos filtrados</span>
         </div>
         <div>
-          <strong id="totalCompeticoes">0</strong>
-          <span>competições</span>
+          <strong id="totalNoMapa">0</strong>
+          <span>no mapa</span>
+        </div>
+        <div>
+          <strong id="totalCidades">0</strong>
+          <span>cidades</span>
         </div>
         <div>
           <strong id="ultimaAtualizacao">—</strong>
@@ -33,42 +44,87 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="controls" aria-label="Filtros">
-      <label>
-        Competição
-        <select id="filtroCompeticao">
-          <option value="">Todas</option>
-        </select>
-      </label>
+  <main class="app">
+    <aside class="sidebar">
+      <section class="panel">
+        <div class="panelTitle">
+          <h2>Filtros</h2>
+          <button id="limparBtn" type="button">Limpar</button>
+        </div>
 
-      <label>
-        Buscar equipe/estádio
-        <input id="busca" type="search" placeholder="Ex.: Colo-Colo, Estadio Nacional..." />
-      </label>
+        <label>
+          Campeonato
+          <select id="filtroCompeticao">
+            <option value="">Todos</option>
+          </select>
+        </label>
 
-      <label>
-        Ordenar
-        <select id="ordenar">
-          <option value="data-asc">Data mais próxima</option>
-          <option value="data-desc">Data mais distante</option>
-          <option value="competicao">Competição</option>
-        </select>
-      </label>
+        <label>
+          Time
+          <select id="filtroTime">
+            <option value="">Todos</option>
+          </select>
+        </label>
+
+        <label>
+          Região
+          <select id="filtroRegiao">
+            <option value="">Todas</option>
+          </select>
+        </label>
+
+        <label>
+          Cidade
+          <select id="filtroCidade">
+            <option value="">Todas</option>
+          </select>
+        </label>
+
+        <label>
+          Data
+          <input id="filtroData" type="date" />
+        </label>
+
+        <label>
+          Buscar
+          <input id="busca" type="search" placeholder="Equipe, estádio, cidade, região..." />
+        </label>
+
+        <div class="buttons">
+          <button id="hojeBtn" type="button">Hoje</button>
+          <button id="semMapaBtn" type="button">Jogos sem coordenadas</button>
+        </div>
+
+        <p class="hint">
+          Para melhorar o mapa, edite <code>estadios.js</code> adicionando novos estádios
+          com cidade, região, latitude e longitude.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div class="panelTitle">
+          <h2>Calendário</h2>
+          <span id="contadorLista">0 jogos</span>
+        </div>
+        <div id="calendario" class="calendarList" aria-live="polite"></div>
+      </section>
+    </aside>
+
+    <section class="mapWrap">
+      <div id="map"></div>
+      <div id="mapStatus" class="mapStatus">Carregando mapa...</div>
     </section>
-
-    <section id="status" class="status">Carregando jogos...</section>
-
-    <section id="listaJogos" class="grid" aria-live="polite"></section>
   </main>
 
   <footer class="footer">
     <p>
-      Fonte dos dados: scraper do repositório
+      Dados gerados pelo scraper do repositório
       <a href="https://github.com/guigalhano/jogos-chile-scraper" target="_blank" rel="noopener">jogos-chile-scraper</a>.
     </p>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="estadios.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
