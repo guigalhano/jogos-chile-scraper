@@ -277,6 +277,24 @@ function optionHtml(value) {
   return `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`;
 }
 
+const BANDEIRA_PAIS = {
+  "Chile": "🇨🇱",
+  "Brasil": "🇧🇷",
+  "Argentina": "🇦🇷",
+};
+
+function optionHtmlComBandeira(value) {
+  const bandeira = BANDEIRA_PAIS[value] || "";
+  const label = bandeira ? `${bandeira} ${value}` : value;
+  return `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`;
+}
+
+function populateSelectComBandeiras(select, values, allLabel) {
+  const current = select.value;
+  select.innerHTML = `<option value="">${allLabel}</option>` + values.map(optionHtmlComBandeira).join("");
+  if (values.includes(current)) select.value = current;
+}
+
 function findStadiumInfo(estadioTexto, pais) {
   const txt = normalize(estadioTexto);
   if (!txt) return null;
@@ -356,7 +374,9 @@ function derivePais(j) {
   if (j.pais) return j.pais;
   const extra = String(j.extra || "");
   if (/pais\s*=\s*brasil/i.test(extra)) return "Brasil";
+  if (/pais\s*=\s*argentina/i.test(extra)) return "Argentina";
   if (/^brasil\s*-/i.test(j.competicao || "")) return "Brasil";
+  if (/^argentina\s*-/i.test(j.competicao || "")) return "Argentina";
   return "Chile";
 }
 
@@ -393,7 +413,7 @@ function populateSelect(select, values, allLabel) {
 
 function setupFilters() {
   const paises = uniqueSorted(jogosEnriquecidos.map(j => j.pais));
-  populateSelect(els.filtroPais, paises, t("all_m"));
+  populateSelectComBandeiras(els.filtroPais, paises, t("all_m"));
 
   const pais = els.filtroPais.value;
   const escopo = pais ? jogosEnriquecidos.filter(j => j.pais === pais) : jogosEnriquecidos;
@@ -554,7 +574,7 @@ function renderMatchCard(j) {
       </div>
 
       <div class="badges">
-        <span class="badge badge--${j.pais === "Brasil" ? "br" : "cl"}">${j.pais === "Brasil" ? "🇧🇷" : "🇨🇱"} ${escapeHtml(j.pais)}</span>
+        <span class="badge badge--pais">${BANDEIRA_PAIS[j.pais] || "🏳️"} ${escapeHtml(j.pais)}</span>
         ${j.temMapa ? `<span class="badge">${t("on_map")}</span>` : `<span class="badge noMap">${t("without_coords")}</span>`}
         ${j.url ? `<span class="badge"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("source")}</a></span>` : ""}
       </div>

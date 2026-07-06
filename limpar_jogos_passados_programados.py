@@ -43,9 +43,14 @@ def main():
 
     kept = []
     removed = 0
+    removidos_sem_data_hora = 0
     for r in rows:
         d = r.get("data", "")
-        if not d or d >= today:
+        h = r.get("hora", "")
+        if not d or not h:
+            removidos_sem_data_hora += 1
+            continue
+        if d >= today:
             kept.append(r)
         else:
             removed += 1
@@ -55,6 +60,7 @@ def main():
 
     print(f"Jogos programados antes: {before}")
     print(f"Jogos passados removidos do JSON atual: {removed}")
+    print(f"Jogos sem data/hora confirmada removidos: {removidos_sem_data_hora}")
     print(f"Jogos programados depois: {len(kept)}")
     print("Histórico não foi apagado.")
 

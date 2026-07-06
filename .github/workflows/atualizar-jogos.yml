@@ -39,6 +39,10 @@ jobs:
         run: |
           if [ -f adicionar_conmebol.py ]; then python adicionar_conmebol.py --dias 180 --dias-atras 30; fi
 
+      - name: Adicionar Argentina (AFA)
+        run: |
+          if [ -f scrap_afa_agenda.py ]; then python scrap_afa_agenda.py --dias 180 --dias-atras 30; fi
+
       - name: Adicionar Brasil CBF PDFs FERJ FMF FPF
         env:
           GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
