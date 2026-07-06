@@ -48,8 +48,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["santa laura", "estadio santa laura", "santa laura universidad sek"],
     cidade: "Santiago",
     regiao: "Región Metropolitana",
-    lat: -33.4055,
-    lng: -70.6623,
+    lat: -33.4046,
+    lng: -70.6590,
     fonte: "manual/osm-like"
   },
   {
@@ -57,8 +57,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["la cisterna", "municipal de la cisterna", "estadio municipal de la cisterna"],
     cidade: "Santiago",
     regiao: "Región Metropolitana",
-    lat: -33.5303,
-    lng: -70.6650,
+    lat: -33.5210,
+    lng: -70.6730,
     fonte: "manual/osm-like"
   },
   {
@@ -66,8 +66,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["bicentenario de la florida", "la florida", "estadio bicentenario la florida", "estadio bicentenario de la florida", "municipal de la florida"],
     cidade: "Santiago",
     regiao: "Región Metropolitana",
-    lat: -33.5441,
-    lng: -70.5782,
+    lat: -33.5408,
+    lng: -70.5783,
     fonte: "manual/osm-like"
   },
   {
@@ -89,12 +89,12 @@ window.ESTADIOS_CHILE = [
     fonte: "manual/osm-like"
   },
   {
-    nome: "Estadio Municipal de San Bernardo",
-    aliases: ["municipal de san bernardo", "san bernardo", "estadio municipal san bernardo"],
+    nome: "Estadio Municipal Luis Navarro Avilés",
+    aliases: ["municipal de san bernardo", "san bernardo", "estadio municipal san bernardo", "luis navarro avilés", "luis navarro aviles", "san bernardo luis navarro", "alcalde luis navarro avilés"],
     cidade: "San Bernardo",
     regiao: "Región Metropolitana",
-    lat: -33.5923,
-    lng: -70.7046,
+    lat: -33.5945,
+    lng: -70.6903,
     fonte: "manual/osm-like"
   },
   {
@@ -106,16 +106,6 @@ window.ESTADIOS_CHILE = [
     lng: -70.5184,
     fonte: "manual/osm-like"
   },
-  {
-    nome: "Estadio Luis Navarro Avilés",
-    aliases: ["luis navarro avilés", "luis navarro aviles", "san bernardo luis navarro"],
-    cidade: "San Bernardo",
-    regiao: "Región Metropolitana",
-    lat: -33.5920,
-    lng: -70.7040,
-    fonte: "manual/osm-like"
-  },
-
   {
     nome: "Estadio Sausalito",
     aliases: ["sausalito", "estadio sausalito"],
@@ -130,8 +120,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["elías figueroa", "elias figueroa", "playa ancha", "estadio playa ancha", "estadio elías figueroa brander"],
     cidade: "Valparaíso",
     regiao: "Valparaíso",
-    lat: -33.0336,
-    lng: -71.6268,
+    lat: -33.0223,
+    lng: -71.6400,
     fonte: "manual/osm-like"
   },
   {
@@ -213,8 +203,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["el teniente", "estadio el teniente", "estadio codelco el teniente", "codelco el teniente"],
     cidade: "Rancagua",
     regiao: "O'Higgins",
-    lat: -34.1744,
-    lng: -70.7397,
+    lat: -34.1778,
+    lng: -70.7380,
     fonte: "manual/osm-like"
   },
   {
@@ -269,8 +259,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["nelson oyarzún", "nelson oyarzun", "bicentenario nelson oyarzún", "bicentenario nelson oyarzun", "estadio bicentenario nelson oyarzún"],
     cidade: "Chillán",
     regiao: "Ñuble",
-    lat: -36.6133,
-    lng: -72.1039,
+    lat: -36.6183,
+    lng: -72.1078,
     fonte: "manual/osm-like"
   },
 
@@ -279,8 +269,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["ester roa", "ester roa rebolledo", "ester roa de concepción", "ester roa de concepcion", "estadio ester roa rebolledo"],
     cidade: "Concepción",
     regiao: "Biobío",
-    lat: -36.8372,
-    lng: -73.0428,
+    lat: -36.8149,
+    lng: -73.0238,
     fonte: "manual/osm-like"
   },
   {
@@ -334,8 +324,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["germán becker", "german becker", "estadio germán becker"],
     cidade: "Temuco",
     regiao: "La Araucanía",
-    lat: -38.7485,
-    lng: -72.6208,
+    lat: -38.7427,
+    lng: -72.6197,
     fonte: "manual/osm-like"
   },
   {
@@ -389,8 +379,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["calvo y bascuñán", "calvo y bascunan", "regional calvo y bascuñán", "regional de antofagasta", "estadio regional calvo y bascuñán"],
     cidade: "Antofagasta",
     regiao: "Antofagasta",
-    lat: -23.6700,
-    lng: -70.4087,
+    lat: -23.6701,
+    lng: -70.4046,
     fonte: "manual/osm-like"
   },
   {
@@ -422,11 +412,29 @@ window.ESTADIOS_CHILE = [
   },
   {
     nome: "Estadio Carlos Dittborn",
-    aliases: ["carlos dittborn", "estadio carlos dittborn"],
+    aliases: ["carlos dittborn", "estadio carlos dittborn", "dittborn", "estadio regional de arica", "regional de arica"],
     cidade: "Arica",
     regiao: "Arica y Parinacota",
-    lat: -18.4863,
-    lng: -70.2978,
+    lat: -18.4876,
+    lng: -70.2991,
+    fonte: "manual/osm-like"
+  },
+  {
+    nome: "Estadio Bicentenario La Granja",
+    aliases: ["la granja", "estadio la granja", "estadio bicentenario la granja", "bicentenario la granja"],
+    cidade: "Curicó",
+    regiao: "Maule",
+    lat: -34.9744,
+    lng: -71.2307,
+    fonte: "manual/osm-like"
+  },
+  {
+    nome: "Estadio Municipal Leonel Sánchez Lineros",
+    aliases: ["leonel sanchez", "leonel sánchez", "municipal de recoleta", "estadio municipal de recoleta", "estadio municipal de recoleta leonel sánchez", "recoleta"],
+    cidade: "Recoleta",
+    regiao: "Región Metropolitana",
+    lat: -33.3994,
+    lng: -70.6416,
     fonte: "manual/osm-like"
   }
 ];

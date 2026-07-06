@@ -1,19 +1,5 @@
 [
   {
-    "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 189",
-    "data": "2026-07-06",
-    "hora": "16h00",
-    "mandante": "Portugal",
-    "visitante": "Espanha",
-    "estadio": "",
-    "rodada": "1",
-    "url": "https://www.futebolpaulista.com.br/Handlers/Placar/PlacarOnline.ashx?data=6%2F7%2F2026&codigo=189&jogo=",
-    "extra": "jogo_numero=1",
-    "id": "b051c8d7712b4d83",
-    "atualizado_em": "2026-07-06T16:14:07"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Copa Chile Coca-Cola Zero Azúcar",
     "data": "2026-07-06",
@@ -40,48 +26,6 @@
     "extra": "",
     "id": "0c794d72048eaf3d",
     "atualizado_em": "2026-07-06T16:12:13"
-  },
-  {
-    "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 189",
-    "data": "2026-07-06",
-    "hora": "21h00",
-    "mandante": "Estados Unidos",
-    "visitante": "Bélgica",
-    "estadio": "",
-    "rodada": "1",
-    "url": "https://www.futebolpaulista.com.br/Handlers/Placar/PlacarOnline.ashx?data=6%2F7%2F2026&codigo=189&jogo=",
-    "extra": "jogo_numero=2",
-    "id": "a389187c06ec866c",
-    "atualizado_em": "2026-07-06T16:14:07"
-  },
-  {
-    "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 189",
-    "data": "2026-07-07",
-    "hora": "13h00",
-    "mandante": "Argentina",
-    "visitante": "Egito",
-    "estadio": "",
-    "rodada": "1",
-    "url": "https://www.futebolpaulista.com.br/Handlers/Placar/Resultados.ashx?codigo=189&_=1783354410713",
-    "extra": "jogo_numero=3",
-    "id": "0dec8bf4245a3e06",
-    "atualizado_em": "2026-07-06T16:14:07"
-  },
-  {
-    "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 189",
-    "data": "2026-07-07",
-    "hora": "17h00",
-    "mandante": "Suíça",
-    "visitante": "Colômbia",
-    "estadio": "",
-    "rodada": "1",
-    "url": "https://www.futebolpaulista.com.br/Handlers/Placar/Resultados.ashx?codigo=189&_=1783354410713",
-    "extra": "jogo_numero=4",
-    "id": "47b5b566f2fd3d14",
-    "atualizado_em": "2026-07-06T16:14:07"
   },
   {
     "fonte": "campeonatochileno.cl",

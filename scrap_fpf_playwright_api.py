@@ -40,7 +40,6 @@ from playwright.async_api import async_playwright
 
 OUT_DIR = Path("data")
 OUT_DIR.mkdir(exist_ok=True)
-ENDPOINTS_PATH = OUT_DIR / "fpf_endpoints.json"
 
 START_URLS = [
     "https://www.futebolpaulista.com.br/Home/",
@@ -167,6 +166,24 @@ def guess_competicao(obj: dict, api_url: str) -> str:
     return "Brasil - FPF"
 
 
+PAISES_SELECOES = {
+    "brasil", "argentina", "uruguai", "chile", "colombia", "equador", "peru",
+    "bolivia", "paraguai", "venezuela", "portugal", "espanha", "franca",
+    "alemanha", "italia", "inglaterra", "belgica", "holanda", "croacia",
+    "marrocos", "japao", "coreia do sul", "coreia", "estados unidos", "mexico",
+    "canada", "suica", "polonia", "senegal", "gana", "camaroes", "tunisia",
+    "egito", "nigeria", "australia", "arabia saudita", "qatar", "iran",
+    "catar", "dinamarca", "servia", "suecia", "noruega", "escocia", "austria",
+    "romenia", "eslovenia", "eslovaquia", "ucrania", "gales", "irlanda",
+    "costa rica", "panama", "jamaica", "curacao", "haiti", "honduras",
+    "nova zelandia", "uzbequistao", "jordania", "cabo verde", "africa do sul",
+}
+
+
+def is_selecao_nacional(nome: str) -> bool:
+    return norm(nome) in PAISES_SELECOES
+
+
 def obj_to_partido(obj: dict, api_url: str) -> Partido | None:
     """
     Converte um objeto JSON da FPF em Partido quando encontrar campos suficientes.
@@ -209,6 +226,12 @@ def obj_to_partido(obj: dict, api_url: str) -> Partido | None:
         return None
 
     if len(mandante) > 80 or len(visitante) > 80:
+        return None
+
+    # A página da FPF costuma embutir um widget de "placar ao vivo" com jogos de
+    # seleções (ex.: Copa do Mundo), que não têm nada a ver com o futebol paulista.
+    # Rejeita explicitamente para não poluir os dados com jogos de seleções.
+    if is_selecao_nacional(mandante) or is_selecao_nacional(visitante):
         return None
 
     extra_parts = []
@@ -289,8 +312,6 @@ async def collect_fpf_json(start_urls: list[str], wait_ms: int = 7000) -> tuple[
             seen_urls.add(url)
 
             low = url.lower()
-            if "futebolpaulista.com.br" not in low:
-                return
             ct = ""
             try:
                 ct = response.headers.get("content-type", "")
@@ -435,47 +456,6 @@ def write_csv(path: Path, rows: list[dict]) -> None:
             w.writerow({k: r.get(k, "") for k in FIELDS})
 
 
-
-def load_cached_endpoints() -> list[str]:
-    if not ENDPOINTS_PATH.exists():
-        return []
-    try:
-        data = json.loads(ENDPOINTS_PATH.read_text(encoding="utf-8"))
-        return [x["url"] if isinstance(x, dict) else str(x) for x in data]
-    except Exception:
-        return []
-
-
-def save_cached_endpoints(urls: list[str]) -> None:
-    clean = []
-    seen = set()
-    for u in urls:
-        if not u or u in seen:
-            continue
-        seen.add(u)
-        clean.append({"url": u, "updated_at": datetime.now().isoformat(timespec="seconds")})
-    ENDPOINTS_PATH.write_text(json.dumps(clean, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def try_cached_endpoints() -> tuple[list[Partido], list[dict]]:
-    import requests
-    headers = {"User-Agent": "Mozilla/5.0", "Accept-Language": "pt-BR,pt;q=0.9"}
-    partidos = []
-    debug = []
-    for url in load_cached_endpoints():
-        try:
-            r = requests.get(url, headers=headers, timeout=45)
-            item = {"url": url, "status": r.status_code, "content_type": r.headers.get("content-type", "")}
-            if "json" in item["content_type"].lower():
-                found = walk_json(r.json(), url)
-                partidos.extend(found)
-                item["matches"] = len(found)
-            debug.append(item)
-        except Exception as e:
-            debug.append({"url": url, "error": str(e)})
-    return partidos, debug
-
-
 async def async_main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dias", type=int, default=180)
@@ -488,18 +468,15 @@ async def async_main() -> None:
     desde = today - timedelta(days=args.dias_atras)
     ate = today + timedelta(days=args.dias)
 
-    cached_partidos, cached_debug = try_cached_endpoints()
     payloads, api_urls = await collect_fpf_json(START_URLS, wait_ms=args.wait_ms)
-    api_urls = cached_debug + api_urls
 
     (OUT_DIR / "debug_fpf_api_urls.json").write_text(
         json.dumps(api_urls, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
 
-    partidos: list[Partido] = list(cached_partidos)
+    partidos: list[Partido] = []
     raw_debug = []
-    endpoint_hits = []
 
     for payload in payloads:
         url = payload["url"]
@@ -507,12 +484,8 @@ async def async_main() -> None:
         found = walk_json(data, url)
         if found:
             raw_debug.append({"url": url, "quantidade": len(found)})
-            endpoint_hits.append(url)
             print(f"[OK] FPF JSON {url} -> {len(found)} jogos")
         partidos.extend(found)
-
-    if endpoint_hits:
-        save_cached_endpoints(endpoint_hits)
 
     partidos = dedupe_partidos([p for p in partidos if in_window(p, desde, ate, args.incluir_passados)])
 
