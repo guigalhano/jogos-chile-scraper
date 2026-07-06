@@ -279,9 +279,15 @@ def search_web(query: str, max_results: int = 15) -> list[str]:
             headers=HEADERS,
             timeout=20,
         )
+        print(f"[DEBUG] DDG status={r.status_code} len={len(r.text)} query={query!r}", file=sys.stderr)
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
-        for a in soup.select("a.result__a, a.result__url"):
+        anchors = soup.select("a.result__a, a.result__url")
+        print(f"[DEBUG] DDG anchors matched: {len(anchors)}", file=sys.stderr)
+        if not anchors:
+            all_links = soup.find_all("a", href=True)
+            print(f"[DEBUG] DDG total <a href> on page: {len(all_links)}; sample classes: {[a.get('class') for a in all_links[:5]]}", file=sys.stderr)
+        for a in anchors:
             href = a.get("href", "")
             target = _extract_ddg_redirect(href)
             if target:
@@ -297,15 +303,19 @@ def search_web(query: str, max_results: int = 15) -> list[str]:
                 headers=HEADERS,
                 timeout=20,
             )
+            print(f"[DEBUG] Bing status={r.status_code} len={len(r.text)}", file=sys.stderr)
             r.raise_for_status()
             soup = BeautifulSoup(r.text, "html.parser")
-            for li in soup.select("li.b_algo h2 a"):
+            results = soup.select("li.b_algo h2 a")
+            print(f"[DEBUG] Bing results matched: {len(results)}", file=sys.stderr)
+            for li in results:
                 href = li.get("href", "")
                 if href:
                     urls.append(href)
         except Exception as e:
             print(f"[WARN] Busca Bing falhou para '{query}': {e}", file=sys.stderr)
 
+    print(f"[DEBUG] search_web('{query}') -> {len(urls)} urls: {urls[:5]}", file=sys.stderr)
     return urls[:max_results]
 
 
