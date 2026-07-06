@@ -482,9 +482,12 @@ function derivePais(j) {
 function enrichGames(rawGames) {
   return rawGames.map((j, index) => {
     const pais = derivePais(j);
-    let stadium = findStadiumInfo(j.estadio || "", pais);
+    const estadioBruto = /^(estadio\s*)?por confirmar$|^a confirmar$/i.test(normalize(j.estadio || ""))
+      ? ""
+      : (j.estadio || "");
+    let stadium = findStadiumInfo(estadioBruto, pais);
     let estadioFallback = false;
-    if (!stadium && !j.estadio && pais !== "Brasil") {
+    if (!stadium && !estadioBruto && pais !== "Brasil") {
       stadium = findDefaultHomeStadium(j.mandante, pais);
       estadioFallback = Boolean(stadium);
     }
@@ -494,7 +497,7 @@ function enrichGames(rawGames) {
       _stadiumInfo: stadium,
       _estadioFallback: estadioFallback,
       pais,
-      estadio: j.estadio || (estadioFallback ? stadium.nome : ""),
+      estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
       cidade: j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "",
       regiao: j.regiao || stadium?.regiao || "",
       lat: j.lat || stadium?.lat || null,
