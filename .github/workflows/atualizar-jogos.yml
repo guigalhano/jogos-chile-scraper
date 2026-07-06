@@ -41,7 +41,8 @@ jobs:
 
       - name: Adicionar Brasil CBF PDFs FERJ FMF FPF
         env:
-          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
         run: |
           if [ -f adicionar_brasil_jogos.py ]; then python adicionar_brasil_jogos.py --dias 180 --dias-atras 30; fi
 

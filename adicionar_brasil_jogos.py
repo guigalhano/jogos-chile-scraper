@@ -300,33 +300,36 @@ def search_web(query: str, max_results: int = 15) -> list[str]:
     """Retorna uma lista de URLs de resultados de busca.
 
     Ordem de tentativas:
-    1. Brave Search API (se BRAVE_API_KEY estiver definida no ambiente) —
-       método confiável, não depende de scraping de HTML de buscadores.
+    1. Google Custom Search JSON API (se GOOGLE_CSE_API_KEY e GOOGLE_CSE_ID
+       estiverem definidas) — genuinamente grátis, 100 buscas/dia, sem cartão
+       de crédito, não depende de scraping de HTML.
     2. DuckDuckGo HTML (fallback, pode ser bloqueado em ambientes de CI/cloud).
     3. Bing HTML (último recurso, mesmo aviso do item 2).
     """
     urls: list[str] = []
 
-    brave_key = os.environ.get("BRAVE_API_KEY", "").strip()
-    if brave_key:
+    cse_key = os.environ.get("GOOGLE_CSE_API_KEY", "").strip()
+    cse_id = os.environ.get("GOOGLE_CSE_ID", "").strip()
+    if cse_key and cse_id:
         try:
             r = requests.get(
-                "https://api.search.brave.com/res/v1/web/search",
-                params={"q": query, "count": max_results},
-                headers={
-                    "Accept": "application/json",
-                    "X-Subscription-Token": brave_key,
+                "https://www.googleapis.com/customsearch/v1",
+                params={
+                    "key": cse_key,
+                    "cx": cse_id,
+                    "q": query,
+                    "num": min(max_results, 10),
                 },
                 timeout=20,
             )
             r.raise_for_status()
             data = r.json()
-            for item in data.get("web", {}).get("results", []):
-                u = item.get("url", "")
+            for item in data.get("items", []):
+                u = item.get("link", "")
                 if u:
                     urls.append(u)
         except Exception as e:
-            print(f"[WARN] Busca Brave API falhou para '{query}': {e}", file=sys.stderr)
+            print(f"[WARN] Busca Google CSE falhou para '{query}': {e}", file=sys.stderr)
 
     if urls:
         return urls[:max_results]
