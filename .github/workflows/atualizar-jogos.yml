@@ -40,7 +40,7 @@ jobs:
 
       - name: Adicionar Brasil CBF FERJ FMF FPF
         run: |
-          if [ -f adicionar_brasil_jogos.py ]; then python adicionar_brasil_jogos.py --dias 180 --dias-atras 30 2>&1 | tee data/brasil_debug.log; fi
+          if [ -f adicionar_brasil_jogos.py ]; then python adicionar_brasil_jogos.py --dias 180 --dias-atras 30; fi
 
       - name: Corrigir estádios conhecidos
         run: |
@@ -54,6 +54,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv data/brasil_debug.log
+          git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
           git commit -m "Atualiza jogos Chile Brasil completo" || echo "Sem mudanças"
           git push

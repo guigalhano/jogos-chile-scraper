@@ -82,7 +82,16 @@ CBF_SEARCH_QUERIES = [
     ("Brasil - Série D", "CBF \"tabela detalhada\" brasileirão \"série d\" 2026 rodada pdf"),
 ]
 
-UF_CODES = {
+# Fallback manual: como buscadores (DuckDuckGo/Bing) podem bloquear scripts
+# automatizados com uma página de desafio anti-bot (confirmado em teste real
+# no GitHub Actions), mantemos aqui uma lista "semente" dos PDFs mais recentes
+# conhecidos. Atualize esta lista manualmente de tempos em tempos (mesma
+# lógica de manutenção do estadios.js) até que a busca automática funcione
+# de forma confiável, ou até que uma API de busca paga seja configurada.
+SEED_PDF_URLS = [
+    ("Brasil - Série A", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_A_2026_19_a_24_rodada_82505dee72.pdf"),
+    ("Brasil - Série B", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileirao_Serie_B_2026_Rodadas_1_a_5_8495da2f30.pdf"),
+]
     "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS",
     "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
     "SP", "SE", "TO",
@@ -269,7 +278,11 @@ def _extract_ddg_redirect(href: str) -> str:
 
 def search_web(query: str, max_results: int = 15) -> list[str]:
     """Retorna uma lista de URLs de resultados de busca. Tenta DuckDuckGo HTML
-    primeiro, cai para Bing HTML se a primeira falhar ou não retornar nada."""
+    primeiro, cai para Bing HTML se a primeira falhar ou não retornar nada.
+
+    NOTA: ambos os buscadores podem servir uma página de desafio anti-bot em
+    vez de resultados reais quando acessados por scripts automatizados. Se
+    isso acontecer, retorna lista vazia (sem quebrar o restante do script)."""
     urls: list[str] = []
 
     try:
@@ -279,15 +292,9 @@ def search_web(query: str, max_results: int = 15) -> list[str]:
             headers=HEADERS,
             timeout=20,
         )
-        print(f"[DEBUG] DDG status={r.status_code} len={len(r.text)} query={query!r}", file=sys.stderr)
         r.raise_for_status()
         soup = BeautifulSoup(r.text, "html.parser")
-        anchors = soup.select("a.result__a, a.result__url")
-        print(f"[DEBUG] DDG anchors matched: {len(anchors)}", file=sys.stderr)
-        if not anchors:
-            all_links = soup.find_all("a", href=True)
-            print(f"[DEBUG] DDG total <a href> on page: {len(all_links)}; sample classes: {[a.get('class') for a in all_links[:5]]}", file=sys.stderr)
-        for a in anchors:
+        for a in soup.select("a.result__a, a.result__url"):
             href = a.get("href", "")
             target = _extract_ddg_redirect(href)
             if target:
@@ -303,19 +310,15 @@ def search_web(query: str, max_results: int = 15) -> list[str]:
                 headers=HEADERS,
                 timeout=20,
             )
-            print(f"[DEBUG] Bing status={r.status_code} len={len(r.text)}", file=sys.stderr)
             r.raise_for_status()
             soup = BeautifulSoup(r.text, "html.parser")
-            results = soup.select("li.b_algo h2 a")
-            print(f"[DEBUG] Bing results matched: {len(results)}", file=sys.stderr)
-            for li in results:
+            for li in soup.select("li.b_algo h2 a"):
                 href = li.get("href", "")
                 if href:
                     urls.append(href)
         except Exception as e:
             print(f"[WARN] Busca Bing falhou para '{query}': {e}", file=sys.stderr)
 
-    print(f"[DEBUG] search_web('{query}') -> {len(urls)} urls: {urls[:5]}", file=sys.stderr)
     return urls[:max_results]
 
 
@@ -343,9 +346,14 @@ def find_cbf_pdf_urls() -> list[tuple[str, str]]:
 
         if pdf_candidates:
             found.append((competicao, pdf_candidates[0]))
-            print(f"[OK] PDF encontrado para {competicao}: {pdf_candidates[0]}")
+            print(f"[OK] PDF encontrado via busca para {competicao}: {pdf_candidates[0]}")
         else:
-            print(f"[WARN] Nenhum PDF encontrado via busca para {competicao}", file=sys.stderr)
+            seed = next((url for comp, url in SEED_PDF_URLS if comp == competicao), None)
+            if seed:
+                found.append((competicao, seed))
+                print(f"[INFO] Busca não retornou resultado para {competicao}; usando URL semente conhecida: {seed}")
+            else:
+                print(f"[WARN] Nenhum PDF encontrado (busca ou semente) para {competicao}", file=sys.stderr)
 
     return found
 
