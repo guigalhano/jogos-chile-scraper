@@ -48,8 +48,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["santa laura", "estadio santa laura", "santa laura universidad sek"],
     cidade: "Santiago",
     regiao: "Región Metropolitana",
-    lat: -33.4055,
-    lng: -70.6623,
+    lat: -33.4046,
+    lng: -70.6590,
     fonte: "manual/osm-like"
   },
   {
@@ -203,8 +203,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["el teniente", "estadio el teniente", "estadio codelco el teniente", "codelco el teniente"],
     cidade: "Rancagua",
     regiao: "O'Higgins",
-    lat: -34.1744,
-    lng: -70.7397,
+    lat: -34.1778,
+    lng: -70.7380,
     fonte: "manual/osm-like"
   },
   {
@@ -269,8 +269,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["ester roa", "ester roa rebolledo", "ester roa de concepción", "ester roa de concepcion", "estadio ester roa rebolledo"],
     cidade: "Concepción",
     regiao: "Biobío",
-    lat: -36.8372,
-    lng: -73.0428,
+    lat: -36.8149,
+    lng: -73.0238,
     fonte: "manual/osm-like"
   },
   {
