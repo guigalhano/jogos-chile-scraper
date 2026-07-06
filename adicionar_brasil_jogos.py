@@ -296,6 +296,9 @@ def _extract_ddg_redirect(href: str) -> str:
     return href
 
 
+CSE_DEBUG_LOG: list[dict] = []
+
+
 def search_web(query: str, max_results: int = 15) -> list[str]:
     """Retorna uma lista de URLs de resultados de busca.
 
@@ -322,14 +325,28 @@ def search_web(query: str, max_results: int = 15) -> list[str]:
                 },
                 timeout=20,
             )
+            status = r.status_code
+            body_snippet = r.text[:500]
             r.raise_for_status()
             data = r.json()
             for item in data.get("items", []):
                 u = item.get("link", "")
                 if u:
                     urls.append(u)
+            CSE_DEBUG_LOG.append({
+                "query": query, "status": status, "n_urls": len(urls),
+                "body_snippet": body_snippet if not urls else "",
+            })
         except Exception as e:
+            CSE_DEBUG_LOG.append({
+                "query": query,
+                "erro": str(e),
+                "status": locals().get("status"),
+                "body_snippet": locals().get("body_snippet", ""),
+            })
             print(f"[WARN] Busca Google CSE falhou para '{query}': {e}", file=sys.stderr)
+    else:
+        CSE_DEBUG_LOG.append({"query": query, "erro": "GOOGLE_CSE_API_KEY ou GOOGLE_CSE_ID não configuradas"})
 
     if urls:
         return urls[:max_results]
@@ -741,6 +758,9 @@ def main() -> None:
 
     (OUT_DIR / "debug_cbf_pdf_discovery.json").write_text(
         json.dumps(debug_info, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+    (OUT_DIR / "debug_cse_calls.json").write_text(
+        json.dumps(CSE_DEBUG_LOG, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
     # Complemento best-effort: federações estaduais (pode retornar 0 se bloquearem bots)
