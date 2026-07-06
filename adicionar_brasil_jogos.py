@@ -122,11 +122,16 @@ CIDADES_BR = sorted([
     "Santos", "Sorocaba", "Natal", "Maceió", "Manaus", "Campinas",
     "Pelotas", "Niterói", "Londrina", "Maringá", "Uberlândia",
     "João Pessoa", "Teresina", "Aracaju", "Macapá", "Palmas", "Boa Vista",
-    "Porto Velho", "Rio Branco",
+    "Porto Velho", "Rio Branco", "Saquarema", "Cariacica", "Anápolis",
+    "Betim", "Erechim", "Rio do Sul", "Itajaí", "Marabá", "Castanhal",
+    "São Lourenço da Mata", "Ponta Grossa", "São João Del Rei", "Tombos",
+    "Ivinhema", "Ji-Paraná", "Imperatriz", "Ceilândia", "Arapiraca",
+    "Juazeiro", "Novo Horizonte", "Rio Claro", "Gama", "Alagoinhas",
 ], key=lambda c: -len(c.split()))
 
 CBF_ROW_RE = re.compile(
     r"^(?P<ref>\d{2,4})\s+"
+    r"(?:(?P<iv>[IV])\s+)?"
     r"(?:(?P<rod>\d{1,2})ª?\s+)?"
     r"(?:(?P<dia>\d{2}/\d{2})|A\s?def(?:inir)?\.?)\s*"
     r"(?:(?P<diasem>seg|ter|qua|qui|sex|s[aá]b|dom)\s+)?"
@@ -416,17 +421,24 @@ def split_estadio_cidade_uf(tail_text: str) -> tuple[str, str, str]:
     return remainder, "", uf
 
 
+CBF_SCORE_TAIL_RE = re.compile(r"\s*(?:\(\d+\)\s*)?\d+$")
+CBF_SCORE_HEAD_RE = re.compile(r"^\d+\s*(?:\(\d+\)\s*)?")
+
+
 def parse_cbf_line(line: str, year: int, last_rod: list[str]) -> dict | None:
     m = CBF_ROW_RE.match(line.strip())
     if not m:
         return None
 
     resto = m.group("resto")
+    resto = re.sub(r"^\d+\s+", "", resto)
     parts = CBF_VS_RE.split(resto, maxsplit=1)
     if len(parts) != 2:
         return None
 
     left, right = parts
+    left = CBF_SCORE_TAIL_RE.sub("", left)
+    right = CBF_SCORE_HEAD_RE.sub("", right)
     mandante, mandante_uf = split_team_uf(left.split())
     if not mandante:
         return None
