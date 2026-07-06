@@ -2,7 +2,6 @@ name: Atualizar jogos Chile
 
 on:
   schedule:
-    # 08:00 Chile quando UTC-4. Ajuste se quiser outro horário.
     - cron: "0 12 * * *"
   workflow_dispatch:
 
@@ -29,7 +28,7 @@ jobs:
 
       - name: Rodar scraper
         run: |
-          python atualizar_jogos_chile.py --once --dias 120
+          python atualizar_jogos_chile.py --once --dias 180
 
       - name: Salvar arquivos atualizados
         run: |
