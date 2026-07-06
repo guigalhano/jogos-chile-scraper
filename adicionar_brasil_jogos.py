@@ -38,6 +38,7 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -296,13 +297,39 @@ def _extract_ddg_redirect(href: str) -> str:
 
 
 def search_web(query: str, max_results: int = 15) -> list[str]:
-    """Retorna uma lista de URLs de resultados de busca. Tenta DuckDuckGo HTML
-    primeiro, cai para Bing HTML se a primeira falhar ou não retornar nada.
+    """Retorna uma lista de URLs de resultados de busca.
 
-    NOTA: ambos os buscadores podem servir uma página de desafio anti-bot em
-    vez de resultados reais quando acessados por scripts automatizados. Se
-    isso acontecer, retorna lista vazia (sem quebrar o restante do script)."""
+    Ordem de tentativas:
+    1. Brave Search API (se BRAVE_API_KEY estiver definida no ambiente) —
+       método confiável, não depende de scraping de HTML de buscadores.
+    2. DuckDuckGo HTML (fallback, pode ser bloqueado em ambientes de CI/cloud).
+    3. Bing HTML (último recurso, mesmo aviso do item 2).
+    """
     urls: list[str] = []
+
+    brave_key = os.environ.get("BRAVE_API_KEY", "").strip()
+    if brave_key:
+        try:
+            r = requests.get(
+                "https://api.search.brave.com/res/v1/web/search",
+                params={"q": query, "count": max_results},
+                headers={
+                    "Accept": "application/json",
+                    "X-Subscription-Token": brave_key,
+                },
+                timeout=20,
+            )
+            r.raise_for_status()
+            data = r.json()
+            for item in data.get("web", {}).get("results", []):
+                u = item.get("url", "")
+                if u:
+                    urls.append(u)
+        except Exception as e:
+            print(f"[WARN] Busca Brave API falhou para '{query}': {e}", file=sys.stderr)
+
+    if urls:
+        return urls[:max_results]
 
     try:
         r = requests.get(

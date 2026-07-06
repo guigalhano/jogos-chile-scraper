@@ -40,6 +40,8 @@ jobs:
           if [ -f adicionar_conmebol.py ]; then python adicionar_conmebol.py --dias 180 --dias-atras 30; fi
 
       - name: Adicionar Brasil CBF PDFs FERJ FMF FPF
+        env:
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
         run: |
           if [ -f adicionar_brasil_jogos.py ]; then python adicionar_brasil_jogos.py --dias 180 --dias-atras 30; fi
 
