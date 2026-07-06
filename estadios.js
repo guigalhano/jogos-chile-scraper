@@ -324,8 +324,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["germán becker", "german becker", "estadio germán becker"],
     cidade: "Temuco",
     regiao: "La Araucanía",
-    lat: -38.7485,
-    lng: -72.6208,
+    lat: -38.7427,
+    lng: -72.6197,
     fonte: "manual/osm-like"
   },
   {
@@ -379,8 +379,8 @@ window.ESTADIOS_CHILE = [
     aliases: ["calvo y bascuñán", "calvo y bascunan", "regional calvo y bascuñán", "regional de antofagasta", "estadio regional calvo y bascuñán"],
     cidade: "Antofagasta",
     regiao: "Antofagasta",
-    lat: -23.6700,
-    lng: -70.4087,
+    lat: -23.6701,
+    lng: -70.4046,
     fonte: "manual/osm-like"
   },
   {
