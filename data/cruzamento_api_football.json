@@ -1,5 +1,5 @@
 {
-  "gerado_em": "2026-07-06T23:32:21",
+  "gerado_em": "2026-07-06T23:39:10",
   "paises": {
     "Chile": {
       "ligas_encontradas": [
@@ -26,6 +26,9 @@
           "liga": "Primera División",
           "liga_id": 265,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -157,6 +160,9 @@
           "liga": "Serie A",
           "liga_id": 71,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -165,6 +171,9 @@
           "liga": "Serie B",
           "liga_id": 72,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -173,6 +182,9 @@
           "liga": "Copa Do Brasil",
           "liga_id": 73,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -181,6 +193,9 @@
           "liga": "Copa do Brasil U20",
           "liga_id": 617,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -189,6 +204,9 @@
           "liga": "Supercopa do Brasil",
           "liga_id": 632,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -197,6 +215,9 @@
           "liga": "Paulista Série B",
           "liga_id": 1098,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -205,6 +226,9 @@
           "liga": "Copa do Brasil U17",
           "liga_id": 1179,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -267,6 +291,9 @@
           "liga": "Liga Profesional Argentina",
           "liga_id": 128,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -275,6 +302,9 @@
           "liga": "Copa Argentina",
           "liga_id": 130,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
@@ -283,11 +313,25 @@
           "liga": "Copa de la Liga Profesional",
           "liga_id": 1032,
           "total_fixtures_api": 0,
+          "erros_api": {
+            "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+          },
           "confirmados_com_nossos_dados": 0,
           "apenas_na_api": [],
           "apenas_na_api_total": 0
         }
       ]
+    }
+  },
+  "diagnostico_restricao_temporada": {
+    "liga_sonda": 265,
+    "temporada_2026_resultados": 0,
+    "temporada_2026_erros": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
+    },
+    "temporada_2025_resultados": 0,
+    "temporada_2025_erros": {
+      "plan": "Free plans do not have access to this season, try from 2022 to 2024."
     }
   }
 }
