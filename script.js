@@ -60,6 +60,7 @@ const I18N = {
     home_fallback: "Mandante",
     away_fallback: "Visitante",
     see_source: "Ver fonte",
+    estimated_venue: "estádio estimado",
   },
   es: {
     locale: "es-CL",
@@ -120,6 +121,7 @@ const I18N = {
     home_fallback: "Local",
     away_fallback: "Visitante",
     see_source: "Ver fuente",
+    estimated_venue: "estadio estimado",
   },
 };
 
@@ -298,6 +300,49 @@ function findStadiumInfo(estadioTexto) {
   return null;
 }
 
+// Fallback: quando o scraper não informa o estádio (comum em jogos em casa
+// de alguns times, ex.: San Marcos de Arica), usamos o estádio mandante conhecido.
+const ESTADIO_MANDANTE_PADRAO = {
+  "colo colo": "monumental david arellano",
+  "universidad de chile": "estadio nacional",
+  "universidad catolica": "claro arena",
+  "union espanola": "santa laura",
+  "palestino": "la cisterna",
+  "audax italiano": "bicentenario de la florida",
+  "magallanes": "luis navarro avilés",
+  "everton": "sausalito",
+  "santiago wanderers": "elías figueroa brander",
+  "union la calera": "nicolás chahuán",
+  "deportes la serena": "la portada",
+  "coquimbo unido": "francisco sánchez rumoroso",
+  "o'higgins": "el teniente",
+  "rangers de talca": "fiscal de talca",
+  "nublense": "bicentenario nelson oyarzún",
+  "huachipato": "estadio huachipato",
+  "universidad de concepcion": "ester roa rebolledo",
+  "deportes concepcion": "ester roa rebolledo",
+  "deportes temuco": "germán becker",
+  "provincial osorno": "rubén marcos peralta",
+  "deportes puerto montt": "chinquihue",
+  "cobresal": "el cobre",
+  "deportes copiapo": "luis valenzuela hermosilla",
+  "deportes antofagasta": "regional calvo y bascuñán",
+  "cobreloa": "zorros del desierto",
+  "deportes iquique": "tierra de campeones",
+  "san marcos de arica": "carlos dittborn",
+  "curico unido": "la granja",
+  "deportes recoleta": "leonel sanchez",
+  "club deportes santa cruz": "joaquín muñoz garcía",
+  "trasandino": "regional de los andes",
+};
+
+function findDefaultHomeStadium(mandante) {
+  const key = normalize(mandante);
+  const wanted = ESTADIO_MANDANTE_PADRAO[key];
+  if (!wanted) return null;
+  return findStadiumInfo(wanted);
+}
+
 function derivePais(j) {
   if (j.pais) return j.pais;
   const extra = String(j.extra || "");
@@ -308,12 +353,19 @@ function derivePais(j) {
 
 function enrichGames(rawGames) {
   return rawGames.map((j, index) => {
-    const stadium = findStadiumInfo(j.estadio || "");
+    let stadium = findStadiumInfo(j.estadio || "");
+    let estadioFallback = false;
+    if (!stadium && !j.estadio) {
+      stadium = findDefaultHomeStadium(j.mandante);
+      estadioFallback = Boolean(stadium);
+    }
     return {
       ...j,
       _idx: index,
       _stadiumInfo: stadium,
+      _estadioFallback: estadioFallback,
       pais: derivePais(j),
+      estadio: j.estadio || (estadioFallback ? stadium.nome : ""),
       cidade: j.cidade || stadium?.cidade || "",
       regiao: j.regiao || stadium?.regiao || "",
       lat: j.lat || stadium?.lat || null,
@@ -485,7 +537,7 @@ function renderMatchCard(j) {
       <h4 class="teams">${escapeHtml(j.mandante || t("home_fallback"))} × ${escapeHtml(j.visitante || t("away_fallback"))}</h4>
 
       <div class="meta">
-        <span>🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}</span>
+        <span>🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}${j._estadioFallback ? ` <em class="estimated">(${t("estimated_venue")})</em>` : ""}</span>
         <span>📍 ${escapeHtml(j.cidade || t("city_confirm"))} ${j.regiao ? "· " + escapeHtml(j.regiao) : ""}</span>
         <span>🏆 ${escapeHtml(j.rodada || t("round_confirm"))}</span>
         ${j.extra ? `<span>ℹ️ ${escapeHtml(j.extra)}</span>` : ""}
@@ -506,7 +558,7 @@ function markerPopup(j) {
     <div class="popupMeta">
       <b>${escapeHtml(j.competicao || t("championship_fallback"))}</b><br>
       ${escapeHtml(formatDate(j.data))} · ${escapeHtml(j.hora || t("time_confirm"))}<br>
-      🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}<br>
+      🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}${j._estadioFallback ? ` <em class="estimated">(${t("estimated_venue")})</em>` : ""}<br>
       📍 ${escapeHtml(j.cidade || "")}${j.regiao ? " · " + escapeHtml(j.regiao) : ""}<br>
       ${j.extra ? `ℹ️ ${escapeHtml(j.extra)}<br>` : ""}
       ${j.url ? `<a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("see_source")}</a>` : ""}

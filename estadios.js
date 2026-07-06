@@ -418,5 +418,23 @@ window.ESTADIOS_CHILE = [
     lat: -18.4876,
     lng: -70.2991,
     fonte: "manual/osm-like"
+  },
+  {
+    nome: "Estadio Bicentenario La Granja",
+    aliases: ["la granja", "estadio la granja", "estadio bicentenario la granja", "bicentenario la granja"],
+    cidade: "Curicó",
+    regiao: "Maule",
+    lat: -34.9744,
+    lng: -71.2307,
+    fonte: "manual/osm-like"
+  },
+  {
+    nome: "Estadio Municipal Leonel Sánchez Lineros",
+    aliases: ["leonel sanchez", "leonel sánchez", "municipal de recoleta", "estadio municipal de recoleta", "estadio municipal de recoleta leonel sánchez", "recoleta"],
+    cidade: "Recoleta",
+    regiao: "Región Metropolitana",
+    lat: -33.3994,
+    lng: -70.6416,
+    fonte: "manual/osm-like"
   }
 ];

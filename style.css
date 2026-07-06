@@ -404,6 +404,12 @@ button.isActive {
   background: rgba(159,208,255,.12);
 }
 
+.estimated {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 11px;
+}
+
 .empty {
   color: var(--muted);
   padding: 18px;
