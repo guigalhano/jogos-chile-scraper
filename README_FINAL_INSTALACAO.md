@@ -83,3 +83,29 @@ En El Camarín adicionados/atualizados: X
 ## Observação
 
 Se algum site estiver temporariamente fora do ar, o workflow continua tentando as outras fontes.
+
+
+## Atualização Brasil incluída
+
+Este pacote também inclui:
+
+```text
+adicionar_brasil_jogos.py
+```
+
+Fontes brasileiras tentadas:
+
+```text
+CBF
+FERJ
+FMF
+FPF
+```
+
+No workflow, a etapa é:
+
+```text
+Adicionar Brasil CBF FERJ FMF FPF
+```
+
+Observação: nesta primeira versão a fonte mais estável é a FERJ. CBF e FPF podem depender de JavaScript/API e podem retornar 0 jogos até mapearmos a API interna.

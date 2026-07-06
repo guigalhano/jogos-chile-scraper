@@ -46,6 +46,7 @@ const I18N = {
     map_count: (mapped, total) => `${mapped} de ${total} jogos filtrados aparecem no mapa.`,
     period3: "Filtro ativo: próximos 3 dias",
     period7: "Filtro ativo: próximos 7 dias",
+    futureDefault: "Mostrando jogos de hoje em diante",
     date_confirm: "Data a confirmar",
     time_confirm: "Hora a confirmar",
     stadium_confirm: "Estádio a confirmar",
@@ -104,6 +105,7 @@ const I18N = {
     map_count: (mapped, total) => `${mapped} de ${total} partidos filtrados aparecen en el mapa.`,
     period3: "Filtro activo: próximos 3 días",
     period7: "Filtro activo: próximos 7 días",
+    futureDefault: "Mostrando partidos desde hoy en adelante",
     date_confirm: "Fecha por confirmar",
     time_confirm: "Hora por confirmar",
     stadium_confirm: "Estadio por confirmar",
@@ -352,6 +354,16 @@ function getFilteredGames() {
     const matchCidade = showAllTeamMode ? true : (!cidade || j.cidade === cidade);
     const matchData = showAllTeamMode ? true : (!data || j.data === data);
     const matchPeriod = showAllTeamMode ? true : (!activePeriodDays || (j.data >= start && j.data <= end));
+
+    // Por padrão, a página mostra somente jogos de hoje em diante.
+    // Jogos passados continuam no JSON/histórico, mas não aparecem na tela inicial.
+    // Eles só aparecem quando:
+    // - o usuário escolhe uma data específica;
+    // - usa "Mostrar todos do time";
+    // - ou algum filtro de período explícito está ativo.
+    const defaultFutureOnly = !showAllTeamMode && !data && !activePeriodDays;
+    const matchFutureDefault = defaultFutureOnly ? (!j.data || j.data >= start) : true;
+
     const matchMapa = !semMapaAtivo || !j.temMapa;
 
     const text = normalize([
@@ -365,7 +377,7 @@ function getFilteredGames() {
       j.regiao,
     ].join(" "));
 
-    return matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchMapa && (!q || text.includes(q));
+    return matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
   });
 
   out.sort((a, b) => parseDateTime(a) - parseDateTime(b));
