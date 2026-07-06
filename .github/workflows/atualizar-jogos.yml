@@ -44,9 +44,6 @@ jobs:
           if [ -f scrap_afa_agenda.py ]; then python scrap_afa_agenda.py --dias 180 --dias-atras 30; fi
 
       - name: Adicionar Brasil CBF PDFs FERJ FMF FPF
-        env:
-          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
-          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
         run: |
           if [ -f adicionar_brasil_jogos.py ]; then python adicionar_brasil_jogos.py --dias 180 --dias-atras 30; fi
 
@@ -67,6 +64,6 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
-          git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cse_calls.json 2>/dev/null || true
+          git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json 2>/dev/null || true
           git commit -m "Atualiza jogos Chile Brasil completo" || echo "Sem mudanças"
           git push

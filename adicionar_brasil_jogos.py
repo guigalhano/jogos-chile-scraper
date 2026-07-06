@@ -296,60 +296,16 @@ def _extract_ddg_redirect(href: str) -> str:
     return href
 
 
-CSE_DEBUG_LOG: list[dict] = []
-
-
 def search_web(query: str, max_results: int = 15) -> list[str]:
-    """Retorna uma lista de URLs de resultados de busca.
+    """Retorna uma lista de URLs de resultados de busca. Tenta DuckDuckGo HTML
+    primeiro, cai para Bing HTML se a primeira falhar ou não retornar nada.
 
-    Ordem de tentativas:
-    1. Google Custom Search JSON API (se GOOGLE_CSE_API_KEY e GOOGLE_CSE_ID
-       estiverem definidas) — genuinamente grátis, 100 buscas/dia, sem cartão
-       de crédito, não depende de scraping de HTML.
-    2. DuckDuckGo HTML (fallback, pode ser bloqueado em ambientes de CI/cloud).
-    3. Bing HTML (último recurso, mesmo aviso do item 2).
-    """
+    NOTA: ambos os buscadores podem servir uma página de desafio anti-bot em
+    vez de resultados reais quando acessados por scripts automatizados (comum
+    em ambientes de CI/cloud). Quando isso acontece, o find_cbf_pdf_urls() cai
+    para SEED_PDF_URLS (lista mantida manualmente). Atualize essa lista de
+    tempos em tempos buscando "CBF tabela detalhada <competição> <ano>"."""
     urls: list[str] = []
-
-    cse_key = os.environ.get("GOOGLE_CSE_API_KEY", "").strip()
-    cse_id = os.environ.get("GOOGLE_CSE_ID", "").strip()
-    if cse_key and cse_id:
-        try:
-            r = requests.get(
-                "https://www.googleapis.com/customsearch/v1",
-                params={
-                    "key": cse_key,
-                    "cx": cse_id,
-                    "q": query,
-                    "num": min(max_results, 10),
-                },
-                timeout=20,
-            )
-            status = r.status_code
-            body_snippet = r.text[:500]
-            r.raise_for_status()
-            data = r.json()
-            for item in data.get("items", []):
-                u = item.get("link", "")
-                if u:
-                    urls.append(u)
-            CSE_DEBUG_LOG.append({
-                "query": query, "status": status, "n_urls": len(urls),
-                "body_snippet": body_snippet if not urls else "",
-            })
-        except Exception as e:
-            CSE_DEBUG_LOG.append({
-                "query": query,
-                "erro": str(e),
-                "status": locals().get("status"),
-                "body_snippet": locals().get("body_snippet", ""),
-            })
-            print(f"[WARN] Busca Google CSE falhou para '{query}': {e}", file=sys.stderr)
-    else:
-        CSE_DEBUG_LOG.append({"query": query, "erro": "GOOGLE_CSE_API_KEY ou GOOGLE_CSE_ID não configuradas"})
-
-    if urls:
-        return urls[:max_results]
 
     try:
         r = requests.get(
@@ -758,9 +714,6 @@ def main() -> None:
 
     (OUT_DIR / "debug_cbf_pdf_discovery.json").write_text(
         json.dumps(debug_info, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
-    (OUT_DIR / "debug_cse_calls.json").write_text(
-        json.dumps(CSE_DEBUG_LOG, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
     # Complemento best-effort: federações estaduais (pode retornar 0 se bloquearem bots)
