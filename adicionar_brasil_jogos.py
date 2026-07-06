@@ -161,22 +161,33 @@ def parse_year(y: str) -> int:
 
 _PLAYWRIGHT = None
 _BROWSER = None
+_CONTEXT = None
 
 
-def _get_browser():
-    """Lazily launches a single shared Chromium instance for the whole run."""
-    global _PLAYWRIGHT, _BROWSER
-    if _BROWSER is None:
+def _get_context():
+    """Lazily launches a single shared Chromium browser+context for the whole run."""
+    global _PLAYWRIGHT, _BROWSER, _CONTEXT
+    if _CONTEXT is None:
         from playwright.sync_api import sync_playwright
         _PLAYWRIGHT = sync_playwright().start()
         _BROWSER = _PLAYWRIGHT.chromium.launch(
             args=["--disable-blink-features=AutomationControlled"]
         )
-    return _BROWSER
+        _CONTEXT = _BROWSER.new_context(
+            user_agent=HEADERS["User-Agent"],
+            locale="pt-BR",
+            extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
+        )
+    return _CONTEXT
 
 
 def close_browser() -> None:
-    global _PLAYWRIGHT, _BROWSER
+    global _PLAYWRIGHT, _BROWSER, _CONTEXT
+    if _CONTEXT is not None:
+        try:
+            _CONTEXT.close()
+        except Exception:
+            pass
     if _BROWSER is not None:
         try:
             _BROWSER.close()
@@ -187,6 +198,7 @@ def close_browser() -> None:
             _PLAYWRIGHT.stop()
         except Exception:
             pass
+    _CONTEXT = None
     _BROWSER = None
     _PLAYWRIGHT = None
 
@@ -204,29 +216,27 @@ def fetch(url: str) -> str:
     Um navegador real headless resolve os dois problemas ao mesmo tempo.
     Se o Playwright não estiver disponível por algum motivo, cai de volta
     para requests simples (mantém compatibilidade).
+
+    Timeouts são propositalmente curtos (15s/3s) porque este método é chamado
+    para dezenas de URLs em sequência dentro de um único job do GitHub Actions;
+    esperas longas por página aqui multiplicam rapidamente o tempo total.
     """
     try:
-        browser = _get_browser()
-        context = browser.new_context(
-            user_agent=HEADERS["User-Agent"],
-            locale="pt-BR",
-            extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
-        )
+        context = _get_context()
         page = context.new_page()
         try:
-            page.goto(url, timeout=45000, wait_until="domcontentloaded")
-            # Dá tempo para chamadas assíncronas (XHR/fetch client-side) preencherem a página.
+            page.goto(url, timeout=15000, wait_until="domcontentloaded")
             try:
-                page.wait_for_load_state("networkidle", timeout=15000)
+                page.wait_for_load_state("networkidle", timeout=3000)
             except Exception:
                 pass
             html = page.content()
         finally:
-            context.close()
+            page.close()
         return html
     except Exception as e:
         print(f"[WARN] Playwright falhou para {url} ({e}); tentando requests simples", file=sys.stderr)
-        r = requests.get(url, headers=HEADERS, timeout=45)
+        r = requests.get(url, headers=HEADERS, timeout=20)
         r.raise_for_status()
         return r.text
 
@@ -264,7 +274,7 @@ def discover_links(html: str, base_url: str, fonte: str) -> list[str]:
         if any(w in low for w in wanted):
             if any(domain in href for domain in ["cbf.com.br", "fferj.com.br", "fmf.com.br", "futebolpaulista.com.br"]):
                 out.add(href)
-    return sorted(out)[:30]
+    return sorted(out)[:6]
 
 
 def looks_like_stadium(txt: str) -> bool:
@@ -573,6 +583,11 @@ def main() -> None:
         urls_clean.append((fonte, url))
 
     print(f"[INFO] URLs Brasil: {len(urls_clean)}")
+
+    MAX_URLS = 40
+    if len(urls_clean) > MAX_URLS:
+        print(f"[WARN] Limitando de {len(urls_clean)} para {MAX_URLS} URLs para não estourar o tempo do job", file=sys.stderr)
+        urls_clean = urls_clean[:MAX_URLS]
 
     all_new = []
     try:
