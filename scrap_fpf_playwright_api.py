@@ -166,6 +166,24 @@ def guess_competicao(obj: dict, api_url: str) -> str:
     return "Brasil - FPF"
 
 
+PAISES_SELECOES = {
+    "brasil", "argentina", "uruguai", "chile", "colombia", "equador", "peru",
+    "bolivia", "paraguai", "venezuela", "portugal", "espanha", "franca",
+    "alemanha", "italia", "inglaterra", "belgica", "holanda", "croacia",
+    "marrocos", "japao", "coreia do sul", "coreia", "estados unidos", "mexico",
+    "canada", "suica", "polonia", "senegal", "gana", "camaroes", "tunisia",
+    "egito", "nigeria", "australia", "arabia saudita", "qatar", "iran",
+    "catar", "dinamarca", "servia", "suecia", "noruega", "escocia", "austria",
+    "romenia", "eslovenia", "eslovaquia", "ucrania", "gales", "irlanda",
+    "costa rica", "panama", "jamaica", "curacao", "haiti", "honduras",
+    "nova zelandia", "uzbequistao", "jordania", "cabo verde", "africa do sul",
+}
+
+
+def is_selecao_nacional(nome: str) -> bool:
+    return norm(nome) in PAISES_SELECOES
+
+
 def obj_to_partido(obj: dict, api_url: str) -> Partido | None:
     """
     Converte um objeto JSON da FPF em Partido quando encontrar campos suficientes.
@@ -208,6 +226,12 @@ def obj_to_partido(obj: dict, api_url: str) -> Partido | None:
         return None
 
     if len(mandante) > 80 or len(visitante) > 80:
+        return None
+
+    # A página da FPF costuma embutir um widget de "placar ao vivo" com jogos de
+    # seleções (ex.: Copa do Mundo), que não têm nada a ver com o futebol paulista.
+    # Rejeita explicitamente para não poluir os dados com jogos de seleções.
+    if is_selecao_nacional(mandante) or is_selecao_nacional(visitante):
         return None
 
     extra_parts = []
