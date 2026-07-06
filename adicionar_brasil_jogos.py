@@ -97,7 +97,7 @@ CBF_SEARCH_QUERIES = [
 # de forma confiável, ou até que uma API de busca paga seja configurada.
 SEED_PDF_URLS = [
     ("Brasil - Série A", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_A_2026_19_a_24_rodada_82505dee72.pdf"),
-    ("Brasil - Série B", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileirao_Serie_B_2026_Rodadas_1_a_5_8495da2f30.pdf"),
+    ("Brasil - Série B", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_12_a_18_rodada_Brasileiro_Serie_B_2026_ea9e84afde.pdf"),
     ("Brasil - Série C", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_23_05_d384914c53.pdf"),
     ("Brasil - Série D", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_1f9d105d94.pdf"),
     ("Brasil - Copa do Brasil", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_5_Fase_Copa_Betano_do_Brasil_2026_b00e664f6a.pdf"),
