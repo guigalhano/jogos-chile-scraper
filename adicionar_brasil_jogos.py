@@ -88,6 +88,7 @@ CBF_SEARCH_QUERIES = [
     ("Brasil - Sub-17", "CBF \"tabela detalhada\" brasileirão \"sub-17\" 2026 rodada pdf"),
     ("Brasil - Feminino Sub-20", "CBF \"tabela detalhada\" brasileirão feminino \"sub 20\" 2026 pdf"),
     ("Brasil - Feminino Sub-17", "CBF \"tabela detalhada\" brasileirão feminino \"sub 17\" 2026 pdf"),
+    ("Brasil - Feminino A1", "CBF \"tabela detalhada\" \"brasileiro feminino a1\" 2026 pdf"),
 ]
 
 # Fallback manual: como buscadores (DuckDuckGo/Bing) podem bloquear scripts
@@ -104,6 +105,7 @@ SEED_PDF_URLS = [
     ("Brasil - Copa do Brasil", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_22_04_0f069005b8.pdf"),
     ("Brasil - Copa do Brasil Feminina", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_0d8d5d0448.pdf"),
     ("Brasil - Série B Sub-20", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_B_SUB_20_10_04_v2_1683d773ce.pdf"),
+    ("Brasil - Feminino A1", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_A1_2026_04a2a21b30.pdf"),
 ]
 
 UF_CODES = {
