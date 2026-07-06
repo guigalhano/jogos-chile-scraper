@@ -159,10 +159,76 @@ def parse_year(y: str) -> int:
     return n
 
 
+_PLAYWRIGHT = None
+_BROWSER = None
+
+
+def _get_browser():
+    """Lazily launches a single shared Chromium instance for the whole run."""
+    global _PLAYWRIGHT, _BROWSER
+    if _BROWSER is None:
+        from playwright.sync_api import sync_playwright
+        _PLAYWRIGHT = sync_playwright().start()
+        _BROWSER = _PLAYWRIGHT.chromium.launch(
+            args=["--disable-blink-features=AutomationControlled"]
+        )
+    return _BROWSER
+
+
+def close_browser() -> None:
+    global _PLAYWRIGHT, _BROWSER
+    if _BROWSER is not None:
+        try:
+            _BROWSER.close()
+        except Exception:
+            pass
+    if _PLAYWRIGHT is not None:
+        try:
+            _PLAYWRIGHT.stop()
+        except Exception:
+            pass
+    _BROWSER = None
+    _PLAYWRIGHT = None
+
+
 def fetch(url: str) -> str:
-    r = requests.get(url, headers=HEADERS, timeout=45)
-    r.raise_for_status()
-    return r.text
+    """
+    Busca o HTML da página usando um navegador real (Playwright/Chromium).
+
+    Isso é necessário porque:
+    1. Sites como CBF, FERJ, FMF e FPF bloqueiam requisições simples (requests)
+       com 403, provavelmente por proteção anti-bot / fingerprint de TLS.
+    2. Algumas páginas renderizam o conteúdo via JavaScript no lado do cliente,
+       então o HTML "cru" (sem executar JS) não contém os jogos.
+
+    Um navegador real headless resolve os dois problemas ao mesmo tempo.
+    Se o Playwright não estiver disponível por algum motivo, cai de volta
+    para requests simples (mantém compatibilidade).
+    """
+    try:
+        browser = _get_browser()
+        context = browser.new_context(
+            user_agent=HEADERS["User-Agent"],
+            locale="pt-BR",
+            extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
+        )
+        page = context.new_page()
+        try:
+            page.goto(url, timeout=45000, wait_until="domcontentloaded")
+            # Dá tempo para chamadas assíncronas (XHR/fetch client-side) preencherem a página.
+            try:
+                page.wait_for_load_state("networkidle", timeout=15000)
+            except Exception:
+                pass
+            html = page.content()
+        finally:
+            context.close()
+        return html
+    except Exception as e:
+        print(f"[WARN] Playwright falhou para {url} ({e}); tentando requests simples", file=sys.stderr)
+        r = requests.get(url, headers=HEADERS, timeout=45)
+        r.raise_for_status()
+        return r.text
 
 
 def get_lines(html: str) -> list[str]:
@@ -509,14 +575,17 @@ def main() -> None:
     print(f"[INFO] URLs Brasil: {len(urls_clean)}")
 
     all_new = []
-    for fonte, url in urls_clean:
-        try:
-            html = fetch(url)
-            matches = parse_html_for_matches(fonte, url, html, desde, ate, args.incluir_passados)
-            print(f"[OK] {fonte} -> {len(matches)} jogos | {url}")
-            all_new.extend([m.to_row() for m in matches])
-        except Exception as e:
-            print(f"[ERRO] {fonte} {url}: {e}", file=sys.stderr)
+    try:
+        for fonte, url in urls_clean:
+            try:
+                html = fetch(url)
+                matches = parse_html_for_matches(fonte, url, html, desde, ate, args.incluir_passados)
+                print(f"[OK] {fonte} -> {len(matches)} jogos | {url}")
+                all_new.extend([m.to_row() for m in matches])
+            except Exception as e:
+                print(f"[ERRO] {fonte} {url}: {e}", file=sys.stderr)
+    finally:
+        close_browser()
 
     current_json = OUT_DIR / "jogos_programados.json"
     current_csv = OUT_DIR / "jogos_programados.csv"
