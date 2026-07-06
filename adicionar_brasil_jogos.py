@@ -699,20 +699,35 @@ def main() -> None:
     ate = today + timedelta(days=args.dias)
 
     all_new: list[Partido] = []
+    debug_info: list[dict] = []
 
     print("[INFO] Buscando PDFs de Tabela Detalhada da CBF via busca de texto...")
     pdf_targets = find_cbf_pdf_urls()
     print(f"[INFO] PDFs encontrados: {len(pdf_targets)}")
 
     for competicao, pdf_url in pdf_targets:
+        entry = {"competicao": competicao, "pdf_url": pdf_url}
         try:
             pdf_bytes = fetch_bytes(pdf_url)
-            matches = parse_cbf_pdf(pdf_bytes, competicao, pdf_url)
-            matches = [m for m in matches if in_window(m, desde, ate, args.incluir_passados)]
+            entry["bytes_baixados"] = len(pdf_bytes)
+            matches_raw = parse_cbf_pdf(pdf_bytes, competicao, pdf_url)
+            entry["jogos_extraidos_total"] = len(matches_raw)
+            matches = [m for m in matches_raw if in_window(m, desde, ate, args.incluir_passados)]
+            entry["jogos_na_janela_de_datas"] = len(matches)
             print(f"[OK] {competicao} -> {len(matches)} jogos | {pdf_url}")
             all_new.extend(matches)
         except Exception as e:
+            entry["erro"] = str(e)
             print(f"[ERRO] Falha ao baixar/processar PDF {pdf_url}: {e}", file=sys.stderr)
+        debug_info.append(entry)
+
+    for competicao, _query in CBF_SEARCH_QUERIES:
+        if not any(d["competicao"] == competicao for d in debug_info):
+            debug_info.append({"competicao": competicao, "pdf_url": None, "erro": "nenhum PDF encontrado (busca nem seed)"})
+
+    (OUT_DIR / "debug_cbf_pdf_discovery.json").write_text(
+        json.dumps(debug_info, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
 
     # Complemento best-effort: federações estaduais (pode retornar 0 se bloquearem bots)
     all_new.extend(parse_extra_html_sources(desde, ate, args.incluir_passados))
