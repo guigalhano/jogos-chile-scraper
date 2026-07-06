@@ -277,11 +277,11 @@ function optionHtml(value) {
   return `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`;
 }
 
-function findStadiumInfo(estadioTexto) {
+function findStadiumInfo(estadioTexto, pais) {
   const txt = normalize(estadioTexto);
   if (!txt) return null;
 
-  const stadiums = window.ESTADIOS_CHILE || [];
+  const stadiums = pais === "Brasil" ? (window.ESTADIOS_BRASIL || []) : (window.ESTADIOS_CHILE || []);
 
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])];
@@ -298,6 +298,15 @@ function findStadiumInfo(estadioTexto) {
   }
 
   return null;
+}
+
+// O scraper do Brasil às vezes só grava a cidade dentro do texto livre
+// "extra" (ex.: "pais=Brasil; cidade=Rio de Janeiro"), em vez de um campo
+// próprio. Extrai isso como último recurso, quando a base de estádios não
+// tiver a cidade.
+function extractCidadeFromExtra(extra) {
+  const m = String(extra || "").match(/cidade\s*=\s*([^;]+)/i);
+  return m ? m[1].trim() : "";
 }
 
 // Fallback: quando o scraper não informa o estádio (comum em jogos em casa
@@ -353,9 +362,10 @@ function derivePais(j) {
 
 function enrichGames(rawGames) {
   return rawGames.map((j, index) => {
-    let stadium = findStadiumInfo(j.estadio || "");
+    const pais = derivePais(j);
+    let stadium = findStadiumInfo(j.estadio || "", pais);
     let estadioFallback = false;
-    if (!stadium && !j.estadio) {
+    if (!stadium && !j.estadio && pais !== "Brasil") {
       stadium = findDefaultHomeStadium(j.mandante);
       estadioFallback = Boolean(stadium);
     }
@@ -364,9 +374,9 @@ function enrichGames(rawGames) {
       _idx: index,
       _stadiumInfo: stadium,
       _estadioFallback: estadioFallback,
-      pais: derivePais(j),
+      pais,
       estadio: j.estadio || (estadioFallback ? stadium.nome : ""),
-      cidade: j.cidade || stadium?.cidade || "",
+      cidade: j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "",
       regiao: j.regiao || stadium?.regiao || "",
       lat: j.lat || stadium?.lat || null,
       lng: j.lng || stadium?.lng || null,

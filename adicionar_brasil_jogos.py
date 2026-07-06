@@ -80,6 +80,8 @@ CBF_SEARCH_QUERIES = [
     ("Brasil - Série B", "CBF \"tabela detalhada\" brasileirão \"série b\" 2026 rodada pdf"),
     ("Brasil - Série C", "CBF \"tabela detalhada\" brasileirão \"série c\" 2026 rodada pdf"),
     ("Brasil - Série D", "CBF \"tabela detalhada\" brasileirão \"série d\" 2026 rodada pdf"),
+    ("Brasil - Copa do Brasil", "CBF \"tabela detalhada\" \"copa do brasil\" 2026 fase pdf"),
+    ("Brasil - Copa do Brasil Feminina", "CBF \"tabela detalhada\" \"copa do brasil feminina\" 2026 pdf"),
 ]
 
 # Fallback manual: como buscadores (DuckDuckGo/Bing) podem bloquear scripts
@@ -91,6 +93,10 @@ CBF_SEARCH_QUERIES = [
 SEED_PDF_URLS = [
     ("Brasil - Série A", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_A_2026_19_a_24_rodada_82505dee72.pdf"),
     ("Brasil - Série B", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileirao_Serie_B_2026_Rodadas_1_a_5_8495da2f30.pdf"),
+    ("Brasil - Série C", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_23_05_d384914c53.pdf"),
+    ("Brasil - Série D", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_1f9d105d94.pdf"),
+    ("Brasil - Copa do Brasil", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_5_Fase_Copa_Betano_do_Brasil_2026_b00e664f6a.pdf"),
+    ("Brasil - Copa do Brasil Feminina", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_0d8d5d0448.pdf"),
 ]
 
 UF_CODES = {
