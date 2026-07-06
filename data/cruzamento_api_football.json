@@ -1,0 +1,293 @@
+{
+  "gerado_em": "2026-07-06T23:32:21",
+  "paises": {
+    "Chile": {
+      "ligas_encontradas": [
+        {
+          "id": 265,
+          "name": "Primera División",
+          "type": "League",
+          "seasons_disponiveis": [
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        }
+      ],
+      "por_liga": [
+        {
+          "liga": "Primera División",
+          "liga_id": 265,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        }
+      ]
+    },
+    "Brasil": {
+      "ligas_encontradas": [
+        {
+          "id": 71,
+          "name": "Serie A",
+          "type": "League",
+          "seasons_disponiveis": [
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        },
+        {
+          "id": 72,
+          "name": "Serie B",
+          "type": "League",
+          "seasons_disponiveis": [
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        },
+        {
+          "id": 73,
+          "name": "Copa Do Brasil",
+          "type": "Cup",
+          "seasons_disponiveis": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        },
+        {
+          "id": 617,
+          "name": "Copa do Brasil U20",
+          "type": "Cup",
+          "seasons_disponiveis": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "season_alvo_disponivel": false
+        },
+        {
+          "id": 632,
+          "name": "Supercopa do Brasil",
+          "type": "Cup",
+          "seasons_disponiveis": [
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        },
+        {
+          "id": 1098,
+          "name": "Paulista Série B",
+          "type": "League",
+          "seasons_disponiveis": [
+            2024,
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        },
+        {
+          "id": 1179,
+          "name": "Copa do Brasil U17",
+          "type": "Cup",
+          "seasons_disponiveis": [
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        }
+      ],
+      "por_liga": [
+        {
+          "liga": "Serie A",
+          "liga_id": 71,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        },
+        {
+          "liga": "Serie B",
+          "liga_id": 72,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        },
+        {
+          "liga": "Copa Do Brasil",
+          "liga_id": 73,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        },
+        {
+          "liga": "Copa do Brasil U20",
+          "liga_id": 617,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        },
+        {
+          "liga": "Supercopa do Brasil",
+          "liga_id": 632,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        },
+        {
+          "liga": "Paulista Série B",
+          "liga_id": 1098,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        },
+        {
+          "liga": "Copa do Brasil U17",
+          "liga_id": 1179,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        }
+      ]
+    },
+    "Argentina": {
+      "ligas_encontradas": [
+        {
+          "id": 128,
+          "name": "Liga Profesional Argentina",
+          "type": "League",
+          "seasons_disponiveis": [
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        },
+        {
+          "id": 130,
+          "name": "Copa Argentina",
+          "type": "Cup",
+          "seasons_disponiveis": [
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "season_alvo_disponivel": true
+        },
+        {
+          "id": 1032,
+          "name": "Copa de la Liga Profesional",
+          "type": "League",
+          "seasons_disponiveis": [
+            2023,
+            2024
+          ],
+          "season_alvo_disponivel": false
+        }
+      ],
+      "por_liga": [
+        {
+          "liga": "Liga Profesional Argentina",
+          "liga_id": 128,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        },
+        {
+          "liga": "Copa Argentina",
+          "liga_id": 130,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        },
+        {
+          "liga": "Copa de la Liga Profesional",
+          "liga_id": 1032,
+          "total_fixtures_api": 0,
+          "confirmados_com_nossos_dados": 0,
+          "apenas_na_api": [],
+          "apenas_na_api_total": 0
+        }
+      ]
+    }
+  }
+}
