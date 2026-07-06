@@ -26,6 +26,9 @@ const I18N = {
     next7: "Próximos 7 dias",
     no_coords: "Jogos sem coordenadas",
     show_all: "Mostrar todos",
+    show_all_team: "Mostrar todos do time",
+    choose_team_first: "Escolha um time primeiro",
+    all_team_active: team => `Mostrando todos os jogos disponíveis de ${team}`,
     all_m: "Todos",
     all_f: "Todas",
     calendar: "Calendário",
@@ -54,8 +57,6 @@ const I18N = {
     championship_fallback: "Competição",
     home_fallback: "Mandante",
     away_fallback: "Visitante",
-    stadium: "Estádio",
-    round: "Rodada",
     see_source: "Ver fonte",
   },
   es: {
@@ -83,6 +84,9 @@ const I18N = {
     next7: "Próximos 7 días",
     no_coords: "Partidos sin coordenadas",
     show_all: "Mostrar todos",
+    show_all_team: "Mostrar todos del equipo",
+    choose_team_first: "Elige un equipo primero",
+    all_team_active: team => `Mostrando todos los partidos disponibles de ${team}`,
     all_m: "Todos",
     all_f: "Todas",
     calendar: "Calendario",
@@ -111,14 +115,13 @@ const I18N = {
     championship_fallback: "Competición",
     home_fallback: "Local",
     away_fallback: "Visitante",
-    stadium: "Estadio",
-    round: "Fecha",
     see_source: "Ver fuente",
   },
 };
 
 let currentLang = localStorage.getItem("jogosChileLang") || "pt";
 let activePeriodDays = null;
+let showAllTeamMode = false;
 
 const els = {
   totalJogos: document.getElementById("totalJogos"),
@@ -134,12 +137,14 @@ const els = {
   hojeBtn: document.getElementById("hojeBtn"),
   proximos3Btn: document.getElementById("proximos3Btn"),
   proximos7Btn: document.getElementById("proximos7Btn"),
+  todosDoTimeBtn: document.getElementById("todosDoTimeBtn"),
   limparBtn: document.getElementById("limparBtn"),
   semMapaBtn: document.getElementById("semMapaBtn"),
   calendario: document.getElementById("calendario"),
   contadorLista: document.getElementById("contadorLista"),
   mapStatus: document.getElementById("mapStatus"),
   periodoAtivo: document.getElementById("periodoAtivo"),
+  timeModoAtivo: document.getElementById("timeModoAtivo"),
   ptBtn: document.getElementById("ptBtn"),
   esBtn: document.getElementById("esBtn"),
 };
@@ -320,6 +325,14 @@ function setupFilters() {
   populateSelect(els.filtroTime, times, t("all_m"));
   populateSelect(els.filtroRegiao, regioes, t("all_f"));
   populateSelect(els.filtroCidade, cidades, t("all_f"));
+  updateTeamButtonState();
+}
+
+function updateTeamButtonState() {
+  const hasTeam = Boolean(els.filtroTime.value);
+  els.todosDoTimeBtn.disabled = !hasTeam;
+  els.todosDoTimeBtn.title = hasTeam ? "" : t("choose_team_first");
+  els.todosDoTimeBtn.classList.toggle("isActive", showAllTeamMode && hasTeam);
 }
 
 function getFilteredGames() {
@@ -335,10 +348,10 @@ function getFilteredGames() {
   let out = jogosEnriquecidos.filter(j => {
     const matchComp = !comp || j.competicao === comp;
     const matchTime = !time || j.mandante === time || j.visitante === time;
-    const matchRegiao = !regiao || j.regiao === regiao;
-    const matchCidade = !cidade || j.cidade === cidade;
-    const matchData = !data || j.data === data;
-    const matchPeriod = !activePeriodDays || (j.data >= start && j.data <= end);
+    const matchRegiao = showAllTeamMode ? true : (!regiao || j.regiao === regiao);
+    const matchCidade = showAllTeamMode ? true : (!cidade || j.cidade === cidade);
+    const matchData = showAllTeamMode ? true : (!data || j.data === data);
+    const matchPeriod = showAllTeamMode ? true : (!activePeriodDays || (j.data >= start && j.data <= end));
     const matchMapa = !semMapaAtivo || !j.temMapa;
 
     const text = normalize([
@@ -378,20 +391,30 @@ function groupedByDate(games) {
   }, {});
 }
 
-function renderPeriodInfo() {
+function renderModeInfo() {
   els.proximos3Btn.classList.toggle("isActive", activePeriodDays === 3);
   els.proximos7Btn.classList.toggle("isActive", activePeriodDays === 7);
 
   if (!activePeriodDays) {
     els.periodoAtivo.hidden = true;
     els.periodoAtivo.textContent = "";
-    return;
+  } else {
+    const label = activePeriodDays === 3 ? t("period3") : t("period7");
+    const range = `${formatShortDate(todayISO())} – ${formatShortDate(addDaysISO(activePeriodDays - 1))}`;
+    els.periodoAtivo.hidden = false;
+    els.periodoAtivo.textContent = `${label}: ${range}`;
   }
 
-  const label = activePeriodDays === 3 ? t("period3") : t("period7");
-  const range = `${formatShortDate(todayISO())} – ${formatShortDate(addDaysISO(activePeriodDays - 1))}`;
-  els.periodoAtivo.hidden = false;
-  els.periodoAtivo.textContent = `${label}: ${range}`;
+  const team = els.filtroTime.value;
+  if (showAllTeamMode && team) {
+    els.timeModoAtivo.hidden = false;
+    els.timeModoAtivo.textContent = t("all_team_active", team);
+  } else {
+    els.timeModoAtivo.hidden = true;
+    els.timeModoAtivo.textContent = "";
+  }
+
+  updateTeamButtonState();
 }
 
 function renderCalendar(games) {
@@ -432,6 +455,7 @@ function renderMatchCard(j) {
         <span>🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}</span>
         <span>📍 ${escapeHtml(j.cidade || t("city_confirm"))} ${j.regiao ? "· " + escapeHtml(j.regiao) : ""}</span>
         <span>🏆 ${escapeHtml(j.rodada || t("round_confirm"))}</span>
+        ${j.extra ? `<span>ℹ️ ${escapeHtml(j.extra)}</span>` : ""}
       </div>
 
       <div class="badges">
@@ -450,6 +474,7 @@ function markerPopup(j) {
       ${escapeHtml(formatDate(j.data))} · ${escapeHtml(j.hora || t("time_confirm"))}<br>
       🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}<br>
       📍 ${escapeHtml(j.cidade || "")}${j.regiao ? " · " + escapeHtml(j.regiao) : ""}<br>
+      ${j.extra ? `ℹ️ ${escapeHtml(j.extra)}<br>` : ""}
       ${j.url ? `<a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("see_source")}</a>` : ""}
     </div>
   `;
@@ -488,7 +513,7 @@ function updateMap(games) {
 }
 
 function renderAll() {
-  renderPeriodInfo();
+  renderModeInfo();
   const filtered = getFilteredGames();
   renderCalendar(filtered);
   updateMap(filtered);
@@ -496,6 +521,7 @@ function renderAll() {
 
 function setPeriod(days) {
   activePeriodDays = activePeriodDays === days ? null : days;
+  showAllTeamMode = false;
   els.filtroData.value = "";
   renderAll();
 }
@@ -509,28 +535,59 @@ function setupEvents() {
     els.busca,
   ].forEach(el => {
     el.addEventListener("input", () => {
-      if (el === els.filtroData && els.filtroData.value) activePeriodDays = null;
+      if (el === els.filtroData && els.filtroData.value) {
+        activePeriodDays = null;
+        showAllTeamMode = false;
+      }
+      if (el === els.filtroTime && !els.filtroTime.value) showAllTeamMode = false;
       renderAll();
     });
     el.addEventListener("change", () => {
-      if (el === els.filtroData && els.filtroData.value) activePeriodDays = null;
+      if (el === els.filtroData && els.filtroData.value) {
+        activePeriodDays = null;
+        showAllTeamMode = false;
+      }
+      if (el === els.filtroTime && !els.filtroTime.value) showAllTeamMode = false;
       renderAll();
     });
   });
 
   els.filtroRegiao.addEventListener("change", () => {
+    showAllTeamMode = false;
     updateDependentCityOptions();
     renderAll();
   });
 
   els.hojeBtn.addEventListener("click", () => {
     activePeriodDays = null;
+    showAllTeamMode = false;
     els.filtroData.value = todayISO();
     renderAll();
   });
 
   els.proximos3Btn.addEventListener("click", () => setPeriod(3));
   els.proximos7Btn.addEventListener("click", () => setPeriod(7));
+
+  els.todosDoTimeBtn.addEventListener("click", () => {
+    if (!els.filtroTime.value) {
+      alert(t("choose_team_first"));
+      return;
+    }
+
+    showAllTeamMode = !showAllTeamMode;
+
+    if (showAllTeamMode) {
+      activePeriodDays = null;
+      els.filtroData.value = "";
+      // Mantém campeonato se o usuário quiser ver só daquele campeonato.
+      // Ignora cidade/região/data/período para listar todos os jogos disponíveis do time.
+      els.filtroRegiao.value = "";
+      els.filtroCidade.value = "";
+      updateDependentCityOptions();
+    }
+
+    renderAll();
+  });
 
   els.limparBtn.addEventListener("click", () => {
     els.filtroCompeticao.value = "";
@@ -540,6 +597,7 @@ function setupEvents() {
     els.filtroData.value = "";
     els.busca.value = "";
     activePeriodDays = null;
+    showAllTeamMode = false;
     semMapaAtivo = false;
     els.semMapaBtn.textContent = t("no_coords");
     setupFilters();
