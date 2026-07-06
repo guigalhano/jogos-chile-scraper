@@ -3,11 +3,25 @@
 """
 Adiciona jogos do Brasil ao mesmo JSON do projeto jogos-chile-scraper.
 
-Fontes iniciais:
-- CBF: https://www.cbf.com.br/
-- FERJ: https://www.fferj.com.br/partidas
-- FMF: https://www.fmf.com.br/
-- FPF: https://www.futebolpaulista.com.br/Home/
+COMO FUNCIONA (v2):
+CBF (Série A/B/C/D) bloqueia scraping direto: robots.txt proíbe crawling das
+páginas de tabelas, e o WAF do site retorna 403 para requests simples (mesmo
+com navegador headless, testado). Só que os PDFs de "Tabela Detalhada" em si
+(hospedados em stcbfsiteprdimgbrs.blob.core.windows.net, um CDN Azure) NÃO
+têm essa proteção quando acessados diretamente.
+
+Então, em vez de abrir a página de tabelas da CBF (bloqueada), este script:
+1. Faz buscas de texto (DuckDuckGo HTML, com fallback Bing HTML) por PDFs de
+   "Tabela Detalhada" da Série A/B/C/D mais recentes -- já que o Google/Bing
+   indexam esses PDFs diretamente.
+2. Baixa o PDF encontrado direto do CDN (sem passar pelo cbf.com.br).
+3. Extrai o texto com pdfplumber e faz o parsing linha a linha no formato
+   conhecido: "REF ROD DATA-DIA HORA MANDANTE UF x VISITANTE UF ESTADIO CIDADE UF [transmissao]"
+
+Mantém, como complemento best-effort, o scraping simples de FERJ/FMF/FPF
+(páginas HTML mais simples, sem robots.txt restritivo conhecido) -- mas isso
+pode continuar retornando 0 jogos se esses sites também bloquearem; isso é
+tratado com try/except e não interrompe o restante do script.
 
 Saídas atualizadas:
 - data/jogos_programados.json
@@ -16,10 +30,6 @@ Saídas atualizadas:
 
 Uso:
     python adicionar_brasil_jogos.py --dias 180 --dias-atras 30
-
-Observação:
-FERJ é a fonte mais confiável nesta primeira versão, pois publica os jogos em texto
-estruturado. CBF/FPF podem depender de JavaScript/API e podem exigir ajustes.
 """
 
 from __future__ import annotations
@@ -30,13 +40,20 @@ import hashlib
 import json
 import re
 import sys
+import unicodedata
 from dataclasses import dataclass, asdict
 from datetime import datetime, date, timedelta
+from io import BytesIO
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, parse_qs, urlparse, unquote
 
 import requests
 from bs4 import BeautifulSoup
+
+try:
+    import pdfplumber
+except Exception:
+    pdfplumber = None
 
 
 OUT_DIR = Path("data")
@@ -50,63 +67,76 @@ HEADERS = {
     "Accept-Language": "pt-BR,pt;q=0.9,es;q=0.8,en;q=0.7",
 }
 
-SOURCES = [
-    ("CBF", "https://www.cbf.com.br/"),
-    ("CBF Série A", "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a"),
-    ("CBF Série B", "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-b"),
-    ("CBF Série C", "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-c"),
-    ("CBF Série D", "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d"),
+# Fontes complementares simples (best-effort; podem falhar sem quebrar o script)
+EXTRA_HTML_SOURCES = [
     ("FERJ", "https://www.fferj.com.br/partidas"),
     ("FMF", "https://www.fmf.com.br/"),
     ("FPF", "https://www.futebolpaulista.com.br/Home/"),
 ]
 
-MESES = {
-    "jan": 1, "janeiro": 1,
-    "fev": 2, "fevereiro": 2,
-    "mar": 3, "março": 3, "marco": 3,
-    "abr": 4, "abril": 4,
-    "mai": 5, "maio": 5,
-    "jun": 6, "junho": 6,
-    "jul": 7, "julho": 7,
-    "ago": 8, "agosto": 8,
-    "set": 9, "setembro": 9,
-    "out": 10, "outubro": 10,
-    "nov": 11, "novembro": 11,
-    "dez": 12, "dezembro": 12,
+# Buscas para localizar os PDFs de Tabela Detalhada mais recentes de cada série.
+CBF_SEARCH_QUERIES = [
+    ("Brasil - Série A", "CBF \"tabela detalhada\" brasileirão \"série a\" 2026 rodada pdf"),
+    ("Brasil - Série B", "CBF \"tabela detalhada\" brasileirão \"série b\" 2026 rodada pdf"),
+    ("Brasil - Série C", "CBF \"tabela detalhada\" brasileirão \"série c\" 2026 rodada pdf"),
+    ("Brasil - Série D", "CBF \"tabela detalhada\" brasileirão \"série d\" 2026 rodada pdf"),
+]
+
+UF_CODES = {
+    "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS",
+    "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
+    "SP", "SE", "TO",
 }
 
-DIAS_SEMANA = "SEG|TER|QUA|QUI|SEX|SAB|SÁB|DOM"
+# Cidades-sede mais comuns do circuito Série A/B/C -- usado para separar
+# "estadio cidade UF" quando o nome do estádio também tem várias palavras.
+CIDADES_BR = sorted([
+    "Rio de Janeiro", "Belo Horizonte", "Porto Alegre", "Presidente Prudente",
+    "Novo Hamburgo", "Bragança Paulista", "São Paulo", "Caxias do Sul",
+    "Juiz de Fora", "Volta Redonda", "Ribeirão Preto", "Santa Maria",
+    "Chapecó", "Curitiba", "Salvador", "Fortaleza", "Recife", "Brasília",
+    "Belém", "Goiânia", "Cuiabá", "Vitória", "Florianópolis", "Mirassol",
+    "Santos", "Sorocaba", "Natal", "Maceió", "Manaus", "Campinas",
+    "Pelotas", "Niterói", "Londrina", "Maringá", "Uberlândia",
+    "João Pessoa", "Teresina", "Aracaju", "Macapá", "Palmas", "Boa Vista",
+    "Porto Velho", "Rio Branco",
+], key=lambda c: -len(c.split()))
 
-# FERJ:
-# SEG 06/07/26 14:45h ESTÁDIO GIULITE COUTINHO (E. EDSON PASSOS) America F.C (RJ) X Bangu A.C Torneio OPG | Sub-20 | Torneio FERJ
-FERJ_RE = re.compile(
-    rf"\b(?:{DIAS_SEMANA})\s+"
-    r"(?P<dia>\d{2})/(?P<mes>\d{2})/(?P<ano>\d{2,4})\s+"
-    r"(?P<hora>\d{1,2}:\d{2})h?\s+"
-    r"(?P<resto>.+?)$",
-    re.I,
+CBF_ROW_RE = re.compile(
+    r"^(?P<ref>\d{2,4})\s+"
+    r"(?:(?P<rod>\d{1,2})ª?\s+)?"
+    r"(?:(?P<dia>\d{2}/\d{2})|A\s?def\.?)\s*"
+    r"(?:(?P<diasem>seg|ter|qua|qui|sex|s[aá]b|dom)\s+)?"
+    r"(?:(?P<hora>\d{2}:\d{2})\s+)?"
+    r"(?P<resto>.+)$",
+    re.IGNORECASE,
 )
+CBF_VS_RE = re.compile(r"\s+[xX]\s+")
+EDICAO_RE = re.compile(r"EDI[ÇC][ÃA]O\s+(\d{4})", re.IGNORECASE)
 
-# Genérico:
-# 06/07/2026 14:45 Time A X Time B Competição
-GENERIC_NUMERIC_RE = re.compile(
-    r"\b(?P<dia>\d{1,2})[/-](?P<mes>\d{1,2})[/-](?P<ano>\d{2,4})\s+"
-    r"(?P<hora>\d{1,2}:\d{2})h?\s+"
-    r"(?P<resto>.+?)$",
-    re.I,
-)
-
-# Ex.: 6 jul 2026 14:45 Time A x Time B
+DATE_RE = re.compile(r"\b(?P<dia>\d{1,2})[/-](?P<mes>\d{1,2})[/-](?P<ano>\d{2,4})\b")
+TIME_RE = re.compile(r"\b(?P<hora>\d{1,2}:\d{2})h?\b")
 GENERIC_TEXT_MONTH_RE = re.compile(
     r"\b(?P<dia>\d{1,2})\s+"
     r"(?P<mes_txt>jan|janeiro|fev|fevereiro|mar|março|marco|abr|abril|mai|maio|jun|junho|jul|julho|ago|agosto|set|setembro|out|outubro|nov|novembro|dez|dezembro)\.?\s+"
     r"(?P<ano>\d{2,4})\s+"
     r"(?P<hora>\d{1,2}:\d{2})h?\s+"
     r"(?P<resto>.+?)$",
-    re.I,
+    re.IGNORECASE,
 )
-
+MESES = {
+    "jan": 1, "janeiro": 1, "fev": 2, "fevereiro": 2, "mar": 3, "março": 3, "marco": 3,
+    "abr": 4, "abril": 4, "mai": 5, "maio": 5, "jun": 6, "junho": 6, "jul": 7, "julho": 7,
+    "ago": 8, "agosto": 8, "set": 9, "setembro": 9, "out": 10, "outubro": 10,
+    "nov": 11, "novembro": 11, "dez": 12, "dezembro": 12,
+}
+DIAS_SEMANA = "SEG|TER|QUA|QUI|SEX|SAB|SÁB|DOM"
+GENERIC_NUMERIC_RE = re.compile(
+    r"\b(?P<dia>\d{1,2})[/-](?P<mes>\d{1,2})[/-](?P<ano>\d{2,4})\s+"
+    r"(?P<hora>\d{1,2}:\d{2})h?\s+"
+    r"(?P<resto>.+?)$",
+    re.IGNORECASE,
+)
 VS_RE = re.compile(r"\s+(?:X|x|vs\.?|v/s)\s+")
 PLACAR_RE = re.compile(r"\b\d+\s*[-xX]\s*\d+\b")
 
@@ -140,342 +170,20 @@ class Partido:
 
 
 def clean_text(value: str) -> str:
-    value = re.sub(r"\s+", " ", value or "").strip()
+    value = re.sub(r"\s+", " ", str(value or "")).strip()
     value = re.sub(r"^Image:\s*", "", value, flags=re.I).strip()
     return value
 
 
 def norm(value: str) -> str:
-    import unicodedata
-    value = unicodedata.normalize("NFD", value or "")
+    value = unicodedata.normalize("NFD", str(value or ""))
     value = "".join(c for c in value if unicodedata.category(c) != "Mn")
     return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
 
 
 def parse_year(y: str) -> int:
     n = int(y)
-    if n < 100:
-        return 2000 + n
-    return n
-
-
-_PLAYWRIGHT = None
-_BROWSER = None
-_CONTEXT = None
-
-
-def _get_context():
-    """Lazily launches a single shared Chromium browser+context for the whole run."""
-    global _PLAYWRIGHT, _BROWSER, _CONTEXT
-    if _CONTEXT is None:
-        from playwright.sync_api import sync_playwright
-        _PLAYWRIGHT = sync_playwright().start()
-        _BROWSER = _PLAYWRIGHT.chromium.launch(
-            args=["--disable-blink-features=AutomationControlled"]
-        )
-        _CONTEXT = _BROWSER.new_context(
-            user_agent=HEADERS["User-Agent"],
-            locale="pt-BR",
-            extra_http_headers={"Accept-Language": HEADERS["Accept-Language"]},
-        )
-    return _CONTEXT
-
-
-def close_browser() -> None:
-    global _PLAYWRIGHT, _BROWSER, _CONTEXT
-    if _CONTEXT is not None:
-        try:
-            _CONTEXT.close()
-        except Exception:
-            pass
-    if _BROWSER is not None:
-        try:
-            _BROWSER.close()
-        except Exception:
-            pass
-    if _PLAYWRIGHT is not None:
-        try:
-            _PLAYWRIGHT.stop()
-        except Exception:
-            pass
-    _CONTEXT = None
-    _BROWSER = None
-    _PLAYWRIGHT = None
-
-
-def fetch(url: str) -> str:
-    """
-    Busca o HTML da página usando um navegador real (Playwright/Chromium).
-
-    Isso é necessário porque:
-    1. Sites como CBF, FERJ, FMF e FPF bloqueiam requisições simples (requests)
-       com 403, provavelmente por proteção anti-bot / fingerprint de TLS.
-    2. Algumas páginas renderizam o conteúdo via JavaScript no lado do cliente,
-       então o HTML "cru" (sem executar JS) não contém os jogos.
-
-    Um navegador real headless resolve os dois problemas ao mesmo tempo.
-    Se o Playwright não estiver disponível por algum motivo, cai de volta
-    para requests simples (mantém compatibilidade).
-
-    Timeouts são propositalmente curtos (15s/3s) porque este método é chamado
-    para dezenas de URLs em sequência dentro de um único job do GitHub Actions;
-    esperas longas por página aqui multiplicam rapidamente o tempo total.
-    """
-    try:
-        context = _get_context()
-        page = context.new_page()
-        try:
-            page.goto(url, timeout=15000, wait_until="domcontentloaded")
-            try:
-                page.wait_for_load_state("networkidle", timeout=3000)
-            except Exception:
-                pass
-            html = page.content()
-        finally:
-            page.close()
-        return html
-    except Exception as e:
-        print(f"[WARN] Playwright falhou para {url} ({e}); tentando requests simples", file=sys.stderr)
-        r = requests.get(url, headers=HEADERS, timeout=20)
-        r.raise_for_status()
-        return r.text
-
-
-def get_lines(html: str) -> list[str]:
-    soup = BeautifulSoup(html, "html.parser")
-    for tag in soup(["script", "style", "noscript", "svg"]):
-        tag.decompose()
-    lines = []
-    for raw in soup.get_text("\n").splitlines():
-        line = clean_text(raw)
-        if not line:
-            continue
-        if line in {"*", "* * *", "Home", "Contato"}:
-            continue
-        lines.append(line)
-    return lines
-
-
-def discover_links(html: str, base_url: str, fonte: str) -> list[str]:
-    """
-    Descobre links internos que podem ter jogos/tabelas.
-    Mantém limitado para não raspar o site inteiro.
-    """
-    soup = BeautifulSoup(html, "html.parser")
-    out = {base_url}
-    wanted = [
-        "partida", "partidas", "jogos", "tabela", "tabelas",
-        "campeonato", "competicao", "competi", "placar"
-    ]
-    for a in soup.find_all("a", href=True):
-        text = clean_text(a.get_text(" ", strip=True)).lower()
-        href = urljoin(base_url, a["href"]).split("#")[0]
-        low = href.lower() + " " + text
-        if any(w in low for w in wanted):
-            if any(domain in href for domain in ["cbf.com.br", "fferj.com.br", "fmf.com.br", "futebolpaulista.com.br"]):
-                out.add(href)
-    return sorted(out)[:6]
-
-
-def looks_like_stadium(txt: str) -> bool:
-    t = norm(txt)
-    markers = [
-        "estadio", "arena", "campo", "ct ", "centro de treinamento",
-        "maracana", "engenhao", "moça bonita", "moca bonita",
-        "luso brasileiro", "giulite coutinho", "nivaldo pereira",
-        "municipal", "parque", "independencia", "mineirao", "allianz",
-        "morumbi", "neo quimica", "pacaembu", "caninde", "brinco de ouro",
-        "vila belmiro", "couto pereira", "beira rio", "ressacada"
-    ]
-    return any(m in t for m in markers)
-
-
-def infer_competicao(resto: str, fonte: str) -> str:
-    low = resto.lower()
-    if "brasileiro" in low or "série" in low or "serie" in low:
-        if "série a" in low or "serie a" in low:
-            return "Brasil - Série A"
-        if "série b" in low or "serie b" in low:
-            return "Brasil - Série B"
-        if "série c" in low or "serie c" in low:
-            return "Brasil - Série C"
-        if "série d" in low or "serie d" in low:
-            return "Brasil - Série D"
-        return "Brasil - CBF"
-    if "copa do brasil" in low:
-        return "Brasil - Copa do Brasil"
-    if "copa rio" in low:
-        return "Brasil - Copa Rio"
-    if "carioca" in low or "ferj" in low or "estadual" in low:
-        return "Brasil - FERJ"
-    if "mineiro" in low or "fmf" in low or "módulo" in low or "modulo" in low:
-        return "Brasil - FMF"
-    if "paulista" in low or "paulistão" in low or "paulistao" in low or "fpf" in low:
-        return "Brasil - FPF"
-    return f"Brasil - {fonte}"
-
-
-def split_match_parts(resto: str) -> tuple[str, str, str, str]:
-    """
-    Retorna mandante, visitante, estadio, competicao_txt.
-    Tenta lidar com:
-    - ESTÁDIO ... Time A X Time B Competição
-    - Time A X Time B Competição
-    """
-    resto = clean_text(resto)
-    estadio = ""
-
-    # Se começa por ESTÁDIO/ARENA/CAMPO, o estádio vem antes dos times.
-    if re.match(r"^(ESTÁDIO|ESTADIO|ARENA|CAMPO|CT)\b", resto, flags=re.I):
-        # corta o estádio antes do primeiro padrão com X.
-        parts = VS_RE.split(resto, maxsplit=1)
-        if len(parts) == 2:
-            before_x = parts[0]
-            after_x = parts[1]
-
-            # No "before_x", o mandante é o trecho final após o estádio.
-            tokens = before_x.split()
-            # Heurística: times costumam começar depois de parêntese final ou após palavras de estádio.
-            # Tentamos procurar clubes comuns, mas mantendo flexível.
-            possible_markers = [
-                " America ", " Bangu ", " Vasco ", " Flamengo ", " Fluminense ", " Botafogo ",
-                " Campos ", " Rio ", " Boavista ", " Nova ", " Maricá ", " Marica ",
-                " Portuguesa ", " Paduano ", " Friburguense ", " Cobreloa "
-            ]
-            idx = None
-            padded = " " + before_x + " "
-            for mk in possible_markers:
-                pos = padded.find(mk)
-                if pos >= 0:
-                    idx = max(0, pos - 1)
-                    break
-            if idx is None:
-                # fallback: se tem ")", divide depois do último ")"
-                pos = before_x.rfind(")")
-                if pos > 0 and pos + 1 < len(before_x):
-                    estadio = before_x[:pos + 1].strip()
-                    mandante = before_x[pos + 1:].strip()
-                else:
-                    # fallback bruto: metade inicial estádio, 4 últimas palavras mandante
-                    words = before_x.split()
-                    mandante = " ".join(words[-4:]).strip()
-                    estadio = " ".join(words[:-4]).strip()
-            else:
-                estadio = before_x[:idx].strip()
-                mandante = before_x[idx:].strip()
-
-            visitante, comp = split_visitante_comp(after_x)
-            return mandante, visitante, estadio, comp
-
-    parts = VS_RE.split(resto, maxsplit=1)
-    if len(parts) != 2:
-        return "", "", "", ""
-
-    mandante = clean_text(parts[0])
-    visitante, comp = split_visitante_comp(parts[1])
-    return mandante, visitante, estadio, comp
-
-
-def split_visitante_comp(txt: str) -> tuple[str, str]:
-    txt = clean_text(txt)
-
-    # Divide visitante e competição por palavras-chave frequentes.
-    keys = [
-        " BRASILEIRO ", " COPA DO BRASIL ", " COPA RIO ", " Estadual ",
-        " Torneio ", " Amador ", " Paulista ", " Carioca ", " Mineiro ",
-        " Sub-20 ", " Sub-17 ", " Sub-16 ", " Sub-15 ", " Profissional ",
-        " CBF ", " FERJ ", " FMF ", " FPF "
-    ]
-
-    padded = " " + txt + " "
-    best = None
-    for key in keys:
-        pos = padded.lower().find(key.lower())
-        if pos > 0:
-            if best is None or pos < best:
-                best = pos
-
-    if best is not None:
-        visitante = txt[:best].strip()
-        comp = txt[best:].strip()
-        return visitante, comp
-
-    # fallback: visitante até 5 palavras, resto competição
-    words = txt.split()
-    if len(words) > 6:
-        return " ".join(words[:5]).strip(), " ".join(words[5:]).strip()
-    return txt, ""
-
-
-def parse_line(line: str, fonte: str, url: str, today: date) -> Partido | None:
-    m = FERJ_RE.search(line) or GENERIC_NUMERIC_RE.search(line)
-    if m:
-        dt = date(parse_year(m.group("ano")), int(m.group("mes")), int(m.group("dia")))
-        hora = m.group("hora")
-        resto = m.group("resto")
-    else:
-        m2 = GENERIC_TEXT_MONTH_RE.search(line)
-        if not m2:
-            return None
-        dt = date(parse_year(m2.group("ano")), MESES[norm(m2.group("mes_txt"))], int(m2.group("dia")))
-        hora = m2.group("hora")
-        resto = m2.group("resto")
-
-    if PLACAR_RE.search(resto):
-        # mantém, mas marca placar em extra
-        placar = PLACAR_RE.search(resto).group(0)
-        resto = PLACAR_RE.sub(" X ", resto, count=1)
-    else:
-        placar = ""
-
-    mandante, visitante, estadio, comp_txt = split_match_parts(resto)
-    if not mandante or not visitante:
-        return None
-
-    if len(mandante) > 80 or len(visitante) > 80:
-        return None
-
-    competicao = infer_competicao(comp_txt or resto, fonte)
-    extra_parts = []
-    if comp_txt:
-        extra_parts.append(f"competicao_original={comp_txt}")
-    if placar:
-        extra_parts.append(f"placar={placar}")
-    if fonte:
-        extra_parts.append(f"pais=Brasil")
-
-    return Partido(
-        fonte=f"{fonte}",
-        competicao=competicao,
-        data=dt.isoformat(),
-        hora=hora,
-        mandante=mandante,
-        visitante=visitante,
-        estadio=estadio,
-        rodada="",
-        url=url,
-        extra="; ".join(extra_parts),
-    )
-
-
-def in_window(dt: date, desde: date, ate: date, incluir_passados: bool) -> bool:
-    return incluir_passados or (desde <= dt <= ate)
-
-
-def parse_html_for_matches(fonte: str, url: str, html: str, desde: date, ate: date, incluir_passados: bool) -> list[Partido]:
-    lines = get_lines(html)
-    out = []
-    for line in lines:
-        p = parse_line(line, fonte, url, date.today())
-        if not p:
-            continue
-        dt = date.fromisoformat(p.data)
-        if not in_window(dt, desde, ate, incluir_passados):
-            continue
-        if norm(p.mandante) == norm(p.visitante):
-            continue
-        out.append(p)
-    return dedupe(out)
+    return 2000 + n if n < 100 else n
 
 
 def dedupe(rows: list[Partido]) -> list[Partido]:
@@ -510,14 +218,9 @@ def row_id(row: dict) -> str:
     if row.get("id"):
         return row["id"]
     raw = "|".join([
-        row.get("fonte", ""),
-        row.get("competicao", ""),
-        row.get("data", ""),
-        row.get("hora", ""),
-        row.get("mandante", ""),
-        row.get("visitante", ""),
-        row.get("estadio", ""),
-        row.get("rodada", ""),
+        row.get("fonte", ""), row.get("competicao", ""), row.get("data", ""),
+        row.get("hora", ""), row.get("mandante", ""), row.get("visitante", ""),
+        row.get("estadio", ""), row.get("rodada", ""),
     ])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -548,74 +251,414 @@ def write_csv(path: Path, rows: list[dict]) -> None:
             w.writerow({k: r.get(k, "") for k in fields})
 
 
+# --------------------------------------------------------------------------
+# Busca por PDFs de Tabela Detalhada (DuckDuckGo HTML, com fallback Bing)
+# --------------------------------------------------------------------------
+
+def _extract_ddg_redirect(href: str) -> str:
+    """DuckDuckGo's HTML endpoint wraps result links as //duckduckgo.com/l/?uddg=<encoded>."""
+    if "uddg=" in href:
+        try:
+            qs = parse_qs(urlparse(href).query)
+            if "uddg" in qs:
+                return unquote(qs["uddg"][0])
+        except Exception:
+            pass
+    return href
+
+
+def search_web(query: str, max_results: int = 15) -> list[str]:
+    """Retorna uma lista de URLs de resultados de busca. Tenta DuckDuckGo HTML
+    primeiro, cai para Bing HTML se a primeira falhar ou não retornar nada."""
+    urls: list[str] = []
+
+    try:
+        r = requests.get(
+            "https://html.duckduckgo.com/html/",
+            params={"q": query},
+            headers=HEADERS,
+            timeout=20,
+        )
+        r.raise_for_status()
+        soup = BeautifulSoup(r.text, "html.parser")
+        for a in soup.select("a.result__a, a.result__url"):
+            href = a.get("href", "")
+            target = _extract_ddg_redirect(href)
+            if target:
+                urls.append(target)
+    except Exception as e:
+        print(f"[WARN] Busca DuckDuckGo falhou para '{query}': {e}", file=sys.stderr)
+
+    if not urls:
+        try:
+            r = requests.get(
+                "https://www.bing.com/search",
+                params={"q": query},
+                headers=HEADERS,
+                timeout=20,
+            )
+            r.raise_for_status()
+            soup = BeautifulSoup(r.text, "html.parser")
+            for li in soup.select("li.b_algo h2 a"):
+                href = li.get("href", "")
+                if href:
+                    urls.append(href)
+        except Exception as e:
+            print(f"[WARN] Busca Bing falhou para '{query}': {e}", file=sys.stderr)
+
+    return urls[:max_results]
+
+
+def find_cbf_pdf_urls() -> list[tuple[str, str]]:
+    """Retorna lista de (competicao_label, pdf_url) para as tabelas detalhadas
+    mais recentes encontradas via busca de texto (não via crawling do site da CBF)."""
+    found: list[tuple[str, str]] = []
+    for competicao, query in CBF_SEARCH_QUERIES:
+        try:
+            results = search_web(query)
+        except Exception as e:
+            print(f"[WARN] Busca falhou para {competicao}: {e}", file=sys.stderr)
+            continue
+
+        pdf_candidates = [
+            u for u in results
+            if u.lower().endswith(".pdf") and "tabela" in u.lower() and "detalhada" in u.lower()
+        ]
+        if not pdf_candidates:
+            # aceita qualquer pdf do CDN conhecido da CBF, mesmo sem "detalhada" no nome do arquivo
+            pdf_candidates = [
+                u for u in results
+                if u.lower().endswith(".pdf") and "blob.core.windows.net" in u.lower()
+            ]
+
+        if pdf_candidates:
+            found.append((competicao, pdf_candidates[0]))
+            print(f"[OK] PDF encontrado para {competicao}: {pdf_candidates[0]}")
+        else:
+            print(f"[WARN] Nenhum PDF encontrado via busca para {competicao}", file=sys.stderr)
+
+    return found
+
+
+def fetch_bytes(url: str) -> bytes:
+    r = requests.get(url, headers=HEADERS, timeout=60)
+    r.raise_for_status()
+    return r.content
+
+
+# --------------------------------------------------------------------------
+# Parsing do PDF "Tabela Detalhada" da CBF
+# --------------------------------------------------------------------------
+
+def strip_trailing_tv_codes(tokens: list[str]) -> list[str]:
+    while tokens and tokens[-1].isdigit():
+        tokens.pop()
+    return tokens
+
+
+def split_team_uf(tokens: list[str]) -> tuple[str, str]:
+    if len(tokens) >= 2 and tokens[-1] in UF_CODES:
+        return " ".join(tokens[:-1]), tokens[-1]
+    return " ".join(tokens), ""
+
+
+def split_estadio_cidade_uf(tail_text: str) -> tuple[str, str, str]:
+    tokens = tail_text.split()
+    tokens = strip_trailing_tv_codes(tokens)
+    if not tokens:
+        return "", "", ""
+    uf = ""
+    if tokens[-1] in UF_CODES:
+        uf = tokens.pop()
+    remainder = " ".join(tokens)
+
+    for cidade in CIDADES_BR:
+        if remainder == cidade or remainder.endswith(" " + cidade):
+            estadio = remainder[: -len(cidade)].strip()
+            return estadio, cidade, uf
+
+    if len(tokens) >= 2:
+        cidade = " ".join(tokens[-2:])
+        estadio = " ".join(tokens[:-2])
+        return estadio, cidade, uf
+    return remainder, "", uf
+
+
+def parse_cbf_line(line: str, year: int, last_rod: list[str]) -> dict | None:
+    m = CBF_ROW_RE.match(line.strip())
+    if not m:
+        return None
+
+    resto = m.group("resto")
+    parts = CBF_VS_RE.split(resto, maxsplit=1)
+    if len(parts) != 2:
+        return None
+
+    left, right = parts
+    mandante, mandante_uf = split_team_uf(left.split())
+    if not mandante:
+        return None
+
+    right_tokens = right.split()
+    visitante_tokens = []
+    uf_idx = None
+    for i, tok in enumerate(right_tokens):
+        visitante_tokens.append(tok)
+        if tok in UF_CODES:
+            uf_idx = i
+            break
+    if uf_idx is None:
+        return None
+    visitante = " ".join(visitante_tokens[:-1])
+    visitante_uf = visitante_tokens[-1]
+    if not visitante:
+        return None
+
+    tail = " ".join(right_tokens[uf_idx + 1:])
+    if norm(tail).startswith("a definir") or not tail.strip():
+        estadio, cidade = "A definir", ""
+    else:
+        estadio, cidade, _uf2 = split_estadio_cidade_uf(tail)
+
+    rod = m.group("rod")
+    if rod:
+        last_rod[0] = rod
+    rodada = f"Rodada {last_rod[0]}" if last_rod[0] else ""
+
+    dia_mes = m.group("dia")
+    data_iso = ""
+    if dia_mes:
+        try:
+            dd, mm = dia_mes.split("/")
+            data_iso = date(year, int(mm), int(dd)).isoformat()
+        except Exception:
+            data_iso = ""
+
+    return {
+        "data": data_iso,
+        "hora": m.group("hora") or "",
+        "mandante": f"{mandante} ({mandante_uf})" if mandante_uf else mandante,
+        "visitante": f"{visitante} ({visitante_uf})" if visitante_uf else visitante,
+        "estadio": estadio,
+        "cidade": cidade,
+        "rodada": rodada,
+    }
+
+
+def parse_cbf_pdf(pdf_bytes: bytes, competicao: str, pdf_url: str) -> list[Partido]:
+    if pdfplumber is None:
+        print("[ERRO] pdfplumber não instalado. Adicione pdfplumber ao requirements.txt", file=sys.stderr)
+        return []
+
+    out: list[Partido] = []
+    last_rod = [""]
+
+    try:
+        with pdfplumber.open(BytesIO(pdf_bytes)) as pdf:
+            full_text_parts = []
+            for page in pdf.pages:
+                try:
+                    text = page.extract_text(x_tolerance=1, y_tolerance=3) or ""
+                except Exception:
+                    text = ""
+                full_text_parts.append(text)
+
+            full_text = "\n".join(full_text_parts)
+            year_match = EDICAO_RE.search(full_text)
+            year = int(year_match.group(1)) if year_match else date.today().year
+
+            for line in full_text.splitlines():
+                row = parse_cbf_line(line, year, last_rod)
+                if not row:
+                    continue
+                out.append(Partido(
+                    fonte="CBF",
+                    competicao=competicao,
+                    data=row["data"],
+                    hora=row["hora"],
+                    mandante=row["mandante"],
+                    visitante=row["visitante"],
+                    estadio=row["estadio"],
+                    rodada=row["rodada"],
+                    url=pdf_url,
+                    extra=f"pais=Brasil; cidade={row['cidade']}" if row["cidade"] else "pais=Brasil",
+                ))
+    except Exception as e:
+        print(f"[WARN] Erro lendo PDF {pdf_url}: {e}", file=sys.stderr)
+
+    return dedupe(out)
+
+
+# --------------------------------------------------------------------------
+# Fallback simples para federações estaduais (best-effort)
+# --------------------------------------------------------------------------
+
+FERJ_RE = re.compile(
+    rf"\b(?:{DIAS_SEMANA})\s+"
+    r"(?P<dia>\d{2})/(?P<mes>\d{2})/(?P<ano>\d{2,4})\s+"
+    r"(?P<hora>\d{1,2}:\d{2})h?\s+"
+    r"(?P<resto>.+?)$",
+    re.IGNORECASE,
+)
+
+
+def get_lines(html: str) -> list[str]:
+    soup = BeautifulSoup(html, "html.parser")
+    for tag in soup(["script", "style", "noscript", "svg"]):
+        tag.decompose()
+    lines = []
+    for raw in soup.get_text("\n").splitlines():
+        line = clean_text(raw)
+        if not line or line in {"*", "* * *", "Home", "Contato"}:
+            continue
+        lines.append(line)
+    return lines
+
+
+def infer_competicao_estadual(resto: str, fonte: str) -> str:
+    low = resto.lower()
+    if "carioca" in low or "ferj" in low:
+        return "Brasil - FERJ"
+    if "mineiro" in low or "fmf" in low:
+        return "Brasil - FMF"
+    if "paulista" in low or "fpf" in low:
+        return "Brasil - FPF"
+    return f"Brasil - {fonte}"
+
+
+def split_visitante_comp(txt: str) -> tuple[str, str]:
+    words = txt.split()
+    if len(words) <= 3:
+        return clean_text(txt), ""
+    return " ".join(words[:3]), " ".join(words[3:])
+
+
+def parse_estadual_line(line: str, fonte: str) -> Partido | None:
+    m = FERJ_RE.search(line) or GENERIC_NUMERIC_RE.search(line) or GENERIC_TEXT_MONTH_RE.search(line)
+    if not m:
+        return None
+    gd = m.groupdict()
+    try:
+        if "mes_txt" in gd and gd.get("mes_txt"):
+            dt = date(parse_year(gd["ano"]), MESES[norm(gd["mes_txt"])], int(gd["dia"]))
+        else:
+            dt = date(parse_year(gd["ano"]), int(gd["mes"]), int(gd["dia"]))
+    except Exception:
+        return None
+
+    hora = gd.get("hora", "")
+    resto = gd.get("resto", "")
+    placar = ""
+    if PLACAR_RE.search(resto):
+        placar = PLACAR_RE.search(resto).group(0)
+        resto = PLACAR_RE.sub(" X ", resto, count=1)
+
+    parts = VS_RE.split(resto, maxsplit=1)
+    if len(parts) != 2:
+        return None
+    mandante = clean_text(parts[0])
+    visitante, comp_txt = split_visitante_comp(parts[1])
+    if not mandante or not visitante or len(mandante) > 80 or len(visitante) > 80:
+        return None
+
+    extra_parts = ["pais=Brasil"]
+    if placar:
+        extra_parts.append(f"placar={placar}")
+
+    return Partido(
+        fonte=fonte,
+        competicao=infer_competicao_estadual(comp_txt or resto, fonte),
+        data=dt.isoformat(),
+        hora=hora,
+        mandante=mandante,
+        visitante=visitante,
+        estadio="",
+        rodada="",
+        url="",
+        extra="; ".join(extra_parts),
+    )
+
+
+def parse_extra_html_sources(desde: date, ate: date, incluir_passados: bool) -> list[Partido]:
+    out = []
+    for fonte, url in EXTRA_HTML_SOURCES:
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=30)
+            r.raise_for_status()
+            count = 0
+            for line in get_lines(r.text):
+                p = parse_estadual_line(line, fonte)
+                if not p:
+                    continue
+                try:
+                    dt = date.fromisoformat(p.data)
+                except Exception:
+                    continue
+                if incluir_passados or (desde <= dt <= ate):
+                    out.append(p)
+                    count += 1
+            print(f"[OK] {fonte} HTML -> {count} jogos")
+        except Exception as e:
+            print(f"[WARN] Fonte HTML {fonte} falhou (esperado se o site bloquear bots): {e}", file=sys.stderr)
+    return dedupe(out)
+
+
+def in_window(p: Partido, desde: date, ate: date, incluir_passados: bool) -> bool:
+    if not p.data:
+        return True  # jogos "a definir" ficam, o front-end já trata isso
+    try:
+        dt = date.fromisoformat(p.data)
+    except Exception:
+        return False
+    return incluir_passados or (desde <= dt <= ate)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dias", type=int, default=180)
     parser.add_argument("--dias-atras", type=int, default=30)
     parser.add_argument("--incluir-passados", action="store_true")
-    parser.add_argument("--no-discover", action="store_true", help="não descobre links internos")
     args = parser.parse_args()
 
     today = date.today()
     desde = today - timedelta(days=args.dias_atras)
     ate = today + timedelta(days=args.dias)
 
-    urls = []
-    for fonte, url in SOURCES:
-        urls.append((fonte, url))
-        if args.no_discover:
-            continue
+    all_new: list[Partido] = []
+
+    print("[INFO] Buscando PDFs de Tabela Detalhada da CBF via busca de texto...")
+    pdf_targets = find_cbf_pdf_urls()
+    print(f"[INFO] PDFs encontrados: {len(pdf_targets)}")
+
+    for competicao, pdf_url in pdf_targets:
         try:
-            html = fetch(url)
-            for found in discover_links(html, url, fonte):
-                urls.append((fonte, found))
+            pdf_bytes = fetch_bytes(pdf_url)
+            matches = parse_cbf_pdf(pdf_bytes, competicao, pdf_url)
+            matches = [m for m in matches if in_window(m, desde, ate, args.incluir_passados)]
+            print(f"[OK] {competicao} -> {len(matches)} jogos | {pdf_url}")
+            all_new.extend(matches)
         except Exception as e:
-            print(f"[WARN] discover falhou {fonte} {url}: {e}", file=sys.stderr)
+            print(f"[ERRO] Falha ao baixar/processar PDF {pdf_url}: {e}", file=sys.stderr)
 
-    # Dedup
-    seen = set()
-    urls_clean = []
-    for fonte, url in urls:
-        key = (fonte, url)
-        if key in seen:
-            continue
-        seen.add(key)
-        urls_clean.append((fonte, url))
+    # Complemento best-effort: federações estaduais (pode retornar 0 se bloquearem bots)
+    all_new.extend(parse_extra_html_sources(desde, ate, args.incluir_passados))
 
-    print(f"[INFO] URLs Brasil: {len(urls_clean)}")
-
-    MAX_URLS = 40
-    if len(urls_clean) > MAX_URLS:
-        print(f"[WARN] Limitando de {len(urls_clean)} para {MAX_URLS} URLs para não estourar o tempo do job", file=sys.stderr)
-        urls_clean = urls_clean[:MAX_URLS]
-
-    all_new = []
-    try:
-        for fonte, url in urls_clean:
-            try:
-                html = fetch(url)
-                matches = parse_html_for_matches(fonte, url, html, desde, ate, args.incluir_passados)
-                print(f"[OK] {fonte} -> {len(matches)} jogos | {url}")
-                all_new.extend([m.to_row() for m in matches])
-            except Exception as e:
-                print(f"[ERRO] {fonte} {url}: {e}", file=sys.stderr)
-    finally:
-        close_browser()
+    rows_new = [m.to_row() for m in dedupe(all_new)]
 
     current_json = OUT_DIR / "jogos_programados.json"
     current_csv = OUT_DIR / "jogos_programados.csv"
     history_csv = OUT_DIR / "historico_jogos.csv"
 
     current_existing = load_json_rows(current_json)
-    merged_current = merge_rows(current_existing, all_new)
+    merged_current = merge_rows(current_existing, rows_new)
     current_json.write_text(json.dumps(merged_current, ensure_ascii=False, indent=2), encoding="utf-8")
     write_csv(current_csv, merged_current)
 
     history_existing = load_csv_rows(history_csv)
-    merged_history = merge_rows(history_existing, all_new)
+    merged_history = merge_rows(history_existing, rows_new)
     write_csv(history_csv, merged_history)
 
-    print(f"\nBrasil adicionados/atualizados: {len(all_new)}")
+    print(f"\nBrasil adicionados/atualizados: {len(rows_new)}")
     print(f"Total JSON atual: {len(merged_current)}")
 
 
