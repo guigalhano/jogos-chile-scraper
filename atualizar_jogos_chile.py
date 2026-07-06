@@ -1,28 +1,28 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Atualiza diariamente jogos programados do futebol chileno:
+Scraper atualizado para jogos programados do futebol chileno.
+
+Fontes:
 - campeonatochileno.cl
 - anfaterceradivision.cl
+
+Agora inclui, entre outras:
+- segunda-la-liga-2d
+- campeonato-femenino
+- copa-de-la-liga
+- ascenso-femenino
 
 Saídas:
 - data/jogos_programados.csv
 - data/jogos_programados.json
 - data/historico_jogos.csv
 
-Instalação:
-    pip install -r requirements.txt
-
 Uso:
-    python atualizar_jogos_chile.py --once
-    python atualizar_jogos_chile.py --once --dias 30
+    python atualizar_jogos_chile.py --once --dias 90
 
-Agendamento diário no Windows:
-    criar_tarefa_windows.bat
-
-Observação:
-Este scraper usa HTML público. Se os sites alterarem layout/classes, o fallback por texto
-continua tentando extrair partidas, mas pode ser necessário ajustar os seletores.
+Para pegar todo o ano, use:
+    python atualizar_jogos_chile.py --once --dias 365
 """
 
 from __future__ import annotations
@@ -60,14 +60,18 @@ MONTHS_ES = {
     "noviembre": 11, "diciembre": 12,
 }
 
-# Ajuste aqui se quiser incluir/remover competições do campeonatochileno.cl
+# URLs fixas importantes. O script também tenta descobrir outras ligas automaticamente.
 CAMPEONATO_CHILENO_URLS = [
     "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "https://www.campeonatochileno.cl/ligas/liga-segunda-division/",
+    "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
     "https://www.campeonatochileno.cl/ligas/copa-chile-coca-cola-zero-azucar/",
     "https://www.campeonatochileno.cl/ligas/copa-de-la-liga/",
+    "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
+    "https://www.campeonatochileno.cl/ligas/ascenso-femenino/",
 ]
+
+CAMPEONATO_HOME = "https://www.campeonatochileno.cl/"
 
 ANFA_URLS = [
     "https://anfaterceradivision.cl/",
@@ -79,13 +83,16 @@ DATE_ES_RE = re.compile(
     r"(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|setiembre|octubre|noviembre|diciembre)\b",
     re.I,
 )
-DATE_NUM_RE = re.compile(r"\b(\d{1,2})[/-](\d{1,2})[/-](\d{2,4})\b")
 ANFA_DATE_RE = re.compile(r"\b(\d{1,2})\s+(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|OCT|NOV|DIC)\s+(\d{4})\b", re.I)
-SCORE_RE = re.compile(r"^\d+\s*[-–]\s*\d+$|^\d+\s+\d+$|^[-–]\s*[-–]$")
+SCORE_RE = re.compile(r"^\d+\s*[-–]\s*\d+$|^\d+\s+\d+$|^[-–]\s*[-–]$|^v/s$|^vs$", re.I)
+ONLY_NUMBER_RE = re.compile(r"^\d+$")
 NOISE_WORDS = {
-    "image", "tabla de posiciones", "posiciones", "estadísticas", "noticias",
-    "bases de campeonato", "tribunal", "ver más", "read more", "partidos",
+    "image", "tabla de posiciones", "posiciones", "estadísticas", "estadisticas", "noticias",
+    "bases de campeonato", "tribunal", "ver más", "ver mas", "read more", "partidos",
     "fecha", "competición", "competicion", "fixture", "programación", "programacion",
+    "revisa todas las fechas", "campeonatos históricos", "campeonatos historicos",
+    "todas las noticias", "ver todas las noticias", "formativo nacional", "formativo femenino",
+    "copa futuro", "infantíl", "infantil", "futsal", "min. sub 21",
 }
 
 
@@ -118,7 +125,7 @@ class Partido:
 
 
 def fetch(url: str) -> str:
-    r = requests.get(url, headers=HEADERS, timeout=30)
+    r = requests.get(url, headers=HEADERS, timeout=35)
     r.raise_for_status()
     return r.text
 
@@ -145,6 +152,34 @@ def soup_lines(html: str) -> list[str]:
             continue
         lines.append(x)
     return lines
+
+
+def discover_campeonato_liga_urls() -> list[str]:
+    """
+    Descobre links /ligas/ no menu/home para reduzir risco de faltar campeonato.
+    Mantém os URLs fixos acima mesmo que a descoberta falhe.
+    """
+    urls = set(CAMPEONATO_CHILENO_URLS)
+    try:
+        html = fetch(CAMPEONATO_HOME)
+        soup = BeautifulSoup(html, "html.parser")
+        for a in soup.find_all("a", href=True):
+            href = urljoin(CAMPEONATO_HOME, a["href"])
+            if "campeonatochileno.cl/ligas/" not in href:
+                continue
+            # Evita algumas categorias formativas se você quiser só adultos/profissionais.
+            # Se quiser TUDO, comente o bloco abaixo.
+            ignored = [
+                "sub-11", "sub-12", "sub-13", "sub-14", "sub-15", "sub-16", "sub-17",
+                "sub-18", "sub-20", "formativo", "infantil", "futsal",
+            ]
+            if any(x in href.lower() for x in ignored):
+                continue
+            urls.add(href.split("?")[0])
+    except Exception as e:
+        print(f"[AVISO] Não consegui descobrir URLs automaticamente: {e}", file=sys.stderr)
+
+    return sorted(urls)
 
 
 def parse_spanish_date(text: str, year: int) -> Optional[date]:
@@ -174,15 +209,21 @@ def is_probably_team(line: str) -> bool:
     low = line.lower()
     if low in NOISE_WORDS:
         return False
-    if DATE_ES_RE.search(line) or ANFA_DATE_RE.search(line) or TIME_RE.search(line):
+    if ONLY_NUMBER_RE.match(line):
         return False
-    if line.lower().startswith(("estadio ", "municipal ", "bicentenario ", "santa ", "sausalito", "claro arena")):
+    if DATE_ES_RE.search(line) or ANFA_DATE_RE.search(line) or TIME_RE.search(line):
         return False
     if SCORE_RE.match(line):
         return False
     if re.match(r"^fecha\s+\d+", low):
         return False
-    if re.search(r"\b(arbitro|árbitro|rebolledo|sep[uú]lveda|gamboa|vejar|gilabert|jona|salvo)\b", low):
+    if low.startswith(("estadio ", "municipal ", "bicentenario ", "santa ", "sausalito", "claro arena")):
+        return False
+    # árbitros / ruído comum após estádio
+    if re.search(r"\b(arbitro|árbitro|pavez|fernandez|fernández|manzor|moya|ortega|avila|riquelme|duran|durán|yanez|yañez|valenzuela|cisternas|ramirez|ramírez|fuentes|sep[uú]lveda|gamboa|vejar|gilabert)\b", low):
+        return False
+    # sanção não é time
+    if "sanción" in low or "sancion" in low:
         return False
     return True
 
@@ -192,21 +233,49 @@ def is_probably_stadium(line: str) -> bool:
     stadium_markers = [
         "estadio", "municipal", "bicentenario", "sausalito", "claro arena",
         "el cobre", "la portada", "el teniente", "monumental", "la cisterna",
-        "francisco sánchez", "huachipato", "nicolás chahuán", "lucio fariña",
-        "ester roa", "nelson oyarzún", "la florida"
+        "francisco sánchez", "francisco sanchez", "huachipato", "nicolás chahuán",
+        "nicolas chahuan", "lucio fariña", "lucio farina", "ester roa", "nelson oyarzún",
+        "nelson oyarzun", "la florida", "jessica mella", "quilín", "quilin",
+        "lo barnechea", "la pintana", "ruben marcos", "rubén marcos", "tucapel",
+        "diaguitas", "jorge silva", "regional de los andes", "federico schwager",
+        "augusto rodríguez", "augusto rodriguez", "atlético municipal", "atletico municipal",
     ]
     return any(x in low for x in stadium_markers)
 
 
 def infer_competition_from_url(url: str) -> str:
     slug = url.rstrip("/").split("/")[-1]
-    return slug.replace("-", " ").title()
+    names = {
+        "liga-de-primera-mercado-libre": "Liga de Primera Mercado Libre",
+        "liga-de-ascenso-caixun": "Liga de Ascenso Caixun",
+        "segunda-la-liga-2d": "Liga de Segunda Panini",
+        "copa-chile-coca-cola-zero-azucar": "Copa Chile Coca-Cola Zero Azúcar",
+        "copa-de-la-liga": "Copa de la Liga",
+        "campeonato-femenino": "Liga Femenina",
+        "ascenso-femenino": "Ascenso Femenino",
+    }
+    return names.get(slug, slug.replace("-", " ").title())
 
 
-def parse_campeonato_chileno_page(url: str, html: str, year: int, desde: date, ate: date) -> list[Partido]:
+def find_team_after(lines: list[str], start: int, max_ahead: int = 12) -> tuple[str, Optional[int]]:
+    for j in range(start, min(start + max_ahead, len(lines))):
+        if is_probably_team(lines[j]):
+            return lines[j], j
+    return "", None
+
+
+def find_stadium_after(lines: list[str], start: int, max_ahead: int = 10) -> str:
+    for j in range(start, min(start + max_ahead, len(lines))):
+        if is_probably_stadium(lines[j]):
+            return lines[j]
+    return ""
+
+
+def parse_campeonato_chileno_page(url: str, html: str, year: int, desde: date, ate: date, incluir_passados: bool = False) -> list[Partido]:
     """
-    Parser por linhas. Funciona bem com as páginas atuais do Campeonato Chileno,
-    onde o texto vem em sequência: Fecha, data, hora, mandante, placar, visitante, estádio.
+    Parser por linhas para páginas de Campeonato Chileno.
+    O HTML dessas páginas traz blocos como:
+    Fecha X / data / hora / mandante / placar ou vs / visitante / estádio / árbitro.
     """
     lines = soup_lines(html)
     competicao = infer_competition_from_url(url)
@@ -216,54 +285,35 @@ def parse_campeonato_chileno_page(url: str, html: str, year: int, desde: date, a
     for i, line in enumerate(lines):
         if re.match(r"^Fecha\s+\d+", line, re.I):
             rodada = line
+            continue
 
         match_date = parse_spanish_date(line, year)
         if not match_date:
             continue
 
-        # Hora normalmente está na própria linha seguinte.
+        # hora: geralmente na mesma linha ou uma das 3 seguintes
         hora = ""
-        for j in range(i, min(i + 4, len(lines))):
+        time_idx = None
+        for j in range(i, min(i + 5, len(lines))):
             tm = TIME_RE.search(lines[j])
             if tm:
                 hora = tm.group(1)
                 time_idx = j
                 break
-        else:
+        if time_idx is None:
             continue
 
-        # Procura mandante após hora
-        mandante = ""
-        mandante_idx = None
-        for j in range(time_idx + 1, min(time_idx + 8, len(lines))):
-            if is_probably_team(lines[j]):
-                mandante = lines[j]
-                mandante_idx = j
-                break
-        if not mandante:
+        mandante, mandante_idx = find_team_after(lines, time_idx + 1, 12)
+        if mandante_idx is None:
             continue
 
-        # Procura visitante após mandante, pulando placar/imagens
-        visitante = ""
-        visitante_idx = None
-        for j in range(mandante_idx + 1, min(mandante_idx + 10, len(lines))):
-            if SCORE_RE.match(lines[j]):
-                continue
-            if is_probably_team(lines[j]):
-                visitante = lines[j]
-                visitante_idx = j
-                break
-        if not visitante:
+        visitante, visitante_idx = find_team_after(lines, mandante_idx + 1, 12)
+        if visitante_idx is None:
             continue
 
-        # Procura estádio logo depois do visitante
-        estadio = ""
-        for j in range(visitante_idx + 1, min(visitante_idx + 7, len(lines))):
-            if is_probably_stadium(lines[j]):
-                estadio = lines[j]
-                break
+        estadio = find_stadium_after(lines, visitante_idx + 1, 12)
 
-        if desde <= match_date <= ate:
+        if incluir_passados or (desde <= match_date <= ate):
             partidos.append(Partido(
                 fonte="campeonatochileno.cl",
                 competicao=competicao,
@@ -279,21 +329,22 @@ def parse_campeonato_chileno_page(url: str, html: str, year: int, desde: date, a
     return dedupe(partidos)
 
 
-def parse_anfa_page(url: str, html: str, desde: date, ate: date) -> list[Partido]:
+def parse_anfa_page(url: str, html: str, desde: date, ate: date, incluir_passados: bool = False) -> list[Partido]:
     """
     Parser focado no bloco 'Partidos' da ANFA:
     Ex.: Tercera A Nacional 05 JUL 2026 - 12:00 Quintero Unido Aguará FC
-    O estádio pode não estar visível na home; quando não aparecer, fica vazio.
     """
     lines = soup_lines(html)
     partidos: list[Partido] = []
-    competitions = ("Tercera A", "Tercera A Nacional", "Tercera B", "Tercera B Norte", "Tercera B Centro", "Tercera B Sur")
+    competitions = (
+        "Tercera A Nacional", "Tercera A", "Tercera B Norte",
+        "Tercera B Centro", "Tercera B Sur", "Tercera B"
+    )
 
     for i, line in enumerate(lines):
         dt = parse_anfa_date(line)
         tm = TIME_RE.search(line)
         if not dt or not tm:
-            # às vezes competição e data/hora estão em linhas separadas
             continue
 
         comp = ""
@@ -303,20 +354,11 @@ def parse_anfa_page(url: str, html: str, desde: date, ate: date) -> list[Partido
                 comp = c
                 break
         if not comp:
-            # procura competição nas 2 linhas anteriores
-            for k in range(max(0, i - 2), i + 1):
-                for c in competitions:
-                    if c.lower() in lines[k].lower():
-                        comp = c
-                        break
-                if comp:
-                    break
-        if not comp:
             comp = "ANFA Tercera División"
 
         teams = []
         stadium = ""
-        for j in range(i + 1, min(i + 8, len(lines))):
+        for j in range(i + 1, min(i + 10, len(lines))):
             if is_probably_stadium(lines[j]) and not stadium:
                 stadium = lines[j]
             elif is_probably_team(lines[j]):
@@ -324,7 +366,7 @@ def parse_anfa_page(url: str, html: str, desde: date, ate: date) -> list[Partido
             if len(teams) >= 2:
                 break
 
-        if len(teams) >= 2 and desde <= dt <= ate:
+        if len(teams) >= 2 and (incluir_passados or desde <= dt <= ate):
             partidos.append(Partido(
                 fonte="anfaterceradivision.cl",
                 competicao=comp,
@@ -378,7 +420,7 @@ def merge_history(new_rows: list[dict], history_path: Path) -> list[dict]:
     return sorted(by_id.values(), key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("competicao", "")))
 
 
-def update(dias: int = 45, year: Optional[int] = None) -> list[dict]:
+def update(dias: int = 90, year: Optional[int] = None, incluir_passados: bool = False, no_discover: bool = False) -> list[dict]:
     today = date.today()
     desde = today
     ate = today + timedelta(days=dias)
@@ -386,11 +428,14 @@ def update(dias: int = 45, year: Optional[int] = None) -> list[dict]:
 
     all_matches: list[Partido] = []
 
-    for url in CAMPEONATO_CHILENO_URLS:
+    campeonato_urls = CAMPEONATO_CHILENO_URLS if no_discover else discover_campeonato_liga_urls()
+    print(f"[INFO] URLs Campeonato Chileno: {len(campeonato_urls)}")
+
+    for url in campeonato_urls:
         try:
             html = fetch(url)
-            found = parse_campeonato_chileno_page(url, html, year, desde, ate)
-            print(f"[OK] {url} -> {len(found)} jogos")
+            found = parse_campeonato_chileno_page(url, html, year, desde, ate, incluir_passados=incluir_passados)
+            print(f"[OK] {infer_competition_from_url(url)} -> {len(found)} jogos | {url}")
             all_matches.extend(found)
         except Exception as e:
             print(f"[ERRO] {url}: {e}", file=sys.stderr)
@@ -398,8 +443,8 @@ def update(dias: int = 45, year: Optional[int] = None) -> list[dict]:
     for url in ANFA_URLS:
         try:
             html = fetch(url)
-            found = parse_anfa_page(url, html, desde, ate)
-            print(f"[OK] {url} -> {len(found)} jogos")
+            found = parse_anfa_page(url, html, desde, ate, incluir_passados=incluir_passados)
+            print(f"[OK] ANFA -> {len(found)} jogos | {url}")
             all_matches.extend(found)
         except Exception as e:
             print(f"[ERRO] {url}: {e}", file=sys.stderr)
@@ -417,7 +462,8 @@ def update(dias: int = 45, year: Optional[int] = None) -> list[dict]:
     hist = merge_history(rows, history_csv)
     write_csv(history_csv, hist)
 
-    print(f"\nAtualizado: {len(rows)} jogos programados")
+    print(f"\nAtualizado: {len(rows)} jogos")
+    print(f"Janela: {'todos os passados também' if incluir_passados else f'{desde.isoformat()} até {ate.isoformat()}'}")
     print(f"CSV: {current_csv.resolve()}")
     print(f"JSON: {current_json.resolve()}")
     print(f"Histórico: {history_csv.resolve()}")
@@ -427,12 +473,18 @@ def update(dias: int = 45, year: Optional[int] = None) -> list[dict]:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--once", action="store_true", help="executa uma atualização e termina")
-    parser.add_argument("--dias", type=int, default=45, help="janela de jogos futuros em dias")
+    parser.add_argument("--dias", type=int, default=90, help="janela de jogos futuros em dias")
     parser.add_argument("--ano", type=int, default=None, help="ano da temporada, padrão: ano atual")
+    parser.add_argument("--incluir-passados", action="store_true", help="inclui também jogos passados encontrados nas páginas")
+    parser.add_argument("--no-discover", action="store_true", help="não descobrir ligas automaticamente; usa apenas URLs fixos")
     args = parser.parse_args()
 
-    # --once fica por compatibilidade; o script sempre executa uma vez.
-    update(dias=args.dias, year=args.ano)
+    update(
+        dias=args.dias,
+        year=args.ano,
+        incluir_passados=args.incluir_passados,
+        no_discover=args.no_discover,
+    )
 
 
 if __name__ == "__main__":
