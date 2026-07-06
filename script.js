@@ -25,6 +25,9 @@ const I18N = {
     today: "Hoje",
     next3: "Próximos 3 dias",
     next7: "Próximos 7 dias",
+    next15: "Próximos 15 dias",
+    next30: "Próximos 30 dias",
+    next60: "Próximos 60 dias",
     no_coords: "Jogos sem coordenadas",
     show_all: "Mostrar todos",
     show_all_team: "Mostrar todos do time",
@@ -47,6 +50,9 @@ const I18N = {
     map_count: (mapped, total) => `${mapped} de ${total} jogos filtrados aparecem no mapa.`,
     period3: "Filtro ativo: próximos 3 dias",
     period7: "Filtro ativo: próximos 7 dias",
+    period15: "Filtro ativo: próximos 15 dias",
+    period30: "Filtro ativo: próximos 30 dias",
+    period60: "Filtro ativo: próximos 60 dias",
     futureDefault: "Mostrando jogos de hoje em diante",
     date_confirm: "Data a confirmar",
     time_confirm: "Hora a confirmar",
@@ -86,6 +92,9 @@ const I18N = {
     today: "Hoy",
     next3: "Próximos 3 días",
     next7: "Próximos 7 días",
+    next15: "Próximos 15 días",
+    next30: "Próximos 30 días",
+    next60: "Próximos 60 días",
     no_coords: "Partidos sin coordenadas",
     show_all: "Mostrar todos",
     show_all_team: "Mostrar todos del equipo",
@@ -108,6 +117,9 @@ const I18N = {
     map_count: (mapped, total) => `${mapped} de ${total} partidos filtrados aparecen en el mapa.`,
     period3: "Filtro activo: próximos 3 días",
     period7: "Filtro activo: próximos 7 días",
+    period15: "Filtro activo: próximos 15 días",
+    period30: "Filtro activo: próximos 30 días",
+    period60: "Filtro activo: próximos 60 días",
     futureDefault: "Mostrando partidos desde hoy en adelante",
     date_confirm: "Fecha por confirmar",
     time_confirm: "Hora por confirmar",
@@ -144,6 +156,9 @@ const els = {
   hojeBtn: document.getElementById("hojeBtn"),
   proximos3Btn: document.getElementById("proximos3Btn"),
   proximos7Btn: document.getElementById("proximos7Btn"),
+  proximos15Btn: document.getElementById("proximos15Btn"),
+  proximos30Btn: document.getElementById("proximos30Btn"),
+  proximos60Btn: document.getElementById("proximos60Btn"),
   todosDoTimeBtn: document.getElementById("todosDoTimeBtn"),
   limparBtn: document.getElementById("limparBtn"),
   semMapaBtn: document.getElementById("semMapaBtn"),
@@ -561,12 +576,16 @@ function groupedByDate(games) {
 function renderModeInfo() {
   els.proximos3Btn.classList.toggle("isActive", activePeriodDays === 3);
   els.proximos7Btn.classList.toggle("isActive", activePeriodDays === 7);
+  els.proximos15Btn.classList.toggle("isActive", activePeriodDays === 15);
+  els.proximos30Btn.classList.toggle("isActive", activePeriodDays === 30);
+  els.proximos60Btn.classList.toggle("isActive", activePeriodDays === 60);
 
   if (!activePeriodDays) {
     els.periodoAtivo.hidden = true;
     els.periodoAtivo.textContent = "";
   } else {
-    const label = activePeriodDays === 3 ? t("period3") : t("period7");
+    const PERIOD_LABEL_KEYS = { 3: "period3", 7: "period7", 15: "period15", 30: "period30", 60: "period60" };
+    const label = t(PERIOD_LABEL_KEYS[activePeriodDays] || "period7");
     const range = `${formatShortDate(todayISO())} – ${formatShortDate(addDaysISO(activePeriodDays - 1))}`;
     els.periodoAtivo.hidden = false;
     els.periodoAtivo.textContent = `${label}: ${range}`;
@@ -745,6 +764,9 @@ function setupEvents() {
 
   els.proximos3Btn.addEventListener("click", () => setPeriod(3));
   els.proximos7Btn.addEventListener("click", () => setPeriod(7));
+  els.proximos15Btn.addEventListener("click", () => setPeriod(15));
+  els.proximos30Btn.addEventListener("click", () => setPeriod(30));
+  els.proximos60Btn.addEventListener("click", () => setPeriod(60));
 
   els.todosDoTimeBtn.addEventListener("click", () => {
     if (!els.filtroTime.value) {
