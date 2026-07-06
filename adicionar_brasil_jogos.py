@@ -450,7 +450,7 @@ def parse_cbf_line(line: str, year: int, last_rod: list[str]) -> dict | None:
         return None
 
     resto = m.group("resto")
-    resto = re.sub(r"^\d+\s+", "", resto)
+    resto = re.sub(r"^[A-Z]?\d+\s+", "", resto)
     parts = CBF_VS_RE.split(resto, maxsplit=1)
     if len(parts) != 2:
         return None
