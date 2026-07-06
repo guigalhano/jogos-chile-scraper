@@ -106,7 +106,7 @@ def fetch_fixtures(league_id: int, season: int, desde: date, ate: date, api_key:
         "from": desde.isoformat(),
         "to": ate.isoformat(),
     }, api_key)
-    return data.get("response", [])
+    return data.get("response", []), data.get("errors")
 
 
 def load_jogos_atuais() -> list[dict]:
@@ -157,6 +157,28 @@ def main() -> None:
 
     relatorio = {"gerado_em": datetime.now().isoformat(timespec="seconds"), "paises": {}}
 
+    # Diagnóstico único: testa se o plano gratuito bloqueia a temporada atual
+    # (hipótese: API-Football restringe temporadas no plano free). Usa a
+    # Primera División do Chile como sonda, sem filtro de data (últimos jogos).
+    diag = {}
+    sonda = api_get("leagues", {"country": "Chile"}, api_key)
+    sonda_id = None
+    for item in sonda.get("response", []):
+        if norm(item.get("league", {}).get("name", "")) == norm("Primera División"):
+            sonda_id = item["league"]["id"]
+            break
+    if sonda_id:
+        atual = api_get("fixtures", {"league": sonda_id, "season": today.year, "last": 5}, api_key)
+        anterior = api_get("fixtures", {"league": sonda_id, "season": today.year - 1, "last": 5}, api_key)
+        diag = {
+            "liga_sonda": sonda_id,
+            f"temporada_{today.year}_resultados": len(atual.get("response", [])),
+            f"temporada_{today.year}_erros": atual.get("errors"),
+            f"temporada_{today.year - 1}_resultados": len(anterior.get("response", [])),
+            f"temporada_{today.year - 1}_erros": anterior.get("errors"),
+        }
+    relatorio["diagnostico_restricao_temporada"] = diag
+
     for pais_nosso, pais_api in PAISES.items():
         ligas = find_league_ids(pais_api, api_key, season)
         pais_report = {"ligas_encontradas": ligas, "por_liga": []}
@@ -164,7 +186,7 @@ def main() -> None:
         for liga in ligas:
             if not liga["id"]:
                 continue
-            fixtures = fetch_fixtures(liga["id"], season, today, ate, api_key)
+            fixtures, erros_api = fetch_fixtures(liga["id"], season, today, ate, api_key)
 
             so_na_api = []
             confirmados = 0
@@ -195,6 +217,7 @@ def main() -> None:
                 "liga": liga["name"],
                 "liga_id": liga["id"],
                 "total_fixtures_api": len(fixtures),
+                "erros_api": erros_api,
                 "confirmados_com_nossos_dados": confirmados,
                 "apenas_na_api": so_na_api[:30],  # limite para o relatório não ficar gigante
                 "apenas_na_api_total": len(so_na_api),
