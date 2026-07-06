@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Scraper atualizado para jogos programados do futebol chileno.
+Scraper atualizado para jogos programados e recentes do futebol chileno.
 
 Fontes:
 - campeonatochileno.cl
 - anfaterceradivision.cl
 - anfaterceradivision.cl/assets/php/calendario.php
+- cf3.cl, para Tercera A e Tercera B Norte/Sur
 
 Saídas:
 - data/jogos_programados.csv
@@ -14,9 +15,12 @@ Saídas:
 - data/historico_jogos.csv
 
 Uso:
-    python atualizar_jogos_chile.py --once --dias 120
-    python atualizar_jogos_chile.py --once --dias 365
+    python atualizar_jogos_chile.py --once --dias 180 --dias-atras 14
     python atualizar_jogos_chile.py --once --incluir-passados
+
+Observação:
+CF3 muitas vezes mostra partidas já finalizadas sem horário. Nesses casos, o campo
+"hora" fica vazio e placar/status vão no campo "extra".
 """
 
 from __future__ import annotations
@@ -44,7 +48,7 @@ HEADERS = {
     ),
     "Accept-Language": "es-CL,es;q=0.9,pt-BR;q=0.8,pt;q=0.7,en;q=0.6",
     "Accept": "text/html,application/json,text/plain,*/*",
-    "Referer": "https://anfaterceradivision.cl/",
+    "Referer": "https://www.google.com/",
 }
 
 OUT_DIR = Path("data")
@@ -55,12 +59,12 @@ MONTHS_ES = {
     "julio": 7, "agosto": 8, "septiembre": 9, "setiembre": 9, "octubre": 10,
     "noviembre": 11, "diciembre": 12,
 }
-
 MONTHS_ES_ABBR = {
     "ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6,
     "jul": 7, "ago": 8, "sep": 9, "oct": 10, "nov": 11, "dic": 12,
 }
 
+CAMPEONATO_HOME = "https://www.campeonatochileno.cl/"
 CAMPEONATO_CHILENO_URLS = [
     "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
@@ -71,13 +75,14 @@ CAMPEONATO_CHILENO_URLS = [
     "https://www.campeonatochileno.cl/ligas/ascenso-femenino/",
 ]
 
-CAMPEONATO_HOME = "https://www.campeonatochileno.cl/"
-
-ANFA_URLS = [
-    "https://anfaterceradivision.cl/",
-]
-
+ANFA_URLS = ["https://anfaterceradivision.cl/"]
 ANFA_CALENDARIO_URL = "https://anfaterceradivision.cl/assets/php/calendario.php"
+
+CF3_BASE_URLS = [
+    "https://cf3.cl/torneo/tercera-a/fecha/13",
+    "https://cf3.cl/torneo/tercera-b/grupo-norte/fecha/13",
+    "https://cf3.cl/torneo/tercera-b/grupo-sur/fecha/13",
+]
 
 TIME_RE = re.compile(r"[-–—]?\s*(\d{1,2}:\d{2})\s*(?:hrs?|h)?", re.I)
 DATE_ES_RE = re.compile(
@@ -89,13 +94,13 @@ ANFA_DATE_RE = re.compile(r"\b(\d{1,2})\s+(ENE|FEB|MAR|ABR|MAY|JUN|JUL|AGO|SEP|O
 DATE_NUM_RE = re.compile(r"\b(\d{1,2})[/-](\d{1,2})[/-](\d{2,4})\b")
 SCORE_RE = re.compile(r"^\d+\s*[-–]\s*\d+$|^\d+\s+\d+$|^[-–]\s*[-–]$|^v/s$|^vs$", re.I)
 ONLY_NUMBER_RE = re.compile(r"^\d+$")
+
 NOISE_WORDS = {
-    "image", "tabla de posiciones", "posiciones", "estadísticas", "estadisticas", "noticias",
-    "bases de campeonato", "tribunal", "ver más", "ver mas", "read more", "partidos",
-    "fecha", "competición", "competicion", "fixture", "programación", "programacion",
-    "revisa todas las fechas", "campeonatos históricos", "campeonatos historicos",
-    "todas las noticias", "ver todas las noticias", "formativo nacional", "formativo femenino",
-    "copa futuro", "infantíl", "infantil", "futsal", "min. sub 21",
+    "image", "publicidad", "inicio", "noticias", "tabla de posiciones", "posiciones",
+    "estadísticas", "estadisticas", "bases de campeonato", "tribunal", "ver más",
+    "ver mas", "read more", "partidos", "fecha", "competición", "competicion",
+    "fixture", "programación", "programacion", "clasificación", "clasificacion",
+    "ver tabla completa →", "el canal del fútbol de 3ra. división.",
 }
 
 
@@ -116,7 +121,7 @@ class Partido:
     def id(self) -> str:
         raw = "|".join([
             self.fonte, self.competicao, self.data, self.hora,
-            self.mandante, self.visitante, self.estadio
+            self.mandante, self.visitante, self.estadio, self.rodada
         ])
         return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -128,14 +133,14 @@ class Partido:
 
 
 def fetch(url: str) -> str:
-    r = requests.get(url, headers=HEADERS, timeout=40)
+    r = requests.get(url, headers=HEADERS, timeout=45)
     r.raise_for_status()
     return r.text
 
 
 def clean_text(s: str) -> str:
     s = re.sub(r"\s+", " ", s or "").strip()
-    s = s.replace("Image:", "").strip()
+    s = re.sub(r"Image:\s*", "", s, flags=re.I).strip()
     return s
 
 
@@ -151,45 +156,30 @@ def soup_lines(html: str) -> list[str]:
         low = x.lower()
         if low in NOISE_WORDS:
             continue
-        if low.startswith("copyright"):
+        if low.startswith("©"):
             continue
         lines.append(x)
     return lines
-
-
-def discover_campeonato_liga_urls() -> list[str]:
-    urls = set(CAMPEONATO_CHILENO_URLS)
-    try:
-        html = fetch(CAMPEONATO_HOME)
-        soup = BeautifulSoup(html, "html.parser")
-        for a in soup.find_all("a", href=True):
-            href = urljoin(CAMPEONATO_HOME, a["href"])
-            if "campeonatochileno.cl/ligas/" not in href:
-                continue
-            ignored = [
-                "sub-11", "sub-12", "sub-13", "sub-14", "sub-15", "sub-16", "sub-17",
-                "sub-18", "sub-20", "formativo", "infantil", "futsal",
-            ]
-            if any(x in href.lower() for x in ignored):
-                continue
-            urls.add(href.split("?")[0])
-    except Exception as e:
-        print(f"[AVISO] Não consegui descobrir URLs automaticamente: {e}", file=sys.stderr)
-    return sorted(urls)
 
 
 def parse_spanish_date(text: str, year: int) -> Optional[date]:
     m = DATE_ES_RE.search(text)
     if not m:
         return None
-    return date(year, MONTHS_ES[m.group(2).lower()], int(m.group(1)))
+    try:
+        return date(year, MONTHS_ES[m.group(2).lower()], int(m.group(1)))
+    except ValueError:
+        return None
 
 
 def parse_anfa_date(text: str) -> Optional[date]:
     m = ANFA_DATE_RE.search(text)
     if not m:
         return None
-    return date(int(m.group(3)), MONTHS_ES_ABBR[m.group(2).lower()], int(m.group(1)))
+    try:
+        return date(int(m.group(3)), MONTHS_ES_ABBR[m.group(2).lower()], int(m.group(1)))
+    except ValueError:
+        return None
 
 
 def parse_numeric_date(text: str, default_year: int) -> Optional[date]:
@@ -202,11 +192,9 @@ def parse_numeric_date(text: str, default_year: int) -> Optional[date]:
     if y < 100:
         y += 2000
     try:
-        # ANFA/Chile costuma ser dd/mm/yyyy
         return date(y, mo, d)
     except ValueError:
         try:
-            # fallback mm/dd/yyyy se vier invertido
             return date(y, d, mo)
         except ValueError:
             return None
@@ -214,6 +202,24 @@ def parse_numeric_date(text: str, default_year: int) -> Optional[date]:
 
 def parse_any_date(text: str, default_year: int) -> Optional[date]:
     return parse_anfa_date(text) or parse_spanish_date(text, default_year) or parse_numeric_date(text, default_year)
+
+
+def is_probably_stadium(line: str) -> bool:
+    low = line.lower()
+    stadium_markers = [
+        "estadio", "municipal", "mun.", "bicentenario", "sausalito", "claro arena",
+        "el cobre", "la portada", "el teniente", "monumental", "la cisterna",
+        "francisco sánchez", "francisco sanchez", "huachipato", "nicolás chahuán",
+        "nicolas chahuan", "lucio fariña", "lucio farina", "ester roa", "nelson oyarzún",
+        "nelson oyarzun", "la florida", "jessica mella", "quilín", "quilin",
+        "lo barnechea", "la pintana", "ruben marcos", "rubén marcos", "tucapel",
+        "diaguita", "jorge silva", "regional de los andes", "federico schwager",
+        "augusto rodríguez", "augusto rodriguez", "atlético municipal", "atletico municipal",
+        "el morro", "elías figueroa", "elias figueroa", "san gregorio", "lo blanco",
+        "las golondrinas", "felix gallardo", "félix gallardo", "olímpico", "olimpico",
+        "santiago bueras", "por definir",
+    ]
+    return any(x in low for x in stadium_markers)
 
 
 def is_probably_team(line: str) -> bool:
@@ -229,31 +235,35 @@ def is_probably_team(line: str) -> bool:
         return False
     if SCORE_RE.match(line):
         return False
+    if low in {"finalizado", "suspendido", "programado", "por jugar", "postergado"}:
+        return False
+    if low.startswith(("estadio:", "estadio ", "municipal ", "bicentenario ")):
+        return False
+    if re.match(r"^jornada\s+\d+", low):
+        return False
     if re.match(r"^fecha\s+\d+", low):
         return False
-    if low.startswith(("estadio ", "municipal ", "bicentenario ", "santa ", "sausalito", "claro arena")):
-        return False
     if re.search(r"\b(arbitro|árbitro|pavez|fernandez|fernández|manzor|moya|ortega|avila|riquelme|duran|durán|yanez|yañez|valenzuela|cisternas|ramirez|ramírez|fuentes|sep[uú]lveda|gamboa|vejar|gilabert)\b", low):
-        return False
-    if "sanción" in low or "sancion" in low:
         return False
     return True
 
 
-def is_probably_stadium(line: str) -> bool:
-    low = line.lower()
-    stadium_markers = [
-        "estadio", "municipal", "bicentenario", "sausalito", "claro arena",
-        "el cobre", "la portada", "el teniente", "monumental", "la cisterna",
-        "francisco sánchez", "francisco sanchez", "huachipato", "nicolás chahuán",
-        "nicolas chahuan", "lucio fariña", "lucio farina", "ester roa", "nelson oyarzún",
-        "nelson oyarzun", "la florida", "jessica mella", "quilín", "quilin",
-        "lo barnechea", "la pintana", "ruben marcos", "rubén marcos", "tucapel",
-        "diaguitas", "jorge silva", "regional de los andes", "federico schwager",
-        "augusto rodríguez", "augusto rodriguez", "atlético municipal", "atletico municipal",
-        "el morro", "elías figueroa", "elias figueroa",
-    ]
-    return any(x in low for x in stadium_markers)
+def discover_campeonato_liga_urls() -> list[str]:
+    urls = set(CAMPEONATO_CHILENO_URLS)
+    try:
+        html = fetch(CAMPEONATO_HOME)
+        soup = BeautifulSoup(html, "html.parser")
+        for a in soup.find_all("a", href=True):
+            href = urljoin(CAMPEONATO_HOME, a["href"]).split("?")[0]
+            if "campeonatochileno.cl/ligas/" not in href:
+                continue
+            ignored = ["sub-11", "sub-12", "sub-13", "sub-14", "sub-15", "sub-16", "sub-17", "sub-18", "sub-20", "formativo", "infantil", "futsal"]
+            if any(x in href.lower() for x in ignored):
+                continue
+            urls.add(href)
+    except Exception as e:
+        print(f"[AVISO] Não consegui descobrir URLs Campeonato Chileno: {e}", file=sys.stderr)
+    return sorted(urls)
 
 
 def infer_competition_from_url(url: str) -> str:
@@ -270,6 +280,10 @@ def infer_competition_from_url(url: str) -> str:
     return names.get(slug, slug.replace("-", " ").title())
 
 
+def in_window(dt: date, desde: date, ate: date, incluir_passados: bool) -> bool:
+    return incluir_passados or (desde <= dt <= ate)
+
+
 def find_team_after(lines: list[str], start: int, max_ahead: int = 12) -> tuple[str, Optional[int]]:
     for j in range(start, min(start + max_ahead, len(lines))):
         if is_probably_team(lines[j]):
@@ -280,7 +294,7 @@ def find_team_after(lines: list[str], start: int, max_ahead: int = 12) -> tuple[
 def find_stadium_after(lines: list[str], start: int, max_ahead: int = 10) -> str:
     for j in range(start, min(start + max_ahead, len(lines))):
         if is_probably_stadium(lines[j]):
-            return lines[j]
+            return re.sub(r"^Estadio:\s*", "", lines[j], flags=re.I).strip()
     return ""
 
 
@@ -320,7 +334,7 @@ def parse_campeonato_chileno_page(url: str, html: str, year: int, desde: date, a
 
         estadio = find_stadium_after(lines, visitante_idx + 1, 12)
 
-        if incluir_passados or (desde <= match_date <= ate):
+        if in_window(match_date, desde, ate, incluir_passados):
             partidos.append(Partido(
                 fonte="campeonatochileno.cl",
                 competicao=competicao,
@@ -336,13 +350,9 @@ def parse_campeonato_chileno_page(url: str, html: str, year: int, desde: date, a
     return dedupe(partidos)
 
 
-def parse_anfa_home_page(url: str, html: str, desde: date, ate: date, incluir_passados: bool = False) -> list[Partido]:
+def parse_anfa_home_page(url: str, html: str, year: int, desde: date, ate: date, incluir_passados: bool = False) -> list[Partido]:
     lines = soup_lines(html)
     partidos: list[Partido] = []
-    competitions = (
-        "Tercera A Nacional", "Tercera A", "Tercera B Norte",
-        "Tercera B Centro", "Tercera B Sur", "Tercera B"
-    )
 
     for i, line in enumerate(lines):
         dt = parse_anfa_date(line)
@@ -350,26 +360,20 @@ def parse_anfa_home_page(url: str, html: str, desde: date, ate: date, incluir_pa
         if not dt or not tm:
             continue
 
-        comp = ""
-        prefix = line[:tm.start()]
-        for c in competitions:
-            if c.lower() in prefix.lower():
-                comp = c
-                break
-        if not comp:
-            comp = "ANFA Tercera División"
+        text_window = " ".join(lines[max(0, i - 2):i + 3])
+        comp = "Tercera A" if "tercera a" in text_window.lower() else "Tercera B" if "tercera b" in text_window.lower() else "ANFA Tercera División"
 
         teams = []
         stadium = ""
         for j in range(i + 1, min(i + 10, len(lines))):
             if is_probably_stadium(lines[j]) and not stadium:
-                stadium = lines[j]
+                stadium = re.sub(r"^Estadio:\s*", "", lines[j], flags=re.I).strip()
             elif is_probably_team(lines[j]):
                 teams.append(lines[j])
             if len(teams) >= 2:
                 break
 
-        if len(teams) >= 2 and (incluir_passados or desde <= dt <= ate):
+        if len(teams) >= 2 and in_window(dt, desde, ate, incluir_passados):
             partidos.append(Partido(
                 fonte="anfaterceradivision.cl",
                 competicao=comp,
@@ -384,33 +388,103 @@ def parse_anfa_home_page(url: str, html: str, desde: date, ate: date, incluir_pa
     return dedupe(partidos)
 
 
-def text_from_cell(cell) -> str:
-    return clean_text(cell.get_text(" ", strip=True))
+def parse_anfa_calendario_html(html: str, year: int, desde: date, ate: date, incluir_passados: bool = False) -> list[Partido]:
+    # Parser genérico, mantido como fallback.
+    stripped = html.strip()
+    if stripped.startswith("{") or stripped.startswith("["):
+        try:
+            return parse_anfa_calendario_json(json.loads(stripped), year, desde, ate, incluir_passados)
+        except Exception:
+            pass
+
+    soup = BeautifulSoup(html, "html.parser")
+    partidos: list[Partido] = []
+
+    for tr in soup.find_all("tr"):
+        cells = [clean_text(c.get_text(" ", strip=True)) for c in tr.find_all(["td", "th"])]
+        cells = [c for c in cells if c]
+        if len(cells) < 3:
+            continue
+
+        row_text = " | ".join(cells)
+        dt = parse_any_date(row_text, year)
+        tm = TIME_RE.search(row_text)
+        if not dt or not tm:
+            continue
+
+        comp = "Tercera A" if "tercera a" in row_text.lower() else "Tercera B" if "tercera b" in row_text.lower() else "ANFA Tercera División"
+        estadio = next((c for c in cells if is_probably_stadium(c)), "")
+
+        mandante, visitante = "", ""
+        for c in cells:
+            a, b = split_teams(c)
+            if a and b:
+                mandante, visitante = a, b
+                break
+
+        if not mandante or not visitante:
+            team_cells = [c for c in cells if is_probably_team(c) and not is_probably_stadium(c) and not TIME_RE.search(c) and not parse_any_date(c, year)]
+            if len(team_cells) >= 2:
+                mandante, visitante = team_cells[-2], team_cells[-1]
+
+        if mandante and visitante and in_window(dt, desde, ate, incluir_passados):
+            partidos.append(Partido(
+                fonte="anfaterceradivision.cl/calendario",
+                competicao=comp,
+                data=dt.isoformat(),
+                hora=tm.group(1),
+                mandante=mandante,
+                visitante=visitante,
+                estadio=re.sub(r"^Estadio:\s*", "", estadio, flags=re.I).strip(),
+                url=ANFA_CALENDARIO_URL,
+                extra="calendario.php",
+            ))
+
+    return dedupe(partidos)
 
 
-def guess_competition_from_text(text: str) -> str:
-    low = text.lower()
-    if "tercera a" in low:
-        return "Tercera A"
-    if "tercera b" in low:
-        if "norte" in low:
-            return "Tercera B Norte"
-        if "centro" in low:
-            return "Tercera B Centro"
-        if "sur" in low:
-            return "Tercera B Sur"
-        return "Tercera B"
-    return "ANFA Tercera División"
+def parse_anfa_calendario_json(data: Any, year: int, desde: date, ate: date, incluir_passados: bool) -> list[Partido]:
+    if isinstance(data, dict):
+        for key in ("data", "aaData", "rows", "partidos", "calendario"):
+            if isinstance(data.get(key), list):
+                data = data[key]
+                break
+        else:
+            data = [data]
+    if not isinstance(data, list):
+        return []
+    out = []
+    for item in data:
+        if isinstance(item, list):
+            fields = {str(i): clean_text(str(x)) for i, x in enumerate(item)}
+        elif isinstance(item, dict):
+            fields = {str(k).lower(): clean_text(str(v)) for k, v in item.items()}
+        else:
+            continue
+        text = " ".join(fields.values())
+        dt = parse_any_date(text, year)
+        tm = TIME_RE.search(text)
+        if not dt or not tm:
+            continue
+        comp = "Tercera A" if "tercera a" in text.lower() else "Tercera B" if "tercera b" in text.lower() else "ANFA Tercera División"
+        estadio = next((v for v in fields.values() if is_probably_stadium(v)), "")
+        mandante, visitante = "", ""
+        for v in fields.values():
+            if any(k in v.lower() for k in [" v/s ", " vs ", " contra "]):
+                mandante, visitante = split_teams(v)
+                break
+        if not mandante or not visitante:
+            teams = [v for v in fields.values() if is_probably_team(v) and not is_probably_stadium(v)]
+            if len(teams) >= 2:
+                mandante, visitante = teams[-2], teams[-1]
+        if mandante and visitante and in_window(dt, desde, ate, incluir_passados):
+            out.append(Partido("anfaterceradivision.cl/calendario", comp, dt.isoformat(), tm.group(1), mandante, visitante, estadio, url=ANFA_CALENDARIO_URL, extra="calendario.php"))
+    return dedupe(out)
 
 
 def split_teams(value: str) -> tuple[str, str]:
     value = clean_text(value)
-    patterns = [
-        r"\s+v/s\s+",
-        r"\s+vs\.?\s+",
-        r"\s+[-–—]\s+",
-        r"\s+\bcontra\b\s+",
-    ]
+    patterns = [r"\s+v/s\s+", r"\s+vs\.?\s+", r"\s+[-–—]\s+", r"\s+\bcontra\b\s+"]
     for pat in patterns:
         parts = re.split(pat, value, maxsplit=1, flags=re.I)
         if len(parts) == 2 and parts[0].strip() and parts[1].strip():
@@ -418,259 +492,128 @@ def split_teams(value: str) -> tuple[str, str]:
     return "", ""
 
 
-def parse_anfa_calendario_json(data: Any, default_year: int, desde: date, ate: date, incluir_passados: bool) -> list[Partido]:
+def discover_cf3_urls() -> list[str]:
     """
-    Fallback caso calendario.php retorne JSON.
-    Procura campos comuns: fecha/data, hora, local/estadio, localia/visita etc.
+    CF3 tem links de Jornada 1..N na própria página. A partir das três páginas-base,
+    descobre todos os links /torneo/.../fecha/<n>.
     """
-    if isinstance(data, dict):
-        # DataTables costuma vir em {"data": [...]}
-        for key in ("data", "aaData", "rows", "partidos", "calendario"):
-            if isinstance(data.get(key), list):
-                data = data[key]
-                break
-        else:
-            data = [data]
-
-    if not isinstance(data, list):
-        return []
-
-    out = []
-    for item in data:
-        if isinstance(item, list):
-            text = " ".join(clean_text(str(x)) for x in item)
-            fields = {str(i): clean_text(str(x)) for i, x in enumerate(item)}
-        elif isinstance(item, dict):
-            fields = {str(k).lower(): clean_text(str(v)) for k, v in item.items()}
-            text = " ".join(fields.values())
-        else:
-            continue
-
-        dt = parse_any_date(text, default_year)
-        tm = TIME_RE.search(text)
-        if not dt or not tm:
-            continue
-
-        comp = ""
-        estadio = ""
-        mandante = ""
-        visitante = ""
-
-        for k, v in fields.items():
-            kl = k.lower()
-            if any(x in kl for x in ("compet", "serie", "division", "categor")) and not comp:
-                comp = v
-            if any(x in kl for x in ("estadio", "recinto", "cancha", "local")) and is_probably_stadium(v):
-                estadio = v
-            if any(x in kl for x in ("local", "mandante", "equipo1")) and is_probably_team(v) and not mandante:
-                mandante = v
-            if any(x in kl for x in ("visita", "visitante", "equipo2")) and is_probably_team(v) and not visitante:
-                visitante = v
-
-        if not comp:
-            comp = guess_competition_from_text(text)
-
-        if not mandante or not visitante:
-            m1, m2 = split_teams(text)
-            if m1 and m2:
-                mandante, visitante = m1, m2
-
-        if not estadio:
-            # tenta pegar uma célula que pareça estádio
-            for v in fields.values():
-                if is_probably_stadium(v):
-                    estadio = v
-                    break
-
-        if mandante and visitante and (incluir_passados or desde <= dt <= ate):
-            out.append(Partido(
-                fonte="anfaterceradivision.cl/calendario",
-                competicao=comp or "ANFA Tercera División",
-                data=dt.isoformat(),
-                hora=tm.group(1),
-                mandante=mandante,
-                visitante=visitante,
-                estadio=estadio,
-                url=ANFA_CALENDARIO_URL,
-                extra="calendario.php",
-            ))
-
-    return dedupe(out)
-
-
-def parse_anfa_calendario_html(html: str, default_year: int, desde: date, ate: date, incluir_passados: bool = False) -> list[Partido]:
-    """
-    Parser para https://anfaterceradivision.cl/assets/php/calendario.php
-
-    Ele tenta 3 caminhos:
-    1) Tabelas HTML: analisa cada <tr> e identifica colunas por conteúdo.
-    2) Cards/divs com data/hora/equipes.
-    3) Fallback por linhas.
-    """
-    # Se vier JSON, tenta parsear.
-    stripped = html.strip()
-    if stripped.startswith("{") or stripped.startswith("["):
+    urls = set(CF3_BASE_URLS)
+    for base in CF3_BASE_URLS:
         try:
-            return parse_anfa_calendario_json(json.loads(stripped), default_year, desde, ate, incluir_passados)
-        except Exception:
-            pass
+            html = fetch(base)
+            soup = BeautifulSoup(html, "html.parser")
+            for a in soup.find_all("a", href=True):
+                href = urljoin(base, a["href"]).split("?")[0]
+                if "cf3.cl/torneo/" in href and "/fecha/" in href:
+                    urls.add(href)
+        except Exception as e:
+            print(f"[AVISO] Não consegui descobrir jornadas CF3 em {base}: {e}", file=sys.stderr)
+    return sorted(urls)
 
-    soup = BeautifulSoup(html, "html.parser")
+
+def infer_cf3_competition(url: str, page_text: str = "") -> str:
+    low = (url + " " + page_text).lower()
+    if "tercera-b/grupo-norte" in low or "tercera b - norte" in low:
+        return "Tercera B - Norte"
+    if "tercera-b/grupo-sur" in low or "tercera b - sur" in low:
+        return "Tercera B - Sur"
+    if "tercera-a" in low or "tercera a" in low:
+        return "Tercera A"
+    return "Tercera División"
+
+
+def parse_cf3_page(url: str, html: str, year: int, desde: date, ate: date, incluir_passados: bool = False) -> list[Partido]:
+    """
+    Parser para CF3.
+    Estrutura observada:
+      04/07/2026
+      Lautaro de Buin
+      1 - 5
+      Comunal Cabrero
+      Finalizado
+      Estadio: Lautaro de Buin
+
+    Em jogos futuros pode aparecer:
+      dd/mm/yyyy
+      Time A
+      15:00
+      Time B
+      Programado
+      Estadio: ...
+    """
+    lines = soup_lines(html)
+    page_text = " ".join(lines[:40])
+    competicao = infer_cf3_competition(url, page_text)
+    rodada = ""
     partidos: list[Partido] = []
 
-    # 1) Parser de tabelas
-    for tr in soup.find_all("tr"):
-        cells = [text_from_cell(c) for c in tr.find_all(["td", "th"])]
-        cells = [c for c in cells if c]
-        if len(cells) < 3:
+    for line in lines[:60]:
+        m = re.search(r"Jornada\s+\d+", line, re.I)
+        if m:
+            rodada = m.group(0)
+            break
+
+    for i, line in enumerate(lines):
+        dt = parse_numeric_date(line, year)
+        if not dt:
             continue
 
-        row_text = " | ".join(cells)
-        dt = parse_any_date(row_text, default_year)
-        tm = TIME_RE.search(row_text)
-        if not dt or not tm:
+        team1, team1_idx = find_team_after(lines, i + 1, 8)
+        if team1_idx is None:
             continue
 
-        comp = ""
-        estadio = ""
-        mandante = ""
-        visitante = ""
-
-        # procura campos por conteúdo
-        for c in cells:
-            if not comp and ("tercera" in c.lower() or "grupo" in c.lower()):
-                comp = guess_competition_from_text(c)
-            if not estadio and is_probably_stadium(c):
-                estadio = c
-
-        # procura confronto em uma célula única
-        for c in cells:
-            m1, m2 = split_teams(c)
-            if m1 and m2:
-                mandante, visitante = m1, m2
+        score_or_time = ""
+        score_idx = None
+        for j in range(team1_idx + 1, min(team1_idx + 6, len(lines))):
+            if SCORE_RE.match(lines[j]) or TIME_RE.search(lines[j]) or lines[j].lower() in {"finalizado", "programado", "suspendido", "postergado"}:
+                score_or_time = lines[j]
+                score_idx = j
                 break
 
-        # caso mandante/visitante estejam em colunas separadas
-        if not mandante or not visitante:
-            team_cells = [
-                c for c in cells
-                if is_probably_team(c)
-                and not parse_any_date(c, default_year)
-                and not TIME_RE.search(c)
-                and not is_probably_stadium(c)
-                and "tercera" not in c.lower()
-                and "grupo" not in c.lower()
-            ]
+        if score_idx is None:
+            team2, team2_idx = find_team_after(lines, team1_idx + 1, 8)
+            hora = ""
+            placar = ""
+        else:
+            team2, team2_idx = find_team_after(lines, score_idx + 1, 8)
+            tm = TIME_RE.search(score_or_time)
+            hora = tm.group(1) if tm and not SCORE_RE.match(score_or_time) else ""
+            placar = score_or_time if SCORE_RE.match(score_or_time) else ""
 
-            # Remove células muito genéricas
-            team_cells = [c for c in team_cells if c.lower() not in {"local", "visita", "visitante", "cancha"}]
-
-            if len(team_cells) >= 2:
-                # normalmente os dois últimos nomes de time funcionam melhor
-                mandante, visitante = team_cells[-2], team_cells[-1]
-
-        if not comp:
-            comp = guess_competition_from_text(row_text)
-
-        if mandante and visitante and (incluir_passados or desde <= dt <= ate):
-            partidos.append(Partido(
-                fonte="anfaterceradivision.cl/calendario",
-                competicao=comp,
-                data=dt.isoformat(),
-                hora=tm.group(1),
-                mandante=mandante,
-                visitante=visitante,
-                estadio=estadio,
-                url=ANFA_CALENDARIO_URL,
-                extra="calendario.php",
-            ))
-
-    if partidos:
-        return dedupe(partidos)
-
-    # 2) Cards/divs com data/hora no texto
-    containers = soup.find_all(["div", "li", "article", "section"])
-    for el in containers:
-        txt = clean_text(el.get_text(" ", strip=True))
-        if len(txt) < 20:
-            continue
-        dt = parse_any_date(txt, default_year)
-        tm = TIME_RE.search(txt)
-        if not dt or not tm:
+        if team2_idx is None:
             continue
 
-        m1, m2 = split_teams(txt)
+        status = ""
         estadio = ""
-        comp = guess_competition_from_text(txt)
-
-        parts = [clean_text(x) for x in el.get_text("\n", strip=True).splitlines() if clean_text(x)]
-        if not (m1 and m2):
-            teams = []
-            for p in parts:
-                if is_probably_stadium(p) and not estadio:
-                    estadio = p
-                elif is_probably_team(p) and "tercera" not in p.lower():
-                    teams.append(p)
-            if len(teams) >= 2:
-                m1, m2 = teams[-2], teams[-1]
+        for j in range(team2_idx + 1, min(team2_idx + 8, len(lines))):
+            low = lines[j].lower()
+            if low in {"finalizado", "programado", "suspendido", "postergado", "por jugar"}:
+                status = lines[j]
+            if is_probably_stadium(lines[j]):
+                estadio = re.sub(r"^Estadio:\s*", "", lines[j], flags=re.I).strip()
+                break
 
         if not estadio:
-            for p in parts:
-                if is_probably_stadium(p):
-                    estadio = p
-                    break
+            estadio = find_stadium_after(lines, team2_idx + 1, 8)
 
-        if m1 and m2 and (incluir_passados or desde <= dt <= ate):
+        extra_parts = []
+        if placar:
+            extra_parts.append(f"placar={placar}")
+        if status:
+            extra_parts.append(f"status={status}")
+
+        if in_window(dt, desde, ate, incluir_passados):
             partidos.append(Partido(
-                fonte="anfaterceradivision.cl/calendario",
-                competicao=comp,
+                fonte="cf3.cl",
+                competicao=competicao,
                 data=dt.isoformat(),
-                hora=tm.group(1),
-                mandante=m1,
-                visitante=m2,
+                hora=hora,
+                mandante=team1,
+                visitante=team2,
                 estadio=estadio,
-                url=ANFA_CALENDARIO_URL,
-                extra="calendario.php",
-            ))
-
-    if partidos:
-        return dedupe(partidos)
-
-    # 3) Fallback por linhas
-    lines = soup_lines(html)
-    for i, line in enumerate(lines):
-        dt = parse_any_date(line, default_year)
-        tm = TIME_RE.search(line)
-        if not dt or not tm:
-            # Pode estar em linhas separadas: busca janela
-            window = " ".join(lines[i:i+8])
-            dt = parse_any_date(window, default_year)
-            tm = TIME_RE.search(window)
-            if not dt or not tm:
-                continue
-
-        comp = guess_competition_from_text(" ".join(lines[max(0, i-3):i+3]))
-        teams = []
-        stadium = ""
-        for j in range(i, min(i + 12, len(lines))):
-            if is_probably_stadium(lines[j]) and not stadium:
-                stadium = lines[j]
-            elif is_probably_team(lines[j]) and "tercera" not in lines[j].lower():
-                teams.append(lines[j])
-            if len(teams) >= 2 and stadium:
-                break
-
-        if len(teams) >= 2 and (incluir_passados or desde <= dt <= ate):
-            partidos.append(Partido(
-                fonte="anfaterceradivision.cl/calendario",
-                competicao=comp,
-                data=dt.isoformat(),
-                hora=tm.group(1),
-                mandante=teams[0],
-                visitante=teams[1],
-                estadio=stadium,
-                url=ANFA_CALENDARIO_URL,
-                extra="calendario.php",
+                rodada=rodada,
+                url=url,
+                extra="; ".join(extra_parts),
             ))
 
     return dedupe(partidos)
@@ -715,9 +658,9 @@ def merge_history(new_rows: list[dict], history_path: Path) -> list[dict]:
     return sorted(by_id.values(), key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("competicao", "")))
 
 
-def update(dias: int = 120, year: Optional[int] = None, incluir_passados: bool = False, no_discover: bool = False) -> list[dict]:
+def update(dias: int = 180, dias_atras: int = 14, year: Optional[int] = None, incluir_passados: bool = False, no_discover: bool = False) -> list[dict]:
     today = date.today()
-    desde = today
+    desde = today - timedelta(days=dias_atras)
     ate = today + timedelta(days=dias)
     year = year or today.year
 
@@ -725,7 +668,6 @@ def update(dias: int = 120, year: Optional[int] = None, incluir_passados: bool =
 
     campeonato_urls = CAMPEONATO_CHILENO_URLS if no_discover else discover_campeonato_liga_urls()
     print(f"[INFO] URLs Campeonato Chileno: {len(campeonato_urls)}")
-
     for url in campeonato_urls:
         try:
             html = fetch(url)
@@ -738,13 +680,12 @@ def update(dias: int = 120, year: Optional[int] = None, incluir_passados: bool =
     for url in ANFA_URLS:
         try:
             html = fetch(url)
-            found = parse_anfa_home_page(url, html, desde, ate, incluir_passados=incluir_passados)
+            found = parse_anfa_home_page(url, html, year, desde, ate, incluir_passados=incluir_passados)
             print(f"[OK] ANFA home -> {len(found)} jogos | {url}")
             all_matches.extend(found)
         except Exception as e:
             print(f"[ERRO] {url}: {e}", file=sys.stderr)
 
-    # Nova fonte principal do calendário da ANFA
     try:
         html = fetch(ANFA_CALENDARIO_URL)
         found = parse_anfa_calendario_html(html, year, desde, ate, incluir_passados=incluir_passados)
@@ -753,8 +694,19 @@ def update(dias: int = 120, year: Optional[int] = None, incluir_passados: bool =
     except Exception as e:
         print(f"[ERRO] {ANFA_CALENDARIO_URL}: {e}", file=sys.stderr)
 
+    cf3_urls = CF3_BASE_URLS if no_discover else discover_cf3_urls()
+    print(f"[INFO] URLs CF3: {len(cf3_urls)}")
+    for url in cf3_urls:
+        try:
+            html = fetch(url)
+            found = parse_cf3_page(url, html, year, desde, ate, incluir_passados=incluir_passados)
+            print(f"[OK] CF3 -> {len(found)} jogos | {url}")
+            all_matches.extend(found)
+        except Exception as e:
+            print(f"[ERRO] {url}: {e}", file=sys.stderr)
+
     rows = [p.to_row() for p in dedupe(all_matches)]
-    rows = sorted(rows, key=lambda r: (r["data"], r["hora"], r["competicao"], r["mandante"]))
+    rows = sorted(rows, key=lambda r: (r["data"], r.get("hora", ""), r["competicao"], r["mandante"]))
 
     current_csv = OUT_DIR / "jogos_programados.csv"
     current_json = OUT_DIR / "jogos_programados.json"
@@ -777,14 +729,16 @@ def update(dias: int = 120, year: Optional[int] = None, incluir_passados: bool =
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--once", action="store_true", help="executa uma atualização e termina")
-    parser.add_argument("--dias", type=int, default=120, help="janela de jogos futuros em dias")
+    parser.add_argument("--dias", type=int, default=180, help="janela de jogos futuros em dias")
+    parser.add_argument("--dias-atras", type=int, default=14, help="janela de jogos recentes em dias, útil para CF3/Tercera")
     parser.add_argument("--ano", type=int, default=None, help="ano da temporada, padrão: ano atual")
-    parser.add_argument("--incluir-passados", action="store_true", help="inclui também jogos passados encontrados nas páginas")
-    parser.add_argument("--no-discover", action="store_true", help="não descobrir ligas automaticamente; usa apenas URLs fixos")
+    parser.add_argument("--incluir-passados", action="store_true", help="inclui também todos os jogos passados encontrados nas páginas")
+    parser.add_argument("--no-discover", action="store_true", help="não descobrir ligas/jornadas automaticamente; usa apenas URLs fixos")
     args = parser.parse_args()
 
     update(
         dias=args.dias,
+        dias_atras=args.dias_atras,
         year=args.ano,
         incluir_passados=args.incluir_passados,
         no_discover=args.no_discover,
