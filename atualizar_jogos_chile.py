@@ -217,7 +217,7 @@ def is_probably_stadium(line: str) -> bool:
         "augusto rodríguez", "augusto rodriguez", "atlético municipal", "atletico municipal",
         "el morro", "elías figueroa", "elias figueroa", "san gregorio", "lo blanco",
         "las golondrinas", "felix gallardo", "félix gallardo", "olímpico", "olimpico",
-        "santiago bueras", "por definir",
+        "santiago bueras", "por definir", "estadio jorge silva", "tierra de campeones", "estadio tierra de campeones", "calvo y bascunan", "calvo y bascuñán", "estadio regional calvo y bascunan", "estadio regional calvo y bascuñán", "municipal de la pintana", "estadio municipal de la pintana", "estadio municipal de san bernardo", "estadio chinquihue", "chinquihue de puerto montt", "municipal lucio farina", "municipal lucio fariña", "leonel sanchez", "leonel sánchez", "municipal de recoleta", "ivan azocar", "iván azócar", "bicentenario ivan azocar", "bicentenario iván azócar", "la granja", "estadio la granja", "bicentenario la granja", "estadio joaquin munoz", "estadio joaquín muñoz", "joaquin munoz", "joaquín muñoz", "estadio municipal de san felipe", "municipal de san felipe", "estadio fiscal talca", "fiscal talca", "zorros del desierto",
     ]
     return any(x in low for x in stadium_markers)
 
@@ -292,9 +292,31 @@ def find_team_after(lines: list[str], start: int, max_ahead: int = 12) -> tuple[
 
 
 def find_stadium_after(lines: list[str], start: int, max_ahead: int = 10) -> str:
+    """
+    Procura o estádio logo depois do visitante, mas NÃO deixa atravessar para o
+    próximo jogo ou para a próxima rodada. Isso corrige casos como:
+
+    Cobreloa x San Marcos de Arica
+    Zorros del Desierto
+
+    Antes, se "Zorros del Desierto" não era reconhecido, o parser continuava
+    até o jogo seguinte e podia capturar "Elías Figueroa Brander".
+    """
     for j in range(start, min(start + max_ahead, len(lines))):
-        if is_probably_stadium(lines[j]):
-            return re.sub(r"^Estadio:\s*", "", lines[j], flags=re.I).strip()
+        line = lines[j]
+        low = line.lower().strip()
+
+        # Limites: não atravessar para o próximo jogo/rodada.
+        if j > start and (
+            re.match(r"^fecha\s+\d+", low)
+            or parse_any_date(line, date.today().year)
+            or TIME_RE.search(line)
+        ):
+            break
+
+        if is_probably_stadium(line):
+            return re.sub(r"^Estadio:\s*", "", line, flags=re.I).strip()
+
     return ""
 
 

@@ -1,0 +1,85 @@
+# Pacote final - Jogos Chile Scraper
+
+Este ZIP reúne as últimas correções e melhorias do projeto `jogos-chile-scraper`.
+
+## O que está incluído
+
+### Página GitHub Pages
+- `index.html`
+- `style.css`
+- `script.js`
+- `estadios.js`
+
+Inclui:
+- mapa com Leaflet
+- filtros por competição, time, cidade, região e data
+- botão Hoje
+- botão Próximos 3 dias
+- botão Próximos 7 dias
+- botão Jogos sem coordenadas
+- botão Mostrar todos do time
+- versão Português/Espanhol
+- coordenadas de estádios melhoradas
+
+### Scrapers e adicionadores
+- `atualizar_jogos_chile.py`
+- `adicionar_enelcamarin_tercera.py`
+- `adicionar_conmebol.py`
+- `corrigir_json_estadios_errados.py`
+- `scrap_estadios_campeonato_chileno.py`
+
+Inclui:
+- correção de estádios errados, como Cobreloa x San Marcos de Arica no Zorros del Desierto
+- CF3 / Tercera División
+- En El Camarín para Tercera A/B
+- CONMEBOL Libertadores/Sudamericana
+- estádios e coordenadas melhoradas
+
+### Workflow GitHub Actions
+- `.github/workflows/atualizar-jogos.yml`
+
+Roda:
+1. scraper principal Chile
+2. adicionador En El Camarín
+3. adicionador CONMEBOL
+4. correção de estádios conhecidos
+5. commit automático dos arquivos em `data/`
+
+## Como instalar no GitHub
+
+Suba todos os arquivos deste ZIP na raiz do repositório:
+
+`guigalhano/jogos-chile-scraper`
+
+No GitHub:
+
+1. Abra o repositório.
+2. Clique em `Add file > Upload files`.
+3. Arraste todos os arquivos e pastas deste ZIP.
+4. Clique em `Commit changes`.
+
+Atenção: a pasta `.github/workflows/` precisa ser mantida com esse caminho exato.
+
+## Depois de subir
+
+Vá em:
+
+`Actions > Atualizar jogos Chile completo > Run workflow`
+
+No log, procure mensagens como:
+
+```text
+[OK] Tercera A -> X jogos
+[OK] Tercera B -> X jogos
+En El Camarín adicionados/atualizados: X
+```
+
+## Arquivos gerados pelo workflow
+
+- `data/jogos_programados.json`
+- `data/jogos_programados.csv`
+- `data/historico_jogos.csv`
+
+## Observação
+
+Se algum site estiver temporariamente fora do ar, o workflow continua tentando as outras fontes.
