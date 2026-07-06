@@ -26,10 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Instalar navegador Playwright (Chromium)
-        run: |
-          python -m playwright install --with-deps chromium
-
       - name: Rodar scraper Chile principal
         run: |
           python atualizar_jogos_chile.py --once --dias 180 --dias-atras 14
