@@ -206,6 +206,7 @@ function applyLanguage(lang) {
 
 function normalize(value) {
   return String(value || "")
+    .replace(/[’´`]/g, "'")
     .normalize("NFD")
     .replace(/\p{Diacritic}/gu, "")
     .toLowerCase()
@@ -299,7 +300,9 @@ function findStadiumInfo(estadioTexto, pais) {
   const txt = normalize(estadioTexto);
   if (!txt) return null;
 
-  const stadiums = pais === "Brasil" ? (window.ESTADIOS_BRASIL || []) : (window.ESTADIOS_CHILE || []);
+  const stadiums = pais === "Brasil" ? (window.ESTADIOS_BRASIL || [])
+    : pais === "Argentina" ? (window.ESTADIOS_ARGENTINA || [])
+    : (window.ESTADIOS_CHILE || []);
 
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])];
@@ -329,7 +332,7 @@ function extractCidadeFromExtra(extra) {
 
 // Fallback: quando o scraper não informa o estádio (comum em jogos em casa
 // de alguns times, ex.: San Marcos de Arica), usamos o estádio mandante conhecido.
-const ESTADIO_MANDANTE_PADRAO = {
+const ESTADIO_MANDANTE_PADRAO_CHILE = {
   "colo colo": "monumental david arellano",
   "universidad de chile": "estadio nacional",
   "universidad catolica": "claro arena",
@@ -363,11 +366,60 @@ const ESTADIO_MANDANTE_PADRAO = {
   "trasandino": "regional de los andes",
 };
 
-function findDefaultHomeStadium(mandante) {
+const ESTADIO_MANDANTE_PADRAO_ARGENTINA = {
+  "river": "monumental",
+  "river plate": "monumental",
+  "boca": "la bombonera",
+  "boca jrs": "la bombonera",
+  "boca juniors": "la bombonera",
+  "racing": "cilindro",
+  "racing club": "cilindro",
+  "independiente": "libertadores de america",
+  "san lorenzo": "nuevo gasometro",
+  "san lorenzo de a": "nuevo gasometro",
+  "huracan": "tomas duco",
+  "velez": "jose amalfitani",
+  "estudiantes": "estadio uno",
+  "gimnasia": "estadio bosque",
+  "gimnasia la plata": "estadio bosque",
+  "talleres": "mario kempes",
+  "belgrano": "gigante de alberdi",
+  "rosario central": "gigante de arroyito",
+  "newell's": "coloso del parque",
+  "newells": "coloso del parque",
+  "union": "15 de abril",
+  "atletico tucuman": "jose fierro",
+  "central cordoba": "madre de ciudades",
+  "banfield": "florencio sola",
+  "lanus": "ciudad de lanus",
+  "platense": "ciudad de vicente lopez",
+  "tigre": "la candela",
+  "argentinos": "estadio maradona",
+  "argentinos juniors": "estadio maradona",
+  "sarmiento": "eva peron",
+  "defensa y justicia": "norberto tomaghello",
+  "aldosivi": "jose maria minella",
+  "deportivo riestra": "guillermo laza",
+  "independiente rivadavia": "bautista gargantini",
+  "ind rivadavia mza": "bautista gargantini",
+  "gimnasia mza": "victor legrotaglie",
+  "gimnasia (mza)": "victor legrotaglie",
+  "estudiantes rio cuarto": "antonio candini",
+  "instituto": "estadio instituto atletico central cordoba",
+  "barracas central": "claudio tapia",
+};
+
+function findDefaultHomeStadium(mandante, pais) {
+  const mapa = pais === "Argentina" ? ESTADIO_MANDANTE_PADRAO_ARGENTINA : ESTADIO_MANDANTE_PADRAO_CHILE;
   const key = normalize(mandante);
-  const wanted = ESTADIO_MANDANTE_PADRAO[key];
-  if (!wanted) return null;
-  return findStadiumInfo(wanted);
+  if (mapa[key]) return findStadiumInfo(mapa[key], pais);
+
+  // Nomes argentinos às vezes vêm com pontuação/parênteses irregulares
+  // (ex.: "San Lorenzo de A.", "Gimnasia (Mza.)"); tenta de novo sem elas.
+  const keySemPontuacao = key.replace(/[().,]/g, "").replace(/\s+/g, " ").trim();
+  if (mapa[keySemPontuacao]) return findStadiumInfo(mapa[keySemPontuacao], pais);
+
+  return null;
 }
 
 function derivePais(j) {
@@ -386,7 +438,7 @@ function enrichGames(rawGames) {
     let stadium = findStadiumInfo(j.estadio || "", pais);
     let estadioFallback = false;
     if (!stadium && !j.estadio && pais !== "Brasil") {
-      stadium = findDefaultHomeStadium(j.mandante);
+      stadium = findDefaultHomeStadium(j.mandante, pais);
       estadioFallback = Boolean(stadium);
     }
     return {
