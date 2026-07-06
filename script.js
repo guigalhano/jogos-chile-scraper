@@ -14,7 +14,6 @@ const I18N = {
     stat_updated: "última atualização",
     filters: "Filtros",
     clear: "Limpar",
-    country: "País",
     championship: "Campeonato",
     team: "Time",
     region: "Região",
@@ -60,7 +59,6 @@ const I18N = {
     home_fallback: "Mandante",
     away_fallback: "Visitante",
     see_source: "Ver fonte",
-    estimated_venue: "estádio estimado",
   },
   es: {
     locale: "es-CL",
@@ -75,7 +73,6 @@ const I18N = {
     stat_updated: "última actualización",
     filters: "Filtros",
     clear: "Limpiar",
-    country: "País",
     championship: "Campeonato",
     team: "Equipo",
     region: "Región",
@@ -121,7 +118,6 @@ const I18N = {
     home_fallback: "Local",
     away_fallback: "Visitante",
     see_source: "Ver fuente",
-    estimated_venue: "estadio estimado",
   },
 };
 
@@ -134,7 +130,6 @@ const els = {
   totalNoMapa: document.getElementById("totalNoMapa"),
   totalCidades: document.getElementById("totalCidades"),
   ultimaAtualizacao: document.getElementById("ultimaAtualizacao"),
-  filtroPais: document.getElementById("filtroPais"),
   filtroCompeticao: document.getElementById("filtroCompeticao"),
   filtroTime: document.getElementById("filtroTime"),
   filtroRegiao: document.getElementById("filtroRegiao"),
@@ -277,11 +272,11 @@ function optionHtml(value) {
   return `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`;
 }
 
-function findStadiumInfo(estadioTexto, pais) {
+function findStadiumInfo(estadioTexto) {
   const txt = normalize(estadioTexto);
   if (!txt) return null;
 
-  const stadiums = pais === "Brasil" ? (window.ESTADIOS_BRASIL || []) : (window.ESTADIOS_CHILE || []);
+  const stadiums = window.ESTADIOS_CHILE || [];
 
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])];
@@ -300,83 +295,14 @@ function findStadiumInfo(estadioTexto, pais) {
   return null;
 }
 
-// O scraper do Brasil às vezes só grava a cidade dentro do texto livre
-// "extra" (ex.: "pais=Brasil; cidade=Rio de Janeiro"), em vez de um campo
-// próprio. Extrai isso como último recurso, quando a base de estádios não
-// tiver a cidade.
-function extractCidadeFromExtra(extra) {
-  const m = String(extra || "").match(/cidade\s*=\s*([^;]+)/i);
-  return m ? m[1].trim() : "";
-}
-
-// Fallback: quando o scraper não informa o estádio (comum em jogos em casa
-// de alguns times, ex.: San Marcos de Arica), usamos o estádio mandante conhecido.
-const ESTADIO_MANDANTE_PADRAO = {
-  "colo colo": "monumental david arellano",
-  "universidad de chile": "estadio nacional",
-  "universidad catolica": "claro arena",
-  "union espanola": "santa laura",
-  "palestino": "la cisterna",
-  "audax italiano": "bicentenario de la florida",
-  "magallanes": "luis navarro avilés",
-  "everton": "sausalito",
-  "santiago wanderers": "elías figueroa brander",
-  "union la calera": "nicolás chahuán",
-  "deportes la serena": "la portada",
-  "coquimbo unido": "francisco sánchez rumoroso",
-  "o'higgins": "el teniente",
-  "rangers de talca": "fiscal de talca",
-  "nublense": "bicentenario nelson oyarzún",
-  "huachipato": "estadio huachipato",
-  "universidad de concepcion": "ester roa rebolledo",
-  "deportes concepcion": "ester roa rebolledo",
-  "deportes temuco": "germán becker",
-  "provincial osorno": "rubén marcos peralta",
-  "deportes puerto montt": "chinquihue",
-  "cobresal": "el cobre",
-  "deportes copiapo": "luis valenzuela hermosilla",
-  "deportes antofagasta": "regional calvo y bascuñán",
-  "cobreloa": "zorros del desierto",
-  "deportes iquique": "tierra de campeones",
-  "san marcos de arica": "carlos dittborn",
-  "curico unido": "la granja",
-  "deportes recoleta": "leonel sanchez",
-  "club deportes santa cruz": "joaquín muñoz garcía",
-  "trasandino": "regional de los andes",
-};
-
-function findDefaultHomeStadium(mandante) {
-  const key = normalize(mandante);
-  const wanted = ESTADIO_MANDANTE_PADRAO[key];
-  if (!wanted) return null;
-  return findStadiumInfo(wanted);
-}
-
-function derivePais(j) {
-  if (j.pais) return j.pais;
-  const extra = String(j.extra || "");
-  if (/pais\s*=\s*brasil/i.test(extra)) return "Brasil";
-  if (/^brasil\s*-/i.test(j.competicao || "")) return "Brasil";
-  return "Chile";
-}
-
 function enrichGames(rawGames) {
   return rawGames.map((j, index) => {
-    const pais = derivePais(j);
-    let stadium = findStadiumInfo(j.estadio || "", pais);
-    let estadioFallback = false;
-    if (!stadium && !j.estadio && pais !== "Brasil") {
-      stadium = findDefaultHomeStadium(j.mandante);
-      estadioFallback = Boolean(stadium);
-    }
+    const stadium = findStadiumInfo(j.estadio || "");
     return {
       ...j,
       _idx: index,
       _stadiumInfo: stadium,
-      _estadioFallback: estadioFallback,
-      pais,
-      estadio: j.estadio || (estadioFallback ? stadium.nome : ""),
-      cidade: j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "",
+      cidade: j.cidade || stadium?.cidade || "",
       regiao: j.regiao || stadium?.regiao || "",
       lat: j.lat || stadium?.lat || null,
       lng: j.lng || stadium?.lng || null,
@@ -392,20 +318,15 @@ function populateSelect(select, values, allLabel) {
 }
 
 function setupFilters() {
-  const paises = uniqueSorted(jogosEnriquecidos.map(j => j.pais));
-  populateSelect(els.filtroPais, paises, t("all_m"));
-
-  const pais = els.filtroPais.value;
-  const escopo = pais ? jogosEnriquecidos.filter(j => j.pais === pais) : jogosEnriquecidos;
-
-  const comps = uniqueSorted(escopo.map(j => j.competicao));
-  const times = uniqueSorted(escopo.flatMap(j => [j.mandante, j.visitante]));
-  const regioes = uniqueSorted(escopo.map(j => j.regiao));
+  const comps = uniqueSorted(jogosEnriquecidos.map(j => j.competicao));
+  const times = uniqueSorted(jogosEnriquecidos.flatMap(j => [j.mandante, j.visitante]));
+  const regioes = uniqueSorted(jogosEnriquecidos.map(j => j.regiao));
+  const cidades = uniqueSorted(jogosEnriquecidos.map(j => j.cidade));
 
   populateSelect(els.filtroCompeticao, comps, t("all_m"));
   populateSelect(els.filtroTime, times, t("all_m"));
   populateSelect(els.filtroRegiao, regioes, t("all_f"));
-  updateDependentCityOptions();
+  populateSelect(els.filtroCidade, cidades, t("all_f"));
   updateTeamButtonState();
 }
 
@@ -417,7 +338,6 @@ function updateTeamButtonState() {
 }
 
 function getFilteredGames() {
-  const pais = els.filtroPais.value;
   const comp = els.filtroCompeticao.value;
   const time = els.filtroTime.value;
   const regiao = els.filtroRegiao.value;
@@ -428,7 +348,6 @@ function getFilteredGames() {
   const end = activePeriodDays ? addDaysISO(activePeriodDays - 1) : "";
 
   let out = jogosEnriquecidos.filter(j => {
-    const matchPais = !pais || j.pais === pais;
     const matchComp = !comp || j.competicao === comp;
     const matchTime = !time || j.mandante === time || j.visitante === time;
     const matchRegiao = showAllTeamMode ? true : (!regiao || j.regiao === regiao);
@@ -456,10 +375,9 @@ function getFilteredGames() {
       j.fonte,
       j.cidade,
       j.regiao,
-      j.pais,
     ].join(" "));
 
-    return matchPais && matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
+    return matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
   });
 
   out.sort((a, b) => parseDateTime(a) - parseDateTime(b));
@@ -467,11 +385,10 @@ function getFilteredGames() {
 }
 
 function updateDependentCityOptions() {
-  const pais = els.filtroPais.value;
   const regiao = els.filtroRegiao.value;
   const cidades = uniqueSorted(
     jogosEnriquecidos
-      .filter(j => (!pais || j.pais === pais) && (!regiao || j.regiao === regiao))
+      .filter(j => !regiao || j.regiao === regiao)
       .map(j => j.cidade)
   );
   populateSelect(els.filtroCidade, cidades, t("all_f"));
@@ -547,14 +464,13 @@ function renderMatchCard(j) {
       <h4 class="teams">${escapeHtml(j.mandante || t("home_fallback"))} × ${escapeHtml(j.visitante || t("away_fallback"))}</h4>
 
       <div class="meta">
-        <span>🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}${j._estadioFallback ? ` <em class="estimated">(${t("estimated_venue")})</em>` : ""}</span>
+        <span>🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}</span>
         <span>📍 ${escapeHtml(j.cidade || t("city_confirm"))} ${j.regiao ? "· " + escapeHtml(j.regiao) : ""}</span>
         <span>🏆 ${escapeHtml(j.rodada || t("round_confirm"))}</span>
         ${j.extra ? `<span>ℹ️ ${escapeHtml(j.extra)}</span>` : ""}
       </div>
 
       <div class="badges">
-        <span class="badge badge--${j.pais === "Brasil" ? "br" : "cl"}">${j.pais === "Brasil" ? "🇧🇷" : "🇨🇱"} ${escapeHtml(j.pais)}</span>
         ${j.temMapa ? `<span class="badge">${t("on_map")}</span>` : `<span class="badge noMap">${t("without_coords")}</span>`}
         ${j.url ? `<span class="badge"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("source")}</a></span>` : ""}
       </div>
@@ -568,7 +484,7 @@ function markerPopup(j) {
     <div class="popupMeta">
       <b>${escapeHtml(j.competicao || t("championship_fallback"))}</b><br>
       ${escapeHtml(formatDate(j.data))} · ${escapeHtml(j.hora || t("time_confirm"))}<br>
-      🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}${j._estadioFallback ? ` <em class="estimated">(${t("estimated_venue")})</em>` : ""}<br>
+      🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}<br>
       📍 ${escapeHtml(j.cidade || "")}${j.regiao ? " · " + escapeHtml(j.regiao) : ""}<br>
       ${j.extra ? `ℹ️ ${escapeHtml(j.extra)}<br>` : ""}
       ${j.url ? `<a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("see_source")}</a>` : ""}
@@ -654,16 +570,6 @@ function setupEvents() {
     renderAll();
   });
 
-  els.filtroPais.addEventListener("change", () => {
-    showAllTeamMode = false;
-    els.filtroCompeticao.value = "";
-    els.filtroTime.value = "";
-    els.filtroRegiao.value = "";
-    els.filtroCidade.value = "";
-    setupFilters();
-    renderAll();
-  });
-
   els.hojeBtn.addEventListener("click", () => {
     activePeriodDays = null;
     showAllTeamMode = false;
@@ -696,7 +602,6 @@ function setupEvents() {
   });
 
   els.limparBtn.addEventListener("click", () => {
-    els.filtroPais.value = "";
     els.filtroCompeticao.value = "";
     els.filtroTime.value = "";
     els.filtroRegiao.value = "";

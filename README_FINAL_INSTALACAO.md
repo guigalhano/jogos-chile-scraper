@@ -109,3 +109,63 @@ Adicionar Brasil CBF FERJ FMF FPF
 ```
 
 Observação: nesta primeira versão a fonte mais estável é a FERJ. CBF e FPF podem depender de JavaScript/API e podem retornar 0 jogos até mapearmos a API interna.
+
+
+## Atualização Brasil via PDF CBF
+
+Incluído parser de PDFs de "Tabela Detalhada" da CBF:
+
+```text
+adicionar_brasil_jogos.py
+```
+
+A fonte principal é:
+
+```text
+https://www.cbf.com.br/futebol-brasileiro/tabelas/
+```
+
+Os PDFs baixados ficam em:
+
+```text
+data/cbf_pdfs/
+```
+
+A etapa no workflow é:
+
+```text
+Adicionar Brasil CBF PDFs FERJ FMF FPF
+```
+
+
+## Atualização FPF via API/Playwright
+
+Incluído:
+
+```text
+scrap_fpf_playwright_api.py
+```
+
+Esse script abre as páginas da Federação Paulista com navegador headless, captura respostas JSON/XHR e extrai jogos com campos como:
+
+```text
+NomePopularMandante
+NomePopularVisitante
+Data
+Horario
+Estadio
+Municipio
+Rodada
+```
+
+Também gera arquivos de debug:
+
+```text
+data/debug_fpf_api_urls.json
+data/debug_fpf_matches_raw.json
+```
+
+
+## Melhorias FPF e FMF
+
+Incluído scraper dedicado para FMF e cache de endpoints para FPF.

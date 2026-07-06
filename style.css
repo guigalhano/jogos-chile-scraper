@@ -394,22 +394,6 @@ button.isActive {
   background: rgba(255,220,168,.12);
 }
 
-.badge--br {
-  color: #ffe37a;
-  background: rgba(255,227,122,.12);
-}
-
-.badge--cl {
-  color: #9fd0ff;
-  background: rgba(159,208,255,.12);
-}
-
-.estimated {
-  color: var(--muted);
-  font-style: italic;
-  font-size: 11px;
-}
-
 .empty {
   color: var(--muted);
   padding: 18px;
