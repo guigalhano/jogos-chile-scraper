@@ -1,4 +1,4 @@
-name: Atualizar jogos Chile
+name: Atualizar jogos Chile + CONMEBOL
 
 on:
   schedule:
@@ -26,14 +26,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Rodar scraper
+      - name: Rodar scraper Chile
         run: |
-          python atualizar_jogos_chile.py --once --dias 180
+          python atualizar_jogos_chile.py --once --dias 180 --dias-atras 14
+
+      - name: Adicionar CONMEBOL
+        run: |
+          python adicionar_conmebol.py --dias 180 --dias-atras 30
 
       - name: Salvar arquivos atualizados
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
-          git commit -m "Atualiza jogos programados" || echo "Sem mudanças"
+          git commit -m "Atualiza jogos Chile e CONMEBOL" || echo "Sem mudanças"
           git push
