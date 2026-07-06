@@ -205,6 +205,23 @@ select, input {
 
 select:focus, input:focus { border-color: var(--accent2); }
 
+input[type="range"] {
+  padding: 0;
+  border: none;
+  background: transparent;
+  accent-color: var(--accent2);
+  height: 22px;
+}
+
+.radiusLabel span {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.radiusLabel span span {
+  color: var(--accent2);
+}
+
 .buttons, .teamActions {
   display: flex;
   gap: 10px;

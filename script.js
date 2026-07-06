@@ -28,6 +28,7 @@ const I18N = {
     next15: "Próximos 15 dias",
     next30: "Próximos 30 dias",
     next60: "Próximos 60 dias",
+    radius_suffix: "km ao redor da cidade",
     no_coords: "Jogos sem coordenadas",
     show_all: "Mostrar todos",
     show_all_team: "Mostrar todos do time",
@@ -95,6 +96,7 @@ const I18N = {
     next15: "Próximos 15 días",
     next30: "Próximos 30 días",
     next60: "Próximos 60 días",
+    radius_suffix: "km alrededor de la ciudad",
     no_coords: "Partidos sin coordenadas",
     show_all: "Mostrar todos",
     show_all_team: "Mostrar todos del equipo",
@@ -151,6 +153,10 @@ const els = {
   filtroTime: document.getElementById("filtroTime"),
   filtroRegiao: document.getElementById("filtroRegiao"),
   filtroCidade: document.getElementById("filtroCidade"),
+  raioWrap: document.getElementById("raioWrap"),
+  raioLabelTexto: document.getElementById("raioLabelTexto"),
+  filtroRaio: document.getElementById("filtroRaio"),
+  raioValorTexto: document.getElementById("raioValorTexto"),
   filtroData: document.getElementById("filtroData"),
   busca: document.getElementById("busca"),
   hojeBtn: document.getElementById("hojeBtn"),
@@ -211,6 +217,8 @@ function applyLanguage(lang) {
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
     el.placeholder = t(el.dataset.i18nPlaceholder);
   });
+
+  updateRaioLabel();
 
   els.ptBtn.classList.toggle("active", lang === "pt");
   els.esBtn.classList.toggle("active", lang === "es");
@@ -309,6 +317,30 @@ function populateSelectComBandeiras(select, values, allLabel) {
   const current = select.value;
   select.innerHTML = `<option value="">${allLabel}</option>` + values.map(optionHtmlComBandeira).join("");
   if (values.includes(current)) select.value = current;
+}
+
+function updateRaioLabel() {
+  els.raioLabelTexto.innerHTML = `<span id="raioValorTexto">${els.filtroRaio.value}</span> ${t("radius_suffix")}`;
+  els.raioValorTexto = document.getElementById("raioValorTexto");
+}
+
+function distanciaKm(lat1, lng1, lat2, lng2) {
+  const R = 6371;
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLng = ((lng2 - lng1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLng / 2) *
+      Math.sin(dLng / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+}
+
+function coordenadasDaCidade(cidade) {
+  const alvo = jogosEnriquecidos.find(j => j.cidade === cidade && j.lat && j.lng);
+  return alvo ? { lat: alvo.lat, lng: alvo.lng } : null;
 }
 
 function findStadiumInfo(estadioTexto, pais) {
@@ -509,6 +541,8 @@ function getFilteredGames() {
   const time = els.filtroTime.value;
   const regiao = els.filtroRegiao.value;
   const cidade = els.filtroCidade.value;
+  const raioKm = Number(els.filtroRaio.value) || 0;
+  const cidadeCoords = cidade ? coordenadasDaCidade(cidade) : null;
   const data = els.filtroData.value;
   const q = normalize(els.busca.value);
   const start = todayISO();
@@ -519,7 +553,8 @@ function getFilteredGames() {
     const matchComp = !comp || j.competicao === comp;
     const matchTime = !time || j.mandante === time || j.visitante === time;
     const matchRegiao = showAllTeamMode ? true : (!regiao || j.regiao === regiao);
-    const matchCidade = showAllTeamMode ? true : (!cidade || j.cidade === cidade);
+    const matchCidade = showAllTeamMode ? true : (!cidade || j.cidade === cidade ||
+      (cidadeCoords && j.lat && j.lng && distanciaKm(cidadeCoords.lat, cidadeCoords.lng, j.lat, j.lng) <= raioKm));
     const matchData = showAllTeamMode ? true : (!data || j.data === data);
     const matchPeriod = showAllTeamMode ? true : (!activePeriodDays || (j.data >= start && j.data <= end));
 
@@ -562,6 +597,7 @@ function updateDependentCityOptions() {
       .map(j => j.cidade)
   );
   populateSelect(els.filtroCidade, cidades, t("all_f"));
+  els.raioWrap.hidden = !els.filtroCidade.value;
 }
 
 function groupedByDate(games) {
@@ -745,12 +781,23 @@ function setupEvents() {
     renderAll();
   });
 
+  els.filtroCidade.addEventListener("change", () => {
+    els.raioWrap.hidden = !els.filtroCidade.value;
+    renderAll();
+  });
+
+  els.filtroRaio.addEventListener("input", () => {
+    updateRaioLabel();
+    renderAll();
+  });
+
   els.filtroPais.addEventListener("change", () => {
     showAllTeamMode = false;
     els.filtroCompeticao.value = "";
     els.filtroTime.value = "";
     els.filtroRegiao.value = "";
     els.filtroCidade.value = "";
+    els.raioWrap.hidden = true;
     setupFilters();
     renderAll();
   });
@@ -795,6 +842,9 @@ function setupEvents() {
     els.filtroTime.value = "";
     els.filtroRegiao.value = "";
     els.filtroCidade.value = "";
+    els.filtroRaio.value = "50";
+    updateRaioLabel();
+    els.raioWrap.hidden = true;
     els.filtroData.value = "";
     els.busca.value = "";
     activePeriodDays = null;
