@@ -251,6 +251,28 @@ def html_to_lines(html: str) -> list[str]:
     return lines
 
 
+NOMES_GENERICOS = {"tabela completa", "tabela", "proxjogos", "competicoes"}
+
+
+def resolve_competicao(nome: str, lines: list[str]) -> str:
+    """FIX: detect_competicao() varria o texto da página procurando por
+    palavras-chave de competição, mas a barra lateral de navegação da FMF
+    (que lista TODAS as competições: MÓDULO I, MÓDULO II, SEGUNDA DIVISÃO...)
+    aparece no topo de toda página, idêntica não importa qual "d" você está
+    vendo. Como "MÓDULO I" é o primeiro item dessa lista, a varredura por
+    texto sempre "detectava" MÓDULO I, mesmo em páginas de TAÇA BH, COPA
+    ITATIAIA, SFAC etc. — o texto da barra lateral, não o conteúdo real da
+    página.
+
+    O nome real e confiável já vem do link clicado para descobrir esse "d"
+    (ex.: "TAÇA BH", "COPA ITATIAIA", "FEMININO SUB-17"). Usamos isso como
+    fonte primária; só caímos para a varredura de texto quando o nome for
+    genérico demais (ex.: "TABELA COMPLETA", que não diz qual competição)."""
+    if nome and norm(nome) not in NOMES_GENERICOS:
+        return nome
+    return detect_competicao(lines, nome)
+
+
 def detect_competicao(lines: list[str], fallback: str) -> str:
     for line in lines[:120]:
         s = clean_text(line)
@@ -517,7 +539,7 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
                         except Exception:
                             # tenta texto renderizado de resposta
                             lines = html_to_lines(txt)
-                            comp = detect_competicao(lines, nome)
+                            comp = resolve_competicao(nome, lines)
                             found = parse_text_patterns(lines, rurl, d, comp)
                             row["matches_text"] = len(found)
                             network_partidos.extend(found)
@@ -638,7 +660,7 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
             info["bytes"] = len(html.encode("utf-8"))
 
             lines = html_to_lines(html)
-            comp = detect_competicao(lines, nome)
+            comp = resolve_competicao(nome, lines)
             info["competicao_detectada"] = comp
             info["amostra_linhas"] = lines[:250]
 
