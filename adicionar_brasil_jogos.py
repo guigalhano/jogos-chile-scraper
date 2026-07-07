@@ -77,18 +77,18 @@ EXTRA_HTML_SOURCES = [
 
 # Buscas para localizar os PDFs de Tabela Detalhada mais recentes de cada série.
 CBF_SEARCH_QUERIES = [
-    ("Brasil - Série A", "CBF \"tabela detalhada\" brasileirão \"série a\" 2026 rodada pdf"),
-    ("Brasil - Série B", "CBF \"tabela detalhada\" brasileirão \"série b\" 2026 rodada pdf"),
-    ("Brasil - Série C", "CBF \"tabela detalhada\" brasileirão \"série c\" 2026 rodada pdf"),
-    ("Brasil - Série D", "CBF \"tabela detalhada\" brasileirão \"série d\" 2026 fase pdf"),
-    ("Brasil - Copa do Brasil", "CBF \"tabela detalhada\" \"copa do brasil\" 2026 fase pdf"),
-    ("Brasil - Copa do Brasil Feminina", "CBF \"tabela detalhada\" \"copa do brasil feminina\" 2026 pdf"),
-    ("Brasil - Série A Sub-20", "CBF \"tabela detalhada\" brasileirão \"série a\" \"sub-20\" 2026 pdf"),
-    ("Brasil - Série B Sub-20", "CBF \"tabela detalhada\" brasileirão \"série b\" \"sub-20\" 2026 pdf"),
-    ("Brasil - Sub-17", "CBF \"tabela detalhada\" brasileirão \"sub-17\" 2026 rodada pdf"),
-    ("Brasil - Feminino Sub-20", "CBF \"tabela detalhada\" brasileirão feminino \"sub 20\" 2026 pdf"),
-    ("Brasil - Feminino Sub-17", "CBF \"tabela detalhada\" brasileirão feminino \"sub 17\" 2026 pdf"),
-    ("Brasil - Feminino A1", "CBF \"tabela detalhada\" \"brasileiro feminino a1\" 2026 pdf"),
+    ("Brasil - Série A", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Tabela_Detalhada" "Serie_A_2026"'),
+    ("Brasil - Série B", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Tabela_Detalhada" "Serie_B_2026"'),
+    ("Brasil - Série C", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Tabela_Detalhada" "Serie_C_2026"'),
+    ("Brasil - Série D", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Tabela_Detalhada" "Serie_D_2026"'),
+    ("Brasil - Copa do Brasil", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Tabela_Detalhada" "Copa_do_Brasil_2026"'),
+    ("Brasil - Copa do Brasil Feminina", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Copa_do_Brasil_Feminina_2026"'),
+    ("Brasil - Série A Sub-20", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Serie_A_Sub_20_2026"'),
+    ("Brasil - Série B Sub-20", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Serie_B_Sub_20_2026"'),
+    ("Brasil - Sub-17", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Sub_17_2026"'),
+    ("Brasil - Feminino Sub-20", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Feminino" "Sub_20_2026"'),
+    ("Brasil - Feminino Sub-17", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Feminino" "Sub_17_2026"'),
+    ("Brasil - Feminino A1", 'site:stcbfsiteprdimgbrs.blob.core.windows.net filetype:pdf "Feminino_A1_2026"'),
 ]
 
 # Fallback manual: como buscadores (DuckDuckGo/Bing) podem bloquear scripts
