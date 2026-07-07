@@ -34,6 +34,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/debug_fpf_tabela_requests.json data/debug_fpf_tabela_payloads.json data/debug_fpf_tabela_jogos_raw.json 2>/dev/null || true
-          git commit -m "Diagnóstico FPF Tabela direto" || echo "Sem mudanças"
-          git pull --rebase origin main
-          git push
+          if git diff --cached --quiet; then
+            echo "Sem mudanças para commitar"
+          else
+            git commit -m "Diagnóstico FPF Tabela direto"
+            git pull --rebase origin main || git rebase --abort || true
+            git push
+          fi
