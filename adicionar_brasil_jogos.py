@@ -374,12 +374,65 @@ def search_web(query: str, max_results: int = 15) -> list[str]:
     return unique[:max_results]
 
 
+# Palavras-chave para casar cada competição com URLs descobertas pelo
+# atualizar_pdfs_cbf_pagina_v2.py (rodado como um passo separado, best-effort,
+# antes deste script no workflow diário).
+_PALAVRAS_COMPETICAO = {
+    "Brasil - Série A": ["serie a", "bsa 2026"],
+    "Brasil - Série B": ["serie_b", "serie b"],
+    "Brasil - Série C": ["serie_c", "serie c"],
+    "Brasil - Série D": ["serie_d", "serie d"],
+    "Brasil - Copa do Brasil": ["copa_do_brasil", "copa do brasil"],
+    "Brasil - Copa do Brasil Feminina": ["copa_do_brasil_feminina", "feminina"],
+    "Brasil - Série A Sub-20": ["serie_a_sub_20", "serie a sub-20", "sub_20"],
+    "Brasil - Série B Sub-20": ["serie_b_sub_20", "serie b sub-20"],
+    "Brasil - Sub-17": ["sub_17", "sub-17"],
+    "Brasil - Feminino Sub-20": ["feminino_sub_20", "feminino sub-20"],
+    "Brasil - Feminino Sub-17": ["feminino_sub_17", "feminino sub-17"],
+    "Brasil - Feminino A1": ["feminino_a1", "feminino a1"],
+}
+
+
+def find_urls_from_v2_discovery() -> dict[str, str]:
+    """Lê data/debug_cbf_pdf_links.json (gerado pelo passo separado do
+    atualizar_pdfs_cbf_pagina_v2.py no workflow diário, se ele rodou e achou
+    algo). Retorna {competicao_label: pdf_url} para as 'tabela_detalhada'
+    encontradas hoje. Se o arquivo não existir ou estiver vazio, retorna {}."""
+    path = OUT_DIR / "debug_cbf_pdf_links.json"
+    if not path.exists():
+        return {}
+    try:
+        candidatos = json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+    achados: dict[str, str] = {}
+    for c in candidatos:
+        if c.get("tipo") != "tabela_detalhada":
+            continue
+        url = c.get("url", "")
+        if not url.lower().endswith(".pdf"):
+            continue
+        url_norm = norm(url)
+        for competicao, palavras in _PALAVRAS_COMPETICAO.items():
+            if competicao in achados:
+                continue
+            if any(norm(p) in url_norm for p in palavras):
+                achados[competicao] = url
+    return achados
+
+
 def find_cbf_pdf_urls() -> list[tuple[str, str]]:
     """Retorna lista de (competicao_label, pdf_url) para as tabelas detalhadas
     mais recentes encontradas via busca de texto (não via crawling do site da CBF)."""
     found: list[tuple[str, str]] = []
     search_debug: list[dict] = []
+    v2_achados = find_urls_from_v2_discovery()
     for competicao, query in CBF_SEARCH_QUERIES:
+        if competicao in v2_achados:
+            found.append((competicao, v2_achados[competicao]))
+            print(f"[OK] PDF encontrado via descoberta diária (v2/Playwright) para {competicao}: {v2_achados[competicao]}")
+            continue
         try:
             results = search_web(query)
         except Exception as e:

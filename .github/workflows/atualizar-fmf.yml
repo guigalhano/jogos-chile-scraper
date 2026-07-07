@@ -30,7 +30,7 @@ jobs:
 
       - name: Rodar scraper FMF (Mineiro) via Playwright
         run: |
-          if [ -f scrap_fmf_competicoes_playwright_seguro.py ]; then python scrap_fmf_competicoes_playwright_seguro.py --max-d 30 --dias 180 --debug-html; fi
+          if [ -f scrap_fmf_competicoes_playwright_seguro.py ]; then python scrap_fmf_competicoes_playwright_seguro.py --max-d 8 --dias 180 --debug-html; fi
 
       - name: Salvar arquivos atualizados
         run: |

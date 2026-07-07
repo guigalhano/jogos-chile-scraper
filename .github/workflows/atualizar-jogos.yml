@@ -43,6 +43,10 @@ jobs:
         run: |
           if [ -f scrap_afa_agenda.py ]; then python scrap_afa_agenda.py --dias 180 --dias-atras 30; fi
 
+      - name: Descobrir PDFs atuais da CBF (Playwright + busca, best-effort)
+        run: |
+          if [ -f atualizar_pdfs_cbf_pagina_v2.py ]; then python atualizar_pdfs_cbf_pagina_v2.py --playwright --buscar-web --somente-listar || echo "Descoberta falhou, seguindo com seeds manuais"; fi
+
       - name: Adicionar Brasil CBF PDFs FERJ FMF FPF
         run: |
           if [ -f adicionar_brasil_jogos.py ]; then python adicionar_brasil_jogos.py --dias 180 --dias-atras 30; fi
@@ -68,7 +72,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
-          git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json 2>/dev/null || true
+          git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json 2>/dev/null || true
           git add data/cruzamento_promiedos.json 2>/dev/null || true
           git commit -m "Atualiza jogos Chile Brasil completo" || echo "Sem mudanças"
           git push
