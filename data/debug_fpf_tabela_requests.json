@@ -8,27 +8,12 @@
     "sample": "/* cyrillic-ext */ @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; font-stretch: 100%; src: url(https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSKmu1aB.woff2) format('woff2'); unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; } /* cyrillic */ @font-face { font-family: 'Open Sans'; font-style: normal; font-weight: 300; font-stretch: 100%; src: url(https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTSumu1aB.woff2) format('woff2'); unicode-range: U+030"
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/js/libs/jquery-3.1.1.min.js",
-    "status": 200,
-    "content_type": "application/javascript",
-    "interessante": false,
-    "jogos_detectados": 0,
-    "sample": "/*! jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license */ !function(a,b){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(\"jQuery requires a window with a document\");return b(a)}:b(a)}(\"undefined\"!=typeof window?window:this,function(a,b){\"use strict\";var c=[],d=a.document,e=Object.getPrototypeOf,f=c.slice,g=c.concat,h=c.push,i=c.indexOf,j={},k=j.toString,l=j.hasOwnProperty,m=l.toString,n=m.call(Object),o={};function p(a,b){b=b||d;var c=b.createElement(\"script\");c.text=a,b.head.appendChild("
-  },
-  {
     "url": "https://futebolpaulista.com.br/competicoes/Tabela.aspx",
     "status": 200,
     "content_type": "text/html; charset=utf-8",
     "interessante": true,
     "jogos_detectados": 0,
     "sample": "<!DOCTYPE html> <html xmlns=\"https://www.w3.org/1999/xhtml\"> <head><title> Tabela | Competições | Federação Paulista de Futebol </title><meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><link rel=\"icon\" href=\"../assets/img/favicon.ico\" /><meta name=\"og:image\" content=\"https://futebolpaulista.com.br/assets/img/bg-social-2025.png\" /><link href=\"https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800\" rel=\"stylesheet\" /> <link type=\"text/css\" href=\"/assets/stylesheets/screen.css?v=5.0\" rel=\"stylesheet\" /> <link type=\"tex"
-  },
-  {
-    "url": "https://futebolpaulista.com.br/assets/img/logo-fpf-label-4-out-2024-FP.png",
-    "status": 200,
-    "content_type": "image/png",
-    "interessante": false,
-    "jogos_detectados": 0
   },
   {
     "url": "https://futebolpaulista.com.br/assets/js/libs/jquery.modal.min.js",
@@ -46,6 +31,21 @@
     "jogos_detectados": 0
   },
   {
+    "url": "https://futebolpaulista.com.br/assets/img/logo-fpf-label-4-out-2024-FP.png",
+    "status": 200,
+    "content_type": "image/png",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/js/libs/jquery-3.1.1.min.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "interessante": false,
+    "jogos_detectados": 0,
+    "sample": "/*! jQuery v3.1.1 | (c) jQuery Foundation | jquery.org/license */ !function(a,b){\"use strict\";\"object\"==typeof module&&\"object\"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(\"jQuery requires a window with a document\");return b(a)}:b(a)}(\"undefined\"!=typeof window?window:this,function(a,b){\"use strict\";var c=[],d=a.document,e=Object.getPrototypeOf,f=c.slice,g=c.concat,h=c.push,i=c.indexOf,j={},k=j.toString,l=j.hasOwnProperty,m=l.toString,n=m.call(Object),o={};function p(a,b){b=b||d;var c=b.createElement(\"script\");c.text=a,b.head.appendChild("
+  },
+  {
     "url": "https://futebolpaulista.com.br/assets/stylesheets/screen.css?v=5.0",
     "status": 200,
     "content_type": "text/css",
@@ -54,14 +54,14 @@
     "sample": "html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-a"
   },
   {
-    "url": "https://futebolpaulista.com.br/Repositorio/Banner/636803130579620623.gif",
+    "url": "https://futebolpaulista.com.br/assets/img/icon_clubes.png",
     "status": 200,
-    "content_type": "image/gif",
+    "content_type": "image/png",
     "interessante": false,
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033812844557851.jpg",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033811614601300.jpg",
     "status": 200,
     "content_type": "image/jpeg",
     "interessante": false,
@@ -75,6 +75,13 @@
     "jogos_detectados": 0
   },
   {
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033812844557851.jpg",
+    "status": 200,
+    "content_type": "image/jpeg",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
     "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033814035878442.jpg",
     "status": 200,
     "content_type": "image/jpeg",
@@ -82,42 +89,14 @@
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033815983623828.jpg",
+    "url": "https://futebolpaulista.com.br/Repositorio/Banner/636803130579620623.gif",
     "status": 200,
-    "content_type": "image/jpeg",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033817927361415.jpg",
-    "status": 200,
-    "content_type": "image/jpeg",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033811614601300.jpg",
-    "status": 200,
-    "content_type": "image/jpeg",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033816951330855.jpg",
-    "status": 200,
-    "content_type": "image/jpeg",
+    "content_type": "image/gif",
     "interessante": false,
     "jogos_detectados": 0
   },
   {
     "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033818236471437.jpg",
-    "status": 200,
-    "content_type": "image/jpeg",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033815158587732.jpg",
     "status": 200,
     "content_type": "image/jpeg",
     "interessante": false,
@@ -131,21 +110,7 @@
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639041714606331614.jpeg",
-    "status": 200,
-    "content_type": "image/jpeg",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033818461832887.jpg",
-    "status": 200,
-    "content_type": "image/jpeg",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033819169914416.jpg",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033817927361415.jpg",
     "status": 200,
     "content_type": "image/jpeg",
     "interessante": false,
@@ -166,14 +131,14 @@
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/img/load-squares.svg",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033815983623828.jpg",
     "status": 200,
-    "content_type": "image/svg+xml",
+    "content_type": "image/jpeg",
     "interessante": false,
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033818784676013.jpg",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033815158587732.jpg",
     "status": 200,
     "content_type": "image/jpeg",
     "interessante": false,
@@ -187,49 +152,39 @@
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/img/logo-fpf-label-2.png",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033816951330855.jpg",
     "status": 200,
-    "content_type": "image/png",
+    "content_type": "image/jpeg",
     "interessante": false,
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/img/bg-interna-out-2024.png",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033819169914416.jpg",
     "status": 200,
-    "content_type": "image/png",
+    "content_type": "image/jpeg",
     "interessante": false,
     "jogos_detectados": 0
   },
   {
-    "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033818461832887.jpg",
     "status": 200,
-    "content_type": "font/woff2",
+    "content_type": "image/jpeg",
     "interessante": false,
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/js/libs/jquery-ui.min.js",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639041714606331614.jpeg",
     "status": 200,
-    "content_type": "application/javascript",
+    "content_type": "image/jpeg",
     "interessante": false,
-    "jogos_detectados": 0,
-    "sample": "/*! jQuery UI - v1.11.0 - 2014-06-26 * http://jqueryui.com * Includes: core.js, widget.js, mouse.js, position.js, accordion.js, autocomplete.js, button.js, datepicker.js, dialog.js, draggable.js, droppable.js, effect.js, effect-blind.js, effect-bounce.js, effect-clip.js, effect-drop.js, effect-explode.js, effect-fade.js, effect-fold.js, effect-highlight.js, effect-puff.js, effect-pulsate.js, effect-scale.js, effect-shake.js, effect-size.js, effect-slide.js, effect-transfer.js, menu.js, progressbar.js, resizable.js, selectable.js, selectmenu.js, slider.js, sortable.js, spinner.js, tabs.js, tool"
+    "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/js/libs/jquery.ui.touch-punch.min.js",
+    "url": "https://futebolpaulista.com.br/Repositorio/Publicidade/639033818784676013.jpg",
     "status": 200,
-    "content_type": "application/javascript",
+    "content_type": "image/jpeg",
     "interessante": false,
-    "jogos_detectados": 0,
-    "sample": "/*! * jQuery UI Touch Punch 0.2.3 * * Copyright 2011–2014, Dave Furfero * Dual licensed under the MIT or GPL Version 2 licenses. * * Depends: * jquery.ui.widget.js * jquery.ui.mouse.js */ !function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent(\"MouseEvents\");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch=\"ontouchend\"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouse"
-  },
-  {
-    "url": "https://futebolpaulista.com.br/assets/js/main.js?v=1.7",
-    "status": 200,
-    "content_type": "application/javascript",
-    "interessante": false,
-    "jogos_detectados": 0,
-    "sample": "$(document).ready(function () { checkWidth(); $(window).resize(function () { checkWidth(); (function closeBoxes() { //$(\".card-laudos\").hide(); $(\".card-estadio\").removeClass(\"active\"); })(); }); $('nav.principal').clone().appendTo('body').addClass('fixed'); $(window).scroll(function () { if ($(window).scrollTop() <= 400) { $('nav.principal.fixed').removeClass('on'); } else { $('nav.principal.fixed').addClass('on'); } }); setSlc(); LoadJsSlick(); LoadSubMenu(); $(document) .on(\"click\""
+    "jogos_detectados": 0
   },
   {
     "url": "https://connect.facebook.net/pt_BR/sdk.js",
@@ -237,12 +192,12 @@
     "content_type": "application/x-javascript; charset=utf-8",
     "interessante": false,
     "jogos_detectados": 0,
-    "sample": "/*1783440459,*/ /** * Copyright (c) 2017-present, Facebook, Inc. All rights reserved. * * You are hereby granted a non-exclusive, worldwide, royalty-free license to use, * copy, modify, and distribute this software in source code or binary form for use * in connection with the web services and APIs provided by Facebook. * * As with any software that integrates with the Facebook platform, your use of * this software is subject to the Facebook Platform Policy * [http://developers.facebook.com/policy/]. This copyright notice shall be * included in all copies or substantial portions of"
+    "sample": "/*1783441314,*/ /** * Copyright (c) 2017-present, Facebook, Inc. All rights reserved. * * You are hereby granted a non-exclusive, worldwide, royalty-free license to use, * copy, modify, and distribute this software in source code or binary form for use * in connection with the web services and APIs provided by Facebook. * * As with any software that integrates with the Facebook platform, your use of * this software is subject to the Facebook Platform Policy * [http://developers.facebook.com/policy/]. This copyright notice shall be * included in all copies or substantial portions of"
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/img/sprites-s82953070fb.png",
+    "url": "https://fonts.gstatic.com/s/opensans/v44/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2",
     "status": 200,
-    "content_type": "image/png",
+    "content_type": "font/woff2",
     "interessante": false,
     "jogos_detectados": 0
   },
@@ -255,28 +210,28 @@
     "sample": "// Copyright 2012 Google Inc. All rights reserved. (function(){ var data = { \"resource\": { \"version\":\"1\", \"macros\":[{\"function\":\"__e\"},{\"function\":\"__c\",\"vtp_value\":\"\"},{\"function\":\"__c\",\"vtp_value\":0}], \"tags\":[{\"function\":\"__ogt_1p_data_v2\",\"priority\":13,\"vtp_isAutoEnabled\":true,\"vtp_autoPhoneEnabled\":true,\"vtp_autoCollectExclusionSelectors\":[\"list\",[\"map\",\"exclusionSelector\",\"\"]],\"vtp_isEnabled\":true,\"vtp_autoAddressEnabled\":true,\"vtp_autoEmailEnabled\":true,\"vtp_manualEmailEnabled\":false,\"vtp_cityValue\":\"\",\"vtp_postalCodeValue\":\"\",\"vtp_lastNameValue\":\"\",\"vtp_phoneValue\":\"\",\"vtp"
   },
   {
+    "url": "https://connect.facebook.net/pt_BR/bundle/sdk.js/",
+    "status": 200,
+    "content_type": "application/x-javascript; charset=utf-8",
+    "interessante": false,
+    "jogos_detectados": 0,
+    "sample": "/*1783440946,*/ /** * Copyright (c) 2017-present, Facebook, Inc. All rights reserved. * * You are hereby granted a non-exclusive, worldwide, royalty-free license to use, * copy, modify, and distribute this software in source code or binary form for use * in connection with the web services and APIs provided by Facebook. * * As with any software that integrates with the Facebook platform, your use of * this software is subject to the Facebook Platform Policy * [http://developers.facebook.com/policy/]. This copyright notice shall be * included in all copies or substantial portions of"
+  },
+  {
+    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-74WKDM3EHH&gtm=45je6760v9220151370za200zd9220151370&_p=1783441406028&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=23000010.1783441406&frm=0&pscdl=noapi&rcb=3&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115616985~115938465~115938468~119027224~119576881~119576885~119576891~119576895&sid=1783441406&sct=1&seg=0&dl=https%3A%2F%2Ffutebolpaulista.com.br%2Fcompeticoes%2FTabela.aspx&dt=Tabela%20%7C%20Competi%C3%A7%C3%B5es%20%7C%20Federa%C3%A7%C3%A3o%20Paulista%20de%20Futebol&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=4251",
+    "status": 204,
+    "content_type": "text/plain",
+    "interessante": true,
+    "jogos_detectados": 0,
+    "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+  },
+  {
     "url": "https://futebolpaulista.com.br/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZJYiloduZIapihEOP52chXBIF66bHaO_9mxz2HUjwfSjgVOwGhBS3k8tq6LRIUEnMw2&t=638568496745067788",
     "status": 200,
     "content_type": "application/x-javascript",
     "interessante": true,
     "jogos_detectados": 0,
     "sample": "function WebForm_PostBackOptions(eventTarget, eventArgument, validation, validationGroup, actionUrl, trackFocus, clientSubmit) { this.eventTarget = eventTarget; this.eventArgument = eventArgument; this.validation = validation; this.validationGroup = validationGroup; this.actionUrl = actionUrl; this.trackFocus = trackFocus; this.clientSubmit = clientSubmit; } function WebForm_DoPostBackWithOptions(options) { var validationResult = true; if (options.validation) { if (typeof(Page_ClientValidate) == 'function') { validationResult"
-  },
-  {
-    "url": "https://connect.facebook.net/pt_BR/bundle/sdk.js/",
-    "status": 200,
-    "content_type": "application/x-javascript; charset=utf-8",
-    "interessante": false,
-    "jogos_detectados": 0,
-    "sample": "/*1783440015,*/ /** * Copyright (c) 2017-present, Facebook, Inc. All rights reserved. * * You are hereby granted a non-exclusive, worldwide, royalty-free license to use, * copy, modify, and distribute this software in source code or binary form for use * in connection with the web services and APIs provided by Facebook. * * As with any software that integrates with the Facebook platform, your use of * this software is subject to the Facebook Platform Policy * [http://developers.facebook.com/policy/]. This copyright notice shall be * included in all copies or substantial portions of"
-  },
-  {
-    "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-74WKDM3EHH&gtm=45je6760v9220151370za200zd9220151370&_p=1783441053451&gcd=13l3l3l3l1l1&npa=0&dma=0&are=1&cid=375154166.1783441054&frm=0&pscdl=noapi&rcb=2&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115616986~115938466~115938468~118395335~119027224~119576881~119576885~119576891~119576895&sid=1783441053&sct=1&seg=0&dl=https%3A%2F%2Ffutebolpaulista.com.br%2Fcompeticoes%2FTabela.aspx&dt=Tabela%20%7C%20Competi%C3%A7%C3%B5es%20%7C%20Federa%C3%A7%C3%A3o%20Paulista%20de%20Futebol&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=1638",
-    "status": 204,
-    "content_type": "text/plain",
-    "interessante": true,
-    "jogos_detectados": 0,
-    "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
   },
   {
     "url": "https://futebolpaulista.com.br/assets/img/logo-fpf-out-2024.png",
@@ -293,28 +248,14 @@
     "jogos_detectados": 0
   },
   {
+    "url": "https://futebolpaulista.com.br/assets/img/load-squares.svg",
+    "status": 200,
+    "content_type": "image/svg+xml",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
     "url": "https://futebolpaulista.com.br/assets/img/Logo_Fanaticos.png",
-    "status": 200,
-    "content_type": "image/png",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/assets/img/icons/tritone.png",
-    "status": 200,
-    "content_type": "image/png",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/assets/img/icon_clubes.png",
-    "status": 200,
-    "content_type": "image/png",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/assets/img/sprites/ico-youtube_hover.png",
     "status": 200,
     "content_type": "image/png",
     "interessante": false,
@@ -328,7 +269,15 @@
     "jogos_detectados": 0
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/img/icons/pdf-preto2.png",
+    "url": "https://futebolpaulista.com.br/assets/js/libs/jquery.ui.touch-punch.min.js",
+    "status": 200,
+    "content_type": "application/javascript",
+    "interessante": false,
+    "jogos_detectados": 0,
+    "sample": "/*! * jQuery UI Touch Punch 0.2.3 * * Copyright 2011–2014, Dave Furfero * Dual licensed under the MIT or GPL Version 2 licenses. * * Depends: * jquery.ui.widget.js * jquery.ui.mouse.js */ !function(a){function f(a,b){if(!(a.originalEvent.touches.length>1)){a.preventDefault();var c=a.originalEvent.changedTouches[0],d=document.createEvent(\"MouseEvents\");d.initMouseEvent(b,!0,!0,window,1,c.screenX,c.screenY,c.clientX,c.clientY,!1,!1,!1,!1,0,null),a.target.dispatchEvent(d)}}if(a.support.touch=\"ontouchend\"in document,a.support.touch){var e,b=a.ui.mouse.prototype,c=b._mouseInit,d=b._mouse"
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/img/bg-menu-out-2024.png",
     "status": 200,
     "content_type": "image/png",
     "interessante": false,
@@ -343,11 +292,62 @@
     "sample": "/** * jQuery CSS Customizable Scrollbar * * Copyright 2015, Yuriy Khabarov * Dual licensed under the MIT or GPL Version 2 licenses. * * If you found bug, please contact me via email <13real008@gmail.com> * * Compressed by http://jscompress.com/ * * @author Yuriy Khabarov aka Gromo * @version 0.2.10 * @url https://github.com/gromo/jquery.scrollbar/ * */ !function (l, e) { \"function\" == typeof define && define.amd ? define([\"jquery\"], e) : e(l.jQuery) }(this, function (l) { \"use strict\"; function e(e) { if (t.webkit && !e) return { height: 0, width: 0 }; if (!t.data.outer) { var o"
   },
   {
+    "url": "https://futebolpaulista.com.br/assets/js/main.js?v=1.7",
+    "status": 200,
+    "content_type": "application/javascript",
+    "interessante": false,
+    "jogos_detectados": 0,
+    "sample": "$(document).ready(function () { checkWidth(); $(window).resize(function () { checkWidth(); (function closeBoxes() { //$(\".card-laudos\").hide(); $(\".card-estadio\").removeClass(\"active\"); })(); }); $('nav.principal').clone().appendTo('body').addClass('fixed'); $(window).scroll(function () { if ($(window).scrollTop() <= 400) { $('nav.principal.fixed').removeClass('on'); } else { $('nav.principal.fixed').addClass('on'); } }); setSlc(); LoadJsSlick(); LoadSubMenu(); $(document) .on(\"click\""
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/img/sprites/ico-youtube_hover.png",
+    "status": 200,
+    "content_type": "image/png",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/img/logo-fpf-label-2.png",
+    "status": 200,
+    "content_type": "image/png",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/img/icons/tritone.png",
+    "status": 200,
+    "content_type": "image/png",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
     "url": "https://futebolpaulista.com.br/assets/img/ico-integridade.png",
     "status": 200,
     "content_type": "image/png",
     "interessante": false,
     "jogos_detectados": 0
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/img/sprites-s82953070fb.png",
+    "status": 200,
+    "content_type": "image/png",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/img/icons/pdf-preto2.png",
+    "status": 200,
+    "content_type": "image/png",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/stylesheets/print.css",
+    "status": 200,
+    "content_type": "text/css",
+    "interessante": false,
+    "jogos_detectados": 0,
+    "sample": "*{background:transparent !important;color:#000 !important;text-shadow:none !important;filter:none !important;-ms-filter:none !important}body,html{margin:0;padding:0;line-height:1.4em}@page{margin:1cm}.titulo{margin:0;padding:0}.titulo.tit-clear{padding:0;float:none}.titulo:after{display:none}.pag-home{padding-top:100px}.pag-home nav.filtro{display:none}.pag-home .competicoes{display:none}.pag-home .box-load{display:none}.pag-home .home-bloco .fpf-tv{margin-top:100px}.pag-home .home-bloco .fpf-tv .logo-itaipava{display:none}.pag-home .home-bloco .fpf-tv .galeria item{min-height:100px}.noticias"
   },
   {
     "url": "https://futebolpaulista.com.br/assets/js/competicoes.js?v=1.3.2",
@@ -358,19 +358,19 @@
     "sample": "var vmCampeonatos = null; var vmCampeonatosArquivo = null; var vmArtilharia = null; var vmArquivo = null; var vmJogos = null; var vmAlteracao = null; var vmClassificacao = null; var vmOuvidoria = null; Vue.config.devtools = true; /*============================================================================ VUE ============================================================================*/ $(document).ready(function () { LoadSubMenu(); $(document) .on(\"click\", \".itemCampeonatoTabela\", selecionarPeriodo) .on(\"click\", \"#itemTodos\", carregaTodos)"
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/img/bg-menu-out-2024.png",
-    "status": 200,
-    "content_type": "image/png",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://futebolpaulista.com.br/assets/js/libs/vue/vue.js",
+    "url": "https://futebolpaulista.com.br/assets/js/libs/jquery-ui.min.js",
     "status": 200,
     "content_type": "application/javascript",
     "interessante": false,
     "jogos_detectados": 0,
-    "sample": "/*! * Vue.js v2.1.3 * (c) 2014-2016 Evan You * Released under the MIT License. */ (function (global, factory) { typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : (global.Vue = factory()); }(this, (function () { 'use strict'; /* */ /** * Convert a value to a string that is actually rendered. */ function _toString (val) { return val == null ? '' : typeof val === 'object' ? JSON.stringify(val, null, 2) : String(val) } /** * Convert a input value to a numb"
+    "sample": "/*! jQuery UI - v1.11.0 - 2014-06-26 * http://jqueryui.com * Includes: core.js, widget.js, mouse.js, position.js, accordion.js, autocomplete.js, button.js, datepicker.js, dialog.js, draggable.js, droppable.js, effect.js, effect-blind.js, effect-bounce.js, effect-clip.js, effect-drop.js, effect-explode.js, effect-fade.js, effect-fold.js, effect-highlight.js, effect-puff.js, effect-pulsate.js, effect-scale.js, effect-shake.js, effect-size.js, effect-slide.js, effect-transfer.js, menu.js, progressbar.js, resizable.js, selectable.js, selectmenu.js, slider.js, sortable.js, spinner.js, tabs.js, tool"
+  },
+  {
+    "url": "https://futebolpaulista.com.br/assets/img/bg-interna-out-2024.png",
+    "status": 200,
+    "content_type": "image/png",
+    "interessante": false,
+    "jogos_detectados": 0
   },
   {
     "url": "https://futebolpaulista.com.br/img/flickr.png",
@@ -381,12 +381,12 @@
     "sample": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"> <html xmlns=\"http://www.w3.org/1999/xhtml\"> <head> <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/> <title>404 - File or directory not found.</title> <style type=\"text/css\"> <!-- body{margin:0;font-size:.7em;font-family:Verdana, Arial, Helvetica, sans-serif;background:#EEEEEE;} fieldset{padding:0 15px 10px 15px;} h1{font-size:2.4em;margin:0;color:#FFF;} h2{font-size:1.7em;margin:0;color:#CC0000;} h3{font-size:1.2em;margin:10px 0 0 0;color:#000000;}"
   },
   {
-    "url": "https://futebolpaulista.com.br/assets/stylesheets/print.css",
+    "url": "https://futebolpaulista.com.br/assets/js/libs/vue/vue.js",
     "status": 200,
-    "content_type": "text/css",
+    "content_type": "application/javascript",
     "interessante": false,
     "jogos_detectados": 0,
-    "sample": "*{background:transparent !important;color:#000 !important;text-shadow:none !important;filter:none !important;-ms-filter:none !important}body,html{margin:0;padding:0;line-height:1.4em}@page{margin:1cm}.titulo{margin:0;padding:0}.titulo.tit-clear{padding:0;float:none}.titulo:after{display:none}.pag-home{padding-top:100px}.pag-home nav.filtro{display:none}.pag-home .competicoes{display:none}.pag-home .box-load{display:none}.pag-home .home-bloco .fpf-tv{margin-top:100px}.pag-home .home-bloco .fpf-tv .logo-itaipava{display:none}.pag-home .home-bloco .fpf-tv .galeria item{min-height:100px}.noticias"
+    "sample": "/*! * Vue.js v2.1.3 * (c) 2014-2016 Evan You * Released under the MIT License. */ (function (global, factory) { typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() : typeof define === 'function' && define.amd ? define(factory) : (global.Vue = factory()); }(this, (function () { 'use strict'; /* */ /** * Convert a value to a string that is actually rendered. */ function _toString (val) { return val == null ? '' : typeof val === 'object' ? JSON.stringify(val, null, 2) : String(val) } /** * Convert a input value to a numb"
   },
   {
     "url": "https://futebolpaulista.com.br/assets/fonts/Intro.ttf?1766411912",
@@ -412,14 +412,7 @@
     "sample": "(function(){var E;var g=window,n=document,p=function(a){var b=g._gaUserPrefs;if(b&&b.ioo&&b.ioo()||a&&!0===g[\"ga-disable-\"+a])return!0;try{var c=g.external;if(c&&c._gaUserPrefs&&\"oo\"==c._gaUserPrefs)return!0}catch(f){}a=[];b=n.cookie.split(\";\");c=/^\\s*AMP_TOKEN=\\s*(.*?)\\s*$/;for(var d=0;d<b.length;d++){var e=b[d].match(c);e&&a.push(e[1])}for(b=0;b<a.length;b++)if(\"$OPT_OUT\"==decodeURIComponent(a[b]))return!0;return!1};var q=function(a){return encodeURIComponent?encodeURIComponent(a).replace(/\\(/g,\"%28\").replace(/\\)/g,\"%29\"):a},r=/^(www\\.)?google(\\.com?)?(\\.[a-z]{2})?$/,u=/(^|\\.)doubleclick\\.ne"
   },
   {
-    "url": "https://futebolpaulista.com.br/cdn-cgi/challenge-platform/scripts/jsd/main.js",
-    "status": 302,
-    "content_type": "",
-    "interessante": false,
-    "jogos_detectados": 0
-  },
-  {
-    "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=1427296043&utmhn=futebolpaulista.com.br&utmcs=UTF-8&utmsr=1280x720&utmvp=1280x720&utmsc=24-bit&utmul=pt-br&utmje=0&utmfl=-&utmdt=Tabela%20%7C%20Competi%C3%A7%C3%B5es%20%7C%20Federa%C3%A7%C3%A3o%20Paulista%20de%20Futebol&utmhid=1446975063&utmr=-&utmp=%2Fcompeticoes%2FTabela.aspx&utmht=1783441054162&utmac=UA-5740542-1&utmcc=__utma%3D85515790.375154166.1783441054.1783441054.1783441054.1%3B%2B__utmz%3D85515790.1783441054.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=1030716596&utmredir=1&utmu=DAAAAAAAAAAAAAAAAAABAAAE~",
+    "url": "https://ssl.google-analytics.com/r/__utm.gif?utmwv=5.7.2&utms=1&utmn=909006119&utmhn=futebolpaulista.com.br&utmcs=UTF-8&utmsr=1280x720&utmvp=1280x720&utmsc=24-bit&utmul=pt-br&utmje=0&utmfl=-&utmdt=Tabela%20%7C%20Competi%C3%A7%C3%B5es%20%7C%20Federa%C3%A7%C3%A3o%20Paulista%20de%20Futebol&utmhid=1208750820&utmr=-&utmp=%2Fcompeticoes%2FTabela.aspx&utmht=1783441406927&utmac=UA-5740542-1&utmcc=__utma%3D85515790.23000010.1783441406.1783441407.1783441407.1%3B%2B__utmz%3D85515790.1783441407.1.1.utmcsr%3D(direct)%7Cutmccn%3D(direct)%7Cutmcmd%3D(none)%3B&utmjid=702684750&utmredir=1&utmu=DAAAAAAAAAAAAAAAAAABAAAE~",
     "status": 200,
     "content_type": "image/gif",
     "interessante": true,
@@ -427,39 +420,22 @@
     "read_error": "'utf-8' codec can't decode byte 0x80 in position 10: invalid start byte"
   },
   {
+    "url": "https://futebolpaulista.com.br/cdn-cgi/challenge-platform/scripts/jsd/main.js",
+    "status": 302,
+    "content_type": "",
+    "interessante": false,
+    "jogos_detectados": 0
+  },
+  {
     "url": "https://futebolpaulista.com.br/cdn-cgi/challenge-platform/h/b/scripts/jsd/80a697ecdece/main.js?",
     "status": 200,
     "content_type": "application/javascript; charset=UTF-8",
     "interessante": false,
     "jogos_detectados": 0,
-    "sample": "window._cf_chl_opt = {JPsB0:'b'};~function(CZ,K,p,y,l,W,I,i,Z,L,H,R,O,F,Q){CZ=f,function(o,q,fh,Ci,k,j){for(fh={o:724,q:470,k:726,j:511,G:657,X:595,M:605,P:527,A:581,S:519,E:573},Ci=f,k=o();!![];)try{if(j=parseInt(Ci(fh.o))/1*(-parseInt(Ci(fh.q))/2)+parseInt(Ci(fh.k))/3+-parseInt(Ci(fh.j))/4+-parseInt(Ci(fh.G))/5*(-parseInt(Ci(fh.X))/6)+parseInt(Ci(fh.M))/7+parseInt(Ci(fh.P))/8*(-parseInt(Ci(fh.A))/9)+-parseInt(Ci(fh.S))/10*(-parseInt(Ci(fh.E))/11),j===q)break;else k.push(k.shift())}catch(G){k.push(k.shift())}}(C,618431),K=this||self,p=K[CZ(658)],y={},y[CZ(700)]=`o`,y[CZ(643)]=`s`,y[CZ(572)]=`"
+    "sample": "window._cf_chl_opt = {JPsB0:'b'};~function(CZ,K,p,y,l,W,I,i,Z,L,H,R,O,F,Q){CZ=f,function(o,q,fq,Ci,k,j){for(fq={o:531,q:639,k:616,j:541,G:547,X:622,M:497,P:657,A:472,S:653,E:558},Ci=f,k=o();!![];)try{if(j=-parseInt(Ci(fq.o))/1*(parseInt(Ci(fq.q))/2)+parseInt(Ci(fq.k))/3*(parseInt(Ci(fq.j))/4)+parseInt(Ci(fq.G))/5+parseInt(Ci(fq.X))/6+-parseInt(Ci(fq.M))/7*(-parseInt(Ci(fq.P))/8)+-parseInt(Ci(fq.A))/9*(-parseInt(Ci(fq.S))/10)+-parseInt(Ci(fq.E))/11,j===q)break;else k.push(k.shift())}catch(G){k.push(k.shift())}}(C,821312),K=this||self,p=K[CZ(520)],y={},y[CZ(617)]=`o`,y[CZ(458)]=`s`,y[CZ(650)]=`u"
   },
   {
-    "url": "https://futebolpaulista.com.br/Handlers/Competicoes/ListarTabela.ashx?IdJogo=null&_=1783441053441",
-    "status": 200,
-    "content_type": "text/plain; charset=utf-8",
-    "interessante": true,
-    "jogos_detectados": 0,
-    "sample": "{\"Codigo\":-1,\"Sucesso\":false,\"Mensagem\":\"Nenhum filtro informado\",\"Retorno\":null,\"Total\":0}"
-  },
-  {
-    "url": "https://futebolpaulista.com.br/Handlers/Competicoes/ListarJogoAlteracoes.ashx?IdJogo=null&_=1783441053442",
-    "status": 200,
-    "content_type": "text/plain; charset=utf-8",
-    "interessante": true,
-    "jogos_detectados": 0,
-    "sample": "{\"Codigo\":-1,\"Sucesso\":false,\"Mensagem\":\"IdJogo não informado\",\"Retorno\":null,\"Total\":0}"
-  },
-  {
-    "url": "https://futebolpaulista.com.br/Handlers/Competicoes/ListarTodosCampeonatosExercicio.ashx?_=1783441053440",
-    "status": 200,
-    "content_type": "text/plain; charset=utf-8",
-    "interessante": true,
-    "jogos_detectados": 0,
-    "sample": "{\"Codigo\":0,\"Sucesso\":true,\"Mensagem\":\"\",\"Retorno\":[{\"IdCampeonato\":128,\"IdCategoria\":38,\"Categoria\":\"Amador\",\"Campeonato\":\"Paulista Feminino\",\"Ordem\":1,\"Destaque\":0,\"DescricaoSite\":\"Paulistão F\"},{\"IdCampeonato\":100,\"IdCategoria\":70,\"Categoria\":\"Profissional\",\"Campeonato\":\"Copa Paulista\",\"Ordem\":2,\"Destaque\":0,\"DescricaoSite\":\"Copa Paulista Rivalo\"},{\"IdCampeonato\":104,\"IdCategoria\":74,\"Categoria\":\"Segunda Divisão\",\"Campeonato\":\"Paulista Sub23\",\"Ordem\":3,\"Destaque\":0,\"DescricaoSite\":\"Paulista Sub-23 2ª Divisão\"},{\"IdCampeonato\":221,\"IdCategoria\":94,\"Categoria\":\"SUB20 - Série A\",\"Campeonato\":\""
-  },
-  {
-    "url": "https://futebolpaulista.com.br/cdn-cgi/challenge-platform/h/b/jsd/oneshot/80a697ecdece/0.19822747522344997:1783436733:zr7MnUtyTdFXc541k3uYrXT-VtoJ4W567hjG5MIA_MM/a17828f04b8c979d",
+    "url": "https://futebolpaulista.com.br/cdn-cgi/challenge-platform/h/b/jsd/oneshot/80a697ecdece/0.19822747522344997:1783436733:zr7MnUtyTdFXc541k3uYrXT-VtoJ4W567hjG5MIA_MM/a178317c0c95f835",
     "status": 200,
     "content_type": "text/plain; charset=UTF-8",
     "interessante": false,
@@ -467,11 +443,35 @@
     "sample": ""
   },
   {
-    "url": "https://futebolpaulista.com.br/Handlers/Competicoes/ListarDataCampeonatos.ashx?IdCampeonato=128&_=1783441053443",
+    "url": "https://futebolpaulista.com.br/Handlers/Competicoes/ListarJogoAlteracoes.ashx?IdJogo=null&_=1783441406020",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "interessante": true,
+    "jogos_detectados": 0,
+    "sample": "{\"Codigo\":-1,\"Sucesso\":false,\"Mensagem\":\"IdJogo não informado\",\"Retorno\":null,\"Total\":0}"
+  },
+  {
+    "url": "https://futebolpaulista.com.br/Handlers/Competicoes/ListarTabela.ashx?IdJogo=null&_=1783441406019",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "interessante": true,
+    "jogos_detectados": 0,
+    "sample": "{\"Codigo\":-1,\"Sucesso\":false,\"Mensagem\":\"Nenhum filtro informado\",\"Retorno\":null,\"Total\":0}"
+  },
+  {
+    "url": "https://futebolpaulista.com.br/Handlers/Competicoes/ListarTodosCampeonatosExercicio.ashx?_=1783441406018",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "interessante": true,
+    "jogos_detectados": 0,
+    "sample": "{\"Codigo\":0,\"Sucesso\":true,\"Mensagem\":\"\",\"Retorno\":[{\"IdCampeonato\":128,\"IdCategoria\":38,\"Categoria\":\"Amador\",\"Campeonato\":\"Paulista Feminino\",\"Ordem\":1,\"Destaque\":0,\"DescricaoSite\":\"Paulistão F\"},{\"IdCampeonato\":100,\"IdCategoria\":70,\"Categoria\":\"Profissional\",\"Campeonato\":\"Copa Paulista\",\"Ordem\":2,\"Destaque\":0,\"DescricaoSite\":\"Copa Paulista Rivalo\"},{\"IdCampeonato\":104,\"IdCategoria\":74,\"Categoria\":\"Segunda Divisão\",\"Campeonato\":\"Paulista Sub23\",\"Ordem\":3,\"Destaque\":0,\"DescricaoSite\":\"Paulista Sub-23 2ª Divisão\"},{\"IdCampeonato\":221,\"IdCategoria\":94,\"Categoria\":\"SUB20 - Série A\",\"Campeonato\":\""
+  },
+  {
+    "url": "https://futebolpaulista.com.br/Handlers/Competicoes/ListarDataCampeonatos.ashx?IdCampeonato=128&_=1783441406021",
     "status": 403,
     "content_type": "text/html; charset=UTF-8",
     "interessante": true,
     "jogos_detectados": 0,
-    "sample": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-3ARJGwIYkkP1p0VhQPnatA&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges"
+    "sample": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><meta http-equiv=\"content-security-policy\" content=\"default-src &#39;none&#39;; script-src &#39;nonce-3qK2zc1PqxfF1FRvDYsl7H&#39; &#39;unsafe-eval&#39; https://challenges.cloudflare.com; script-src-attr &#39;none&#39;; style-src &#39;unsafe-inline&#39;; img-src &#39;self&#39; https://challenges"
   }
 ]
