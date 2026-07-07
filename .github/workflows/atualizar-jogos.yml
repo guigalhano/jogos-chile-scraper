@@ -55,6 +55,10 @@ jobs:
         run: |
           if [ -f scrap_fpf_playwright_api.py ]; then python scrap_fpf_playwright_api.py --dias 180 --dias-atras 30; fi
 
+      - name: Adicionar Copa Paulista
+        run: |
+          if [ -f scrap_copa_paulista.py ]; then python scrap_copa_paulista.py --dias 180 --dias-atras 30; fi
+
       - name: Corrigir estádios conhecidos
         run: |
           if [ -f corrigir_json_estadios_errados.py ]; then python corrigir_json_estadios_errados.py; fi
