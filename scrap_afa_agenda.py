@@ -53,7 +53,7 @@ HEADERS = {
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
     "mandante", "visitante", "estadio", "rodada",
-    "url", "extra", "atualizado_em", "pais",
+    "url", "extra", "atualizado_em", "pais", "cidade",
 ]
 
 MESES = {

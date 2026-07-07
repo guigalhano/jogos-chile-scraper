@@ -491,6 +491,11 @@ function enrichGames(rawGames) {
       stadium = findDefaultHomeStadium(j.mandante, pais);
       estadioFallback = Boolean(stadium);
     }
+    const cidadeResolvida = j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "";
+    let cidadeCoords = null;
+    if (!stadium?.lat && !j.lat && cidadeResolvida && window.CIDADES_MG) {
+      cidadeCoords = window.CIDADES_MG[normalize(cidadeResolvida)] || null;
+    }
     return {
       ...j,
       _idx: index,
@@ -498,11 +503,11 @@ function enrichGames(rawGames) {
       _estadioFallback: estadioFallback,
       pais,
       estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
-      cidade: j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "",
-      regiao: j.regiao || stadium?.regiao || "",
-      lat: j.lat || stadium?.lat || null,
-      lng: j.lng || stadium?.lng || null,
-      temMapa: Boolean(j.lat && j.lng) || Boolean(stadium?.lat && stadium?.lng),
+      cidade: cidadeResolvida,
+      regiao: j.regiao || stadium?.regiao || (cidadeCoords ? "Minas Gerais" : ""),
+      lat: j.lat || stadium?.lat || cidadeCoords?.lat || null,
+      lng: j.lng || stadium?.lng || cidadeCoords?.lng || null,
+      temMapa: Boolean(j.lat && j.lng) || Boolean(stadium?.lat && stadium?.lng) || Boolean(cidadeCoords),
     };
   });
 }

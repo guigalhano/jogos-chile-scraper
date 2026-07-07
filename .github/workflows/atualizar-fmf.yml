@@ -39,4 +39,5 @@ jobs:
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
           git add data/debug_fmf_competicoes_urls.json data/debug_fmf_competicoes_pages.json data/debug_fmf_competicoes_raw.json 2>/dev/null || true
           git commit -m "Atualiza jogos FMF (Mineiro) - semanal" || echo "Sem mudanças"
+          git pull --rebase origin main
           git push

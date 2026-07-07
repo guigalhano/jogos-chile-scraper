@@ -79,4 +79,5 @@ jobs:
           git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json 2>/dev/null || true
           git add data/cruzamento_promiedos.json 2>/dev/null || true
           git commit -m "Atualiza jogos Chile Brasil completo" || echo "Sem mudanças"
+          git pull --rebase origin main
           git push

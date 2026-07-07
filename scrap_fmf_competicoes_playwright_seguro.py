@@ -138,6 +138,28 @@ def clean_text(x: Any) -> str:
     return re.sub(r"\s+", " ", x).strip()
 
 
+CONECTIVOS_PT = {"de", "da", "do", "das", "dos", "e"}
+
+
+def normalizar_cidade(x: str) -> str:
+    """Cidades vêm em CAIXA ALTA da FMF (ex.: 'BELO HORIZONTE',
+    'SÃO JOSÉ DOS CAMPOS'). Converte para Title Case mantendo conectivos em
+    minúsculo ('de', 'da', 'do', 'dos', 'das', 'e'), sem mexer no primeiro
+    termo mesmo que seja um conectivo."""
+    s = clean_text(x)
+    if not s:
+        return s
+    palavras = s.split(" ")
+    out = []
+    for i, p in enumerate(palavras):
+        pl = p.lower()
+        if i > 0 and pl in CONECTIVOS_PT:
+            out.append(pl)
+        else:
+            out.append(pl.capitalize())
+    return " ".join(out)
+
+
 def norm(x: Any) -> str:
     x = unicodedata.normalize("NFD", clean_text(x))
     x = "".join(c for c in x if unicodedata.category(c) != "Mn")
@@ -252,9 +274,11 @@ def html_to_lines(html: str) -> list[str]:
 
 
 NOMES_GENERICOS = {"tabela completa", "tabela", "proxjogos", "competicoes"}
+NOMES_AMBIGUOS_RE = re.compile(r"^(1|2)ª?\s*divis[aã]o$", re.IGNORECASE)
+HIERARQUIA_CATEGORIAS: dict[str, str] = {}  # preenchido uma vez em main()
 
 
-def resolve_competicao(nome: str, lines: list[str]) -> str:
+def resolve_competicao(nome: str, lines: list[str], d: str = "") -> str:
     """FIX: detect_competicao() varria o texto da página procurando por
     palavras-chave de competição, mas a barra lateral de navegação da FMF
     (que lista TODAS as competições: MÓDULO I, MÓDULO II, SEGUNDA DIVISÃO...)
@@ -267,10 +291,22 @@ def resolve_competicao(nome: str, lines: list[str]) -> str:
     O nome real e confiável já vem do link clicado para descobrir esse "d"
     (ex.: "TAÇA BH", "COPA ITATIAIA", "FEMININO SUB-17"). Usamos isso como
     fonte primária; só caímos para a varredura de texto quando o nome for
-    genérico demais (ex.: "TABELA COMPLETA", que não diz qual competição)."""
-    if nome and norm(nome) not in NOMES_GENERICOS:
-        return nome
-    return detect_competicao(lines, nome)
+    genérico demais (ex.: "TABELA COMPLETA", que não diz qual competição).
+
+    Nomes como "1ª Divisão" se repetem em várias categorias de idade
+    (SUB-13, SUB-14, SUB-15...) e sozinhos não dizem qual — usa
+    HIERARQUIA_CATEGORIAS (descoberta uma vez via discover_hierarchy_via_playwright)
+    para prefixar com a categoria correta quando disponível."""
+    base = nome if (nome and norm(nome) not in NOMES_GENERICOS) else detect_competicao(lines, nome)
+
+    if NOMES_AMBIGUOS_RE.match(clean_text(base)) and d in HIERARQUIA_CATEGORIAS:
+        base = f"{HIERARQUIA_CATEGORIAS[d]} - {base}"
+
+    ano = str(datetime.now().year)
+    if ano not in base:
+        base = f"{base} - {ano}"
+
+    return base
 
 
 def detect_competicao(lines: list[str], fallback: str) -> str:
@@ -311,7 +347,7 @@ def obj_to_partido(obj: dict, url: str, d: str, competicao_fallback: str, fallba
     data = parse_date_any(first_value(obj, ["Data", "DataJogo", "DataFormatada", "DataHora", "DATA_HORA", "Dia"]), fallback=fallback_date)
     hora = parse_time_any(first_value(obj, ["Hora", "Horario", "Horário", "DataHora", "HoraJogo"]))
     estadio = first_value(obj, ["Estadio", "Estádio", "NomeEstadio", "Local", "Campo"])
-    cidade = first_value(obj, ["Cidade", "Municipio", "Município"])
+    cidade = normalizar_cidade(first_value(obj, ["Cidade", "Municipio", "Município"]))
     rodada = first_value(obj, ["Rodada", "Fase"])
     jogo = first_value(obj, ["Jogo", "NumeroJogo", "Numero", "Número"])
     comp = first_value(obj, ["Competicao", "Competição", "Campeonato", "DescricaoCampeonato", "NomeCampeonato"]) or competicao_fallback
@@ -467,7 +503,7 @@ def parse_text_patterns(lines: list[str], url: str, d: str, competicao_nome: str
                 if k + 1 < len(lines):
                     estadio = clean_text(lines[k + 1])
                 if k + 2 < len(lines):
-                    cidade = clean_text(lines[k + 2])
+                    cidade = normalizar_cidade(lines[k + 2])
                 break
 
         if not is_bad_name(mandante) and not is_bad_name(visitante) and mandante != visitante:
@@ -496,6 +532,52 @@ def parse_text_patterns(lines: list[str], url: str, d: str, competicao_nome: str
         i = max(j, i + 1)
 
     return out
+
+
+def discover_hierarchy_via_playwright(home_url: str) -> dict:
+    """Nomes como '1ª Divisão' aparecem repetidos na barra lateral da FMF sob
+    várias categorias diferentes (SUB-13, SUB-14, SUB-15, SUB-17, SUB-20), e
+    o texto do link sozinho não diz qual delas é. Abre a home UMA vez com
+    Playwright (para ver a barra lateral renderizada por JS) e monta um mapa
+    d -> categoria (ex.: "13": "SUB-13"), usando a categoria mais recente
+    (texto maiúsculo/cabeçalho de seção) que precede cada link na ordem do
+    DOM. Retorna {} se não conseguir (comportamento atual como fallback)."""
+    mapa: dict[str, str] = {}
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page()
+            page.goto(home_url, wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(4000)
+            resultado = page.evaluate("""
+                () => {
+                    const out = {};
+                    let categoriaAtual = '';
+                    const categoriaRe = /^(MÓDULO\\s+\\S+|SEGUNDA\\s+DIVISÃO|SUB[\\s-]?\\d+|FEMININO(\\s+SUB[\\s-]?\\d+)?|SFAC\\S*)$/i;
+                    const nodes = document.querySelectorAll('a, li, span, div');
+                    for (const el of nodes) {
+                        const text = (el.textContent || '').trim();
+                        if (!text || text.length > 60) continue;
+                        const link = el.tagName === 'A' ? el : el.querySelector('a[href*="ProxJogos.aspx"]');
+                        if (link && link.getAttribute('href') && link.getAttribute('href').includes('d=')) {
+                            const href = link.getAttribute('href');
+                            const m = href.match(/[?&]d=(\\d+)/);
+                            if (m && categoriaAtual) {
+                                out[m[1]] = categoriaAtual;
+                            }
+                        } else if (categoriaRe.test(text) && el.children.length === 0) {
+                            categoriaAtual = text.toUpperCase();
+                        }
+                    }
+                    return out;
+                }
+            """)
+            if isinstance(resultado, dict):
+                mapa = resultado
+            browser.close()
+    except Exception as e:
+        print(f"[WARN] Falha ao descobrir hierarquia de categorias: {e}", file=sys.stderr)
+    return mapa
 
 
 def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool) -> tuple[list[Partido], dict, list[dict]]:
@@ -539,7 +621,7 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
                         except Exception:
                             # tenta texto renderizado de resposta
                             lines = html_to_lines(txt)
-                            comp = resolve_competicao(nome, lines)
+                            comp = resolve_competicao(nome, lines, d)
                             found = parse_text_patterns(lines, rurl, d, comp)
                             row["matches_text"] = len(found)
                             network_partidos.extend(found)
@@ -660,7 +742,7 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
             info["bytes"] = len(html.encode("utf-8"))
 
             lines = html_to_lines(html)
-            comp = resolve_competicao(nome, lines)
+            comp = resolve_competicao(nome, lines, d)
             info["competicao_detectada"] = comp
             info["amostra_linhas"] = lines[:250]
 
@@ -839,6 +921,10 @@ def main() -> None:
     if args.somente_d:
         wanted = set(str(x) for x in args.somente_d)
         urls = [u for u in urls if str(u["d"]) in wanted]
+
+    global HIERARQUIA_CATEGORIAS
+    HIERARQUIA_CATEGORIAS = discover_hierarchy_via_playwright(BASE_URL)
+    print(f"[INFO] Categorias descobertas para desambiguar nomes: {len(HIERARQUIA_CATEGORIAS)}")
 
     all_partidos = []
     debug_pages = []

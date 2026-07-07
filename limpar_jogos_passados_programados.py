@@ -22,7 +22,7 @@ CSV_PATH = OUT_DIR / "jogos_programados.csv"
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
     "mandante", "visitante", "estadio", "rodada",
-    "url", "extra", "atualizado_em",
+    "url", "extra", "atualizado_em", "pais", "cidade",
 ]
 
 def write_csv(path, rows):

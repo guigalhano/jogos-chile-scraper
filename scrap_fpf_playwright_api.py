@@ -50,7 +50,7 @@ START_URLS = [
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
     "mandante", "visitante", "estadio", "rodada",
-    "url", "extra", "atualizado_em",
+    "url", "extra", "atualizado_em", "pais", "cidade",
 ]
 
 DATE_RE = re.compile(r"\b(?P<dia>\d{1,2})[/-](?P<mes>\d{1,2})[/-](?P<ano>\d{2,4})\b")

@@ -274,7 +274,7 @@ def write_csv(path: Path, rows: list[dict]) -> None:
     fields = [
         "id", "fonte", "competicao", "data", "hora",
         "mandante", "visitante", "estadio", "rodada",
-        "url", "extra", "atualizado_em",
+        "url", "extra", "atualizado_em", "pais", "cidade",
     ]
     with path.open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields)
