@@ -572,7 +572,7 @@ def discover_hierarchy_via_playwright(home_url: str) -> dict:
                             if (m && categoriaAtual) {
                                 out[m[1]] = categoriaAtual;
                             }
-                        } else if (el.children.length === 0) {
+                        } else {
                             const subMatch = text.match(subRe);
                             if (subMatch) {
                                 categoriaAtual = 'SUB ' + subMatch[1];
