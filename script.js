@@ -511,8 +511,16 @@ function enrichGames(rawGames) {
     }
     const cidadeResolvida = j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "";
     let cidadeCoords = null;
-    if (!stadium?.lat && !j.lat && cidadeResolvida && window.CIDADES_MG) {
-      cidadeCoords = window.CIDADES_MG[normalize(cidadeResolvida)] || null;
+    let regiaoPorCidade = "";
+    if (!stadium?.lat && !j.lat && cidadeResolvida) {
+      const chave = normalize(cidadeResolvida);
+      if (window.CIDADES_MG && window.CIDADES_MG[chave]) {
+        cidadeCoords = window.CIDADES_MG[chave];
+        regiaoPorCidade = "Minas Gerais";
+      } else if (window.CIDADES_SP && window.CIDADES_SP[chave]) {
+        cidadeCoords = window.CIDADES_SP[chave];
+        regiaoPorCidade = "São Paulo";
+      }
     }
     return {
       ...j,
@@ -522,7 +530,7 @@ function enrichGames(rawGames) {
       pais,
       estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
       cidade: cidadeResolvida,
-      regiao: j.regiao || stadium?.regiao || extractEstadoFromExtra(j.extra) || (cidadeCoords ? "Minas Gerais" : ""),
+      regiao: j.regiao || stadium?.regiao || extractEstadoFromExtra(j.extra) || regiaoPorCidade,
       lat: j.lat || stadium?.lat || cidadeCoords?.lat || null,
       lng: j.lng || stadium?.lng || cidadeCoords?.lng || null,
       temMapa: Boolean(j.lat && j.lng) || Boolean(stadium?.lat && stadium?.lng) || Boolean(cidadeCoords),
