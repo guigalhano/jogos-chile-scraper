@@ -304,6 +304,11 @@ def main() -> None:
 
                 partidos = parse_lines(lines, url, competicao)
                 info["jogos"] = len(partidos)
+                info["amostra_jogos"] = [
+                    {"data": p.data, "hora": p.hora, "mandante": p.mandante,
+                     "visitante": p.visitante, "estadio": p.estadio}
+                    for p in partidos[:25]
+                ]
                 all_partidos.extend(partidos)
                 print(f"[OK] {competicao}: {len(partidos)} jogos extraídos brutos")
             except Exception as e:
