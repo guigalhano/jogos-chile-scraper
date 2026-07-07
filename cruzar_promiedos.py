@@ -29,10 +29,13 @@ import unicodedata
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-import esd
+from curl_cffi import requests as curl_requests
 
 OUT_DIR = Path("data")
 OUT_DIR.mkdir(exist_ok=True)
+
+PROMIEDOS_HEADERS = {"X-VER": "1.11.7.5"}
+PROMIEDOS_URL = "https://api.promiedos.com.ar/games/{date}"
 
 PAISES_ALVO = {"chile", "argentina", "brasil", "brazil"}
 
@@ -57,6 +60,16 @@ def chave_confronto(data_iso: str, mandante: str, visitante: str) -> str:
     return f"{data_iso}|{m}|{v}"
 
 
+def fetch_day_raw(date_str: str) -> list[dict]:
+    """Chama a API do Promiedos diretamente (bypass do client da lib, que tem
+    um bug na validação de data). Retorna a lista bruta de 'leagues' do dia."""
+    url = PROMIEDOS_URL.format(date=date_str)
+    r = curl_requests.get(url, headers=PROMIEDOS_HEADERS, impersonate="chrome", timeout=20)
+    r.raise_for_status()
+    data = r.json()
+    return data.get("leagues", [])
+
+
 def load_jogos_atuais() -> list[dict]:
     path = OUT_DIR / "jogos_programados.json"
     if not path.exists():
@@ -73,7 +86,6 @@ def main() -> None:
     args = parser.parse_args()
 
     today = date.today()
-    client = esd.PromiedosClient()
 
     jogos_atuais = load_jogos_atuais()
     nosso_index = {}
@@ -93,29 +105,34 @@ def main() -> None:
         dia = today + timedelta(days=offset)
         dia_str = dia.isoformat()
         try:
-            events = client.get_events(dia_str)
+            leagues_raw = fetch_day_raw(dia_str)
         except Exception as e:
             dias_com_erro.append({"data": dia_str, "erro": str(e)})
             continue
 
-        for event in events:
-            liga_pais = norm(getattr(event.league, "country_name", "") or "")
+        for league_data in leagues_raw:
+            liga_pais = norm(league_data.get("country_name", "") or "")
             if liga_pais not in PAISES_ALVO:
                 continue
             pais_nosso = MAPA_PAIS[liga_pais]
+            liga_nome = league_data.get("name", "")
 
-            for match in event.matches:
+            for game in league_data.get("games", []):
                 total_eventos_lidos += 1
+                teams = game.get("teams", [])
+                if len(teams) < 2:
+                    continue
+                mandante = (teams[0] or {}).get("name", "") or ""
+                visitante = (teams[1] or {}).get("name", "") or ""
+                if not mandante or not visitante:
+                    continue
+
+                start_time_str = game.get("start_time", "")
                 try:
-                    dt = datetime.fromtimestamp(match.start_time)
+                    dt = datetime.strptime(start_time_str, "%d-%m-%Y %H:%M")
                     data_iso = dt.date().isoformat()
                     hora = dt.strftime("%H:%M")
                 except Exception:
-                    continue
-
-                mandante = getattr(match.home_team, "name", "") or ""
-                visitante = getattr(match.away_team, "name", "") or ""
-                if not mandante or not visitante:
                     continue
 
                 k = chave_confronto(data_iso, mandante, visitante)
@@ -127,8 +144,8 @@ def main() -> None:
                         "hora": hora,
                         "mandante": mandante,
                         "visitante": visitante,
-                        "campeonato": getattr(event.league, "name", ""),
-                        "rodada": getattr(match, "stage_round_name", ""),
+                        "campeonato": liga_nome,
+                        "rodada": game.get("stage_round_name", ""),
                     })
 
         time.sleep(0.5)  # cortesia com o servidor, não é uma API oficial com SLA
