@@ -729,13 +729,21 @@ function markerPopup(j) {
   `;
 }
 
+const DOT_ICON = L.divIcon({
+  className: "jogoDotIcon",
+  html: '<span class="jogoDot"></span>',
+  iconSize: [12, 12],
+  iconAnchor: [6, 6],
+  popupAnchor: [0, -6],
+});
+
 function updateMap(games) {
   markersLayer.clearLayers();
 
   const withMap = games.filter(j => j.temMapa && j.lat && j.lng);
 
   for (const j of withMap) {
-    L.marker([Number(j.lat), Number(j.lng)])
+    L.marker([Number(j.lat), Number(j.lng)], { icon: DOT_ICON })
       .bindPopup(markerPopup(j))
       .addTo(markersLayer);
   }
