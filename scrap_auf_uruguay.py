@@ -207,6 +207,94 @@ def walk_json(data: Any, url: str, competicao_fallback: str) -> list[Partido]:
     return out
 
 
+DATA_HORA_AUF_RE = re.compile(
+    r"^(?P<dia>\d{1,2})/(?P<mes>\d{1,2})/(?P<ano>\d{4})\s*-\s*(?P<hora>\d{1,2}):(?P<minuto>\d{2})\s*h$"
+)
+FECHA_HEADER_RE = re.compile(r"^FECHA\s+(\d+)$", re.IGNORECASE)
+SCORE_LINE_RE = re.compile(r"^\d+\s*-\s*\d+$")
+FIXTURE_HEADER_RE = re.compile(r"^FIXTURE\s+.+?-\s*(.+)$", re.IGNORECASE)
+
+
+def parse_auf_text(text: str, url: str, competicao_fallback: str) -> list[Partido]:
+    """Parseia o texto renderizado (document.body.innerText) da página AUF,
+    que segue um padrão fixo de 5 linhas por jogo:
+        <time mandante>
+        <placar ou vazio>
+        <time visitante>
+        <DD/MM/AAAA - HH:MM h>
+        <ESTÁDIO>
+    agrupado sob cabeçalhos "FECHA N" (rodada) e "FIXTURE ... - <competição>"."""
+    linhas = [clean_text(l) for l in text.splitlines()]
+    linhas = [l for l in linhas if l]
+
+    partidos: list[Partido] = []
+    competicao_atual = competicao_fallback
+    rodada_atual = ""
+    i = 0
+    while i < len(linhas):
+        linha = linhas[i]
+
+        m_fix = FIXTURE_HEADER_RE.match(linha)
+        if m_fix:
+            competicao_atual = f"Uruguay - {clean_text(m_fix.group(1))}"
+            i += 1
+            continue
+
+        m_fecha = FECHA_HEADER_RE.match(linha)
+        if m_fecha:
+            rodada_atual = f"Fecha {m_fecha.group(1)}"
+            i += 1
+            continue
+
+        # Tenta casar o bloco de 5 linhas a partir daqui: mandante, placar,
+        # visitante, data/hora, estádio. Placar pode estar ausente (jogo
+        # ainda não disputado) — nesse caso o bloco tem 4 linhas.
+        if i + 3 < len(linhas) and DATA_HORA_AUF_RE.match(linhas[i + 3]):
+            mandante = linha
+            visitante = linhas[i + 2]
+            data_hora_linha = linhas[i + 3]
+            estadio = linhas[i + 4] if i + 4 < len(linhas) else ""
+            passo = 5
+        elif i + 2 < len(linhas) and DATA_HORA_AUF_RE.match(linhas[i + 2]) and not SCORE_LINE_RE.match(linhas[i + 1]):
+            # variante sem linha de placar
+            mandante = linha
+            visitante = linhas[i + 1]
+            data_hora_linha = linhas[i + 2]
+            estadio = linhas[i + 3] if i + 3 < len(linhas) else ""
+            passo = 4
+        else:
+            i += 1
+            continue
+
+        m_dh = DATA_HORA_AUF_RE.match(data_hora_linha)
+        if not m_dh or not mandante or not visitante:
+            i += 1
+            continue
+
+        try:
+            data_iso = date(int(m_dh.group("ano")), int(m_dh.group("mes")), int(m_dh.group("dia"))).isoformat()
+        except ValueError:
+            i += passo
+            continue
+        hora = f"{int(m_dh.group('hora')):02d}:{m_dh.group('minuto')}"
+
+        if len(mandante) <= 60 and len(visitante) <= 60 and not FECHA_HEADER_RE.match(estadio or ""):
+            partidos.append(Partido(
+                fonte="AUF",
+                competicao=competicao_atual,
+                data=data_iso,
+                hora=hora,
+                mandante=mandante,
+                visitante=visitante,
+                estadio=estadio if estadio and not DATA_HORA_AUF_RE.match(estadio) else "",
+                rodada=rodada_atual,
+                url=url,
+            ))
+        i += passo
+
+    return partidos
+
+
 def dedupe(rows: list[Partido]) -> list[Partido]:
     seen = set()
     out = []
@@ -218,9 +306,10 @@ def dedupe(rows: list[Partido]) -> list[Partido]:
     return out
 
 
-def collect_auf_json(start_urls: list[tuple[str, str]], wait_ms: int = 8000) -> tuple[list[dict], list[dict]]:
+def collect_auf_json(start_urls: list[tuple[str, str]], wait_ms: int = 8000) -> tuple[list[dict], list[dict], list[Partido]]:
     json_payloads: list[dict] = []
     debug_urls: list[dict] = []
+    partidos_texto: list[Partido] = []
     seen_urls = set()
 
     with sync_playwright() as p:
@@ -279,25 +368,24 @@ def collect_auf_json(start_urls: list[tuple[str, str]], wait_ms: int = 8000) -> 
                     except Exception:
                         pass
 
-                # FIX diagnóstico: a interceptação de rede não achou nenhuma
-                # chamada de API com dados de jogos — pode ser que o AUF
-                # renderize a tabela direto no HTML (server-side), sem uma
-                # chamada JSON separada. Salva o texto renderizado para
-                # inspecionar isso.
+                # O AUF renderiza o fixture direto no HTML (server-side),
+                # sem uma chamada JSON separada — a interceptação de rede
+                # não pega nada. Extrai do texto renderizado diretamente.
                 try:
-                    html = page.content()
-                    slug = re.sub(r"[^a-z0-9]+", "_", competicao.lower()).strip("_")
-                    (OUT_DIR / f"debug_auf_html_{slug}.html").write_text(html, encoding="utf-8")
                     text = page.evaluate("() => document.body ? document.body.innerText : ''")
+                    slug = re.sub(r"[^a-z0-9]+", "_", competicao.lower()).strip("_")
                     (OUT_DIR / f"debug_auf_text_{slug}.txt").write_text(text, encoding="utf-8")
+                    found_texto = parse_auf_text(text, url, competicao)
+                    print(f"[OK] AUF texto {url} -> {len(found_texto)} jogos")
+                    partidos_texto.extend(found_texto)
                 except Exception as e:
-                    print(f"[WARN] Falha ao salvar HTML/texto de {url}: {e}")
+                    print(f"[WARN] Falha ao processar texto de {url}: {e}")
             except Exception as e:
                 print(f"[WARN] Erro abrindo {url}: {e}")
 
         browser.close()
 
-    return json_payloads, debug_urls
+    return json_payloads, debug_urls, partidos_texto
 
 
 def in_window(p: Partido, desde: date, ate: date, incluir_passados: bool) -> bool:
@@ -372,20 +460,19 @@ def main() -> None:
     desde = today - timedelta(days=args.dias_atras)
     ate = today + timedelta(days=args.dias)
 
-    payloads, debug_urls = collect_auf_json(START_URLS, wait_ms=args.wait_ms)
+    payloads, debug_urls, partidos_texto = collect_auf_json(START_URLS, wait_ms=args.wait_ms)
 
     (OUT_DIR / "debug_auf_urls.json").write_text(
         json.dumps(debug_urls, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
-    partidos: list[Partido] = []
+    partidos: list[Partido] = list(partidos_texto)
     for payload in payloads:
         url = payload["url"]
         data = payload["data"]
-        # tenta achar a competição pelo START_URLS mais provável (mesma origem)
         competicao_fallback = "Uruguay - AUF"
         for comp, u in START_URLS:
-            if u.rstrip("/") in url or True:
+            if u.rstrip("/") in url:
                 competicao_fallback = comp
                 break
         found = walk_json(data, url, competicao_fallback)
