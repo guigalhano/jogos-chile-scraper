@@ -5,7 +5,7 @@
     "status": "rendered",
     "erro": "",
     "jogos": 576,
-    "bytes": 1895851,
+    "bytes": 1895852,
     "amostra_linhas": [
       "Liga AUF Uruguaya - AUF",
       "Menú",
@@ -207,6 +207,183 @@
       "Estatutos",
       "Reglamentos",
       "Precios"
+    ],
+    "amostra_jogos": [
+      {
+        "data": "2026-02-06",
+        "hora": "21:30",
+        "mandante": "ALFREDO VICTOR VIERA",
+        "visitante": "Albion",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-06",
+        "hora": "19:00",
+        "mandante": "LUIS FRANZINI",
+        "visitante": "Peñarol",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-07",
+        "hora": "20:30",
+        "mandante": "CAMPEON DEL SIGLO",
+        "visitante": "Progreso",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-07",
+        "hora": "17:00",
+        "mandante": "ABRAHAM PALADINO",
+        "visitante": "Boston River",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-08",
+        "hora": "20:30",
+        "mandante": "CAMPEONES OLIMPICOS DE FLORIDA",
+        "visitante": "Racing",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-08",
+        "hora": "17:00",
+        "mandante": "PARQUE OSVALDO ROBERTO",
+        "visitante": "Juventud",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-08",
+        "hora": "09:45",
+        "mandante": "PARQUE ARTIGAS",
+        "visitante": "Cerro",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-09",
+        "hora": "20:00",
+        "mandante": "ESTADIO MONUMENTAL LUIS TROCCOLI",
+        "visitante": "DESCARGAR",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-13",
+        "hora": "21:30",
+        "mandante": "ALFREDO VICTOR VIERA",
+        "visitante": "Cerro Largo",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-13",
+        "hora": "19:00",
+        "mandante": "ESTADIO MUNICIPAL ARQ. ANTONIO UBILLA",
+        "visitante": "D. Maldonado",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-14",
+        "hora": "17:00",
+        "mandante": "DOMINGO BURGUEÑO MIGUEL",
+        "visitante": "Nacional",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-14",
+        "hora": "20:30",
+        "mandante": "GRAN PARQUE CENTRAL",
+        "visitante": "Central Español",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-15",
+        "hora": "20:30",
+        "mandante": "DOMINGO BURGUEÑO MIGUEL",
+        "visitante": "Danubio",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-15",
+        "hora": "17:00",
+        "mandante": "JARDINES DEL HIPODROMO",
+        "visitante": "M.C. Torque",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-16",
+        "hora": "21:30",
+        "mandante": "ESTADIO CHARRUA",
+        "visitante": "Albion",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-16",
+        "hora": "19:00",
+        "mandante": "LUIS FRANZINI",
+        "visitante": "DESCARGAR",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-20",
+        "hora": "18:45",
+        "mandante": "ESTADIO MONUMENTAL LUIS TROCCOLI",
+        "visitante": "Def. Sporting",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-20",
+        "hora": "21:30",
+        "mandante": "LUIS FRANZINI",
+        "visitante": "Boston River",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-21",
+        "hora": "17:00",
+        "mandante": "CAMPEONES OLIMPICOS DE FLORIDA",
+        "visitante": "Racing",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-21",
+        "hora": "09:45",
+        "mandante": "PARQUE OSVALDO ROBERTO",
+        "visitante": "Progreso",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-21",
+        "hora": "20:30",
+        "mandante": "ESTADIO SILVESTRE O. LANDONI",
+        "visitante": "Peñarol",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-22",
+        "hora": "20:30",
+        "mandante": "CAMPEON DEL SIGLO",
+        "visitante": "Juventud",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-22",
+        "hora": "17:00",
+        "mandante": "PARQUE ARTIGAS",
+        "visitante": "Wanderers",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-22",
+        "hora": "09:45",
+        "mandante": "ALFREDO VICTOR VIERA",
+        "visitante": "DESCARGAR",
+        "estadio": ""
+      },
+      {
+        "data": "2026-02-26",
+        "hora": "20:00",
+        "mandante": "ESTADIO CHARRUA",
+        "visitante": "Cerro",
+        "estadio": ""
+      }
     ]
   },
   {
@@ -417,6 +594,183 @@
       "Estatutos",
       "Reglamentos",
       "Precios"
+    ],
+    "amostra_jogos": [
+      {
+        "data": "2026-05-02",
+        "hora": "15:00",
+        "mandante": "ESTADIO OBDULIO VARELA",
+        "visitante": "Rocha",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-02",
+        "hora": "15:00",
+        "mandante": "ESTADIO DR. MARIO SOBRERO",
+        "visitante": "Bella Vista",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-02",
+        "hora": "10:00",
+        "mandante": "ESTADIO JOSE NASAZZI",
+        "visitante": "Rampla Juniors",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-07",
+        "hora": "15:00",
+        "mandante": "ESTADIO OLIMPICO",
+        "visitante": "Alto Perú",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-07",
+        "hora": "14:00",
+        "mandante": "DESCARGAR",
+        "visitante": "COMPARTIR",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-10",
+        "hora": "19:30",
+        "mandante": "PARQUE PALERMO",
+        "visitante": "FRONTERA RIVERA RENEGADES",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-10",
+        "hora": "18:30",
+        "mandante": "CR. JOSE PEDRO DAMIANI",
+        "visitante": "Bella Vista",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-10",
+        "hora": "16:00",
+        "mandante": "ESTADIO JOSE NASAZZI",
+        "visitante": "Los Halcones",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-10",
+        "hora": "15:00",
+        "mandante": "ESTADIO OBDULIO VARELA",
+        "visitante": "Cooper",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-11",
+        "hora": "14:00",
+        "mandante": "DESCARGAR",
+        "visitante": "COMPARTIR",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-15",
+        "hora": "21:30",
+        "mandante": "PARQUE PALERMO",
+        "visitante": "Rampla Juniors",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-16",
+        "hora": "10:00",
+        "mandante": "ESTADIO OLIMPICO",
+        "visitante": "Alto Perú",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-16",
+        "hora": "15:00",
+        "mandante": "ESTADIO OBDULIO VARELA",
+        "visitante": "Deportivo Italiano",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-17",
+        "hora": "18:00",
+        "mandante": "CR. JOSE PEDRO DAMIANI",
+        "visitante": "Deutscher",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-19",
+        "hora": "14:00",
+        "mandante": "DESCARGAR",
+        "visitante": "COMPARTIR",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-23",
+        "hora": "15:00",
+        "mandante": "ESTADIO OLIMPICO",
+        "visitante": "Rocha",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-23",
+        "hora": "15:00",
+        "mandante": "ESTADIO DR. MARIO SOBRERO",
+        "visitante": "Rampla Juniors",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-23",
+        "hora": "10:00",
+        "mandante": "ESTADIO OLIMPICO",
+        "visitante": "Los Halcones",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-24",
+        "hora": "10:00",
+        "mandante": "PARQUE HURACAN BUCEO",
+        "visitante": "Bella Vista",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-26",
+        "hora": "14:00",
+        "mandante": "DESCARGAR",
+        "visitante": "COMPARTIR",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-30",
+        "hora": "10:00",
+        "mandante": "CR. JOSE PEDRO DAMIANI",
+        "visitante": "Mar de Fondo",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-30",
+        "hora": "14:00",
+        "mandante": "PARQUE PALERMO",
+        "visitante": "FRONTERA RIVERA RENEGADES",
+        "estadio": ""
+      },
+      {
+        "data": "2026-05-31",
+        "hora": "10:00",
+        "mandante": "PARQUE HURACAN BUCEO",
+        "visitante": "Deportivo Italiano",
+        "estadio": ""
+      },
+      {
+        "data": "2026-06-01",
+        "hora": "15:00",
+        "mandante": "PARQUE MARACANA",
+        "visitante": "Cooper",
+        "estadio": ""
+      },
+      {
+        "data": "2026-06-02",
+        "hora": "14:00",
+        "mandante": "DESCARGAR",
+        "visitante": "COMPARTIR",
+        "estadio": ""
+      }
     ]
   },
   {
@@ -627,6 +981,7 @@
       "Estatutos",
       "Reglamentos",
       "Precios"
-    ]
+    ],
+    "amostra_jogos": []
   }
 ]
