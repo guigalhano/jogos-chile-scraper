@@ -124,6 +124,8 @@ def is_bad_line(x: str) -> bool:
         return True
     if re.search(r"\.(jpg|jpeg|png|gif|svg)$", texto, re.IGNORECASE):
         return True
+    if re.fullmatch(r"\d+\s*-\s*\d+", texto):
+        return True
     return any(w in s for w in BAD_WORDS)
 
 
