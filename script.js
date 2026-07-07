@@ -305,6 +305,7 @@ const BANDEIRA_PAIS = {
   "Chile": "🇨🇱",
   "Brasil": "🇧🇷",
   "Argentina": "🇦🇷",
+  "Uruguay": "🇺🇾",
 };
 
 function optionHtmlComBandeira(value) {
@@ -349,6 +350,7 @@ function findStadiumInfo(estadioTexto, pais) {
 
   const stadiums = pais === "Brasil" ? (window.ESTADIOS_BRASIL || [])
     : pais === "Argentina" ? (window.ESTADIOS_ARGENTINA || [])
+    : pais === "Uruguay" ? (window.ESTADIOS_URUGUAY || [])
     : (window.ESTADIOS_CHILE || []);
 
   for (const s of stadiums) {

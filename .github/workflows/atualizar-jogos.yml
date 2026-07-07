@@ -43,6 +43,10 @@ jobs:
         run: |
           if [ -f scrap_afa_agenda.py ]; then python scrap_afa_agenda.py --dias 180 --dias-atras 30; fi
 
+      - name: Adicionar Uruguai (AUF)
+        run: |
+          if [ -f scrap_auf_uruguay.py ]; then python scrap_auf_uruguay.py --dias 180 --dias-atras 30; fi
+
       - name: Descobrir PDFs atuais da CBF (Playwright + busca, best-effort)
         run: |
           if [ -f atualizar_pdfs_cbf_pagina_v2.py ]; then python atualizar_pdfs_cbf_pagina_v2.py --playwright --buscar-web --somente-listar || echo "Descoberta falhou, seguindo com seeds manuais"; fi
