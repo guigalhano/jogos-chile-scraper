@@ -358,7 +358,11 @@ function findStadiumInfo(estadioTexto, pais) {
     }
   }
 
-  const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5);
+  const PALAVRAS_GENERICAS = new Set([
+    "estadio", "municipal", "arena", "parque", "complexo", "campo",
+    "centro", "cidade", "governador", "presidente", "doutor", "professor",
+  ]);
+  const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5 && !PALAVRAS_GENERICAS.has(token));
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])].map(normalize).join(" ");
     const hits = txtTokens.filter(token => names.includes(token)).length;
@@ -374,6 +378,11 @@ function findStadiumInfo(estadioTexto, pais) {
 // tiver a cidade.
 function extractCidadeFromExtra(extra) {
   const m = String(extra || "").match(/cidade\s*=\s*([^;]+)/i);
+  return m ? m[1].trim() : "";
+}
+
+function extractEstadoFromExtra(extra) {
+  const m = String(extra || "").match(/estado\s*=\s*([^;]+)/i);
   return m ? m[1].trim() : "";
 }
 
@@ -485,7 +494,16 @@ function enrichGames(rawGames) {
     const estadioBruto = /^(estadio\s*)?por confirmar$|^a confirmar$/i.test(normalize(j.estadio || ""))
       ? ""
       : (j.estadio || "");
-    let stadium = findStadiumInfo(estadioBruto, pais);
+    // FIX: jogos da FMF (fonte === "FMF") são de estádios pequenos/locais de
+    // Minas Gerais que não estão na base nacional (ESTADIOS_BRASIL só cobre
+    // clubes de Série A/B/C/D + Copa do Brasil). Buscar nessa base para um
+    // nome genérico tipo "Estádio Municipal Bezerrão" pode colidir por
+    // engano com um estádio de OUTRO estado com nome parecido (ex.: bateu
+    // com o "Bezerrão" de Gama/DF, ou "Arena Santa Cruz" bateu com o
+    // "Estádio Santa Cruz" de Ribeirão Preto/SP). Para fonte FMF, pula essa
+    // busca nacional e vai direto para o fallback por cidade de MG.
+    const ehFMF = j.fonte === "FMF";
+    let stadium = ehFMF ? null : findStadiumInfo(estadioBruto, pais);
     let estadioFallback = false;
     if (!stadium && !estadioBruto && pais !== "Brasil") {
       stadium = findDefaultHomeStadium(j.mandante, pais);
@@ -504,7 +522,7 @@ function enrichGames(rawGames) {
       pais,
       estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
       cidade: cidadeResolvida,
-      regiao: j.regiao || stadium?.regiao || (cidadeCoords ? "Minas Gerais" : ""),
+      regiao: j.regiao || stadium?.regiao || extractEstadoFromExtra(j.extra) || (cidadeCoords ? "Minas Gerais" : ""),
       lat: j.lat || stadium?.lat || cidadeCoords?.lat || null,
       lng: j.lng || stadium?.lng || cidadeCoords?.lng || null,
       temMapa: Boolean(j.lat && j.lng) || Boolean(stadium?.lat && stadium?.lng) || Boolean(cidadeCoords),
