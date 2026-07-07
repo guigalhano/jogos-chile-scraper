@@ -51,10 +51,6 @@ jobs:
         run: |
           if [ -f scrap_fpf_playwright_api.py ]; then python scrap_fpf_playwright_api.py --dias 180 --dias-atras 30; fi
 
-      - name: Adicionar Mineiro FMF via Playwright
-        run: |
-          if [ -f scrap_fmf_competicoes_playwright_seguro.py ]; then python scrap_fmf_competicoes_playwright_seguro.py --max-d 30 --dias 180; fi
-
       - name: Corrigir estádios conhecidos
         run: |
           if [ -f corrigir_json_estadios_errados.py ]; then python corrigir_json_estadios_errados.py; fi
@@ -74,6 +70,5 @@ jobs:
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
           git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json 2>/dev/null || true
           git add data/cruzamento_promiedos.json 2>/dev/null || true
-          git add data/debug_fmf_competicoes_urls.json data/debug_fmf_competicoes_pages.json data/debug_fmf_competicoes_raw.json 2>/dev/null || true
           git commit -m "Atualiza jogos Chile Brasil completo" || echo "Sem mudanças"
           git push

@@ -1,0 +1,41 @@
+name: Atualizar Mineiro (FMF) - semanal
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"  # toda segunda-feira, 1h depois do job diário
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar_fmf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v5
+
+      - name: Instalar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python -m playwright install chromium
+
+      - name: Rodar scraper FMF (Mineiro) via Playwright
+        run: |
+          if [ -f scrap_fmf_competicoes_playwright_seguro.py ]; then python scrap_fmf_competicoes_playwright_seguro.py --max-d 30 --dias 180 --debug-html; fi
+
+      - name: Salvar arquivos atualizados
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
+          git add data/debug_fmf_competicoes_urls.json data/debug_fmf_competicoes_pages.json data/debug_fmf_competicoes_raw.json 2>/dev/null || true
+          git commit -m "Atualiza jogos FMF (Mineiro) - semanal" || echo "Sem mudanças"
+          git push
