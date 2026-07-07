@@ -278,6 +278,20 @@ def collect_auf_json(start_urls: list[tuple[str, str]], wait_ms: int = 8000) -> 
                                 pass
                     except Exception:
                         pass
+
+                # FIX diagnóstico: a interceptação de rede não achou nenhuma
+                # chamada de API com dados de jogos — pode ser que o AUF
+                # renderize a tabela direto no HTML (server-side), sem uma
+                # chamada JSON separada. Salva o texto renderizado para
+                # inspecionar isso.
+                try:
+                    html = page.content()
+                    slug = re.sub(r"[^a-z0-9]+", "_", competicao.lower()).strip("_")
+                    (OUT_DIR / f"debug_auf_html_{slug}.html").write_text(html, encoding="utf-8")
+                    text = page.evaluate("() => document.body ? document.body.innerText : ''")
+                    (OUT_DIR / f"debug_auf_text_{slug}.txt").write_text(text, encoding="utf-8")
+                except Exception as e:
+                    print(f"[WARN] Falha ao salvar HTML/texto de {url}: {e}")
             except Exception as e:
                 print(f"[WARN] Erro abrindo {url}: {e}")
 
