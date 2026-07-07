@@ -553,7 +553,14 @@ def discover_hierarchy_via_playwright(home_url: str) -> dict:
                 () => {
                     const out = {};
                     let categoriaAtual = '';
-                    const categoriaRe = /^(MÓDULO\\s+\\S+|SEGUNDA\\s+DIVISÃO|SUB[\\s-]?\\d+|FEMININO(\\s+SUB[\\s-]?\\d+)?|SFAC\\S*)$/i;
+                    // Cabeçalhos de categoria: prioriza extrair "SUB XX" de QUALQUER
+                    // lugar do texto (ex.: "SFAC JUVENIL – SUB 17" -> "SUB 17"),
+                    // já que a FMF mistura o nome do sub-sistema (SFAC) com a
+                    // categoria de idade real no mesmo rótulo. Só cai para o texto
+                    // completo (MÓDULO, SEGUNDA DIVISÃO, FEMININO, etc.) quando não
+                    // há nenhum "SUB" na frase.
+                    const subRe = /SUB[\\s-]?(\\d{1,2})/i;
+                    const categoriaGenericaRe = /^(MÓDULO\\s+\\S+|SEGUNDA\\s+DIVISÃO|FEMININO|SFAC)$/i;
                     const nodes = document.querySelectorAll('a, li, span, div');
                     for (const el of nodes) {
                         const text = (el.textContent || '').trim();
@@ -565,8 +572,13 @@ def discover_hierarchy_via_playwright(home_url: str) -> dict:
                             if (m && categoriaAtual) {
                                 out[m[1]] = categoriaAtual;
                             }
-                        } else if (categoriaRe.test(text) && el.children.length === 0) {
-                            categoriaAtual = text.toUpperCase();
+                        } else if (el.children.length === 0) {
+                            const subMatch = text.match(subRe);
+                            if (subMatch) {
+                                categoriaAtual = 'SUB ' + subMatch[1];
+                            } else if (categoriaGenericaRe.test(text)) {
+                                categoriaAtual = text.toUpperCase();
+                            }
                         }
                     }
                     return out;
