@@ -298,15 +298,44 @@ def _extract_ddg_redirect(href: str) -> str:
     return href
 
 
+PDF_URL_RE = re.compile(
+    r"""(?P<url>https?://[^"' <>()]+?\.pdf(?:\?[^"' <>()]*)?)""",
+    re.I,
+)
+
+
+def _extract_links_generic(html: str, base_url: str) -> list[str]:
+    """Extração resiliente: em vez de depender de uma classe CSS específica
+    do resultado de busca (que quebra sempre que o buscador muda o HTML),
+    varre TODOS os links <a href> da página e complementa com uma busca por
+    regex de qualquer URL .pdf cru no texto (funciona mesmo se o link estiver
+    dentro de um <script> ou atributo que o parser de tags não pegou)."""
+    urls: list[str] = []
+    soup = BeautifulSoup(html or "", "html.parser")
+    for a in soup.find_all("a"):
+        href = a.get("href", "")
+        if not href:
+            continue
+        target = _extract_ddg_redirect(href)
+        target = urljoin(base_url, target)
+        urls.append(target)
+
+    for m in PDF_URL_RE.finditer(html or ""):
+        urls.append(m.group("url"))
+
+    return urls
+
+
 def search_web(query: str, max_results: int = 15) -> list[str]:
     """Retorna uma lista de URLs de resultados de busca. Tenta DuckDuckGo HTML
     primeiro, cai para Bing HTML se a primeira falhar ou não retornar nada.
 
-    NOTA: ambos os buscadores podem servir uma página de desafio anti-bot em
-    vez de resultados reais quando acessados por scripts automatizados (comum
-    em ambientes de CI/cloud). Quando isso acontece, o find_cbf_pdf_urls() cai
-    para SEED_PDF_URLS (lista mantida manualmente). Atualize essa lista de
-    tempos em tempos buscando "CBF tabela detalhada <competição> <ano>"."""
+    Usa extração genérica (todos os <a href> + regex de URLs .pdf cru no
+    HTML) em vez de depender de uma classe CSS específica do resultado de
+    busca — essa era a causa real de vir vazio: os seletores anteriores
+    (a.result__a, li.b_algo h2 a) não batiam mais com o HTML atual dos
+    buscadores, então a chamada "funcionava" (HTTP 200, conteúdo real) mas a
+    extração silenciosamente não achava nada."""
     urls: list[str] = []
 
     try:
@@ -317,33 +346,31 @@ def search_web(query: str, max_results: int = 15) -> list[str]:
             timeout=20,
         )
         r.raise_for_status()
-        soup = BeautifulSoup(r.text, "html.parser")
-        for a in soup.select("a.result__a, a.result__url"):
-            href = a.get("href", "")
-            target = _extract_ddg_redirect(href)
-            if target:
-                urls.append(target)
+        urls.extend(_extract_links_generic(r.text, "https://duckduckgo.com/"))
     except Exception as e:
         print(f"[WARN] Busca DuckDuckGo falhou para '{query}': {e}", file=sys.stderr)
 
-    if not urls:
-        try:
-            r = requests.get(
-                "https://www.bing.com/search",
-                params={"q": query},
-                headers=HEADERS,
-                timeout=20,
-            )
-            r.raise_for_status()
-            soup = BeautifulSoup(r.text, "html.parser")
-            for li in soup.select("li.b_algo h2 a"):
-                href = li.get("href", "")
-                if href:
-                    urls.append(href)
-        except Exception as e:
-            print(f"[WARN] Busca Bing falhou para '{query}': {e}", file=sys.stderr)
+    try:
+        r = requests.get(
+            "https://www.bing.com/search",
+            params={"q": query},
+            headers=HEADERS,
+            timeout=20,
+        )
+        r.raise_for_status()
+        urls.extend(_extract_links_generic(r.text, "https://www.bing.com/"))
+    except Exception as e:
+        print(f"[WARN] Busca Bing falhou para '{query}': {e}", file=sys.stderr)
 
-    return urls[:max_results]
+    # remove duplicatas mantendo ordem
+    seen = set()
+    unique = []
+    for u in urls:
+        if u and u not in seen:
+            seen.add(u)
+            unique.append(u)
+
+    return unique[:max_results]
 
 
 def find_cbf_pdf_urls() -> list[tuple[str, str]]:
