@@ -1,0 +1,3719 @@
+{
+  "debug": [
+    {
+      "tipo": "page_requests",
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026",
+      "error": "HTTPSConnectionPool(host='www.cbf.com.br', port=443): Max retries exceeded with url: /futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))"
+    },
+    {
+      "tipo": "duckduckgo",
+      "query": "site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"Brasileiro_Serie_A_2026\"",
+      "status": 200,
+      "bytes": 9548
+    },
+    {
+      "tipo": "bing",
+      "query": "site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"Brasileiro_Serie_A_2026\"",
+      "status": 200,
+      "bytes": 75693
+    },
+    {
+      "tipo": "duckduckgo",
+      "query": "site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"Tabela_Detalhada\" \"Serie_A_2026\"",
+      "status": 200,
+      "bytes": 9602
+    },
+    {
+      "tipo": "bing",
+      "query": "site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"Tabela_Detalhada\" \"Serie_A_2026\"",
+      "status": 200,
+      "bytes": 75504
+    },
+    {
+      "tipo": "duckduckgo",
+      "query": "site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"PGA_Brasileiro_Serie_A_2026\"",
+      "status": 202,
+      "bytes": 14368
+    },
+    {
+      "tipo": "bing",
+      "query": "site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"PGA_Brasileiro_Serie_A_2026\"",
+      "status": 200,
+      "bytes": 75428
+    },
+    {
+      "tipo": "duckduckgo",
+      "query": "site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"REC_Brasileiro_Serie_A_2026\"",
+      "status": 202,
+      "bytes": 14374
+    },
+    {
+      "tipo": "bing",
+      "query": "site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"REC_Brasileiro_Serie_A_2026\"",
+      "status": 200,
+      "bytes": 75600
+    }
+  ],
+  "resources": [
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "interessante": true,
+      "sample": "<!DOCTYPE html><html lang=\"pt-br\"><head><meta charSet=\"utf-8\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/><link rel=\"stylesheet\" href=\"/_next/static/css/577cbe2d5d7e3256.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/css/20720a659c31249d.css\" data-precedence=\"next\"/><link rel=\"stylesheet\" href=\"/_next/static/css/8504d4c721174576.css\" data-preceden"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/577cbe2d5d7e3256.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": "@font-face{font-family:poppins;src:url(/_next/static/media/8b20023e8f811f53-s.p.ttf) format(\"truetype\");font-display:swap;font-weight:300;font-style:normal}@font-face{font-family:poppins;src:url(/_next/static/media/acd7f79f9e69ead8-s.p.ttf) format(\"truetype\");font-display:swap;font-weight:300;font-style:italic}@font-face{font-family:poppins;src:url(/_next/static/media/4b4ebe20759bdbf2-s.p.ttf) for"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/20720a659c31249d.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": "@keyframes react-loading-skeleton{to{transform:translateX(100%)}}.react-loading-skeleton{--base-color:#ebebeb;--highlight-color:#f5f5f5;--animation-duration:1.5s;--animation-direction:normal;--pseudo-element-display:block;background-color:var(--base-color);width:100%;border-radius:.25rem;display:inline-flex;line-height:1;position:relative;-webkit-user-select:none;-moz-user-select:none;user-select:"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/8504d4c721174576.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".splide__container{box-sizing:border-box;position:relative}.splide__list{-webkit-backface-visibility:hidden;backface-visibility:hidden;display:flex;height:100%;margin:0!important;padding:0!important}.splide.is-initialized:not(.is-active) .splide__list{display:block}.splide__pagination{align-items:center;display:flex;flex-wrap:wrap;justify-content:center;margin:0;pointer-events:none}.splide__pagina"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/38e917f47f4e5ee1.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__S0YVW .styles_splide__list__y23O_{display:flex;justify-content:flex-start}.styles_splide__S0YVW .styles_splide__sr__H_yDm{display:none}.styles_splide__arrow__FiLGP{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow__FiLGP"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/b15f8dcf361d9e4a.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__Zo_gf .styles_splide__list__H2M_D{display:flex;justify-content:flex-start}.styles_splide__Zo_gf .styles_splide__sr__RZlw7{display:none}.styles_splide__arrow__gWuUY{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow__gWuUY"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/686c33f04e363ea6.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__t7MB3 .styles_splide__list___Ps_2{display:flex;justify-content:flex-start}.styles_splide__t7MB3 .styles_splide__sr__AxXsS{display:none}.styles_splide__arrow___dRze{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow___dRze"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/714145b764316b7b.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__DtUkD .styles_splide__list__6VMCT{display:flex;justify-content:flex-start}.styles_splide__DtUkD .styles_splide__sr__78jiH{display:none}.styles_splide__arrow__eeOlo{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow__eeOlo"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/b3f8e374d89bb6a0.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".react-modal-overlay{min-width:100vw;width:100%;height:100vh;overflow:hidden;position:fixed;top:0;left:0;z-index:100001;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);background-color:rgba(7,8,17,.5)!important}.react-modal-content{width:100%;height:100%;display:flex;align-items:center;justify-content:center}.styles_splide__ErAS3 .styles_splide__list__jhbJK{display:flex;justify-content"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/2fab74fa30ed0ca1.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__Y3KyL .styles_splide__list__2RJlq{display:flex;justify-content:flex-start}.styles_splide__Y3KyL .styles_splide__sr__5TdrO{display:none}.styles_splide__arrow__cSP1O{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow__cSP1O"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/03a0ff426d4b0324.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".splide .splide__list{display:flex;justify-content:flex-start}.splide .splide__sr{display:none}.splide__arrow{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;border-radius:initial}.splide__arrow,.splide__arrow svg{height:auto;width:auto;transition:initial}.splide__arrow svg{fill:rgba(0,0,0,0)}.splide__arrow:hover:not(:"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/7e39956bffc46597.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__lDjj_ .styles_splide__list__oNsHn{display:flex;justify-content:flex-start}.styles_splide__lDjj_ .styles_splide__sr__zw800{display:none}.styles_splide__arrow__n3x5n{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow__n3x5n"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/2c962f029c160da7.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__bb4iU .styles_splide__list__O0EEN{display:flex;justify-content:flex-start}.styles_splide__bb4iU .styles_splide__sr__2IeMv{display:none}.styles_splide__arrow__DFVv3{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow__DFVv3"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/f3ba2da0246ef6ad.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__AL_E1 .styles_splide__list__X62GH{display:flex;justify-content:flex-start}.styles_splide__AL_E1 .styles_splide__sr__BsYnH{display:none}.styles_splide__arrow__6y8cI{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow__6y8cI"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/ce9d17ef81fdf218.css",
+      "status": 200,
+      "content_type": "text/css; charset=UTF-8",
+      "interessante": false,
+      "sample": ".styles_splide__m8zLq .styles_splide__list__XqRWK{display:flex;justify-content:flex-start}.styles_splide__m8zLq .styles_splide__sr__sECfA{display:none}.styles_splide__arrow___tQ5S{cursor:pointer;background:initial;padding:initial;border:initial;transform:none;position:static;top:auto;z-index:auto;opacity:1;height:auto;width:auto;border-radius:initial;transition:initial}.styles_splide__arrow___tQ5S"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/34a634e1e94d3514-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/6599bdd1a31baf6f-s.p.woff2",
+      "status": 200,
+      "content_type": "font/woff2",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/6bf348af9f4564c8-s.p.woff2",
+      "status": 200,
+      "content_type": "font/woff2",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/665bf407b23b0ddf-s.p.woff2",
+      "status": 200,
+      "content_type": "font/woff2",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/1a15c5ce3e29c0a9-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/4b4ebe20759bdbf2-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/502635913515117a-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/7572a9b5289f55fe-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/8001a01b32b71ef5-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/9656981deddb4bed-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/98512bf8da1afe43-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/8b20023e8f811f53-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/a52d0bf095c248da-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20086%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/acd7f79f9e69ead8-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/b2efb5cde74c2f1a-s.p.ttf",
+      "status": 200,
+      "content_type": "font/ttf",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20014%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20002%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/logo/logo-verde.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20007%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61590%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20016%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/webpack-1c8609069c06bba2.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(()=>{\"use strict\";var e={},t={};function r(o){var n=t[o];if(void 0!==n)return n.exports;var a=t[o]={id:o,loaded:!1,exports:{}},i=!0;try{e[o].call(a.exports,a,a.exports,r),i=!1}finally{i&&delete t[o]}return a.loaded=!0,a.exports}r.m=e,(()=>{var e=[];r.O=(t,o,n,a)=>{if(o){a=a||0;for(var i=e.length;i>0&&e[i-1][2]>a;i--)e[i]=e[i-1];e[i]=[o,n,a];return}for(var l=1/0,i=0;i<e.length;i++){for(var[o,n,a]="
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/main-app-f3336e172256d2ab.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7358],{19393:()=>{},78756:(e,s,n)=>{Promise.resolve().then(n.t.bind(n,57150,23)),Promise.resolve().then(n.t.bind(n,81959,23)),Promise.resolve().then(n.t.bind(n,17989,23)),Promise.resolve().then(n.t.bind(n,63886,23)),Promise.resolve().then(n.t.bind(n,9766,23)),Promise.resolve().then(n.t.bind(n,15278,23)),Promise.resolve().then(n.t.bind(n,9892"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1255-463303121a48e9a6.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1255],{307:(e,t,r)=>{\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0}),Object.defineProperty(t,\"createRenderParamsFromClient\",{enumerable:!0,get:function(){return n}});let n=r(77370).createRenderParamsFromClient;(\"function\"==typeof t.default||\"object\"==typeof t.default&&null!==t.default)&&void 0===t.default.__esModule&&(Object.de"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/f97e080b-215f892f45671faa.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4506],{6172:(a,t,l)=>{l.d(t,{duE:()=>e});var r=l(56724);function e(a){return(0,r.k5)({tag:\"svg\",attr:{viewBox:\"0 0 256 256\",fill:\"currentColor\"},child:[{tag:\"path\",attr:{d:\"M168,120a12,12,0,0,1-5.12,9.83l-40,28A12,12,0,0,1,104,148V92a12,12,0,0,1,18.88-9.83l40,28A12,12,0,0,1,168,120Zm68-56V176a28,28,0,0,1-28,28H48a28,28,0,0,1-28-"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/f8025e75-98d8b9d075bd059b.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5897],{59475:(t,a,r)=>{r.d(a,{$9n:()=>Q,ERl:()=>N,Fsk:()=>L,G6q:()=>i,HmQ:()=>f,J2d:()=>B,Nx0:()=>h,OkF:()=>n,Pdx:()=>e,Pn8:()=>C,PuI:()=>b,QbR:()=>y,RUR:()=>s,Tqh:()=>_,UfU:()=>j,ciu:()=>p,eeb:()=>m,h$A:()=>M,hYQ:()=>w,kWV:()=>E,klJ:()=>v,kwe:()=>g,mDV:()=>z,pzu:()=>c,q1z:()=>l,q2x:()=>W,qAh:()=>k,r2j:()=>q,rOy:()=>u,rnj:()=>d,"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8441],{59248:(e,n,t)=>{var r,l=t(95704),a=t(45009),o=t(12115),u=t(47650);function i(e){var n=\"https://react.dev/errors/\"+e;if(1<arguments.length){n+=\"?args[]=\"+encodeURIComponent(arguments[1]);for(var t=2;t<arguments.length;t++)n+=\"&args[]=\"+encodeURIComponent(arguments[t])}return\"Minified React error #\"+e+\"; visit \"+n+\" for the"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/30a37ab2-a06207e12800ad53.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2362],{50457:(t,a,c)=>{c.d(a,{lhl:()=>h});var e=c(56724);function h(t){return(0,e.k5)({tag:\"svg\",attr:{role:\"img\",viewBox:\"0 0 24 24\"},child:[{tag:\"path\",attr:{d:\"M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/795d4814-fe2e4c14042a0a44.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5479],{57830:(t,h,a)=>{a.d(h,{CtR:()=>d,LUV:()=>l,QtE:()=>i,jzL:()=>n,pik:()=>r,vZw:()=>v});var c=a(56724);function l(t){return(0,c.k5)({tag:\"svg\",attr:{viewBox:\"0 0 24 24\"},child:[{tag:\"path\",attr:{fill:\"none\",d:\"M0 0h24v24H0V0z\"},child:[]},{tag:\"path\",attr:{d:\"M11 18c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zm-2-8c-1.1 0-2 .9"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/59650de3-0b8832c92db62bcb.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2150],{53380:(t,r,a)=>{a.d(r,{CZu:()=>i,ZB5:()=>o,wr3:()=>e});var c=a(56724);function i(t){return(0,c.k5)({tag:\"svg\",attr:{viewBox:\"0 0 24 24\",fill:\"none\",stroke:\"currentColor\",strokeWidth:\"2\",strokeLinecap:\"round\",strokeLinejoin:\"round\"},child:[{tag:\"path\",attr:{d:\"M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5\"},"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/8e1d74a4-ffde360557a5316b.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6711],{70898:(t,c,a)=>{a.d(c,{K$h:()=>d,M1W:()=>l,ao$:()=>v,feZ:()=>i,oeh:()=>n,ok6:()=>r,vqJ:()=>s});var h=a(56724);function r(t){return(0,h.k5)({tag:\"svg\",attr:{viewBox:\"0 0 320 512\"},child:[{tag:\"path\",attr:{d:\"M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 4"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/9c4e2130-f5ce00820ad16017.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[512],{42878:(t,a,i)=>{i.d(a,{FyX:()=>h,HTM:()=>e,JYD:()=>o,p7t:()=>n,tEG:()=>d,uSr:()=>c,vWc:()=>l,wv0:()=>s});var r=i(56724);function h(t){return(0,r.k5)({tag:\"svg\",attr:{viewBox:\"0 0 512 512\"},child:[{tag:\"path\",attr:{d:\"M400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/0e762574-ac4e96390943ce36.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8087],{6092:(a,t,h)=>{h.d(t,{A7D:()=>c,JkP:()=>v,PPg:()=>V,Wi1:()=>r,kJk:()=>i,uuc:()=>d});var l=h(56724);function c(a){return(0,l.k5)({tag:\"svg\",attr:{fill:\"currentColor\",viewBox:\"0 0 16 16\"},child:[{tag:\"path\",attr:{d:\"M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/3d47b92a-c869a09aad0d6a36.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3873],{50742:(t,a,l)=>{l.d(a,{MQY:()=>c,XWt:()=>h,mlL:()=>n,nwe:()=>i});var r=l(56724);function i(t){return(0,r.k5)({tag:\"svg\",attr:{viewBox:\"0 0 24 24\"},child:[{tag:\"path\",attr:{d:\"M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z\"},child:[]}]})(t)}function c(t){return(0,r.k5)({tag:\"svg\",attr:{viewBox:\"0 0"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/f7333993-a99d676cbef3fe53.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5760],{42018:(a,e,l)=>{l.d(e,{Edn:()=>d,PN1:()=>r});var t=l(56724);function d(a){return(0,t.k5)({tag:\"svg\",attr:{viewBox:\"0 0 24 24\",fill:\"currentColor\",\"aria-hidden\":\"true\"},child:[{tag:\"path\",attr:{fillRule:\"evenodd\",d:\"M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5."
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/66ec4792-89bf8a9bfcdc38e1.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4777],{30308:(t,e,r)=>{r.d(e,{XcM:()=>i,q9z:()=>l});var a=r(56724);function l(t){return(0,a.k5)({tag:\"svg\",attr:{viewBox:\"0 0 20 20\",fill:\"currentColor\",\"aria-hidden\":\"true\"},child:[{tag:\"path\",attr:{fillRule:\"evenodd\",d:\"M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011."
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/ee560e2c-75ead14bcf5e4534.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[844],{28122:(t,r,n)=>{n.d(r,{dyV:()=>e,jEl:()=>l,kRp:()=>i});var o=n(56724);function i(t){return(0,o.k5)({tag:\"svg\",attr:{viewBox:\"0 0 24 24\",fill:\"none\",stroke:\"currentColor\",strokeWidth:\"2\",strokeLinecap:\"round\",strokeLinejoin:\"round\"},child:[{tag:\"line\",attr:{x1:\"19\",y1:\"12\",x2:\"5\",y2:\"12\"},child:[]},{tag:\"polyline\",attr:{poi"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2619-04bc32f026a0d946.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2619],{17045:(e,t)=>{Object.defineProperty(t,\"__esModule\",{value:!0}),Object.defineProperty(t,\"errorOnce\",{enumerable:!0,get:function(){return r}});let r=e=>{}},33078:(e,t)=>{function r(e){let t={};for(let[r,n]of e.entries()){let e=t[r];void 0===e?t[r]=n:Array.isArray(e)?e.push(n):t[r]=[e,n]}return t}function n(e){return\"string\""
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/eec3d76d-99e5cc7d9c8ab64c.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2202],{53483:(a,t,e)=>{e.d(t,{BlJ:()=>c});var h=e(56724);function c(a){return(0,h.k5)({tag:\"svg\",attr:{viewBox:\"0 0 24 24\"},child:[{tag:\"path\",attr:{d:\"M11.75 4.5a.75.75 0 0 1 .75.75V11h5.75a.75.75 0 0 1 0 1.5H12.5v5.75a.75.75 0 0 1-1.5 0V12.5H5.25a.75.75 0 0 1 0-1.5H11V5.25a.75.75 0 0 1 .75-.75Z\"},child:[]}]})(a)}}}]);"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/5239-db8f183003152231.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5239],{1262:(e,t,r)=>{Object.defineProperty(t,\"__esModule\",{value:!0}),Object.defineProperty(t,\"default\",{enumerable:!0,get:function(){return l}});let n=r(12115),i=n.useLayoutEffect,o=n.useEffect;function l(e){let{headManager:t,reduceComponentsToState:r}=e;function l(){if(t&&t.mountedInstances){let i=n.Children.toArray(Array.fro"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/3467-c7052e0922e9cfef.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[3467],{3467:(e,t,r)=>{let n;r.d(t,{Ay:()=>Q});var i=r(12115),u=r(14806),a=Object.prototype.hasOwnProperty;let o=new WeakMap,l=()=>{},c=l(),s=Object,f=e=>e===c,d=(e,t)=>({...e,...t}),g={},p={},y=\"undefined\",h=typeof window!=y,v=typeof document!=y,w=h&&\"Deno\"in window,b=(e,t)=>{let r=o.get(e);return[()=>!f(t)&&e.get(t)||g,n=>{if(!"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1755-2ff990ccb061b6d0.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1755],{15376:e=>{!function(){var t={675:function(e,t){\"use strict\";t.byteLength=function(e){var t=u(e),r=t[0],n=t[1];return(r+n)*3/4-n},t.toByteArray=function(e){var t,r,i=u(e),s=i[0],a=i[1],f=new o((s+a)*3/4-a),l=0,c=a>0?s-4:s;for(r=0;r<c;r+=4)t=n[e.charCodeAt(r)]<<18|n[e.charCodeAt(r+1)]<<12|n[e.charCodeAt(r+2)]<<6|n[e.charCodeAt(r+3)],f[l"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2974-3f5a4d7dfc3fd2fc.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2974],{3404:(t,e,r)=>{\"use strict\";var o=r(22350),n=r(70220),i=r(32322);t.exports=o?function(t){return o(t)}:n?function(t){if(!t||\"object\"!=typeof t&&\"function\"!=typeof t)throw TypeError(\"getProto: not an object\");return n(t)}:i?function(t){return i(t)}:null},3945:(t,e,r)=>{\"use strict\";var o=r(80045),n=r(23034),i=r(33457),a=r(94105),p=o(\"%M"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2291-5aa76fa24e0bd4b5.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2291],{634:(e,t,r)=>{var n=r(15376).Buffer,o=r(95704);!function(){var t={992:function(e){e.exports=function(e,r,n){if(e.filter)return e.filter(r,n);if(null==e||\"function\"!=typeof r)throw TypeError();for(var o=[],i=0;i<e.length;i++)if(t.call(e,i)){var a=e[i];r.call(n,a,i,e)&&o.push(a)}return o};var t=Object.prototype.hasOwnProperty},256:funct"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/625-3803f3faeaebbf91.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[625],{50625:(e,t,r)=>{\"use strict\";r.d(t,{E:()=>ty,ID:()=>e7,DU:()=>tv,AH:()=>tp,Ay:()=>td,i7:()=>tm});var n=function(){return(n=Object.assign||function(e){for(var t,r=1,n=arguments.length;r<n;r++)for(var o in t=arguments[r])Object.prototype.hasOwnProperty.call(t,o)&&(e[o]=t[o]);return e}).apply(this,arguments)};Object.create;function o(e,t,"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/315-e0f778c12c17bd81.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[315],{3468:(e,t,n)=>{n.d(t,{A:()=>i,q:()=>a});var r=n(12115),o=n(95155);function a(e,t){let n=r.createContext(t),a=e=>{let{children:t,...a}=e,i=r.useMemo(()=>a,Object.values(a));return(0,o.jsx)(n.Provider,{value:i,children:t})};return a.displayName=e+\"Provider\",[a,function(o){let a=r.useContext(n);if(a)return a;if(void 0!==t)ret"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/560-a45cc331442d943c.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[560],{884:(e,t,o)=>{\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0}),t.resetState=function(){a&&(a.removeAttribute?a.removeAttribute(\"aria-hidden\"):null!=a.length?a.forEach(function(e){return e.removeAttribute(\"aria-hidden\")}):document.querySelectorAll(a).forEach(function(e){return e.removeAttribute(\"aria-hidden\")})),a=null},t.l"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/138-0429eb84a945dbca.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[138],{11636:(a,t,i)=>{i.d(t,{Ay:()=>J,VB:()=>aa});var e=i(12115),n=i(12758),o=i(71450);let p=new Map([[\"1km\",\"application/vnd.1000minds.decision-model+xml\"],[\"3dml\",\"text/vnd.in3d.3dml\"],[\"3ds\",\"image/x-3ds\"],[\"3g2\",\"video/3gpp2\"],[\"3gp\",\"video/3gp\"],[\"3gpp\",\"video/3gpp\"],[\"3mf\",\"model/3mf\"],[\"7z\",\"application/x-7z-compressed\"],"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2544-94ed296df5016632.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2544],{22544:(e,t,r)=>{r.d(t,{Gb:()=>S,Jt:()=>b,hZ:()=>p,mN:()=>ei,xI:()=>x});var a=r(12115),s=e=>e instanceof Date,i=e=>null==e,l=e=>!i(e)&&!Array.isArray(e)&&\"object\"==typeof e&&!s(e),o=e=>l(e)&&e.target?\"checkbox\"===e.target.type?e.target.checked:e.target.value:e,n=(e,t)=>e.has((e=>e.substring(0,e.search(/\\.\\d+(\\.|$)/))||e)(t"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1623-364ff8a307dcd95a.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1623],{5440:(e,t,a)=>{let r;a.d(t,{bz:()=>eY,Ik:()=>e0,Yj:()=>ez,z:()=>o});var s,i,n,d,o={};a.r(o),a.d(o,{BRAND:()=>eE,DIRTY:()=>w,EMPTY_PATH:()=>v,INVALID:()=>x,NEVER:()=>tm,OK:()=>Z,ParseStatus:()=>b,Schema:()=>E,ZodAny:()=>ei,ZodArray:()=>eu,ZodBigInt:()=>Q,ZodBoolean:()=>ee,ZodBranded:()=>eI,ZodCatch:()=>eS,ZodDate:()=>et,Zo"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2956-1e0c30df2ae27cb8.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2956],{11041:(t,e,i)=>{\"use strict\";i.d(e,{IOb:()=>eg,SFv:()=>ev});var n,o,r=i(71450),a=i(12115);function s(t){return t.moveCoordinates||t.resizeCoordinates||t.transformImage.move||t.transformImage.rotate||t.transformImage.flip||t.transformImage.scale}function c(t,e){var i,n;return t&&e?(i=\"\"+t+e[0].toUpperCase()+e.slice(1),n=t+\"-\"+e):(i=t||"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/6013-c9a63ddf4ed21f5d.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[6013],{378:(e,t,r)=>{\"use strict\";r.d(t,{u:()=>i});var s=r(95155);let n=r(50625).Ay.div.withConfig({componentId:\"sc-6feb2733-0\"})([\"width:fit-content;position:relative;display:flex;align-items:center;pre{width:16px;height:16px;display:flex;color:var(--color-neutral-grey);:hover ~ p{left:125%;top:0;visibility:visible;transform:scale(1);color:"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2226-2a23b27dbf43b853.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2226,7539],{2471:(e,t,r)=>{\"use strict\";Object.defineProperty(t,\"__esModule\",{value:!0}),Object.defineProperty(t,\"interpolateAs\",{enumerable:!0,get:function(){return a}});let n=r(92385),i=r(98156);function a(e,t,r){let a=\"\",o=(0,i.getRouteRegex)(e),s=o.groups,l=(t!==e?(0,n.getRouteMatcher)(o)(t):\"\")||r;a=e;let u=Object.keys(s);return u.every"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/layout-6ecafe661e81c976.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7177],{609:(e,s,r)=>{\"use strict\";r.d(s,{p:()=>l});var i=r(95155),t=r(12115),a=r(61270),n=r.n(a),o=r(79199);function l(e){let{type:s=\"text\",id:r=\"\",name:a,label:l,error:c,register:d,required:p,...u}=e,[_,m]=(0,t.useState)(!1),h=!!c;return(0,i.jsxs)(\"label\",{className:\"\".concat(n().container,\" \").concat(h?n().error:\"\"),id:r,children:[!!l&&(0,"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/8632-2ce4a3339488d10a.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8632],{16096:(t,e,s)=>{\"use strict\";async function n(t,e){try{let n=t,r=\"\";n.startsWith(\"https://\")||n.startsWith(\"http://\")||(n=\"\".concat(\"https://cms.cbf.com.br/api\").concat(t)),(null==e?void 0:e.headers)&&\"object\"==typeof e.headers&&!Array.isArray(e.headers)&&\"Authorization\"in e.headers&&(r=\"\".concat(e.headers.Authorization));let a=await"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/error-8181a0f1a08e69f5.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8039],{20063:(e,t,i)=>{\"use strict\";i.r(t);var r=i(47260),a={};for(let e in r)\"default\"!==e&&(a[e]=()=>r[e]);i.d(t,a)},27845:(e,t,i)=>{\"use strict\";i.d(t,{Footer:()=>_});var r=i(95155),a=i(29027),o=i(44963),s=i(15239),n=i(52619),l=i.n(n),d=i(41238),c=i.n(d);function h(e){var t;let{className:i=\"\"}=e,{data:n}=(0,a.s)(\"/redes-sociaiss?populate="
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1225-49f270d374062a7f.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1225],{37270:(t,n,e)=>{e.d(n,{Nn:()=>nq,eB:()=>nY,v9:()=>nH});var i=e(12115),o=\"(prefers-reduced-motion: reduce)\";function r(t){t.length=0}function u(t,n,e){return Array.prototype.slice.call(t,n,e)}function s(t){return t.bind.apply(t,[null].concat(u(arguments,1)))}var a=setTimeout,c=function(){};function l(t){return requestAnima"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/layout-758938e048ef452b.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": true,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[9236],{},_=>{_.O(0,[9487,6795,5727,7296,5897,4506,2362,5479,8087,2150,6711,512,3873,5760,4777,844,2202,2619,5239,3467,1755,2291,2974,625,1225,5257,560,8632,5871,8441,1255,7358],()=>_(_.s=70438)),_N_E=_.O()}]);"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/5871-22c222bd8d918811.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5871],{2322:(e,s,t)=>{\"use strict\";t.d(s,{y:()=>a});var i=t(95155),r=t(16295),l=t.n(r);function a(e){let{size:s=22,stroke:t=3,className:r=\"\"}=e;return(0,i.jsx)(\"div\",{className:\"\".concat(l().spinner,\" \").concat(r),style:{width:\"\".concat(s,\"px\"),height:\"\".concat(s,\"px\"),borderWidth:\"\".concat(t,\"px\")}})}},2701:e=>{e.exports={splide:\"styles_spl"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/5257-d425e22d55ff5661.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5257],{4168:(e,t,a)=>{a.d(t,{w:()=>i});var n=a(9180);function i(e,t){return\"function\"==typeof e?e(t):e&&\"object\"==typeof e&&n._P in e?e[n._P](t):e instanceof Date?new e.constructor(t):new Date(t)}},8574:(e,t,a)=>{a.d(t,{c:()=>m});let n={lessThanXSeconds:{one:\"less than a second\",other:\"less than {{count}} seconds\"},xSeconds:{one"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/13b76428-c75990430d19f963.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[586],{21001:function(e,t,n){e=n.nmd(e),e.exports=function(){\"use strict\";function t(){return V.apply(null,arguments)}function n(e){return e instanceof Array||\"[object Array]\"===Object.prototype.toString.call(e)}function s(e){return null!=e&&\"[object Object]\"===Object.prototype.toString.call(e)}function i(e,t){return Object.prototype.hasOwnPr"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2473-746736bc2fa90351.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2473],{3177:(t,e,n)=>{n.d(e,{b:()=>a});var r=n(82192);function a(t,e){return(0,r.k)(t,{...e,weekStartsOn:1})}},9357:(t,e,n)=>{n.d(e,{m:()=>i});let r=(t,e)=>{switch(t){case\"P\":return e.date({width:\"short\"});case\"PP\":return e.date({width:\"medium\"});case\"PPP\":return e.date({width:\"long\"});default:return e.date({width:\"full\"})}},a=("
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/7330-050f02b47a272c42.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[7330],{861:(e,t,n)=>{n.d(t,{Qg:()=>o,bL:()=>s});var r=n(12115),i=n(97602),l=n(95155),o=Object.freeze({position:\"absolute\",border:0,width:1,height:1,padding:0,margin:-1,overflow:\"hidden\",clip:\"rect(0, 0, 0, 0)\",whiteSpace:\"nowrap\",wordWrap:\"normal\"}),a=r.forwardRef((e,t)=>(0,l.jsx)(i.sG.span,{...e,ref:t,style:{...o,...e.style}}))"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KRKV4JXV",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "// Copyright 2012 Google Inc. All rights reserved. (function(){ var data = { \"resource\": { \"version\":\"8\", \"macros\":[{\"function\":\"__e\"},{\"function\":\"__u\",\"vtp_component\":\"URL\",\"vtp_enableMultiQueryKeys\":false,\"vtp_enableIgnoreEmptyQueryParam\":false},{\"function\":\"__u\",\"vtp_component\":\"HOST\",\"vtp_enableMultiQueryKeys\":false,\"vtp_enableIgnoreEmptyQueryParam\":false},{\"function\":\"__u\",\"vtp_co"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=%2Flogo%2Flogo-borda.png&w=96&q=100",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20052%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/5624-1a726fa4ea3cbdff.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "\"use strict\";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[5624,7539],{4168:(e,t,n)=>{n.d(t,{w:()=>o});var a=n(9180);function o(e,t){return\"function\"==typeof e?e(t):e&&\"object\"==typeof e&&a._P in e?e[a._P](t):e instanceof Date?new e.constructor(t):new Date(t)}},8574:(e,t,n)=>{n.d(t,{c:()=>c});let a={lessThanXSeconds:{one:\"less than a second\",other:\"less than {{count}} seconds\"},xSeconds"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1329-4ca7158102dcf4b1.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[1329],{16096:(t,e,s)=>{\"use strict\";async function n(t,e){try{let n=t,r=\"\";n.startsWith(\"https://\")||n.startsWith(\"http://\")||(n=\"\".concat(\"https://cms.cbf.com.br/api\").concat(t)),(null==e?void 0:e.headers)&&\"object\"==typeof e.headers&&!Array.isArray(e.headers)&&\"Authorization\"in e.headers&&(r=\"\".concat(e.headers.Authorization));let a=await"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/page-76184f4db6b2a11f.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": true,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4248],{1043:e=>{e.exports={splide:\"styles_splide___CW4o\",splide__list:\"styles_splide__list__E7JGU\",splide__sr:\"styles_splide__sr__d1Pxb\",splide__arrow:\"styles_splide__arrow__6TphB\",\"splide__arrow--prev\":\"styles_splide__arrow--prev__saqzk\",\"splide__arrow--next\":\"styles_splide__arrow--next__fYd7v\",\"is-focus-in\":\"styles_is-focus-in__AtWLV\",cont"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": true,
+      "sample": "(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4978],{16199:(e,t,s)=>{Promise.resolve().then(s.bind(s,63958)),Promise.resolve().then(s.t.bind(s,99755,23))},63958:(e,t,s)=>{\"use strict\";s.d(t,{SkeletonTheme:()=>i,default:()=>r});var l=s(12115);let n=l.createContext({});function r(e){var t,s,r;let{count:i=1,wrapper:o,className:_,containerClassName:a,containerTestId:c,circle:p=!1,style:d,.."
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "status": 200,
+      "content_type": "application/x-javascript; charset=utf-8",
+      "interessante": false,
+      "sample": "/** * Copyright (c) 2017-present, Facebook, Inc. All rights reserved. * * You are hereby granted a non-exclusive, worldwide, royalty-free license to use, * copy, modify, and distribute this software in source code or binary form for use * in connection with the web services and APIs provided by Facebook. * * As with any software that integrates with the Facebook platform, your use of * this softwa"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VN8QK704R4&cx=c&gtm=4e6711",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "// Copyright 2012 Google Inc. All rights reserved. (function(){ var data = { \"resource\": { \"version\":\"1\", \"macros\":[{\"function\":\"__e\"},{\"function\":\"__c\",\"vtp_value\":\"c\"},{\"function\":\"__c\",\"vtp_value\":\"\"},{\"function\":\"__c\",\"vtp_value\":0}], \"tags\":[{\"function\":\"__ogt_1p_data_v2\",\"priority\":14,\"vtp_isAutoEnabled\":true,\"vtp_autoCollectExclusionSelectors\":[\"list\",[\"map\",\"exclusionSelector\""
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20005%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61377%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F62194%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/api/auth/validation-token",
+      "status": 200,
+      "content_type": "application/json",
+      "interessante": false,
+      "sample": "{\"authenticated\":false,\"error\":\"Token not found\"}"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20001%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20022%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-976019.js?sv=7",
+      "status": 200,
+      "content_type": "application/javascript; charset=UTF-8",
+      "interessante": false,
+      "sample": "window.hjSiteSettings = window.hjSiteSettings || {\"site_id\":976019,\"rec_value\":0.0,\"state_change_listen_mode\":\"automatic\",\"record\":true,\"continuous_capture_enabled\":true,\"recording_capture_keystrokes\":true,\"session_capture_console_consent\":true,\"anonymize_digits\":true,\"anonymize_emails\":true,\"suppress_all\":false,\"suppress_all_on_specific_pages\":[],\"suppress_text\":null,\"suppress_location\":true,\"use"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F59849%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20011%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60175%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20008%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20018%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/887424401406660?v=2.9.349&r=stable&domain=www.cbf.com.br&hme=f29d86973612db0f0627890a64bdc8c47b471189050b33f2680b7d76997afc9a&ex_m=107%2C208%2C158%2C22%2C73%2C74%2C149%2C69%2C68%2C11%2C167%2C93%2C16%2C141%2C130%2C39%2C76%2C81%2C137%2C163%2C169%2C8%2C4%2C5%2C7%2C6%2C3%2C94%2C104%2C170%2C175%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C106%2C61%2C10%2C64%2C100%2C101%2C102%2C108%2C133%2C31%2C29%2C135%2C136%2C132%2C131%2C159%2C77%2C162%2C160%2C161%2C50%2C60%2C126%2C15%2C166%2C45%2C279%2C280%2C278%2C26%2C27%2C28%2C48%2C150%2C78%2C115%2C18%2C20%2C44%2C40%2C42%2C41%2C86%2C95%2C99%2C113%2C148%2C151%2C46%2C114%2C24%2C21%2C122%2C70%2C36%2C153%2C152%2C154%2C145%2C143%2C25%2C35%2C59%2C112%2C165%2C71%2C17%2C156%2C117%2C84%2C67%2C19%2C88%2C89%2C119%2C87%2C139%2C138%2C142%2C164%2C34%2C293%2C309%2C215%2C204%2C62%2C205%2C203%2C312%2C303%2C52%2C216%2C110%2C134%2C83%2C124%2C54%2C47%2C49%2C116%2C123%2C129%2C128%2C58%2C65%2C63%2C155%2C79%2C80%2C118%2C37%2C32%2C53%2C56%2C103%2C168%2C1%2C127%2C14%2C125%2C12%2C2%2C57%2C96%2C66%2C121%2C92%2C91%2C171%2C172%2C97%2C98%2C9%2C105%2C51%2C146%2C90%2C82%2C72%2C120%2C109%2C43%2C147%2C0%2C85%2C140%2C144%2C157%2C38%2C111%2C13%2C173",
+      "status": 200,
+      "content_type": "application/x-javascript; charset=utf-8",
+      "interessante": false,
+      "sample": "/** * Copyright (c) 2017-present, Facebook, Inc. All rights reserved. * * You are hereby granted a non-exclusive, worldwide, royalty-free license to use, * copy, modify, and distribute this software in source code or binary form for use * in connection with the web services and APIs provided by Facebook. * * As with any software that integrates with the Facebook platform, your use of * this softwa"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VN8QK704R4&gtm=45je6711v9192395007z89192390870za20gzb9192390870zd9192390870&_p=1783399123466&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAAC&are=1&cid=139860766.1783399124&frm=0&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895&sid=1783399123&sct=1&seg=0&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a%2F2026&dt=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=3549",
+      "status": 204,
+      "content_type": "text/plain",
+      "interessante": true,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://script.hotjar.com/modules.fa52fb4272e01466771f.js",
+      "status": 200,
+      "content_type": "application/javascript; charset=utf-8",
+      "interessante": false,
+      "sample": "/*! For license information please see modules.fa52fb4272e01466771f.js.LICENSE.txt */ !function(){var e={4788:function(e,t,n){\"use strict\";n.d(t,{s:function(){return r}});const r=Object.freeze({IDENTIFY_USER:\"identify_user\",AUTOTAG_RECORDING:\"autotag_recording\",TAG_RECORDING:\"tag_recording\",HEATMAP_HELO:\"heatmap_helo\",RECORDING_HELO:\"recording_helo\",REPORT_USER_ID:\"report_user_id\",MUTATION:\"mutati"
+    },
+    {
+      "url": "https://www.facebook.com/tr/?id=887424401406660&ev=PageView&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a%2F2026&rl=&if=false&ts=1783399123930&iw=false&sw=1280&sh=720&v=2.9.349&r=stable&ec=0&o=12318&aems=0%3B0&fbp=fb.2.1783399123923.918912370901564367&cs_est=true&ler=empty&pmd[title]=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&pmd[locale]=pt-br&plt=1455.5999999999985&iss=1&imft=1&tz=0&it=1783399123760&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "status": 200,
+      "content_type": "text/plain",
+      "interessante": true,
+      "sample": ""
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20013%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20385%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60646%2Fescudo.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20052%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F07314345953%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F14332635728%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20016%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F13455577601%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20014%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F70190830131%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20013%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F13003435671%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61590%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F86311359502%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60175%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/2?nested=true&populate=%2A",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":2,\"attributes\":{\"title\":\"Menu Principal\",\"slug\":\"menu-principal\",\"createdAt\":\"2022-10-14T16:39:19.049Z\",\"updatedAt\":\"2026-06-23T12:40:49.409Z\",\"items\":{\"data\":[{\"id\":8,\"attributes\":{\"order\":0,\"title\":\"A CBF\",\"url\":\"/a-cbf\",\"target\":\"_parent\",\"createdAt\":\"2022-10-14T16:39:19.073Z\",\"updatedAt\":\"2026-06-23T12:40:49.323Z\",\"children\":{\"data\":[]}}},{\"id\":9,\"attributes\":{\"order\":1,\"title\":\""
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/redes-sociaiss?populate=*&sort=Ordem",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":1,\"attributes\":{\"Titulo\":\"Facebook\",\"Link\":\"https://www.facebook.com/CBF\",\"Ordem\":1,\"Ativo\":false,\"createdAt\":\"2022-10-14T16:40:37.593Z\",\"updatedAt\":\"2024-01-29T13:03:50.402Z\",\"locale\":\"pt-BR\",\"Icone\":{\"data\":[{\"id\":1056,\"attributes\":{\"name\":\"facebook_icon.svg\",\"alternativeText\":\"facebook_icon.svg\",\"caption\":\"facebook_icon.svg\",\"width\":7,\"height\":13,\"formats\":{},\"hash\":\"facebook_ico"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":5,\"attributes\":{\"title\":\"Futebol Brasileiro\",\"slug\":\"futebol-brasileiro\",\"createdAt\":\"2022-10-18T22:04:55.620Z\",\"updatedAt\":\"2026-06-30T15:26:44.208Z\",\"items\":{\"data\":[{\"id\":58,\"attributes\":{\"order\":0,\"title\":\"Tabelas\",\"url\":\"/tabelas\",\"target\":\"_self\",\"createdAt\":\"2022-10-18T22:04:55.685Z\",\"updatedAt\":\"2026-06-30T15:26:43.851Z\",\"children\":{\"data\":[{\"id\":61,\"attributes\":{\"order\":0,\""
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F70419737430%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61377%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F12159544418%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F37418013809%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20008%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/1?nested=true&populate=%2A",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":1,\"attributes\":{\"title\":\"Acesse também\",\"slug\":\"ecossistema\",\"createdAt\":\"2022-10-14T16:38:05.424Z\",\"updatedAt\":\"2025-11-05T16:22:07.225Z\",\"items\":{\"data\":[{\"id\":1,\"attributes\":{\"order\":0,\"title\":\"Credenciamento\",\"url\":\"http://credencial.cbf.com.br/competicoes\",\"target\":\"_blank\",\"createdAt\":\"2022-10-14T16:38:05.509Z\",\"updatedAt\":\"2025-11-05T16:22:07.206Z\",\"children\":{\"data\":[]}}},{\"i"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors/1?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":1,\"attributes\":{\"url\":\"/\",\"createdAt\":\"2026-02-05T21:28:12.080Z\",\"updatedAt\":\"2026-06-10T18:33:38.446Z\",\"title\":null,\"lines\":[{\"id\":270,\"sponsors\":{\"data\":[{\"id\":380,\"attributes\":{\"Nome\":\"Nike\",\"Ordem\":1,\"createdAt\":\"2023-02-06T16:10:57.943Z\",\"updatedAt\":\"2026-02-05T21:34:44.646Z\",\"locale\":\"pt-BR\",\"Tipo\":\"Primário\",\"link\":\"https://www.nike.com.br/\",\"Logo\":{\"data\":{\"id\":2328,\"attribut"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/logo?populate=image",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":7,\"attributes\":{\"createdAt\":\"2024-03-27T14:35:34.683Z\",\"updatedAt\":\"2024-06-17T13:27:46.271Z\",\"image\":{\"data\":null}}},\"meta\":{}}"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/championship-documents?filters[slug][$eq]=campeonato-brasileiro%2Fserie-a%2F2026&fields[0]=type&fields[1]=url&fields[2]=createdAt&fields[3]=title&populate[0]=file&pagination[pageSize]=50",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":5143,\"attributes\":{\"type\":\"Regulamento\",\"url\":null,\"createdAt\":\"2025-12-24T01:49:33.542Z\",\"title\":\"REC - Brasileiro Série A 2026\",\"file\":{\"data\":{\"id\":19185,\"attributes\":{\"name\":\"REC - Brasileiro Série A 2026.pdf\",\"alternativeText\":null,\"caption\":null,\"width\":null,\"height\":null,\"formats\":null,\"hash\":\"REC_Brasileiro_Serie_A_2026_c984f8cf05\",\"ext\":\".pdf\",\"mime\":\"application/pdf\",\"size"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F04484435110%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20005%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F23850115810%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F90093316879%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20002%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/paginas?fields[0]=Slug&fields[1]=Headline&fields[2]=publish_at&fields[3]=publishedAt&fields[4]=Titulo&fields[5]=Sumary&fields[6]=old_cover_id&populate[Area][fields][0]=Titulo&populate[Area][fields][1]=Cor&populate[Area][fields][2]=Color_text&populate[Area][fields][3]=Slug&populate[Categoria][fields][0]=Titulo&populate[Categoria][fields][1]=Slug&populate[Capa][fields][0]=url&populate[Capa][fields][1]=alternativeText&populate[miniature][fields][0]=url&sort=publishedAt%3Adesc&filters[Headline][$notNull]=true&filters[Sumary][$notNull]=true&filters[Area][id][$gt]=0&filters[$or][0][Area][Slug][$eq]=futebol-brasileiro&filters[$or][1][Categoria][Slug][$eq]=serie-a&pagination[pageSize]=12",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":102639,\"attributes\":{\"publishedAt\":\"2026-07-06T21:31:00.655Z\",\"Slug\":\"cbf-divulga-tabela-detalhada-das-rodadas-19-a-24-da-serie-b\",\"Headline\":\"Anote na agenda\",\"publish_at\":null,\"Titulo\":\"CBF divulga tabela detalhada das rodadas 19 a 24 da Série B\",\"Sumary\":\"Documento possui informações sobre data, local, horário e transmissão dos jogos\",\"old_cover_id\":null,\"Area\":{\"data\":{\"id\":4,\"a"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20007%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F60311182038%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F23774557861%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/api/cbf/jogos/campeonato/1260611/rodada/18/fase",
+      "status": 200,
+      "content_type": "application/json",
+      "interessante": false,
+      "sample": "{\"grupos\":[\"GRUPO \\u00daNICO\"],\"jogos\":[{\"grupo\":\"GRUPO \\u00daNICO\",\"jogo\":[{\"id_jogo\":\"832060\",\"num_jogo\":\"171\",\"rodada\":\"18\",\"grupo\":\"GRUPO \\u00daNICO\",\"mandante\":{\"id\":\"20016\",\"nome\":\"Flamengo\",\"url_escudo\":\"https:\\/\\/conteudo.cbf.com.br\\/clubes\\/20016\\/escudo.jpg\",\"gols\":\"3\",\"panaltis\":\"0\",\"atletas\":[{\"id\":\"815100\",\"numero_camisa\":\"1\",\"reserva\":\"false\",\"goleiro\":\"true\",\"entrou_jogando\":\"true\","
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F12512806928%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F59849%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/1?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":1,\"attributes\":{\"title\":\"Acesse também\",\"slug\":\"ecossistema\",\"createdAt\":\"2022-10-14T16:38:05.424Z\",\"updatedAt\":\"2025-11-05T16:22:07.225Z\",\"items\":{\"data\":[{\"id\":1,\"attributes\":{\"order\":0,\"title\":\"Credenciamento\",\"url\":\"http://credencial.cbf.com.br/competicoes\",\"target\":\"_blank\",\"createdAt\":\"2022-10-14T16:38:05.509Z\",\"updatedAt\":\"2025-11-05T16:22:07.206Z\",\"children\":{\"data\":[]}}},{\"i"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/2?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":2,\"attributes\":{\"title\":\"Menu Principal\",\"slug\":\"menu-principal\",\"createdAt\":\"2022-10-14T16:39:19.049Z\",\"updatedAt\":\"2026-06-23T12:40:49.409Z\",\"items\":{\"data\":[{\"id\":8,\"attributes\":{\"order\":0,\"title\":\"A CBF\",\"url\":\"/a-cbf\",\"target\":\"_parent\",\"createdAt\":\"2022-10-14T16:39:19.073Z\",\"updatedAt\":\"2026-06-23T12:40:49.323Z\",\"children\":{\"data\":[]}}},{\"id\":9,\"attributes\":{\"order\":1,\"title\":\""
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F03498402706%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F11465482300%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20018%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F04075017117%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60646%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo&filters[url][$eq]=bloco-fixo-2",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":3,\"attributes\":{\"url\":\"bloco-fixo-2\",\"createdAt\":\"2026-06-11T16:31:06.777Z\",\"updatedAt\":\"2026-06-11T18:41:21.099Z\",\"title\":\"Patrocinadores Arbitragem\",\"lines\":[{\"id\":276,\"sponsors\":{\"data\":[{\"id\":447,\"attributes\":{\"Nome\":\"Midea\",\"Ordem\":0,\"createdAt\":\"2026-06-10T16:05:59.893Z\",\"updatedAt\":\"2026-06-10T16:05:59.893Z\",\"locale\":\"pt-BR\",\"Tipo\":\"Primário\",\"link\":\"https://www.midea.com.br/"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo&filters[url][$eq]=bloco-fixo-1",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":2,\"attributes\":{\"url\":\"bloco-fixo-1\",\"createdAt\":\"2026-06-10T13:42:10.013Z\",\"updatedAt\":\"2026-06-11T16:38:58.703Z\",\"title\":\"Parceiros tecnológicos\",\"lines\":[{\"id\":275,\"sponsors\":{\"data\":[{\"id\":319,\"attributes\":{\"Nome\":\"TechnoGym\",\"Ordem\":1,\"createdAt\":\"2023-02-02T16:07:00.817Z\",\"updatedAt\":\"2024-08-14T20:28:39.737Z\",\"locale\":\"pt-BR\",\"Tipo\":\"Terciário\",\"link\":\"https://www.technogym.c"
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/linkedin_icon_74656abb2d.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "interessante": false
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/youtube_icon_ae38190896.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "interessante": false
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/twitter_icon_5a614e944a.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "interessante": false
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/instagram_icon_45fb2e617c.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "interessante": false
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/facebook_icon_a2ed2b64fa.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F05298515126%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F09963560610%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F38244335831%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20022%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F33148648846%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/flickr_icon_2670776f80.svg",
+      "status": 200,
+      "content_type": "image/svg+xml",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F11781350710%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F06847734140%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F02069995003%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F02719958077%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F42857310889%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F13933500974%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F03109453053%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20011%2Fescudo.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F80219842957%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F06589260044%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F48313627867%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F46715164894%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F70763193658%2Ffoto.jpg&w=128&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"(home)\",{\"children\":[\"__PAGE__\",{}]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/politica-de-cookies?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"(politicas)\",{\"children\":[\"politica-de-cookies\",{\"children\":[\"__PAGE__\",{}]}]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/login?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://www.cbf.com.br/politica-de-privacidade?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"(politicas)\",{\"children\":[\"politica-de-privacidade\",{\"children\":[\"__PAGE__\",{}]}]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20002?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FNike_0bc3e900f4.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2F20240516185343_456.jpeg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FSnap_Insta_to_731445259_18372989503226884_3688023699302471005_n_4d1d455c23.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2F54750471535_58bb292e5f_b_b88b7730f2.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2F54738298662_0c50e0a63b_o.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FMC_238810_2_jpg_50a49ff3e8.jpeg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FSnap_Insta_to_669918476_18387283867094296_2155107375085032547_n_92def27849.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FSnap_Insta_to_731344283_18007799009924242_3667866604624424708_n_1_9c866a4a3e.jpg&w=1920&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20016%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61590%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20052%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61377%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20385%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60175%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20013%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20001%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20007%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20002%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20008%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20018%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20011%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20086%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60646%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F62194%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F59849%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20014%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20022%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20005%2Fescudo.jpg&w=48&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/61590?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"times\",[\"times\",{\"children\":[[\"slugs\",\"campeonato-brasileiro/serie-a/2026/61590\",\"c\"],{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20016?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"times\",[\"times\",{\"children\":[[\"slugs\",\"campeonato-brasileiro/serie-a/2026/20016\",\"c\"],{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20014?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"times\",[\"times\",{\"children\":[[\"slugs\",\"campeonato-brasileiro/serie-a/2026/20014\",\"c\"],{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20086?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20007?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"times\",[\"times\",{\"children\":[[\"slugs\",\"campeonato-brasileiro/serie-a/2026/20007\",\"c\"],{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20052?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"times\",[\"times\",{\"children\":[[\"slugs\",\"campeonato-brasileiro/serie-a/2026/20052\",\"c\"],{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20005?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"times\",[\"times\",{\"children\":[[\"slugs\",\"campeonato-brasileiro/serie-a/2026/20005\",\"c\"],{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas?_rsc=h8icn",
+      "status": 308,
+      "content_type": "",
+      "interessante": true
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/61377?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/noticias?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"futebol-brasileiro\",{\"children\":[\"noticias\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times?_rsc=h8icn",
+      "status": 308,
+      "content_type": "",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/atletas?_rsc=h8icn",
+      "status": 308,
+      "content_type": "",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/ranking?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"futebol-brasileiro\",{\"children\":[\"ranking\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/calendario?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"calendario\",[\"calendario\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/atletas/campeonato-brasileiro/serie-a?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"atletas\",[\"atletas\",{\"children\":[[\"slugs\",\"campeonato-brasileiro/serie-a\",\"c\"],{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/onde-assistir?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"onde-assistir\",[\"onde-assistir\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-b?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-c?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-a1?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-a2?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-a3?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20-b?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-17?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/aspirantes?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-20?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-18?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-17?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-16?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VN8QK704R4&gtm=45je6711v9192395007z89192390870za20gzb9192390870zd9192390870&_p=1783399123466&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&are=1&cid=139860766.1783399124&frm=0&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895&sid=1783399123&sct=1&seg=0&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a%2F2026&dt=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&_s=2&tfd=8557",
+      "status": 204,
+      "content_type": "text/plain",
+      "interessante": true,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://www.facebook.com/tr/?id=887424401406660&ev=PageView&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a&rl=&if=false&ts=1783399130887&iw=false&sw=1280&sh=720&v=2.9.349&r=stable&ec=1&o=12318&aems=0%3B0&fbp=fb.2.1783399123923.918912370901564367&cs_est=true&ler=empty&pmd[title]=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&pmd[locale]=pt-br&plt=1455.5999999999985&iss=1&imft=1&tz=0&it=1783399130883&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "status": 200,
+      "content_type": "text/plain",
+      "interessante": true,
+      "sample": ""
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-nordeste?_rsc=h3fae",
+      "status": 308,
+      "content_type": "",
+      "interessante": true
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil?_rsc=h3fae",
+      "status": 308,
+      "content_type": "",
+      "interessante": true
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/supercopa-do-brasil?_rsc=h3fae",
+      "status": 308,
+      "content_type": "",
+      "interessante": true
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro?_rsc=h3fae",
+      "status": 308,
+      "content_type": "",
+      "interessante": true
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-verde?_rsc=h3fae",
+      "status": 308,
+      "content_type": "",
+      "interessante": true
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a?_rsc=1eu6b",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[24431,[],\"OutletBoundary\"] 5:I[15278,[],\"AsyncMetadataOutlet\"] 7:I[24431,[],\"ViewportBoundary\"] 9:I[24431,[],\"MetadataBoundary\"] a:\"$Sreact.suspense\" 0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"tabelas\",\"children\",[\"slugs\",\"campeonato-brasileiro/serie-a\",\"c\"],\"children\",\"__PAGE__\",[\"__PAGE__\",{}],[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[\""
+    },
+    {
+      "url": "https://www.facebook.com/tr/?id=887424401406660&ev=PageView&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a%2F2026&rl=&if=false&ts=1783399131063&iw=false&sw=1280&sh=720&v=2.9.349&r=stable&ec=2&o=12318&aems=0%3B0&fbp=fb.2.1783399123923.918912370901564367&cs_est=true&ler=empty&pmd[title]=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&pmd[locale]=pt-br&plt=1455.5999999999985&iss=1&imft=1&tz=0&it=1783399131060&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "status": 200,
+      "content_type": "text/plain",
+      "interessante": true,
+      "sample": ""
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/1?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":1,\"attributes\":{\"title\":\"Acesse também\",\"slug\":\"ecossistema\",\"createdAt\":\"2022-10-14T16:38:05.424Z\",\"updatedAt\":\"2025-11-05T16:22:07.225Z\",\"items\":{\"data\":[{\"id\":1,\"attributes\":{\"order\":0,\"title\":\"Credenciamento\",\"url\":\"http://credencial.cbf.com.br/competicoes\",\"target\":\"_blank\",\"createdAt\":\"2022-10-14T16:38:05.509Z\",\"updatedAt\":\"2025-11-05T16:22:07.206Z\",\"children\":{\"data\":[]}}},{\"i"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/2?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":2,\"attributes\":{\"title\":\"Menu Principal\",\"slug\":\"menu-principal\",\"createdAt\":\"2022-10-14T16:39:19.049Z\",\"updatedAt\":\"2026-06-23T12:40:49.409Z\",\"items\":{\"data\":[{\"id\":8,\"attributes\":{\"order\":0,\"title\":\"A CBF\",\"url\":\"/a-cbf\",\"target\":\"_parent\",\"createdAt\":\"2022-10-14T16:39:19.073Z\",\"updatedAt\":\"2026-06-23T12:40:49.323Z\",\"children\":{\"data\":[]}}},{\"id\":9,\"attributes\":{\"order\":1,\"title\":\""
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo&filters[url][$eq]=bloco-fixo-1",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":2,\"attributes\":{\"url\":\"bloco-fixo-1\",\"createdAt\":\"2026-06-10T13:42:10.013Z\",\"updatedAt\":\"2026-06-11T16:38:58.703Z\",\"title\":\"Parceiros tecnológicos\",\"lines\":[{\"id\":275,\"sponsors\":{\"data\":[{\"id\":319,\"attributes\":{\"Nome\":\"TechnoGym\",\"Ordem\":1,\"createdAt\":\"2023-02-02T16:07:00.817Z\",\"updatedAt\":\"2024-08-14T20:28:39.737Z\",\"locale\":\"pt-BR\",\"Tipo\":\"Terciário\",\"link\":\"https://www.technogym.c"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo&filters[url][$eq]=bloco-fixo-2",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":3,\"attributes\":{\"url\":\"bloco-fixo-2\",\"createdAt\":\"2026-06-11T16:31:06.777Z\",\"updatedAt\":\"2026-06-11T18:41:21.099Z\",\"title\":\"Patrocinadores Arbitragem\",\"lines\":[{\"id\":276,\"sponsors\":{\"data\":[{\"id\":447,\"attributes\":{\"Nome\":\"Midea\",\"Ordem\":0,\"createdAt\":\"2026-06-10T16:05:59.893Z\",\"updatedAt\":\"2026-06-10T16:05:59.893Z\",\"locale\":\"pt-BR\",\"Tipo\":\"Primário\",\"link\":\"https://www.midea.com.br/"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":5,\"attributes\":{\"title\":\"Futebol Brasileiro\",\"slug\":\"futebol-brasileiro\",\"createdAt\":\"2022-10-18T22:04:55.620Z\",\"updatedAt\":\"2026-06-30T15:26:44.208Z\",\"items\":{\"data\":[{\"id\":58,\"attributes\":{\"order\":0,\"title\":\"Tabelas\",\"url\":\"/tabelas\",\"target\":\"_self\",\"createdAt\":\"2022-10-18T22:04:55.685Z\",\"updatedAt\":\"2026-06-30T15:26:43.851Z\",\"children\":{\"data\":[{\"id\":61,\"attributes\":{\"order\":0,\""
+    },
+    {
+      "url": "https://www.cbf.com.br/api/auth/validation-token",
+      "status": 200,
+      "content_type": "application/json",
+      "interessante": false,
+      "sample": "{\"authenticated\":false,\"error\":\"Token not found\"}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a?_rsc=h3fae",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"futebol-brasileiro\",\"children\",\"tabelas\",\"children\",[\"slugs\",\"campeonato-brasileiro/serie-a\",\"c\"],\"children\",\"__PAGE__\",[\"__PAGE__\",{}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil/masculino?_rsc=h3fae",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-nordeste/masculino?_rsc=h3fae",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/supercopa-do-brasil/masculino?_rsc=h3fae",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-verde/masculino?_rsc=h3fae",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors/1?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":{\"id\":1,\"attributes\":{\"url\":\"/\",\"createdAt\":\"2026-02-05T21:28:12.080Z\",\"updatedAt\":\"2026-06-10T18:33:38.446Z\",\"title\":null,\"lines\":[{\"id\":270,\"sponsors\":{\"data\":[{\"id\":380,\"attributes\":{\"Nome\":\"Nike\",\"Ordem\":1,\"createdAt\":\"2023-02-06T16:10:57.943Z\",\"updatedAt\":\"2026-02-05T21:34:44.646Z\",\"locale\":\"pt-BR\",\"Tipo\":\"Primário\",\"link\":\"https://www.nike.com.br/\",\"Logo\":{\"data\":{\"id\":2328,\"attribut"
+    },
+    {
+      "url": "https://www.cbf.com.br/api/auth/validation-token",
+      "status": 200,
+      "content_type": "application/json",
+      "interessante": false,
+      "sample": "{\"authenticated\":false,\"error\":\"Token not found\"}"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FGuarana_cc088d83ff.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FSadia_Logo_Site_942bc35313.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FItau_7c0461ab4f.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FAzul_Logo_Site_591a479fe1.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?_rsc=o7qsh",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/paginas?fields[0]=Slug&fields[1]=Headline&fields[2]=publish_at&fields[3]=publishedAt&fields[4]=Titulo&fields[5]=Sumary&fields[6]=old_cover_id&populate[Area][fields][0]=Titulo&populate[Area][fields][1]=Cor&populate[Area][fields][2]=Color_text&populate[Area][fields][3]=Slug&populate[Categoria][fields][0]=Titulo&populate[Categoria][fields][1]=Slug&populate[Capa][fields][0]=url&populate[Capa][fields][1]=alternativeText&populate[miniature][fields][0]=url&sort=publishedAt%3Adesc&filters[Headline][$notNull]=true&filters[Sumary][$notNull]=true&filters[Area][id][$gt]=0&filters[$or][0][Area][Slug][$eq]=futebol-brasileiro&filters[$or][1][Categoria][Slug][$eq]=serie-a&pagination[pageSize]=12",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":102639,\"attributes\":{\"publishedAt\":\"2026-07-06T21:31:00.655Z\",\"Slug\":\"cbf-divulga-tabela-detalhada-das-rodadas-19-a-24-da-serie-b\",\"Headline\":\"Anote na agenda\",\"publish_at\":null,\"Titulo\":\"CBF divulga tabela detalhada das rodadas 19 a 24 da Série B\",\"Sumary\":\"Documento possui informações sobre data, local, horário e transmissão dos jogos\",\"old_cover_id\":null,\"Area\":{\"data\":{\"id\":4,\"a"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FLogo_Vivo.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FIfood_Logo_Site_265731e48d.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FVolks_Logo_Site_62e389e63a.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FAmazon_Logo_Site_f6137321b6.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FUber_Logo_Site_01dc64d119.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FGemini_logo_Site_0429bc1b51.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FLogo_CIMED_507c3258fc.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FLogo_EA_Site_9358c8e43c.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FLogo_Technogym.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FLogo_CoreLaser.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FLogo_Catapult.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FProSoccer_Logo_Todas-Verso%CC%83es.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FLogo_KinAnalytics.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FGarmin_Logo_Site_6b30f5d870.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FMidea_Logo_Site_fd124bc34c.png&w=640&q=70",
+      "status": 200,
+      "content_type": "image/webp",
+      "interessante": false
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/championship-documents?filters[slug][$eq]=campeonato-brasileiro%2Fserie-a%2F2026&fields[0]=type&fields[1]=url&fields[2]=createdAt&fields[3]=title&populate[0]=file&pagination[pageSize]=50",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "interessante": false,
+      "sample": "{\"data\":[{\"id\":5143,\"attributes\":{\"type\":\"Regulamento\",\"url\":null,\"createdAt\":\"2025-12-24T01:49:33.542Z\",\"title\":\"REC - Brasileiro Série A 2026\",\"file\":{\"data\":{\"id\":19185,\"attributes\":{\"name\":\"REC - Brasileiro Série A 2026.pdf\",\"alternativeText\":null,\"caption\":null,\"width\":null,\"height\":null,\"formats\":null,\"hash\":\"REC_Brasileiro_Serie_A_2026_c984f8cf05\",\"ext\":\".pdf\",\"mime\":\"application/pdf\",\"size"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-sul-sudeste/masculino?_rsc=h3fae",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/liga-de-desenvolvimento?_rsc=h3fae",
+      "status": 308,
+      "content_type": "",
+      "interessante": true
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-b/a/cbf-divulga-tabela-detalhada-das-rodadas-19-a-24-da-serie-b?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"futebol-brasileiro\",{\"children\":[\"noticias\",{\"children\":[[\"slugs\",\"campeonato-brasileiro-serie-b/a/cbf-divulga-tabela-detalhada-das-rodadas-19-a-24-da-serie-b\",\"c\"],{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-d/a/serie-d-fase-16-avos-de-final-comeca-com-vantagem-de-nove-mandantes?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"futebol-brasileiro\",{\"children\":[\"noticias\",{\"children\":[[\"slugs\",\"campeonato-brasileiro-serie-d/a/serie-d-fase-16-avos-de-final-comeca-com-vantagem-de-nove-mandantes\",\"c\"],{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/competicoes-campeonato-brasileiro-sub20/a/cbf-divulga-tabela-detalhada-das-quartas-de-final-da-serie-a-do-brasileirao-sub-20?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"futebol-brasileiro\",{\"children\":[\"noticias\",{\"children\":[[\"slugs\",\"competicoes-campeonato-brasileiro-sub20/a/cbf-divulga-tabela-detalhada-das-quartas-de-final-da-serie-a-do-brasileirao-sub-20\",\"c\"],{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-feminino-sub17/a/ultima-rodada-da-1-fase-do-brasileirao-feminino-sub-17-sera-neste-fim-de-semana?_rsc=h8icn",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": false,
+      "sample": "0:{\"b\":\"o3zDFu_w7e7gEpafDmW1D\",\"f\":[[\"children\",\"(everyone)\",[\"(everyone)\",{\"children\":[\"futebol-brasileiro\",{\"children\":[\"noticias\",{\"children\":[[\"slugs\",\"campeonato-brasileiro-feminino-sub17/a/ultima-rodada-da-1-fase-do-brasileirao-feminino-sub-17-sera-neste-fim-de-semana\",\"c\"],{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true]}]}],null,[null,null],true]],\"S\":false}"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/liga-de-desenvolvimento/sub-13-masculino?_rsc=h3fae",
+      "status": 200,
+      "content_type": "text/x-component",
+      "interessante": true,
+      "sample": "1:\"$Sreact.fragment\" 3:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"SkeletonTheme\"] 4:I[63958,[\"4978\",\"static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js\"],\"default\"] 5:I[24431,[],\"ViewportBoundary\"] 7:I[24431,[],\"MetadataBoundary\"] 8:\"$Sreact.suspense\" a:I[68157,[\"5897\",\"static/chunks/f8025e75-98d8"
+    },
+    {
+      "url": "https://www.cbf.com.br/api/cbf/jogos/campeonato/1260611/rodada/18/fase",
+      "status": 200,
+      "content_type": "application/json",
+      "interessante": false,
+      "sample": "{\"grupos\":[\"GRUPO \\u00daNICO\"],\"jogos\":[{\"grupo\":\"GRUPO \\u00daNICO\",\"jogo\":[{\"id_jogo\":\"832060\",\"num_jogo\":\"171\",\"rodada\":\"18\",\"grupo\":\"GRUPO \\u00daNICO\",\"mandante\":{\"id\":\"20016\",\"nome\":\"Flamengo\",\"url_escudo\":\"https:\\/\\/conteudo.cbf.com.br\\/clubes\\/20016\\/escudo.jpg\",\"gols\":\"3\",\"panaltis\":\"0\",\"atletas\":[{\"id\":\"815100\",\"numero_camisa\":\"1\",\"reserva\":\"false\",\"goleiro\":\"true\",\"entrou_jogando\":\"true\","
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/1a15c5ce3e29c0a9-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/34a634e1e94d3514-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/4b4ebe20759bdbf2-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/502635913515117a-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/6599bdd1a31baf6f-s.p.woff2",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/665bf407b23b0ddf-s.p.woff2",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/6bf348af9f4564c8-s.p.woff2",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/7572a9b5289f55fe-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/8001a01b32b71ef5-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/8b20023e8f811f53-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/9656981deddb4bed-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/98512bf8da1afe43-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/a52d0bf095c248da-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/acd7f79f9e69ead8-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/media/b2efb5cde74c2f1a-s.p.ttf",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/577cbe2d5d7e3256.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/20720a659c31249d.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/8504d4c721174576.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/38e917f47f4e5ee1.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/b15f8dcf361d9e4a.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/686c33f04e363ea6.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/714145b764316b7b.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/b3f8e374d89bb6a0.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/2fab74fa30ed0ca1.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/03a0ff426d4b0324.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/7e39956bffc46597.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/f3ba2da0246ef6ad.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/2c962f029c160da7.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/css/ce9d17ef81fdf218.css",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/webpack-1c8609069c06bba2.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/main-app-f3336e172256d2ab.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1255-463303121a48e9a6.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/f8025e75-98d8b9d075bd059b.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/4bd1b696-100b9d70ed4e49c1.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/f97e080b-215f892f45671faa.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/30a37ab2-a06207e12800ad53.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/795d4814-fe2e4c14042a0a44.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/59650de3-0b8832c92db62bcb.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/0e762574-ac4e96390943ce36.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/8e1d74a4-ffde360557a5316b.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/9c4e2130-f5ce00820ad16017.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/3d47b92a-c869a09aad0d6a36.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/f7333993-a99d676cbef3fe53.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/66ec4792-89bf8a9bfcdc38e1.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/ee560e2c-75ead14bcf5e4534.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2619-04bc32f026a0d946.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/eec3d76d-99e5cc7d9c8ab64c.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/5239-db8f183003152231.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/3467-c7052e0922e9cfef.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1755-2ff990ccb061b6d0.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2974-3f5a4d7dfc3fd2fc.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2291-5aa76fa24e0bd4b5.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/625-3803f3faeaebbf91.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/315-e0f778c12c17bd81.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/560-a45cc331442d943c.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/138-0429eb84a945dbca.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2956-1e0c30df2ae27cb8.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2544-94ed296df5016632.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1623-364ff8a307dcd95a.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/6013-c9a63ddf4ed21f5d.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2226-2a23b27dbf43b853.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/layout-6ecafe661e81c976.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/8632-2ce4a3339488d10a.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/error-8181a0f1a08e69f5.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1225-49f270d374062a7f.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/5257-d425e22d55ff5661.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/5871-22c222bd8d918811.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/layout-758938e048ef452b.js",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/13b76428-c75990430d19f963.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/7330-050f02b47a272c42.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/2473-746736bc2fa90351.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/5624-1a726fa4ea3cbdff.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/1329-4ca7158102dcf4b1.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/page-76184f4db6b2a11f.js",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/static/chunks/app/futebol-brasileiro/tabelas/%5B...slugs%5D/loading-28dbce36aa36f5f6.js",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/logo/logo-verde.svg",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=%2Flogo%2Flogo-borda.png&w=96&q=100",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20002%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61590%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20086%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20014%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20007%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20016%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20052%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20005%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61377%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F62194%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20001%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20022%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F59849%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20011%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60175%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20008%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20018%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20013%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20385%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60646%2Fescudo.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F07314345953%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20052%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F14332635728%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20016%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F13455577601%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20014%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F70190830131%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20013%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F13003435671%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61590%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F86311359502%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60175%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F70419737430%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61377%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F12159544418%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F37418013809%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20008%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F04484435110%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20005%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F23850115810%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F90093316879%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20002%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F60311182038%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20007%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F23774557861%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F12512806928%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F59849%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F03498402706%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F11465482300%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20018%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F04075017117%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60646%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F05298515126%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F38244335831%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F09963560610%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20022%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F33148648846%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F11781350710%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F06847734140%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F02069995003%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F02719958077%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F42857310889%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F03109453053%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F13933500974%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20011%2Fescudo.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F80219842957%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F06589260044%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F48313627867%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F46715164894%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fgestaoweb.cbf.com.br%2Ffiles%2Fatletas%2F70763193658%2Ffoto.jpg&w=128&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/logo?populate=image",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/1?nested=true&populate=%2A",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/2?nested=true&populate=%2A",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/paginas?fields[0]=Slug&fields[1]=Headline&fields[2]=publish_at&fields[3]=publishedAt&fields[4]=Titulo&fields[5]=Sumary&fields[6]=old_cover_id&populate[Area][fields][0]=Titulo&populate[Area][fields][1]=Cor&populate[Area][fields][2]=Color_text&populate[Area][fields][3]=Slug&populate[Categoria][fields][0]=Titulo&populate[Categoria][fields][1]=Slug&populate[Capa][fields][0]=url&populate[Capa][fields][1]=alternativeText&populate[miniature][fields][0]=url&sort=publishedAt%3Adesc&filters[Headline][$notNull]=true&filters[Sumary][$notNull]=true&filters[Area][id][$gt]=0&filters[$or][0][Area][Slug][$eq]=futebol-brasileiro&filters[$or][1][Categoria][Slug][$eq]=serie-a&pagination[pageSize]=12",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors/1?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/redes-sociaiss?populate=*&sort=Ordem",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/api/auth/validation-token",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtm.js?id=GTM-KRKV4JXV",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/login?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/politica-de-cookies?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/politica-de-privacidade?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.googletagmanager.com/gtag/js?id=G-VN8QK704R4&cx=c&gtm=4e6711",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://static.hotjar.com/c/hotjar-976019.js?sv=7",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://connect.facebook.net/en_US/fbevents.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/api/cbf/jogos/campeonato/1260611/rodada/18/fase",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/championship-documents?filters[slug][$eq]=campeonato-brasileiro%2Fserie-a%2F2026&fields[0]=type&fields[1]=url&fields[2]=createdAt&fields[3]=title&populate[0]=file&pagination[pageSize]=50",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20002?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://connect.facebook.net/signals/config/887424401406660?v=2.9.349&r=stable&domain=www.cbf.com.br&hme=f29d86973612db0f0627890a64bdc8c47b471189050b33f2680b7d76997afc9a&ex_m=107%2C208%2C158%2C22%2C73%2C74%2C149%2C69%2C68%2C11%2C167%2C93%2C16%2C141%2C130%2C39%2C76%2C81%2C137%2C163%2C169%2C8%2C4%2C5%2C7%2C6%2C3%2C94%2C104%2C170%2C175%2C222%2C30%2C75%2C234%2C233%2C232%2C23%2C33%2C55%2C106%2C61%2C10%2C64%2C100%2C101%2C102%2C108%2C133%2C31%2C29%2C135%2C136%2C132%2C131%2C159%2C77%2C162%2C160%2C161%2C50%2C60%2C126%2C15%2C166%2C45%2C279%2C280%2C278%2C26%2C27%2C28%2C48%2C150%2C78%2C115%2C18%2C20%2C44%2C40%2C42%2C41%2C86%2C95%2C99%2C113%2C148%2C151%2C46%2C114%2C24%2C21%2C122%2C70%2C36%2C153%2C152%2C154%2C145%2C143%2C25%2C35%2C59%2C112%2C165%2C71%2C17%2C156%2C117%2C84%2C67%2C19%2C88%2C89%2C119%2C87%2C139%2C138%2C142%2C164%2C34%2C293%2C309%2C215%2C204%2C62%2C205%2C203%2C312%2C303%2C52%2C216%2C110%2C134%2C83%2C124%2C54%2C47%2C49%2C116%2C123%2C129%2C128%2C58%2C65%2C63%2C155%2C79%2C80%2C118%2C37%2C32%2C53%2C56%2C103%2C168%2C1%2C127%2C14%2C125%2C12%2C2%2C57%2C96%2C66%2C121%2C92%2C91%2C171%2C172%2C97%2C98%2C9%2C105%2C51%2C146%2C90%2C82%2C72%2C120%2C109%2C43%2C147%2C0%2C85%2C140%2C144%2C157%2C38%2C111%2C13%2C173",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VN8QK704R4&gtm=45je6711v9192395007z89192390870za20gzb9192390870zd9192390870&_p=1783399123466&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAAC&are=1&cid=139860766.1783399124&frm=0&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&_s=1&tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895&sid=1783399123&sct=1&seg=0&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a%2F2026&dt=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=3549",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://script.hotjar.com/modules.fa52fb4272e01466771f.js",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.facebook.com/tr/?id=887424401406660&ev=PageView&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a%2F2026&rl=&if=false&ts=1783399123930&iw=false&sw=1280&sh=720&v=2.9.349&r=stable&ec=0&o=12318&aems=0%3B0&fbp=fb.2.1783399123923.918912370901564367&cs_est=true&ler=empty&pmd[title]=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&pmd[locale]=pt-br&plt=1455.5999999999985&iss=1&imft=1&tz=0&it=1783399123760&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/1?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/2?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/facebook_icon_a2ed2b64fa.svg",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/instagram_icon_45fb2e617c.svg",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/linkedin_icon_74656abb2d.svg",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/twitter_icon_5a614e944a.svg",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/youtube_icon_ae38190896.svg",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/flickr_icon_2670776f80.svg",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo&filters[url][$eq]=bloco-fixo-1",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo&filters[url][$eq]=bloco-fixo-2",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FNike_0bc3e900f4.png&w=640&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2F20240516185343_456.jpeg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2F54750471535_58bb292e5f_b_b88b7730f2.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FSnap_Insta_to_731445259_18372989503226884_3688023699302471005_n_4d1d455c23.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2F54738298662_0c50e0a63b_o.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FMC_238810_2_jpg_50a49ff3e8.jpeg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FSnap_Insta_to_669918476_18387283867094296_2155107375085032547_n_92def27849.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fstcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn%2FSnap_Insta_to_731344283_18007799009924242_3667866604624424708_n_1_9c866a4a3e.jpg&w=1920&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20016%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61590%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20052%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F61377%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20385%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60175%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20013%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20001%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20007%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20008%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20018%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20002%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20011%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20086%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F60646%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F62194%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F59849%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20014%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20022%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/_next/image?url=https%3A%2F%2Fconteudo.cbf.com.br%2Fclubes%2F20005%2Fescudo.jpg&w=48&q=70",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/61590?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20016?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20086?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20014?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20007?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20052?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/20005?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times/campeonato-brasileiro/serie-a/2026/61377?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/noticias?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/times?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/atletas?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/ranking?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/calendario?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/onde-assistir?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-b?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-c?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-a1?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-a2?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-a3?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20-b?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-17?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/aspirantes?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-20?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-18?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-17?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-16?_rsc=h8icn",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-VN8QK704R4&gtm=45je6711v9192395007z89192390870za20gzb9192390870zd9192390870&_p=1783399123466&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&are=1&cid=139860766.1783399124&frm=0&pscdl=noapi&rcb=10&sr=1280x720&uaa=x86&uab=64&uafvl=HeadlessChrome%3B149.0.7827.55%7CChromium%3B149.0.7827.55%7CNot)A%253BBrand%3B24.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=pt-br&tag_exp=115938466~115938468~119027224~119576881~119576885~119576891~119576895&sid=1783399123&sct=1&seg=0&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a%2F2026&dt=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&_s=2&tfd=8557",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro?_rsc=h3fae",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil?_rsc=h3fae",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-nordeste?_rsc=h3fae",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a?_rsc=1eu6b",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.cbf.com.br/api/auth/validation-token",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.facebook.com/tr/?id=887424401406660&ev=PageView&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a&rl=&if=false&ts=1783399130887&iw=false&sw=1280&sh=720&v=2.9.349&r=stable&ec=1&o=12318&aems=0%3B0&fbp=fb.2.1783399123923.918912370901564367&cs_est=true&ler=empty&pmd[title]=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&pmd[locale]=pt-br&plt=1455.5999999999985&iss=1&imft=1&tz=0&it=1783399130883&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/1?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/menus/2?nested=true&populate=%2A&filters%5Bslug%5D%5B%24eq%5D=futebol-brasileiro",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo&filters[url][$eq]=bloco-fixo-1",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://cms.cbf.com.br/api/layout-sponsors?populate[0]=lines&populate[1]=lines.sponsors&populate[2]=lines.sponsors.Logo&filters[url][$eq]=bloco-fixo-2",
+      "status": "",
+      "content_type": "",
+      "interessante": false,
+      "tipo": "performance"
+    },
+    {
+      "url": "https://www.facebook.com/tr/?id=887424401406660&ev=PageView&dl=https%3A%2F%2Fwww.cbf.com.br%2Ffutebol-brasileiro%2Ftabelas%2Fcampeonato-brasileiro%2Fserie-a%2F2026&rl=&if=false&ts=1783399131063&iw=false&sw=1280&sh=720&v=2.9.349&r=stable&ec=2&o=12318&aems=0%3B0&fbp=fb.2.1783399123923.918912370901564367&cs_est=true&ler=empty&pmd[title]=CBF%20-%20Confedera%C3%A7%C3%A3o%20Brasileira%20de%20Futebol&pmd[locale]=pt-br&plt=1455.5999999999985&iss=1&imft=1&tz=0&it=1783399131060&coo=false&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&rqm=GET",
+      "status": "",
+      "content_type": "",
+      "interessante": true,
+      "tipo": "performance"
+    }
+  ],
+  "all_candidates_count": 99
+}

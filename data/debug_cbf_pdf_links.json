@@ -1,0 +1,107 @@
+[
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=IMT",
+    "title": "IMT",
+    "origem": "playwright_response_body:a.href;playwright_page_content:a.href",
+    "id": "5176f2b51bc579c1",
+    "tipo": "imt"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Manual_de_Competicoes_CBF_2026_40d5d5acb2.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "cda8c89298a32043",
+    "tipo": "manual"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Documentos Gerais",
+    "title": "Manual de competições",
+    "origem": "playwright_response_body:a.href;playwright_page_content:a.href",
+    "id": "497bd338a4f4ae0b",
+    "tipo": "manual"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/PGA_Brasileiro_Serie_A_2026_ae448860b9.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "ac3d6a094c68ff1d",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://www.bing.com/search?format=rss&q=site%3Astcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn+filetype%3Apdf+%22PGA_Brasileiro_Serie_A_2026%22",
+    "title": "",
+    "origem": "bing:link.href",
+    "id": "7280695091d8567b",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=08EE8ABDB43F6E353D9B9D32B51D6F72",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "545efafbc933e06d",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_Brasileiro_Serie_A_2026_c984f8cf05.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf;playwright_page_content:a.href;playwright_page_content:regex_pdf",
+    "id": "db411aa274f75c77",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?format=rss&q=site%3Astcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn+filetype%3Apdf+%22REC_Brasileiro_Serie_A_2026%22",
+    "title": "",
+    "origem": "bing:link.href",
+    "id": "cf7cc5d751bae545",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3A82AF9E4D0564B535D1B8114CE365D1",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "a3380082a8a3f6b0",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Regulamento",
+    "title": "Documentos",
+    "origem": "playwright_response_body:a.href;playwright_page_content:a.href",
+    "id": "c0187b7241953cbc",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_06_07_db8090e380.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf;playwright_page_content:a.href;playwright_page_content:regex_pdf",
+    "id": "9a4ef3b5c3984fb7",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.bing.com/search?format=rss&q=site%3Astcbfsiteprdimgbrs.blob.core.windows.net%2Fimg-site%2Fcdn+filetype%3Apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22",
+    "title": "",
+    "origem": "bing:link.href",
+    "id": "fb9a1e652301e056",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=264DCD79D7AE6DCA0D36DAF6D6DF6CFE",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "49cb3cf41d2f799e",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-serie-b/a/cbf-divulga-tabela-detalhada-das-rodadas-19-a-24-da-serie-b",
+    "title": "Anote na agenda CBF divulga tabela detalhada das rodadas 19 a 24 da Série B",
+    "origem": "playwright_page_content:a.href",
+    "id": "f52e04896303f86a",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/competicoes-campeonato-brasileiro-sub20/a/cbf-divulga-tabela-detalhada-das-quartas-de-final-da-serie-a-do-brasileirao-sub-20",
+    "title": "Quartas de Final CBF divulga tabela detalhada das quartas de final da Série A do Brasileirão Sub-20",
+    "origem": "playwright_page_content:a.href",
+    "id": "bbd0e6025a8e63e8",
+    "tipo": "tabela_detalhada"
+  }
+]
