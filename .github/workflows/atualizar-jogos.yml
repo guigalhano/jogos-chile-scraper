@@ -59,11 +59,9 @@ jobs:
         run: |
           if [ -f limpar_jogos_passados_programados.py ]; then python limpar_jogos_passados_programados.py; fi
 
-      - name: Cruzar com API-Football (auditoria, não altera os dados)
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+      - name: Cruzar com Promiedos (auditoria, não altera os dados)
         run: |
-          if [ -f cruzar_api_football.py ]; then python cruzar_api_football.py --dias 60; fi
+          if [ -f cruzar_promiedos.py ]; then python cruzar_promiedos.py --dias 60; fi
 
       - name: Salvar arquivos atualizados
         run: |
@@ -71,6 +69,6 @@ jobs:
           git config user.email "github-actions@github.com"
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
           git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json 2>/dev/null || true
-          git add data/cruzamento_api_football.json 2>/dev/null || true
+          git add data/cruzamento_promiedos.json 2>/dev/null || true
           git commit -m "Atualiza jogos Chile Brasil completo" || echo "Sem mudanças"
           git push
