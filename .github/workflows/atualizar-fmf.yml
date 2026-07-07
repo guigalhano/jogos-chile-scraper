@@ -11,7 +11,7 @@ permissions:
 jobs:
   atualizar_fmf:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 180
 
     steps:
       - name: Baixar repositório
@@ -30,7 +30,7 @@ jobs:
 
       - name: Rodar scraper FMF (Mineiro) via Playwright
         run: |
-          if [ -f scrap_fmf_competicoes_playwright_seguro.py ]; then python scrap_fmf_competicoes_playwright_seguro.py --max-d 8 --dias 180 --debug-html; fi
+          if [ -f scrap_fmf_competicoes_playwright_seguro.py ]; then python scrap_fmf_competicoes_playwright_seguro.py --max-d 3 --dias 180 --debug-html; fi
 
       - name: Salvar arquivos atualizados
         run: |
