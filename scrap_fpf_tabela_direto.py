@@ -471,6 +471,46 @@ def main() -> None:
         page.goto(args.url, wait_until="domcontentloaded", timeout=90000)
         page.wait_for_timeout(args.wait_ms)
 
+        # FIX: em vez de tentar clicar em selects/botões da UI (frágil e
+        # lento), chama diretamente os endpoints reais descobertos via
+        # interceptação de rede: ListarTodosCampeonatosExercicio.ashx lista
+        # todos os campeonatos com seus IdCampeonato, e ListarTabela.ashx
+        # aceita ?IdCampeonato=X diretamente (a chamada original usava
+        # IdJogo=null, que a própria API retorna como "Nenhum filtro
+        # informado" — o parâmetro certo é IdCampeonato).
+        try:
+            resp = page.request.get(
+                "https://futebolpaulista.com.br/Handlers/Competicoes/ListarTodosCampeonatosExercicio.ashx"
+            )
+            payload = resp.json()
+            campeonatos = payload.get("Retorno") or []
+            print(f"[INFO] Campeonatos encontrados via API direta: {len(campeonatos)}")
+
+            for camp in campeonatos:
+                id_camp = camp.get("IdCampeonato")
+                nome_camp = camp.get("DescricaoSite") or camp.get("Campeonato") or f"Campeonato {id_camp}"
+                if not id_camp:
+                    continue
+                try:
+                    r2 = page.request.get(
+                        f"https://futebolpaulista.com.br/Handlers/Competicoes/ListarTabela.ashx?IdCampeonato={id_camp}"
+                    )
+                    txt2 = r2.text()
+                    payloads_debug.append({
+                        "url": r2.url,
+                        "campeonato": nome_camp,
+                        "sample": clean_text(txt2[:600]),
+                    })
+                    data2 = json.loads(txt2)
+                    found2 = walk_json_for_games(data2, r2.url, fallback_comp=nome_camp)
+                    print(f"  - {nome_camp} (Id={id_camp}): {len(found2)} jogos")
+                    games.extend(found2)
+                except Exception as e:
+                    print(f"[WARN] Falha ao buscar tabela do campeonato {nome_camp} ({id_camp}): {e}")
+                page.wait_for_timeout(400)
+        except Exception as e:
+            print(f"[WARN] Falha ao buscar lista de campeonatos via API direta: {e}")
+
         if args.interagir:
             interact_with_page(page, ano=args.ano)
             page.wait_for_timeout(args.wait_ms)
