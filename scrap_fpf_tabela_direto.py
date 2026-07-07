@@ -478,12 +478,16 @@ def main() -> None:
         # aceita ?IdCampeonato=X diretamente (a chamada original usava
         # IdJogo=null, que a própria API retorna como "Nenhum filtro
         # informado" — o parâmetro certo é IdCampeonato).
+        diag = {"etapa": "inicio"}
         try:
             resp = page.request.get(
                 "https://futebolpaulista.com.br/Handlers/Competicoes/ListarTodosCampeonatosExercicio.ashx"
             )
+            diag["status_lista_campeonatos"] = resp.status
+            diag["texto_bruto_lista_campeonatos"] = clean_text(resp.text())[:800]
             payload = resp.json()
             campeonatos = payload.get("Retorno") or []
+            diag["n_campeonatos"] = len(campeonatos)
             print(f"[INFO] Campeonatos encontrados via API direta: {len(campeonatos)}")
 
             for camp in campeonatos:
@@ -499,6 +503,7 @@ def main() -> None:
                     payloads_debug.append({
                         "url": r2.url,
                         "campeonato": nome_camp,
+                        "status": r2.status,
                         "sample": clean_text(txt2[:600]),
                     })
                     data2 = json.loads(txt2)
@@ -506,10 +511,16 @@ def main() -> None:
                     print(f"  - {nome_camp} (Id={id_camp}): {len(found2)} jogos")
                     games.extend(found2)
                 except Exception as e:
+                    payloads_debug.append({"campeonato": nome_camp, "erro": str(e)})
                     print(f"[WARN] Falha ao buscar tabela do campeonato {nome_camp} ({id_camp}): {e}")
                 page.wait_for_timeout(400)
         except Exception as e:
+            diag["erro_geral"] = str(e)
             print(f"[WARN] Falha ao buscar lista de campeonatos via API direta: {e}")
+
+        (OUT_DIR / "debug_fpf_tabela_diag.json").write_text(
+            json.dumps(diag, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
 
         if args.interagir:
             interact_with_page(page, ano=args.ano)
