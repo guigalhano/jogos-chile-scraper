@@ -40,6 +40,7 @@ import csv
 import hashlib
 import json
 import re
+import signal
 import unicodedata
 from dataclasses import dataclass, asdict
 from datetime import date, datetime, timedelta
@@ -747,6 +748,43 @@ def write_csv(path: Path, rows: list[dict]) -> None:
                 w.writerow({k: r.get(k, "") for k in FIELDS})
 
 
+class CompeticaoTimeout(Exception):
+    """Levantada quando uma única competição trava além do tempo limite."""
+
+
+def _timeout_handler(signum, frame):
+    raise CompeticaoTimeout("Tempo limite excedido para esta competição")
+
+
+def render_page_collect_com_timeout(item: dict, wait_ms: int, click: bool, debug_html: bool,
+                                      timeout_s: int = 90) -> tuple[list, dict, list]:
+    """Mesma função render_page_collect, mas com uma trava de segurança de
+    tempo (signal.alarm): se uma única competição travar (ex.: Playwright
+    esperando por um elemento/navegação que nunca resolve), essa competição
+    é abandonada e o script segue para a próxima, em vez de travar o job
+    inteiro por horas."""
+    old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
+    signal.alarm(timeout_s)
+    try:
+        return render_page_collect(item, wait_ms=wait_ms, click=click, debug_html=debug_html)
+    except CompeticaoTimeout:
+        info = {
+            "d": str(item.get("d")),
+            "url": item.get("url", ""),
+            "nome": item.get("nome", ""),
+            "status": "timeout",
+            "erro": f"Excedeu {timeout_s}s, competição pulada",
+            "jogos": 0,
+            "network_matches": 0,
+            "competicao_detectada": "",
+            "amostra_linhas": [],
+        }
+        return [], info, []
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old_handler)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--max-d", type=int, default=80)
@@ -777,11 +815,12 @@ def main() -> None:
     print(f"[INFO] Janela: {desde.isoformat()} até {ate.isoformat()}")
 
     for item in urls:
-        partidos, info, network = render_page_collect(
+        partidos, info, network = render_page_collect_com_timeout(
             item,
             wait_ms=args.wait_ms,
             click=not args.sem_clicar,
             debug_html=args.debug_html,
+            timeout_s=90,
         )
         debug_pages.append(info)
         debug_network.extend(network)
