@@ -65,7 +65,8 @@ DATA_HORA_RE = re.compile(
 
 BAD_WORDS = {
     "resultados", "posiciones", "tablas", "sistema", "comet", "contenido",
-    "parcial", "pendiente", "actualizados", "consecuencia",
+    "parcial", "pendiente", "actualizados", "consecuencia", "descargar",
+    "compartir", "ver mas", "ver más", "fixture", "temporada", "fecha",
 }
 
 
@@ -155,33 +156,44 @@ def parse_lines(lines: list[str], url: str, competicao: str) -> list[Partido]:
             continue
         hora = f"{int(m.group('hora')):02d}:{m.group('minuto')}"
 
+        # FIX: a ordem real na página é DATA+HORA (sozinha na linha), depois
+        # ESTÁDIO, depois MANDANTE, depois VISITANTE — cada um em sua própria
+        # linha. Antes o código assumia que o estádio vinha na MESMA linha da
+        # data (resto_mesma_linha), o que empurrava tudo uma posição errada
+        # (o nome do estádio virava "mandante" por engano).
         resto_mesma_linha = clean_text(texto_completo[m.end():])
-        estadio = resto_mesma_linha if resto_mesma_linha and not is_bad_line(resto_mesma_linha) else ""
 
-        # coleta até 6 linhas seguintes candidatas a nomes de time (ignora
-        # linhas ruins/institucionais), para no mínimo 2 nomes distintos
         candidatos = []
         j = i + 1
-        while j < len(lines) and len(candidatos) < 6:
+        while j < len(lines) and len(candidatos) < 8:
             if DATA_HORA_RE.search(lines[j]):
                 break
             if not is_bad_line(lines[j]):
                 candidatos.append(lines[j])
             j += 1
 
-        if len(candidatos) >= 2:
-            mandante, visitante = candidatos[0], candidatos[1]
-            if mandante != visitante:
-                partidos.append(Partido(
-                    fonte="AUF",
-                    competicao=competicao,
-                    data=data_iso,
-                    hora=hora,
-                    mandante=mandante,
-                    visitante=visitante,
-                    estadio=estadio,
-                    url=url,
-                ))
+        if resto_mesma_linha and not is_bad_line(resto_mesma_linha):
+            estadio, mandante, visitante = (
+                resto_mesma_linha,
+                candidatos[0] if len(candidatos) >= 1 else "",
+                candidatos[1] if len(candidatos) >= 2 else "",
+            )
+        elif len(candidatos) >= 3:
+            estadio, mandante, visitante = candidatos[0], candidatos[1], candidatos[2]
+        else:
+            estadio, mandante, visitante = "", "", ""
+
+        if mandante and visitante and mandante != visitante:
+            partidos.append(Partido(
+                fonte="AUF",
+                competicao=competicao,
+                data=data_iso,
+                hora=hora,
+                mandante=mandante,
+                visitante=visitante,
+                estadio=estadio,
+                url=url,
+            ))
         i += 1
 
     return partidos
