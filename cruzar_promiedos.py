@@ -60,14 +60,28 @@ def chave_confronto(data_iso: str, mandante: str, visitante: str) -> str:
     return f"{data_iso}|{m}|{v}"
 
 
-def fetch_day_raw(date_str: str) -> list[dict]:
+def fetch_day_raw(date_str_iso: str) -> tuple[list[dict], dict]:
     """Chama a API do Promiedos diretamente (bypass do client da lib, que tem
-    um bug na validação de data). Retorna a lista bruta de 'leagues' do dia."""
-    url = PROMIEDOS_URL.format(date=date_str)
-    r = curl_requests.get(url, headers=PROMIEDOS_HEADERS, impersonate="chrome", timeout=20)
-    r.raise_for_status()
-    data = r.json()
-    return data.get("leagues", [])
+    um bug na validação de data). Tenta YYYY-MM-DD primeiro (formato usado
+    internamente pela lib para 'today'); se falhar, tenta DD-MM-YYYY (formato
+    usado nas URLs públicas do site). Retorna (leagues, debug_info)."""
+    dt = datetime.strptime(date_str_iso, "%Y-%m-%d")
+    date_dmy = dt.strftime("%d-%m-%Y")
+    debug = {}
+
+    for tentativa, date_str in enumerate([date_str_iso, date_dmy], start=1):
+        url = PROMIEDOS_URL.format(date=date_str)
+        try:
+            r = curl_requests.get(url, impersonate="chrome", timeout=20)
+            debug[f"tentativa_{tentativa}"] = {"formato": date_str, "status": r.status_code}
+            if r.status_code == 200:
+                data = r.json()
+                return data.get("leagues", []), debug
+            debug[f"tentativa_{tentativa}"]["body"] = r.text[:300]
+        except Exception as e:
+            debug[f"tentativa_{tentativa}"] = {"formato": date_str, "erro": str(e)}
+
+    return [], debug
 
 
 def load_jogos_atuais() -> list[dict]:
@@ -101,13 +115,15 @@ def main() -> None:
     total_eventos_lidos = 0
     dias_com_erro = []
 
+    debug_amostra = []
     for offset in range(args.dias + 1):
         dia = today + timedelta(days=offset)
         dia_str = dia.isoformat()
-        try:
-            leagues_raw = fetch_day_raw(dia_str)
-        except Exception as e:
-            dias_com_erro.append({"data": dia_str, "erro": str(e)})
+        leagues_raw, debug_info = fetch_day_raw(dia_str)
+        if offset < 3 or not leagues_raw:
+            debug_amostra.append({"data": dia_str, **debug_info, "n_leagues": len(leagues_raw)})
+        if not leagues_raw:
+            dias_com_erro.append({"data": dia_str, "debug": debug_info})
             continue
 
         for league_data in leagues_raw:
@@ -155,6 +171,7 @@ def main() -> None:
         "dias_verificados": args.dias + 1,
         "total_eventos_lidos_nos_3_paises": total_eventos_lidos,
         "dias_com_erro": dias_com_erro,
+        "debug_amostra": debug_amostra,
         "paises": {},
     }
     for pais, info in por_pais.items():
