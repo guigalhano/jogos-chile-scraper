@@ -113,8 +113,16 @@ def norm(value) -> str:
 
 
 def is_bad_line(x: str) -> bool:
+    texto = clean_text(x)
     s = norm(x)
-    if not s or len(clean_text(x)) > 80:
+    if not s or len(texto) > 80:
+        return True
+    # códigos de abreviação de time (ex.: "ALB", "CDM", "PEÑ") aparecem como
+    # linha própria logo depois do nome completo do time — sem isso, o
+    # código do MANDANTE era capturado como se fosse o VISITANTE.
+    if re.fullmatch(r"[A-ZÑÁÉÍÓÚÜ]{2,5}", texto):
+        return True
+    if re.search(r"\.(jpg|jpeg|png|gif|svg)$", texto, re.IGNORECASE):
         return True
     return any(w in s for w in BAD_WORDS)
 
