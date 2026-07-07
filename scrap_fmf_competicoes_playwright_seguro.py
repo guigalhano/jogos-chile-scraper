@@ -585,7 +585,14 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
                 except Exception:
                     pass
 
-                # Tenta selecionar todas as opções de selects de fase.
+                # FIX: a versão anterior clicava em TODAS as opções de TODOS os
+                # selects (até 5 x 30 = 150 cliques, ~1.5s cada = até 3.75min só
+                # aqui) e depois em TODOS os links/botões que batessem com uma
+                # lista de palavras-chave (até 240 elementos verificados). Isso
+                # deixava cada competição levando vários minutos. Agora: só
+                # seleciona a opção do select que contém o ANO ATUAL no texto
+                # (o que realmente importa), e limita a busca por abas/botões a
+                # bem menos elementos com espera bem menor.
                 try:
                     selects = page.locator("select")
                     scount = min(selects.count(), 5)
@@ -594,31 +601,35 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
                         opt_count = min(options.count(), 30)
                         for oi in range(opt_count):
                             try:
+                                texto_opt = clean_text(options.nth(oi).inner_text(timeout=300))
+                                if ano_atual not in texto_opt:
+                                    continue
                                 val = options.nth(oi).get_attribute("value")
                                 if val is not None:
                                     selects.nth(si).select_option(value=val, timeout=1500)
-                                    page.wait_for_timeout(1500)
+                                    page.wait_for_timeout(800)
+                                break  # achou a opção do ano atual, não precisa testar as outras
                             except Exception:
                                 pass
                 except Exception:
                     pass
 
-                # Clica botões/abas que podem carregar fases.
-                for selector in ["a", "button", ".btn", "li", ".aba", ".nav-link"]:
-                    try:
-                        locs = page.locator(selector)
-                        count = min(locs.count(), 40)
-                        for i in range(count):
-                            try:
-                                txt = clean_text(locs.nth(i).inner_text(timeout=300))
-                                ntx = norm(txt)
-                                if any(k in ntx for k in ["fase", "rodada", "proximos", "tabela", "jogos", "grupo"]):
-                                    locs.nth(i).click(timeout=800)
-                                    page.wait_for_timeout(1200)
-                            except Exception:
-                                pass
-                    except Exception:
-                        pass
+                # Clica só nos primeiros links/botões que batem com palavras-chave
+                # relevantes (bem mais rápido que a varredura exaustiva anterior).
+                try:
+                    locs = page.locator("a, button")
+                    count = min(locs.count(), 15)
+                    for i in range(count):
+                        try:
+                            txt = clean_text(locs.nth(i).inner_text(timeout=200))
+                            ntx = norm(txt)
+                            if any(k in ntx for k in ["fase", "rodada", "proximos", "tabela"]):
+                                locs.nth(i).click(timeout=600)
+                                page.wait_for_timeout(600)
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
 
             html = page.content()
             final_url = page.url
