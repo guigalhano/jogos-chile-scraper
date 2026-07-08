@@ -408,7 +408,7 @@ def main() -> None:
             if MATCH_HREF_RE.match(a["href"]):
                 txt = a.get_text(" ", strip=True)
                 sample_anchors.append({"href": a["href"], "text_space": txt[:400]})
-                if len(outer_html_samples) < 4:
+                if "ESTÁDIO" in txt or "ESTADIO" in txt or len(outer_html_samples) < 2:
                     outer_html_samples.append(str(a))
 
         debug_pages.append({
