@@ -400,12 +400,26 @@ def main() -> None:
 
         page_partidos = extract_matches_from_html(html)
         n_hrefs = len(re.findall(r'href="(/partidas/\d+)"', html))
+
+        soup_dbg = BeautifulSoup(html, "html.parser")
+        sample_anchors = []
+        for a in soup_dbg.find_all("a", href=True)[:60]:
+            if MATCH_HREF_RE.match(a["href"]):
+                sample_anchors.append({
+                    "href": a["href"],
+                    "text_space": a.get_text(" ", strip=True)[:300],
+                    "text_nosep": a.get_text("", strip=True)[:300],
+                    "outer_html": str(a)[:1500],
+                })
+            if len(sample_anchors) >= 3:
+                break
+
         debug_pages.append({
             "pg": pg,
             "jogos": len(page_partidos),
             "html_len": len(html),
             "n_match_hrefs": n_hrefs,
-            "html_snippet": html[:4000],
+            "sample_anchors": sample_anchors,
         })
 
         if not page_partidos:
