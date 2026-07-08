@@ -99,10 +99,27 @@ def collect(url: str, wait_ms: int, debug_html: bool) -> tuple[list[dict], list[
         page.goto(url, wait_until="domcontentloaded", timeout=60000)
         page.wait_for_timeout(wait_ms)
 
-        # Tenta clicar em selects/abas de "Fechas"/"Fase"/"Año" pra ver se
-        # isso dispara novas chamadas de API (o placeholder mostra esses
-        # três filtros: Fechas, Fase, Año).
-        for selector in ["select", "button", "a"]:
+        # Tenta interagir com selects de verdade (via select_option, que
+        # dispara o evento "change" corretamente) e também com dropdowns
+        # customizados (comum em apps Vue/React: um botão/div que abre uma
+        # lista de opções ao clicar).
+        try:
+            selects = page.locator("select")
+            scount = min(selects.count(), 6)
+            for si in range(scount):
+                try:
+                    options = selects.nth(si).locator("option")
+                    if options.count() > 1:
+                        val = options.nth(1).get_attribute("value")
+                        if val:
+                            selects.nth(si).select_option(value=val, timeout=1500)
+                            page.wait_for_timeout(1500)
+                except Exception:
+                    pass
+        except Exception:
+            pass
+
+        for selector in ["select", "button", "a", "[class*='select']", "[class*='dropdown']", "[role='combobox']"]:
             try:
                 locs = page.locator(selector)
                 count = min(locs.count(), 20)
@@ -111,7 +128,15 @@ def collect(url: str, wait_ms: int, debug_html: bool) -> tuple[list[dict], list[
                         txt = (locs.nth(i).inner_text(timeout=300) or "").strip().lower()
                         if any(k in txt for k in ["fecha", "fase", "año", "jornada"]):
                             locs.nth(i).click(timeout=1000)
-                            page.wait_for_timeout(1200)
+                            page.wait_for_timeout(1000)
+                            # depois de abrir, tenta clicar na primeira opção visível
+                            opcoes = page.locator("li, [class*='option'], [role='option']")
+                            if opcoes.count() > 0:
+                                try:
+                                    opcoes.first.click(timeout=800)
+                                    page.wait_for_timeout(1200)
+                                except Exception:
+                                    pass
                     except Exception:
                         pass
             except Exception:
@@ -143,6 +168,16 @@ def collect(url: str, wait_ms: int, debug_html: bool) -> tuple[list[dict], list[
                 json.dumps(embedded, ensure_ascii=False, indent=2), encoding="utf-8"
             )
             print(f"[INFO] {len(embedded)} blocos de dados embutidos no HTML encontrados")
+
+        idx = html_full.find("Fecha 01")
+        if idx == -1:
+            idx = html_full.lower().find("fixture")
+        if idx != -1:
+            (OUT_DIR / "debug_liga1_widget_html.json").write_text(
+                json.dumps({"snippet": html_full[max(0, idx - 5000):idx + 3000]}, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
+            print("[INFO] Trecho do HTML do widget salvo para depuracao")
 
         browser.close()
 

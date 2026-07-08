@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/debug_liga1_responses.json data/debug_liga1_json_payloads.json data/debug_liga1_embedded.json 2>/dev/null || true
+          git add data/debug_liga1_responses.json data/debug_liga1_json_payloads.json data/debug_liga1_embedded.json data/debug_liga1_widget_html.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Sem mudanças para commitar"
           else
