@@ -40,6 +40,11 @@ na página de detalhe de cada partida (/partidos/{slug}), que tem seu
 próprio __NEXT_DATA__ mais completo. Por isso, para cada jogo
 encontrado, o script visita também a página de detalhe para pegar o
 nome do estádio (são poucos jogos por rodada, o custo extra é baixo).
+Confirmado por inspeção real: a Copa de Primera tem esse dado (é a
+competição com o "match center" completo, estilo Opta); a División
+Intermedia NÃO tem — o campo "venue" simplesmente não existe no JSON
+dessas partidas, então o estádio fica vazio para jogos da Intermedia
+(limitação real da fonte, não um bug do scraper).
 
 Uso:
     python scrap_apf_paraguay.py --dias 60 --dias-atras 30
@@ -293,13 +298,6 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
                 next_data = extract_next_data(html)
                 if next_data is not None:
                     dbg["next_data"] = True
-                    if i == len(matches_by_url) - 1 or "intermedia" in slug:
-                        # dump bruto só de um exemplo pra depuração, evita gerar
-                        # um arquivo gigante por partida
-                        if not (OUT_DIR / "debug_apf_detalhe_intermedia_raw.json").exists():
-                            (OUT_DIR / "debug_apf_detalhe_intermedia_raw.json").write_text(
-                                json.dumps(next_data, ensure_ascii=False, indent=2)[:500000], encoding="utf-8"
-                            )
                     venue = find_venue_for_slug(next_data, slug)
                     if venue:
                         venue_by_url[match_url] = venue
