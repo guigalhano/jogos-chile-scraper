@@ -140,7 +140,7 @@ const I18N = {
 };
 
 let currentLang = localStorage.getItem("jogosChileLang") || "pt";
-let activePeriodDays = null;
+let activePeriodDays = 3; // "Próximos 3 dias" selecionado por padrão ao carregar
 let showAllTeamMode = false;
 
 const els = {
@@ -279,14 +279,23 @@ function formatShortDate(dataISO) {
 
 function formatUpdated(value) {
   if (!value) return "—";
-  const d = new Date(value);
+  // Os timestamps são gerados nos runners do GitHub Actions com
+  // datetime.now() (sem timezone explícito), cujo relógio é UTC.
+  // Se não vier com "Z" ou offset explícito, tratamos como UTC.
+  let iso = value;
+  if (!/Z$|[+-]\d{2}:\d{2}$/.test(iso)) {
+    iso = `${iso}Z`;
+  }
+  const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return value.split("T")[0] || "—";
-  return new Intl.DateTimeFormat(t("locale"), {
+  const formatted = new Intl.DateTimeFormat(t("locale"), {
     day: "2-digit",
     month: "2-digit",
     hour: "2-digit",
     minute: "2-digit",
+    timeZone: "America/Sao_Paulo",
   }).format(d);
+  return `${formatted} (Brasília)`;
 }
 
 function parseDateTime(jogo) {
@@ -551,16 +560,28 @@ function setupFilters() {
   populateSelectComBandeiras(els.filtroPais, paises, t("all_m"));
 
   const pais = els.filtroPais.value;
-  const escopo = pais ? jogosEnriquecidos.filter(j => j.pais === pais) : jogosEnriquecidos;
+  const escopoPais = pais ? jogosEnriquecidos.filter(j => j.pais === pais) : jogosEnriquecidos;
+
+  const regioes = uniqueSorted(escopoPais.map(j => j.regiao));
+  populateSelect(els.filtroRegiao, regioes, t("all_f"));
+
+  updateDependentCompTimeOptions();
+  updateDependentCityOptions();
+}
+
+// Campeonato e Time dependem do País e da Região selecionados.
+function updateDependentCompTimeOptions() {
+  const pais = els.filtroPais.value;
+  const regiao = els.filtroRegiao.value;
+  const escopo = jogosEnriquecidos.filter(j =>
+    (!pais || j.pais === pais) && (!regiao || j.regiao === regiao)
+  );
 
   const comps = uniqueSorted(escopo.map(j => j.competicao));
   const times = uniqueSorted(escopo.flatMap(j => [j.mandante, j.visitante]));
-  const regioes = uniqueSorted(escopo.map(j => j.regiao));
 
   populateSelect(els.filtroCompeticao, comps, t("all_m"));
   populateSelect(els.filtroTime, times, t("all_m"));
-  populateSelect(els.filtroRegiao, regioes, t("all_f"));
-  updateDependentCityOptions();
   updateTeamButtonState();
 }
 
@@ -821,6 +842,11 @@ function setupEvents() {
 
   els.filtroRegiao.addEventListener("change", () => {
     showAllTeamMode = false;
+    els.filtroCompeticao.value = "";
+    els.filtroTime.value = "";
+    els.filtroCidade.value = "";
+    els.raioWrap.hidden = true;
+    updateDependentCompTimeOptions();
     updateDependentCityOptions();
     renderAll();
   });

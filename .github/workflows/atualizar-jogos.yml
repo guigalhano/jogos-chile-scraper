@@ -79,9 +79,33 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
-          git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json 2>/dev/null || true
-          git add data/cruzamento_promiedos.json 2>/dev/null || true
-          git commit -m "Atualiza jogos Chile Brasil completo" || echo "Sem mudanças"
-          git pull --rebase origin main
-          git push
+
+          mkdir -p /tmp/dados_novos
+          cp data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv /tmp/dados_novos/ 2>/dev/null || true
+          cp data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json /tmp/dados_novos/ 2>/dev/null || true
+          cp data/cruzamento_promiedos.json /tmp/dados_novos/ 2>/dev/null || true
+
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/dados_novos/*.json /tmp/dados_novos/*.csv data/ 2>/dev/null || true
+
+            git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
+            git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json 2>/dev/null || true
+            git add data/cruzamento_promiedos.json 2>/dev/null || true
+
+            if git diff --cached --quiet; then
+              echo "Sem mudanças para commitar"
+              break
+            fi
+
+            git commit -m "Atualiza jogos Chile Brasil completo"
+
+            if git push origin HEAD:main; then
+              echo "Push OK na tentativa $tentativa"
+              break
+            fi
+
+            echo "Push falhou (tentativa $tentativa), outro job deve ter commitado ao mesmo tempo. Tentando de novo..."
+            sleep $((RANDOM % 10 + 5))
+          done
