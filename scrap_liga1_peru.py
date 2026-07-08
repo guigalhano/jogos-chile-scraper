@@ -99,48 +99,32 @@ def collect(url: str, wait_ms: int, debug_html: bool) -> tuple[list[dict], list[
         page.goto(url, wait_until="domcontentloaded", timeout=60000)
         page.wait_for_timeout(wait_ms)
 
-        # Tenta interagir com selects de verdade (via select_option, que
-        # dispara o evento "change" corretamente) e também com dropdowns
-        # customizados (comum em apps Vue/React: um botão/div que abre uma
-        # lista de opções ao clicar).
-        try:
-            selects = page.locator("select")
-            scount = min(selects.count(), 6)
-            for si in range(scount):
-                try:
-                    options = selects.nth(si).locator("option")
-                    if options.count() > 1:
-                        val = options.nth(1).get_attribute("value")
-                        if val:
-                            selects.nth(si).select_option(value=val, timeout=1500)
-                            page.wait_for_timeout(1500)
-                except Exception:
-                    pass
-        except Exception:
-            pass
-
-        for selector in ["select", "button", "a", "[class*='select']", "[class*='dropdown']", "[role='combobox']"]:
+        # Os filtros são <select> nativos escondidos, com uma UI fake por
+        # cima: clicar em ".select-selected" abre ".select-items", cujos
+        # filhos "[data-id]" são os que de fato disparam a troca (o site
+        # escuta clique nesses divs, não o evento "change" do <select>).
+        # Seleciona especificamente Ano=2026 e Fase=Clausura (torneio em
+        # andamento em julho/2026) e por fim uma Fecha, nessa ordem, pra
+        # garantir que a chamada de listagem final já saia com os filtros
+        # certos.
+        seletores_alvo = [
+            ("anioList", "3"),      # 2026
+            ("aperturtaList", "2"),  # Liga 1 Clausura
+            ("fechaList", "1"),     # FECHA 01
+        ]
+        for select_id, data_id in seletores_alvo:
             try:
-                locs = page.locator(selector)
-                count = min(locs.count(), 20)
-                for i in range(count):
-                    try:
-                        txt = (locs.nth(i).inner_text(timeout=300) or "").strip().lower()
-                        if any(k in txt for k in ["fecha", "fase", "año", "jornada"]):
-                            locs.nth(i).click(timeout=1000)
-                            page.wait_for_timeout(1000)
-                            # depois de abrir, tenta clicar na primeira opção visível
-                            opcoes = page.locator("li, [class*='option'], [role='option']")
-                            if opcoes.count() > 0:
-                                try:
-                                    opcoes.first.click(timeout=800)
-                                    page.wait_for_timeout(1200)
-                                except Exception:
-                                    pass
-                    except Exception:
-                        pass
-            except Exception:
-                pass
+                cs = page.locator(f".custom-select:has(#{select_id})")
+                if cs.count() == 0:
+                    continue
+                cs.first.locator(".select-selected").click(timeout=1500)
+                page.wait_for_timeout(600)
+                opcao = cs.first.locator(f".select-items [data-id='{data_id}']")
+                if opcao.count() > 0:
+                    opcao.first.click(timeout=1500)
+                    page.wait_for_timeout(2500)
+            except Exception as e:
+                print(f"[WARN] Falha ao selecionar {select_id}={data_id}: {e}")
 
         page.wait_for_timeout(3000)
 
