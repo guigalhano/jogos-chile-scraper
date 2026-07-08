@@ -1,60 +1,5 @@
 [
   {
-    "url": "https://liga1.pe/wp-admin/admin-ajax.php",
-    "status": 200,
-    "data": {
-      "success": true,
-      "data": {
-        "963": "5b72028ad6"
-      }
-    }
-  },
-  {
-    "url": "https://sis.fpf.org.pe/fixture/api/externo/filtro/periodo/listar",
-    "status": 200,
-    "data": [
-      {
-        "id": 4,
-        "codigo": 2025,
-        "estado": {
-          "id": false,
-          "nombre": null
-        }
-      },
-      {
-        "id": 3,
-        "codigo": 2024,
-        "estado": {
-          "id": false,
-          "nombre": null
-        }
-      }
-    ]
-  },
-  {
-    "url": "https://sis.fpf.org.pe/fixture/api/externo/filtro/categoria/listar?id_bloque=1&id_periodo=4",
-    "status": 200,
-    "data": []
-  },
-  {
-    "url": "https://futec.pe:8080/api/reporte/Fases?KEY=8927362E-2156-4F78-BFC4-FA7B1D0AE68D",
-    "status": 200,
-    "data": [
-      {
-        "fasE_ID": 1,
-        "fase": "Liga 1 Apertura"
-      },
-      {
-        "fasE_ID": 2,
-        "fase": "Liga 1 Clausura"
-      },
-      {
-        "fasE_ID": 3,
-        "fase": "Liga 1 Acumulado"
-      }
-    ]
-  },
-  {
     "url": "https://futec.pe:8080/api/reporte/Fecha?KEY=8927362E-2156-4F78-BFC4-FA7B1D0AE68D",
     "status": 200,
     "data": [
@@ -129,6 +74,28 @@
     ]
   },
   {
+    "url": "https://sis.fpf.org.pe/fixture/api/externo/filtro/periodo/listar",
+    "status": 200,
+    "data": [
+      {
+        "id": 4,
+        "codigo": 2025,
+        "estado": {
+          "id": false,
+          "nombre": null
+        }
+      },
+      {
+        "id": 3,
+        "codigo": 2024,
+        "estado": {
+          "id": false,
+          "nombre": null
+        }
+      }
+    ]
+  },
+  {
     "url": "https://futec.pe:8080/api/reporte/Anio?KEY=8927362E-2156-4F78-BFC4-FA7B1D0AE68D",
     "status": 200,
     "data": [
@@ -153,5 +120,38 @@
         "anio": 2028
       }
     ]
+  },
+  {
+    "url": "https://futec.pe:8080/api/reporte/Fases?KEY=8927362E-2156-4F78-BFC4-FA7B1D0AE68D",
+    "status": 200,
+    "data": [
+      {
+        "fasE_ID": 1,
+        "fase": "Liga 1 Apertura"
+      },
+      {
+        "fasE_ID": 2,
+        "fase": "Liga 1 Clausura"
+      },
+      {
+        "fasE_ID": 3,
+        "fase": "Liga 1 Acumulado"
+      }
+    ]
+  },
+  {
+    "url": "https://sis.fpf.org.pe/fixture/api/externo/filtro/categoria/listar?id_bloque=1&id_periodo=4",
+    "status": 200,
+    "data": []
+  },
+  {
+    "url": "https://liga1.pe/wp-admin/admin-ajax.php",
+    "status": 200,
+    "data": {
+      "success": true,
+      "data": {
+        "963": "5b72028ad6"
+      }
+    }
   }
 ]
