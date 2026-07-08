@@ -160,6 +160,13 @@ def parse_card(card, competicao_label: str) -> Partido | None:
     visitante = team_name(team_divs[1])
     if not mandante or not visitante or mandante == visitante:
         return None
+    # A CONMEBOL mostra times ainda não definidos (ex.: quem cai da
+    # Libertadores pras Oitavas da Sudamericana, antes dessa fase ser
+    # jogada) com um placeholder literal em vez de um nome de time real.
+    # Isso não é um confronto de verdade ainda, então descartamos.
+    placeholders = {"unknown", "por definir", "a definir", "tbd", "vencedor", "winner"}
+    if mandante.strip().lower() in placeholders or visitante.strip().lower() in placeholders:
+        return None
 
     venue_el = card.select_one(".m-fixture-teaser-card__venue")
     estadio = clean_text(venue_el.get_text()) if venue_el else ""
