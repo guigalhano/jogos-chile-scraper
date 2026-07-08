@@ -98,7 +98,7 @@ def main() -> None:
                         container = container.parent
                     else:
                         break
-                amostras.append(str(container)[:3000])
+                amostras.append(str(container)[:8000])
                 if len(amostras) >= 3:
                     break
 
