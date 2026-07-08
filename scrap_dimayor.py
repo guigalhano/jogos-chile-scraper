@@ -38,10 +38,10 @@ HTML_DIR = OUT_DIR / "debug_dimayor_html"
 
 URLS = [
     ("Liga BetPlay", "https://dimayor.com.co/liga-betplay-dimayor/"),
-    ("Torneo BetPlay", "https://dimayor.com.co/torneo-betplay-dimayor/"),
-    ("Liga Femenina", "https://dimayor.com.co/liga-femenina-betplay-dimayor/"),
-    ("Copa BetPlay", "https://dimayor.com.co/copa-betplay-dimayor/"),
 ]
+# Nota: visitar as outras 3 paginas (Torneo/Feminina/Copa) na MESMA sessao
+# de navegador disparou um bloqueio Cloudflare (403 + desafio Turnstile).
+# Por ora, testamos uma pagina por vez, isoladamente.
 
 HEADERS_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -121,10 +121,35 @@ def collect(urls: list[tuple[str, str]], wait_ms: int, debug_html: bool):
                 except Exception:
                     pass
 
+                # Rola a página pra forçar lazy-loading de mais jogos.
+                try:
+                    for _ in range(6):
+                        page.mouse.wheel(0, 1600)
+                        page.wait_for_timeout(500)
+                except Exception:
+                    pass
+
                 if debug_html:
                     HTML_DIR.mkdir(exist_ok=True)
                     slug = slugify(label)
                     (HTML_DIR / f"dimayor_{slug}.html").write_text(page.content(), encoding="utf-8")
+
+                # Salva um recorte do HTML renderizado com os cards de
+                # partida (pra inspecionar a estrutura CSS real e escrever
+                # o parser depois) e o texto puro renderizado.
+                html_full = page.content()
+                slug = slugify(label)
+                idx = html_full.find("VIERNES") if "VIERNES" in html_full else html_full.upper().find("VIERNES")
+                if idx == -1:
+                    idx = html_full.lower().find("estadio")
+                if idx != -1:
+                    (Path("data") / f"debug_dimayor_{slug}_snippet.json").write_text(
+                        json.dumps({"snippet": html_full[max(0, idx - 2000):idx + 20000]}, ensure_ascii=False, indent=2),
+                        encoding="utf-8",
+                    )
+                    print(f"[INFO] Snippet de {label} salvo para depuracao")
+                else:
+                    print(f"[WARN] Nao achei marcador de jogos no HTML de {label} (bloqueio? pagina vazia?)")
 
             except Exception as e:
                 print(f"[WARN] Erro abrindo {url}: {e}")
