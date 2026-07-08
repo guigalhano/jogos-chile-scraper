@@ -206,6 +206,8 @@ def collect(ligas: list[tuple[str, str]], dias: int, dias_atras: int, timeout: i
             except Exception as e:
                 erros += 1
                 print(f"[WARN] {label} {date_str}: {e}")
+                if erros <= 2:
+                    debug_pages.append({"liga": label, "erro_amostra": f"{date_str}: {type(e).__name__}: {e}"})
             d += timedelta(days=1)
         debug_pages.append({"liga": label, "slug": league_slug, "jogos": total_liga, "erros": erros})
         print(f"[OK] {label}: {total_liga} jogos encontrados ({erros} erros de dia)")
