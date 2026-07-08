@@ -72,13 +72,17 @@ OUT_DIR.mkdir(exist_ok=True)
 
 URLS = [
     ("Liga 1", "https://www.futbolperuano.com/liga-1/"),
-    ("Liga 1", "https://www.futbolperuano.com/liga-1/clausura/"),
     ("Liga 2", "https://www.futbolperuano.com/liga-2/"),
     ("Liga 3", "https://www.futbolperuano.com/liga-3/"),
     ("Copa de la Liga", "https://www.futbolperuano.com/copa-de-la-liga/"),
     ("Copa Perú", "https://www.futbolperuano.com/copa-peru/"),
     ("Fútbol Femenino", "https://www.futbolperuano.com/futbol-femenino/resultados"),
 ]
+# Nota: testamos incluir "https://www.futbolperuano.com/liga-1/clausura/"
+# pra pegar a fase Clausura (a Apertura 2026 já terminou em 31/05), mas
+# essa URL retorna dados de 2025 (temporada passada), não 2026 — parece
+# que a Clausura 2026 ainda não foi publicada nessa página. Por ora só
+# usamos a página principal (Apertura); revisitar essa URL depois.
 
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
