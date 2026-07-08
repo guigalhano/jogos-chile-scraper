@@ -31,13 +31,24 @@ padroes = [
     r'href="([^"]+\.pdf)"',
     r'src="([^"]+\.pdf)"',
     r'data-src="([^"]+\.pdf)"',
+    r'data-pdf[a-z-]*="([^"]+)"',
+    r'"file"\s*:\s*"([^"]+)"',
+    r'wp-content/uploads/[^"\'\s]+\.pdf',
 ]
 achados = set()
 for p in padroes:
     for m in re.finditer(p, html, re.I):
-        achados.add(m.group(1))
+        achados.add(m.group(1) if m.groups() else m.group(0))
 
 info["pdf_urls_encontradas"] = sorted(achados)
+
+# recorte em torno de qualquer ocorrencia de "pdfp" (plugin PDF Poster) pra
+# entender como ele referencia o arquivo (id de midia, endpoint ajax, etc.)
+idx_pdfp = html.find("pdfp_wrapper")
+if idx_pdfp != -1:
+    idx_pdfp2 = html.find("pdfp_wrapper", idx_pdfp + 200)
+    trecho_ini = max(0, idx_pdfp2 - 200) if idx_pdfp2 != -1 else idx_pdfp
+    info["snippet_pdfp"] = html[trecho_ini:trecho_ini + 3000]
 
 # tambem salva um recorte perto de "viewer" ou ".pdf" pra inspecionar manualmente
 idx = html.lower().find("viewer.html")
