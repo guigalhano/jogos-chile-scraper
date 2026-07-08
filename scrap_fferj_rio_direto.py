@@ -403,14 +403,16 @@ def main() -> None:
 
         soup_dbg = BeautifulSoup(html, "html.parser")
         sample_anchors = []
+        outer_html_samples = []
         for a in soup_dbg.find_all("a", href=True):
             if MATCH_HREF_RE.match(a["href"]):
-                sample_anchors.append({
-                    "href": a["href"],
-                    "text_space": a.get_text(" ", strip=True)[:400],
-                })
+                txt = a.get_text(" ", strip=True)
+                sample_anchors.append({"href": a["href"], "text_space": txt[:400]})
+                if len(outer_html_samples) < 4:
+                    outer_html_samples.append(str(a))
 
         debug_pages.append({
+            "outer_html_samples": outer_html_samples,
             "pg": pg,
             "jogos": len(page_partidos),
             "html_len": len(html),
