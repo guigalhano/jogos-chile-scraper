@@ -199,6 +199,29 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 markersLayer = L.layerGroup().addTo(map);
 
+// O ponto do estádio cresce conforme o usuário dá zoom no mapa, para ficar
+// proporcional (em zoom de continente um ponto grande polui o mapa; em
+// zoom de rua um ponto pequeno fica difícil de clicar/ver).
+const DOT_MIN_ZOOM = 3;
+const DOT_MAX_ZOOM = 14;
+const DOT_MIN_SIZE = 8;
+const DOT_MAX_SIZE = 22;
+
+function dotSizeForZoom(zoom) {
+  const z = Math.max(DOT_MIN_ZOOM, Math.min(DOT_MAX_ZOOM, zoom));
+  const progresso = (z - DOT_MIN_ZOOM) / (DOT_MAX_ZOOM - DOT_MIN_ZOOM);
+  return Math.round(DOT_MIN_SIZE + progresso * (DOT_MAX_SIZE - DOT_MIN_SIZE));
+}
+
+function updateDotSize() {
+  const size = dotSizeForZoom(map.getZoom());
+  document.getElementById("map").style.setProperty("--dot-size", `${size}px`);
+}
+
+map.on("zoom", updateDotSize);
+map.on("zoomend", updateDotSize);
+updateDotSize();
+
 function t(key, ...args) {
   const value = I18N[currentLang][key] ?? I18N.pt[key] ?? key;
   return typeof value === "function" ? value(...args) : value;
@@ -763,9 +786,9 @@ function markerPopup(j) {
 const DOT_ICON = L.divIcon({
   className: "jogoDotIcon",
   html: '<span class="jogoDot"></span>',
-  iconSize: [12, 12],
-  iconAnchor: [6, 6],
-  popupAnchor: [0, -6],
+  iconSize: [28, 28],
+  iconAnchor: [14, 14],
+  popupAnchor: [0, -10],
 });
 
 function updateMap(games) {

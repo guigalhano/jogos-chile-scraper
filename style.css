@@ -213,16 +213,23 @@ input[type="range"] {
   height: 22px;
 }
 
-.jogoDotIcon { background: transparent; border: none; }
+.jogoDotIcon {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .jogoDot {
   display: block;
-  width: 12px;
-  height: 12px;
+  width: var(--dot-size, 12px);
+  height: var(--dot-size, 12px);
   border-radius: 50%;
   background: var(--accent);
   border: 2px solid #0a1510;
   box-shadow: 0 0 0 2px rgba(215, 243, 107, 0.35);
+  transition: width 0.12s ease-out, height 0.12s ease-out;
 }
 
 .radiusLabel span {
