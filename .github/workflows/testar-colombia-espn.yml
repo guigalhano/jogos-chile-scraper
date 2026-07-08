@@ -1,4 +1,4 @@
-name: Testar DIMAYOR Colombia (diagnóstico, manual)
+name: Testar Colombia ESPN (diagnóstico, manual)
 
 on:
   workflow_dispatch:
@@ -24,22 +24,20 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          python -m playwright install chromium
 
-      - name: Testar scraper DIMAYOR (diagnóstico de rede/HTML)
+      - name: Testar scraper Colombia ESPN
         run: |
-          python scrap_dimayor.py --debug-html --wait-ms 15000 > data/debug_dimayor_log.txt 2>&1 || true
-          cat data/debug_dimayor_log.txt
+          python scrap_colombia_espn.py --dias 60 --dias-atras 15
 
       - name: Salvar resultados do diagnóstico (NÃO mistura com dados de produção)
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/debug_dimayor_responses.json data/debug_dimayor_json_payloads.json data/debug_dimayor_*_snippet.json data/debug_dimayor_erro_fatal.json data/debug_dimayor_log.txt 2>/dev/null || true
+          git add data/debug_colombia_espn_pages.json data/debug_colombia_espn_raw.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Sem mudanças para commitar"
           else
-            git commit -m "Diagnóstico DIMAYOR Colombia"
+            git commit -m "Diagnóstico Colombia ESPN"
             git pull --rebase origin main || git rebase --abort || true
             git push
           fi
