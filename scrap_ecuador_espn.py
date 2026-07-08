@@ -46,8 +46,9 @@ BASE_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 LIGAS = [
     ("ecu.1", "LigaPro Serie A"),
     ("ecu.2", "LigaPro Serie B"),
-    ("ecu.copa", "Copa Ecuador"),
 ]
+# Nota: "ecu.copa" retornou 400 Bad Request em todos os dias testados
+# (slug invalido para a Copa Ecuador na ESPN) - removido.
 # Nota: tentamos "col.w.1" para a Liga Femenina BetPlay, mas o slug
 # retornou erro em todos os dias testados (provavelmente incorreto).
 # Revisitar depois para achar o slug certo da ESPN para essa competição.
@@ -103,8 +104,8 @@ def clean_text(x: Any) -> str:
     return re.sub(r"\s+", " ", x).strip()
 
 
-def utc_iso_to_colombia(date_iso: str) -> tuple[str, str]:
-    """Equador é fixa em UTC-5 (sem horário de verão)."""
+def utc_iso_to_ecuador(date_iso: str) -> tuple[str, str]:
+    """Equador continental é fixo em UTC-5 (sem horário de verão)."""
     try:
         dt_utc = datetime.strptime(date_iso, "%Y-%m-%dT%H:%MZ")
     except ValueError:
