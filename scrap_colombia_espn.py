@@ -47,8 +47,10 @@ LIGAS = [
     ("col.1", "Liga BetPlay"),
     ("col.2", "Torneo BetPlay"),
     ("col.copa", "Copa BetPlay"),
-    ("col.w.1", "Liga Femenina BetPlay"),
 ]
+# Nota: tentamos "col.w.1" para a Liga Femenina BetPlay, mas o slug
+# retornou erro em todos os dias testados (provavelmente incorreto).
+# Revisitar depois para achar o slug certo da ESPN para essa competição.
 
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
