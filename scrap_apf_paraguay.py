@@ -144,9 +144,9 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, debug_html: bool) -
                     r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html_full, re.S
                 )
                 if m_next_data:
-                    next_data_snippets.append({"tipo": "__NEXT_DATA__", "conteudo": m_next_data.group(1)[:60000]})
+                    next_data_snippets.append({"tipo": "__NEXT_DATA__", "conteudo": m_next_data.group(1)[:2000000]})
                 for m in re.finditer(r'self\.__next_f\.push\(\[1,\s*(".*?")\]\)', html_full, re.S):
-                    next_data_snippets.append({"tipo": "next_f_chunk", "conteudo": m.group(1)[:20000]})
+                    next_data_snippets.append({"tipo": "next_f_chunk", "conteudo": m.group(1)[:200000]})
 
                 if next_data_snippets:
                     slug = slugify(competicao)
@@ -196,9 +196,9 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, debug_html: bool) -
                 r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html_full, re.S
             )
             if m_next_data:
-                next_data_snippets.append({"tipo": "__NEXT_DATA__", "conteudo": m_next_data.group(1)[:60000]})
+                next_data_snippets.append({"tipo": "__NEXT_DATA__", "conteudo": m_next_data.group(1)[:2000000]})
             for m in re.finditer(r'self\.__next_f\.push\(\[1,\s*(".*?")\]\)', html_full, re.S):
-                next_data_snippets.append({"tipo": "next_f_chunk", "conteudo": m.group(1)[:20000]})
+                next_data_snippets.append({"tipo": "next_f_chunk", "conteudo": m.group(1)[:200000]})
             if next_data_snippets:
                 (OUT_DIR / "debug_apf_nextdata_detalhe_partida.json").write_text(
                     json.dumps(next_data_snippets, ensure_ascii=False, indent=2), encoding="utf-8"
