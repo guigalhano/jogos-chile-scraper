@@ -42,13 +42,22 @@ for p in padroes:
 
 info["pdf_urls_encontradas"] = sorted(achados)
 
-# recorte em torno de qualquer ocorrencia de "pdfp" (plugin PDF Poster) pra
-# entender como ele referencia o arquivo (id de midia, endpoint ajax, etc.)
-idx_pdfp = html.find("pdfp_wrapper")
+idx_pdfp = html.find("AdobeDC")
+if idx_pdfp == -1:
+    idx_pdfp = html.find("previewFile")
+if idx_pdfp == -1:
+    idx_pdfp = html.find("pdfp_")
 if idx_pdfp != -1:
-    idx_pdfp2 = html.find("pdfp_wrapper", idx_pdfp + 200)
-    trecho_ini = max(0, idx_pdfp2 - 200) if idx_pdfp2 != -1 else idx_pdfp
-    info["snippet_pdfp"] = html[trecho_ini:trecho_ini + 3000]
+    info["snippet_pdfp"] = html[max(0, idx_pdfp - 500):idx_pdfp + 3000]
+
+# tambem procura qualquer trecho de <script> que mencione .pdf
+for m in re.finditer(r'<script[^>]*>(.*?)</script>', html, re.S):
+    if ".pdf" in m.group(1):
+        achados.add("[script contem .pdf, ver snippet_script]")
+        info["snippet_script"] = m.group(1)[:3000]
+        break
+
+info["pdf_urls_encontradas"] = sorted(achados)
 
 # tambem salva um recorte perto de "viewer" ou ".pdf" pra inspecionar manualmente
 idx = html.lower().find("viewer.html")
