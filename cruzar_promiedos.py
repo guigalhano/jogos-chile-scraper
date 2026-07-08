@@ -80,6 +80,8 @@ def fetch_day_raw(date_str_iso: str) -> tuple[list[dict], dict]:
             debug[f"tentativa_{tentativa}"] = {"formato": date_str, "status": r.status_code}
             if r.status_code == 200:
                 data = r.json()
+                debug[f"tentativa_{tentativa}"]["chaves_raiz"] = list(data.keys())[:20]
+                debug[f"tentativa_{tentativa}"]["amostra_bruta"] = json.dumps(data)[:1500]
                 return data.get("leagues", []), debug
             debug[f"tentativa_{tentativa}"]["body"] = r.text[:300]
         except Exception as e:
