@@ -204,8 +204,8 @@ markersLayer = L.layerGroup().addTo(map);
 // zoom de rua um ponto pequeno fica difícil de clicar/ver).
 const DOT_MIN_ZOOM = 3;
 const DOT_MAX_ZOOM = 14;
-const DOT_MIN_SIZE = 8;
-const DOT_MAX_SIZE = 22;
+const DOT_MIN_SIZE = 11;
+const DOT_MAX_SIZE = 28;
 
 function dotSizeForZoom(zoom) {
   const z = Math.max(DOT_MIN_ZOOM, Math.min(DOT_MAX_ZOOM, zoom));
@@ -786,9 +786,9 @@ function markerPopup(j) {
 const DOT_ICON = L.divIcon({
   className: "jogoDotIcon",
   html: '<span class="jogoDot"></span>',
-  iconSize: [28, 28],
-  iconAnchor: [14, 14],
-  popupAnchor: [0, -10],
+  iconSize: [36, 36],
+  iconAnchor: [18, 18],
+  popupAnchor: [0, -14],
 });
 
 function updateMap(games) {
