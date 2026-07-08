@@ -1,0 +1,65 @@
+name: Atualizar CONMEBOL - diário
+
+on:
+  schedule:
+    - cron: "30 12 * * *"  # todo dia, meio da manhã no Brasil/Argentina
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar_conmebol:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v5
+
+      - name: Instalar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Rodar scraper CONMEBOL (Libertadores + Sudamericana)
+        run: |
+          if [ -f scrap_conmebol.py ]; then python scrap_conmebol.py --dias 180 --dias-atras 30; fi
+
+      - name: Salvar arquivos atualizados
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          mkdir -p /tmp/dados_novos
+          cp data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv /tmp/dados_novos/ 2>/dev/null || true
+          cp data/debug_conmebol_pages.json data/debug_conmebol_raw.json /tmp/dados_novos/ 2>/dev/null || true
+
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/dados_novos/*.json /tmp/dados_novos/*.csv data/ 2>/dev/null || true
+
+            git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
+            git add data/debug_conmebol_pages.json data/debug_conmebol_raw.json 2>/dev/null || true
+
+            if git diff --cached --quiet; then
+              echo "Sem mudanças para commitar"
+              break
+            fi
+
+            git commit -m "Atualiza jogos CONMEBOL - diario"
+
+            if git push origin HEAD:main; then
+              echo "Push OK na tentativa $tentativa"
+              break
+            fi
+
+            echo "Push falhou (tentativa $tentativa), tentando de novo..."
+            sleep $((RANDOM % 10 + 5))
+          done
