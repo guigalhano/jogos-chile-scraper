@@ -293,6 +293,13 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
                 next_data = extract_next_data(html)
                 if next_data is not None:
                     dbg["next_data"] = True
+                    if i == len(matches_by_url) - 1 or "intermedia" in slug:
+                        # dump bruto só de um exemplo pra depuração, evita gerar
+                        # um arquivo gigante por partida
+                        if not (OUT_DIR / "debug_apf_detalhe_intermedia_raw.json").exists():
+                            (OUT_DIR / "debug_apf_detalhe_intermedia_raw.json").write_text(
+                                json.dumps(next_data, ensure_ascii=False, indent=2)[:500000], encoding="utf-8"
+                            )
                     venue = find_venue_for_slug(next_data, slug)
                     if venue:
                         venue_by_url[match_url] = venue
