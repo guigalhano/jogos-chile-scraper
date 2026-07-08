@@ -37,13 +37,17 @@ OUT_DIR.mkdir(exist_ok=True)
 PROMIEDOS_HEADERS = {"X-VER": "1.11.7.5"}
 PROMIEDOS_URL = "https://api.promiedos.com.ar/games/{date}"
 
-PAISES_ALVO = {"chile", "argentina", "brasil", "brazil"}
+PAISES_ALVO = {"chile", "argentina", "brasil", "brazil", "peru", "perú", "paraguay", "uruguay"}
 
 MAPA_PAIS = {
     "chile": "Chile",
     "argentina": "Argentina",
     "brasil": "Brasil",
     "brazil": "Brasil",
+    "peru": "Peru",
+    "perú": "Peru",
+    "paraguay": "Paraguay",
+    "uruguay": "Uruguay",
 }
 
 
@@ -111,7 +115,10 @@ def main() -> None:
 
     por_pais = {"Chile": {"confirmados": 0, "so_na_promiedos": []},
                 "Brasil": {"confirmados": 0, "so_na_promiedos": []},
-                "Argentina": {"confirmados": 0, "so_na_promiedos": []}}
+                "Argentina": {"confirmados": 0, "so_na_promiedos": []},
+                "Peru": {"confirmados": 0, "so_na_promiedos": []},
+                "Paraguay": {"confirmados": 0, "so_na_promiedos": []},
+                "Uruguay": {"confirmados": 0, "so_na_promiedos": []}}
     total_eventos_lidos = 0
     dias_com_erro = []
 
@@ -169,7 +176,7 @@ def main() -> None:
     relatorio = {
         "gerado_em": datetime.now().isoformat(timespec="seconds"),
         "dias_verificados": args.dias + 1,
-        "total_eventos_lidos_nos_3_paises": total_eventos_lidos,
+        "total_eventos_lidos_nos_paises_alvo": total_eventos_lidos,
         "dias_com_erro": dias_com_erro,
         "debug_amostra": debug_amostra,
         "paises": {},
