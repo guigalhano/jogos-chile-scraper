@@ -1,667 +1,14 @@
 [
   {
-    "url": "https://apim-maker.llt-services.com/makerweb/msmasterus/api/v1/iso-code?",
-    "status": 200,
-    "data": {
-      "iso": "US"
-    }
-  },
-  {
     "url": "https://www.apf.org.py/api/modals?locale=es",
     "status": 200,
     "data": {}
   },
   {
-    "url": "https://www.apf.org.py/api/sponsors/format?locale=es&country=US&format=white&filter%5Bid%24in%5D%5B%5D=6c39c2c5-f1ed-4130-b5b6-3e7ac9665bf5&filter%5Bid%24in%5D%5B%5D=9b101d93-8bb2-4f05-87e5-66e0a4d217c7&filter%5Bid%24in%5D%5B%5D=7dc6ff60-f0bb-41d4-92be-57dd65be4a41&filter%5Bid%24in%5D%5B%5D=6b597c02-32f6-469a-a2ef-ff2192d2e59c&filter%5Bid%24in%5D%5B%5D=464e2792-57cc-4f5f-a1f9-a3634580238a&filter%5Bid%24in%5D%5B%5D=845e1566-6fc7-4641-b248-35bb5fb7d825&filter%5Bid%24in%5D%5B%5D=0d95427d-a376-4e3d-b3be-f1979fcaa0cb&filter%5Bid%24in%5D%5B%5D=ef9363b2-2294-420d-92be-0dc8392f2673&filter%5Bid%24in%5D%5B%5D=8eb68b3c-7d18-490d-b7e8-f61e7a043961&filter%5Bid%24in%5D%5B%5D=dc917061-6cfb-4cfc-8e57-c913b1a7ce8c&filter%5Bid%24in%5D%5B%5D=3d9800b7-ac6a-4415-9f9e-5e4abe97b0e6&filter%5Bid%24in%5D%5B%5D=f07799e7-4aff-4d0f-8c30-b5aee3a44c90&filter%5Bid%24in%5D%5B%5D=17d8af4b-35cb-4644-9a18-5c04b91ac4f2&filter%5Bid%24in%5D%5B%5D=6db8a00d-812d-4ec8-a126-a440393c8719&filter%5Bid%24in%5D%5B%5D=750c415e-0121-459e-9ff7-3591be603dad&filter%5Bid%24in%5D%5B%5D=2d55d01f-0ae2-4b05-8212-9c6dfaf1afb7&filter%5Bid%24in%5D%5B%5D=9f03c7da-e41a-4ad6-b717-b4965ecc087a&filter%5Bid%24in%5D%5B%5D=78da6b78-c6d8-4534-ac4a-889ded0a5600&filter%5Bid%24in%5D%5B%5D=64119a48-9c54-4c98-b6b9-9eb1344ae846&filter%5Bid%24in%5D%5B%5D=ce4cf598-e6e7-43ac-914f-4d21ec3d6eb2&filter%5Bid%24in%5D%5B%5D=9ff0d0e7-7c39-42ac-a386-95501bd7bab4&filter%5Bid%24in%5D%5B%5D=2155bb01-e4bd-4eaa-b44f-d2c36e93d25d&filter%5Bid%24in%5D%5B%5D=ea639e4f-193d-4e3d-8701-3b2b9881befa&filter%5Bid%24in%5D%5B%5D=4d0412e1-58f5-4fd9-b6aa-03c680c1b198&filter%5Bid%24in%5D%5B%5D=0f6544c8-505b-487d-9125-3123fbc81d2a&filter%5Bid%24in%5D%5B%5D=4d25f5a9-6734-4d4e-a251-f89a521ccc39&filter%5Bid%24in%5D%5B%5D=abafb045-ffb1-4df1-9c87-48597304ed85&filter%5Bid%24in%5D%5B%5D=dcc0bc6b-0e30-453e-aa83-93543ee4f43f",
+    "url": "https://apim-maker.llt-services.com/makerweb/msmasterus/api/v1/iso-code?",
     "status": 200,
     "data": {
-      "total": 28,
-      "data": [
-        {
-          "id": "6c39c2c5-f1ed-4130-b5b6-3e7ac9665bf5",
-          "name": "Tigo",
-          "url": "https://www.tigo.com.py/",
-          "category": {
-            "id": "b36beb18-6f74-486e-a6f9-ddac109fe102",
-            "name": "Main Sponsors",
-            "position": 0
-          },
-          "logo": {
-            "id": "6f453cf3-64e6-462b-a780-12a7fbfb7999",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/48bbd7e7-cdac-4730-8b1e-7587e6777ad6-356.svg",
-            "height": 100,
-            "width": 200,
-            "identifierProcessed": "48bbd7e7-cdac-4730-8b1e-7587e6777ad6-356",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/48bbd7e7-cdac-4730-8b1e-7587e6777ad6-356.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/48bbd7e7-cdac-4730-8b1e-7587e6777ad6-356.png"
-            }
-          }
-        },
-        {
-          "id": "9b101d93-8bb2-4f05-87e5-66e0a4d217c7",
-          "name": "UENO",
-          "url": "https://www.ueno.com.py/",
-          "category": {
-            "id": "b36beb18-6f74-486e-a6f9-ddac109fe102",
-            "name": "Main Sponsors",
-            "position": 0
-          },
-          "logo": {
-            "id": "5f052005-32bb-49a4-afd8-5211d0895a6b",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/24e1c114-4694-4b7c-b65e-82442071f583-119.png",
-            "height": 100,
-            "width": 200,
-            "identifierProcessed": "24e1c114-4694-4b7c-b65e-82442071f583-119",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/24e1c114-4694-4b7c-b65e-82442071f583-119.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/24e1c114-4694-4b7c-b65e-82442071f583-119.png"
-            }
-          }
-        },
-        {
-          "id": "7dc6ff60-f0bb-41d4-92be-57dd65be4a41",
-          "name": "Apostala",
-          "url": "https://www.aposta.la/",
-          "category": {
-            "id": "b36beb18-6f74-486e-a6f9-ddac109fe102",
-            "name": "Main Sponsors",
-            "position": 0
-          },
-          "logo": {
-            "id": "b2c07ab0-3cb7-409c-9e62-6b86cf3f5923",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/9923c94c-0577-4aee-85b8-db99699c0904-750.png",
-            "height": 100,
-            "width": 200,
-            "identifierProcessed": "9923c94c-0577-4aee-85b8-db99699c0904-750",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/9923c94c-0577-4aee-85b8-db99699c0904-750.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/9923c94c-0577-4aee-85b8-db99699c0904-750.png"
-            }
-          }
-        },
-        {
-          "id": "6b597c02-32f6-469a-a2ef-ff2192d2e59c",
-          "name": "Pilsen",
-          "url": "https://www.pilsen.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "ad04ccc0-7962-4d23-9343-61c7b359ec5b",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/29/original/54364291-e866-46e3-8ccb-b30e19d1cd84-761.png",
-            "height": 104,
-            "width": 201,
-            "identifierProcessed": "54364291-e866-46e3-8ccb-b30e19d1cd84-761",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/29/xsmall/54364291-e866-46e3-8ccb-b30e19d1cd84-761.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/29/xlarge/54364291-e866-46e3-8ccb-b30e19d1cd84-761.png"
-            }
-          }
-        },
-        {
-          "id": "464e2792-57cc-4f5f-a1f9-a3634580238a",
-          "name": "Shell",
-          "url": "https://www.shell.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "e73f0a79-73a3-41ed-981d-a10fb9189766",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/29/original/5b0223af-6e99-40c9-8cc7-15183299783c-710.png",
-            "height": 104,
-            "width": 201,
-            "identifierProcessed": "5b0223af-6e99-40c9-8cc7-15183299783c-710",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/29/xsmall/5b0223af-6e99-40c9-8cc7-15183299783c-710.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/29/xlarge/5b0223af-6e99-40c9-8cc7-15183299783c-710.png"
-            }
-          }
-        },
-        {
-          "id": "845e1566-6fc7-4641-b248-35bb5fb7d825",
-          "name": "Puma",
-          "url": "https://www.pumastore.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "5e723957-e6d6-4cdc-a0fd-936319625bc0",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/00dcda3d-d524-4584-9883-5334197effbb-372.svg",
-            "height": 101,
-            "width": 201,
-            "identifierProcessed": "00dcda3d-d524-4584-9883-5334197effbb-372",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/00dcda3d-d524-4584-9883-5334197effbb-372.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/00dcda3d-d524-4584-9883-5334197effbb-372.png"
-            }
-          }
-        },
-        {
-          "id": "0d95427d-a376-4e3d-b3be-f1979fcaa0cb",
-          "name": "Coca-cola",
-          "url": "https://www.coca-coladeparaguay.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "735288a6-f0f6-4511-ae84-4b3219c88a28",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/5764af99-9b27-4c35-bc92-7ed6ce383895-836.svg",
-            "height": 101,
-            "width": 201,
-            "identifierProcessed": "5764af99-9b27-4c35-bc92-7ed6ce383895-836",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/5764af99-9b27-4c35-bc92-7ed6ce383895-836.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/5764af99-9b27-4c35-bc92-7ed6ce383895-836.png"
-            }
-          }
-        },
-        {
-          "id": "ef9363b2-2294-420d-92be-0dc8392f2673",
-          "name": "Rexona",
-          "url": "https://www.instagram.com/rexona.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "f8c37e23-db01-4335-b67b-2e5f8836cabf",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/0c63b13c-0a98-4b6f-9f41-6f96b5710e87-172.png",
-            "height": 100,
-            "width": 200,
-            "identifierProcessed": "0c63b13c-0a98-4b6f-9f41-6f96b5710e87-172",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/0c63b13c-0a98-4b6f-9f41-6f96b5710e87-172.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/0c63b13c-0a98-4b6f-9f41-6f96b5710e87-172.png"
-            }
-          }
-        },
-        {
-          "id": "8eb68b3c-7d18-490d-b7e8-f61e7a043961",
-          "name": "Diesa",
-          "url": "https://www.diesa.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "ecf40bce-0765-4c57-89bc-c778ebe42ef9",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/49d21d1e-c917-4479-921b-59fe68f13eb5-481.svg",
-            "height": 101,
-            "width": 201,
-            "identifierProcessed": "49d21d1e-c917-4479-921b-59fe68f13eb5-481",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/49d21d1e-c917-4479-921b-59fe68f13eb5-481.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/49d21d1e-c917-4479-921b-59fe68f13eb5-481.png"
-            }
-          }
-        },
-        {
-          "id": "dc917061-6cfb-4cfc-8e57-c913b1a7ce8c",
-          "name": "Omo",
-          "url": "https://www.omo.com/cl/home.html",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "b7f58032-2879-4b3f-80e8-6c47364b0e3b",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/11/05/original/4bf8b4d4-df0a-468c-acea-3c6435fae173-319.png",
-            "height": 1483,
-            "width": 2583,
-            "identifierProcessed": "4bf8b4d4-df0a-468c-acea-3c6435fae173-319",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xsmall/4bf8b4d4-df0a-468c-acea-3c6435fae173-319.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xlarge/4bf8b4d4-df0a-468c-acea-3c6435fae173-319.png"
-            }
-          }
-        },
-        {
-          "id": "3d9800b7-ac6a-4415-9f9e-5e4abe97b0e6",
-          "name": "Hellmans",
-          "url": "https://www.instagram.com/hellmannsparaguay/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "773a45a8-210b-47c3-bfaf-34399f6db4ef",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/11/05/original/4e293654-1e72-4ae8-b854-d904f4da7199-28.png",
-            "height": 2708,
-            "width": 3646,
-            "identifierProcessed": "4e293654-1e72-4ae8-b854-d904f4da7199-28",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xsmall/4e293654-1e72-4ae8-b854-d904f4da7199-28.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xlarge/4e293654-1e72-4ae8-b854-d904f4da7199-28.png"
-            }
-          }
-        },
-        {
-          "id": "f07799e7-4aff-4d0f-8c30-b5aee3a44c90",
-          "name": "Pechugon",
-          "url": "https://www.pechugon.com/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "88a68978-54ea-47c4-b52b-54f001106461",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/25942030-d0a0-418a-8615-2baa776ae21e-717.png",
-            "height": 101,
-            "width": 201,
-            "identifierProcessed": "25942030-d0a0-418a-8615-2baa776ae21e-717",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/25942030-d0a0-418a-8615-2baa776ae21e-717.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/25942030-d0a0-418a-8615-2baa776ae21e-717.png"
-            }
-          }
-        },
-        {
-          "id": "17d8af4b-35cb-4644-9a18-5c04b91ac4f2",
-          "name": "TOKYO",
-          "url": "https://ngosaeca.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "e947ee58-7455-4fd0-a212-73a3f2fa7784",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/09/23/original/d9ce475e-1e86-4dd0-848d-273b70ef1773-369.png",
-            "height": 2160,
-            "width": 2161,
-            "identifierProcessed": "d9ce475e-1e86-4dd0-848d-273b70ef1773-369",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/09/23/xsmall/d9ce475e-1e86-4dd0-848d-273b70ef1773-369.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/09/23/xlarge/d9ce475e-1e86-4dd0-848d-273b70ef1773-369.png"
-            }
-          }
-        },
-        {
-          "id": "6db8a00d-812d-4ec8-a126-a440393c8719",
-          "name": "Mostaza",
-          "url": "https://www.mostaza.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "5ad563a9-ad0d-4291-be33-be72fef3f1ab",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2026/02/03/original/c0a40a84-c793-415b-bce0-3bb4bfa78ff5-282.png",
-            "height": 723,
-            "width": 1022,
-            "identifierProcessed": "c0a40a84-c793-415b-bce0-3bb4bfa78ff5-282",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2026/02/03/xsmall/c0a40a84-c793-415b-bce0-3bb4bfa78ff5-282.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2026/02/03/xlarge/c0a40a84-c793-415b-bce0-3bb4bfa78ff5-282.png"
-            }
-          }
-        },
-        {
-          "id": "750c415e-0121-459e-9ff7-3591be603dad",
-          "name": "Royal viajes",
-          "url": "https://royalviajes.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "497e7658-4de4-423e-8617-1db059d16b13",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/4a20c476-d05d-4305-a431-29e495cd9114-594.png",
-            "height": 101,
-            "width": 201,
-            "identifierProcessed": "4a20c476-d05d-4305-a431-29e495cd9114-594",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/4a20c476-d05d-4305-a431-29e495cd9114-594.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/4a20c476-d05d-4305-a431-29e495cd9114-594.png"
-            }
-          }
-        },
-        {
-          "id": "2d55d01f-0ae2-4b05-8212-9c6dfaf1afb7",
-          "name": "Bambi",
-          "url": "https://www.invipintsaci.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "9dddd758-b87c-4393-828c-46aadc8c8f65",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/c8aa0196-efa8-4a2e-827b-e7558898d09a-390.png",
-            "height": 101,
-            "width": 201,
-            "identifierProcessed": "c8aa0196-efa8-4a2e-827b-e7558898d09a-390",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/c8aa0196-efa8-4a2e-827b-e7558898d09a-390.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/c8aa0196-efa8-4a2e-827b-e7558898d09a-390.png"
-            }
-          }
-        },
-        {
-          "id": "9f03c7da-e41a-4ad6-b717-b4965ecc087a",
-          "name": "Assist Card",
-          "url": "https://www.assistcard.com/py?gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPYkR5jRzGEwfILK7_eKi8p9O6Ioldn9wPt-OvXQKzYEFs6Zw09Q_18aAtHMEALw_wcB",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "0a5f1564-b0ca-4df9-92df-fcdde9e46186",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/e01839c1-8311-4c65-9a43-fc1a9aef75aa-926.svg",
-            "height": 101,
-            "width": 201,
-            "identifierProcessed": "e01839c1-8311-4c65-9a43-fc1a9aef75aa-926",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/e01839c1-8311-4c65-9a43-fc1a9aef75aa-926.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/e01839c1-8311-4c65-9a43-fc1a9aef75aa-926.png"
-            }
-          }
-        },
-        {
-          "id": "78da6b78-c6d8-4534-ac4a-889ded0a5600",
-          "name": "NSA",
-          "url": "https://www.nsa.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "1486d2d0-c793-48b9-8a72-9842818abdc3",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/0f225bb7-6054-4972-915a-b261d3975b1e-329.svg",
-            "height": 100,
-            "width": 200,
-            "identifierProcessed": "0f225bb7-6054-4972-915a-b261d3975b1e-329",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/0f225bb7-6054-4972-915a-b261d3975b1e-329.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/0f225bb7-6054-4972-915a-b261d3975b1e-329.png"
-            }
-          }
-        },
-        {
-          "id": "64119a48-9c54-4c98-b6b9-9eb1344ae846",
-          "name": "Koala",
-          "url": "https://www.koala.com.py/",
-          "category": {
-            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
-            "name": "Sponsors Oficiales",
-            "position": 0
-          },
-          "logo": {
-            "id": "8b0f5f6f-b25c-4758-bbe9-3beb1a5221a3",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/08/21/original/3fadf564-863d-4faa-a47c-d4da84792727-317.png",
-            "height": 225,
-            "width": 225,
-            "identifierProcessed": "3fadf564-863d-4faa-a47c-d4da84792727-317",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/08/21/xsmall/3fadf564-863d-4faa-a47c-d4da84792727-317.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/08/21/xlarge/3fadf564-863d-4faa-a47c-d4da84792727-317.png"
-            }
-          }
-        },
-        {
-          "id": "ce4cf598-e6e7-43ac-914f-4d21ec3d6eb2",
-          "name": "Cooperativa Chortitzer",
-          "url": "https://www.chortitzer.com.py/cooperativa/",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "59e1ec75-8de2-425c-8970-d3d54fcc9314",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/1069d276-520d-4576-a2c4-1ab9783f3eae-610.png",
-            "height": 101,
-            "width": 200,
-            "identifierProcessed": "1069d276-520d-4576-a2c4-1ab9783f3eae-610",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/1069d276-520d-4576-a2c4-1ab9783f3eae-610.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/1069d276-520d-4576-a2c4-1ab9783f3eae-610.png"
-            }
-          }
-        },
-        {
-          "id": "9ff0d0e7-7c39-42ac-a386-95501bd7bab4",
-          "name": "Yerba Mate Kurupi",
-          "url": "https://www.santamargarita.com.py/product-category/yerba/compuesta-kurupi-yerba/",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "5cf48e6e-bba3-45e9-9b26-b74f6d98866e",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/ef74ddaf-1812-41cd-a105-61ee7522e151-710.png",
-            "height": 100,
-            "width": 200,
-            "identifierProcessed": "ef74ddaf-1812-41cd-a105-61ee7522e151-710",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/ef74ddaf-1812-41cd-a105-61ee7522e151-710.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/ef74ddaf-1812-41cd-a105-61ee7522e151-710.png"
-            }
-          }
-        },
-        {
-          "id": "2155bb01-e4bd-4eaa-b44f-d2c36e93d25d",
-          "name": "Glacial",
-          "url": "https://glacial.com.py/",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "f97f48f7-8d3b-4df0-a4e5-14194e404b95",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/4f5f5e5e-b16c-4190-9f8c-b240c9ab518b-531.png",
-            "height": 101,
-            "width": 200,
-            "identifierProcessed": "4f5f5e5e-b16c-4190-9f8c-b240c9ab518b-531",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/4f5f5e5e-b16c-4190-9f8c-b240c9ab518b-531.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/4f5f5e5e-b16c-4190-9f8c-b240c9ab518b-531.png"
-            }
-          }
-        },
-        {
-          "id": "ea639e4f-193d-4e3d-8701-3b2b9881befa",
-          "name": "Marley Cofee",
-          "url": "https://marleycoffee.com.py/",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "a560900e-c33f-4aa3-a276-8791c7eae203",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/4ef7d895-24ba-471c-a4b3-95d92581900a-942.svg",
-            "height": 101,
-            "width": 200,
-            "identifierProcessed": "4ef7d895-24ba-471c-a4b3-95d92581900a-942",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/4ef7d895-24ba-471c-a4b3-95d92581900a-942.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/4ef7d895-24ba-471c-a4b3-95d92581900a-942.png"
-            }
-          }
-        },
-        {
-          "id": "4d0412e1-58f5-4fd9-b6aa-03c680c1b198",
-          "name": "Hydrate",
-          "url": "https://myhydrate.co/",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "29194f52-7f00-4aa7-a37d-9f48d83f035b",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/452c0733-e5df-415d-8929-66eb883d7b23-931.png",
-            "height": 101,
-            "width": 200,
-            "identifierProcessed": "452c0733-e5df-415d-8929-66eb883d7b23-931",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/452c0733-e5df-415d-8929-66eb883d7b23-931.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/452c0733-e5df-415d-8929-66eb883d7b23-931.png"
-            }
-          }
-        },
-        {
-          "id": "0f6544c8-505b-487d-9125-3123fbc81d2a",
-          "name": "Aesa Seguros",
-          "url": "https://www.aesaseguros.com.py/",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "6cd51f1e-9d6a-4122-8358-cd6dc97d8ce2",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/5d48d712-6156-4a5c-b649-00962cae5d84-83.png",
-            "height": 101,
-            "width": 200,
-            "identifierProcessed": "5d48d712-6156-4a5c-b649-00962cae5d84-83",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/5d48d712-6156-4a5c-b649-00962cae5d84-83.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/5d48d712-6156-4a5c-b649-00962cae5d84-83.png"
-            }
-          }
-        },
-        {
-          "id": "4d25f5a9-6734-4d4e-a251-f89a521ccc39",
-          "name": "AVA",
-          "url": "https://avacr7.com/en?srsltid=AfmBOopZSWSVkLYdDY9GHOmm3b9AVBdcF6WVDm674yKgedzfFB2yNQLT",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "08f0131c-ed75-4768-a29b-33c43190a851",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2025/11/05/original/2989a749-cfeb-421e-8aef-0fe95e56c89a-367.png",
-            "height": 164,
-            "width": 191,
-            "identifierProcessed": "2989a749-cfeb-421e-8aef-0fe95e56c89a-367",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xsmall/2989a749-cfeb-421e-8aef-0fe95e56c89a-367.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xlarge/2989a749-cfeb-421e-8aef-0fe95e56c89a-367.png"
-            }
-          }
-        },
-        {
-          "id": "abafb045-ffb1-4df1-9c87-48597304ed85",
-          "name": "Damat Tween",
-          "url": "https://www.instagram.com/damattween.py/",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "777db53a-b027-40a7-aed0-0ad865d4664e",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2026/01/21/original/3429d144-8b40-44d9-98ec-10702bfb2006-145.png",
-            "height": 403,
-            "width": 1690,
-            "identifierProcessed": "3429d144-8b40-44d9-98ec-10702bfb2006-145",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2026/01/21/xsmall/3429d144-8b40-44d9-98ec-10702bfb2006-145.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2026/01/21/xlarge/3429d144-8b40-44d9-98ec-10702bfb2006-145.png"
-            }
-          }
-        },
-        {
-          "id": "dcc0bc6b-0e30-453e-aa83-93543ee4f43f",
-          "name": "Sport 23",
-          "url": "https://www.23sports.co/",
-          "category": {
-            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
-            "name": "Sponsors Digitales",
-            "position": 0
-          },
-          "logo": {
-            "id": "6f9f01b7-bc8f-45f9-8e75-573438dde888",
-            "alt": null,
-            "url": "https://statics-maker.llt-services.com/apf/images/2026/01/15/original/b939a9f1-66b7-474c-9184-4cf5f24bb746-35.png",
-            "height": 1080,
-            "width": 1080,
-            "identifierProcessed": "b939a9f1-66b7-474c-9184-4cf5f24bb746-35",
-            "isImageProcessed": true,
-            "thumbnails": {
-              "xsmall": "https://statics-maker.llt-services.com/apf/images/2026/01/15/xsmall/b939a9f1-66b7-474c-9184-4cf5f24bb746-35.png",
-              "xlarge": "https://statics-maker.llt-services.com/apf/images/2026/01/15/xlarge/b939a9f1-66b7-474c-9184-4cf5f24bb746-35.png"
-            }
-          }
-        }
-      ]
+      "iso": "US"
     }
   },
   {
@@ -1722,7 +1069,660 @@
     }
   },
   {
-    "url": "https://syndication.twitter.com/settings?session_id=691a3e7d8639a332f48f6954d53000d467c93c36",
+    "url": "https://www.apf.org.py/api/sponsors/format?locale=es&country=US&format=white&filter%5Bid%24in%5D%5B%5D=6c39c2c5-f1ed-4130-b5b6-3e7ac9665bf5&filter%5Bid%24in%5D%5B%5D=9b101d93-8bb2-4f05-87e5-66e0a4d217c7&filter%5Bid%24in%5D%5B%5D=7dc6ff60-f0bb-41d4-92be-57dd65be4a41&filter%5Bid%24in%5D%5B%5D=6b597c02-32f6-469a-a2ef-ff2192d2e59c&filter%5Bid%24in%5D%5B%5D=464e2792-57cc-4f5f-a1f9-a3634580238a&filter%5Bid%24in%5D%5B%5D=845e1566-6fc7-4641-b248-35bb5fb7d825&filter%5Bid%24in%5D%5B%5D=0d95427d-a376-4e3d-b3be-f1979fcaa0cb&filter%5Bid%24in%5D%5B%5D=ef9363b2-2294-420d-92be-0dc8392f2673&filter%5Bid%24in%5D%5B%5D=8eb68b3c-7d18-490d-b7e8-f61e7a043961&filter%5Bid%24in%5D%5B%5D=dc917061-6cfb-4cfc-8e57-c913b1a7ce8c&filter%5Bid%24in%5D%5B%5D=3d9800b7-ac6a-4415-9f9e-5e4abe97b0e6&filter%5Bid%24in%5D%5B%5D=f07799e7-4aff-4d0f-8c30-b5aee3a44c90&filter%5Bid%24in%5D%5B%5D=17d8af4b-35cb-4644-9a18-5c04b91ac4f2&filter%5Bid%24in%5D%5B%5D=6db8a00d-812d-4ec8-a126-a440393c8719&filter%5Bid%24in%5D%5B%5D=750c415e-0121-459e-9ff7-3591be603dad&filter%5Bid%24in%5D%5B%5D=2d55d01f-0ae2-4b05-8212-9c6dfaf1afb7&filter%5Bid%24in%5D%5B%5D=9f03c7da-e41a-4ad6-b717-b4965ecc087a&filter%5Bid%24in%5D%5B%5D=78da6b78-c6d8-4534-ac4a-889ded0a5600&filter%5Bid%24in%5D%5B%5D=64119a48-9c54-4c98-b6b9-9eb1344ae846&filter%5Bid%24in%5D%5B%5D=ce4cf598-e6e7-43ac-914f-4d21ec3d6eb2&filter%5Bid%24in%5D%5B%5D=9ff0d0e7-7c39-42ac-a386-95501bd7bab4&filter%5Bid%24in%5D%5B%5D=2155bb01-e4bd-4eaa-b44f-d2c36e93d25d&filter%5Bid%24in%5D%5B%5D=ea639e4f-193d-4e3d-8701-3b2b9881befa&filter%5Bid%24in%5D%5B%5D=4d0412e1-58f5-4fd9-b6aa-03c680c1b198&filter%5Bid%24in%5D%5B%5D=0f6544c8-505b-487d-9125-3123fbc81d2a&filter%5Bid%24in%5D%5B%5D=4d25f5a9-6734-4d4e-a251-f89a521ccc39&filter%5Bid%24in%5D%5B%5D=abafb045-ffb1-4df1-9c87-48597304ed85&filter%5Bid%24in%5D%5B%5D=dcc0bc6b-0e30-453e-aa83-93543ee4f43f",
+    "status": 200,
+    "data": {
+      "total": 28,
+      "data": [
+        {
+          "id": "6c39c2c5-f1ed-4130-b5b6-3e7ac9665bf5",
+          "name": "Tigo",
+          "url": "https://www.tigo.com.py/",
+          "category": {
+            "id": "b36beb18-6f74-486e-a6f9-ddac109fe102",
+            "name": "Main Sponsors",
+            "position": 0
+          },
+          "logo": {
+            "id": "6f453cf3-64e6-462b-a780-12a7fbfb7999",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/48bbd7e7-cdac-4730-8b1e-7587e6777ad6-356.svg",
+            "height": 100,
+            "width": 200,
+            "identifierProcessed": "48bbd7e7-cdac-4730-8b1e-7587e6777ad6-356",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/48bbd7e7-cdac-4730-8b1e-7587e6777ad6-356.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/48bbd7e7-cdac-4730-8b1e-7587e6777ad6-356.png"
+            }
+          }
+        },
+        {
+          "id": "9b101d93-8bb2-4f05-87e5-66e0a4d217c7",
+          "name": "UENO",
+          "url": "https://www.ueno.com.py/",
+          "category": {
+            "id": "b36beb18-6f74-486e-a6f9-ddac109fe102",
+            "name": "Main Sponsors",
+            "position": 0
+          },
+          "logo": {
+            "id": "5f052005-32bb-49a4-afd8-5211d0895a6b",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/24e1c114-4694-4b7c-b65e-82442071f583-119.png",
+            "height": 100,
+            "width": 200,
+            "identifierProcessed": "24e1c114-4694-4b7c-b65e-82442071f583-119",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/24e1c114-4694-4b7c-b65e-82442071f583-119.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/24e1c114-4694-4b7c-b65e-82442071f583-119.png"
+            }
+          }
+        },
+        {
+          "id": "7dc6ff60-f0bb-41d4-92be-57dd65be4a41",
+          "name": "Apostala",
+          "url": "https://www.aposta.la/",
+          "category": {
+            "id": "b36beb18-6f74-486e-a6f9-ddac109fe102",
+            "name": "Main Sponsors",
+            "position": 0
+          },
+          "logo": {
+            "id": "b2c07ab0-3cb7-409c-9e62-6b86cf3f5923",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/9923c94c-0577-4aee-85b8-db99699c0904-750.png",
+            "height": 100,
+            "width": 200,
+            "identifierProcessed": "9923c94c-0577-4aee-85b8-db99699c0904-750",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/9923c94c-0577-4aee-85b8-db99699c0904-750.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/9923c94c-0577-4aee-85b8-db99699c0904-750.png"
+            }
+          }
+        },
+        {
+          "id": "6b597c02-32f6-469a-a2ef-ff2192d2e59c",
+          "name": "Pilsen",
+          "url": "https://www.pilsen.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "ad04ccc0-7962-4d23-9343-61c7b359ec5b",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/29/original/54364291-e866-46e3-8ccb-b30e19d1cd84-761.png",
+            "height": 104,
+            "width": 201,
+            "identifierProcessed": "54364291-e866-46e3-8ccb-b30e19d1cd84-761",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/29/xsmall/54364291-e866-46e3-8ccb-b30e19d1cd84-761.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/29/xlarge/54364291-e866-46e3-8ccb-b30e19d1cd84-761.png"
+            }
+          }
+        },
+        {
+          "id": "464e2792-57cc-4f5f-a1f9-a3634580238a",
+          "name": "Shell",
+          "url": "https://www.shell.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "e73f0a79-73a3-41ed-981d-a10fb9189766",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/29/original/5b0223af-6e99-40c9-8cc7-15183299783c-710.png",
+            "height": 104,
+            "width": 201,
+            "identifierProcessed": "5b0223af-6e99-40c9-8cc7-15183299783c-710",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/29/xsmall/5b0223af-6e99-40c9-8cc7-15183299783c-710.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/29/xlarge/5b0223af-6e99-40c9-8cc7-15183299783c-710.png"
+            }
+          }
+        },
+        {
+          "id": "845e1566-6fc7-4641-b248-35bb5fb7d825",
+          "name": "Puma",
+          "url": "https://www.pumastore.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "5e723957-e6d6-4cdc-a0fd-936319625bc0",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/00dcda3d-d524-4584-9883-5334197effbb-372.svg",
+            "height": 101,
+            "width": 201,
+            "identifierProcessed": "00dcda3d-d524-4584-9883-5334197effbb-372",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/00dcda3d-d524-4584-9883-5334197effbb-372.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/00dcda3d-d524-4584-9883-5334197effbb-372.png"
+            }
+          }
+        },
+        {
+          "id": "0d95427d-a376-4e3d-b3be-f1979fcaa0cb",
+          "name": "Coca-cola",
+          "url": "https://www.coca-coladeparaguay.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "735288a6-f0f6-4511-ae84-4b3219c88a28",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/5764af99-9b27-4c35-bc92-7ed6ce383895-836.svg",
+            "height": 101,
+            "width": 201,
+            "identifierProcessed": "5764af99-9b27-4c35-bc92-7ed6ce383895-836",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/5764af99-9b27-4c35-bc92-7ed6ce383895-836.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/5764af99-9b27-4c35-bc92-7ed6ce383895-836.png"
+            }
+          }
+        },
+        {
+          "id": "ef9363b2-2294-420d-92be-0dc8392f2673",
+          "name": "Rexona",
+          "url": "https://www.instagram.com/rexona.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "f8c37e23-db01-4335-b67b-2e5f8836cabf",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/0c63b13c-0a98-4b6f-9f41-6f96b5710e87-172.png",
+            "height": 100,
+            "width": 200,
+            "identifierProcessed": "0c63b13c-0a98-4b6f-9f41-6f96b5710e87-172",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/0c63b13c-0a98-4b6f-9f41-6f96b5710e87-172.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/0c63b13c-0a98-4b6f-9f41-6f96b5710e87-172.png"
+            }
+          }
+        },
+        {
+          "id": "8eb68b3c-7d18-490d-b7e8-f61e7a043961",
+          "name": "Diesa",
+          "url": "https://www.diesa.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "ecf40bce-0765-4c57-89bc-c778ebe42ef9",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/49d21d1e-c917-4479-921b-59fe68f13eb5-481.svg",
+            "height": 101,
+            "width": 201,
+            "identifierProcessed": "49d21d1e-c917-4479-921b-59fe68f13eb5-481",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/49d21d1e-c917-4479-921b-59fe68f13eb5-481.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/49d21d1e-c917-4479-921b-59fe68f13eb5-481.png"
+            }
+          }
+        },
+        {
+          "id": "dc917061-6cfb-4cfc-8e57-c913b1a7ce8c",
+          "name": "Omo",
+          "url": "https://www.omo.com/cl/home.html",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "b7f58032-2879-4b3f-80e8-6c47364b0e3b",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/11/05/original/4bf8b4d4-df0a-468c-acea-3c6435fae173-319.png",
+            "height": 1483,
+            "width": 2583,
+            "identifierProcessed": "4bf8b4d4-df0a-468c-acea-3c6435fae173-319",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xsmall/4bf8b4d4-df0a-468c-acea-3c6435fae173-319.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xlarge/4bf8b4d4-df0a-468c-acea-3c6435fae173-319.png"
+            }
+          }
+        },
+        {
+          "id": "3d9800b7-ac6a-4415-9f9e-5e4abe97b0e6",
+          "name": "Hellmans",
+          "url": "https://www.instagram.com/hellmannsparaguay/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "773a45a8-210b-47c3-bfaf-34399f6db4ef",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/11/05/original/4e293654-1e72-4ae8-b854-d904f4da7199-28.png",
+            "height": 2708,
+            "width": 3646,
+            "identifierProcessed": "4e293654-1e72-4ae8-b854-d904f4da7199-28",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xsmall/4e293654-1e72-4ae8-b854-d904f4da7199-28.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xlarge/4e293654-1e72-4ae8-b854-d904f4da7199-28.png"
+            }
+          }
+        },
+        {
+          "id": "f07799e7-4aff-4d0f-8c30-b5aee3a44c90",
+          "name": "Pechugon",
+          "url": "https://www.pechugon.com/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "88a68978-54ea-47c4-b52b-54f001106461",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/25942030-d0a0-418a-8615-2baa776ae21e-717.png",
+            "height": 101,
+            "width": 201,
+            "identifierProcessed": "25942030-d0a0-418a-8615-2baa776ae21e-717",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/25942030-d0a0-418a-8615-2baa776ae21e-717.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/25942030-d0a0-418a-8615-2baa776ae21e-717.png"
+            }
+          }
+        },
+        {
+          "id": "17d8af4b-35cb-4644-9a18-5c04b91ac4f2",
+          "name": "TOKYO",
+          "url": "https://ngosaeca.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "e947ee58-7455-4fd0-a212-73a3f2fa7784",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/09/23/original/d9ce475e-1e86-4dd0-848d-273b70ef1773-369.png",
+            "height": 2160,
+            "width": 2161,
+            "identifierProcessed": "d9ce475e-1e86-4dd0-848d-273b70ef1773-369",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/09/23/xsmall/d9ce475e-1e86-4dd0-848d-273b70ef1773-369.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/09/23/xlarge/d9ce475e-1e86-4dd0-848d-273b70ef1773-369.png"
+            }
+          }
+        },
+        {
+          "id": "6db8a00d-812d-4ec8-a126-a440393c8719",
+          "name": "Mostaza",
+          "url": "https://www.mostaza.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "5ad563a9-ad0d-4291-be33-be72fef3f1ab",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2026/02/03/original/c0a40a84-c793-415b-bce0-3bb4bfa78ff5-282.png",
+            "height": 723,
+            "width": 1022,
+            "identifierProcessed": "c0a40a84-c793-415b-bce0-3bb4bfa78ff5-282",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2026/02/03/xsmall/c0a40a84-c793-415b-bce0-3bb4bfa78ff5-282.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2026/02/03/xlarge/c0a40a84-c793-415b-bce0-3bb4bfa78ff5-282.png"
+            }
+          }
+        },
+        {
+          "id": "750c415e-0121-459e-9ff7-3591be603dad",
+          "name": "Royal viajes",
+          "url": "https://royalviajes.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "497e7658-4de4-423e-8617-1db059d16b13",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/4a20c476-d05d-4305-a431-29e495cd9114-594.png",
+            "height": 101,
+            "width": 201,
+            "identifierProcessed": "4a20c476-d05d-4305-a431-29e495cd9114-594",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/4a20c476-d05d-4305-a431-29e495cd9114-594.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/4a20c476-d05d-4305-a431-29e495cd9114-594.png"
+            }
+          }
+        },
+        {
+          "id": "2d55d01f-0ae2-4b05-8212-9c6dfaf1afb7",
+          "name": "Bambi",
+          "url": "https://www.invipintsaci.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "9dddd758-b87c-4393-828c-46aadc8c8f65",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/c8aa0196-efa8-4a2e-827b-e7558898d09a-390.png",
+            "height": 101,
+            "width": 201,
+            "identifierProcessed": "c8aa0196-efa8-4a2e-827b-e7558898d09a-390",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/c8aa0196-efa8-4a2e-827b-e7558898d09a-390.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/c8aa0196-efa8-4a2e-827b-e7558898d09a-390.png"
+            }
+          }
+        },
+        {
+          "id": "9f03c7da-e41a-4ad6-b717-b4965ecc087a",
+          "name": "Assist Card",
+          "url": "https://www.assistcard.com/py?gclid=Cj0KCQjwk7ugBhDIARIsAGuvgPYkR5jRzGEwfILK7_eKi8p9O6Ioldn9wPt-OvXQKzYEFs6Zw09Q_18aAtHMEALw_wcB",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "0a5f1564-b0ca-4df9-92df-fcdde9e46186",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/e01839c1-8311-4c65-9a43-fc1a9aef75aa-926.svg",
+            "height": 101,
+            "width": 201,
+            "identifierProcessed": "e01839c1-8311-4c65-9a43-fc1a9aef75aa-926",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/e01839c1-8311-4c65-9a43-fc1a9aef75aa-926.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/e01839c1-8311-4c65-9a43-fc1a9aef75aa-926.png"
+            }
+          }
+        },
+        {
+          "id": "78da6b78-c6d8-4534-ac4a-889ded0a5600",
+          "name": "NSA",
+          "url": "https://www.nsa.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "1486d2d0-c793-48b9-8a72-9842818abdc3",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/0f225bb7-6054-4972-915a-b261d3975b1e-329.svg",
+            "height": 100,
+            "width": 200,
+            "identifierProcessed": "0f225bb7-6054-4972-915a-b261d3975b1e-329",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/0f225bb7-6054-4972-915a-b261d3975b1e-329.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/0f225bb7-6054-4972-915a-b261d3975b1e-329.png"
+            }
+          }
+        },
+        {
+          "id": "64119a48-9c54-4c98-b6b9-9eb1344ae846",
+          "name": "Koala",
+          "url": "https://www.koala.com.py/",
+          "category": {
+            "id": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+            "name": "Sponsors Oficiales",
+            "position": 0
+          },
+          "logo": {
+            "id": "8b0f5f6f-b25c-4758-bbe9-3beb1a5221a3",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/08/21/original/3fadf564-863d-4faa-a47c-d4da84792727-317.png",
+            "height": 225,
+            "width": 225,
+            "identifierProcessed": "3fadf564-863d-4faa-a47c-d4da84792727-317",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/08/21/xsmall/3fadf564-863d-4faa-a47c-d4da84792727-317.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/08/21/xlarge/3fadf564-863d-4faa-a47c-d4da84792727-317.png"
+            }
+          }
+        },
+        {
+          "id": "ce4cf598-e6e7-43ac-914f-4d21ec3d6eb2",
+          "name": "Cooperativa Chortitzer",
+          "url": "https://www.chortitzer.com.py/cooperativa/",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "59e1ec75-8de2-425c-8970-d3d54fcc9314",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/1069d276-520d-4576-a2c4-1ab9783f3eae-610.png",
+            "height": 101,
+            "width": 200,
+            "identifierProcessed": "1069d276-520d-4576-a2c4-1ab9783f3eae-610",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/1069d276-520d-4576-a2c4-1ab9783f3eae-610.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/1069d276-520d-4576-a2c4-1ab9783f3eae-610.png"
+            }
+          }
+        },
+        {
+          "id": "9ff0d0e7-7c39-42ac-a386-95501bd7bab4",
+          "name": "Yerba Mate Kurupi",
+          "url": "https://www.santamargarita.com.py/product-category/yerba/compuesta-kurupi-yerba/",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "5cf48e6e-bba3-45e9-9b26-b74f6d98866e",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/ef74ddaf-1812-41cd-a105-61ee7522e151-710.png",
+            "height": 100,
+            "width": 200,
+            "identifierProcessed": "ef74ddaf-1812-41cd-a105-61ee7522e151-710",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/ef74ddaf-1812-41cd-a105-61ee7522e151-710.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/ef74ddaf-1812-41cd-a105-61ee7522e151-710.png"
+            }
+          }
+        },
+        {
+          "id": "2155bb01-e4bd-4eaa-b44f-d2c36e93d25d",
+          "name": "Glacial",
+          "url": "https://glacial.com.py/",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "f97f48f7-8d3b-4df0-a4e5-14194e404b95",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/4f5f5e5e-b16c-4190-9f8c-b240c9ab518b-531.png",
+            "height": 101,
+            "width": 200,
+            "identifierProcessed": "4f5f5e5e-b16c-4190-9f8c-b240c9ab518b-531",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/4f5f5e5e-b16c-4190-9f8c-b240c9ab518b-531.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/4f5f5e5e-b16c-4190-9f8c-b240c9ab518b-531.png"
+            }
+          }
+        },
+        {
+          "id": "ea639e4f-193d-4e3d-8701-3b2b9881befa",
+          "name": "Marley Cofee",
+          "url": "https://marleycoffee.com.py/",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "a560900e-c33f-4aa3-a276-8791c7eae203",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/4ef7d895-24ba-471c-a4b3-95d92581900a-942.svg",
+            "height": 101,
+            "width": 200,
+            "identifierProcessed": "4ef7d895-24ba-471c-a4b3-95d92581900a-942",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/4ef7d895-24ba-471c-a4b3-95d92581900a-942.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/4ef7d895-24ba-471c-a4b3-95d92581900a-942.png"
+            }
+          }
+        },
+        {
+          "id": "4d0412e1-58f5-4fd9-b6aa-03c680c1b198",
+          "name": "Hydrate",
+          "url": "https://myhydrate.co/",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "29194f52-7f00-4aa7-a37d-9f48d83f035b",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/452c0733-e5df-415d-8929-66eb883d7b23-931.png",
+            "height": 101,
+            "width": 200,
+            "identifierProcessed": "452c0733-e5df-415d-8929-66eb883d7b23-931",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/452c0733-e5df-415d-8929-66eb883d7b23-931.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/452c0733-e5df-415d-8929-66eb883d7b23-931.png"
+            }
+          }
+        },
+        {
+          "id": "0f6544c8-505b-487d-9125-3123fbc81d2a",
+          "name": "Aesa Seguros",
+          "url": "https://www.aesaseguros.com.py/",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "6cd51f1e-9d6a-4122-8358-cd6dc97d8ce2",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/07/17/original/5d48d712-6156-4a5c-b649-00962cae5d84-83.png",
+            "height": 101,
+            "width": 200,
+            "identifierProcessed": "5d48d712-6156-4a5c-b649-00962cae5d84-83",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xsmall/5d48d712-6156-4a5c-b649-00962cae5d84-83.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/07/17/xlarge/5d48d712-6156-4a5c-b649-00962cae5d84-83.png"
+            }
+          }
+        },
+        {
+          "id": "4d25f5a9-6734-4d4e-a251-f89a521ccc39",
+          "name": "AVA",
+          "url": "https://avacr7.com/en?srsltid=AfmBOopZSWSVkLYdDY9GHOmm3b9AVBdcF6WVDm674yKgedzfFB2yNQLT",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "08f0131c-ed75-4768-a29b-33c43190a851",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2025/11/05/original/2989a749-cfeb-421e-8aef-0fe95e56c89a-367.png",
+            "height": 164,
+            "width": 191,
+            "identifierProcessed": "2989a749-cfeb-421e-8aef-0fe95e56c89a-367",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xsmall/2989a749-cfeb-421e-8aef-0fe95e56c89a-367.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2025/11/05/xlarge/2989a749-cfeb-421e-8aef-0fe95e56c89a-367.png"
+            }
+          }
+        },
+        {
+          "id": "abafb045-ffb1-4df1-9c87-48597304ed85",
+          "name": "Damat Tween",
+          "url": "https://www.instagram.com/damattween.py/",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "777db53a-b027-40a7-aed0-0ad865d4664e",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2026/01/21/original/3429d144-8b40-44d9-98ec-10702bfb2006-145.png",
+            "height": 403,
+            "width": 1690,
+            "identifierProcessed": "3429d144-8b40-44d9-98ec-10702bfb2006-145",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2026/01/21/xsmall/3429d144-8b40-44d9-98ec-10702bfb2006-145.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2026/01/21/xlarge/3429d144-8b40-44d9-98ec-10702bfb2006-145.png"
+            }
+          }
+        },
+        {
+          "id": "dcc0bc6b-0e30-453e-aa83-93543ee4f43f",
+          "name": "Sport 23",
+          "url": "https://www.23sports.co/",
+          "category": {
+            "id": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+            "name": "Sponsors Digitales",
+            "position": 0
+          },
+          "logo": {
+            "id": "6f9f01b7-bc8f-45f9-8e75-573438dde888",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2026/01/15/original/b939a9f1-66b7-474c-9184-4cf5f24bb746-35.png",
+            "height": 1080,
+            "width": 1080,
+            "identifierProcessed": "b939a9f1-66b7-474c-9184-4cf5f24bb746-35",
+            "isImageProcessed": true,
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2026/01/15/xsmall/b939a9f1-66b7-474c-9184-4cf5f24bb746-35.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2026/01/15/xlarge/b939a9f1-66b7-474c-9184-4cf5f24bb746-35.png"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://syndication.twitter.com/settings?session_id=357d7b3205f0054cb8486be2188871a7709ad7ff",
     "status": 200,
     "data": {
       "should_obtain_cookie_consent": true,
