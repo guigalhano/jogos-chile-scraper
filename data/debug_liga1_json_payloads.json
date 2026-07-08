@@ -1,0 +1,157 @@
+[
+  {
+    "url": "https://futec.pe:8080/api/reporte/Fases?KEY=8927362E-2156-4F78-BFC4-FA7B1D0AE68D",
+    "status": 200,
+    "data": [
+      {
+        "fasE_ID": 1,
+        "fase": "Liga 1 Apertura"
+      },
+      {
+        "fasE_ID": 2,
+        "fase": "Liga 1 Clausura"
+      },
+      {
+        "fasE_ID": 3,
+        "fase": "Liga 1 Acumulado"
+      }
+    ]
+  },
+  {
+    "url": "https://futec.pe:8080/api/reporte/Fecha?KEY=8927362E-2156-4F78-BFC4-FA7B1D0AE68D",
+    "status": 200,
+    "data": [
+      {
+        "fechA_ID": 1,
+        "fecha": "FECHA 01"
+      },
+      {
+        "fechA_ID": 2,
+        "fecha": "FECHA 02"
+      },
+      {
+        "fechA_ID": 3,
+        "fecha": "FECHA 03"
+      },
+      {
+        "fechA_ID": 4,
+        "fecha": "FECHA 04"
+      },
+      {
+        "fechA_ID": 5,
+        "fecha": "FECHA 05"
+      },
+      {
+        "fechA_ID": 6,
+        "fecha": "FECHA 06"
+      },
+      {
+        "fechA_ID": 7,
+        "fecha": "FECHA 07"
+      },
+      {
+        "fechA_ID": 8,
+        "fecha": "FECHA 08"
+      },
+      {
+        "fechA_ID": 9,
+        "fecha": "FECHA 09"
+      },
+      {
+        "fechA_ID": 10,
+        "fecha": "FECHA 10"
+      },
+      {
+        "fechA_ID": 11,
+        "fecha": "FECHA 11"
+      },
+      {
+        "fechA_ID": 12,
+        "fecha": "FECHA 12"
+      },
+      {
+        "fechA_ID": 13,
+        "fecha": "FECHA 13"
+      },
+      {
+        "fechA_ID": 14,
+        "fecha": "FECHA 14"
+      },
+      {
+        "fechA_ID": 15,
+        "fecha": "FECHA 15"
+      },
+      {
+        "fechA_ID": 16,
+        "fecha": "FECHA 16"
+      },
+      {
+        "fechA_ID": 17,
+        "fecha": "FECHA 17"
+      }
+    ]
+  },
+  {
+    "url": "https://sis.fpf.org.pe/fixture/api/externo/filtro/periodo/listar",
+    "status": 200,
+    "data": [
+      {
+        "id": 4,
+        "codigo": 2025,
+        "estado": {
+          "id": false,
+          "nombre": null
+        }
+      },
+      {
+        "id": 3,
+        "codigo": 2024,
+        "estado": {
+          "id": false,
+          "nombre": null
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://futec.pe:8080/api/reporte/Anio?KEY=8927362E-2156-4F78-BFC4-FA7B1D0AE68D",
+    "status": 200,
+    "data": [
+      {
+        "aniO_ID": 1,
+        "anio": 2024
+      },
+      {
+        "aniO_ID": 2,
+        "anio": 2025
+      },
+      {
+        "aniO_ID": 3,
+        "anio": 2026
+      },
+      {
+        "aniO_ID": 4,
+        "anio": 2027
+      },
+      {
+        "aniO_ID": 5,
+        "anio": 2028
+      }
+    ]
+  },
+  {
+    "url": "https://sis.fpf.org.pe/fixture/api/externo/filtro/categoria/listar?id_bloque=1&id_periodo=4",
+    "status": 200,
+    "data": []
+  },
+  {
+    "url": "https://liga1.pe/wp-admin/admin-ajax.php",
+    "status": 200,
+    "data": {
+      "success": true,
+      "data": {
+        "963": "5b72028ad6"
+      }
+    }
+  }
+]
