@@ -1,36 +1,14 @@
 [
   {
     "liga": "LigaPro Serie A",
-    "erro_amostra": "20260701: NameError: name 'utc_iso_to_ecuador' is not defined"
-  },
-  {
-    "liga": "LigaPro Serie A",
-    "erro_amostra": "20260703: NameError: name 'utc_iso_to_ecuador' is not defined"
-  },
-  {
-    "liga": "LigaPro Serie A",
     "slug": "ecu.1",
-    "jogos": 0,
-    "erros": 27
+    "jogos": 105,
+    "erros": 0
   },
   {
     "liga": "LigaPro Serie B",
     "slug": "ecu.2",
     "jogos": 0,
     "erros": 0
-  },
-  {
-    "liga": "Copa Ecuador",
-    "erro_amostra": "20260623: HTTPError: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.copa/scoreboard?dates=20260623"
-  },
-  {
-    "liga": "Copa Ecuador",
-    "erro_amostra": "20260624: HTTPError: 400 Client Error: Bad Request for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.copa/scoreboard?dates=20260624"
-  },
-  {
-    "liga": "Copa Ecuador",
-    "slug": "ecu.copa",
-    "jogos": 0,
-    "erros": 76
   }
 ]
