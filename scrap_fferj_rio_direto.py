@@ -399,7 +399,14 @@ def main() -> None:
             (HTML_DIR / f"fferj_pg_{pg}.html").write_text(html, encoding="utf-8")
 
         page_partidos = extract_matches_from_html(html)
-        debug_pages.append({"pg": pg, "jogos": len(page_partidos)})
+        n_hrefs = len(re.findall(r'href="(/partidas/\d+)"', html))
+        debug_pages.append({
+            "pg": pg,
+            "jogos": len(page_partidos),
+            "html_len": len(html),
+            "n_match_hrefs": n_hrefs,
+            "html_snippet": html[:4000],
+        })
 
         if not page_partidos:
             empty_streak += 1
