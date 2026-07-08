@@ -2,36 +2,50 @@
   {
     "label": "Liga 1",
     "url": "https://www.futbolperuano.com/liga-1/",
-    "jogos": 6
+    "jogos": 6,
+    "data_min": "2026-05-30",
+    "data_max": "2026-05-31"
   },
   {
     "label": "Liga 1",
     "url": "https://www.futbolperuano.com/liga-1/clausura/",
-    "jogos": 165
+    "jogos": 165,
+    "data_min": "2025-07-18",
+    "data_max": "2025-11-23"
   },
   {
     "label": "Liga 2",
     "url": "https://www.futbolperuano.com/liga-2/",
-    "jogos": 4
+    "jogos": 4,
+    "data_min": "2026-07-18",
+    "data_max": "2026-07-19"
   },
   {
     "label": "Liga 3",
     "url": "https://www.futbolperuano.com/liga-3/",
-    "jogos": 4
+    "jogos": 4,
+    "data_min": "2026-07-05",
+    "data_max": "2026-07-05"
   },
   {
     "label": "Copa de la Liga",
     "url": "https://www.futbolperuano.com/copa-de-la-liga/",
-    "jogos": 4
+    "jogos": 4,
+    "data_min": "2026-07-09",
+    "data_max": "2026-07-10"
   },
   {
     "label": "Copa Perú",
     "url": "https://www.futbolperuano.com/copa-peru/",
-    "jogos": 0
+    "jogos": 0,
+    "data_min": null,
+    "data_max": null
   },
   {
     "label": "Fútbol Femenino",
     "url": "https://www.futbolperuano.com/futbol-femenino/resultados",
-    "jogos": 64
+    "jogos": 64,
+    "data_min": "2026-03-14",
+    "data_max": "2026-07-05"
   }
 ]
