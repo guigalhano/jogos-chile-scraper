@@ -672,6 +672,32 @@ def write_csv(path: Path, rows: list[dict]) -> None:
             w.writerow({k: r.get(k, "") for k in fields})
 
 
+def load_existing_json(path: Path) -> list[dict]:
+    if not path.exists():
+        return []
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        return data if isinstance(data, list) else []
+    except Exception:
+        return []
+
+
+def merge_current(new_rows: list[dict], current_path: Path) -> list[dict]:
+    # IMPORTANTE: outras fontes (FMF, FFERJ, etc.) rodam em workflows
+    # semanais separados e não passam por este script. Se apenas
+    # sobrescrevêssemos jogos_programados.json com os jogos do Chile,
+    # perderíamos todos os dados dessas outras fontes toda vez que o
+    # job diário rodasse. Por isso mesclamos por id em vez de sobrescrever.
+    old = load_existing_json(current_path)
+    by_id = {r["id"]: r for r in old if r.get("id")}
+    for r in new_rows:
+        by_id[r["id"]] = r
+    return sorted(
+        by_id.values(),
+        key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("pais", ""), r.get("competicao", ""), r.get("mandante", ""))
+    )
+
+
 def merge_history(new_rows: list[dict], history_path: Path) -> list[dict]:
     old = load_existing_csv(history_path)
     by_id = {r["id"]: r for r in old if r.get("id")}
@@ -734,13 +760,14 @@ def update(dias: int = 180, dias_atras: int = 14, year: Optional[int] = None, in
     current_json = OUT_DIR / "jogos_programados.json"
     history_csv = OUT_DIR / "historico_jogos.csv"
 
-    write_csv(current_csv, rows)
-    current_json.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+    merged_current = merge_current(rows, current_json)
+    write_csv(current_csv, merged_current)
+    current_json.write_text(json.dumps(merged_current, ensure_ascii=False, indent=2), encoding="utf-8")
 
     hist = merge_history(rows, history_csv)
     write_csv(history_csv, hist)
 
-    print(f"\nAtualizado: {len(rows)} jogos")
+    print(f"\nAtualizado: {len(rows)} jogos do Chile nesta rodada | total no JSON atual: {len(merged_current)}")
     print(f"Janela: {'todos os passados também' if incluir_passados else f'{desde.isoformat()} até {ate.isoformat()}'}")
     print(f"CSV: {current_csv.resolve()}")
     print(f"JSON: {current_json.resolve()}")
