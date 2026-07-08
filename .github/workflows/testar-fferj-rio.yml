@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/debug_fferj_rio_pages.json data/debug_fferj_rio_raw.json 2>/dev/null || true
+          git add data/debug_fferj_rio_pages.json data/debug_fferj_rio_raw.json data/debug_fferj_rio_errors.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Sem mudanças para commitar"
           else
