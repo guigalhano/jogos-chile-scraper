@@ -584,6 +584,13 @@ function populateSelect(select, values, allLabel) {
 
 function setupFilters() {
   const paises = uniqueSorted(jogosEnriquecidos.map(j => j.pais));
+  // "Conmebol" fica sempre em primeiro no filtro (competições continentais
+  // em destaque), o resto segue em ordem alfabética normal.
+  const idxConmebol = paises.indexOf("Conmebol");
+  if (idxConmebol > 0) {
+    paises.splice(idxConmebol, 1);
+    paises.unshift("Conmebol");
+  }
   populateSelectComBandeiras(els.filtroPais, paises, t("all_m"));
 
   const pais = els.filtroPais.value;
