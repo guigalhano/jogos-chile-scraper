@@ -86,20 +86,25 @@ def main() -> None:
 
             amostras = []
             vistos = set()
+            tbc_capturado = False
             for a in fixture_links:
                 href = a["href"]
                 if href in vistos:
                     continue
                 vistos.add(href)
-                # sobe até um ancestral razoável (provavel container do card)
                 container = a
                 for _ in range(4):
                     if container.parent:
                         container = container.parent
                     else:
                         break
+                is_tbc = container.find(attrs={"data-tbc": "1"}) is not None or 'data-tbc="1"' in str(container)
+                if len(amostras) >= 3 and not (is_tbc and not tbc_capturado):
+                    continue
+                if is_tbc:
+                    tbc_capturado = True
                 amostras.append(str(container)[:8000])
-                if len(amostras) >= 3:
+                if len(amostras) >= 5:
                     break
 
             (OUT_DIR / f"debug_conmebol_{slug}_amostras.json").write_text(
