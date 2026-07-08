@@ -505,8 +505,27 @@ const ESTADIO_MANDANTE_PADRAO_ARGENTINA = {
   "barracas central": "claudio tapia",
 };
 
+const ESTADIO_MANDANTE_PADRAO_PERU = {
+  "alianza lima": "alejandro villanueva",
+  "universitario": "estadio monumental u",
+  "universitario de deportes": "estadio monumental u",
+  "sporting cristal": "alberto gallardo",
+  "carlos a mannucci": "mansiche",
+  "carlos a. mannucci": "mansiche",
+  "carlos mannucci": "mansiche",
+  "mannucci": "mansiche",
+  "cienciano": "inca garcilaso de la vega",
+  "melgar": "monumental de la unsa",
+  "fbc melgar": "monumental de la unsa",
+  "grau": "campeones del 36",
+  "atletico grau": "campeones del 36",
+  "atlético grau": "campeones del 36",
+};
+
 function findDefaultHomeStadium(mandante, pais) {
-  const mapa = pais === "Argentina" ? ESTADIO_MANDANTE_PADRAO_ARGENTINA : ESTADIO_MANDANTE_PADRAO_CHILE;
+  const mapa = pais === "Argentina" ? ESTADIO_MANDANTE_PADRAO_ARGENTINA
+    : pais === "Peru" ? ESTADIO_MANDANTE_PADRAO_PERU
+    : ESTADIO_MANDANTE_PADRAO_CHILE;
   const key = normalize(mandante);
   if (mapa[key]) return findStadiumInfo(mapa[key], pais);
 
