@@ -16,7 +16,7 @@
 window.ESTADIOS_BRASIL = [
   {
     nome: "Allianz Parque",
-    aliases: ["allianz parque", "arena palmeiras"],
+    aliases: ["allianz parque", "arena palmeiras", "nubank parque"],
     cidade: "São Paulo",
     regiao: "São Paulo",
     lat: -23.5273,
@@ -120,7 +120,7 @@ window.ESTADIOS_BRASIL = [
   },
   {
     nome: "Mineirão",
-    aliases: ["mineirão", "mineirao"],
+    aliases: ["mineirão", "mineirao", "governador magalhães pinto", "governador magalhaes pinto", "estadio governador magalhaes pinto"],
     cidade: "Belo Horizonte",
     regiao: "Minas Gerais",
     lat: -19.8656,

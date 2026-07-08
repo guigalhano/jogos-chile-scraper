@@ -20,7 +20,7 @@ window.ESTADIOS_ARGENTINA = [
   },
   {
     nome: "Estadio Alberto J. Armando (La Bombonera)",
-    aliases: ["la bombonera", "bombonera", "estadio alberto j armando"],
+    aliases: ["la bombonera", "bombonera", "estadio alberto j armando", "estadio alberto jose armando", "estadio alberto josé armando"],
     cidade: "Buenos Aires",
     regiao: "Ciudad Autónoma de Buenos Aires",
     lat: -34.6356,
@@ -257,5 +257,14 @@ window.ESTADIOS_ARGENTINA = [
     regiao: "Salta",
     lat: -24.7859,
     lng: -65.4064,
+  },
+  {
+    nome: "Estadio Malvinas Argentinas",
+    aliases: ["malvinas argentinas", "estadio ciudad de mendoza"],
+    cidade: "Mendoza",
+    regiao: "Mendoza",
+    lat: -32.8869,
+    lng: -68.8628,
+    fonte: "manual/aproximado (Parque General San Martín, Mendoza) - usado por Independiente Rivadavia em competições CONMEBOL",
   },
 ];
