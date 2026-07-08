@@ -1,18 +1,12 @@
 [
   {
-    "label": "CONMEBOL Libertadores",
+    "label": "Libertadores",
     "url": "https://gol.conmebol.com/libertadores/es",
-    "status": 200,
-    "erro": "",
-    "bytes": 534870,
-    "n_fixture_links": 36
+    "jogos": 36
   },
   {
-    "label": "CONMEBOL Sudamericana",
+    "label": "Sudamericana",
     "url": "https://gol.conmebol.com/sudamericana/es",
-    "status": 200,
-    "erro": "",
-    "bytes": 524642,
-    "n_fixture_links": 40
+    "jogos": 40
   }
 ]
