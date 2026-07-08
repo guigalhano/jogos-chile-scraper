@@ -148,7 +148,7 @@ def utc_iso_to_local(time_iso: str) -> tuple[str, str]:
             return dt_local.date().isoformat(), dt_local.strftime("%H:%M")
         except Exception:
             pass
-    dt_local = dt_utc - timedelta(hours=4)
+    dt_local = dt_utc - timedelta(hours=3)
     return dt_local.date().isoformat(), dt_local.strftime("%H:%M")
 
 
@@ -280,24 +280,38 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
         # Segunda passada: visita a página de detalhe de cada jogo achado
         # (poucos jogos por rodada) só para pegar o nome do estádio.
         venue_by_url: dict[str, str] = {}
+        venue_debug = []
         for i, (match_url, (m, _comp)) in enumerate(matches_by_url.items()):
             if i >= max_detalhes:
                 break
             slug = match_url.rstrip("/").rsplit("/", 1)[-1]
+            dbg = {"url": match_url, "slug": slug, "next_data": False, "venue": ""}
             try:
                 page.goto(match_url, wait_until="domcontentloaded", timeout=timeout * 1000)
                 page.wait_for_timeout(min(wait_ms, 6000))
                 html = page.content()
                 next_data = extract_next_data(html)
                 if next_data is not None:
+                    dbg["next_data"] = True
                     venue = find_venue_for_slug(next_data, slug)
                     if venue:
                         venue_by_url[match_url] = venue
+                        dbg["venue"] = venue
                         print(f"[OK] estádio de {slug}: {venue}")
+                    else:
+                        print(f"[WARN] sem estadio encontrado para slug {slug}")
+                else:
+                    print(f"[WARN] sem __NEXT_DATA__ na pagina de detalhe {match_url}")
             except Exception as e:
+                dbg["erro"] = str(e)
                 print(f"[WARN] Falha ao buscar estádio de {match_url}: {e}")
+            venue_debug.append(dbg)
 
         browser.close()
+
+    (OUT_DIR / "debug_apf_venue_lookup.json").write_text(
+        json.dumps(venue_debug, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
 
     for part in partidos:
         if part.url in venue_by_url:
