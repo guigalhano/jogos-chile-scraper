@@ -72,6 +72,7 @@ OUT_DIR.mkdir(exist_ok=True)
 
 URLS = [
     ("Liga 1", "https://www.futbolperuano.com/liga-1/"),
+    ("Liga 1", "https://www.futbolperuano.com/liga-1/clausura/"),
     ("Liga 2", "https://www.futbolperuano.com/liga-2/"),
     ("Liga 3", "https://www.futbolperuano.com/liga-3/"),
     ("Copa de la Liga", "https://www.futbolperuano.com/copa-de-la-liga/"),
