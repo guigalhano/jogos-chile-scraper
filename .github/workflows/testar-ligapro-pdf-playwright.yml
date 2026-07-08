@@ -1,0 +1,44 @@
+name: Testar LigaPro PDF Playwright (diagnóstico, manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v5
+
+      - name: Instalar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          python -m playwright install chromium
+
+      - name: Achar URL real do PDF (Playwright)
+        run: |
+          python diag_ligapro_pdf_playwright.py
+
+      - name: Salvar resultado
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/debug_ligapro_pdf_playwright.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Sem mudanças para commitar"
+          else
+            git commit -m "Diagnóstico PDF LigaPro via Playwright"
+            git pull --rebase origin main || git rebase --abort || true
+            git push
+          fi
