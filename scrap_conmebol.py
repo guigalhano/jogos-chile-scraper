@@ -87,6 +87,7 @@ def main() -> None:
             amostras = []
             vistos = set()
             tbc_capturado = False
+            futuro_capturado = False
             for a in fixture_links:
                 href = a["href"]
                 if href in vistos:
@@ -98,13 +99,20 @@ def main() -> None:
                         container = container.parent
                     else:
                         break
-                is_tbc = container.find(attrs={"data-tbc": "1"}) is not None or 'data-tbc="1"' in str(container)
-                if len(amostras) >= 3 and not (is_tbc and not tbc_capturado):
-                    continue
-                if is_tbc:
+                container_str = str(container)
+                is_tbc = 'data-tbc="1"' in container_str
+                is_futuro = 'data-match-status="Played"' not in container_str
+                quer_guardar = len(amostras) < 3
+                if is_tbc and not tbc_capturado:
+                    quer_guardar = True
                     tbc_capturado = True
-                amostras.append(str(container)[:8000])
-                if len(amostras) >= 5:
+                if is_futuro and not futuro_capturado:
+                    quer_guardar = True
+                    futuro_capturado = True
+                if not quer_guardar:
+                    continue
+                amostras.append(container_str[:8000])
+                if len(amostras) >= 6:
                     break
 
             (OUT_DIR / f"debug_conmebol_{slug}_amostras.json").write_text(
