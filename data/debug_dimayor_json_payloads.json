@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://dimayor.com.co/wp-admin/admin-ajax.php",
+    "status": 200,
+    "data": {
+      "success": true,
+      "data": {
+        "competition_id": 186027,
+        "phase_id": 186219,
+        "matchday": 1
+      }
+    }
+  }
+]
