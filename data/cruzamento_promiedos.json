@@ -1,22 +1,8 @@
 {
-  "gerado_em": "2026-07-07T13:21:05",
+  "gerado_em": "2026-07-08T01:44:24",
   "dias_verificados": 61,
   "total_eventos_lidos_nos_3_paises": 0,
   "dias_com_erro": [
-    {
-      "data": "2026-07-07",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-07-07",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-07-07' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "07-07-2026",
-          "status": 200
-        }
-      }
-    },
     {
       "data": "2026-07-08",
       "debug": {
@@ -856,22 +842,23 @@
           "status": 200
         }
       }
+    },
+    {
+      "data": "2026-09-06",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-09-06",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-09-06' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "06-09-2026",
+          "status": 200
+        }
+      }
     }
   ],
   "debug_amostra": [
-    {
-      "data": "2026-07-07",
-      "tentativa_1": {
-        "formato": "2026-07-07",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-07-07' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "07-07-2026",
-        "status": 200
-      },
-      "n_leagues": 0
-    },
     {
       "data": "2026-07-08",
       "tentativa_1": {
@@ -1648,6 +1635,19 @@
       },
       "tentativa_2": {
         "formato": "05-09-2026",
+        "status": 200
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-09-06",
+      "tentativa_1": {
+        "formato": "2026-09-06",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-09-06' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "06-09-2026",
         "status": 200
       },
       "n_leagues": 0
