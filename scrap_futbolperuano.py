@@ -349,7 +349,12 @@ def main() -> None:
     for label, url in URLS:
         try:
             partidos = fetch_and_parse(label, url)
-            debug_pages.append({"label": label, "url": url, "jogos": len(partidos)})
+            datas = sorted(p.data for p in partidos if p.data)
+            debug_pages.append({
+                "label": label, "url": url, "jogos": len(partidos),
+                "data_min": datas[0] if datas else None,
+                "data_max": datas[-1] if datas else None,
+            })
             print(f"[OK] {label}: {len(partidos)} jogos encontrados")
             all_partidos.extend(partidos)
         except Exception as e:
