@@ -7,38 +7,48 @@ Página:
     https://www.fferj.com.br/partidas?visao=dia&tab=agendados&pg=1
 
 A página é renderizada no servidor (Next.js/SSR): o HTML já vem com os
-jogos, sem precisar de navegador (Playwright). Cada partida é um link
-<a href="/partidas/{id}">...</a> cujo texto (extraído "achatado", sem
-tags) segue um padrão fixo e um pouco "cru" por causa de imagem+texto
-duplicados no card:
+jogos, sem precisar de navegador (Playwright). Cada card de partida é
+um <a class="game-sumula-card" href="/partidas/{id}"> com estrutura
+fixa e bem definida (confirmado inspecionando o HTML real retornado
+por requests.get(), não por uma ferramenta de renderização):
 
-    "SAB 04/07/2613:00h Greminho Futebol ClubeGreminho Futebol Clube"
-    "XA.E Piscinão de RamosA.E Piscinão de Ramos"
-    " Amador da Capital | Sub-17 | Amador da CapitalFERJ"
-
-Ou seja: DIA_SEMANA DD/MM/AA + HH:MMh (colados) + [ESTÁDIO opcional]
-+ nome do mandante (duplicado, colado) + "X" + nome do visitante
-(duplicado, colado) + " " + Competição | Categoria | Órgão + "FERJ"
-(selo fixo do site) + opcionalmente " VÍDEO".
+    <a class="game-sumula-card ..." href="/partidas/5348">
+      <div class="space-x-2 relative">
+        <span class="game-card--date">SAB 04/07/26</span>
+        <span class="game-card--date">13:00h</span>
+      </div>
+      <span class="text-12 text-gray-700">ESTÁDIO ...</span>  (opcional)
+      <div class="game-sumula-card--matchup">
+        <div class="game-sumula-card--matchup__team">
+          <img alt="Time Mandante" .../><span>Time Mandante</span>
+        </div>
+        <div class="...">X</div>  (placar, se já jogado)
+        <div class="game-sumula-card--matchup__team">
+          <img alt="Time Visitante" .../><span>Time Visitante</span>
+        </div>
+      </div>
+      <div class="text-gray-700 uppercase text-14 my-5">
+        <span>Competição</span>
+        <span> | Categoria</span>
+        <span> | Órgão</span>          (opcional)
+        <span class="bg-primary-dark ...">FERJ</span>  (selo da fonte)
+      </div>
+    </a>
 
 Este script:
 1. Faz requests.get() direto (sem JS) nas páginas paginadas de
    /partidas?tab=agendados&visao=dia&pg=N.
-2. Extrai todos os <a href="/partidas/NUMERO"> e usa o texto "achatado".
-3. Detecta o nome duplicado do mandante/visitante procurando o maior
-   sufixo/prefixo que se repete colado (T+T), o que também separa
-   automaticamente um possível nome de estádio que vier antes.
-4. Encontra o separador "X" testando cada ocorrência e validando se o
-   texto à esquerda termina em nome duplicado (evita falso positivo
-   com times cujo nome contenha a letra X).
-5. Salva no mesmo formato/arquivos usados pelos outros scrapers do
+2. Localiza cada <a class="game-sumula-card"> e extrai os campos pelos
+   seletores/estrutura acima (não por regex em texto achatado, que é
+   frágil pois nomes de time/estádio têm capitalização inconsistente).
+3. Salva no mesmo formato/arquivos usados pelos outros scrapers do
    projeto (data/jogos_programados.json, .csv e historico_jogos.csv).
 
 IMPORTANTE (versão "segura"):
-- Cobre apenas jogos AGENDADOS (tab=agendados). Jogos "ao vivo" (bloco
-  destacado no topo da página, com placar) têm formato diferente e são
-  ignorados de propósito para não gerar dados incorretos.
-- Qualquer card que não bata com o padrão esperado é simplesmente
+- Cobre apenas jogos AGENDADOS (tab=agendados). Cards "AO VIVO" (sem os
+  dois <span class="game-card--date">, com placar no lugar do "X") têm
+  estrutura diferente e são ignorados de propósito.
+- Qualquer card que não bata com a estrutura esperada é simplesmente
   pulado (não derruba o scraper).
 
 Requisitos:
@@ -91,14 +101,10 @@ HEADERS = {
 
 MATCH_HREF_RE = re.compile(r"^/partidas/(\d+)$")
 
-HEADER_RE = re.compile(
-    r"^(?P<dow>[A-ZÀ-ÚÃÕ]{3})\s+"
-    r"(?P<dia>\d{2})/(?P<mes>\d{2})/(?P<ano>\d{2})"
-    r"(?P<hora>\d{2}:\d{2})h\s*"
-    r"(?P<rest>.*)$"
+DATE_SPAN_RE = re.compile(
+    r"^(?P<dow>[A-ZÀ-ÚÃÕ]{3})\s+(?P<dia>\d{2})/(?P<mes>\d{2})/(?P<ano>\d{2})$"
 )
-
-MIN_TEAM_LEN = 3
+TIME_SPAN_RE = re.compile(r"^(?P<hora>\d{2}:\d{2})h$")
 
 
 @dataclass
@@ -142,87 +148,98 @@ def parse_year(y: str) -> int:
     return 2000 + n if n < 100 else n
 
 
-def split_doubled_suffix(s: str, min_len: int = MIN_TEAM_LEN) -> tuple[str, str]:
-    """Encontra o maior T tal que s termina em T+T (colado).
-    Retorna (prefixo_antes_do_T+T, T). Se não achar, devolve ("", s)."""
-    n = len(s)
-    for length in range(n // 2, min_len - 1, -1):
-        if s[n - 2 * length:n - length] == s[n - length:]:
-            return s[:n - 2 * length].strip(), s[n - length:].strip()
-    return "", s.strip()
+def has_class(tag, name: str) -> bool:
+    classes = tag.get("class") or []
+    return name in classes
 
 
-def split_doubled_prefix(s: str, min_len: int = MIN_TEAM_LEN) -> tuple[str, str]:
-    """Encontra o maior T tal que s começa com T+T (colado), seguido de
-    espaço ou fim de string. Retorna (T, resto_apos_T+T)."""
-    n = len(s)
-    for length in range(n // 2, min_len - 1, -1):
-        if s[:length] == s[length:2 * length]:
-            if 2 * length == n or s[2 * length] == " ":
-                return s[:length].strip(), s[2 * length:].lstrip()
-    return s.strip(), ""
+def parse_card(a, debug_errors: list) -> Partido | None:
+    href = a.get("href", "")
+    mh = MATCH_HREF_RE.match(href)
+    if not mh:
+        return None
+    match_id = mh.group(1)
 
-
-def find_split_x(rest: str, min_len: int = MIN_TEAM_LEN):
-    """Procura a letra 'X' que separa mandante/visitante, validando que o
-    texto à esquerda termina em nome duplicado. Retorna
-    (indice, estadio, mandante) ou (None, "", "")."""
-    for i, ch in enumerate(rest):
-        if ch != "X":
-            continue
-        left = rest[:i].rstrip()
-        estadio, mandante = split_doubled_suffix(left, min_len=min_len)
-        if mandante and len(mandante) >= min_len:
-            return i, estadio, mandante
-    return None, "", ""
-
-
-def parse_info(info: str) -> tuple[str, str, str, bool]:
-    """Quebra o bloco final 'Competicao | Categoria | OrgaoFERJ[ VÍDEO]'."""
-    parts = [clean_text(p) for p in info.split("|")]
-    comp = parts[0] if len(parts) > 0 else ""
-    categoria = parts[1] if len(parts) > 1 else ""
-    org = parts[2] if len(parts) > 2 else ""
-
-    video = False
-    if org.endswith("VÍDEO"):
-        video = True
-        org = org[:-len("VÍDEO")].strip()
-    elif org.endswith("VIDEO"):
-        video = True
-        org = org[:-len("VIDEO")].strip()
-
-    if org.endswith("FERJ"):
-        org = org[:-len("FERJ")].strip()
-
-    return comp, categoria, org, video
-
-
-def parse_match_text(text: str, match_id: str) -> Partido | None:
-    text = clean_text(text)
-    m = HEADER_RE.match(text)
-    if not m:
+    # --- data/hora: precisam dos dois <span class="game-card--date">.
+    # Cards "AO VIVO" não têm essa dupla (têm um badge diferente), então
+    # já ficam de fora aqui de propósito (versão segura = só agendados).
+    date_spans = a.find_all("span", class_="game-card--date")
+    if len(date_spans) != 2:
         return None
 
-    rest = m.group("rest")
-    idx, estadio, mandante = find_split_x(rest)
-    if idx is None:
+    dm = DATE_SPAN_RE.match(clean_text(date_spans[0].get_text()))
+    tm = TIME_SPAN_RE.match(clean_text(date_spans[1].get_text()))
+    if not dm or not tm:
+        debug_errors.append({"match_id": match_id, "erro": "data_hora_invalida"})
         return None
-
-    right = rest[idx + 1:]
-    visitante, info = split_doubled_prefix(right)
-    if not visitante or len(visitante) < MIN_TEAM_LEN:
-        return None
-    if mandante == visitante:
-        return None
-
-    comp, categoria, org, video = parse_info(info)
 
     try:
-        ano = parse_year(m.group("ano"))
-        data_iso = date(ano, int(m.group("mes")), int(m.group("dia"))).isoformat()
+        ano = parse_year(dm.group("ano"))
+        data_iso = date(ano, int(dm.group("mes")), int(dm.group("dia"))).isoformat()
     except Exception:
+        debug_errors.append({"match_id": match_id, "erro": "data_invalida"})
         return None
+    hora = tm.group("hora")
+
+    # --- estádio (opcional): <span class="text-12 ...">ESTÁDIO ...</span>
+    estadio = ""
+    for span in a.find_all("span"):
+        if has_class(span, "text-12"):
+            txt = clean_text(span.get_text(" "))
+            if txt.upper().startswith("ESTÁDIO") or txt.upper().startswith("ESTADIO"):
+                estadio = txt
+            break
+
+    # --- mandante/visitante: dois game-sumula-card--matchup__team
+    matchup = a.find("div", class_="game-sumula-card--matchup")
+    if not matchup:
+        debug_errors.append({"match_id": match_id, "erro": "sem_matchup"})
+        return None
+    team_divs = matchup.find_all("div", class_="game-sumula-card--matchup__team")
+    if len(team_divs) != 2:
+        debug_errors.append({"match_id": match_id, "erro": f"n_times={len(team_divs)}"})
+        return None
+
+    def team_name(div):
+        span = div.find("span")
+        if span:
+            return clean_text(span.get_text())
+        img = div.find("img")
+        if img and img.get("alt"):
+            return clean_text(img["alt"])
+        return ""
+
+    mandante = team_name(team_divs[0])
+    visitante = team_name(team_divs[1])
+    if not mandante or not visitante or mandante == visitante:
+        debug_errors.append({"match_id": match_id, "erro": "times_invalidos"})
+        return None
+
+    # --- competição / categoria / órgão / fonte:
+    # <div class="text-gray-700 uppercase ..."><span>Comp</span>
+    #   <span> | Categoria</span><span> | Orgao</span>
+    #   <span class="bg-primary-dark ...">FERJ</span></div>
+    info_div = None
+    for div in a.find_all("div"):
+        if has_class(div, "text-gray-700") and has_class(div, "uppercase"):
+            info_div = div
+            break
+
+    comp, categoria, org, fonte_tag = "", "", "", ""
+    if info_div:
+        spans = info_div.find_all("span", recursive=False)
+        texts = [clean_text(s.get_text(" ")).lstrip("|").strip() for s in spans]
+        if spans and has_class(spans[-1], "bg-primary-dark"):
+            fonte_tag = texts[-1]
+            texts = texts[:-1]
+        if len(texts) > 0:
+            comp = texts[0]
+        if len(texts) > 1:
+            categoria = texts[1]
+        if len(texts) > 2:
+            org = texts[2]
+
+    video = "VÍDEO" in a.get_text() or "VIDEO" in a.get_text()
 
     competicao_nome = comp if comp else "Competição não identificada"
     competicao = f"Brasil - FFERJ - {competicao_nome}"
@@ -232,6 +249,8 @@ def parse_match_text(text: str, match_id: str) -> Partido | None:
     extra_parts = [f"codigo_fferj={match_id}"]
     if org:
         extra_parts.append(f"orgao={org}")
+    if fonte_tag:
+        extra_parts.append(f"fonte_tag={fonte_tag}")
     if categoria:
         extra_parts.append(f"categoria={categoria}")
     if video:
@@ -241,7 +260,7 @@ def parse_match_text(text: str, match_id: str) -> Partido | None:
         fonte="FFERJ",
         competicao=competicao,
         data=data_iso,
-        hora=m.group("hora"),
+        hora=hora,
         mandante=mandante,
         visitante=visitante,
         pais="Brasil",
@@ -260,16 +279,15 @@ def fetch_page(pg: int, tab: str, session: requests.Session, timeout: int) -> st
     return r.text
 
 
-def extract_matches_from_html(html: str) -> list[Partido]:
+def extract_matches_from_html(html: str, debug_errors: list) -> list[Partido]:
     soup = BeautifulSoup(html, "html.parser")
     out = []
     for a in soup.find_all("a", href=True):
-        mh = MATCH_HREF_RE.match(a["href"])
-        if not mh:
+        if not has_class(a, "game-sumula-card"):
             continue
-        match_id = mh.group(1)
-        text = a.get_text(" ", strip=True)
-        p = parse_match_text(text, match_id)
+        if not MATCH_HREF_RE.match(a["href"]):
+            continue
+        p = parse_card(a, debug_errors)
         if p:
             out.append(p)
     return out
@@ -378,6 +396,7 @@ def main() -> None:
 
     all_partidos: list[Partido] = []
     debug_pages = []
+    debug_errors: list = []
     empty_streak = 0
 
     print(f"[INFO] FFERJ (Rio de Janeiro) - tab={args.tab}")
@@ -398,31 +417,13 @@ def main() -> None:
             HTML_DIR.mkdir(exist_ok=True)
             (HTML_DIR / f"fferj_pg_{pg}.html").write_text(html, encoding="utf-8")
 
-        page_partidos = extract_matches_from_html(html)
+        page_partidos = extract_matches_from_html(html, debug_errors)
         n_hrefs = len(re.findall(r'href="(/partidas/\d+)"', html))
-
-        soup_dbg = BeautifulSoup(html, "html.parser")
-        sample_anchors = []
-        outer_html_samples = []
-        for a in soup_dbg.find_all("a", href=True):
-            if MATCH_HREF_RE.match(a["href"]):
-                txt = a.get_text(" ", strip=True)
-                sample_anchors.append({"href": a["href"], "text_space": txt[:400]})
-                if "ESTÁDIO" in txt or "ESTADIO" in txt or len(outer_html_samples) < 2:
-                    outer_html_samples.append(str(a))
-
-        debug_pages.append({
-            "outer_html_samples": outer_html_samples,
-            "pg": pg,
-            "jogos": len(page_partidos),
-            "html_len": len(html),
-            "n_match_hrefs": n_hrefs,
-            "sample_anchors": sample_anchors,
-        })
+        debug_pages.append({"pg": pg, "jogos": len(page_partidos), "n_match_hrefs": n_hrefs})
 
         if not page_partidos:
             empty_streak += 1
-            print(f"[--] pg={pg} | sem jogos")
+            print(f"[--] pg={pg} | sem jogos | hrefs={n_hrefs}")
             if empty_streak >= 2:
                 print("[INFO] Duas páginas vazias seguidas, encerrando paginação.")
                 break
@@ -440,6 +441,7 @@ def main() -> None:
     rows_new = [p.to_row() for p in all_partidos]
 
     (OUT_DIR / "debug_fferj_rio_pages.json").write_text(json.dumps(debug_pages, ensure_ascii=False, indent=2), encoding="utf-8")
+    (OUT_DIR / "debug_fferj_rio_errors.json").write_text(json.dumps(debug_errors, ensure_ascii=False, indent=2), encoding="utf-8")
     (OUT_DIR / "debug_fferj_rio_raw.json").write_text(json.dumps(rows_new, ensure_ascii=False, indent=2), encoding="utf-8")
 
     current_json = OUT_DIR / "jogos_programados.json"
@@ -457,6 +459,7 @@ def main() -> None:
     print(f"FFERJ jogos válidos adicionados/atualizados: {len(rows_new)}")
     print(f"Total JSON atual: {len(merged_current)}")
     print("Debug páginas: data/debug_fferj_rio_pages.json")
+    print("Debug erros: data/debug_fferj_rio_errors.json")
     print("Debug jogos: data/debug_fferj_rio_raw.json")
     if args.debug_html:
         print("HTML renderizado: data/debug_fferj_html/")
