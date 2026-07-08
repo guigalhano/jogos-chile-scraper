@@ -341,6 +341,7 @@ const BANDEIRA_PAIS = {
   "Paraguay": "🇵🇾",
   "Peru": "🇵🇪",
   "Colombia": "🇨🇴",
+  "Bolivia": "🇧🇴",
   "Conmebol": "🏆",
 };
 
@@ -390,6 +391,7 @@ function findStadiumInfo(estadioTexto, pais) {
     : pais === "Paraguay" ? (window.ESTADIOS_PARAGUAY || [])
     : pais === "Peru" ? (window.ESTADIOS_PERU || [])
     : pais === "Colombia" ? (window.ESTADIOS_COLOMBIA || [])
+    : pais === "Bolivia" ? (window.ESTADIOS_BOLIVIA || [])
     : pais === "Conmebol" ? (window.ESTADIOS_CONMEBOL || [])
     : (window.ESTADIOS_CHILE || []);
 

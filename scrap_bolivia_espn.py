@@ -47,12 +47,13 @@ BASE_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 # league slug -> nome amigável da competicao
 LIGAS = [
     ("bol.1", "Liga Profesional Boliviana"),
-    ("bol.2", "Copa Simon Bolivar"),
     ("bol.copa", "Copa Bolivia"),
 ]
-# Nota: "bol.2" e "bol.copa" são chutes de convenção de nomenclatura da
-# ESPN (nunca confirmados) - o diagnóstico vai mostrar se existem de
-# verdade ou se retornam vazio/erro.
+# Nota: "bol.copa" não retornou erro mas também não trouxe jogos no
+# período testado - provável que a Copa Bolivia não esteja em andamento
+# agora; mantido no scraper pois volta a funcionar sozinho quando a
+# competição começar. "bol.2" (Copa Simon Bolivar, segunda divisão) foi
+# removido: deu erro em todos os dias testados (slug incorreto).
 
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
