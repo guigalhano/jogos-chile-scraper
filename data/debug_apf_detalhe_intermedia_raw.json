@@ -1,0 +1,2456 @@
+{
+  "props": {
+    "pageProps": {
+      "statusCode": 404,
+      "settings": {
+        "general": {
+          "date": {
+            "dateFormat": "daymonth",
+            "dayWeekStarts": "monday",
+            "timeFormat": "24",
+            "timeZone": "America/Asuncion"
+          },
+          "schemaMarkup": {
+            "org": {
+              "contactPoint": {
+                "active": true,
+                "areaServed": [
+                  "PY"
+                ],
+                "availableLanguage": [
+                  "es"
+                ],
+                "contactType": "datos de contacto",
+                "email": "comunicacion@apf.org.py",
+                "telephone": "0217599000"
+              },
+              "name": "APF",
+              "type": "SportsTeam"
+            }
+          },
+          "scripts": {
+            "afterBody": "<style>\n\n/* Container */\n.MkFooter .MkFooterCopyright__root .MkContainer{\n display:none;\n}\n\n\n}\n\n.MkHeader .MkHeader__brand > div {\n    /*transform: translateY(6px) scale(1.7);*/\n}\n\n.MkNewsCard .MkNewsCard__category,\n.MkGalleryCard .MkGalleryCard__category,\n.MkVideoCard .MkVideoCard__category {\n    /*\n    background-color: var(--c-secondary);\n    color: white;\n    padding: 0.45em 0.75em;\n    */\n}\n\n.MkNewsCard .MkNewsCard__category {\n    align-self: start;\n}\n\n.MkGalleryCard .MkGalleryCard__title,\n.MkVideoCard .MkVideoCard__title {\n    margin-bottom: 1em;\n}\n\n.MkGalleryCard .MkGalleryCard__category,\n.MkGalleryCard .MkGalleryCard__category {\n    margin-right: 1em;\n}\n\n.MkGalleryCard .MkGalleryCard__info,\n.MkVideoCard .MkVideoCard__date {\n    align-self: center;\n}\n\n\n/* dani */\n@media (min-width: 900px) and (min-height: 600px) {\n  .MkHeaderMainNavigation__navigationList {\n    justify-content: end;\n  }\n}\n\n\n.MkFootballSquadCard.MkFootballSquadCard--centered.MkFootballSquadCard--style-default {\n    --info-bg: var(--color-primary-60);\n    --text-medium: var(--color-accent-60);\n    --text-strong: var(--color-text-10);\n    --text-accent: var(--color-primary-60);\n    --player-bg: var(--color-primary-10);\n}\n\n.MkFootballSquadCard.MkFootballSquadCard--centered.MkFootballSquadCard--style-default .MkFootballUnknownPlayer {\n    color: var(--color-primary-30);\n}\n\n/* Nestor */\n.MkSectionHeader .MkSectionHeader__button.MkButton--primary,\n.MkSectionHeader .MkSectionHeader__button.MkButton--secondary {\n  --border-radius: 5em;\n}\n\n.MkSectionHeader .MkSectionHeader__button.MkButton--neutral {\n  --bg: transparent;\n  --color: var(--color-primary-60);\n}\n\n.MkSectionHeader .MkSectionHeader__button.MkButton--neutral::after {\n    content: \"❯\";\n    font-size: 0.8em;\n}\n\n.MkSectionHeader .MkSectionHeader__button.MkButton--neutral:hover {\n  --bg: transparent;\n  --color: var(--color-primary-70);\n}\n\n.MkNewsCard.MkNewsCard--news-card-a .MkNewsCard__category {\n  background-color: var(--color-primary-60);\n  border-radius: 3em;\n  padding: 0.5em 1.5em;\n}\n\n.MkNewsCard.MkNewsCard--news-card-b .MkNewsCard__category,\n.MkNewsCard.MkNewsCard--news-card-c .MkNewsCard__category,\n.MkNewsCard.MkNewsCard--news-card-d .MkNewsCard__category,\n.MkNewsCard.MkNewsCard--news-card-e .MkNewsCard__category {\n  color: var(--color-primary-60);\n}\n\n.MkHeader .MkHeaderBrand > div {\n  width: 128px;\n}\n\n.MkHeader .MkHeaderBrand .MkLink > div {\n  padding-top: 40%;\n}\n\n/* Container */\n.MkFooter .MkFooterCopyright__root .MkContainer{\n background-color:#001670;\n color:#ffffff;\n}\n\n/* Span Tag */\n.MkFooterCopyright__root .MkFooterCopyright__wrapperInfo span{\n color:#ffffff;\n}\n\n.MkFootballModuleContentMatchStatsGoalAttempts__onTargetHome, .MkFootballModuleContentMatchStatsGoalAttempts__onTargetAway {\n    background-color: #BDC9D1 !important;\n}\n\n</style>\n\n<style>\n    /* Footer adicional con el logo de ITTI */\n    #additional-footer {\n        background-color: #01166F;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        height: 250px; /* Incrementado para dar más espacio a la imagen */\n        width: 100%;\n    }\n\n    #additional-footer img {\n        max-height: 250px; /* Aumenta la altura máxima de la imagen */\n        width: auto; /* Mantiene la proporción original */\n    }\n</style>\n\n\n\n<style>\n\n/* Container */\n.MkFooter .MkFooterCopyright__root .MkContainer{\n display:none;\n}\n\n\n}\n\n.MkHeader .MkHeader__brand > div {\n    /*transform: translateY(6px) scale(1.7);*/\n}\n\n.MkNewsCard .MkNewsCard__category,\n.MkGalleryCard .MkGalleryCard__category,\n.MkVideoCard .MkVideoCard__category {\n    /*\n    background-color: var(--c-secondary);\n    color: white;\n    padding: 0.45em 0.75em;\n    */\n}\n\n.MkNewsCard .MkNewsCard__category {\n    align-self: start;\n}\n\n.MkGalleryCard .MkGalleryCard__title,\n.MkVideoCard .MkVideoCard__title {\n    margin-bottom: 1em;\n}\n\n.MkGalleryCard .MkGalleryCard__category,\n.MkGalleryCard .MkGalleryCard__category {\n    margin-right: 1em;\n}\n\n.MkGalleryCard .MkGalleryCard__info,\n.MkVideoCard .MkVideoCard__date {\n    align-self: center;\n}\n\n\n/* dani */\n@media (min-width: 900px) and (min-height: 600px) {\n  .MkHeaderMainNavigation__navigationList {\n    justify-content: end;\n  }\n}\n\n\n.MkFootballSquadCard.MkFootballSquadCard--centered.MkFootballSquadCard--style-default {\n    --info-bg: var(--color-primary-60);\n    --text-medium: var(--color-accent-60);\n    --text-strong: var(--color-text-10);\n    --text-accent: var(--color-primary-60);\n    --player-bg: var(--color-primary-10);\n}\n\n.MkFootballSquadCard.MkFootballSquadCard--centered.MkFootballSquadCard--style-default .MkFootballUnknownPlayer {\n    color: var(--color-primary-30);\n}\n\n/* Nestor */\n.MkSectionHeader .MkSectionHeader__button.MkButton--primary,\n.MkSectionHeader .MkSectionHeader__button.MkButton--secondary {\n  --border-radius: 5em;\n}\n\n.MkSectionHeader .MkSectionHeader__button.MkButton--neutral {\n  --bg: transparent;\n  --color: var(--color-primary-60);\n}\n\n.MkSectionHeader .MkSectionHeader__button.MkButton--neutral::after {\n    content: \"❯\";\n    font-size: 0.8em;\n}\n\n.MkSectionHeader .MkSectionHeader__button.MkButton--neutral:hover {\n  --bg: transparent;\n  --color: var(--color-primary-70);\n}\n\n.MkNewsCard.MkNewsCard--news-card-a .MkNewsCard__category {\n  background-color: var(--color-primary-60);\n  border-radius: 3em;\n  padding: 0.5em 1.5em;\n}\n\n.MkNewsCard.MkNewsCard--news-card-b .MkNewsCard__category,\n.MkNewsCard.MkNewsCard--news-card-c .MkNewsCard__category,\n.MkNewsCard.MkNewsCard--news-card-d .MkNewsCard__category,\n.MkNewsCard.MkNewsCard--news-card-e .MkNewsCard__category {\n  color: var(--color-primary-60);\n}\n\n.MkHeader .MkHeaderBrand > div {\n  width: 128px;\n}\n\n.MkHeader .MkHeaderBrand .MkLink > div {\n  padding-top: 40%;\n}\n\n/* Container */\n.MkFooter .MkFooterCopyright__root .MkContainer{\n background-color:#001670;\n color:#ffffff;\n}\n\n/* Span Tag */\n.MkFooterCopyright__root .MkFooterCopyright__wrapperInfo span{\n color:#ffffff;\n}\n\n.MkFootballModuleContentMatchStatsGoalAttempts__onTargetHome, .MkFootballModuleContentMatchStatsGoalAttempts__onTargetAway {\n    background-color: #BDC9D1 !important;\n}\n\n</style>\n\n\n\n\n\n\n\n<style>\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n\n        /* SECCION PRINCIPAL DEL FOOTER ADICIONAL */\n        .footer-adicional {\n            background-color: #01166F;\n            padding: 40px 20px;\n            width: 100%;\n            overflow-x: hidden;\n        }\n\n        /* CONTENEDOR DE LA GRILLA DE LOGOS */\n        .footer-logos-container {\n            max-width: 1200px;\n            margin: 0 auto;\n        }\n\n        /* GRILLA DE TRES COLUMNAS PARA LOS LOGOS PRINCIPALES */\n        .footer-logos-grid {\n            display: grid;\n            grid-template-columns: repeat(3, 1fr);\n            gap: 40px;\n            margin-bottom: 40px;\n            align-items: center;\n        }\n\n        /* BLOQUE INDIVIDUAL DE CADA LOGO */\n        .footer-logo-block {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n        }\n\n        /* ENLACE DE CADA LOGO */\n        .footer-logo-link {\n            display: inline-block;\n            transition: opacity 0.3s ease;\n        }\n\n        .footer-logo-link:hover {\n            opacity: 0.8;\n        }\n\n        /* IMAGEN DE CADA LOGO EN LA GRILLA */\n        .footer-logo-block .footer-logo-image {\n            max-height: 80px;\n            width: auto;\n            height: auto;\n            display: block;\n        }\n\n        /* IMAGENES DE BLOQUE 1 Y BLOQUE 2 AL 70% */\n        .footer-logo-block-1 .footer-logo-image,\n        .footer-logo-block-2 .footer-logo-image {\n            max-height: 56px;\n        }\n\n        /* BLOQUE ESPECIAL PARA LOGO SIN ENLACE */\n        .footer-logo-no-link {\n            display: inline-block;\n        }\n\n        /* SEPARADOR VISUAL ENTRE SECCIONES */\n        .footer-separator {\n            width: 100%;\n            height: 1px;\n            background-color: rgba(255, 255, 255, 0.2);\n            margin: 30px 0;\n        }\n\n        /* SECCION DEL LOGO CENTRADO INFERIOR */\n        .footer-logo-centered {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            padding: 20px 0;\n        }\n\n        /* IMAGEN DEL LOGO CENTRADO */\n        .footer-logo-centered .footer-logo-image {\n            max-width: 900px;\n            height: auto;\n            display: block;\n            margin: 0 auto;\n        }\n\n        /* DISEÑO RESPONSIVE PARA TABLETS */\n        @media screen and (max-width: 768px) {\n            /* GRILLA DE DOS COLUMNAS EN TABLETS */\n            .footer-logos-grid {\n                grid-template-columns: repeat(2, 1fr);\n                gap: 30px;\n            }\n\n            .footer-logo-centered .footer-logo-image {\n                max-width: 90%;\n            }\n        }\n\n        /* DISEÑO RESPONSIVE PARA MOBILE */\n        @media screen and (max-width: 480px) {\n            .footer-adicional {\n                padding: 30px 15px;\n            }\n\n            /* GRILLA DE UNA COLUMNA EN MOBILE - LOGOS UNO DEBAJO DEL OTRO */\n            .footer-logos-grid {\n                grid-template-columns: 1fr;\n                gap: 25px;\n                margin-bottom: 30px;\n            }\n\n            .footer-logo-centered .footer-logo-image {\n                max-width: 100%;\n            }\n\n            /* LOGOS DE LA GRILLA EN MOBILE */\n            .footer-logo-block .footer-logo-image {\n                max-height: 60px;\n            }\n\n            /* LOGOS DE BLOQUE 1 Y 2 EN MOBILE AL 70% */\n            .footer-logo-block-1 .footer-logo-image,\n            .footer-logo-block-2 .footer-logo-image {\n                max-height: 42px;\n            }\n        }\n    </style>\n\n    <!-- SECCION COMPLETA DEL FOOTER ADICIONAL -->\n    <footer class=\"footer-adicional\">\n        \n        <!-- CONTENEDOR PRINCIPAL DE TODOS LOS LOGOS -->\n        <div class=\"footer-logos-container\">\n            \n            <!-- GRILLA DE TRES LOGOS PRINCIPALES -->\n            <div class=\"footer-logos-grid\">\n                \n                <!-- BLOQUE 1: LOGO FIFA INTEGRIDAD Y TRANSPARENCIA (PRIMER LOGO) -->\n                <div class=\"footer-logo-block footer-logo-block-1\">\n                    <a href=\"https://www.apf.org.py/fifa-105\" \n                       class=\"footer-logo-link\" \n                       target=\"_blank\" \n                       rel=\"noopener noreferrer\"\n                       aria-label=\"FIFA Integridad y Transparencia\">\n                        <img src=\"https://statics-maker.llt-services.com/apf/images/2025/09/10/original/dbef6776-020e-4020-8015-4018b9faa699-780.png\" \n                             alt=\"FIFA Integridad y Transparencia\" \n                             class=\"footer-logo-image\">\n                    </a>\n                </div>\n\n                <!-- BLOQUE 2: LOGO FIFA INTEGRIDAD Y TRANSPARENCIA (SEGUNDO LOGO - FORMULARIO DENUNCIA) -->\n                <div class=\"footer-logo-block footer-logo-block-2\">\n                    <a href=\"https://apf.org.py/formulario-denuncia-110\" \n                       class=\"footer-logo-link\" \n                       target=\"_blank\" \n                       rel=\"noopener noreferrer\"\n                       aria-label=\"Formulario de Denuncia FIFA\">\n                        <img src=\"https://statics-maker.llt-services.com/apf/images/2025/09/10/original/247b422a-739a-4573-81f5-e997e402754b-699.png\" \n                             alt=\"Formulario de Denuncia\" \n                             class=\"footer-logo-image\">\n                    </a>\n                </div>\n\n                <!-- BLOQUE 3: LOGO OPTA (SIN ENLACE) -->\n                <div class=\"footer-logo-block\">\n                    <div class=\"footer-logo-no-link\">\n                        <img src=\"https://statics-maker.llt-services.com/apf/images/2025/11/03/original/c4de3711-4d2a-4c66-a45c-088ba7f91b40-499.png\" \n                             alt=\"Opta\" \n                             class=\"footer-logo-image\">\n                    </div>\n                </div>\n\n                <!-- PARA AGREGAR MAS LOGOS A LA GRILLA, COPIA Y PEGA ESTE BLOQUE:\n                \n                <div class=\"footer-logo-block\">\n                    <a href=\"TU_URL_AQUI\" \n                       class=\"footer-logo-link\" \n                       target=\"_blank\" \n                       rel=\"noopener noreferrer\"\n                       aria-label=\"Descripcion del logo\">\n                        <img src=\"URL_DE_TU_IMAGEN\" \n                             alt=\"Nombre del logo\" \n                             class=\"footer-logo-image\">\n                    </a>\n                </div>\n\n                NOTA: Si el logo NO tiene enlace, usa este formato:\n                \n                <div class=\"footer-logo-block\">\n                    <div class=\"footer-logo-no-link\">\n                        <img src=\"URL_DE_TU_IMAGEN\" \n                             alt=\"Nombre del logo\" \n                             class=\"footer-logo-image\">\n                    </div>\n                </div>\n                \n                -->\n\n            </div>\n            <!-- FIN DE LA GRILLA DE LOGOS PRINCIPALES -->\n\n            <!-- SEPARADOR VISUAL OPCIONAL -->\n            <div class=\"footer-separator\"></div>\n\n            <!-- SECCION DEL LOGO CENTRADO EN LA PARTE INFERIOR -->\n            <div class=\"footer-logo-centered\">\n                <img src=\"https://statics-maker.llt-services.com/apf/images/2025/07/21/original/38e8c8ba-810c-45c3-90fa-afcef44f774b-365.png\" \n                     alt=\"Logo central\" \n                     class=\"footer-logo-image\">\n            </div>\n            <!-- FIN DE LA SECCION DEL LOGO CENTRADO -->\n\n        </div>\n        <!-- FIN DEL CONTENEDOR PRINCIPAL -->\n\n    </footer>\n    <!-- FIN DEL FOOTER ADICIONAL -->",
+            "beforeBody": null,
+            "head": null
+          },
+          "tagline": "APF",
+          "url": "https://www.apf.org.py/",
+          "websiteTitle": "APF | Web Oficial"
+        },
+        "menu_design": {
+          "globalMenu": {
+            "accessibleTextMode": "auto",
+            "active": false,
+            "background": "color",
+            "colorScheme": "brand",
+            "colors": {
+              "background": "#c92228",
+              "icons": "#ffffff",
+              "text": "#ffffff"
+            },
+            "hasRRSS": true,
+            "hasSecondaryMenu": false,
+            "imageBackground": {
+              "id": "a098012b-2f0e-4441-947d-06a068450a26",
+              "alt": null,
+              "url": "https://statics-maker.llt-services.com/apf/images/2024/06/20/original/265c21df-d796-4155-803d-1e13c6464fc0-406.jpg",
+              "height": 300,
+              "width": 3584,
+              "identifierProcessed": "265c21df-d796-4155-803d-1e13c6464fc0-406",
+              "thumbnails": {
+                "xsmall": "https://statics-maker.llt-services.com/apf/images/2024/06/20/xsmall/265c21df-d796-4155-803d-1e13c6464fc0-406.jpg",
+                "xlarge": "https://statics-maker.llt-services.com/apf/images/2024/06/20/xlarge/265c21df-d796-4155-803d-1e13c6464fc0-406.jpg"
+              }
+            },
+            "scrollBehaviour": "sticky",
+            "variant": "a"
+          },
+          "mainMenu": {
+            "accessibleTextMode": "auto",
+            "background": "color",
+            "colorScheme": "custom",
+            "colors": {
+              "background": "#1c5a9c",
+              "icons": "#ffffff",
+              "text": "#ffffff"
+            },
+            "hasLanguages": false,
+            "hasLogin": false,
+            "hasSearch": true,
+            "imageBackground": {
+              "id": "a098012b-2f0e-4441-947d-06a068450a26",
+              "alt": null,
+              "url": "https://statics-maker.llt-services.com/apf/images/2024/06/20/original/265c21df-d796-4155-803d-1e13c6464fc0-406.jpg",
+              "height": 300,
+              "width": 3584,
+              "identifierProcessed": "265c21df-d796-4155-803d-1e13c6464fc0-406",
+              "thumbnails": {
+                "xsmall": "https://statics-maker.llt-services.com/apf/images/2024/06/20/xsmall/265c21df-d796-4155-803d-1e13c6464fc0-406.jpg",
+                "xlarge": "https://statics-maker.llt-services.com/apf/images/2024/06/20/xlarge/265c21df-d796-4155-803d-1e13c6464fc0-406.jpg"
+              }
+            },
+            "languages": {
+              "flags": true,
+              "responsivePosition": "sidebar"
+            },
+            "logoType": "monochrome",
+            "scrollBehaviour": "sticky",
+            "unclickableLogo": false,
+            "variant": "a"
+          },
+          "sponsors": {
+            "accessibleTextMode": "auto",
+            "active": false,
+            "background": "color",
+            "collection": [
+              "6c39c2c5-f1ed-4130-b5b6-3e7ac9665bf5",
+              "9b101d93-8bb2-4f05-87e5-66e0a4d217c7",
+              "7dc6ff60-f0bb-41d4-92be-57dd65be4a41",
+              "6b597c02-32f6-469a-a2ef-ff2192d2e59c",
+              "464e2792-57cc-4f5f-a1f9-a3634580238a",
+              "845e1566-6fc7-4641-b248-35bb5fb7d825",
+              "0d95427d-a376-4e3d-b3be-f1979fcaa0cb",
+              "ef9363b2-2294-420d-92be-0dc8392f2673",
+              "8eb68b3c-7d18-490d-b7e8-f61e7a043961",
+              "f07799e7-4aff-4d0f-8c30-b5aee3a44c90",
+              "17d8af4b-35cb-4644-9a18-5c04b91ac4f2",
+              "6db8a00d-812d-4ec8-a126-a440393c8719",
+              "750c415e-0121-459e-9ff7-3591be603dad",
+              "2d55d01f-0ae2-4b05-8212-9c6dfaf1afb7",
+              "9f03c7da-e41a-4ad6-b717-b4965ecc087a",
+              "78da6b78-c6d8-4534-ac4a-889ded0a5600",
+              "64119a48-9c54-4c98-b6b9-9eb1344ae846",
+              "ce4cf598-e6e7-43ac-914f-4d21ec3d6eb2",
+              "9ff0d0e7-7c39-42ac-a386-95501bd7bab4",
+              "2155bb01-e4bd-4eaa-b44f-d2c36e93d25d",
+              "ea639e4f-193d-4e3d-8701-3b2b9881befa",
+              "4d0412e1-58f5-4fd9-b6aa-03c680c1b198",
+              "0f6544c8-505b-487d-9125-3123fbc81d2a",
+              "4d25f5a9-6734-4d4e-a251-f89a521ccc39",
+              "abafb045-ffb1-4df1-9c87-48597304ed85",
+              "dcc0bc6b-0e30-453e-aa83-93543ee4f43f"
+            ],
+            "colorScheme": "brand",
+            "colors": {
+              "background": null
+            },
+            "format": "white",
+            "imageBackground": null,
+            "scrollBehaviour": "sticky"
+          }
+        },
+        "footer_sponsors": {
+          "background": "color",
+          "collection": [
+            {
+              "category": "b36beb18-6f74-486e-a6f9-ddac109fe102",
+              "sponsors": [
+                "6c39c2c5-f1ed-4130-b5b6-3e7ac9665bf5",
+                "9b101d93-8bb2-4f05-87e5-66e0a4d217c7",
+                "7dc6ff60-f0bb-41d4-92be-57dd65be4a41"
+              ]
+            },
+            {
+              "category": "4e9c3861-50ac-405a-8a51-0cd68356618b",
+              "sponsors": [
+                "6b597c02-32f6-469a-a2ef-ff2192d2e59c",
+                "464e2792-57cc-4f5f-a1f9-a3634580238a",
+                "845e1566-6fc7-4641-b248-35bb5fb7d825",
+                "0d95427d-a376-4e3d-b3be-f1979fcaa0cb",
+                "ef9363b2-2294-420d-92be-0dc8392f2673",
+                "8eb68b3c-7d18-490d-b7e8-f61e7a043961",
+                "dc917061-6cfb-4cfc-8e57-c913b1a7ce8c",
+                "3d9800b7-ac6a-4415-9f9e-5e4abe97b0e6",
+                "f07799e7-4aff-4d0f-8c30-b5aee3a44c90",
+                "17d8af4b-35cb-4644-9a18-5c04b91ac4f2",
+                "6db8a00d-812d-4ec8-a126-a440393c8719",
+                "750c415e-0121-459e-9ff7-3591be603dad",
+                "2d55d01f-0ae2-4b05-8212-9c6dfaf1afb7",
+                "9f03c7da-e41a-4ad6-b717-b4965ecc087a",
+                "78da6b78-c6d8-4534-ac4a-889ded0a5600",
+                "64119a48-9c54-4c98-b6b9-9eb1344ae846"
+              ]
+            },
+            {
+              "category": "9d6ba109-92f5-48ff-aa1b-9d616cddbb0a",
+              "sponsors": [
+                "ce4cf598-e6e7-43ac-914f-4d21ec3d6eb2",
+                "9ff0d0e7-7c39-42ac-a386-95501bd7bab4",
+                "2155bb01-e4bd-4eaa-b44f-d2c36e93d25d",
+                "ea639e4f-193d-4e3d-8701-3b2b9881befa",
+                "4d0412e1-58f5-4fd9-b6aa-03c680c1b198",
+                "0f6544c8-505b-487d-9125-3123fbc81d2a",
+                "4d25f5a9-6734-4d4e-a251-f89a521ccc39",
+                "abafb045-ffb1-4df1-9c87-48597304ed85",
+                "dcc0bc6b-0e30-453e-aa83-93543ee4f43f"
+              ]
+            }
+          ],
+          "colorBackground": "#003695",
+          "effect": "default",
+          "format": "white",
+          "imageBackground": null,
+          "showCategories": false,
+          "showDividers": false
+        },
+        "design": {
+          "accessibilityHeroFootball": null,
+          "fontFamily": "Poppins",
+          "imageFavicon": {
+            "id": "dde5d07d-5960-4e7f-89ec-016121eb2e5b",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2024/05/24/optimized/21e68061-2042-44dc-8381-44cba3d4c309-232.png",
+            "height": 300,
+            "width": 300,
+            "identifierProcessed": "21e68061-2042-44dc-8381-44cba3d4c309-232",
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2024/05/24/xsmall/21e68061-2042-44dc-8381-44cba3d4c309-232.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2024/05/24/xlarge/21e68061-2042-44dc-8381-44cba3d4c309-232.png"
+            }
+          },
+          "imageHeroFootball": {
+            "id": "77bffd85-c581-4294-be0c-09e006764496",
+            "alt": null,
+            "url": "https://statics-maker.llt-services.com/apf/images/2024/10/31/original/e3bc5772-b68b-40a8-9207-1c3e4053bb42-862.png",
+            "height": 1124,
+            "width": 2160,
+            "identifierProcessed": "e3bc5772-b68b-40a8-9207-1c3e4053bb42-862",
+            "thumbnails": {
+              "xsmall": "https://statics-maker.llt-services.com/apf/images/2024/10/31/xsmall/e3bc5772-b68b-40a8-9207-1c3e4053bb42-862.png",
+              "xlarge": "https://statics-maker.llt-services.com/apf/images/2024/10/31/xlarge/e3bc5772-b68b-40a8-9207-1c3e4053bb42-862.png"
+            }
+          },
+          "imageWebclip": null,
+          "overlayHeroFootball": true
+        },
+        "reactions": {
+          "content": [
+            "all"
+          ],
+          "exclusive": {
+            "message": {
+              "subtitle": null,
+              "title": null
+            },
+            "status": false
+          },
+          "status": false
+        },
+        "profile_screen": {
+          "followed": {
+            "emptyStatePlayersMessage": "Sigue a tus jugadores para no perderte nada",
+            "emptyStateTeamsMessage": "Sigue a tus equipos para no perderte nada"
+          },
+          "login": {
+            "message": "Crea tu cuenta, destaca a tu equipo como se merece... y no te pierdas nada!",
+            "title": "🚀 Vive la experiencia completa"
+          }
+        },
+        "footer_design": {
+          "extra": {
+            "copyright": {
+              "active": true,
+              "logoType": "monochrome",
+              "pageLinks": null,
+              "title": "PÁGINA OFICIAL © APF 2025"
+            },
+            "downloadApps": {
+              "active": true
+            },
+            "langSelector": {
+              "active": false,
+              "naming": {
+                "showFlag": false,
+                "type": "full"
+              },
+              "placement": "left",
+              "selector": "inline"
+            },
+            "rrss": {
+              "active": false
+            }
+          }
+        },
+        "favourites": {
+          "allAutomaticOwnTeamsEnabled": false,
+          "eligibleTeams": [],
+          "playerSelectionEnabled": false,
+          "sport": "football",
+          "teamSelectionEnabled": false
+        },
+        "units": {
+          "currency": "PYG",
+          "measurementSystem": "metric"
+        },
+        "information": {
+          "name": "Asociación Paraguaya de Fútbol",
+          "shortName": "APF"
+        },
+        "store_app_link": {
+          "appleStoreUrl": "https://apps.apple.com/py/app/apf-app-oficial/id6499281079",
+          "playStoreUrl": "https://play.google.com/store/apps/details?id=py.com.itti.apf&pcampaignid=web_share&pli=1"
+        },
+        "forms": {
+          "maxFileSizeMB": 5
+        },
+        "interests": {
+          "active": true
+        }
+      },
+      "branding": {
+        "id": "0f8d3bd6-899a-4dd0-bc84-1529fb605d9b",
+        "name": "default",
+        "logo": {
+          "id": "4d113cb6-9d71-4661-9dff-395c4d4c2ecd",
+          "alt": null,
+          "url": "https://statics-maker.llt-services.com/apf/images/2024/05/24/optimized/1781d0ff-9db7-46f6-b767-e2743abd172a-148.png",
+          "height": 300,
+          "width": 300,
+          "identifierProcessed": "1781d0ff-9db7-46f6-b767-e2743abd172a-148",
+          "thumbnails": {
+            "xsmall": "https://statics-maker.llt-services.com/apf/images/2024/05/24/xsmall/1781d0ff-9db7-46f6-b767-e2743abd172a-148.png",
+            "xlarge": "https://statics-maker.llt-services.com/apf/images/2024/05/24/xlarge/1781d0ff-9db7-46f6-b767-e2743abd172a-148.png"
+          }
+        },
+        "logoBlack": {
+          "id": "5bbe25af-7541-40e0-a05d-eb2ef82c7810",
+          "alt": null,
+          "url": "https://statics-maker.llt-services.com/apf/images/2024/10/11/original/5f4d566a-f873-4355-a359-5be26d475f92-658.png",
+          "height": 262,
+          "width": 903,
+          "identifierProcessed": null,
+          "thumbnails": {
+            "xsmall": "https://statics-maker.llt-services.com/apf/images/2024/10/11/original/5f4d566a-f873-4355-a359-5be26d475f92-658.png",
+            "xlarge": "https://statics-maker.llt-services.com/apf/images/2024/10/11/original/5f4d566a-f873-4355-a359-5be26d475f92-658.png"
+          }
+        },
+        "logoWhite": {
+          "id": "5bbe25af-7541-40e0-a05d-eb2ef82c7810",
+          "alt": null,
+          "url": "https://statics-maker.llt-services.com/apf/images/2024/10/11/original/5f4d566a-f873-4355-a359-5be26d475f92-658.png",
+          "height": 262,
+          "width": 903,
+          "identifierProcessed": null,
+          "thumbnails": {
+            "xsmall": "https://statics-maker.llt-services.com/apf/images/2024/10/11/original/5f4d566a-f873-4355-a359-5be26d475f92-658.png",
+            "xlarge": "https://statics-maker.llt-services.com/apf/images/2024/10/11/original/5f4d566a-f873-4355-a359-5be26d475f92-658.png"
+          }
+        },
+        "default": true,
+        "palette": {
+          "brand": {
+            "10": "#E6EEF8",
+            "20": "#B8D1EA",
+            "30": "#8EB3DA",
+            "40": "#6695C8",
+            "50": "#4078B3",
+            "60": "#1C5A9C",
+            "70": "#104781",
+            "80": "#073363",
+            "90": "#012041",
+            "100": "#000D1C"
+          },
+          "accent": {
+            "10": "#F2F7FD",
+            "20": "#DBEAF9",
+            "30": "#C6DCF3",
+            "40": "#B2CEEC",
+            "50": "#9FC1E4",
+            "60": "#8eb3da",
+            "70": "#6C8DAF",
+            "80": "#4C6783",
+            "90": "#2E4154",
+            "100": "#121B24"
+          },
+          "secondary": {
+            "10": "#FCE6E7",
+            "20": "#F5B8BF",
+            "30": "#EB8E98",
+            "40": "#DE6774",
+            "50": "#CE4352",
+            "60": "#bc2132",
+            "70": "#9C1221",
+            "80": "#770814",
+            "90": "#4F010A",
+            "100": "#220003"
+          },
+          "neutralApp": {
+            "10": "#ffffff",
+            "20": "#F7F9F9",
+            "30": "#E8EBEE",
+            "40": "#D9DFE3",
+            "50": "#BBC5CC",
+            "60": "#9DACB6",
+            "70": "#728796",
+            "80": "#51606C",
+            "90": "#303A41",
+            "100": "#101316"
+          },
+          "neutralWeb": {
+            "10": "#ffffff",
+            "20": "#F7F9F9",
+            "30": "#E8EBEE",
+            "40": "#D9DFE3",
+            "50": "#BBC5CC",
+            "60": "#9DACB6",
+            "70": "#728796",
+            "80": "#51606C",
+            "90": "#303A41",
+            "100": "#101316"
+          }
+        },
+        "colorStyleApp": "light",
+        "colorStyleWeb": "light"
+      }
+    },
+    "mainMenu": [
+      {
+        "id": "dcd37411-0677-4083-949e-e041abf938bd",
+        "name": "NOTICIAS",
+        "icon": "",
+        "element": {
+          "id": "fdabc632-ea07-4f00-b077-b394ab334bff",
+          "type": "text"
+        },
+        "children": [
+          {
+            "id": "9d9ca6f6-c753-403a-a8a5-a4f473ec34da",
+            "name": "ACTIVIDADES INSTITUCIONALES",
+            "icon": "",
+            "element": {
+              "id": "c16c4f8c-3fcd-45b5-a27c-27b171966681",
+              "type": "page",
+              "page": {
+                "id": "791c2c89-10f1-4813-926a-d835cdf3ee9f",
+                "name": "Actividades Institucionales",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "actividades-institucionales"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "21b32ae6-d659-44bb-b028-97201b04ad22",
+            "name": "ANIVERSARIOS",
+            "icon": "",
+            "element": {
+              "id": "a72be7d7-b963-4528-820c-521852250204",
+              "type": "page",
+              "page": {
+                "id": "5549b5d6-8bfc-49ff-bcd6-f01e5a27c6fd",
+                "name": "Aniversarios",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "aniversarios"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "74eff6ed-36aa-433b-9c7d-530418b39997",
+            "name": "ÁRBITROS",
+            "icon": "",
+            "element": {
+              "id": "578ebf1a-b1b1-4b32-b716-7f1e8fc2ac26",
+              "type": "page",
+              "page": {
+                "id": "1ab6dcc3-36f3-4318-a3ad-3220b0eaef9b",
+                "name": "Árbitros",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "arbitros"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "f44a5644-fda8-4c7f-a079-f081327fc20f",
+            "name": "ASAMBLEA",
+            "icon": "",
+            "element": {
+              "id": "ae99b34e-701b-4001-a7b6-5846848bd8c8",
+              "type": "page",
+              "page": {
+                "id": "151e19c8-2d1a-4869-8b27-a977db2e077b",
+                "name": "Asamblea",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "asambleas"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "c206b36c-e5a4-47d7-a0c6-8df89e268854",
+            "name": "COMISIÓN MEDICA",
+            "icon": "",
+            "element": {
+              "id": "328a611c-5f0b-42b4-9c75-eb63d9b29f75",
+              "type": "page",
+              "page": {
+                "id": "9817e151-c972-47ad-971f-92b3c93109a0",
+                "name": "Comisión Médica",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "comision-medica"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "8f5dc58c-3f06-4631-bf92-5ba979140ea7",
+            "name": "CUMPLIMIENTO",
+            "icon": "",
+            "element": {
+              "id": "a30eaef5-dfab-4956-8c69-e5d646fc69bc",
+              "type": "page",
+              "page": {
+                "id": "b7f9bdab-283c-43ea-99d7-87e745f585de",
+                "name": "Cumplimiento",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "cumplimiento"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "c9d54963-937f-4c7f-83f3-838f7e38e78d",
+            "name": "COMUNICADOS OFICIALES",
+            "icon": "",
+            "element": {
+              "id": "548d271e-57df-4d97-96c1-678f1481f0f0",
+              "type": "page",
+              "page": {
+                "id": "1b92f163-0b65-43c5-9659-211195ccb983",
+                "name": "Comunicados Oficiales",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "comunicados"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "f95c9eec-b129-4f8e-a9fa-fcfc53059024",
+            "name": "DIRECCIÓN DE COMPETICIONES",
+            "icon": "",
+            "element": {
+              "id": "109c7635-71a1-4248-b447-ba3c2a16a702",
+              "type": "page",
+              "page": {
+                "id": "fc70b455-9484-4d99-a492-ae5d26fbc37c",
+                "name": "Dirección de Competiciones",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "direccion-de-competiciones"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "a07d3590-98b2-4261-af5d-047d50470fe0",
+            "name": "DIRECCIÓN DE DESARROLLO",
+            "icon": "",
+            "element": {
+              "id": "64ea8878-c9eb-49b3-8779-1a6a30efb4d2",
+              "type": "page",
+              "page": {
+                "id": "7dd94a8b-02cd-47ea-aebe-f52b5b7b34f3",
+                "name": "Dirección de Desarrollo",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "direccion-de-desarrollo"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "767cf63e-55b6-47b0-849e-51677c23f6f4",
+                "name": "LIGA DE DESARROLLO",
+                "icon": "",
+                "element": {
+                  "id": "f94d4483-9ebf-468e-b315-c4a1ee8c7d0d",
+                  "type": "page",
+                  "page": {
+                    "id": "5ee064c3-0f5f-4413-9c38-e253e9d91424",
+                    "name": "Liga de Desarrollo",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "liga-de-desarrollo"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "b0ed0dbc-2b01-4c17-8982-e21a55f238ee",
+            "name": "ÉTICA E INTEGRIDAD",
+            "icon": "",
+            "element": {
+              "id": "46b50e38-31bf-4f52-8b39-49e223dd5cda",
+              "type": "page",
+              "page": {
+                "id": "0a226cb7-1764-41da-a119-9d3c0a55abe4",
+                "name": "Ética e Integridad",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "etica-e-integridad"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "18520a64-380a-4052-890e-0dbf9113d39a",
+            "name": "GERENCIA DE LICENCIAS",
+            "icon": "",
+            "element": {
+              "id": "9a0b7df4-9eae-4b14-b005-a129c3254ca1",
+              "type": "page",
+              "page": {
+                "id": "1455205f-c4a0-41a6-9201-f1faf63d1a57",
+                "name": "Gerencia de Licencias",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "gerencia-de-licencias"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "ee536039-bd15-481e-97ef-de30f2952f22",
+            "name": "INFRAESTRUCTURA",
+            "icon": "",
+            "element": {
+              "id": "45220870-58d9-43a6-89f4-85b412f6c6bf",
+              "type": "page",
+              "page": {
+                "id": "24617189-3793-4b57-981b-855450d73e88",
+                "name": "Infraestructura",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "infraestructura"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "844d0003-0d5d-4032-9823-7418a6f422e5",
+                "name": "LICITACIONES",
+                "icon": "",
+                "element": {
+                  "id": "9c7077c6-fdf2-4611-a2e3-b2474595d4c7",
+                  "type": "page",
+                  "page": {
+                    "id": "dcdcc600-f06d-4848-8071-7799358dd425",
+                    "name": "Licitaciones",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "licitaciones"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "7c3c4f82-0429-4bcd-b575-fb44f1551398",
+            "name": "MARKETING",
+            "icon": "",
+            "element": {
+              "id": "a21262a4-7048-411b-8e6a-8c00cd05fc47",
+              "type": "page",
+              "page": {
+                "id": "d5256abc-9936-4f7d-938c-bc89c4b7387a",
+                "name": "Marketing",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "marketing"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "fb626dfc-b9b4-42b2-8f47-8f7e72b20238",
+                "name": "MANUAL DE USO DE MARCA ALBIRROJA",
+                "icon": "",
+                "element": {
+                  "id": "d144c22f-99f4-49de-a2f5-42baf054d54d",
+                  "type": "link",
+                  "url": "https://statics-maker.llt-services.com/apf/documents/2025/12/11/1f392da7-86cf-47a6-b125-ec741b6d4e39-102.pdf",
+                  "config": null,
+                  "target": "_blank"
+                }
+              }
+            ]
+          },
+          {
+            "id": "beb4054b-cec0-4e10-b792-cfd727d38501",
+            "name": "RESPONSABILIDAD SOCIAL EMPRESARIAL",
+            "icon": "",
+            "element": {
+              "id": "5afb5a5a-9372-43d1-9866-a547e2888c2c",
+              "type": "page",
+              "page": {
+                "id": "fdcb35be-4bb6-4fff-b7b1-2807ccff5609",
+                "name": "Responsabilidad Social Empresarial",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "responsabilidad-social-empresarial"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "f4fa1e0f-0a7f-4d92-b441-feb8ebe2bc56",
+                "name": "COMUNICACIÓN-PACTO GLOBAL",
+                "icon": "",
+                "element": {
+                  "id": "41b75a69-18ce-4a77-a493-606aa8be9af6",
+                  "type": "page",
+                  "page": {
+                    "id": "48b7b88a-1b46-41ef-872f-128e25bf20e2",
+                    "name": "Comunicación de Involucramiento – Pacto Global",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "comunicacion-de-involucramiento-pacto-global"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "4a093cbe-b656-46df-b275-24206f3425b6",
+            "name": "VISITAS OFICIALES",
+            "icon": "",
+            "element": {
+              "id": "7b928d97-8673-4e12-a870-fb1e1fe7fc60",
+              "type": "page",
+              "page": {
+                "id": "8bc28a79-a8d1-48dd-a03a-b381aeb25002",
+                "name": "Visitas Oficiales",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "visitas-oficiales"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "7bdc4422-0989-45b8-b296-8dc0c800b378",
+            "name": "SALVAGUARDA APF",
+            "icon": "",
+            "element": {
+              "id": "0a56594c-a6a2-4a32-a6aa-70bc3729abc8",
+              "type": "page",
+              "page": {
+                "id": "2bf48662-aa90-4630-83d9-242702bbcd0f",
+                "name": "Salvaguarda APF",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "salvaguarda-apf"
+              },
+              "target": "_self"
+            }
+          }
+        ]
+      },
+      {
+        "id": "a328c72d-7687-44a8-8f19-a41458fa5e9f",
+        "name": "TORNEOS",
+        "icon": "",
+        "element": {
+          "id": "0adef6c2-9671-4c69-b72b-7b7277080d9d",
+          "type": "text"
+        },
+        "children": [
+          {
+            "id": "fb8fd2d5-c4a5-42f2-95ce-004561f39e6e",
+            "name": "COPA DE PRIMERA",
+            "icon": "",
+            "element": {
+              "id": "4f5a648f-a25b-4692-b70e-d32eeaa59009",
+              "type": "page",
+              "page": {
+                "id": "92f7b197-6a0f-4ed9-bfbd-622519c4e417",
+                "name": "Copa de primera",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "copa-de-primera"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "1fae7f5c-d5bc-463e-ad16-b74e8c3fb652",
+                "name": "TORNEO APERTURA",
+                "icon": "",
+                "element": {
+                  "id": "b72c00a6-0dad-49e9-bfd8-02ee25eed35e",
+                  "type": "page",
+                  "page": {
+                    "id": "967e32f5-bff5-42c5-87a6-3c3261ec6f73",
+                    "name": "Torneo Apertura",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "torneo-apertura"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "54ce2bbf-0a3e-4815-8763-89cdb9a6f2f6",
+                "name": "TORNEO CLAUSURA",
+                "icon": "",
+                "element": {
+                  "id": "b00be749-a0eb-4da6-9f11-2d039f1f17bf",
+                  "type": "page",
+                  "page": {
+                    "id": "c6196383-c1df-470c-90de-f5a39f7563f7",
+                    "name": "Torneo Clausura",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "torneo-clausura"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "9e2dd769-cbd1-4bd4-a57d-69891a5a3ea0",
+                "name": "PARTIDOS APERTURA",
+                "icon": "",
+                "element": {
+                  "id": "cb73dc7d-f6fd-4b20-b064-13f220f6459a",
+                  "type": "page",
+                  "page": {
+                    "id": "3b6b87c1-1a64-4e79-8002-eac810b415a9",
+                    "name": "Partidos Apertura",
+                    "type": "list",
+                    "subtype": "football_competition_match",
+                    "slug": "partido-apertura"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "daa09179-932d-47bd-a12d-1d77e179146e",
+                "name": "PARTIDOS CLAUSURA",
+                "icon": "",
+                "element": {
+                  "id": "bec4512e-d69a-43f6-abb3-fa6ad7f35c87",
+                  "type": "page",
+                  "page": {
+                    "id": "e38676ee-59f6-4061-8c5c-30f2b78ecc42",
+                    "name": "Partidos Clausura",
+                    "type": "list",
+                    "subtype": "football_competition_match",
+                    "slug": "partidos-clausura"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "96cd3e1a-3fd0-48c4-bad7-54fda3c5553a",
+            "name": "RESERVA",
+            "icon": "",
+            "element": {
+              "id": "5e587271-198c-42db-b018-68e39f5682a6",
+              "type": "page",
+              "page": {
+                "id": "e1dc5d41-b9f7-428b-b6c5-8e0e09b1101d",
+                "name": "Reserva",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "reserva"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "e7d92d0f-d518-45b7-aefd-3fc8d81655d0",
+            "name": "COPA PARAGUAY",
+            "icon": "",
+            "element": {
+              "id": "a5bde192-4c36-4d9b-b0c1-94b90b26c486",
+              "type": "page",
+              "page": {
+                "id": "38bb6f27-b40c-4ec5-b924-11d825ce1851",
+                "name": "Copa Paraguay",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "copa-paraguay"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "0048fde7-897f-4ba4-9a6b-833ef899c9ae",
+            "name": "SUPERCOPA PARAGUAY",
+            "icon": "",
+            "element": {
+              "id": "d6d6e604-b43f-4d78-b9e3-589e3f2ddda1",
+              "type": "page",
+              "page": {
+                "id": "f2d19350-ed3a-4612-aa35-4bc0d6bfa179",
+                "name": "Supercopa Paraguay",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "supercopa-paraguay"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "112dc907-3266-4442-866d-211069df08cd",
+            "name": "FÚTBOL FEMENINO",
+            "icon": "",
+            "element": {
+              "id": "d93206a3-3198-48dc-9a1c-454ea2475aae",
+              "type": "page",
+              "page": {
+                "id": "6eb65ad5-1338-4b8e-9e7b-72786cf87751",
+                "name": "Fútbol Femenino",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "futbol-femenino"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "8999b582-f1a7-4a84-97b3-7ef3af10742d",
+                "name": "CAMPEONATO ANUAL FEM",
+                "icon": "",
+                "element": {
+                  "id": "4b8c1f15-312f-4855-b93e-92dd79691143",
+                  "type": "page",
+                  "page": {
+                    "id": "2de0221e-c390-4fe2-a87d-63d043abefeb",
+                    "name": "Campeonato Anual FEM",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "campeonato-anual-fem"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "9cc62e0e-294c-49e4-b49b-95a218d8d968",
+                "name": "COPA PARAGUAY FEM",
+                "icon": "",
+                "element": {
+                  "id": "7b946e3f-1a1d-4ab7-b4d9-7a6893013108",
+                  "type": "page",
+                  "page": {
+                    "id": "0d603d77-d086-4eb7-a030-754c9d86b0e9",
+                    "name": "Copa Paraguay FEM",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "copa-paraguay-fem"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "7bf0b80d-0adb-4eab-b7fe-5abca389ddaa",
+                "name": "SUPERCOPA PARAGUAY FEM",
+                "icon": "",
+                "element": {
+                  "id": "07d6ca25-5503-4d33-b0c0-b9d8983259be",
+                  "type": "page",
+                  "page": {
+                    "id": "569298b1-2ad5-4370-942d-2965aa04d9c7",
+                    "name": "Supercopa Paraguay FEM",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "supercopa-paraguay-fem"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "8eaa99d6-b832-422a-b9d9-035fc0fb5f6e",
+                "name": "COPA eFe",
+                "icon": "",
+                "element": {
+                  "id": "4a6b1166-686c-4f90-913c-0d15fd57f1f3",
+                  "type": "page",
+                  "page": {
+                    "id": "328fb3bd-f28e-47d2-9315-1acc3b426a3e",
+                    "name": "Copa eFe",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "copa-efe"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "3459085e-b0cf-42df-bd4d-8293a25bac95",
+                "name": "SUB 18 FEMENINO",
+                "icon": "",
+                "element": {
+                  "id": "d2c49abb-8579-4108-b7b8-faed088816e6",
+                  "type": "page",
+                  "page": {
+                    "id": "02e9e726-7da8-4c22-a859-028c18a65068",
+                    "name": "Sub 18 Femenino",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "sub-18-femenino"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "35ed0e19-d659-4c5d-b59e-2c8f7c29f795",
+                "name": "SUB 18 COPA eFe",
+                "icon": "",
+                "element": {
+                  "id": "489bbecd-6156-4623-9e1f-741046dcdc24",
+                  "type": "page",
+                  "page": {
+                    "id": "b99a23b9-0ab1-47ca-a320-a2d23ffe4904",
+                    "name": "Sub 18 Copa eFe",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "sub-18-copa-efe"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "6d6f7931-9aad-4493-9768-9c36a0b27bbd",
+            "name": "INTERMEDIA",
+            "icon": "",
+            "element": {
+              "id": "4a685768-c464-4021-9342-6d533163887b",
+              "type": "page",
+              "page": {
+                "id": "9123d886-3499-439a-a86d-32b33a6c52fd",
+                "name": "Intermedia",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "intermedia"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "fe5a93b2-c9b4-4a17-b502-64cc84d3a3aa",
+            "name": "PRIMERA B",
+            "icon": "",
+            "element": {
+              "id": "a4d6fd32-916e-4b1d-ab06-98367682e206",
+              "type": "page",
+              "page": {
+                "id": "89696159-97d5-4180-9061-1952939b81a7",
+                "name": "Primera B",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "primera-b"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "b5a0560d-6a7b-482e-8302-e6f8224626d8",
+            "name": "PRIMERA C",
+            "icon": "",
+            "element": {
+              "id": "dcdd91e6-26c5-4f22-98b0-2f9b33250e51",
+              "type": "page",
+              "page": {
+                "id": "abde9e89-817d-4659-8ca2-a88cb79147aa",
+                "name": "Primera C",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "primera-c"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "6cd32f6b-09ca-434e-a274-fe6cacf90f5f",
+            "name": "FORMATIVAS",
+            "icon": "",
+            "element": {
+              "id": "d81287db-1e5e-4736-9d56-f390e49a6071",
+              "type": "page",
+              "page": {
+                "id": "86688d25-cc38-411d-9431-369842b80956",
+                "name": "Formativas",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "formativas"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "984efe2f-6fbc-4031-bd3f-2e56a4445148",
+                "name": "FORMATIVAS GLOBALES",
+                "icon": "",
+                "element": {
+                  "id": "a2c354f8-806b-4a5d-b91b-75f011707e7a",
+                  "type": "page",
+                  "page": {
+                    "id": "8f95b333-1277-4bd4-b7ce-2e061e579b06",
+                    "name": "Formativas Globales",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "formativas-globales"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "4f3dbb60-4425-45e2-b396-4c5411aeee35",
+                "name": " SUB 13",
+                "icon": "",
+                "element": {
+                  "id": "2580c37d-6cdd-4c38-a56b-ae2f01c2d32d",
+                  "type": "page",
+                  "page": {
+                    "id": "b6c1141e-c660-4f2b-8acf-804a3898aac6",
+                    "name": "Formativas SUB 13",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "formativas-sub-13"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "7bb30324-0d3e-46a7-bc60-8b9664caf245",
+                "name": " SUB 14",
+                "icon": "",
+                "element": {
+                  "id": "0a6c701f-ebc0-441a-838b-e4fa6507a4e2",
+                  "type": "page",
+                  "page": {
+                    "id": "d12dcfbc-a962-48ca-9309-02ca7ed0a638",
+                    "name": "Formativas SUB 14",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "formativas-sub-14"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "5aba6047-28e7-4ef4-bbc2-013660a0a854",
+                "name": "SUB 15",
+                "icon": "",
+                "element": {
+                  "id": "b7a54a12-0f14-4ac0-90d6-cc4d547c3cb9",
+                  "type": "page",
+                  "page": {
+                    "id": "c84e6e30-ec86-46d5-a84b-02877780c914",
+                    "name": "Formativas SUB 15",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "formativas-sub-15"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "36a021f1-4d50-417d-9c74-d8060a584530",
+                "name": " SUB 16",
+                "icon": "",
+                "element": {
+                  "id": "0d644328-8bda-4291-a038-c7cc060aa5a1",
+                  "type": "page",
+                  "page": {
+                    "id": "25682601-e33b-41a6-8536-10b14769d1d2",
+                    "name": "Formativas SUB 16",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "formativas-sub-16"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "4598a1e5-0630-48e6-ad8c-42db397861fb",
+                "name": " SUB 17",
+                "icon": "",
+                "element": {
+                  "id": "e5d18137-f651-4c4c-8309-2a405f0be8c4",
+                  "type": "page",
+                  "page": {
+                    "id": "f5d324d8-4136-4294-b34f-643982845f21",
+                    "name": "Formativas SUB 17",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "formativas-sub-17"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "7e0c4608-fdda-49c4-8dad-63f98b95c151",
+                "name": "FORMATIVAS JUVENILES",
+                "icon": "",
+                "element": {
+                  "id": "140f4873-a3d7-4763-9f58-33ae4048025e",
+                  "type": "page",
+                  "page": {
+                    "id": "7c7b1628-c12d-4a8d-82db-0c3afc3b0c38",
+                    "name": "Formativas Juveniles",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "formativas-juveniles"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "6a8879be-c47c-4646-8548-d006ea17fc2a",
+            "name": "FUTSAL",
+            "icon": "",
+            "element": {
+              "id": "b800c2f0-ad84-4c76-a7d9-37d906ba4786",
+              "type": "page",
+              "page": {
+                "id": "291ea422-1577-4de4-87d7-8f004046d72a",
+                "name": "Futsal",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "futsal"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "5e4dcca5-2d15-4c9c-9589-1eba0c4e2409",
+                "name": "LIGA PREMIUM FUTSAL",
+                "icon": "",
+                "element": {
+                  "id": "5f0bdeac-cad3-4c22-8682-8d602e831af1",
+                  "type": "page",
+                  "page": {
+                    "id": "2ad43eb5-46c1-4ec7-850c-816352e45e81",
+                    "name": "Liga Premium Futsal",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "liga-premium-futsal"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "999756e2-18fb-4ecc-996f-bd09a5b1bd49",
+                "name": "HONOR FUTSAL",
+                "icon": "",
+                "element": {
+                  "id": "7d79a7f3-17ce-4a2f-abf4-6127fe141233",
+                  "type": "page",
+                  "page": {
+                    "id": "4fa7253f-2b9c-430b-b109-ee479af6b3bd",
+                    "name": "Honor Futsal",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "honor-futsal"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "614e3206-9842-4cc5-967a-f40b658f15f6",
+                "name": "PRIMERA FUTSAL",
+                "icon": "",
+                "element": {
+                  "id": "116e83f0-3e89-45db-a7d8-1b9d57017be2",
+                  "type": "page",
+                  "page": {
+                    "id": "ca1aa3bf-225c-4358-8b40-44807f375888",
+                    "name": "Primera Futsal",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "primera-futsal"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "a822ad6d-b736-4875-9bd9-245e006fb1e9",
+                "name": "FORMATIVAS FUTSAL",
+                "icon": "",
+                "element": {
+                  "id": "ee0ee072-55d5-4be8-9dd3-fd850517f0a6",
+                  "type": "page",
+                  "page": {
+                    "id": "14aa87a7-5722-4a9c-82f7-5734632a2ae5",
+                    "name": "Formativas Futsal",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "formativas-futsal"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "fb41a48a-3088-48a5-98d4-290b0e53fa45",
+                "name": "FUTSAL FEM",
+                "icon": "",
+                "element": {
+                  "id": "babcef42-ae9f-44a3-a94e-558a48eb3f02",
+                  "type": "page",
+                  "page": {
+                    "id": "65d641ef-433d-4198-acf1-b9ab67910151",
+                    "name": "Futsal Fem",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "futsal-fem"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "33698345-fff1-451b-95fa-99a65b6aa53a",
+            "name": "FÚTBOL PLAYA",
+            "icon": "",
+            "element": {
+              "id": "f47e6f1f-150f-444d-aeae-98590116ad18",
+              "type": "page",
+              "page": {
+                "id": "6b1d57bb-8146-4102-b98c-1377605a18ef",
+                "name": "Fútbol Playa",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "futbol-playa"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "67744982-1190-4bba-b050-6951b391a132",
+            "name": "PROMOCIÓN DE CATEGORIA",
+            "icon": "",
+            "element": {
+              "id": "9220d37a-7657-4c3e-b567-1ff9c370962b",
+              "type": "page",
+              "page": {
+                "id": "f16edaf3-cfd7-470d-80a7-4fbc8d4cc8a5",
+                "name": "Promoción de Categoría",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "promocion-de-categoria"
+              },
+              "target": "_self"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b9cf7f16-d1d0-48d0-a778-4ac54c3ffda6",
+        "name": "ALBIRROJA",
+        "icon": "",
+        "element": {
+          "id": "254279a0-294c-4fbe-a5e7-5bcb74191e67",
+          "type": "link",
+          "url": "https://www.apf.org.py/seleccion-absoluta-masculina",
+          "config": null,
+          "target": "_self"
+        },
+        "children": [
+          {
+            "id": "4cb85dd9-1c6e-4ed6-ba72-4133b1acdc15",
+            "name": "SELECCIONES MASCULINAS",
+            "icon": "",
+            "element": {
+              "id": "29cb68bd-ef26-4bae-9962-45f8e3c76767",
+              "type": "text"
+            },
+            "children": [
+              {
+                "id": "ff310ec4-df75-4182-af3b-21f120c3b600",
+                "name": "SELECCIÓN ABSOLUTA MASCULINA",
+                "icon": "",
+                "element": {
+                  "id": "4e703aa9-4b17-4172-b97e-f8f72706c886",
+                  "type": "page",
+                  "page": {
+                    "id": "6ab9ac80-dbde-4db2-b390-0c8a861f992f",
+                    "name": "Selección Absoluta Masculina",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-absoluta-masculina"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "8dacad4d-c10d-4277-9823-727160a83499",
+                "name": "SELECCIÓN MASCULINA SUB 13",
+                "icon": "",
+                "element": {
+                  "id": "8a6303be-8f25-467c-8b87-f2a5b64a9a2f",
+                  "type": "page",
+                  "page": {
+                    "id": "c6e8d9ef-b876-4cb4-8f9e-b48b21392add",
+                    "name": "Selección Masculina Sub 13",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-13"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "588b5d51-a9a3-4759-9052-a32bbdbf9231",
+                "name": "SELECCIÓN MASCULINA SUB 15",
+                "icon": "",
+                "element": {
+                  "id": "9371051d-4092-4fd3-bbc1-7209c7e1f69d",
+                  "type": "page",
+                  "page": {
+                    "id": "23a1fb84-7d47-45ae-aea7-bf964436e7ad",
+                    "name": "Selección Masculina Sub 15",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-15"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "d4596005-bee6-4992-b56e-015cf988cd85",
+                "name": "SELECCIÓN MASCULINA SUB 16",
+                "icon": "",
+                "element": {
+                  "id": "1d7a8e27-d9b7-43ff-a618-38034cc4af2c",
+                  "type": "page",
+                  "page": {
+                    "id": "e457ac3e-b399-4208-b34c-0779a0d972b1",
+                    "name": "Selección Masculina Sub 16",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-16"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "eb260961-4bc7-4f6c-a4e3-b0d86568457c",
+                "name": "SELECCIÓN MASCULINA SUB 17",
+                "icon": "",
+                "element": {
+                  "id": "7353292a-2cd2-479e-9df4-54e420c5ef31",
+                  "type": "page",
+                  "page": {
+                    "id": "307eb261-20bc-44c3-831e-1d7636619b41",
+                    "name": "Selección Masculina Sub 17",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-17"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "9726190b-adce-455b-95d4-ec1e34109dd6",
+                "name": "SELECCIÓN MASCULINA SUB 20",
+                "icon": "",
+                "element": {
+                  "id": "80addde7-6d9a-46c2-9286-5b6159b12151",
+                  "type": "page",
+                  "page": {
+                    "id": "c9d87d53-5adb-44c1-88a0-848d675d4131",
+                    "name": "Selección Masculina Sub 20",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-20"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "dea6257b-acce-487b-b3b2-be443fd40bdc",
+                "name": "SELECCION MASCULINA SUB 23",
+                "icon": "",
+                "element": {
+                  "id": "c8522884-131f-4e1f-b33a-805443f98123",
+                  "type": "page",
+                  "page": {
+                    "id": "bc3ed27b-703c-4c37-a68f-e38848d08133",
+                    "name": "Seleccion Masculina Sub 23",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-23"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "669289a9-e490-429c-bd77-a61c35240ca2",
+            "name": "SELECCIONES FEMENINAS",
+            "icon": "",
+            "element": {
+              "id": "be036b89-1fd4-4413-9aab-955842422430",
+              "type": "text"
+            },
+            "children": [
+              {
+                "id": "bfffe59d-d89b-455e-af7f-a970cf908d87",
+                "name": "SELECCIÓN ABSOLUTA FEMENINA",
+                "icon": "",
+                "element": {
+                  "id": "2d20d20f-a117-414b-bb43-3889703cacda",
+                  "type": "page",
+                  "page": {
+                    "id": "d345cfda-a39d-4ff3-a682-8903fb0bc7a4",
+                    "name": "Selección Absoluta Femenina",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-femenina-absoluta"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "86228796-5bde-44aa-b515-12c6b46fc268",
+                "name": "SELECCIÓN FEMENINA SUB 15",
+                "icon": "",
+                "element": {
+                  "id": "abfc28a0-e060-45a0-ab6a-4b4da39217ba",
+                  "type": "page",
+                  "page": {
+                    "id": "5dd6b886-5bbe-4c0d-8486-8be09fcf3039",
+                    "name": "Selección Femenina Sub 15",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-femenina-sub-15"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "392320ba-0f32-42b8-9324-0a05afc687f6",
+                "name": "SELECCIÓN FEMENINA SUB 17",
+                "icon": "",
+                "element": {
+                  "id": "5bf134ad-c0e2-4ab1-8a1a-e8f3f4268baf",
+                  "type": "page",
+                  "page": {
+                    "id": "19724350-fbea-40aa-8b6f-68c2923ec1fc",
+                    "name": "Selección Femenina Sub 17",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-femenina-sub-17"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "956a262c-eb4c-4b89-b9e0-1e06e2a1ff67",
+                "name": "SELECCIÓN FEMENINA SUB 18",
+                "icon": "",
+                "element": {
+                  "id": "59da97e6-5c92-4931-9b5b-b22203eb2a8a",
+                  "type": "page",
+                  "page": {
+                    "id": "48a1f8d9-cb9d-4f58-b690-752d78a84982",
+                    "name": "Selección Femenina Sub 18",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-femenina-sub-18"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "558e69d9-2ac3-4c24-9501-5852ac5b6504",
+                "name": "SELECCIÓN FEMENINA SUB 20",
+                "icon": "",
+                "element": {
+                  "id": "f38525ba-03c8-451e-97ad-2c00d8fe1726",
+                  "type": "page",
+                  "page": {
+                    "id": "43210f13-1bd6-42f2-8b38-317cee3c64d5",
+                    "name": "Selección Femenina Sub 20",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-femenina-sub-20"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "8ced451c-0e74-4622-b913-e957d2f1eab3",
+            "name": "ALBIRROJA FÚTBOL DE PLAYA",
+            "icon": "",
+            "element": {
+              "id": "f628acd7-9d71-42c3-bca9-3c4e81a5b3c2",
+              "type": "text"
+            },
+            "children": [
+              {
+                "id": "72af8946-45e4-4df9-ae85-f1156aa81332",
+                "name": "ALBIRROJA PYNANDI",
+                "icon": "",
+                "element": {
+                  "id": "1bec49f7-0792-4386-ab0f-fa3dd2eed8c1",
+                  "type": "page",
+                  "page": {
+                    "id": "3e71f2ed-b681-4e74-b770-8808e0befc52",
+                    "name": "Albirroja Pynandi",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "albirroja-pynandi"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "e43e6dba-cc0c-48a4-b608-820f3e1cfaf5",
+                "name": "SEL MASC SUB 20 DE FÚTBOL DE PLAYA",
+                "icon": "",
+                "element": {
+                  "id": "77066b96-5f56-4c79-a3d5-11de24ec3770",
+                  "type": "page",
+                  "page": {
+                    "id": "8dd2e699-ef0a-43fb-a0ba-99eb750c1678",
+                    "name": "Selección Masculina Sub 20 de Fútbol Playa",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-20-de-futbol-playa"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "46f775e9-23d4-423b-9673-782e6f7a81ca",
+            "name": "ALBIRROJA FUTSAL FIFA",
+            "icon": "",
+            "element": {
+              "id": "a0fedb45-913e-4b08-a5e8-af2b3d1034c1",
+              "type": "page",
+              "page": {
+                "id": "5eda20b4-1c53-4c1c-a129-fafab5774140",
+                "name": "Albirroja Futsal FIFA",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "albirroja-futsal-fifa"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "4e9852f2-d425-4b07-8872-9ff13746eb53",
+                "name": "SELECCIÓN MASCULINA DE FUTSAL FIFA",
+                "icon": "",
+                "element": {
+                  "id": "9c116641-8201-458a-935c-3a9526e79cfc",
+                  "type": "page",
+                  "page": {
+                    "id": "817518a5-e12c-41a4-8501-4252b36f7963",
+                    "name": "Selección Masculina de Futsal FIFA",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-de-futsal-fifa"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "78938bac-17a8-4343-a0b4-2c9a4a0bbc1e",
+                "name": "SELECCIÓN MASC SUB 20 FUTSAL FIFA",
+                "icon": "",
+                "element": {
+                  "id": "b41c05a3-7ba9-4390-bcdf-272e165e6b72",
+                  "type": "page",
+                  "page": {
+                    "id": "31178d03-4dab-42d5-b91c-6b4fc9ea4762",
+                    "name": "Selección Masculina Sub 20 de Futsal FIFA",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-20-de-futsal-fifa"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "175677f7-6a1c-49ae-a5eb-351601c2aefb",
+                "name": "SELECCIÓN MASC SUB 17 FUTSAL FIFA",
+                "icon": "",
+                "element": {
+                  "id": "874fe317-1496-4710-9d85-87ac11c570eb",
+                  "type": "page",
+                  "page": {
+                    "id": "55fac63e-6d32-4e12-b606-86be6e0efdd4",
+                    "name": "Selección Masculina Sub 17 de Futsal FIFA",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-masculina-sub-17-de-futsal-fifa"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "3fcd7450-dfdf-470d-9c82-27402437faa1",
+                "name": "SELECCIÓN FEMENINA DE FUTSAL FIFA",
+                "icon": "",
+                "element": {
+                  "id": "1da934e1-a8bc-4928-8655-b7acc65c5387",
+                  "type": "page",
+                  "page": {
+                    "id": "b5d84491-7c01-465a-b702-8a334c4f0612",
+                    "name": "Selección Femenina de Futsal FIFA",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-femenina-de-futsal-fifa"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "2cf85755-db2c-43cf-afa1-a35730c16c07",
+                "name": "SELECCIÓN FEM SUB 20 DE FUTSAL FIFA",
+                "icon": "",
+                "element": {
+                  "id": "fdd45e64-7708-4717-bbdb-47c908979cb1",
+                  "type": "page",
+                  "page": {
+                    "id": "028f86a2-4bfc-407b-bc84-cf370cdf607e",
+                    "name": "Selección Femenina Sub 20 de Futsal FIFA",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-femenina-sub-20-de-futsal-fifa"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "cfdd54fb-0804-4559-a3ad-7999b5bb0abd",
+                "name": "SELECCIÓN FEM SUB 17 DE FUTSAL FIFA",
+                "icon": "",
+                "element": {
+                  "id": "0e070eda-fb39-45de-94f6-8ba76a2a6629",
+                  "type": "page",
+                  "page": {
+                    "id": "114392f1-a128-481e-b37d-8da6dfe470e9",
+                    "name": "Selección Femenina Sub 17 de Futsal FIFA",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "seleccion-femenina-sub-17-de-futsal-fifa"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "7920c142-a275-49ff-b4f2-53a92eae686f",
+            "name": "NOTICIAS",
+            "icon": "",
+            "element": {
+              "id": "8289959f-8a9a-4b36-8f40-fcced918ecf9",
+              "type": "text"
+            },
+            "children": [
+              {
+                "id": "a9fde9e1-5e50-4c97-9c34-f6008e5bc813",
+                "name": "ALBIRROJA",
+                "icon": "",
+                "element": {
+                  "id": "1debefb1-e96e-4c51-8a18-c5d16f36932e",
+                  "type": "page",
+                  "page": {
+                    "id": "5058659e-46b8-43e6-8f61-f59f8f725916",
+                    "name": "ALBIRROJA | NOTICIAS",
+                    "type": "list",
+                    "subtype": "news",
+                    "slug": "albirroja-or-noticias"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "a787ccae-c5b0-4d61-ac68-09baecaf24bb",
+        "name": "RESOLUCIONES",
+        "icon": "",
+        "element": {
+          "id": "c438efbb-dd42-433a-96a0-0bb2072c35d8",
+          "type": "text"
+        },
+        "children": [
+          {
+            "id": "9f91fbc1-33a5-410b-99a8-78536363866f",
+            "name": "TRIBUNAL DISCIPLINARIO",
+            "icon": "",
+            "element": {
+              "id": "2b9cffaf-a95f-4c89-ae20-49600b86a559",
+              "type": "page",
+              "page": {
+                "id": "066078d5-5eb6-4992-b408-0f9d0cb19d0d",
+                "name": "Tribunal Disciplinario",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "tribunal-disciplinario"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "92e31299-359e-46ee-8025-16999fca7b85",
+            "name": "NORMATIVA",
+            "icon": "",
+            "element": {
+              "id": "5aa32a0c-233b-49e9-b192-e64a524934e8",
+              "type": "page",
+              "page": {
+                "id": "6ad821da-c146-477f-9112-5e415130beaa",
+                "name": "Normativa",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "normativa"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "77c240d3-d73f-46dd-be0d-d2248e6389d5",
+            "name": "ÉTICA ",
+            "icon": "",
+            "element": {
+              "id": "091393c4-3593-464d-87ae-83d25424a30a",
+              "type": "link",
+              "url": "https://www.apf.org.py/etica-e-integridad",
+              "config": null,
+              "target": "_self"
+            }
+          }
+        ]
+      },
+      {
+        "id": "f1a1fc75-5bf8-4ee8-98c9-15c3263c0763",
+        "name": "ÁRBITROS",
+        "icon": "",
+        "element": {
+          "id": "f304ad59-9ea1-43da-8e23-bc4901a18159",
+          "type": "link",
+          "url": "https://www.apf.org.py/arbitros",
+          "config": null,
+          "target": "_self"
+        }
+      },
+      {
+        "id": "53f4994c-f6c2-46dd-9c64-4d4da923386e",
+        "name": "MEMORIAS",
+        "icon": "",
+        "element": {
+          "id": "2caeac3d-cd59-44dc-b0a7-db2a440e3956",
+          "type": "page",
+          "page": {
+            "id": "9b424d88-10fd-4856-99f9-c3fd7af0527a",
+            "name": "Memorias y Balances",
+            "type": "with_modules",
+            "subtype": "none",
+            "slug": "memorias-y-balances"
+          },
+          "target": "_self"
+        }
+      },
+      {
+        "id": "f2650709-d324-409e-be36-aded1ae08481",
+        "name": "NOSOTROS",
+        "icon": "",
+        "element": {
+          "id": "f904e3ed-0d7b-4dda-9edf-a6e4b2bdb29b",
+          "type": "text"
+        },
+        "children": [
+          {
+            "id": "a1d7079d-231a-4579-9d0a-766c175bd99c",
+            "name": "QUIENES SOMOS",
+            "icon": "",
+            "element": {
+              "id": "ada1f1ef-e4af-4fa9-9206-44f552721d26",
+              "type": "page",
+              "page": {
+                "id": "8611a8f2-8726-47ed-a869-7a9eb73c0628",
+                "name": "Quienes somos",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "quienes-somos"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "15276b28-aa64-4cb8-8683-52cf95c6c3c8",
+            "name": "ÓRGANOS DE LA APF",
+            "icon": "",
+            "element": {
+              "id": "6f485f38-96bc-4359-b0f2-6cb0ac605080",
+              "type": "text"
+            },
+            "children": [
+              {
+                "id": "76921d9c-79f6-415e-a863-db2ee736d5c4",
+                "name": "ASAMBLEA ",
+                "icon": "",
+                "element": {
+                  "id": "a065c331-2eb1-4eef-8203-89dd73c1c528",
+                  "type": "page",
+                  "page": {
+                    "id": "5f1b68eb-5b08-452d-807c-812cde4bf47c",
+                    "name": "Asamblea.",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "asamblea"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "a73db3eb-3aa5-4584-a2f5-b9b38dfc712a",
+                "name": "CONSEJO EJECUTIVO",
+                "icon": "",
+                "element": {
+                  "id": "70a1a5fa-07ba-4c17-ade3-ef5b777b54f0",
+                  "type": "page",
+                  "page": {
+                    "id": "a9287c34-c16b-4643-a647-2b9de69dbabf",
+                    "name": "Consejo Ejecutivo",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "consejo-ejecutivo"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "db2cebbc-daeb-4335-9797-c90c3364b65f",
+                "name": "PRESIDENCIA",
+                "icon": "",
+                "element": {
+                  "id": "45828946-8bd8-43b1-9524-0b6ce2f0fa13",
+                  "type": "page",
+                  "page": {
+                    "id": "0e0528df-2836-4b03-be3b-9b2f116f388a",
+                    "name": "Presidencia",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "presidencia"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "73a7f44c-6286-48b3-b0d3-47789ba5afd3",
+                "name": "SECRETARÍA GENERAL",
+                "icon": "",
+                "element": {
+                  "id": "a6642098-c5b1-45d9-952b-befdeb8c59ce",
+                  "type": "page",
+                  "page": {
+                    "id": "95a2532a-ec68-4bf9-aae4-1f93840a0fb2",
+                    "name": "Secretaría General",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "secretaria-general"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "e078c0ed-746c-49f2-80ee-7198a7233f2e",
+                "name": "SECRETARÍA GENERAL ADJUNTA",
+                "icon": "",
+                "element": {
+                  "id": "43706c33-46df-4336-b806-1139f2da5ddf",
+                  "type": "page",
+                  "page": {
+                    "id": "4ec5f5ed-fa96-48b2-9e72-85c4b9f220ea",
+                    "name": "Secretaría General Adjunta",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "secretaria-general-adjunta"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "32b332dd-5acd-4ffe-8088-a88994a3bb68",
+                "name": "DIRECCIÓN DE DESARROLLO",
+                "icon": "",
+                "element": {
+                  "id": "4a394e7f-3b1f-4af5-a86d-1f94968b2960",
+                  "type": "page",
+                  "page": {
+                    "id": "09e87ec1-9253-48bf-b235-3c1c72de5ad0",
+                    "name": "Dirección de Desarrollo",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "direccion-de-desarrollo1"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "2893a263-e24e-4aff-9d2d-aaa1cc26cb21",
+                "name": "CONSEJO DE DIVISIÓN",
+                "icon": "",
+                "element": {
+                  "id": "98507ccd-567c-4fa9-a21c-3d40dd82e022",
+                  "type": "page",
+                  "page": {
+                    "id": "0575980e-231b-47d5-970f-56748cc8e513",
+                    "name": "Consejo de División",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "consejo-de-division"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "42ffaed2-97bb-4522-9614-badd2cab51bd",
+                "name": "GERENCIA ADMINISTRATIVA/ FINANCIERA",
+                "icon": "",
+                "element": {
+                  "id": "20c8a6e0-42ea-4ea7-89f8-a403796f5f2c",
+                  "type": "page",
+                  "page": {
+                    "id": "176ac700-5d88-406d-b92e-f84e396ed02c",
+                    "name": "Gerencia General Administrativa y Financiera",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "gerencia-general-administrativa-y-financiera"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "6fceb19f-5b12-4fd3-90d3-0dceb4e29049",
+                "name": "SINDICATURA",
+                "icon": "",
+                "element": {
+                  "id": "9f02df02-5b4f-4f06-b1f0-55ae2889bd8c",
+                  "type": "page",
+                  "page": {
+                    "id": "2c2d3abc-2f1d-418e-b417-30dbdbec8710",
+                    "name": "Sindicatura",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "sindicatura"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "1c1146e7-e84c-4254-8e53-6838b59f71c1",
+                "name": "TRIBUNAL ELECTORAL INDEPENDIENTE",
+                "icon": "",
+                "element": {
+                  "id": "960b5e10-699a-4791-9955-a864ce149915",
+                  "type": "page",
+                  "page": {
+                    "id": "94691ca4-7817-4e01-ae57-dbe645685744",
+                    "name": "Tribunal Electoral Independiente",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "tribunal-electoral-independiente"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "9b964876-8800-4526-9992-df11b5dab1bb",
+            "name": "HISTORIA DE LA APF",
+            "icon": "",
+            "element": {
+              "id": "ccd97739-802f-4e24-b41c-7e10af977474",
+              "type": "page",
+              "page": {
+                "id": "e025b06c-fdac-438e-9b7c-e682931916db",
+                "name": "Historia de la APF",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "historia-de-la-apf"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "de6a49eb-24c1-418f-b80e-99342464cc37",
+            "name": "NORMATIVA",
+            "icon": "",
+            "element": {
+              "id": "1cd8fe5c-1cd8-4d98-b793-2ead193468fb",
+              "type": "text"
+            },
+            "children": [
+              {
+                "id": "06b69366-e0e5-49fc-a5a3-22a43aaa1e3a",
+                "name": "Términos y Condiciones",
+                "icon": "",
+                "element": {
+                  "id": "ba8e767c-93a7-4187-8759-ae3120475a38",
+                  "type": "link",
+                  "url": "https://apf.org.py/terminos-y-condiciones/index.html",
+                  "config": null,
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "5a4cc7e4-fe14-4101-9b81-df80a9158d2c",
+                "name": "NORMATIVAS",
+                "icon": "",
+                "element": {
+                  "id": "94cfedb8-a5cc-4506-9e64-f5bbbb175876",
+                  "type": "page",
+                  "page": {
+                    "id": "dcd510bd-7506-4e0a-999f-b50de38aa020",
+                    "name": "Normativas",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "normativas"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "da623e4c-d3d0-4f92-80da-7a3a068fd32d",
+                "name": "REGLAMENTOS",
+                "icon": "",
+                "element": {
+                  "id": "f29a73d1-8508-489b-b64c-c58d2222e793",
+                  "type": "page",
+                  "page": {
+                    "id": "0e867a04-9857-41ab-8916-0fe81ea099f0",
+                    "name": "Reglamentos",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "reglamentos"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "2a30bab9-bd9d-4afb-842d-04a1e740daf8",
+                "name": "CÓDIGO DE ÉTICA",
+                "icon": "",
+                "element": {
+                  "id": "cf4ba5d7-7501-45d2-bd92-fa1e17b22b0f",
+                  "type": "page",
+                  "page": {
+                    "id": "56baf774-6f16-4e1a-9b32-2f4b6160663b",
+                    "name": "Código de Ética",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "codigo-de-etica"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "c2360fe7-71e4-43b1-9c2f-4d39103d2980",
+            "name": "ÓRGANOS JURISDICCIONALES",
+            "icon": "",
+            "element": {
+              "id": "4f65f06b-1dbe-4e81-a15e-97eff2cd423a",
+              "type": "page",
+              "page": {
+                "id": "d3ce8db4-a339-470d-b710-9e6290fe17f3",
+                "name": "Órganos Jurisdiccionales",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "organos-jurisdiccionales"
+              },
+              "target": "_self"
+            },
+            "children": [
+              {
+                "id": "db61153f-cc2d-497f-842e-c0700ed850a3",
+                "name": "TRIBUNAL DE APELACIÓN",
+                "icon": "",
+                "element": {
+                  "id": "8769ab7c-635a-4072-9fbc-de5dc6beb19b",
+                  "type": "page",
+                  "page": {
+                    "id": "96ef003b-855c-474a-ae59-353fc7cb9974",
+                    "name": "Tribunal de Apelación",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "tribunal-de-apelacion"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "84dc1eed-2b26-4b1f-8467-9588fd002004",
+                "name": "TRIBUNAL DISCIPLINARIO",
+                "icon": "",
+                "element": {
+                  "id": "cb83a19a-33a5-4ec8-a90d-9386fcd4d5f3",
+                  "type": "page",
+                  "page": {
+                    "id": "68b3abf3-40e6-4fb4-bf04-a98605f40deb",
+                    "name": "Tribunal Disciplinario",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "disciplinario-tribunal"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "c59a2303-3a91-429d-861f-9b924c887399",
+                "name": "TRIBUNAL DE ÉTICA",
+                "icon": "",
+                "element": {
+                  "id": "280328ad-17aa-455a-a1c3-0ed135da11df",
+                  "type": "page",
+                  "page": {
+                    "id": "62870a0b-378b-4dbc-9c31-3c08c683bc6b",
+                    "name": "Tribunal de Ética",
+                    "type": "with_modules",
+                    "subtype": "none",
+                    "slug": "tribunal-de-etica"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "a40e702c-47ae-4d69-8fac-16e6082a52fb",
+            "name": "SEDES DE LA APF",
+            "icon": "",
+            "element": {
+              "id": "d25c16e6-0ce6-49eb-ab1f-f7d880e3f996",
+              "type": "page",
+              "page": {
+                "id": "5dcb9ffc-5fb1-45ab-9a2d-4a77b49b60b7",
+                "name": "Sedes de la APF",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "sedes-de-la-apf"
+              },
+              "target": "_self"
+            }
+          }
+        ]
+      },
+      {
+        "id": "84b40935-80d9-49fd-b652-67479273f0ba",
+        "name": "MULTIMEDIA",
+        "icon": "",
+        "element": {
+          "id": "f8e7be17-0a27-4d97-aab7-0c434675473c",
+          "type": "text"
+        },
+        "children": [
+          {
+            "id": "fd1c6bb6-5b7a-4e98-9ad9-7ad539592517",
+            "name": "GALERÍA DE FOTOS",
+            "icon": "",
+            "element": {
+              "id": "0218ab0a-d2e7-48a9-9a55-d93ab39a62e5",
+              "type": "text"
+            },
+            "children": [
+              {
+                "id": "cdd17273-a133-4717-98ca-03dadba4de20",
+                "name": "COPA DE PRIMERA",
+                "icon": "",
+                "element": {
+                  "id": "20345cf5-5894-42f1-b466-77087aa21038",
+                  "type": "page",
+                  "page": {
+                    "id": "7a5a9a37-edbe-4fdf-8784-243c1820cbd7",
+                    "name": "Galería",
+                    "type": "list",
+                    "subtype": "gallery",
+                    "slug": "galeria-torneo-local"
+                  },
+                  "target": "_self"
+                }
+              },
+              {
+                "id": "8145a1fe-6f01-4270-9b9a-7c2ec1e12aed",
+                "name": "ALBIRROJA",
+                "icon": "",
+                "element": {
+                  "id": "f999fa7c-5c16-4cff-bbbf-b59e2f68df51",
+                  "type": "page",
+                  "page": {
+                    "id": "371353a5-d236-453b-be57-7c5fff9a0a1f",
+                    "name": "Galería - APF",
+                    "type": "list",
+                    "subtype": "gallery",
+                    "slug": "galeria-apf"
+                  },
+                  "target": "_self"
+                }
+              }
+            ]
+          },
+          {
+            "id": "87d91407-fec2-4539-94ce-c800904631a9",
+            "name": "VÍDEOS",
+            "icon": "",
+            "element": {
+              "id": "b50b00fa-c5e4-4dc6-bad5-6d05f12c3ee3",
+              "type": "page",
+              "page": {
+                "id": "46182365-8c95-427b-9c04-70c48c77e0da",
+                "name": "Vídeos",
+                "type": "list",
+                "subtype": "video",
+                "slug": "videos"
+              },
+              "target": "_self"
+            }
+          }
+        ]
+      },
+      {
+        "id": "9845febb-e945-4ab4-8c71-243f877acc99",
+        "name": "CONTACTO",
+        "icon": "",
+        "element": {
+          "id": "b08256b7-20cd-4cc7-8da6-052688e9bd0c",
+          "type": "text"
+        },
+        "children": [
+          {
+            "id": "d3893c82-0e0e-49bd-99ee-f1d367758704",
+            "name": "CONTACTO",
+            "icon": "",
+            "element": {
+              "id": "ec53a042-10bf-4969-8cf8-f2067ee7911d",
+              "type": "page",
+              "page": {
+                "id": "141ec823-bb1b-4701-9efe-923436232a55",
+                "name": "Contacto",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "contacto"
+              },
+              "target": "_self"
+            }
+          },
+          {
+            "id": "3e18e914-9c0e-4575-a7f3-41d1243d6ced",
+            "name": "PREGUNTAS FRECUENTES",
+            "icon": "",
+            "element": {
+              "id": "a76497f4-6dfd-4efd-9084-d9fc9b3a2bee",
+              "type": "page",
+              "page": {
+                "id": "d82c53ac-9601-4696-b49f-b73532bd47c9",
+                "name": "Preguntas Frecuentes",
+                "type": "with_modules",
+                "subtype": "none",
+                "slug": "prefuntas-frecuentes"
+              },
+              "target": "_self"
+            }
+          }
+        ]
+      }
+    ],
+    "secondaryMenu": [],
+    "footerMenu": [],
+    "avet": {
+      "walletPartner": {
+        "method": "none",
+        "enabled": false,
+        "private": false
+      }
+    },
+    "brandStyles": {
+      "id": "078cb8d0-1d0f-4c9d-89b8-da0403dd72d9",
+      "corner": "rounded_semi",
+      "shadow": "s",
+      "highlightedFontFamily": "Nunito Sans",
+      "standardFontFamily": "Nunito Sans",
+      "fontSize": "regular",
+      "iconSet": "defaultLine"
+    },
+    "clientType": "league",
+    "datalayer": {
+      "clientId": "n/a",
+      "assetName": "makerclubs-web",
+      "tenantName": "laliga",
+      "serviceLevel": "n/a",
+      "assetGroupName": "makerclubs"
+    },
+    "defaultLocale": "es",
+    "gtm": "GTM-TQSX7WHP",
+    "hostname": "www.apf.org.py",
+    "isoLocale": "es-es",
+    "languages": [
+      {
+        "id": "ed306a25-955f-41f0-b61f-8ac41fd7ab27",
+        "name": "spanish",
+        "locale": "es",
+        "isoCode": "es-es",
+        "direction": "ltr",
+        "main": true
+      }
+    ],
+    "livelike": null,
+    "locale": "es",
+    "plugins": [
+      "football",
+      "pushNotifications"
+    ],
+    "pluginsParams": null,
+    "recaptcha": "6LeWhXMrAAAAAGQiWC8MVufHRQHeY0YmYidAxojv",
+    "runtimeConfig": {
+      "environment": "pr",
+      "apiBaseUrl": "https://apim-maker.llt-services.com/makerweb/",
+      "dspBaseApiUrl": "https://apim-maker.llt-services.com/"
+    },
+    "statusCode": 200,
+    "__N_SSP": true
+  },
+  "page": "/[[...params]]",
+  "query": {
+    "params": [
+      "partidos",
+      "intermedia-2026-intermedia-13-paraguari-vs-tacuary"
+    ]
+  },
+  "buildId": "9dWiD37Eo2OHUP7B_FPbK",
+  "isFallback": false,
+  "isExperimentalCompile": false,
+  "dynamicIds": [
+    30852
+  ],
+  "gssp": true,
+  "appGip": true,
+  "scriptLoader": []
+}
