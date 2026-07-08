@@ -42,13 +42,12 @@ for p in padroes:
 
 info["pdf_urls_encontradas"] = sorted(achados)
 
-idx_pdfp = html.find("AdobeDC")
-if idx_pdfp == -1:
-    idx_pdfp = html.find("previewFile")
-if idx_pdfp == -1:
-    idx_pdfp = html.find("pdfp_")
-if idx_pdfp != -1:
-    info["snippet_pdfp"] = html[max(0, idx_pdfp - 500):idx_pdfp + 3000]
+m_div = re.search(r'<div[^>]*class="[^"]*pdfp_wrapper[^"]*"[^>]*>', html)
+if m_div:
+    idx_pdfp = m_div.start()
+    info["snippet_pdfp"] = html[idx_pdfp:idx_pdfp + 4000]
+else:
+    info["snippet_pdfp"] = "elemento <div class=pdfp_wrapper...> nao encontrado"
 
 # tambem procura qualquer trecho de <script> que mencione .pdf
 for m in re.finditer(r'<script[^>]*>(.*?)</script>', html, re.S):
