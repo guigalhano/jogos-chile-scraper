@@ -28,13 +28,13 @@ jobs:
 
       - name: Testar scraper DIMAYOR (diagnóstico de rede/HTML)
         run: |
-          python scrap_dimayor.py --debug-html --wait-ms 15000
+          python scrap_dimayor.py --debug-html --wait-ms 15000 || true
 
       - name: Salvar resultados do diagnóstico (NÃO mistura com dados de produção)
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/debug_dimayor_responses.json data/debug_dimayor_json_payloads.json data/debug_dimayor_*_snippet.json 2>/dev/null || true
+          git add data/debug_dimayor_responses.json data/debug_dimayor_json_payloads.json data/debug_dimayor_*_snippet.json data/debug_dimayor_erro_fatal.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Sem mudanças para commitar"
           else

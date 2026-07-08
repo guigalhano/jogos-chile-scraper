@@ -181,4 +181,12 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        import traceback
+        (OUT_DIR / "debug_dimayor_erro_fatal.json").write_text(
+            json.dumps({"erro": str(e), "traceback": traceback.format_exc()}, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        raise
