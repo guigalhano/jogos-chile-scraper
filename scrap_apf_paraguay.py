@@ -133,6 +133,31 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, debug_html: bool) -
                     except Exception:
                         pass
 
+                # Extrai dados embutidos no HTML (Next.js): tanto o antigo
+                # __NEXT_DATA__ (Pages Router) quanto os chunks RSC
+                # (self.__next_f.push([1,"..."])) do App Router. Salva um
+                # recorte pequeno o suficiente para caber no debug commitado
+                # e ainda dar pra entender a estrutura.
+                html_full = page.content()
+                next_data_snippets = []
+                m_next_data = re.search(
+                    r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html_full, re.S
+                )
+                if m_next_data:
+                    next_data_snippets.append({"tipo": "__NEXT_DATA__", "conteudo": m_next_data.group(1)[:60000]})
+                for m in re.finditer(r'self\.__next_f\.push\(\[1,\s*(".*?")\]\)', html_full, re.S):
+                    next_data_snippets.append({"tipo": "next_f_chunk", "conteudo": m.group(1)[:20000]})
+
+                if next_data_snippets:
+                    slug = slugify(competicao)
+                    (OUT_DIR / f"debug_apf_nextdata_{slug}.json").write_text(
+                        json.dumps(next_data_snippets, ensure_ascii=False, indent=2), encoding="utf-8"
+                    )
+                    print(f"[INFO] {competicao}: {len(next_data_snippets)} blocos de dados embutidos encontrados")
+                else:
+                    print(f"[INFO] {competicao}: nenhum __NEXT_DATA__/RSC chunk encontrado")
+
+
                 # Clica em elementos que pareçam abrir fixture/calendário/
                 # próxima jornada, para tentar acionar mais chamadas de API.
                 for selector in ["a", "button"]:
@@ -164,6 +189,21 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, debug_html: bool) -
             if debug_html:
                 HTML_DIR.mkdir(exist_ok=True)
                 (HTML_DIR / "apf_detalhe_partida.html").write_text(page.content(), encoding="utf-8")
+
+            html_full = page.content()
+            next_data_snippets = []
+            m_next_data = re.search(
+                r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html_full, re.S
+            )
+            if m_next_data:
+                next_data_snippets.append({"tipo": "__NEXT_DATA__", "conteudo": m_next_data.group(1)[:60000]})
+            for m in re.finditer(r'self\.__next_f\.push\(\[1,\s*(".*?")\]\)', html_full, re.S):
+                next_data_snippets.append({"tipo": "next_f_chunk", "conteudo": m.group(1)[:20000]})
+            if next_data_snippets:
+                (OUT_DIR / "debug_apf_nextdata_detalhe_partida.json").write_text(
+                    json.dumps(next_data_snippets, ensure_ascii=False, indent=2), encoding="utf-8"
+                )
+                print(f"[INFO] Detalhe da partida: {len(next_data_snippets)} blocos de dados embutidos encontrados")
         except Exception as e:
             print(f"[WARN] Erro abrindo página de detalhe: {e}")
 
