@@ -36,6 +36,7 @@ OUT_DIR.mkdir(exist_ok=True)
 HTML_DIR = OUT_DIR / "debug_liga1_html"
 
 URL = "https://liga1.pe/fixture/"
+URL_LIGA2 = "https://liga2.pe/partidos/"
 
 HEADERS_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
