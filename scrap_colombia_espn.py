@@ -45,6 +45,9 @@ BASE_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 # league slug -> nome amigável da competicao
 LIGAS = [
     ("col.1", "Liga BetPlay"),
+    ("col.2", "Torneo BetPlay"),
+    ("col.copa", "Copa BetPlay"),
+    ("col.w.1", "Liga Femenina BetPlay"),
 ]
 
 FIELDS = [
@@ -153,7 +156,8 @@ def event_to_partido(event: dict, competicao_label: str) -> Partido | None:
     extra_parts = [f"codigo_espn={event.get('id','')}"]
     if status:
         extra_parts.append(f"status={status}")
-    if score_home and score_away:
+    jogo_finalizado = status.lower() not in ("scheduled", "", "postponed", "cancelled")
+    if jogo_finalizado and score_home and score_away:
         extra_parts.append(f"placar={score_home}-{score_away}")
 
     rodada = clean_text(event.get("shortName")) if False else ""
