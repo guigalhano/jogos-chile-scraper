@@ -466,6 +466,73 @@ const ESTADIO_MANDANTE_PADRAO_CHILE = {
   "deportes recoleta": "leonel sanchez",
   "club deportes santa cruz": "joaquín muñoz garcía",
   "trasandino": "regional de los andes",
+
+  // Tercera División A 2026 (14 equipes)
+  "aguara": "municipal de san joaquin",
+  "cdsc aguara": "municipal de san joaquin",
+  "atletico oriente": "municipal de lo barnechea",
+  "chimbarongo": "municipal de chimbarongo",
+  "chimbarongo fc": "municipal de chimbarongo",
+  "comunal cabrero": "luis figueroa",
+  "constitucion unido": "enrique donn",
+  "deportes rancagua": "municipal patricio mekis",
+  "dep. rancagua": "municipal patricio mekis",
+  "futuro": "municipal de penalolen",
+  "futuro fc": "municipal de penalolen",
+  "imperial unido": "el alto",
+  "lautaro de buin": "lautaro de buin",
+  "lautaro": "lautaro de buin",
+  "malleco unido": "municipal alberto larraguibel",
+  "municipal puente alto": "municipal de puente alto",
+  "mun. puente alto": "municipal de puente alto",
+  "naval": "el morro",
+  "naval de talcahuano": "el morro",
+  "quintero unido": "raul vargas",
+  "rodelindo roman": "san gregorio",
+
+  // Tercera División B 2026 — Zona Norte (14 equipes)
+  "jardin del eden": "bicentenario de la florida",
+  "union glorias navales": "olimpico gomez carreno",
+  "glorias navales": "olimpico gomez carreno",
+  "union companias": "la portada",
+  "cultural maipu": "santiago bueras",
+  "provincial talagante": "lucas pacheco",
+  "prov. talagante": "lucas pacheco",
+  "deportes vallenar": "nelson rojas",
+  "dep. vallenar": "nelson rojas",
+  "audax italiano de paipote": "luis valenzuela",
+  "deportes ovalle": "diaguita",
+  "municipal mejillones": "rolando cortes",
+  "mun. mejillones": "rolando cortes",
+  "julio covarrubias": "los jardines",
+  "municipal ovalle": "diaguita",
+  "mun. ovalle": "diaguita",
+  "tricolor municipal": "municipal de paine",
+  "tricolor de paine": "municipal de paine",
+  "curacavi fc": "olimpico cuyuncavi",
+  "ceff copiapo": "luis valenzuela",
+
+  // Tercera División B 2026 — Zona Sur (14 equipes)
+  "deportivo pumanque": "municipal de pumanque",
+  "pumanque": "municipal de pumanque",
+  "buenos aires": "nelson valenzuela",
+  "deportes laja historico": "facela",
+  "laja historico": "facela",
+  "fernandez vial": "ester roa rebolledo",
+  "vicente perez rosales": "chinquihue",
+  "inter concepcion": "municipal de florida",
+  "iberia": "municipal de los angeles",
+  "cdsc iberia": "municipal de los angeles",
+  "municipal paillaco": "municipal de paillaco",
+  "mun. paillaco": "municipal de paillaco",
+  "republica independiente": "municipal de hualqui",
+  "rep. ind. de hualqui": "municipal de hualqui",
+  "gasparin fc": "lo blanco",
+  "efc conchali": "municipal de conchali",
+  "nacimiento": "municipal de nacimiento",
+  "nacimiento cdsc": "municipal de nacimiento",
+  "deportes hualpen": "las golondrinas",
+  "dep. hualpen": "las golondrinas",
 };
 
 const ESTADIO_MANDANTE_PADRAO_ARGENTINA = {
@@ -528,6 +595,22 @@ const ESTADIO_MANDANTE_PADRAO_PERU = {
   "atlético grau": "campeones del 36",
 };
 
+const SUFIXOS_REGIAO_CHILE = [
+  "arica y parinacota", "tarapaca", "antofagasta", "atacama", "coquimbo",
+  "valparaiso", "metropolitana", "o'higgins", "ohiggins", "maule", "nuble",
+  "biobio", "la araucania", "araucania", "los rios", "los lagos", "aysen",
+  "magallanes",
+];
+
+function stripSufixoRegiaoChile(nomeNormalizado) {
+  for (const reg of SUFIXOS_REGIAO_CHILE) {
+    if (nomeNormalizado.endsWith(" " + reg)) {
+      return nomeNormalizado.slice(0, -(reg.length + 1)).trim();
+    }
+  }
+  return nomeNormalizado;
+}
+
 function findDefaultHomeStadium(mandante, pais) {
   const mapa = pais === "Argentina" ? ESTADIO_MANDANTE_PADRAO_ARGENTINA
     : pais === "Peru" ? ESTADIO_MANDANTE_PADRAO_PERU
@@ -539,6 +622,14 @@ function findDefaultHomeStadium(mandante, pais) {
   // (ex.: "San Lorenzo de A.", "Gimnasia (Mza.)"); tenta de novo sem elas.
   const keySemPontuacao = key.replace(/[().,]/g, "").replace(/\s+/g, " ").trim();
   if (mapa[keySemPontuacao]) return findStadiumInfo(mapa[keySemPontuacao], pais);
+
+  // anfaterceradivision.cl (Tercera A/B) grava o nome do time seguido da
+  // região (ex.: "Quintero Unido Valparaíso", "Comunal Cabrero Biobío").
+  // Tenta de novo removendo esse sufixo antes de desistir.
+  if (pais === "Chile") {
+    const keySemRegiao = stripSufixoRegiaoChile(key);
+    if (keySemRegiao !== key && mapa[keySemRegiao]) return findStadiumInfo(mapa[keySemRegiao], pais);
+  }
 
   return null;
 }
