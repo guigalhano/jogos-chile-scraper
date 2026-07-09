@@ -127,12 +127,17 @@ LINHA_JOGO_RE = re.compile(
     r"(?P<mandante>.+?)\s+[xX]\s+(?P<visitante>.+?)\s*\((?P<estadio>[^)]+)\)\s*$"
 )
 
-# Formato alternativo visto em algumas notícias de rodada:
-#   "Paraná Clube x Prudentópolis – 28/02, às 20h30: Vila Capanema"
+# Formato alternativo visto em notícias "Saiba como assistir" (horário de
+# transmissão, NÃO tem estádio):
+#   "Athletico x Coritiba – 17/01, às 16h: Canal GOAT, no YouTube, e RIC Record"
+# O campo depois dos dois-pontos aqui é o CANAL de transmissão, não o
+# estádio — por isso vai para `extra`, e `estadio` fica vazio (fica por
+# conta do fallback de estádio-padrão-por-mandante, como já fazemos para
+# o Chile em script.js).
 LINHA_JOGO_ALT_RE = re.compile(
     r"^(?P<mandante>.+?)\s+[xX]\s+(?P<visitante>.+?)\s*[–\-]\s*"
     r"(?P<dia>\d{1,2})/(?P<mes>\d{1,2}).*?(?P<hora>\d{1,2})h(?P<min>\d{2})?"
-    r"(?:\s*:\s*(?P<estadio>.+))?$"
+    r"(?:\s*:\s*(?P<transmissao>.+))?$"
 )
 
 RODADA_RE = re.compile(r"(\d+)[ºªa°]\s*[Rr]odada")
@@ -230,6 +235,91 @@ def descobrir_urls_noticias(listagem_url: str, debug_html: bool = False, max_pag
     return urls
 
 
+# Linha que contém SÓ a data (às vezes com "\xa0" no lugar do espaço, visto
+# em HTML real da FPF): "31/01 (sábado):" ou "01/02 (domingo):"
+DATA_ISOLADA_RE = re.compile(r"^(?P<dia>\d{1,2})/(?P<mes>\d{1,2})\s*\([^)]*\)\s*:?\s*$")
+
+# Linha que começa com a hora, com ou sem o resto do jogo na mesma linha:
+#   "16h – Cianorte x Coritiba"   (jogo completo na mesma linha)
+#   "16h –"                        (equipes vêm na(s) próxima(s) linha(s))
+HORA_PREFIXO_RE = re.compile(r"^(?P<hora>\d{1,2})h(?P<min>\d{2})?\s*[–\-]\s*(?P<resto>.*)$")
+
+TEAMS_RE = re.compile(r"^(?P<mandante>.+?)\s+[xX]\s+(?P<visitante>.+)$")
+
+# Linha que é só o estádio entre parênteses: "(Albino Turbay)", "(a definir)"
+ESTADIO_LINHA_RE = re.compile(r"^\((?P<estadio>[^)]+)\)$")
+
+
+def _extrair_jogos_sequencial(linhas: list[str], competicao: str, ano: int, url: str) -> list[Partido]:
+    """Parser stateful para o formato real observado em várias notícias da
+    FPF, onde data / hora+times / estádio podem vir cada um em sua própria
+    linha (o HTML quebra em <br>/<p> no meio do que visualmente é uma frase
+    só). Validado contra HTML real (não simulado) de uma notícia de tabela
+    do Paranaense 2026 — ver docs_correcoes/fpf_parana_README.md."""
+    partidos: list[Partido] = []
+    dia_atual, mes_atual = None, None
+    rodada_atual = ""
+    i = 0
+    n = len(linhas)
+
+    while i < n:
+        linha = linhas[i]
+
+        m_rodada = RODADA_RE.search(linha)
+        if m_rodada:
+            rodada_atual = m_rodada.group(0)
+
+        m_data = DATA_ISOLADA_RE.match(linha)
+        if m_data:
+            dia_atual, mes_atual = int(m_data.group("dia")), int(m_data.group("mes"))
+            i += 1
+            continue
+
+        m_hora = HORA_PREFIXO_RE.match(linha)
+        if m_hora and dia_atual is not None:
+            hora = f"{int(m_hora.group('hora')):02d}:{m_hora.group('min') or '00'}"
+            texto_times = m_hora.group("resto").strip()
+            j = i
+            tentativas = 0
+            # os nomes dos times podem continuar na(s) próxima(s) linha(s)
+            while not TEAMS_RE.match(texto_times) and tentativas < 3 and j + 1 < n:
+                j += 1
+                texto_times = (texto_times + " " + linhas[j]).strip()
+                tentativas += 1
+
+            m_teams = TEAMS_RE.match(texto_times)
+            if m_teams:
+                estadio = ""
+                k = j + 1
+                while k < n and k < j + 3:
+                    if DATA_ISOLADA_RE.match(linhas[k]) or HORA_PREFIXO_RE.match(linhas[k]):
+                        break
+                    m_est = ESTADIO_LINHA_RE.match(linhas[k])
+                    if m_est:
+                        estadio = m_est.group("estadio").strip()
+                        break
+                    k += 1
+
+                partidos.append(Partido(
+                    fonte="federacaopr.com.br",
+                    competicao=competicao,
+                    data=f"{ano}-{mes_atual:02d}-{dia_atual:02d}",
+                    hora=hora,
+                    mandante=clean_team_name(m_teams.group("mandante")),
+                    visitante=clean_team_name(m_teams.group("visitante")),
+                    estadio="" if normalize(estadio) in {"a definir", "por definir", ""} else estadio,
+                    rodada=rodada_atual,
+                    url=url,
+                    extra="status=Sin fecha/hora definida" if normalize(estadio) in {"a definir", "por definir"} else "",
+                ))
+                i = j + 1
+                continue
+
+        i += 1
+
+    return partidos
+
+
 def extrair_jogos_de_noticia(url: str, html: str, competicao: str, ano: int) -> list[Partido]:
     soup = BeautifulSoup(html, "html.parser")
     # Tenta focar no corpo do artigo (WordPress costuma usar <article> ou
@@ -238,7 +328,7 @@ def extrair_jogos_de_noticia(url: str, html: str, competicao: str, ano: int) -> 
     corpo = soup.find("article") or soup.find(class_=re.compile("entry-content|post-content")) or soup
 
     texto = corpo.get_text("\n")
-    linhas = [l.strip() for l in texto.split("\n") if l.strip()]
+    linhas = [l.replace("\xa0", " ").strip() for l in texto.split("\n") if l.strip()]
 
     partidos: list[Partido] = []
     dia_atual, mes_atual = None, None
@@ -272,6 +362,7 @@ def extrair_jogos_de_noticia(url: str, html: str, competicao: str, ano: int) -> 
         m2 = LINHA_JOGO_ALT_RE.match(linha)
         if m2:
             hora = f"{int(m2.group('hora')):02d}:{m2.group('min') or '00'}"
+            transmissao = clean_team_name(m2.group("transmissao") or "")
             partidos.append(Partido(
                 fonte="federacaopr.com.br",
                 competicao=competicao,
@@ -279,10 +370,16 @@ def extrair_jogos_de_noticia(url: str, html: str, competicao: str, ano: int) -> 
                 hora=hora,
                 mandante=clean_team_name(m2.group("mandante")),
                 visitante=clean_team_name(m2.group("visitante")),
-                estadio=clean_team_name(m2.group("estadio") or ""),
+                estadio="",
                 rodada=rodada_atual,
                 url=url,
+                extra=f"transmissao: {transmissao}" if transmissao else "",
             ))
+
+    # Formato multi-linha (data / hora+times / estádio cada um em sua linha).
+    # Roda sempre também, e o dedupe() final cuida de eventuais jogos que os
+    # dois métodos peguem em duplicidade (mesmo id = mesma data/hora/times).
+    partidos.extend(_extrair_jogos_sequencial(linhas, competicao, ano, url))
 
     return partidos
 
