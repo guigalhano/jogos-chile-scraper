@@ -576,7 +576,7 @@ window.ESTADIOS_CHILE = [
   },
   {
     nome: "Estadio Municipal de Chimbarongo",
-    aliases: ["municipal de chimbarongo"],
+    aliases: ["municipal de chimbarongo", "mun. de chimbarongo", "mun de chimbarongo"],
     cidade: "Chimbarongo",
     regiao: "O'Higgins",
     lat: -34.7167,
@@ -612,7 +612,7 @@ window.ESTADIOS_CHILE = [
   },
   {
     nome: "Estadio Municipal de Peñalolén",
-    aliases: ["municipal de penalolen", "municipal de peñalolén"],
+    aliases: ["municipal de penalolen", "municipal de peñalolén", "mun. de penalolen", "mun de penalolen"],
     cidade: "Santiago (Peñalolén)",
     regiao: "Región Metropolitana",
     lat: -33.4833,
@@ -657,7 +657,7 @@ window.ESTADIOS_CHILE = [
   },
   {
     nome: "Estadio Rolando Cortés",
-    aliases: ["rolando cortes"],
+    aliases: ["rolando cortes", "mun. de mejillones", "mun de mejillones"],
     cidade: "Mejillones",
     regiao: "Antofagasta",
     lat: -23.1000,
@@ -684,7 +684,7 @@ window.ESTADIOS_CHILE = [
   },
   {
     nome: "Estadio Olímpico Cuyuncaví",
-    aliases: ["olimpico cuyuncavi"],
+    aliases: ["olimpico cuyuncavi", "olimpico de cuyuncavi"],
     cidade: "Curacaví",
     regiao: "Región Metropolitana",
     lat: -33.4167,
@@ -807,5 +807,23 @@ window.ESTADIOS_CHILE = [
     lat: -40.0667,
     lng: -72.8833,
     fonte: "manual/aproximado (cidade de Paillaco — mandante Municipal Paillaco)",
+  },
+  {
+    nome: "Estadio Olímpico Gómez Carreño",
+    aliases: ["olimpico gomez carreno", "gomez carreno"],
+    cidade: "Viña del Mar",
+    regiao: "Valparaíso",
+    lat: -33.0244,
+    lng: -71.5644,
+    fonte: "manual/aproximado (cidade de Viña del Mar — cancha de semana de Unión Glorias Navales; a Wikipédia lista Sausalito como estádio oficial do clube, usado em jogos pontuais)",
+  },
+  {
+    nome: "Estadio San Gregorio",
+    aliases: ["san gregorio", "san gregorio la granja", "municipal san gregorio"],
+    cidade: "Santiago (La Granja)",
+    regiao: "Región Metropolitana",
+    lat: -33.5453,
+    lng: -70.6297,
+    fonte: "manual/aproximado (comuna La Granja — visto em cf3.cl como mandante Rodelindo Román; Wikipédia lista Municipal de San Joaquín como estádio oficial do clube)",
   },
 ];
