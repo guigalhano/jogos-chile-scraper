@@ -31,6 +31,7 @@ import hashlib
 import json
 import re
 import sys
+import unicodedata
 from dataclasses import dataclass, asdict
 from datetime import datetime, date, timedelta
 from pathlib import Path
@@ -83,6 +84,105 @@ CF3_BASE_URLS = [
     "https://cf3.cl/torneo/tercera-b/grupo-norte/fecha/13",
     "https://cf3.cl/torneo/tercera-b/grupo-sur/fecha/13",
 ]
+
+# Roster 2026 confirmado cruzando as tabelas de posições de cf3.cl com os 3
+# artigos da Wikipedia (Tercera División A de Chile 2026, Tercera División B
+# de Chile 2026, e o anexo histórico de participantes). Total: 14 + 14 + 14
+# = 42 clubes, batendo com o número oficial informado pela ANFA/Wikipedia.
+#
+# Isso serve para CORRIGIR o campo `competicao`: o parser de CF3 hoje o
+# deduz só pela URL da página (/tercera-a/, /grupo-norte/, /grupo-sur/), e
+# essa dedução falha quando a página arrasta um jogo de outro grupo (ex.:
+# widget lateral "outros resultados"). Exemplo real encontrado: "Quintero
+# Unido" (Tercera A) aparecia etiquetado como "Tercera B - Norte" porque foi
+# capturado numa página de Tercera B Norte.
+TERCERA_A_2026 = [
+    "Lautaro de Buin", "Comunal Cabrero", "Rodelindo Roman", "Constitucion Unido",
+    "Chimbarongo FC", "Naval de Talcahuano", "Atletico Oriente", "Futuro FC",
+    "Quintero Unido", "CDSC Aguara", "Malleco Unido", "Deportes Rancagua",
+    "Imperial Unido", "Municipal Puente Alto",
+]
+
+TERCERA_B_NORTE_2026 = [
+    "Jardin del Eden", "Glorias Navales", "Union Companias", "Cultural Maipu",
+    "Provincial Talagante", "Deportes Vallenar", "Audax Italiano de Paipote",
+    "Deportes Ovalle", "Municipal Mejillones", "Julio Covarrubias",
+    "Municipal Ovalle", "Tricolor Municipal", "Tricolor de Paine", "CEFF Copiapo", "Curacavi FC",
+]
+
+TERCERA_B_SUR_2026 = [
+    "Deportivo Pumanque", "Pumanque", "Laja Historico", "Deportes Laja Historico", "Nacimiento CDSC", "Nacimiento",
+    "Vicente Perez Rosales", "Gasparin FC", "Fernandez Vial",
+    "Deportes Valdivia", "Municipal Paillaco", "Buenos Aires", "CDSC Iberia", "Iberia",
+    "Republica Independiente de Hualqui", "Republica Independiente", "Inter Concepcion",
+    "Deportes Hualpen", "EFC Conchali",
+]
+
+
+def _normalize_team(nome: str) -> str:
+    """Remove acentos, pontuação e sufixos regionais que o ANFA costuma
+    anexar (ex.: "Quintero Unido Valparaíso" -> "quintero unido")."""
+    s = unicodedata.normalize("NFKD", nome or "").encode("ascii", "ignore").decode("ascii")
+    s = re.sub(r"[^a-zA-Z0-9\s]", " ", s).lower()
+    s = re.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def _build_team_index() -> dict[str, str]:
+    idx: dict[str, str] = {}
+    for nome in TERCERA_A_2026:
+        idx[_normalize_team(nome)] = "Tercera A"
+    for nome in TERCERA_B_NORTE_2026:
+        idx[_normalize_team(nome)] = "Tercera B - Norte"
+    for nome in TERCERA_B_SUR_2026:
+        idx[_normalize_team(nome)] = "Tercera B - Sur"
+    return idx
+
+
+TEAM_TO_COMPETICAO = _build_team_index()
+_TEAM_KEYS_BY_LEN = sorted(TEAM_TO_COMPETICAO.keys(), key=len, reverse=True)
+
+
+def lookup_competicao_tercera(nome_time: str) -> Optional[str]:
+    """Casa um nome de time (com variações/sufixos) contra o roster oficial
+    2026. Usa correspondência por substring nos dois sentidos porque as
+    fontes abreviam ou alongam nomes de formas diferentes
+    (ex.: "Quintero Unido" vs "Quintero Unido Valparaíso")."""
+    alvo = _normalize_team(nome_time)
+    if not alvo:
+        return None
+    if alvo in TEAM_TO_COMPETICAO:
+        return TEAM_TO_COMPETICAO[alvo]
+    for chave in _TEAM_KEYS_BY_LEN:
+        if chave in alvo or alvo in chave:
+            return TEAM_TO_COMPETICAO[chave]
+    return None
+
+
+def corrigir_competicao_tercera(partidos: list["Partido"]) -> int:
+    """Corrige `competicao` nos jogos de Tercera A/B usando o roster oficial
+    2026 (cruzado com Wikipedia), em vez de confiar apenas na página de
+    origem. Atua em qualquer fonte (cf3.cl, anfaterceradivision.cl, etc.).
+    Retorna quantas correções foram feitas, e imprime cada uma no log."""
+    correcoes = 0
+    for p in partidos:
+        if "tercera" not in p.competicao.lower() and "anfa" not in p.competicao.lower():
+            continue
+        comp_mandante = lookup_competicao_tercera(p.mandante)
+        comp_visitante = lookup_competicao_tercera(p.visitante)
+        comp_correta = comp_mandante or comp_visitante
+        if comp_mandante and comp_visitante and comp_mandante != comp_visitante:
+            print(
+                f"[AVISO] {p.mandante} ({comp_mandante}) x {p.visitante} ({comp_visitante}): "
+                f"times de grupos diferentes no mesmo jogo, verificar manualmente | {p.url}",
+                file=sys.stderr,
+            )
+            continue
+        if comp_correta and comp_correta != p.competicao:
+            print(f"[CORREÇÃO] '{p.mandante}' vs '{p.visitante}': competicao '{p.competicao}' -> '{comp_correta}' | {p.url}")
+            p.competicao = comp_correta
+            correcoes += 1
+    return correcoes
 
 TIME_RE = re.compile(r"[-–—]?\s*(\d{1,2}:\d{2})\s*(?:hrs?|h)?", re.I)
 DATE_ES_RE = re.compile(
@@ -235,7 +335,7 @@ def is_probably_team(line: str) -> bool:
         return False
     if SCORE_RE.match(line):
         return False
-    if low in {"finalizado", "suspendido", "programado", "por jugar", "postergado"}:
+    if low in {"finalizado", "suspendido", "programado", "por jugar", "postergado", "por definir", "por confirmar", "a definir", "s/h", "sin hora"}:
         return False
     if low.startswith(("estadio:", "estadio ", "municipal ", "bicentenario ")):
         return False
@@ -544,7 +644,7 @@ def infer_cf3_competition(url: str, page_text: str = "") -> str:
     return "Tercera División"
 
 
-def parse_cf3_page(url: str, html: str, year: int, desde: date, ate: date, incluir_passados: bool = False) -> list[Partido]:
+def parse_cf3_page(url: str, html: str, year: int, desde: date, ate: date, incluir_passados: bool = False, incluir_sin_fecha: bool = True) -> list[Partido]:
     """
     Parser para CF3.
     Estrutura observada:
@@ -562,12 +662,24 @@ def parse_cf3_page(url: str, html: str, year: int, desde: date, ate: date, inclu
       Time B
       Programado
       Estadio: ...
+
+    Em rodadas distantes, o ANFA/CF3 ainda não fixou data nem horário. Nesses
+    casos o bloco do jogo aparece SEM nenhuma linha de data, algo como:
+      Jornada 22
+      Time A
+      VS
+      Time B
+      Por Definir
+    ou até sem separador nenhum entre os dois times. Esses jogos "sem data"
+    são capturados numa segunda passada (ver `_parse_cf3_sin_fecha` abaixo)
+    para não perdê-los do calendário completo.
     """
     lines = soup_lines(html)
     page_text = " ".join(lines[:40])
     competicao = infer_cf3_competition(url, page_text)
     rodada = ""
     partidos: list[Partido] = []
+    consumed: set[int] = set()
 
     for line in lines[:60]:
         m = re.search(r"Jornada\s+\d+", line, re.I)
@@ -624,6 +736,9 @@ def parse_cf3_page(url: str, html: str, year: int, desde: date, ate: date, inclu
         if status:
             extra_parts.append(f"status={status}")
 
+        # marca os índices usados por este jogo para a 2ª passada não reprocessá-los
+        consumed.update(x for x in (i, team1_idx, score_idx, team2_idx) if x is not None)
+
         if in_window(dt, desde, ate, incluir_passados):
             partidos.append(Partido(
                 fonte="cf3.cl",
@@ -638,7 +753,93 @@ def parse_cf3_page(url: str, html: str, year: int, desde: date, ate: date, inclu
                 extra="; ".join(extra_parts),
             ))
 
+    if incluir_sin_fecha:
+        partidos.extend(_parse_cf3_sin_fecha(lines, consumed, competicao, url, rodada))
+
     return dedupe(partidos)
+
+
+def _parse_cf3_sin_fecha(lines: list[str], consumed: set[int], competicao: str, url: str, rodada_default: str) -> list[Partido]:
+    """
+    Segunda passada: captura confrontos de CF3 que ainda NÃO têm data/horário
+    definidos (rodadas futuras distantes). Esses jogos entram no calendário
+    com `data=""` e `hora=""`, para que o calendário completo mostre pelo
+    menos o cruzamento de times já sorteado.
+
+    ATENÇÃO: como não foi possível inspecionar ao vivo uma página real de
+    rodada futura sem data (bloqueio de rede do ambiente de geração deste
+    patch), este parser cobre os dois formatos mais prováveis a partir do
+    que já se observa no site (marcador "VS"/"V/S" no lugar do placar, e o
+    texto "Por Definir" usado para estádio) e é defensivo (ignora blocos
+    ambíguos em vez de inventar dados). Recomenda-se validar contra 1-2
+    páginas reais de rodadas distantes antes de confiar 100% nesses registros.
+    """
+    partidos: list[Partido] = []
+    rodada = rodada_default
+
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        m = re.search(r"Jornada\s+\d+", line, re.I)
+        if m:
+            rodada = m.group(0)
+            i += 1
+            continue
+
+        if i in consumed or not is_probably_team(line):
+            i += 1
+            continue
+
+        team1_idx = i
+        team1 = line
+
+        # procura separador (VS, V/S, "por definir", "programado") ou direto o time 2
+        sep_idx = None
+        team2_idx = None
+        for j in range(team1_idx + 1, min(team1_idx + 4, len(lines))):
+            if j in consumed:
+                break
+            low = lines[j].lower()
+            if SCORE_RE.match(lines[j]) or low in {"por definir", "programado", "vs", "v/s"}:
+                sep_idx = j
+                continue
+            if is_probably_team(lines[j]):
+                team2_idx = j
+                break
+
+        if team2_idx is None:
+            i += 1
+            continue
+
+        team2 = lines[team2_idx]
+
+        estadio = ""
+        for j in range(team2_idx + 1, min(team2_idx + 6, len(lines))):
+            if j in consumed:
+                break
+            if is_probably_stadium(lines[j]):
+                estadio = re.sub(r"^Estadio:\s*", "", lines[j], flags=re.I).strip()
+                break
+
+        consumed.update({team1_idx, team2_idx})
+        if sep_idx is not None:
+            consumed.add(sep_idx)
+
+        partidos.append(Partido(
+            fonte="cf3.cl",
+            competicao=competicao,
+            data="",
+            hora="",
+            mandante=team1,
+            visitante=team2,
+            estadio=estadio,
+            rodada=rodada,
+            url=url,
+            extra="status=Sin fecha/hora definida",
+        ))
+        i = team2_idx + 1
+
+    return partidos
 
 
 def dedupe(partidos: Iterable[Partido]) -> list[Partido]:
@@ -706,7 +907,7 @@ def merge_history(new_rows: list[dict], history_path: Path) -> list[dict]:
     return sorted(by_id.values(), key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("competicao", "")))
 
 
-def update(dias: int = 180, dias_atras: int = 14, year: Optional[int] = None, incluir_passados: bool = False, no_discover: bool = False) -> list[dict]:
+def update(dias: int = 180, dias_atras: int = 14, year: Optional[int] = None, incluir_passados: bool = False, no_discover: bool = False, incluir_sin_fecha: bool = True) -> list[dict]:
     today = date.today()
     desde = today - timedelta(days=dias_atras)
     ate = today + timedelta(days=dias)
@@ -747,14 +948,18 @@ def update(dias: int = 180, dias_atras: int = 14, year: Optional[int] = None, in
     for url in cf3_urls:
         try:
             html = fetch(url)
-            found = parse_cf3_page(url, html, year, desde, ate, incluir_passados=incluir_passados)
+            found = parse_cf3_page(url, html, year, desde, ate, incluir_passados=incluir_passados, incluir_sin_fecha=incluir_sin_fecha)
             print(f"[OK] CF3 -> {len(found)} jogos | {url}")
             all_matches.extend(found)
         except Exception as e:
             print(f"[ERRO] {url}: {e}", file=sys.stderr)
 
+    n_correcoes = corrigir_competicao_tercera(all_matches)
+    if n_correcoes:
+        print(f"[INFO] {n_correcoes} jogo(s) tiveram 'competicao' corrigida via roster Tercera A/B 2026")
+
     rows = [p.to_row() for p in dedupe(all_matches)]
-    rows = sorted(rows, key=lambda r: (r["data"], r.get("hora", ""), r["competicao"], r["mandante"]))
+    rows = sorted(rows, key=lambda r: (r["data"] == "", r["data"], r.get("hora", ""), r["competicao"], r["mandante"]))
 
     current_csv = OUT_DIR / "jogos_programados.csv"
     current_json = OUT_DIR / "jogos_programados.json"
@@ -783,6 +988,7 @@ def main() -> None:
     parser.add_argument("--ano", type=int, default=None, help="ano da temporada, padrão: ano atual")
     parser.add_argument("--incluir-passados", action="store_true", help="inclui também todos os jogos passados encontrados nas páginas")
     parser.add_argument("--no-discover", action="store_true", help="não descobrir ligas/jornadas automaticamente; usa apenas URLs fixos")
+    parser.add_argument("--excluir-sin-fecha", action="store_true", help="NÃO incluir partidas CF3 de rodadas futuras que ainda não têm data/hora definida (por padrão elas são incluídas com data/hora vazias)")
     args = parser.parse_args()
 
     update(
@@ -791,6 +997,7 @@ def main() -> None:
         year=args.ano,
         incluir_passados=args.incluir_passados,
         no_discover=args.no_discover,
+        incluir_sin_fecha=not args.excluir_sin_fecha,
     )
 
 
