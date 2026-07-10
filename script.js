@@ -650,10 +650,27 @@ const ESTADIO_MANDANTE_PADRAO_ECUADOR = {
   "universidad catolica (quito)": "gonzalo pozo ripalda",
 };
 
+// Torneo BetPlay (ascenso/reservas) — só os times que consegui confirmar
+// com uma fonte real (não é a lista completa das 16 equipes: os que faltam
+// ficaram de fora por falta de confirmação, em vez de arriscar um palpite
+// errado).
+const ESTADIO_MANDANTE_PADRAO_COLOMBIA = {
+  "real cartagena": "jaime moron leon",
+  "orsomarso sc": "raul miranda",
+  "union magdalena": "sierra nevada",
+  "inter palmira": "francisco rivera escobar",
+  "deportes quindio": "centenario de armenia",
+  "barranquilla fc": "romelio martinez",
+  "patriotas": "la independencia",
+  "envigado fc": "polideportivo sur",
+  "itagui leones": "metropolitano ciudad de itagui",
+};
+
 function findDefaultHomeStadium(mandante, pais) {
   const mapa = pais === "Argentina" ? ESTADIO_MANDANTE_PADRAO_ARGENTINA
     : pais === "Peru" ? ESTADIO_MANDANTE_PADRAO_PERU
     : pais === "Ecuador" ? ESTADIO_MANDANTE_PADRAO_ECUADOR
+    : pais === "Colombia" ? ESTADIO_MANDANTE_PADRAO_COLOMBIA
     : ESTADIO_MANDANTE_PADRAO_CHILE;
   const key = normalize(mandante);
   if (mapa[key]) return findStadiumInfo(mapa[key], pais);
