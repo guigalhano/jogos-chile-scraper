@@ -2,13 +2,31 @@
   {
     "competicao": "Copa de Primera",
     "url": "https://www.apf.org.py/copa-de-primera",
-    "jogos": 6,
-    "erro": ""
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "División Intermedia",
     "url": "https://www.apf.org.py/intermedia",
-    "jogos": 8,
-    "erro": ""
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
+  },
+  {
+    "competicao": "Primera B",
+    "url": "https://www.apf.org.py/primera-b",
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
+  },
+  {
+    "competicao": "Primera C",
+    "url": "https://www.apf.org.py/primera-c",
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
+  },
+  {
+    "competicao": "Copa Paraguay",
+    "url": "https://www.apf.org.py/copa-paraguay",
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   }
 ]
