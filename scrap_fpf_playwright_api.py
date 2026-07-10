@@ -234,6 +234,15 @@ def obj_to_partido(obj: dict, api_url: str) -> Partido | None:
     if is_selecao_nacional(mandante) or is_selecao_nacional(visitante):
         return None
 
+    # A página da FPF também embute um widget com o placar do Brasileirão
+    # Série B nacional (endpoint Resultados.ashx?codigo=152) — nada a ver com
+    # o futebol paulista, e os mesmos jogos já são cobertos pelo scraper da
+    # CBF (fonte="CBF"). Rejeita para não gerar duplicatas no mapa (times
+    # como Juventude-RS, Vila Nova-GO, Sport-PE, Botafogo, etc. confirmam que
+    # é o mesmo widget nacional, não uma competição da FPF).
+    if "codigo=152" in api_url:
+        return None
+
     extra_parts = []
     if municipio:
         extra_parts.append(f"cidade={municipio}")
