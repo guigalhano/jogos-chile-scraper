@@ -2491,4 +2491,46 @@ window.ESTADIOS_BRASIL = [
     lng: -41.119829,
     fonte: "manual/aproximado (cidade de Cachoeiro de Itapemirim)",
   },
+
+  /* ===================================================================
+     Mato Grosso — FMF-MT (estadios das quartas de final do Mato-grossense
+     Sub-20 2026, adicionados a partir de noticia oficial republicada).
+     Coordenadas em nivel de cidade (aproximado).
+     =================================================================== */
+  {
+    nome: "Estádio Apolônio de Mello",
+    aliases: ["estadio apolonio de mello", "apolonio de mello"],
+    cidade: "Chapada dos Guimarães",
+    regiao: "Mato Grosso",
+    lat: -15.464343,
+    lng: -55.749857,
+    fonte: "manual/aproximado (cidade de Chapada dos Guimarães)",
+  },
+  {
+    nome: "Estádio Luthero Lopes",
+    aliases: ["estadio luthero lopes", "luthero lopes"],
+    cidade: "Rondonópolis",
+    regiao: "Mato Grosso",
+    lat: -16.467251,
+    lng: -54.637173,
+    fonte: "manual/aproximado (cidade de Rondonópolis)",
+  },
+  {
+    nome: "Estádio Lamartine Salles",
+    aliases: ["estadio lamartine salles", "lamartine salles"],
+    cidade: "Barra do Bugres",
+    regiao: "Mato Grosso",
+    lat: -15.07016,
+    lng: -57.187784,
+    fonte: "manual/aproximado (cidade de Barra do Bugres)",
+  },
+  {
+    nome: "Estádio Passo das Emas",
+    aliases: ["estadio passo das emas", "passo das emas"],
+    cidade: "Lucas do Rio Verde",
+    regiao: "Mato Grosso",
+    lat: -13.058796,
+    lng: -55.904202,
+    fonte: "manual/aproximado (cidade de Lucas do Rio Verde)",
+  },
 ];
