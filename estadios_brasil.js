@@ -1175,4 +1175,73 @@ window.ESTADIOS_BRASIL = [
     lng: -46.9408,
     fonte: "manual/aproximado (cidade de Araxá)",
   },
+
+  /* ===================================================================
+     Rio Grande do Sul — Gauchão / Copa FGF / Recopa (adicionados na
+     auditoria de estádios FGF). Coordenadas em nível de cidade
+     (aproximado), mesma convenção do resto do arquivo.
+     =================================================================== */
+  {
+    nome: "Estádio Eucaliptos",
+    aliases: ["eucaliptos"],
+    cidade: "Santa Cruz do Sul",
+    regiao: "Rio Grande do Sul",
+    lat: -29.7175,
+    lng: -52.4258,
+    fonte: "manual/aproximado (cidade de Santa Cruz do Sul — mandante Avenida)",
+  },
+  {
+    nome: "Estádio Estrela D'Alva",
+    aliases: ["estrela d'alva", "estrela dalva"],
+    cidade: "Bagé",
+    regiao: "Rio Grande do Sul",
+    lat: -31.3311,
+    lng: -54.1069,
+    fonte: "manual/aproximado (cidade de Bagé — mandante Guarany)",
+  },
+  {
+    nome: "Estádio Francisco Novelletto Neto",
+    aliases: ["francisco novelletto", "francisco novelletto neto"],
+    cidade: "Porto Alegre",
+    regiao: "Rio Grande do Sul",
+    lat: -30.0225,
+    lng: -51.2211,
+    fonte: "manual/aproximado (cidade de Porto Alegre — mandante Monsoon/Gramadense)",
+  },
+  {
+    nome: "Estádio 19 de Outubro",
+    aliases: ["19 de outubro"],
+    cidade: "Ijuí",
+    regiao: "Rio Grande do Sul",
+    lat: -28.3900,
+    lng: -53.9150,
+    fonte: "manual/aproximado (cidade de Ijuí — mandante São Luiz)",
+  },
+  {
+    nome: "Estádio Colosso da Lagoa",
+    aliases: ["colosso da lagoa"],
+    cidade: "Erechim",
+    regiao: "Rio Grande do Sul",
+    lat: -27.6350,
+    lng: -52.2739,
+    fonte: "manual/aproximado (cidade de Erechim — mandante Ypiranga)",
+  },
+  {
+    nome: "Estádio do Vale",
+    aliases: ["estádio do vale", "estadio do vale"],
+    cidade: "Novo Hamburgo",
+    regiao: "Rio Grande do Sul",
+    lat: -29.6783,
+    lng: -51.1300,
+    fonte: "manual/aproximado (cidade de Novo Hamburgo — mandante Novo Hamburgo)",
+  },
+  {
+    nome: "Estádio Bento Freitas",
+    aliases: ["bento freitas"],
+    cidade: "Pelotas",
+    regiao: "Rio Grande do Sul",
+    lat: -31.7654,
+    lng: -52.3376,
+    fonte: "manual/aproximado (cidade de Pelotas — mandante Brasil-Pel)",
+  },
 ];
