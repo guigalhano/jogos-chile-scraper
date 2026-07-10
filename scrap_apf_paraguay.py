@@ -61,6 +61,7 @@ import csv
 import hashlib
 import json
 import re
+import time
 from dataclasses import dataclass, asdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -253,22 +254,40 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        context = browser.new_context(user_agent=HEADERS_UA, locale="es-PY")
-        page = context.new_page()
 
         matches_by_url: dict[str, tuple[dict, str]] = {}
 
-        for competicao_label, url in start_urls:
+        for idx, (competicao_label, url) in enumerate(start_urls):
             info = {"competicao": competicao_label, "url": url, "jogos": 0, "erro": ""}
+            # Contexto novo por competição (em vez de reaproveitar a mesma
+            # aba/sessão pra todas): reduz o risco de qualquer rate-limit ou
+            # verificação anti-bot baseada em sessão que o site passe a
+            # aplicar quando várias páginas são abertas em sequência rápida
+            # (isso passou de 2 páginas para 5 quando adicionamos Primera
+            # B/C/Copa Paraguay, e é onde o "sem __NEXT_DATA__" começou a
+            # aparecer em todas as páginas, inclusive as que sempre
+            # funcionaram antes).
+            context = browser.new_context(user_agent=HEADERS_UA, locale="es-PY")
+            page = context.new_page()
             try:
-                print(f"[INFO] Abrindo APF: {url}")
-                page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000)
-                page.wait_for_timeout(wait_ms)
-                html = page.content()
-                next_data = extract_next_data(html)
+                next_data = None
+                for tentativa in range(2):
+                    print(f"[INFO] Abrindo APF: {url} (tentativa {tentativa + 1})")
+                    page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000)
+                    espera = wait_ms if tentativa == 0 else wait_ms * 2
+                    page.wait_for_timeout(espera)
+                    html = page.content()
+                    next_data = extract_next_data(html)
+                    if next_data is not None:
+                        break
+                    print(f"[WARN] sem __NEXT_DATA__ em {url} na tentativa {tentativa + 1}, tentando de novo...")
+
                 if next_data is None:
                     info["erro"] = "sem __NEXT_DATA__"
                     debug_pages.append(info)
+                    context.close()
+                    if idx < len(start_urls) - 1:
+                        time.sleep(2)
                     continue
 
                 found: list[dict] = []
@@ -288,9 +307,16 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
                 info["erro"] = str(e)
                 print(f"[ERRO] {competicao_label}: {e}")
             debug_pages.append(info)
+            context.close()
+            if idx < len(start_urls) - 1:
+                time.sleep(2)
 
         # Segunda passada: visita a página de detalhe de cada jogo achado
         # (poucos jogos por rodada) só para pegar o nome do estádio.
+        # Precisa de um contexto/página novos: os da primeira passada foram
+        # fechados a cada competição (ver comentário acima).
+        venue_context = browser.new_context(user_agent=HEADERS_UA, locale="es-PY")
+        page = venue_context.new_page()
         venue_by_url: dict[str, str] = {}
         venue_debug = []
         for i, (match_url, (m, _comp)) in enumerate(matches_by_url.items()):
@@ -318,6 +344,7 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
                 dbg["erro"] = str(e)
                 print(f"[WARN] Falha ao buscar estádio de {match_url}: {e}")
             venue_debug.append(dbg)
+        venue_context.close()
 
         browser.close()
 
