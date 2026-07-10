@@ -79,6 +79,12 @@ ZONA_SUFIXO_RE = re.compile(
     re.IGNORECASE,
 )
 
+# Fútbol Femenino usa "vs." em vez de "-"/"–" para separar os times, e a
+# linha costuma terminar com o estádio/canchinha e o nome da transmissão
+# (ex.: "Independiente vs. Racing - Cancha 3 Predio Santo Domingo - LPF PLAY").
+JOGO_VS_RE = re.compile(r"^(.+?)\s+vs\.?\s+(.+)$", re.IGNORECASE)
+SUFIXO_TRANSMISSAO_RE = re.compile(r"\s*[-–]\s*(?:LPF\s*PLAY|TV|ESPN)\s*$", re.IGNORECASE)
+
 JOGO_PROSA_RE = re.compile(
     r"^(.+?)\s+vs\.?\s+(.+?),?\s+a\s+las\s+(\d{1,2})[.:](\d{2})\s+horas"
     r"(?:,?\s*en\s+(.+?))?\.?\s*$",
@@ -91,14 +97,19 @@ SECOES_DOMESTICAS = {
     "supercopa argentina 2025": "Argentina - Supercopa Argentina",
     "supercopa argentina 2026": "Argentina - Supercopa Argentina",
     "primera nacional": "Argentina - Primera Nacional",
+    "primera b": "Argentina - Primera B",
+    "primera c": "Argentina - Primera C",
+    "torneo federal a": "Argentina - Torneo Federal A",
+    "promocional amateur": "Argentina - Promocional Amateur",
+    "torneo proyección": "Argentina - Torneo Proyección",
+    "fútbol femenino de primera división a": "Argentina - Fútbol Femenino Primera División A",
+    "torneo femenino de primera b": "Argentina - Fútbol Femenino Primera B",
 }
 
 SECOES_PARAR = {
     "conmebol copa libertadores", "conmebol copa sudamericana",
-    "copa del mundo", "eliminatorias sudamericanas", "torneo proyeccion",
-    "torneo proyección", "primera b", "primera c", "promocional amateur",
-    "futbol femenino", "fútbol femenino", "torneo femenino",
-    "torneo federal a", "seleccion mayor femenina", "selección mayor femenina",
+    "copa del mundo", "eliminatorias sudamericanas",
+    "seleccion mayor femenina", "selección mayor femenina",
     "copa mundial", "juegos olimpicos", "juegos olímpicos",
     "intercontinental sub 20", "conmebol", "finalissima",
 }
@@ -230,9 +241,17 @@ def parse_afa_agenda(lines: list[str], today: date) -> list[Partido]:
             if m_zona:
                 resto = clean_text(m_zona.group("resto"))
                 rodada = clean_text(m_zona.group("zona"))
-            partes = re.split(r"\s*[–\-]\s*", resto, maxsplit=1)
-            if len(partes) == 2:
-                mandante, visitante = clean_text(partes[0]), clean_text(partes[1])
+
+            resto = SUFIXO_TRANSMISSAO_RE.sub("", resto)
+
+            m_vs = JOGO_VS_RE.match(resto)
+            if m_vs:
+                # Formato "Time vs. Time - Estádio" (Fútbol Femenino / LPF).
+                mandante = clean_text(m_vs.group(1))
+                resto_visitante = clean_text(m_vs.group(2))
+                partes_v = re.split(r"\s*[–\-]\s*", resto_visitante, maxsplit=1)
+                visitante = clean_text(partes_v[0])
+                estadio = clean_text(partes_v[1]) if len(partes_v) == 2 else ""
                 if mandante and visitante and len(mandante) < 60 and len(visitante) < 60:
                     partidos.append(Partido(
                         fonte="AFA",
@@ -241,6 +260,28 @@ def parse_afa_agenda(lines: list[str], today: date) -> list[Partido]:
                         hora=hora,
                         mandante=mandante,
                         visitante=visitante,
+                        estadio=estadio,
+                        rodada=rodada,
+                        url=URL,
+                    ))
+                continue
+
+            partes = re.split(r"\s*[–\-]\s*", resto)
+            if len(partes) >= 2:
+                mandante, visitante = clean_text(partes[0]), clean_text(partes[1])
+                # Torneo Proyección inclui o estádio como 3º pedaço na mesma
+                # linha (ex.: "River (2°A) – Racing (3°A) – Estadio Florencio
+                # Sola"); nos outros torneios só aparecem 2 pedaços mesmo.
+                estadio = clean_text(" - ".join(partes[2:])) if len(partes) > 2 else ""
+                if mandante and visitante and len(mandante) < 60 and len(visitante) < 60:
+                    partidos.append(Partido(
+                        fonte="AFA",
+                        competicao=competicao_atual,
+                        data=data_atual,
+                        hora=hora,
+                        mandante=mandante,
+                        visitante=visitante,
+                        estadio=estadio,
                         rodada=rodada,
                         url=URL,
                     ))
