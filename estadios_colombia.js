@@ -218,4 +218,22 @@ window.ESTADIOS_COLOMBIA = [
     lng: -74.1791,
     fonte: "manual/aproximado (cidade de Santa Marta — mandante Unión Magdalena)",
   },
+  {
+    nome: "Estadio Municipal de Mosquera",
+    aliases: ["municipal de mosquera"],
+    cidade: "Mosquera",
+    regiao: "Cundinamarca",
+    lat: 4.7059,
+    lng: -74.2302,
+    fonte: "manual/aproximado (cidade de Mosquera — mandante Real Cundinamarca, mudou-se para lá em 2026)",
+  },
+  {
+    nome: "Estadio Villa Concha",
+    aliases: ["villa concha"],
+    cidade: "Floridablanca",
+    regiao: "Santander",
+    lat: 7.0631,
+    lng: -73.0864,
+    fonte: "manual/aproximado (região de Bucaramanga/Floridablanca — mandante Real Santander)",
+  },
 ];
