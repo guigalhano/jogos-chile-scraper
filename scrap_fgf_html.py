@@ -59,11 +59,11 @@ DEBUG_DIR = OUT_DIR / "debug_fgf_html"
 BASE_URL = "https://fgf.com.br/competicoes/profissional"
 
 COMPETICOES = {
-    23: "Gauchão Série A1 2026",
-    24: "Gauchão Série A2 2026",
-    25: "Gauchão Série B 2026",
-    26: "Copa FGF 2026",
-    27: "Recopa Gaúcha 2026",
+    23: "Gauchão Série A1",
+    24: "Gauchão Série A2",
+    25: "Gauchão Série B",
+    26: "Copa FGF",
+    27: "Recopa Gaúcha",
 }
 
 HEADERS = {
@@ -98,6 +98,7 @@ JOGO_HEADER_RE = re.compile(
 )
 
 RODADA_RE = re.compile(r"(\d+)[ªa°]\s*RODADA|CLASSIFICAT[ÓO]RIA|SEMIFINAL|QUARTAS|FINAL", re.IGNORECASE)
+SEPARADOR_X_RE = re.compile(r"^(?:\d+\s+)?X(?:\s+\d+)?$", re.IGNORECASE)
 
 
 @dataclass
@@ -144,15 +145,32 @@ def fetch_page_tokens(url: str, debug_html: bool = False) -> list[str]:
     r = requests.get(url, headers=HEADERS, timeout=30)
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
-    texto = soup.get_text(" ")
+    texto = soup.get_text("\n")
     if debug_html:
         DEBUG_DIR.mkdir(parents=True, exist_ok=True)
         fname = re.sub(r"[^a-zA-Z0-9]+", "_", url)[-100:] + ".txt"
         (DEBUG_DIR / fname).write_text(texto, encoding="utf-8")
-    return [t.strip() for t in texto.split("·") if t.strip()]
+    return [t.strip() for t in texto.split("\n") if t.strip()]
 
 
-def parse_competicao(tokens: list[str], url: str, competicao_nome: str, ano: int) -> list[Partido]:
+ANO_TITULO_RE = re.compile(r"\b(20[2-3]\d)\b")
+
+
+def detectar_ano_pagina(tokens: list[str], ano_padrao: int) -> int:
+    """A página mostra a temporada mais recente que já teve jogos (pode ser
+    a atual OU a anterior, se a atual ainda não começou) — o título logo no
+    topo (ex.: 'Gauchão Série A2  2025') diz qual é. Sem isso, corremos o
+    risco de rotular partidas já disputadas de uma temporada passada como
+    se fossem do ano corrente."""
+    for tok in tokens[:60]:
+        m = ANO_TITULO_RE.search(tok)
+        if m:
+            return int(m.group(1))
+    return ano_padrao
+
+
+def parse_competicao(tokens: list[str], url: str, competicao_nome: str, ano_padrao: int) -> list[Partido]:
+    ano = detectar_ano_pagina(tokens, ano_padrao)
     partidos: list[Partido] = []
     rodada_atual = ""
     i = 0
@@ -185,12 +203,13 @@ def parse_competicao(tokens: list[str], url: str, competicao_nome: str, ano: int
         while j < n and re.match(r"^\d+\s+altera", tokens[j], re.IGNORECASE):
             j += 1
 
-        if j + 2 < n and tokens[j + 1].strip().upper() == "X":
+        if j + 2 < n and SEPARADOR_X_RE.match(tokens[j + 1].strip()):
             mandante_cod = tokens[j]
             visitante_cod = tokens[j + 2]
+            placar = clean_text(tokens[j + 1])
             partidos.append(Partido(
                 fonte="FGF",
-                competicao=competicao_nome,
+                competicao=f"{competicao_nome} {ano}",
                 data=data_iso,
                 hora=hora,
                 mandante=resolver_time(mandante_cod),
@@ -198,6 +217,7 @@ def parse_competicao(tokens: list[str], url: str, competicao_nome: str, ano: int
                 estadio=estadio,
                 rodada=rodada_atual,
                 url=url,
+                extra=f"placar: {placar}" if placar.upper() != "X" else "",
             ))
             i = j + 3
             continue
