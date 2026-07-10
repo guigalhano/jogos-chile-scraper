@@ -35,10 +35,10 @@
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=011AB6A497E867E9195BA135960A66C0",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=1FEFEF115F3369702C90F8835E3668AB",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "8170002df41e72fa",
+    "id": "2aa137ce0d258f0a",
     "tipo": "pga"
   },
   {
@@ -56,10 +56,10 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=169ACE6DAD1F638D3F69D9FCAC26622B",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=089F21A8C20C6AB81137363AC3AC6BD4",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "698e0bde8a33a2d2",
+    "id": "d3b9bccdb0178532",
     "tipo": "regulamento"
   },
   {
@@ -84,10 +84,17 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=310C640D70DB6DBE3621739C71B06CD3",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=16E9022FBCE96CC30ED315BDBD056D2E",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "f49baa74ddf2a886",
+    "id": "0054c00d17513979",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/campeonato-brasileiro-feminino-sub17/a/cbf-divulga-tabela-detalhada-da-2-fase-do-brasileirao-feminino-sub-17-2026",
+    "title": "Anote na agenda CBF divulga tabela detalhada da 2ª fase do Brasileirão Feminino Sub-17",
+    "origem": "playwright_page_content:a.href",
+    "id": "f1cbdeb3371190fe",
     "tipo": "tabela_detalhada"
   },
   {
@@ -95,13 +102,6 @@
     "title": "Anote na agenda CBF divulga tabela detalhada das rodadas 19 a 24 da Série B",
     "origem": "playwright_page_content:a.href",
     "id": "f52e04896303f86a",
-    "tipo": "tabela_detalhada"
-  },
-  {
-    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/competicoes-campeonato-brasileiro-sub20/a/cbf-divulga-tabela-detalhada-das-quartas-de-final-da-serie-a-do-brasileirao-sub-20",
-    "title": "Quartas de Final CBF divulga tabela detalhada das quartas de final da Série A do Brasileirão Sub-20",
-    "origem": "playwright_page_content:a.href",
-    "id": "bbd0e6025a8e63e8",
     "tipo": "tabela_detalhada"
   }
 ]
