@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-APF Paraguai - Copa de Primera + División Intermedia
+APF Paraguai - Copa de Primera + División Intermedia + Primera B + Primera C
++ Copa Paraguay
 
 Páginas:
     https://www.apf.org.py/copa-de-primera
     https://www.apf.org.py/intermedia
+    https://www.apf.org.py/primera-b
+    https://www.apf.org.py/primera-c
+    https://www.apf.org.py/copa-paraguay
 
 O site é Next.js (Pages Router). Os dados de cada página, incluindo os
 jogos da rodada atual, vêm embutidos direto no HTML inicial dentro de
@@ -77,6 +81,9 @@ BASE_URL = "https://www.apf.org.py"
 START_URLS = [
     ("Copa de Primera", f"{BASE_URL}/copa-de-primera"),
     ("División Intermedia", f"{BASE_URL}/intermedia"),
+    ("Primera B", f"{BASE_URL}/primera-b"),
+    ("Primera C", f"{BASE_URL}/primera-c"),
+    ("Copa Paraguay", f"{BASE_URL}/copa-paraguay"),
 ]
 
 FIELDS = [
