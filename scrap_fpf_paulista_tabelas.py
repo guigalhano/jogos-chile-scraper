@@ -171,6 +171,8 @@ CIDADES_CONHECIDAS = {
     "sao carlos", "matao", "guarulhos", "paulinia", "votorantim",
     "guaratingueta", "maua", "itaquaquecetuba", "votuporanga", "leme",
     "aracatuba", "rio claro", "americana", "itu", "atibaia", "suzano",
+    "barueri", "braganca paulista", "santana de parnaiba", "salto",
+    "embu das artes", "araraquara",
 }
 
 
