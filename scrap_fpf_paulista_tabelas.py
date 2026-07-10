@@ -100,7 +100,7 @@ LINHA_JOGO_RE = re.compile(
     r"^(?P<jg>\d{3})\s+"
     r"(?P<dia>\d{1,2})/(?P<mes>jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)"
     r"\s*-\s*\w{3}\s+"
-    r"(?P<hora>\d{1,2}):(?P<minuto>\d{2})\s+"
+    r"(?P<hora>\d{1,2})\s*(?::|h)\s*(?P<minuto>\d{2})\s+"
     r"(?P<resto>.+)$",
     re.IGNORECASE,
 )
@@ -169,7 +169,8 @@ CIDADES_CONHECIDAS = {
     "sao jose do rio preto", "assis", "jose bonifacio", "santa fe do sul",
     "tupa", "santa cruz do rio pardo", "catanduva", "limeira", "mogi mirim",
     "sao carlos", "matao", "guarulhos", "paulinia", "votorantim",
-    "guaratingueta", "maua", "itaquaquecetuba",
+    "guaratingueta", "maua", "itaquaquecetuba", "votuporanga", "leme",
+    "aracatuba", "rio claro", "americana", "itu", "atibaia", "suzano",
 }
 
 
