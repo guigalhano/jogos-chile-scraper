@@ -96,6 +96,7 @@ MAX_RODADAS_SEGURANCA = 40  # trava de segurança pra nao entrar em loop infinit
 FASE_URL_RE = re.compile(r"/competicao/(\d+)/fase/(\d+)/rodada/(\d+)")
 DATA_HORA_RE = re.compile(r"\b(\d{2})/(\d{2})/(\d{4})\s*-\s*(\d{2}):(\d{2})\b")
 PLACAR_RE = re.compile(r"^(?:(\d+)\s*)?VS(?:\s*(\d+))?$", re.IGNORECASE)
+NUM_ONLY_RE = re.compile(r"^\d+$")
 NENHUM_JOGO_RE = re.compile(r"nenhum jogo cadastrado", re.IGNORECASE)
 IGNORAR_LINHA_RE = re.compile(
     r"^(arbitragem|s[uú]mula|boletim|pga|[aá]rbitro|assistente\s*[12]|"
@@ -199,16 +200,34 @@ def parse_rodada_page(lines: list[str], url: str, competicao_nome: str, competic
             i += 1
             continue
 
-        # time mandante = linha imediatamente anterior ao placar/"VS"
-        if i == 0:
+        placar_m, placar_v = m_placar.group(1), m_placar.group(2)
+
+        # time mandante = linha imediatamente anterior ao placar/"VS" - mas
+        # em jogos já com resultado de algumas categorias de base, o placar
+        # vem em linhas SEPARADAS ("0", "VS", "3") em vez de "0 VS 3" numa
+        # linha só; nesse caso lines[i-1] é o placar do mandante (não o
+        # nome), e o nome real está em lines[i-2].
+        idx_mandante = i - 1
+        if idx_mandante < 0:
             i += 1
             continue
-        mandante = lines[i - 1]
+        if placar_m is None and NUM_ONLY_RE.match(lines[idx_mandante]):
+            placar_m = lines[idx_mandante]
+            idx_mandante -= 1
+        if idx_mandante < 0:
+            i += 1
+            continue
+        mandante = lines[idx_mandante]
 
         # data/hora: procura nas próximas linhas
         j = i + 1
+        # mesma lógica pro placar do visitante, se vier em linha separada
+        # logo depois do "VS"
+        if placar_v is None and j < n and NUM_ONLY_RE.match(lines[j]):
+            placar_v = lines[j]
+            j += 1
         data_iso, hora = "", ""
-        while j < n and j < i + 4:
+        while j < n and j < i + 5:
             md = DATA_HORA_RE.search(lines[j])
             if md:
                 dia, mes, ano, hh, mm = md.groups()
@@ -243,7 +262,6 @@ def parse_rodada_page(lines: list[str], url: str, competicao_nome: str, competic
             j += 1
 
         if mandante and visitante and mandante != visitante:
-            placar_m, placar_v = m_placar.group(1), m_placar.group(2)
             extra_parts = ["pais=Brasil", "estado=Pará", f"competicao_id={competicao_id}"]
             if placar_m is not None and placar_v is not None:
                 extra_parts.append(f"placar={placar_m}x{placar_v}")
