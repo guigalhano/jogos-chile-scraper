@@ -1,8 +1,8 @@
-name: Atualizar Paraguai (APF) - semanal
+name: Atualizar Paraguai (APF) - diário
 
 on:
   schedule:
-    - cron: "0 15 * * 1"  # toda segunda-feira, 1h depois do job do FFERJ
+    - cron: "30 11 * * *"  # todo dia, entre o FPF-PA e o job diário principal
   workflow_dispatch:
 
 permissions:
