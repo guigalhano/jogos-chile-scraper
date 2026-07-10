@@ -197,17 +197,25 @@ def get_lines(html: str) -> list[str]:
     return [clean_text(t) for t in text.split("\n") if clean_text(t)]
 
 
-def find_ultima_programacao_url() -> str | None:
-    """Acha o link do artigo de programação mais recente na página da tag."""
+def find_urls_programacao_recentes(max_links: int = 4) -> list[str]:
+    """Retorna os links dos artigos de programação mais recentes (não só o
+    primeiro): o site às vezes serve uma versão em cache desatualizada da
+    página de listagem, então é mais seguro tentar os 2-4 primeiros e
+    ficar com o que trouxer jogos dentro da janela de datas, em vez de
+    confiar cegamente no primeiro link encontrado."""
     r = fetch(TAG_PROGRAMACAO_URL)
     soup = BeautifulSoup(r.text, "html.parser")
+    urls = []
     for a in soup.find_all("a", href=True):
         href = a["href"]
         if "/noticias/" in href and "programa" in href.lower():
             if href.startswith("/"):
                 href = BASE_URL + href
-            return href
-    return None
+            if href not in urls:
+                urls.append(href)
+        if len(urls) >= max_links:
+            break
+    return urls
 
 
 def times_na_linha(line: str) -> list[tuple[int, int]]:
@@ -304,24 +312,40 @@ def parse_federal_a_secao(lines: list[str], url: str, debug_html: bool) -> list[
     return partidos
 
 
-def scrape(debug_html: bool) -> list[Partido]:
-    url = find_ultima_programacao_url()
-    if not url:
-        print("[ERRO] não achei o artigo de programação mais recente")
-        return []
-    print(f"[INFO] artigo de programação: {url}")
-    try:
-        r = fetch(url)
-    except Exception as e:
-        print(f"[ERRO] falha ao buscar {url}: {e}")
+def scrape(debug_html: bool, desde: date, ate: date) -> list[Partido]:
+    urls = find_urls_programacao_recentes()
+    if not urls:
+        print("[ERRO] não achei nenhum artigo de programação")
         return []
 
-    lines = get_lines(r.text)
-    partidos = parse_federal_a_secao(lines, url, debug_html)
+    melhor_jogos: list[Partido] = []
+    melhor_url = ""
+    for url in urls:
+        print(f"[INFO] tentando artigo de programação: {url}")
+        try:
+            r = fetch(url)
+        except Exception as e:
+            print(f"[AVISO] falha ao buscar {url}: {e}")
+            continue
+
+        lines = get_lines(r.text)
+        partidos = parse_federal_a_secao(lines, url, debug_html)
+        na_janela = [p for p in partidos if in_window(p, desde, ate, False)]
+        print(f"[INFO]   {len(partidos)} jogos achados, {len(na_janela)} dentro da janela de datas")
+        if len(na_janela) > len(melhor_jogos):
+            melhor_jogos = partidos
+            melhor_url = url
+        if len(na_janela) > 0:
+            # já achou um artigo com jogos atuais, não precisa tentar os
+            # mais antigos da lista
+            break
+
+    if melhor_url:
+        print(f"[OK] usando artigo: {melhor_url}")
 
     seen = set()
     out = []
-    for p in partidos:
+    for p in melhor_jogos:
         if p.id in seen:
             continue
         seen.add(p.id)
@@ -412,7 +436,7 @@ def main() -> None:
     desde = today - timedelta(days=args.dias_atras)
     ate = today + timedelta(days=args.dias)
 
-    jogos = scrape(args.debug_html)
+    jogos = scrape(args.debug_html, desde, ate)
     na_janela = [p for p in jogos if in_window(p, desde, ate, args.incluir_passados)]
     print(f"[OK] Torneo Federal A | jogos={len(jogos)} | na janela={len(na_janela)}")
 
