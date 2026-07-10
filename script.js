@@ -611,6 +611,21 @@ function stripSufixoRegiaoChile(nomeNormalizado) {
   return nomeNormalizado;
 }
 
+// Categorias/divisões que o Chile as vezes anexa ao nome do time principal
+// (ex.: "Universidad de Chile Juvenil Fem", "Ñublense Femenino"). O time
+// base costuma jogar no mesmo estádio do time profissional, então vale a
+// pena tentar de novo sem esse sufixo antes de desistir.
+const SUFIXOS_CATEGORIA_CHILE = ["juvenil fem", "femenino"];
+
+function stripSufixoCategoriaChile(nomeNormalizado) {
+  for (const suf of SUFIXOS_CATEGORIA_CHILE) {
+    if (nomeNormalizado.endsWith(" " + suf)) {
+      return nomeNormalizado.slice(0, -(suf.length + 1)).trim();
+    }
+  }
+  return nomeNormalizado;
+}
+
 function findDefaultHomeStadium(mandante, pais) {
   const mapa = pais === "Argentina" ? ESTADIO_MANDANTE_PADRAO_ARGENTINA
     : pais === "Peru" ? ESTADIO_MANDANTE_PADRAO_PERU
@@ -623,12 +638,16 @@ function findDefaultHomeStadium(mandante, pais) {
   const keySemPontuacao = key.replace(/[().,]/g, "").replace(/\s+/g, " ").trim();
   if (mapa[keySemPontuacao]) return findStadiumInfo(mapa[keySemPontuacao], pais);
 
-  // anfaterceradivision.cl (Tercera A/B) grava o nome do time seguido da
-  // região (ex.: "Quintero Unido Valparaíso", "Comunal Cabrero Biobío").
-  // Tenta de novo removendo esse sufixo antes de desistir.
   if (pais === "Chile") {
+    // anfaterceradivision.cl (Tercera A/B) grava o nome do time seguido da
+    // região (ex.: "Quintero Unido Valparaíso", "Comunal Cabrero Biobío").
     const keySemRegiao = stripSufixoRegiaoChile(key);
     if (keySemRegiao !== key && mapa[keySemRegiao]) return findStadiumInfo(mapa[keySemRegiao], pais);
+
+    // campeonatochileno.cl grava categorias femininas/juvenis anexadas ao
+    // nome do time principal (ex.: "Universidad de Chile Juvenil Fem").
+    const keySemCategoria = stripSufixoCategoriaChile(key);
+    if (keySemCategoria !== key && mapa[keySemCategoria]) return findStadiumInfo(mapa[keySemCategoria], pais);
   }
 
   return null;
