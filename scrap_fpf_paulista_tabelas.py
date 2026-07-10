@@ -191,9 +191,17 @@ def fetch_pdf_text(url: str) -> tuple[str, list]:
 
 def detectar_competicao(texto: str, fallback: str) -> str:
     m = NOME_COMPETICAO_RE.search(texto)
-    if m:
-        return clean_text(m.group(1)).title()
-    return fallback
+    if not m:
+        return fallback
+    nome = clean_text(m.group(1)).title()
+    # Evita duplicar a mesma competição sob dois nomes diferentes: o script
+    # scrap_copa_paulista.py (já existente e funcionando) grava seus jogos
+    # como "Brasil - FPF - Copa Paulista" — usa o mesmo nome aqui quando o
+    # PDF detectado for da Copa Paulista, para que dedupe/merge por
+    # competicao+data+times funcione corretamente em vez de duplicar.
+    if "copa paulista" in norm(nome):
+        return "Brasil - FPF - Copa Paulista"
+    return nome
 
 
 def extract_cidades_dos_clubes(texto: str) -> dict:
@@ -463,9 +471,12 @@ def update(ano: int, dias: int, dias_atras: int, incluir_passados: bool, debug_h
             todos.extend(jogos_lista)
             continue
 
-        jogos_grade = parse_formato_grade(texto, tabelas, url, competicao_nome, ano)
-        print(f"[{competicao_nome}] formato grade (NAO VALIDADO): {len(jogos_grade)} jogo(s)")
-        todos.extend(jogos_grade)
+        # O fallback de formato grade (pdfplumber.extract_tables) foi testado
+        # ao vivo via GitHub Actions e produziu dados INCORRETOS — o texto de
+        # cabeçalho (número do jogo, data, hora) ficou colado ao nome do
+        # time em vez de virar campos separados. Em vez de gravar dados
+        # errados, este PDF é pulado e reportado aqui para revisão manual.
+        print(f"[{competicao_nome}] formato não reconhecido (nem lista nem grade confiável) — pulado. URL: {url}")
 
     todos = dedupe(todos)
     na_janela = [p for p in todos if in_window(p, desde, ate, incluir_passados)]
