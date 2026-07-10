@@ -808,6 +808,9 @@ const ESTADIO_MANDANTE_PADRAO_COLOMBIA = {
 };
 
 const ESTADIO_MANDANTE_PADRAO_PARAGUAY = {
+  "paraguari atletico club": "estadio general bruguez",
+  "12 de junio": "estadio facundo de leon fossatti",
+  "encarnacion fc": "sede do encarnacion fc aproximado por cidade",
   "gral caballero cg": "estadio 26 de febrero",
   "general caballero cg": "estadio 26 de febrero",
   "12 de octubre sd": "estadio rafael gimenez",
@@ -906,6 +909,16 @@ function findDefaultHomeStadium(mandante, pais) {
     // nome do time principal (ex.: "Universidad de Chile Juvenil Fem").
     const keySemCategoria = stripSufixoCategoriaChile(key);
     if (keySemCategoria !== key && mapa[keySemCategoria]) return findStadiumInfo(mapa[keySemCategoria], pais);
+  }
+
+  if (pais === "Paraguay") {
+    // A fonte da APF costuma gravar o nome oficial completo do clube,
+    // com prefixos que não aparecem nas listas/artigos usados pra montar
+    // o mapa acima (ex.: "Club Fernando de la Mora", "Club Deportivo
+    // Santani", "Club Sportivo Carapeguá"). Tenta de novo removendo esses
+    // prefixos comuns.
+    const keySemPrefixo = key.replace(/^(club|c\s*\.?\s*d\s*\.?|c\s*\.?\s*s\s*\.?)\s+/, "").trim();
+    if (keySemPrefixo !== key && mapa[keySemPrefixo]) return findStadiumInfo(mapa[keySemPrefixo], pais);
   }
 
   return null;
