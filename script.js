@@ -626,9 +626,34 @@ function stripSufixoCategoriaChile(nomeNormalizado) {
   return nomeNormalizado;
 }
 
+// Estádio-mandante padrão da LigaPro Serie A (16 clubes 2026). Times de
+// Ambato (Técnico Universitario) e Quito (Universidad Católica) marcados
+// como incerteza — compartilham estádio com outro clube da mesma cidade
+// e não há confirmação 100% de qual é a sede oficial de cada um.
+const ESTADIO_MANDANTE_PADRAO_ECUADOR = {
+  "liga de quito": "rodrigo paz delgado",
+  "independiente del valle": "banco guayaquil",
+  "barcelona sc": "banco pichincha",
+  "emelec": "george capwell",
+  "aucas": "gonzalo pozo ripalda",
+  "guayaquil city fc": "christian benitez betancourt",
+  "deportivo cuenca": "alejandro serrano aguilar",
+  "orense": "9 de mayo",
+  "macara": "bellavista",
+  "mushuc runa": "coac mushuc runa",
+  "libertad (ecuador)": "federativo reina del cisne",
+  "delfin": "jocay",
+  "manta f.c.": "jocay",
+  "leones": "olimpico de ibarra",
+  // incerteza — melhor palpite, sem confirmação
+  "tecnico universitario": "bellavista",
+  "universidad catolica (quito)": "gonzalo pozo ripalda",
+};
+
 function findDefaultHomeStadium(mandante, pais) {
   const mapa = pais === "Argentina" ? ESTADIO_MANDANTE_PADRAO_ARGENTINA
     : pais === "Peru" ? ESTADIO_MANDANTE_PADRAO_PERU
+    : pais === "Ecuador" ? ESTADIO_MANDANTE_PADRAO_ECUADOR
     : ESTADIO_MANDANTE_PADRAO_CHILE;
   const key = normalize(mandante);
   if (mapa[key]) return findStadiumInfo(mapa[key], pais);
