@@ -24,7 +24,7 @@ window.ESTADIOS_BRASIL = [
   },
   {
     nome: "Arena Condá",
-    aliases: ["arena conda", "arena condá"],
+    aliases: ["arena conda", "arena condá", "arenda conda", "arenda condá"],
     cidade: "Chapecó",
     regiao: "Santa Catarina",
     lat: -27.0910,
@@ -1174,6 +1174,47 @@ window.ESTADIOS_BRASIL = [
     lat: -19.5928,
     lng: -46.9408,
     fonte: "manual/aproximado (cidade de Araxá)",
+  },
+
+  /* ===================================================================
+     Paraná — Terceira Divisão (Terceirona) 2026. Coordenadas em nível de
+     cidade (aproximado, mesma convenção do restante do arquivo).
+     =================================================================== */
+  {
+    nome: "Estádio José Garbelini",
+    aliases: ["jose garbelini"],
+    cidade: "Cambé",
+    regiao: "Paraná",
+    lat: -23.2766,
+    lng: -51.2798,
+    fonte: "manual/aproximado (cidade de Cambé)",
+  },
+  {
+    nome: "Estádio Atílio Gionédis",
+    aliases: ["atilio gionedis"],
+    cidade: "Campo Largo",
+    regiao: "Paraná",
+    lat: -25.4525,
+    lng: -49.5290,
+    fonte: "manual/aproximado (cidade de Campo Largo)",
+  },
+  {
+    nome: "Estádio 14 de Dezembro",
+    aliases: ["14 de dezembro"],
+    cidade: "Toledo",
+    regiao: "Paraná",
+    lat: -24.7246,
+    lng: -53.7412,
+    fonte: "manual/aproximado (cidade de Toledo, PR - Oeste Brasil FC)",
+  },
+  {
+    nome: "Estádio Edison Carlos Schramm",
+    aliases: ["edison carlos schramm"],
+    cidade: "São Mateus do Sul",
+    regiao: "Paraná",
+    lat: -25.8677,
+    lng: -50.3840,
+    fonte: "manual/aproximado (cidade de São Mateus do Sul)",
   },
 
   /* ===================================================================

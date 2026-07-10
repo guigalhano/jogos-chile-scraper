@@ -622,6 +622,24 @@ const ESTADIO_MANDANTE_PADRAO_PERU = {
   "grau": "campeones del 36",
   "atletico grau": "campeones del 36",
   "atlético grau": "campeones del 36",
+  // Adicionados para cobrir mais times de Liga 1/Liga 2 que ainda ficavam
+  // sem estádio/coordenada (abreviações como aparecem nas fontes).
+  "boys": "miguel grau callao",
+  "sport boys": "miguel grau callao",
+  "cantolao": "miguel grau callao",
+  "a cantolao": "miguel grau callao",
+  "s cristal": "alberto gallardo",
+  "s huancayo": "ipd huancayo",
+  "sport huancayo": "ipd huancayo",
+  "a atletico": "ipd sullana",
+  "a. atletico": "ipd sullana",
+  "alianza atletico": "ipd sullana",
+  "alianza atlético": "ipd sullana",
+  "ucayali fc": "max agurto sanchez",
+  "alianza udh": "heraclio tapia",
+  "coopsol": "huaral",
+  "deportivo coopsol": "huaral",
+  "valle sagrado": "calca valle sagrado",
 };
 
 const SUFIXOS_REGIAO_CHILE = [
@@ -700,6 +718,13 @@ const ESTADIO_MANDANTE_PADRAO_COLOMBIA = {
   "real santander": "villa concha",
   "independiente santa fe": "el campin",
   "atletico nacional": "atanasio girardot",
+  // Adicionados: Atlético FC manda no mesmo estádio do Deportivo Cali/América
+  // (Pascual Guerrero); Independiente Yumbo mudou de sede para Palmira em
+  // jul/2026 (rebatizado Independiente Valle del Cauca), usando o mesmo
+  // estádio do Inter Palmira.
+  "atletico fc": "pascual guerrero",
+  "independiente yumbo": "francisco rivera escobar",
+  "independiente valle del cauca": "francisco rivera escobar",
 };
 
 function findDefaultHomeStadium(mandante, pais) {
