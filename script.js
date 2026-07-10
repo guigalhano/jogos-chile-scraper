@@ -693,6 +693,13 @@ const ESTADIO_MANDANTE_PADRAO_COLOMBIA = {
   "patriotas": "la independencia",
   "envigado fc": "polideportivo sur",
   "itagui leones": "metropolitano ciudad de itagui",
+  "bogota fc": "metropolitano de techo",
+  "tigres fc": "metropolitano de techo",
+  "boca juniors de cali": "pascual guerrero",
+  "real cundinamarca": "municipal de mosquera",
+  "real santander": "villa concha",
+  "independiente santa fe": "el campin",
+  "atletico nacional": "atanasio girardot",
 };
 
 function findDefaultHomeStadium(mandante, pais) {
