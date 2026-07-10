@@ -32,4 +32,8 @@ window.CIDADES_SP = {
   "guarulhos": { lat: -23.4628, lng: -46.5333 },
   "mogi das cruzes": { lat: -23.5228, lng: -46.1883 },
   "franca": { lat: -20.5386, lng: -47.4008 },
+  "votuporanga": { lat: -20.4225, lng: -49.9739 },
+  "leme": { lat: -22.1875, lng: -47.3903 },
+  "barueri": { lat: -23.5106, lng: -46.8761 },
+  "braganca paulista": { lat: -22.9530, lng: -46.5417 },
 };
