@@ -2533,4 +2533,28 @@ window.ESTADIOS_BRASIL = [
     lng: -55.904202,
     fonte: "manual/aproximado (cidade de Lucas do Rio Verde)",
   },
+  {
+    nome: "Estádio Regional Willie Davids",
+    aliases: ["willie davids", "estadio willie davids", "estadio regional willie davids"],
+    cidade: "Maringá",
+    regiao: "Paraná",
+    lat: -23.41422,
+    lng: -51.93822,
+  },
+  {
+    nome: "Arena da Amazônia",
+    aliases: ["arena da amazonia", "arena da amazônia", "arena amazonia"],
+    cidade: "Manaus",
+    regiao: "Amazonas",
+    lat: -3.0146,
+    lng: -60.0334,
+  },
+  {
+    nome: "Estádio Fonte Luminosa",
+    aliases: ["fonte luminosa", "estadio fonte luminosa", "estadio dr adhemar de barros"],
+    cidade: "Araraquara",
+    regiao: "São Paulo",
+    lat: -21.79855,
+    lng: -48.17151,
+  },
 ];
