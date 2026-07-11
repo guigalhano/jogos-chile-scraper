@@ -28,6 +28,7 @@ const I18N = {
     next15: "Próximos 15 dias",
     next30: "Próximos 30 dias",
     next60: "Próximos 60 dias",
+    next180: "Próximos 180 dias",
     radius_suffix: "km ao redor da cidade",
     no_coords: "Jogos sem coordenadas",
     show_all: "Mostrar todos",
@@ -54,6 +55,7 @@ const I18N = {
     period15: "Filtro ativo: próximos 15 dias",
     period30: "Filtro ativo: próximos 30 dias",
     period60: "Filtro ativo: próximos 60 dias",
+    period180: "Filtro ativo: próximos 180 dias",
     futureDefault: "Mostrando jogos de hoje em diante",
     date_confirm: "Data a confirmar",
     time_confirm: "Hora a confirmar",
@@ -96,6 +98,7 @@ const I18N = {
     next15: "Próximos 15 días",
     next30: "Próximos 30 días",
     next60: "Próximos 60 días",
+    next180: "Próximos 180 días",
     radius_suffix: "km alrededor de la ciudad",
     no_coords: "Partidos sin coordenadas",
     show_all: "Mostrar todos",
@@ -122,6 +125,7 @@ const I18N = {
     period15: "Filtro activo: próximos 15 días",
     period30: "Filtro activo: próximos 30 días",
     period60: "Filtro activo: próximos 60 días",
+    period180: "Filtro activo: próximos 180 días",
     futureDefault: "Mostrando partidos desde hoy en adelante",
     date_confirm: "Fecha por confirmar",
     time_confirm: "Hora por confirmar",
@@ -165,6 +169,7 @@ const els = {
   proximos15Btn: document.getElementById("proximos15Btn"),
   proximos30Btn: document.getElementById("proximos30Btn"),
   proximos60Btn: document.getElementById("proximos60Btn"),
+  proximos180Btn: document.getElementById("proximos180Btn"),
   todosDoTimeBtn: document.getElementById("todosDoTimeBtn"),
   limparBtn: document.getElementById("limparBtn"),
   semMapaBtn: document.getElementById("semMapaBtn"),
@@ -1114,12 +1119,13 @@ function renderModeInfo() {
   els.proximos15Btn.classList.toggle("isActive", activePeriodDays === 15);
   els.proximos30Btn.classList.toggle("isActive", activePeriodDays === 30);
   els.proximos60Btn.classList.toggle("isActive", activePeriodDays === 60);
+  els.proximos180Btn.classList.toggle("isActive", activePeriodDays === 180);
 
   if (!activePeriodDays) {
     els.periodoAtivo.hidden = true;
     els.periodoAtivo.textContent = "";
   } else {
-    const PERIOD_LABEL_KEYS = { 3: "period3", 7: "period7", 15: "period15", 30: "period30", 60: "period60" };
+    const PERIOD_LABEL_KEYS = { 3: "period3", 7: "period7", 15: "period15", 30: "period30", 60: "period60", 180: "period180" };
     const label = t(PERIOD_LABEL_KEYS[activePeriodDays] || "period7");
     const range = `${formatShortDate(todayISO())} – ${formatShortDate(addDaysISO(activePeriodDays - 1))}`;
     els.periodoAtivo.hidden = false;
@@ -1326,6 +1332,7 @@ function setupEvents() {
   els.proximos15Btn.addEventListener("click", () => setPeriod(15));
   els.proximos30Btn.addEventListener("click", () => setPeriod(30));
   els.proximos60Btn.addEventListener("click", () => setPeriod(60));
+  els.proximos180Btn.addEventListener("click", () => setPeriod(180));
 
   els.todosDoTimeBtn.addEventListener("click", () => {
     if (!els.filtroTime.value) {
