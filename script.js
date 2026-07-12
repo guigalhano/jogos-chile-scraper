@@ -985,6 +985,9 @@ function enrichGames(rawGames) {
       } else if (window.CIDADES_SP && window.CIDADES_SP[chave]) {
         cidadeCoords = window.CIDADES_SP[chave];
         regiaoPorCidade = "São Paulo";
+      } else if (window.CIDADES_RJ && window.CIDADES_RJ[chave]) {
+        cidadeCoords = window.CIDADES_RJ[chave];
+        regiaoPorCidade = "Rio de Janeiro";
       }
     }
     return {
