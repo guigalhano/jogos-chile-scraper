@@ -458,6 +458,10 @@ def update(ano: int = 2026, dias_atras: int = 30, dias: int = 365,
 
     rows_new = [p.to_row() for p in todos_na_janela]
 
+    (OUT_DIR / "debug_fpf_parana_raw.json").write_text(
+        json.dumps(rows_new, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
     json_path = OUT_DIR / "jogos_programados.json"
     csv_path = OUT_DIR / "jogos_programados.csv"
     existing = load_json_rows(json_path)

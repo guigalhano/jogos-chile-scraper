@@ -344,6 +344,10 @@ def main() -> None:
 
     rows_new = [p.to_row() for p in na_janela]
 
+    (OUT_DIR / "debug_fgf_gauchao_raw.json").write_text(
+        json.dumps(rows_new, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
     json_path = OUT_DIR / "jogos_programados.json"
     csv_path = OUT_DIR / "jogos_programados.csv"
     merged = merge_rows(load_json_rows(json_path), rows_new)

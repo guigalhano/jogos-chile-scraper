@@ -37,14 +37,21 @@ jobs:
           git config user.email "github-actions@github.com"
 
           mkdir -p /tmp/dados_novos
-          cp data/jogos_programados.csv data/jogos_programados.json /tmp/dados_novos/ 2>/dev/null || true
+          cp data/debug_fpf_paulista_tabelas_raw.json /tmp/dados_novos/ 2>/dev/null || true
 
           for tentativa in 1 2 3 4 5; do
             git fetch origin main
             git reset --hard origin/main
-            cp /tmp/dados_novos/*.json /tmp/dados_novos/*.csv data/ 2>/dev/null || true
 
-            git add data/jogos_programados.csv data/jogos_programados.json
+            # Copia so o raw desta rodada e re-mescla contra o estado ATUAL pos-reset,
+            # em vez de sobrescrever jogos_programados inteiro com copia desatualizada
+            # (evita perder jogos de outras fontes commitados nesse meio-tempo).
+            cp /tmp/dados_novos/*.json data/ 2>/dev/null || true
+            if [ -f data/debug_fpf_paulista_tabelas_raw.json ]; then
+              python merge_apos_reset.py --raw data/debug_fpf_paulista_tabelas_raw.json
+            fi
+
+            git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv 2>/dev/null || true
 
             if git diff --cached --quiet; then
               echo "Sem mudanças para commitar"
