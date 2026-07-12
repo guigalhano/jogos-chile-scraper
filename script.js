@@ -974,6 +974,19 @@ function enrichGames(rawGames) {
       stadium = findDefaultHomeStadium(j.mandante, pais);
       estadioFallback = Boolean(stadium);
     }
+    // Jogos da FFERJ (Rio de Janeiro) frequentemente nao trazem o nome do
+    // estadio no card (comum em categorias de base/amadoras). Quando isso
+    // acontece, usamos o estadio (ou sede, como aproximacao) do time
+    // mandante, obtido via scrap_fferj_estadios.py a partir do cadastro de
+    // clubes da propria FERJ - mais preciso que o fallback generico por
+    // cidade (que so tem o centro do Rio de Janeiro).
+    if (!stadium && !estadioBruto && j.fonte === "FFERJ" && window.ESTADIO_MANDANTE_PADRAO_FFERJ) {
+      const chaveMandante = normalize(j.mandante);
+      if (window.ESTADIO_MANDANTE_PADRAO_FFERJ[chaveMandante]) {
+        stadium = window.ESTADIO_MANDANTE_PADRAO_FFERJ[chaveMandante];
+        estadioFallback = true;
+      }
+    }
     const cidadeResolvida = j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "";
     let cidadeCoords = null;
     let regiaoPorCidade = "";
