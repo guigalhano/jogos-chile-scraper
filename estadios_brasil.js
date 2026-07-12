@@ -2557,4 +2557,35 @@ window.ESTADIOS_BRASIL = [
     lat: -21.79855,
     lng: -48.17151,
   },
+  {
+    nome: "Estádio Canarinho",
+    aliases: ["canarinho", "estadio canarinho", "flamarion vasconcelos", "estadio flamarion vasconcelos"],
+    cidade: "Boa Vista",
+    regiao: "Roraima",
+    lat: -2.8237,
+    lng: -60.6822,
+    fonte: "manual/osm-like",
+  },
+  {
+    // Coordenada aproximada do centro de Imperatriz (MA); não encontrei o
+    // endereço exato do estádio "Frei Epifânio" numa fonte confiável.
+    nome: "Frei Epifânio",
+    aliases: ["frei epifanio", "estadio frei epifanio"],
+    cidade: "Imperatriz",
+    regiao: "Maranhão",
+    lat: -5.5264,
+    lng: -47.4917,
+    fonte: "aproximado/nivel-cidade",
+  },
+  {
+    // Coordenada aproximada do centro de Goiatuba (GO); não encontrei o
+    // endereço exato do estádio "Divino Garcia" numa fonte confiável.
+    nome: "Divino Garcia",
+    aliases: ["divino garcia", "estadio divino garcia"],
+    cidade: "Goiatuba",
+    regiao: "Goiás",
+    lat: -18.0136,
+    lng: -49.3822,
+    fonte: "aproximado/nivel-cidade",
+  },
 ];

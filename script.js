@@ -399,7 +399,21 @@ function findStadiumInfo(estadioTexto, pais) {
     : pais === "Colombia" ? (window.ESTADIOS_COLOMBIA || [])
     : pais === "Bolivia" ? (window.ESTADIOS_BOLIVIA || [])
     : pais === "Ecuador" ? (window.ESTADIOS_ECUADOR || [])
-    : pais === "Conmebol" ? (window.ESTADIOS_CONMEBOL || [])
+    // Conmebol (Libertadores/Sudamericana) usa estádios de clubes de vários
+    // países. A base própria ESTADIOS_CONMEBOL cobre só as finais; por isso
+    // cruzamos também com todas as bases nacionais já cadastradas.
+    : pais === "Conmebol" ? [
+        ...(window.ESTADIOS_CONMEBOL || []),
+        ...(window.ESTADIOS_BRASIL || []),
+        ...(window.ESTADIOS_ARGENTINA || []),
+        ...(window.ESTADIOS_URUGUAY || []),
+        ...(window.ESTADIOS_CHILE || []),
+        ...(window.ESTADIOS_COLOMBIA || []),
+        ...(window.ESTADIOS_PARAGUAY || []),
+        ...(window.ESTADIOS_PERU || []),
+        ...(window.ESTADIOS_BOLIVIA || []),
+        ...(window.ESTADIOS_ECUADOR || []),
+      ]
     : (window.ESTADIOS_CHILE || []);
 
   for (const s of stadiums) {

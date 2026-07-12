@@ -141,4 +141,13 @@ window.ESTADIOS_URUGUAY = [
     lat: -34.8500,
     lng: -56.1800,
   },
+  {
+    nome: "Estadio Matías González",
+    aliases: ["matias gonzalez", "estadio matias gonzalez"],
+    cidade: "Artigas",
+    regiao: "Artigas",
+    lat: -30.4034,
+    lng: -56.4708,
+    fonte: "manual/osm-like",
+  },
 ];
