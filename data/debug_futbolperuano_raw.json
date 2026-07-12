@@ -13,7 +13,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "d3b8d0a1dffe40b9",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -29,7 +29,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "6757736acc8ca074",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -45,7 +45,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "250395920cc18721",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -61,7 +61,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "77a3c89e3591f682",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -75,9 +75,9 @@
     "estadio": "",
     "rodada": "Grupo D",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=4-1",
     "id": "a129e63a16f88af0",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -93,7 +93,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "dfb00d1acf54645c",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -109,7 +109,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "4935866d06d38c33",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -125,55 +125,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "75db455ea1378bed",
-    "atualizado_em": "2026-07-11T14:23:49"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Copa de la Liga",
-    "data": "2026-07-10",
-    "hora": "13:00",
-    "mandante": "Cienciano",
-    "visitante": "ADT",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Octavos de Final",
-    "url": "",
-    "extra": "status=Jugado; placar=2-3",
-    "id": "79dad45e47607112",
-    "atualizado_em": "2026-07-11T14:23:49"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Copa de la Liga",
-    "data": "2026-07-10",
-    "hora": "15:30",
-    "mandante": "A. Atlético",
-    "visitante": "Pirata FC",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Octavos de Final",
-    "url": "",
-    "extra": "status=Jugado; placar=3-2",
-    "id": "dedaa6bbc8b115e6",
-    "atualizado_em": "2026-07-11T14:23:49"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Copa de la Liga",
-    "data": "2026-07-10",
-    "hora": "20:00",
-    "mandante": "Boys",
-    "visitante": "Comerciantes FC",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Octavos de Final",
-    "url": "",
-    "extra": "status=Jugado; placar=1-0",
-    "id": "92338d6afb3e01e4",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -187,9 +139,57 @@
     "estadio": "",
     "rodada": "Octavos de Final",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=3-1",
     "id": "e6c8f4a6480beab7",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-07-11",
+    "hora": "15:30",
+    "mandante": "Cristal",
+    "visitante": "Bentín Tacna",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Octavos de Final",
+    "url": "",
+    "extra": "status=Jugado; placar=(5)1-1(4)",
+    "id": "7fbf342e248e4251",
+    "atualizado_em": "2026-07-12T14:27:45"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-07-12",
+    "hora": "13:00",
+    "mandante": "D. Moquegua",
+    "visitante": "Garcilaso",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Octavos de Final",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "07d4ecc2055e727e",
+    "atualizado_em": "2026-07-12T14:27:45"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-07-12",
+    "hora": "15:30",
+    "mandante": "UTC",
+    "visitante": "ADA Jaén",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Octavos de Final",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "87ec6079a7bd7bd8",
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -205,7 +205,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-0",
     "id": "616c39f0345049dc",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -221,7 +221,7 @@
     "url": "",
     "extra": "status=Jugado; placar=4-1",
     "id": "3b403c3d8cfa8247",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -237,7 +237,7 @@
     "url": "",
     "extra": "status=Jugado; placar=3-0",
     "id": "450811e3fd961abd",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -253,7 +253,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-2",
     "id": "dbff6c144cf458ce",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -269,7 +269,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "1e84042365085da2",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -285,6 +285,6 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "7c4549d63f0162bf",
-    "atualizado_em": "2026-07-11T14:23:49"
+    "atualizado_em": "2026-07-12T14:27:45"
   }
 ]
