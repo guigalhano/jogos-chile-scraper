@@ -122,8 +122,43 @@ def discover_clubes(session: requests.Session, timeout: int) -> dict[str, str]:
     return clubes
 
 
+LABELS_CONHECIDOS = {
+    "Estádio", "Estadio", "Capacidade", "Localização", "Localizacao",
+    "Dist. do Centro", "Dimen. do Campo", "Cabines de Rádio", "Cabines de Radio",
+    "Iluminação", "Iluminacao", "Sede", "CEP", "Telefones", "Site", "E-mail",
+    "Presidente", "Mandato", "Fundação", "Fundacao",
+}
+
+
+def _valor_apos_label(lines: list[str], idx: int) -> str:
+    """Dado o indice de uma linha que E um rotulo conhecido (sozinho na
+    linha), retorna o valor na(s) linha(s) seguinte(s), parando no proximo
+    rotulo conhecido ou em uma linha vazia/secao."""
+    partes = []
+    j = idx + 1
+    while j < len(lines):
+        prox = lines[j]
+        if prox in LABELS_CONHECIDOS or prox.startswith("##"):
+            break
+        # nao deixa a busca correr para sempre por uma secao inteira
+        if len(partes) >= 3:
+            break
+        partes.append(prox)
+        j += 1
+        # a maioria dos valores cabe em uma linha so; para no primeiro
+        # valor encontrado (evita grudar com o proximo bloco de texto)
+        break
+    return clean_text(" ".join(partes))
+
+
 def parse_club_page(html: str) -> dict:
-    """Extrai nome, estadio, localizacao (endereco do estadio) e sede (endereco do clube)."""
+    """Extrai nome, estadio, localizacao (endereco do estadio) e sede (endereco do clube).
+
+    Lida com dois formatos possiveis no HTML da FERJ:
+    1) rotulo e valor na MESMA linha de texto ("Sede RUA X, 1 - CIDADE")
+    2) rotulo sozinho numa linha, valor na linha seguinte (comum quando o
+       rotulo e o valor sao elementos HTML irmãos, ex.: <dt>/<dd>)
+    """
     lines = html_to_lines(html)
 
     estadio = ""
@@ -131,21 +166,35 @@ def parse_club_page(html: str) -> dict:
     sede = ""
     capacidade = ""
 
+    def eh_valor_vazio(v: str) -> bool:
+        return not v or normalize(v).startswith("nao possui estadio")
+
     for i, line in enumerate(lines):
+        # formato 1: rotulo e valor na mesma linha
         if line.startswith("Estádio ") or line.startswith("Estadio "):
             valor = line.split(" ", 1)[1].strip() if " " in line else ""
-            if valor and not normalize(valor).startswith("nao possui estadio"):
+            if not eh_valor_vazio(valor):
                 estadio = valor
         elif line.startswith("Localização ") or line.startswith("Localizacao "):
             partes = line.split(" ", 1)
-            localizacao = partes[1].strip() if len(partes) > 1 else ""
-        elif line == "Localização" or line == "Localizacao":
-            # label sozinho na linha = valor vazio (sem estadio cadastrado)
-            localizacao = ""
-        elif line.startswith("Sede "):
+            if len(partes) > 1:
+                localizacao = partes[1].strip()
+        elif line.startswith("Sede ") and len(line.split(" ", 1)) > 1 and len(line.split(" ", 1)[1]) > 3:
             sede = line.split(" ", 1)[1].strip()
-        elif line.startswith("Capacidade "):
+        elif line.startswith("Capacidade ") and len(line) > len("Capacidade "):
             capacidade = line.split(" ", 1)[1].strip()
+
+        # formato 2: rotulo sozinho na linha, valor na linha seguinte
+        elif line in ("Estádio", "Estadio"):
+            valor = _valor_apos_label(lines, i)
+            if not eh_valor_vazio(valor):
+                estadio = valor
+        elif line in ("Localização", "Localizacao"):
+            localizacao = _valor_apos_label(lines, i)
+        elif line == "Sede":
+            sede = _valor_apos_label(lines, i)
+        elif line == "Capacidade":
+            capacidade = _valor_apos_label(lines, i)
 
     return {
         "estadio": estadio,
@@ -281,6 +330,9 @@ def main() -> None:
         itens = itens[: args.max_clubes]
 
     resultados = []
+    debug_html_dir = OUT_DIR / "debug_fferj_estadios_html"
+    debug_html_dir.mkdir(exist_ok=True)
+
     for i, (alias_id, nome_clube) in enumerate(itens, start=1):
         url = f"{BASE_URL}/ClubesLigas/ViewTeam"
         try:
@@ -290,6 +342,9 @@ def main() -> None:
             print(f"[{i}/{len(itens)}] {nome_clube}: ERRO ao abrir pagina ({e})")
             resultados.append({"alias_id": alias_id, "nome_clube": nome_clube, "erro": str(e)})
             continue
+
+        if i <= 3:
+            (debug_html_dir / f"club_{alias_id}.html").write_text(r.text, encoding="utf-8")
 
         info = parse_club_page(r.text)
         endereco, fonte_endereco = montar_endereco_geocoding(info)
