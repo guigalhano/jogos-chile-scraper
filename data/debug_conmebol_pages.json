@@ -2,7 +2,7 @@
   {
     "label": "Libertadores",
     "url": "https://gol.conmebol.com/libertadores/es",
-    "erro": "HTTPSConnectionPool(host='gol.conmebol.com', port=443): Max retries exceeded with url: /libertadores/es (Caused by NameResolutionError(\"HTTPSConnection(host='gol.conmebol.com', port=443): Failed to resolve 'gol.conmebol.com' ([Errno -3] Temporary failure in name resolution)\"))"
+    "jogos": 36
   },
   {
     "label": "Sudamericana",
