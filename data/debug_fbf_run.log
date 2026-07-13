@@ -1,9 +1,25 @@
 [INFO] FBF páginas a testar: 16
 [INFO] Janela: 2026-06-13 até 2027-01-09
-Traceback (most recent call last):
-  File "/home/runner/work/jogos-chile-scraper/jogos-chile-scraper/scrap_fbf_baiano_playwright.py", line 1250, in <module>
-    main()
-  File "/home/runner/work/jogos-chile-scraper/jogos-chile-scraper/scrap_fbf_baiano_playwright.py", line 1189, in main
-    partidos, info, network = render_page_collect(
-                              ^^^^^^^^^^^^^^^^^^^
-NameError: name 'render_page_collect' is not defined
+[OK] id=home | Baianão Série A | page=4 network=4 | na janela=4
+[OK] id=1 | Baianão Série A | page=1 network=0 | na janela=0
+[OK] id=2 | Baianão Série A | page=2 network=0 | na janela=2
+[--] id=3 | sem jogos | linhas=73
+[OK] id=4 | Baianão Série A | page=2 network=0 | na janela=2
+[OK] id=5 | Baianão Série A | page=3 network=0 | na janela=0
+[OK] id=6 | Baianão Série A | page=4 network=0 | na janela=0
+[OK] id=7 | Baianão Série A | page=4 network=0 | na janela=0
+[OK] id=8 | Baianão Série A | page=3 network=0 | na janela=0
+[OK] id=9 | Baianão Série A | page=4 network=0 | na janela=0
+[OK] id=10 | Baianão Série A | page=12 network=0 | na janela=0
+[OK] id=11 | Baianão Série A | page=3 network=0 | na janela=0
+[OK] id=12 | Baianão Série A | page=3 network=0 | na janela=0
+[OK] id=13 | Baianão Série A | page=2 network=0 | na janela=0
+[--] id=14 | sem jogos | linhas=73
+[--] id=15 | sem jogos | linhas=73
+
+FBF jogos válidos adicionados/atualizados: 8
+Total JSON atual: 1656
+Debug páginas: data/debug_fbf_competicoes_pages.json
+Debug rede: data/debug_fbf_competicoes_network.json
+Debug jogos: data/debug_fbf_competicoes_raw.json
+HTML renderizado: data/debug_fbf_html/
