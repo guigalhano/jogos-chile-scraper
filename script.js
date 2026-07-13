@@ -997,6 +997,15 @@ function enrichGames(rawGames) {
         estadioFallback = true;
       }
     }
+    // Jogos da FPF (Copa Paulista, código 233) sem estádio/cidade retornados
+    // pela API. Usa o estádio-mandante conhecido de cada clube.
+    if (!stadium && !estadioBruto && j.fonte === "FPF API" && window.ESTADIO_MANDANTE_PADRAO_FPF) {
+      const chaveMandante = normalize(j.mandante);
+      if (window.ESTADIO_MANDANTE_PADRAO_FPF[chaveMandante]) {
+        stadium = window.ESTADIO_MANDANTE_PADRAO_FPF[chaveMandante];
+        estadioFallback = true;
+      }
+    }
     // Jogos da FFERJ sempre vem com cidade="Rio de Janeiro" no scraper (valor
     // generico/padrao, nao a cidade real do jogo). Quando achamos um estadio
     // ou clube com cidade especifica (Barra Mansa, Saquarema, Petropolis...),

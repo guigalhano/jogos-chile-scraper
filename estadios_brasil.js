@@ -417,6 +417,24 @@ window.ESTADIOS_BRASIL = [
     lng: -46.6297,
   },
   {
+    nome: "Arena Inamar",
+    aliases: ["inamar", "distrital do inamar", "jose batista pereira fernandes", "josé batista pereira fernandes"],
+    cidade: "Diadema",
+    regiao: "São Paulo",
+    lat: -23.6819,
+    lng: -46.6178,
+    fonte: "manual/confirmado (Av. Nossa Senhora dos Navegantes, Jardim Inamar, Diadema — casa do Água Santa)",
+  },
+  {
+    nome: "Estádio Zezinho Magalhães",
+    aliases: ["zezinho magalhaes", "zezinho magalhães", "jauzao", "jauzão"],
+    cidade: "Jaú",
+    regiao: "São Paulo",
+    lat: -22.2964,
+    lng: -48.5578,
+    fonte: "manual/confirmado (Av. Caetano Perlatti, Jaú — casa do XV de Jaú)",
+  },
+  {
     nome: "Estádio Municipal Parque do Sabiá",
     aliases: ["parque do sabia", "parque do sabiá"],
     cidade: "Uberlândia",
@@ -2704,4 +2722,18 @@ window.ESTADIO_MANDANTE_PADRAO_FBF = {
   "esporte clube bahia": { nome: "Salvador (cidade)", cidade: "Salvador", regiao: "Bahia", lat: -12.9718, lng: -38.5011 },
   "esporte clube vitoria": { nome: "Salvador (cidade)", cidade: "Salvador", regiao: "Bahia", lat: -12.9718, lng: -38.5011 },
   "camacari fc": { nome: "Camaçari (cidade)", cidade: "Camaçari", regiao: "Bahia", lat: -12.6996, lng: -38.3263 },
+};
+
+/*
+  Fallback: jogos da FPF (Federação Paulista de Futebol / futebolpaulista.com.br)
+  vindos da Copa Paulista (código 233) — a API do widget não retorna o campo
+  Estadio/Municipio para esses jogos. Usa o estádio-mandante conhecido de
+  cada clube (a Copa Paulista usa jogo de ida e volta, mando de campo do
+  clube listado à esquerda, conforme regulamento da FPF).
+*/
+window.ESTADIO_MANDANTE_PADRAO_FPF = {
+  "portuguesa": { nome: "Estádio Comendador Souza (Canindé)", cidade: "São Paulo", regiao: "São Paulo", lat: -23.5217, lng: -46.6297 },
+  "xv de jau": { nome: "Estádio Zezinho Magalhães", cidade: "Jaú", regiao: "São Paulo", lat: -22.2964, lng: -48.5578 },
+  "agua santa": { nome: "Arena Inamar", cidade: "Diadema", regiao: "São Paulo", lat: -23.6819, lng: -46.6178 },
+  "xv de piracicaba-sp": { nome: "Estádio Barão de Serra Negra", cidade: "Piracicaba", regiao: "São Paulo", lat: -22.7253, lng: -47.6492 },
 };
