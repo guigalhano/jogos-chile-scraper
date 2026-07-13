@@ -547,4 +547,36 @@ window.ESTADIOS_PARAGUAY = [
     lng: -57.4453,
     fonte: "manual/confirmado (estádio do Deportivo Capiatá — ABC Color)",
   },
+  {
+    nome: "Estadio Emiliano Ghezzi",
+    aliases: ["emiliano ghezzi"],
+    cidade: "Fernando de la Mora",
+    regiao: "Paraguay",
+    lat: -25.3378,
+    lng: -57.5142,
+    fonte: "manual/confirmado (Vista Alegre, Fernando de la Mora — casa do Club Fernando de la Mora)",
+  },
+  {
+    nome: "Estadio Ka'arendy",
+    aliases: ["kaarendy", "ka arendy", "leandro ovelar"],
+    cidade: "Juan León Mallorquín",
+    regiao: "Paraguay",
+    lat: -25.3958,
+    lng: -54.9628,
+    fonte: "manual/aproximado (casa do General Caballero JLM, Juan León Mallorquín, Alto Paraná)",
+  },
 ];
+
+/*
+  Fallback: jogos da APF (Paraguay) onde a pagina de detalhe do jogo ainda
+  nao publicou o estadio (status=PreMatch/Previo). Usa o estadio-mandante
+  conhecido de cada clube.
+*/
+window.ESTADIO_MANDANTE_PADRAO_APF = {
+  "guairena fc": { nome: "Estadio Parque del Guairá", cidade: "Villarrica", regiao: "Paraguay", lat: -25.7833, lng: -56.4333 },
+  "deportivo capiata": { nome: "Estadio Erico Galeano", cidade: "Capiatá", regiao: "Paraguay", lat: -25.3556, lng: -57.4453 },
+  "independiente de cg": { nome: "Estadio Ricardo Grégor", cidade: "Campo Grande (Asunción)", regiao: "Paraguay", lat: -25.315, lng: -57.598 },
+  "fernando de la mora": { nome: "Estadio Emiliano Ghezzi", cidade: "Fernando de la Mora", regiao: "Paraguay", lat: -25.3378, lng: -57.5142 },
+  "general caballero jlm": { nome: "Estadio Ka'arendy", cidade: "Juan León Mallorquín", regiao: "Paraguay", lat: -25.3958, lng: -54.9628 },
+  "sol de america": { nome: "Estadio Luis Alfonso Giagni", cidade: "Villa Elisa", regiao: "Paraguay", lat: -25.3628, lng: -57.5967 },
+};

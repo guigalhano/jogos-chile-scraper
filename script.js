@@ -1006,6 +1006,14 @@ function enrichGames(rawGames) {
         estadioFallback = true;
       }
     }
+    // Jogos da APF (Paraguay) sem estádio publicado ainda (status=PreMatch).
+    if (!stadium && !estadioBruto && j.fonte === "APF" && window.ESTADIO_MANDANTE_PADRAO_APF) {
+      const chaveMandante = normalize(j.mandante);
+      if (window.ESTADIO_MANDANTE_PADRAO_APF[chaveMandante]) {
+        stadium = window.ESTADIO_MANDANTE_PADRAO_APF[chaveMandante];
+        estadioFallback = true;
+      }
+    }
     // Jogos da FFERJ sempre vem com cidade="Rio de Janeiro" no scraper (valor
     // generico/padrao, nao a cidade real do jogo). Quando achamos um estadio
     // ou clube com cidade especifica (Barra Mansa, Saquarema, Petropolis...),
