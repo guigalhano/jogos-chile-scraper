@@ -474,6 +474,7 @@ const ESTADIO_MANDANTE_PADRAO_CHILE = {
   "deportes concepcion": "ester roa rebolledo",
   "universidad de concepcion": "ester roa rebolledo",
   "u de concepcion": "ester roa rebolledo",
+  "recreativo puerto varas": "municipal de puerto varas",
   "rangers": "fiscal de talca",
   "santiago morning": "la cisterna",
   "union san felipe": "municipal de san felipe",
@@ -926,8 +927,15 @@ function findDefaultHomeStadium(mandante, pais) {
 
     // campeonatochileno.cl grava categorias femininas/juvenis anexadas ao
     // nome do time principal (ex.: "Universidad de Chile Juvenil Fem").
+    // Usa keySemPontuacao como base (não key) porque nomes como "U. de
+    // Concepción" têm ponto, que impediria o match mesmo após tirar o
+    // sufixo de categoria.
     const keySemCategoria = stripSufixoCategoriaChile(key);
     if (keySemCategoria !== key && mapa[keySemCategoria]) return findStadiumInfo(mapa[keySemCategoria], pais);
+    const keySemPontuacaoECategoria = stripSufixoCategoriaChile(keySemPontuacao);
+    if (keySemPontuacaoECategoria !== keySemPontuacao && mapa[keySemPontuacaoECategoria]) {
+      return findStadiumInfo(mapa[keySemPontuacaoECategoria], pais);
+    }
   }
 
   if (pais === "Paraguay") {

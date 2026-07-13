@@ -925,4 +925,13 @@ window.ESTADIOS_CHILE = [
     lng: -72.0303,
     fonte: "manual/aproximado (cidade de Cunco)",
   },
+  {
+    nome: "Estadio Municipal de Puerto Varas",
+    aliases: ["municipal de puerto varas"],
+    cidade: "Puerto Varas",
+    regiao: "Región de Los Lagos",
+    lat: -41.3195,
+    lng: -72.9857,
+    fonte: "manual/aproximado (cidade de Puerto Varas — mandante Recreativo Puerto Varas)",
+  },
 ];
