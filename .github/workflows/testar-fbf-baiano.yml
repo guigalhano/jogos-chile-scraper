@@ -35,11 +35,19 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_network.json data/debug_fbf_competicoes_raw.json data/debug_fbf_html data/debug_fbf_run.log data/fbf_mapa_times.json 2>/dev/null || true
-          if git diff --cached --quiet; then
-            echo "Sem mudanças para commitar"
-          else
-            git commit -m "Diagnóstico FBF Baiano"
-            git pull --rebase origin main || git rebase --abort || true
-            git push
-          fi
+          {
+            echo "=== git status (antes do add) ==="
+            git status --short
+            echo "=== timestamp ==="
+            date -u
+            echo "=== ls data/ ==="
+            ls -la data/ 2>&1
+            echo "=== primeiras linhas do raw.json (se existir) ==="
+            head -c 800 data/debug_fbf_competicoes_raw.json 2>&1
+          } > data/debug_fbf_git_status.txt
+          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_network.json data/debug_fbf_competicoes_raw.json data/debug_fbf_html data/debug_fbf_run.log data/fbf_mapa_times.json data/debug_fbf_git_status.txt 2>&1 || true
+          git status --short >> data/debug_fbf_git_status.txt
+          git add data/debug_fbf_git_status.txt
+          git commit -m "Diagnóstico FBF Baiano" || echo "nada para commitar"
+          git pull --rebase origin main || git rebase --abort || true
+          git push
