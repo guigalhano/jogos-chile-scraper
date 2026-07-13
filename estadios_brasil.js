@@ -64,7 +64,7 @@ window.ESTADIOS_BRASIL = [
   },
   {
     nome: "Estádio Barradão",
-    aliases: ["barradão", "barradao"],
+    aliases: ["barradão", "barradao", "manoel barradas", "ct manoel barradas"],
     cidade: "Salvador",
     regiao: "Bahia",
     lat: -12.9481,
@@ -2643,4 +2643,65 @@ window.ESTADIOS_BRASIL = [
     lng: -43.3994,
     fonte: "manual/aproximado (Belford Roxo)",
   },
+  {
+    nome: "CT Noide Cerqueira",
+    aliases: ["ct noide cerqueira", "noide cerqueira", "ct nóide cerqueira", "nóide cerqueira"],
+    cidade: "Feira de Santana",
+    regiao: "Bahia",
+    lat: -12.2664,
+    lng: -38.9663,
+    fonte: "manual/confirmado (CT do Fluminense de Feira, bairro Novo Horizonte, Feira de Santana-BA — Jornal Folha do Estado da Bahia)",
+  },
+  {
+    nome: "Estádio Geraldo Pereira",
+    aliases: ["geraldo pereira"],
+    cidade: "Barreiras",
+    regiao: "Bahia",
+    lat: -12.1522,
+    lng: -44.9908,
+    fonte: "manual/confirmado (estádio do Barreiras FC — tabela oficial FBF e Bahia Notícias)",
+  },
+  {
+    nome: "Estádio Morenão",
+    aliases: ["morenao", "morenão"],
+    cidade: "Iguatu",
+    regiao: "Ceará",
+    lat: -6.3597,
+    lng: -39.2986,
+    fonte: "manual/confirmado (estádio do Iguatu-CE, Série D)",
+  },
+  {
+    nome: "Estádio JK",
+    aliases: ["estadio jk", "jk paranoa", "jk paranoá"],
+    cidade: "Paranoá",
+    regiao: "Distrito Federal",
+    lat: -15.7761,
+    lng: -47.7801,
+    fonte: "manual/confirmado (estádio do Capital-DF, Paranoá/Brasília, Série D)",
+  },
+  {
+    nome: "Estádio Cassolão",
+    aliases: ["cassolao", "cassolão", "jose angelo cassol", "josé ângelo cassol"],
+    cidade: "Rolim de Moura",
+    regiao: "Rondônia",
+    lat: -11.7237,
+    lng: -61.7783,
+    fonte: "manual/confirmado (estádio do Guaporé FC em Rolim de Moura-RO, Série D — Rondônia Dinâmica)",
+  },
 ];
+
+/*
+  Fallback: jogos da FBF (Federação Bahiana de Futebol) vindos do widget
+  "PRÓXIMOS JOGOS" da home não trazem o nome do estádio (só a página de
+  cada competição/carrossel de rodada traz). Nesses casos, usamos a cidade
+  onde o time mandante costuma jogar como aproximação.
+*/
+window.ESTADIO_MANDANTE_PADRAO_FBF = {
+  "fluminense de feira": { nome: "Feira de Santana (cidade)", cidade: "Feira de Santana", regiao: "Bahia", lat: -12.2664, lng: -38.9663 },
+  "feira fc": { nome: "Feira de Santana (cidade)", cidade: "Feira de Santana", regiao: "Bahia", lat: -12.2664, lng: -38.9663 },
+  "ssa fc": { nome: "Feira de Santana (cidade)", cidade: "Feira de Santana", regiao: "Bahia", lat: -12.2664, lng: -38.9663 },
+  "barreiras fc": { nome: "Barreiras (cidade)", cidade: "Barreiras", regiao: "Bahia", lat: -12.1522, lng: -44.9908 },
+  "esporte clube bahia": { nome: "Salvador (cidade)", cidade: "Salvador", regiao: "Bahia", lat: -12.9718, lng: -38.5011 },
+  "esporte clube vitoria": { nome: "Salvador (cidade)", cidade: "Salvador", regiao: "Bahia", lat: -12.9718, lng: -38.5011 },
+  "camacari fc": { nome: "Camaçari (cidade)", cidade: "Camaçari", regiao: "Bahia", lat: -12.6996, lng: -38.3263 },
+};

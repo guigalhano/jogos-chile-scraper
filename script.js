@@ -987,6 +987,16 @@ function enrichGames(rawGames) {
         estadioFallback = true;
       }
     }
+    // Jogos da FBF (Bahia) vindos do widget "PRÓXIMOS JOGOS" da home não
+    // trazem o nome do estádio (só a página de cada competição traz).
+    // Usa a cidade onde o time mandante costuma jogar como aproximação.
+    if (!stadium && !estadioBruto && j.fonte === "FBF" && window.ESTADIO_MANDANTE_PADRAO_FBF) {
+      const chaveMandante = normalize(j.mandante);
+      if (window.ESTADIO_MANDANTE_PADRAO_FBF[chaveMandante]) {
+        stadium = window.ESTADIO_MANDANTE_PADRAO_FBF[chaveMandante];
+        estadioFallback = true;
+      }
+    }
     // Jogos da FFERJ sempre vem com cidade="Rio de Janeiro" no scraper (valor
     // generico/padrao, nao a cidade real do jogo). Quando achamos um estadio
     // ou clube com cidade especifica (Barra Mansa, Saquarema, Petropolis...),
