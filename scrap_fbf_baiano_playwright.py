@@ -714,6 +714,9 @@ def save_nomes_cache(cache: dict) -> None:
     )
 
 
+RESOLVE_DEBUG: list[dict] = []
+
+
 def resolve_nome_time(jogo_url: str) -> tuple[str, str]:
     """Visita a página de detalhes do jogo (.../jogo/detalhes/N) e tenta
     extrair os nomes completos dos dois times (mandante, visitante).
@@ -722,10 +725,14 @@ def resolve_nome_time(jogo_url: str) -> tuple[str, str]:
     HTML exato dessa página durante o desenvolvimento: og:title, <title>,
     cabeçalhos (h1/h2/h3), e por fim seletores comuns de "nome do time".
     """
+    dbg = {"jogo_url": jogo_url, "status": None, "erro": "", "candidatos": [], "resultado": ["", ""]}
     try:
         r = requests.get(jogo_url, headers=HEADERS, timeout=25)
+        dbg["status"] = r.status_code
         soup = BeautifulSoup(r.text, "html.parser")
-    except Exception:
+    except Exception as e:
+        dbg["erro"] = str(e)[:300]
+        RESOLVE_DEBUG.append(dbg)
         return ("", "")
 
     candidatos = []
@@ -740,12 +747,16 @@ def resolve_nome_time(jogo_url: str) -> tuple[str, str]:
     for h in soup.find_all(["h1", "h2", "h3"]):
         candidatos.append(clean_text(h.get_text(" ", strip=True)))
 
+    dbg["candidatos"] = candidatos[:10]
+
     for c in candidatos:
         m = VERSUS_LOOSE_RE.search(c)
         if m:
             a = clean_text(re.sub(r"^(jogo|partida)[:\-]?\s*", "", m.group(1), flags=re.I))
             b = clean_text(re.split(r"\s*[-–|]\s*", m.group(2))[0])
             if a and b and len(a) <= 60 and len(b) <= 60:
+                dbg["resultado"] = [a, b]
+                RESOLVE_DEBUG.append(dbg)
                 return (a, b)
 
     # fallback: elementos com classe comumente usada para "nome do time"
@@ -754,8 +765,11 @@ def resolve_nome_time(jogo_url: str) -> tuple[str, str]:
         textos = [clean_text(e.get_text(" ", strip=True)) for e in els]
         textos = [t for t in textos if t]
         if len(textos) >= 2:
+            dbg["resultado"] = [textos[0], textos[1]]
+            RESOLVE_DEBUG.append(dbg)
             return (textos[0], textos[1])
 
+    RESOLVE_DEBUG.append(dbg)
     return ("", "")
 
 
@@ -1180,6 +1194,11 @@ def main() -> None:
     if resolvidos_agora:
         save_nomes_cache(cache_nomes)
         print(f"[INFO] Nomes completos resolvidos nesta execução: {resolvidos_agora} (cache: data/fbf_mapa_times.json)")
+    if RESOLVE_DEBUG:
+        (OUT_DIR / "debug_fbf_resolve_nomes.json").write_text(
+            json.dumps(RESOLVE_DEBUG, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
+        print(f"[INFO] Debug de resolução de nomes: data/debug_fbf_resolve_nomes.json ({len(RESOLVE_DEBUG)} tentativas)")
 
     all_partidos = dedupe_partidos(all_partidos)
     rows_new = [p.to_row() for p in all_partidos]

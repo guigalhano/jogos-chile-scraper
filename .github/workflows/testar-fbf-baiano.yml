@@ -25,10 +25,10 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install chromium
 
-      - name: Rodar scraper FBF (home + competicoes/1, com debug-html)
+      - name: Rodar scraper FBF (somente home, com debug-html)
         continue-on-error: true
         run: |
-          python scrap_fbf_baiano_playwright.py --somente-id home --somente-id 1 --incluir-passados --debug-html 2>&1 | tee data/debug_fbf_run.log
+          python scrap_fbf_baiano_playwright.py --somente-id home --incluir-passados --debug-html 2>&1 | tee data/debug_fbf_run.log
 
       - name: Salvar resultados do diagnóstico (NÃO mistura com dados de produção)
         if: always()
@@ -45,7 +45,7 @@ jobs:
             echo "=== primeiras linhas do raw.json (se existir) ==="
             head -c 800 data/debug_fbf_competicoes_raw.json 2>&1
           } > data/debug_fbf_git_status.txt
-          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_network.json data/debug_fbf_competicoes_raw.json data/debug_fbf_html data/debug_fbf_run.log data/fbf_mapa_times.json data/debug_fbf_git_status.txt 2>&1 || true
+          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_network.json data/debug_fbf_competicoes_raw.json data/debug_fbf_html data/debug_fbf_run.log data/fbf_mapa_times.json data/debug_fbf_git_status.txt data/debug_fbf_resolve_nomes.json 2>&1 || true
           git status --short >> data/debug_fbf_git_status.txt
           git add data/debug_fbf_git_status.txt
           git commit -m "Diagnóstico FBF Baiano" || echo "nada para commitar"
