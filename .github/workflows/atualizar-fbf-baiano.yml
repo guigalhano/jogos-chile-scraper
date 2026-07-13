@@ -29,13 +29,13 @@ jobs:
 
       - name: Rodar scraper FBF (Baiano) via Playwright
         run: |
-          if [ -f scrap_fbf_baiano_playwright.py ]; then python scrap_fbf_baiano_playwright.py --max-id 15 --dias 180 --debug-html; fi
+          python scrap_fbf_baiano_playwright.py --max-id 15 --dias 180 --debug-html 2>&1 | tee data/debug_fbf_run.log
 
       - name: Salvar arquivos atualizados
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
-          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_raw.json data/fbf_mapa_times.json 2>/dev/null || true
+          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_raw.json data/fbf_mapa_times.json data/debug_fbf_run.log data/debug_fbf_resolve_nomes.json 2>/dev/null || true
           git commit -m "Atualiza jogos FBF (Baiano) - semanal" || echo "Sem mudanças"
           git push
