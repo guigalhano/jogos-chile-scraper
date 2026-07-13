@@ -2,7 +2,7 @@
   {
     "pg": 1,
     "jogos": 21,
-    "n_match_hrefs": 22
+    "n_match_hrefs": 21
   },
   {
     "pg": 2,
@@ -16,11 +16,16 @@
   },
   {
     "pg": 4,
+    "jogos": 4,
+    "n_match_hrefs": 4
+  },
+  {
+    "pg": 5,
     "jogos": 0,
     "n_match_hrefs": 0
   },
   {
-    "pg": 5,
+    "pg": 6,
     "jogos": 0,
     "n_match_hrefs": 0
   }
