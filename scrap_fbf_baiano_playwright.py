@@ -703,6 +703,7 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
             # repetidamente e recaptura o texto a cada passo, pra pegar
             # várias rodadas (não só a que carrega por padrão).
             rodadas_capturadas = 0
+            carousel_debug = {"botao_encontrado": False, "seletor_usado": "", "cliques_tentados": 0, "rodadas_vistas": []}
             try:
                 next_btn = None
                 for sel in [
@@ -716,6 +717,7 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
                         loc = page.locator(sel).first
                         if loc.count() > 0:
                             next_btn = loc
+                            carousel_debug["seletor_usado"] = sel
                             break
                     except Exception:
                         continue
@@ -732,20 +734,37 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
                                 continue
                             if txt == "next":
                                 next_btn = locs.nth(bi)
+                                carousel_debug["seletor_usado"] = f"{sel}[texto=next]"
                                 break
                         if next_btn is not None:
                             break
 
+                carousel_debug["botao_encontrado"] = next_btn is not None
+
+                m0 = None
+                for ln in lines:
+                    if RODADA_STRICT_RE.match(ln):
+                        m0 = ln
+                        break
+                if m0:
+                    carousel_debug["rodadas_vistas"].append(clean_text(m0))
+
                 if next_btn is not None:
                     sem_novidade_seguidas = 0
                     for _ in range(25):
+                        carousel_debug["cliques_tentados"] += 1
                         try:
                             next_btn.click(timeout=1500, force=True)
-                        except Exception:
+                        except Exception as click_err:
+                            carousel_debug["erro_clique"] = str(click_err)[:200]
                             break
                         page.wait_for_timeout(1200)
                         step_html = page.content()
                         step_lines = html_to_lines(step_html)
+                        for ln in step_lines:
+                            if RODADA_STRICT_RE.match(ln):
+                                carousel_debug["rodadas_vistas"].append(clean_text(ln))
+                                break
                         step_partidos = parse_carousel_fbf(step_lines, final_url, cid, comp)
                         before = len(page_partidos)
                         existing_ids = {p.id for p in page_partidos}
@@ -762,9 +781,10 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
                                 # 3 cliques seguidos sem jogo novo: carrossel
                                 # provavelmente deu a volta ou travou.
                                 break
-            except Exception:
-                pass
+            except Exception as e:
+                carousel_debug["erro_geral"] = str(e)[:200]
 
+            info["carousel_debug"] = carousel_debug
             info["jogos"] = len(page_partidos)
             info["rodadas_carrossel_capturadas"] = rodadas_capturadas
 
