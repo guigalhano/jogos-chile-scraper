@@ -30,4 +30,8 @@ window.CIDADES_RJ = {
   "araruama": { lat: -22.8722, lng: -42.3436 },
   "buzios": { lat: -22.7469, lng: -41.8817 },
   "saquarema": { lat: -22.9200, lng: -42.5100 },
+  "carapebus": { lat: -22.1889, lng: -41.6825 },
+  "santo antonio de padua": { lat: -21.5361, lng: -42.1758 },
+  "belford roxo": { lat: -22.7642, lng: -43.3994 },
+  "campos dos goytacazes": { lat: -21.7545, lng: -41.3244 },
 };

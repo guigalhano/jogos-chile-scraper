@@ -987,7 +987,14 @@ function enrichGames(rawGames) {
         estadioFallback = true;
       }
     }
-    const cidadeResolvida = j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "";
+    // Jogos da FFERJ sempre vem com cidade="Rio de Janeiro" no scraper (valor
+    // generico/padrao, nao a cidade real do jogo). Quando achamos um estadio
+    // ou clube com cidade especifica (Barra Mansa, Saquarema, Petropolis...),
+    // essa e mais confiavel e deve ter prioridade sobre o valor generico.
+    const ehFFERJ = j.fonte === "FFERJ";
+    const cidadeResolvida = (ehFFERJ && stadium?.cidade)
+      ? stadium.cidade
+      : (j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "");
     let cidadeCoords = null;
     let regiaoPorCidade = "";
     if (!stadium?.lat && !j.lat && cidadeResolvida) {
