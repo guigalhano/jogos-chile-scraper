@@ -934,4 +934,22 @@ window.ESTADIOS_CHILE = [
     lng: -72.9857,
     fonte: "manual/aproximado (cidade de Puerto Varas — mandante Recreativo Puerto Varas)",
   },
+  {
+    nome: "Estadio Bella Esperanza",
+    aliases: ["bella esperanza"],
+    cidade: "Melipilla",
+    regiao: "Región Metropolitana",
+    lat: -33.6833,
+    lng: -71.2167,
+    fonte: "manual/confirmado (campo do Deportes Melipilla Femenino, Melipilla — campeonatochileno.cl)",
+  },
+  {
+    nome: "Estadio Pueblo Nuevo",
+    aliases: ["pueblo nuevo"],
+    cidade: "Temuco",
+    regiao: "Región de La Araucanía",
+    lat: -38.7359,
+    lng: -72.5904,
+    fonte: "manual/confirmado (Temuco — sede histórica do futebol feminino da região, Wikipedia)",
+  },
 ];

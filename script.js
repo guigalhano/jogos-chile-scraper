@@ -475,6 +475,7 @@ const ESTADIO_MANDANTE_PADRAO_CHILE = {
   "universidad de concepcion": "ester roa rebolledo",
   "u de concepcion": "ester roa rebolledo",
   "recreativo puerto varas": "municipal de puerto varas",
+  "union araucania": "pueblo nuevo",
   "rangers": "fiscal de talca",
   "santiago morning": "la cisterna",
   "union san felipe": "municipal de san felipe",
