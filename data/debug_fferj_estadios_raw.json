@@ -5,10 +5,10 @@
     "estadio": "LUSO BRASILEIRO (E. ASSOCIAÇÃO ATLÉTICA PORTUGUESA)",
     "localizacao": "RUA HAROLDO LOBO, 400 - ILHA DO GOVERNADOR",
     "sede": "RUA HAROLDO LOBO, 400 - RIO DE JANEIRO",
-    "endereco_geocodificado": "RUA HAROLDO LOBO, 400 - ILHA DO GOVERNADOR, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8781,
+    "lng": -43.4642
   },
   {
     "alias_id": "17",
@@ -16,10 +16,10 @@
     "estadio": "PROLETÁRIO GUILHERME DA SILVEIRA FILHO (MOÇA BONITA)",
     "localizacao": "RUA SUL AMÉRICA, 950 - BANGU",
     "sede": "RUA SUL AMÉRICA, 950 - RIO DE JANEIRO",
-    "endereco_geocodificado": "RUA SUL AMÉRICA, 950 - BANGU, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.8738053,
-    "lng": -43.4681413
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8781,
+    "lng": -43.4642
   },
   {
     "alias_id": "54",
@@ -38,10 +38,10 @@
     "estadio": "JORNALISTA MÁRIO FILHO (MARACANÃ)",
     "localizacao": "S/Nº",
     "sede": "AV. BORGES DE MEDEIROS, 997 - RIO DE JANEIRO",
-    "endereco_geocodificado": "S/Nº, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -23.0136383,
-    "lng": -44.3302121
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.9121,
+    "lng": -43.2302
   },
   {
     "alias_id": "74",
@@ -49,10 +49,10 @@
     "estadio": "JORNALISTA MÁRIO FILHO (MARACANÃ)",
     "localizacao": "S/Nº",
     "sede": "RUA ALVARO CHAVES, 41 - RIO DE JANEIRO",
-    "endereco_geocodificado": "S/Nº, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -23.0136383,
-    "lng": -44.3302121
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.9121,
+    "lng": -43.2302
   },
   {
     "alias_id": "87",
@@ -71,10 +71,10 @@
     "estadio": "MUNICIPAL JOÃO SALDANHA",
     "localizacao": "",
     "sede": "RUA JUDEMIR RANGEL DA CRUZ, 110/S - MARICÁ",
-    "endereco_geocodificado": "RUA JUDEMIR RANGEL DA CRUZ, 110/S - MARICÁ, RJ, Brasil",
-    "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.9195,
+    "lng": -42.8186
   },
   {
     "alias_id": "96",
@@ -82,10 +82,10 @@
     "estadio": "JÂNIO DE MORAES (LARANJÃO)",
     "localizacao": "AVENIDA GOVERNADOR ROBERTO SILVEIRA, 1357 - CENTRO",
     "sede": "AV. GOVERNADOR ROBERTO SILVEIRA, 1357 - NOVA IGUAÇU",
-    "endereco_geocodificado": "AVENIDA GOVERNADOR ROBERTO SILVEIRA, 1357 - CENTRO, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.7554095,
-    "lng": -43.4547277
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.7556,
+    "lng": -43.4603
   },
   {
     "alias_id": "25",
@@ -93,10 +93,10 @@
     "estadio": "NILTON SANTOS (ENGENHÃO)",
     "localizacao": "RUA JOSÉ DOS REIS - ATÉ 1303 - LADO ÍMPAR, 425 - ENGENHO DE DENTRO",
     "sede": "RUA JOSÉ DOS REIS, 425 - RIO DE JANEIRO",
-    "endereco_geocodificado": "RUA JOSÉ DOS REIS - ATÉ 1303 - LADO ÍMPAR, 425 - ENGENHO DE DENTRO, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8925,
+    "lng": -43.23
   },
   {
     "alias_id": "171",
@@ -115,10 +115,10 @@
     "estadio": "SÃO JANUÁRIO",
     "localizacao": "RUA GENERAL ALMERIO DE MOURA, 10 - SÃO CRISTÓVÃO",
     "sede": "RUA GAL ALMÉRIO DE MOURA, 131 - RIO DE JANEIRO",
-    "endereco_geocodificado": "RUA GENERAL ALMERIO DE MOURA, 10 - SÃO CRISTÓVÃO, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8917,
+    "lng": -43.2286
   },
   {
     "alias_id": "134",
@@ -126,10 +126,10 @@
     "estadio": "GENERAL SÍLVIO RAULINO DE OLIVEIRA",
     "localizacao": "RUA CORONEL RÚBENS VAZ, S/Nº - JARDIM PARAÍBA",
     "sede": "RUA PANAMÁ, 200 - VOLTA REDONDA",
-    "endereco_geocodificado": "RUA CORONEL RÚBENS VAZ, S/Nº - JARDIM PARAÍBA, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.5202,
+    "lng": -44.1042
   },
   {
     "alias_id": "135",
@@ -241,10 +241,10 @@
     "estadio": "ANTONIO FERREIRA DE MEDEIROS",
     "localizacao": "S/N",
     "sede": "RUA EDIANA FERREIRA MEDEIROS, S/N - CARDOSO MOREIRA",
-    "endereco_geocodificado": "S/N, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.9231185,
-    "lng": -43.1879785
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -21.585,
+    "lng": -41.42
   },
   {
     "alias_id": "137",
@@ -296,10 +296,10 @@
     "estadio": "DE LOS LÁRIOS",
     "localizacao": "ESTRADA RIO DOURO, 3855 - XERÉM",
     "sede": "ESTRADA RIO D'OURO, 3855 - DUQUE DE CAXIAS",
-    "endereco_geocodificado": "ESTRADA RIO DOURO, 3855 - XERÉM, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.5942868,
-    "lng": -43.3147454
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.5782,
+    "lng": -43.3078
   },
   {
     "alias_id": "177",
@@ -573,8 +573,8 @@
     "sede": "RUA MANOEL FRANCISCO PINTO, S/Nº - CARAPEBUS",
     "endereco_geocodificado": "RUA MANOEL FRANCISCO PINTO, S/Nº - CARAPEBUS, RJ, Brasil",
     "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "lat": -22.1858976,
+    "lng": -41.6518616
   },
   {
     "alias_id": "264",
@@ -606,8 +606,8 @@
     "sede": "RUA ORLANDO PAGNUZZI, S/Nº - DUAS BARRAS",
     "endereco_geocodificado": "RUA ORLANDO PAGNUZZI, S/Nº - DUAS BARRAS, RJ, Brasil",
     "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "lat": -22.050474,
+    "lng": -42.5178966
   },
   {
     "alias_id": "269",
@@ -727,8 +727,8 @@
     "sede": "PRAÇA DOS TRÊS PODERES, S/Nº - SÃO FRANCISCO DE ITABAPOANA",
     "endereco_geocodificado": "PRAÇA DOS TRÊS PODERES, S/Nº - SÃO FRANCISCO DE ITABAPOANA, RJ, Brasil",
     "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "lat": -21.4735859,
+    "lng": -41.1163668
   },
   {
     "alias_id": "281",
@@ -749,8 +749,8 @@
     "sede": "AV NOSSA SENHORA DAS GRAÇAS, 44 - ARARUAMA",
     "endereco_geocodificado": "AV NOSSA SENHORA DAS GRAÇAS, 44 - ARARUAMA, RJ, Brasil",
     "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "lat": -22.8639979,
+    "lng": -42.3292629
   },
   {
     "alias_id": "278",
@@ -1244,8 +1244,8 @@
     "sede": "RUA PRESIDENTE BACKER, S/N - NITERÓI",
     "endereco_geocodificado": "PRAIA DE GRAGOATÁ, S/Nº, RJ, Brasil",
     "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "lat": -22.9021446,
+    "lng": -43.1361016
   },
   {
     "alias_id": "993",
@@ -1530,8 +1530,8 @@
     "sede": "RUA CARACARAI, S/Nº - RIO DE JANEIRO",
     "endereco_geocodificado": "RUA CARACARAI, S/Nº - RIO DE JANEIRO, RJ, Brasil",
     "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "lat": -22.8898424,
+    "lng": -43.5998684
   },
   {
     "alias_id": "349",
@@ -1585,8 +1585,8 @@
     "sede": "RUA IVETE VARGAS, S/Nº - RIO DE JANEIRO",
     "endereco_geocodificado": "RUA IVETE VARGAS, S/Nº - RIO DE JANEIRO, RJ, Brasil",
     "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "lat": -22.8557572,
+    "lng": -43.2416567
   },
   {
     "alias_id": "353",
@@ -1715,10 +1715,10 @@
     "estadio": "NIVALDO PEREIRA",
     "localizacao": "ESTRADA DO RIACHÃO, 8 - AUSTIN",
     "sede": "ROD. PRESIDENTE DUTRA, 24500 - NOVA IGUAÇU",
-    "endereco_geocodificado": "ESTRADA DO RIACHÃO, 8 - AUSTIN, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8912,
+    "lng": -43.2229
   },
   {
     "alias_id": "23",
@@ -1726,10 +1726,10 @@
     "estadio": "LEONIDAS DA SILVA",
     "localizacao": "AVENIDA TEIXEIRA DE CASTRO, 54 - BONSUCESSO",
     "sede": "AV. TEIXEIRA DE CASTRO, 54 - RIO DE JANEIRO",
-    "endereco_geocodificado": "AVENIDA TEIXEIRA DE CASTRO, 54 - BONSUCESSO, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.8572404,
-    "lng": -43.2524224
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.862,
+    "lng": -43.254
   },
   {
     "alias_id": "34",
@@ -1737,10 +1737,10 @@
     "estadio": "ÍTALO DEL CIMA",
     "localizacao": "RUA ARTUR RIOS, 1270 - SENADOR VASCONCELOS",
     "sede": "RUA ARTUR RIOS, N 1270 - RIO DE JANEIRO",
-    "endereco_geocodificado": "RUA ARTUR RIOS, 1270 - SENADOR VASCONCELOS, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.8969832,
-    "lng": -43.5393732
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.902,
+    "lng": -43.561
   },
   {
     "alias_id": "52",
@@ -1770,10 +1770,10 @@
     "estadio": "EDUARDO GUINLE",
     "localizacao": "RUA JARDEL HOTTZ, S/N - OLARIA",
     "sede": "RUA JARDEL HOTTZ, S/N - NOVA FRIBURGO",
-    "endereco_geocodificado": "RUA JARDEL HOTTZ, S/N - OLARIA, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.2945957,
-    "lng": -42.5391936
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.2819,
+    "lng": -42.5311
   },
   {
     "alias_id": "248",
@@ -1836,10 +1836,10 @@
     "estadio": "PREFEITO ISMAEL DE SOUZA LEÃO DO SUL",
     "localizacao": "ESTRADA GOVERNADOR CHAGAS FREITAS, 2.000 - COLÔNIA SANTO ANTÔNIO",
     "sede": "ESTRADA GOVERNADOR CHAGAS FREITAS, S/Nº - BARRA MANSA",
-    "endereco_geocodificado": "ESTRADA GOVERNADOR CHAGAS FREITAS, 2.000 - COLÔNIA SANTO ANTÔNIO, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.5439,
+    "lng": -44.1739
   },
   {
     "alias_id": "383",
@@ -1957,10 +1957,10 @@
     "estadio": "ALAIR CORREA",
     "localizacao": "AVENIDA JOAQUIM NOGUEIRA, 386 - SÃO CRISTÓVÃO",
     "sede": "RUA DUQUE DE CAXIAS, 91 - CABO FRIO",
-    "endereco_geocodificado": "AVENIDA JOAQUIM NOGUEIRA, 386 - SÃO CRISTÓVÃO, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.8900655,
-    "lng": -42.0428408
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8794,
+    "lng": -42.0186
   },
   {
     "alias_id": "29",
@@ -1979,10 +1979,10 @@
     "estadio": "GIULITE COUTINHO (E. EDSON PASSOS)",
     "localizacao": "RUA COSMORAMA, 200 - EDSON PASSOS",
     "sede": "RUA GONÇALVES CRESPO, 274 - RIO DE JANEIRO",
-    "endereco_geocodificado": "RUA COSMORAMA, 200 - EDSON PASSOS, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.7889,
+    "lng": -43.4392
   },
   {
     "alias_id": "13",
@@ -1992,8 +1992,8 @@
     "sede": "AV PROFESSORA CARMEN CARNEIRO, 3446/3542 - CAMPOS DOS GOYTACAZES",
     "endereco_geocodificado": "AV PROFESSORA CARMEN CARNEIRO, 3446/3542 - CAMPOS DOS GOYTACAZES, RJ, Brasil",
     "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "lat": -21.6836246,
+    "lng": -41.3101572
   },
   {
     "alias_id": "169",
@@ -2023,10 +2023,10 @@
     "estadio": "MUNICIPAL DO TRABALHADOR (E. DO SESI)",
     "localizacao": "RUA AUGUSTO XAVIER DE LIMA, 251 - JARDIM JALISCO",
     "sede": "PRAÇA DA CONCÓRDIA, S/N - RESENDE",
-    "endereco_geocodificado": "RUA AUGUSTO XAVIER DE LIMA, 251 - JARDIM JALISCO, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.4705,
+    "lng": -44.4509
   },
   {
     "alias_id": "386",
