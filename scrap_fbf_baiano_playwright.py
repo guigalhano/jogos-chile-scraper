@@ -699,13 +699,30 @@ JOGO_URL_EXTRA_RE = re.compile(r"jogo_url=([^;]+)")
 VERSUS_LOOSE_RE = re.compile(r"(.{2,45}?)\s+(?:x|X|×|vs\.?|v/s)\s+(.{2,45})")
 
 
+NOMES_CONHECIDOS_SEED = {
+    # Confirmado cruzando a tabela básica oficial da FBF (PDF) com
+    # reportagens que citam o nome completo dos clubes (ex.: Bahia
+    # Notícias, "Guia da Série B do Baianão 2026").
+    "FLU": "Fluminense de Feira",
+    "FFC": "Feira FC",
+    "SSA": "SSA FC",
+    "BFC": "Barreiras FC",
+    "ECB": "Esporte Clube Bahia",
+    "ECV": "Esporte Clube Vitória",
+    "CMC": "Camaçari FC",
+}
+
+
 def load_nomes_cache() -> dict:
+    cache = {}
     if NOMES_CACHE_PATH.exists():
         try:
-            return json.loads(NOMES_CACHE_PATH.read_text(encoding="utf-8"))
+            cache = json.loads(NOMES_CACHE_PATH.read_text(encoding="utf-8"))
         except Exception:
-            return {}
-    return {}
+            cache = {}
+    for k, v in NOMES_CONHECIDOS_SEED.items():
+        cache.setdefault(k, v)
+    return cache
 
 
 def save_nomes_cache(cache: dict) -> None:
@@ -1191,8 +1208,8 @@ def main() -> None:
 
     cache_nomes = load_nomes_cache()
     all_partidos, cache_nomes, resolvidos_agora = resolver_nomes_completos(all_partidos, cache_nomes)
+    save_nomes_cache(cache_nomes)
     if resolvidos_agora:
-        save_nomes_cache(cache_nomes)
         print(f"[INFO] Nomes completos resolvidos nesta execução: {resolvidos_agora} (cache: data/fbf_mapa_times.json)")
     if RESOLVE_DEBUG:
         (OUT_DIR / "debug_fbf_resolve_nomes.json").write_text(
