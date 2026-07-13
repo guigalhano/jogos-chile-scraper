@@ -10,15 +10,18 @@ STATUS (confirmado rodando de verdade via GitHub Actions, já que este sandbox
 não tem acesso de rede a fbf.org.br):
 - A home (BASE_URL) tem uma seção "PRÓXIMOS JOGOS" com o formato
   Competição / DD/MM/AAAA / Mandante / x / Visitante / DETALHES DE JOGO.
-  parse_text_patterns_fbf() já extrai isso corretamente (validado com jogos
-  reais em 2026-07).
-- As páginas /competicoes/{id} (classificação) têm um formato DIFERENTE: um
-  carrossel "Rodada N" com um jogo por vez (Estádio / Data Hora / Mandante /
-  placar / placar / Visitante / DETALHES DE JOGO), navegável via botões
-  Previous/Next. parse_carousel_fbf() extrai o estado inicial, e
-  render_page_collect() clica em "Next" repetidamente para varrer rodadas.
-  Ainda pode precisar de ajuste fino (nº de cliques, rodadas futuras sem
-  placar etc.) — usar --debug-html para conferir.
+  parse_text_patterns_fbf() extrai isso corretamente (validado com jogos
+  reais em 2026-07). EM PRODUÇÃO.
+- As páginas /competicoes/{id} (classificação) têm um carrossel Bootstrap
+  "Rodada N" (Estádio / Data Hora / Mandante / placar / placar / Visitante).
+  parse_carousel_fbf() extrai corretamente o jogo/rodada exibido no
+  carregamento da página. EM PRODUÇÃO (1 jogo "atual" por competição).
+  LIMITAÇÃO CONHECIDA: o clique automático no botão "Next"
+  (.carousel-control-next) foi implementado mas, nos testes, não fez o
+  carrossel avançar de rodada (ficou sempre mostrando a mesma) — ou seja,
+  por enquanto só pegamos o jogo "atual" de cada competição, não o
+  histórico/agenda completa de rodadas dessa página. Fica como próximo passo
+  se for necessário o calendário completo por competição.
 
 
 Como a FBF costuma ter várias competições (Baianão Série A, Série B, Sub-20,

@@ -29,7 +29,7 @@ jobs:
 
       - name: Rodar scraper FBF (Baiano) via Playwright
         run: |
-          if [ -f scrap_fbf_baiano_playwright.py ]; then python scrap_fbf_baiano_playwright.py --somente-id home --dias 180 --debug-html; fi
+          if [ -f scrap_fbf_baiano_playwright.py ]; then python scrap_fbf_baiano_playwright.py --max-id 15 --dias 180 --debug-html; fi
 
       - name: Salvar arquivos atualizados
         run: |
