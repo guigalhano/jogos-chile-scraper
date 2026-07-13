@@ -1,11 +1,9 @@
-[INFO] FBF páginas a testar: 2
-[INFO] Janela: 2026-06-13 até 2027-07-13
-[OK] id=home | Baianão Série A | page=14 network=4 | na janela=14
-[OK] id=1 | Baianão Série A | page=1 network=0 | na janela=1
-
-FBF jogos válidos adicionados/atualizados: 5
-Total JSON atual: 1645
-Debug páginas: data/debug_fbf_competicoes_pages.json
-Debug rede: data/debug_fbf_competicoes_network.json
-Debug jogos: data/debug_fbf_competicoes_raw.json
-HTML renderizado: data/debug_fbf_html/
+[INFO] FBF páginas a testar: 16
+[INFO] Janela: 2026-06-13 até 2027-01-09
+Traceback (most recent call last):
+  File "/home/runner/work/jogos-chile-scraper/jogos-chile-scraper/scrap_fbf_baiano_playwright.py", line 1250, in <module>
+    main()
+  File "/home/runner/work/jogos-chile-scraper/jogos-chile-scraper/scrap_fbf_baiano_playwright.py", line 1189, in main
+    partidos, info, network = render_page_collect(
+                              ^^^^^^^^^^^^^^^^^^^
+NameError: name 'render_page_collect' is not defined
