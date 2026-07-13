@@ -98,7 +98,7 @@ DATE_LONG_RE = re.compile(
 )
 X_ONLY_RE = re.compile(r"^\s*[xX]\s*$")
 DETALHES_RE = re.compile(r"detalhes\s+d[eo]\s+jogo", re.I)
-RODADA_STRICT_RE = re.compile(r"^\s*\d{1,2}[ºª]?\s*rodada\b", re.I)
+RODADA_STRICT_RE = re.compile(r"^\s*(?:\d{1,2}[ºª]?\s*rodada|rodada\s*\d{1,2})\b", re.I)
 
 BAD = {
     "fbf federacao bahiana de futebol", "federacao bahiana de futebol",
@@ -570,7 +570,7 @@ def parse_carousel_fbf(lines: list[str], url: str, cid: str, competicao_nome: st
     return out
 
 
-
+def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool) -> tuple[list[Partido], dict, list[dict]]:
     cid = str(item["id"])
     url = item["url"]
     nome = item.get("nome", f"FBF {cid}")
