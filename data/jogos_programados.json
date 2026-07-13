@@ -1574,7 +1574,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=63; cidade=Divinopolis",
     "id": "156520aaa65a049e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "AFA",
@@ -1711,7 +1711,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=63; cidade=Divinopolis",
     "id": "f2608fd5eb411bf6",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FPF-PA",
@@ -2303,7 +2303,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=11; cidade=Belo Horizonte",
     "id": "94b2953020728e34",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FFERJ",
@@ -2352,6 +2352,22 @@
     "extra": "codigo_espn=401867175; status=Scheduled",
     "id": "c2983660983eaf88",
     "atualizado_em": "2026-07-13T17:10:31"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-07-16",
+    "hora": "15:00",
+    "mandante": "CONTAGEM EC",
+    "visitante": "MINAS BOCA",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Arena Prime BH",
+    "rodada": "RODADA 2",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=11; cidade=Belo Horizonte",
+    "id": "01f18b79bce023cb",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -2963,6 +2979,22 @@
     "atualizado_em": "2026-07-13T16:36:27"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-07-18",
+    "hora": "08:30",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "AMERICA",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Cidade do Galo",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=69; cidade=Vespasiano",
+    "id": "fe4d4bff2e46da89",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "FBF",
     "competicao": "Brasil - FBF - Baianão Série A",
     "data": "2026-07-18",
@@ -3007,6 +3039,22 @@
     "extra": "codigo_fferj=5361; orgao=A; fonte_tag=FERJ; categoria=Sub-17",
     "id": "a30e8f18c2f5752f",
     "atualizado_em": "2026-07-12T23:03:50"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-07-18",
+    "hora": "10:00",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "AMERICA",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Cidade do Galo",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=69; cidade=Vespasiano",
+    "id": "f65adecab0cc663a",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "CBF",
@@ -3296,7 +3344,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=74; cidade=Vespasiano",
     "id": "1192ccfd7363c3a8",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3702,7 +3750,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=74; cidade=Vespasiano",
     "id": "325e24fbbf245da9",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "CBF",
@@ -5618,7 +5666,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=33; cidade=Vespasiano",
     "id": "dd6a08004b0532da",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FPF-PA",
@@ -5883,6 +5931,22 @@
     "extra": "codigo_fferj=5362; orgao=A; fonte_tag=FERJ; categoria=Sub-17",
     "id": "101dc2a3d263b5ab",
     "atualizado_em": "2026-07-13T19:02:58"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-07-25",
+    "hora": "10:00",
+    "mandante": "SERRANENSE",
+    "visitante": "DEMOCRATA SL",
+    "pais": "Brasil",
+    "cidade": "Crucilandia",
+    "estadio": "Estádio Municipal Bezerrão",
+    "rodada": "RODADA 6",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=35; cidade=Crucilandia",
+    "id": "4886e05b3bfd415a",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -6429,7 +6493,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=36; cidade=Contagem",
     "id": "63d08f733d661029",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -6445,7 +6509,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=34; cidade=Nova Lima",
     "id": "0621a3d47b383b02",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "federacaopr.com.br",
@@ -6732,7 +6796,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=31; cidade=Itabirinha",
     "id": "f5f3235ffbdcfb2c",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FPF",
@@ -6854,7 +6918,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=32; cidade=Ipatinga",
     "id": "d127c1f60dc62e25",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FPF",
@@ -8783,7 +8847,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=78; cidade=Belo Horizonte",
     "id": "2ae3aa06276c7fd2",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8813,7 +8877,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=81; cidade=Santa Luzia",
     "id": "8579969a92a82e89",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8829,7 +8893,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=82; cidade=Vespasiano",
     "id": "432d34270b284b4e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8845,7 +8909,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=79; cidade=Betim",
     "id": "b44fbfe74572cdb2",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8861,7 +8925,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=80; cidade=Manhuacu",
     "id": "38248431a03b88d0",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8877,7 +8941,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=83; cidade=Sao Joao Del Rei",
     "id": "1df87d3cfabba957",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8893,7 +8957,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=78; cidade=Belo Horizonte",
     "id": "d1524bfc640f49c3",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8909,7 +8973,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=81; cidade=Santa Luzia",
     "id": "ce690858e5fefc6a",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8925,7 +8989,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=82; cidade=Vespasiano",
     "id": "73fcbeddd697c1eb",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8941,7 +9005,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=79; cidade=Betim",
     "id": "416067ef2dea83f2",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8957,7 +9021,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=80; cidade=Manhuacu",
     "id": "f27ab79e90f3032d",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -8973,7 +9037,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=83; cidade=Sao Joao Del Rei",
     "id": "35eb1c1d79674798",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9131,7 +9195,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=84; cidade=Belo Horizonte",
     "id": "8588d70269b12a52",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -9301,7 +9365,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=84; cidade=Belo Horizonte",
     "id": "66d2674ab3b6d18d",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -11343,7 +11407,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=88; cidade=Belo Horizonte",
     "id": "131bb1fbea1a14fc",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11359,7 +11423,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=61; cidade=Uberlandia",
     "id": "bdbd145bcd2b6ce8",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11375,7 +11439,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=86; cidade=Contagem",
     "id": "caa28c818a974400",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11391,7 +11455,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=85; cidade=Itauna",
     "id": "d2bf792fd1be0db4",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11407,7 +11471,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=62; cidade=Ipatinga",
     "id": "a0b7b1cb87276733",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11423,7 +11487,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=66; cidade=Betim",
     "id": "167c711b507ceffa",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11439,7 +11503,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=87; cidade=Montes Claros",
     "id": "2ec440c946d68ff0",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11455,7 +11519,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=89; cidade=Eloi Mendes",
     "id": "98ac747232408d95",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11471,7 +11535,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=90; cidade=Juiz de Fora",
     "id": "60dc92a592f82aa1",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11487,7 +11551,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=88; cidade=Belo Horizonte",
     "id": "3f1c1559fc91b0e7",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11519,7 +11583,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=39; cidade=Patrocinio",
     "id": "2aed97d752431463",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11535,7 +11599,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=66; cidade=Betim",
     "id": "f05a48a9e08cd4d3",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11551,7 +11615,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=86; cidade=Contagem",
     "id": "79459f9b01c596fe",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11567,7 +11631,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=85; cidade=Itauna",
     "id": "dc588281289c2f2e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11599,7 +11663,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=87; cidade=Montes Claros",
     "id": "749b57b0aaede503",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11615,7 +11679,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=89; cidade=Eloi Mendes",
     "id": "c222acaec9d22094",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11631,7 +11695,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=90; cidade=Juiz de Fora",
     "id": "787d7d7c162ad39c",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -11831,7 +11895,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=67; cidade=Muriae",
     "id": "43e74bb8d78d3827",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11847,7 +11911,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=68; cidade=Juiz de Fora",
     "id": "51f0514f7e57c3ee",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -11971,7 +12035,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=41; cidade=Matozinhos",
     "id": "98ac17433426c484",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -11987,7 +12051,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=67; cidade=Muriae",
     "id": "89ca5e881ffde9e2",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12003,7 +12067,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=68; cidade=Juiz de Fora",
     "id": "11b24a1c457a38d7",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12019,7 +12083,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=40; cidade=Patos de Minas",
     "id": "febf1bfeb46fd35a",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "CBF",
@@ -12333,7 +12397,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=70; cidade=Sao Joao Del Rei",
     "id": "04aec984a4ab3a8b",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12349,7 +12413,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=65; cidade=Manhuacu",
     "id": "b15126206699beec",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12365,7 +12429,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=71; cidade=Itauna",
     "id": "908717d3e998ca17",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12381,7 +12445,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=64; cidade=Divinopolis",
     "id": "6dd3681c3b9240a7",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12397,7 +12461,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=65; cidade=Ipatinga",
     "id": "875d82002db4804a",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12429,7 +12493,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=67; cidade=Patrocinio",
     "id": "a3da990edac04cab",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12445,7 +12509,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=66; cidade=Sao Joaquim de Bicas",
     "id": "0fc254051ffd0363",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12461,7 +12525,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=37; cidade=Ipatinga",
     "id": "54f498ee1ebd6b40",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12477,7 +12541,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=91; cidade=Vespasiano",
     "id": "79e9e86ac49ecccf",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12493,7 +12557,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=70; cidade=Sao Joao Del Rei",
     "id": "4e52a312c7944fcd",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12509,7 +12573,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=65; cidade=Manhuacu",
     "id": "020f4b1b1e8638de",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12525,7 +12589,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=71; cidade=Itauna",
     "id": "59505f8b4157a24b",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12541,7 +12605,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=42; cidade=Sete Lagoas",
     "id": "8a1d8652acc48ab8",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12557,7 +12621,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=38; cidade=Uba",
     "id": "dabe4b7db9e2fec7",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FPF",
@@ -12605,7 +12669,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=68; cidade=Itabirinha",
     "id": "a15bd0897a3ce459",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12743,7 +12807,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=91; cidade=Vespasiano",
     "id": "5fe5a016dcad236b",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -12943,7 +13007,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=72; cidade=Rodada 10",
     "id": "a0fc7f676a8a8978",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -12975,7 +13039,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=63; cidade=Montes Claros",
     "id": "5bbc204182fdcb2e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -13065,7 +13129,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=72; cidade=Rodada 10",
     "id": "bffd74e3d1336cac",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -13081,7 +13145,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=70; cidade=Matozinhos",
     "id": "5d3edeec2014bc9d",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "CBF",
@@ -13153,7 +13217,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=69; cidade=Vespasiano",
     "id": "7fe3ab299e110804",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14121,7 +14185,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=73; cidade=Contagem",
     "id": "24cbfa99654016ea",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14137,7 +14201,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=93; cidade=Belo Horizonte",
     "id": "d86f14126119b069",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14153,7 +14217,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=71; cidade=Ipatinga",
     "id": "945d56e0d5b9ef26",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14169,7 +14233,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=95; cidade=Santa Luzia",
     "id": "db6e08a8519fa850",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14185,7 +14249,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=80; cidade=Oliveira",
     "id": "dd47cc60018bec32",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14201,7 +14265,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=96; cidade=Vespasiano",
     "id": "54ffa1b337550691",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14217,7 +14281,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=94; cidade=Betim",
     "id": "4030e84ca5c316b6",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14233,7 +14297,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=74; cidade=Belo Horizonte",
     "id": "a85340cd83eb99ac",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14249,7 +14313,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=97; cidade=Sao Joao Del Rei",
     "id": "713ad4b5aa3630a6",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14265,7 +14329,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=75; cidade=Ibirite",
     "id": "5ec43866f090050a",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14281,7 +14345,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=76; cidade=Araxa",
     "id": "af8659c670b99b78",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14297,7 +14361,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=74; cidade=Uberaba",
     "id": "315cb09728a8d038",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14313,7 +14377,39 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=73; cidade=Contagem",
     "id": "0a351d2815cd352d",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "10:30",
+    "mandante": "ARAGUARI",
+    "visitante": "INTER DE MINAS",
+    "pais": "Brasil",
+    "cidade": "Oliveira",
+    "estadio": "ESTADIO JOSÉ DOS SANTOS (Campo do DER)",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=80; cidade=Oliveira",
+    "id": "2037f2a7b17c7578",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "10:30",
+    "mandante": "CONTAGEM EC",
+    "visitante": "UBERABINHA",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Arena Prime BH",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=74; cidade=Belo Horizonte",
+    "id": "ee6c136f6ff26432",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14329,7 +14425,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=93; cidade=Belo Horizonte",
     "id": "a1b4a19f6867e37b",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14361,7 +14457,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=95; cidade=Santa Luzia",
     "id": "b798a055e65f2ea0",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14377,7 +14473,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=96; cidade=Vespasiano",
     "id": "e4dd10cdeccde640",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14393,7 +14489,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=94; cidade=Betim",
     "id": "afed21169ba84d5a",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14409,7 +14505,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=97; cidade=Sao Joao Del Rei",
     "id": "636cc0311bf3b3a0",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14489,7 +14585,23 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=92; cidade=Contagem",
     "id": "e0a7267b83b244f3",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "13:00",
+    "mandante": "SOCIAL F.C.",
+    "visitante": "NOVO E.C. ITABIRINHA",
+    "pais": "Brasil",
+    "cidade": "Coronel Fabriciano",
+    "estadio": "Louis Ensch \"Luisão\"",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=77; cidade=Coronel Fabriciano",
+    "id": "37f8eaf709655588",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -14633,7 +14745,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=98; cidade=Sao Joao Del Rei",
     "id": "98b8e05fecb612df",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14649,7 +14761,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=75; cidade=Santa Luzia",
     "id": "0ad316cfa6909bd3",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14665,7 +14777,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=78; cidade=Vespasiano",
     "id": "56db23213564a5d2",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14681,7 +14793,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=76; cidade=Belo Horizonte",
     "id": "cecfc401c5b8101c",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -14697,7 +14809,39 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=77; cidade=Belo Horizonte",
     "id": "95dcb2e75a5a0e51",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "14:00",
+    "mandante": "MINAS BOCA",
+    "visitante": "JUVENTUS FUTEBOL CLUBE",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Estádio Bela Vista F.C.",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=78; cidade=Sete Lagoas",
+    "id": "bdcdd9ce77caf79d",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "14:00",
+    "mandante": "SIDERÚRGICA",
+    "visitante": "VILLA NOVA",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Arena Santa Cruz (PROMOFOOT)",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=73; cidade=Contagem",
+    "id": "ff171ab4a5bcb794",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -14747,6 +14891,86 @@
   },
   {
     "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "15:00",
+    "mandante": "NACIONAL VRB",
+    "visitante": "NAC MURIAÉ",
+    "pais": "Brasil",
+    "cidade": "Visconde do Rio Branco",
+    "estadio": "Estádio Joseph Lambert",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=72; cidade=Visconde do Rio Branco",
+    "id": "257fd3d3101c2b8d",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "15:30",
+    "mandante": "AMERICA",
+    "visitante": "NAC MURIAÉ",
+    "pais": "Brasil",
+    "cidade": "Santa Luzia",
+    "estadio": "Victor Andrade de Brito - Frimisa",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=75; cidade=Santa Luzia",
+    "id": "9628dcf31be9f8c3",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "15:30",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "BETIM FUTEBOL",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Cidade do Galo",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=78; cidade=Vespasiano",
+    "id": "8233b9a0208bd218",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "15:30",
+    "mandante": "CRUZEIRO - SAF",
+    "visitante": "BOSTON CITY",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Toca da Raposa I",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=76; cidade=Belo Horizonte",
+    "id": "42bdcabaef3c74dc",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-15",
+    "hora": "15:30",
+    "mandante": "ITABIRITO",
+    "visitante": "ATHLETIC",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Arena Morro das Pedras",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=77; cidade=Belo Horizonte",
+    "id": "05d74feb4a944baa",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
     "competicao": "Brasil - FMF - SUB 15 - 1ª Divisão - 2026",
     "data": "2026-08-15",
     "hora": "15:30",
@@ -14759,7 +14983,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=98; cidade=Sao Joao Del Rei",
     "id": "691d7d82215809b6",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -15057,7 +15281,23 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=79; cidade=Divinopolis",
     "id": "1add0fe84457d306",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-16",
+    "hora": "10:00",
+    "mandante": "GUARANI",
+    "visitante": "XV DE NOVEMBRO ESPORTE CLUBE",
+    "pais": "Brasil",
+    "cidade": "Divinopolis",
+    "estadio": "Arena SICOOB DIVICRED",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=79; cidade=Divinopolis",
+    "id": "732c5d744df12d82",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FPF",
@@ -15264,6 +15504,22 @@
     "atualizado_em": "2026-07-08T02:01:10"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-16",
+    "hora": "14:30",
+    "mandante": "DEMOCRATA SL",
+    "visitante": "FUNORTE",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Joaquim Henrique Nogueira \"Arena do Jacaré\"",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=79; cidade=Sete Lagoas",
+    "id": "484b6bdb3f236e41",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Ascenso Caixun",
     "data": "2026-08-16",
@@ -15322,6 +15578,22 @@
     "cidade": "Sao Caetano Do Sul",
     "id": "526da5ed4918930a",
     "atualizado_em": "2026-07-13T15:58:22"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-16",
+    "hora": "15:30",
+    "mandante": "MANCHESTER",
+    "visitante": "GUARANI",
+    "pais": "Brasil",
+    "cidade": "Matozinhos",
+    "estadio": "Campo do Botafogo",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=80; cidade=Matozinhos",
+    "id": "77a6d123ff30b9cf",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "CBF",
@@ -16151,7 +16423,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=45; cidade=Uberlandia",
     "id": "3139b704ec50b48e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -16167,7 +16439,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=46; cidade=Vespasiano",
     "id": "dce43232fcd37cac",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -16227,7 +16499,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=81; cidade=Manhuacu",
     "id": "4fc07bd1a9053e4c",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -16243,7 +16515,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=82; cidade=Betim",
     "id": "1041ee9930a2b3b5",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -16259,7 +16531,55 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=83; cidade=Sete Lagoas",
     "id": "94033d6d151377e6",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "09:00",
+    "mandante": "NAC MURIAÉ",
+    "visitante": "SOCIAL F.C.",
+    "pais": "Brasil",
+    "cidade": "Muriae",
+    "estadio": "Soares de Azevedo",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=86; cidade=Muriae",
+    "id": "5881a78491636098",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "09:00",
+    "mandante": "VILLA NOVA",
+    "visitante": "MANCHESTER",
+    "pais": "Brasil",
+    "cidade": "Nova Lima",
+    "estadio": "Castor Cifuentes \"Alçapão do Bonfim\"",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=81; cidade=Nova Lima",
+    "id": "4c7ca5577f785863",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "10:00",
+    "mandante": "BOSTON CITY",
+    "visitante": "AMERICA",
+    "pais": "Brasil",
+    "cidade": "Manhuacu",
+    "estadio": "Complexo do Boston City I",
+    "rodada": "RODADA 11",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=81; cidade=Manhuacu",
+    "id": "79587f7b156a8dff",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -16275,7 +16595,39 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=48; cidade=Formiga",
     "id": "f3cfda141f7114ab",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "10:30",
+    "mandante": "BETIM FUTEBOL",
+    "visitante": "INTER DE MINAS",
+    "pais": "Brasil",
+    "cidade": "Betim",
+    "estadio": "Arena URBSAN",
+    "rodada": "RODADA 11",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=82; cidade=Betim",
+    "id": "c83d57b058109e1e",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "10:30",
+    "mandante": "MINAS BOCA",
+    "visitante": "ITABIRITO",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Estádio Bela Vista F.C.",
+    "rodada": "RODADA 11",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=83; cidade=Sete Lagoas",
+    "id": "e481cac20c392417",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -16507,7 +16859,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=86; cidade=Belo Horizonte",
     "id": "97f5a24e6d07269b",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -16523,7 +16875,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=84; cidade=Muriae",
     "id": "38bfcc538e884413",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -16539,7 +16891,23 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=85; cidade=Juiz de Fora",
     "id": "2df3c3b570ca7665",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "14:00",
+    "mandante": "SIDERÚRGICA",
+    "visitante": "AMÉRICA TO",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Arena Santa Cruz (PROMOFOOT)",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=83; cidade=Contagem",
+    "id": "b17696fa3084335a",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -16635,6 +17003,22 @@
   },
   {
     "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "15:00",
+    "mandante": "NACIONAL VRB",
+    "visitante": "IPATINGA - SAF",
+    "pais": "Brasil",
+    "cidade": "Visconde do Rio Branco",
+    "estadio": "Estádio Joseph Lambert",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=82; cidade=Visconde do Rio Branco",
+    "id": "bbddb71cd23d824a",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
     "competicao": "Brasil - FMF - SUB 15 - 1ª Divisão - 2026",
     "data": "2026-08-22",
     "hora": "15:00",
@@ -16647,7 +17031,23 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=92; cidade=Contagem",
     "id": "05e5d4e4e27c175e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "15:00",
+    "mandante": "DEMOCRATA GV",
+    "visitante": "SC AYMORES",
+    "pais": "Brasil",
+    "cidade": "Governador Valadares",
+    "estadio": "Jose Mammoud Abbas \"Mamudão\"",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=43; cidade=Governador Valadares",
+    "id": "32382649948fdc7c",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FPF",
@@ -16776,6 +17176,54 @@
     "cidade": "Sao Jose Dos Campos",
     "id": "3911ceb903be6702",
     "atualizado_em": "2026-07-13T15:58:22"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "15:30",
+    "mandante": "CRUZEIRO - SAF",
+    "visitante": "CONTAGEM EC",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Toca da Raposa I",
+    "rodada": "RODADA 11",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=86; cidade=Belo Horizonte",
+    "id": "86f9b9ac96025b91",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "15:30",
+    "mandante": "NAC MURIAÉ",
+    "visitante": "COIMBRA SAF",
+    "pais": "Brasil",
+    "cidade": "Muriae",
+    "estadio": "Soares de Azevedo",
+    "rodada": "RODADA 11",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=84; cidade=Muriae",
+    "id": "e25359fdf5101906",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "15:30",
+    "mandante": "UBERABINHA",
+    "visitante": "ARAGUARI",
+    "pais": "Brasil",
+    "cidade": "Juiz de Fora",
+    "estadio": "Radialista Mário Helênio",
+    "rodada": "RODADA 11",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=85; cidade=Juiz de Fora",
+    "id": "df6ec571f3eb48a9",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "CBF",
@@ -16940,6 +17388,22 @@
     "atualizado_em": "2026-07-13T14:48:32"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-08-22",
+    "hora": "19:00",
+    "mandante": "NOVO E.C. ITABIRINHA",
+    "visitante": "IPATINGA - SAF",
+    "pais": "Brasil",
+    "cidade": "Itabirinha",
+    "estadio": "Dr. Adilson Machado de Farias",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=44; cidade=Itabirinha",
+    "id": "efce1bdec1fa1aa5",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "CBF",
     "competicao": "Brasil - Série C",
     "data": "2026-08-22",
@@ -17025,7 +17489,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=87; cidade=Sao Joao Del Rei",
     "id": "d15505a47c370197",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -17044,6 +17508,38 @@
     "atualizado_em": "2026-07-08T02:01:10"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "09:00",
+    "mandante": "CA PATROCINENSE",
+    "visitante": "UBERLANDIA S.A.F",
+    "pais": "Brasil",
+    "cidade": "Patrocinio",
+    "estadio": "Pedro Alves do Nascimento",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=87; cidade=Patrocinio",
+    "id": "0d6d66bb9fd4c947",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "09:00",
+    "mandante": "SERRANENSE",
+    "visitante": "GUARANI",
+    "pais": "Brasil",
+    "cidade": "Sao Joaquim de Bicas",
+    "estadio": "Estádio Didi Gouveia",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=85; cidade=Sao Joaquim de Bicas",
+    "id": "403bbc22a4a7e7d4",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-08-23",
@@ -17056,6 +17552,38 @@
     "extra": "",
     "id": "b23920231630dacd",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "10:00",
+    "mandante": "ATHLETIC",
+    "visitante": "GUARANI",
+    "pais": "Brasil",
+    "cidade": "Sao Joao Del Rei",
+    "estadio": "CT ATHLETIC",
+    "rodada": "RODADA 11",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=87; cidade=Sao Joao Del Rei",
+    "id": "93a9f3855478fb55",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "10:30",
+    "mandante": "NOVO E.C. ITABIRINHA",
+    "visitante": "TOMBENSE",
+    "pais": "Brasil",
+    "cidade": "Itabirinha",
+    "estadio": "Dr. Adilson Machado de Farias",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=88; cidade=Itabirinha",
+    "id": "636868b8acad4c9d",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -17287,7 +17815,39 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=88; cidade=Rodada 12",
     "id": "3338cc21c5c47a30",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "14:00",
+    "mandante": "FUNORTE",
+    "visitante": "MINAS BOCA",
+    "pais": "Brasil",
+    "cidade": "Montes Claros",
+    "estadio": "Estádio Cassimiro de Abreu",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=84; cidade=Montes Claros",
+    "id": "b7b39cd8bc19f506",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "14:00",
+    "mandante": "INTER SAO GOTARDO",
+    "visitante": "DINAMO",
+    "pais": "Brasil",
+    "cidade": "Sao Gotardo",
+    "estadio": "Estadio Olavo bilac de Resende",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=90; cidade=Sao Gotardo",
+    "id": "83d132c82d7d1584",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -17332,6 +17892,38 @@
     "extra": "",
     "id": "65ea837af66512f7",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "15:00",
+    "mandante": "XV DE NOVEMBRO ESPORTE CLUBE",
+    "visitante": "ATLÉTICO SAF",
+    "pais": "Brasil",
+    "cidade": "Rodada 12",
+    "estadio": "A definir",
+    "rodada": "RODADA 11",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=88; cidade=Rodada 12",
+    "id": "c221e6c6a3521d23",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "15:00",
+    "mandante": "SIDERÚRGICA",
+    "visitante": "MANCHESTER",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Arena Santa Cruz (PROMOFOOT)",
+    "rodada": "RODADA 8",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=47; cidade=Contagem",
+    "id": "152b4e3f35b267d0",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "CBF",
@@ -17492,6 +18084,22 @@
     "extra": "",
     "id": "6000d31e7bff046f",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-23",
+    "hora": "17:30",
+    "mandante": "VENDA NOVA",
+    "visitante": "DEMOCRATA SL",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Estádio Ilvo Marani",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=89; cidade=Vespasiano",
+    "id": "c02ff884489360b8",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -18009,7 +18617,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=89; cidade=Contagem",
     "id": "83f06a46e3ed06f7",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18025,7 +18633,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=96; cidade=Oliveira",
     "id": "39d26b5050adf39c",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18041,7 +18649,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=90; cidade=Betim",
     "id": "a3168ef44adfd8dd",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18057,7 +18665,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=99; cidade=Manhuacu",
     "id": "9e739eb2fccac92e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18073,7 +18681,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=102; cidade=Belo Horizonte",
     "id": "df064812bd825194",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18089,7 +18697,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=100; cidade=Itauna",
     "id": "dbdb65a2a615255c",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18105,7 +18713,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=101; cidade=Belo Horizonte",
     "id": "2cfb768a2baab744",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18121,7 +18729,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=103; cidade=Eloi Mendes",
     "id": "26e854b48e2ac672",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18137,7 +18745,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=104; cidade=Juiz de Fora",
     "id": "405ce96c753f0fa1",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18153,7 +18761,167 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=4",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=4; placar_original=X; jogo_numero=105; cidade=Vespasiano",
     "id": "8c8c50a91b20ab16",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "AMÉRICA TO",
+    "visitante": "VILLA NOVA",
+    "pais": "Brasil",
+    "cidade": "Ibirite",
+    "estadio": "CAMPO DO DURVAL DE BARROS",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=99; cidade=Ibirite",
+    "id": "918f520ae7a8d1e1",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "DINAMO",
+    "visitante": "NAC. UBERABA",
+    "pais": "Brasil",
+    "cidade": "Araxa",
+    "estadio": "Fausto Alvim",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=94; cidade=Araxa",
+    "id": "a7827b8a1445601f",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "GUARANI",
+    "visitante": "SIDERÚRGICA",
+    "pais": "Brasil",
+    "cidade": "Divinopolis",
+    "estadio": "Arena SICOOB DIVICRED",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=92; cidade=Divinopolis",
+    "id": "52e8325cfd1c6d3b",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "IPATINGA - SAF",
+    "visitante": "NOVO E.C. ITABIRINHA",
+    "pais": "Brasil",
+    "cidade": "Ipatinga",
+    "estadio": "Estádio Lanari Júnior",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=97; cidade=Ipatinga",
+    "id": "0a6849ef6a1171df",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "JUVENTUS FUTEBOL CLUBE",
+    "visitante": "FUNORTE",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Estádio Ilvo Marani",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=95; cidade=Vespasiano",
+    "id": "d266a35657792511",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "MANCHESTER",
+    "visitante": "SERRANENSE",
+    "pais": "Brasil",
+    "cidade": "Matozinhos",
+    "estadio": "Campo do Botafogo",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=96; cidade=Matozinhos",
+    "id": "dd70ebb4e1d1d592",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "MINAS BOCA",
+    "visitante": "VENDA NOVA",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Estádio Bela Vista F.C.",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=98; cidade=Sete Lagoas",
+    "id": "18ca79f4b4cf3e17",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "SOCIAL F.C.",
+    "visitante": "NACIONAL VRB",
+    "pais": "Brasil",
+    "cidade": "Coronel Fabriciano",
+    "estadio": "Louis Ensch \"Luisão\"",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=91; cidade=Coronel Fabriciano",
+    "id": "75ee408d84094505",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "TOMBENSE",
+    "visitante": "NAC MURIAÉ",
+    "pais": "Brasil",
+    "cidade": "Ipatinga",
+    "estadio": "João Lamego Netto \"Ipatingão\"",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=93; cidade=Ipatinga",
+    "id": "cfb51caef9759b35",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "09:00",
+    "mandante": "UBERLANDIA S.A.F",
+    "visitante": "INTER SAO GOTARDO",
+    "pais": "Brasil",
+    "cidade": "Uberlandia",
+    "estadio": "CT ninho do Periquito",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=100; cidade=Uberlandia",
+    "id": "96b832606fb5043d",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -18171,6 +18939,54 @@
   },
   {
     "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "10:00",
+    "mandante": "COIMBRA SAF",
+    "visitante": "BOSTON CITY",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Estádio Flávio Pentagna Guimarães",
+    "rodada": "RODADA 12",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=89; cidade=Contagem",
+    "id": "dd8873fccf6c7fb1",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "10:30",
+    "mandante": "ARAGUARI",
+    "visitante": "ATHLETIC",
+    "pais": "Brasil",
+    "cidade": "Oliveira",
+    "estadio": "ESTADIO JOSÉ DOS SANTOS (Campo do DER)",
+    "rodada": "RODADA 12",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=96; cidade=Oliveira",
+    "id": "1284de386afc3ee4",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "10:30",
+    "mandante": "BETIM FUTEBOL",
+    "visitante": "UBERABINHA",
+    "pais": "Brasil",
+    "cidade": "Betim",
+    "estadio": "Arena URBSAN",
+    "rodada": "RODADA 12",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=90; cidade=Betim",
+    "id": "e84a3e530514e4b2",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
     "competicao": "Brasil - FMF - SUB 15 - 1ª Divisão - 2026",
     "data": "2026-08-29",
     "hora": "11:00",
@@ -18183,7 +18999,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=99; cidade=Manhuacu",
     "id": "cf359d0c274d6a70",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18199,7 +19015,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=102; cidade=Belo Horizonte",
     "id": "223c9222628f5fe0",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18215,7 +19031,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=100; cidade=Itauna",
     "id": "692a1320577dccf8",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18231,7 +19047,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=101; cidade=Belo Horizonte",
     "id": "4dd1ee38156ea2ab",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18247,7 +19063,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=103; cidade=Eloi Mendes",
     "id": "24c011ea2c3f6b0e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18263,7 +19079,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=104; cidade=Juiz de Fora",
     "id": "1424f030f67b5546",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18279,7 +19095,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=5",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=5; placar_original=X; jogo_numero=105; cidade=Vespasiano",
     "id": "3327e7a24384685c",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18611,7 +19427,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=91; cidade=Santa Luzia",
     "id": "7b5117877a174265",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18627,7 +19443,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=93; cidade=Vespasiano",
     "id": "a1b73bf91597ab5f",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18643,7 +19459,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=92; cidade=Belo Horizonte",
     "id": "9596ff27af12fd66",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -18722,6 +19538,54 @@
     "cidade": "",
     "id": "36b1cf03966e3e5e",
     "atualizado_em": "2026-07-13T13:50:44"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "15:30",
+    "mandante": "AMERICA",
+    "visitante": "XV DE NOVEMBRO ESPORTE CLUBE",
+    "pais": "Brasil",
+    "cidade": "Santa Luzia",
+    "estadio": "Victor Andrade de Brito - Frimisa",
+    "rodada": "RODADA 12",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=91; cidade=Santa Luzia",
+    "id": "5ca122f1717d9123",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "15:30",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "NAC MURIAÉ",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Cidade do Galo",
+    "rodada": "RODADA 12",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=93; cidade=Vespasiano",
+    "id": "e850b43911e8d95e",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-29",
+    "hora": "15:30",
+    "mandante": "ITABIRITO",
+    "visitante": "CONTAGEM EC",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Arena Morro das Pedras",
+    "rodada": "RODADA 12",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=92; cidade=Belo Horizonte",
+    "id": "99175b6d28ed0c9b",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -18981,7 +19845,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=95; cidade=Divinopolis",
     "id": "52d8f32dcd4ce833",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -18997,7 +19861,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=94; cidade=Itauna",
     "id": "8864091316f9ffcb",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -19012,6 +19876,38 @@
     "extra": "",
     "id": "87e5cdbdca0627b8",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-30",
+    "hora": "10:00",
+    "mandante": "GUARANI",
+    "visitante": "CRUZEIRO - SAF",
+    "pais": "Brasil",
+    "cidade": "Divinopolis",
+    "estadio": "Arena SICOOB DIVICRED",
+    "rodada": "RODADA 12",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=95; cidade=Divinopolis",
+    "id": "12935c738a638b25",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-08-30",
+    "hora": "10:00",
+    "mandante": "INTER DE MINAS",
+    "visitante": "MINAS BOCA",
+    "pais": "Brasil",
+    "cidade": "Itauna",
+    "estadio": "José Flávio de Carvalho",
+    "rodada": "RODADA 12",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=94; cidade=Itauna",
+    "id": "2893e26c63f578c2",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -20050,6 +20946,38 @@
     "atualizado_em": "2026-07-13T14:46:09"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-05",
+    "hora": "15:00",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "ITABIRITO",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Arena Gregorão",
+    "rodada": "RODADA 1",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=1; cidade=Contagem",
+    "id": "bf59bdf67718f21e",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-05",
+    "hora": "16:00",
+    "mandante": "CRUZEIRO - SAF",
+    "visitante": "VENDA NOVA",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Joaquim Henrique Nogueira \"Arena do Jacaré\"",
+    "rodada": "RODADA 1",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=2; cidade=Sete Lagoas",
+    "id": "33c4f98e97659541",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-09-05",
@@ -20108,6 +21036,22 @@
     "extra": "codigo_espn=401877879; status=Scheduled",
     "id": "844259ebe96bb5a9",
     "atualizado_em": "2026-07-13T16:22:38"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-05",
+    "hora": "19:00",
+    "mandante": "DEMOCRATA GV",
+    "visitante": "AMERICA",
+    "pais": "Brasil",
+    "cidade": "Governador Valadares",
+    "estadio": "Jose Mammoud Abbas \"Mamudão\"",
+    "rodada": "RODADA 1",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=3; cidade=Governador Valadares",
+    "id": "f5d4b50080daf58d",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -20740,6 +21684,22 @@
     "atualizado_em": "2026-07-13T14:46:09"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-11",
+    "hora": "15:00",
+    "mandante": "ARAGUARI",
+    "visitante": "DEMOCRATA GV",
+    "pais": "Brasil",
+    "cidade": "Santa Luzia",
+    "estadio": "Victor Andrade de Brito - Frimisa",
+    "rodada": "RODADA 2",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=4; cidade=Santa Luzia",
+    "id": "465454ac3e8e5a5e",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-09-11",
@@ -20754,6 +21714,22 @@
     "extra": "codigo_espn=401878026; status=Scheduled",
     "id": "c784ff2a6fe86e6d",
     "atualizado_em": "2026-07-13T16:22:38"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-11",
+    "hora": "19:00",
+    "mandante": "SERRANENSE",
+    "visitante": "SIDERÚRGICA",
+    "pais": "Brasil",
+    "cidade": "Crucilandia",
+    "estadio": "Estádio Municipal Bezerrão",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=53; cidade=Crucilandia",
+    "id": "046c8506691fdfc5",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "ESPN",
@@ -20785,7 +21761,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=97; cidade=Manhuacu",
     "id": "3f847b76321a136a",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -20801,7 +21777,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=98; cidade=Contagem",
     "id": "74edcaa1cb56a17f",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -20817,7 +21793,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=100; cidade=Belo Horizonte",
     "id": "1c2b8744159ca85e",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -20833,7 +21809,71 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=99; cidade=Sete Lagoas",
     "id": "65118585803cfcbb",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "10:00",
+    "mandante": "BOSTON CITY",
+    "visitante": "ITABIRITO",
+    "pais": "Brasil",
+    "cidade": "Manhuacu",
+    "estadio": "Complexo do Boston City I",
+    "rodada": "RODADA 13",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=97; cidade=Manhuacu",
+    "id": "c2f024933344db90",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "10:00",
+    "mandante": "COIMBRA SAF",
+    "visitante": "GUARANI",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Estádio Flávio Pentagna Guimarães",
+    "rodada": "RODADA 13",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=98; cidade=Contagem",
+    "id": "d16769d75e06b7a4",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "10:30",
+    "mandante": "CONTAGEM EC",
+    "visitante": "AMERICA",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Arena Prime BH",
+    "rodada": "RODADA 13",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=100; cidade=Belo Horizonte",
+    "id": "16062070283c7ec0",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "10:30",
+    "mandante": "MINAS BOCA",
+    "visitante": "XV DE NOVEMBRO ESPORTE CLUBE",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Estádio Bela Vista F.C.",
+    "rodada": "RODADA 13",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=99; cidade=Sete Lagoas",
+    "id": "a6aade0fb6cbcd38",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -20919,7 +21959,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=103; cidade=Belo Horizonte",
     "id": "489f5a7ed8ea4ecb",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -20935,7 +21975,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=101; cidade=Muriae",
     "id": "2a2d59e5f9fd38cc",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -20951,7 +21991,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=102; cidade=Juiz de Fora",
     "id": "e01c11e6caf7c10f",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -20966,6 +22006,118 @@
     "extra": "",
     "id": "7bafffd73fcabc2d",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-12",
+    "hora": "15:00",
+    "mandante": "AMERICA",
+    "visitante": "ATLÉTICO SAF",
+    "pais": "Brasil",
+    "cidade": "Domingo, 13 de Setembro de 2026",
+    "estadio": "A definir",
+    "rodada": "RODADA 2",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=5; cidade=Domingo, 13 de Setembro de 2026",
+    "id": "59851d001df32f59",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "15:00",
+    "mandante": "MANCHESTER",
+    "visitante": "FORMIGA EC",
+    "pais": "Brasil",
+    "cidade": "Matozinhos",
+    "estadio": "Campo do Botafogo",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=54; cidade=Matozinhos",
+    "id": "c393ad27c2de683e",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "15:00",
+    "mandante": "VILLA NOVA",
+    "visitante": "UBERLANDIA S.A.F",
+    "pais": "Brasil",
+    "cidade": "Nova Lima",
+    "estadio": "Castor Cifuentes \"Alçapão do Bonfim\"",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=51; cidade=Nova Lima",
+    "id": "58a8c38a843bebd4",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "15:30",
+    "mandante": "CRUZEIRO - SAF",
+    "visitante": "ARAGUARI",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Toca da Raposa I",
+    "rodada": "RODADA 13",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=103; cidade=Belo Horizonte",
+    "id": "2fb404fc92460a72",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "15:30",
+    "mandante": "NAC MURIAÉ",
+    "visitante": "BETIM FUTEBOL",
+    "pais": "Brasil",
+    "cidade": "Muriae",
+    "estadio": "Soares de Azevedo",
+    "rodada": "RODADA 13",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=101; cidade=Muriae",
+    "id": "317d98622cf925df",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "15:30",
+    "mandante": "UBERABINHA",
+    "visitante": "INTER DE MINAS",
+    "pais": "Brasil",
+    "cidade": "Juiz de Fora",
+    "estadio": "Radialista Mário Helênio",
+    "rodada": "RODADA 13",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=102; cidade=Juiz de Fora",
+    "id": "56db1c915219220f",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-12",
+    "hora": "15:30",
+    "mandante": "MAMORÉ",
+    "visitante": "CA PATROCINENSE",
+    "pais": "Brasil",
+    "cidade": "Patos de Minas",
+    "estadio": "Bernardo Rubinger de Queiroz",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=52; cidade=Patos de Minas",
+    "id": "8adaeb3bbac31ae9",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -21009,7 +22161,23 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=104; cidade=Sao Joao Del Rei",
     "id": "e92b75a113e2f9a1",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-13",
+    "hora": "09:00",
+    "mandante": "IPATINGA - SAF",
+    "visitante": "DEMOCRATA GV",
+    "pais": "Brasil",
+    "cidade": "Ipatinga",
+    "estadio": "Estádio Lanari Júnior",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=49; cidade=Ipatinga",
+    "id": "8bbfd16002afa6aa",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -21026,6 +22194,38 @@
     "atualizado_em": "2026-07-13T14:46:09"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-13",
+    "hora": "10:00",
+    "mandante": "ATHLETIC",
+    "visitante": "ATLÉTICO SAF",
+    "pais": "Brasil",
+    "cidade": "Sao Joao Del Rei",
+    "estadio": "CT ATHLETIC",
+    "rodada": "RODADA 13",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=104; cidade=Sao Joao Del Rei",
+    "id": "42990e3afcb4ce80",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-13",
+    "hora": "10:00",
+    "mandante": "TOMBENSE",
+    "visitante": "NOVO E.C. ITABIRINHA",
+    "pais": "Brasil",
+    "cidade": "Ipatinga",
+    "estadio": "João Lamego Netto \"Ipatingão\"",
+    "rodada": "RODADA 9",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=50; cidade=Ipatinga",
+    "id": "f1ee7cab08e69d33",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-09-13",
@@ -21038,6 +22238,22 @@
     "extra": "",
     "id": "9a38b291660993c6",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-13",
+    "hora": "11:00",
+    "mandante": "ITABIRITO",
+    "visitante": "CRUZEIRO - SAF",
+    "pais": "Brasil",
+    "cidade": "Itabirito",
+    "estadio": "Estádio Cel. Afonso de Moura Castro",
+    "rodada": "RODADA 2",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=6; cidade=Itabirito",
+    "id": "2dd657ec40f59e52",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -21417,7 +22633,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=105; cidade=Betim",
     "id": "d009bf3a6024f6ed",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21433,7 +22649,39 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=106; cidade=Sete Lagoas",
     "id": "2072396a5832dea3",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-19",
+    "hora": "10:30",
+    "mandante": "BETIM FUTEBOL",
+    "visitante": "ITABIRITO",
+    "pais": "Brasil",
+    "cidade": "Betim",
+    "estadio": "Arena URBSAN",
+    "rodada": "RODADA 14",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=105; cidade=Betim",
+    "id": "c91f540d5a40aff7",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-19",
+    "hora": "10:30",
+    "mandante": "MINAS BOCA",
+    "visitante": "BOSTON CITY",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Estádio Bela Vista F.C.",
+    "rodada": "RODADA 14",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=106; cidade=Sete Lagoas",
+    "id": "c8e4acf185040e3c",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21449,7 +22697,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=107; cidade=Santa Luzia",
     "id": "e681574d48b53eb6",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21465,7 +22713,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=109; cidade=Vespasiano",
     "id": "308ee141881d0a89",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21481,7 +22729,71 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=108; cidade=Muriae",
     "id": "b563eb75eab015aa",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-19",
+    "hora": "15:30",
+    "mandante": "AMERICA",
+    "visitante": "ARAGUARI",
+    "pais": "Brasil",
+    "cidade": "Santa Luzia",
+    "estadio": "Victor Andrade de Brito - Frimisa",
+    "rodada": "RODADA 14",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=107; cidade=Santa Luzia",
+    "id": "3a248677ad9e3f5f",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-19",
+    "hora": "15:30",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "UBERABINHA",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Cidade do Galo",
+    "rodada": "RODADA 14",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=109; cidade=Vespasiano",
+    "id": "61813562ede67a71",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-19",
+    "hora": "15:30",
+    "mandante": "NAC MURIAÉ",
+    "visitante": "CRUZEIRO - SAF",
+    "pais": "Brasil",
+    "cidade": "Muriae",
+    "estadio": "Soares de Azevedo",
+    "rodada": "RODADA 14",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=108; cidade=Muriae",
+    "id": "4b0ac4d1b84248a1",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-19",
+    "hora": "19:00",
+    "mandante": "DEMOCRATA GV",
+    "visitante": "CRUZEIRO - SAF",
+    "pais": "Brasil",
+    "cidade": "Governador Valadares",
+    "estadio": "Jose Mammoud Abbas \"Mamudão\"",
+    "rodada": "RODADA 3",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=7; cidade=Governador Valadares",
+    "id": "2f1b95ca6b0cf5a1",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21497,7 +22809,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=111; cidade=Divinopolis",
     "id": "48b3543c8b959d61",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21513,7 +22825,55 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=110; cidade=Itauna",
     "id": "b9a4b686ef774dc3",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-20",
+    "hora": "10:00",
+    "mandante": "GUARANI",
+    "visitante": "CONTAGEM EC",
+    "pais": "Brasil",
+    "cidade": "Divinopolis",
+    "estadio": "Arena SICOOB DIVICRED",
+    "rodada": "RODADA 14",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=111; cidade=Divinopolis",
+    "id": "86de5a68e6d8b390",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-20",
+    "hora": "10:00",
+    "mandante": "INTER DE MINAS",
+    "visitante": "ATHLETIC",
+    "pais": "Brasil",
+    "cidade": "Itauna",
+    "estadio": "José Flávio de Carvalho",
+    "rodada": "RODADA 14",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=110; cidade=Itauna",
+    "id": "f39248b3405252a2",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-20",
+    "hora": "11:00",
+    "mandante": "ITABIRITO",
+    "visitante": "AMERICA",
+    "pais": "Brasil",
+    "cidade": "Itabirito",
+    "estadio": "Estádio Cel. Afonso de Moura Castro",
+    "rodada": "RODADA 3",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=8; cidade=Itabirito",
+    "id": "8be4e461f2fedd00",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21529,7 +22889,39 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=112; cidade=Rodada 15",
     "id": "9e805ea2f26becb8",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-20",
+    "hora": "15:00",
+    "mandante": "XV DE NOVEMBRO ESPORTE CLUBE",
+    "visitante": "COIMBRA SAF",
+    "pais": "Brasil",
+    "cidade": "Rodada 15",
+    "estadio": "A definir",
+    "rodada": "RODADA 14",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=112; cidade=Rodada 15",
+    "id": "0ccdd82f99b9a20c",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-20",
+    "hora": "16:00",
+    "mandante": "VENDA NOVA",
+    "visitante": "ARAGUARI",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Estádio Ilvo Marani",
+    "rodada": "RODADA 3",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=9; cidade=Vespasiano",
+    "id": "66e3e9ef39015ab8",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21545,7 +22937,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=113; cidade=Oliveira",
     "id": "3e8811b2939e2133",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21561,7 +22953,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=114; cidade=Sao Joao Del Rei",
     "id": "60977d8e2d358715",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21577,7 +22969,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=116; cidade=Manhuacu",
     "id": "ded239bc7ed0e97c",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21593,7 +22985,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=117; cidade=Contagem",
     "id": "9ddf11cf4742b828",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21609,7 +23001,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=118; cidade=Belo Horizonte",
     "id": "dee4c1922db78651",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21625,7 +23017,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=119; cidade=Belo Horizonte",
     "id": "4b91158606924156",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21641,7 +23033,7 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=120; cidade=Belo Horizonte",
     "id": "80f5b15ada83bd82",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "FMF",
@@ -21657,7 +23049,183 @@
     "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=40",
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=40; placar_original=X; jogo_numero=115; cidade=Juiz de Fora",
     "id": "1231ddcb9a03784f",
-    "atualizado_em": "2026-07-08T02:01:10"
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-26",
+    "hora": "15:00",
+    "mandante": "AMERICA",
+    "visitante": "VENDA NOVA",
+    "pais": "Brasil",
+    "cidade": "15:00",
+    "estadio": "A definir",
+    "rodada": "RODADA 4",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=10; cidade=15:00",
+    "id": "33989fd2c97d772e",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-26",
+    "hora": "15:00",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "DEMOCRATA GV",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Arena Gregorão",
+    "rodada": "RODADA 4",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=11; cidade=Contagem",
+    "id": "533a74e2d511e7f4",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-26",
+    "hora": "15:30",
+    "mandante": "ARAGUARI",
+    "visitante": "MINAS BOCA",
+    "pais": "Brasil",
+    "cidade": "Oliveira",
+    "estadio": "ESTADIO JOSÉ DOS SANTOS (Campo do DER)",
+    "rodada": "RODADA 15",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=113; cidade=Oliveira",
+    "id": "85f75137161938b6",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-26",
+    "hora": "15:30",
+    "mandante": "ATHLETIC",
+    "visitante": "AMERICA",
+    "pais": "Brasil",
+    "cidade": "Sao Joao Del Rei",
+    "estadio": "CT ATHLETIC",
+    "rodada": "RODADA 15",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=114; cidade=Sao Joao Del Rei",
+    "id": "4f34e19384d2aa79",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-26",
+    "hora": "15:30",
+    "mandante": "BOSTON CITY",
+    "visitante": "NAC MURIAÉ",
+    "pais": "Brasil",
+    "cidade": "Manhuacu",
+    "estadio": "Complexo do Boston City I",
+    "rodada": "RODADA 15",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=116; cidade=Manhuacu",
+    "id": "acc9598550fa55b0",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-26",
+    "hora": "15:30",
+    "mandante": "COIMBRA SAF",
+    "visitante": "INTER DE MINAS",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Estádio Flávio Pentagna Guimarães",
+    "rodada": "RODADA 15",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=117; cidade=Contagem",
+    "id": "3603abb8460b04ab",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-26",
+    "hora": "15:30",
+    "mandante": "CONTAGEM EC",
+    "visitante": "XV DE NOVEMBRO ESPORTE CLUBE",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Arena Prime BH",
+    "rodada": "RODADA 15",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=118; cidade=Belo Horizonte",
+    "id": "8aabf33ddb0076e3",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-26",
+    "hora": "15:30",
+    "mandante": "CRUZEIRO - SAF",
+    "visitante": "BETIM FUTEBOL",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Toca da Raposa I",
+    "rodada": "RODADA 15",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=119; cidade=Belo Horizonte",
+    "id": "c09400784821b3ac",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-26",
+    "hora": "15:30",
+    "mandante": "ITABIRITO",
+    "visitante": "ATLÉTICO SAF",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Arena Morro das Pedras",
+    "rodada": "RODADA 15",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=120; cidade=Belo Horizonte",
+    "id": "655686b0dbd032c8",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 1ª Divisão - 2026",
+    "data": "2026-09-26",
+    "hora": "15:30",
+    "mandante": "UBERABINHA",
+    "visitante": "GUARANI",
+    "pais": "Brasil",
+    "cidade": "Juiz de Fora",
+    "estadio": "Radialista Mário Helênio",
+    "rodada": "RODADA 15",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=15",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=15; placar_original=X; jogo_numero=115; cidade=Juiz de Fora",
+    "id": "04086db1b52f3cce",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-09-26",
+    "hora": "16:00",
+    "mandante": "CRUZEIRO - SAF",
+    "visitante": "ARAGUARI",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Joaquim Henrique Nogueira \"Arena do Jacaré\"",
+    "rodada": "RODADA 4",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=12; cidade=Sete Lagoas",
+    "id": "6cb5c84a09481130",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -21686,6 +23254,102 @@
     "extra": "",
     "id": "1c42933fffb00c92",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-27",
+    "hora": "10:00",
+    "mandante": "CA PATROCINENSE",
+    "visitante": "VILLA NOVA",
+    "pais": "Brasil",
+    "cidade": "Patrocinio",
+    "estadio": "Pedro Alves do Nascimento",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=58; cidade=Patrocinio",
+    "id": "d1f8aad5c180c6da",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-27",
+    "hora": "10:00",
+    "mandante": "DEMOCRATA GV",
+    "visitante": "TOMBENSE",
+    "pais": "Brasil",
+    "cidade": "Governador Valadares",
+    "estadio": "Jose Mammoud Abbas \"Mamudão\"",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=55; cidade=Governador Valadares",
+    "id": "5eb8181837c29116",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-27",
+    "hora": "10:00",
+    "mandante": "DEMOCRATA SL",
+    "visitante": "MANCHESTER",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Joaquim Henrique Nogueira \"Arena do Jacaré\"",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=59; cidade=Sete Lagoas",
+    "id": "a6757bbf0368a2ba",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-27",
+    "hora": "10:00",
+    "mandante": "FORMIGA EC",
+    "visitante": "SERRANENSE",
+    "pais": "Brasil",
+    "cidade": "Formiga",
+    "estadio": "Juca Pedro",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=60; cidade=Formiga",
+    "id": "b7bd98be6aebd43f",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-27",
+    "hora": "10:00",
+    "mandante": "SC AYMORES",
+    "visitante": "IPATINGA - SAF",
+    "pais": "Brasil",
+    "cidade": "Uba",
+    "estadio": "Estádio Paulo Paschoalino",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=56; cidade=Uba",
+    "id": "d57c9aeb7eb10bfb",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - SUB 20 - 2ª Divisão - 2026",
+    "data": "2026-09-27",
+    "hora": "10:00",
+    "mandante": "UBERLANDIA S.A.F",
+    "visitante": "JUVENTUS FUTEBOL CLUBE",
+    "pais": "Brasil",
+    "cidade": "Uberlandia",
+    "estadio": "CT ninho do Periquito",
+    "rodada": "RODADA 10",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=57; cidade=Uberlandia",
+    "id": "e23194df106f0343",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -21912,6 +23576,22 @@
     "atualizado_em": "2026-07-13T14:46:09"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-02",
+    "hora": "15:00",
+    "mandante": "ARAGUARI",
+    "visitante": "ATLÉTICO SAF",
+    "pais": "Brasil",
+    "cidade": "Santa Luzia",
+    "estadio": "Victor Andrade de Brito - Frimisa",
+    "rodada": "RODADA 5",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=13; cidade=Santa Luzia",
+    "id": "c62502ec0e622625",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-03",
@@ -21952,6 +23632,22 @@
     "extra": "",
     "id": "4ace2950a342cf48",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-03",
+    "hora": "16:00",
+    "mandante": "CRUZEIRO - SAF",
+    "visitante": "AMERICA",
+    "pais": "Brasil",
+    "cidade": "Sete Lagoas",
+    "estadio": "Joaquim Henrique Nogueira \"Arena do Jacaré\"",
+    "rodada": "RODADA 5",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=14; cidade=Sete Lagoas",
+    "id": "a48a9fab908b154f",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -22022,6 +23718,22 @@
     "extra": "",
     "id": "dce89cd49e22472a",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-04",
+    "hora": "16:00",
+    "mandante": "VENDA NOVA",
+    "visitante": "ITABIRITO",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Estádio Ilvo Marani",
+    "rodada": "RODADA 5",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=15; cidade=Vespasiano",
+    "id": "49cc696c29510a3f",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -22136,6 +23848,22 @@
     "atualizado_em": "2026-07-13T14:46:09"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-09",
+    "hora": "15:00",
+    "mandante": "ARAGUARI",
+    "visitante": "ITABIRITO",
+    "pais": "Brasil",
+    "cidade": "Santa Luzia",
+    "estadio": "Victor Andrade de Brito - Frimisa",
+    "rodada": "RODADA 6",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=16; cidade=Santa Luzia",
+    "id": "300de47df86d78d8",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Primera Mercado Libre",
     "data": "2026-10-09",
@@ -22248,6 +23976,22 @@
     "atualizado_em": "2026-07-13T14:46:09"
   },
   {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-10",
+    "hora": "15:00",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "CRUZEIRO - SAF",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Arena Gregorão",
+    "rodada": "RODADA 6",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=17; cidade=Contagem",
+    "id": "9f99404e9a31a8a2",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Ascenso Caixun",
     "data": "2026-10-10",
@@ -22274,6 +24018,22 @@
     "extra": "",
     "id": "26bb2c1070add783",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-10",
+    "hora": "19:00",
+    "mandante": "DEMOCRATA GV",
+    "visitante": "VENDA NOVA",
+    "pais": "Brasil",
+    "cidade": "Governador Valadares",
+    "estadio": "Jose Mammoud Abbas \"Mamudão\"",
+    "rodada": "RODADA 6",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=18; cidade=Governador Valadares",
+    "id": "7a5e0d51b02b7e27",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -22652,6 +24412,54 @@
     "extra": "",
     "id": "e949434300c6aa9e",
     "atualizado_em": "2026-07-13T14:46:09"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "AMERICA",
+    "visitante": "ARAGUARI",
+    "pais": "Brasil",
+    "cidade": "15:00",
+    "estadio": "A definir",
+    "rodada": "RODADA 7",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=19; cidade=15:00",
+    "id": "f439de9d5fa04b7d",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "ITABIRITO",
+    "visitante": "DEMOCRATA GV",
+    "pais": "Brasil",
+    "cidade": "Itabirito",
+    "estadio": "Estádio Cel. Afonso de Moura Castro",
+    "rodada": "RODADA 7",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=20; cidade=Itabirito",
+    "id": "4d977bf74f30a9a4",
+    "atualizado_em": "2026-07-13T19:06:51"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "VENDA NOVA",
+    "visitante": "ATLÉTICO SAF",
+    "pais": "Brasil",
+    "cidade": "Vespasiano",
+    "estadio": "Estádio Ilvo Marani",
+    "rodada": "RODADA 7",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=21; cidade=Vespasiano",
+    "id": "4d65cadebf812ff9",
+    "atualizado_em": "2026-07-13T19:06:51"
   },
   {
     "fonte": "campeonatochileno.cl",
