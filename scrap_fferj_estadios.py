@@ -204,6 +204,50 @@ def parse_club_page(html: str) -> dict:
     }
 
 
+def carregar_estadios_brasil_existentes(path: str = "estadios_brasil.js") -> list[dict]:
+    """Le o arquivo estadios_brasil.js (ja existente no repo) e extrai nome,
+    aliases e coordenadas ja catalogadas. Usado para preferir uma coordenada
+    ja confirmada em vez de geocodificar de novo pelo endereco da sede do
+    clube (que pode ficar longe do estadio de verdade, ex.: sede
+    administrativa em outro bairro/cidade)."""
+    p = Path(path)
+    if not p.exists():
+        return []
+    content = p.read_text(encoding="utf-8")
+    entries = []
+    for bloco in re.finditer(r"\{[^{}]*?nome\s*:\s*\"([^\"]+)\"[^{}]*?\}", content, re.S):
+        texto = bloco.group(0)
+        nome = bloco.group(1)
+        aliases_m = re.search(r"aliases\s*:\s*\[(.*?)\]", texto, re.S)
+        aliases = re.findall(r"\"([^\"]+)\"", aliases_m.group(1)) if aliases_m else []
+        lat_m = re.search(r"lat\s*:\s*(-?[\d.]+)", texto)
+        lng_m = re.search(r"lng\s*:\s*(-?[\d.]+)", texto)
+        if lat_m and lng_m:
+            entries.append({
+                "nome": nome,
+                "aliases": aliases,
+                "lat": float(lat_m.group(1)),
+                "lng": float(lng_m.group(1)),
+            })
+    return entries
+
+
+def buscar_em_estadios_existentes(nome_estadio: str, catalogo: list[dict]) -> dict | None:
+    if not nome_estadio:
+        return None
+    alvo = normalize(nome_estadio)
+    if not alvo:
+        return None
+    for entrada in catalogo:
+        nomes = [entrada["nome"]] + entrada.get("aliases", [])
+        for n in nomes:
+            nn = normalize(n)
+            if nn and len(nn) > 4 and (nn in alvo or alvo in nn):
+                return entrada
+    return None
+
+
+
 def montar_endereco_geocoding(info: dict) -> tuple[str, str]:
     """Escolhe o melhor endereco disponivel para geocodificar.
     Retorna (endereco_para_busca, fonte: 'localizacao'|'sede'|'')."""
@@ -214,6 +258,25 @@ def montar_endereco_geocoding(info: dict) -> tuple[str, str]:
     if sede:
         return f"{sede}, RJ, Brasil", "sede"
     return "", ""
+
+
+def simplificar_endereco(endereco: str) -> str:
+    """Remove numero da casa e coisas tipo 'S/Nº', mantendo rua + bairro +
+    cidade/estado. Ex.: 'RUA X, 123 - BAIRRO, RJ, Brasil' -> 'RUA X - BAIRRO, RJ, Brasil'"""
+    s = re.sub(r",\s*(n[º°o]?\s*)?\d+[\w/]*\s*-", " -", endereco, flags=re.I)
+    s = re.sub(r",\s*s\s*/\s*n[º°o]?\b", "", s, flags=re.I)
+    s = re.sub(r"\s{2,}", " ", s).strip()
+    return s
+
+
+def geocode_com_fallback(endereco: str, session: requests.Session, cache: dict, timeout: int) -> dict | None:
+    coords = geocode(endereco, session, cache, timeout)
+    if coords:
+        return coords
+    simplificado = simplificar_endereco(endereco)
+    if simplificado and simplificado != endereco:
+        coords = geocode(simplificado, session, cache, timeout)
+    return coords
 
 
 def geocode(endereco: str, session: requests.Session, cache: dict, timeout: int) -> dict | None:
@@ -333,6 +396,9 @@ def main() -> None:
     debug_html_dir = OUT_DIR / "debug_fferj_estadios_html"
     debug_html_dir.mkdir(exist_ok=True)
 
+    catalogo_existente = carregar_estadios_brasil_existentes()
+    print(f"[INFO] {len(catalogo_existente)} estadios ja catalogados em estadios_brasil.js (usados como preferencia).")
+
     for i, (alias_id, nome_clube) in enumerate(itens, start=1):
         url = f"{BASE_URL}/ClubesLigas/ViewTeam"
         try:
@@ -347,8 +413,31 @@ def main() -> None:
             (debug_html_dir / f"club_{alias_id}.html").write_text(r.text, encoding="utf-8")
 
         info = parse_club_page(r.text)
+
+        # 1) Preferencia maxima: nome do estadio ja catalogado (mais preciso
+        #    que geocodificar a sede administrativa do clube, que pode ficar
+        #    longe do estadio de verdade).
+        catalogado = buscar_em_estadios_existentes(info["estadio"], catalogo_existente)
+        if catalogado:
+            item = {
+                "alias_id": alias_id,
+                "nome_clube": nome_clube,
+                "estadio": info["estadio"],
+                "localizacao": info["localizacao"],
+                "sede": info["sede"],
+                "endereco_geocodificado": "",
+                "fonte_endereco": "ja_catalogado",
+                "lat": catalogado["lat"],
+                "lng": catalogado["lng"],
+            }
+            resultados.append(item)
+            print(f"[{i}/{len(itens)}] {nome_clube} | estadio='{info['estadio']}' | JA CATALOGADO ({catalogado['nome']})")
+            time.sleep(args.pausa)
+            continue
+
+        # 2) Geocodificar Localizacao (endereco do estadio) ou Sede (fallback)
         endereco, fonte_endereco = montar_endereco_geocoding(info)
-        coords = geocode(endereco, session, geocoding_cache, args.timeout) if endereco else None
+        coords = geocode_com_fallback(endereco, session, geocoding_cache, args.timeout) if endereco else None
 
         item = {
             "alias_id": alias_id,
