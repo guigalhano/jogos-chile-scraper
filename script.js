@@ -1008,6 +1008,9 @@ function enrichGames(rawGames) {
       } else if (window.CIDADES_RJ && window.CIDADES_RJ[chave]) {
         cidadeCoords = window.CIDADES_RJ[chave];
         regiaoPorCidade = "Rio de Janeiro";
+      } else if (window.CIDADES_ES && window.CIDADES_ES[chave]) {
+        cidadeCoords = window.CIDADES_ES[chave];
+        regiaoPorCidade = "Espírito Santo";
       }
     }
     return {

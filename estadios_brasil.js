@@ -1,1469 +1,2646 @@
-const DATA_URL = "data/jogos_programados.json";
+/*
+  Base de estádios do futebol brasileiro (CBF: Série A/B/C/D, Copa do Brasil).
 
-const I18N = {
-  pt: {
-    locale: "pt-BR",
-    htmlLang: "pt-BR",
-    titleDoc: "Mapa de Jogos · Futebol Sul-Americano",
-    eyebrow: "Futebol sul-americano · agenda automática",
-    title: "Mapa de jogos na América do Sul",
-    subtitle: "Encontre seu próximo jogo na América do Sul. Explore partidas em um mapa interativo e filtre por país, campeonato, time, cidade, região, estádio ou data. A agenda é atualizada automaticamente com dados de sites oficiais de federações, competições e organizadores.",
-    stat_games: "jogos filtrados",
-    stat_map: "no mapa",
-    stat_cities: "cidades",
-    stat_updated: "última atualização",
-    filters: "Filtros",
-    clear: "Limpar",
-    country: "País",
-    championship: "Campeonato",
-    team: "Time",
-    region: "Região",
-    city: "Cidade",
-    date: "Data",
-    search: "Buscar",
-    search_placeholder: "Equipe, estádio, cidade, região...",
-    today: "Hoje",
-    next3: "Próximos 3 dias",
-    next7: "Próximos 7 dias",
-    next15: "Próximos 15 dias",
-    next30: "Próximos 30 dias",
-    next60: "Próximos 60 dias",
-    next180: "Próximos 180 dias",
-    radius_suffix: "km ao redor da cidade",
-    no_coords: "Jogos sem coordenadas",
-    show_all: "Mostrar todos",
-    show_all_team: "Mostrar todos do time",
-    choose_team_first: "Escolha um time primeiro",
-    all_team_active: team => `Mostrando todos os jogos disponíveis de ${team}`,
-    all_m: "Todos",
-    all_f: "Todas",
-    calendar: "Calendário",
-    hint: "Para melhorar o mapa, edite estadios.js adicionando novos estádios com cidade, região, latitude e longitude.",
-    footer_text: "Dados gerados pelo scraper do repositório",
-    games: "jogos",
-    game: "jogo",
-    no_games_json: "Ainda não há jogos em data/jogos_programados.json. Rode o workflow ou verifique se o scraper encontrou partidas futuras.",
-    no_results: "Nenhum jogo encontrado com esses filtros.",
-    loading_map: "Carregando mapa...",
-    no_json: "Não consegui carregar data/jogos_programados.json. Verifique se o arquivo existe e se o GitHub Pages está ativo.",
-    map_json_error: "Erro ao carregar o JSON.",
-    no_json_map: "Sem jogos no JSON. Rode o workflow para atualizar.",
-    no_coords_filtered: "Nenhum jogo filtrado tem coordenadas de estádio. Complete o arquivo estadios.js.",
-    map_count: (mapped, total) => `${mapped} de ${total} jogos filtrados aparecem no mapa.`,
-    period3: "Filtro ativo: próximos 3 dias",
-    period7: "Filtro ativo: próximos 7 dias",
-    period15: "Filtro ativo: próximos 15 dias",
-    period30: "Filtro ativo: próximos 30 dias",
-    period60: "Filtro ativo: próximos 60 dias",
-    period180: "Filtro ativo: próximos 180 dias",
-    futureDefault: "Mostrando jogos de hoje em diante",
-    date_confirm: "Data a confirmar",
-    time_confirm: "Hora a confirmar",
-    stadium_confirm: "Estádio a confirmar",
-    city_confirm: "Cidade a confirmar",
-    round_confirm: "Rodada a confirmar",
-    source: "Fonte",
-    on_map: "No mapa",
-    without_coords: "Sem coordenadas",
-    championship_fallback: "Competição",
-    home_fallback: "Mandante",
-    away_fallback: "Visitante",
-    see_source: "Ver fonte",
-    estimated_venue: "estádio estimado",
+  Mesmo formato de /estadios.js (Chile), usado pelo script.js para
+  resolver cidade, estado (regiao) e coordenadas dos jogos do Brasil
+  quando o campo "estadio" do scraper bate com um destes nomes.
+
+  Campos:
+  - nome: nome principal
+  - aliases: variações do nome que podem aparecer no JSON
+  - cidade
+  - regiao: estado (UF por extenso)
+  - lat/lng
+*/
+
+window.ESTADIOS_BRASIL = [
+  {
+    nome: "Allianz Parque",
+    aliases: ["allianz parque", "arena palmeiras", "nubank parque"],
+    cidade: "São Paulo",
+    regiao: "São Paulo",
+    lat: -23.5273,
+    lng: -46.6783,
   },
-  es: {
-    locale: "es-CL",
-    htmlLang: "es-CL",
-    titleDoc: "Mapa de Partidos · Fútbol Sudamericano",
-    eyebrow: "Fútbol sudamericano · agenda automática",
-    title: "Mapa de partidos en Sudamérica",
-    subtitle: "Encuentra tu próximo partido en Sudamérica. Explora los encuentros en un mapa interactivo y filtra por país, campeonato, equipo, ciudad, región, estadio o fecha. La agenda se actualiza automáticamente con datos de sitios oficiales de federaciones, competiciones y organizadores.",
-    stat_games: "partidos filtrados",
-    stat_map: "en el mapa",
-    stat_cities: "ciudades",
-    stat_updated: "última actualización",
-    filters: "Filtros",
-    clear: "Limpiar",
-    country: "País",
-    championship: "Campeonato",
-    team: "Equipo",
-    region: "Región",
-    city: "Ciudad",
-    date: "Fecha",
-    search: "Buscar",
-    search_placeholder: "Equipo, estadio, ciudad, región...",
-    today: "Hoy",
-    next3: "Próximos 3 días",
-    next7: "Próximos 7 días",
-    next15: "Próximos 15 días",
-    next30: "Próximos 30 días",
-    next60: "Próximos 60 días",
-    next180: "Próximos 180 días",
-    radius_suffix: "km alrededor de la ciudad",
-    no_coords: "Partidos sin coordenadas",
-    show_all: "Mostrar todos",
-    show_all_team: "Mostrar todos del equipo",
-    choose_team_first: "Elige un equipo primero",
-    all_team_active: team => `Mostrando todos los partidos disponibles de ${team}`,
-    all_m: "Todos",
-    all_f: "Todas",
-    calendar: "Calendario",
-    hint: "Para mejorar el mapa, edita estadios.js agregando nuevos estadios con ciudad, región, latitud y longitud.",
-    footer_text: "Datos generados por el scraper del repositorio",
-    games: "partidos",
-    game: "partido",
-    no_games_json: "Todavía no hay partidos en data/jogos_programados.json. Ejecuta el workflow o revisa si el scraper encontró partidos futuros.",
-    no_results: "No se encontraron partidos con esos filtros.",
-    loading_map: "Cargando mapa...",
-    no_json: "No pude cargar data/jogos_programados.json. Revisa si el archivo existe y si GitHub Pages está activo.",
-    map_json_error: "Error al cargar el JSON.",
-    no_json_map: "Sin partidos en el JSON. Ejecuta el workflow para actualizar.",
-    no_coords_filtered: "Ningún partido filtrado tiene coordenadas de estadio. Completa el archivo estadios.js.",
-    map_count: (mapped, total) => `${mapped} de ${total} partidos filtrados aparecen en el mapa.`,
-    period3: "Filtro activo: próximos 3 días",
-    period7: "Filtro activo: próximos 7 días",
-    period15: "Filtro activo: próximos 15 días",
-    period30: "Filtro activo: próximos 30 días",
-    period60: "Filtro activo: próximos 60 días",
-    period180: "Filtro activo: próximos 180 días",
-    futureDefault: "Mostrando partidos desde hoy en adelante",
-    date_confirm: "Fecha por confirmar",
-    time_confirm: "Hora por confirmar",
-    stadium_confirm: "Estadio por confirmar",
-    city_confirm: "Ciudad por confirmar",
-    round_confirm: "Fecha/rueda por confirmar",
-    source: "Fuente",
-    on_map: "En el mapa",
-    without_coords: "Sin coordenadas",
-    championship_fallback: "Competición",
-    home_fallback: "Local",
-    away_fallback: "Visitante",
-    see_source: "Ver fuente",
-    estimated_venue: "estadio estimado",
+  {
+    nome: "Arena Condá",
+    aliases: ["arena conda", "arena condá", "arenda conda", "arenda condá"],
+    cidade: "Chapecó",
+    regiao: "Santa Catarina",
+    lat: -27.0910,
+    lng: -52.6222,
   },
-};
+  {
+    nome: "Arena Fonte Nova",
+    aliases: ["arena fonte nova", "fonte nova", "itaipava arena fonte nova"],
+    cidade: "Salvador",
+    regiao: "Bahia",
+    lat: -12.9836,
+    lng: -38.5054,
+  },
+  {
+    nome: "Arena MRV",
+    aliases: ["arena mrv"],
+    cidade: "Belo Horizonte",
+    regiao: "Minas Gerais",
+    lat: -19.8657,
+    lng: -44.0994,
+  },
+  {
+    nome: "Arena da Baixada",
+    aliases: ["arena da baixada", "ligga arena", "joaquim americo"],
+    cidade: "Curitiba",
+    regiao: "Paraná",
+    lat: -25.4483,
+    lng: -49.2731,
+  },
+  {
+    nome: "Arena do Grêmio",
+    aliases: ["arena do gremio", "arena do grêmio"],
+    cidade: "Porto Alegre",
+    regiao: "Rio Grande do Sul",
+    lat: -29.9827,
+    lng: -51.0680,
+  },
+  {
+    nome: "Estádio Barradão",
+    aliases: ["barradão", "barradao"],
+    cidade: "Salvador",
+    regiao: "Bahia",
+    lat: -12.9481,
+    lng: -38.4489,
+  },
+  {
+    nome: "Estádio Beira-Rio",
+    aliases: ["beira-rio", "beira rio"],
+    cidade: "Porto Alegre",
+    regiao: "Rio Grande do Sul",
+    lat: -30.0653,
+    lng: -51.2352,
+  },
+  {
+    nome: "Estádio Couto Pereira",
+    aliases: ["couto pereira"],
+    cidade: "Curitiba",
+    regiao: "Paraná",
+    lat: -25.4406,
+    lng: -49.2439,
+  },
+  {
+    nome: "Estádio Municipal Cícero de Souza Marques",
+    aliases: ["cícero s. marques", "cicero s. marques", "cícero de souza marques", "cicero de souza marques"],
+    cidade: "Bragança Paulista",
+    regiao: "São Paulo",
+    lat: -22.9519,
+    lng: -46.5419,
+  },
+  {
+    nome: "Estádio José Maria de Campos Maia",
+    aliases: ["josé m. c. maia", "jose m. c. maia", "josé maria de campos maia"],
+    cidade: "Mirassol",
+    regiao: "São Paulo",
+    lat: -20.8181,
+    lng: -49.5222,
+  },
+  {
+    nome: "Estádio Olímpico do Pará (Mangueirão)",
+    aliases: ["mangueirão", "mangueirao", "olimpico do para"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4108,
+    lng: -48.4489,
+  },
+  {
+    nome: "Maracanã",
+    aliases: ["maracanã", "maracana", "estadio do maracana"],
+    cidade: "Rio de Janeiro",
+    regiao: "Rio de Janeiro",
+    lat: -22.9121,
+    lng: -43.2302,
+  },
+  {
+    nome: "Mineirão",
+    aliases: ["mineirão", "mineirao", "governador magalhães pinto", "governador magalhaes pinto", "estadio governador magalhaes pinto"],
+    cidade: "Belo Horizonte",
+    regiao: "Minas Gerais",
+    lat: -19.8656,
+    lng: -43.9695,
+  },
+  {
+    nome: "MorumBIS",
+    aliases: ["morumbis", "morumbi", "estadio cicero pompeu de toledo"],
+    cidade: "São Paulo",
+    regiao: "São Paulo",
+    lat: -23.6003,
+    lng: -46.7194,
+  },
+  {
+    nome: "Neo Química Arena",
+    aliases: ["neo quimica arena", "neo química arena", "arena corinthians"],
+    cidade: "São Paulo",
+    regiao: "São Paulo",
+    lat: -23.5453,
+    lng: -46.4742,
+  },
+  {
+    nome: "Estádio Nilton Santos",
+    aliases: ["nilton santos", "engenhão", "engenhao"],
+    cidade: "Rio de Janeiro",
+    regiao: "Rio de Janeiro",
+    lat: -22.8925,
+    lng: -43.2300,
+  },
+  {
+    nome: "Estádio São Januário",
+    aliases: ["são januário", "sao januario"],
+    cidade: "Rio de Janeiro",
+    regiao: "Rio de Janeiro",
+    lat: -22.8917,
+    lng: -43.2286,
+  },
+  {
+    nome: "Estádio Urbano Caldeira (Vila Belmiro)",
+    aliases: ["vila belmiro", "urbano caldeira"],
+    cidade: "Santos",
+    regiao: "São Paulo",
+    lat: -23.9469,
+    lng: -46.3353,
+  },
+  {
+    nome: "Estádio Santa Cruz",
+    aliases: ["santa cruz"],
+    cidade: "Ribeirão Preto",
+    regiao: "São Paulo",
+    lat: -21.1775,
+    lng: -47.8103,
+  },
+  {
+    nome: "Estádio Onésio Brasileiro Alvarenga (Serrinha)",
+    aliases: ["onésio b. alvarenga", "onesio b. alvarenga", "onésio brasileiro alvarenga", "serrinha"],
+    cidade: "Goiânia",
+    regiao: "Goiás",
+    lat: -16.6764,
+    lng: -49.2643,
+  },
+  {
+    nome: "Estádio Augusto Bauer",
+    aliases: ["augusto bauer", "augusto"],
+    cidade: "Brusque",
+    regiao: "Santa Catarina",
+    lat: -27.0961,
+    lng: -48.9107,
+  },
+  {
+    nome: "Estádio Centenário",
+    aliases: ["centenário", "centenario"],
+    cidade: "Caxias do Sul",
+    regiao: "Rio Grande do Sul",
+    lat: -29.1686,
+    lng: -51.1794,
+  },
+  {
+    nome: "Arena Pantanal",
+    aliases: ["arena pantanal"],
+    cidade: "Cuiabá",
+    regiao: "Mato Grosso",
+    lat: -15.6014,
+    lng: -56.1025,
+  },
+  {
+    nome: "Arena Castelão",
+    aliases: ["arena castelão", "arena castelao", "castelão", "castelao"],
+    cidade: "Fortaleza",
+    regiao: "Ceará",
+    lat: -3.8071,
+    lng: -38.5219,
+  },
+  {
+    nome: "Estádio Heriberto Hülse",
+    aliases: ["heriberto hülse", "heriberto hulse"],
+    cidade: "Criciúma",
+    regiao: "Santa Catarina",
+    lat: -28.6775,
+    lng: -49.3697,
+  },
+  {
+    nome: "Estádio Jorge Ismael de Biasi",
+    aliases: ["jorge ismael de biasi", "jorge de biasi"],
+    cidade: "Novo Horizonte",
+    regiao: "São Paulo",
+    lat: -21.4644,
+    lng: -49.2214,
+  },
+  {
+    nome: "Estádio Vitorino Gonçalves Dias",
+    aliases: ["vitorino gonçalves dias", "vitorino goncalves dias"],
+    cidade: "Londrina",
+    regiao: "Paraná",
+    lat: -23.3103,
+    lng: -51.1628,
+  },
+  {
+    nome: "Estádio Hailé Pinheiro",
+    aliases: ["hailé pinheiro", "haile pinheiro"],
+    cidade: "Goiânia",
+    regiao: "Goiás",
+    lat: -16.6395,
+    lng: -49.2903,
+  },
+  {
+    nome: "Estádio Moisés Lucarelli",
+    aliases: ["moisés lucarelli", "moises lucarelli"],
+    cidade: "Campinas",
+    regiao: "São Paulo",
+    lat: -22.9067,
+    lng: -47.0517,
+  },
+  {
+    nome: "Estádio Alfredo Jaconi",
+    aliases: ["alfredo jaconi"],
+    cidade: "Caxias do Sul",
+    regiao: "Rio Grande do Sul",
+    lat: -29.1544,
+    lng: -51.1636,
+  },
+  {
+    nome: "Estádio Ilha do Retiro",
+    aliases: ["ilha do retiro"],
+    cidade: "Recife",
+    regiao: "Pernambuco",
+    lat: -8.0631,
+    lng: -34.9086,
+  },
+  {
+    nome: "Estádio Rei Pelé",
+    aliases: ["rei pelé", "rei pele"],
+    cidade: "Maceió",
+    regiao: "Alagoas",
+    lat: -9.6208,
+    lng: -35.7181,
+  },
+  {
+    nome: "Independência",
+    aliases: ["arena da independência", "arena da independencia", "independência"],
+    cidade: "Belo Horizonte",
+    regiao: "Minas Gerais",
+    lat: -19.9186,
+    lng: -43.9411,
+  },
+  {
+    nome: "Estádio Orlando Scarpelli",
+    aliases: ["orlando scarpelli", "scarpelli"],
+    cidade: "Florianópolis",
+    regiao: "Santa Catarina",
+    lat: -27.5972,
+    lng: -48.5450,
+  },
+  {
+    nome: "Estádio Curuzu",
+    aliases: ["curuzu"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4392,
+    lng: -48.4642,
+  },
+  {
+    nome: "Estádio Almeidão",
+    aliases: ["almeidão", "almeidao"],
+    cidade: "João Pessoa",
+    regiao: "Paraíba",
+    lat: -7.1362,
+    lng: -34.8578,
+  },
+  {
+    nome: "Estádio Raulino de Oliveira",
+    aliases: ["raulino de oliveira"],
+    cidade: "Volta Redonda",
+    regiao: "Rio de Janeiro",
+    lat: -22.5202,
+    lng: -44.1042,
+  },
+  {
+    nome: "Arena Batistão",
+    aliases: ["arena batistão", "arena batistao", "batistão"],
+    cidade: "Aracaju",
+    regiao: "Sergipe",
+    lat: -10.9350,
+    lng: -37.0731,
+  },
+  {
+    nome: "Estádio Brinco de Ouro da Princesa",
+    aliases: ["brinco de ouro", "brinco de ouro da princesa"],
+    cidade: "Campinas",
+    regiao: "São Paulo",
+    lat: -22.9040,
+    lng: -47.0850,
+  },
+  {
+    nome: "Estádio Germano Krüger",
+    aliases: ["germano kruger", "germano krüger"],
+    cidade: "Ponta Grossa",
+    regiao: "Paraná",
+    lat: -25.0916,
+    lng: -50.1668,
+  },
+  {
+    nome: "Arena Pernambuco",
+    aliases: ["arena pernambuco", "arena pernambuco s. lourenço"],
+    cidade: "São Lourenço da Mata",
+    regiao: "Pernambuco",
+    lat: -8.0186,
+    lng: -35.0119,
+  },
+  {
+    nome: "Estádio Primeiro de Maio",
+    aliases: ["1º de maio", "primeiro de maio", "1º de maio são bernardo"],
+    cidade: "São Bernardo do Campo",
+    regiao: "São Paulo",
+    lat: -23.7167,
+    lng: -46.5567,
+  },
+  {
+    nome: "Estádio da Ressacada",
+    aliases: ["ressacada"],
+    cidade: "Florianópolis",
+    regiao: "Santa Catarina",
+    lat: -27.6797,
+    lng: -48.5583,
+  },
+  {
+    nome: "Estádio Frasqueirão (Saraivão)",
+    aliases: ["saraivao", "saraivão", "frasqueirao"],
+    cidade: "Ivinhema",
+    regiao: "Mato Grosso do Sul",
+    lat: -22.3033,
+    lng: -53.8181,
+  },
+  {
+    nome: "Arena das Dunas",
+    aliases: ["arena das dunas"],
+    cidade: "Natal",
+    regiao: "Rio Grande do Norte",
+    lat: -5.8236,
+    lng: -35.2306,
+  },
+  {
+    nome: "Estádio Bezerrão",
+    aliases: ["bezerrao", "bezerrão"],
+    cidade: "Gama",
+    regiao: "Distrito Federal",
+    lat: -15.9989,
+    lng: -48.0611,
+  },
+  {
+    nome: "Estádio Luso Brasileiro",
+    aliases: ["luso brasileiro"],
+    cidade: "Rio de Janeiro",
+    regiao: "Rio de Janeiro",
+    lat: -22.8143,
+    lng: -43.1938,
+    fonte: "manual/confirmado (Ilha do Governador, casa da A.A Portuguesa - RJ)",
+  },
+  {
+    nome: "Estádio Proletário Guilherme da Silveira Filho (Moça Bonita)",
+    aliases: ["guilherme da silveira filho", "guilherme da silveira", "moca bonita", "moça bonita"],
+    cidade: "Rio de Janeiro",
+    regiao: "Rio de Janeiro",
+    lat: -22.8738,
+    lng: -43.4681,
+    fonte: "manual/confirmado (Rua Sul América 950, Bangu - casa do Bangu A.C)",
+  },
+  {
+    nome: "Estádio Comendador Souza (Canindé)",
+    aliases: ["caninde", "canindé", "comendador souza"],
+    cidade: "São Paulo",
+    regiao: "São Paulo",
+    lat: -23.5217,
+    lng: -46.6297,
+  },
+  {
+    nome: "Estádio Municipal Parque do Sabiá",
+    aliases: ["parque do sabia", "parque do sabiá"],
+    cidade: "Uberlândia",
+    regiao: "Minas Gerais",
+    lat: -18.9142,
+    lng: -48.2661,
+  },
+  {
+    nome: "Estádio Amigão",
+    aliases: ["amigao", "amigão"],
+    cidade: "Campina Grande",
+    regiao: "Paraíba",
+    lat: -7.2325,
+    lng: -35.8817,
+  },
+  {
+    nome: "Estádio Presidente Vargas",
+    aliases: ["presidente vargas"],
+    cidade: "Fortaleza",
+    regiao: "Ceará",
+    lat: -3.7431,
+    lng: -38.5406,
+  },
+  {
+    nome: "Estádio Municipal João Saldanha",
+    aliases: ["joao saldanha", "joão saldanha", "municipal joao saldanha"],
+    cidade: "Maricá",
+    regiao: "Rio de Janeiro",
+    lat: -22.9195,
+    lng: -42.8186,
+    fonte: "aproximado/cidade",
+  },
+  {
+    nome: "Estádio Nivaldo Pereira",
+    aliases: ["nivaldo pereira", "nivaldao", "nivaldão"],
+    cidade: "Nova Iguaçu",
+    regiao: "Rio de Janeiro",
+    lat: -22.7420,
+    lng: -43.4580,
+    fonte: "manual/confirmado (Rodovia Presidente Dutra 24500, Austin, Nova Iguaçu - casa do Univassouras Artsul FC)",
+  },
+  {
+    nome: "Estádio Jânio de Moraes (Laranjão)",
+    aliases: ["janio de moraes", "jânio de moraes", "laranjao", "laranjão"],
+    cidade: "Nova Iguaçu",
+    regiao: "Rio de Janeiro",
+    lat: -22.7556,
+    lng: -43.4603,
+    fonte: "aproximado/cidade",
+  },
+  {
+    nome: "Estádio Eduardo Guinle",
+    aliases: ["eduardo guinle"],
+    cidade: "Nova Friburgo",
+    regiao: "Rio de Janeiro",
+    lat: -22.2819,
+    lng: -42.5311,
+    fonte: "aproximado/cidade",
+  },
+  {
+    nome: "CT do Boavista",
+    aliases: ["ct do boavista", "boavista"],
+    cidade: "Saquarema",
+    regiao: "Rio de Janeiro",
+    lat: -22.9200,
+    lng: -42.5100,
+    fonte: "aproximado/cidade",
+  },
+  {
+    nome: "Estádio Marcelo Vieira",
+    aliases: ["marcelo vieira"],
+    cidade: "Maricá",
+    regiao: "Rio de Janeiro",
+    lat: -22.9195,
+    lng: -42.8186,
+    fonte: "aproximado/cidade",
+  },
+  {
+    nome: "Estádio Municipal do Trabalhador (SESI)",
+    aliases: ["municipal do trabalhador", "e. do sesi", "estadio do sesi"],
+    cidade: "Resende",
+    regiao: "Rio de Janeiro",
+    lat: -22.4705,
+    lng: -44.4509,
+    fonte: "aproximado/cidade",
+  },
+  {
+    nome: "Estádio Antônio Ferreira de Medeiros",
+    aliases: ["antonio ferreira de medeiros", "antônio ferreira de medeiros"],
+    cidade: "Cardoso Moreira",
+    regiao: "Rio de Janeiro",
+    lat: -21.5850,
+    lng: -41.4200,
+    fonte: "aproximado/cidade",
+  },
+  {
+    nome: "Estádio Giulite Coutinho (Edson Passos)",
+    aliases: ["giulite coutinho", "edson passos"],
+    cidade: "Mesquita",
+    regiao: "Rio de Janeiro",
+    lat: -22.7889,
+    lng: -43.4392,
+    fonte: "aproximado/cidade",
+  },
+  {
+    nome: "Estádio Ítalo Del Cima",
+    aliases: ["italo del cima", "ítalo del cima"],
+    cidade: "Rio de Janeiro",
+    regiao: "Rio de Janeiro",
+    lat: -22.9020,
+    lng: -43.5610,
+  },
+  {
+    nome: "Estádio Leônidas da Silva",
+    aliases: ["leonidas da silva", "leônidas da silva"],
+    cidade: "Rio de Janeiro",
+    regiao: "Rio de Janeiro",
+    lat: -22.8620,
+    lng: -43.2540,
+  },
+  {
+    nome: "Estádio Prefeito Ismael de Souza Leão do Sul",
+    aliases: ["ismael de souza", "leao do sul", "leão do sul"],
+    cidade: "Barra Mansa",
+    regiao: "Rio de Janeiro",
+    lat: -22.5439,
+    lng: -44.1739,
+    fonte: "manual/confirmado (Estrada Governador Chagas Freitas 2000, Colônia Santo Antônio, Barra Mansa)",
+  },
+  {
+    nome: "Estádio de Los Lários",
+    aliases: ["los larios", "los lários"],
+    cidade: "Duque de Caxias",
+    regiao: "Rio de Janeiro",
+    lat: -22.5782,
+    lng: -43.3078,
+    fonte: "manual/confirmado (Estrada Rio Douro 3855, Xerém, Duque de Caxias)",
+  },
+  {
+    nome: "Estádio Antônio Ferreira de Medeiros (Ferreirão)",
+    aliases: ["antonio ferreira de medeiros", "antônio ferreira de medeiros", "ferreirao", "ferreirão"],
+    cidade: "Cardoso Moreira",
+    regiao: "Rio de Janeiro",
+    lat: -21.5589,
+    lng: -41.5158,
+    fonte: "manual/aproximado (Cardoso Moreira, RJ)",
+  },
+  {
+    nome: "Estádio Alair Corrêa (Correão)",
+    aliases: ["alair correa", "alair corrêa", "correao", "correão"],
+    cidade: "Cabo Frio",
+    regiao: "Rio de Janeiro",
+    lat: -22.8794,
+    lng: -42.0186,
+    fonte: "manual/aproximado (Cabo Frio, RJ)",
+  },
+  {
+    nome: "Estádio Leônidas da Silva (Teixeira de Castro)",
+    aliases: ["leonidas da silva", "leônidas da silva", "teixeira de castro"],
+    cidade: "Rio de Janeiro",
+    regiao: "Rio de Janeiro",
+    lat: -22.8657,
+    lng: -43.2578,
+    fonte: "manual/aproximado (Bonsucesso, Rio de Janeiro)",
+  },
+  {
+    nome: "Estádio Paulo Paschoalino",
+    aliases: ["paulo paschoalino"],
+    cidade: "Ubá",
+    regiao: "Minas Gerais",
+    lat: -21.1206,
+    lng: -42.9434,
+    fonte: "manual/aproximado (cidade de Ubá)",
+  },
+  {
+    nome: "Estádio Flávio Pentagna Guimarães",
+    aliases: ["flavio pentagna guimaraes"],
+    cidade: "Contagem",
+    regiao: "Minas Gerais",
+    lat: -19.9317,
+    lng: -44.0536,
+    fonte: "manual/aproximado (cidade de Contagem)",
+  },
+  {
+    nome: "José Flávio de Carvalho",
+    aliases: ["jose flavio de carvalho"],
+    cidade: "Itaúna",
+    regiao: "Minas Gerais",
+    lat: -20.0714,
+    lng: -44.5789,
+    fonte: "manual/aproximado (cidade de Itaúna)",
+  },
+  {
+    nome: "Victor Andrade de Brito - Frimisa",
+    aliases: ["victor andrade de brito", "frimisa"],
+    cidade: "Santa Luzia",
+    regiao: "Minas Gerais",
+    lat: -19.7697,
+    lng: -43.8514,
+    fonte: "manual/aproximado (cidade de Santa Luzia)",
+  },
+  {
+    nome: "Estádio José dos Santos (Campo do DER)",
+    aliases: ["jose dos santos", "campo do der"],
+    cidade: "Oliveira",
+    regiao: "Minas Gerais",
+    lat: -20.6975,
+    lng: -44.8283,
+    fonte: "manual/aproximado (cidade de Oliveira)",
+  },
+  {
+    nome: "Arena Prime BH",
+    aliases: ["arena prime bh"],
+    cidade: "Belo Horizonte",
+    regiao: "Minas Gerais",
+    lat: -19.9167,
+    lng: -43.9345,
+    fonte: "manual/aproximado (cidade de Belo Horizonte)",
+  },
+  {
+    nome: "CT Credinor - North EC",
+    aliases: ["ct credinor", "north ec"],
+    cidade: "Montes Claros",
+    regiao: "Minas Gerais",
+    lat: -16.7350,
+    lng: -43.8617,
+    fonte: "manual/aproximado (cidade de Montes Claros)",
+  },
+  {
+    nome: "Instituto Bola Preta",
+    aliases: ["instituto bola preta"],
+    cidade: "Eloi Mendes",
+    regiao: "Minas Gerais",
+    lat: -21.6144,
+    lng: -45.5964,
+    fonte: "manual/aproximado (cidade de Elói Mendes)",
+  },
+  {
+    nome: "Radialista Mário Helênio",
+    aliases: ["mario helenio", "radialista mario helenio"],
+    cidade: "Juiz de Fora",
+    regiao: "Minas Gerais",
+    lat: -21.7642,
+    lng: -43.3467,
+    fonte: "manual/aproximado (cidade de Juiz de Fora)",
+  },
+  {
+    nome: "Campo do Durval de Barros",
+    aliases: ["durval de barros"],
+    cidade: "Ibirité",
+    regiao: "Minas Gerais",
+    lat: -20.0233,
+    lng: -44.0578,
+    fonte: "manual/aproximado (cidade de Ibirité)",
+  },
+  {
+    nome: "Estádio Engenheiro João Guido (Uberabão)",
+    aliases: ["engenheiro joao guido", "uberabao"],
+    cidade: "Uberaba",
+    regiao: "Minas Gerais",
+    lat: -19.7483,
+    lng: -47.9319,
+    fonte: "manual/aproximado (cidade de Uberaba)",
+  },
+  {
+    nome: "Estádio Castor Cifuentes (Alçapão do Bonfim)",
+    aliases: ["castor cifuentes", "alcapao do bonfim"],
+    cidade: "Nova Lima",
+    regiao: "Minas Gerais",
+    lat: -19.9861,
+    lng: -43.8467,
+    fonte: "manual/aproximado (cidade de Nova Lima)",
+  },
+  {
+    nome: "Estádio João Lamego Netto (Ipatingão)",
+    aliases: ["joao lamego netto", "ipatingao"],
+    cidade: "Ipatinga",
+    regiao: "Minas Gerais",
+    lat: -19.4683,
+    lng: -42.5367,
+    fonte: "manual/aproximado (cidade de Ipatinga)",
+  },
+  {
+    nome: "Pedro Alves do Nascimento",
+    aliases: ["pedro alves do nascimento"],
+    cidade: "Patrocínio",
+    regiao: "Minas Gerais",
+    lat: -18.9436,
+    lng: -46.9928,
+    fonte: "manual/aproximado (cidade de Patrocínio)",
+  },
+  {
+    nome: "Juca Pedro",
+    aliases: ["juca pedro"],
+    cidade: "Formiga",
+    regiao: "Minas Gerais",
+    lat: -20.4664,
+    lng: -45.4264,
+    fonte: "manual/aproximado (cidade de Formiga)",
+  },
+  {
+    nome: "Estádio Louis Ensch (Luisão)",
+    aliases: ["louis ensch", "louís ensch", "luisao"],
+    cidade: "Coronel Fabriciano",
+    regiao: "Minas Gerais",
+    lat: -19.5186,
+    lng: -42.6289,
+    fonte: "manual/aproximado (cidade de Coronel Fabriciano)",
+  },
+  {
+    nome: "Arena Morro das Pedras",
+    aliases: ["arena morro das pedras"],
+    cidade: "Belo Horizonte",
+    regiao: "Minas Gerais",
+    lat: -19.9167,
+    lng: -43.9345,
+    fonte: "manual/aproximado (cidade de Belo Horizonte)",
+  },
+  {
+    nome: "Toca da Raposa I",
+    aliases: ["toca da raposa"],
+    cidade: "Belo Horizonte",
+    regiao: "Minas Gerais",
+    lat: -19.9167,
+    lng: -43.9345,
+    fonte: "manual/aproximado (cidade de Belo Horizonte)",
+  },
+  {
+    nome: "Estádio Bela Vista F.C.",
+    aliases: ["bela vista fc"],
+    cidade: "Sete Lagoas",
+    regiao: "Minas Gerais",
+    lat: -19.4658,
+    lng: -44.2467,
+    fonte: "manual/aproximado (cidade de Sete Lagoas)",
+  },
+  {
+    nome: "Campo do Real",
+    aliases: ["campo do real"],
+    cidade: "Caeté",
+    regiao: "Minas Gerais",
+    lat: -19.8767,
+    lng: -43.6739,
+    fonte: "manual/aproximado (cidade de Caeté)",
+  },
+  {
+    nome: "Campo do Alvorada",
+    aliases: ["campo do alvorada"],
+    cidade: "Belo Horizonte",
+    regiao: "Minas Gerais",
+    lat: -19.9167,
+    lng: -43.9345,
+    fonte: "manual/aproximado (cidade de Belo Horizonte)",
+  },
+  {
+    nome: "Arena TCM Novo Cristina",
+    aliases: ["arena tcm novo cristina", "tcm novo cristina"],
+    cidade: "Betim",
+    regiao: "Minas Gerais",
+    lat: -19.9678,
+    lng: -44.1983,
+    fonte: "manual/aproximado (cidade de Betim)",
+  },
+  {
+    nome: "Estádio Neca da Cunha",
+    aliases: ["neca da cunha"],
+    cidade: "Prudente de Morais",
+    regiao: "Minas Gerais",
+    lat: -19.5011,
+    lng: -44.1531,
+    fonte: "manual/aproximado (cidade de Prudente de Morais)",
+  },
+  {
+    nome: "Estádio Dr. Luís Carlos Lobato",
+    aliases: ["luis carlos lobato", "luís carlos lobato"],
+    cidade: "Carmo da Mata",
+    regiao: "Minas Gerais",
+    lat: -20.1147,
+    lng: -44.9636,
+    fonte: "manual/aproximado (cidade de Carmo da Mata)",
+  },
+  {
+    nome: "Estádio Chico Marques",
+    aliases: ["chico marques"],
+    cidade: "Bom Despacho",
+    regiao: "Minas Gerais",
+    lat: -19.7386,
+    lng: -45.2517,
+    fonte: "manual/aproximado (cidade de Bom Despacho)",
+  },
+  {
+    nome: "Estádio Arthur Ferreira Campos",
+    aliases: ["arthur ferreira campos"],
+    cidade: "Mário Campos",
+    regiao: "Minas Gerais",
+    lat: -20.1114,
+    lng: -44.1861,
+    fonte: "manual/aproximado (cidade de Mário Campos)",
+  },
+  {
+    nome: "Campo do Barrinha",
+    aliases: ["campo do barrinha"],
+    cidade: "Viçosa",
+    regiao: "Minas Gerais",
+    lat: -20.7546,
+    lng: -42.8814,
+    fonte: "manual/aproximado (cidade de Viçosa)",
+  },
+  {
+    nome: "Campo do Sport",
+    aliases: ["campo do sport"],
+    cidade: "Carmo do Cajuru",
+    regiao: "Minas Gerais",
+    lat: -20.1656,
+    lng: -44.7622,
+    fonte: "manual/aproximado (cidade de Carmo do Cajuru)",
+  },
+  {
+    nome: "Campo do Cruzeiro (Ituiutaba)",
+    aliases: ["campo do cruzeiro"],
+    cidade: "Ituiutaba",
+    regiao: "Minas Gerais",
+    lat: -18.9694,
+    lng: -49.4642,
+    fonte: "manual/aproximado (cidade de Ituiutaba)",
+  },
+  {
+    nome: "Estádio Deodoro Campolina",
+    aliases: ["deodoro campolina"],
+    cidade: "Esmeraldas",
+    regiao: "Minas Gerais",
+    lat: -19.7614,
+    lng: -44.3125,
+    fonte: "manual/aproximado (cidade de Esmeraldas)",
+  },
+  {
+    nome: "CSU Rio Acima",
+    aliases: ["csu rio acima", "csu -rio acima"],
+    cidade: "Rio Acima",
+    regiao: "Minas Gerais",
+    lat: -20.0736,
+    lng: -43.7867,
+    fonte: "manual/aproximado (cidade de Rio Acima)",
+  },
+  {
+    nome: "Estádio José Porfírio de Oliveira",
+    aliases: ["jose porfirio de oliveira"],
+    cidade: "Pará de Minas",
+    regiao: "Minas Gerais",
+    lat: -19.8611,
+    lng: -44.6089,
+    fonte: "manual/aproximado (cidade de Pará de Minas)",
+  },
+  {
+    nome: "Estádio Louís Ensch (João Monlevade)",
+    aliases: ["estadio louis ensch joao monlevade"],
+    cidade: "João Monlevade",
+    regiao: "Minas Gerais",
+    lat: -19.8100,
+    lng: -43.1706,
+    fonte: "manual/aproximado (cidade de João Monlevade)",
+  },
+  {
+    nome: "Estádio Emílio de Vasconcelos Costa",
+    aliases: ["emilio de vasconcelos costa"],
+    cidade: "Sete Lagoas",
+    regiao: "Minas Gerais",
+    lat: -19.4658,
+    lng: -44.2467,
+    fonte: "manual/aproximado (cidade de Sete Lagoas)",
+  },
+  {
+    nome: "Estádio Municipal José Vicente Moreira",
+    aliases: ["jose vicente moreira"],
+    cidade: "Mateus Leme",
+    regiao: "Minas Gerais",
+    lat: -19.9819,
+    lng: -44.4300,
+    fonte: "manual/aproximado (cidade de Mateus Leme)",
+  },
+  {
+    nome: "Arena Mineral do Brasil",
+    aliases: ["arena mineral do brasil"],
+    cidade: "Brumadinho",
+    regiao: "Minas Gerais",
+    lat: -20.1436,
+    lng: -44.2011,
+    fonte: "manual/aproximado (cidade de Brumadinho)",
+  },
+  {
+    nome: "Arena Colorado",
+    aliases: ["arena colorado"],
+    cidade: "Ibirité",
+    regiao: "Minas Gerais",
+    lat: -20.0233,
+    lng: -44.0578,
+    fonte: "manual/aproximado (cidade de Ibirité)",
+  },
+  {
+    nome: "Campo do Alvorada (São José da Lapa)",
+    aliases: ["campo do alvorada sao jose da lapa"],
+    cidade: "São José da Lapa",
+    regiao: "Minas Gerais",
+    lat: -19.6564,
+    lng: -43.9789,
+    fonte: "manual/aproximado (cidade de São José da Lapa)",
+  },
+  {
+    nome: "Estádio Miguel Arcanjo dos Campos (Miguelão)",
+    aliases: ["miguel arcanjo dos campos", "miguelao"],
+    cidade: "Abaeté",
+    regiao: "Minas Gerais",
+    lat: -19.1547,
+    lng: -45.4453,
+    fonte: "manual/aproximado (cidade de Abaeté)",
+  },
+  {
+    nome: "Estádio Dr. Lindolfo Gonçalves Martins",
+    aliases: ["lindolfo goncalves martins"],
+    cidade: "Belmiro Braga",
+    regiao: "Minas Gerais",
+    lat: -21.6497,
+    lng: -43.3489,
+    fonte: "manual/aproximado (cidade de Belmiro Braga)",
+  },
+  {
+    nome: "Estádio Prefeito Genival Alves Ramalho (Campo da Barra)",
+    aliases: ["genival alves ramalho", "campo da barra"],
+    cidade: "Ouro Preto",
+    regiao: "Minas Gerais",
+    lat: -20.3856,
+    lng: -43.5039,
+    fonte: "manual/aproximado (cidade de Ouro Preto)",
+  },
+  {
+    nome: "Estádio José Nunes de Sá",
+    aliases: ["jose nunes de sa"],
+    cidade: "Itabira",
+    regiao: "Minas Gerais",
+    lat: -19.6178,
+    lng: -43.2258,
+    fonte: "manual/aproximado (cidade de Itabira)",
+  },
+  {
+    nome: "Estádio José Mammoud Abbas (Mamudão)",
+    aliases: ["jose mammoud abbas", "mamudao"],
+    cidade: "Governador Valadares",
+    regiao: "Minas Gerais",
+    lat: -18.8511,
+    lng: -41.9494,
+    fonte: "manual/aproximado (cidade de Governador Valadares)",
+  },
+  {
+    nome: "Estádio Bernardo Rubinger de Queiroz",
+    aliases: ["bernardo rubinger de queiroz"],
+    cidade: "Patos de Minas",
+    regiao: "Minas Gerais",
+    lat: -18.5789,
+    lng: -46.5183,
+    fonte: "manual/aproximado (cidade de Patos de Minas)",
+  },
+  {
+    nome: "Arena Nova Pampulha",
+    aliases: ["arena nova pampulha"],
+    cidade: "Vespasiano",
+    regiao: "Minas Gerais",
+    lat: -19.6922,
+    lng: -43.9236,
+    fonte: "manual/aproximado (cidade de Vespasiano)",
+  },
+  {
+    nome: "Estádio Soares de Azevedo",
+    aliases: ["soares de azevedo"],
+    cidade: "Muriaé",
+    regiao: "Minas Gerais",
+    lat: -21.1306,
+    lng: -42.3664,
+    fonte: "manual/aproximado (cidade de Muriaé)",
+  },
+  {
+    nome: "Estádio Joseph Lambert",
+    aliases: ["joseph lambert"],
+    cidade: "Visconde do Rio Branco",
+    regiao: "Minas Gerais",
+    lat: -21.0031,
+    lng: -42.8378,
+    fonte: "manual/aproximado (cidade de Visconde do Rio Branco)",
+  },
+  {
+    nome: "Estádio Flausino Moreira da Silva",
+    aliases: ["flausino moreira da silva"],
+    cidade: "Raposos",
+    regiao: "Minas Gerais",
+    lat: -19.9683,
+    lng: -43.8047,
+    fonte: "manual/aproximado (cidade de Raposos)",
+  },
+  {
+    nome: "Arena do Jacaré (Joaquim Henrique Nogueira)",
+    aliases: ["joaquim henrique nogueira", "arena do jacare"],
+    cidade: "Sete Lagoas",
+    regiao: "Minas Gerais",
+    lat: -19.4658,
+    lng: -44.2467,
+    fonte: "manual/aproximado (cidade de Sete Lagoas)",
+  },
+  {
+    nome: "Estádio Ilvo Marani",
+    aliases: ["ilvo marani"],
+    cidade: "Vespasiano",
+    regiao: "Minas Gerais",
+    lat: -19.6922,
+    lng: -43.9236,
+    fonte: "manual/aproximado (cidade de Vespasiano)",
+  },
+  {
+    nome: "Estádio Olavo Bilac de Resende",
+    aliases: ["olavo bilac de resende"],
+    cidade: "São Gotardo",
+    regiao: "Minas Gerais",
+    lat: -19.3128,
+    lng: -46.0464,
+    fonte: "manual/aproximado (cidade de São Gotardo)",
+  },
+  {
+    nome: "Estádio Dr. Ronaldo Junqueira (Ronaldão)",
+    aliases: ["ronaldo junqueira", "ronaldao"],
+    cidade: "Poços de Caldas",
+    regiao: "Minas Gerais",
+    lat: -21.7878,
+    lng: -46.5619,
+    fonte: "manual/aproximado (cidade de Poços de Caldas)",
+  },
+  {
+    nome: "Arena SICOOB Divicred",
+    aliases: ["arena sicoob divicred"],
+    cidade: "Divinópolis",
+    regiao: "Minas Gerais",
+    lat: -20.1389,
+    lng: -44.8836,
+    fonte: "manual/aproximado (cidade de Divinópolis)",
+  },
+  {
+    nome: "Estádio Israel Pinheiro",
+    aliases: ["israel pinheiro"],
+    cidade: "Itabira",
+    regiao: "Minas Gerais",
+    lat: -19.6178,
+    lng: -43.2258,
+    fonte: "manual/aproximado (cidade de Itabira)",
+  },
+  {
+    nome: "Cidade do Galo",
+    aliases: ["cidade do galo"],
+    cidade: "Vespasiano",
+    regiao: "Minas Gerais",
+    lat: -19.6922,
+    lng: -43.9236,
+    fonte: "manual/aproximado (CT do Atlético-MG, Vespasiano)",
+  },
+  {
+    nome: "Estádio Dr. Adilson Machado de Farias",
+    aliases: ["adilson machado de farias"],
+    cidade: "Itabirinha",
+    regiao: "Minas Gerais",
+    lat: -18.6047,
+    lng: -41.5811,
+    fonte: "manual/aproximado (cidade de Itabirinha)",
+  },
+  {
+    nome: "Arena URBSAN",
+    aliases: ["arena urbsan"],
+    cidade: "Betim",
+    regiao: "Minas Gerais",
+    lat: -19.9678,
+    lng: -44.1983,
+    fonte: "manual/aproximado (cidade de Betim)",
+  },
+  {
+    nome: "Complexo do Boston City I",
+    aliases: ["boston city i", "complexo do boston city"],
+    cidade: "Manhuaçu",
+    regiao: "Minas Gerais",
+    lat: -20.2586,
+    lng: -42.0281,
+    fonte: "manual/aproximado (cidade de Manhuaçu)",
+  },
+  {
+    nome: "Complexo Esportivo Bonfim",
+    aliases: ["complexo esportivo bonfim"],
+    cidade: "São João Del Rei",
+    regiao: "Minas Gerais",
+    lat: -21.1356,
+    lng: -44.2617,
+    fonte: "manual/aproximado (cidade de São João Del Rei)",
+  },
+  {
+    nome: "CT Ninho do Periquito",
+    aliases: ["ninho do periquito"],
+    cidade: "Uberlândia",
+    regiao: "Minas Gerais",
+    lat: -18.9186,
+    lng: -48.2772,
+    fonte: "manual/aproximado (cidade de Uberlândia)",
+  },
+  {
+    nome: "Estádio Lanari Júnior",
+    aliases: ["lanari junior"],
+    cidade: "Ipatinga",
+    regiao: "Minas Gerais",
+    lat: -19.4683,
+    lng: -42.5367,
+    fonte: "manual/aproximado (cidade de Ipatinga)",
+  },
+  {
+    nome: "Campo do Botafogo (Matozinhos)",
+    aliases: ["campo do botafogo matozinhos"],
+    cidade: "Matozinhos",
+    regiao: "Minas Gerais",
+    lat: -19.5578,
+    lng: -44.1147,
+    fonte: "manual/aproximado (cidade de Matozinhos)",
+  },
+  {
+    nome: "CT Athletic (São João Del Rei)",
+    aliases: ["ct athletic"],
+    cidade: "São João Del Rei",
+    regiao: "Minas Gerais",
+    lat: -21.1356,
+    lng: -44.2617,
+    fonte: "manual/aproximado (cidade de São João Del Rei)",
+  },
+  {
+    nome: "Estádio Didi Gouveia",
+    aliases: ["didi gouveia"],
+    cidade: "São Joaquim de Bicas",
+    regiao: "Minas Gerais",
+    lat: -20.0392,
+    lng: -44.3078,
+    fonte: "manual/aproximado (cidade de São Joaquim de Bicas)",
+  },
+  {
+    nome: "Estádio Cassimiro de Abreu",
+    aliases: ["cassimiro de abreu"],
+    cidade: "Montes Claros",
+    regiao: "Minas Gerais",
+    lat: -16.7350,
+    lng: -43.8617,
+    fonte: "manual/aproximado (cidade de Montes Claros)",
+  },
+  {
+    nome: "Estádio Fausto Alvim",
+    aliases: ["fausto alvim"],
+    cidade: "Araxá",
+    regiao: "Minas Gerais",
+    lat: -19.5928,
+    lng: -46.9408,
+    fonte: "manual/aproximado (cidade de Araxá)",
+  },
 
-let currentLang = localStorage.getItem("jogosChileLang") || "pt";
-let activePeriodDays = 3; // "Próximos 3 dias" selecionado por padrão ao carregar
-let showAllTeamMode = false;
+  /* ===================================================================
+     Paraná — Terceira Divisão (Terceirona) 2026. Coordenadas em nível de
+     cidade (aproximado, mesma convenção do restante do arquivo).
+     =================================================================== */
+  {
+    nome: "Estádio José Garbelini",
+    aliases: ["jose garbelini"],
+    cidade: "Cambé",
+    regiao: "Paraná",
+    lat: -23.2766,
+    lng: -51.2798,
+    fonte: "manual/aproximado (cidade de Cambé)",
+  },
+  {
+    nome: "Estádio Atílio Gionédis",
+    aliases: ["atilio gionedis"],
+    cidade: "Campo Largo",
+    regiao: "Paraná",
+    lat: -25.4525,
+    lng: -49.5290,
+    fonte: "manual/aproximado (cidade de Campo Largo)",
+  },
+  {
+    nome: "Estádio 14 de Dezembro",
+    aliases: ["14 de dezembro"],
+    cidade: "Toledo",
+    regiao: "Paraná",
+    lat: -24.7246,
+    lng: -53.7412,
+    fonte: "manual/aproximado (cidade de Toledo, PR - Oeste Brasil FC)",
+  },
+  {
+    nome: "Estádio Edison Carlos Schramm",
+    aliases: ["edison carlos schramm"],
+    cidade: "São Mateus do Sul",
+    regiao: "Paraná",
+    lat: -25.8677,
+    lng: -50.3840,
+    fonte: "manual/aproximado (cidade de São Mateus do Sul)",
+  },
 
-const els = {
-  totalJogos: document.getElementById("totalJogos"),
-  totalNoMapa: document.getElementById("totalNoMapa"),
-  totalCidades: document.getElementById("totalCidades"),
-  ultimaAtualizacao: document.getElementById("ultimaAtualizacao"),
-  filtroPais: document.getElementById("filtroPais"),
-  filtroCompeticao: document.getElementById("filtroCompeticao"),
-  filtroTime: document.getElementById("filtroTime"),
-  filtroRegiao: document.getElementById("filtroRegiao"),
-  filtroCidade: document.getElementById("filtroCidade"),
-  raioWrap: document.getElementById("raioWrap"),
-  raioLabelTexto: document.getElementById("raioLabelTexto"),
-  filtroRaio: document.getElementById("filtroRaio"),
-  raioValorTexto: document.getElementById("raioValorTexto"),
-  filtroData: document.getElementById("filtroData"),
-  busca: document.getElementById("busca"),
-  hojeBtn: document.getElementById("hojeBtn"),
-  proximos3Btn: document.getElementById("proximos3Btn"),
-  proximos7Btn: document.getElementById("proximos7Btn"),
-  proximos15Btn: document.getElementById("proximos15Btn"),
-  proximos30Btn: document.getElementById("proximos30Btn"),
-  proximos60Btn: document.getElementById("proximos60Btn"),
-  proximos180Btn: document.getElementById("proximos180Btn"),
-  todosDoTimeBtn: document.getElementById("todosDoTimeBtn"),
-  limparBtn: document.getElementById("limparBtn"),
-  semMapaBtn: document.getElementById("semMapaBtn"),
-  calendario: document.getElementById("calendario"),
-  contadorLista: document.getElementById("contadorLista"),
-  mapStatus: document.getElementById("mapStatus"),
-  periodoAtivo: document.getElementById("periodoAtivo"),
-  timeModoAtivo: document.getElementById("timeModoAtivo"),
-  ptBtn: document.getElementById("ptBtn"),
-  esBtn: document.getElementById("esBtn"),
-};
+  /* ===================================================================
+     Rio Grande do Sul — Gauchão / Copa FGF / Recopa (adicionados na
+     auditoria de estádios FGF). Coordenadas em nível de cidade
+     (aproximado), mesma convenção do resto do arquivo.
+     =================================================================== */
+  {
+    nome: "Estádio Eucaliptos",
+    aliases: ["eucaliptos"],
+    cidade: "Santa Cruz do Sul",
+    regiao: "Rio Grande do Sul",
+    lat: -29.7175,
+    lng: -52.4258,
+    fonte: "manual/aproximado (cidade de Santa Cruz do Sul — mandante Avenida)",
+  },
+  {
+    nome: "Estádio Estrela D'Alva",
+    aliases: ["estrela d'alva", "estrela dalva"],
+    cidade: "Bagé",
+    regiao: "Rio Grande do Sul",
+    lat: -31.3311,
+    lng: -54.1069,
+    fonte: "manual/aproximado (cidade de Bagé — mandante Guarany)",
+  },
+  {
+    nome: "Estádio Francisco Novelletto Neto",
+    aliases: ["francisco novelletto", "francisco novelletto neto"],
+    cidade: "Porto Alegre",
+    regiao: "Rio Grande do Sul",
+    lat: -30.0225,
+    lng: -51.2211,
+    fonte: "manual/aproximado (cidade de Porto Alegre — mandante Monsoon/Gramadense)",
+  },
+  {
+    nome: "Estádio 19 de Outubro",
+    aliases: ["19 de outubro"],
+    cidade: "Ijuí",
+    regiao: "Rio Grande do Sul",
+    lat: -28.3900,
+    lng: -53.9150,
+    fonte: "manual/aproximado (cidade de Ijuí — mandante São Luiz)",
+  },
+  {
+    nome: "Estádio Colosso da Lagoa",
+    aliases: ["colosso da lagoa"],
+    cidade: "Erechim",
+    regiao: "Rio Grande do Sul",
+    lat: -27.6350,
+    lng: -52.2739,
+    fonte: "manual/aproximado (cidade de Erechim — mandante Ypiranga)",
+  },
+  {
+    nome: "Estádio do Vale",
+    aliases: ["estádio do vale", "estadio do vale"],
+    cidade: "Novo Hamburgo",
+    regiao: "Rio Grande do Sul",
+    lat: -29.6783,
+    lng: -51.1300,
+    fonte: "manual/aproximado (cidade de Novo Hamburgo — mandante Novo Hamburgo)",
+  },
+  {
+    nome: "Estádio Bento Freitas",
+    aliases: ["bento freitas"],
+    cidade: "Pelotas",
+    regiao: "Rio Grande do Sul",
+    lat: -31.7654,
+    lng: -52.3376,
+    fonte: "manual/aproximado (cidade de Pelotas — mandante Brasil-Pel)",
+  },
 
-let jogosOriginais = [];
-let jogosEnriquecidos = [];
-let markersLayer;
-let semMapaAtivo = false;
+  /* ===================================================================
+     Estádios de CBF (Série B/C/D, Copa do Brasil) faltantes, adicionados
+     na auditoria de coordenadas do dataset real.
+     =================================================================== */
+  {
+    nome: "Estádio Antônio Accioly",
+    aliases: ["antonio accioly", "antônio accioly"],
+    cidade: "Goiânia",
+    regiao: "Goiás",
+    lat: -16.6799,
+    lng: -49.2550,
+    fonte: "manual/aproximado (cidade de Goiânia — mandante Vila Nova)",
+  },
+  {
+    nome: "Arena Barra",
+    aliases: ["arena barra"],
+    cidade: "Barra Velha",
+    regiao: "Santa Catarina",
+    lat: -26.4886,
+    lng: -48.6844,
+    fonte: "manual/aproximado (cidade de Barra Velha — mandante Barra FC)",
+  },
+  {
+    nome: "Estádio Major Levy Sobrinho",
+    aliases: ["major levi", "major levy"],
+    cidade: "Limeira",
+    regiao: "São Paulo",
+    lat: -22.5646,
+    lng: -47.4017,
+    fonte: "manual/aproximado (cidade de Limeira — mandante Inter de Limeira)",
+  },
+  {
+    nome: "Estádio Novelli Júnior",
+    aliases: ["novelli", "novelli junior", "novelli júnior"],
+    cidade: "Itu",
+    regiao: "São Paulo",
+    lat: -23.2634,
+    lng: -47.2992,
+    fonte: "manual/aproximado (cidade de Itu — mandante Ituano)",
+  },
+  {
+    nome: "Estádio Ismael Benigno",
+    aliases: ["ismael benigno"],
+    cidade: "Manaus",
+    regiao: "Amazonas",
+    lat: -3.1190,
+    lng: -60.0217,
+    fonte: "manual/aproximado (cidade de Manaus)",
+  },
+  {
+    nome: "Estádio Coaracy da Mata Fonseca",
+    aliases: ["coaracy fonseca", "coaracy da mata fonseca"],
+    cidade: "Arapiraca",
+    regiao: "Alagoas",
+    lat: -9.7519,
+    lng: -36.6611,
+    fonte: "manual/aproximado (cidade de Arapiraca — mandante ASA)",
+  },
+  {
+    nome: "Estádio Barão de Serra Negra",
+    aliases: ["barao da serra", "barão da serra", "barao de serra negra", "barão de serra negra"],
+    cidade: "Piracicaba",
+    regiao: "São Paulo",
+    lat: -22.7253,
+    lng: -47.6492,
+    fonte: "manual/aproximado (cidade de Piracicaba — mandante XV de Piracicaba)",
+  },
+  {
+    nome: "Estádio Jonas Duarte",
+    aliases: ["jonas duarte"],
+    cidade: "Anápolis",
+    regiao: "Goiás",
+    lat: -16.3285,
+    lng: -48.9534,
+    fonte: "manual/aproximado (cidade de Anápolis)",
+  },
+  {
+    nome: "Estádio Etelvino Mendonça",
+    aliases: ["etelvino", "etelvino mendonca", "etelvino mendonça"],
+    cidade: "Itabaiana",
+    regiao: "Sergipe",
+    lat: -10.6853,
+    lng: -37.4222,
+    fonte: "manual/aproximado (cidade de Itabaiana — mandante Olímpico de Itabaiana)",
+  },
+  {
+    nome: "Estádio Municipal Carlos Zamith",
+    aliases: ["carlos zamith"],
+    cidade: "Manaus",
+    regiao: "Amazonas",
+    lat: -3.1190,
+    lng: -60.0217,
+    fonte: "manual/aproximado (cidade de Manaus)",
+  },
 
-const chileBounds = [
-  [-56.0, -76.5],
-  [-17.0, -66.0],
+  /* ===================================================================
+     Pará — FPF-PA (Federação Paraense de Futebol). Extraído de
+     https://www.fpfpara.com.br/estadios (98 estádios cadastrados).
+     Coordenadas em nível de cidade (aproximado, mesma convenção do
+     resto do arquivo).
+     =================================================================== */
+    {
+    nome: "Estádio José Raimundo Roseno Araújo",
+    aliases: ["estadio jose raimundo roseno araujo"],
+    cidade: "Parauapebas",
+    regiao: "Pará",
+    lat: -6.0678,
+    lng: -49.9037,
+    fonte: "manual/aproximado (cidade de Parauapebas) - fpfpara.com.br/estadio/6",
+  },
+  {
+    nome: "Agostinho do Livramento Silva",
+    aliases: ["agostinho do livramento silva"],
+    cidade: "Vigia",
+    regiao: "Pará",
+    lat: -0.8612,
+    lng: -48.1386,
+    fonte: "manual/aproximado (cidade de Vigia) - fpfpara.com.br/estadio/45",
+  },
+  {
+    nome: "Antonio Firmino Bento",
+    aliases: ["antonio firmino bento"],
+    cidade: "Garrafão do Norte",
+    regiao: "Pará",
+    lat: -1.9299,
+    lng: -47.0505,
+    fonte: "manual/aproximado (cidade de Garrafão do Norte) - fpfpara.com.br/estadio/39",
+  },
+  {
+    nome: "Arena",
+    aliases: ["arena"],
+    cidade: "Santa Bárbara do Pará",
+    regiao: "Pará",
+    lat: -1.2261,
+    lng: -48.2951,
+    fonte: "manual/aproximado (cidade de Santa Bárbara do Pará) - fpfpara.com.br/estadio/28",
+  },
+  {
+    nome: "Arena Itacaiúnas",
+    aliases: ["arena itacaiunas"],
+    cidade: "Marabá",
+    regiao: "Pará",
+    lat: -5.3807,
+    lng: -49.1327,
+    fonte: "manual/aproximado (cidade de Marabá) - fpfpara.com.br/estadio/88",
+  },
+  {
+    nome: "Arena Marajó",
+    aliases: ["arena marajo"],
+    cidade: "Breves",
+    regiao: "Pará",
+    lat: -1.6804,
+    lng: -50.4791,
+    fonte: "manual/aproximado (cidade de Breves) - fpfpara.com.br/estadio/92",
+  },
+  {
+    nome: "Associação Surucuá",
+    aliases: ["associacao surucua"],
+    cidade: "Capitão Poço",
+    regiao: "Pará",
+    lat: -1.7478,
+    lng: -47.0629,
+    fonte: "manual/aproximado (cidade de Capitão Poço) - fpfpara.com.br/estadio/57",
+  },
+  {
+    nome: "Campo Arraial do Caeté",
+    aliases: ["campo arraial do caete"],
+    cidade: "Ourém",
+    regiao: "Pará",
+    lat: -1.5417,
+    lng: -47.1126,
+    fonte: "manual/aproximado (cidade de Ourém) - fpfpara.com.br/estadio/99",
+  },
+  {
+    nome: "Campo Associação Beneficiente",
+    aliases: ["campo associacao beneficiente"],
+    cidade: "Capitão Poço",
+    regiao: "Pará",
+    lat: -1.7478,
+    lng: -47.0629,
+    fonte: "manual/aproximado (cidade de Capitão Poço) - fpfpara.com.br/estadio/100",
+  },
+  {
+    nome: "Campo Associação dos Compadres",
+    aliases: ["campo associacao dos compadres"],
+    cidade: "Abaetetuba",
+    regiao: "Pará",
+    lat: -1.7218,
+    lng: -48.8788,
+    fonte: "manual/aproximado (cidade de Abaetetuba) - fpfpara.com.br/estadio/77",
+  },
+  {
+    nome: "Campo Associação São João",
+    aliases: ["campo associacao sao joao"],
+    cidade: "Capitão Poço",
+    regiao: "Pará",
+    lat: -1.7478,
+    lng: -47.0629,
+    fonte: "manual/aproximado (cidade de Capitão Poço) - fpfpara.com.br/estadio/75",
+  },
+  {
+    nome: "Campo Beto Torres",
+    aliases: ["campo beto torres"],
+    cidade: "Igarapé-Açu",
+    regiao: "Pará",
+    lat: -1.1361,
+    lng: -47.6174,
+    fonte: "manual/aproximado (cidade de Igarapé-Açu) - fpfpara.com.br/estadio/85",
+  },
+  {
+    nome: "Campo Botafogo das Lavras",
+    aliases: ["campo botafogo das lavras"],
+    cidade: "Santarém",
+    regiao: "Pará",
+    lat: -2.4385,
+    lng: -54.6996,
+    fonte: "manual/aproximado (cidade de Santarém) - fpfpara.com.br/estadio/96",
+  },
+  {
+    nome: "Campo da Agrovila Calúcia",
+    aliases: ["campo da agrovila calucia"],
+    cidade: "Castanhal",
+    regiao: "Pará",
+    lat: -1.2980,
+    lng: -47.9167,
+    fonte: "manual/aproximado (cidade de Castanhal) - fpfpara.com.br/estadio/65",
+  },
+  {
+    nome: "Campo da Comunidade Jabuti",
+    aliases: ["campo da comunidade jabuti"],
+    cidade: "Juruti",
+    regiao: "Pará",
+    lat: -2.1635,
+    lng: -56.0889,
+    fonte: "manual/aproximado (cidade de Juruti) - fpfpara.com.br/estadio/60",
+  },
+  {
+    nome: "Campo da EMBRAPA",
+    aliases: ["campo da embrapa"],
+    cidade: "Tracuateua",
+    regiao: "Pará",
+    lat: -1.0743,
+    lng: -46.8981,
+    fonte: "manual/aproximado (cidade de Tracuateua) - fpfpara.com.br/estadio/55",
+  },
+  {
+    nome: "Campo da Vila Itabocal",
+    aliases: ["campo da vila itabocal"],
+    cidade: "Irituia",
+    regiao: "Pará",
+    lat: -1.7698,
+    lng: -47.4460,
+    fonte: "manual/aproximado (cidade de Irituia) - fpfpara.com.br/estadio/97",
+  },
+  {
+    nome: "Campo Danilo Maia",
+    aliases: ["campo danilo maia"],
+    cidade: "Santarém",
+    regiao: "Pará",
+    lat: -2.4385,
+    lng: -54.6996,
+    fonte: "manual/aproximado (cidade de Santarém) - fpfpara.com.br/estadio/54",
+  },
+  {
+    nome: "Campo do BCAF",
+    aliases: ["campo do bcaf"],
+    cidade: "Ourém",
+    regiao: "Pará",
+    lat: -1.5417,
+    lng: -47.1126,
+    fonte: "manual/aproximado (cidade de Ourém) - fpfpara.com.br/estadio/101",
+  },
+  {
+    nome: "Campo do Bom Jardim",
+    aliases: ["campo do bom jardim"],
+    cidade: "Benevides",
+    regiao: "Pará",
+    lat: -1.3618,
+    lng: -48.2434,
+    fonte: "manual/aproximado (cidade de Benevides) - fpfpara.com.br/estadio/58",
+  },
+  {
+    nome: "Campo do Comercial",
+    aliases: ["campo do comercial"],
+    cidade: "Irituia",
+    regiao: "Pará",
+    lat: -1.7698,
+    lng: -47.4460,
+    fonte: "manual/aproximado (cidade de Irituia) - fpfpara.com.br/estadio/103",
+  },
+  {
+    nome: "Campo do Flamengo",
+    aliases: ["campo do flamengo"],
+    cidade: "Santarém",
+    regiao: "Pará",
+    lat: -2.4385,
+    lng: -54.6996,
+    fonte: "manual/aproximado (cidade de Santarém) - fpfpara.com.br/estadio/63",
+  },
+  {
+    nome: "Campo do Flamengo (Santa Isabel)",
+    aliases: ["campo do flamengo santa isabel"],
+    cidade: "Santa Isabel do Pará",
+    regiao: "Pará",
+    lat: -1.2978,
+    lng: -48.1566,
+    fonte: "manual/aproximado (cidade de Santa Isabel do Pará) - fpfpara.com.br/estadio/78",
+  },
+  {
+    nome: "Campo do Gavião Real",
+    aliases: ["campo do gaviao real"],
+    cidade: "Capitão Poço",
+    regiao: "Pará",
+    lat: -1.7478,
+    lng: -47.0629,
+    fonte: "manual/aproximado (cidade de Capitão Poço) - fpfpara.com.br/estadio/73",
+  },
+  {
+    nome: "Campo do Grêmio",
+    aliases: ["campo do gremio"],
+    cidade: "São Miguel do Guamá",
+    regiao: "Pará",
+    lat: -1.6131,
+    lng: -47.4784,
+    fonte: "manual/aproximado (cidade de São Miguel do Guamá) - fpfpara.com.br/estadio/86",
+  },
+  {
+    nome: "Campo do Independente (Santo Antônio do Tauá)",
+    aliases: ["campo do independente santo antonio do taua"],
+    cidade: "Santo Antônio do Tauá",
+    regiao: "Pará",
+    lat: -1.1522,
+    lng: -48.1314,
+    fonte: "manual/aproximado (cidade de Santo Antônio do Tauá) - fpfpara.com.br/estadio/59",
+  },
+  {
+    nome: "Campo do Independente (Terra Alta)",
+    aliases: ["campo do independente terra alta"],
+    cidade: "Terra Alta",
+    regiao: "Pará",
+    lat: -1.0296,
+    lng: -47.9004,
+    fonte: "manual/aproximado (cidade de Terra Alta) - fpfpara.com.br/estadio/95",
+  },
+  {
+    nome: "Campo do Juventude",
+    aliases: ["campo do juventude"],
+    cidade: "Mocajuba",
+    regiao: "Pará",
+    lat: -2.5831,
+    lng: -49.5042,
+    fonte: "manual/aproximado (cidade de Mocajuba) - fpfpara.com.br/estadio/49",
+  },
+  {
+    nome: "Campo do Murilo",
+    aliases: ["campo do murilo"],
+    cidade: "Maracanã",
+    regiao: "Pará",
+    lat: -0.7789,
+    lng: -47.4520,
+    fonte: "manual/aproximado (cidade de Maracanã) - fpfpara.com.br/estadio/91",
+  },
+  {
+    nome: "Campo do Olaria",
+    aliases: ["campo do olaria"],
+    cidade: "Santa Maria do Pará",
+    regiao: "Pará",
+    lat: -1.3539,
+    lng: -47.5712,
+    fonte: "manual/aproximado (cidade de Santa Maria do Pará) - fpfpara.com.br/estadio/30",
+  },
+  {
+    nome: "Campo do Recastel",
+    aliases: ["campo do recastel"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/80",
+  },
+  {
+    nome: "Campo do Santa Cruz",
+    aliases: ["campo do santa cruz"],
+    cidade: "Capanema",
+    regiao: "Pará",
+    lat: -1.2053,
+    lng: -47.1778,
+    fonte: "manual/aproximado (cidade de Capanema) - fpfpara.com.br/estadio/43",
+  },
+  {
+    nome: "Campo do São Bras - SMT",
+    aliases: ["campo do sao bras smt"],
+    cidade: "Santarém",
+    regiao: "Pará",
+    lat: -2.4385,
+    lng: -54.6996,
+    fonte: "manual/aproximado (cidade de Santarém) - fpfpara.com.br/estadio/51",
+  },
+  {
+    nome: "Campo do Tauá E. Clube",
+    aliases: ["campo do taua e clube"],
+    cidade: "Santo Antônio do Tauá",
+    regiao: "Pará",
+    lat: -1.1522,
+    lng: -48.1314,
+    fonte: "manual/aproximado (cidade de Santo Antônio do Tauá) - fpfpara.com.br/estadio/68",
+  },
+  {
+    nome: "Campo do Veterano",
+    aliases: ["campo do veterano"],
+    cidade: "Castanhal",
+    regiao: "Pará",
+    lat: -1.2980,
+    lng: -47.9167,
+    fonte: "manual/aproximado (cidade de Castanhal) - fpfpara.com.br/estadio/72",
+  },
+  {
+    nome: "Campo do Vila Nova",
+    aliases: ["campo do vila nova"],
+    cidade: "São Miguel do Guamá",
+    regiao: "Pará",
+    lat: -1.6131,
+    lng: -47.4784,
+    fonte: "manual/aproximado (cidade de São Miguel do Guamá) - fpfpara.com.br/estadio/67",
+  },
+  {
+    nome: "Campo dos Veteranos",
+    aliases: ["campo dos veteranos"],
+    cidade: "Igarapé-Açu",
+    regiao: "Pará",
+    lat: -1.1361,
+    lng: -47.6174,
+    fonte: "manual/aproximado (cidade de Igarapé-Açu) - fpfpara.com.br/estadio/87",
+  },
+  {
+    nome: "Campo Serenão",
+    aliases: ["campo serenao"],
+    cidade: "Augusto Corrêa",
+    regiao: "Pará",
+    lat: -1.0216,
+    lng: -46.6456,
+    fonte: "manual/aproximado (cidade de Augusto Corrêa) - fpfpara.com.br/estadio/82",
+  },
+  {
+    nome: "CEJU - Campo 1",
+    aliases: ["ceju campo 1"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/15",
+  },
+  {
+    nome: "CEJU - Campo 2",
+    aliases: ["ceju campo 2"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/22",
+  },
+  {
+    nome: "CEJU - Campo 3",
+    aliases: ["ceju campo 3"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/25",
+  },
+  {
+    nome: "CEJU - Campo 4",
+    aliases: ["ceju campo 4"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/83",
+  },
+  {
+    nome: "Centro Esportivo Estrela",
+    aliases: ["centro esportivo estrela"],
+    cidade: "Ananindeua",
+    regiao: "Pará",
+    lat: -1.3639,
+    lng: -48.3743,
+    fonte: "manual/aproximado (cidade de Ananindeua) - fpfpara.com.br/estadio/29",
+  },
+  {
+    nome: "Centro Esportivo Padre Expedito Machado",
+    aliases: ["centro esportivo padre expedito machado"],
+    cidade: "Bragança",
+    regiao: "Pará",
+    lat: -1.0613,
+    lng: -46.7826,
+    fonte: "manual/aproximado (cidade de Bragança) - fpfpara.com.br/estadio/16",
+  },
+  {
+    nome: "Centro Treinamento Desportiva",
+    aliases: ["centro treinamento desportiva"],
+    cidade: "Marituba",
+    regiao: "Pará",
+    lat: -1.3600,
+    lng: -48.3421,
+    fonte: "manual/aproximado (cidade de Marituba) - fpfpara.com.br/estadio/12",
+  },
+  {
+    nome: "Centro Treinamento do Clube do Remo",
+    aliases: ["centro treinamento do clube do remo"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/9",
+  },
+  {
+    nome: "Centro Treinamento Paraense",
+    aliases: ["centro treinamento paraense"],
+    cidade: "Marituba",
+    regiao: "Pará",
+    lat: -1.3600,
+    lng: -48.3421,
+    fonte: "manual/aproximado (cidade de Marituba) - fpfpara.com.br/estadio/17",
+  },
+  {
+    nome: "Complexo Esportivo (Parauapebas)",
+    aliases: ["complexo esportivo parauapebas"],
+    cidade: "Parauapebas",
+    regiao: "Pará",
+    lat: -6.0678,
+    lng: -49.9037,
+    fonte: "manual/aproximado (cidade de Parauapebas) - fpfpara.com.br/estadio/31",
+  },
+  {
+    nome: "Complexo Esportivo (Castanhal)",
+    aliases: ["complexo esportivo castanhal"],
+    cidade: "Castanhal",
+    regiao: "Pará",
+    lat: -1.2980,
+    lng: -47.9167,
+    fonte: "manual/aproximado (cidade de Castanhal) - fpfpara.com.br/estadio/37",
+  },
+  {
+    nome: "CT Arara Azul",
+    aliases: ["ct arara azul"],
+    cidade: "Santo Antônio do Tauá",
+    regiao: "Pará",
+    lat: -1.1522,
+    lng: -48.1314,
+    fonte: "manual/aproximado (cidade de Santo Antônio do Tauá) - fpfpara.com.br/estadio/90",
+  },
+  {
+    nome: "CT do Carajás",
+    aliases: ["ct do carajas"],
+    cidade: "Parauapebas",
+    regiao: "Pará",
+    lat: -6.0678,
+    lng: -49.9037,
+    fonte: "manual/aproximado (cidade de Parauapebas) - fpfpara.com.br/estadio/89",
+  },
+  {
+    nome: "CT do Paysandu",
+    aliases: ["ct do paysandu"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/94",
+  },
+  {
+    nome: "CT do São Francisco",
+    aliases: ["ct do sao francisco"],
+    cidade: "Santarém",
+    regiao: "Pará",
+    lat: -2.4385,
+    lng: -54.6996,
+    fonte: "manual/aproximado (cidade de Santarém) - fpfpara.com.br/estadio/62",
+  },
+  {
+    nome: "CT do Tapajós",
+    aliases: ["ct do tapajos"],
+    cidade: "Santarém",
+    regiao: "Pará",
+    lat: -2.4385,
+    lng: -54.6996,
+    fonte: "manual/aproximado (cidade de Santarém) - fpfpara.com.br/estadio/84",
+  },
+  {
+    nome: "E.M. O (Altamira)",
+    aliases: ["e m o altamira"],
+    cidade: "Altamira",
+    regiao: "Pará",
+    lat: -3.2041,
+    lng: -52.2100,
+    fonte: "manual/aproximado (cidade de Altamira) - fpfpara.com.br/estadio/26",
+  },
+  {
+    nome: "Estádio Mulatão",
+    aliases: ["estadio mulatao"],
+    cidade: "Jacundá",
+    regiao: "Pará",
+    lat: -4.4462,
+    lng: -49.1153,
+    fonte: "manual/aproximado (cidade de Jacundá) - fpfpara.com.br/estadio/38",
+  },
+  {
+    nome: "Estádio Fidelis Polaro",
+    aliases: ["estadio fidelis polaro"],
+    cidade: "Monte Alegre",
+    regiao: "Pará",
+    lat: -1.9977,
+    lng: -54.0724,
+    fonte: "manual/aproximado (cidade de Monte Alegre) - fpfpara.com.br/estadio/53",
+  },
+  {
+    nome: "Estádio Jaime Sena Pimentel",
+    aliases: ["estadio jaime sena pimentel"],
+    cidade: "Itupiranga",
+    regiao: "Pará",
+    lat: -5.1327,
+    lng: -49.3358,
+    fonte: "manual/aproximado (cidade de Itupiranga) - fpfpara.com.br/estadio/5",
+  },
+  {
+    nome: "Estádio Municipal Almir Gabriel",
+    aliases: ["estadio municipal almir gabriel"],
+    cidade: "Goianésia do Pará",
+    regiao: "Pará",
+    lat: -3.8434,
+    lng: -49.0974,
+    fonte: "manual/aproximado (cidade de Goianésia do Pará) - fpfpara.com.br/estadio/81",
+  },
+  {
+    nome: "Estádio (Viseu)",
+    aliases: ["estadio viseu"],
+    cidade: "Viseu",
+    regiao: "Pará",
+    lat: -1.1912,
+    lng: -46.1399,
+    fonte: "manual/aproximado (cidade de Viseu) - fpfpara.com.br/estadio/102",
+  },
+  {
+    nome: "Estádio Municipal João Cardoso",
+    aliases: ["estadio municipal joao cardoso"],
+    cidade: "Moju",
+    regiao: "Pará",
+    lat: -1.8899,
+    lng: -48.7668,
+    fonte: "manual/aproximado (cidade de Moju) - fpfpara.com.br/estadio/23",
+  },
+  {
+    nome: "Estádio Abelardo Conduru",
+    aliases: ["estadio abelardo conduru"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/13",
+  },
+  {
+    nome: "Estádio Arena do Município Verde",
+    aliases: ["estadio arena do municipio verde"],
+    cidade: "Paragominas",
+    regiao: "Pará",
+    lat: -3.0021,
+    lng: -47.3527,
+    fonte: "manual/aproximado (cidade de Paragominas) - fpfpara.com.br/estadio/18",
+  },
+  {
+    nome: "Estádio Begozão",
+    aliases: ["estadio begozao"],
+    cidade: "Benevides",
+    regiao: "Pará",
+    lat: -1.3618,
+    lng: -48.2434,
+    fonte: "manual/aproximado (cidade de Benevides) - fpfpara.com.br/estadio/40",
+  },
+  {
+    nome: "Estádio Dedecão",
+    aliases: ["estadio dedecao"],
+    cidade: "Belterra",
+    regiao: "Pará",
+    lat: -2.6361,
+    lng: -54.9374,
+    fonte: "manual/aproximado (cidade de Belterra) - fpfpara.com.br/estadio/76",
+  },
+  {
+    nome: "Estádio do ABC",
+    aliases: ["estadio do abc"],
+    cidade: "Castanhal",
+    regiao: "Pará",
+    lat: -1.2980,
+    lng: -47.9167,
+    fonte: "manual/aproximado (cidade de Castanhal) - fpfpara.com.br/estadio/47",
+  },
+  {
+    nome: "Estádio Edilson Abreu",
+    aliases: ["estadio edilson abreu"],
+    cidade: "Santa Isabel do Pará",
+    regiao: "Pará",
+    lat: -1.2978,
+    lng: -48.1566,
+    fonte: "manual/aproximado (cidade de Santa Isabel do Pará) - fpfpara.com.br/estadio/10",
+  },
+  {
+    nome: "Estádio Estação",
+    aliases: ["estadio estacao"],
+    cidade: "Tucumã",
+    regiao: "Pará",
+    lat: -6.7469,
+    lng: -51.1626,
+    fonte: "manual/aproximado (cidade de Tucumã) - fpfpara.com.br/estadio/93",
+  },
+  {
+    nome: "Estádio Estadual Jornalista Edgar Augusto Proença (Mangueirão)",
+    aliases: ["estadio estadual jornalista edgar augusto proenca mangueirao"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/3",
+  },
+  {
+    nome: "Estádio Evandro Almeida",
+    aliases: ["estadio evandro almeida"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/1",
+  },
+  {
+    nome: "Estádio Francisco Vasques",
+    aliases: ["estadio francisco vasques"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/4",
+  },
+  {
+    nome: "Estádio Geraldo Miguel",
+    aliases: ["estadio geraldo miguel"],
+    cidade: "Tucumã",
+    regiao: "Pará",
+    lat: -6.7469,
+    lng: -51.1626,
+    fonte: "manual/aproximado (cidade de Tucumã) - fpfpara.com.br/estadio/98",
+  },
+  {
+    nome: "Estádio Humberto Parente",
+    aliases: ["estadio humberto parente"],
+    cidade: "Abaetetuba",
+    regiao: "Pará",
+    lat: -1.7218,
+    lng: -48.8788,
+    fonte: "manual/aproximado (cidade de Abaetetuba) - fpfpara.com.br/estadio/21",
+  },
+  {
+    nome: "Estádio Ipixunão",
+    aliases: ["estadio ipixunao"],
+    cidade: "Ipixuna do Pará",
+    regiao: "Pará",
+    lat: -2.5599,
+    lng: -47.5059,
+    fonte: "manual/aproximado (cidade de Ipixuna do Pará) - fpfpara.com.br/estadio/48",
+  },
+  {
+    nome: "Estádio Laurival Cunha",
+    aliases: ["estadio laurival cunha"],
+    cidade: "Barcarena",
+    regiao: "Pará",
+    lat: -1.5119,
+    lng: -48.6195,
+    fonte: "manual/aproximado (cidade de Barcarena) - fpfpara.com.br/estadio/66",
+  },
+  {
+    nome: "Estádio Lúcio Antunes",
+    aliases: ["estadio lucio antunes"],
+    cidade: "Bom Jesus do Tocantins",
+    regiao: "Pará",
+    lat: -5.0424,
+    lng: -48.6047,
+    fonte: "manual/aproximado (cidade de Bom Jesus do Tocantins) - fpfpara.com.br/estadio/36",
+  },
+  {
+    nome: "Estádio Leônidas Sodré de Castro (Curuzú)",
+    aliases: ["estadio leonidas sodre de castro curuzu"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/2",
+  },
+  {
+    nome: "Estádio Maximino Porpino Filho",
+    aliases: ["estadio maximino porpino filho"],
+    cidade: "Castanhal",
+    regiao: "Pará",
+    lat: -1.2980,
+    lng: -47.9167,
+    fonte: "manual/aproximado (cidade de Castanhal) - fpfpara.com.br/estadio/11",
+  },
+  {
+    nome: "Estádio Mourilo Macedo",
+    aliases: ["estadio mourilo macedo"],
+    cidade: "Curuçá",
+    regiao: "Pará",
+    lat: -0.7332,
+    lng: -47.8515,
+    fonte: "manual/aproximado (cidade de Curuçá) - fpfpara.com.br/estadio/70",
+  },
+  {
+    nome: "Estádio Municipal (Salinópolis)",
+    aliases: ["estadio municipal salinopolis"],
+    cidade: "Salinópolis",
+    regiao: "Pará",
+    lat: -0.6308,
+    lng: -47.3465,
+    fonte: "manual/aproximado (cidade de Salinópolis) - fpfpara.com.br/estadio/71",
+  },
+  {
+    nome: "Estádio Municipal Antônio Dias",
+    aliases: ["estadio municipal antonio dias"],
+    cidade: "Tucuruí",
+    regiao: "Pará",
+    lat: -3.7657,
+    lng: -49.6773,
+    fonte: "manual/aproximado (cidade de Tucuruí) - fpfpara.com.br/estadio/20",
+  },
+  {
+    nome: "Estádio Municipal Benezão",
+    aliases: ["estadio municipal benezao"],
+    cidade: "Canaã dos Carajás",
+    regiao: "Pará",
+    lat: -6.4966,
+    lng: -49.8776,
+    fonte: "manual/aproximado (cidade de Canaã dos Carajás) - fpfpara.com.br/estadio/42",
+  },
+  {
+    nome: "Estádio Municipal Colosso do Tapajós",
+    aliases: ["estadio municipal colosso do tapajos"],
+    cidade: "Santarém",
+    regiao: "Pará",
+    lat: -2.4385,
+    lng: -54.6996,
+    fonte: "manual/aproximado (cidade de Santarém) - fpfpara.com.br/estadio/19",
+  },
+  {
+    nome: "Estádio Municipal de Augusto Corrêa",
+    aliases: ["estadio municipal de augusto correa"],
+    cidade: "Augusto Corrêa",
+    regiao: "Pará",
+    lat: -1.0216,
+    lng: -46.6456,
+    fonte: "manual/aproximado (cidade de Augusto Corrêa) - fpfpara.com.br/estadio/79",
+  },
+  {
+    nome: "Estádio Municipal Emival Mendes",
+    aliases: ["estadio municipal emival mendes"],
+    cidade: "Marabá",
+    regiao: "Pará",
+    lat: -5.3807,
+    lng: -49.1327,
+    fonte: "manual/aproximado (cidade de Marabá) - fpfpara.com.br/estadio/61",
+  },
+  {
+    nome: "Estádio Municipal João Neco",
+    aliases: ["estadio municipal joao neco"],
+    cidade: "Tailândia",
+    regiao: "Pará",
+    lat: -2.9458,
+    lng: -48.9489,
+    fonte: "manual/aproximado (cidade de Tailândia) - fpfpara.com.br/estadio/74",
+  },
+  {
+    nome: "Estádio Municipal João Rabelo",
+    aliases: ["estadio municipal joao rabelo"],
+    cidade: "Santa Maria do Pará",
+    regiao: "Pará",
+    lat: -1.3539,
+    lng: -47.5712,
+    fonte: "manual/aproximado (cidade de Santa Maria do Pará) - fpfpara.com.br/estadio/44",
+  },
+  {
+    nome: "Estádio Municipal José Maria Araújo",
+    aliases: ["estadio municipal jose maria araujo"],
+    cidade: "Marapanim",
+    regiao: "Pará",
+    lat: -0.7147,
+    lng: -47.7034,
+    fonte: "manual/aproximado (cidade de Marapanim) - fpfpara.com.br/estadio/64",
+  },
+  {
+    nome: "Estádio Municipal José Rufino de Souza",
+    aliases: ["estadio municipal jose rufino de souza"],
+    cidade: "Capitão Poço",
+    regiao: "Pará",
+    lat: -1.7478,
+    lng: -47.0629,
+    fonte: "manual/aproximado (cidade de Capitão Poço) - fpfpara.com.br/estadio/24",
+  },
+  {
+    nome: "Estádio Municipal Leandro Pinheiro",
+    aliases: ["estadio municipal leandro pinheiro"],
+    cidade: "Capanema",
+    regiao: "Pará",
+    lat: -1.2053,
+    lng: -47.1778,
+    fonte: "manual/aproximado (cidade de Capanema) - fpfpara.com.br/estadio/69",
+  },
+  {
+    nome: "Estádio Municipal Manoel Ferreira Brito",
+    aliases: ["estadio municipal manoel ferreira brito"],
+    cidade: "Terra Alta",
+    regiao: "Pará",
+    lat: -1.0296,
+    lng: -47.9004,
+    fonte: "manual/aproximado (cidade de Terra Alta) - fpfpara.com.br/estadio/56",
+  },
+  {
+    nome: "Estádio Municipal Zinho de Oliveira",
+    aliases: ["estadio municipal zinho de oliveira"],
+    cidade: "Marabá",
+    regiao: "Pará",
+    lat: -5.3807,
+    lng: -49.1327,
+    fonte: "manual/aproximado (cidade de Marabá) - fpfpara.com.br/estadio/7",
+  },
+  {
+    nome: "Estádio Olímpico São Benedito",
+    aliases: ["estadio olimpico sao benedito"],
+    cidade: "Bragança",
+    regiao: "Pará",
+    lat: -1.0613,
+    lng: -46.7826,
+    fonte: "manual/aproximado (cidade de Bragança) - fpfpara.com.br/estadio/14",
+  },
+  {
+    nome: "Estádio Orfelino Martins Valente (Parque do Bacurau)",
+    aliases: ["estadio orfelino martins valente parque do bacurau"],
+    cidade: "Cametá",
+    regiao: "Pará",
+    lat: -2.2429,
+    lng: -49.4979,
+    fonte: "manual/aproximado (cidade de Cametá) - fpfpara.com.br/estadio/8",
+  },
+  {
+    nome: "Estádio Panterão",
+    aliases: ["estadio panterao"],
+    cidade: "Santarém",
+    regiao: "Pará",
+    lat: -2.4385,
+    lng: -54.6996,
+    fonte: "manual/aproximado (cidade de Santarém) - fpfpara.com.br/estadio/52",
+  },
+  {
+    nome: "Estádio São Sebastião",
+    aliases: ["estadio sao sebastiao"],
+    cidade: "Belém",
+    regiao: "Pará",
+    lat: -1.4554,
+    lng: -48.4898,
+    fonte: "manual/aproximado (cidade de Belém) - fpfpara.com.br/estadio/41",
+  },
+  {
+    nome: "Estádio Teófilo Alves da Silva",
+    aliases: ["estadio teofilo alves da silva"],
+    cidade: "Salinópolis",
+    regiao: "Pará",
+    lat: -0.6308,
+    lng: -47.3465,
+    fonte: "manual/aproximado (cidade de Salinópolis) - fpfpara.com.br/estadio/27",
+  },
+  {
+    nome: "Mário Couto",
+    aliases: ["mario couto"],
+    cidade: "Salinópolis",
+    regiao: "Pará",
+    lat: -0.6308,
+    lng: -47.3465,
+    fonte: "manual/aproximado (cidade de Salinópolis) - fpfpara.com.br/estadio/46",
+  },
+
+  /* ===================================================================
+     Espírito Santo — FES (Federação de Futebol do Estado do Espírito
+     Santo), extraído de https://futebolcapixaba.com/. Coordenadas em
+     nível de cidade (aproximado, mesma convenção do resto do arquivo).
+     =================================================================== */
+  {
+    nome: "Estádio Arsílio Caiado Ferreira",
+    aliases: ["estadio arsilio caiado ferreira"],
+    cidade: "Alegre",
+    regiao: "Espírito Santo",
+    lat: -20.758041,
+    lng: -41.538237,
+    fonte: "manual/aproximado (cidade de Alegre)",
+  },
+  {
+    nome: "CT Ninho da Coruja",
+    aliases: ["ct ninho da coruja"],
+    cidade: "Linhares",
+    regiao: "Espírito Santo",
+    lat: -19.394642,
+    lng: -40.064277,
+    fonte: "manual/aproximado (cidade de Linhares)",
+  },
+  {
+    nome: "CT Solvive",
+    aliases: ["ct solvive"],
+    cidade: "Vila Velha",
+    regiao: "Espírito Santo",
+    lat: -20.341705,
+    lng: -40.287458,
+    fonte: "manual/aproximado (cidade de Vila Velha)",
+  },
+  {
+    nome: "Estádio Camp Nou",
+    aliases: ["estadio camp nou", "camp nou – barcelona"],
+    cidade: "Serra",
+    regiao: "Espírito Santo",
+    lat: -20.121032,
+    lng: -40.307408,
+    fonte: "manual/aproximado (cidade de Serra)",
+  },
+  {
+    nome: "Campo do MEC",
+    aliases: ["campo do mec"],
+    cidade: "Serra",
+    regiao: "Espírito Santo",
+    lat: -20.121032,
+    lng: -40.307408,
+    fonte: "manual/aproximado (cidade de Serra)",
+  },
+  {
+    nome: "Campo do Manoel Plaza",
+    aliases: ["campo do manoel plaza"],
+    cidade: "Serra",
+    regiao: "Espírito Santo",
+    lat: -20.121032,
+    lng: -40.307408,
+    fonte: "manual/aproximado (cidade de Serra)",
+  },
+  {
+    nome: "Campo do Tiradentes",
+    aliases: ["campo do tiradentes"],
+    cidade: "Serra",
+    regiao: "Espírito Santo",
+    lat: -20.121032,
+    lng: -40.307408,
+    fonte: "manual/aproximado (cidade de Serra)",
+  },
+  {
+    nome: "Estádio Conilon",
+    aliases: ["estadio conilon"],
+    cidade: "Jaguaré",
+    regiao: "Espírito Santo",
+    lat: -18.907006,
+    lng: -40.0759,
+    fonte: "manual/aproximado (cidade de Jaguaré)",
+  },
+  {
+    nome: "Estádio Engenheiro Araripe",
+    aliases: ["estadio engenheiro araripe"],
+    cidade: "Cariacica",
+    regiao: "Espírito Santo",
+    lat: -20.263202,
+    lng: -40.416549,
+    fonte: "manual/aproximado (cidade de Cariacica)",
+  },
+  {
+    nome: "Estádio Arthur Gerhardt",
+    aliases: ["estadio arthur gerhardt"],
+    cidade: "Domingos Martins",
+    regiao: "Espírito Santo",
+    lat: -20.360306,
+    lng: -40.659425,
+    fonte: "manual/aproximado (cidade de Domingos Martins)",
+  },
+  {
+    nome: "Estádio Benedito Pereira",
+    aliases: ["estadio benedito pereira"],
+    cidade: "Vila Velha",
+    regiao: "Espírito Santo",
+    lat: -20.341705,
+    lng: -40.287458,
+    fonte: "manual/aproximado (cidade de Vila Velha)",
+  },
+  {
+    nome: "Estádio Coronel Paiva Gonçalves",
+    aliases: ["estadio coronel paiva goncalves"],
+    cidade: "Mimoso do Sul",
+    regiao: "Espírito Santo",
+    lat: -21.062777,
+    lng: -41.361529,
+    fonte: "manual/aproximado (cidade de Mimoso do Sul)",
+  },
+  {
+    nome: "Estádio Whilherme Tesch",
+    aliases: ["estadio whilherme tesch"],
+    cidade: "Laranja da Terra",
+    regiao: "Espírito Santo",
+    lat: -19.899399,
+    lng: -41.062141,
+    fonte: "manual/aproximado (cidade de Laranja da Terra)",
+  },
+  {
+    nome: "Estádio Gil Bernardes",
+    aliases: ["estadio gil bernardes"],
+    cidade: "Vila Velha",
+    regiao: "Espírito Santo",
+    lat: -20.341705,
+    lng: -40.287458,
+    fonte: "manual/aproximado (cidade de Vila Velha)",
+  },
+  {
+    nome: "Estádio João Soares de Moura Filho",
+    aliases: ["estadio joao soares de moura filho"],
+    cidade: "Pinheiros",
+    regiao: "Espírito Santo",
+    lat: -18.414068,
+    lng: -40.217142,
+    fonte: "manual/aproximado (cidade de Pinheiros)",
+  },
+  {
+    nome: "Estádio Justiniano de Mello e Silva",
+    aliases: ["estadio justiniano de mello e silva"],
+    cidade: "Colatina",
+    regiao: "Espírito Santo",
+    lat: -19.549316,
+    lng: -40.626898,
+    fonte: "manual/aproximado (cidade de Colatina)",
+  },
+  {
+    nome: "Estádio Kleber Andrade",
+    aliases: ["estadio kleber andrade"],
+    cidade: "Cariacica",
+    regiao: "Espírito Santo",
+    lat: -20.263202,
+    lng: -40.416549,
+    fonte: "manual/aproximado (cidade de Cariacica)",
+  },
+  {
+    nome: "Estádio Manoel de Araújo Oliveira",
+    aliases: ["estadio manoel de araujo oliveira"],
+    cidade: "Vila Velha",
+    regiao: "Espírito Santo",
+    lat: -20.341705,
+    lng: -40.287458,
+    fonte: "manual/aproximado (cidade de Vila Velha)",
+  },
+  {
+    nome: "Estádio Marcos José Campagnaro",
+    aliases: ["estadio marcos jose campagnaro"],
+    cidade: "Ibiraçu",
+    regiao: "Espírito Santo",
+    lat: -19.836601,
+    lng: -40.373182,
+    fonte: "manual/aproximado (cidade de Ibiraçu)",
+  },
+  {
+    nome: "Estádio Olímpio Perim",
+    aliases: ["estadio olimpio perim"],
+    cidade: "Venda Nova do Imigrante",
+    regiao: "Espírito Santo",
+    lat: -20.327017,
+    lng: -41.135545,
+    fonte: "manual/aproximado (cidade de Venda Nova do Imigrante)",
+  },
+  {
+    nome: "Estádio Robertão",
+    aliases: ["estadio robertao"],
+    cidade: "Serra",
+    regiao: "Espírito Santo",
+    lat: -20.121032,
+    lng: -40.307408,
+    fonte: "manual/aproximado (cidade de Serra)",
+  },
+  {
+    nome: "Estádio Salvador Costa",
+    aliases: ["estadio salvador costa"],
+    cidade: "Vitória",
+    regiao: "Espírito Santo",
+    lat: -20.315472,
+    lng: -40.312806,
+    fonte: "manual/aproximado (cidade de Vitória)",
+  },
+  {
+    nome: "Estádio Sernamby",
+    aliases: ["estadio sernamby"],
+    cidade: "São Mateus",
+    regiao: "Espírito Santo",
+    lat: -18.721407,
+    lng: -39.857935,
+    fonte: "manual/aproximado (cidade de São Mateus)",
+  },
+  {
+    nome: "Estádio Sumaré",
+    aliases: ["estadio sumare"],
+    cidade: "Cachoeiro de Itapemirim",
+    regiao: "Espírito Santo",
+    lat: -20.846212,
+    lng: -41.119829,
+    fonte: "manual/aproximado (cidade de Cachoeiro de Itapemirim)",
+  },
+
+  /* ===================================================================
+     Mato Grosso — FMF-MT (estadios das quartas de final do Mato-grossense
+     Sub-20 2026, adicionados a partir de noticia oficial republicada).
+     Coordenadas em nivel de cidade (aproximado).
+     =================================================================== */
+  {
+    nome: "Estádio Apolônio de Mello",
+    aliases: ["estadio apolonio de mello", "apolonio de mello"],
+    cidade: "Chapada dos Guimarães",
+    regiao: "Mato Grosso",
+    lat: -15.464343,
+    lng: -55.749857,
+    fonte: "manual/aproximado (cidade de Chapada dos Guimarães)",
+  },
+  {
+    nome: "Estádio Luthero Lopes",
+    aliases: ["estadio luthero lopes", "luthero lopes"],
+    cidade: "Rondonópolis",
+    regiao: "Mato Grosso",
+    lat: -16.467251,
+    lng: -54.637173,
+    fonte: "manual/aproximado (cidade de Rondonópolis)",
+  },
+  {
+    nome: "Estádio Lamartine Salles",
+    aliases: ["estadio lamartine salles", "lamartine salles"],
+    cidade: "Barra do Bugres",
+    regiao: "Mato Grosso",
+    lat: -15.07016,
+    lng: -57.187784,
+    fonte: "manual/aproximado (cidade de Barra do Bugres)",
+  },
+  {
+    nome: "Estádio Passo das Emas",
+    aliases: ["estadio passo das emas", "passo das emas"],
+    cidade: "Lucas do Rio Verde",
+    regiao: "Mato Grosso",
+    lat: -13.058796,
+    lng: -55.904202,
+    fonte: "manual/aproximado (cidade de Lucas do Rio Verde)",
+  },
+  {
+    nome: "Estádio Regional Willie Davids",
+    aliases: ["willie davids", "estadio willie davids", "estadio regional willie davids"],
+    cidade: "Maringá",
+    regiao: "Paraná",
+    lat: -23.41422,
+    lng: -51.93822,
+  },
+  {
+    nome: "Arena da Amazônia",
+    aliases: ["arena da amazonia", "arena da amazônia", "arena amazonia"],
+    cidade: "Manaus",
+    regiao: "Amazonas",
+    lat: -3.0146,
+    lng: -60.0334,
+  },
+  {
+    nome: "Estádio Fonte Luminosa",
+    aliases: ["fonte luminosa", "estadio fonte luminosa", "estadio dr adhemar de barros"],
+    cidade: "Araraquara",
+    regiao: "São Paulo",
+    lat: -21.79855,
+    lng: -48.17151,
+  },
+  {
+    nome: "Estádio Canarinho",
+    aliases: ["canarinho", "estadio canarinho", "flamarion vasconcelos", "estadio flamarion vasconcelos"],
+    cidade: "Boa Vista",
+    regiao: "Roraima",
+    lat: -2.8237,
+    lng: -60.6822,
+    fonte: "manual/osm-like",
+  },
+  {
+    // Coordenada aproximada do centro de Imperatriz (MA); não encontrei o
+    // endereço exato do estádio "Frei Epifânio" numa fonte confiável.
+    nome: "Frei Epifânio",
+    aliases: ["frei epifanio", "estadio frei epifanio"],
+    cidade: "Imperatriz",
+    regiao: "Maranhão",
+    lat: -5.5264,
+    lng: -47.4917,
+    fonte: "aproximado/nivel-cidade",
+  },
+  {
+    // Coordenada aproximada do centro de Goiatuba (GO); não encontrei o
+    // endereço exato do estádio "Divino Garcia" numa fonte confiável.
+    nome: "Divino Garcia",
+    aliases: ["divino garcia", "estadio divino garcia"],
+    cidade: "Goiatuba",
+    regiao: "Goiás",
+    lat: -18.0136,
+    lng: -49.3822,
+    fonte: "aproximado/nivel-cidade",
+  },
+  {
+    nome: "Estádio Elcyr Resende de Mendonça",
+    aliases: ["elcyr resende de mendonca", "elcyr resende"],
+    cidade: "Saquarema",
+    regiao: "Rio de Janeiro",
+    lat: -22.8953,
+    lng: -42.4769,
+    fonte: "manual/confirmado (Rua Capitão Nunes 110, Bacaxá, Saquarema)",
+  },
+  {
+    nome: "Estádio Atílio Marotti",
+    aliases: ["atilio marotti"],
+    cidade: "Petrópolis",
+    regiao: "Rio de Janeiro",
+    lat: -22.5050,
+    lng: -43.1786,
+    fonte: "manual/confirmado (Rua Madre Francisca Pia 400, Petrópolis)",
+  },
+  {
+    nome: "Estádio Ary de Oliveira e Souza",
+    aliases: ["ary de oliveira e souza", "arizao", "arizão"],
+    cidade: "Campos dos Goytacazes",
+    regiao: "Rio de Janeiro",
+    lat: -21.7545,
+    lng: -41.3244,
+    fonte: "manual/confirmado (Rua dos Goytacazes 331, Campos dos Goytacazes)",
+  },
+  {
+    nome: "Estádio Municipal Cláudio Moacyr de Azevedo",
+    aliases: ["claudio moacyr de azevedo"],
+    cidade: "Macaé",
+    regiao: "Rio de Janeiro",
+    lat: -22.3708,
+    lng: -41.7869,
+    fonte: "manual/confirmado (Barra de Macaé, Macaé)",
+  },
+  {
+    nome: "Estádio Waldo Carneiro Xavier",
+    aliases: ["waldo carneiro xavier"],
+    cidade: "Santo Antônio de Pádua",
+    regiao: "Rio de Janeiro",
+    lat: -21.5361,
+    lng: -42.1758,
+    fonte: "manual/confirmado (Rua José Paulo Panaro, Santo Antônio de Pádua)",
+  },
+  {
+    nome: "Estádio Nélio Gomes",
+    aliases: ["nelio gomes"],
+    cidade: "Belford Roxo",
+    regiao: "Rio de Janeiro",
+    lat: -22.7642,
+    lng: -43.3994,
+    fonte: "manual/aproximado (Belford Roxo)",
+  },
 ];
-
-const map = L.map("map", {
-  scrollWheelZoom: true,
-  zoomControl: true,
-}).fitBounds(chileBounds);
-
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  maxZoom: 18,
-  attribution: "&copy; OpenStreetMap",
-}).addTo(map);
-
-markersLayer = L.layerGroup().addTo(map);
-
-// O ponto do estádio cresce conforme o usuário dá zoom no mapa, para ficar
-// proporcional (em zoom de continente um ponto grande polui o mapa; em
-// zoom de rua um ponto pequeno fica difícil de clicar/ver).
-const DOT_MIN_ZOOM = 3;
-const DOT_MAX_ZOOM = 14;
-const DOT_MIN_SIZE = 11;
-const DOT_MAX_SIZE = 28;
-
-function dotSizeForZoom(zoom) {
-  const z = Math.max(DOT_MIN_ZOOM, Math.min(DOT_MAX_ZOOM, zoom));
-  const progresso = (z - DOT_MIN_ZOOM) / (DOT_MAX_ZOOM - DOT_MIN_ZOOM);
-  return Math.round(DOT_MIN_SIZE + progresso * (DOT_MAX_SIZE - DOT_MIN_SIZE));
-}
-
-function updateDotSize() {
-  const size = dotSizeForZoom(map.getZoom());
-  document.getElementById("map").style.setProperty("--dot-size", `${size}px`);
-}
-
-map.on("zoom", updateDotSize);
-map.on("zoomend", updateDotSize);
-updateDotSize();
-
-function t(key, ...args) {
-  const value = I18N[currentLang][key] ?? I18N.pt[key] ?? key;
-  return typeof value === "function" ? value(...args) : value;
-}
-
-function applyLanguage(lang) {
-  currentLang = lang;
-  localStorage.setItem("jogosChileLang", lang);
-  document.documentElement.lang = t("htmlLang");
-  document.title = t("titleDoc");
-
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    el.textContent = t(el.dataset.i18n);
-  });
-
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-    el.placeholder = t(el.dataset.i18nPlaceholder);
-  });
-
-  updateRaioLabel();
-
-  els.ptBtn.classList.toggle("active", lang === "pt");
-  els.esBtn.classList.toggle("active", lang === "es");
-
-  setupFilters();
-  renderAll();
-}
-
-function normalize(value) {
-  return String(value || "")
-    .replace(/[’´`]/g, "'")
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toLowerCase()
-    .trim();
-}
-
-function escapeHtml(value) {
-  return String(value ?? "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function todayISO() {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function addDaysISO(days) {
-  const d = new Date();
-  d.setDate(d.getDate() + days);
-  return d.toISOString().slice(0, 10);
-}
-
-function formatDate(dataISO) {
-  if (!dataISO) return t("date_confirm");
-  const d = new Date(`${dataISO}T12:00:00`);
-  if (Number.isNaN(d.getTime())) return dataISO;
-  return new Intl.DateTimeFormat(t("locale"), {
-    weekday: "short",
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-  }).format(d);
-}
-
-function formatShortDate(dataISO) {
-  if (!dataISO) return "";
-  const d = new Date(`${dataISO}T12:00:00`);
-  if (Number.isNaN(d.getTime())) return dataISO;
-  return new Intl.DateTimeFormat(t("locale"), {
-    day: "2-digit",
-    month: "2-digit",
-  }).format(d);
-}
-
-function formatUpdated(value) {
-  if (!value) return "—";
-  // Os timestamps são gerados nos runners do GitHub Actions com
-  // datetime.now() (sem timezone explícito), cujo relógio é UTC.
-  // Se não vier com "Z" ou offset explícito, tratamos como UTC.
-  let iso = value;
-  if (!/Z$|[+-]\d{2}:\d{2}$/.test(iso)) {
-    iso = `${iso}Z`;
-  }
-  const d = new Date(iso);
-  if (Number.isNaN(d.getTime())) return value.split("T")[0] || "—";
-  const formatted = new Intl.DateTimeFormat(t("locale"), {
-    day: "2-digit",
-    month: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-    timeZone: "America/Sao_Paulo",
-  }).format(d);
-  return `${formatted} (Brasília)`;
-}
-
-function parseDateTime(jogo) {
-  return new Date(`${jogo.data || "2999-12-31"}T${jogo.hora || "00:00"}:00`);
-}
-
-function uniqueSorted(items) {
-  return [...new Set(items.filter(Boolean))].sort((a, b) => a.localeCompare(b));
-}
-
-function optionHtml(value) {
-  return `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`;
-}
-
-const BANDEIRA_PAIS = {
-  "Chile": "🇨🇱",
-  "Brasil": "🇧🇷",
-  "Argentina": "🇦🇷",
-  "Uruguay": "🇺🇾",
-  "Paraguay": "🇵🇾",
-  "Peru": "🇵🇪",
-  "Colombia": "🇨🇴",
-  "Bolivia": "🇧🇴",
-  "Ecuador": "🇪🇨",
-  "Conmebol": "🏆",
-};
-
-function optionHtmlComBandeira(value) {
-  const bandeira = BANDEIRA_PAIS[value] || "";
-  const label = bandeira ? `${bandeira} ${value}` : value;
-  return `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`;
-}
-
-function populateSelectComBandeiras(select, values, allLabel) {
-  const current = select.value;
-  select.innerHTML = `<option value="">${allLabel}</option>` + values.map(optionHtmlComBandeira).join("");
-  if (values.includes(current)) select.value = current;
-}
-
-function updateRaioLabel() {
-  els.raioLabelTexto.innerHTML = `<span id="raioValorTexto">${els.filtroRaio.value}</span> ${t("radius_suffix")}`;
-  els.raioValorTexto = document.getElementById("raioValorTexto");
-}
-
-function distanciaKm(lat1, lng1, lat2, lng2) {
-  const R = 6371;
-  const dLat = ((lat2 - lat1) * Math.PI) / 180;
-  const dLng = ((lng2 - lng1) * Math.PI) / 180;
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos((lat1 * Math.PI) / 180) *
-      Math.cos((lat2 * Math.PI) / 180) *
-      Math.sin(dLng / 2) *
-      Math.sin(dLng / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c;
-}
-
-function coordenadasDaCidade(cidade) {
-  const alvo = jogosEnriquecidos.find(j => j.cidade === cidade && j.lat && j.lng);
-  return alvo ? { lat: alvo.lat, lng: alvo.lng } : null;
-}
-
-function findStadiumInfo(estadioTexto, pais) {
-  const txt = normalize(estadioTexto);
-  if (!txt) return null;
-
-  const stadiums = pais === "Brasil" ? (window.ESTADIOS_BRASIL || [])
-    : pais === "Argentina" ? (window.ESTADIOS_ARGENTINA || [])
-    : pais === "Uruguay" ? (window.ESTADIOS_URUGUAY || [])
-    : pais === "Paraguay" ? (window.ESTADIOS_PARAGUAY || [])
-    : pais === "Peru" ? (window.ESTADIOS_PERU || [])
-    : pais === "Colombia" ? (window.ESTADIOS_COLOMBIA || [])
-    : pais === "Bolivia" ? (window.ESTADIOS_BOLIVIA || [])
-    : pais === "Ecuador" ? (window.ESTADIOS_ECUADOR || [])
-    // Conmebol (Libertadores/Sudamericana) usa estádios de clubes de vários
-    // países. A base própria ESTADIOS_CONMEBOL cobre só as finais; por isso
-    // cruzamos também com todas as bases nacionais já cadastradas.
-    : pais === "Conmebol" ? [
-        ...(window.ESTADIOS_CONMEBOL || []),
-        ...(window.ESTADIOS_BRASIL || []),
-        ...(window.ESTADIOS_ARGENTINA || []),
-        ...(window.ESTADIOS_URUGUAY || []),
-        ...(window.ESTADIOS_CHILE || []),
-        ...(window.ESTADIOS_COLOMBIA || []),
-        ...(window.ESTADIOS_PARAGUAY || []),
-        ...(window.ESTADIOS_PERU || []),
-        ...(window.ESTADIOS_BOLIVIA || []),
-        ...(window.ESTADIOS_ECUADOR || []),
-      ]
-    : (window.ESTADIOS_CHILE || []);
-
-  for (const s of stadiums) {
-    const names = [s.nome, ...(s.aliases || [])];
-    if (names.some(n => txt.includes(normalize(n)) || normalize(n).includes(txt))) {
-      return s;
-    }
-  }
-
-  const PALAVRAS_GENERICAS = new Set([
-    "estadio", "municipal", "arena", "parque", "complexo", "campo",
-    "centro", "cidade", "governador", "presidente", "doutor", "professor",
-  ]);
-  const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5 && !PALAVRAS_GENERICAS.has(token));
-  for (const s of stadiums) {
-    const names = [s.nome, ...(s.aliases || [])].map(normalize).join(" ");
-    const hits = txtTokens.filter(token => names.includes(token)).length;
-    if (hits >= 2) return s;
-  }
-
-  return null;
-}
-
-// O scraper do Brasil às vezes só grava a cidade dentro do texto livre
-// "extra" (ex.: "pais=Brasil; cidade=Rio de Janeiro"), em vez de um campo
-// próprio. Extrai isso como último recurso, quando a base de estádios não
-// tiver a cidade.
-function extractCidadeFromExtra(extra) {
-  const m = String(extra || "").match(/cidade\s*=\s*([^;]+)/i);
-  return m ? m[1].trim() : "";
-}
-
-function extractEstadoFromExtra(extra) {
-  const m = String(extra || "").match(/estado\s*=\s*([^;]+)/i);
-  return m ? m[1].trim() : "";
-}
-
-// Fallback: quando o scraper não informa o estádio (comum em jogos em casa
-// de alguns times, ex.: San Marcos de Arica), usamos o estádio mandante conhecido.
-const ESTADIO_MANDANTE_PADRAO_CHILE = {
-  "colo colo": "monumental david arellano",
-  "universidad de chile": "estadio nacional",
-  "universidad catolica": "claro arena",
-  "union espanola": "santa laura",
-  "palestino": "la cisterna",
-  "audax italiano": "bicentenario de la florida",
-  "magallanes": "luis navarro avilés",
-  "everton": "sausalito",
-  "santiago wanderers": "elías figueroa brander",
-  "union la calera": "nicolás chahuán",
-  "deportes la serena": "la portada",
-  "coquimbo unido": "francisco sánchez rumoroso",
-  "o'higgins": "el teniente",
-  "rangers de talca": "fiscal de talca",
-  "nublense": "bicentenario nelson oyarzún",
-  "huachipato": "estadio huachipato",
-  "universidad de concepcion": "ester roa rebolledo",
-  "deportes concepcion": "ester roa rebolledo",
-  "universidad de concepcion": "ester roa rebolledo",
-  "u de concepcion": "ester roa rebolledo",
-  "rangers": "fiscal de talca",
-  "santiago morning": "la cisterna",
-  "union san felipe": "municipal de san felipe",
-  "deportes santa cruz": "municipal santa ana",
-  "san luis": "lucio fariña",
-  "deportes melipilla": "municipal de melipilla",
-  "deportes limache": "gustavo ocaranza",
-  "atletico colina": "manuel rojas del rio",
-  "deportes temuco": "germán becker",
-  "provincial osorno": "rubén marcos peralta",
-  "deportes puerto montt": "chinquihue",
-  "cobresal": "el cobre",
-  "deportes copiapo": "luis valenzuela hermosilla",
-  "deportes antofagasta": "regional calvo y bascuñán",
-  "cobreloa": "zorros del desierto",
-  "deportes iquique": "tierra de campeones",
-  "san marcos de arica": "carlos dittborn",
-  "curico unido": "la granja",
-  "deportes recoleta": "leonel sanchez",
-  "club deportes santa cruz": "joaquín muñoz garcía",
-  "trasandino": "regional de los andes",
-
-  // Tercera División A 2026 (14 equipes)
-  "aguara": "municipal de san joaquin",
-  "cdsc aguara": "municipal de san joaquin",
-  "atletico oriente": "municipal de lo barnechea",
-  "chimbarongo": "municipal de chimbarongo",
-  "chimbarongo fc": "municipal de chimbarongo",
-  "comunal cabrero": "luis figueroa",
-  "constitucion unido": "enrique donn",
-  "deportes rancagua": "municipal patricio mekis",
-  "dep. rancagua": "municipal patricio mekis",
-  "futuro": "municipal de penalolen",
-  "futuro fc": "municipal de penalolen",
-  "imperial unido": "el alto",
-  "lautaro de buin": "lautaro de buin",
-  "lautaro": "lautaro de buin",
-  "malleco unido": "municipal alberto larraguibel",
-  "municipal puente alto": "municipal de puente alto",
-  "mun. puente alto": "municipal de puente alto",
-  "naval": "el morro",
-  "naval de talcahuano": "el morro",
-  "quintero unido": "raul vargas",
-  "rodelindo roman": "san gregorio",
-
-  // Tercera División B 2026 — Zona Norte (14 equipes)
-  "jardin del eden": "bicentenario de la florida",
-  "union glorias navales": "olimpico gomez carreno",
-  "glorias navales": "olimpico gomez carreno",
-  "union companias": "la portada",
-  "cultural maipu": "santiago bueras",
-  "provincial talagante": "lucas pacheco",
-  "prov. talagante": "lucas pacheco",
-  "deportes vallenar": "nelson rojas",
-  "dep. vallenar": "nelson rojas",
-  "audax italiano de paipote": "luis valenzuela",
-  "deportes ovalle": "diaguita",
-  "municipal mejillones": "rolando cortes",
-  "mun. mejillones": "rolando cortes",
-  "julio covarrubias": "los jardines",
-  "municipal ovalle": "diaguita",
-  "mun. ovalle": "diaguita",
-  "tricolor municipal": "municipal de paine",
-  "tricolor de paine": "municipal de paine",
-  "curacavi fc": "olimpico cuyuncavi",
-  "ceff copiapo": "luis valenzuela",
-
-  // Tercera División B 2026 — Zona Sur (14 equipes)
-  "deportivo pumanque": "municipal de pumanque",
-  "pumanque": "municipal de pumanque",
-  "buenos aires": "nelson valenzuela",
-  "deportes laja historico": "facela",
-  "laja historico": "facela",
-  "fernandez vial": "ester roa rebolledo",
-  "vicente perez rosales": "chinquihue",
-  "inter concepcion": "municipal de florida",
-  "iberia": "municipal de los angeles",
-  "cdsc iberia": "municipal de los angeles",
-  "municipal paillaco": "municipal de paillaco",
-  "mun. paillaco": "municipal de paillaco",
-  "republica independiente": "municipal de hualqui",
-  "rep. ind. de hualqui": "municipal de hualqui",
-  "gasparin fc": "lo blanco",
-  "efc conchali": "municipal de conchali",
-  "nacimiento": "municipal de nacimiento",
-  "nacimiento cdsc": "municipal de nacimiento",
-  "deportes hualpen": "las golondrinas",
-  "dep. hualpen": "las golondrinas",
-};
-
-const ESTADIO_MANDANTE_PADRAO_ARGENTINA = {
-  "river": "monumental",
-  "river plate": "monumental",
-  "boca": "la bombonera",
-  "boca jrs": "la bombonera",
-  "boca juniors": "la bombonera",
-  "racing": "cilindro",
-  "racing club": "cilindro",
-  "independiente": "libertadores de america",
-  "san lorenzo": "nuevo gasometro",
-  "san lorenzo de a": "nuevo gasometro",
-  "huracan": "tomas duco",
-  "velez": "jose amalfitani",
-  "estudiantes": "estadio uno",
-  "gimnasia": "estadio bosque",
-  "gimnasia la plata": "estadio bosque",
-  "all boys": "islas malvinas",
-  "dep morón": "francisco urbano",
-  "dep moron": "francisco urbano",
-  "los andes": "eduardo gallardon",
-  "san miguel": "cesar luis menotti",
-  "g y tiro s": "gigante del norte",
-  "g y esgrima j": "23 de agosto",
-  "san martín t": "la ciudadela",
-  "san martin t": "la ciudadela",
-  "atlanta": "leon kolbowski",
-  "racing cba": "presidente peron",
-  "agropecuario arg": "ofelia rosenzuaig",
-  "at de rafaela": "alfredo terrera",
-  "godoy cruz mza": "malvinas argentinas",
-  "san telmo": "osvaldo baletto",
-  "t suarez": "20 de octubre",
-  "colon": "brigadier general estanislao lopez",
-  "fc midland": "ciudad de libertad",
-  "guemes se": "arturo miranda",
-  "talleres": "mario kempes",
-  "belgrano": "gigante de alberdi",
-  "rosario central": "gigante de arroyito",
-  "newell's": "coloso del parque",
-  "newells": "coloso del parque",
-  "union": "15 de abril",
-  "atletico tucuman": "jose fierro",
-  "central cordoba": "madre de ciudades",
-  "banfield": "florencio sola",
-  "lanus": "ciudad de lanus",
-  "platense": "ciudad de vicente lopez",
-  "tigre": "la candela",
-  "argentinos": "estadio maradona",
-  "argentinos juniors": "estadio maradona",
-  "sarmiento": "eva peron",
-  "defensa y justicia": "norberto tomaghello",
-  "aldosivi": "jose maria minella",
-  "deportivo riestra": "guillermo laza",
-  "independiente rivadavia": "bautista gargantini",
-  "ind rivadavia mza": "bautista gargantini",
-  "gimnasia mza": "victor legrotaglie",
-  "gimnasia (mza)": "victor legrotaglie",
-  "estudiantes rio cuarto": "antonio candini",
-  "instituto": "estadio instituto atletico central cordoba",
-  "barracas central": "claudio tapia",
-  "real pilar": "estadio municipal carlos barraza",
-  "atl pilar": "estadio municipal carlos barraza",
-  "atletico pilar": "estadio municipal carlos barraza",
-  "camioneros": "estadio hugo moyano",
-  "villa san carlos": "estadio genacio salice",
-  "san martin b": "estadio francisco boga",
-  "san martin burzaco": "estadio francisco boga",
-  "estrella del sur": "estadio francisco boga",
-  "arsenal fc": "estadio julio humberto grondona",
-  "arsenal": "estadio julio humberto grondona",
-  "arsenal de sarandi": "estadio julio humberto grondona",
-  "def unidos": "estadio gigante de villa fox",
-  "defensores unidos": "estadio gigante de villa fox",
-  "dep laferrere": "estadio ciudad de laferrere garrafa sanchez",
-  "deportivo laferrere": "estadio ciudad de laferrere garrafa sanchez",
-  "dep armenio": "estadio armenia",
-  "deportivo armenio": "estadio armenia",
-  "arg de merlo": "estadio juan carlos brieva merlo norte",
-  "argentino de merlo": "estadio juan carlos brieva merlo norte",
-  "arg de quilmes": "estadio barraca quilmena",
-  "argentino de quilmes": "estadio barraca quilmena",
-  "brown adrogue": "estadio lorenzo arandilla",
-  "brown adrogué": "estadio lorenzo arandilla",
-  "ituzaingo": "estadio carlos alberto sacaan",
-  "excursionistas": "estadio pampa y manones excursionistas",
-  "buenos aires city": "estadio pampa y manones excursionistas",
-  "comunicaciones": "estadio alfredo ramos",
-  "liniers": "estadio juan antonio arias",
-  "sp italiano": "estadio republica de italia sportivo italiano",
-  "sportivo italiano": "estadio republica de italia sportivo italiano",
-  "talleres re": "estadio pablo comelli",
-  "talleres remedios": "estadio pablo comelli",
-  "flandria": "estadio carlos v",
-  "uai urquiza": "estadio monumental de villa lynch uai urquiza",
-  "dep merlo": "estadio jose manuel moreno",
-  "deportivo merlo": "estadio jose manuel moreno",
-  "villa dalmine": "estadio coliseo de mitre y puccini villa dalmine",
-  "sp dock sud": "estadio de los inmigrantes sportivo dock sud",
-  "sportivo dock sud": "estadio de los inmigrantes sportivo dock sud",
-  "dock sud": "estadio de los inmigrantes sportivo dock sud",
-  "dep espanol": "estadio nueva espana dep espanol",
-  "deportivo espanol": "estadio nueva espana dep espanol",
-  "canuelas": "estadio jorge alfredo arin canuelas",
-  "canuelas fc": "estadio jorge alfredo arin canuelas",
-  "dep paraguayo": "estadio jose maria moranos",
-  "deportivo paraguayo": "estadio jose maria moranos",
-  "lugano": "estadio jose maria moranos",
-  "atl lugano": "estadio jose maria moranos",
-  "berazategui": "estadio norman lee",
-  "def de cambaceres": "estadio 12 de octubre def de cambaceres",
-  "defensores de cambaceres": "estadio 12 de octubre def de cambaceres",
-  "el porvenir": "estadio francisco ghersinich el porvenir",
-  "ctral cordoba r": "estadio gabino sosa",
-  "central cordoba rosario": "estadio gabino sosa",
-  "atlas": "estadio ricardo puga",
-  "muniz": "estadio ricardo puga",
-  "yupanqui": "estadio ciudad evita",
-  "jj de urquiza": "estadio ramon roque martin",
-  "argentino r": "estadio jose martin olaeta",
-  "argentino de rosario": "estadio jose martin olaeta",
-  "ctral ballester": "estadio predio cacique central ballester",
-  "central ballester": "estadio predio cacique central ballester",
-  "claypole": "estadio rodolfo vicente capocasa claypole",
-  "gral lamadrid": "estadio enrique vi general lamadrid",
-  "general lamadrid": "estadio enrique vi general lamadrid",
-  "j unida": "estadio ciudad de san miguel juventud unida",
-  "juventud unida": "estadio ciudad de san miguel juventud unida",
-  "puerto nuevo": "estadio ruben carlos vallejos puerto nuevo",
-  "v arenas": "estadio saturnino moure victoriano arenas",
-  "victoriano arenas": "estadio saturnino moure victoriano arenas",
-  "mercedes": "estadio municipal de mercedes liga mercedina",
-  "sacachispas fc": "estadio beto larrosa sacachispas",
-  "sacachispas": "estadio beto larrosa sacachispas",
-  "lujan": "estadio municipal de lujan",
-  "club lujan": "estadio municipal de lujan",
-  "ln alem": "estadio general rodriguez l n alem",
-  "l n alem": "estadio general rodriguez l n alem",
-  "fenix": "estadio juan pasquale",
-  "sp barracas": "estadio nuevo francisco urbano sp barracas",
-  "sportivo barracas": "estadio nuevo francisco urbano sp barracas",
-};
-
-const ESTADIO_MANDANTE_PADRAO_PERU = {
-  "alianza lima": "alejandro villanueva",
-  "universitario": "estadio monumental u",
-  "universitario de deportes": "estadio monumental u",
-  "sporting cristal": "alberto gallardo",
-  "carlos a mannucci": "mansiche",
-  "carlos a. mannucci": "mansiche",
-  "carlos mannucci": "mansiche",
-  "mannucci": "mansiche",
-  "cienciano": "inca garcilaso de la vega",
-  "melgar": "monumental de la unsa",
-  "fbc melgar": "monumental de la unsa",
-  "grau": "campeones del 36",
-  "atletico grau": "campeones del 36",
-  "atlético grau": "campeones del 36",
-  // Adicionados para cobrir mais times de Liga 1/Liga 2 que ainda ficavam
-  // sem estádio/coordenada (abreviações como aparecem nas fontes).
-  "boys": "miguel grau callao",
-  "sport boys": "miguel grau callao",
-  "cantolao": "miguel grau callao",
-  "a cantolao": "miguel grau callao",
-  "s cristal": "alberto gallardo",
-  "s huancayo": "ipd huancayo",
-  "sport huancayo": "ipd huancayo",
-  "a atletico": "ipd sullana",
-  "a. atletico": "ipd sullana",
-  "alianza atletico": "ipd sullana",
-  "alianza atlético": "ipd sullana",
-  "ucayali fc": "max agurto sanchez",
-  "alianza udh": "heraclio tapia",
-  "coopsol": "huaral",
-  "deportivo coopsol": "huaral",
-  "valle sagrado": "calca valle sagrado",
-};
-
-const SUFIXOS_REGIAO_CHILE = [
-  "arica y parinacota", "tarapaca", "antofagasta", "atacama", "coquimbo",
-  "valparaiso", "metropolitana", "o'higgins", "ohiggins", "maule", "nuble",
-  "biobio", "la araucania", "araucania", "los rios", "los lagos", "aysen",
-  "magallanes",
-];
-
-function stripSufixoRegiaoChile(nomeNormalizado) {
-  for (const reg of SUFIXOS_REGIAO_CHILE) {
-    if (nomeNormalizado.endsWith(" " + reg)) {
-      return nomeNormalizado.slice(0, -(reg.length + 1)).trim();
-    }
-  }
-  return nomeNormalizado;
-}
-
-// Categorias/divisões que o Chile as vezes anexa ao nome do time principal
-// (ex.: "Universidad de Chile Juvenil Fem", "Ñublense Femenino"). O time
-// base costuma jogar no mesmo estádio do time profissional, então vale a
-// pena tentar de novo sem esse sufixo antes de desistir.
-const SUFIXOS_CATEGORIA_CHILE = ["juvenil fem", "femenino"];
-
-function stripSufixoCategoriaChile(nomeNormalizado) {
-  for (const suf of SUFIXOS_CATEGORIA_CHILE) {
-    if (nomeNormalizado.endsWith(" " + suf)) {
-      return nomeNormalizado.slice(0, -(suf.length + 1)).trim();
-    }
-  }
-  return nomeNormalizado;
-}
-
-// Estádio-mandante padrão da LigaPro Serie A (16 clubes 2026). Times de
-// Ambato (Técnico Universitario) e Quito (Universidad Católica) marcados
-// como incerteza — compartilham estádio com outro clube da mesma cidade
-// e não há confirmação 100% de qual é a sede oficial de cada um.
-const ESTADIO_MANDANTE_PADRAO_ECUADOR = {
-  "liga de quito": "rodrigo paz delgado",
-  "independiente del valle": "banco guayaquil",
-  "barcelona sc": "banco pichincha",
-  "emelec": "george capwell",
-  "aucas": "gonzalo pozo ripalda",
-  "guayaquil city fc": "christian benitez betancourt",
-  "deportivo cuenca": "alejandro serrano aguilar",
-  "orense": "9 de mayo",
-  "macara": "bellavista",
-  "mushuc runa": "coac mushuc runa",
-  "libertad (ecuador)": "federativo reina del cisne",
-  "delfin": "jocay",
-  "manta f.c.": "jocay",
-  "leones": "olimpico de ibarra",
-  // incerteza — melhor palpite, sem confirmação
-  "tecnico universitario": "bellavista",
-  "universidad catolica (quito)": "gonzalo pozo ripalda",
-};
-
-// Torneo BetPlay (ascenso/reservas) — só os times que consegui confirmar
-// com uma fonte real (não é a lista completa das 16 equipes: os que faltam
-// ficaram de fora por falta de confirmação, em vez de arriscar um palpite
-// errado).
-const ESTADIO_MANDANTE_PADRAO_COLOMBIA = {
-  "real cartagena": "jaime moron leon",
-  "orsomarso sc": "raul miranda",
-  "union magdalena": "sierra nevada",
-  "inter palmira": "francisco rivera escobar",
-  "deportes quindio": "centenario de armenia",
-  "barranquilla fc": "romelio martinez",
-  "patriotas": "la independencia",
-  "envigado fc": "polideportivo sur",
-  "itagui leones": "metropolitano ciudad de itagui",
-  "bogota fc": "metropolitano de techo",
-  "tigres fc": "metropolitano de techo",
-  "boca juniors de cali": "pascual guerrero",
-  "real cundinamarca": "municipal de mosquera",
-  "real santander": "villa concha",
-  "independiente santa fe": "el campin",
-  "atletico nacional": "atanasio girardot",
-  // Adicionados: Atlético FC manda no mesmo estádio do Deportivo Cali/América
-  // (Pascual Guerrero); Independiente Yumbo mudou de sede para Palmira em
-  // jul/2026 (rebatizado Independiente Valle del Cauca), usando o mesmo
-  // estádio do Inter Palmira.
-  "atletico fc": "pascual guerrero",
-  "independiente yumbo": "francisco rivera escobar",
-  "independiente valle del cauca": "francisco rivera escobar",
-};
-
-const ESTADIO_MANDANTE_PADRAO_PARAGUAY = {
-  "paraguari atletico club": "estadio general bruguez",
-  "12 de junio": "estadio facundo de leon fossatti",
-  "encarnacion fc": "sede do encarnacion fc aproximado por cidade",
-  "gral caballero cg": "estadio 26 de febrero",
-  "general caballero cg": "estadio 26 de febrero",
-  "12 de octubre sd": "estadio rafael gimenez",
-  "atlantida": "estadio flaviano diaz",
-  "sport colonial": "estadio celestino mongelos",
-  "valois rivarola": "estadio gregorio sarubbi ortiz",
-  "sportivo valois rivarola": "estadio gregorio sarubbi ortiz",
-  "gral caballero sf": "estadio bernardino caballero",
-  "general caballero sf": "estadio bernardino caballero",
-  "gral caballero san felipe": "estadio bernardino caballero",
-  "dep pinoza": "estadio pinoza",
-  "deportivo pinoza": "estadio pinoza",
-  "club deportivo pinoza": "estadio pinoza",
-  "3 de febrero ch": "estadio 3 de febrero ricardo brugada",
-  "3 de febrero chacarita": "estadio 3 de febrero ricardo brugada",
-  "silvio pettirossi": "estadio bernabe pedrozo",
-  "general diaz": "estadio general adrian jara",
-  "gral diaz": "estadio general adrian jara",
-  "sportivo luqueno": "estadio feliciano caceres",
-  "luqueno": "estadio feliciano caceres",
-  "olimpia": "estadio manuel ferreira el bosque",
-  "club olimpia": "estadio manuel ferreira el bosque",
-  "tacuary": "estadio roberto bettega",
-  "tacuary fc": "estadio roberto bettega",
-  "libertad": "estadio nicolas leoz",
-  "club libertad": "estadio nicolas leoz",
-  "sol de america": "estadio luis alfonso giagni",
-  "12 de octubre": "estadio juan canuto pettengill",
-  "12 de octubre itaugua": "estadio juan canuto pettengill",
-  "guarani": "estadio rogelio livieres",
-  "club guarani": "estadio rogelio livieres",
-  "29 de setiembre": "sede do 29 de setiembre aproximado por cidade",
-  "pilcomayo": "estadio agustin baez pilcomayo",
-  "independiente fbc": "estadio ricardo gregor",
-  "independiente": "estadio ricardo gregor",
-  "humaita": "estadio pioneros de corumba cue",
-  "dep humaita": "estadio pioneros de corumba cue",
-  "deportivo humaita": "estadio pioneros de corumba cue",
-  "cerro cora": "estadio andres rodriguez",
-  "cerro cora cg": "estadio andres rodriguez",
-  "dep recoleta": "estadio roque f batelhana",
-  "deportivo recoleta": "estadio roque f batelhana",
-  "martin ledesma": "estadio enrique soler",
-  "caaguazu": "estadio federico llamosas",
-  "dep caaguazu": "estadio federico llamosas",
-  "deportivo caaguazu": "estadio federico llamosas",
-  "atl tembetary": "estadio ypane",
-  "atletico tembetary": "estadio ypane",
-  "dep santani": "estadio juan jose vazquez",
-  "deportivo santani": "estadio juan jose vazquez",
-  "sportivo carapegua": "estadio municipal de carapegua",
-  "3 de febrero cde": "estadio antonio oddone sarubbi",
-  "3 de febrero ciudad del este": "estadio antonio oddone sarubbi",
-  "liga ovetense": "estadio ovetenses unidos",
-  "sportivo trinidense": "estadio hugo stroessner encarnacion",
-  "rubio nu": "sede do rubio nu aproximado por cidade",
-  "fernando de la mora": "sede do fernando de la mora aproximado por cidade",
-  "sport colombia": "sede do sport colombia aproximado por cidade",
-  "24 de setiembre": "sede do 24 de setiembre aproximado por cidade",
-  "cristobal colon jas": "sede do cristobal colon jas aproximado por cidade",
-  "cristobal colon de nemby": "sede do cristobal colon de nemby aproximado por cidade",
-  "atletico colegiales": "sede do atletico colegiales aproximado por cidade",
-  "capitan figari": "sede do capitan figari aproximado por cidade",
-  "sportivo iteno": "sede do sportivo iteno aproximado por cidade",
-  "sportivo limpeno": "sede do sportivo limpeno aproximado por cidade",
-  "presidente hayes": "sede do presidente hayes aproximado por cidade",
-  "benjamin aceval": "sede do benjamin aceval aproximado por cidade",
-  "atyra": "sede do atyra aproximado por cidade",
-  "oriental": "sede do oriental aproximado por cidade",
-  "1 de marzo": "sede do 1 de marzo aproximado por cidade",
-  "3 de noviembre": "sede do 3 de noviembre aproximado por cidade",
-};
-
-function findDefaultHomeStadium(mandante, pais) {
-  const mapa = pais === "Argentina" ? ESTADIO_MANDANTE_PADRAO_ARGENTINA
-    : pais === "Peru" ? ESTADIO_MANDANTE_PADRAO_PERU
-    : pais === "Ecuador" ? ESTADIO_MANDANTE_PADRAO_ECUADOR
-    : pais === "Colombia" ? ESTADIO_MANDANTE_PADRAO_COLOMBIA
-    : pais === "Paraguay" ? ESTADIO_MANDANTE_PADRAO_PARAGUAY
-    : ESTADIO_MANDANTE_PADRAO_CHILE;
-  const key = normalize(mandante);
-  if (mapa[key]) return findStadiumInfo(mapa[key], pais);
-
-  // Nomes argentinos às vezes vêm com pontuação/parênteses irregulares
-  // (ex.: "San Lorenzo de A.", "Gimnasia (Mza.)"); tenta de novo sem elas.
-  const keySemPontuacao = key.replace(/[().,]/g, "").replace(/\s+/g, " ").trim();
-  if (mapa[keySemPontuacao]) return findStadiumInfo(mapa[keySemPontuacao], pais);
-
-  if (pais === "Chile") {
-    // anfaterceradivision.cl (Tercera A/B) grava o nome do time seguido da
-    // região (ex.: "Quintero Unido Valparaíso", "Comunal Cabrero Biobío").
-    const keySemRegiao = stripSufixoRegiaoChile(key);
-    if (keySemRegiao !== key && mapa[keySemRegiao]) return findStadiumInfo(mapa[keySemRegiao], pais);
-
-    // campeonatochileno.cl grava categorias femininas/juvenis anexadas ao
-    // nome do time principal (ex.: "Universidad de Chile Juvenil Fem").
-    const keySemCategoria = stripSufixoCategoriaChile(key);
-    if (keySemCategoria !== key && mapa[keySemCategoria]) return findStadiumInfo(mapa[keySemCategoria], pais);
-  }
-
-  if (pais === "Paraguay") {
-    // A fonte da APF costuma gravar o nome oficial completo do clube,
-    // com prefixos que não aparecem nas listas/artigos usados pra montar
-    // o mapa acima (ex.: "Club Fernando de la Mora", "Club Deportivo
-    // Santani", "Club Sportivo Carapeguá"). Tenta de novo removendo esses
-    // prefixos comuns.
-    const keySemPrefixo = key.replace(/^(club|c\s*\.?\s*d\s*\.?|c\s*\.?\s*s\s*\.?)\s+/, "").trim();
-    if (keySemPrefixo !== key && mapa[keySemPrefixo]) return findStadiumInfo(mapa[keySemPrefixo], pais);
-  }
-
-  return null;
-}
-
-function derivePais(j) {
-  if (j.pais) return j.pais;
-  const extra = String(j.extra || "");
-  if (/pais\s*=\s*brasil/i.test(extra)) return "Brasil";
-  if (/pais\s*=\s*argentina/i.test(extra)) return "Argentina";
-  if (/^brasil\s*-/i.test(j.competicao || "")) return "Brasil";
-  if (/^argentina\s*-/i.test(j.competicao || "")) return "Argentina";
-  return "Chile";
-}
-
-function enrichGames(rawGames) {
-  return rawGames.map((j, index) => {
-    const pais = derivePais(j);
-    const estadioBruto = /^(estadio\s*)?(a|por) (confirmar|definir)$/i.test(normalize(j.estadio || ""))
-      ? ""
-      : (j.estadio || "");
-    // FIX: jogos da FMF (fonte === "FMF") são de estádios pequenos/locais de
-    // Minas Gerais que não estão na base nacional (ESTADIOS_BRASIL só cobre
-    // clubes de Série A/B/C/D + Copa do Brasil). Buscar nessa base para um
-    // nome genérico tipo "Estádio Municipal Bezerrão" pode colidir por
-    // engano com um estádio de OUTRO estado com nome parecido (ex.: bateu
-    // com o "Bezerrão" de Gama/DF, ou "Arena Santa Cruz" bateu com o
-    // "Estádio Santa Cruz" de Ribeirão Preto/SP). Para fonte FMF, pula essa
-    // busca nacional e vai direto para o fallback por cidade de MG.
-    const ehFMF = j.fonte === "FMF";
-    let stadium = ehFMF ? null : findStadiumInfo(estadioBruto, pais);
-    let estadioFallback = false;
-    if (!stadium && !estadioBruto && pais !== "Brasil") {
-      stadium = findDefaultHomeStadium(j.mandante, pais);
-      estadioFallback = Boolean(stadium);
-    }
-    // Jogos da FFERJ (Rio de Janeiro) frequentemente nao trazem o nome do
-    // estadio no card (comum em categorias de base/amadoras). Quando isso
-    // acontece, usamos o estadio (ou sede, como aproximacao) do time
-    // mandante, obtido via scrap_fferj_estadios.py a partir do cadastro de
-    // clubes da propria FERJ - mais preciso que o fallback generico por
-    // cidade (que so tem o centro do Rio de Janeiro).
-    if (!stadium && !estadioBruto && j.fonte === "FFERJ" && window.ESTADIO_MANDANTE_PADRAO_FFERJ) {
-      const chaveMandante = normalize(j.mandante);
-      if (window.ESTADIO_MANDANTE_PADRAO_FFERJ[chaveMandante]) {
-        stadium = window.ESTADIO_MANDANTE_PADRAO_FFERJ[chaveMandante];
-        estadioFallback = true;
-      } else if (chaveMandante) {
-        // O nome oficial do clube (ficha do clube na FERJ) raramente bate
-        // 100% com o nome usado nos jogos (ex.: "Pérolas Negras" nos jogos
-        // vs "Viva Rio - Pérolas Negras" na ficha oficial). Tenta por
-        // correspondencia parcial antes de desistir.
-        for (const chaveClube of Object.keys(window.ESTADIO_MANDANTE_PADRAO_FFERJ)) {
-          if (chaveClube.length > 4 && (chaveMandante.includes(chaveClube) || chaveClube.includes(chaveMandante))) {
-            stadium = window.ESTADIO_MANDANTE_PADRAO_FFERJ[chaveClube];
-            estadioFallback = true;
-            break;
-          }
-        }
-      }
-    }
-    // Jogos da FFERJ sempre vem com cidade="Rio de Janeiro" no scraper (valor
-    // generico/padrao, nao a cidade real do jogo). Quando achamos um estadio
-    // ou clube com cidade especifica (Barra Mansa, Saquarema, Petropolis...),
-    // essa e mais confiavel e deve ter prioridade sobre o valor generico.
-    const ehFFERJ = j.fonte === "FFERJ";
-    const cidadeResolvida = (ehFFERJ && stadium?.cidade)
-      ? stadium.cidade
-      : (j.cidade || stadium?.cidade || extractCidadeFromExtra(j.extra) || "");
-    let cidadeCoords = null;
-    let regiaoPorCidade = "";
-    if (!stadium?.lat && !j.lat && cidadeResolvida) {
-      const chave = normalize(cidadeResolvida);
-      if (window.CIDADES_MG && window.CIDADES_MG[chave]) {
-        cidadeCoords = window.CIDADES_MG[chave];
-        regiaoPorCidade = "Minas Gerais";
-      } else if (window.CIDADES_SP && window.CIDADES_SP[chave]) {
-        cidadeCoords = window.CIDADES_SP[chave];
-        regiaoPorCidade = "São Paulo";
-      } else if (window.CIDADES_RJ && window.CIDADES_RJ[chave]) {
-        cidadeCoords = window.CIDADES_RJ[chave];
-        regiaoPorCidade = "Rio de Janeiro";
-      }
-    }
-    return {
-      ...j,
-      _idx: index,
-      _stadiumInfo: stadium,
-      _estadioFallback: estadioFallback,
-      pais,
-      estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
-      cidade: cidadeResolvida,
-      regiao: j.regiao || stadium?.regiao || extractEstadoFromExtra(j.extra) || regiaoPorCidade,
-      lat: j.lat || stadium?.lat || cidadeCoords?.lat || null,
-      lng: j.lng || stadium?.lng || cidadeCoords?.lng || null,
-      temMapa: Boolean(j.lat && j.lng) || Boolean(stadium?.lat && stadium?.lng) || Boolean(cidadeCoords),
-    };
-  });
-}
-
-function populateSelect(select, values, allLabel) {
-  const current = select.value;
-  select.innerHTML = `<option value="">${allLabel}</option>` + values.map(optionHtml).join("");
-  if (values.includes(current)) select.value = current;
-}
-
-function setupFilters() {
-  const paises = uniqueSorted(jogosEnriquecidos.map(j => j.pais));
-  // "Conmebol" fica sempre em primeiro no filtro (competições continentais
-  // em destaque), o resto segue em ordem alfabética normal.
-  const idxConmebol = paises.indexOf("Conmebol");
-  if (idxConmebol > 0) {
-    paises.splice(idxConmebol, 1);
-    paises.unshift("Conmebol");
-  }
-  populateSelectComBandeiras(els.filtroPais, paises, t("all_m"));
-
-  const pais = els.filtroPais.value;
-  const escopoPais = pais ? jogosEnriquecidos.filter(j => j.pais === pais) : jogosEnriquecidos;
-
-  const regioes = uniqueSorted(escopoPais.map(j => j.regiao));
-  populateSelect(els.filtroRegiao, regioes, t("all_f"));
-
-  updateDependentCompTimeOptions();
-  updateDependentCityOptions();
-}
-
-// Campeonato e Time dependem do País e da Região selecionados.
-function updateDependentCompTimeOptions() {
-  const pais = els.filtroPais.value;
-  const regiao = els.filtroRegiao.value;
-  const escopo = jogosEnriquecidos.filter(j =>
-    (!pais || j.pais === pais) && (!regiao || j.regiao === regiao)
-  );
-
-  const comps = uniqueSorted(escopo.map(j => j.competicao));
-  const times = uniqueSorted(escopo.flatMap(j => [j.mandante, j.visitante]));
-
-  populateSelect(els.filtroCompeticao, comps, t("all_m"));
-  populateSelect(els.filtroTime, times, t("all_m"));
-  updateTeamButtonState();
-}
-
-function updateTeamButtonState() {
-  const hasTeam = Boolean(els.filtroTime.value);
-  els.todosDoTimeBtn.disabled = !hasTeam;
-  els.todosDoTimeBtn.title = hasTeam ? "" : t("choose_team_first");
-  els.todosDoTimeBtn.classList.toggle("isActive", showAllTeamMode && hasTeam);
-}
-
-function getFilteredGames() {
-  const pais = els.filtroPais.value;
-  const comp = els.filtroCompeticao.value;
-  const time = els.filtroTime.value;
-  const regiao = els.filtroRegiao.value;
-  const cidade = els.filtroCidade.value;
-  const raioKm = Number(els.filtroRaio.value) || 0;
-  const cidadeCoords = cidade ? coordenadasDaCidade(cidade) : null;
-  const data = els.filtroData.value;
-  const q = normalize(els.busca.value);
-  const start = todayISO();
-  const end = activePeriodDays ? addDaysISO(activePeriodDays - 1) : "";
-
-  let out = jogosEnriquecidos.filter(j => {
-    const matchPais = !pais || j.pais === pais;
-    const matchComp = !comp || j.competicao === comp;
-    const matchTime = !time || j.mandante === time || j.visitante === time;
-    const matchRegiao = showAllTeamMode ? true : (!regiao || j.regiao === regiao);
-    const matchCidade = showAllTeamMode ? true : (!cidade || j.cidade === cidade ||
-      (cidadeCoords && j.lat && j.lng && distanciaKm(cidadeCoords.lat, cidadeCoords.lng, j.lat, j.lng) <= raioKm));
-    const matchData = showAllTeamMode ? true : (!data || j.data === data);
-    const matchPeriod = showAllTeamMode ? true : (!activePeriodDays || (j.data >= start && j.data <= end));
-
-    // Por padrão, a página mostra somente jogos de hoje em diante.
-    // Jogos passados continuam no JSON/histórico, mas não aparecem na tela inicial.
-    // Eles só aparecem quando:
-    // - o usuário escolhe uma data específica;
-    // - usa "Mostrar todos do time";
-    // - ou algum filtro de período explícito está ativo.
-    const defaultFutureOnly = !showAllTeamMode && !data && !activePeriodDays;
-    const matchFutureDefault = defaultFutureOnly ? (!j.data || j.data >= start) : true;
-
-    const matchMapa = !semMapaAtivo || !j.temMapa;
-
-    const text = normalize([
-      j.mandante,
-      j.visitante,
-      j.estadio,
-      j.competicao,
-      j.rodada,
-      j.fonte,
-      j.cidade,
-      j.regiao,
-      j.pais,
-    ].join(" "));
-
-    return matchPais && matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
-  });
-
-  out.sort((a, b) => parseDateTime(a) - parseDateTime(b));
-  return out;
-}
-
-function updateDependentCityOptions() {
-  const pais = els.filtroPais.value;
-  const regiao = els.filtroRegiao.value;
-  const cidades = uniqueSorted(
-    jogosEnriquecidos
-      .filter(j => (!pais || j.pais === pais) && (!regiao || j.regiao === regiao))
-      .map(j => j.cidade)
-  );
-  populateSelect(els.filtroCidade, cidades, t("all_f"));
-  els.raioWrap.hidden = !els.filtroCidade.value;
-}
-
-function groupedByDate(games) {
-  return games.reduce((acc, j) => {
-    const key = j.data || "sem-data";
-    if (!acc[key]) acc[key] = [];
-    acc[key].push(j);
-    return acc;
-  }, {});
-}
-
-function renderModeInfo() {
-  els.proximos3Btn.classList.toggle("isActive", activePeriodDays === 3);
-  els.proximos7Btn.classList.toggle("isActive", activePeriodDays === 7);
-  els.proximos15Btn.classList.toggle("isActive", activePeriodDays === 15);
-  els.proximos30Btn.classList.toggle("isActive", activePeriodDays === 30);
-  els.proximos60Btn.classList.toggle("isActive", activePeriodDays === 60);
-  els.proximos180Btn.classList.toggle("isActive", activePeriodDays === 180);
-
-  if (!activePeriodDays) {
-    els.periodoAtivo.hidden = true;
-    els.periodoAtivo.textContent = "";
-  } else {
-    const PERIOD_LABEL_KEYS = { 3: "period3", 7: "period7", 15: "period15", 30: "period30", 60: "period60", 180: "period180" };
-    const label = t(PERIOD_LABEL_KEYS[activePeriodDays] || "period7");
-    const range = `${formatShortDate(todayISO())} – ${formatShortDate(addDaysISO(activePeriodDays - 1))}`;
-    els.periodoAtivo.hidden = false;
-    els.periodoAtivo.textContent = `${label}: ${range}`;
-  }
-
-  const team = els.filtroTime.value;
-  if (showAllTeamMode && team) {
-    els.timeModoAtivo.hidden = false;
-    els.timeModoAtivo.textContent = t("all_team_active", team);
-  } else {
-    els.timeModoAtivo.hidden = true;
-    els.timeModoAtivo.textContent = "";
-  }
-
-  updateTeamButtonState();
-}
-
-function renderCalendar(games) {
-  els.contadorLista.textContent = `${games.length} ${games.length === 1 ? t("game") : t("games")}`;
-
-  if (!jogosEnriquecidos.length) {
-    els.calendario.innerHTML = `<div class="empty">${t("no_games_json")}</div>`;
-    return;
-  }
-
-  if (!games.length) {
-    els.calendario.innerHTML = `<div class="empty">${t("no_results")}</div>`;
-    return;
-  }
-
-  const groups = groupedByDate(games);
-  const dates = Object.keys(groups).sort();
-
-  els.calendario.innerHTML = dates.map(dateKey => `
-    <div class="dayGroup">
-      <h3 class="dayTitle">${escapeHtml(formatDate(dateKey))}</h3>
-      ${groups[dateKey].map(j => renderMatchCard(j)).join("")}
-    </div>
-  `).join("");
-}
-
-function renderMatchCard(j) {
-  return `
-    <article class="matchCard" data-idx="${j._idx}">
-      <div class="matchTop">
-        <div class="competition">${escapeHtml(j.competicao || t("championship_fallback"))}</div>
-        <div class="time">${escapeHtml(j.hora || t("time_confirm"))}</div>
-      </div>
-
-      <h4 class="teams">${escapeHtml(j.mandante || t("home_fallback"))} × ${escapeHtml(j.visitante || t("away_fallback"))}</h4>
-
-      <div class="meta">
-        <span>🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}${j._estadioFallback ? ` <em class="estimated">(${t("estimated_venue")})</em>` : ""}</span>
-        <span>📍 ${escapeHtml(j.cidade || t("city_confirm"))} ${j.regiao ? "· " + escapeHtml(j.regiao) : ""}</span>
-        <span>🏆 ${escapeHtml(j.rodada || t("round_confirm"))}</span>
-        ${j.extra ? `<span>ℹ️ ${escapeHtml(j.extra)}</span>` : ""}
-      </div>
-
-      <div class="badges">
-        <span class="badge badge--pais">${BANDEIRA_PAIS[j.pais] || "🏳️"} ${escapeHtml(j.pais)}</span>
-        ${j.temMapa ? `<span class="badge">${t("on_map")}</span>` : `<span class="badge noMap">${t("without_coords")}</span>`}
-        ${j.url ? `<span class="badge"><a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("source")}</a></span>` : ""}
-      </div>
-    </article>
-  `;
-}
-
-function markerPopup(j) {
-  return `
-    <div class="popupTitle">${escapeHtml(j.mandante || t("home_fallback"))} × ${escapeHtml(j.visitante || t("away_fallback"))}</div>
-    <div class="popupMeta">
-      <b>${escapeHtml(j.competicao || t("championship_fallback"))}</b><br>
-      ${escapeHtml(formatDate(j.data))} · ${escapeHtml(j.hora || t("time_confirm"))}<br>
-      🏟️ ${escapeHtml(j.estadio || t("stadium_confirm"))}${j._estadioFallback ? ` <em class="estimated">(${t("estimated_venue")})</em>` : ""}<br>
-      📍 ${escapeHtml(j.cidade || "")}${j.regiao ? " · " + escapeHtml(j.regiao) : ""}<br>
-      ${j.extra ? `ℹ️ ${escapeHtml(j.extra)}<br>` : ""}
-      ${j.url ? `<a href="${escapeHtml(j.url)}" target="_blank" rel="noopener">${t("see_source")}</a>` : ""}
-    </div>
-  `;
-}
-
-const DOT_ICON = L.divIcon({
-  className: "jogoDotIcon",
-  html: '<span class="jogoDot"></span>',
-  iconSize: [36, 36],
-  iconAnchor: [18, 18],
-  popupAnchor: [0, -14],
-});
-
-function updateMap(games) {
-  markersLayer.clearLayers();
-
-  const withMap = games.filter(j => j.temMapa && j.lat && j.lng);
-
-  for (const j of withMap) {
-    L.marker([Number(j.lat), Number(j.lng)], { icon: DOT_ICON })
-      .bindPopup(markerPopup(j))
-      .addTo(markersLayer);
-  }
-
-  els.totalJogos.textContent = games.length;
-  els.totalNoMapa.textContent = withMap.length;
-  els.totalCidades.textContent = uniqueSorted(games.map(j => j.cidade)).length;
-
-  if (!jogosEnriquecidos.length) {
-    els.mapStatus.textContent = t("no_json_map");
-    map.fitBounds(chileBounds);
-    return;
-  }
-
-  if (!withMap.length) {
-    els.mapStatus.textContent = t("no_coords_filtered");
-    map.fitBounds(chileBounds);
-    return;
-  }
-
-  const bounds = L.latLngBounds(withMap.map(j => [Number(j.lat), Number(j.lng)]));
-  map.fitBounds(bounds.pad(0.25), { maxZoom: 12 });
-  els.mapStatus.textContent = t("map_count", withMap.length, games.length);
-}
-
-function renderAll() {
-  renderModeInfo();
-  const filtered = getFilteredGames();
-  renderCalendar(filtered);
-  updateMap(filtered);
-}
-
-function setPeriod(days) {
-  activePeriodDays = activePeriodDays === days ? null : days;
-  showAllTeamMode = false;
-  els.filtroData.value = "";
-  renderAll();
-}
-
-function setupEvents() {
-  [
-    els.filtroCompeticao,
-    els.filtroTime,
-    els.filtroCidade,
-    els.filtroData,
-    els.busca,
-  ].forEach(el => {
-    el.addEventListener("input", () => {
-      if (el === els.filtroData && els.filtroData.value) {
-        activePeriodDays = null;
-        showAllTeamMode = false;
-      }
-      if (el === els.filtroTime && !els.filtroTime.value) showAllTeamMode = false;
-      renderAll();
-    });
-    el.addEventListener("change", () => {
-      if (el === els.filtroData && els.filtroData.value) {
-        activePeriodDays = null;
-        showAllTeamMode = false;
-      }
-      if (el === els.filtroTime && !els.filtroTime.value) showAllTeamMode = false;
-      renderAll();
-    });
-  });
-
-  els.filtroRegiao.addEventListener("change", () => {
-    showAllTeamMode = false;
-    els.filtroCompeticao.value = "";
-    els.filtroTime.value = "";
-    els.filtroCidade.value = "";
-    els.raioWrap.hidden = true;
-    updateDependentCompTimeOptions();
-    updateDependentCityOptions();
-    renderAll();
-  });
-
-  els.filtroCidade.addEventListener("change", () => {
-    els.raioWrap.hidden = !els.filtroCidade.value;
-    renderAll();
-  });
-
-  els.filtroRaio.addEventListener("input", () => {
-    updateRaioLabel();
-    renderAll();
-  });
-
-  els.filtroPais.addEventListener("change", () => {
-    showAllTeamMode = false;
-    els.filtroCompeticao.value = "";
-    els.filtroTime.value = "";
-    els.filtroRegiao.value = "";
-    els.filtroCidade.value = "";
-    els.raioWrap.hidden = true;
-    setupFilters();
-    renderAll();
-  });
-
-  els.hojeBtn.addEventListener("click", () => {
-    activePeriodDays = null;
-    showAllTeamMode = false;
-    els.filtroData.value = todayISO();
-    renderAll();
-  });
-
-  els.proximos3Btn.addEventListener("click", () => setPeriod(3));
-  els.proximos7Btn.addEventListener("click", () => setPeriod(7));
-  els.proximos15Btn.addEventListener("click", () => setPeriod(15));
-  els.proximos30Btn.addEventListener("click", () => setPeriod(30));
-  els.proximos60Btn.addEventListener("click", () => setPeriod(60));
-  els.proximos180Btn.addEventListener("click", () => setPeriod(180));
-
-  els.todosDoTimeBtn.addEventListener("click", () => {
-    if (!els.filtroTime.value) {
-      alert(t("choose_team_first"));
-      return;
-    }
-
-    showAllTeamMode = !showAllTeamMode;
-
-    if (showAllTeamMode) {
-      activePeriodDays = null;
-      els.filtroData.value = "";
-      // Mantém campeonato se o usuário quiser ver só daquele campeonato.
-      // Ignora cidade/região/data/período para listar todos os jogos disponíveis do time.
-      els.filtroRegiao.value = "";
-      els.filtroCidade.value = "";
-      updateDependentCityOptions();
-    }
-
-    renderAll();
-  });
-
-  els.limparBtn.addEventListener("click", () => {
-    els.filtroPais.value = "";
-    els.filtroCompeticao.value = "";
-    els.filtroTime.value = "";
-    els.filtroRegiao.value = "";
-    els.filtroCidade.value = "";
-    els.filtroRaio.value = "50";
-    updateRaioLabel();
-    els.raioWrap.hidden = true;
-    els.filtroData.value = "";
-    els.busca.value = "";
-    activePeriodDays = null;
-    showAllTeamMode = false;
-    semMapaAtivo = false;
-    els.semMapaBtn.textContent = t("no_coords");
-    setupFilters();
-    renderAll();
-  });
-
-  els.semMapaBtn.addEventListener("click", () => {
-    semMapaAtivo = !semMapaAtivo;
-    els.semMapaBtn.textContent = semMapaAtivo ? t("show_all") : t("no_coords");
-    renderAll();
-  });
-
-  els.ptBtn.addEventListener("click", () => applyLanguage("pt"));
-  els.esBtn.addEventListener("click", () => applyLanguage("es"));
-
-  els.calendario.addEventListener("click", event => {
-    const card = event.target.closest(".matchCard");
-    if (!card) return;
-    const jogo = jogosEnriquecidos.find(j => String(j._idx) === card.dataset.idx);
-    if (!jogo || !jogo.temMapa) return;
-    map.setView([Number(jogo.lat), Number(jogo.lng)], 12);
-  });
-}
-
-async function loadData() {
-  try {
-    const res = await fetch(`${DATA_URL}?v=${Date.now()}`);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-
-    const data = await res.json();
-    jogosOriginais = Array.isArray(data) ? data : [];
-    jogosEnriquecidos = enrichGames(jogosOriginais);
-
-    const latest = jogosEnriquecidos.map(j => j.atualizado_em).filter(Boolean).sort().at(-1);
-    els.ultimaAtualizacao.textContent = formatUpdated(latest);
-
-    applyLanguage(currentLang);
-  } catch (err) {
-    console.error(err);
-    els.calendario.innerHTML = `<div class="empty">${t("no_json")}</div>`;
-    els.mapStatus.textContent = t("map_json_error");
-    els.totalJogos.textContent = "0";
-    els.totalNoMapa.textContent = "0";
-    els.totalCidades.textContent = "0";
-  }
-}
-
-els.mapStatus.textContent = t("loading_map");
-setupEvents();
-loadData();
