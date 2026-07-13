@@ -705,27 +705,45 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
             rodadas_capturadas = 0
             try:
                 next_btn = None
-                for sel in ["button", "a", "li", "span", ".btn"]:
-                    locs = page.locator(sel)
-                    count = min(locs.count(), 60)
-                    for bi in range(count):
-                        try:
-                            txt = norm(locs.nth(bi).inner_text(timeout=250))
-                        except Exception:
-                            continue
-                        if txt == "next":
-                            next_btn = locs.nth(bi)
+                for sel in [
+                    ".carousel-control-next",
+                    "[data-bs-slide='next']",
+                    "[data-slide='next']",
+                    "a.carousel-control-next",
+                    "button.carousel-control-next",
+                ]:
+                    try:
+                        loc = page.locator(sel).first
+                        if loc.count() > 0:
+                            next_btn = loc
                             break
-                    if next_btn is not None:
-                        break
+                    except Exception:
+                        continue
+
+                if next_btn is None:
+                    # Fallback: procura por texto "next" (inclusive escondido p/ acessibilidade)
+                    for sel in ["button", "a", "li", "span", ".btn"]:
+                        locs = page.locator(sel)
+                        count = min(locs.count(), 60)
+                        for bi in range(count):
+                            try:
+                                txt = norm(locs.nth(bi).inner_text(timeout=250))
+                            except Exception:
+                                continue
+                            if txt == "next":
+                                next_btn = locs.nth(bi)
+                                break
+                        if next_btn is not None:
+                            break
 
                 if next_btn is not None:
-                    for _ in range(20):
+                    sem_novidade_seguidas = 0
+                    for _ in range(25):
                         try:
-                            next_btn.click(timeout=1000)
+                            next_btn.click(timeout=1500, force=True)
                         except Exception:
                             break
-                        page.wait_for_timeout(1000)
+                        page.wait_for_timeout(1200)
                         step_html = page.content()
                         step_lines = html_to_lines(step_html)
                         step_partidos = parse_carousel_fbf(step_lines, final_url, cid, comp)
@@ -737,10 +755,13 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
                                 existing_ids.add(sp.id)
                         if len(page_partidos) > before:
                             rodadas_capturadas += 1
+                            sem_novidade_seguidas = 0
                         else:
-                            # Não achou jogo novo: provavelmente deu a volta
-                            # no carrossel ou chegou no fim.
-                            pass
+                            sem_novidade_seguidas += 1
+                            if sem_novidade_seguidas >= 3:
+                                # 3 cliques seguidos sem jogo novo: carrossel
+                                # provavelmente deu a volta ou travou.
+                                break
             except Exception:
                 pass
 
