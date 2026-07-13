@@ -448,6 +448,22 @@
     "atualizado_em": "2026-07-13T15:44:16"
   },
   {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão Série A",
+    "data": "2026-07-11",
+    "hora": "15:00",
+    "mandante": "Fluminense de Feira",
+    "visitante": "Esporte Clube Vitória",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "CT Noide Cerqueira",
+    "rodada": "Rodada 19",
+    "url": "https://fbf.org.br/competicoes/4/2026",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=4; origem=carrossel_rodada; placar=1x0",
+    "id": "18b137c0310fae97",
+    "atualizado_em": "2026-07-13T16:36:27"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Campeonato Paulista De Futebol Feminino Sub-20 - 2026",
     "data": "2026-07-11",
@@ -542,6 +558,22 @@
     "extra": "status=Jugado; placar=(5)1-1(4)",
     "id": "7fbf342e248e4251",
     "atualizado_em": "2026-07-13T15:44:16"
+  },
+  {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão Série A",
+    "data": "2026-07-11",
+    "hora": "16:00",
+    "mandante": "Barreiras FC",
+    "visitante": "SSA FC",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "Geraldo Pereira",
+    "rodada": "Rodada 10",
+    "url": "https://fbf.org.br/competicoes/2/2026",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=2; origem=carrossel_rodada; placar=2x1",
+    "id": "378bd03915b97481",
+    "atualizado_em": "2026-07-13T16:36:27"
   },
   {
     "fonte": "FPF",
@@ -2308,6 +2340,54 @@
   },
   {
     "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão 2026 - Sub-20",
+    "data": "2026-07-18",
+    "hora": "",
+    "mandante": "Esporte Clube Bahia",
+    "visitante": "Camaçari FC",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://www.fbf.org.br/",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
+    "id": "7c392a131491953c",
+    "atualizado_em": "2026-07-13T16:36:27"
+  },
+  {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão 2026 - Sub-20",
+    "data": "2026-07-18",
+    "hora": "",
+    "mandante": "Esporte Clube Vitória",
+    "visitante": "Fluminense de Feira",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://www.fbf.org.br/",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
+    "id": "03cd012a050ef428",
+    "atualizado_em": "2026-07-13T16:36:27"
+  },
+  {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão 2026 - Série B",
+    "data": "2026-07-18",
+    "hora": "",
+    "mandante": "SSA FC",
+    "visitante": "Barreiras FC",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://www.fbf.org.br/",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
+    "id": "438b8593540698d0",
+    "atualizado_em": "2026-07-13T16:36:27"
+  },
+  {
+    "fonte": "FBF",
     "competicao": "Brasil - FBF - Baianão Série A",
     "data": "2026-07-18",
     "hora": "09:00",
@@ -2320,7 +2400,7 @@
     "url": "https://fbf.org.br/competicoes/4/2026",
     "extra": "pais=Brasil; estado=Bahia; codigo_fbf=4; origem=carrossel_rodada",
     "id": "6c2fe019ab885ced",
-    "atualizado_em": "2026-07-13T11:54:34"
+    "atualizado_em": "2026-07-13T16:36:27"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -2950,7 +3030,7 @@
     "url": "https://fbf.org.br/competicoes/2/2026",
     "extra": "pais=Brasil; estado=Bahia; codigo_fbf=2; origem=carrossel_rodada",
     "id": "a774af39df3dd69d",
-    "atualizado_em": "2026-07-13T11:54:34"
+    "atualizado_em": "2026-07-13T16:36:27"
   },
   {
     "fonte": "FES",
@@ -3187,6 +3267,22 @@
     "extra": "codigo_espn=401867186; status=Scheduled",
     "id": "20a14acb02d58bd6",
     "atualizado_em": "2026-07-11T15:51:05"
+  },
+  {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão 2026 - Série B",
+    "data": "2026-07-19",
+    "hora": "",
+    "mandante": "Fluminense de Feira",
+    "visitante": "Feira FC",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://www.fbf.org.br/",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
+    "id": "4b6469a569b4e94a",
+    "atualizado_em": "2026-07-13T16:36:27"
   },
   {
     "fonte": "campeonatochileno.cl",
