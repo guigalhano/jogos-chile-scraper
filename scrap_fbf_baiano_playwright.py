@@ -829,7 +829,7 @@ def resolver_nomes_completos(partidos: list["Partido"], cache: dict) -> tuple[li
     return partidos, cache, resolvidos_agora
 
 
-
+def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool) -> tuple[list[Partido], dict, list[dict]]:
     cid = str(item["id"])
     url = item["url"]
     nome = item.get("nome", f"FBF {cid}")
