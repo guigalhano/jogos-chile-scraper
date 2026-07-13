@@ -6,20 +6,20 @@ Scraper FBF (Campeonato Baiano) - com Playwright
 Segue o mesmo padrão de scrap_fmf_competicoes_playwright_seguro.py, adaptado
 para o site da Federação Bahiana de Futebol (fbf.org.br).
 
-IMPORTANTE / LIMITAÇÃO CONHECIDA:
-- Não foi possível inspecionar o HTML renderizado do fbf.org.br em tempo real
-  durante o desenvolvimento deste script (o site bloqueia acesso automatizado
-  via robots.txt para a ferramenta usada aqui). Os seletores e o formato de
-  linhas usados no parser de texto foram inferidos a partir de trechos
-  indexados publicamente (ex.: "Baianão 2026 - Sub-20 · 04/07/2026 · ECV · x ·
-  BAR · DETALHES DE JOGO"). É bem provável que seja necessário rodar com
-  --debug-html, olhar data/debug_fbf_html/*_lines.txt e ajustar
-  parse_text_patterns_fbf() para casar exatamente com o que a página realmente
-  renderiza.
-- Antes de rodar isso "de verdade" e com frequência, vale checar o
-  robots.txt / Termos de Uso do site (https://www.fbf.org.br/robots.txt) e
-  considerar ritmo de requisições (delay entre páginas) para não sobrecarregar
-  o servidor.
+STATUS (confirmado rodando de verdade via GitHub Actions, já que este sandbox
+não tem acesso de rede a fbf.org.br):
+- A home (BASE_URL) tem uma seção "PRÓXIMOS JOGOS" com o formato
+  Competição / DD/MM/AAAA / Mandante / x / Visitante / DETALHES DE JOGO.
+  parse_text_patterns_fbf() já extrai isso corretamente (validado com jogos
+  reais em 2026-07).
+- As páginas /competicoes/{id} (classificação) têm um formato DIFERENTE: um
+  carrossel "Rodada N" com um jogo por vez (Estádio / Data Hora / Mandante /
+  placar / placar / Visitante / DETALHES DE JOGO), navegável via botões
+  Previous/Next. parse_carousel_fbf() extrai o estado inicial, e
+  render_page_collect() clica em "Next" repetidamente para varrer rodadas.
+  Ainda pode precisar de ajuste fino (nº de cliques, rodadas futuras sem
+  placar etc.) — usar --debug-html para conferir.
+
 
 Como a FBF costuma ter várias competições (Baianão Série A, Série B, Sub-20,
 Sub-17, Sub-15, Intermunicipal, etc.), o script tenta:
@@ -480,7 +480,97 @@ def parse_text_patterns_fbf(lines: list[str], url: str, cid: str, competicao_nom
     return out
 
 
-def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool) -> tuple[list[Partido], dict, list[dict]]:
+def parse_carousel_fbf(lines: list[str], url: str, cid: str, competicao_nome: str) -> list[Partido]:
+    """Extrai jogos do carrossel encontrado em /competicoes/{id}:
+
+        Rodada 11
+        Previous
+        Next
+        Arena Fonte Nova
+        07/03/2026 17:00
+        ECB
+        2
+        1
+        ECV
+        DETALHES DE JOGO
+
+    Diferente do formato da home: tem estádio, data+hora juntos numa linha,
+    e placar (não usa "x" como separador).
+    """
+    out: list[Partido] = []
+    n = len(lines)
+    i = 0
+    while i < n:
+        if not RODADA_STRICT_RE.match(lines[i]):
+            i += 1
+            continue
+
+        rodada = clean_text(lines[i])
+        j = i + 1
+        while j < n and norm(lines[j]) in ("previous", "next", "anterior", "proxima", "próxima"):
+            j += 1
+
+        estadio = ""
+        if j < n and not DATE_NUM_RE.search(lines[j]) and not is_bad_name(lines[j]) and len(lines[j]) <= 60:
+            estadio = clean_text(lines[j])
+            j += 1
+
+        data = ""
+        hora = ""
+        if j < n and DATE_NUM_RE.search(lines[j]):
+            data = parse_date_any(lines[j])
+            hora = parse_time_any(lines[j])
+            j += 1
+
+        if not data:
+            i += 1
+            continue
+
+        mandante = ""
+        if j < n and not is_bad_name(lines[j]):
+            mandante = clean_text(lines[j])
+            j += 1
+
+        placar_m = ""
+        if j < n and re.fullmatch(r"\d{1,2}", clean_text(lines[j])):
+            placar_m = clean_text(lines[j])
+            j += 1
+
+        placar_v = ""
+        if j < n and re.fullmatch(r"\d{1,2}", clean_text(lines[j])):
+            placar_v = clean_text(lines[j])
+            j += 1
+
+        visitante = ""
+        if j < n and not is_bad_name(lines[j]):
+            visitante = clean_text(lines[j])
+            j += 1
+
+        if mandante and visitante and data and mandante != visitante:
+            extra = ["pais=Brasil", "estado=Bahia", f"codigo_fbf={cid}", "origem=carrossel_rodada"]
+            if placar_m or placar_v:
+                extra.append(f"placar={placar_m}x{placar_v}")
+            out.append(Partido(
+                fonte="FBF",
+                competicao=f"Brasil - FBF - {competicao_nome}",
+                data=data,
+                hora=hora,
+                mandante=mandante,
+                visitante=visitante,
+                pais="Brasil",
+                cidade="",
+                estadio=estadio,
+                rodada=rodada,
+                url=url,
+                extra="; ".join(extra),
+            ))
+
+        i = max(j, i + 1)
+
+    return out
+
+
+
     cid = str(item["id"])
     url = item["url"]
     nome = item.get("nome", f"FBF {cid}")
@@ -605,8 +695,57 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
             info["amostra_linhas"] = lines[:250]
 
             page_partidos = parse_text_patterns_fbf(lines, final_url, cid, comp)
+            page_partidos.extend(parse_carousel_fbf(lines, final_url, cid, comp))
             info["jogos"] = len(page_partidos)
             info["network_matches"] = len(network_partidos)
+
+            # Carrossel de rodadas em /competicoes/{id}: clica em "Next"
+            # repetidamente e recaptura o texto a cada passo, pra pegar
+            # várias rodadas (não só a que carrega por padrão).
+            rodadas_capturadas = 0
+            try:
+                next_btn = None
+                for sel in ["button", "a", "li", "span", ".btn"]:
+                    locs = page.locator(sel)
+                    count = min(locs.count(), 60)
+                    for bi in range(count):
+                        try:
+                            txt = norm(locs.nth(bi).inner_text(timeout=250))
+                        except Exception:
+                            continue
+                        if txt == "next":
+                            next_btn = locs.nth(bi)
+                            break
+                    if next_btn is not None:
+                        break
+
+                if next_btn is not None:
+                    for _ in range(20):
+                        try:
+                            next_btn.click(timeout=1000)
+                        except Exception:
+                            break
+                        page.wait_for_timeout(1000)
+                        step_html = page.content()
+                        step_lines = html_to_lines(step_html)
+                        step_partidos = parse_carousel_fbf(step_lines, final_url, cid, comp)
+                        before = len(page_partidos)
+                        existing_ids = {p.id for p in page_partidos}
+                        for sp in step_partidos:
+                            if sp.id not in existing_ids:
+                                page_partidos.append(sp)
+                                existing_ids.add(sp.id)
+                        if len(page_partidos) > before:
+                            rodadas_capturadas += 1
+                        else:
+                            # Não achou jogo novo: provavelmente deu a volta
+                            # no carrossel ou chegou no fim.
+                            pass
+            except Exception:
+                pass
+
+            info["jogos"] = len(page_partidos)
+            info["rodadas_carrossel_capturadas"] = rodadas_capturadas
 
             if debug_html:
                 HTML_DIR.mkdir(exist_ok=True)
