@@ -13,7 +13,7 @@
     "url": "https://www.fbf.org.br/",
     "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
     "id": "72f43f18923c44a2",
-    "atualizado_em": "2026-07-13T03:32:14"
+    "atualizado_em": "2026-07-13T09:55:50"
   },
   {
     "fonte": "FBF",
@@ -29,7 +29,7 @@
     "url": "https://www.fbf.org.br/",
     "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
     "id": "6a7be3294decad11",
-    "atualizado_em": "2026-07-13T03:32:14"
+    "atualizado_em": "2026-07-13T09:55:50"
   },
   {
     "fonte": "FBF",
@@ -45,7 +45,7 @@
     "url": "https://www.fbf.org.br/",
     "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
     "id": "d766e4e04f0b72ef",
-    "atualizado_em": "2026-07-13T03:32:14"
+    "atualizado_em": "2026-07-13T09:55:50"
   },
   {
     "fonte": "FBF",
@@ -61,22 +61,70 @@
     "url": "https://www.fbf.org.br/",
     "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
     "id": "e6f230c2a5e65921",
-    "atualizado_em": "2026-07-13T03:32:14"
+    "atualizado_em": "2026-07-13T09:55:50"
   },
   {
     "fonte": "FBF",
     "competicao": "Brasil - FBF - Baianão Série A",
-    "data": "2026-03-07",
-    "hora": "17:00",
-    "mandante": "ECB",
+    "data": "2026-07-11",
+    "hora": "16:00",
+    "mandante": "BFC",
+    "visitante": "SSA",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "Geraldo Pereira",
+    "rodada": "Rodada 10",
+    "url": "https://fbf.org.br/competicoes/2/2026",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=2; origem=carrossel_rodada; placar=2x1",
+    "id": "4796391429e54769",
+    "atualizado_em": "2026-07-13T09:55:50"
+  },
+  {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão Série A",
+    "data": "2026-07-18",
+    "hora": "15:00",
+    "mandante": "SSA",
+    "visitante": "BFC",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "SuperBet Arena",
+    "rodada": "Rodada 11",
+    "url": "https://fbf.org.br/competicoes/2/2026",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=2; origem=carrossel_rodada",
+    "id": "9de9529a1266db6a",
+    "atualizado_em": "2026-07-13T09:55:50"
+  },
+  {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão Série A",
+    "data": "2026-07-11",
+    "hora": "15:00",
+    "mandante": "FLU",
     "visitante": "ECV",
     "pais": "Brasil",
     "cidade": "",
-    "estadio": "Arena Fonte Nova",
-    "rodada": "Rodada 11",
-    "url": "https://fbf.org.br/competicoes/1/2026",
-    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=1; origem=carrossel_rodada; placar=2x1",
-    "id": "27d69bed2653446b",
-    "atualizado_em": "2026-07-13T03:32:14"
+    "estadio": "CT Noide Cerqueira",
+    "rodada": "Rodada 19",
+    "url": "https://fbf.org.br/competicoes/4/2026",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=4; origem=carrossel_rodada; placar=1x0",
+    "id": "c6c89c719c3f5880",
+    "atualizado_em": "2026-07-13T09:55:50"
+  },
+  {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão Série A",
+    "data": "2026-07-18",
+    "hora": "09:00",
+    "mandante": "ECV",
+    "visitante": "FLU",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "CT Manoel Barradas",
+    "rodada": "Rodada 20",
+    "url": "https://fbf.org.br/competicoes/4/2026",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=4; origem=carrossel_rodada",
+    "id": "da94761c637821bc",
+    "atualizado_em": "2026-07-13T09:55:50"
   }
 ]
