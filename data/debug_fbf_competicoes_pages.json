@@ -201,6 +201,12 @@
       "2026 Desenvolvido por"
     ],
     "network_matches": 4,
+    "carousel_debug": {
+      "botao_encontrado": false,
+      "seletor_usado": "",
+      "cliques_tentados": 0,
+      "rodadas_vistas": []
+    },
     "rodadas_carrossel_capturadas": 0
   },
   {
@@ -367,6 +373,17 @@
       "2026 Desenvolvido por"
     ],
     "network_matches": 0,
+    "carousel_debug": {
+      "botao_encontrado": true,
+      "seletor_usado": ".carousel-control-next",
+      "cliques_tentados": 3,
+      "rodadas_vistas": [
+        "Rodada 11",
+        "Rodada 11",
+        "Rodada 11",
+        "Rodada 11"
+      ]
+    },
     "rodadas_carrossel_capturadas": 0
   }
 ]
