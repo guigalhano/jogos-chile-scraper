@@ -529,4 +529,22 @@ window.ESTADIOS_PARAGUAY = [
     lng: -55.8664,
     fonte: "manual/aproximado (sem estadio proprio confirmado)",
   },
+  {
+    nome: "Estadio Parque del Guairá",
+    aliases: ["parque del guaira", "parque del guairá"],
+    cidade: "Villarrica",
+    regiao: "Paraguay",
+    lat: -25.7833,
+    lng: -56.4333,
+    fonte: "manual/confirmado (estádio do Guaireña FC, Villarrica — ABC Color)",
+  },
+  {
+    nome: "Estadio Erico Galeano",
+    aliases: ["erico galeano"],
+    cidade: "Capiatá",
+    regiao: "Paraguay",
+    lat: -25.3556,
+    lng: -57.4453,
+    fonte: "manual/confirmado (estádio do Deportivo Capiatá — ABC Color)",
+  },
 ];
