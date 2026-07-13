@@ -573,7 +573,232 @@ def parse_carousel_fbf(lines: list[str], url: str, cid: str, competicao_nome: st
     return out
 
 
-def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool) -> tuple[list[Partido], dict, list[dict]]:
+def extract_prox_jogos_home(html: str, url: str, cid: str) -> list["Partido"]:
+    """Extrai os cards da seção 'PRÓXIMOS JOGOS' direto da estrutura HTML
+    (mais confiável que trabalhar em cima do texto linearizado).
+
+    Estrutura observada:
+        div.grid-item
+          div.data-hora-card-jogo > span  (competição + data)
+          div.prx-jogo-left > span (sigla) + img (escudo)
+          div.prx-jogo-right > span (sigla) + img (escudo)
+          div.detalhe-do-jogo > a[href]  (link pra .../jogo/detalhes/N)
+    """
+    soup = BeautifulSoup(html or "", "html.parser")
+    out: list[Partido] = []
+    seen_urls = set()
+    for gi in soup.select(".grid-item"):
+        left = gi.select_one(".prx-jogo-left")
+        right = gi.select_one(".prx-jogo-right")
+        if not left or not right:
+            continue
+
+        link = gi.select_one(".detalhe-do-jogo a[href]") or gi.select_one("a[href*='jogo/detalhes']")
+        jogo_url = urljoin(url, link["href"]) if link and link.get("href") else ""
+        if jogo_url:
+            if jogo_url in seen_urls:
+                continue
+            seen_urls.add(jogo_url)
+
+        comp_span = gi.select_one(".data-hora-card-jogo span")
+        comp_raw = clean_text(comp_span.get_text(" ", strip=True)) if comp_span else ""
+        data = parse_date_any(comp_raw)
+        competicao = clean_text(DATE_NUM_RE.sub("", comp_raw)) or "Baianão"
+
+        mandante_sigla = clean_text(left.get_text(" ", strip=True))
+        visitante_sigla = clean_text(right.get_text(" ", strip=True))
+
+        if not (mandante_sigla and visitante_sigla and data):
+            continue
+        if is_bad_name(mandante_sigla) or is_bad_name(visitante_sigla) or mandante_sigla == visitante_sigla:
+            continue
+
+        extra = ["pais=Brasil", "estado=Bahia", f"codigo_fbf={cid}", "origem=home_widget"]
+        if jogo_url:
+            extra.append(f"jogo_url={jogo_url}")
+
+        out.append(Partido(
+            fonte="FBF",
+            competicao=f"Brasil - FBF - {competicao}",
+            data=data,
+            hora="",
+            mandante=mandante_sigla,
+            visitante=visitante_sigla,
+            pais="Brasil",
+            cidade="",
+            estadio="",
+            rodada="",
+            url=url,
+            extra="; ".join(extra),
+        ))
+    return out
+
+
+def extract_carousel_html(html: str, url: str, cid: str, competicao_nome: str) -> list["Partido"]:
+    """Extrai o jogo exibido no carrossel 'Rodada N' de /competicoes/{id}
+    direto da estrutura HTML (mais confiável que o texto linearizado)."""
+    soup = BeautifulSoup(html or "", "html.parser")
+    out: list[Partido] = []
+    for item in soup.select(".carousel-item"):
+        titulo = item.select_one(".carousel-titulo h4")
+        rodada = clean_text(titulo.get_text(strip=True)) if titulo else ""
+
+        dh = item.select_one(".data-hora-card-jogo span")
+        estadio = ""
+        data = ""
+        hora = ""
+        if dh:
+            raw = clean_text(dh.get_text(" ", strip=True))
+            data = parse_date_any(raw)
+            hora = parse_time_any(raw)
+            estadio = clean_text(TIME_RE.sub("", DATE_NUM_RE.sub("", raw)))
+
+        siglas = item.select(".time-confronto")
+        mandante_sigla = clean_text(siglas[0].get_text(strip=True)) if len(siglas) > 0 else ""
+        visitante_sigla = clean_text(siglas[1].get_text(strip=True)) if len(siglas) > 1 else ""
+
+        placar_spans = item.select(".hora-confronto-card span")
+        placar_nums = [clean_text(s.get_text(strip=True)) for s in placar_spans]
+        placar_nums = [s for s in placar_nums if re.fullmatch(r"\d{1,2}", s)]
+        placar_m = placar_nums[0] if len(placar_nums) > 0 else ""
+        placar_v = placar_nums[1] if len(placar_nums) > 1 else ""
+
+        link = item.select_one("a[href*='jogo/detalhes']")
+        jogo_url = urljoin(url, link["href"]) if link and link.get("href") else ""
+
+        if not (mandante_sigla and visitante_sigla and data):
+            continue
+        if is_bad_name(mandante_sigla) or is_bad_name(visitante_sigla) or mandante_sigla == visitante_sigla:
+            continue
+
+        extra = ["pais=Brasil", "estado=Bahia", f"codigo_fbf={cid}", "origem=carrossel_rodada"]
+        if placar_m or placar_v:
+            extra.append(f"placar={placar_m}x{placar_v}")
+        if jogo_url:
+            extra.append(f"jogo_url={jogo_url}")
+
+        out.append(Partido(
+            fonte="FBF",
+            competicao=f"Brasil - FBF - {competicao_nome}",
+            data=data,
+            hora=hora,
+            mandante=mandante_sigla,
+            visitante=visitante_sigla,
+            pais="Brasil",
+            cidade="",
+            estadio=estadio,
+            rodada=rodada,
+            url=url,
+            extra="; ".join(extra),
+        ))
+    return out
+
+
+NOMES_CACHE_PATH = OUT_DIR / "fbf_mapa_times.json"
+JOGO_URL_EXTRA_RE = re.compile(r"jogo_url=([^;]+)")
+VERSUS_LOOSE_RE = re.compile(r"(.{2,45}?)\s+(?:x|X|×|vs\.?|v/s)\s+(.{2,45})")
+
+
+def load_nomes_cache() -> dict:
+    if NOMES_CACHE_PATH.exists():
+        try:
+            return json.loads(NOMES_CACHE_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            return {}
+    return {}
+
+
+def save_nomes_cache(cache: dict) -> None:
+    NOMES_CACHE_PATH.write_text(
+        json.dumps(cache, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8"
+    )
+
+
+def resolve_nome_time(jogo_url: str) -> tuple[str, str]:
+    """Visita a página de detalhes do jogo (.../jogo/detalhes/N) e tenta
+    extrair os nomes completos dos dois times (mandante, visitante).
+
+    Tenta várias estratégias, já que não foi possível confirmar ao vivo o
+    HTML exato dessa página durante o desenvolvimento: og:title, <title>,
+    cabeçalhos (h1/h2/h3), e por fim seletores comuns de "nome do time".
+    """
+    try:
+        r = requests.get(jogo_url, headers=HEADERS, timeout=25)
+        soup = BeautifulSoup(r.text, "html.parser")
+    except Exception:
+        return ("", "")
+
+    candidatos = []
+    ogt = soup.find("meta", attrs={"property": "og:title"})
+    if ogt and ogt.get("content"):
+        candidatos.append(clean_text(ogt["content"]))
+    tw = soup.find("meta", attrs={"name": "twitter:title"})
+    if tw and tw.get("content"):
+        candidatos.append(clean_text(tw["content"]))
+    if soup.title and soup.title.string:
+        candidatos.append(clean_text(soup.title.string))
+    for h in soup.find_all(["h1", "h2", "h3"]):
+        candidatos.append(clean_text(h.get_text(" ", strip=True)))
+
+    for c in candidatos:
+        m = VERSUS_LOOSE_RE.search(c)
+        if m:
+            a = clean_text(re.sub(r"^(jogo|partida)[:\-]?\s*", "", m.group(1), flags=re.I))
+            b = clean_text(re.split(r"\s*[-–|]\s*", m.group(2))[0])
+            if a and b and len(a) <= 60 and len(b) <= 60:
+                return (a, b)
+
+    # fallback: elementos com classe comumente usada para "nome do time"
+    for sel in [".nome-time", ".time-nome", ".team-name", ".nome-clube", ".nome-mandante, .nome-visitante"]:
+        els = soup.select(sel)
+        textos = [clean_text(e.get_text(" ", strip=True)) for e in els]
+        textos = [t for t in textos if t]
+        if len(textos) >= 2:
+            return (textos[0], textos[1])
+
+    return ("", "")
+
+
+def resolver_nomes_completos(partidos: list["Partido"], cache: dict) -> tuple[list["Partido"], dict, int]:
+    """Substitui sigla por nome completo em mandante/visitante, usando (e
+    alimentando) um cache persistido em disco (fbf_mapa_times.json), pra não
+    precisar visitar a página de detalhes de novo em toda execução."""
+    resolvidos_agora = 0
+    for p in partidos:
+        if p.fonte != "FBF":
+            continue
+
+        sigla_m, sigla_v = p.mandante, p.visitante
+
+        if sigla_m in cache and cache[sigla_m]:
+            p.mandante = cache[sigla_m]
+        if sigla_v in cache and cache[sigla_v]:
+            p.visitante = cache[sigla_v]
+
+        precisa_m = sigla_m not in cache or not cache.get(sigla_m)
+        precisa_v = sigla_v not in cache or not cache.get(sigla_v)
+        if not (precisa_m or precisa_v):
+            continue
+
+        m = JOGO_URL_EXTRA_RE.search(p.extra or "")
+        if not m:
+            continue
+        jogo_url = m.group(1)
+
+        nome_m, nome_v = resolve_nome_time(jogo_url)
+        if nome_m and precisa_m:
+            cache[sigla_m] = nome_m
+            p.mandante = nome_m
+            resolvidos_agora += 1
+        if nome_v and precisa_v:
+            cache[sigla_v] = nome_v
+            p.visitante = nome_v
+            resolvidos_agora += 1
+
+    return partidos, cache, resolvidos_agora
+
+
+
     cid = str(item["id"])
     url = item["url"]
     nome = item.get("nome", f"FBF {cid}")
@@ -699,6 +924,17 @@ def render_page_collect(item: dict, wait_ms: int, click: bool, debug_html: bool)
 
             page_partidos = parse_text_patterns_fbf(lines, final_url, cid, comp)
             page_partidos.extend(parse_carousel_fbf(lines, final_url, cid, comp))
+            page_partidos.extend(extract_prox_jogos_home(html, final_url, cid))
+            page_partidos.extend(extract_carousel_html(html, final_url, cid, comp))
+            # dedupe local (os extratores podem se sobrepor)
+            _seen_ids = set()
+            _dedup = []
+            for p in page_partidos:
+                if p.id in _seen_ids:
+                    continue
+                _seen_ids.add(p.id)
+                _dedup.append(p)
+            page_partidos = _dedup
             info["jogos"] = len(page_partidos)
             info["network_matches"] = len(network_partidos)
 
@@ -938,6 +1174,12 @@ def main() -> None:
             )
         else:
             print(f"[--] id={item['id']} | sem jogos | linhas={len(info.get('amostra_linhas', []))}")
+
+    cache_nomes = load_nomes_cache()
+    all_partidos, cache_nomes, resolvidos_agora = resolver_nomes_completos(all_partidos, cache_nomes)
+    if resolvidos_agora:
+        save_nomes_cache(cache_nomes)
+        print(f"[INFO] Nomes completos resolvidos nesta execução: {resolvidos_agora} (cache: data/fbf_mapa_times.json)")
 
     all_partidos = dedupe_partidos(all_partidos)
     rows_new = [p.to_row() for p in all_partidos]

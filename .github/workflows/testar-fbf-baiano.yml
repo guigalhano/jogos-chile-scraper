@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_network.json data/debug_fbf_competicoes_raw.json data/debug_fbf_html data/debug_fbf_run.log 2>/dev/null || true
+          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_network.json data/debug_fbf_competicoes_raw.json data/debug_fbf_html data/debug_fbf_run.log data/fbf_mapa_times.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Sem mudanças para commitar"
           else
