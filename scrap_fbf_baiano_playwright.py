@@ -98,6 +98,7 @@ DATE_LONG_RE = re.compile(
 )
 X_ONLY_RE = re.compile(r"^\s*[xX]\s*$")
 DETALHES_RE = re.compile(r"detalhes\s+d[eo]\s+jogo", re.I)
+RODADA_STRICT_RE = re.compile(r"^\s*\d{1,2}[ºª]?\s*rodada\b", re.I)
 
 BAD = {
     "fbf federacao bahiana de futebol", "federacao bahiana de futebol",
@@ -387,8 +388,12 @@ def parse_text_patterns_fbf(lines: list[str], url: str, cid: str, competicao_nom
         if any(k in ns for k in ["baianao", "baiano"]) and len(line) <= 90 and not DATE_NUM_RE.search(line):
             competicao_atual = line
 
-        if "rodada" in ns and len(line) <= 60:
+        if RODADA_STRICT_RE.match(line) and len(line) <= 40:
             current_round = line
+        elif any(k in ns for k in ["proximos jogos", "resultados", "ultimas noticias", "registros de eventos"]):
+            # Marcadores de seção: zera a rodada "herdada" de blocos anteriores
+            # (ex.: manchetes de notícia que citam "rodada" fora de contexto).
+            current_round = ""
 
         dt = parse_date_any(line)
         if dt:

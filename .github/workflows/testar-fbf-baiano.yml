@@ -25,9 +25,9 @@ jobs:
           pip install -r requirements.txt
           python -m playwright install chromium
 
-      - name: Rodar scraper FBF (somente home, com debug-html)
+      - name: Rodar scraper FBF (home + competicoes 1 a 5, com debug-html)
         run: |
-          python scrap_fbf_baiano_playwright.py --somente-id home --incluir-passados --debug-html
+          python scrap_fbf_baiano_playwright.py --somente-id home --somente-id 1 --somente-id 2 --somente-id 3 --somente-id 4 --somente-id 5 --incluir-passados --debug-html
 
       - name: Salvar resultados do diagnóstico (NÃO mistura com dados de produção)
         run: |
