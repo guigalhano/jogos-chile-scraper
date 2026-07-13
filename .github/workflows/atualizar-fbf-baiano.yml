@@ -29,13 +29,22 @@ jobs:
 
       - name: Rodar scraper FBF (Baiano) via Playwright
         run: |
-          python scrap_fbf_baiano_playwright.py --max-id 15 --dias 180 --debug-html 2>&1 | tee data/debug_fbf_run.log
+          set -e -o pipefail
+          echo "pwd: $(pwd)"
+          ls -la scrap_fbf_baiano_playwright.py
+          python --version
+          python -c "import playwright; print('playwright OK:', playwright.__file__)"
+          python scrap_fbf_baiano_playwright.py --max-id 15 --dias 180 --debug-html > data/debug_fbf_run.log 2>&1
+          echo "scraper terminou com exit code $?"
+          tail -n 30 data/debug_fbf_run.log
 
       - name: Salvar arquivos atualizados
+        if: always()
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
-          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_raw.json data/fbf_mapa_times.json data/debug_fbf_run.log data/debug_fbf_resolve_nomes.json 2>/dev/null || true
+          git add data/debug_fbf_run.log 2>/dev/null || true
+          git add data/debug_fbf_competicoes_urls.json data/debug_fbf_competicoes_pages.json data/debug_fbf_competicoes_raw.json data/fbf_mapa_times.json data/debug_fbf_resolve_nomes.json 2>/dev/null || true
           git commit -m "Atualiza jogos FBF (Baiano) - semanal" || echo "Sem mudanças"
           git push
