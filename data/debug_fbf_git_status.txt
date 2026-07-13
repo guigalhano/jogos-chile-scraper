@@ -1,86 +1,86 @@
 === git status (antes do add) ===
+ M data/debug_fbf_git_status.txt
  M data/debug_fbf_run.log
-?? data/debug_fbf_git_status.txt
 === timestamp ===
-Mon Jul 13 10:55:11 UTC 2026
+Mon Jul 13 11:00:44 UTC 2026
 === ls data/ ===
 total 6080
-drwxr-xr-x 6 runner runner    4096 Jul 13 10:55 .
-drwxr-xr-x 6 runner runner    4096 Jul 13 10:54 ..
--rw-r--r-- 1 runner runner    8514 Jul 13 10:54 cruzamento_api_football.json
--rw-r--r-- 1 runner runner   49284 Jul 13 10:54 cruzamento_promiedos.json
--rw-r--r-- 1 runner runner  102251 Jul 13 10:54 debug_apf_detalhe_intermedia_raw.json
--rw-r--r-- 1 runner runner    4282 Jul 13 10:54 debug_apf_jogos_raw.json
--rw-r--r-- 1 runner runner   87278 Jul 13 10:54 debug_apf_json_payloads.json
--rw-r--r-- 1 runner runner 1378477 Jul 13 10:54 debug_apf_nextdata_detalhe_partida.json
--rw-r--r-- 1 runner runner  240352 Jul 13 10:54 debug_apf_nextdata_paraguay_copa_de_primera.json
--rw-r--r-- 1 runner runner  159721 Jul 13 10:54 debug_apf_nextdata_paraguay_division_intermedia.json
--rw-r--r-- 1 runner runner     624 Jul 13 10:54 debug_apf_pages.json
--rw-r--r-- 1 runner runner   25255 Jul 13 10:54 debug_apf_responses.json
--rw-r--r-- 1 runner runner    3646 Jul 13 10:54 debug_apf_venue_lookup.json
--rw-r--r-- 1 runner runner   11427 Jul 13 10:54 debug_auf_jogos_raw.json
--rw-r--r-- 1 runner runner   14523 Jul 13 10:54 debug_auf_text_uruguay_liga_auf_uruguaya.txt
--rw-r--r-- 1 runner runner   13957 Jul 13 10:54 debug_auf_text_uruguay_primera_divisional_c.txt
--rw-r--r-- 1 runner runner     593 Jul 13 10:54 debug_auf_urls.json
--rw-r--r-- 1 runner runner     198 Jul 13 10:54 debug_bolivia_espn_pages.json
--rw-r--r-- 1 runner runner   24275 Jul 13 10:54 debug_bolivia_espn_raw.json
--rw-r--r-- 1 runner runner  189814 Jul 13 10:54 debug_cbf_page_resources.json
--rw-r--r-- 1 runner runner    2865 Jul 13 10:54 debug_cbf_pdf_discovery.json
--rw-r--r-- 1 runner runner    4669 Jul 13 10:54 debug_cbf_pdf_links.json
--rw-r--r-- 1 runner runner    6256 Jul 13 10:54 debug_cbf_search.json
--rw-r--r-- 1 runner runner     277 Jul 13 10:54 debug_colombia_espn_pages.json
--rw-r--r-- 1 runner runner   73221 Jul 13 10:54 debug_colombia_espn_raw.json
--rw-r--r-- 1 runner runner   33507 Jul 13 10:54 debug_conmebol_conmebol_libertadores_amostras.json
--rw-r--r-- 1 runner runner   23160 Jul 13 10:54 debug_conmebol_conmebol_sudamericana_amostras.json
--rw-r--r-- 1 runner runner     220 Jul 13 10:54 debug_conmebol_pages.json
--rw-r--r-- 1 runner runner   16430 Jul 13 10:54 debug_conmebol_raw.json
--rw-r--r-- 1 runner runner    8329 Jul 13 10:54 debug_cse_calls.json
--rw-r--r-- 1 runner runner     188 Jul 13 10:54 debug_ecuador_espn_pages.json
--rw-r--r-- 1 runner runner   44801 Jul 13 10:54 debug_ecuador_espn_raw.json
--rw-r--r-- 1 runner runner  375448 Jul 13 10:54 debug_fbf_competicoes_network.json
--rw-r--r-- 1 runner runner   65882 Jul 13 10:54 debug_fbf_competicoes_pages.json
--rw-r--r-- 1 runner runner    3767 Jul 13 10:54 debug_fbf_competicoes_raw.json
--rw-r--r-- 1 runner runner    2090 Jul 13 10:54 debug_fbf_competicoes_urls.json
--rw-r--r-- 1 runner runner     157 Jul 13 10:55 debug_fbf_git_status.txt
-drwxr-xr-x 2 runner runner    4096 Jul 13 10:54 debug_fbf_html
--rw-r--r-- 1 runner runner     514 Jul 13 10:55 debug_fbf_run.log
--rw-r--r-- 1 runner runner       2 Jul 13 10:54 debug_federal_a_raw.json
--rw-r--r-- 1 runner runner   61126 Jul 13 10:54 debug_fes_raw.json
--rw-r--r-- 1 runner runner   67607 Jul 13 10:54 debug_fferj_estadios_raw.json
--rw-r--r-- 1 runner runner   21116 Jul 13 10:54 debug_fferj_geocoding_cache.json
--rw-r--r-- 1 runner runner       2 Jul 13 10:54 debug_fferj_rio_errors.json
--rw-r--r-- 1 runner runner     313 Jul 13 10:54 debug_fferj_rio_pages.json
--rw-r--r-- 1 runner runner   32271 Jul 13 10:54 debug_fferj_rio_raw.json
-drwxr-xr-x 2 runner runner    4096 Jul 13 10:54 debug_fgf_html
--rw-r--r-- 1 runner runner  232877 Jul 13 10:54 debug_fmf_competicoes_pages.json
--rw-r--r-- 1 runner runner  154001 Jul 13 10:54 debug_fmf_competicoes_raw.json
--rw-r--r-- 1 runner runner    5579 Jul 13 10:54 debug_fmf_competicoes_urls.json
--rw-r--r-- 1 runner runner    3482 Jul 13 10:54 debug_fmf_mt_raw.json
--rw-r--r-- 1 runner runner    3508 Jul 13 10:54 debug_fpf_api_urls.json
--rw-r--r-- 1 runner runner       2 Jul 13 10:54 debug_fpf_matches_raw.json
--rw-r--r-- 1 runner runner   52366 Jul 13 10:54 debug_fpf_para_raw.json
-drwxr-xr-x 2 runner runner   12288 Jul 13 10:54 debug_fpf_parana_html
-drwxr-xr-x 2 runner runner    4096 Jul 13 10:54 debug_fpf_paulista_tabelas
--rw-r--r-- 1 runner runner     979 Jul 13 10:54 debug_fpf_tabela_diag.json
--rw-r--r-- 1 runner runner       2 Jul 13 10:54 debug_fpf_tabela_jogos_raw.json
--rw-r--r-- 1 runner runner       2 Jul 13 10:54 debug_fpf_tabela_payloads.json
--rw-r--r-- 1 runner runner   28293 Jul 13 10:54 debug_fpf_tabela_requests.json
--rw-r--r-- 1 runner runner     995 Jul 13 10:54 debug_futbolperuano_pages.json
--rw-r--r-- 1 runner runner    8554 Jul 13 10:54 debug_futbolperuano_peru_copa_de_la_liga_snippet.json
--rw-r--r-- 1 runner runner    8498 Jul 13 10:54 debug_futbolperuano_peru_futbol_femenino_snippet.json
--rw-r--r-- 1 runner runner    8539 Jul 13 10:54 debug_futbolperuano_peru_liga_2_snippet.json
--rw-r--r-- 1 runner runner    7256 Jul 13 10:54 debug_futbolperuano_raw.json
--rw-r--r-- 1 runner runner    3896 Jul 13 10:54 debug_liga1_embedded.json
--rw-r--r-- 1 runner runner    2836 Jul 13 10:54 debug_liga1_json_payloads.json
--rw-r--r-- 1 runner runner    5242 Jul 13 10:54 debug_liga1_responses.json
--rw-r--r-- 1 runner runner    8277 Jul 13 10:54 debug_liga1_widget_html.json
--rw-r--r-- 1 runner runner    1801 Jul 13 10:54 debug_ligapro_pdf_diag.json
--rw-r--r-- 1 runner runner   16077 Jul 13 10:54 debug_ligapro_pdf_playwright.json
--rw-r--r-- 1 runner runner    9477 Jul 13 10:54 debug_ligapro_pdf_texto.json
--rw-r--r-- 1 runner runner   23171 Jul 13 10:54 debug_uruguai_pages.json
--rw-r--r-- 1 runner runner 1065116 Jul 13 10:54 historico_jogos.csv
--rw-r--r-- 1 runner runner  417500 Jul 13 10:54 jogos_programados.csv
--rw-r--r-- 1 runner runner  801425 Jul 13 10:54 jogos_programados.json
+drwxr-xr-x 6 runner runner    4096 Jul 13 11:00 .
+drwxr-xr-x 6 runner runner    4096 Jul 13 11:00 ..
+-rw-r--r-- 1 runner runner    8514 Jul 13 11:00 cruzamento_api_football.json
+-rw-r--r-- 1 runner runner   49284 Jul 13 11:00 cruzamento_promiedos.json
+-rw-r--r-- 1 runner runner  102251 Jul 13 11:00 debug_apf_detalhe_intermedia_raw.json
+-rw-r--r-- 1 runner runner    4282 Jul 13 11:00 debug_apf_jogos_raw.json
+-rw-r--r-- 1 runner runner   87278 Jul 13 11:00 debug_apf_json_payloads.json
+-rw-r--r-- 1 runner runner 1378477 Jul 13 11:00 debug_apf_nextdata_detalhe_partida.json
+-rw-r--r-- 1 runner runner  240352 Jul 13 11:00 debug_apf_nextdata_paraguay_copa_de_primera.json
+-rw-r--r-- 1 runner runner  159721 Jul 13 11:00 debug_apf_nextdata_paraguay_division_intermedia.json
+-rw-r--r-- 1 runner runner     624 Jul 13 11:00 debug_apf_pages.json
+-rw-r--r-- 1 runner runner   25255 Jul 13 11:00 debug_apf_responses.json
+-rw-r--r-- 1 runner runner    3646 Jul 13 11:00 debug_apf_venue_lookup.json
+-rw-r--r-- 1 runner runner   11427 Jul 13 11:00 debug_auf_jogos_raw.json
+-rw-r--r-- 1 runner runner   14523 Jul 13 11:00 debug_auf_text_uruguay_liga_auf_uruguaya.txt
+-rw-r--r-- 1 runner runner   13957 Jul 13 11:00 debug_auf_text_uruguay_primera_divisional_c.txt
+-rw-r--r-- 1 runner runner     593 Jul 13 11:00 debug_auf_urls.json
+-rw-r--r-- 1 runner runner     198 Jul 13 11:00 debug_bolivia_espn_pages.json
+-rw-r--r-- 1 runner runner   24275 Jul 13 11:00 debug_bolivia_espn_raw.json
+-rw-r--r-- 1 runner runner  189814 Jul 13 11:00 debug_cbf_page_resources.json
+-rw-r--r-- 1 runner runner    2865 Jul 13 11:00 debug_cbf_pdf_discovery.json
+-rw-r--r-- 1 runner runner    4669 Jul 13 11:00 debug_cbf_pdf_links.json
+-rw-r--r-- 1 runner runner    6256 Jul 13 11:00 debug_cbf_search.json
+-rw-r--r-- 1 runner runner     277 Jul 13 11:00 debug_colombia_espn_pages.json
+-rw-r--r-- 1 runner runner   73221 Jul 13 11:00 debug_colombia_espn_raw.json
+-rw-r--r-- 1 runner runner   33507 Jul 13 11:00 debug_conmebol_conmebol_libertadores_amostras.json
+-rw-r--r-- 1 runner runner   23160 Jul 13 11:00 debug_conmebol_conmebol_sudamericana_amostras.json
+-rw-r--r-- 1 runner runner     220 Jul 13 11:00 debug_conmebol_pages.json
+-rw-r--r-- 1 runner runner   16430 Jul 13 11:00 debug_conmebol_raw.json
+-rw-r--r-- 1 runner runner    8329 Jul 13 11:00 debug_cse_calls.json
+-rw-r--r-- 1 runner runner     188 Jul 13 11:00 debug_ecuador_espn_pages.json
+-rw-r--r-- 1 runner runner   44801 Jul 13 11:00 debug_ecuador_espn_raw.json
+-rw-r--r-- 1 runner runner  375448 Jul 13 11:00 debug_fbf_competicoes_network.json
+-rw-r--r-- 1 runner runner   65882 Jul 13 11:00 debug_fbf_competicoes_pages.json
+-rw-r--r-- 1 runner runner    3767 Jul 13 11:00 debug_fbf_competicoes_raw.json
+-rw-r--r-- 1 runner runner    2090 Jul 13 11:00 debug_fbf_competicoes_urls.json
+-rw-r--r-- 1 runner runner     157 Jul 13 11:00 debug_fbf_git_status.txt
+drwxr-xr-x 2 runner runner    4096 Jul 13 11:00 debug_fbf_html
+-rw-r--r-- 1 runner runner     514 Jul 13 11:00 debug_fbf_run.log
+-rw-r--r-- 1 runner runner       2 Jul 13 11:00 debug_federal_a_raw.json
+-rw-r--r-- 1 runner runner   61126 Jul 13 11:00 debug_fes_raw.json
+-rw-r--r-- 1 runner runner   67607 Jul 13 11:00 debug_fferj_estadios_raw.json
+-rw-r--r-- 1 runner runner   21116 Jul 13 11:00 debug_fferj_geocoding_cache.json
+-rw-r--r-- 1 runner runner       2 Jul 13 11:00 debug_fferj_rio_errors.json
+-rw-r--r-- 1 runner runner     313 Jul 13 11:00 debug_fferj_rio_pages.json
+-rw-r--r-- 1 runner runner   32271 Jul 13 11:00 debug_fferj_rio_raw.json
+drwxr-xr-x 2 runner runner    4096 Jul 13 11:00 debug_fgf_html
+-rw-r--r-- 1 runner runner  232877 Jul 13 11:00 debug_fmf_competicoes_pages.json
+-rw-r--r-- 1 runner runner  154001 Jul 13 11:00 debug_fmf_competicoes_raw.json
+-rw-r--r-- 1 runner runner    5579 Jul 13 11:00 debug_fmf_competicoes_urls.json
+-rw-r--r-- 1 runner runner    3482 Jul 13 11:00 debug_fmf_mt_raw.json
+-rw-r--r-- 1 runner runner    3508 Jul 13 11:00 debug_fpf_api_urls.json
+-rw-r--r-- 1 runner runner       2 Jul 13 11:00 debug_fpf_matches_raw.json
+-rw-r--r-- 1 runner runner   52366 Jul 13 11:00 debug_fpf_para_raw.json
+drwxr-xr-x 2 runner runner   12288 Jul 13 11:00 debug_fpf_parana_html
+drwxr-xr-x 2 runner runner    4096 Jul 13 11:00 debug_fpf_paulista_tabelas
+-rw-r--r-- 1 runner runner     979 Jul 13 11:00 debug_fpf_tabela_diag.json
+-rw-r--r-- 1 runner runner       2 Jul 13 11:00 debug_fpf_tabela_jogos_raw.json
+-rw-r--r-- 1 runner runner       2 Jul 13 11:00 debug_fpf_tabela_payloads.json
+-rw-r--r-- 1 runner runner   28293 Jul 13 11:00 debug_fpf_tabela_requests.json
+-rw-r--r-- 1 runner runner     995 Jul 13 11:00 debug_futbolperuano_pages.json
+-rw-r--r-- 1 runner runner    8554 Jul 13 11:00 debug_futbolperuano_peru_copa_de_la_liga_snippet.json
+-rw-r--r-- 1 runner runner    8498 Jul 13 11:00 debug_futbolperuano_peru_futbol_femenino_snippet.json
+-rw-r--r-- 1 runner runner    8539 Jul 13 11:00 debug_futbolperuano_peru_liga_2_snippet.json
+-rw-r--r-- 1 runner runner    7256 Jul 13 11:00 debug_futbolperuano_raw.json
+-rw-r--r-- 1 runner runner    3896 Jul 13 11:00 debug_liga1_embedded.json
+-rw-r--r-- 1 runner runner    2836 Jul 13 11:00 debug_liga1_json_payloads.json
+-rw-r--r-- 1 runner runner    5242 Jul 13 11:00 debug_liga1_responses.json
+-rw-r--r-- 1 runner runner    8277 Jul 13 11:00 debug_liga1_widget_html.json
+-rw-r--r-- 1 runner runner    1801 Jul 13 11:00 debug_ligapro_pdf_diag.json
+-rw-r--r-- 1 runner runner   16077 Jul 13 11:00 debug_ligapro_pdf_playwright.json
+-rw-r--r-- 1 runner runner    9477 Jul 13 11:00 debug_ligapro_pdf_texto.json
+-rw-r--r-- 1 runner runner   23171 Jul 13 11:00 debug_uruguai_pages.json
+-rw-r--r-- 1 runner runner 1065116 Jul 13 11:00 historico_jogos.csv
+-rw-r--r-- 1 runner runner  417500 Jul 13 11:00 jogos_programados.csv
+-rw-r--r-- 1 runner runner  801425 Jul 13 11:00 jogos_programados.json
 === primeiras linhas do raw.json (se existir) ===
 [
   {
@@ -111,5 +111,5 @@ drwxr-xr-x 2 runner runner    4096 Jul 13 10:54 debug_fpf_paulista_tabelas
     "estadio": "",
     "rodada": "",
     "url": "https://www.fbf.org.br/",
-    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; or M data/debug_fbf_run.log
-?? data/debug_fbf_git_status.txt
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; or M data/debug_fbf_git_status.txt
+ M data/debug_fbf_run.log
