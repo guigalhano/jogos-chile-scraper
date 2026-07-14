@@ -1,6 +1,102 @@
 [
   {
     "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-07-17",
+    "hora": "13:00",
+    "mandante": "FC Cajamarca",
+    "visitante": "Juan Pablo II",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "4d42e8e2ed031d27",
+    "atualizado_em": "2026-07-14T14:57:10"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-07-17",
+    "hora": "15:15",
+    "mandante": "Cristal",
+    "visitante": "Garcilaso",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "2296270542b3ad86",
+    "atualizado_em": "2026-07-14T14:57:10"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-07-17",
+    "hora": "20:00",
+    "mandante": "Cienciano",
+    "visitante": "Melgar",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "5f9712231a36f9b4",
+    "atualizado_em": "2026-07-14T14:57:10"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-07-18",
+    "hora": "11:00",
+    "mandante": "D. Moquegua",
+    "visitante": "Comerciantes",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "b188566d9e88971f",
+    "atualizado_em": "2026-07-14T14:57:10"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-07-18",
+    "hora": "13:15",
+    "mandante": "ADT",
+    "visitante": "Universitario",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "9f06074ec84e24e7",
+    "atualizado_em": "2026-07-14T14:57:10"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-07-18",
+    "hora": "15:30",
+    "mandante": "Grau",
+    "visitante": "UTC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "023fa77a310fb645",
+    "atualizado_em": "2026-07-14T14:57:10"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
     "data": "2026-07-18",
     "hora": "20:00",
@@ -13,7 +109,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "d3b8d0a1dffe40b9",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -29,7 +125,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "6757736acc8ca074",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -45,7 +141,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "250395920cc18721",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -61,39 +157,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "77a3c89e3591f682",
-    "atualizado_em": "2026-07-13T15:44:16"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-07-12",
-    "hora": "15:00",
-    "mandante": "Juventud SD",
-    "visitante": "J. Cautivo",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo A",
-    "url": "",
-    "extra": "status=Jugado; placar=0-1",
-    "id": "c98b4581adb07672",
-    "atualizado_em": "2026-07-13T15:44:16"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-07-12",
-    "hora": "15:00",
-    "mandante": "J. Aurich",
-    "visitante": "S. Domingo",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo A",
-    "url": "",
-    "extra": "status=Jugado; placar=1-1",
-    "id": "c33ce79b21cf6c7e",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -109,7 +173,23 @@
     "url": "",
     "extra": "status=Jugado; placar=4-3",
     "id": "7e250a203b7bd25d",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-07-12",
+    "hora": "15:00",
+    "mandante": "Juventud Huracán",
+    "visitante": "S. Pariacoto",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B",
+    "url": "",
+    "extra": "status=Jugado; placar=3-2",
+    "id": "4d4bdbd4229aee4a",
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -125,7 +205,23 @@
     "url": "",
     "extra": "status=Jugado; placar=0-1",
     "id": "907c7d17d148d23e",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-07-13",
+    "hora": "15:00",
+    "mandante": "D. Lute",
+    "visitante": "Carlos Stein",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo A",
+    "url": "",
+    "extra": "status=Jugado; placar=3-1",
+    "id": "bd4724ba110bc699",
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -141,7 +237,7 @@
     "url": "",
     "extra": "status=Jugado; placar=3-1",
     "id": "e6c8f4a6480beab7",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -157,7 +253,7 @@
     "url": "",
     "extra": "status=Jugado; placar=(5)1-1(4)",
     "id": "7fbf342e248e4251",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -173,7 +269,7 @@
     "url": "",
     "extra": "status=Jugado; placar=(4)0-0(2)",
     "id": "07d4ecc2055e727e",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -189,23 +285,7 @@
     "url": "",
     "extra": "status=Jugado; placar=4-1",
     "id": "87ec6079a7bd7bd8",
-    "atualizado_em": "2026-07-13T15:44:16"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Fútbol Femenino",
-    "data": "2026-06-28",
-    "hora": "15:15",
-    "mandante": "Sporting Cristal",
-    "visitante": "Atlético Andahuaylas",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Semifinales",
-    "url": "",
-    "extra": "status=Jugado; placar=4-1",
-    "id": "3b403c3d8cfa8247",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -221,7 +301,7 @@
     "url": "",
     "extra": "status=Jugado; placar=3-0",
     "id": "450811e3fd961abd",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -237,7 +317,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-2",
     "id": "dbff6c144cf458ce",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -253,7 +333,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-2",
     "id": "1e84042365085da2",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -269,6 +349,6 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "7c4549d63f0162bf",
-    "atualizado_em": "2026-07-13T15:44:16"
+    "atualizado_em": "2026-07-14T14:57:10"
   }
 ]
