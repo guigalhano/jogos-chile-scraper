@@ -97,4 +97,13 @@ window.ESTADIOS_CONMEBOL = [
     lng: -71.9714,
     fonte: "manual/aproximado (Cusco, Peru)",
   },
+  {
+    nome: "Estadio Polideportivo Misael Delgado",
+    aliases: ["polideportivo misael delgado", "misael delgado"],
+    cidade: "Valencia",
+    regiao: "Carabobo",
+    lat: 10.2234,
+    lng: -68.0115,
+    fonte: "manual/confirmado (Valencia, Estado Carabobo, Venezuela)",
+  },
 ];
