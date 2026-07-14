@@ -131,6 +131,8 @@ CIDADES_BR = sorted([
     "São Lourenço da Mata", "Ponta Grossa", "São João Del Rei", "Tombos",
     "Ivinhema", "Ji-Paraná", "Imperatriz", "Ceilândia", "Arapiraca",
     "Juazeiro", "Novo Horizonte", "Rio Claro", "Gama", "Alagoinhas",
+    "Lucas do Rio Verde", "Arapongas", "Ijuí", "Iguatu", "Goiatuba",
+    "Campina Grande", "Uberlândia",
 ], key=lambda c: -len(c.split()))
 
 CBF_ROW_RE = re.compile(
@@ -568,6 +570,9 @@ def parse_cbf_line(line: str, year: int, last_rod: list[str]) -> dict | None:
     if rod:
         last_rod[0] = rod
     rodada = f"Rodada {last_rod[0]}" if last_rod[0] else ""
+    iv = m.group("iv")
+    if iv:
+        rodada = "Ida" if iv.upper() == "I" else "Volta"
 
     dia_mes = m.group("dia")
     data_iso = ""
