@@ -150,4 +150,36 @@ window.ESTADIOS_URUGUAY = [
     lng: -56.4708,
     fonte: "manual/osm-like",
   },
+
+  /* ===================================================================
+     Adicionados na auditoria de coordenadas (jogos do Torneo Intermedio
+     1A 2026 sem coordenada). Coordenadas confirmadas por busca real.
+     =================================================================== */
+  {
+    nome: "Estadio Campeón del Siglo",
+    aliases: ["campeon del siglo", "campeón del siglo"],
+    cidade: "Montevideo",
+    regiao: "Montevideo",
+    lat: -34.7917,
+    lng: -56.2292,
+    fonte: "manual/confirmado (Bañados de Carrasco, Montevideo — mandante Peñarol)",
+  },
+  {
+    nome: "Estadio Monumental Luis Tróccoli",
+    aliases: ["luis troccoli", "luis tróccoli", "monumental luis troccoli", "monumental luis tróccoli"],
+    cidade: "Montevideo",
+    regiao: "Montevideo",
+    lat: -34.8675,
+    lng: -56.2519,
+    fonte: "manual/confirmado (Cerro Norte, Montevideo — mandante Cerro)",
+  },
+  {
+    nome: "Parque Osvaldo Roberto",
+    aliases: ["osvaldo roberto", "parque osvaldo roberto", "estadio osvaldo roberto"],
+    cidade: "Montevideo",
+    regiao: "Montevideo",
+    lat: -34.8364,
+    lng: -56.2158,
+    fonte: "manual/confirmado (Sayago, Montevideo — mandante Racing Club de Montevideo)",
+  },
 ];
