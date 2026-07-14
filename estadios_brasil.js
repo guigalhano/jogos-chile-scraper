@@ -1364,6 +1364,15 @@ window.ESTADIOS_BRASIL = [
     fonte: "manual/aproximado (cidade de Arapiraca — mandante ASA)",
   },
   {
+    nome: "Estádio Municipal José Chiappin (Dos Pássaros)",
+    aliases: ["dos passaros", "dos pássaros", "jose chiappin", "josé chiappin"],
+    cidade: "Arapongas",
+    regiao: "Paraná",
+    lat: -23.4189,
+    lng: -51.4247,
+    fonte: "manual/aproximado (cidade de Arapongas — jogo de ida Cianorte x ASA, Série D 4a Fase)",
+  },
+  {
     nome: "Estádio Barão de Serra Negra",
     aliases: ["barao da serra", "barão da serra", "barao de serra negra", "barão de serra negra"],
     cidade: "Piracicaba",
