@@ -35,10 +35,10 @@
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=21BBEA5EE544624D118DFDCBE414632D",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=15C23EB9612C69CB20FE292F605468EC",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "7fc93a29503a6d6e",
+    "id": "bdc355dc402b6d00",
     "tipo": "pga"
   },
   {
@@ -56,10 +56,10 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=0AE897C3AF6E6C7A0A628056AE376D9A",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3DE40872E9A16FE411891FE4E8426E47",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "f39b5525cb7c6070",
+    "id": "3bed15f89d24beee",
     "tipo": "regulamento"
   },
   {
@@ -84,10 +84,10 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3791D16F54A166BC076EC6FA5577676E",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=029A9446BF2664AF25D983D0BEBD658D",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "877295737cdfaa98",
+    "id": "ba2a3c51f27b0c2a",
     "tipo": "tabela_detalhada"
   },
   {
@@ -102,6 +102,13 @@
     "title": "Confira! CBF divulga tabela detalhada das rodadas 16 a 19 da Série C do Campeonato Brasileiro",
     "origem": "playwright_page_content:a.href",
     "id": "f600338dc9a3d41b",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/competicoes-campeonato-brasileiro-sub20/a/cbf-divulga-tabela-detalhada-de-ceara-x-goias-pela-final-da-serie-b-sub-20",
+    "title": "Decisão! CBF divulga tabela detalhada de Ceará x Goiás pela final da Série B Sub-20",
+    "origem": "playwright_page_content:a.href",
+    "id": "b37897059b4d0ce2",
     "tipo": "tabela_detalhada"
   }
 ]
