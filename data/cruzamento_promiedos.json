@@ -1,24 +1,8 @@
 {
-  "gerado_em": "2026-07-15T13:56:27",
+  "gerado_em": "2026-07-16T14:08:17",
   "dias_verificados": 61,
   "total_eventos_lidos_nos_paises_alvo": 0,
   "dias_com_erro": [
-    {
-      "data": "2026-07-15",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-07-15",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-07-15' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "15-07-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
-        }
-      }
-    },
     {
       "data": "2026-07-16",
       "debug": {
@@ -856,8 +840,8 @@
       "debug": {
         "tentativa_1": {
           "formato": "2026-09-06",
-          "status": 502,
-          "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
+          "status": 500,
+          "body": "Issue accurs: time data '2026-09-06' does not match format '%d-%m-%Y'"
         },
         "tentativa_2": {
           "formato": "06-09-2026",
@@ -978,24 +962,25 @@
           "amostra_bruta": "{}"
         }
       }
+    },
+    {
+      "data": "2026-09-14",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-09-14",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-09-14' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "14-09-2026",
+          "status": 200,
+          "chaves_raiz": [],
+          "amostra_bruta": "{}"
+        }
+      }
     }
   ],
   "debug_amostra": [
-    {
-      "data": "2026-07-15",
-      "tentativa_1": {
-        "formato": "2026-07-15",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-07-15' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "15-07-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
-      },
-      "n_leagues": 0
-    },
     {
       "data": "2026-07-16",
       "tentativa_1": {
@@ -1780,8 +1765,8 @@
       "data": "2026-09-06",
       "tentativa_1": {
         "formato": "2026-09-06",
-        "status": 502,
-        "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
+        "status": 500,
+        "body": "Issue accurs: time data '2026-09-06' does not match format '%d-%m-%Y'"
       },
       "tentativa_2": {
         "formato": "06-09-2026",
@@ -1890,6 +1875,21 @@
       },
       "tentativa_2": {
         "formato": "13-09-2026",
+        "status": 200,
+        "chaves_raiz": [],
+        "amostra_bruta": "{}"
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-09-14",
+      "tentativa_1": {
+        "formato": "2026-09-14",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-09-14' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "14-09-2026",
         "status": 200,
         "chaves_raiz": [],
         "amostra_bruta": "{}"
