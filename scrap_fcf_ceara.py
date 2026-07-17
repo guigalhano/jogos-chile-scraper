@@ -163,7 +163,7 @@ def is_bad_name(x: str) -> bool:
     return False
 
 
-def fetch(url: str, timeout: int, tentativas: int = 3) -> str | None:
+def fetch(url: str, timeout: int, tentativas: int = 2) -> str | None:
     for i in range(tentativas):
         try:
             r = requests.get(url, headers=HEADERS, timeout=timeout)
@@ -173,20 +173,25 @@ def fetch(url: str, timeout: int, tentativas: int = 3) -> str | None:
         except Exception as e:
             print(f"[WARN] fetch {url} (tentativa {i + 1}/{tentativas}): {e}")
             if i < tentativas - 1:
-                time.sleep(4)
+                time.sleep(3)
     return None
 
 
+MAX_COMPETICOES = 12  # rede de segurança: nunca processa mais que isso numa rodada
+
+
 def descobrir_competicoes(timeout: int) -> dict[str, str]:
-    """Busca as competições atuais em campeonatos.asp (e, como reforço,
-    também nos links do topo/rodapé de homepage.asp). Cai pro fallback
-    hardcoded se nada for encontrado."""
+    """Busca as competições atuais. Usa SÓ homepage.asp (confirmado ao vivo
+    em 17/07/2026 que ela lista as ~7 competições ATUAIS, uma por card).
+    NÃO usa campeonatos.asp: essa página parece listar o arquivo histórico
+    completo de competições (muitos anos), o que fez uma rodada real travar
+    por quase 1h tentando dezenas de idcamp - um bug descoberto ao vivo, não
+    hipotético. Se a home não trouxer nada, cai pro fallback hardcoded (não
+    tenta campeonatos.asp como segundo recurso, pelo mesmo motivo)."""
     encontrados: dict[str, str] = {}
 
-    for url in (CAMPEONATOS_URL, HOMEPAGE_URL):
-        html = fetch(url, timeout)
-        if not html:
-            continue
+    html = fetch(HOMEPAGE_URL, timeout)
+    if html:
         soup = BeautifulSoup(html, "html.parser")
         for a in soup.find_all("a", href=True):
             href = a["href"]
@@ -199,8 +204,13 @@ def descobrir_competicoes(timeout: int) -> dict[str, str]:
                 encontrados[idcamp] = nome
 
     if not encontrados:
-        print("[WARN] não achei nenhum idcamp em campeonatos.asp/homepage.asp - usando fallback hardcoded")
+        print("[WARN] não achei nenhum idcamp na home - usando fallback hardcoded")
         return dict(COMPETICOES_FALLBACK)
+
+    if len(encontrados) > MAX_COMPETICOES:
+        print(f"[WARN] {len(encontrados)} competições encontradas na home (> {MAX_COMPETICOES}) - "
+              f"cortando pra não travar a rodada; algo mudou no site, confirmar manualmente")
+        encontrados = dict(list(encontrados.items())[:MAX_COMPETICOES])
 
     return encontrados
 
@@ -341,7 +351,7 @@ def collect(dias: int, dias_atras: int, timeout: int, debug_html: bool) -> tuple
 
     for idcamp, nome in competicoes.items():
         url = f"{BASE}/tabela.asp?idcamp={idcamp}"
-        html = fetch(url, timeout, tentativas=3)
+        html = fetch(url, timeout, tentativas=2)
         info = {"idcamp": idcamp, "nome": nome, "url": url, "jogos": 0, "erro": ""}
         if not html:
             info["erro"] = "falha ao buscar (timeout/erro de rede)"
@@ -449,7 +459,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dias", type=int, default=365)
     parser.add_argument("--dias-atras", type=int, default=30)
-    parser.add_argument("--timeout", type=int, default=60)
+    parser.add_argument("--timeout", type=int, default=35)
     parser.add_argument("--debug-html", action="store_true")
     args = parser.parse_args()
 
