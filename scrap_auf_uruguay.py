@@ -3,14 +3,23 @@
 """
 Scraper AUF (Asociación Uruguaya de Fútbol)
 
-As 3 URLs de competições (Liga AUF Uruguaya, Segunda Profesional/Primera
-Divisional C) retornam 404 em fetch direto (confirmado), mesmo aparecendo
-como links reais e válidos na navegação do site — sinal forte de SPA
-(Single Page Application) com roteamento client-side via JavaScript, igual
-ao padrão já visto na FMF e na FPF. Este script usa Playwright para
+As 3 URLs de competições (Liga AUF Uruguaya, Segunda División Profesional,
+Primera Divisional C) retornam 404 em fetch direto (confirmado), mesmo
+aparecendo como links reais e válidos na navegação do site — sinal forte de
+SPA (Single Page Application) com roteamento client-side via JavaScript,
+igual ao padrão já visto na FMF e na FPF. Este script usa Playwright para
 renderizar a página de verdade e intercepta respostas de rede em busca de
 JSON com dados de jogos (mesma estratégia genérica usada em
 scrap_fpf_playwright_api.py), em vez de tentar parsear HTML estático.
+
+NOTA (16/07/2026): a Segunda División Profesional (2a divisão, antiga
+"Segunda Profesional") estava descrita aqui no cabeçalho mas nunca tinha
+sido de fato incluída em START_URLS - só Primeira e Primeira Divisional C
+(3a divisão) eram raspadas. Corrigido.
+
+Outras competições da AUF que existem mas ainda NÃO são raspadas aqui
+(gap conhecido, não é bug): Divisional D, 3ª División, Copa AUF Uruguay,
+e as categorias de Futebol Femenino (Primera/Segunda División Femenina).
 
 Uso:
     python scrap_auf_uruguay.py --dias 180 --dias-atras 30
@@ -37,6 +46,7 @@ OUT_DIR.mkdir(exist_ok=True)
 
 START_URLS = [
     ("Uruguay - Liga AUF Uruguaya", "https://www.auf.org.uy/liga-auf-uruguaya/"),
+    ("Uruguay - Segunda División Profesional", "https://www.auf.org.uy/segunda-division-profesional/"),
     ("Uruguay - Primera Divisional C", "https://www.auf.org.uy/primera-divisional-c/"),
 ]
 
