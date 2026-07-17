@@ -35,10 +35,10 @@
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2384838860E26CB90BEB9410612C6D96",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=04FCE07B70366E0C371AF7E271A06FD0",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "344ac0704b456758",
+    "id": "d902ca422ce49323",
     "tipo": "pga"
   },
   {
@@ -56,10 +56,10 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3A831CB2BB8F64C606350B2ABA326599",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=19179160E7AC6D65058A86F9E64C6CB4",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "6251101ad69c1a0b",
+    "id": "a8697b3cec85cffc",
     "tipo": "regulamento"
   },
   {
@@ -70,10 +70,10 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_06_07_db8090e380.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_17_07_f7ee4dab22.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf;playwright_page_content:a.href;playwright_page_content:regex_pdf",
-    "id": "9a4ef3b5c3984fb7",
+    "id": "ca89f089c6c73631",
     "tipo": "tabela_detalhada"
   },
   {
@@ -84,10 +84,10 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=18DD3DE71D1B642D19B82A7F1C3F6530",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=396BE78BB26E68F6072BF012B31F69C3",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "a843ded2f64ed092",
+    "id": "baa72fba7d2d10bd",
     "tipo": "tabela_detalhada"
   },
   {
@@ -102,6 +102,13 @@
     "title": "Decisão! CBF divulga tabela detalhada de Ceará x Goiás pela final da Série B Sub-20",
     "origem": "playwright_page_content:a.href",
     "id": "b37897059b4d0ce2",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Tabela Detalhada",
+    "title": "Tabela Detalhada",
+    "origem": "playwright_response_body:a.href;playwright_page_content:a.href",
+    "id": "2d62104c3a43f083",
     "tipo": "tabela_detalhada"
   }
 ]
