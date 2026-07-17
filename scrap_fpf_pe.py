@@ -307,8 +307,25 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
             except Exception:
                 pass
 
+            # Alguns widgets desse site parecem ser lazy-loaded (só carregam
+            # quando entram na viewport, tipo Intersection Observer) - rola a
+            # página inteira em passos pra forçar o carregamento antes de
+            # capturar o HTML final.
+            try:
+                altura_total = page.evaluate("document.body.scrollHeight")
+                passo = 600
+                y = 0
+                while y < altura_total:
+                    page.evaluate(f"window.scrollTo(0, {y})")
+                    page.wait_for_timeout(600)
+                    y += passo
+                    altura_total = page.evaluate("document.body.scrollHeight")
+                page.wait_for_timeout(3000)
+            except Exception:
+                pass
+
             info["jogos_json"] = len(partidos)
-            info["urls_json_vistas"] = todas_urls_vistas[:30]
+            info["urls_json_vistas"] = todas_urls_vistas[:40]
 
             html = page.content()
             if debug_html:
@@ -318,7 +335,7 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
                 (DEBUG_DIR / f"{slug}_network.json").write_text(json.dumps(network_debug, ensure_ascii=False, indent=2), encoding="utf-8")
 
             lines = html_to_lines(html)
-            info["texto_amostra"] = " | ".join(lines[:60])
+            info["texto_amostra"] = " | ".join(lines)[:6000]
             texto_partidos = parse_text_patterns(lines, url, competicao_nome)
             info["jogos_texto"] = len(texto_partidos)
             partidos.extend(texto_partidos)
@@ -417,7 +434,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dias", type=int, default=240)
     parser.add_argument("--dias-atras", type=int, default=30)
-    parser.add_argument("--wait-ms", type=int, default=8000)
+    parser.add_argument("--wait-ms", type=int, default=12000)
     parser.add_argument("--debug-html", action="store_true")
     args = parser.parse_args()
 
