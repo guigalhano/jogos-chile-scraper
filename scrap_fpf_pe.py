@@ -274,7 +274,9 @@ def parse_text_patterns(lines: list[str], url: str, competicao_nome: str) -> lis
 def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html: bool) -> tuple[list[Partido], dict]:
     partidos: list[Partido] = []
     network_debug: list[dict] = []
-    info = {"competicao": competicao_nome, "url": url, "jogos_json": 0, "jogos_texto": 0, "erro": ""}
+    todas_urls_vistas: list[str] = []
+    info = {"competicao": competicao_nome, "url": url, "jogos_json": 0, "jogos_texto": 0, "erro": "",
+            "urls_json_vistas": [], "texto_amostra": ""}
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -283,11 +285,10 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
 
         def on_response(response):
             rurl = response.url
-            if "fpf-pe.com.br" not in rurl.lower():
-                return
             ct = response.headers.get("content-type", "")
             if "json" not in ct.lower():
                 return
+            todas_urls_vistas.append(f"{rurl} [{response.status}]")
             try:
                 payload = response.json()
             except Exception:
@@ -307,6 +308,7 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
                 pass
 
             info["jogos_json"] = len(partidos)
+            info["urls_json_vistas"] = todas_urls_vistas[:30]
 
             html = page.content()
             if debug_html:
@@ -316,6 +318,7 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
                 (DEBUG_DIR / f"{slug}_network.json").write_text(json.dumps(network_debug, ensure_ascii=False, indent=2), encoding="utf-8")
 
             lines = html_to_lines(html)
+            info["texto_amostra"] = " | ".join(lines[:60])
             texto_partidos = parse_text_patterns(lines, url, competicao_nome)
             info["jogos_texto"] = len(texto_partidos)
             partidos.extend(texto_partidos)
