@@ -387,6 +387,36 @@ function coordenadasDaCidade(cidade) {
   return alvo ? { lat: alvo.lat, lng: alvo.lng } : null;
 }
 
+// Extraído de findStadiumInfo pra poder buscar numa lista específica (ex.:
+// uma base estadual só, como ESTADIOS_CEARA/ESTADIOS_PERNAMBUCO) sem
+// precisar passar pelo país inteiro - usado pelas fontes estaduais que têm
+// base própria pra evitar colisão de nomes genéricos com outros estados
+// (mesmo motivo já documentado pra FMF-MG mais abaixo).
+function matchStadiumInList(estadioTexto, stadiums) {
+  const txt = normalize(estadioTexto);
+  if (!txt || !stadiums || !stadiums.length) return null;
+
+  for (const s of stadiums) {
+    const names = [s.nome, ...(s.aliases || [])];
+    if (names.some(n => txt.includes(normalize(n)) || normalize(n).includes(txt))) {
+      return s;
+    }
+  }
+
+  const PALAVRAS_GENERICAS_LOCAL = new Set([
+    "estadio", "municipal", "arena", "parque", "complexo", "campo",
+    "centro", "cidade", "governador", "presidente", "doutor", "professor",
+  ]);
+  const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5 && !PALAVRAS_GENERICAS_LOCAL.has(token));
+  for (const s of stadiums) {
+    const names = [s.nome, ...(s.aliases || [])].map(normalize).join(" ");
+    const hits = txtTokens.filter(token => names.includes(token)).length;
+    if (hits >= 2) return s;
+  }
+
+  return null;
+}
+
 function findStadiumInfo(estadioTexto, pais) {
   const txt = normalize(estadioTexto);
   if (!txt) return null;
@@ -996,11 +1026,40 @@ function enrichGames(rawGames) {
     // "Estádio Santa Cruz" de Ribeirão Preto/SP). Para fonte FMF, pula essa
     // busca nacional e vai direto para o fallback por cidade de MG.
     const ehFMF = j.fonte === "FMF";
-    let stadium = ehFMF ? null : findStadiumInfo(estadioBruto, pais);
+    // FCF (Ceará) e FPF-PE (Pernambuco) têm base de estádios própria,
+    // curada pros clubes dessas competições específicas - tenta ela
+    // primeiro (evita colisão com nomes genéricos de outros estados,
+    // mesmo motivo do ehFMF acima) e só cai pra busca nacional
+    // (ESTADIOS_BRASIL) se não achar nada ali.
+    const ehFCF = j.fonte === "FCF";
+    const ehFPFPE = j.fonte === "FPF-PE";
+    let stadium = ehFMF ? null
+      : ehFCF ? (matchStadiumInList(estadioBruto, window.ESTADIOS_CEARA || []) || findStadiumInfo(estadioBruto, pais))
+      : ehFPFPE ? (matchStadiumInList(estadioBruto, window.ESTADIOS_PERNAMBUCO || []) || findStadiumInfo(estadioBruto, pais))
+      : findStadiumInfo(estadioBruto, pais);
     let estadioFallback = false;
     if (!stadium && !estadioBruto && pais !== "Brasil") {
       stadium = findDefaultHomeStadium(j.mandante, pais);
       estadioFallback = Boolean(stadium);
+    }
+    // Fallback por mandante quando o jogo da FCF/FPF-PE não veio com nome
+    // de estádio (exceção rara - a maioria já traz o texto do estádio,
+    // então o match acima é o caminho principal).
+    if (!stadium && !estadioBruto && ehFCF && window.ESTADIO_MANDANTE_PADRAO_FCF) {
+      const chaveMandante = normalize(j.mandante);
+      const chaveEstadio = window.ESTADIO_MANDANTE_PADRAO_FCF[chaveMandante];
+      if (chaveEstadio) {
+        stadium = matchStadiumInList(chaveEstadio, window.ESTADIOS_CEARA || []);
+        estadioFallback = Boolean(stadium);
+      }
+    }
+    if (!stadium && !estadioBruto && ehFPFPE && window.ESTADIO_MANDANTE_PADRAO_FPFPE) {
+      const chaveMandante = normalize(j.mandante);
+      const chaveEstadio = window.ESTADIO_MANDANTE_PADRAO_FPFPE[chaveMandante];
+      if (chaveEstadio) {
+        stadium = matchStadiumInList(chaveEstadio, window.ESTADIOS_PERNAMBUCO || []);
+        estadioFallback = Boolean(stadium);
+      }
     }
     // Jogos da FFERJ (Rio de Janeiro) frequentemente nao trazem o nome do
     // estadio no card (comum em categorias de base/amadoras). Quando isso
