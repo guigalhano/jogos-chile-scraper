@@ -286,9 +286,15 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
         def on_response(response):
             rurl = response.url
             ct = response.headers.get("content-type", "")
+            # Log qualquer resposta de API/AJAX (não só JSON) pra diagnosticar
+            # se a chamada nem chega a acontecer, se é bloqueada, ou se
+            # retorna erro - o próprio site mostrou "Jogos indisponíveis no
+            # momento" numa rodada anterior, o que sugere que a chamada dele
+            # está falhando também pro navegador normal, não só pro nosso.
+            if any(k in rurl.lower() for k in ["/api/", "ajax", ".json", "webapi", "graphql"]) or "json" in ct.lower():
+                todas_urls_vistas.append(f"{rurl} [{response.status}] ct={ct}")
             if "json" not in ct.lower():
                 return
-            todas_urls_vistas.append(f"{rurl} [{response.status}]")
             try:
                 payload = response.json()
             except Exception:
@@ -298,6 +304,11 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
             network_debug.append({"url": rurl, "novos_jogos": len(partidos) - before})
 
         page.on("response", on_response)
+
+        def on_request_failed(request):
+            todas_urls_vistas.append(f"FALHOU: {request.url} [{request.failure}]")
+
+        page.on("requestfailed", on_request_failed)
 
         try:
             page.goto(url, wait_until="domcontentloaded", timeout=70000)
