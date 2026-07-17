@@ -6,6 +6,8 @@ APF Paraguai - Copa de Primera + División Intermedia + Primera B + Primera C
 
 Páginas:
     https://www.apf.org.py/copa-de-primera
+    https://www.apf.org.py/torneo-apertura   (Copa de Primera, mesmo rótulo)
+    https://www.apf.org.py/torneo-clausura   (Copa de Primera, mesmo rótulo)
     https://www.apf.org.py/intermedia
     https://www.apf.org.py/primera-b
     https://www.apf.org.py/primera-c
@@ -30,6 +32,26 @@ Cada objeto de partida dentro desse JSON tem este formato (chaves úteis):
       "time": "2026-05-22T21:00:00Z"   <- horário real do jogo, em UTC
     }
 período.type == "PreMatch" identifica jogos ainda não disputados.
+
+IMPORTANTE - troca de torneio (Apertura/Clausura): a página
+/copa-de-primera mostra a "rodada atual" só enquanto ela está de fato
+em andamento. Assim que o Apertura termina (ou antes do Clausura
+começar), essa página fica presa mostrando a última rodada do Apertura,
+já toda com jogos encerrados - por isso passamos também a tentar
+/torneo-apertura e /torneo-clausura sob o mesmo rótulo de competição
+("Copa de Primera"): quando um torneio específico está rolando, é a
+respectiva página que traz a rodada atual de verdade. Confirmado em
+16/07/2026: o Apertura 2026 terminou em 24/mai e o Clausura só começa
+em 24/jul, então nesse intervalo nenhuma das três páginas tem jogo
+futuro pra achar (o que é esperado, não é um bug).
+
+LIMITAÇÃO CONHECIDA (Primera B / Primera C): diferente de Copa de
+Primera e Intermedia, essas duas páginas NÃO têm nenhum objeto de
+partida (homeTeam/awayTeam/time) embutido no __NEXT_DATA__ - só listam
+elenco de times e notícias/resultados em texto. Ou seja, essas duas
+competições ficam sem jogos neste scraper até acharmos outra fonte
+(API separada ou página de fixture) pra elas; não é uma falha de
+parsing, é o dado não existir nessa página.
 
 IMPORTANTE - limitação conhecida: essas duas páginas mostram apenas a
 RODADA ATUAL de cada torneio (módulo "football_competition_matches_
@@ -80,7 +102,18 @@ OUT_DIR.mkdir(exist_ok=True)
 
 BASE_URL = "https://www.apf.org.py"
 START_URLS = [
+    # A Copa de Primera (1a. divisão paraguaia) tem dois torneios por ano
+    # (Apertura e Clausura) e o site do APF passou a usar páginas
+    # diferentes pra mostrar a "rodada atual" dependendo de qual torneio
+    # está rolando (ex.: copa-de-primera ficou "preso" mostrando a última
+    # rodada (já encerrada) do Apertura assim que ele terminou, e o
+    # Clausura passou a aparecer só em /torneo-clausura). Por isso
+    # tentamos as três URLs sob o mesmo rótulo de competição: cada uma
+    # que não tiver jogos da rodada atual simplesmente não acha nada
+    # (sem erro) e as que tiverem se somam (dedupe cuida de duplicatas).
     ("Copa de Primera", f"{BASE_URL}/copa-de-primera"),
+    ("Copa de Primera", f"{BASE_URL}/torneo-apertura"),
+    ("Copa de Primera", f"{BASE_URL}/torneo-clausura"),
     ("División Intermedia", f"{BASE_URL}/intermedia"),
     ("Primera B", f"{BASE_URL}/primera-b"),
     ("Primera C", f"{BASE_URL}/primera-c"),
