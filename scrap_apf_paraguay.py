@@ -46,12 +46,25 @@ em 24/jul, então nesse intervalo nenhuma das três páginas tem jogo
 futuro pra achar (o que é esperado, não é um bug).
 
 LIMITAÇÃO CONHECIDA (Primera B / Primera C): diferente de Copa de
-Primera e Intermedia, essas duas páginas NÃO têm nenhum objeto de
-partida (homeTeam/awayTeam/time) embutido no __NEXT_DATA__ - só listam
-elenco de times e notícias/resultados em texto. Ou seja, essas duas
-competições ficam sem jogos neste scraper até acharmos outra fonte
-(API separada ou página de fixture) pra elas; não é uma falha de
-parsing, é o dado não existir nessa página.
+Primera e Intermedia, as páginas dedicadas /primera-b e /primera-c NÃO
+têm nenhum objeto de partida (homeTeam/awayTeam/time) embutido no
+__NEXT_DATA__ - só listam elenco de times e notícias/resultados em
+texto. Isso é contornado (pelo menos pra Primera B, que é a que já foi
+vista lá) usando a HOME do site (BASE_URL + "/"), que tem um módulo à
+parte listando os PRÓXIMOS jogos misturando várias competições ao mesmo
+tempo (confirmado ao vivo: Copa de Primera, Copa Paraguay, Intermedia,
+Primera B, Femenino). Cada jogo achado nessa página tem sua competição
+real inferida pelo slug (função competicao_from_slug); jogos cujo slug
+não bate com nenhum padrão conhecido (Femenino, Formativas etc.) são
+descartados, não adivinhados. Se a Primera C nunca aparecer nessa lista
+da home (não vista até agora), essa competição realmente fica sem fonte
+neste scraper.
+
+NÃO usamos a API não-documentada do Sofascore como alternativa pra
+Primera B/C mesmo ela tendo esses dados: a própria Sofascore afirma
+publicamente que não disponibiliza essas rotas como API pra terceiros
+por acordo com os provedores dos dados, então preferimos ficar só com
+fontes que o próprio APF expõe publicamente em seu site.
 
 IMPORTANTE - limitação conhecida: essas duas páginas mostram apenas a
 RODADA ATUAL de cada torneio (módulo "football_competition_matches_
@@ -119,6 +132,17 @@ START_URLS = [
     ("Primera C", f"{BASE_URL}/primera-c"),
     ("Copa Paraguay", f"{BASE_URL}/copa-paraguay"),
 ]
+
+# A home do site (BASE_URL + "/") tem um módulo à parte que lista os
+# PRÓXIMOS jogos misturando várias competições ao mesmo tempo (visto ao
+# vivo: Copa de Primera, Copa Paraguay, Intermedia, Primera B, Femenino).
+# É a única fonte encontrada que efetivamente traz jogos da Primera B (a
+# página dedicada /primera-b não tem NENHUM objeto de partida no
+# __NEXT_DATA__, só elenco/notícias - ver limitação documentada acima).
+# Cada jogo achado aqui tem sua competição real inferida pelo slug
+# (competicao_from_slug) - o que não bater com um padrão conhecido
+# (Femenino, Formativas etc.) é descartado, não adivinhado.
+HOME_URL = (None, BASE_URL + "/")
 
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
@@ -238,7 +262,34 @@ def team_name(obj: dict) -> str:
     return clean_text(obj.get("name") or obj.get("shortName") or obj.get("nickname") or "")
 
 
-def match_to_partido(m: dict, competicao_label: str) -> Partido | None:
+# A home do site (BASE_URL + "/") lista jogos futuros de VÁRIAS competições
+# ao mesmo tempo (Copa de Primera, Copa Paraguay, Intermedia, Primera B,
+# Femenino) num único módulo do __NEXT_DATA__. Pra saber a que competição
+# cada partida pertence quando ela vem dessa página (em vez da página
+# dedicada de cada torneio, onde já sabemos o rótulo de antemão), usamos o
+# slug do jogo, que sempre carrega o nome do torneio de origem
+# (ex.: "temporada-2026-paraguay-primera-division-apertura-22-...",
+# "intermedia-2026-intermedia-14-...", "primera-b-2026-fecha-15-...").
+SLUG_COMPETICAO_PATTERNS: list[tuple[re.Pattern, str]] = [
+    (re.compile(r"primera-division", re.I), "Copa de Primera"),
+    (re.compile(r"^intermedia-|division-intermedia", re.I), "División Intermedia"),
+    (re.compile(r"^primera-b-|primera-division-b", re.I), "Primera B"),
+    (re.compile(r"^primera-c-|primera-division-c", re.I), "Primera C"),
+    (re.compile(r"copa-paraguay", re.I), "Copa Paraguay"),
+]
+
+
+def competicao_from_slug(slug: str) -> str:
+    """Tenta inferir o nome da competição a partir do slug do jogo. Retorna
+    string vazia se não reconhecer o padrão (ex.: femenino, formativas)."""
+    s = clean_text(slug)
+    for pattern, label in SLUG_COMPETICAO_PATTERNS:
+        if pattern.search(s):
+            return label
+    return ""
+
+
+def match_to_partido(m: dict, competicao_label: str, require_slug_match: bool = False) -> Partido | None:
     mandante = team_name(m.get("homeTeam"))
     visitante = team_name(m.get("awayTeam"))
     time_iso = clean_text(m.get("time"))
@@ -250,6 +301,18 @@ def match_to_partido(m: dict, competicao_label: str) -> Partido | None:
         return None
 
     slug = clean_text(m.get("slug"))
+    slug_label = competicao_from_slug(slug)
+    if require_slug_match and not slug_label:
+        # Fonte mista (ex.: a home do site) e não reconhecemos a que
+        # competição esse jogo pertence (pode ser Femenino, Formativas,
+        # etc, que não rastreamos aqui) - melhor descartar do que rotular
+        # errado.
+        return None
+    # Prioriza o rótulo inferido do slug (mais confiável, principalmente
+    # quando a origem é a home do site com várias competições misturadas);
+    # só cai pro rótulo da página se o slug não bater com nenhum padrão
+    # conhecido.
+    competicao_final = slug_label or competicao_label
     gameweek = m.get("gameweek") if isinstance(m.get("gameweek"), dict) else {}
     rodada = clean_text(gameweek.get("name"))
 
@@ -269,7 +332,7 @@ def match_to_partido(m: dict, competicao_label: str) -> Partido | None:
 
     return Partido(
         fonte="APF",
-        competicao=f"Paraguay - APF - {competicao_label}",
+        competicao=f"Paraguay - APF - {competicao_final}",
         data=data_local,
         hora=hora_local,
         mandante=mandante,
@@ -290,8 +353,12 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
 
         matches_by_url: dict[str, tuple[dict, str]] = {}
 
-        for idx, (competicao_label, url) in enumerate(start_urls):
-            info = {"competicao": competicao_label, "url": url, "jogos": 0, "erro": ""}
+        todas_as_paginas = start_urls + [HOME_URL]
+
+        for idx, (competicao_label, url) in enumerate(todas_as_paginas):
+            is_home = competicao_label is None
+            label_exibicao = competicao_label or "Inicio (multi-competição, filtrado por slug)"
+            info = {"competicao": label_exibicao, "url": url, "jogos": 0, "erro": ""}
             # Contexto novo por competição (em vez de reaproveitar a mesma
             # aba/sessão pra todas): reduz o risco de qualquer rate-limit ou
             # verificação anti-bot baseada em sessão que o site passe a
@@ -319,17 +386,17 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
                     info["erro"] = "sem __NEXT_DATA__"
                     debug_pages.append(info)
                     context.close()
-                    if idx < len(start_urls) - 1:
+                    if idx < len(todas_as_paginas) - 1:
                         time.sleep(2)
                     continue
 
                 found: list[dict] = []
                 find_match_objects(next_data, found, set())
                 info["jogos"] = len(found)
-                print(f"[OK] {competicao_label}: {len(found)} jogos na rodada atual")
+                print(f"[OK] {label_exibicao}: {len(found)} jogos na rodada atual")
 
                 for m in found:
-                    part = match_to_partido(m, competicao_label)
+                    part = match_to_partido(m, competicao_label or "", require_slug_match=is_home)
                     if not part:
                         continue
                     if part.url:
@@ -338,10 +405,10 @@ def collect(start_urls: list[tuple[str, str]], wait_ms: int, max_detalhes: int, 
 
             except Exception as e:
                 info["erro"] = str(e)
-                print(f"[ERRO] {competicao_label}: {e}")
+                print(f"[ERRO] {label_exibicao}: {e}")
             debug_pages.append(info)
             context.close()
-            if idx < len(start_urls) - 1:
+            if idx < len(todas_as_paginas) - 1:
                 time.sleep(2)
 
         # Segunda passada: visita a página de detalhe de cada jogo achado
