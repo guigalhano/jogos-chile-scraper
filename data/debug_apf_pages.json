@@ -6,6 +6,18 @@
     "erro": ""
   },
   {
+    "competicao": "Copa de Primera",
+    "url": "https://www.apf.org.py/torneo-apertura",
+    "jogos": 6,
+    "erro": ""
+  },
+  {
+    "competicao": "Copa de Primera",
+    "url": "https://www.apf.org.py/torneo-clausura",
+    "jogos": 0,
+    "erro": ""
+  },
+  {
     "competicao": "División Intermedia",
     "url": "https://www.apf.org.py/intermedia",
     "jogos": 8,
@@ -26,6 +38,12 @@
   {
     "competicao": "Copa Paraguay",
     "url": "https://www.apf.org.py/copa-paraguay",
+    "jogos": 0,
+    "erro": ""
+  },
+  {
+    "competicao": "Inicio (multi-competição, filtrado por slug)",
+    "url": "https://www.apf.org.py/",
     "jogos": 0,
     "erro": ""
   }
