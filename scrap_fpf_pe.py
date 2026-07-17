@@ -283,6 +283,8 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
         context = browser.new_context(user_agent=HEADERS_UA, locale="pt-BR")
         page = context.new_page()
 
+        ajax_htmls: list[tuple[str, str]] = []
+
         def on_response(response):
             rurl = response.url
             ct = response.headers.get("content-type", "")
@@ -293,6 +295,15 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
             # está falhando também pro navegador normal, não só pro nosso.
             if any(k in rurl.lower() for k in ["/api/", "ajax", ".json", "webapi", "graphql"]) or "json" in ct.lower():
                 todas_urls_vistas.append(f"{rurl} [{response.status}] ct={ct}")
+            # Achado ao vivo em 17/07/2026: o widget de jogos chama
+            # .../competicoes/jogos_ajax_ver2.php, que devolve um FRAGMENTO
+            # DE HTML (content-type text/html), não JSON. Captura o corpo
+            # bruto pra parsear com BeautifulSoup.
+            if "jogos_ajax" in rurl.lower() and response.status == 200:
+                try:
+                    ajax_htmls.append((rurl, response.text()))
+                except Exception:
+                    pass
             if "json" not in ct.lower():
                 return
             try:
@@ -337,6 +348,18 @@ def render_page_collect(competicao_nome: str, url: str, wait_ms: int, debug_html
 
             info["jogos_json"] = len(partidos)
             info["urls_json_vistas"] = todas_urls_vistas[:40]
+            info["ajax_html_amostra"] = ""
+
+            for ajax_url, ajax_html in ajax_htmls:
+                if not info["ajax_html_amostra"]:
+                    info["ajax_html_amostra"] = clean_text(ajax_html)[:4000]
+                ajax_lines = html_to_lines(ajax_html)
+                ajax_partidos = parse_text_patterns(ajax_lines, ajax_url, competicao_nome)
+                partidos.extend(ajax_partidos)
+                if debug_html:
+                    DEBUG_DIR.mkdir(exist_ok=True)
+                    slug = re.sub(r"[^a-z0-9]+", "_", ajax_url.lower()).strip("_")[-80:]
+                    (DEBUG_DIR / f"ajax_{slug}.html").write_text(ajax_html, encoding="utf-8")
 
             html = page.content()
             if debug_html:
