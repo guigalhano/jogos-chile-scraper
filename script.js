@@ -211,8 +211,8 @@ let semMapaAtivo = false;
 let escoposAtivos = new Set(["Internacional", "Nacional"]);
 
 // Categoria: Masculino, Femenino ou Sub 23 e menor (qualquer campeonato de
-// categoria de base/juvenil, sub-23 pra baixo). Por padrão os três ativos.
-let categoriasAtivas = new Set(["Masculino", "Femenino", "Sub23"]);
+// categoria de base/juvenil, sub-23 pra baixo). Por padrão só Masculino vem ativo.
+let categoriasAtivas = new Set(["Masculino"]);
 
 const chileBounds = [
   [-56.0, -76.5],
@@ -1678,7 +1678,7 @@ function setupEvents() {
 
   els.limparBtn.addEventListener("click", () => {
     escoposAtivos = new Set(["Internacional", "Nacional"]);
-    categoriasAtivas = new Set(["Masculino", "Femenino", "Sub23"]);
+    categoriasAtivas = new Set(["Masculino"]);
     els.filtroPais.value = "";
     els.filtroCompeticao.value = "";
     els.filtroTime.value = "";
