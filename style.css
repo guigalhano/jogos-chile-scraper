@@ -247,6 +247,31 @@ input[type="range"] {
   flex-wrap: wrap;
 }
 
+.scopeFilter {
+  margin-bottom: 4px;
+}
+
+.scopeFilterLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted, #9fb0a8);
+  margin-bottom: 8px;
+}
+
+.scopeButtons {
+  gap: 8px;
+}
+
+.scopeBtn {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+#scopeAllBtn {
+  background: rgba(141,224,179,.10);
+}
+
 .teamActions {
   margin: -4px 0 12px;
 }

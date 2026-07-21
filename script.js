@@ -15,6 +15,11 @@ const I18N = {
     filters: "Filtros",
     clear: "Limpar",
     country: "País",
+    scope: "Tipo de competição",
+    scope_international: "Internacional",
+    scope_national: "Nacional",
+    scope_regional: "Regional",
+    scope_all: "Todas",
     championship: "Campeonato",
     team: "Time",
     region: "Região",
@@ -85,6 +90,11 @@ const I18N = {
     filters: "Filtros",
     clear: "Limpiar",
     country: "País",
+    scope: "Tipo de competición",
+    scope_international: "Internacional",
+    scope_national: "Nacional",
+    scope_regional: "Regional",
+    scope_all: "Todas",
     championship: "Campeonato",
     team: "Equipo",
     region: "Región",
@@ -153,6 +163,8 @@ const els = {
   totalCidades: document.getElementById("totalCidades"),
   ultimaAtualizacao: document.getElementById("ultimaAtualizacao"),
   filtroPais: document.getElementById("filtroPais"),
+  scopeBtns: document.querySelectorAll(".scopeBtn[data-escopo]"),
+  scopeAllBtn: document.getElementById("scopeAllBtn"),
   filtroCompeticao: document.getElementById("filtroCompeticao"),
   filtroTime: document.getElementById("filtroTime"),
   filtroRegiao: document.getElementById("filtroRegiao"),
@@ -186,6 +198,11 @@ let jogosOriginais = [];
 let jogosEnriquecidos = [];
 let markersLayer;
 let semMapaAtivo = false;
+
+// Tipo de competição: Internacional (Conmebol), Nacional (ligas/copas de
+// cada país) ou Regional (federações estaduais, ex.: FMF, FFERJ, FPF...).
+// Por padrão vem com Internacional e Nacional ativos.
+let escoposAtivos = new Set(["Internacional", "Nacional"]);
 
 const chileBounds = [
   [-56.0, -76.5],
@@ -1011,9 +1028,23 @@ function derivePais(j) {
   return "Chile";
 }
 
+// Federações estaduais/regionais conhecidas (Brasil). Quando aparecem no
+// nome da competição, o jogo é classificado como "Regional" mesmo estando
+// dentro do prefixo "Brasil - ...".
+const REGEX_FEDERACAO_REGIONAL = /\b(FMF|FES|FFERJ|FPF(?:-PA|-PE)?|FCF|FBF|FGF)\b/i;
+
+function deriveEscopo(j) {
+  if (j.escopo) return j.escopo;
+  const comp = String(j.competicao || "");
+  if (/^conmebol\b/i.test(comp)) return "Internacional";
+  if (REGEX_FEDERACAO_REGIONAL.test(comp)) return "Regional";
+  return "Nacional";
+}
+
 function enrichGames(rawGames) {
   return rawGames.map((j, index) => {
     const pais = derivePais(j);
+    const escopo = deriveEscopo(j);
     const estadioBruto = /^(estadio\s*)?por confirmar$|^a confirmar$/i.test(normalize(j.estadio || ""))
       ? ""
       : (j.estadio || "");
@@ -1133,6 +1164,7 @@ function enrichGames(rawGames) {
       _stadiumInfo: stadium,
       _estadioFallback: estadioFallback,
       pais,
+      escopo,
       estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
       cidade: cidadeResolvida,
       regiao: j.regiao || stadium?.regiao || extractEstadoFromExtra(j.extra) || regiaoPorCidade,
@@ -1149,8 +1181,22 @@ function populateSelect(select, values, allLabel) {
   if (values.includes(current)) select.value = current;
 }
 
+function updateScopeButtonsUI() {
+  els.scopeBtns.forEach(btn => {
+    btn.classList.toggle("isActive", escoposAtivos.has(btn.dataset.escopo));
+  });
+  els.scopeAllBtn.classList.toggle("isActive", escoposAtivos.size === 3);
+}
+
+function jogosNoEscopoAtivo(lista) {
+  return lista.filter(j => escoposAtivos.has(j.escopo));
+}
+
 function setupFilters() {
-  const paises = uniqueSorted(jogosEnriquecidos.map(j => j.pais));
+  updateScopeButtonsUI();
+  const base = jogosNoEscopoAtivo(jogosEnriquecidos);
+
+  const paises = uniqueSorted(base.map(j => j.pais));
   // "Conmebol" fica sempre em primeiro no filtro (competições continentais
   // em destaque), o resto segue em ordem alfabética normal.
   const idxConmebol = paises.indexOf("Conmebol");
@@ -1161,7 +1207,7 @@ function setupFilters() {
   populateSelectComBandeiras(els.filtroPais, paises, t("all_m"));
 
   const pais = els.filtroPais.value;
-  const escopoPais = pais ? jogosEnriquecidos.filter(j => j.pais === pais) : jogosEnriquecidos;
+  const escopoPais = pais ? base.filter(j => j.pais === pais) : base;
 
   const regioes = uniqueSorted(escopoPais.map(j => j.regiao));
   populateSelect(els.filtroRegiao, regioes, t("all_f"));
@@ -1170,11 +1216,11 @@ function setupFilters() {
   updateDependentCityOptions();
 }
 
-// Campeonato e Time dependem do País e da Região selecionados.
+// Campeonato e Time dependem do País, da Região e do Tipo de competição selecionados.
 function updateDependentCompTimeOptions() {
   const pais = els.filtroPais.value;
   const regiao = els.filtroRegiao.value;
-  const escopo = jogosEnriquecidos.filter(j =>
+  const escopo = jogosNoEscopoAtivo(jogosEnriquecidos).filter(j =>
     (!pais || j.pais === pais) && (!regiao || j.regiao === regiao)
   );
 
@@ -1207,6 +1253,7 @@ function getFilteredGames() {
   const end = activePeriodDays ? addDaysISO(activePeriodDays - 1) : "";
 
   let out = jogosEnriquecidos.filter(j => {
+    const matchEscopo = escoposAtivos.has(j.escopo);
     const matchPais = !pais || j.pais === pais;
     const matchComp = !comp || j.competicao === comp;
     const matchTime = !time || j.mandante === time || j.visitante === time;
@@ -1239,7 +1286,7 @@ function getFilteredGames() {
       j.pais,
     ].join(" "));
 
-    return matchPais && matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
+    return matchEscopo && matchPais && matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
   });
 
   out.sort((a, b) => parseDateTime(a) - parseDateTime(b));
@@ -1250,7 +1297,7 @@ function updateDependentCityOptions() {
   const pais = els.filtroPais.value;
   const regiao = els.filtroRegiao.value;
   const cidades = uniqueSorted(
-    jogosEnriquecidos
+    jogosNoEscopoAtivo(jogosEnriquecidos)
       .filter(j => (!pais || j.pais === pais) && (!regiao || j.regiao === regiao))
       .map(j => j.cidade)
   );
@@ -1474,6 +1521,33 @@ function setupEvents() {
     renderAll();
   });
 
+  els.scopeBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const escopo = btn.dataset.escopo;
+      if (escoposAtivos.has(escopo)) {
+        // Não deixa desmarcar o último tipo ativo, para nunca ficar sem
+        // nenhuma competição visível.
+        if (escoposAtivos.size > 1) escoposAtivos.delete(escopo);
+      } else {
+        escoposAtivos.add(escopo);
+      }
+      showAllTeamMode = false;
+      els.filtroCompeticao.value = "";
+      els.filtroTime.value = "";
+      setupFilters();
+      renderAll();
+    });
+  });
+
+  els.scopeAllBtn.addEventListener("click", () => {
+    escoposAtivos = new Set(["Internacional", "Nacional", "Regional"]);
+    showAllTeamMode = false;
+    els.filtroCompeticao.value = "";
+    els.filtroTime.value = "";
+    setupFilters();
+    renderAll();
+  });
+
   els.hojeBtn.addEventListener("click", () => {
     activePeriodDays = null;
     showAllTeamMode = false;
@@ -1510,6 +1584,7 @@ function setupEvents() {
   });
 
   els.limparBtn.addEventListener("click", () => {
+    escoposAtivos = new Set(["Internacional", "Nacional"]);
     els.filtroPais.value = "";
     els.filtroCompeticao.value = "";
     els.filtroTime.value = "";
