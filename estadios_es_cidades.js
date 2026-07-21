@@ -97,3 +97,12 @@ window.CIDADES_ES = {
   "vila velha": { lat: -20.341705, lng: -40.287458 },
   "vitoria": { lat: -20.315472, lng: -40.312806 },
 };
+
+// Estádio-mandante conhecido dos clubes da FES (Federação de Futebol do
+// Estado do Espírito Santo) que não trazem o nome do estádio no widget de
+// próximos jogos. Pesquisado manualmente (jul/2026).
+window.ESTADIO_MANDANTE_PADRAO_FES = {
+  "pinheiros f c": { nome: "Estádio João Soares de Moura Filho", cidade: "Pinheiros", regiao: "Espírito Santo", lat: -18.3844, lng: -40.2489 },
+  "g e l": { nome: "Estádio Salvador Venâncio da Costa", cidade: "Serra", regiao: "Espírito Santo", lat: -20.1288, lng: -40.3078 },
+  "s c brasil capixaba": { nome: "Sede do Sport Clube Brasil Capixaba", cidade: "Serra", regiao: "Espírito Santo", lat: -20.1288, lng: -40.3078 },
+};

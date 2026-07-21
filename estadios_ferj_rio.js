@@ -1342,6 +1342,14 @@ window.ESTADIOS_FERJ_RJ = [
 ];
 
 window.ESTADIO_MANDANTE_PADRAO_FFERJ = {
+  // Clubes da Sub-15/Sub-17 estadual que ainda não tinham entrada aqui
+  // (pesquisados manualmente, jul/2026) - sem estádio próprio conhecido,
+  // usa a sede/cidade do clube como aproximação.
+  "futebol clube rio de janeiro": { nome: "Sede do Futebol Clube Rio de Janeiro", cidade: "Rio de Janeiro", regiao: "Rio de Janeiro", lat: -22.9068, lng: -43.1729 },
+  "perolas negras": { nome: "Sede do Pérolas Negras", cidade: "Volta Redonda", regiao: "Rio de Janeiro", lat: -22.5202, lng: -44.1042 },
+  "santa cruz fc": { nome: "Sede do Santa Cruz FC", cidade: "Rio de Janeiro", regiao: "Rio de Janeiro", lat: -22.9068, lng: -43.1729 },
+  "serrano f c": { nome: "Sede do Serrano F.C", cidade: "Petrópolis", regiao: "Rio de Janeiro", lat: -22.5046, lng: -43.1789 },
+  "petropolis goncalense fc": { nome: "Sede do Petrópolis Gonçalense FC", cidade: "Petrópolis", regiao: "Rio de Janeiro", lat: -22.5046, lng: -43.1789 },
   "a a portuguesa": { nome: "LUSO BRASILEIRO (E. ASSOCIAÇÃO ATLÉTICA PORTUGUESA)", cidade: "", regiao: "Rio de Janeiro", lat: -22.8781, lng: -43.4642 },
   "bangu a c": { nome: "PROLETÁRIO GUILHERME DA SILVEIRA FILHO (MOÇA BONITA)", cidade: "", regiao: "Rio de Janeiro", lat: -22.8781, lng: -43.4642 },
   "c r flamengo": { nome: "JORNALISTA MÁRIO FILHO (MARACANÃ)", cidade: "", regiao: "Rio de Janeiro", lat: -22.9121, lng: -43.2302 },

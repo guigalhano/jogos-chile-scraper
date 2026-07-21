@@ -753,6 +753,11 @@ const ESTADIO_MANDANTE_PADRAO_ARGENTINA = {
   "fenix": "estadio juan pasquale",
   "sp barracas": "estadio nuevo francisco urbano sp barracas",
   "sportivo barracas": "estadio nuevo francisco urbano sp barracas",
+  // Adicionados na auditoria de estádios "por confirmar" (jul/2026).
+  "almagro": "tres de febrero",
+  "madryn": "abel sastre",
+  "dep madryn": "abel sastre",
+  "deportivo madryn": "abel sastre",
 };
 
 const ESTADIO_MANDANTE_PADRAO_PERU = {
@@ -807,6 +812,25 @@ const ESTADIO_MANDANTE_PADRAO_PERU = {
   "coopsol": "huaral",
   "deportivo coopsol": "huaral",
   "valle sagrado": "calca valle sagrado",
+  // Adicionados na auditoria de estádios "por confirmar" (jul/2026):
+  // clubes de Liga 1/2/3 que ainda ficavam sem estádio/coordenada.
+  "cusco fc": "inca garcilaso de la vega",
+  "los chankas": "los chankas",
+  "bentin tacna": "jorge basadre",
+  "bentín tacna": "jorge basadre",
+  "bentin tacna heroica": "jorge basadre",
+  "carlos stein": "cesar flores marigorda",
+  "pirata fc": "chongoyape",
+  "s cristobal": "kimbiri",
+  "s. cristobal": "kimbiri",
+  "san cristobal": "kimbiri",
+  "nuevo san cristobal": "kimbiri",
+  "municipal pangoa": "mazamari",
+  "santos fc": "municipal de nasca",
+  "s domingo": "kuelap",
+  "s. domingo": "kuelap",
+  "santo domingo": "kuelap",
+  "union santo domingo": "kuelap",
 };
 
 const SUFIXOS_REGIAO_CHILE = [
@@ -1041,6 +1065,20 @@ function deriveEscopo(j) {
   return "Nacional";
 }
 
+// Alguns mapas de estádio-mandante (FFERJ, FPF, FES...) têm chaves escritas
+// sem pontuação (ex.: "sao goncalo e c"), mas normalize() preserva pontos e
+// apóstrofos do nome original (ex.: "São Gonçalo E.C" -> "sao goncalo e.c").
+// Essa função tenta a chave normalizada tal qual e, se não achar, tenta de
+// novo removendo pontuação, para não perder matches por essa diferença.
+function buscaMandantePadrao(mapa, mandante) {
+  if (!mapa) return null;
+  const chave = normalize(mandante);
+  if (mapa[chave]) return mapa[chave];
+  const chaveSemPontuacao = chave.replace(/[.,'’´`-]/g, " ").replace(/\s+/g, " ").trim();
+  if (chaveSemPontuacao !== chave && mapa[chaveSemPontuacao]) return mapa[chaveSemPontuacao];
+  return null;
+}
+
 function enrichGames(rawGames) {
   return rawGames.map((j, index) => {
     const pais = derivePais(j);
@@ -1077,16 +1115,14 @@ function enrichGames(rawGames) {
     // de estádio (exceção rara - a maioria já traz o texto do estádio,
     // então o match acima é o caminho principal).
     if (!stadium && !estadioBruto && ehFCF && window.ESTADIO_MANDANTE_PADRAO_FCF) {
-      const chaveMandante = normalize(j.mandante);
-      const chaveEstadio = window.ESTADIO_MANDANTE_PADRAO_FCF[chaveMandante];
+      const chaveEstadio = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_FCF, j.mandante);
       if (chaveEstadio) {
         stadium = matchStadiumInList(chaveEstadio, window.ESTADIOS_CEARA || []);
         estadioFallback = Boolean(stadium);
       }
     }
     if (!stadium && !estadioBruto && ehFPFPE && window.ESTADIO_MANDANTE_PADRAO_FPFPE) {
-      const chaveMandante = normalize(j.mandante);
-      const chaveEstadio = window.ESTADIO_MANDANTE_PADRAO_FPFPE[chaveMandante];
+      const chaveEstadio = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_FPFPE, j.mandante);
       if (chaveEstadio) {
         stadium = matchStadiumInList(chaveEstadio, window.ESTADIOS_PERNAMBUCO || []);
         estadioFallback = Boolean(stadium);
@@ -1099,9 +1135,18 @@ function enrichGames(rawGames) {
     // clubes da propria FERJ - mais preciso que o fallback generico por
     // cidade (que so tem o centro do Rio de Janeiro).
     if (!stadium && !estadioBruto && j.fonte === "FFERJ" && window.ESTADIO_MANDANTE_PADRAO_FFERJ) {
-      const chaveMandante = normalize(j.mandante);
-      if (window.ESTADIO_MANDANTE_PADRAO_FFERJ[chaveMandante]) {
-        stadium = window.ESTADIO_MANDANTE_PADRAO_FFERJ[chaveMandante];
+      const encontrado = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_FFERJ, j.mandante);
+      if (encontrado) {
+        stadium = encontrado;
+        estadioFallback = true;
+      }
+    }
+    // Jogos da FES (Espírito Santo) vindos do widget de próximos jogos não
+    // trazem o nome do estádio. Usa o estádio-mandante conhecido do clube.
+    if (!stadium && !estadioBruto && j.fonte === "FES" && window.ESTADIO_MANDANTE_PADRAO_FES) {
+      const encontrado = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_FES, j.mandante);
+      if (encontrado) {
+        stadium = encontrado;
         estadioFallback = true;
       }
     }
@@ -1109,26 +1154,27 @@ function enrichGames(rawGames) {
     // trazem o nome do estádio (só a página de cada competição traz).
     // Usa a cidade onde o time mandante costuma jogar como aproximação.
     if (!stadium && !estadioBruto && j.fonte === "FBF" && window.ESTADIO_MANDANTE_PADRAO_FBF) {
-      const chaveMandante = normalize(j.mandante);
-      if (window.ESTADIO_MANDANTE_PADRAO_FBF[chaveMandante]) {
-        stadium = window.ESTADIO_MANDANTE_PADRAO_FBF[chaveMandante];
+      const encontrado = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_FBF, j.mandante);
+      if (encontrado) {
+        stadium = encontrado;
         estadioFallback = true;
       }
     }
-    // Jogos da FPF (Copa Paulista, código 233) sem estádio/cidade retornados
-    // pela API. Usa o estádio-mandante conhecido de cada clube.
-    if (!stadium && !estadioBruto && j.fonte === "FPF API" && window.ESTADIO_MANDANTE_PADRAO_FPF) {
-      const chaveMandante = normalize(j.mandante);
-      if (window.ESTADIO_MANDANTE_PADRAO_FPF[chaveMandante]) {
-        stadium = window.ESTADIO_MANDANTE_PADRAO_FPF[chaveMandante];
+    // Jogos da FPF (Copa Paulista, código 233/238) sem estádio/cidade
+    // retornados pela API ou pelo widget do site. Usa o estádio-mandante
+    // conhecido de cada clube. Cobre tanto a fonte "FPF API" quanto "FPF".
+    if (!stadium && !estadioBruto && (j.fonte === "FPF API" || j.fonte === "FPF") && window.ESTADIO_MANDANTE_PADRAO_FPF) {
+      const encontrado = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_FPF, j.mandante);
+      if (encontrado) {
+        stadium = encontrado;
         estadioFallback = true;
       }
     }
     // Jogos da APF (Paraguay) sem estádio publicado ainda (status=PreMatch).
     if (!stadium && !estadioBruto && j.fonte === "APF" && window.ESTADIO_MANDANTE_PADRAO_APF) {
-      const chaveMandante = normalize(j.mandante);
-      if (window.ESTADIO_MANDANTE_PADRAO_APF[chaveMandante]) {
-        stadium = window.ESTADIO_MANDANTE_PADRAO_APF[chaveMandante];
+      const encontrado = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_APF, j.mandante);
+      if (encontrado) {
+        stadium = encontrado;
         estadioFallback = true;
       }
     }

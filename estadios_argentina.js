@@ -911,4 +911,22 @@ window.ESTADIOS_ARGENTINA = [
     lng: -58.3947,
     fonte: "manual/aproximado",
   },
+  {
+    nome: "Estadio Tres de Febrero",
+    aliases: ["tres de febrero", "estadio tres de febrero"],
+    cidade: "José Ingenieros",
+    regiao: "Buenos Aires",
+    lat: -34.5963,
+    lng: -58.5828,
+    fonte: "Wikipedia (Club Almagro) - casa do Almagro",
+  },
+  {
+    nome: "Estadio Abel Sastre (Coliseo del Golfo)",
+    aliases: ["abel sastre", "coliseo del golfo", "estadio abel sastre"],
+    cidade: "Puerto Madryn",
+    regiao: "Chubut",
+    lat: -42.7783,
+    lng: -65.0361,
+    fonte: "Wikipedia (Estadio Abel Sastre) - casa do Deportivo Madryn",
+  },
 ];
