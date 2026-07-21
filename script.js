@@ -19,7 +19,10 @@ const I18N = {
     scope_international: "Internacional",
     scope_national: "Nacional",
     scope_regional: "Regional",
-    scope_all: "Todas",
+    category: "Categoria",
+    category_male: "Masculino",
+    category_female: "Femenino",
+    category_youth: "Sub 23 e menor",
     championship: "Campeonato",
     team: "Time",
     region: "Região",
@@ -94,7 +97,10 @@ const I18N = {
     scope_international: "Internacional",
     scope_national: "Nacional",
     scope_regional: "Regional",
-    scope_all: "Todas",
+    category: "Categoría",
+    category_male: "Masculino",
+    category_female: "Femenino",
+    category_youth: "Sub 23 y menores",
     championship: "Campeonato",
     team: "Equipo",
     region: "Región",
@@ -164,7 +170,7 @@ const els = {
   ultimaAtualizacao: document.getElementById("ultimaAtualizacao"),
   filtroPais: document.getElementById("filtroPais"),
   scopeBtns: document.querySelectorAll(".scopeBtn[data-escopo]"),
-  scopeAllBtn: document.getElementById("scopeAllBtn"),
+  categoriaBtns: document.querySelectorAll(".categoriaBtn[data-categoria]"),
   filtroCompeticao: document.getElementById("filtroCompeticao"),
   filtroTime: document.getElementById("filtroTime"),
   filtroRegiao: document.getElementById("filtroRegiao"),
@@ -203,6 +209,10 @@ let semMapaAtivo = false;
 // cada país) ou Regional (federações estaduais, ex.: FMF, FFERJ, FPF...).
 // Por padrão vem com Internacional e Nacional ativos.
 let escoposAtivos = new Set(["Internacional", "Nacional"]);
+
+// Categoria: Masculino, Femenino ou Sub 23 e menor (qualquer campeonato de
+// categoria de base/juvenil, sub-23 pra baixo). Por padrão os três ativos.
+let categoriasAtivas = new Set(["Masculino", "Femenino", "Sub23"]);
 
 const chileBounds = [
   [-56.0, -76.5],
@@ -1065,6 +1075,25 @@ function deriveEscopo(j) {
   return "Nacional";
 }
 
+// Categoria: qualquer competição com indicação de idade (sub-11 a sub-23,
+// "juvenil", "infantil"...) conta como "Sub23", mesmo que também seja
+// feminina (prioridade sobre o gênero, já que a faixa etária é o recorte
+// mais específico). Depois disso, competições com "feminino/femenino" no
+// nome caem em "Femenino"; o resto é "Masculino".
+const REGEX_CATEGORIA_SUB = /sub[\s-]?(\d{1,2})\b/i;
+const REGEX_CATEGORIA_JUVENIL = /juvenil|infantil|\bmenores?\b/i;
+const REGEX_CATEGORIA_FEMININO = /femin|femen/i;
+
+function deriveCategoria(j) {
+  if (j.categoria) return j.categoria;
+  const comp = String(j.competicao || "");
+  const mSub = comp.match(REGEX_CATEGORIA_SUB);
+  if (mSub && Number(mSub[1]) <= 23) return "Sub23";
+  if (REGEX_CATEGORIA_JUVENIL.test(comp)) return "Sub23";
+  if (REGEX_CATEGORIA_FEMININO.test(comp)) return "Femenino";
+  return "Masculino";
+}
+
 // Alguns mapas de estádio-mandante (FFERJ, FPF, FES...) têm chaves escritas
 // sem pontuação (ex.: "sao goncalo e c"), mas normalize() preserva pontos e
 // apóstrofos do nome original (ex.: "São Gonçalo E.C" -> "sao goncalo e.c").
@@ -1083,6 +1112,7 @@ function enrichGames(rawGames) {
   return rawGames.map((j, index) => {
     const pais = derivePais(j);
     const escopo = deriveEscopo(j);
+    const categoria = deriveCategoria(j);
     const estadioBruto = /^(estadio\s*)?por confirmar$|^a confirmar$/i.test(normalize(j.estadio || ""))
       ? ""
       : (j.estadio || "");
@@ -1211,6 +1241,7 @@ function enrichGames(rawGames) {
       _estadioFallback: estadioFallback,
       pais,
       escopo,
+      categoria,
       estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
       cidade: cidadeResolvida,
       regiao: j.regiao || stadium?.regiao || extractEstadoFromExtra(j.extra) || regiaoPorCidade,
@@ -1231,15 +1262,21 @@ function updateScopeButtonsUI() {
   els.scopeBtns.forEach(btn => {
     btn.classList.toggle("isActive", escoposAtivos.has(btn.dataset.escopo));
   });
-  els.scopeAllBtn.classList.toggle("isActive", escoposAtivos.size === 3);
+}
+
+function updateCategoriaButtonsUI() {
+  els.categoriaBtns.forEach(btn => {
+    btn.classList.toggle("isActive", categoriasAtivas.has(btn.dataset.categoria));
+  });
 }
 
 function jogosNoEscopoAtivo(lista) {
-  return lista.filter(j => escoposAtivos.has(j.escopo));
+  return lista.filter(j => escoposAtivos.has(j.escopo) && categoriasAtivas.has(j.categoria));
 }
 
 function setupFilters() {
   updateScopeButtonsUI();
+  updateCategoriaButtonsUI();
   const base = jogosNoEscopoAtivo(jogosEnriquecidos);
 
   const paises = uniqueSorted(base.map(j => j.pais));
@@ -1300,6 +1337,7 @@ function getFilteredGames() {
 
   let out = jogosEnriquecidos.filter(j => {
     const matchEscopo = escoposAtivos.has(j.escopo);
+    const matchCategoria = categoriasAtivas.has(j.categoria);
     const matchPais = !pais || j.pais === pais;
     const matchComp = !comp || j.competicao === comp;
     const matchTime = !time || j.mandante === time || j.visitante === time;
@@ -1332,7 +1370,7 @@ function getFilteredGames() {
       j.pais,
     ].join(" "));
 
-    return matchEscopo && matchPais && matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
+    return matchEscopo && matchCategoria && matchPais && matchComp && matchTime && matchRegiao && matchCidade && matchData && matchPeriod && matchFutureDefault && matchMapa && (!q || text.includes(q));
   });
 
   out.sort((a, b) => parseDateTime(a) - parseDateTime(b));
@@ -1585,13 +1623,22 @@ function setupEvents() {
     });
   });
 
-  els.scopeAllBtn.addEventListener("click", () => {
-    escoposAtivos = new Set(["Internacional", "Nacional", "Regional"]);
-    showAllTeamMode = false;
-    els.filtroCompeticao.value = "";
-    els.filtroTime.value = "";
-    setupFilters();
-    renderAll();
+  els.categoriaBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const categoria = btn.dataset.categoria;
+      if (categoriasAtivas.has(categoria)) {
+        // Não deixa desmarcar a última categoria ativa, para nunca ficar
+        // sem nenhum jogo visível.
+        if (categoriasAtivas.size > 1) categoriasAtivas.delete(categoria);
+      } else {
+        categoriasAtivas.add(categoria);
+      }
+      showAllTeamMode = false;
+      els.filtroCompeticao.value = "";
+      els.filtroTime.value = "";
+      setupFilters();
+      renderAll();
+    });
   });
 
   els.hojeBtn.addEventListener("click", () => {
@@ -1631,6 +1678,7 @@ function setupEvents() {
 
   els.limparBtn.addEventListener("click", () => {
     escoposAtivos = new Set(["Internacional", "Nacional"]);
+    categoriasAtivas = new Set(["Masculino", "Femenino", "Sub23"]);
     els.filtroPais.value = "";
     els.filtroCompeticao.value = "";
     els.filtroTime.value = "";
