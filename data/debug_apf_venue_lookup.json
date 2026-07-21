@@ -3,19 +3,19 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-2-de-mayo-vs-san-lorenzo-813",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-2-de-mayo-vs-san-lorenzo-813",
     "next_data": true,
-    "venue": "Estadio Río Parapití"
+    "venue": ""
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-luqueno-vs-olimpia-815",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-luqueno-vs-olimpia-815",
     "next_data": true,
-    "venue": "Estadio ueno Luis Salinas Tanasio"
+    "venue": ""
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-recoleta-vs-guarani-814",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-recoleta-vs-guarani-814",
     "next_data": true,
-    "venue": "Estadio Ricardo Gregor"
+    "venue": ""
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-nacional-vs-libertad-817",
@@ -27,13 +27,14 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-sportivo-amel-vs-trinidense-818",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-sportivo-amel-vs-trinidense-818",
     "next_data": true,
-    "venue": "Estadio Ameliano Villeta"
+    "venue": ""
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-cerro-porteno-vs-rubio-nu-816",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-cerro-porteno-vs-rubio-nu-816",
-    "next_data": true,
-    "venue": "Estadio ueno La Nueva Olla"
+    "next_data": false,
+    "venue": "",
+    "erro": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-cerro-porteno-vs-rubio-nu-816\", waiting until \"domcontentloaded\"\n"
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-1-2-de-mayo-vs-rubio-nu-821",
@@ -72,50 +73,50 @@
     "venue": "Estadio Erico Galeano Segovia (Capiatá)"
   },
   {
-    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-14-resistencia-vs-club-sportivo-carapegua",
-    "slug": "intermedia-2026-intermedia-14-resistencia-vs-club-sportivo-carapegua",
+    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-15-club-12-de-junio-vs-caballero-jlm",
+    "slug": "intermedia-2026-intermedia-15-club-12-de-junio-vs-caballero-jlm",
     "next_data": true,
     "venue": ""
   },
   {
-    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-14-fernando-de-la-mora-vs-paraguari",
-    "slug": "intermedia-2026-intermedia-14-fernando-de-la-mora-vs-paraguari",
+    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-15-paraguari-vs-independiente-de-cg",
+    "slug": "intermedia-2026-intermedia-15-paraguari-vs-independiente-de-cg",
     "next_data": true,
     "venue": ""
   },
   {
-    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-14-3-de-noviembre-vs-santani",
-    "slug": "intermedia-2026-intermedia-14-3-de-noviembre-vs-santani",
+    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-15-club-sportivo-carapegua-vs-guairena-fc",
+    "slug": "intermedia-2026-intermedia-15-club-sportivo-carapegua-vs-guairena-fc",
     "next_data": true,
     "venue": ""
   },
   {
-    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-14-caballero-jlm-vs-encarnacion-fc",
-    "slug": "intermedia-2026-intermedia-14-caballero-jlm-vs-encarnacion-fc",
+    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-15-benjami-n-aceval-vs-resistencia",
+    "slug": "intermedia-2026-intermedia-15-benjami-n-aceval-vs-resistencia",
     "next_data": true,
     "venue": ""
   },
   {
-    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-14-guairena-fc-vs-club-12-de-junio",
-    "slug": "intermedia-2026-intermedia-14-guairena-fc-vs-club-12-de-junio",
+    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-15-encarnacion-fc-vs-3-de-noviembre",
+    "slug": "intermedia-2026-intermedia-15-encarnacion-fc-vs-3-de-noviembre",
     "next_data": true,
     "venue": ""
   },
   {
-    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-14-club-sol-de-america-vs-benjami-n-aceval",
-    "slug": "intermedia-2026-intermedia-14-club-sol-de-america-vs-benjami-n-aceval",
+    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-15-tembetary-vs-club-sol-de-america",
+    "slug": "intermedia-2026-intermedia-15-tembetary-vs-club-sol-de-america",
     "next_data": true,
     "venue": ""
   },
   {
-    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-14-independiente-de-cg-vs-tacuary",
-    "slug": "intermedia-2026-intermedia-14-independiente-de-cg-vs-tacuary",
+    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-15-tacuary-vs-deportivo-capiata",
+    "slug": "intermedia-2026-intermedia-15-tacuary-vs-deportivo-capiata",
     "next_data": true,
     "venue": ""
   },
   {
-    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-14-deportivo-capiata-vs-tembetary",
-    "slug": "intermedia-2026-intermedia-14-deportivo-capiata-vs-tembetary",
+    "url": "https://www.apf.org.py/partidos/intermedia-2026-intermedia-15-santani-vs-fernando-de-la-mora",
+    "slug": "intermedia-2026-intermedia-15-santani-vs-fernando-de-la-mora",
     "next_data": true,
     "venue": ""
   }
