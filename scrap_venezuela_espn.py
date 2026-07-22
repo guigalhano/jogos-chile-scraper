@@ -265,22 +265,41 @@ def is_valid_row(row: dict) -> bool:
     return bool(row.get("data") and row.get("mandante") and row.get("visitante"))
 
 
+ESPN_CODE_RE = re.compile(r"codigo_espn=(\d+)")
+
+
+def merge_key(row: dict) -> str:
+    """Chave estável de identidade para o merge.
+
+    Jogos vindos da ESPN têm um id de evento fixo (codigo_espn) que não muda
+    quando o horário ou o estádio são atualizados. Usar essa chave evita que
+    o mesmo jogo fique duplicado (versão antiga sem estádio + versão nova).
+    Para jogos de outras fontes, mantém o hash tradicional.
+    """
+    m = ESPN_CODE_RE.search(row.get("extra", "") or "")
+    if m:
+        return f"espn:{m.group(1)}"
+    return row_id(row)
+
+
 def merge_rows(existing: list[dict], new_rows: list[dict]) -> list[dict]:
-    by_id = {}
+    by_key = {}
+
+    def put(r):
+        if not is_valid_row(r):
+            return
+        r["id"] = row_id(r)
+        k = merge_key(r)
+        prev = by_key.get(k)
+        if prev is None or (r.get("atualizado_em", "") >= prev.get("atualizado_em", "")):
+            by_key[k] = r
+
     for r in existing:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        put(r)
     for r in new_rows:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        put(r)
     return sorted(
-        by_id.values(),
+        by_key.values(),
         key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("pais", ""), r.get("competicao", ""), r.get("mandante", ""))
     )
 
