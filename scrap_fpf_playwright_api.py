@@ -154,6 +154,20 @@ def first_value(obj: dict, keys: list[str]) -> str:
     return ""
 
 
+# A página da FPF embute outros widgets nacionais além do futebol paulista,
+# identificados pelo parâmetro codigo= do endpoint Resultados.ashx. Quando o
+# JSON não traz nome de campeonato (comum nesses widgets "estrangeiros" ao
+# site), caímos no fallback "Brasil - FPF - <código>", que é enganoso (ex.:
+# times como Botafogo/Atlético-MG/Vasco não são do futebol paulista). Mapeamos
+# os códigos conhecidos pro nome de campeonato real.
+CODIGO_COMPETICAO_CONHECIDO = {
+    # Copa do Brasil Feminina 2026 (oitavas de final em diante) - confirmado
+    # comparando os jogos/estádios/datas retornados com a tabela oficial da
+    # CBF (ex.: Botafogo x Red Bull Bragantino em 22/07 no Nilton Santos).
+    "238": "Copa do Brasil Feminina",
+}
+
+
 def guess_competicao(obj: dict, api_url: str) -> str:
     vals = [
         first_value(obj, ["Campeonato", "DescricaoCampeonato", "NomeCampeonato", "Competicao", "Competição"]),
@@ -163,6 +177,13 @@ def guess_competicao(obj: dict, api_url: str) -> str:
     txt = " ".join(v for v in vals if v)
     if txt:
         return "Brasil - FPF - " + txt
+
+    m = re.search(r"codigo=(\d+)", api_url)
+    codigo = m.group(1) if m else ""
+    nome_conhecido = CODIGO_COMPETICAO_CONHECIDO.get(codigo)
+    if nome_conhecido:
+        return "Brasil - " + nome_conhecido
+
     return "Brasil - FPF"
 
 

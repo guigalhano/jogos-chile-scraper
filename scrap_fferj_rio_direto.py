@@ -232,6 +232,17 @@ def parse_card(a, debug_errors: list) -> Partido | None:
         if spans and has_class(spans[-1], "bg-primary-dark"):
             fonte_tag = texts[-1]
             texts = texts[:-1]
+
+    # A FFERJ lista também jogos de clubes afiliados (ex.: Flamengo) em
+    # competições nacionais, marcados com o selo "CBF" em vez de "FERJ".
+    # Esses não são organizados pela federação, não têm estádio/cidade
+    # reais nesta página (fica "Rio de Janeiro" fixo, o que é errado
+    # quando o jogo é em outro estado), e já são cobertos com dados
+    # corretos pelo scraper oficial da CBF. Por isso pulamos aqui para
+    # não duplicar com localização errada.
+    if clean_text(fonte_tag).strip().upper() == "CBF":
+        debug_errors.append({"match_id": match_id, "erro": "pulado_fonte_tag_cbf"})
+        return None
         if len(texts) > 0:
             comp = texts[0]
         if len(texts) > 1:

@@ -2979,7 +2979,7 @@
   },
   {
     "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 238",
+    "competicao": "Brasil - Copa do Brasil Feminina",
     "data": "2026-07-21",
     "hora": "16h30",
     "mandante": "Fluminense",
@@ -3150,7 +3150,7 @@
   },
   {
     "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 238",
+    "competicao": "Brasil - Copa do Brasil Feminina",
     "data": "2026-07-21",
     "hora": "20h00",
     "mandante": "Itabirito-MG",
@@ -3198,7 +3198,7 @@
   },
   {
     "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 238",
+    "competicao": "Brasil - Copa do Brasil Feminina",
     "data": "2026-07-21",
     "hora": "21h45",
     "mandante": "Vasco",
@@ -3578,7 +3578,7 @@
   },
   {
     "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 238",
+    "competicao": "Brasil - Copa do Brasil Feminina",
     "data": "2026-07-22",
     "hora": "19h00",
     "mandante": "Botafogo",
@@ -3592,7 +3592,7 @@
   },
   {
     "fonte": "FPF API",
-    "competicao": "Brasil - FPF - 238",
+    "competicao": "Brasil - Copa do Brasil Feminina",
     "data": "2026-07-22",
     "hora": "19h30",
     "mandante": "Atlético-MG",
@@ -3711,22 +3711,6 @@
     "extra": "pais=Brasil; cidade=Bragança Paulista",
     "id": "cf14be7f7651a7f6",
     "atualizado_em": "2026-07-21T14:07:16"
-  },
-  {
-    "fonte": "FFERJ",
-    "competicao": "Brasil - FFERJ - BRASILEIRO - Profissional",
-    "data": "2026-07-22",
-    "hora": "21:30",
-    "mandante": "Chapecoense (sc)",
-    "visitante": "C.R Flamengo",
-    "pais": "Brasil",
-    "cidade": "Rio de Janeiro",
-    "estadio": "",
-    "rodada": "Profissional",
-    "url": "https://www.fferj.com.br/partidas/5514",
-    "extra": "codigo_fferj=5514; orgao=A; fonte_tag=CBF; categoria=Profissional",
-    "id": "90e520fa0ba45beb",
-    "atualizado_em": "2026-07-20T15:42:47"
   },
   {
     "fonte": "CONMEBOL",
