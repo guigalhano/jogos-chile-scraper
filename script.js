@@ -444,7 +444,7 @@ function matchStadiumInList(estadioTexto, stadiums) {
   return null;
 }
 
-function findStadiumInfo(estadioTexto, pais) {
+function findStadiumInfo(estadioTexto, pais, mandante) {
   const txt = normalize(estadioTexto);
   if (!txt) return null;
 
@@ -479,6 +479,7 @@ function findStadiumInfo(estadioTexto, pais) {
   //    longo/específico. Isso evita que "Estadio Nacional" (Chile) capture
   //    "Estadio Nacional de Lima" (Peru) só por vir antes na lista concatenada
   //    do Conmebol.
+  const exatos = [];
   let melhorSubstring = null;
   let melhorSubstringLen = -1;
   for (const s of stadiums) {
@@ -487,13 +488,22 @@ function findStadiumInfo(estadioTexto, pais) {
       const nn = normalize(n);
       if (!nn) continue;
       if (nn === txt) {
-        return s;
-      }
-      if ((txt.includes(nn) || nn.includes(txt)) && nn.length > melhorSubstringLen) {
+        if (!exatos.includes(s)) exatos.push(s);
+      } else if ((txt.includes(nn) || nn.includes(txt)) && nn.length > melhorSubstringLen) {
         melhorSubstringLen = nn.length;
         melhorSubstring = s;
       }
     }
+  }
+  if (exatos.length === 1) return exatos[0];
+  if (exatos.length > 1) {
+    // Nomes genéricos (ex.: "Estadio Monumental", "Estadio Centenario") que
+    // existem de verdade em mais de um país. Desempata pelo time mandante:
+    // se o mandante tiver um estádio-padrão conhecido que bate com um dos
+    // candidatos, esse vence; senão mantém o primeiro (comportamento antigo).
+    const desempate = desempatarPorMandante(exatos, mandante);
+    if (desempate) return desempate;
+    return exatos[0];
   }
   if (melhorSubstring) return melhorSubstring;
 
@@ -509,6 +519,40 @@ function findStadiumInfo(estadioTexto, pais) {
   }
 
   return null;
+}
+
+// Usada só quando findStadiumInfo encontra mais de um estádio com o MESMO
+// nome exato em países diferentes (ex.: "Estadio Monumental" é tanto o do
+// Colo-Colo no Chile quanto o do River Plate na Argentina). Olha o estádio-
+// padrão conhecido do mandante (mesmos mapas usados por findDefaultHomeStadium)
+// pra ver em qual país esse time realmente joga, e prefere o candidato desse
+// país. Se o mandante não for reconhecido em nenhum mapa, ou bater em mais de
+// um, retorna null (quem chamou mantém o comportamento antigo: primeiro da lista).
+function desempatarPorMandante(candidatos, mandante) {
+  if (!mandante) return null;
+  const chave = normalize(mandante);
+  const PAIS_MAPA_LISTA = [
+    [ESTADIO_MANDANTE_PADRAO_CHILE, window.ESTADIOS_CHILE],
+    [ESTADIO_MANDANTE_PADRAO_ARGENTINA, window.ESTADIOS_ARGENTINA],
+    [ESTADIO_MANDANTE_PADRAO_PERU, window.ESTADIOS_PERU],
+    [ESTADIO_MANDANTE_PADRAO_ECUADOR, window.ESTADIOS_ECUADOR],
+    [ESTADIO_MANDANTE_PADRAO_COLOMBIA, window.ESTADIOS_COLOMBIA],
+    [ESTADIO_MANDANTE_PADRAO_PARAGUAY, window.ESTADIOS_PARAGUAY],
+  ];
+  let achado = null;
+  for (const [mapa, lista] of PAIS_MAPA_LISTA) {
+    if (!mapa || !mapa[chave] || !lista) continue;
+    // Não compara nomes (dois países podem usar o mesmo apelido curto, ex.:
+    // "monumental" existe tanto pro River quanto pro Colo-Colo) - em vez
+    // disso confere se o candidato É (mesma referência de objeto) um dos
+    // estádios da lista nacional desse país.
+    const candidato = candidatos.find(c => lista.includes(c));
+    if (candidato) {
+      if (achado && achado !== candidato) return null; // ambíguo, não arrisca
+      achado = candidato;
+    }
+  }
+  return achado;
 }
 
 // O scraper do Brasil às vezes só grava a cidade dentro do texto livre
@@ -1150,9 +1194,9 @@ function enrichGames(rawGames) {
     const ehFCF = j.fonte === "FCF";
     const ehFPFPE = j.fonte === "FPF-PE";
     let stadium = ehFMF ? null
-      : ehFCF ? (matchStadiumInList(estadioBruto, window.ESTADIOS_CEARA || []) || findStadiumInfo(estadioBruto, pais))
-      : ehFPFPE ? (matchStadiumInList(estadioBruto, window.ESTADIOS_PERNAMBUCO || []) || findStadiumInfo(estadioBruto, pais))
-      : findStadiumInfo(estadioBruto, pais);
+      : ehFCF ? (matchStadiumInList(estadioBruto, window.ESTADIOS_CEARA || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
+      : ehFPFPE ? (matchStadiumInList(estadioBruto, window.ESTADIOS_PERNAMBUCO || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
+      : findStadiumInfo(estadioBruto, pais, j.mandante);
     let estadioFallback = false;
     if (!stadium && !estadioBruto && pais !== "Brasil") {
       stadium = findDefaultHomeStadium(j.mandante, pais);
