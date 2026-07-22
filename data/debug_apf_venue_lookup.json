@@ -3,19 +3,19 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-2-de-mayo-vs-san-lorenzo-813",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-2-de-mayo-vs-san-lorenzo-813",
     "next_data": true,
-    "venue": ""
+    "venue": "Estadio Río Parapití"
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-luqueno-vs-olimpia-815",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-luqueno-vs-olimpia-815",
     "next_data": true,
-    "venue": ""
+    "venue": "Estadio ueno Luis Salinas Tanasio"
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-recoleta-vs-guarani-814",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-recoleta-vs-guarani-814",
     "next_data": true,
-    "venue": ""
+    "venue": "Estadio Ricardo Gregor"
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-nacional-vs-libertad-817",
@@ -27,14 +27,13 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-sportivo-amel-vs-trinidense-818",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-sportivo-amel-vs-trinidense-818",
     "next_data": true,
-    "venue": ""
+    "venue": "Estadio Ameliano Villeta"
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-cerro-porteno-vs-rubio-nu-816",
     "slug": "temporada-2026-paraguay-primera-division-apertura-22-cerro-porteno-vs-rubio-nu-816",
-    "next_data": false,
-    "venue": "",
-    "erro": "Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-apertura-22-cerro-porteno-vs-rubio-nu-816\", waiting until \"domcontentloaded\"\n"
+    "next_data": true,
+    "venue": "Estadio ueno La Nueva Olla"
   },
   {
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-1-2-de-mayo-vs-rubio-nu-821",
