@@ -27,7 +27,7 @@ jobs:
 
       - name: Testar descoberta (requests + Playwright + busca web), somente listar
         run: |
-          python atualizar_pdfs_cbf_pagina_v2.py --playwright --buscar-web --somente-listar
+          python atualizar_pdfs_cbf_pagina_v2.py --playwright --buscar-web --somente-listar --todas-competicoes
 
       - name: Salvar resultados do diagnóstico
         run: |

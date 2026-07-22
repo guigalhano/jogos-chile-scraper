@@ -762,6 +762,85 @@ def in_window(p: Partido, desde: date, ate: date, incluir_passados: bool) -> boo
     return incluir_passados or (desde <= dt <= ate)
 
 
+# Quantos dias de cobertura futura consideramos aceitaveis antes de soar o
+# alarme. O gatilho do bug original (Serie B travada nas rodadas 12-18 por
+# semanas, sem ninguem perceber) foi a cobertura se esgotar silenciosamente:
+# so um log [INFO] discreto avisava que a busca automatica tinha falhado e
+# caido pro fallback "semente", e ninguem olha esse log todo dia.
+DIAS_AVISO_COBERTURA = 10  # cobertura menor que isso -> "atencao", ja e hora de atualizar
+DIAS_CRITICO_COBERTURA = 2  # cobertura menor que isso (ou zero jogos futuros) -> "critico"
+
+
+def checar_cobertura(competicao: str, pdf_url: str, matches_raw: list[Partido], today: date) -> dict:
+    """Calcula ate quando essa competicao tem jogos agendados (futuros) na
+    tabela que acabamos de baixar/parsear, e classifica isso.
+
+    Retorna um dict pronto pra virar linha do relatorio de cobertura, e
+    tambem imprime um aviso no formato de annotation do GitHub Actions
+    (`::warning::`) quando o status nao e "ok" -- isso faz o aviso aparecer
+    destacado no resumo do workflow run, em vez de se perder no meio de
+    milhares de linhas de log.
+    """
+    datas_futuras = []
+    for m in matches_raw:
+        if not m.data:
+            continue
+        try:
+            dt = date.fromisoformat(m.data)
+        except Exception:
+            continue
+        if dt >= today:
+            datas_futuras.append(dt)
+
+    if not datas_futuras:
+        status = "critico"
+        cobertura_ate = None
+        dias_restantes = 0
+        msg = (
+            f"'{competicao}' nao tem NENHUM jogo futuro nesta tabela "
+            f"(pdf: {pdf_url}). Ou a competicao realmente acabou/esta em "
+            f"pausa, ou o link fixo (seed) ficou desatualizado igual "
+            f"aconteceu com a Serie B em julho/2026 -- confira manualmente."
+        )
+    else:
+        cobertura_ate = max(datas_futuras)
+        dias_restantes = (cobertura_ate - today).days
+        if dias_restantes < DIAS_CRITICO_COBERTURA:
+            status = "critico"
+            msg = (
+                f"'{competicao}' so tem jogos futuros ate {cobertura_ate.isoformat()} "
+                f"({dias_restantes} dia(s)) -- cobertura prestes a se esgotar. "
+                f"Atualize o link/seed para o proximo lote de rodadas."
+            )
+        elif dias_restantes < DIAS_AVISO_COBERTURA:
+            status = "atencao"
+            msg = (
+                f"'{competicao}' cobre jogos futuros so ate {cobertura_ate.isoformat()} "
+                f"({dias_restantes} dias) -- vale planejar a atualizacao do link/seed em breve."
+            )
+        else:
+            status = "ok"
+            msg = f"'{competicao}' cobre jogos futuros ate {cobertura_ate.isoformat()} ({dias_restantes} dias)."
+
+    if status != "ok":
+        # Formato de annotation do GitHub Actions: aparece destacado no
+        # resumo do workflow run (aba "Summary"), nao so no log bruto.
+        nivel_gh = "error" if status == "critico" else "warning"
+        print(f"::{nivel_gh}::[COBERTURA CBF] {msg}")
+    else:
+        print(f"[COBERTURA CBF] OK - {msg}")
+
+    return {
+        "competicao": competicao,
+        "pdf_url": pdf_url,
+        "jogos_futuros_na_tabela": len(datas_futuras),
+        "cobertura_ate": cobertura_ate.isoformat() if cobertura_ate else None,
+        "dias_restantes": dias_restantes,
+        "status": status,
+        "mensagem": msg,
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dias", type=int, default=180)
@@ -775,6 +854,7 @@ def main() -> None:
 
     all_new: list[Partido] = []
     debug_info: list[dict] = []
+    cobertura_report: list[dict] = []
 
     print("[INFO] Buscando PDFs de Tabela Detalhada da CBF via busca de texto...")
     pdf_targets = find_cbf_pdf_urls()
@@ -791,18 +871,43 @@ def main() -> None:
             entry["jogos_na_janela_de_datas"] = len(matches)
             print(f"[OK] {competicao} -> {len(matches)} jogos | {pdf_url}")
             all_new.extend(matches)
+            cobertura_report.append(checar_cobertura(competicao, pdf_url, matches_raw, today))
         except Exception as e:
             entry["erro"] = str(e)
             print(f"[ERRO] Falha ao baixar/processar PDF {pdf_url}: {e}", file=sys.stderr)
+            cobertura_report.append({
+                "competicao": competicao, "pdf_url": pdf_url, "status": "erro",
+                "mensagem": f"Falha ao baixar/processar o PDF: {e}",
+            })
+            print(f"::error::[COBERTURA CBF] '{competicao}' falhou ao baixar/processar ({e}); jogos futuros dessa competicao NAO foram atualizados nesta rodada do script.")
         debug_info.append(entry)
 
     for competicao, _query in CBF_SEARCH_QUERIES:
         if not any(d["competicao"] == competicao for d in debug_info):
             debug_info.append({"competicao": competicao, "pdf_url": None, "erro": "nenhum PDF encontrado (busca nem seed)"})
+            cobertura_report.append({
+                "competicao": competicao, "pdf_url": None, "status": "erro",
+                "mensagem": "Nenhum PDF encontrado (nem busca, nem seed) -- competicao ficou sem nenhuma fonte de dados nesta rodada.",
+            })
+            print(f"::error::[COBERTURA CBF] '{competicao}' sem PDF algum (busca e seed falharam) -- confira CBF_SEARCH_QUERIES/SEED_PDF_URLS.")
 
     (OUT_DIR / "debug_cbf_pdf_discovery.json").write_text(
         json.dumps(debug_info, ensure_ascii=False, indent=2), encoding="utf-8"
     )
+    (OUT_DIR / "debug_cbf_cobertura.json").write_text(
+        json.dumps(cobertura_report, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+    problematicos = [c for c in cobertura_report if c["status"] != "ok"]
+    print("\n" + "=" * 70)
+    print(f"RESUMO DE COBERTURA CBF ({len(cobertura_report)} competições verificadas)")
+    if problematicos:
+        print(f"{len(problematicos)} precisam de atenção:")
+        for c in problematicos:
+            print(f"  [{c['status'].upper()}] {c['competicao']}: {c['mensagem']}")
+    else:
+        print("Todas as competições com cobertura futura saudável.")
+    print("=" * 70)
 
     # Complemento best-effort: federações estaduais (pode retornar 0 se bloquearem bots)
     all_new.extend(parse_extra_html_sources(desde, ate, args.incluir_passados))

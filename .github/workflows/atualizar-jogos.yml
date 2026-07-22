@@ -52,9 +52,9 @@ jobs:
         run: |
           if [ -f scrap_auf_uruguay.py ]; then python scrap_auf_uruguay.py --dias 180 --dias-atras 30; fi
 
-      - name: Descobrir PDFs atuais da CBF (Playwright + busca, best-effort)
+      - name: Descobrir PDFs atuais da CBF (Playwright + busca, todas as séries/copas, best-effort)
         run: |
-          if [ -f atualizar_pdfs_cbf_pagina_v2.py ]; then python atualizar_pdfs_cbf_pagina_v2.py --playwright --buscar-web --somente-listar || echo "Descoberta falhou, seguindo com seeds manuais"; fi
+          if [ -f atualizar_pdfs_cbf_pagina_v2.py ]; then python atualizar_pdfs_cbf_pagina_v2.py --playwright --buscar-web --somente-listar --todas-competicoes || echo "Descoberta falhou, seguindo com seeds manuais"; fi
 
       - name: Adicionar Brasil CBF PDFs FERJ FMF FPF
         run: |
@@ -86,7 +86,7 @@ jobs:
 
           mkdir -p /tmp/dados_novos
           cp /tmp/baseline/diff_desta_rodada_raw.json /tmp/dados_novos/ 2>/dev/null || true
-          cp data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json /tmp/dados_novos/ 2>/dev/null || true
+          cp data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json data/debug_cbf_cobertura.json /tmp/dados_novos/ 2>/dev/null || true
           cp data/cruzamento_promiedos.json /tmp/dados_novos/ 2>/dev/null || true
 
           for tentativa in 1 2 3 4 5; do
@@ -99,7 +99,7 @@ jobs:
             # resultado final mesclado - evita sobrescrever com uma copia
             # desatualizada e perder jogos de outras fontes commitados nesse
             # meio-tempo (condicao de corrida entre os varios workflows).
-            cp /tmp/dados_novos/debug_cbf_pdf_discovery.json /tmp/dados_novos/debug_cbf_search.json /tmp/dados_novos/debug_cbf_pdf_links.json data/ 2>/dev/null || true
+            cp /tmp/dados_novos/debug_cbf_pdf_discovery.json /tmp/dados_novos/debug_cbf_search.json /tmp/dados_novos/debug_cbf_pdf_links.json /tmp/dados_novos/debug_cbf_cobertura.json data/ 2>/dev/null || true
             cp /tmp/dados_novos/cruzamento_promiedos.json data/ 2>/dev/null || true
 
             if [ -f /tmp/dados_novos/diff_desta_rodada_raw.json ]; then
@@ -110,7 +110,7 @@ jobs:
             if [ -f limpar_jogos_passados_programados.py ]; then python limpar_jogos_passados_programados.py; fi
 
             git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
-            git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json 2>/dev/null || true
+            git add data/debug_cbf_pdf_discovery.json data/debug_cbf_search.json data/debug_cbf_pdf_links.json data/debug_cbf_cobertura.json 2>/dev/null || true
             git add data/cruzamento_promiedos.json 2>/dev/null || true
 
             if git diff --cached --quiet; then

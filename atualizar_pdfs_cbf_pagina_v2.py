@@ -62,6 +62,21 @@ except Exception:
 
 DEFAULT_URL = "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026"
 
+# Páginas de tabela de cada série/competição nacional, usadas pelo modo
+# --todas-competicoes. A descoberta diária original só visitava a Série A
+# (DEFAULT_URL); isso deixava Série B/C/D e as copas sem NENHUMA atualização
+# automática de PDF, dependendo pra sempre do link fixo (seed) mantido à mão
+# em adicionar_brasil_jogos.py -- exatamente o que causou o jogo do Athletic
+# x CRB (Série B, 20/08) sumir por semanas até alguém notar e reclamar.
+PAGINAS_CBF_COMPETICOES = [
+    DEFAULT_URL,
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-b/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-c/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil/masculino/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil/feminino/2026",
+]
+
 OUT_DIR = Path("data")
 BASE_PDF_DIR = OUT_DIR / "cbf_pdfs"
 MANIFEST_JSON = OUT_DIR / "cbf_pdfs_manifest.json"
@@ -524,41 +539,59 @@ def main() -> None:
     parser.add_argument("--incluir-sumulas", action="store_true")
     parser.add_argument("--incluir-outros-pdfs", action="store_true")
     parser.add_argument("--insecure", action="store_true", help="Desativa verificação SSL para requests, útil se houver CERTIFICATE_VERIFY_FAILED.")
+    parser.add_argument(
+        "--todas-competicoes", action="store_true",
+        help=(
+            "Em vez de checar só --url (Série A por padrão), percorre a página de "
+            "tabelas de cada série/competição da CBF (A, B, C, D, Copa do Brasil e "
+            "Copa do Brasil Feminina) e acumula os PDFs encontrados de todas elas "
+            "em debug_cbf_pdf_links.json. Corrige o problema de a descoberta diária "
+            "só cobrir a Série A por padrão, deixando as demais séries dependentes "
+            "só do link fixo (seed) manual em adicionar_brasil_jogos.py, que não é "
+            "atualizado automaticamente e por isso fica velho sem ninguém perceber."
+        ),
+    )
     args = parser.parse_args()
 
     if args.insecure:
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-    page_url = args.url
-    slug = args.slug or infer_slug_from_url(page_url)
-    out_pdf_dir = BASE_PDF_DIR / slug
-    OUT_DIR.mkdir(exist_ok=True)
-
     verify_ssl = not args.insecure
+
+    paginas = PAGINAS_CBF_COMPETICOES if args.todas_competicoes else [args.url]
 
     all_candidates: list[PdfCandidate] = []
     debug: list[dict] = []
     resources: list[dict] = []
 
-    print(f"[INFO] Página CBF: {page_url}")
-    print(f"[INFO] Slug: {slug}")
+    for page_url in paginas:
+        slug = infer_slug_from_url(page_url)
+        print(f"[INFO] Página CBF: {page_url}")
+        print(f"[INFO] Slug: {slug}")
 
-    req_candidates, req_debug = discover_with_requests(page_url, verify_ssl=verify_ssl)
-    all_candidates.extend(req_candidates)
-    debug.extend(req_debug)
-    print(f"[INFO] Candidatos via requests: {len(req_candidates)}")
+        req_candidates, req_debug = discover_with_requests(page_url, verify_ssl=verify_ssl)
+        all_candidates.extend(req_candidates)
+        debug.extend(req_debug)
+        print(f"[INFO] Candidatos via requests: {len(req_candidates)}")
 
-    if args.playwright:
-        pw_candidates, pw_resources = discover_with_playwright(page_url, wait_ms=args.wait_ms)
-        all_candidates.extend(pw_candidates)
-        resources.extend(pw_resources)
-        print(f"[INFO] Candidatos via Playwright: {len(pw_candidates)}")
+        if args.playwright:
+            pw_candidates, pw_resources = discover_with_playwright(page_url, wait_ms=args.wait_ms)
+            all_candidates.extend(pw_candidates)
+            resources.extend(pw_resources)
+            print(f"[INFO] Candidatos via Playwright: {len(pw_candidates)}")
 
-    if args.buscar_web:
-        se_candidates, se_debug = search_engine_candidates(page_url)
-        all_candidates.extend(se_candidates)
-        debug.extend(se_debug)
-        print(f"[INFO] Candidatos via busca web: {len(se_candidates)}")
+        if args.buscar_web:
+            se_candidates, se_debug = search_engine_candidates(page_url)
+            all_candidates.extend(se_candidates)
+            debug.extend(se_debug)
+            print(f"[INFO] Candidatos via busca web: {len(se_candidates)}")
+
+    # slug/out_pdf_dir do download (modo --somente-listar não usa isso; no modo
+    # de download com --todas-competicoes, cada PDF ainda cai na pasta correta
+    # porque download_candidate já deriva o slug a partir da própria URL do PDF).
+    slug = args.slug or infer_slug_from_url(args.url)
+    out_pdf_dir = BASE_PDF_DIR / slug
+    OUT_DIR.mkdir(exist_ok=True)
 
     all_unique = dedupe_candidates(all_candidates)
     candidates = [
@@ -590,7 +623,7 @@ def main() -> None:
     processed = 0
     updated = 0
     for c in candidates:
-        row = download_candidate(c, page_url, slug, out_pdf_dir, old_manifest, forcar=args.forcar, verify_ssl=verify_ssl)
+        row = download_candidate(c, args.url, slug, out_pdf_dir, old_manifest, forcar=args.forcar, verify_ssl=verify_ssl)
         rows_by_url[c.url] = row
         processed += 1
         if row.get("atualizado"):
