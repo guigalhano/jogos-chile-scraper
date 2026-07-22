@@ -473,12 +473,29 @@ function findStadiumInfo(estadioTexto, pais) {
       ]
     : (window.ESTADIOS_CHILE || []);
 
+  // Faz duas passadas em vez de retornar no primeiro achado:
+  // 1) match exato (nome normalizado == texto normalizado) tem prioridade total;
+  // 2) se não houver exato, entre os matches por substring fica o de nome mais
+  //    longo/específico. Isso evita que "Estadio Nacional" (Chile) capture
+  //    "Estadio Nacional de Lima" (Peru) só por vir antes na lista concatenada
+  //    do Conmebol.
+  let melhorSubstring = null;
+  let melhorSubstringLen = -1;
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])];
-    if (names.some(n => txt.includes(normalize(n)) || normalize(n).includes(txt))) {
-      return s;
+    for (const n of names) {
+      const nn = normalize(n);
+      if (!nn) continue;
+      if (nn === txt) {
+        return s;
+      }
+      if ((txt.includes(nn) || nn.includes(txt)) && nn.length > melhorSubstringLen) {
+        melhorSubstringLen = nn.length;
+        melhorSubstring = s;
+      }
     }
   }
+  if (melhorSubstring) return melhorSubstring;
 
   const PALAVRAS_GENERICAS = new Set([
     "estadio", "municipal", "arena", "parque", "complexo", "campo",
