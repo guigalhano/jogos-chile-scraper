@@ -1,0 +1,98 @@
+[
+  {
+    "competicao": "Brasil - Série A",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_23_07_02aac8e204.pdf",
+    "jogos_futuros_na_tabela": 52,
+    "cobertura_ate": "2026-12-02",
+    "dias_restantes": 132,
+    "status": "ok",
+    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-12-02 (132 dias)."
+  },
+  {
+    "competicao": "Brasil - Série B",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_23_07_374455bf6c.pdf",
+    "jogos_futuros_na_tabela": 55,
+    "cobertura_ate": "2026-11-28",
+    "dias_restantes": 128,
+    "status": "ok",
+    "mensagem": "'Brasil - Série B' cobre jogos futuros ate 2026-11-28 (128 dias)."
+  },
+  {
+    "competicao": "Brasil - Série C",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_14_07_4c00810d2f.pdf",
+    "jogos_futuros_na_tabela": 50,
+    "cobertura_ate": "2026-08-29",
+    "dias_restantes": 37,
+    "status": "ok",
+    "mensagem": "'Brasil - Série C' cobre jogos futuros ate 2026-08-29 (37 dias)."
+  },
+  {
+    "competicao": "Brasil - Série D",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_20_07_cb1a723cba.pdf",
+    "jogos_futuros_na_tabela": 8,
+    "cobertura_ate": "2026-07-26",
+    "dias_restantes": 3,
+    "status": "atencao",
+    "mensagem": "'Brasil - Série D' cobre jogos futuros so ate 2026-07-26 (3 dias) -- vale planejar a atualizacao do link/seed em breve."
+  },
+  {
+    "competicao": "Brasil - Copa do Brasil",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_08_07_8dfc6382ed.pdf",
+    "jogos_futuros_na_tabela": 16,
+    "cobertura_ate": "2026-08-06",
+    "dias_restantes": 14,
+    "status": "ok",
+    "mensagem": "'Brasil - Copa do Brasil' cobre jogos futuros ate 2026-08-06 (14 dias)."
+  },
+  {
+    "competicao": "Brasil - Copa do Brasil Feminina",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_bcbc2bf550.pdf",
+    "jogos_futuros_na_tabela": 0,
+    "cobertura_ate": null,
+    "dias_restantes": 0,
+    "status": "critico",
+    "mensagem": "'Brasil - Copa do Brasil Feminina' nao tem NENHUM jogo futuro nesta tabela (pdf: https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_bcbc2bf550.pdf). Ou a competicao realmente acabou/esta em pausa, ou o link fixo (seed) ficou desatualizado igual aconteceu com a Serie B em julho/2026 -- confira manualmente."
+  },
+  {
+    "competicao": "Brasil - Série B Sub-20",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_B_SUB_20_10_04_v2_1683d773ce.pdf",
+    "jogos_futuros_na_tabela": 0,
+    "cobertura_ate": null,
+    "dias_restantes": 0,
+    "status": "critico",
+    "mensagem": "'Brasil - Série B Sub-20' nao tem NENHUM jogo futuro nesta tabela (pdf: https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_B_SUB_20_10_04_v2_1683d773ce.pdf). Ou a competicao realmente acabou/esta em pausa, ou o link fixo (seed) ficou desatualizado igual aconteceu com a Serie B em julho/2026 -- confira manualmente."
+  },
+  {
+    "competicao": "Brasil - Feminino A1",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_A1_2026_04a2a21b30.pdf",
+    "jogos_futuros_na_tabela": 45,
+    "cobertura_ate": "2026-08-23",
+    "dias_restantes": 31,
+    "status": "ok",
+    "mensagem": "'Brasil - Feminino A1' cobre jogos futuros ate 2026-08-23 (31 dias)."
+  },
+  {
+    "competicao": "Brasil - Série A Sub-20",
+    "pdf_url": null,
+    "status": "erro",
+    "mensagem": "Nenhum PDF encontrado (nem busca, nem seed) -- competicao ficou sem nenhuma fonte de dados nesta rodada."
+  },
+  {
+    "competicao": "Brasil - Sub-17",
+    "pdf_url": null,
+    "status": "erro",
+    "mensagem": "Nenhum PDF encontrado (nem busca, nem seed) -- competicao ficou sem nenhuma fonte de dados nesta rodada."
+  },
+  {
+    "competicao": "Brasil - Feminino Sub-20",
+    "pdf_url": null,
+    "status": "erro",
+    "mensagem": "Nenhum PDF encontrado (nem busca, nem seed) -- competicao ficou sem nenhuma fonte de dados nesta rodada."
+  },
+  {
+    "competicao": "Brasil - Feminino Sub-17",
+    "pdf_url": null,
+    "status": "erro",
+    "mensagem": "Nenhum PDF encontrado (nem busca, nem seed) -- competicao ficou sem nenhuma fonte de dados nesta rodada."
+  }
+]
