@@ -1,4 +1,21 @@
 ﻿id,fonte,competicao,data,hora,pais,cidade,mandante,visitante,estadio,rodada,url,extra,atualizado_em
+e6c8f4a6480beab7,FUTBOLPERUANO,Peru - Copa de la Liga,2026-07-11,13:00,Peru,,S. Huancayo,Los Chankas,,Octavos de Final,,status=Jugado; placar=3-1,2026-07-23T15:12:50
+7fbf342e248e4251,FUTBOLPERUANO,Peru - Copa de la Liga,2026-07-11,15:30,Peru,,Cristal,Bentín Tacna,,Octavos de Final,,status=Jugado; placar=(5)1-1(4),2026-07-23T15:12:50
+07d4ecc2055e727e,FUTBOLPERUANO,Peru - Copa de la Liga,2026-07-12,13:00,Peru,,D. Moquegua,Garcilaso,,Octavos de Final,,status=Jugado; placar=(4)0-0(2),2026-07-23T15:12:50
+1e84042365085da2,FUTBOLPERUANO,Peru - Fútbol Femenino,2026-07-12,15:15,Peru,,Sporting Cristal,Universitario de Deportes,,Final,,status=Jugado; placar=2-2,2026-07-23T15:12:50
+87ec6079a7bd7bd8,FUTBOLPERUANO,Peru - Copa de la Liga,2026-07-12,15:30,Peru,,UTC,ADA Jaén,,Octavos de Final,,status=Jugado; placar=4-1,2026-07-23T15:12:50
+7c4549d63f0162bf,FUTBOLPERUANO,Peru - Fútbol Femenino,2026-07-17,20:00,Peru,,Universitario de Deportes,Sporting Cristal,,Final,,status=Jugado; placar=3-1,2026-07-23T15:12:50
+b188566d9e88971f,FUTBOLPERUANO,Peru - Liga 1,2026-07-18,11:00,Peru,,D. Moquegua,Comerciantes,,Fase Regular,,status=Jugado; placar=2-2,2026-07-23T15:12:50
+9f06074ec84e24e7,FUTBOLPERUANO,Peru - Liga 1,2026-07-18,13:15,Peru,,ADT,Universitario,,Fase Regular,,status=Jugado; placar=1-2,2026-07-23T15:12:50
+023fa77a310fb645,FUTBOLPERUANO,Peru - Liga 1,2026-07-18,15:30,Peru,,Grau,UTC,,Fase Regular,,status=Jugado; placar=3-1,2026-07-23T15:12:50
+c09f9f05d27ed59c,FUTBOLPERUANO,Peru - Liga 1,2026-07-18,18:30,Peru,,Cusco FC,A. Atlético,,Fase Regular,,status=Jugado; placar=4-1,2026-07-23T15:12:50
+d026d78029d98308,FUTBOLPERUANO,Peru - Liga 1,2026-07-19,11:00,Peru,,Los Chankas,Boys,,Fase Regular,,status=Jugado; placar=1-0,2026-07-23T15:12:50
+36cc6a51a3273dd6,FUTBOLPERUANO,Peru - Liga 3,2026-07-19,13:00,Peru,,Carlos Stein,Juventus FC,,Grupo A,,status=Jugado; placar=2-0,2026-07-23T15:12:50
+45f85e74eb85b37f,FUTBOLPERUANO,Peru - Liga 3,2026-07-19,14:30,Peru,,S. Cristóbal,Ecosem,,Grupo C,,status=Jugado; placar=2-0,2026-07-23T15:12:50
+6dc9448505cde732,FUTBOLPERUANO,Peru - Liga 3,2026-07-19,15:00,Peru,,Municipal Pangoa,UDA,,Grupo C,,status=Jugado; placar=3-1,2026-07-23T15:12:50
+edcd85388161c552,FUTBOLPERUANO,Peru - Liga 3,2026-07-19,15:30,Peru,,S. Domingo,Juventud SD,,Grupo A,,status=Jugado; placar=7-0,2026-07-23T15:12:50
+6f671ce5d6a05adf,FUTBOLPERUANO,Peru - Liga 1,2026-07-19,19:00,Peru,,Alianza Lima,S. Huancayo,,Fase Regular,,status=Jugado; placar=2-1,2026-07-23T15:12:50
+499e2a2fc4dc92b3,FUTBOLPERUANO,Peru - Liga 2,2026-07-20,11:00,Peru,,Pirata FC,San Martín,,Grupo 1,,status=Jugado; placar=3-2,2026-07-23T15:12:50
 4149d8969676fc58,CONMEBOL,Conmebol - Sudamericana,2026-07-21,19:00,Conmebol,,Nacional,Tigre,Estadio Gran Parque Central,,https://gol.conmebol.com/sudamericana/es/fixture/view/1533,codigo_conmebol=1533; status=Played; placar=0-3,2026-07-23T14:39:06
 b2eac0fcb3ea648b,CONMEBOL,Conmebol - Sudamericana,2026-07-21,21:30,Conmebol,,UCV,Santos,Estadio Polideportivo Misael Delgado,,https://gol.conmebol.com/sudamericana/es/fixture/view/1548,codigo_conmebol=1548; status=Played; placar=1-4,2026-07-23T14:39:06
 8cbdf95b9dbcd1cf,CONMEBOL,Conmebol - Sudamericana,2026-07-22,19:00,Conmebol,,Medellín,Vasco,Estadio Atanasio Girardot,,https://gol.conmebol.com/sudamericana/es/fixture/view/1539,codigo_conmebol=1539; status=Played; placar=2-2,2026-07-23T14:39:06
@@ -31,8 +48,10 @@ faad1812615cf456,AFA,Argentina - Torneo Clausura,2026-07-23,21:45,Argentina,,Def
 62b57b9ce905f8b5,campeonatochileno.cl,Ascenso Femenino,2026-07-24,11:00,,,Ñublense Femenino,Deportes Concepción Femenino,Estadio Municipal de Cohiueco,Fecha 20,https://www.campeonatochileno.cl/ligas/ascenso-femenino/,,2026-07-23T14:15:03
 82e99e50829a23fa,campeonatochileno.cl,Liga Femenina,2026-07-24,11:00,,,Magallanes Femenino,Deportes Temuco Femenino,Estadio Municipal Bernardo O´Higgins,Fecha 19,https://www.campeonatochileno.cl/ligas/campeonato-femenino/,,2026-07-23T14:15:03
 7b5358f0403b200f,campeonatochileno.cl,Ascenso Femenino,2026-07-24,12:00,,,Rangers Femenino,Deportes Santa Cruz Femenino,,Fecha 20,https://www.campeonatochileno.cl/ligas/ascenso-femenino/,,2026-07-23T14:15:03
+a5cb1361d06983a6,FUTBOLPERUANO,Peru - Liga 2,2026-07-24,13:00,Peru,,Unión Minas,CNI,,Grupo 2,,status=Por jugar,2026-07-23T15:12:50
 cfe13f35f8727d4b,AFA,Argentina - Torneo Federal A,2026-07-24,15:00,Argentina,,Kimberley MDQ,Círculo Deportivo,,,https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa,,2026-07-23T14:19:00
 dd6a08004b0532da,FMF,Brasil - FMF - SUB 20 - 2ª Divisão - 2026,2026-07-24,15:00,Brasil,Vespasiano,JUVENTUS FUTEBOL CLUBE,CA PATROCINENSE,Estádio Ilvo Marani,RODADA 6,https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31,pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=33; cidade=Vespasiano,2026-07-13T19:06:51
+14aac2e403e80194,FUTBOLPERUANO,Peru - Liga 2,2026-07-24,15:15,Peru,,Comerciantes FC,Alianza UDH,,Grupo 2,,status=Por jugar,2026-07-23T15:12:50
 ef750ab04bad067a,FPF-PA,Brasil - FPF-PA - Copa Pará Feminino Sub-15 2026,2026-07-24,15:40,Brasil,,Cabanos,Remo,CEJU - CAMPO 2,RODADA 5 DE 5,https://www.fpfpara.com.br/competicao/109/fase/352/rodada/5,pais=Brasil; estado=Pará; competicao_id=109,2026-07-22T12:25:50
 fcd98d908eb02162,FPF-PA,Brasil - FPF-PA - Copa Pará Feminino Sub-15 2026,2026-07-24,15:40,Brasil,,Paysandu,Boca Junior,CEJU - CAMPO 3,RODADA 5 DE 5,https://www.fpfpara.com.br/competicao/109/fase/352/rodada/5,pais=Brasil; estado=Pará; competicao_id=109,2026-07-22T12:25:50
 dcf7288cbcdb97ad,FPF-PA,Brasil - FPF-PA - Copa Pará Feminino Sub-15 2026,2026-07-24,15:40,Brasil,,Tiradentes,Sport Brasil,CEJU - CAMPO 1,RODADA 5 DE 5,https://www.fpfpara.com.br/competicao/109/fase/352/rodada/5,pais=Brasil; estado=Pará; competicao_id=109,2026-07-22T12:25:50
@@ -70,6 +89,7 @@ f55ced39a801c51c,FFERJ,Brasil - FFERJ - Torneio OPG - Sub-20,2026-07-25,10:00,Br
 4886e05b3bfd415a,FMF,Brasil - FMF - SUB 20 - 2ª Divisão - 2026,2026-07-25,10:00,Brasil,Crucilandia,SERRANENSE,DEMOCRATA SL,Estádio Municipal Bezerrão,RODADA 6,https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=31,pais=Brasil; estado=Minas Gerais; codigo_fmf=31; placar_original=X; jogo_numero=35; cidade=Crucilandia,2026-07-20T15:28:26
 0ffbde7b61973c8d,campeonatochileno.cl,Ascenso Femenino,2026-07-25,11:00,,,San Marcos de Arica Femenino,Deportes Antofagasta Femenino,,Fecha 19,https://www.campeonatochileno.cl/ligas/ascenso-femenino/,,2026-07-23T14:15:03
 feb77a1a744aea9f,campeonatochileno.cl,Ascenso Femenino,2026-07-25,11:00,,,Unión La Calera Femenino,Audax Italiano Femenino,Estadio Nicolás Chahuán,Fecha 20,https://www.campeonatochileno.cl/ligas/ascenso-femenino/,,2026-07-23T14:15:03
+7f3fd57bd4fec40a,FUTBOLPERUANO,Peru - Liga 2,2026-07-25,11:00,Peru,,San Martín,Mannucci,,Grupo 1,,status=Por jugar,2026-07-23T15:12:50
 0bf4e8778db30bbb,campeonatochileno.cl,Ascenso Femenino,2026-07-25,12:00,,,Deportes La Serena Femenino,Deportes Copiapó Femenino,,Fecha 19,https://www.campeonatochileno.cl/ligas/ascenso-femenino/,,2026-07-20T14:17:38
 4e9f5e73286dc107,campeonatochileno.cl,Ascenso Femenino,2026-07-25,12:00,,,Everton Femenino,Cobresal Femenino,Sausalito,Fecha 20,https://www.campeonatochileno.cl/ligas/ascenso-femenino/,,2026-07-21T14:04:44
 4ec43cf4e0998e57,campeonatochileno.cl,Ascenso Femenino,2026-07-25,12:00,,,San Marcos de Arica Femenino,Deportes Antofagasta Femenino,,Fecha 19,https://www.campeonatochileno.cl/ligas/ascenso-femenino/,,2026-07-20T14:17:38
