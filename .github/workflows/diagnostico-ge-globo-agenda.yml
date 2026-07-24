@@ -1,0 +1,39 @@
+name: Diagnóstico ge.globo.com/agenda (manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v5
+
+      - name: Instalar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python -m playwright install chromium --with-deps
+
+      - name: Rodar diagnóstico
+        run: |
+          python diagnostico_ge_globo_agenda.py
+
+      - name: Commitar arquivos de diagnóstico
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/diagnostico_ge_globo/ -f
+          git commit -m "Diagnostico ge.globo.com/agenda (manual, so investigacao)" || echo "Sem mudancas"
+          git push origin HEAD:main
