@@ -27,6 +27,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Instalar Tesseract OCR (necessário para páginas de PDF sem camada de texto)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-por
+
       - name: Rodar scraper FPF Paulista Tabelas (Copa Paulista, Paulistão, Feminino, Sub-23, etc.)
         run: |
           python scrap_fpf_paulista_tabelas.py --once --ano 2026 --dias 365 --dias-atras 30

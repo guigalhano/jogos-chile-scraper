@@ -11,6 +11,32 @@ um padrão mais estável do que os PDFs anexados a notícias individuais
 de tabela que é atualizada no lugar (mesma URL, conteúdo novo), em vez de uma
 nova notícia a cada atualização.
 
+CORREÇÃO (v2): diagnóstico feito sobre os .txt salvos em
+data/debug_fpf_paulista_tabelas/ da última execução real (via GitHub Actions)
+mostrou que, para 10 das 12 competições da lista, o pdfplumber extrai
+perfeitamente a lista de clubes e o template do mata-mata (texto real), mas a
+seção "JG RODADA 01 HORÁRIO MANDANTE..." com os jogos rodada-a-rodada vem
+COMPLETAMENTE AUSENTE do texto (não embaralhada — ausente mesmo). Isso indica
+que essas páginas específicas do PDF não têm camada de texto (são
+provavelmente tabelas rasterizadas/vetoriais), então texto puro nunca vai
+funcionar nelas, não importa o parser.
+
+Correção: renderiza cada página como imagem via pypdfium2 (já era dependência
+do projeto) e roda OCR com pytesseract nela como fallback SEMPRE que o texto
+puro da página não contiver "HORÁRIO" + "MANDANTE" (sinal de que a tabela de
+jogos não veio). Isso troca as ~10 competições que retornavam 0 jogos por
+jogos extraídos via OCR — passível de pequenos erros de OCR, então os jogos
+vindos desse caminho são marcados com extra="ocr_fallback" para facilitar
+auditoria/revisão manual caso algo saia errado.
+
+⚠️ IMPORTANTE: esta correção não pôde ser validada com rede real ao domínio
+futebolpaulista.com.br (ambiente sem acesso a esse domínio). O pipeline OCR
+foi testado localmente com uma imagem sintética e funciona, mas a fonte/
+qualidade real do PDF da FPF pode se comportar diferente. Rode com
+--debug-html e confira o resultado antes de confiar 100% em produção —
+idealmente via workflow_dispatch manual, revisando o log e os arquivos em
+data/debug_fpf_paulista_tabelas/*_ocr.txt antes de deixar rodar sozinho todo dia.
+
 DOIS FORMATOS DE PDF ENCONTRADOS (validado com conteúdo real de 3 PDFs):
 
 1) FORMATO LISTA (confirmado 100% funcional - Copa Paulista 2026):
@@ -23,12 +49,6 @@ DOIS FORMATOS DE PDF ENCONTRADOS (validado com conteúdo real de 3 PDFs):
    dois times de um mesmo confronto podem ficar longe um do outro no texto
    corrido. Para esses casos, este script tenta `page.extract_tables()` do
    pdfplumber, que respeita a estrutura de células/colunas do PDF.
-
-   ⚠️ IMPORTANTE: a extração por tabela NÃO foi validada com o PDF real,
-   porque o ambiente onde este script foi escrito não tem acesso de rede ao
-   domínio futebolpaulista.com.br (só a alguns domínios de pacotes Python).
-   Rode com --debug-html (que aqui salva o texto bruto extraído de cada PDF)
-   e confira manualmente o resultado antes de confiar 100% na produção.
 
 Uso:
     python scrap_fpf_paulista_tabelas.py --once --dias 365 --dias-atras 30 --debug-html
@@ -50,6 +70,14 @@ from pathlib import Path
 
 import requests
 import pdfplumber
+
+try:
+    import pypdfium2 as pdfium
+    import pytesseract
+    from PIL import Image
+    OCR_DISPONIVEL = True
+except ImportError:
+    OCR_DISPONIVEL = False
 
 OUT_DIR = Path("data")
 OUT_DIR.mkdir(exist_ok=True)
@@ -176,19 +204,71 @@ CIDADES_CONHECIDAS = {
 }
 
 
+def ocr_pagina(pdf_bytes: bytes, indice_pagina: int) -> str:
+    """Renderiza uma pagina do PDF como imagem e roda OCR nela.
+
+    Usa pypdfium2 (nao depende de poppler/binario externo, ja era
+    dependencia do projeto) + pytesseract (precisa do binario tesseract
+    instalado no runner: apt-get install tesseract-ocr tesseract-ocr-por).
+    Escala em 3x para melhorar a acuracia do OCR em texto pequeno.
+    """
+    if not OCR_DISPONIVEL:
+        return ""
+    try:
+        pdf = pdfium.PdfDocument(pdf_bytes)
+        page = pdf[indice_pagina]
+        bitmap = page.render(scale=3.0)
+        img: Image.Image = bitmap.to_pil()
+        texto = pytesseract.image_to_string(img, lang="por")
+        return texto or ""
+    except Exception as e:
+        print(f"[OCR] falha na pagina {indice_pagina}: {e}", file=sys.stderr)
+        return ""
+
+
+def normalizar_ocr(texto: str) -> str:
+    """Conserta colagens comuns de espaco que o OCR costuma introduzir,
+    como 'sab09' (falta espaco entre dia da semana e hora) ou
+    'EC XCA...' (falta espaco antes do X separador)."""
+    texto = re.sub(r"([a-záéíóúâêôãõç])(\d)", r"\1 \2", texto, flags=re.IGNORECASE)
+    texto = re.sub(r"(\d)([A-Za-záéíóúâêôãõç])", r"\1 \2", texto)
+    texto = re.sub(r"\bX([A-ZÀ-Ú])", r"X \1", texto)
+    texto = re.sub(r"([a-zà-ú])X\b", r"\1 X", texto)
+    return texto
+
+
 def fetch_pdf_text(url: str) -> tuple[str, list]:
-    """Retorna (texto_simples, lista_de_tabelas_por_pagina)."""
+    """Retorna (texto_simples, lista_de_tabelas_por_pagina).
+
+    Se o texto puro da pagina nao contiver "HORARIO" + "MANDANTE" (sinal
+    de que a secao de jogos rodada-a-rodada nao veio como texto real --
+    muito comum nas competicoes de base, ver nota no topo do arquivo),
+    tenta OCR nessa pagina especifica como fallback e usa o resultado do
+    OCR (marcado internamente para o parser sinalizar extra=ocr_fallback).
+    """
     r = requests.get(url, headers=HEADERS, timeout=30)
     r.raise_for_status()
+    pdf_bytes = r.content
     texto_partes = []
     tabelas = []
-    with pdfplumber.open(io.BytesIO(r.content)) as pdf:
-        for page in pdf.pages:
-            texto_partes.append(page.extract_text() or "")
+    paginas_via_ocr: set[int] = set()
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        for i, page in enumerate(pdf.pages):
+            texto_pagina = page.extract_text() or ""
+            precisa_ocr = not ("HORÁRIO" in texto_pagina.upper() and "MANDANTE" in texto_pagina.upper())
+            if precisa_ocr and OCR_DISPONIVEL:
+                texto_ocr = ocr_pagina(pdf_bytes, i)
+                if "HORÁRIO" in texto_ocr.upper() and "MANDANTE" in texto_ocr.upper() or re.search(r"\b\d{3}\s+\d{1,2}/", texto_ocr):
+                    texto_partes.append(normalizar_ocr(texto_ocr))
+                    paginas_via_ocr.add(i)
+                    continue
+            texto_partes.append(texto_pagina)
             try:
                 tabelas.extend(page.extract_tables() or [])
             except Exception:
                 pass
+    if paginas_via_ocr:
+        print(f"    (paginas via OCR: {sorted(paginas_via_ocr)})")
     return "\n".join(texto_partes), tabelas
 
 
@@ -232,9 +312,19 @@ def resolver_cidade(nome_time: str, mapa_cidades: dict, cidade_fallback: str) ->
     return cidade_fallback
 
 
+def eh_maiusculo(tok: str) -> bool:
+    """Um token 'e time' se, ignorando pontuacao/numeros, so tem letras
+    maiusculas -- cidade vem em Titulo/minusculas (ex: 'SAO JOSE EC S.A.F'
+    vs 'Sao Caetano do Sul'). Tokens sem letra (hifen solto em nomes como
+    'COMERCIAL FC - RP') nao quebram o time."""
+    letras = [c for c in tok if c.isalpha()]
+    if not letras:
+        return True
+    return all(c == c.upper() for c in letras)
+
+
 def parse_formato_lista(texto: str, url: str, competicao_nome: str, ano: int) -> list[Partido]:
     """Formato validado 100% com conteúdo real (Copa Paulista 2026)."""
-    mapa_cidades = extract_cidades_dos_clubes(texto)
     partidos: list[Partido] = []
     rodada_atual = ""
 
@@ -264,23 +354,22 @@ def parse_formato_lista(texto: str, url: str, competicao_nome: str, ano: int) ->
         hora = f"{int(m.group('hora')):02d}:{m.group('minuto')}"
         resto = m.group("resto")
 
-        partes = re.split(r"\s+X\s+", resto, maxsplit=1, flags=re.IGNORECASE)
-        if len(partes) != 2:
+        tokens = resto.split()
+        if "X" not in tokens:
             continue
-        mandante = clean_text(partes[0])
+        idx_x = tokens.index("X")
+        mandante = clean_text(" ".join(tokens[:idx_x]))
+        resto_direita = tokens[idx_x + 1:]
 
-        direita = clean_text(partes[1])
-        direita_sem_tv = re.sub(r"\s+\d+\s*$", "", direita).strip()
-
-        cidade_mandante = resolver_cidade(mandante, mapa_cidades, "")
-        visitante = direita_sem_tv
-        cidade_jogo = cidade_mandante
-        ns_direita = norm(direita_sem_tv)
-        for cidade in sorted(CIDADES_CONHECIDAS, key=lambda c: -len(c)):
-            if ns_direita.endswith(cidade) and ns_direita != cidade:
-                visitante = clean_text(direita_sem_tv[: len(direita_sem_tv) - len(cidade)])
-                cidade_jogo = cidade.title()
-                break
+        visitante_tokens = []
+        i = 0
+        while i < len(resto_direita) and eh_maiusculo(resto_direita[i]):
+            visitante_tokens.append(resto_direita[i])
+            i += 1
+        visitante = clean_text(" ".join(visitante_tokens))
+        cidade_jogo = clean_text(" ".join(resto_direita[i:]))
+        # remove eventual numero de canal/TV colado no fim da cidade
+        cidade_jogo = re.sub(r"\s+\d+\s*$", "", cidade_jogo).strip()
 
         if not mandante or not visitante or len(mandante) > 60 or len(visitante) > 60:
             continue
