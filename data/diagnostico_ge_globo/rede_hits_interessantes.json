@@ -1,0 +1,89 @@
+[
+  {
+    "url": "https://pub.doubleverify.com/dvtag/signals/bsc/pub.json?ctx=27566431&cmp=DV1036776&url=https%3A%2F%2Fge.globo.com%2Fagenda&bsc=1&abs=1&token=41DIWOtBeDzGxCdqUaBslJ2AgSUkkA%2F7%2FjQqcWpYf8i%2FsF0EEEl6DebPlnW54oPcROmBub1AUf8iJ5MvL0CEOH3lsWB5OsfFkrC%2B0tuLLlCnZDavhwADg8IXWPEqDcJop1WZyHS7COwj5jQ%3D",
+    "status": 200,
+    "content_type": "application/json",
+    "sample": "{\"ABS\":[\"51003822\",\"51005850\",\"51005846\",\"51005848\",\"51005847\"],\"BSC\":[\"84221001\",\"87012132\",\"74311451\",\"74312507\",\"76012002\",\"76012001\",\"80022016\"],\"DVR\":[\"srtb_90ce5924-74ca-4b36-8461-3359dee90142\"]}",
+    "json_top_level_keys": [
+      "ABS",
+      "BSC",
+      "DVR"
+    ]
+  },
+  {
+    "url": "https://rp.liadm.com/j?dtstmp=1784857724664&se=e30&duid=da5812f14a1e--01ky8wz17s27vqzxj3n6cp1kew&tv=10.23.0&pu=https%3A%2F%2Fge.globo.com%2Fagenda%2F%23%2Ffutebol&wpn=prebid&cd=.globo.com",
+    "status": 200,
+    "content_type": "application/json",
+    "sample": "{\"bakers\":[]}",
+    "json_top_level_keys": [
+      "bakers"
+    ]
+  },
+  {
+    "url": "https://events.newsroom.bi/ingest.php",
+    "status": 200,
+    "content_type": "application/json",
+    "sample": "{\"strategy\":[{\"tick\":2,\"delay\":5000},{\"tick\":3,\"delay\":10000},{\"tick\":20,\"delay\":15000},{\"tick\":150,\"delay\":20000}],\"ads\":200,\"mirror\":{\"active\":false,\"replicas\":1}}",
+    "json_top_level_keys": [
+      "strategy",
+      "ads",
+      "mirror"
+    ]
+  },
+  {
+    "url": "https://events.newsroom.bi/data2/rfv.php",
+    "status": 200,
+    "content_type": "application/json",
+    "sample": "{\"rfv\":1,\"r\":0,\"f\":0,\"v\":0}",
+    "json_top_level_keys": [
+      "rfv",
+      "r",
+      "f",
+      "v"
+    ]
+  },
+  {
+    "url": "https://events.newsroom.bi/data/rfv.php",
+    "status": 200,
+    "content_type": "application/json",
+    "sample": "{\"rfv\":1,\"r\":0,\"f\":0,\"v\":0}",
+    "json_top_level_keys": [
+      "rfv",
+      "r",
+      "f",
+      "v"
+    ]
+  },
+  {
+    "url": "https://experiences.newsroom.bi/json/experiences?url=https%3A%2F%2Fge.globo.com%2Fagenda%2F&cdp_cohorts=%5B%5D&clid=6a457053-fa6c-439f-ab59-c42ae71617c6&seid=89d76f3b-8520-4ccb-ae2c-d47caf72bc16&fvst=1784857728&ptch=0&pgv=1&sdu=0&sid=7239&useg=&utyp=0&v=2",
+    "status": 200,
+    "content_type": "application/json; charset=utf-8",
+    "sample": "{\"compass\":{},\"targeting\":{},\"flowcards\":{\"cards\":{}},\"inline\":{}}",
+    "json_top_level_keys": [
+      "compass",
+      "targeting",
+      "flowcards",
+      "inline"
+    ]
+  },
+  {
+    "url": "https://api.permutive.com/v2.0/batch/events?enrich=false&sdkp=true&k=cccecec5-8228-435e-81d1-33c4eccc78e6",
+    "status": 200,
+    "content_type": "application/json",
+    "sample": "[{\"code\":200,\"body\":{\"id\":\"0dca1f59-c773-438c-8d8a-27d20a81be7a\",\"time\":\"2026-07-24T01:48:48.763Z\"}}]",
+    "json_top_level_keys": "list de 1 itens"
+  },
+  {
+    "url": "https://mpc-prod-27-s6uit34pua-uk.a.run.app/events?cee=no",
+    "status": 200,
+    "content_type": "application/json",
+    "read_error": "Response.text: Protocol error (Network.getResponseBody): No data found for resource with given identifier"
+  },
+  {
+    "url": "https://events.newsroom.bi/ingest.php",
+    "status": 200,
+    "content_type": "application/json",
+    "sample": "{}",
+    "json_top_level_keys": []
+  }
+]

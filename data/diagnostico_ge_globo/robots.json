@@ -1,0 +1,14 @@
+{
+  "https://ge.globo.com/robots.txt": {
+    "status": 200,
+    "texto": "Sitemap: https://ge.globo.com/sitemap/ge/sitemap.xml\nUser-Agent: *\nDisallow: /publieditorial\nDisallow: /eu-atleta/zcalendario/calendario.html\nDisallow: /servico\nDisallow: /dynamo\nDisallow: /beta\nDisallow: *globo-cdn-src/*\nDisallow: /espiar/\n\n###### \n\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\n######\n\n"
+  },
+  "https://globo.com/robots.txt": {
+    "status": 200,
+    "texto": "#\n# robots.txt\n#\n\nUser-Agent: *\nDisallow: /busca/\nDisallow: /beta/\nDisallow: /historico-home/\nDisallow: *globo-cdn-src/*\nDisallow: /alt-a/\nDisallow: /alt-b/\nDisallow: /alt-c/\nDisallow: /alt-d/\nDisallow: /recomendado/\nDisallow: /explore/\nSitemap: http://www.globo.com/sitemap-image.xml\n\n\n###### \n\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\n######\n\n"
+  },
+  "https://www.globo.com/robots.txt": {
+    "status": 200,
+    "texto": "#\n# robots.txt\n#\n\nUser-Agent: *\nDisallow: /busca/\nDisallow: /beta/\nDisallow: /historico-home/\nDisallow: *globo-cdn-src/*\nDisallow: /alt-a/\nDisallow: /alt-b/\nDisallow: /alt-c/\nDisallow: /alt-d/\nDisallow: /recomendado/\nDisallow: /explore/\nSitemap: http://www.globo.com/sitemap-image.xml\n\n\n###### \n\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: GPTBot\nDisallow: /\n\nUser-agent: Google-Extended\nDisallow: /\n\n######\n\n"
+  }
+}
