@@ -355,9 +355,16 @@ def parse_formato_lista(texto: str, url: str, competicao_nome: str, ano: int) ->
         resto = m.group("resto")
 
         tokens = resto.split()
-        if "X" not in tokens:
+        # O separador "X"/"x" entre mandante e visitante varia por
+        # competição: a Copa Paulista usa "X" maiúsculo, mas todas as
+        # competições de base/feminino usam "x" minúsculo. A comparação
+        # precisa ser case-insensitive, senão essas 10+ competições nunca
+        # batem aqui (bug real encontrado em diagnóstico: o texto extraído
+        # estava correto, só essa checagem que descartava a linha).
+        idx_candidatos = [i for i, t in enumerate(tokens) if t.upper() == "X"]
+        if not idx_candidatos:
             continue
-        idx_x = tokens.index("X")
+        idx_x = idx_candidatos[0]
         mandante = clean_text(" ".join(tokens[:idx_x]))
         resto_direita = tokens[idx_x + 1:]
 
