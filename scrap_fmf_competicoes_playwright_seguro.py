@@ -206,15 +206,37 @@ def parse_time_any(txt: Any) -> str:
     return m.group("hora") if m else ""
 
 
+_MESES_PT = ("janeiro", "fevereiro", "marco", "abril", "maio", "junho", "julho",
+             "agosto", "setembro", "outubro", "novembro", "dezembro")
+
+
 def is_bad_name(x: str) -> bool:
     s = norm(x)
+    c = clean_text(x)
     if not s:
         return True
     if s in BAD:
         return True
-    if len(clean_text(x)) > 80:
+    if len(c) > 80:
         return True
-    if re.fullmatch(r"\d+", clean_text(x)):
+    if re.fullmatch(r"\d+", c):
+        return True
+    # Horário jogado no campo errado (ex.: "00:00", "15:00").
+    if re.fullmatch(r"\d{1,2}:\d{2}", c):
+        return True
+    # Placeholder de jogo ainda não agendado / local indefinido.
+    if re.fullmatch(r"a (definir|confirmar)", s):
+        return True
+    # Rótulos de rodada/grupo/fase/série vazando como cidade ou estádio.
+    if re.match(r"^(rodada|grupo|jogo|chave|serie)\b", s):
+        return True
+    if re.search(r"\bfase\b", s):
+        return True
+    # Data por extenso (ex.: "Domingo, 13 de Setembro de 2026"). Exige o ANO
+    # junto do mês, senão nomes legítimos seriam falso positivo: cidade
+    # "Rio de Janeiro" (mês no nome) e estádios "1º de Maio", "19 de Outubro".
+    _meses = "|".join(_MESES_PT)
+    if re.search(rf"\bde ({_meses}) de \d{{4}}\b", s):
         return True
     if any(k in s for k in ["copyright", "todos os direitos", "aguarde", "selecione uma fase"]):
         return True
@@ -361,6 +383,14 @@ def obj_to_partido(obj: dict, url: str, d: str, competicao_fallback: str, fallba
         return None
     if is_bad_name(mandante) or is_bad_name(visitante) or mandante == visitante:
         return None
+
+    # Jogos ainda não agendados vêm com placeholders no lugar de estádio/cidade
+    # (ex.: estádio "A definir", cidade "00:00"/"Rodada 1"/data por extenso).
+    # Zera esses campos em vez de deixá-los virar coordenada errada / lixo no mapa.
+    if is_bad_name(estadio):
+        estadio = ""
+    if is_bad_name(cidade):
+        cidade = ""
 
     extra = [f"pais=Brasil", "estado=Minas Gerais", f"codigo_fmf={d}"]
     if jogo:
