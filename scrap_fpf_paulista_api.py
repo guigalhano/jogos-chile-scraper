@@ -19,19 +19,21 @@ Endpoints usados:
      -> Retorno.listTabela[] com TODAS as rodadas daquele campeonato/ano
         (passadas e futuras). Sem &Ano ele devolve o histórico desde 2008.
 
-Como identificamos "jogo futuro":
-  - A data do jogo é >= hoje; E
-  - ResultadoMandante/ResultadoVisitante ainda são null (não jogado).
-  Jogos com resultado preenchido (já realizados) são ignorados aqui — este
-  scraper é focado em jogos PROGRAMADOS (é o que popula jogos_programados.*).
+Este scraper é a fonte ÚNICA da FPF Paulista no projeto (substituiu os antigos
+scrap_copa_paulista.py / scrap_fpf_paulista_tabelas.py / scrap_fpf_playwright_api.py,
+que geravam duplicatas com convenções de nome diferentes):
+  - jogos_programados.* recebe só os jogos PROGRAMADOS (data >= hoje e sem placar);
+  - historico_jogos.csv recebe também os RESULTADOS recentes (janela --dias-atras),
+    com extra="status=Realizado; placar=NxN".
 
 Saídas (mesmo formato/merge dos outros scrapers do projeto):
   data/jogos_programados.json
   data/jogos_programados.csv
   data/historico_jogos.csv
-  data/debug_fpf_api_raw.json          # linhas raspadas (p/ merge_apos_reset.py)
+  data/debug_fpf_api_raw.json          # programados (p/ merge_apos_reset.py --raw)
+  data/debug_fpf_api_hist_raw.json     # programados + resultados (--raw-historico)
   data/debug_fpf_api_campeonatos.json  # lista de campeonatos do exercício
-  data/debug_fpf_api_resumo.json       # contagem futuros por campeonato
+  data/debug_fpf_api_resumo.json       # contagem por campeonato
 
 Uso:
   py -3 scrap_fpf_paulista_api.py --ano 2026
@@ -65,6 +67,9 @@ HIST_CSV = OUT_DIR / "historico_jogos.csv"
 # no formato final). É o arquivo consumido por merge_apos_reset.py --raw no
 # workflow, para re-mesclar de forma segura contra origin/main após o reset.
 RAW_JOGOS = OUT_DIR / "debug_fpf_api_raw.json"
+# RAW_HISTORICO: jogos futuros + resultados recentes, só para o histórico
+# (consumido por merge_apos_reset.py --raw-historico, que não toca jogos_programados).
+RAW_HISTORICO = OUT_DIR / "debug_fpf_api_hist_raw.json"
 DEBUG_CAMPEONATOS = OUT_DIR / "debug_fpf_api_campeonatos.json"
 DEBUG_RESUMO = OUT_DIR / "debug_fpf_api_resumo.json"
 
@@ -178,26 +183,29 @@ def get_json(url: str, params: dict | None = None, tentativas: int = 3) -> Any:
     raise RuntimeError(f"Falha ao buscar {url} ({params}): {ultima_exc}")
 
 
-def jogo_futuro(item: dict, hoje: date, limite: date) -> bool:
-    data_iso = parse_date_br(item.get("Data"))
-    if not data_iso:
-        return False
+def data_do_item(item: dict) -> date | None:
+    iso = parse_date_br(item.get("Data"))
+    if not iso:
+        return None
     try:
-        d = date.fromisoformat(data_iso)
+        return date.fromisoformat(iso)
     except Exception:
-        return False
-    if not (hoje <= d <= limite):
-        return False
-    # Jogo ainda não realizado: sem placar dos dois lados.
-    if item.get("ResultadoMandante") is not None and item.get("ResultadoVisitante") is not None:
-        return False
-    if item.get("Adiado") is True:
-        # adiado sem nova data confiável — mantém só se a data ainda é futura
-        pass
-    return True
+        return None
 
 
-def item_para_jogo(item: dict, competicao: str) -> Jogo | None:
+def tem_placar(item: dict) -> bool:
+    return item.get("ResultadoMandante") is not None and item.get("ResultadoVisitante") is not None
+
+
+def jogo_futuro(item: dict, hoje: date, limite: date) -> bool:
+    """Jogo PROGRAMADO: data entre hoje e o limite, e sem placar (não realizado)."""
+    d = data_do_item(item)
+    if d is None or not (hoje <= d <= limite):
+        return False
+    return not tem_placar(item)
+
+
+def item_para_jogo(item: dict, competicao: str, hoje: date) -> Jogo | None:
     mandante = clean_text(item.get("NomePopularMandante"))
     visitante = clean_text(item.get("NomePopularVisitante"))
     if not (mandante and visitante):
@@ -208,8 +216,19 @@ def item_para_jogo(item: dict, competicao: str) -> Jogo | None:
     estadio = clean_text(item.get("Estadio")) or clean_text(item.get("NomePopularEstadio"))
     cidade = clean_text(item.get("Municipio"))
     rodada = clean_text(item.get("Rodada"))
+    d = data_do_item(item)
 
-    extra = ["status=Programado", "pais=Brasil", "estado=São Paulo", "fonte=api_ashx"]
+    # status: Realizado (com placar) | Programado (futuro sem placar) | Sem resultado (passado sem placar)
+    if tem_placar(item):
+        rm = int(item["ResultadoMandante"])
+        rv = int(item["ResultadoVisitante"])
+        extra = [f"status=Realizado", f"placar={rm}x{rv}"]
+    elif d is not None and d >= hoje:
+        extra = ["status=Programado"]
+    else:
+        extra = ["status=Sem resultado"]
+    extra += ["pais=Brasil", "estado=São Paulo", "fonte=api_ashx"]
+
     for chave, rotulo in [
         ("Numero", "jogo_numero"),
         ("Grupo", "grupo"),
@@ -296,19 +315,35 @@ def write_csv(path: Path, rows: list[dict]) -> None:
             w.writerow({k: r.get(k, "") for k in FIELDS})
 
 
+def dedup_rows(jogos: list[Jogo]) -> list[dict]:
+    vistos: set[str] = set()
+    rows: list[dict] = []
+    for g in jogos:
+        r = g.to_row()
+        if not r["data"] or r["id"] in vistos:
+            continue
+        vistos.add(r["id"])
+        rows.append(r)
+    return rows
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Scraper FPF - jogos futuros via API .ashx")
+    parser = argparse.ArgumentParser(description="Scraper FPF Paulista via API .ashx")
     parser.add_argument("--ano", type=int, default=date.today().year)
     parser.add_argument("--dias", type=int, default=365,
-                        help="Janela para frente (dias a partir de hoje). Default 365.")
+                        help="Janela para frente, em dias (jogos programados). Default 365.")
+    parser.add_argument("--dias-atras", type=int, default=45, dest="dias_atras",
+                        help="Janela para trás, em dias (resultados no histórico). Default 45.")
     parser.add_argument("--pausa", type=float, default=0.3,
                         help="Pausa (s) entre chamadas de campeonato, para não sobrecarregar o servidor.")
     args = parser.parse_args()
 
     hoje = date.today()
-    limite = hoje + timedelta(days=args.dias)
+    limite_frente = hoje + timedelta(days=args.dias)
+    limite_tras = hoje - timedelta(days=args.dias_atras)
 
-    print(f"[INFO] FPF via API .ashx | ano={args.ano} | janela até {limite.isoformat()}")
+    print(f"[INFO] FPF via API .ashx | ano={args.ano} | historico desde {limite_tras.isoformat()} "
+          f"| programados até {limite_frente.isoformat()}")
     print(f"[INFO] Listando campeonatos: {URL_CAMPEONATOS}")
 
     payload = get_json(URL_CAMPEONATOS)
@@ -318,7 +353,10 @@ def main() -> None:
     )
     print(f"[INFO] {len(campeonatos)} campeonatos no exercício.")
 
-    jogos: list[Jogo] = []
+    # jogos_prog: futuros programados (vão para jogos_programados.* e histórico).
+    # jogos_hist: futuros + resultados recentes (só para o histórico).
+    jogos_prog: list[Jogo] = []
+    jogos_hist: list[Jogo] = []
     raw_debug: list[dict] = []
 
     for camp in campeonatos:
@@ -335,47 +373,49 @@ def main() -> None:
             continue
 
         lista = ((data or {}).get("Retorno") or {}).get("listTabela") or []
-        futuros = [it for it in lista if jogo_futuro(it, hoje, limite)]
-
-        n_add = 0
-        for it in futuros:
-            jogo = item_para_jogo(it, nome)
-            if jogo and jogo.data:
-                jogos.append(jogo)
-                n_add += 1
+        n_prog = n_hist = 0
+        for it in lista:
+            d = data_do_item(it)
+            if d is None:
+                continue
+            jogo = item_para_jogo(it, nome, hoje)
+            if not (jogo and jogo.data):
+                continue
+            # Programado: dentro da janela para frente e sem placar.
+            if jogo_futuro(it, hoje, limite_frente):
+                jogos_prog.append(jogo)
+                n_prog += 1
+            # Histórico: qualquer jogo na janela [tras, frente] (inclui resultados).
+            if limite_tras <= d <= limite_frente:
+                jogos_hist.append(jogo)
+                n_hist += 1
 
         if lista:
-            print(f"  - {nome} (Id={id_camp}): {len(lista)} jogos no ano, {n_add} futuros")
+            print(f"  - {nome} (Id={id_camp}): {len(lista)} no ano | {n_prog} programados | {n_hist} p/ histórico")
         raw_debug.append({
             "campeonato": nome, "IdCampeonato": id_camp, "IdCategoria": id_cat,
-            "total_ano": len(lista), "futuros": n_add,
+            "total_ano": len(lista), "programados": n_prog, "historico": n_hist,
         })
         time.sleep(args.pausa)
 
-    # Dedup por id
-    vistos: set[str] = set()
-    rows: list[dict] = []
-    for g in jogos:
-        r = g.to_row()
-        if r["id"] in vistos:
-            continue
-        vistos.add(r["id"])
-        rows.append(r)
+    rows_prog = dedup_rows(jogos_prog)
+    rows_hist = dedup_rows(jogos_hist)
 
-    # Linhas reais desta rodada (para merge_apos_reset.py --raw no workflow) +
-    # resumo por campeonato (diagnóstico de "0 futuros").
-    RAW_JOGOS.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+    # Arquivos raw: rows_prog vai p/ jogos_programados + histórico (via merge_apos_reset
+    # --raw); rows_hist (com resultados) vai só p/ o histórico (via --raw-historico).
+    RAW_JOGOS.write_text(json.dumps(rows_prog, ensure_ascii=False, indent=2), encoding="utf-8")
+    RAW_HISTORICO.write_text(json.dumps(rows_hist, ensure_ascii=False, indent=2), encoding="utf-8")
     DEBUG_RESUMO.write_text(json.dumps(raw_debug, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    merged_current = merge_rows(load_json_rows(JOGOS_JSON), rows)
+    merged_current = merge_rows(load_json_rows(JOGOS_JSON), rows_prog)
     JOGOS_JSON.write_text(json.dumps(merged_current, ensure_ascii=False, indent=2), encoding="utf-8")
     write_csv(JOGOS_CSV, merged_current)
 
-    merged_hist = merge_rows(load_csv_rows(HIST_CSV), rows)
+    merged_hist = merge_rows(load_csv_rows(HIST_CSV), rows_hist)
     write_csv(HIST_CSV, merged_hist)
 
     print("")
-    print(f"[OK] Jogos futuros FPF coletados: {len(rows)}")
+    print(f"[OK] Programados FPF: {len(rows_prog)} | para histórico: {len(rows_hist)}")
     print(f"[OK] Total no {JOGOS_JSON.name}: {len(merged_current)}")
     print(f"[OK] Total no {HIST_CSV.name}: {len(merged_hist)}")
 

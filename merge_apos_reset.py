@@ -92,27 +92,41 @@ def write_csv(path: Path, rows: list[dict]) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--raw", required=True, action="append",
-        help="Caminho de um debug_*_raw.json com os jogos desta rodada. Pode repetir --raw varias vezes (uma por fonte) quando o job roda mais de um scraper na mesma rodada.",
+        "--raw", action="append", default=[],
+        help="Caminho de um debug_*_raw.json com os jogos desta rodada. Pode repetir --raw varias vezes (uma por fonte) quando o job roda mais de um scraper na mesma rodada. Esses jogos entram em jogos_programados.* E no historico.",
+    )
+    parser.add_argument(
+        "--raw-historico", action="append", default=[], dest="raw_historico",
+        help="Caminho de um debug_*_raw.json cujos jogos entram SO no historico_jogos.csv (nao em jogos_programados). Use para resultados de jogos ja realizados, que nao devem aparecer na lista de proximos jogos.",
     )
     args = parser.parse_args()
 
-    rows_new: list[dict] = []
+    if not args.raw and not args.raw_historico:
+        parser.error("informe ao menos um --raw ou --raw-historico")
+
+    rows_prog: list[dict] = []
     for raw_arg in args.raw:
         raw_path = Path(raw_arg)
         rows = load_json_rows(raw_path)
-        print(f"[merge_apos_reset] jogos novos lidos de {raw_path}: {len(rows)}")
-        rows_new.extend(rows)
+        print(f"[merge_apos_reset] jogos (programados+historico) lidos de {raw_path}: {len(rows)}")
+        rows_prog.extend(rows)
+
+    rows_hist_only: list[dict] = []
+    for raw_arg in args.raw_historico:
+        raw_path = Path(raw_arg)
+        rows = load_json_rows(raw_path)
+        print(f"[merge_apos_reset] jogos (so historico) lidos de {raw_path}: {len(rows)}")
+        rows_hist_only.extend(rows)
 
     current_json = OUT_DIR / "jogos_programados.json"
     current_csv = OUT_DIR / "jogos_programados.csv"
     history_csv = OUT_DIR / "historico_jogos.csv"
 
-    merged_current = merge_rows(load_json_rows(current_json), rows_new)
+    merged_current = merge_rows(load_json_rows(current_json), rows_prog)
     current_json.write_text(json.dumps(merged_current, ensure_ascii=False, indent=2), encoding="utf-8")
     write_csv(current_csv, merged_current)
 
-    merged_history = merge_rows(load_csv_rows(history_csv), rows_new)
+    merged_history = merge_rows(load_csv_rows(history_csv), rows_prog + rows_hist_only)
     write_csv(history_csv, merged_history)
 
     print(f"[merge_apos_reset] jogos_programados.json agora tem {len(merged_current)} jogos no total")

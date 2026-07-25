@@ -73,7 +73,9 @@ HEADERS = {
 EXTRA_HTML_SOURCES = [
     ("FERJ", "https://www.fferj.com.br/partidas"),
     ("FMF", "https://www.fmf.com.br/"),
-    ("FPF", "https://www.futebolpaulista.com.br/Home/"),
+    # FPF Paulista removida daqui: agora é coberta exclusivamente pelo scraper
+    # dedicado scrap_fpf_paulista_api.py (API .ashx oficial). Manter esta fonte
+    # genérica reintroduziria duplicatas ("Brasil - FPF" sem competição resolvida).
 ]
 
 # Buscas para localizar os PDFs de Tabela Detalhada mais recentes de cada série.

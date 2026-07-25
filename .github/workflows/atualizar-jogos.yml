@@ -60,13 +60,11 @@ jobs:
         run: |
           if [ -f adicionar_brasil_jogos.py ]; then python adicionar_brasil_jogos.py --dias 180 --dias-atras 30; fi
 
-      - name: Adicionar Paulista FPF via API/Playwright
-        run: |
-          if [ -f scrap_fpf_playwright_api.py ]; then python scrap_fpf_playwright_api.py --dias 180 --dias-atras 30; fi
-
-      - name: Adicionar Copa Paulista
-        run: |
-          if [ -f scrap_copa_paulista.py ]; then python scrap_copa_paulista.py --dias 180 --dias-atras 30; fi
+      # FPF Paulista (Copa Paulista, Paulistão, Feminino, base) agora é coberta
+      # exclusivamente pelo workflow dedicado atualizar-fpf-paulista-api.yml, que
+      # usa a API .ashx oficial. Os scrapers antigos (scrap_fpf_playwright_api.py e
+      # scrap_copa_paulista.py) foram aposentados aqui porque geravam duplicatas
+      # com convenção de nome diferente da fonte oficial.
 
       - name: Calcular o que esta rodada realmente adicionou/mudou
         run: |
