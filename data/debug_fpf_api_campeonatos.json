@@ -1,0 +1,515 @@
+[
+  {
+    "IdCampeonato": 128,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Paulista Feminino",
+    "Ordem": 1,
+    "Destaque": 0,
+    "DescricaoSite": "Paulistão F Petrobras"
+  },
+  {
+    "IdCampeonato": 100,
+    "IdCategoria": 70,
+    "Categoria": "Profissional",
+    "Campeonato": "Copa Paulista",
+    "Ordem": 2,
+    "Destaque": 0,
+    "DescricaoSite": "Copa Paulista Rivalo"
+  },
+  {
+    "IdCampeonato": 104,
+    "IdCategoria": 74,
+    "Categoria": "Segunda Divisão",
+    "Campeonato": "Paulista Sub23",
+    "Ordem": 3,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-23 2ª Divisão"
+  },
+  {
+    "IdCampeonato": 221,
+    "IdCategoria": 94,
+    "Categoria": "SUB20 - Série A",
+    "Campeonato": "Paulista",
+    "Ordem": 4,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-20 - Série A"
+  },
+  {
+    "IdCampeonato": 196,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Feminino Sub20",
+    "Ordem": 5,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista F Sub-20 Petrobras"
+  },
+  {
+    "IdCampeonato": 219,
+    "IdCategoria": 93,
+    "Categoria": "SUB20 - Série B",
+    "Campeonato": "Paulista",
+    "Ordem": 6,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-20 - Série B"
+  },
+  {
+    "IdCampeonato": 161,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Feminino Sub17",
+    "Ordem": 7,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista F Sub-17 Petrobras"
+  },
+  {
+    "IdCampeonato": 184,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Feminino Sub15",
+    "Ordem": 8,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista F Sub-15 Petrobras"
+  },
+  {
+    "IdCampeonato": 33,
+    "IdCategoria": 18,
+    "Categoria": "SUB17",
+    "Campeonato": "Paulista",
+    "Ordem": 9,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-17"
+  },
+  {
+    "IdCampeonato": 32,
+    "IdCategoria": 17,
+    "Categoria": "SUB15",
+    "Campeonato": "Paulista",
+    "Ordem": 10,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-15"
+  },
+  {
+    "IdCampeonato": 202,
+    "IdCategoria": 90,
+    "Categoria": "SUB14",
+    "Campeonato": "Paulista",
+    "Ordem": 11,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-14"
+  },
+  {
+    "IdCampeonato": 127,
+    "IdCategoria": 81,
+    "Categoria": "SUB13",
+    "Campeonato": "Paulista",
+    "Ordem": 12,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-13"
+  },
+  {
+    "IdCampeonato": 203,
+    "IdCategoria": 91,
+    "Categoria": "SUB12",
+    "Campeonato": "Paulista",
+    "Ordem": 13,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-12"
+  },
+  {
+    "IdCampeonato": 125,
+    "IdCategoria": 80,
+    "Categoria": "SUB11",
+    "Campeonato": "Paulista",
+    "Ordem": 14,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista Sub-11"
+  },
+  {
+    "IdCampeonato": 224,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 - Sede Matão",
+    "Ordem": 15,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-14 Petrobras - Sede Matão "
+  },
+  {
+    "IdCampeonato": 223,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12 - Sede Matão",
+    "Ordem": 16,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-12 Petrobras - Sede Matão"
+  },
+  {
+    "IdCampeonato": 232,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 - Sede Campinas",
+    "Ordem": 17,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 233,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12 - Sede Campinas",
+    "Ordem": 18,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 129,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Amador do Estado",
+    "Ordem": 19,
+    "Destaque": 0,
+    "DescricaoSite": "Amador do Estado"
+  },
+  {
+    "IdCampeonato": 214,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Taça Paulistana Feminino",
+    "Ordem": 20,
+    "Destaque": 0,
+    "DescricaoSite": "Taça Paulistana Petrobras"
+  },
+  {
+    "IdCampeonato": 178,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Copa Paulista Feminino",
+    "Ordem": 21,
+    "Destaque": 0,
+    "DescricaoSite": "Copa Paulista F Petrobras"
+  },
+  {
+    "IdCampeonato": 204,
+    "IdCategoria": 45,
+    "Categoria": "Junior",
+    "Campeonato": "Copa São Paulo Feminino",
+    "Ordem": 22,
+    "Destaque": 0,
+    "DescricaoSite": "Copinha F Petrobras"
+  },
+  {
+    "IdCampeonato": 75,
+    "IdCategoria": 45,
+    "Categoria": "Junior",
+    "Campeonato": "Copa São Paulo",
+    "Ordem": 23,
+    "Destaque": 0,
+    "DescricaoSite": "Copinha Sil"
+  },
+  {
+    "IdCampeonato": 73,
+    "IdCategoria": 39,
+    "Categoria": "A1- Profissional",
+    "Campeonato": "Paulista",
+    "Ordem": 24,
+    "Destaque": 0,
+    "DescricaoSite": "Paulistão Casas Bahia"
+  },
+  {
+    "IdCampeonato": 74,
+    "IdCategoria": 44,
+    "Categoria": "A2- Profissional",
+    "Campeonato": "Paulista",
+    "Ordem": 25,
+    "Destaque": 0,
+    "DescricaoSite": "Paulistão A2 Rivalo"
+  },
+  {
+    "IdCampeonato": 76,
+    "IdCategoria": 46,
+    "Categoria": "A3- Profissional",
+    "Campeonato": "Paulista",
+    "Ordem": 26,
+    "Destaque": 0,
+    "DescricaoSite": "Paulistão A3 Rivalo"
+  },
+  {
+    "IdCampeonato": 207,
+    "IdCategoria": 92,
+    "Categoria": "A4- Profissional",
+    "Campeonato": "Paulista",
+    "Ordem": 27,
+    "Destaque": 0,
+    "DescricaoSite": "Paulistão A4 Rivalo"
+  },
+  {
+    "IdCampeonato": 230,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Torneio Feminino Sub-15 - Sede Sorocaba",
+    "Ordem": 28,
+    "Destaque": 0,
+    "DescricaoSite": "Torneio F Sub-15 Petrobras - Sede Sorocaba"
+  },
+  {
+    "IdCampeonato": 216,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Torneio Feminino  Sub-14 – Sede Sorocaba",
+    "Ordem": 29,
+    "Destaque": 0,
+    "DescricaoSite": "Torneio F Sub-14 Petrobras – Sede Sorocaba"
+  },
+  {
+    "IdCampeonato": 226,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 - Sede Jaú",
+    "Ordem": 30,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 228,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 - Sede Itu",
+    "Ordem": 31,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 222,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 – Sede Santo André",
+    "Ordem": 32,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-14 Petrobras - Sede Santo André "
+  },
+  {
+    "IdCampeonato": 209,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 – Sede São José do Rio Preto",
+    "Ordem": 33,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-14 Petrobras – Sede São José do Rio Preto"
+  },
+  {
+    "IdCampeonato": 211,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 – Sede Santana de Parnaíba",
+    "Ordem": 34,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-14 Petrobras – Sede Santana de Parnaíba"
+  },
+  {
+    "IdCampeonato": 212,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 – Sede Sorocaba",
+    "Ordem": 35,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-14 Petrobras - Sede Sorocaba"
+  },
+  {
+    "IdCampeonato": 229,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Torneio Feminino Sub-13 - Sede Sorocaba",
+    "Ordem": 36,
+    "Destaque": 0,
+    "DescricaoSite": "Torneio F Sub-13 Petrobras - Sede Sorocaba"
+  },
+  {
+    "IdCampeonato": 215,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Torneio Feminino  Sub-12  - Sede Sorocaba",
+    "Ordem": 37,
+    "Destaque": 0,
+    "DescricaoSite": "Torneio F Sub-12 Petrobras - Sede Sorocaba"
+  },
+  {
+    "IdCampeonato": 213,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12 – Sede Sorocaba",
+    "Ordem": 38,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-12 Petrobras - Sede Sorocaba"
+  },
+  {
+    "IdCampeonato": 227,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12 - Sede Itu",
+    "Ordem": 39,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 220,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12 – Sede Santo André",
+    "Ordem": 40,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-12 Petrobras - Sede Santo André"
+  },
+  {
+    "IdCampeonato": 210,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12 – Sede São José do Rio Preto",
+    "Ordem": 41,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-12 Petrobras – Sede São José do Rio Preto"
+  },
+  {
+    "IdCampeonato": 225,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12 - Sede Jaú",
+    "Ordem": 42,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 199,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Feminino Divisão Especial",
+    "Ordem": 43,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 25,
+    "IdCategoria": 19,
+    "Categoria": "SUB20",
+    "Campeonato": "Primeira Divisão",
+    "Ordem": 44,
+    "Destaque": 0,
+    "DescricaoSite": "Sub-20 Primeira Divisão"
+  },
+  {
+    "IdCampeonato": 28,
+    "IdCategoria": 19,
+    "Categoria": "SUB20",
+    "Campeonato": "Segunda Divisão",
+    "Ordem": 45,
+    "Destaque": 0,
+    "DescricaoSite": "Sub-20 Segunda Divisão"
+  },
+  {
+    "IdCampeonato": 166,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14",
+    "Ordem": 46,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-14 Petrobras"
+  },
+  {
+    "IdCampeonato": 201,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12",
+    "Ordem": 47,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Paulista Sub-12 Petrobras "
+  },
+  {
+    "IdCampeonato": 136,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Seleções de Ligas",
+    "Ordem": 48,
+    "Destaque": 0,
+    "DescricaoSite": "Seleção de Ligas Amadoras"
+  },
+  {
+    "IdCampeonato": 137,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Sulbrasileiro Amador",
+    "Ordem": 49,
+    "Destaque": 0,
+    "DescricaoSite": "Sulbrasileiro Amador"
+  },
+  {
+    "IdCampeonato": 190,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Brasil Ladies Cup - Feminino ",
+    "Ordem": 50,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 151,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "6º CAMPEONATO AMADOR",
+    "Ordem": 51,
+    "Destaque": 0,
+    "DescricaoSite": "6º Campeonato Amador"
+  },
+  {
+    "IdCampeonato": 155,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "TORNEIO DA FAMÍLIA",
+    "Ordem": 52,
+    "Destaque": 0,
+    "DescricaoSite": "Torneio da Família "
+  },
+  {
+    "IdCampeonato": 159,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "TORNEIO PAULISTA SUB17",
+    "Ordem": 53,
+    "Destaque": 0,
+    "DescricaoSite": "Torneio Paulista Sub-17"
+  },
+  {
+    "IdCampeonato": 160,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "TORNEIO PAULISTA SUB15",
+    "Ordem": 54,
+    "Destaque": 0,
+    "DescricaoSite": "Torneio Paulista Sub-15"
+  },
+  {
+    "IdCampeonato": 156,
+    "IdCategoria": 70,
+    "Categoria": "Profissional",
+    "Campeonato": "Amistosos",
+    "Ordem": 55,
+    "Destaque": 0,
+    "DescricaoSite": "Amistosos"
+  },
+  {
+    "IdCampeonato": 163,
+    "IdCategoria": 70,
+    "Categoria": "Profissional",
+    "Campeonato": "ELIMINATÓRIAS",
+    "Ordem": 56,
+    "Destaque": 0,
+    "DescricaoSite": null
+  },
+  {
+    "IdCampeonato": 185,
+    "IdCategoria": 19,
+    "Categoria": "SUB20",
+    "Campeonato": "Paulista",
+    "Ordem": 57,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista - Sub-20"
+  }
+]
