@@ -122,6 +122,7 @@ UF_CODES = {
 CIDADES_BR = sorted([
     "Rio de Janeiro", "Belo Horizonte", "Porto Alegre", "Presidente Prudente",
     "Novo Hamburgo", "Bragança Paulista", "São Paulo", "Caxias do Sul",
+    "Criciúma", "São Bernardo do Campo",
     "Juiz de Fora", "Volta Redonda", "Ribeirão Preto", "Santa Maria",
     "Chapecó", "Curitiba", "Salvador", "Fortaleza", "Recife", "Brasília",
     "Belém", "Goiânia", "Cuiabá", "Vitória", "Florianópolis", "Mirassol",
@@ -563,6 +564,10 @@ def parse_cbf_line(line: str, year: int, last_rod: list[str]) -> dict | None:
         return None
 
     tail = " ".join(right_tokens[uf_idx + 1:])
+    # Remove marcador de rodapé (ex.: "Carlos Zamith*" = estádio sujeito a
+    # confirmação na tabela da CBF) para não gerar duas linhas do mesmo jogo
+    # (uma com "*" e outra sem, cada uma com um id de hash diferente).
+    tail = tail.rstrip("*").strip()
     if norm(tail).startswith("a definir") or not tail.strip():
         estadio, cidade = "A definir", ""
     else:
