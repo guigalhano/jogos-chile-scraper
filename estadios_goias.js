@@ -102,7 +102,7 @@ window.ESTADIOS_GOIAS = [
     regiao: "Goiás",
     lat: -16.6864,
     lng: -49.2643,
-    fonte: "cidade nao confirmada em fonte publica - aproximacao (Goiânia, onde fica a maior parte da base goiana)",
+    fonte: "Associação Esportiva Ovel - Estr. 113, 284, Chácaras Recreio São Joaquim, Goiânia-GO (CEP 74470-210, confirmado via CEP -> IBGE 5208707 = Goiânia); lat/lng = centro do município (endereço exato do bairro não geocodificado com confiança)",
   },
   {
     nome: "CT Toca do Lobo",
