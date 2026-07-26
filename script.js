@@ -1193,9 +1193,15 @@ function enrichGames(rawGames) {
     // (ESTADIOS_BRASIL) se não achar nada ali.
     const ehFCF = j.fonte === "FCF";
     const ehFPFPE = j.fonte === "FPF-PE";
+    // FGF (Goiás): a API oficial traz o nome do estádio/CT, mas muitos são
+    // CTs de clubes de base sem cidade no próprio nome (ex.: "CT Vila do
+    // Tigre") - a busca nacional não teria como resolver a cidade sozinha,
+    // por isso tenta a base curada ESTADIOS_GOIAS primeiro.
+    const ehFGF = j.fonte === "FGF";
     let stadium = ehFMF ? null
       : ehFCF ? (matchStadiumInList(estadioBruto, window.ESTADIOS_CEARA || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
       : ehFPFPE ? (matchStadiumInList(estadioBruto, window.ESTADIOS_PERNAMBUCO || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
+      : ehFGF ? (matchStadiumInList(estadioBruto, window.ESTADIOS_GOIAS || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
       : findStadiumInfo(estadioBruto, pais, j.mandante);
     let estadioFallback = false;
     if (!stadium && !estadioBruto && pais !== "Brasil") {
@@ -1264,6 +1270,16 @@ function enrichGames(rawGames) {
     // Jogos da APF (Paraguay) sem estádio publicado ainda (status=PreMatch).
     if (!stadium && !estadioBruto && j.fonte === "APF" && window.ESTADIO_MANDANTE_PADRAO_APF) {
       const encontrado = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_APF, j.mandante);
+      if (encontrado) {
+        stadium = encontrado;
+        estadioFallback = true;
+      }
+    }
+    // Jogos do Sul-Mato-Grossense Série B (fonte="FFMS") vêm do SofaScore, que
+    // não publica nome de estádio nem cidade - usa a cidade-sede conhecida
+    // de cada clube como aproximação.
+    if (!stadium && !estadioBruto && j.fonte === "FFMS" && window.ESTADIO_MANDANTE_PADRAO_FFMS) {
+      const encontrado = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_FFMS, j.mandante);
       if (encontrado) {
         stadium = encontrado;
         estadioFallback = true;
