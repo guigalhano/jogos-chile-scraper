@@ -1321,7 +1321,16 @@ function enrichGames(rawGames) {
       categoria,
       estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
       cidade: cidadeResolvida,
-      regiao: j.regiao || stadium?.regiao || extractEstadoFromExtra(j.extra) || regiaoPorCidade,
+      // extractEstadoFromExtra vem antes de stadium?.regiao: o "estado=" do
+      // extra é escrito pelo próprio scraper da federação (fonte confiável
+      // e específica daquele jogo), enquanto stadium?.regiao pode vir do
+      // fallback fuzzy de findStadiumInfo (match por 2+ palavras em comum),
+      // que já colidiu incorretamente (ex.: "Estádio Municipal Manoel
+      // Francisco Ferreira" em Bálsamo/SP casando com "Estádio Municipal
+      // Manoel Ferreira Brito" em Terra Alta/PA por compartilhar "manoel" e
+      // "ferreira"). Mantém stadium?.regiao como fallback para fontes que
+      // não gravam "estado=" no extra.
+      regiao: j.regiao || extractEstadoFromExtra(j.extra) || stadium?.regiao || regiaoPorCidade,
       lat: j.lat || stadium?.lat || cidadeCoords?.lat || null,
       lng: j.lng || stadium?.lng || cidadeCoords?.lng || null,
       temMapa: Boolean(j.lat && j.lng) || Boolean(stadium?.lat && stadium?.lng) || Boolean(cidadeCoords),
