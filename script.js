@@ -1203,6 +1203,16 @@ function enrichGames(rawGames) {
       : ehFPFPE ? (matchStadiumInList(estadioBruto, window.ESTADIOS_PERNAMBUCO || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
       : ehFGF ? (matchStadiumInList(estadioBruto, window.ESTADIOS_GOIAS || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
       : findStadiumInfo(estadioBruto, pais, j.mandante);
+    // Se o estádio casado (nacional ou curado) é de um estado DIFERENTE do
+    // "estado=" explícito gravado pelo scraper no extra, o match é quase
+    // certamente falso positivo por nome parecido (ex.: um estádio genérico
+    // chamado só "Arena" em outro estado batendo por substring com "Arena
+    // Tal Coisa"). Descarta o match inteiro - não só a região, mas também
+    // lat/lng/cidade dele - em vez de confiar parcialmente nele.
+    const estadoExtra = extractEstadoFromExtra(j.extra);
+    if (stadium && estadoExtra && stadium.regiao && normalize(estadoExtra) !== normalize(stadium.regiao)) {
+      stadium = null;
+    }
     let estadioFallback = false;
     if (!stadium && !estadioBruto && pais !== "Brasil") {
       stadium = findDefaultHomeStadium(j.mandante, pais);
@@ -1330,7 +1340,7 @@ function enrichGames(rawGames) {
       // Manoel Ferreira Brito" em Terra Alta/PA por compartilhar "manoel" e
       // "ferreira"). Mantém stadium?.regiao como fallback para fontes que
       // não gravam "estado=" no extra.
-      regiao: j.regiao || extractEstadoFromExtra(j.extra) || stadium?.regiao || regiaoPorCidade,
+      regiao: j.regiao || estadoExtra || stadium?.regiao || regiaoPorCidade,
       lat: j.lat || stadium?.lat || cidadeCoords?.lat || null,
       lng: j.lng || stadium?.lng || cidadeCoords?.lng || null,
       temMapa: Boolean(j.lat && j.lng) || Boolean(stadium?.lat && stadium?.lng) || Boolean(cidadeCoords),
