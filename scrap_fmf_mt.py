@@ -194,7 +194,7 @@ class Partido:
     def id(self) -> str:
         raw = "|".join([
             self.fonte, self.competicao, self.data, self.hora,
-            self.mandante, self.visitante, self.estadio, self.rodada,
+            self.mandante, self.visitante,
         ])
         return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -333,12 +333,9 @@ def load_csv_rows(path: Path) -> list[dict]:
 
 
 def row_id(row: dict) -> str:
-    if row.get("id"):
-        return row["id"]
     raw = "|".join([
         row.get("fonte", ""), row.get("competicao", ""), row.get("data", ""),
         row.get("hora", ""), row.get("mandante", ""), row.get("visitante", ""),
-        row.get("estadio", ""), row.get("rodada", ""),
     ])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
