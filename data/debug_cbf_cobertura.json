@@ -4,54 +4,54 @@
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_27_07_06254a6216.pdf",
     "jogos_futuros_na_tabela": 40,
     "cobertura_ate": "2026-12-02",
-    "dias_restantes": 128,
+    "dias_restantes": 127,
     "status": "ok",
-    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-12-02 (128 dias)."
+    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-12-02 (127 dias)."
   },
   {
     "competicao": "Brasil - Série B",
-    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_27_07_73ddfce267.pdf",
-    "jogos_futuros_na_tabela": 48,
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_28_07_f4819bb47f.pdf",
+    "jogos_futuros_na_tabela": 45,
     "cobertura_ate": "2026-11-28",
-    "dias_restantes": 124,
+    "dias_restantes": 123,
     "status": "ok",
-    "mensagem": "'Brasil - Série B' cobre jogos futuros ate 2026-11-28 (124 dias)."
+    "mensagem": "'Brasil - Série B' cobre jogos futuros ate 2026-11-28 (123 dias)."
   },
   {
     "competicao": "Brasil - Série C",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_14_07_4c00810d2f.pdf",
-    "jogos_futuros_na_tabela": 42,
+    "jogos_futuros_na_tabela": 40,
     "cobertura_ate": "2026-08-29",
-    "dias_restantes": 33,
+    "dias_restantes": 32,
     "status": "ok",
-    "mensagem": "'Brasil - Série C' cobre jogos futuros ate 2026-08-29 (33 dias)."
+    "mensagem": "'Brasil - Série C' cobre jogos futuros ate 2026-08-29 (32 dias)."
   },
   {
     "competicao": "Brasil - Série D",
-    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_20_07_cb1a723cba.pdf",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_27_07_dad4d118c0.pdf",
     "jogos_futuros_na_tabela": 0,
     "cobertura_ate": null,
     "dias_restantes": 0,
     "status": "critico",
-    "mensagem": "'Brasil - Série D' nao tem NENHUM jogo futuro nesta tabela (pdf: https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_20_07_cb1a723cba.pdf). Ou a competicao realmente acabou/esta em pausa, ou o link fixo (seed) ficou desatualizado igual aconteceu com a Serie B em julho/2026 -- confira manualmente."
+    "mensagem": "'Brasil - Série D' nao tem NENHUM jogo futuro nesta tabela (pdf: https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_27_07_dad4d118c0.pdf). Ou a competicao realmente acabou/esta em pausa, ou o link fixo (seed) ficou desatualizado igual aconteceu com a Serie B em julho/2026 -- confira manualmente."
   },
   {
     "competicao": "Brasil - Copa do Brasil",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_08_07_8dfc6382ed.pdf",
     "jogos_futuros_na_tabela": 16,
     "cobertura_ate": "2026-08-06",
-    "dias_restantes": 10,
-    "status": "ok",
-    "mensagem": "'Brasil - Copa do Brasil' cobre jogos futuros ate 2026-08-06 (10 dias)."
+    "dias_restantes": 9,
+    "status": "atencao",
+    "mensagem": "'Brasil - Copa do Brasil' cobre jogos futuros so ate 2026-08-06 (9 dias) -- vale planejar a atualizacao do link/seed em breve."
   },
   {
     "competicao": "Brasil - Copa do Brasil Feminina",
-    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_bcbc2bf550.pdf",
-    "jogos_futuros_na_tabela": 0,
-    "cobertura_ate": null,
-    "dias_restantes": 0,
-    "status": "critico",
-    "mensagem": "'Brasil - Copa do Brasil Feminina' nao tem NENHUM jogo futuro nesta tabela (pdf: https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_bcbc2bf550.pdf). Ou a competicao realmente acabou/esta em pausa, ou o link fixo (seed) ficou desatualizado igual aconteceu com a Serie B em julho/2026 -- confira manualmente."
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_9604f84f3a.pdf",
+    "jogos_futuros_na_tabela": 2,
+    "cobertura_ate": "2026-10-22",
+    "dias_restantes": 86,
+    "status": "ok",
+    "mensagem": "'Brasil - Copa do Brasil Feminina' cobre jogos futuros ate 2026-10-22 (86 dias)."
   },
   {
     "competicao": "Brasil - Série B Sub-20",
@@ -67,9 +67,9 @@
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_A1_2026_04a2a21b30.pdf",
     "jogos_futuros_na_tabela": 36,
     "cobertura_ate": "2026-08-23",
-    "dias_restantes": 27,
+    "dias_restantes": 26,
     "status": "ok",
-    "mensagem": "'Brasil - Feminino A1' cobre jogos futuros ate 2026-08-23 (27 dias)."
+    "mensagem": "'Brasil - Feminino A1' cobre jogos futuros ate 2026-08-23 (26 dias)."
   },
   {
     "competicao": "Brasil - Série A Sub-20",
