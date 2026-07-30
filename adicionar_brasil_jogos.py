@@ -187,6 +187,7 @@ class Partido:
     mandante: str
     visitante: str
     estadio: str = ""
+    cidade: str = ""
     rodada: str = ""
     url: str = ""
     extra: str = ""
@@ -636,8 +637,12 @@ def parse_cbf_pdf(pdf_bytes: bytes, competicao: str, pdf_url: str) -> list[Parti
                     mandante=row["mandante"],
                     visitante=row["visitante"],
                     estadio=row["estadio"],
+                    cidade=row["cidade"],
                     rodada=row["rodada"],
                     url=pdf_url,
+                    # cidade continua também em extra por compatibilidade com
+                    # front-ends antigos que ainda leem extractCidadeFromExtra,
+                    # mas agora o campo estruturado "cidade" é a fonte confiável.
                     extra=f"pais=Brasil; cidade={row['cidade']}" if row["cidade"] else "pais=Brasil",
                 ))
     except Exception as e:
