@@ -424,17 +424,35 @@ function matchStadiumInList(estadioTexto, stadiums) {
   const txt = normalize(estadioTexto);
   if (!txt || !stadiums || !stadiums.length) return null;
 
-  for (const s of stadiums) {
-    const names = [s.nome, ...(s.aliases || [])];
-    if (names.some(n => txt.includes(normalize(n)) || normalize(n).includes(txt))) {
-      return s;
-    }
-  }
-
   const PALAVRAS_GENERICAS_LOCAL = new Set([
     "estadio", "municipal", "arena", "parque", "complexo", "campo",
     "centro", "cidade", "governador", "presidente", "doutor", "professor",
   ]);
+
+  // Match exato primeiro (nome/alias genérico isolado ainda pode ganhar aqui,
+  // se o texto pesquisado também for só esse termo genérico).
+  for (const s of stadiums) {
+    const names = [s.nome, ...(s.aliases || [])];
+    if (names.some(n => normalize(n) === txt)) {
+      return s;
+    }
+  }
+
+  // Match por substring: nome/alias que seja só uma palavra genérica
+  // (ex.: "Arena") não decide sozinho - evita que um estádio cadastrado
+  // apenas como "Arena" numa cidade capture por acidente qualquer estádio
+  // real com "Arena" no nome (ex.: "Arena Sicredi") de outra cidade/estado.
+  for (const s of stadiums) {
+    const names = [s.nome, ...(s.aliases || [])];
+    if (names.some(n => {
+      const nn = normalize(n);
+      if (!nn || PALAVRAS_GENERICAS_LOCAL.has(nn)) return false;
+      return txt.includes(nn) || nn.includes(txt);
+    })) {
+      return s;
+    }
+  }
+
   const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5 && !PALAVRAS_GENERICAS_LOCAL.has(token));
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])].map(normalize).join(" ");
@@ -474,6 +492,20 @@ function findStadiumInfo(estadioTexto, pais, mandante) {
       ]
     : (window.ESTADIOS_CHILE || []);
 
+  // Nomes/aliases que são só uma palavra genérica (ex.: "Arena", "Estadio
+  // Municipal") não podem decidir um match por substring sozinhos: qualquer
+  // nome de estádio real que contenha essa palavra (ex.: "Arena Sicredi",
+  // "Arena Fonte Nova") bateria por acidente. Isso já causou um bug real:
+  // um estádio cadastrado só como "Arena" em Santa Bárbara do Pará estava
+  // "roubando" o match de "Arena Sicredi" (Athletic-MG, em São João Del
+  // Rei/MG), fazendo o jogo aparecer plotado no Pará. Um nome/alias
+  // genérico ainda pode ganhar por match EXATO (texto pesquisado também é
+  // só "arena"), só não decide mais o critério de substring.
+  const PALAVRAS_GENERICAS = new Set([
+    "estadio", "municipal", "arena", "parque", "complexo", "campo",
+    "centro", "cidade", "governador", "presidente", "doutor", "professor",
+  ]);
+
   // Faz duas passadas em vez de retornar no primeiro achado:
   // 1) match exato (nome normalizado == texto normalizado) tem prioridade total;
   // 2) se não houver exato, entre os matches por substring fica o de nome mais
@@ -490,7 +522,11 @@ function findStadiumInfo(estadioTexto, pais, mandante) {
       if (!nn) continue;
       if (nn === txt) {
         if (!exatos.includes(s)) exatos.push(s);
-      } else if ((txt.includes(nn) || nn.includes(txt)) && nn.length > melhorSubstringLen) {
+      } else if (
+        !PALAVRAS_GENERICAS.has(nn) &&
+        (txt.includes(nn) || nn.includes(txt)) &&
+        nn.length > melhorSubstringLen
+      ) {
         melhorSubstringLen = nn.length;
         melhorSubstring = s;
       }
@@ -508,10 +544,6 @@ function findStadiumInfo(estadioTexto, pais, mandante) {
   }
   if (melhorSubstring) return melhorSubstring;
 
-  const PALAVRAS_GENERICAS = new Set([
-    "estadio", "municipal", "arena", "parque", "complexo", "campo",
-    "centro", "cidade", "governador", "presidente", "doutor", "professor",
-  ]);
   const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5 && !PALAVRAS_GENERICAS.has(token));
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])].map(normalize).join(" ");
