@@ -69,6 +69,7 @@ class Partido:
     rodada: str = ""
     url: str = ""
     extra: str = ""
+    cidade: str = ""
 
     @property
     def id(self) -> str:
@@ -281,6 +282,7 @@ def obj_to_partido(obj: dict, api_url: str) -> Partido | None:
         rodada=rodada,
         url=api_url,
         extra="; ".join(extra_parts),
+        cidade=municipio,
     )
 
 

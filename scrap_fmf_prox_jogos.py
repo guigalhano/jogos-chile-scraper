@@ -63,7 +63,7 @@ HEADERS = {
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
     "mandante", "visitante", "estadio", "rodada",
-    "url", "extra", "atualizado_em",
+    "url", "extra", "atualizado_em", "pais", "cidade",
 ]
 
 DATE_RE = re.compile(r"\b(?P<dia>\d{1,2})[/-](?P<mes>\d{1,2})[/-](?P<ano>\d{2,4})\b")
@@ -98,6 +98,7 @@ class Partido:
     rodada: str = ""
     url: str = ""
     extra: str = ""
+    cidade: str = ""
 
     @property
     def id(self) -> str:
@@ -217,7 +218,7 @@ def obj_to_partido(obj: dict, api_url: str) -> Partido | None:
     if cidade:
         extra.append(f"cidade={cidade}")
 
-    return Partido("FMF", infer_competicao(competicao_txt or str(obj)), data, hora, mandante, visitante, estadio, rodada, api_url, "; ".join(extra))
+    return Partido("FMF", infer_competicao(competicao_txt or str(obj)), data, hora, mandante, visitante, estadio, rodada, api_url, "; ".join(extra), cidade)
 
 
 def walk_json(data: Any, api_url: str) -> list[Partido]:
