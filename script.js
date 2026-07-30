@@ -1202,7 +1202,128 @@ function buscaMandantePadrao(mapa, mandante) {
   return null;
 }
 
+// --- Normalização de nomes de time entre fontes diferentes -----------------
+// Fontes diferentes gravam o mesmo clube de jeitos diferentes:
+//   - federações estaduais (FMF, FPF, FGF, FCF, FPF-PE, FBF, FES, FFERJ,
+//     FFMS) costumam gravar só o nome "pelado" do clube - às vezes com
+//     sufixo "SAF"/"S.A.F" (razão social pós-2021), às vezes tudo em CAIXA
+//     ALTA - já que dentro do estadual não há ambiguidade (só existe um
+//     time com aquele nome disputando aquele campeonato);
+//   - a CBF grava com sufixo "(UF)" pra desambiguar entre estados (ex.:
+//     "Atlético (MG)" x "Atlético (GO)", "Botafogo (RJ)" x "Botafogo (SP)"
+//     x "Botafogo (PB)");
+//   - clubes que disputam competições continentais (CONMEBOL) às vezes
+//     aparecem sem UF nenhuma.
+// Sem normalizar, o mesmo clube vira várias entradas diferentes no filtro
+// de Time - ex.: Cruzeiro aparecia como "Cruzeiro (MG)" (CBF), "CRUZEIRO -
+// SAF" (FMF) e "Cruzeiro" (CONMEBOL).
+//
+// IMPORTANTE: a UF só é inferida a partir da federação estadual de origem
+// do jogo (fonte) ou de uma lista curada de clubes CONMEBOL sem ambiguidade
+// - nunca "adivinhada" só pelo nome. Isso evita juntar clubes DIFERENTES
+// que coincidem no nome (ex.: não dá pra juntar "Atlético (MG)" com
+// "Atlético (GO)" só porque os dois se chamam "Atlético"; ou juntar um
+// pequeno clube paulista também chamado "Juventude" com o Juventude (RS)
+// da Série B só porque bateu o nome).
+const UF_DA_FEDERACAO_ESTADUAL = {
+  FMF: "MG", FGF: "GO", FPF: "SP", "FPF API": "SP", FCF: "CE",
+  "FPF-PE": "PE", FBF: "BA", FES: "ES", FFERJ: "RJ", FFMS: "MS",
+};
+
+// Clubes brasileiros que disputam competições continentais (CONMEBOL) sem
+// UF no nome de origem, mas cuja identidade não é ambígua (nenhum outro
+// clube de ponta disputa essas competições com o mesmo nome). Lista curada
+// manualmente, só com clubes já observados nos dados nessa situação -
+// evita generalizar demais pra nomes que a gente nunca viu vindo assim.
+const UF_CLUBE_CONMEBOL_BR = {
+  flamengo: "RJ", fluminense: "RJ", gremio: "RS", corinthians: "SP",
+  palmeiras: "SP", santos: "SP", "sao paulo": "SP",
+  "red bull bragantino": "SP", mirassol: "SP", cruzeiro: "MG",
+};
+
+function stripSufixoSAF(nomeOriginal) {
+  return nomeOriginal
+    .replace(/\s*-\s*s\.?\s*a\.?\s*f\.?\s*$/i, "")
+    .replace(/\s+s\.?\s*a\.?\s*f\.?\s*$/i, "")
+    .trim();
+}
+
+// Deriva a "chave" de agrupamento (clube + UF, quando dá pra saber a UF)
+// pra decidir depois qual variante de nome vira o rótulo canônico exibido.
+function chaveTimeParaAgrupamento(nomeOriginal, fonte) {
+  const semSAF = stripSufixoSAF(nomeOriginal);
+  const semSAFNorm = normalize(semSAF);
+  const matchUF = semSAFNorm.match(/^(.*)\s+\(([a-z]{2})\)$/);
+  const nomeBase = matchUF ? matchUF[1].trim() : semSAFNorm;
+  const ufExplicita = matchUF ? matchUF[2].toUpperCase() : null;
+  const ufInferida = ufExplicita
+    || UF_DA_FEDERACAO_ESTADUAL[fonte]
+    || UF_CLUBE_CONMEBOL_BR[nomeBase]
+    || null;
+  return {
+    chave: ufInferida ? `${nomeBase} (${ufInferida.toLowerCase()})` : nomeBase,
+    semSAF,
+    ufInferida,
+    tinhaUFExplicita: Boolean(ufExplicita),
+  };
+}
+
+// Olha TODOS os jogos de uma vez (não dá pra decidir por jogo isolado: é
+// preciso ver as variantes de todas as fontes pra escolher a melhor
+// grafia) e monta um mapa "nome bruto exato -> nome canônico".
+function construirMapaCanonicoDeTimes(rawGames) {
+  const candidatosPorChave = new Map(); // chave -> Map(candidato -> contagem)
+  for (const j of rawGames) {
+    for (const nomeOriginal of [j.mandante, j.visitante]) {
+      if (!nomeOriginal) continue;
+      const { chave, semSAF, ufInferida, tinhaUFExplicita } = chaveTimeParaAgrupamento(nomeOriginal, j.fonte);
+      // Rótulo candidato: sempre sem sufixo SAF; se a UF foi inferida (não
+      // vinha explícita no nome original) e o nome não tem UF nenhuma,
+      // sugere já com "(UF)" pra ficar no padrão CBF.
+      const candidato = (ufInferida && !tinhaUFExplicita) ? `${semSAF} (${ufInferida})` : semSAF;
+      if (!candidatosPorChave.has(chave)) candidatosPorChave.set(chave, new Map());
+      const contagens = candidatosPorChave.get(chave);
+      contagens.set(candidato, (contagens.get(candidato) || 0) + 1);
+    }
+  }
+
+  // Escolhe o rótulo canônico de cada chave: prefere grafia com acento e
+  // capitalização normal (não TUDO MAIÚSCULO) sobre variantes sem acento
+  // ou em caixa alta; em empate, a mais frequente nos dados.
+  const canonicoPorChave = new Map();
+  for (const [chave, contagens] of candidatosPorChave) {
+    let melhor = null;
+    let melhorScore = -Infinity;
+    for (const [candidato, contagem] of contagens) {
+      // temAcento checa só a presença de diacríticos (á, ç, ã...) - usar
+      // normalize() aqui seria errado, porque normalize() também baixa a
+      // caixa, e isso faria QUALQUER nome em CAIXA ALTA (mesmo sem nenhum
+      // acento, ex.: "CRUZEIRO") pontuar como "com acento" por engano.
+      const semDiacriticos = candidato.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+      const temAcento = semDiacriticos !== candidato ? 1 : 0;
+      const naoTudoMaiusculo = candidato !== candidato.toUpperCase() ? 1 : 0;
+      const score = naoTudoMaiusculo * 100 + temAcento * 10 + contagem;
+      if (score > melhorScore) {
+        melhorScore = score;
+        melhor = candidato;
+      }
+    }
+    canonicoPorChave.set(chave, melhor);
+  }
+
+  const mapa = new Map();
+  for (const j of rawGames) {
+    for (const nomeOriginal of [j.mandante, j.visitante]) {
+      if (!nomeOriginal || mapa.has(nomeOriginal)) continue;
+      const { chave } = chaveTimeParaAgrupamento(nomeOriginal, j.fonte);
+      mapa.set(nomeOriginal, canonicoPorChave.get(chave) || nomeOriginal);
+    }
+  }
+  return mapa;
+}
+
 function enrichGames(rawGames) {
+  const mapaNomesTimes = construirMapaCanonicoDeTimes(rawGames);
   return rawGames.map((j, index) => {
     const pais = derivePais(j);
     const escopo = deriveEscopo(j);
@@ -1364,6 +1485,13 @@ function enrichGames(rawGames) {
       categoria,
       estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
       cidade: cidadeResolvida,
+      // Nome canônico do clube (junta variantes como "Cruzeiro (MG)" /
+      // "CRUZEIRO - SAF" / "Cruzeiro" num único rótulo) - ver
+      // construirMapaCanonicoDeTimes. j.mandante/j.visitante (brutos) ainda
+      // são usados acima, antes deste ponto, pra bater com os mapas de
+      // estádio-mandante por federação.
+      mandante: mapaNomesTimes.get(j.mandante) || j.mandante,
+      visitante: mapaNomesTimes.get(j.visitante) || j.visitante,
       // extractEstadoFromExtra vem antes de stadium?.regiao: o "estado=" do
       // extra é escrito pelo próprio scraper da federação (fonte confiável
       // e específica daquele jogo), enquanto stadium?.regiao pode vir do
