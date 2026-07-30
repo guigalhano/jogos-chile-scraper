@@ -410,7 +410,8 @@ function distanciaKm(lat1, lng1, lat2, lng2) {
 }
 
 function coordenadasDaCidade(cidade) {
-  const alvo = jogosEnriquecidos.find(j => j.cidade === cidade && j.lat && j.lng);
+  const chave = normalize(cidade);
+  const alvo = jogosEnriquecidos.find(j => normalize(j.cidade) === chave && j.lat && j.lng);
   return alvo ? { lat: alvo.lat, lng: alvo.lng } : null;
 }
 
@@ -1438,7 +1439,12 @@ function getFilteredGames() {
     const matchComp = !comp || j.competicao === comp;
     const matchTime = !time || j.mandante === time || j.visitante === time;
     const matchRegiao = showAllTeamMode ? true : (!regiao || j.regiao === regiao);
-    const matchCidade = showAllTeamMode ? true : (!cidade || j.cidade === cidade ||
+    // Comparação normalizada (sem acento/maiúsculas): fontes diferentes
+    // gravam a mesma cidade de formas diferentes (ex.: "São João Del Rei"
+    // vindo do CBF vs "Sao Joao Del Rei" vindo da FMF) - comparar os textos
+    // exatos fazia sumir metade dos jogos de uma cidade dependendo de qual
+    // variante o usuário escolhia no filtro.
+    const matchCidade = showAllTeamMode ? true : (!cidade || normalize(j.cidade) === normalize(cidade) ||
       (cidadeCoords && j.lat && j.lng && distanciaKm(cidadeCoords.lat, cidadeCoords.lng, j.lat, j.lng) <= raioKm));
     const matchData = showAllTeamMode ? true : (!data || j.data === data);
     const matchPeriod = showAllTeamMode ? true : (!activePeriodDays || (j.data >= start && j.data <= end));
@@ -1473,10 +1479,33 @@ function getFilteredGames() {
   return out;
 }
 
+// Junta variantes da mesma cidade escritas de formas diferentes por fontes
+// diferentes (ex.: "São João Del Rei" x "Sao Joao Del Rei") num único item
+// do filtro. Prefere a grafia com acento como rótulo (mais correta/legível)
+// quando houver mais de uma variante para a mesma cidade normalizada.
+function uniqueCidades(items) {
+  const porChave = new Map();
+  for (const valor of items) {
+    if (!valor) continue;
+    const chave = normalize(valor);
+    const atual = porChave.get(chave);
+    if (!atual) {
+      porChave.set(chave, valor);
+      continue;
+    }
+    const atualTemAcento = atual !== normalize(atual);
+    const valorTemAcento = valor !== normalize(valor);
+    if (valorTemAcento && !atualTemAcento) {
+      porChave.set(chave, valor);
+    }
+  }
+  return [...porChave.values()].sort((a, b) => a.localeCompare(b));
+}
+
 function updateDependentCityOptions() {
   const pais = els.filtroPais.value;
   const regiao = els.filtroRegiao.value;
-  const cidades = uniqueSorted(
+  const cidades = uniqueCidades(
     jogosNoEscopoAtivo(jogosEnriquecidos)
       .filter(j => (!pais || j.pais === pais) && (!regiao || j.regiao === regiao))
       .map(j => j.cidade)
