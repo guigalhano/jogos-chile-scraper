@@ -1,72 +1,8 @@
 {
-  "gerado_em": "2026-07-26T13:46:15",
+  "gerado_em": "2026-07-30T14:20:54",
   "dias_verificados": 61,
   "total_eventos_lidos_nos_paises_alvo": 0,
   "dias_com_erro": [
-    {
-      "data": "2026-07-26",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-07-26",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-07-26' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "26-07-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
-        }
-      }
-    },
-    {
-      "data": "2026-07-27",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-07-27",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-07-27' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "27-07-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
-        }
-      }
-    },
-    {
-      "data": "2026-07-28",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-07-28",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-07-28' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "28-07-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
-        }
-      }
-    },
-    {
-      "data": "2026-07-29",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-07-29",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-07-29' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "29-07-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
-        }
-      }
-    },
     {
       "data": "2026-07-30",
       "debug": {
@@ -978,69 +914,73 @@
           "amostra_bruta": "{}"
         }
       }
+    },
+    {
+      "data": "2026-09-25",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-09-25",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-09-25' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "25-09-2026",
+          "status": 200,
+          "chaves_raiz": [],
+          "amostra_bruta": "{}"
+        }
+      }
+    },
+    {
+      "data": "2026-09-26",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-09-26",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-09-26' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "26-09-2026",
+          "status": 200,
+          "chaves_raiz": [],
+          "amostra_bruta": "{}"
+        }
+      }
+    },
+    {
+      "data": "2026-09-27",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-09-27",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-09-27' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "27-09-2026",
+          "status": 200,
+          "chaves_raiz": [],
+          "amostra_bruta": "{}"
+        }
+      }
+    },
+    {
+      "data": "2026-09-28",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-09-28",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-09-28' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "28-09-2026",
+          "status": 200,
+          "chaves_raiz": [],
+          "amostra_bruta": "{}"
+        }
+      }
     }
   ],
   "debug_amostra": [
-    {
-      "data": "2026-07-26",
-      "tentativa_1": {
-        "formato": "2026-07-26",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-07-26' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "26-07-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
-      },
-      "n_leagues": 0
-    },
-    {
-      "data": "2026-07-27",
-      "tentativa_1": {
-        "formato": "2026-07-27",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-07-27' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "27-07-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
-      },
-      "n_leagues": 0
-    },
-    {
-      "data": "2026-07-28",
-      "tentativa_1": {
-        "formato": "2026-07-28",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-07-28' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "28-07-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
-      },
-      "n_leagues": 0
-    },
-    {
-      "data": "2026-07-29",
-      "tentativa_1": {
-        "formato": "2026-07-29",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-07-29' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "29-07-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
-      },
-      "n_leagues": 0
-    },
     {
       "data": "2026-07-30",
       "tentativa_1": {
@@ -1890,6 +1830,66 @@
       },
       "tentativa_2": {
         "formato": "24-09-2026",
+        "status": 200,
+        "chaves_raiz": [],
+        "amostra_bruta": "{}"
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-09-25",
+      "tentativa_1": {
+        "formato": "2026-09-25",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-09-25' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "25-09-2026",
+        "status": 200,
+        "chaves_raiz": [],
+        "amostra_bruta": "{}"
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-09-26",
+      "tentativa_1": {
+        "formato": "2026-09-26",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-09-26' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "26-09-2026",
+        "status": 200,
+        "chaves_raiz": [],
+        "amostra_bruta": "{}"
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-09-27",
+      "tentativa_1": {
+        "formato": "2026-09-27",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-09-27' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "27-09-2026",
+        "status": 200,
+        "chaves_raiz": [],
+        "amostra_bruta": "{}"
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-09-28",
+      "tentativa_1": {
+        "formato": "2026-09-28",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-09-28' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "28-09-2026",
         "status": 200,
         "chaves_raiz": [],
         "amostra_bruta": "{}"

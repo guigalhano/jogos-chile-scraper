@@ -1443,8 +1443,8 @@ window.ESTADIOS_BRASIL = [
     fonte: "manual/aproximado (cidade de Garrafão do Norte) - fpfpara.com.br/estadio/39",
   },
   {
-    nome: "Arena",
-    aliases: ["arena"],
+    nome: "Arena (Santa Bárbara do Pará)",
+    aliases: ["arena santa barbara do para"],
     cidade: "Santa Bárbara do Pará",
     regiao: "Pará",
     lat: -1.2261,

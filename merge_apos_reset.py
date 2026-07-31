@@ -44,38 +44,91 @@ def load_csv_rows(path: Path) -> list[dict]:
         return list(csv.DictReader(f))
 
 
+import re
+import hashlib
+
+
 def is_valid_row(row: dict) -> bool:
     return bool(row.get("data") and row.get("mandante") and row.get("visitante"))
 
 
+# Regex genérica: pega qualquer "codigo_xxx=valor" dentro do campo extra.
+# A maioria dos scrapers grava um código de identificação estável da fonte
+# original ali (codigo_espn, codigo_fbf, codigo_fferj, codigo_conmebol...).
+CODIGO_GENERICO_RE = re.compile(r"codigo_(\w+)=([^;]+)")
+JOGO_NUMERO_RE = re.compile(r"jogo_numero=([^;]+)")
+
+
 def row_id(row: dict) -> str:
-    if row.get("id"):
-        return row["id"]
-    import hashlib
+    """ID legado (hash de campo a campo), só usado como fallback quando não
+    há nenhum código estável disponível no campo extra. NÃO inclui estádio,
+    cidade nem rodada, porque esses três costumam ser corrigidos/preenchidos
+    pela fonte depois da primeira coleta (ex.: 'Rodada 10' virando 'Ida' no
+    PDF da CBF, ou 'Zona B' sumindo num evento seguinte da AFA), e se
+    entrassem no hash o mesmo jogo ganharia um ID novo (e viraria uma linha
+    duplicada) toda vez que esse dado mudasse. Times + data + hora +
+    competição já bastam pra identificar o confronto de forma prática (duas
+    equipes não jogam duas vezes entre si na mesma competição, no mesmo dia
+    e horário).
+    """
     raw = "|".join([
         row.get("fonte", ""), row.get("competicao", ""), row.get("data", ""),
         row.get("hora", ""), row.get("mandante", ""), row.get("visitante", ""),
-        row.get("estadio", ""), row.get("rodada", ""),
     ])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
 
+def merge_key(row: dict) -> str:
+    """Chave de identidade usada para decidir se duas linhas são 'o mesmo
+    jogo'. Preferimos sempre um código estável da fonte original (que não
+    muda quando estádio/horário/cidade são corrigidos depois):
+
+    - FMF: precisa combinar codigo_fmf (a fase/divisão) + jogo_numero
+      (o número do jogo dentro dela), porque codigo_fmf sozinho identifica
+      só a divisão, não o confronto.
+    - Demais fontes com algum "codigo_xxx=" no extra (ESPN, FBF, FFERJ,
+      CONMEBOL, etc.): usa fonte + esse código.
+    - Sem nenhum código disponível (ex.: PDFs da CBF, FES): cai no hash
+      legado sem estádio/cidade.
+    """
+    extra = row.get("extra", "") or ""
+    fonte = row.get("fonte", "")
+
+    mc = CODIGO_GENERICO_RE.search(extra)
+    if mc and mc.group(1) == "fmf":
+        # codigo_fmf identifica só a fase/divisão, não o confronto, e
+        # jogo_numero às vezes falha na extração (fica ausente numa coleta
+        # e presente na outra), o que faria o mesmo jogo cair em duas
+        # chaves diferentes. Times + data + hora + competição já bastam
+        # pra identificar o confronto de forma confiável na FMF.
+        return row_id(row)
+    if mc:
+        return f"{fonte}:{mc.group(1)}:{mc.group(2)}"
+
+    return row_id(row)
+
+
 def merge_rows(existing: list[dict], new_rows: list[dict]) -> list[dict]:
-    by_id = {}
+    by_key: dict[str, dict] = {}
+
+    def put(r: dict) -> None:
+        if not is_valid_row(r):
+            return
+        r["id"] = row_id(r)
+        k = merge_key(r)
+        prev = by_key.get(k)
+        # Em caso de colisão (mesmo jogo, dado atualizado), mantém sempre a
+        # linha mais recente pelo campo atualizado_em, não a última por
+        # ordem de iteração.
+        if prev is None or (r.get("atualizado_em", "") >= prev.get("atualizado_em", "")):
+            by_key[k] = r
+
     for r in existing:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        put(r)
     for r in new_rows:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        put(r)
     return sorted(
-        by_id.values(),
+        by_key.values(),
         key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("pais", ""), r.get("competicao", ""), r.get("mandante", ""))
     )
 

@@ -63,7 +63,7 @@ HEADERS = {
 FIELDS = [
     "id", "fonte", "competicao", "data", "hora",
     "mandante", "visitante", "estadio", "rodada",
-    "url", "extra", "atualizado_em",
+    "url", "extra", "atualizado_em", "pais", "cidade",
 ]
 
 DATE_RE = re.compile(r"\b(?P<dia>\d{1,2})[/-](?P<mes>\d{1,2})[/-](?P<ano>\d{2,4})\b")
@@ -98,10 +98,11 @@ class Partido:
     rodada: str = ""
     url: str = ""
     extra: str = ""
+    cidade: str = ""
 
     @property
     def id(self) -> str:
-        raw = "|".join([self.fonte, self.competicao, self.data, self.hora, self.mandante, self.visitante, self.estadio, self.rodada])
+        raw = "|".join([self.fonte, self.competicao, self.data, self.hora, self.mandante, self.visitante])
         return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
     def to_row(self) -> dict:
@@ -217,7 +218,7 @@ def obj_to_partido(obj: dict, api_url: str) -> Partido | None:
     if cidade:
         extra.append(f"cidade={cidade}")
 
-    return Partido("FMF", infer_competicao(competicao_txt or str(obj)), data, hora, mandante, visitante, estadio, rodada, api_url, "; ".join(extra))
+    return Partido("FMF", infer_competicao(competicao_txt or str(obj)), data, hora, mandante, visitante, estadio, rodada, api_url, "; ".join(extra), cidade)
 
 
 def walk_json(data: Any, api_url: str) -> list[Partido]:
@@ -426,9 +427,7 @@ def load_csv_rows(path: Path) -> list[dict]:
 
 
 def row_id(row: dict) -> str:
-    if row.get("id"):
-        return row["id"]
-    raw = "|".join([row.get("fonte",""), row.get("competicao",""), row.get("data",""), row.get("hora",""), row.get("mandante",""), row.get("visitante",""), row.get("estadio",""), row.get("rodada","")])
+    raw = "|".join([row.get("fonte",""), row.get("competicao",""), row.get("data",""), row.get("hora",""), row.get("mandante",""), row.get("visitante","")])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
 

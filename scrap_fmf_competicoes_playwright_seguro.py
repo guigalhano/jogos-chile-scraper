@@ -862,12 +862,9 @@ def load_csv_rows(path: Path) -> list[dict]:
 
 
 def row_id(row: dict) -> str:
-    if row.get("id"):
-        return row["id"]
     raw = "|".join([
         row.get("fonte", ""), row.get("competicao", ""), row.get("data", ""),
         row.get("hora", ""), row.get("mandante", ""), row.get("visitante", ""),
-        row.get("estadio", ""), row.get("rodada", ""),
     ])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -876,22 +873,42 @@ def is_valid_row(row: dict) -> bool:
     return bool(row.get("data") and row.get("mandante") and row.get("visitante"))
 
 
+FMF_CODE_RE = re.compile(r"codigo_fmf=(\w+)")
+FMF_JOGO_RE = re.compile(r"jogo_numero=(\w+)")
+
+
+def merge_key(row: dict) -> str:
+    """Chave estável de identidade para o merge.
+
+    codigo_fmf identifica só a fase/divisão, não o confronto específico, e
+    jogo_numero às vezes falha na extração (presente numa coleta, ausente
+    na outra) — o que faria o mesmo jogo cair em duas chaves diferentes e
+    duplicar. Times + data + hora + competição já bastam pra identificar o
+    confronto de forma confiável (duas equipes não jogam duas vezes entre
+    si na mesma competição, no mesmo dia e horário), então usamos sempre o
+    hash natural (row_id), que já não inclui estádio/cidade/rodada.
+    """
+    return row_id(row)
+
+
 def merge_rows(existing: list[dict], new_rows: list[dict]) -> list[dict]:
-    by_id = {}
+    by_key = {}
+
+    def put(r):
+        if not is_valid_row(r):
+            return
+        r["id"] = row_id(r)
+        k = merge_key(r)
+        prev = by_key.get(k)
+        if prev is None or (r.get("atualizado_em", "") >= prev.get("atualizado_em", "")):
+            by_key[k] = r
+
     for r in existing:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        put(r)
     for r in new_rows:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        put(r)
     return sorted(
-        by_id.values(),
+        by_key.values(),
         key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("pais", ""), r.get("competicao", ""), r.get("mandante", ""))
     )
 

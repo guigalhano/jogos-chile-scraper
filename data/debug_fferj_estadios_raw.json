@@ -7,8 +7,8 @@
     "sede": "RUA HAROLDO LOBO, 400 - RIO DE JANEIRO",
     "endereco_geocodificado": "",
     "fonte_endereco": "ja_catalogado",
-    "lat": -22.8781,
-    "lng": -43.4642
+    "lat": -22.8143,
+    "lng": -43.1938
   },
   {
     "alias_id": "17",
@@ -18,8 +18,8 @@
     "sede": "RUA SUL AMÉRICA, 950 - RIO DE JANEIRO",
     "endereco_geocodificado": "",
     "fonte_endereco": "ja_catalogado",
-    "lat": -22.8781,
-    "lng": -43.4642
+    "lat": -22.8738,
+    "lng": -43.4681
   },
   {
     "alias_id": "54",
@@ -27,10 +27,10 @@
     "estadio": "ELCYR RESENDE DE MENDONÇA",
     "localizacao": "RUA CAPITÃO NUNES, 110 - BARREIRA (BACAXÁ)",
     "sede": "TV JOAQUIM COSTA, 19 - SAQUAREMA",
-    "endereco_geocodificado": "RUA CAPITÃO NUNES, 110 - BARREIRA (BACAXÁ), RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8953,
+    "lng": -42.4769
   },
   {
     "alias_id": "30",
@@ -159,10 +159,10 @@
     "estadio": "ATÍLIO MAROTTI",
     "localizacao": "RUA MADRE FRANCISCA PIA, 400 - QUARTEIRÃO INGELHEIN",
     "sede": "ESTRADA FAZENDA INGLESA, S/Nº - PETRÓPOLIS",
-    "endereco_geocodificado": "RUA MADRE FRANCISCA PIA, 400 - QUARTEIRÃO INGELHEIN, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.505,
+    "lng": -43.1786
   },
   {
     "alias_id": "139",
@@ -467,6 +467,17 @@
     "lng": -42.1022316
   },
   {
+    "alias_id": "252",
+    "nome_clube": "LIGA ALTENSE DE DESPORTOS",
+    "estadio": "Não Possui",
+    "localizacao": "",
+    "sede": "RUA ALEXANDRE LATINI, 337 - SÃO SEBASTIÃO DO ALTO",
+    "endereco_geocodificado": "RUA ALEXANDRE LATINI, 337 - SÃO SEBASTIÃO DO ALTO, RJ, Brasil",
+    "fonte_endereco": "sede",
+    "lat": -21.9538846,
+    "lng": -42.1326216
+  },
+  {
     "alias_id": "253",
     "nome_clube": "LIGA ANGRENSE DE DESPORTOS",
     "estadio": "MUNICIPAL JAIR TOSCANO DE BRITO",
@@ -533,12 +544,12 @@
     "lng": null
   },
   {
-    "alias_id": "260",
+    "alias_id": "1245",
     "nome_clube": "LIGA CACHOEIRENSE DE DESPORTOS",
     "estadio": "MUNICIPAL CEL IZALTINO RIBEIRO CARNEIRO",
     "localizacao": "",
-    "sede": "RUA DALMO COELHO GOMES, S/N - CACHOEIRAS DE MACACU",
-    "endereco_geocodificado": "RUA DALMO COELHO GOMES, S/N - CACHOEIRAS DE MACACU, RJ, Brasil",
+    "sede": "R VEREADOR IBRAHIM BARROSO, S/Nº - CACHOEIRAS DE MACACU",
+    "endereco_geocodificado": "R VEREADOR IBRAHIM BARROSO, S/Nº - CACHOEIRAS DE MACACU, RJ, Brasil",
     "fonte_endereco": "sede",
     "lat": null,
     "lng": null
@@ -707,6 +718,17 @@
     "fonte_endereco": "sede",
     "lat": -22.5256891,
     "lng": -44.0926272
+  },
+  {
+    "alias_id": "1246",
+    "nome_clube": "LIGA DE DESPORTOS E ASSOCIAÇÕES ALTENSE",
+    "estadio": "ESTÁDIO ALTENSE CLUBE",
+    "localizacao": "",
+    "sede": "RUA ALEXANDRE LATINI, 337 - SÃO SEBASTIÃO DO ALTO",
+    "endereco_geocodificado": "RUA ALEXANDRE LATINI, 337 - SÃO SEBASTIÃO DO ALTO, RJ, Brasil",
+    "fonte_endereco": "sede",
+    "lat": -21.9538846,
+    "lng": -42.1326216
   },
   {
     "alias_id": "275",
@@ -1717,8 +1739,8 @@
     "sede": "ROD. PRESIDENTE DUTRA, 24500 - NOVA IGUAÇU",
     "endereco_geocodificado": "",
     "fonte_endereco": "ja_catalogado",
-    "lat": -22.8912,
-    "lng": -43.2229
+    "lat": -22.742,
+    "lng": -43.458
   },
   {
     "alias_id": "23",
@@ -1781,10 +1803,10 @@
     "estadio": "ATÍLIO MAROTTI",
     "localizacao": "RUA MADRE FRANCISCA PIA, 400 - QUARTEIRÃO INGELHEIN",
     "sede": "RUA V. ANTÔNIO TEIXEIRA DE MACEDO, 393 - TANGUÁ",
-    "endereco_geocodificado": "RUA MADRE FRANCISCA PIA, 400 - QUARTEIRÃO INGELHEIN, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.505,
+    "lng": -43.1786
   },
   {
     "alias_id": "1078",
@@ -1803,10 +1825,10 @@
     "estadio": "WALDO CARNEIRO XAVIER",
     "localizacao": "RUA JOSÉ PAULO PANARO, S/Nº - SÃO LUIZ",
     "sede": "RUA JOSÉ PAULO PANARO, SN - SANTO ANTONIO DE PADUA",
-    "endereco_geocodificado": "RUA JOSÉ PAULO PANARO, S/Nº - SÃO LUIZ, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -21.5361,
+    "lng": -42.1758
   },
   {
     "alias_id": "114",
@@ -1825,10 +1847,10 @@
     "estadio": "ATÍLIO MAROTTI",
     "localizacao": "RUA MADRE FRANCISCA PIA, 400 - QUARTEIRÃO INGELHEIN",
     "sede": "RUA MADRE FRANCISCA PIA, 400 - PETROPOLIS",
-    "endereco_geocodificado": "RUA MADRE FRANCISCA PIA, 400 - QUARTEIRÃO INGELHEIN, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.505,
+    "lng": -43.1786
   },
   {
     "alias_id": "19",
@@ -1880,10 +1902,10 @@
     "estadio": "ARY DE OLIVEIRA E SOUZA",
     "localizacao": "RUA DOS GOITACAZES, 331 - PARQUE TURF CLUB",
     "sede": "RUA DOS GOYTACAZES, 331 - CAMPOS DOS GOYTACAZES",
-    "endereco_geocodificado": "RUA DOS GOITACAZES, 331 - PARQUE TURF CLUB, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -21.7545,
+    "lng": -41.3244
   },
   {
     "alias_id": "140",
@@ -1891,10 +1913,10 @@
     "estadio": "MUNICIPAL CLÁUDIO MOACYR DE AZEVEDO",
     "localizacao": "RUA FERNANDO HIPÓLITO DOS SANTOS, S/Nº - BARRA DE MACAÉ",
     "sede": "RUA ALFREDO BACKER, 203 - MACAÉ",
-    "endereco_geocodificado": "RUA FERNANDO HIPÓLITO DOS SANTOS, S/Nº - BARRA DE MACAÉ, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.3708,
+    "lng": -41.7869
   },
   {
     "alias_id": "113",
@@ -1902,10 +1924,10 @@
     "estadio": "NÉLIO GOMES",
     "localizacao": "",
     "sede": "RUA DOUTOR THOMPSON MOTA, 482 - RIO DE JANEIRO",
-    "endereco_geocodificado": "RUA DOUTOR THOMPSON MOTA, 482 - RIO DE JANEIRO, RJ, Brasil",
-    "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.7642,
+    "lng": -43.3994
   },
   {
     "alias_id": "235",
@@ -2001,10 +2023,10 @@
     "estadio": "ELCYR RESENDE DE MENDONÇA",
     "localizacao": "RUA CAPITÃO NUNES, 110 - BARREIRA (BACAXÁ)",
     "sede": "RUA JOÃO ANTÔNIO SENDAS, 341 - SÃO JOÃO DE MERITI",
-    "endereco_geocodificado": "RUA CAPITÃO NUNES, 110 - BARREIRA (BACAXÁ), RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": null,
-    "lng": null
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8953,
+    "lng": -42.4769
   },
   {
     "alias_id": "97",

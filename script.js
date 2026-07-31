@@ -410,7 +410,8 @@ function distanciaKm(lat1, lng1, lat2, lng2) {
 }
 
 function coordenadasDaCidade(cidade) {
-  const alvo = jogosEnriquecidos.find(j => j.cidade === cidade && j.lat && j.lng);
+  const chave = normalize(cidade);
+  const alvo = jogosEnriquecidos.find(j => normalize(j.cidade) === chave && j.lat && j.lng);
   return alvo ? { lat: alvo.lat, lng: alvo.lng } : null;
 }
 
@@ -423,17 +424,35 @@ function matchStadiumInList(estadioTexto, stadiums) {
   const txt = normalize(estadioTexto);
   if (!txt || !stadiums || !stadiums.length) return null;
 
-  for (const s of stadiums) {
-    const names = [s.nome, ...(s.aliases || [])];
-    if (names.some(n => txt.includes(normalize(n)) || normalize(n).includes(txt))) {
-      return s;
-    }
-  }
-
   const PALAVRAS_GENERICAS_LOCAL = new Set([
     "estadio", "municipal", "arena", "parque", "complexo", "campo",
     "centro", "cidade", "governador", "presidente", "doutor", "professor",
   ]);
+
+  // Match exato primeiro (nome/alias genérico isolado ainda pode ganhar aqui,
+  // se o texto pesquisado também for só esse termo genérico).
+  for (const s of stadiums) {
+    const names = [s.nome, ...(s.aliases || [])];
+    if (names.some(n => normalize(n) === txt)) {
+      return s;
+    }
+  }
+
+  // Match por substring: nome/alias que seja só uma palavra genérica
+  // (ex.: "Arena") não decide sozinho - evita que um estádio cadastrado
+  // apenas como "Arena" numa cidade capture por acidente qualquer estádio
+  // real com "Arena" no nome (ex.: "Arena Sicredi") de outra cidade/estado.
+  for (const s of stadiums) {
+    const names = [s.nome, ...(s.aliases || [])];
+    if (names.some(n => {
+      const nn = normalize(n);
+      if (!nn || PALAVRAS_GENERICAS_LOCAL.has(nn)) return false;
+      return txt.includes(nn) || nn.includes(txt);
+    })) {
+      return s;
+    }
+  }
+
   const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5 && !PALAVRAS_GENERICAS_LOCAL.has(token));
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])].map(normalize).join(" ");
@@ -473,6 +492,20 @@ function findStadiumInfo(estadioTexto, pais, mandante) {
       ]
     : (window.ESTADIOS_CHILE || []);
 
+  // Nomes/aliases que são só uma palavra genérica (ex.: "Arena", "Estadio
+  // Municipal") não podem decidir um match por substring sozinhos: qualquer
+  // nome de estádio real que contenha essa palavra (ex.: "Arena Sicredi",
+  // "Arena Fonte Nova") bateria por acidente. Isso já causou um bug real:
+  // um estádio cadastrado só como "Arena" em Santa Bárbara do Pará estava
+  // "roubando" o match de "Arena Sicredi" (Athletic-MG, em São João Del
+  // Rei/MG), fazendo o jogo aparecer plotado no Pará. Um nome/alias
+  // genérico ainda pode ganhar por match EXATO (texto pesquisado também é
+  // só "arena"), só não decide mais o critério de substring.
+  const PALAVRAS_GENERICAS = new Set([
+    "estadio", "municipal", "arena", "parque", "complexo", "campo",
+    "centro", "cidade", "governador", "presidente", "doutor", "professor",
+  ]);
+
   // Faz duas passadas em vez de retornar no primeiro achado:
   // 1) match exato (nome normalizado == texto normalizado) tem prioridade total;
   // 2) se não houver exato, entre os matches por substring fica o de nome mais
@@ -489,7 +522,11 @@ function findStadiumInfo(estadioTexto, pais, mandante) {
       if (!nn) continue;
       if (nn === txt) {
         if (!exatos.includes(s)) exatos.push(s);
-      } else if ((txt.includes(nn) || nn.includes(txt)) && nn.length > melhorSubstringLen) {
+      } else if (
+        !PALAVRAS_GENERICAS.has(nn) &&
+        (txt.includes(nn) || nn.includes(txt)) &&
+        nn.length > melhorSubstringLen
+      ) {
         melhorSubstringLen = nn.length;
         melhorSubstring = s;
       }
@@ -507,10 +544,6 @@ function findStadiumInfo(estadioTexto, pais, mandante) {
   }
   if (melhorSubstring) return melhorSubstring;
 
-  const PALAVRAS_GENERICAS = new Set([
-    "estadio", "municipal", "arena", "parque", "complexo", "campo",
-    "centro", "cidade", "governador", "presidente", "doutor", "professor",
-  ]);
   const txtTokens = txt.split(/\s+/).filter(token => token.length >= 5 && !PALAVRAS_GENERICAS.has(token));
   for (const s of stadiums) {
     const names = [s.nome, ...(s.aliases || [])].map(normalize).join(" ");
@@ -1169,7 +1202,128 @@ function buscaMandantePadrao(mapa, mandante) {
   return null;
 }
 
+// --- Normalização de nomes de time entre fontes diferentes -----------------
+// Fontes diferentes gravam o mesmo clube de jeitos diferentes:
+//   - federações estaduais (FMF, FPF, FGF, FCF, FPF-PE, FBF, FES, FFERJ,
+//     FFMS) costumam gravar só o nome "pelado" do clube - às vezes com
+//     sufixo "SAF"/"S.A.F" (razão social pós-2021), às vezes tudo em CAIXA
+//     ALTA - já que dentro do estadual não há ambiguidade (só existe um
+//     time com aquele nome disputando aquele campeonato);
+//   - a CBF grava com sufixo "(UF)" pra desambiguar entre estados (ex.:
+//     "Atlético (MG)" x "Atlético (GO)", "Botafogo (RJ)" x "Botafogo (SP)"
+//     x "Botafogo (PB)");
+//   - clubes que disputam competições continentais (CONMEBOL) às vezes
+//     aparecem sem UF nenhuma.
+// Sem normalizar, o mesmo clube vira várias entradas diferentes no filtro
+// de Time - ex.: Cruzeiro aparecia como "Cruzeiro (MG)" (CBF), "CRUZEIRO -
+// SAF" (FMF) e "Cruzeiro" (CONMEBOL).
+//
+// IMPORTANTE: a UF só é inferida a partir da federação estadual de origem
+// do jogo (fonte) ou de uma lista curada de clubes CONMEBOL sem ambiguidade
+// - nunca "adivinhada" só pelo nome. Isso evita juntar clubes DIFERENTES
+// que coincidem no nome (ex.: não dá pra juntar "Atlético (MG)" com
+// "Atlético (GO)" só porque os dois se chamam "Atlético"; ou juntar um
+// pequeno clube paulista também chamado "Juventude" com o Juventude (RS)
+// da Série B só porque bateu o nome).
+const UF_DA_FEDERACAO_ESTADUAL = {
+  FMF: "MG", FGF: "GO", FPF: "SP", "FPF API": "SP", FCF: "CE",
+  "FPF-PE": "PE", FBF: "BA", FES: "ES", FFERJ: "RJ", FFMS: "MS",
+};
+
+// Clubes brasileiros que disputam competições continentais (CONMEBOL) sem
+// UF no nome de origem, mas cuja identidade não é ambígua (nenhum outro
+// clube de ponta disputa essas competições com o mesmo nome). Lista curada
+// manualmente, só com clubes já observados nos dados nessa situação -
+// evita generalizar demais pra nomes que a gente nunca viu vindo assim.
+const UF_CLUBE_CONMEBOL_BR = {
+  flamengo: "RJ", fluminense: "RJ", gremio: "RS", corinthians: "SP",
+  palmeiras: "SP", santos: "SP", "sao paulo": "SP",
+  "red bull bragantino": "SP", mirassol: "SP", cruzeiro: "MG",
+};
+
+function stripSufixoSAF(nomeOriginal) {
+  return nomeOriginal
+    .replace(/\s*-\s*s\.?\s*a\.?\s*f\.?\s*$/i, "")
+    .replace(/\s+s\.?\s*a\.?\s*f\.?\s*$/i, "")
+    .trim();
+}
+
+// Deriva a "chave" de agrupamento (clube + UF, quando dá pra saber a UF)
+// pra decidir depois qual variante de nome vira o rótulo canônico exibido.
+function chaveTimeParaAgrupamento(nomeOriginal, fonte) {
+  const semSAF = stripSufixoSAF(nomeOriginal);
+  const semSAFNorm = normalize(semSAF);
+  const matchUF = semSAFNorm.match(/^(.*)\s+\(([a-z]{2})\)$/);
+  const nomeBase = matchUF ? matchUF[1].trim() : semSAFNorm;
+  const ufExplicita = matchUF ? matchUF[2].toUpperCase() : null;
+  const ufInferida = ufExplicita
+    || UF_DA_FEDERACAO_ESTADUAL[fonte]
+    || UF_CLUBE_CONMEBOL_BR[nomeBase]
+    || null;
+  return {
+    chave: ufInferida ? `${nomeBase} (${ufInferida.toLowerCase()})` : nomeBase,
+    semSAF,
+    ufInferida,
+    tinhaUFExplicita: Boolean(ufExplicita),
+  };
+}
+
+// Olha TODOS os jogos de uma vez (não dá pra decidir por jogo isolado: é
+// preciso ver as variantes de todas as fontes pra escolher a melhor
+// grafia) e monta um mapa "nome bruto exato -> nome canônico".
+function construirMapaCanonicoDeTimes(rawGames) {
+  const candidatosPorChave = new Map(); // chave -> Map(candidato -> contagem)
+  for (const j of rawGames) {
+    for (const nomeOriginal of [j.mandante, j.visitante]) {
+      if (!nomeOriginal) continue;
+      const { chave, semSAF, ufInferida, tinhaUFExplicita } = chaveTimeParaAgrupamento(nomeOriginal, j.fonte);
+      // Rótulo candidato: sempre sem sufixo SAF; se a UF foi inferida (não
+      // vinha explícita no nome original) e o nome não tem UF nenhuma,
+      // sugere já com "(UF)" pra ficar no padrão CBF.
+      const candidato = (ufInferida && !tinhaUFExplicita) ? `${semSAF} (${ufInferida})` : semSAF;
+      if (!candidatosPorChave.has(chave)) candidatosPorChave.set(chave, new Map());
+      const contagens = candidatosPorChave.get(chave);
+      contagens.set(candidato, (contagens.get(candidato) || 0) + 1);
+    }
+  }
+
+  // Escolhe o rótulo canônico de cada chave: prefere grafia com acento e
+  // capitalização normal (não TUDO MAIÚSCULO) sobre variantes sem acento
+  // ou em caixa alta; em empate, a mais frequente nos dados.
+  const canonicoPorChave = new Map();
+  for (const [chave, contagens] of candidatosPorChave) {
+    let melhor = null;
+    let melhorScore = -Infinity;
+    for (const [candidato, contagem] of contagens) {
+      // temAcento checa só a presença de diacríticos (á, ç, ã...) - usar
+      // normalize() aqui seria errado, porque normalize() também baixa a
+      // caixa, e isso faria QUALQUER nome em CAIXA ALTA (mesmo sem nenhum
+      // acento, ex.: "CRUZEIRO") pontuar como "com acento" por engano.
+      const semDiacriticos = candidato.normalize("NFD").replace(/\p{Diacritic}/gu, "");
+      const temAcento = semDiacriticos !== candidato ? 1 : 0;
+      const naoTudoMaiusculo = candidato !== candidato.toUpperCase() ? 1 : 0;
+      const score = naoTudoMaiusculo * 100 + temAcento * 10 + contagem;
+      if (score > melhorScore) {
+        melhorScore = score;
+        melhor = candidato;
+      }
+    }
+    canonicoPorChave.set(chave, melhor);
+  }
+
+  const mapa = new Map();
+  for (const j of rawGames) {
+    for (const nomeOriginal of [j.mandante, j.visitante]) {
+      if (!nomeOriginal || mapa.has(nomeOriginal)) continue;
+      const { chave } = chaveTimeParaAgrupamento(nomeOriginal, j.fonte);
+      mapa.set(nomeOriginal, canonicoPorChave.get(chave) || nomeOriginal);
+    }
+  }
+  return mapa;
+}
+
 function enrichGames(rawGames) {
+  const mapaNomesTimes = construirMapaCanonicoDeTimes(rawGames);
   return rawGames.map((j, index) => {
     const pais = derivePais(j);
     const escopo = deriveEscopo(j);
@@ -1203,6 +1357,16 @@ function enrichGames(rawGames) {
       : ehFPFPE ? (matchStadiumInList(estadioBruto, window.ESTADIOS_PERNAMBUCO || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
       : ehFGF ? (matchStadiumInList(estadioBruto, window.ESTADIOS_GOIAS || []) || findStadiumInfo(estadioBruto, pais, j.mandante))
       : findStadiumInfo(estadioBruto, pais, j.mandante);
+    // Se o estádio casado (nacional ou curado) é de um estado DIFERENTE do
+    // "estado=" explícito gravado pelo scraper no extra, o match é quase
+    // certamente falso positivo por nome parecido (ex.: um estádio genérico
+    // chamado só "Arena" em outro estado batendo por substring com "Arena
+    // Tal Coisa"). Descarta o match inteiro - não só a região, mas também
+    // lat/lng/cidade dele - em vez de confiar parcialmente nele.
+    const estadoExtra = extractEstadoFromExtra(j.extra);
+    if (stadium && estadoExtra && stadium.regiao && normalize(estadoExtra) !== normalize(stadium.regiao)) {
+      stadium = null;
+    }
     let estadioFallback = false;
     if (!stadium && !estadioBruto && pais !== "Brasil") {
       stadium = findDefaultHomeStadium(j.mandante, pais);
@@ -1321,7 +1485,23 @@ function enrichGames(rawGames) {
       categoria,
       estadio: estadioBruto || (estadioFallback ? stadium.nome : ""),
       cidade: cidadeResolvida,
-      regiao: j.regiao || stadium?.regiao || extractEstadoFromExtra(j.extra) || regiaoPorCidade,
+      // Nome canônico do clube (junta variantes como "Cruzeiro (MG)" /
+      // "CRUZEIRO - SAF" / "Cruzeiro" num único rótulo) - ver
+      // construirMapaCanonicoDeTimes. j.mandante/j.visitante (brutos) ainda
+      // são usados acima, antes deste ponto, pra bater com os mapas de
+      // estádio-mandante por federação.
+      mandante: mapaNomesTimes.get(j.mandante) || j.mandante,
+      visitante: mapaNomesTimes.get(j.visitante) || j.visitante,
+      // extractEstadoFromExtra vem antes de stadium?.regiao: o "estado=" do
+      // extra é escrito pelo próprio scraper da federação (fonte confiável
+      // e específica daquele jogo), enquanto stadium?.regiao pode vir do
+      // fallback fuzzy de findStadiumInfo (match por 2+ palavras em comum),
+      // que já colidiu incorretamente (ex.: "Estádio Municipal Manoel
+      // Francisco Ferreira" em Bálsamo/SP casando com "Estádio Municipal
+      // Manoel Ferreira Brito" em Terra Alta/PA por compartilhar "manoel" e
+      // "ferreira"). Mantém stadium?.regiao como fallback para fontes que
+      // não gravam "estado=" no extra.
+      regiao: j.regiao || estadoExtra || stadium?.regiao || regiaoPorCidade,
       lat: j.lat || stadium?.lat || cidadeCoords?.lat || null,
       lng: j.lng || stadium?.lng || cidadeCoords?.lng || null,
       temMapa: Boolean(j.lat && j.lng) || Boolean(stadium?.lat && stadium?.lng) || Boolean(cidadeCoords),
@@ -1419,7 +1599,12 @@ function getFilteredGames() {
     const matchComp = !comp || j.competicao === comp;
     const matchTime = !time || j.mandante === time || j.visitante === time;
     const matchRegiao = showAllTeamMode ? true : (!regiao || j.regiao === regiao);
-    const matchCidade = showAllTeamMode ? true : (!cidade || j.cidade === cidade ||
+    // Comparação normalizada (sem acento/maiúsculas): fontes diferentes
+    // gravam a mesma cidade de formas diferentes (ex.: "São João Del Rei"
+    // vindo do CBF vs "Sao Joao Del Rei" vindo da FMF) - comparar os textos
+    // exatos fazia sumir metade dos jogos de uma cidade dependendo de qual
+    // variante o usuário escolhia no filtro.
+    const matchCidade = showAllTeamMode ? true : (!cidade || normalize(j.cidade) === normalize(cidade) ||
       (cidadeCoords && j.lat && j.lng && distanciaKm(cidadeCoords.lat, cidadeCoords.lng, j.lat, j.lng) <= raioKm));
     const matchData = showAllTeamMode ? true : (!data || j.data === data);
     const matchPeriod = showAllTeamMode ? true : (!activePeriodDays || (j.data >= start && j.data <= end));
@@ -1454,10 +1639,33 @@ function getFilteredGames() {
   return out;
 }
 
+// Junta variantes da mesma cidade escritas de formas diferentes por fontes
+// diferentes (ex.: "São João Del Rei" x "Sao Joao Del Rei") num único item
+// do filtro. Prefere a grafia com acento como rótulo (mais correta/legível)
+// quando houver mais de uma variante para a mesma cidade normalizada.
+function uniqueCidades(items) {
+  const porChave = new Map();
+  for (const valor of items) {
+    if (!valor) continue;
+    const chave = normalize(valor);
+    const atual = porChave.get(chave);
+    if (!atual) {
+      porChave.set(chave, valor);
+      continue;
+    }
+    const atualTemAcento = atual !== normalize(atual);
+    const valorTemAcento = valor !== normalize(valor);
+    if (valorTemAcento && !atualTemAcento) {
+      porChave.set(chave, valor);
+    }
+  }
+  return [...porChave.values()].sort((a, b) => a.localeCompare(b));
+}
+
 function updateDependentCityOptions() {
   const pais = els.filtroPais.value;
   const regiao = els.filtroRegiao.value;
-  const cidades = uniqueSorted(
+  const cidades = uniqueCidades(
     jogosNoEscopoAtivo(jogosEnriquecidos)
       .filter(j => (!pais || j.pais === pais) && (!regiao || j.regiao === regiao))
       .map(j => j.cidade)

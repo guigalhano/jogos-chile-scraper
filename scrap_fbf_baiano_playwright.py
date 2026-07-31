@@ -1114,12 +1114,9 @@ def load_csv_rows(path: Path) -> list[dict]:
 
 
 def row_id(row: dict) -> str:
-    if row.get("id"):
-        return row["id"]
     raw = "|".join([
         row.get("fonte", ""), row.get("competicao", ""), row.get("data", ""),
         row.get("hora", ""), row.get("mandante", ""), row.get("visitante", ""),
-        row.get("estadio", ""), row.get("rodada", ""),
     ])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
@@ -1128,22 +1125,40 @@ def is_valid_row(row: dict) -> bool:
     return bool(row.get("data") and row.get("mandante") and row.get("visitante"))
 
 
+FBF_CODE_RE = re.compile(r"codigo_fbf=(\d+)")
+
+
+def merge_key(row: dict) -> str:
+    """Chave estável de identidade para o merge.
+
+    Jogos do Baianão têm um codigo_fbf fixo que não muda quando o estádio
+    ou o horário são atualizados depois. Usar essa chave evita duplicar o
+    mesmo jogo (versão antiga do estádio + versão nova).
+    """
+    m = FBF_CODE_RE.search(row.get("extra", "") or "")
+    if m:
+        return f"fbf:{m.group(1)}"
+    return row_id(row)
+
+
 def merge_rows(existing: list[dict], new_rows: list[dict]) -> list[dict]:
-    by_id = {}
+    by_key = {}
+
+    def put(r):
+        if not is_valid_row(r):
+            return
+        r["id"] = row_id(r)
+        k = merge_key(r)
+        prev = by_key.get(k)
+        if prev is None or (r.get("atualizado_em", "") >= prev.get("atualizado_em", "")):
+            by_key[k] = r
+
     for r in existing:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        put(r)
     for r in new_rows:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        put(r)
     return sorted(
-        by_id.values(),
+        by_key.values(),
         key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("pais", ""), r.get("competicao", ""), r.get("mandante", ""))
     )
 

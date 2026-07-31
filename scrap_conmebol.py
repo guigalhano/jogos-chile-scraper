@@ -86,6 +86,7 @@ HEADERS = {
 }
 
 FIXTURE_HREF_RE = re.compile(r"/fixture/view/(\d+)")
+CODIGO_CONMEBOL_RE = re.compile(r"codigo_conmebol=(\d+)")
 
 
 @dataclass
@@ -102,17 +103,29 @@ class Partido:
     rodada: str = ""
     url: str = ""
     extra: str = ""
+    fixture_id: str = ""
 
     @property
     def id(self) -> str:
-        raw = "|".join([
-            self.fonte, self.competicao, self.data, self.hora,
-            self.mandante, self.visitante, self.estadio, self.rodada
-        ])
+        # Preferimos o código oficial do fixture (data-fixture-id da CONMEBOL)
+        # como chave de identidade do jogo. Ele é estável mesmo quando outros
+        # campos (estádio, horário "a confirmar" -> confirmado, etc.) mudam
+        # entre uma coleta e outra. Isso evita duplicar o mesmo jogo na base
+        # quando, por exemplo, o estádio é atualizado pela CONMEBOL depois.
+        if self.fixture_id:
+            raw = "|".join([self.fonte, self.competicao, self.fixture_id])
+        else:
+            # Fallback pro esquema antigo, caso não tenhamos o fixture_id
+            # (não deveria acontecer nesse scraper, mas por segurança).
+            raw = "|".join([
+                self.fonte, self.competicao, self.data, self.hora,
+                self.mandante, self.visitante, self.estadio, self.rodada
+            ])
         return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
     def to_row(self) -> dict:
         d = asdict(self)
+        d.pop("fixture_id", None)  # já vai em extra como codigo_conmebol=...; não precisa duplicar na saída
         d["id"] = self.id
         d["atualizado_em"] = datetime.now().isoformat(timespec="seconds")
         return d
@@ -196,6 +209,7 @@ def parse_card(card, competicao_label: str) -> Partido | None:
         estadio=estadio,
         url=url,
         extra="; ".join(extra_parts),
+        fixture_id=str(fixture_id) if fixture_id else "",
     )
 
 
@@ -251,13 +265,18 @@ def load_csv_rows(path: Path) -> list[dict]:
 
 
 def row_id(row: dict) -> str:
-    if row.get("id"):
-        return row["id"]
-    raw = "|".join([
-        row.get("fonte", ""), row.get("competicao", ""), row.get("data", ""),
-        row.get("hora", ""), row.get("mandante", ""), row.get("visitante", ""),
-        row.get("estadio", ""), row.get("rodada", ""),
-    ])
+    # Recalcula sempre (não confia em row["id"] salvo), pra poder migrar
+    # registros antigos gravados com o esquema de ID anterior (que incluía
+    # o estádio) pro novo esquema baseado no codigo_conmebol.
+    m = CODIGO_CONMEBOL_RE.search(row.get("extra", "") or "")
+    if m:
+        raw = "|".join([row.get("fonte", ""), row.get("competicao", ""), m.group(1)])
+    else:
+        raw = "|".join([
+            row.get("fonte", ""), row.get("competicao", ""), row.get("data", ""),
+            row.get("hora", ""), row.get("mandante", ""), row.get("visitante", ""),
+            row.get("estadio", ""), row.get("rodada", ""),
+        ])
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
 
 
@@ -266,19 +285,26 @@ def is_valid_row(row: dict) -> bool:
 
 
 def merge_rows(existing: list[dict], new_rows: list[dict]) -> list[dict]:
-    by_id = {}
+    by_id: dict[str, dict] = {}
+
+    def consider(r: dict) -> None:
+        if not is_valid_row(r):
+            return
+        rid = row_id(r)
+        r["id"] = rid
+        prev = by_id.get(rid)
+        # Se já existe um registro pra esse mesmo jogo (mesmo codigo_conmebol),
+        # mantém o mais recente pelo atualizado_em, em vez de simplesmente
+        # sobrescrever pela ordem de iteração. Isso importa principalmente
+        # ao migrar registros antigos que colapsam pro mesmo id novo.
+        if prev is None or r.get("atualizado_em", "") >= prev.get("atualizado_em", ""):
+            by_id[rid] = r
+
     for r in existing:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        consider(r)
     for r in new_rows:
-        if not is_valid_row(r):
-            continue
-        rid = row_id(r)
-        r["id"] = rid
-        by_id[rid] = r
+        consider(r)
+
     return sorted(
         by_id.values(),
         key=lambda r: (r.get("data", ""), r.get("hora", ""), r.get("pais", ""), r.get("competicao", ""), r.get("mandante", ""))
