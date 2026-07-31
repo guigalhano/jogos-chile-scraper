@@ -1,0 +1,43 @@
+name: Atualizar Jogos do Brasil (CBF)
+
+on:
+  schedule:
+    # Roda diariamente às 3 da manhã (UTC)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests beautifulsoup4 pdfplumber lxml
+      
+      - name: Raspar jogos da CBF
+        run: python3 adicionar_brasil_jogos.py --dias 180
+      
+      - name: Estimar datas
+        run: python3 estimar_datas_rodadas.py
+      
+      - name: Corrigir cidades e nomes
+        run: python3 corrigir_brasil_cidades.py
+      
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/jogos_programados.*
+          if git diff --cached --quiet; then
+            echo "Sem mudanças"
+          else
+            git commit -m "Atualiza jogos do Campeonato Brasileiro (CBF) - $(date -u +'%Y-%m-%d')"
+            git push
+          fi
