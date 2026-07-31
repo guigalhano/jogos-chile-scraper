@@ -1159,13 +1159,20 @@ function derivePais(j) {
 // Federações estaduais/regionais conhecidas (Brasil). Quando aparecem no
 // nome da competição, o jogo é classificado como "Regional" mesmo estando
 // dentro do prefixo "Brasil - ...".
-const REGEX_FEDERACAO_REGIONAL = /\b(FMF|FES|FFERJ|FPF(?:-PA|-PE)?|FCF|FBF|FGF)\b/i;
+const REGEX_FEDERACAO_REGIONAL = /\b(FMF|FES|FFERJ|FPF(?:-PA|-PE)?|FCF|FBF|FGF|FFMS)\b/i;
+
+// Fontes cujo nome de competição não carrega sigla de federação nenhuma (ex.:
+// "Terceirona 2026" do Paraná), então o regex de texto acima nunca bateria -
+// precisa checar a fonte diretamente. Adicione aqui qualquer scraper estadual
+// novo cujo campo "competicao" não siga o padrão "Brasil - SIGLA - ...".
+const FONTES_REGIONAIS_SEM_SIGLA_NO_TEXTO = new Set(["federacaopr.com.br"]);
 
 function deriveEscopo(j) {
   if (j.escopo) return j.escopo;
   const comp = String(j.competicao || "");
   if (/^conmebol\b/i.test(comp)) return "Internacional";
   if (REGEX_FEDERACAO_REGIONAL.test(comp)) return "Regional";
+  if (FONTES_REGIONAIS_SEM_SIGLA_NO_TEXTO.has(j.fonte)) return "Regional";
   return "Nacional";
 }
 

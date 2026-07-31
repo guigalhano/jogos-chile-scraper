@@ -279,6 +279,14 @@ window.ESTADIOS_BRASIL = [
     lng: -34.9086,
   },
   {
+    nome: "Estádio dos Aflitos",
+    aliases: ["aflitos", "estadio elado de barros carvalho", "estadio eladio de barros carvalho"],
+    cidade: "Recife",
+    regiao: "Pernambuco",
+    lat: -8.0377,
+    lng: -34.8913,
+  },
+  {
     nome: "Estádio Rei Pelé",
     aliases: ["rei pelé", "rei pele"],
     cidade: "Maceió",
