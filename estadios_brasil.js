@@ -39,6 +39,14 @@ window.ESTADIOS_BRASIL = [
     lng: -38.5054,
   },
   {
+    nome: "Estádio Nabi Abi Chedid",
+    aliases: ["nabi abi chedid", "estadio nabi abi chedid"],
+    cidade: "Bragança Paulista",
+    regiao: "São Paulo",
+    lat: -22.9526,
+    lng: -46.5411,
+  },
+  {
     nome: "Arena MRV",
     aliases: ["arena mrv"],
     cidade: "Belo Horizonte",
@@ -2794,4 +2802,39 @@ window.ESTADIO_MANDANTE_PADRAO_FPF = {
   "botafogo": { nome: "Estádio Nilton Santos (Engenhão)", cidade: "Rio de Janeiro", regiao: "Rio de Janeiro", lat: -22.8925, lng: -43.23 },
   "atletico-mg": { nome: "Arena MRV", cidade: "Belo Horizonte", regiao: "Minas Gerais", lat: -19.8645, lng: -44.0755 },
   "itabirito-mg": { nome: "Sede do Itabirito EC", cidade: "Itabirito", regiao: "Minas Gerais", lat: -20.2506, lng: -43.8014 },
+};
+
+/*
+  Fallback: jogos do Brasileirão Série A (fonte="CBF") sem estádio/cidade
+  ainda -- principalmente os provisórios da Tabela Básica (ver
+  adicionar_brasil_jogos.py: parse_tabela_basica_pdf), que só têm um range
+  de datas possíveis, nunca o estádio. Usa o estádio-sede de cada clube
+  (mesmo quando não é dono, mas manda a maioria dos jogos ali, ex.: Flamengo
+  no Maracanã). Os valores são texto curto pra casar via matchStadiumInList
+  contra window.ESTADIOS_BRASIL (não precisa duplicar lat/lng aqui).
+
+  Chaves no formato exato que a CBF usa ("Time (UF)", ex.: "Botafogo (RJ)"),
+  normalizado (minúsculo, sem acento) -- ver split_team_uf() no scraper.
+*/
+window.ESTADIO_MANDANTE_PADRAO_CBF = {
+  "athletico (pr)": "Arena da Baixada",
+  "atletico (mg)": "Arena MRV",
+  "bahia (ba)": "Arena Fonte Nova",
+  "botafogo (rj)": "Nilton Santos",
+  "chapecoense (sc)": "Arena Condá",
+  "corinthians (sp)": "Neo Química Arena",
+  "coritiba (pr)": "Couto Pereira",
+  "cruzeiro (mg)": "Mineirão",
+  "flamengo (rj)": "Maracanã",
+  "fluminense (rj)": "Maracanã",
+  "gremio (rs)": "Arena do Grêmio",
+  "internacional (rs)": "Beira-Rio",
+  "mirassol (sp)": "José Maria de Campos Maia",
+  "palmeiras (sp)": "Allianz Parque",
+  "red bull bragantino (sp)": "Nabi Abi Chedid",
+  "remo (pa)": "Mangueirão",
+  "santos (sp)": "Vila Belmiro",
+  "sao paulo (sp)": "Morumbi",
+  "vasco da gama (rj)": "São Januário",
+  "vitoria (ba)": "Barradão",
 };

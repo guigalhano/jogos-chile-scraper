@@ -1449,6 +1449,17 @@ function enrichGames(rawGames) {
         estadioFallback = true;
       }
     }
+    // Jogos do Brasileirão (fonte="CBF") ainda sem estádio confirmado -
+    // principalmente os provisórios da Tabela Básica (só têm um range de
+    // datas possíveis, nunca o estádio). Usa o estádio-sede conhecido do
+    // clube mandante.
+    if (!stadium && !estadioBruto && j.fonte === "CBF" && window.ESTADIO_MANDANTE_PADRAO_CBF) {
+      const chaveEstadio = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_CBF, j.mandante);
+      if (chaveEstadio) {
+        stadium = matchStadiumInList(chaveEstadio, window.ESTADIOS_BRASIL || []);
+        estadioFallback = Boolean(stadium);
+      }
+    }
     // Jogos da FFERJ sempre vem com cidade="Rio de Janeiro" no scraper (valor
     // generico/padrao, nao a cidade real do jogo). Quando achamos um estadio
     // ou clube com cidade especifica (Barra Mansa, Saquarema, Petropolis...),
