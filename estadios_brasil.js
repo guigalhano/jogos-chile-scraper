@@ -2715,6 +2715,15 @@ window.ESTADIOS_BRASIL = [
     lng: -61.7783,
     fonte: "manual/confirmado (estádio do Guaporé FC em Rolim de Moura-RO, Série D — Rondônia Dinâmica)",
   },
+  {
+    nome: "Arena Sicredi",
+    aliases: ["arena sicredi", "estadio joaquim portugal", "joaquim portugal"],
+    cidade: "São João Del Rei",
+    regiao: "Minas Gerais",
+    lat: -21.1275,
+    lng: -44.2434,
+    fonte: "manual/confirmado (estádio do Athletic-MG, Série B — nome oficial Estádio Joaquim Portugal)",
+  },
 ];
 
 /*

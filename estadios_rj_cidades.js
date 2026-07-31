@@ -16,7 +16,7 @@ window.CIDADES_RJ = {
   "sao goncalo": { lat: -22.8268, lng: -43.0539 },
   "petropolis": { lat: -22.5050, lng: -43.1786 },
   "volta redonda": { lat: -22.5231, lng: -44.1042 },
-  "campos dos goytacazes": { lat: -21.7522, lng: -41.3244 },
+  "campos dos goytacazes": { lat: -21.7545, lng: -41.3244 },
   "cabo frio": { lat: -22.8894, lng: -42.0286 },
   "angra dos reis": { lat: -23.0067, lng: -44.3181 },
   "barra mansa": { lat: -22.5439, lng: -44.1739 },
@@ -24,7 +24,6 @@ window.CIDADES_RJ = {
   "teresopolis": { lat: -22.4131, lng: -42.9661 },
   "nova friburgo": { lat: -22.2819, lng: -42.5311 },
   "itaborai": { lat: -22.7439, lng: -42.8592 },
-  "magé": { lat: -22.6553, lng: -43.0419 },
   "mage": { lat: -22.6553, lng: -43.0419 },
   "macae": { lat: -22.3708, lng: -41.7869 },
   "araruama": { lat: -22.8722, lng: -42.3436 },
@@ -33,5 +32,4 @@ window.CIDADES_RJ = {
   "carapebus": { lat: -22.1889, lng: -41.6825 },
   "santo antonio de padua": { lat: -21.5361, lng: -42.1758 },
   "belford roxo": { lat: -22.7642, lng: -43.3994 },
-  "campos dos goytacazes": { lat: -21.7545, lng: -41.3244 },
 };
