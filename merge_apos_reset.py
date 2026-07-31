@@ -49,7 +49,17 @@ import hashlib
 
 
 def is_valid_row(row: dict) -> bool:
-    return bool(row.get("data") and row.get("mandante") and row.get("visitante"))
+    if not (row.get("mandante") and row.get("visitante")):
+        return False
+    if row.get("fonte") == "CBF":
+        # A CBF publica jogos de rodadas futuras com data/hora ainda "A
+        # definir" (depende de TV/mando de campo). adicionar_brasil_jogos.py
+        # já mantém esses jogos de propósito (ver in_window() lá), mas até
+        # agora essa checagem aqui exigia "data" preenchida e descartava
+        # essas linhas de volta bem no passo final do merge, depois do
+        # reset -- ou seja, elas nunca chegavam a ser commitadas de fato.
+        return True
+    return bool(row.get("data"))
 
 
 # Regex genérica: pega qualquer "codigo_xxx=valor" dentro do campo extra.
