@@ -1,5 +1,21 @@
 [
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Fútbol Femenino",
+    "data": "2026-07-17",
+    "hora": "20:00",
+    "mandante": "Universitario de Deportes",
+    "visitante": "Sporting Cristal",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Final",
+    "url": "",
+    "extra": "status=Jugado; placar=3-1",
+    "id": "8133a07f47ae3e9b",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
     "fonte": "federacaopr.com.br",
     "competicao": "Terceirona 2026",
     "data": "2026-07-25",
@@ -62,6 +78,70 @@
     "extra": "",
     "id": "0bac0a1815b3a581",
     "atualizado_em": "2026-08-01T14:22:57"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-07-31",
+    "hora": "11:00",
+    "mandante": "Sport Boys",
+    "visitante": "Alianza Lima",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B",
+    "url": "",
+    "extra": "status=Jugado; placar=3-0",
+    "id": "e0b8afdeffbc701d",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-07-31",
+    "hora": "15:00",
+    "mandante": "Los Chankas",
+    "visitante": "Comerciantes",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=3-2",
+    "id": "282ab9a6183b3d86",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-07-31",
+    "hora": "15:00",
+    "mandante": "Alianza UDH",
+    "visitante": "S. Huancayo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Jugado; placar=1-1",
+    "id": "950b07c2e3f87a54",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-07-31",
+    "hora": "15:00",
+    "mandante": "Patriotas FC",
+    "visitante": "ANBA",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo D",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "939e5a4af9f98c6d",
+    "atualizado_em": "2026-08-01T14:36:47"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -1104,6 +1184,22 @@
     "atualizado_em": "2026-08-01T12:40:30"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-01",
+    "hora": "10:45",
+    "mandante": "Cantolao",
+    "visitante": "César Vallejo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "eaafe6bd887d996d",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Ascenso Femenino",
     "data": "2026-08-01",
@@ -1855,7 +1951,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "7dec273f2df18313",
-    "atualizado_em": "2026-07-31T15:23:18"
+    "atualizado_em": "2026-08-01T14:36:47"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -2104,6 +2200,38 @@
     "atualizado_em": "2026-07-31T17:57:53"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-01",
+    "hora": "13:00",
+    "mandante": "FC Cajamarca",
+    "visitante": "S. Huancayo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "8d13023ffec704ad",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-01",
+    "hora": "13:00",
+    "mandante": "Llacuabamba",
+    "visitante": "San Martín",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "14c1dd8e68a70f4c",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
     "fonte": "AUF",
     "competicao": "Uruguay - Segunda División Profesional",
     "data": "2026-08-01",
@@ -2277,7 +2405,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "01825a9cc2c6d387",
-    "atualizado_em": "2026-07-31T15:23:18"
+    "atualizado_em": "2026-08-01T14:36:47"
   },
   {
     "fonte": "AFA",
@@ -3104,6 +3232,22 @@
     "atualizado_em": "2026-07-26T13:43:52"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-01",
+    "hora": "15:15",
+    "mandante": "Santos FC",
+    "visitante": "Comerciantes FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "49eb45d8572ffd6c",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
     "fonte": "cf3.cl",
     "competicao": "Tercera B - Sur",
     "data": "2026-08-01",
@@ -3256,6 +3400,22 @@
     "extra": "codigo_espn=401885637; status=Scheduled",
     "id": "621e54870fab3cfc",
     "atualizado_em": "2026-07-31T17:57:53"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-01",
+    "hora": "15:30",
+    "mandante": "Grau",
+    "visitante": "Boys",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "c030d748d762d5b5",
+    "atualizado_em": "2026-08-01T14:36:47"
   },
   {
     "fonte": "FPF",
@@ -3603,6 +3763,22 @@
     "atualizado_em": "2026-07-31T17:57:53"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-01",
+    "hora": "18:00",
+    "mandante": "Cusco FC",
+    "visitante": "UTC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "64c291e9cd6c0f97",
+    "atualizado_em": "2026-08-01T14:36:47"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-08-01",
@@ -3773,6 +3949,22 @@
     "extra": "codigo_espn=401885635; status=Scheduled",
     "id": "81da6fc9ee9a3123",
     "atualizado_em": "2026-07-31T17:57:53"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-01",
+    "hora": "20:30",
+    "mandante": "Alianza Lima",
+    "visitante": "A. Atlético",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "78ca8a5c4c98770a",
+    "atualizado_em": "2026-08-01T14:36:47"
   },
   {
     "fonte": "AUF",
@@ -6158,6 +6350,22 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=513; grupo=07; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "5967e847bc8b0ee5",
     "atualizado_em": "2026-07-31T15:39:34"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-02",
+    "hora": "11:00",
+    "mandante": "Cristal",
+    "visitante": "Juan Pablo II",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "7494031f71c1e85c",
+    "atualizado_em": "2026-08-01T14:36:47"
   },
   {
     "fonte": "ESPN",
