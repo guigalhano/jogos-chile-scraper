@@ -982,14 +982,12 @@ def checar_cobertura(competicao: str, pdf_url: str, matches_raw: list[Partido], 
             datas_futuras.append(dt)
 
     if not datas_futuras:
-        status = "critico"
+        status = "atencao"
         cobertura_ate = None
         dias_restantes = 0
         msg = (
             f"'{competicao}' nao tem NENHUM jogo futuro nesta tabela "
-            f"(pdf: {pdf_url}). Ou a competicao realmente acabou/esta em "
-            f"pausa, ou o link fixo (seed) ficou desatualizado igual "
-            f"aconteceu com a Serie B em julho/2026 -- confira manualmente."
+            f"(pdf: {pdf_url}). Competicao pode ter acabado/estar em pausa."
         )
     else:
         cobertura_ate = max(datas_futuras)
