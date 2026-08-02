@@ -19,8 +19,15 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install requests beautifulsoup4 pdfplumber lxml
-      
+          pip install requests beautifulsoup4 pdfplumber lxml playwright
+
+      - name: Install Playwright browsers
+        run: python3 -m playwright install chromium
+
+      - name: Descobrir PDFs CBF (v2)
+        run: python3 atualizar_pdfs_cbf_pagina_v2.py --todas-competicoes --playwright 2>&1 | tail -50
+        continue-on-error: true
+
       - name: Raspar jogos da CBF
         run: python3 adicionar_brasil_jogos.py --dias 180
       
