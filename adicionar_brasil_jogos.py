@@ -652,6 +652,176 @@ def parse_cbf_pdf(pdf_bytes: bytes, competicao: str, pdf_url: str) -> list[Parti
 
 
 # --------------------------------------------------------------------------
+# "Tabela Básica" da CBF (todas as rodadas da temporada, divulgada em
+# dezembro/janeiro) -- usada só como PREENCHIMENTO PROVISÓRIO para rodadas
+# que a "Tabela Detalhada" (parse_cbf_pdf acima) ainda não cobre.
+#
+# Diferença de formato: a Tabela Básica não tem hora nem estádio -- só um
+# intervalo de até 3 datas possíveis por rodada (ex.: "29/08 (sáb), 30/08
+# (dom) ou 31/08 (seg)"), porque o dia exato de cada jogo só é definido perto
+# da rodada (direitos de TV). Confirmado com o PDF real (26/07/2026): essa
+# tabela NUNCA é atualizada com a data confirmada -- até a rodada 1 (já
+# jogada em janeiro) continua mostrando o range original de datas. Por isso,
+# jogos daqui são sempre marcados extra="status=Provisorio" e nunca devem
+# sobrepor um jogo já confirmado pela Tabela Detalhada (ver filtro em main()
+# e a limpeza automática que remove a linha provisória assim que a Tabela
+# Detalhada trouxer a versão confirmada da mesma rodada).
+#
+# Layout real extraído (pdfplumber, x_tolerance=1/y_tolerance=3), um
+# fragmento de data por linha, intercalado com as linhas de jogo -- às vezes
+# a 2ª/3ª data vem em linha própria, às vezes embutida na frente da linha do
+# próprio jogo, e às vezes é só o dia da semana entre parênteses sem data
+# (continuação) ou uma única data sem "ou" alternativo (rodadas de meio de
+# semana, ex. a última rodada da temporada):
+#   29/08 (sáb),
+#   241 25ª Flamengo RJ x Botafogo RJ
+#   30/08 (dom)
+#   242 25 ou 31/08 Vasco da Gama RJ x Cruzeiro MG
+#   (seg)
+#   243 25 São Paulo SP x Red Bull Bragantino SP
+# Quando a rodada atravessa uma quebra de página, o PDF repete o fragmento
+# de data na continuação (mesma rodada) -- por isso os fragmentos são
+# deduplicados antes de montar o texto final.
+SEED_TABELA_BASICA_URLS = [
+    ("Brasil - Série A", "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_BA_sica_Brasileiro_SA_rie_A_2026_d64996b4d8.pdf"),
+]
+
+_MES_DIA_RE = r"\d{1,2}/\d{1,2}"
+_DOW_RE = r"[A-Za-zÀ-Úà-ú]{3}"
+TABELA_BASICA_FRAG_DATA_RE = re.compile(rf"^(?:ou\s+)?{_MES_DIA_RE}(?:\s*\({_DOW_RE}\))?\,?$", re.IGNORECASE)
+TABELA_BASICA_FRAG_DIA_RE = re.compile(rf"^\(?{_DOW_RE}\)?$", re.IGNORECASE)
+TABELA_BASICA_ROW_RE = re.compile(
+    rf"^(?P<ref>\d{{2,4}})\s+(?P<rod>\d{{1,3}})(?P<marca>ª)?\s+"
+    # Fragmento de data embutido na própria linha do jogo, em 3 variações
+    # confirmadas no PDF real: "ou 31/08" / "ou 31/08 (seg)" (rodada 25),
+    # "(dom)" sozinho -- dia da semana sem data, continuando um fragmento
+    # anterior (rodada 37) -- ou "02/12 (qua)" sem "ou" -- rodada que só tem
+    # 1 dia possível, sem alternativa (rodada 38, última do ano).
+    rf"(?:(?P<frag_embutido>(?:ou\s+)?{_MES_DIA_RE}(?:\s*\({_DOW_RE}\))?|\({_DOW_RE}\))\s+)?"
+    rf"(?P<resto>.+)$"
+)
+TABELA_BASICA_DATA_EXTRAI_RE = re.compile(r"(\d{1,2})/(\d{1,2})")
+
+
+def parse_tabela_basica_pdf(pdf_bytes: bytes, competicao: str, pdf_url: str) -> list[Partido]:
+    if pdfplumber is None:
+        return []
+
+    out: list[Partido] = []
+    try:
+        with pdfplumber.open(BytesIO(pdf_bytes)) as pdf:
+            full_text_parts = []
+            for page in pdf.pages:
+                try:
+                    text = page.extract_text(x_tolerance=1, y_tolerance=3) or ""
+                except Exception:
+                    text = ""
+                full_text_parts.append(text)
+            full_text = "\n".join(full_text_parts)
+
+        year_match = EDICAO_RE.search(full_text)
+        year = int(year_match.group(1)) if year_match else date.today().year
+
+        # Passo 1: percorre tudo e agrupa os fragmentos de data por rodada,
+        # e coleta as linhas de jogo (rodada + texto restante "Time UF x Time UF").
+        frags_por_rodada: dict[str, list[str]] = {}
+        frags_pendentes: list[str] = []
+        rodada_atual: str | None = None
+        linhas_jogo: list[tuple[str, str]] = []
+
+        for raw_line in full_text.splitlines():
+            line = clean_text(raw_line)
+            if not line:
+                continue
+            if TABELA_BASICA_FRAG_DATA_RE.match(line) or TABELA_BASICA_FRAG_DIA_RE.match(line):
+                # Um fragmento de data solto sempre pertence à rodada da
+                # PRÓXIMA linha de jogo que aparecer (seja ela continuação da
+                # rodada atual, ex. "30/08 (dom)" entre as linhas 241 e 242,
+                # ou já a primeira linha da rodada seguinte, ex. "05/09
+                # (sáb)," depois da última linha da rodada 25 e antes da
+                # primeira da 26) -- nunca da rodada que já está terminando.
+                # Por isso só entra no dicionário quando a PRÓXIMA linha de
+                # jogo for lida (flush abaixo), nunca direto aqui.
+                frags_pendentes.append(line)
+                continue
+            m = TABELA_BASICA_ROW_RE.match(line)
+            if not m:
+                continue  # cabeçalho/rodapé (EMISSAO, DATA ATUALIZAÇÃO, etc.)
+            rod = m.group("rod")
+            if rod != rodada_atual:
+                rodada_atual = rod
+                frags_por_rodada.setdefault(rod, [])
+            frags_por_rodada[rod].extend(frags_pendentes)
+            frags_pendentes = []
+            if m.group("frag_embutido"):
+                frags_por_rodada[rod].append(m.group("frag_embutido"))
+            linhas_jogo.append((rod, m.group("resto")))
+
+        # Passo 2: monta os jogos usando o conjunto COMPLETO de fragmentos de
+        # cada rodada (só fecha depois de ler o texto inteiro, porque um
+        # fragmento pode aparecer embutido numa linha de jogo posterior da
+        # mesma rodada, como "ou 31/08" na linha 242 acima).
+        for rod, resto in linhas_jogo:
+            parts = CBF_VS_RE.split(resto, maxsplit=1)
+            if len(parts) != 2:
+                continue
+            mandante, mandante_uf = split_team_uf(parts[0].split())
+            visitante, visitante_uf = split_team_uf(parts[1].split())
+            if not (mandante and visitante):
+                continue
+
+            # Quando uma rodada atravessa uma quebra de página, o PDF repete
+            # o fragmento de data na continuação (mesma rodada, nova página)
+            # -- dedup preservando a ordem pra não duplicar no texto final.
+            frags = list(dict.fromkeys(frags_por_rodada.get(rod, [])))
+            datas_dd_mm = TABELA_BASICA_DATA_EXTRAI_RE.findall(" ".join(frags))
+            datas_iso = []
+            for dd, mm in datas_dd_mm:
+                try:
+                    datas_iso.append(date(year, int(mm), int(dd)).isoformat())
+                except Exception:
+                    continue
+            if not datas_iso:
+                continue
+            data_provisoria = min(datas_iso)
+            texto_range = clean_text(" ".join(frags))
+
+            extra = [
+                "status=Provisorio",
+                f"data_provisoria={texto_range}" if texto_range else "",
+                "fonte_dados=tabela_basica",
+                "pais=Brasil",
+            ]
+            extra = "; ".join(e for e in extra if e)
+
+            out.append(Partido(
+                fonte="CBF",
+                competicao=competicao,
+                data=data_provisoria,
+                hora="",
+                mandante=f"{mandante} ({mandante_uf})" if mandante_uf else mandante,
+                visitante=f"{visitante} ({visitante_uf})" if visitante_uf else visitante,
+                estadio="",
+                cidade="",
+                rodada=f"Rodada {rod}",
+                url=pdf_url,
+                extra=extra,
+            ))
+    except Exception as e:
+        print(f"[WARN] Erro lendo Tabela Básica {pdf_url}: {e}", file=sys.stderr)
+
+    return dedupe(out)
+
+
+def chave_confronto(mandante: str, visitante: str, competicao: str) -> tuple[str, str, str]:
+    """Identidade de um confronto sem depender de data/hora (que na Tabela
+    Básica é só uma estimativa) -- usada tanto pra evitar adicionar um jogo
+    provisório quando já existe um confirmado, quanto pra limpar o
+    provisório depois que o confirmado chegar."""
+    return (norm(mandante), norm(visitante), competicao)
+
+
+# --------------------------------------------------------------------------
 # Fallback simples para federações estaduais (best-effort)
 # --------------------------------------------------------------------------
 
@@ -925,19 +1095,65 @@ def main() -> None:
     # Complemento best-effort: federações estaduais (pode retornar 0 se bloquearem bots)
     all_new.extend(parse_extra_html_sources(desde, ate, args.incluir_passados))
 
-    rows_new = [m.to_row() for m in dedupe(all_new)]
-
     current_json = OUT_DIR / "jogos_programados.json"
     current_csv = OUT_DIR / "jogos_programados.csv"
     history_csv = OUT_DIR / "historico_jogos.csv"
-
     current_existing = load_json_rows(current_json)
-    merged_current = merge_rows(current_existing, rows_new)
-    current_json.write_text(json.dumps(merged_current, ensure_ascii=False, indent=2), encoding="utf-8")
-    write_csv(current_csv, merged_current)
 
+    # Tabela Básica: só preenche rodadas que a Tabela Detalhada ainda não
+    # cobre (ver docstring de parse_tabela_basica_pdf). Confrontos que já têm
+    # uma linha confirmada (existente ou vinda da Tabela Detalhada nesta
+    # mesma rodada do script) não recebem a versão provisória.
+    confrontos_confirmados = {
+        chave_confronto(r.get("mandante", ""), r.get("visitante", ""), r.get("competicao", ""))
+        for r in current_existing
+        if "status=Provisorio" not in (r.get("extra") or "")
+    }
+    confrontos_confirmados |= {chave_confronto(m.mandante, m.visitante, m.competicao) for m in all_new}
+
+    print("[INFO] Buscando Tabela Básica da CBF (preenchimento provisório de rodadas futuras)...")
+    for competicao, pdf_url in SEED_TABELA_BASICA_URLS:
+        try:
+            pdf_bytes = fetch_bytes(pdf_url)
+            provisorios = parse_tabela_basica_pdf(pdf_bytes, competicao, pdf_url)
+            provisorios = [
+                m for m in provisorios
+                if chave_confronto(m.mandante, m.visitante, m.competicao) not in confrontos_confirmados
+                and in_window(m, desde, ate, args.incluir_passados)
+            ]
+            print(f"[OK] {competicao} (Tabela Básica) -> {len(provisorios)} jogos provisórios novos | {pdf_url}")
+            all_new.extend(provisorios)
+        except Exception as e:
+            print(f"[WARN] Falha ao baixar/processar Tabela Básica {pdf_url}: {e}", file=sys.stderr)
+
+    rows_new = [m.to_row() for m in dedupe(all_new)]
+
+    merged_current = merge_rows(current_existing, rows_new)
     history_existing = load_csv_rows(history_csv)
     merged_history = merge_rows(history_existing, rows_new)
+
+    # Limpeza automática: remove qualquer linha "Provisorio" (Tabela Básica)
+    # cujo confronto já tenha uma versão confirmada no mesmo conjunto -- é
+    # assim que uma rodada provisória "vira" a confirmada quando a Tabela
+    # Detalhada finalmente publica a data exata (evita ficar com as duas
+    # linhas do mesmo jogo lado a lado pra sempre).
+    def limpar_provisorios_confirmados(rows: list[dict]) -> list[dict]:
+        confirmados = {
+            chave_confronto(r.get("mandante", ""), r.get("visitante", ""), r.get("competicao", ""))
+            for r in rows
+            if "status=Provisorio" not in (r.get("extra") or "")
+        }
+        return [
+            r for r in rows
+            if "status=Provisorio" not in (r.get("extra") or "")
+            or chave_confronto(r.get("mandante", ""), r.get("visitante", ""), r.get("competicao", "")) not in confirmados
+        ]
+
+    merged_current = limpar_provisorios_confirmados(merged_current)
+    merged_history = limpar_provisorios_confirmados(merged_history)
+
+    current_json.write_text(json.dumps(merged_current, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_csv(current_csv, merged_current)
     write_csv(history_csv, merged_history)
 
     print(f"\nBrasil adicionados/atualizados: {len(rows_new)}")

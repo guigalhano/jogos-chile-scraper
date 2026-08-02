@@ -1159,13 +1159,20 @@ function derivePais(j) {
 // Federações estaduais/regionais conhecidas (Brasil). Quando aparecem no
 // nome da competição, o jogo é classificado como "Regional" mesmo estando
 // dentro do prefixo "Brasil - ...".
-const REGEX_FEDERACAO_REGIONAL = /\b(FMF|FES|FFERJ|FPF(?:-PA|-PE)?|FCF|FBF|FGF)\b/i;
+const REGEX_FEDERACAO_REGIONAL = /\b(FMF|FES|FFERJ|FPF(?:-PA|-PE)?|FCF|FBF|FGF|FFMS)\b/i;
+
+// Fontes cujo nome de competição não carrega sigla de federação nenhuma (ex.:
+// "Terceirona 2026" do Paraná), então o regex de texto acima nunca bateria -
+// precisa checar a fonte diretamente. Adicione aqui qualquer scraper estadual
+// novo cujo campo "competicao" não siga o padrão "Brasil - SIGLA - ...".
+const FONTES_REGIONAIS_SEM_SIGLA_NO_TEXTO = new Set(["federacaopr.com.br"]);
 
 function deriveEscopo(j) {
   if (j.escopo) return j.escopo;
   const comp = String(j.competicao || "");
   if (/^conmebol\b/i.test(comp)) return "Internacional";
   if (REGEX_FEDERACAO_REGIONAL.test(comp)) return "Regional";
+  if (FONTES_REGIONAIS_SEM_SIGLA_NO_TEXTO.has(j.fonte)) return "Regional";
   return "Nacional";
 }
 
@@ -1447,6 +1454,17 @@ function enrichGames(rawGames) {
       if (encontrado) {
         stadium = encontrado;
         estadioFallback = true;
+      }
+    }
+    // Jogos do Brasileirão (fonte="CBF") ainda sem estádio confirmado -
+    // principalmente os provisórios da Tabela Básica (só têm um range de
+    // datas possíveis, nunca o estádio). Usa o estádio-sede conhecido do
+    // clube mandante.
+    if (!stadium && !estadioBruto && j.fonte === "CBF" && window.ESTADIO_MANDANTE_PADRAO_CBF) {
+      const chaveEstadio = buscaMandantePadrao(window.ESTADIO_MANDANTE_PADRAO_CBF, j.mandante);
+      if (chaveEstadio) {
+        stadium = matchStadiumInList(chaveEstadio, window.ESTADIOS_BRASIL || []);
+        estadioFallback = Boolean(stadium);
       }
     }
     // Jogos da FFERJ sempre vem com cidade="Rio de Janeiro" no scraper (valor
