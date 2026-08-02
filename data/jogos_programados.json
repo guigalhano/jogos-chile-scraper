@@ -977,6 +977,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-07-31",
+    "hora": "17:00",
+    "mandante": "Portuguesa",
+    "visitante": "Carabobo",
+    "pais": "Venezuela",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401902712; status=Full Time; placar=1-0",
+    "id": "c3c18385ae58934c",
+    "atualizado_em": "2026-08-02T16:11:51"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-07-31",
     "hora": "17:30",
@@ -990,6 +1006,22 @@
     "extra": "codigo_espn=401873324; status=Full Time; placar=1-1",
     "id": "b75eca8b708695bb",
     "atualizado_em": "2026-08-02T15:56:48"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-07-31",
+    "hora": "18:30",
+    "mandante": "Anzoátegui FC",
+    "visitante": "Deportivo Táchira",
+    "pais": "Venezuela",
+    "cidade": "Puerto La Cruz",
+    "estadio": "Estadio Olímpico General José Antonio Anzoátegui",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401902711; status=Postponed",
+    "id": "626372062f639eb5",
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -1214,6 +1246,38 @@
     "extra": "codigo_espn=401877852; status=Full Time; placar=1-2",
     "id": "5a0b2c9cae82db98",
     "atualizado_em": "2026-08-02T14:54:48"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-08-01",
+    "hora": "17:00",
+    "mandante": "Monagas SC",
+    "visitante": "Deportivo La Guaira",
+    "pais": "Venezuela",
+    "cidade": "Maturin",
+    "estadio": "Estadio Monumental de Maturín",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401902709; status=Full Time; placar=1-2",
+    "id": "912bc127226bbefd",
+    "atualizado_em": "2026-08-02T16:11:51"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-08-01",
+    "hora": "17:00",
+    "mandante": "Trujillanos",
+    "visitante": "UCV FC",
+    "pais": "Venezuela",
+    "cidade": "Valera",
+    "estadio": "Estadio José Alberto Pérez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401902710; status=Full Time; placar=2-0",
+    "id": "8f394d56ee92f2b3",
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -4683,7 +4747,7 @@
     "url": "",
     "extra": "codigo_espn=401902708; status=Scheduled",
     "id": "a41c674b933c5198",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -4873,7 +4937,7 @@
     "url": "",
     "extra": "codigo_espn=401902707; status=Scheduled",
     "id": "06afa9384556acf5",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "AFA",
@@ -5395,7 +5459,7 @@
     "url": "",
     "extra": "codigo_espn=401902706; status=Scheduled",
     "id": "b62071db204a5290",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "AFA",
@@ -6018,7 +6082,7 @@
     "url": "",
     "extra": "codigo_espn=401903391; status=Scheduled",
     "id": "270960f32e383c8f",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -6050,7 +6114,7 @@
     "url": "",
     "extra": "codigo_espn=401903390; status=Scheduled",
     "id": "db5de2a6738d9c4b",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -6082,7 +6146,7 @@
     "url": "",
     "extra": "codigo_espn=401903389; status=Scheduled",
     "id": "0f82b8944d4c4687",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "cf3.cl",
@@ -6312,7 +6376,7 @@
     "url": "",
     "extra": "codigo_espn=401903392; status=Postponed",
     "id": "bd84b458fbd93446",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -6328,7 +6392,7 @@
     "url": "",
     "extra": "codigo_espn=401903381; status=Postponed",
     "id": "b7a0264f80da080d",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -6344,7 +6408,7 @@
     "url": "",
     "extra": "codigo_espn=401903395; status=Postponed",
     "id": "bd8e34a4ab16635b",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -6360,7 +6424,7 @@
     "url": "",
     "extra": "codigo_espn=401903393; status=Postponed",
     "id": "26806a2618810dd9",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -6376,7 +6440,7 @@
     "url": "",
     "extra": "codigo_espn=401903396; status=Postponed",
     "id": "0f93deaba741e11f",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -6392,7 +6456,7 @@
     "url": "",
     "extra": "codigo_espn=401903394; status=Postponed",
     "id": "0d9e284aa6125b83",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -6408,7 +6472,7 @@
     "url": "",
     "extra": "codigo_espn=401903380; status=Postponed",
     "id": "10e6bbbb6e9500cd",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "AFA",
@@ -6803,7 +6867,7 @@
     "url": "",
     "extra": "codigo_espn=401903379; status=Scheduled",
     "id": "7373d5a6c8e81ff9",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "CBF",
@@ -7343,7 +7407,7 @@
     "url": "",
     "extra": "codigo_espn=401903388; status=Scheduled",
     "id": "8bdbe9905d49eb6e",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -7359,7 +7423,7 @@
     "url": "",
     "extra": "codigo_espn=401903387; status=Scheduled",
     "id": "70926e7007478b38",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -7375,7 +7439,7 @@
     "url": "",
     "extra": "codigo_espn=401903386; status=Scheduled",
     "id": "d0c8e090babf978c",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "AFA",
@@ -13755,7 +13819,7 @@
     "url": "",
     "extra": "codigo_espn=401903385; status=Scheduled",
     "id": "49787e64e9a2ae8e",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -13771,7 +13835,7 @@
     "url": "",
     "extra": "codigo_espn=401903374; status=Scheduled",
     "id": "2c308d0aebb2aafb",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -13787,7 +13851,7 @@
     "url": "",
     "extra": "codigo_espn=401903375; status=Scheduled",
     "id": "ddda03367cb50ec0",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -13803,7 +13867,7 @@
     "url": "",
     "extra": "codigo_espn=401903377; status=Scheduled",
     "id": "4605d2f077ac0be7",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -13819,7 +13883,7 @@
     "url": "",
     "extra": "codigo_espn=401903376; status=Scheduled",
     "id": "5907c792efa12b20",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -13835,7 +13899,7 @@
     "url": "",
     "extra": "codigo_espn=401903364; status=Scheduled",
     "id": "ceb34f275e285989",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -13851,7 +13915,7 @@
     "url": "",
     "extra": "codigo_espn=401903378; status=Scheduled",
     "id": "2605440585069d30",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -20612,7 +20676,7 @@
     "url": "",
     "extra": "codigo_espn=401903363; status=Scheduled",
     "id": "1df3b9c647a5ca5e",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -20628,7 +20692,7 @@
     "url": "",
     "extra": "codigo_espn=401903361; status=Scheduled",
     "id": "86fe01aa90aaa375",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -20644,7 +20708,7 @@
     "url": "",
     "extra": "codigo_espn=401903372; status=Scheduled",
     "id": "22c918ada3f46566",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -20660,7 +20724,7 @@
     "url": "",
     "extra": "codigo_espn=401903362; status=Scheduled",
     "id": "1f34acb55c70217c",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -20676,7 +20740,7 @@
     "url": "",
     "extra": "codigo_espn=401903359; status=Scheduled",
     "id": "9b289ac7972adbd9",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -20692,7 +20756,7 @@
     "url": "",
     "extra": "codigo_espn=401903373; status=Scheduled",
     "id": "fd80ae9a0fb30b8f",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -20708,7 +20772,7 @@
     "url": "",
     "extra": "codigo_espn=401903360; status=Scheduled",
     "id": "eed2e11beaadf598",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "FMF",
@@ -26634,7 +26698,7 @@
     "url": "",
     "extra": "codigo_espn=401903358; status=Scheduled",
     "id": "c6058dd0b0bd408c",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -26650,7 +26714,7 @@
     "url": "",
     "extra": "codigo_espn=401903357; status=Scheduled",
     "id": "5910e3d8e2eebea7",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -26666,7 +26730,7 @@
     "url": "",
     "extra": "codigo_espn=401903367; status=Scheduled",
     "id": "4fcb5d44c8d1faaf",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -26682,7 +26746,7 @@
     "url": "",
     "extra": "codigo_espn=401903371; status=Scheduled",
     "id": "3c528c7f51dbabc8",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -26698,7 +26762,7 @@
     "url": "",
     "extra": "codigo_espn=401903368; status=Scheduled",
     "id": "5b05673ca97f60b1",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -26714,7 +26778,7 @@
     "url": "",
     "extra": "codigo_espn=401903370; status=Scheduled",
     "id": "457554928bf98f2c",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -26730,7 +26794,7 @@
     "url": "",
     "extra": "codigo_espn=401903369; status=Scheduled",
     "id": "8f4bec6cf6ab7d06",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "FPF",
@@ -32024,7 +32088,7 @@
     "url": "",
     "extra": "codigo_espn=401903353; status=Scheduled",
     "id": "73c13ccb74c7a891",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32040,7 +32104,7 @@
     "url": "",
     "extra": "codigo_espn=401903366; status=Scheduled",
     "id": "0129ce26caa8a5fa",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32056,7 +32120,7 @@
     "url": "",
     "extra": "codigo_espn=401903354; status=Scheduled",
     "id": "6f1bd22843e2f312",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32072,7 +32136,7 @@
     "url": "",
     "extra": "codigo_espn=401903344; status=Scheduled",
     "id": "cddc2881e9a8b4b2",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32088,7 +32152,7 @@
     "url": "",
     "extra": "codigo_espn=401903356; status=Scheduled",
     "id": "b0f44ad8399e451d",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32104,7 +32168,7 @@
     "url": "",
     "extra": "codigo_espn=401903365; status=Scheduled",
     "id": "949983f53343a635",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32120,7 +32184,7 @@
     "url": "",
     "extra": "codigo_espn=401903355; status=Scheduled",
     "id": "baad303612b88c9d",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -32912,7 +32976,7 @@
     "url": "",
     "extra": "codigo_espn=401903340; status=Scheduled",
     "id": "59f0bcf23579ce46",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32928,7 +32992,7 @@
     "url": "",
     "extra": "codigo_espn=401903352; status=Scheduled",
     "id": "3f72c113e2a83a43",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32944,7 +33008,7 @@
     "url": "",
     "extra": "codigo_espn=401903342; status=Scheduled",
     "id": "8e0120288e618d5d",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32960,7 +33024,7 @@
     "url": "",
     "extra": "codigo_espn=401903341; status=Scheduled",
     "id": "6f2e7f9be4e8674f",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32976,7 +33040,7 @@
     "url": "",
     "extra": "codigo_espn=401903351; status=Scheduled",
     "id": "ce9117190bb33912",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -32992,7 +33056,7 @@
     "url": "",
     "extra": "codigo_espn=401903343; status=Scheduled",
     "id": "2587ad719d8279d9",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -33008,7 +33072,7 @@
     "url": "",
     "extra": "codigo_espn=401903350; status=Scheduled",
     "id": "001a99f738a1a573",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "FGF",
@@ -36212,7 +36276,7 @@
     "url": "",
     "extra": "codigo_espn=401903337; status=Scheduled",
     "id": "feb3a17a2f263e6d",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -36228,7 +36292,7 @@
     "url": "",
     "extra": "codigo_espn=401903336; status=Scheduled",
     "id": "723cfac36fdf9749",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -36244,7 +36308,7 @@
     "url": "",
     "extra": "codigo_espn=401903339; status=Scheduled",
     "id": "ef9fb5214b8b5eab",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -36260,7 +36324,7 @@
     "url": "",
     "extra": "codigo_espn=401903348; status=Scheduled",
     "id": "947adcbba8aabfa4",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -36276,7 +36340,7 @@
     "url": "",
     "extra": "codigo_espn=401903338; status=Scheduled",
     "id": "1c3b4e8f1e29d4f5",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -36292,7 +36356,7 @@
     "url": "",
     "extra": "codigo_espn=401903347; status=Scheduled",
     "id": "845908da836cdcc1",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -36308,7 +36372,7 @@
     "url": "",
     "extra": "codigo_espn=401903349; status=Scheduled",
     "id": "5bd3d1ac792dd8b8",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -40764,7 +40828,7 @@
     "url": "",
     "extra": "codigo_espn=401903324; status=Scheduled",
     "id": "429975e6a862012e",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -40780,7 +40844,7 @@
     "url": "",
     "extra": "codigo_espn=401903333; status=Scheduled",
     "id": "bd2362405dcc8446",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -40796,7 +40860,7 @@
     "url": "",
     "extra": "codigo_espn=401903346; status=Scheduled",
     "id": "aee8569f8f404651",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -40812,7 +40876,7 @@
     "url": "",
     "extra": "codigo_espn=401903334; status=Scheduled",
     "id": "709a3c588a0e3492",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -40828,7 +40892,7 @@
     "url": "",
     "extra": "codigo_espn=401903323; status=Scheduled",
     "id": "ab1f1709add2faae",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -40844,7 +40908,7 @@
     "url": "",
     "extra": "codigo_espn=401903345; status=Scheduled",
     "id": "319b6c239f260450",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -40860,7 +40924,7 @@
     "url": "",
     "extra": "codigo_espn=401903335; status=Scheduled",
     "id": "c3d6437a8f3f4d4d",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "FMF",
@@ -44434,7 +44498,7 @@
     "url": "",
     "extra": "codigo_espn=401903318; status=Scheduled",
     "id": "2f10c498172a447d",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -44450,7 +44514,7 @@
     "url": "",
     "extra": "codigo_espn=401903322; status=Scheduled",
     "id": "87af7d44821cb722",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -44466,7 +44530,7 @@
     "url": "",
     "extra": "codigo_espn=401903320; status=Scheduled",
     "id": "4cee7580baafec8f",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -44482,7 +44546,7 @@
     "url": "",
     "extra": "codigo_espn=401903321; status=Scheduled",
     "id": "f1e291f0d5687507",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -44498,7 +44562,7 @@
     "url": "",
     "extra": "codigo_espn=401903332; status=Scheduled",
     "id": "76932955223fcb72",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -44514,7 +44578,7 @@
     "url": "",
     "extra": "codigo_espn=401903331; status=Scheduled",
     "id": "b428d8f55f683dd2",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "ESPN",
@@ -44530,7 +44594,7 @@
     "url": "",
     "extra": "codigo_espn=401903319; status=Scheduled",
     "id": "9e584f8e25e0142a",
-    "atualizado_em": "2026-08-01T16:11:23"
+    "atualizado_em": "2026-08-02T16:11:51"
   },
   {
     "fonte": "FMF",
