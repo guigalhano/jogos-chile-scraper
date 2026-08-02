@@ -73,6 +73,11 @@ PAGINAS_CBF_COMPETICOES = [
     "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-b/2026",
     "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-c/2026",
     "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-17/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a-sub-20/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-20/2026",
+    "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-17/2026",
     "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil/masculino/2026",
     "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil/feminino/2026",
 ]
