@@ -1,24 +1,8 @@
 {
-  "gerado_em": "2026-08-02T13:46:18",
+  "gerado_em": "2026-08-03T14:58:39",
   "dias_verificados": 61,
   "total_eventos_lidos_nos_paises_alvo": 0,
   "dias_com_erro": [
-    {
-      "data": "2026-08-02",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-08-02",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-08-02' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "02-08-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
-        }
-      }
-    },
     {
       "data": "2026-08-03",
       "debug": {
@@ -978,24 +962,25 @@
           "amostra_bruta": "{}"
         }
       }
+    },
+    {
+      "data": "2026-10-02",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-10-02",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-10-02' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "02-10-2026",
+          "status": 200,
+          "chaves_raiz": [],
+          "amostra_bruta": "{}"
+        }
+      }
     }
   ],
   "debug_amostra": [
-    {
-      "data": "2026-08-02",
-      "tentativa_1": {
-        "formato": "2026-08-02",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-08-02' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "02-08-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
-      },
-      "n_leagues": 0
-    },
     {
       "data": "2026-08-03",
       "tentativa_1": {
@@ -1890,6 +1875,21 @@
       },
       "tentativa_2": {
         "formato": "01-10-2026",
+        "status": 200,
+        "chaves_raiz": [],
+        "amostra_bruta": "{}"
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-10-02",
+      "tentativa_1": {
+        "formato": "2026-10-02",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-10-02' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "02-10-2026",
         "status": 200,
         "chaves_raiz": [],
         "amostra_bruta": "{}"

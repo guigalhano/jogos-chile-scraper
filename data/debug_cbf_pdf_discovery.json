@@ -1,10 +1,10 @@
 [
   {
     "competicao": "Brasil - Série A",
-    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_31_07_6f5d581e6e.pdf",
-    "bytes_baixados": 879473,
-    "jogos_extraidos_total": 243,
-    "jogos_na_janela_de_datas": 67
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_31_07_8d8e80990f.pdf",
+    "bytes_baixados": 694529,
+    "jogos_extraidos_total": 192,
+    "jogos_na_janela_de_datas": 8
   },
   {
     "competicao": "Brasil - Série B",
@@ -29,8 +29,8 @@
   },
   {
     "competicao": "Brasil - Copa do Brasil",
-    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_08_07_8dfc6382ed.pdf",
-    "bytes_baixados": 393801,
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_03_08_5fbf8754fd.pdf",
+    "bytes_baixados": 393907,
     "jogos_extraidos_total": 142,
     "jogos_na_janela_de_datas": 16
   },
@@ -42,6 +42,13 @@
     "jogos_na_janela_de_datas": 12
   },
   {
+    "competicao": "Brasil - Série A Sub-20",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_31_07_8d8e80990f.pdf",
+    "bytes_baixados": 694529,
+    "jogos_extraidos_total": 192,
+    "jogos_na_janela_de_datas": 8
+  },
+  {
     "competicao": "Brasil - Série B Sub-20",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_B_SUB_20_10_04_v2_1683d773ce.pdf",
     "bytes_baixados": 312367,
@@ -49,30 +56,31 @@
     "jogos_na_janela_de_datas": 0
   },
   {
+    "competicao": "Brasil - Sub-17",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_30_07_2117727c77.pdf",
+    "bytes_baixados": 731284,
+    "jogos_extraidos_total": 156,
+    "jogos_na_janela_de_datas": 106
+  },
+  {
+    "competicao": "Brasil - Feminino Sub-20",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_Sub_20_2026_88d242bfcf.pdf",
+    "bytes_baixados": 577198,
+    "jogos_extraidos_total": 79,
+    "jogos_na_janela_de_datas": 0
+  },
+  {
+    "competicao": "Brasil - Feminino Sub-17",
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_Sub_17_2026_c3a0e6c688.pdf",
+    "bytes_baixados": 478187,
+    "jogos_extraidos_total": 80,
+    "jogos_na_janela_de_datas": 20
+  },
+  {
     "competicao": "Brasil - Feminino A1",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_A1_2026_04a2a21b30.pdf",
     "bytes_baixados": 610016,
     "jogos_extraidos_total": 150,
     "jogos_na_janela_de_datas": 45
-  },
-  {
-    "competicao": "Brasil - Série A Sub-20",
-    "pdf_url": null,
-    "erro": "nenhum PDF encontrado (busca nem seed)"
-  },
-  {
-    "competicao": "Brasil - Sub-17",
-    "pdf_url": null,
-    "erro": "nenhum PDF encontrado (busca nem seed)"
-  },
-  {
-    "competicao": "Brasil - Feminino Sub-20",
-    "pdf_url": null,
-    "erro": "nenhum PDF encontrado (busca nem seed)"
-  },
-  {
-    "competicao": "Brasil - Feminino Sub-17",
-    "pdf_url": null,
-    "erro": "nenhum PDF encontrado (busca nem seed)"
   }
 ]

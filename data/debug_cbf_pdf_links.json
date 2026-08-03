@@ -1,5 +1,19 @@
 [
   {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-17/2026?documento=IMT",
+    "title": "IMT",
+    "origem": "playwright_response_body:a.href",
+    "id": "8b12f93e7a21023a",
+    "tipo": "imt"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-20/2026?documento=IMT",
+    "title": "IMT",
+    "origem": "playwright_response_body:a.href",
+    "id": "926565b3dc903f4a",
+    "tipo": "imt"
+  },
+  {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=IMT",
     "title": "IMT",
     "origem": "playwright_response_body:a.href;playwright_page_content:a.href",
@@ -25,6 +39,20 @@
     "title": "IMT",
     "origem": "playwright_response_body:a.href",
     "id": "b58f698e9e10c40c",
+    "tipo": "imt"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-17/2026?documento=IMT",
+    "title": "IMT",
+    "origem": "playwright_response_body:a.href",
+    "id": "7d497820b01a4e1e",
+    "tipo": "imt"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20/2026?documento=IMT",
+    "title": "IMT",
+    "origem": "playwright_response_body:a.href",
+    "id": "097f2425b36cf178",
     "tipo": "imt"
   },
   {
@@ -63,6 +91,20 @@
     "tipo": "manual"
   },
   {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-17/2026?documento=Documentos Gerais",
+    "title": "Manual de competições",
+    "origem": "playwright_response_body:a.href",
+    "id": "5befc07e347daf83",
+    "tipo": "manual"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-20/2026?documento=Documentos Gerais",
+    "title": "Manual de competições",
+    "origem": "playwright_response_body:a.href",
+    "id": "32c3c11d88964da7",
+    "tipo": "manual"
+  },
+  {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Documentos Gerais",
     "title": "Manual de competições",
     "origem": "playwright_response_body:a.href;playwright_page_content:a.href",
@@ -91,6 +133,20 @@
     "tipo": "manual"
   },
   {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-17/2026?documento=Documentos Gerais",
+    "title": "Manual de competições",
+    "origem": "playwright_response_body:a.href",
+    "id": "36f505a26a5622fb",
+    "tipo": "manual"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20/2026?documento=Documentos Gerais",
+    "title": "Manual de competições",
+    "origem": "playwright_response_body:a.href",
+    "id": "20682585792f0975",
+    "tipo": "manual"
+  },
+  {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil/feminino/2026?documento=Documentos Gerais",
     "title": "Manual de competições",
     "origem": "playwright_response_body:a.href",
@@ -103,6 +159,20 @@
     "origem": "playwright_response_body:a.href",
     "id": "3874240168c6abb7",
     "tipo": "manual"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/PGA_Brasileiro_Feminino_Sub_17_2026_060138a0f8.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "b7c27716d3ecb8f6",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/PGA_Brasileiro_Feminino_Sub_20_2026_9a43afa2fc.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "7759b4ec62a7cec4",
+    "tipo": "pga"
   },
   {
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/PGA_Brasileiro_Serie_A_2026_ae448860b9.pdf",
@@ -123,6 +193,20 @@
     "title": "",
     "origem": "playwright_response_body:regex_pdf",
     "id": "b8b3d33b0160f606",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/PGA_CAMPEONATO_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_2026_2f66b3fb47.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "2e5d3618580dfce7",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/PGA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_ec633b85b6.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "d0c4559ccd5ccf29",
     "tipo": "pga"
   },
   {
@@ -147,46 +231,95 @@
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=070358D8E03B6FF417F44F71E1A16EEF",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=019A3E66F0C968563D3A29CCF18769F5",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "ecbcc1a45c103631",
+    "id": "97570a308b64befc",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=11D9364429316CF5126021ED28C26D65",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=0F70B806972560692808AFAC96F6619E",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "1a78132f35c9ece9",
+    "id": "aac7546fa34c31ad",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2226441B86296BCC040053B287166A16",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=162C18D55DAB67431BC10F7F5C786632",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "1a7b940e3bee5065",
+    "id": "caffe4ffcc65d5ea",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=25068EFA204F6D862AB09953211F6C6A",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=17576631EFF46BD32807719BEE6E6AC1",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "c373d371484151c5",
+    "id": "e378595e0f0309db",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=36A797D439C66FE23467807D38276E1F",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=1BB46CAF664465F71E037B0567EA64EA",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "d77736a2095844ed",
+    "id": "2620176c53064019",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=36FB351A33E463CC048722B3323762C5",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=28D38E176E956F1018CE99BD6F276EF4",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "210309fa2849429e",
+    "id": "a574540e363dc5a5",
     "tipo": "pga"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2F0CF15DBC5261D42AA3E6F7BD7860B9",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "8a845bd14c23a196",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=31E5D7ADF3C06CF3285EC007F2956D6B",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "5a695fdeb63ca135",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=39B7D8DB4D2065E80BA0CF714C9464F5",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "3815df30b1365cca",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=3B1597CA86456EA127FC806087A16F96",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "768c016053a329c4",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=3C9BD0C4FD0460B83720C76EFC0A61A3",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "3f96eb25d1328b8a",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_Brasileiro_Feminino_Sub_17_2026_1d67733988.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "36c9ccbcf5d08504",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_Brasileiro_Feminino_Sub_20_2026_45e8fc878a.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "85e51d3441b064ee",
+    "tipo": "regulamento"
   },
   {
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_Brasileiro_Serie_A_2026_c984f8cf05.pdf",
@@ -217,6 +350,20 @@
     "tipo": "regulamento"
   },
   {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_CAMPEONATO_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_2026_f0154e60d5.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "26668bff14e70939",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_c9c3ecc64f.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "c673cfe15f32c6cd",
+    "tipo": "regulamento"
+  },
+  {
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_Copa_do_Brasil_2026_7c91253458.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf",
@@ -238,45 +385,94 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=025959E4863061361F394E4D87CF6015",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=03D5B49311E0625A35ACA33910EE6316",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "37307313e54d56d0",
+    "id": "a076eb6621b01c44",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=16E5524BC82C6AE3192745E2C9E16BDA",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=0D14B17040FD60B005B4A6DA41AC61FB",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "fdb063e126213aa6",
+    "id": "eadde06d64b32eae",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=17268806F91262262C4A9FAFF8996374",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=0FC404AA8B3865E1360913008A7A6474",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "b02ea1fc1b2ab0a7",
+    "id": "8bdfb299e80ae117",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2D82690B28CA617016837EA2297660D0",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=16272B10D2EB6D5714523CBAD3806CC9",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "d64781463539b6f0",
+    "id": "9a33a79ea01bd988",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2FD89F0B0D956E7137AC88A20CC86FAC",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=1A9439BF67166D260C292E1566CA6C0E",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "6560a2dd38b93db1",
+    "id": "67a4a0512ca8e2bd",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3F601EC8E372670F2AA00961E2A166B5",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2999437AF0F9654C3CE054D0F1336478",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "220ca1053720d9ae",
+    "id": "d93832620e62e6de",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2E985DDE5166602E08E34A7450A0615E",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "2afa9486472d28e6",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2EEC62B478E3620204A1751E793D6305",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "cb4f33a20222ad0e",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2FE1720F092F6133348E65A5086F60D9",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "cefd0642127c0f65",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=34E3A55BB65A61172577B2F1B71A6050",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "b3a4e286d6982b51",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3FF62259E4D866F63E6735F3E52E67E5",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "6e141f96b6dd313d",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-17/2026?documento=Regulamento",
+    "title": "Documentos",
+    "origem": "playwright_response_body:a.href",
+    "id": "488b3e931e065dca",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-20/2026?documento=Regulamento",
+    "title": "Documentos",
+    "origem": "playwright_response_body:a.href",
+    "id": "72134aadeca6ca52",
     "tipo": "regulamento"
   },
   {
@@ -308,6 +504,20 @@
     "tipo": "regulamento"
   },
   {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-17/2026?documento=Regulamento",
+    "title": "Documentos",
+    "origem": "playwright_response_body:a.href",
+    "id": "92dedca0bba7a172",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20/2026?documento=Regulamento",
+    "title": "Documentos",
+    "origem": "playwright_response_body:a.href",
+    "id": "ae67edc6e03b58d5",
+    "tipo": "regulamento"
+  },
+  {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/copa-do-brasil/feminino/2026?documento=Regulamento",
     "title": "Documentos",
     "origem": "playwright_response_body:a.href",
@@ -322,10 +532,38 @@
     "tipo": "regulamento"
   },
   {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_31_07_8d8e80990f.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "be9d47ef23bdbe15",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_30_07_2117727c77.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "cce861a021eff29b",
+    "tipo": "tabela_detalhada"
+  },
+  {
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_31_07_6f5d581e6e.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf;playwright_page_content:a.href;playwright_page_content:regex_pdf",
     "id": "e50e0ba49f9a62f7",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_Sub_17_2026_c3a0e6c688.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "76396eca93df5b97",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_Sub_20_2026_88d242bfcf.pdf",
+    "title": "",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "cb6d9833ca3a3157",
     "tipo": "tabela_detalhada"
   },
   {
@@ -350,10 +588,10 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_08_07_8dfc6382ed.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_03_08_5fbf8754fd.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf",
-    "id": "e1aac0785d46f938",
+    "id": "50053165bf68770f",
     "tipo": "tabela_detalhada"
   },
   {
@@ -371,45 +609,80 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0961D4E375FB61F93441C34A74356021",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0337622D83016F4A2E9D758782506EBB",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "a5773a2732b8a420",
+    "id": "e1626d19a4874a44",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0E739133C80A648D3835869AC91365D2",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0923673AE3EC64773D377090E27B656E",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "5a841e30cd7946c2",
+    "id": "26996d71093ab26c",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=21A0CC81C7C369C533DBDB28C607681C",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=09FA9DAC583364CF27158A06597D65F7",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "711f5923c022c416",
+    "id": "e0f12a3906efa989",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=2E334E1F83BD6D392F4A59B682736C87",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0A37E5C6E95B62B90167F26CE8E1639A",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "41cf421ea3e9f3cc",
+    "id": "34995abfbcd2c860",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=38249E6DA11166BE0E0689C4A0846752",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0BD260BA7AE16F490D1477107B886E4B",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "2391ae51f4a2f851",
+    "id": "0ad75242bc216986",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=385628B548FD680D3B373F1C4925692E",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0E2E6A10730361B01B2C7DBA72D86042",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "0dc2479e5fe765d7",
+    "id": "01e5afd135bcf95c",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=10E3E75A17326EFA128FF0F016B26F6C",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "10ba172210736581",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=21CD266C5CEE624B0E6631C65D4E63FF",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "1165cfcbda9eac5b",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=2F02ADA55AAF65923F45BA0F5B966444",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "b097bab2faf40131",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3A58C5C7D77C63A8242CD26DD629628E",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "7676bdbec5d489ea",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3E33B93EEC5167033825AE94ED386654",
+    "title": "English",
+    "origem": "bing:a.href",
+    "id": "1ab8d1e453d500e0",
     "tipo": "tabela_detalhada"
   },
   {
@@ -417,6 +690,20 @@
     "title": "Vai começar! CBF divulga tabela detalhada da Copa do Nordeste Sub-20",
     "origem": "playwright_page_content:a.href",
     "id": "83a8fd899f28d991",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-17/2026?documento=Tabela Detalhada",
+    "title": "Tabela Detalhada",
+    "origem": "playwright_response_body:a.href",
+    "id": "7cdc6f3822ca3467",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/feminino-sub-20/2026?documento=Tabela Detalhada",
+    "title": "Tabela Detalhada",
+    "origem": "playwright_response_body:a.href",
+    "id": "55ee7c7114ad548f",
     "tipo": "tabela_detalhada"
   },
   {
@@ -445,6 +732,20 @@
     "title": "Tabela Detalhada",
     "origem": "playwright_response_body:a.href",
     "id": "f45eb1cca33b3c8f",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-17/2026?documento=Tabela Detalhada",
+    "title": "Tabela Detalhada",
+    "origem": "playwright_response_body:a.href",
+    "id": "6e9c72b74cf22494",
+    "tipo": "tabela_detalhada"
+  },
+  {
+    "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/sub-20/2026?documento=Tabela Detalhada",
+    "title": "Tabela Detalhada",
+    "origem": "playwright_response_body:a.href",
+    "id": "744ec86a2ceb94d2",
     "tipo": "tabela_detalhada"
   },
   {
