@@ -1,16 +1,21 @@
 [
   {
     "pg": 1,
-    "jogos": 13,
-    "n_match_hrefs": 14
+    "jogos": 18,
+    "n_match_hrefs": 21
   },
   {
     "pg": 2,
+    "jogos": 11,
+    "n_match_hrefs": 11
+  },
+  {
+    "pg": 3,
     "jogos": 0,
     "n_match_hrefs": 0
   },
   {
-    "pg": 3,
+    "pg": 4,
     "jogos": 0,
     "n_match_hrefs": 0
   }
