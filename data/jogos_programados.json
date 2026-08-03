@@ -736,6 +736,22 @@
     "atualizado_em": "2026-08-03T16:15:02"
   },
   {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão Série A",
+    "data": "2026-08-01",
+    "hora": "15:00",
+    "mandante": "Esporte Clube Bahia",
+    "visitante": "Fluminense de Feira",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "Alberto Oliveira",
+    "rodada": "Rodada 22",
+    "url": "https://fbf.org.br/competicoes/4/2026",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=4; origem=carrossel_rodada; placar=2x3",
+    "id": "7db88583cd701b72",
+    "atualizado_em": "2026-08-03T16:29:06"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
     "data": "2026-08-01",
@@ -878,6 +894,22 @@
     "extra": "status=Jugado; placar=0-1",
     "id": "c4ea61a40ce24354",
     "atualizado_em": "2026-08-03T15:46:50"
+  },
+  {
+    "fonte": "FBF",
+    "competicao": "Brasil - FBF - Baianão Série A",
+    "data": "2026-08-02",
+    "hora": "15:00",
+    "mandante": "Fluminense de Feira",
+    "visitante": "SSA FC",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "Alberto Oliveira",
+    "rodada": "Rodada 13",
+    "url": "https://fbf.org.br/competicoes/2/2026",
+    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=2; origem=carrossel_rodada; placar=2x0",
+    "id": "821cc5862ec299e2",
+    "atualizado_em": "2026-08-03T16:29:06"
   },
   {
     "fonte": "FUTBOLPERUANO",
