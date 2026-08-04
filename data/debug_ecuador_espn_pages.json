@@ -1,14 +1,30 @@
 [
   {
     "liga": "LigaPro Serie A",
+    "erro_amostra": "20260720: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.1/scoreboard?dates=20260720"
+  },
+  {
+    "liga": "LigaPro Serie A",
+    "erro_amostra": "20260721: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.1/scoreboard?dates=20260721"
+  },
+  {
+    "liga": "LigaPro Serie A",
     "slug": "ecu.1",
-    "jogos": 84,
-    "erros": 0
+    "jogos": 0,
+    "erros": 76
+  },
+  {
+    "liga": "LigaPro Serie B",
+    "erro_amostra": "20260720: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.2/scoreboard?dates=20260720"
+  },
+  {
+    "liga": "LigaPro Serie B",
+    "erro_amostra": "20260721: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.2/scoreboard?dates=20260721"
   },
   {
     "liga": "LigaPro Serie B",
     "slug": "ecu.2",
     "jogos": 0,
-    "erros": 0
+    "erros": 76
   }
 ]
