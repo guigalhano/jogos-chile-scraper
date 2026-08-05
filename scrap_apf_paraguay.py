@@ -127,6 +127,8 @@ START_URLS = [
     ("Copa de Primera", f"{BASE_URL}/copa-de-primera"),
     ("Copa de Primera", f"{BASE_URL}/torneo-apertura"),
     ("Copa de Primera", f"{BASE_URL}/torneo-clausura"),
+    ("Copa de Primera", f"{BASE_URL}/partidos-apertura"),
+    ("Copa de Primera", f"{BASE_URL}/partidos-clausura"),
     ("División Intermedia", f"{BASE_URL}/intermedia"),
     ("Primera B", f"{BASE_URL}/primera-b"),
     ("Primera C", f"{BASE_URL}/primera-c"),
