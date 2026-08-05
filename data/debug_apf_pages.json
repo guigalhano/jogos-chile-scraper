@@ -2,61 +2,91 @@
   {
     "competicao": "Copa de Primera",
     "url": "https://www.apf.org.py/copa-de-primera",
-    "jogos": 6,
-    "erro": ""
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "Copa de Primera",
     "url": "https://www.apf.org.py/torneo-apertura",
-    "jogos": 6,
-    "erro": ""
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "Copa de Primera",
     "url": "https://www.apf.org.py/torneo-clausura",
-    "jogos": 6,
-    "erro": ""
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "Copa de Primera",
     "url": "https://www.apf.org.py/partidos-apertura",
     "jogos": 0,
-    "erro": ""
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "Copa de Primera",
     "url": "https://www.apf.org.py/partidos-clausura",
-    "jogos": 6,
-    "erro": ""
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "División Intermedia",
     "url": "https://www.apf.org.py/intermedia",
-    "jogos": 8,
-    "erro": ""
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
+  },
+  {
+    "competicao": "Torneo Reserva",
+    "url": "https://www.apf.org.py/reserva",
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "Primera B",
     "url": "https://www.apf.org.py/primera-b",
     "jogos": 0,
-    "erro": ""
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "Primera C",
     "url": "https://www.apf.org.py/primera-c",
     "jogos": 0,
-    "erro": ""
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "Copa Paraguay",
     "url": "https://www.apf.org.py/copa-paraguay",
     "jogos": 0,
-    "erro": ""
+    "erro": "sem __NEXT_DATA__"
+  },
+  {
+    "competicao": "Supercopa Paraguay",
+    "url": "https://www.apf.org.py/supercopa-paraguay",
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
+  },
+  {
+    "competicao": "Futbol Femenino",
+    "url": "https://www.apf.org.py/futbol-femenino",
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
+  },
+  {
+    "competicao": "Campeonato Femenino",
+    "url": "https://www.apf.org.py/campeonato-anual-fem",
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
+  },
+  {
+    "competicao": "Copa Paraguay Femenina",
+    "url": "https://www.apf.org.py/copa-paraguay-fem",
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   },
   {
     "competicao": "Inicio (multi-competição, filtrado por slug)",
     "url": "https://www.apf.org.py/",
-    "jogos": 6,
-    "erro": ""
+    "jogos": 0,
+    "erro": "sem __NEXT_DATA__"
   }
 ]
