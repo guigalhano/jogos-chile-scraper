@@ -1,17 +1,24 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-APF Paraguai - Copa de Primera + División Intermedia + Primera B + Primera C
-+ Copa Paraguay
+APF Paraguai - Copa de Primera + División Intermedia + Reserva + Primera B/C
++ Copa Paraguay + Supercopa + Fútbol Femenino
 
 Páginas:
     https://www.apf.org.py/copa-de-primera
     https://www.apf.org.py/torneo-apertura   (Copa de Primera, mesmo rótulo)
     https://www.apf.org.py/torneo-clausura   (Copa de Primera, mesmo rótulo)
+    https://www.apf.org.py/partidos-apertura (Nova URL para partidos)
+    https://www.apf.org.py/partidos-clausura (Nova URL para partidos)
     https://www.apf.org.py/intermedia
+    https://www.apf.org.py/reserva
     https://www.apf.org.py/primera-b
     https://www.apf.org.py/primera-c
     https://www.apf.org.py/copa-paraguay
+    https://www.apf.org.py/supercopa-paraguay
+    https://www.apf.org.py/futbol-femenino
+    https://www.apf.org.py/campeonato-anual-fem
+    https://www.apf.org.py/copa-paraguay-fem
 
 O site é Next.js (Pages Router). Os dados de cada página, incluindo os
 jogos da rodada atual, vêm embutidos direto no HTML inicial dentro de
@@ -130,9 +137,14 @@ START_URLS = [
     ("Copa de Primera", f"{BASE_URL}/partidos-apertura"),
     ("Copa de Primera", f"{BASE_URL}/partidos-clausura"),
     ("División Intermedia", f"{BASE_URL}/intermedia"),
+    ("Torneo Reserva", f"{BASE_URL}/reserva"),
     ("Primera B", f"{BASE_URL}/primera-b"),
     ("Primera C", f"{BASE_URL}/primera-c"),
     ("Copa Paraguay", f"{BASE_URL}/copa-paraguay"),
+    ("Supercopa Paraguay", f"{BASE_URL}/supercopa-paraguay"),
+    ("Futbol Femenino", f"{BASE_URL}/futbol-femenino"),
+    ("Campeonato Femenino", f"{BASE_URL}/campeonato-anual-fem"),
+    ("Copa Paraguay Femenina", f"{BASE_URL}/copa-paraguay-fem"),
 ]
 
 # A home do site (BASE_URL + "/") tem um módulo à parte que lista os
