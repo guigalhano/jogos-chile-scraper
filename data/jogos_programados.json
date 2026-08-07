@@ -320,6 +320,54 @@
     "atualizado_em": "2026-08-07T13:45:53"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-02",
+    "hora": "15:30",
+    "mandante": "CNI",
+    "visitante": "Binacional",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=En juego; placar=9-0",
+    "id": "afbaa01e11d661e9",
+    "atualizado_em": "2026-08-07T14:14:57"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-08-03",
+    "hora": "15:00",
+    "mandante": "UCV",
+    "visitante": "Carlos Stein",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo A",
+    "url": "",
+    "extra": "status=Jugado; placar=4-0",
+    "id": "1496b47e20a420f5",
+    "atualizado_em": "2026-08-07T14:14:57"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-06",
+    "hora": "15:00",
+    "mandante": "A. Atlético",
+    "visitante": "Cienciano",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=1-0",
+    "id": "da312e157ebd2761",
+    "atualizado_em": "2026-08-07T14:14:57"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Copa Goiás Sub 20 da 1ª Divisão / 2026",
     "data": "2026-08-07",
@@ -365,7 +413,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "727d0dbe922fb2d2",
-    "atualizado_em": "2026-08-06T15:17:27"
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -409,7 +457,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "186ef991cb131ae8",
-    "atualizado_em": "2026-08-06T15:17:27"
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "ESPN",
@@ -426,6 +474,22 @@
     "extra": "codigo_espn=401886118; status=Scheduled",
     "id": "d8593461750d5f33",
     "atualizado_em": "2026-08-03T18:13:06"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-07",
+    "hora": "13:00",
+    "mandante": "Binacional",
+    "visitante": "Unión Minas",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "b0f478b1927ad0f7",
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "AFA",
@@ -1032,7 +1096,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "0a6aba780cba6cfa",
-    "atualizado_em": "2026-08-06T15:17:27"
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -1048,7 +1112,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "55f0b54fea9ab4bd",
-    "atualizado_em": "2026-08-06T15:17:27"
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "ESPN",
@@ -1065,6 +1129,22 @@
     "extra": "codigo_espn=401886111; status=Scheduled",
     "id": "dd15a57d69b93c20",
     "atualizado_em": "2026-08-03T18:13:06"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-07",
+    "hora": "15:15",
+    "mandante": "U. Comercio",
+    "visitante": "Cantolao",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "3be2681e6fad0522",
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "FGF",
@@ -1438,6 +1518,22 @@
     "extra": "codigo_espn=401886110; status=Scheduled",
     "id": "d5cfb4223875d892",
     "atualizado_em": "2026-08-03T18:13:06"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-07",
+    "hora": "20:30",
+    "mandante": "Universitario",
+    "visitante": "Cristal",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "9b009fbfba864419",
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "AFA",
@@ -3527,7 +3623,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "a5fe20a37e6f8792",
-    "atualizado_em": "2026-08-06T15:17:27"
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3942,6 +4038,38 @@
     "extra": "codigo_espn=401886117; status=Scheduled",
     "id": "accd0140ccd55cfd",
     "atualizado_em": "2026-08-03T18:13:06"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-08",
+    "hora": "13:00",
+    "mandante": "UTC",
+    "visitante": "ADT",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "56462211526edfc1",
+    "atualizado_em": "2026-08-07T14:14:57"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-08",
+    "hora": "13:00",
+    "mandante": "Sport Huancayo",
+    "visitante": "Santos FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "5d6f1f58f5e56514",
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "AUF",
@@ -5546,6 +5674,22 @@
     "extra": "codigo_espn=401886116; status=Scheduled",
     "id": "297674e0678809ef",
     "atualizado_em": "2026-08-03T18:13:06"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-08",
+    "hora": "15:30",
+    "mandante": "Juan Pablo II",
+    "visitante": "Grau",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "6be79f405f4a8758",
+    "atualizado_em": "2026-08-07T14:14:57"
   },
   {
     "fonte": "CBF",
