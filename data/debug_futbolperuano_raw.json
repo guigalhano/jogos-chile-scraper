@@ -13,7 +13,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-1",
     "id": "bdb290bd6e570457",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -29,7 +29,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-1",
     "id": "00910b5a4cd85517",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -45,7 +45,7 @@
     "url": "",
     "extra": "status=Jugado; placar=0-0",
     "id": "a2ad82a3e81bfcea",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -61,7 +61,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-1",
     "id": "911ca68ca164b81f",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -75,9 +75,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=2-0",
     "id": "f7ceebf08df4e6dc",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -91,9 +91,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=2-4",
     "id": "0dc68772561b1653",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -109,23 +109,7 @@
     "url": "",
     "extra": "status=Jugado; placar=0-0",
     "id": "fdeb2baa39280a6f",
-    "atualizado_em": "2026-08-09T13:52:29"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 2",
-    "data": "2026-08-08",
-    "hora": "13:00",
-    "mandante": "Sport Huancayo",
-    "visitante": "Santos FC",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo 2",
-    "url": "",
-    "extra": "status=Jugado; placar=2-0",
-    "id": "a632605d942b9bc9",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -139,9 +123,9 @@
     "estadio": "",
     "rodada": "Grupo 1",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=1-1",
     "id": "bc815023de8695f3",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -155,72 +139,88 @@
     "estadio": "",
     "rodada": "Grupo 2",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=1-0",
     "id": "4ad9df33ec73a6c2",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "atualizado_em": "2026-08-10T14:21:33"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-09",
+    "hora": "15:30",
+    "mandante": "Comerciantes FC",
+    "visitante": "Bentín Tacna",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Jugado; placar=2-2",
+    "id": "a862131488df44d0",
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
-    "data": "2026-08-08",
-    "hora": "11:00",
-    "mandante": "Universitario",
-    "visitante": "Alianza Lima",
+    "data": "2026-08-09",
+    "hora": "15:00",
+    "mandante": "J. Aurich",
+    "visitante": "D. Lute",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo A",
+    "url": "",
+    "extra": "status=Jugado; placar=2-1",
+    "id": "ce20e4758518784b",
+    "atualizado_em": "2026-08-10T14:21:33"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-08-09",
+    "hora": "15:30",
+    "mandante": "S. Domingo",
+    "visitante": "Juventus FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo A",
+    "url": "",
+    "extra": "status=Jugado; placar=2-0",
+    "id": "5ad0da023f1b7227",
+    "atualizado_em": "2026-08-10T14:21:33"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-08-09",
+    "hora": "15:30",
+    "mandante": "U. Huaral",
+    "visitante": "S. Pariacoto",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
     "rodada": "Grupo B",
     "url": "",
-    "extra": "status=Jugado; placar=1-1",
-    "id": "adf9c1a460c6868a",
-    "atualizado_em": "2026-08-09T13:52:29"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-08-08",
-    "hora": "15:00",
-    "mandante": "Melgar",
-    "visitante": "Cienciano",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo D",
-    "url": "",
-    "extra": "status=Jugado; placar=3-2",
-    "id": "673cd3681cfe25a0",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "extra": "status=Jugado; placar=0-2",
+    "id": "110b1303f2addd8d",
+    "atualizado_em": "2026-08-10T14:21:33"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
     "data": "2026-08-09",
-    "hora": "14:00",
-    "mandante": "ADT",
-    "visitante": "D. Ucrania",
+    "hora": "15:30",
+    "mandante": "ASA FC",
+    "visitante": "AD Tahuishco",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
     "rodada": "Grupo C",
     "url": "",
-    "extra": "status=Por jugar",
-    "id": "522fe848f7e88ffc",
-    "atualizado_em": "2026-08-09T13:52:29"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-08-09",
-    "hora": "15:00",
-    "mandante": "Municipal Pangoa",
-    "visitante": "Ecosem",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo C",
-    "url": "",
-    "extra": "status=Por jugar",
-    "id": "f37638793502fe3b",
-    "atualizado_em": "2026-08-09T13:52:29"
+    "extra": "status=Jugado; placar=3-0",
+    "id": "e23b853c64c779e3",
+    "atualizado_em": "2026-08-10T14:21:33"
   }
 ]
