@@ -18,7 +18,7 @@
     "url": "https://www.futbolperuano.com/liga-3/",
     "jogos": 4,
     "data_min": "2026-08-09",
-    "data_max": "2026-08-09"
+    "data_max": "2026-08-10"
   },
   {
     "label": "Copa de la Liga",
@@ -37,8 +37,6 @@
   {
     "label": "Fútbol Femenino",
     "url": "https://www.futbolperuano.com/futbol-femenino/resultados",
-    "jogos": 66,
-    "data_min": "2026-03-14",
-    "data_max": "2026-07-17"
+    "erro": "HTTPSConnectionPool(host='www.futbolperuano.com', port=443): Read timed out. (read timeout=45)"
   }
 ]
