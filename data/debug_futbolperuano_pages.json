@@ -37,6 +37,8 @@
   {
     "label": "Fútbol Femenino",
     "url": "https://www.futbolperuano.com/futbol-femenino/resultados",
-    "erro": "HTTPSConnectionPool(host='www.futbolperuano.com', port=443): Read timed out. (read timeout=45)"
+    "jogos": 66,
+    "data_min": "2026-03-14",
+    "data_max": "2026-07-17"
   }
 ]
