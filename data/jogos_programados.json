@@ -1,5 +1,437 @@
 [
   {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-22",
+    "hora": "21:30",
+    "mandante": "Cristal",
+    "visitante": "Bragantino",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Nacional de Lima",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1542",
+    "extra": "codigo_conmebol=1542; status=Played; placar=0-0",
+    "id": "0de7470962933fbf",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-22",
+    "hora": "21:30",
+    "mandante": "Lanús",
+    "visitante": "Cienciano",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Ciudad de Lanús - Néstor Díaz Pérez",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1551",
+    "extra": "codigo_conmebol=1551; status=Played; placar=2-0",
+    "id": "ecd0771f33caf4df",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-23",
+    "hora": "19:00",
+    "mandante": "Bolívar",
+    "visitante": "Grêmio",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Hernando Siles",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1545",
+    "extra": "codigo_conmebol=1545; status=Played; placar=3-2",
+    "id": "e7e8bd32c9e2efd5",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-23",
+    "hora": "21:30",
+    "mandante": "Boca",
+    "visitante": "O'Higgins",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Alberto José Armando",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1536",
+    "extra": "codigo_conmebol=1536; status=Played; placar=1-0",
+    "id": "eac9bfa12198121a",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-23",
+    "hora": "21:30",
+    "mandante": "Santa Fe",
+    "visitante": "Caracas",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Nemesio Camacho El Campín",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1554",
+    "extra": "codigo_conmebol=1554; status=Played; placar=2-0",
+    "id": "843a4af650e69a8d",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-28",
+    "hora": "19:00",
+    "mandante": "Tigre",
+    "visitante": "Nacional",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio José Dellagiovanna",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1509",
+    "extra": "codigo_conmebol=1509; status=Played; placar=1-2",
+    "id": "92dbd9a1bee02983",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-28",
+    "hora": "21:30",
+    "mandante": "Santos",
+    "visitante": "UCV",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estádio Urbano Caldeira",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1524",
+    "extra": "codigo_conmebol=1524; status=Played; placar=4-2",
+    "id": "46c8050531dd9505",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-29",
+    "hora": "19:00",
+    "mandante": "Vasco",
+    "visitante": "Medellín",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estádio São Januário",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1515",
+    "extra": "codigo_conmebol=1515; status=Played; placar=1-0",
+    "id": "ae90d3fe6cebb7c7",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-29",
+    "hora": "21:30",
+    "mandante": "Bragantino",
+    "visitante": "Cristal",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estádio Municipal Cícero de Souza Marques",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1518",
+    "extra": "codigo_conmebol=1518; status=Played; placar=1-0",
+    "id": "b39d83bc003741d3",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-29",
+    "hora": "21:30",
+    "mandante": "Cienciano",
+    "visitante": "Lanús",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Inca Garcilaso de la Vega",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1527",
+    "extra": "codigo_conmebol=1527; status=Played; placar=4-0",
+    "id": "19cb104e6062104b",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-30",
+    "hora": "19:00",
+    "mandante": "Grêmio",
+    "visitante": "Bolívar",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Arena do Grêmio",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1521",
+    "extra": "codigo_conmebol=1521; status=Played; placar=0-1",
+    "id": "1e2147e551934602",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-30",
+    "hora": "21:30",
+    "mandante": "Caracas",
+    "visitante": "Santa Fe",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Metropolitano de Fútbol de Lara",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1530",
+    "extra": "codigo_conmebol=1530; status=Played; placar=0-3",
+    "id": "1817441725fe854b",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-07-30",
+    "hora": "21:30",
+    "mandante": "O'Higgins",
+    "visitante": "Boca",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Codelco El Teniente",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1512",
+    "extra": "codigo_conmebol=1512; status=Played; placar=1-0",
+    "id": "5d47589f6ee1a2ea",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Libertadores",
+    "data": "2026-08-11",
+    "hora": "19:00",
+    "mandante": "Fluminense",
+    "visitante": "Independiente",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Jornalista Mário Filho (Maracanã)",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1608",
+    "extra": "codigo_conmebol=1608; status=Played; placar=0-0",
+    "id": "f6a75705572c5b74",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-08-11",
+    "hora": "19:00",
+    "mandante": "Boca",
+    "visitante": "Recoleta",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Tomás Adolfo Ducó",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1563",
+    "extra": "codigo_conmebol=1563; status=Played; placar=3-1",
+    "id": "7c818ed565d02f48",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Libertadores",
+    "data": "2026-08-11",
+    "hora": "21:30",
+    "mandante": "Estudiantes",
+    "visitante": "Univ Católica",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Jorge Luis Hirschi",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1614",
+    "extra": "codigo_conmebol=1614; status=Played; placar=1-1",
+    "id": "55424006c7f80ac2",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-08-11",
+    "hora": "21:30",
+    "mandante": "Bolívar",
+    "visitante": "São Paulo",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Hernando Siles",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1567",
+    "extra": "codigo_conmebol=1567; status=Played; placar=1-1",
+    "id": "ff274a838e75f637",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Libertadores",
+    "data": "2026-08-12",
+    "hora": "19:00",
+    "mandante": "Palmeiras",
+    "visitante": "Cerro Porteño",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Nubank Parque",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1647",
+    "extra": "codigo_conmebol=1647; status=Played; placar=1-1",
+    "id": "e3952b6e34d87e2c",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Libertadores",
+    "data": "2026-08-12",
+    "hora": "19:00",
+    "mandante": "Platense",
+    "visitante": "Coquimbo",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Ciudad de Vicente López",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1617",
+    "extra": "codigo_conmebol=1617; status=Played; placar=1-1",
+    "id": "7d78075525059d6c",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-08-12",
+    "hora": "19:00",
+    "mandante": "Bragantino",
+    "visitante": "Atlético MG",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estádio Municipal Cícero de Souza Marques",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1560",
+    "extra": "codigo_conmebol=1560; status=Played; placar=0-1",
+    "id": "ad6ac5c081ddbaaa",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-08-12",
+    "hora": "19:00",
+    "mandante": "Tigre",
+    "visitante": "City Torque",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio José Dellagiovanna",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1573",
+    "extra": "codigo_conmebol=1573; status=Played; placar=0-1",
+    "id": "acf5c8adc6fb4009",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Libertadores",
+    "data": "2026-08-12",
+    "hora": "21:30",
+    "mandante": "Cruzeiro",
+    "visitante": "Flamengo",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estádio Governador Magalhães Pinto",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1602",
+    "extra": "codigo_conmebol=1602; status=Played; placar=1-1",
+    "id": "4f5cb331b3085d12",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Libertadores",
+    "data": "2026-08-13",
+    "hora": "19:00",
+    "mandante": "Mirassol",
+    "visitante": "LDU Quito",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estádio José Maria de Campos Maia",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1611",
+    "extra": "codigo_conmebol=1611; status=Played; placar=1-1",
+    "id": "33cabed6e80fa876",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-08-13",
+    "hora": "19:00",
+    "mandante": "Santos",
+    "visitante": "Macará",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estádio Urbano Caldeira",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1570",
+    "extra": "codigo_conmebol=1570; status=Played; placar=2-1",
+    "id": "7afb9ce875a2785c",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-08-13",
+    "hora": "19:00",
+    "mandante": "Vasco",
+    "visitante": "Olimpia",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estádio São Januário",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1579",
+    "extra": "codigo_conmebol=1579; status=Played; placar=0-0",
+    "id": "b39a28705cbc4f75",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Libertadores",
+    "data": "2026-08-13",
+    "hora": "21:30",
+    "mandante": "Rosario",
+    "visitante": "Corinthians",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Gigante de Arroyito",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1644",
+    "extra": "codigo_conmebol=1644; status=Played; placar=0-0",
+    "id": "d72f6558da842252",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-08-13",
+    "hora": "21:30",
+    "mandante": "Cienciano",
+    "visitante": "Botafogo",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Inca Garcilaso de la Vega",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1557",
+    "extra": "codigo_conmebol=1557; status=Played; placar=6-1",
+    "id": "aacde1cb9d1525d3",
+    "atualizado_em": "2026-08-15T13:05:04"
+  },
+  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - 1ª Divisão - 2026",
     "data": "2026-08-15",
@@ -8555,7 +8987,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1620",
     "extra": "codigo_conmebol=1620; status=Fixture",
     "id": "6f70fd17ebbfb2ec",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -8571,7 +9003,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1564",
     "extra": "codigo_conmebol=1564; status=Fixture",
     "id": "c1fa1beeb7c4e2f5",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CBF",
@@ -8649,7 +9081,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1605",
     "extra": "codigo_conmebol=1605; status=Fixture",
     "id": "d8eb1515687047a6",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -8665,7 +9097,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1638",
     "extra": "codigo_conmebol=1638; status=Fixture",
     "id": "e5c9eb8d76cfbc95",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -8681,7 +9113,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1581",
     "extra": "codigo_conmebol=1581; status=Fixture",
     "id": "b9a7745de7784482",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CBF",
@@ -9111,7 +9543,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1626",
     "extra": "codigo_conmebol=1626; status=Fixture",
     "id": "1bc447afeb22e43e",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -9127,7 +9559,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1629",
     "extra": "codigo_conmebol=1629; status=Fixture",
     "id": "cce82123944d7a1e",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -9143,7 +9575,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1599",
     "extra": "codigo_conmebol=1599; status=Fixture",
     "id": "495aa26474e82124",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CBF",
@@ -9281,7 +9713,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1632",
     "extra": "codigo_conmebol=1632; status=Fixture",
     "id": "22acdfd8536407d8",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -9297,7 +9729,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1587",
     "extra": "codigo_conmebol=1587; status=Fixture",
     "id": "4a392f3879fcbe77",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -9313,7 +9745,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1576",
     "extra": "codigo_conmebol=1576; status=Fixture",
     "id": "4b9dd00094566460",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9517,7 +9949,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1641",
     "extra": "codigo_conmebol=1641; status=Fixture",
     "id": "c52137994ecf58ef",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -9533,7 +9965,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1584",
     "extra": "codigo_conmebol=1584; status=Fixture",
     "id": "f9f41f7db36a7bf9",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -9549,7 +9981,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1593",
     "extra": "codigo_conmebol=1593; status=Fixture",
     "id": "b36e9484472e0f4e",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CBF",
@@ -9595,7 +10027,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1623",
     "extra": "codigo_conmebol=1623; status=Fixture",
     "id": "18df795ab79d92c6",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "CONMEBOL",
@@ -9611,7 +10043,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1596",
     "extra": "codigo_conmebol=1596; status=Fixture",
     "id": "969350f0b5979bef",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "FMF",
@@ -16828,7 +17260,7 @@
     "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1635",
     "extra": "codigo_conmebol=1635; status=Fixture",
     "id": "208386aa3d0db1c2",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -17399,7 +17831,7 @@
     "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1590",
     "extra": "codigo_conmebol=1590; status=Fixture",
     "id": "85ec3a05db6bb2f5",
-    "atualizado_em": "2026-08-14T13:50:23"
+    "atualizado_em": "2026-08-15T13:05:04"
   },
   {
     "fonte": "campeonatochileno.cl",
