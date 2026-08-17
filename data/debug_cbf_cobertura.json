@@ -4,63 +4,63 @@
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_13_08_be7bf7dd62.pdf",
     "jogos_futuros_na_tabela": 2,
     "cobertura_ate": "2026-09-04",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "status": "ok",
-    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-09-04 (19 dias)."
+    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-09-04 (18 dias)."
   },
   {
     "competicao": "Brasil - Série B",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_14_08_ec469249ce.pdf",
-    "jogos_futuros_na_tabela": 85,
+    "jogos_futuros_na_tabela": 82,
     "cobertura_ate": "2026-11-28",
-    "dias_restantes": 104,
+    "dias_restantes": 103,
     "status": "ok",
-    "mensagem": "'Brasil - Série B' cobre jogos futuros ate 2026-11-28 (104 dias)."
+    "mensagem": "'Brasil - Série B' cobre jogos futuros ate 2026-11-28 (103 dias)."
   },
   {
     "competicao": "Brasil - Série C",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_12_08_b534cf3974.pdf",
-    "jogos_futuros_na_tabela": 26,
+    "jogos_futuros_na_tabela": 22,
     "cobertura_ate": "2026-08-29",
-    "dias_restantes": 13,
+    "dias_restantes": 12,
     "status": "ok",
-    "mensagem": "'Brasil - Série C' cobre jogos futuros ate 2026-08-29 (13 dias)."
+    "mensagem": "'Brasil - Série C' cobre jogos futuros ate 2026-08-29 (12 dias)."
   },
   {
     "competicao": "Brasil - Série D",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_10_08_2c19704ec1.pdf",
-    "jogos_futuros_na_tabela": 3,
-    "cobertura_ate": "2026-08-16",
+    "jogos_futuros_na_tabela": 0,
+    "cobertura_ate": null,
     "dias_restantes": 0,
-    "status": "critico",
-    "mensagem": "'Brasil - Série D' so tem jogos futuros ate 2026-08-16 (0 dia(s)) -- cobertura prestes a se esgotar. Atualize o link/seed para o proximo lote de rodadas."
+    "status": "atencao",
+    "mensagem": "'Brasil - Série D' nao tem NENHUM jogo futuro nesta tabela (pdf: https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_10_08_2c19704ec1.pdf). Competicao pode ter acabado/estar em pausa."
   },
   {
     "competicao": "Brasil - Copa do Brasil",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_12_08_185cb32c89.pdf",
     "jogos_futuros_na_tabela": 8,
     "cobertura_ate": "2026-09-03",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "status": "ok",
-    "mensagem": "'Brasil - Copa do Brasil' cobre jogos futuros ate 2026-09-03 (18 dias)."
+    "mensagem": "'Brasil - Copa do Brasil' cobre jogos futuros ate 2026-09-03 (17 dias)."
   },
   {
     "competicao": "Brasil - Copa do Brasil Feminina",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_9604f84f3a.pdf",
     "jogos_futuros_na_tabela": 2,
     "cobertura_ate": "2026-10-22",
-    "dias_restantes": 67,
+    "dias_restantes": 66,
     "status": "ok",
-    "mensagem": "'Brasil - Copa do Brasil Feminina' cobre jogos futuros ate 2026-10-22 (67 dias)."
+    "mensagem": "'Brasil - Copa do Brasil Feminina' cobre jogos futuros ate 2026-10-22 (66 dias)."
   },
   {
     "competicao": "Brasil - Série A Sub-20",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_13_08_be7bf7dd62.pdf",
     "jogos_futuros_na_tabela": 2,
     "cobertura_ate": "2026-09-04",
-    "dias_restantes": 19,
+    "dias_restantes": 18,
     "status": "ok",
-    "mensagem": "'Brasil - Série A Sub-20' cobre jogos futuros ate 2026-09-04 (19 dias)."
+    "mensagem": "'Brasil - Série A Sub-20' cobre jogos futuros ate 2026-09-04 (18 dias)."
   },
   {
     "competicao": "Brasil - Série B Sub-20",
@@ -76,9 +76,9 @@
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_14_08_22407b190a.pdf",
     "jogos_futuros_na_tabela": 80,
     "cobertura_ate": "2026-09-29",
-    "dias_restantes": 44,
+    "dias_restantes": 43,
     "status": "ok",
-    "mensagem": "'Brasil - Sub-17' cobre jogos futuros ate 2026-09-29 (44 dias)."
+    "mensagem": "'Brasil - Sub-17' cobre jogos futuros ate 2026-09-29 (43 dias)."
   },
   {
     "competicao": "Brasil - Feminino Sub-20",
@@ -92,19 +92,19 @@
   {
     "competicao": "Brasil - Feminino Sub-17",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_Sub_17_2026_de64d13fdf.pdf",
-    "jogos_futuros_na_tabela": 1,
-    "cobertura_ate": "2026-08-16",
+    "jogos_futuros_na_tabela": 0,
+    "cobertura_ate": null,
     "dias_restantes": 0,
-    "status": "critico",
-    "mensagem": "'Brasil - Feminino Sub-17' so tem jogos futuros ate 2026-08-16 (0 dia(s)) -- cobertura prestes a se esgotar. Atualize o link/seed para o proximo lote de rodadas."
+    "status": "atencao",
+    "mensagem": "'Brasil - Feminino Sub-17' nao tem NENHUM jogo futuro nesta tabela (pdf: https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_Sub_17_2026_de64d13fdf.pdf). Competicao pode ter acabado/estar em pausa."
   },
   {
     "competicao": "Brasil - Feminino A1",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Feminino_A1_2026_04a2a21b30.pdf",
-    "jogos_futuros_na_tabela": 18,
+    "jogos_futuros_na_tabela": 9,
     "cobertura_ate": "2026-08-23",
-    "dias_restantes": 7,
+    "dias_restantes": 6,
     "status": "atencao",
-    "mensagem": "'Brasil - Feminino A1' cobre jogos futuros so ate 2026-08-23 (7 dias) -- vale planejar a atualizacao do link/seed em breve."
+    "mensagem": "'Brasil - Feminino A1' cobre jogos futuros so ate 2026-08-23 (6 dias) -- vale planejar a atualizacao do link/seed em breve."
   }
 ]
