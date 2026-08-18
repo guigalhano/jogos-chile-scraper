@@ -166,6 +166,53 @@ def norm(x: Any) -> str:
     return re.sub(r"[^a-z0-9]+", " ", x.lower()).strip()
 
 
+# A FMF é a federação de Minas Gerais, mas seus clubes jogam fora do estado
+# (amistosos, seleções de base, jogos "fora de sede" etc.). Por isso o campo
+# "estado" não pode ser fixo: ele é deduzido da cidade do jogo, com MG como
+# fallback apenas quando a cidade não é reconhecida.
+CIDADE_UF = {
+    "barueri": "SP", "sao paulo": "SP", "campinas": "SP", "santos": "SP",
+    "sao jose dos campos": "SP", "ribeirao preto": "SP", "sorocaba": "SP",
+    "belo horizonte": "MG", "uberlandia": "MG", "juiz de fora": "MG",
+    "contagem": "MG", "governador valadares": "MG", "uberaba": "MG",
+    "montes claros": "MG", "varginha": "MG", "pocos de caldas": "MG",
+    "rio de janeiro": "RJ", "niteroi": "RJ", "volta redonda": "RJ",
+    "brasilia": "DF",
+    "curitiba": "PR", "londrina": "PR",
+    "porto alegre": "RS", "caxias do sul": "RS",
+    "salvador": "BA", "feira de santana": "BA",
+    "recife": "PE", "caruaru": "PE",
+    "fortaleza": "CE",
+    "goiania": "GO",
+    "vitoria": "ES", "vila velha": "ES", "serra": "ES",
+    "florianopolis": "SC", "joinville": "SC",
+    "cuiaba": "MT",
+    "campo grande": "MS",
+    "belem": "PA",
+    "manaus": "AM",
+}
+
+UF_ESTADO = {
+    "AC": "Acre", "AL": "Alagoas", "AP": "Amapá", "AM": "Amazonas",
+    "BA": "Bahia", "CE": "Ceará", "DF": "Distrito Federal",
+    "ES": "Espírito Santo", "GO": "Goiás", "MA": "Maranhão",
+    "MT": "Mato Grosso", "MS": "Mato Grosso do Sul", "MG": "Minas Gerais",
+    "PA": "Pará", "PB": "Paraíba", "PR": "Paraná", "PE": "Pernambuco",
+    "PI": "Piauí", "RJ": "Rio de Janeiro", "RN": "Rio Grande do Norte",
+    "RS": "Rio Grande do Sul", "RO": "Rondônia", "RR": "Roraima",
+    "SC": "Santa Catarina", "SP": "São Paulo", "SE": "Sergipe",
+    "TO": "Tocantins",
+}
+
+
+def estado_por_cidade(cidade: str, fallback: str = "Minas Gerais") -> str:
+    """Deduz o estado (nome completo) a partir do nome da cidade do jogo."""
+    uf = CIDADE_UF.get(norm(cidade), "")
+    if uf:
+        return UF_ESTADO.get(uf, fallback)
+    return fallback
+
+
 def parse_year(y: str) -> int:
     n = int(y)
     return 2000 + n if n < 100 else n
@@ -392,7 +439,7 @@ def obj_to_partido(obj: dict, url: str, d: str, competicao_fallback: str, fallba
     if is_bad_name(cidade):
         cidade = ""
 
-    extra = [f"pais=Brasil", "estado=Minas Gerais", f"codigo_fmf={d}"]
+    extra = [f"pais=Brasil", f"estado={estado_por_cidade(cidade)}", f"codigo_fmf={d}"]
     if jogo:
         extra.append(f"jogo_numero={jogo}")
     if cidade:
@@ -537,13 +584,18 @@ def parse_text_patterns(lines: list[str], url: str, d: str, competicao_nome: str
                 break
 
         if not is_bad_name(mandante) and not is_bad_name(visitante) and mandante != visitante:
-            extra = [f"pais=Brasil", "estado=Minas Gerais", f"codigo_fmf={d}", f"placar_original={placar}"]
+            cidade_valida = cidade if (cidade and not is_bad_name(cidade)) else ""
+            extra = [
+                f"pais=Brasil",
+                f"estado={estado_por_cidade(cidade_valida)}",
+                f"codigo_fmf={d}",
+                f"placar_original={placar}",
+            ]
             if jogo_num:
                 extra.append(f"jogo_numero={jogo_num}")
-            if cidade and not is_bad_name(cidade):
-                extra.append(f"cidade={cidade}")
-            else:
-                cidade = ""
+            if cidade_valida:
+                extra.append(f"cidade={cidade_valida}")
+            cidade = cidade_valida
 
             out.append(Partido(
                 fonte="FMF",
