@@ -504,7 +504,7 @@ window.ESTADIOS_CHILE = [
   },
   {
     nome: "Estadio Municipal De Pichidegua",
-    aliases: ["municipal de pichidegua"],
+    aliases: ["municipal de pichidegua", "mun de pichidegua", "mun. de pichidegua"],
     cidade: "Pichidegua",
     regiao: "O'Higgins",
     lat: -34.3606,

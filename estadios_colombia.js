@@ -236,4 +236,13 @@ window.ESTADIOS_COLOMBIA = [
     lng: -73.0864,
     fonte: "manual/aproximado (região de Bucaramanga/Floridablanca — mandante Real Santander)",
   },
+  {
+    nome: "Estadio Enrique Olaya Herrera",
+    aliases: ["enrique olaya herrera", "olaya herrera", "parque estadio olaya herrera"],
+    cidade: "Bogotá",
+    regiao: "Bogotá",
+    lat: 4.5837,
+    lng: -74.1074,
+    fonte: "OpenStreetMap/Wikipedia (localidad Rafael Uribe Uribe, Bogotá)",
+  },
 ];

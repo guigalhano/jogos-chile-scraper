@@ -106,4 +106,13 @@ window.ESTADIOS_CONMEBOL = [
     lng: -68.0115,
     fonte: "manual/confirmado (Valencia, Estado Carabobo, Venezuela)",
   },
+  {
+    nome: "Estadio Metropolitano de Fútbol de Lara",
+    aliases: ["metropolitano de futbol de lara", "metropolitano de lara", "metropolitano de cabudare"],
+    cidade: "Cabudare",
+    regiao: "Lara",
+    lat: 9.9935,
+    lng: -69.2199,
+    fonte: "Wikipedia (Cabudare, Estado Lara, Venezuela)",
+  },
 ];

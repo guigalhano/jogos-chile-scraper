@@ -182,4 +182,13 @@ window.ESTADIOS_URUGUAY = [
     lng: -56.2158,
     fonte: "manual/confirmado (Sayago, Montevideo — mandante Racing Club de Montevideo)",
   },
+  {
+    nome: "Estadio Raúl Goyenola",
+    aliases: ["raul goyenola", "raúl s goyenola", "raul s goyenola", "raul s. goyenola", "estadio raul s. goyenola", "estadio ingeniero raul goyenola", "estadio goyenola"],
+    cidade: "Tacuarembó",
+    regiao: "Tacuarembó",
+    lat: -31.7119,
+    lng: -55.9919,
+    fonte: "Wikipedia (Tacuarembó, Uruguai — mandante Tacuarembó FC)",
+  },
 ];

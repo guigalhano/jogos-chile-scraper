@@ -9,6 +9,33 @@
 
 window.ESTADIOS_PERU = [
   {
+    nome: "Estadio Juan Maldonado Gamarra",
+    aliases: ["juan maldonado gamarra", "estadio municipal juan maldonado gamarra"],
+    cidade: "Cutervo",
+    regiao: "Cajamarca",
+    lat: -6.3681,
+    lng: -78.8147,
+    fonte: "Wikidata/Wikipedia (Cutervo, Cajamarca, Peru)",
+  },
+  {
+    nome: "Estadio Germán Contreras Jara",
+    aliases: ["german contreras", "estadio german contreras", "estadio german contreras jara", "estadio municipal german contreras jara"],
+    cidade: "Cajabamba",
+    regiao: "Cajamarca",
+    lat: -7.6153,
+    lng: -78.0469,
+    fonte: "Wikipedia (Cajabamba, Cajamarca, Peru)",
+  },
+  {
+    nome: "Estadio Complejo Juan Pablo II",
+    aliases: ["complejo deportivo juan pablo ii", "complejo juan pablo ii", "estadio del complejo juan pablo ii"],
+    cidade: "Chongoyape",
+    regiao: "Lambayeque",
+    lat: -6.6333,
+    lng: -79.3833,
+    fonte: "Wikipedia/imprensa local (Chongoyape, Chiclayo, Lambayeque, Peru; coordenada aproximada em nível de grau)",
+  },
+  {
     nome: "Estadio Nacional de Lima",
     aliases: ["estadio nacional de lima", "estadio nacional del peru", "estadio nacional del perú", "nacional del peru"],
     cidade: "Lima",
@@ -36,7 +63,7 @@ window.ESTADIOS_PERU = [
   },
   {
     nome: "Estadio Monumental \"U\"",
-    aliases: ["estadio monumental u", "monumental u", "estadio monumental \"u\"", "monumental de universitario"],
+    aliases: ["estadio monumental u", "monumental u", "estadio monumental \"u\"", "monumental de universitario", "monumental de lima", "estadio monumental de lima"],
     cidade: "Lima",
     regiao: "Lima",
     lat: -12.0089,
@@ -72,12 +99,12 @@ window.ESTADIOS_PERU = [
   },
   {
     nome: "Estadio Campeones del 36",
-    aliases: ["campeones del 36"],
-    cidade: "Piura",
+    aliases: ["campeones del 36", "campeones del '36", "estadio campeones del '36"],
+    cidade: "Sullana",
     regiao: "Piura",
-    lat: -5.1945,
-    lng: -80.6328,
-    fonte: "manual/aproximado (Piura, Peru)",
+    lat: -4.8970,
+    lng: -80.6844,
+    fonte: "Wikidata (correção: catálogo anterior tinha cidade/coordenadas de Piura, mas o estádio fica em Sullana)",
   },
   {
     nome: "Estadio Miguel Grau (Callao)",
