@@ -12,24 +12,24 @@
     "IdCampeonato": 100,
     "IdCategoria": 70,
     "total_ano": 48,
-    "programados": 10,
+    "programados": 9,
     "historico": 48
   },
   {
-    "campeonato": "Brasil - FPF - Paulista Sub-23 2ª Divisão (Segunda Divisão)",
-    "IdCampeonato": 104,
-    "IdCategoria": 74,
-    "total_ano": 150,
-    "programados": 0,
-    "historico": 22
+    "campeonato": "Brasil - FPF - Taça Paulistana Petrobras (Amador)",
+    "IdCampeonato": 214,
+    "IdCategoria": 38,
+    "total_ano": 30,
+    "programados": 30,
+    "historico": 30
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-20 - Série A (SUB20 - Série A)",
     "IdCampeonato": 221,
     "IdCategoria": 94,
     "total_ano": 301,
-    "programados": 65,
-    "historico": 211
+    "programados": 64,
+    "historico": 208
   },
   {
     "campeonato": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
@@ -48,6 +48,22 @@
     "historico": 122
   },
   {
+    "campeonato": "Brasil - FPF - Festival Feminino Sub-14 - Sede Jaú (Amador)",
+    "IdCampeonato": 226,
+    "IdCategoria": 38,
+    "total_ano": 16,
+    "programados": 16,
+    "historico": 16
+  },
+  {
+    "campeonato": "Brasil - FPF - Festival Feminino Sub-12 - Sede Jaú (Amador)",
+    "IdCampeonato": 225,
+    "IdCategoria": 38,
+    "total_ano": 10,
+    "programados": 10,
+    "historico": 10
+  },
+  {
     "campeonato": "Brasil - FPF - Paulista F Sub-17 Petrobras (Amador)",
     "IdCampeonato": 161,
     "IdCategoria": 38,
@@ -59,9 +75,9 @@
     "campeonato": "Brasil - FPF - Paulista F Sub-15 Petrobras (Amador)",
     "IdCampeonato": 184,
     "IdCategoria": 38,
-    "total_ano": 49,
-    "programados": 0,
-    "historico": 21
+    "total_ano": 57,
+    "programados": 8,
+    "historico": 25
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-17 (SUB17)",
@@ -69,7 +85,7 @@
     "IdCategoria": 18,
     "total_ano": 718,
     "programados": 120,
-    "historico": 350
+    "historico": 311
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-15 (SUB15)",
@@ -77,7 +93,7 @@
     "IdCategoria": 17,
     "total_ano": 718,
     "programados": 120,
-    "historico": 349
+    "historico": 310
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-14 (SUB14)",
@@ -101,7 +117,7 @@
     "IdCategoria": 91,
     "total_ano": 546,
     "programados": 117,
-    "historico": 234
+    "historico": 200
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-11 (SUB11)",
@@ -109,7 +125,7 @@
     "IdCategoria": 80,
     "total_ano": 546,
     "programados": 117,
-    "historico": 234
+    "historico": 200
   },
   {
     "campeonato": "Brasil - FPF - Festival Paulista Sub-14 Petrobras - Sede Matão (Amador)",
@@ -150,14 +166,6 @@
     "total_ano": 0,
     "programados": 0,
     "historico": 0
-  },
-  {
-    "campeonato": "Brasil - FPF - Taça Paulistana Petrobras (Amador)",
-    "IdCampeonato": 214,
-    "IdCategoria": 38,
-    "total_ano": 30,
-    "programados": 30,
-    "historico": 30
   },
   {
     "campeonato": "Brasil - FPF - Copa Paulista F Petrobras (Amador)",
@@ -216,6 +224,14 @@
     "historico": 0
   },
   {
+    "campeonato": "Brasil - FPF - Paulista Sub-23 2ª Divisão (Segunda Divisão)",
+    "IdCampeonato": 104,
+    "IdCategoria": 74,
+    "total_ano": 150,
+    "programados": 0,
+    "historico": 17
+  },
+  {
     "campeonato": "Brasil - FPF - Torneio F Sub-15 Petrobras - Sede Sorocaba (Amador)",
     "IdCampeonato": 230,
     "IdCategoria": 38,
@@ -230,14 +246,6 @@
     "total_ano": 0,
     "programados": 0,
     "historico": 0
-  },
-  {
-    "campeonato": "Brasil - FPF - Festival Feminino Sub-14 - Sede Jaú (Amador)",
-    "IdCampeonato": 226,
-    "IdCategoria": 38,
-    "total_ano": 16,
-    "programados": 16,
-    "historico": 16
   },
   {
     "campeonato": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itu (Amador)",
@@ -326,14 +334,6 @@
     "total_ano": 0,
     "programados": 0,
     "historico": 0
-  },
-  {
-    "campeonato": "Brasil - FPF - Festival Feminino Sub-12 - Sede Jaú (Amador)",
-    "IdCampeonato": 225,
-    "IdCategoria": 38,
-    "total_ano": 10,
-    "programados": 10,
-    "historico": 10
   },
   {
     "campeonato": "Brasil - FPF - Feminino Divisão Especial (Amador)",
