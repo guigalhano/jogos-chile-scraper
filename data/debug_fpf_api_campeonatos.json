@@ -36,22 +36,22 @@
     "DescricaoSite": "Paulista Sub-20 - Série A"
   },
   {
-    "IdCampeonato": 196,
-    "IdCategoria": 38,
-    "Categoria": "Amador",
-    "Campeonato": "Feminino Sub20",
-    "Ordem": 5,
-    "Destaque": 0,
-    "DescricaoSite": "Paulista F Sub-20 Petrobras"
-  },
-  {
     "IdCampeonato": 219,
     "IdCategoria": 93,
     "Categoria": "SUB20 - Série B",
     "Campeonato": "Paulista",
-    "Ordem": 6,
+    "Ordem": 5,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-20 - Série B"
+  },
+  {
+    "IdCampeonato": 196,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Feminino Sub20",
+    "Ordem": 6,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista F Sub-20 Petrobras"
   },
   {
     "IdCampeonato": 226,

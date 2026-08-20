@@ -12,7 +12,7 @@
     "IdCampeonato": 100,
     "IdCategoria": 70,
     "total_ano": 48,
-    "programados": 9,
+    "programados": 8,
     "historico": 48
   },
   {
@@ -29,15 +29,7 @@
     "IdCategoria": 94,
     "total_ano": 301,
     "programados": 64,
-    "historico": 208
-  },
-  {
-    "campeonato": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
-    "IdCampeonato": 196,
-    "IdCategoria": 38,
-    "total_ano": 66,
-    "programados": 6,
-    "historico": 48
+    "historico": 203
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-20 - Série B (SUB20 - Série B)",
@@ -46,6 +38,14 @@
     "total_ano": 212,
     "programados": 16,
     "historico": 122
+  },
+  {
+    "campeonato": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
+    "IdCampeonato": 196,
+    "IdCategoria": 38,
+    "total_ano": 66,
+    "programados": 0,
+    "historico": 48
   },
   {
     "campeonato": "Brasil - FPF - Festival Feminino Sub-14 - Sede Jaú (Amador)",
@@ -77,7 +77,7 @@
     "IdCategoria": 38,
     "total_ano": 57,
     "programados": 8,
-    "historico": 25
+    "historico": 22
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-17 (SUB17)",
@@ -85,7 +85,7 @@
     "IdCategoria": 18,
     "total_ano": 718,
     "programados": 120,
-    "historico": 311
+    "historico": 310
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-15 (SUB15)",
@@ -93,7 +93,7 @@
     "IdCategoria": 17,
     "total_ano": 718,
     "programados": 120,
-    "historico": 310
+    "historico": 309
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-14 (SUB14)",
@@ -117,7 +117,7 @@
     "IdCategoria": 91,
     "total_ano": 546,
     "programados": 117,
-    "historico": 200
+    "historico": 195
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-11 (SUB11)",
@@ -125,7 +125,7 @@
     "IdCategoria": 80,
     "total_ano": 546,
     "programados": 117,
-    "historico": 200
+    "historico": 195
   },
   {
     "campeonato": "Brasil - FPF - Festival Paulista Sub-14 Petrobras - Sede Matão (Amador)",
@@ -229,7 +229,7 @@
     "IdCategoria": 74,
     "total_ano": 150,
     "programados": 0,
-    "historico": 17
+    "historico": 14
   },
   {
     "campeonato": "Brasil - FPF - Torneio F Sub-15 Petrobras - Sede Sorocaba (Amador)",
