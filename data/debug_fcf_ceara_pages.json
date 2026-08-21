@@ -56,13 +56,6 @@
     "erro": "falha ao buscar (timeout/erro de rede)"
   },
   {
-    "idcamp": "426",
-    "nome": "Masculino Sub/17 2026",
-    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=426",
-    "jogos": 0,
-    "erro": "falha ao buscar (timeout/erro de rede)"
-  },
-  {
     "idcamp": "430",
     "nome": "Manjadinho Sub/14 2026",
     "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=430",
@@ -80,6 +73,13 @@
     "idcamp": "431",
     "nome": "Manjadinho Sub/15 - Cariri 2026",
     "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=431",
+    "jogos": 0,
+    "erro": "falha ao buscar (timeout/erro de rede)"
+  },
+  {
+    "idcamp": "432",
+    "nome": "Manjadinha Sub/15 - Cariri 2026",
+    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=432",
     "jogos": 0,
     "erro": "falha ao buscar (timeout/erro de rede)"
   }
