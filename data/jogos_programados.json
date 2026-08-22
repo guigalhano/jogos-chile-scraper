@@ -448,6 +448,22 @@
     "atualizado_em": "2026-08-22T13:07:15"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-08-19",
+    "hora": "15:30",
+    "mandante": "UDA",
+    "visitante": "Ucayali FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo C",
+    "url": "",
+    "extra": "status=Jugado; placar=2-1",
+    "id": "4f56f10e541a4814",
+    "atualizado_em": "2026-08-22T13:34:51"
+  },
+  {
     "fonte": "CONMEBOL",
     "competicao": "Conmebol - Libertadores",
     "data": "2026-08-19",
@@ -622,6 +638,86 @@
     "extra": "codigo_conmebol=1596; status=Played; placar=1-0",
     "id": "969350f0b5979bef",
     "atualizado_em": "2026-08-22T13:07:15"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-21",
+    "hora": "12:00",
+    "mandante": "FC Cajamarca",
+    "visitante": "Grau",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "2af090d6cac2e973",
+    "atualizado_em": "2026-08-22T13:34:51"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-21",
+    "hora": "12:00",
+    "mandante": "FC San Marcos",
+    "visitante": "San Martín",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Walkover; placar=0-3",
+    "id": "bc4814072b0ad64b",
+    "atualizado_em": "2026-08-22T13:34:51"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-08-21",
+    "hora": "14:30",
+    "mandante": "Callao FC",
+    "visitante": "S. Pariacoto",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "9a6d06e1a955ebe7",
+    "atualizado_em": "2026-08-22T13:34:51"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-08-21",
+    "hora": "15:00",
+    "mandante": "A. Atlético",
+    "visitante": "Cristal",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "c7599fbd65637fa1",
+    "atualizado_em": "2026-08-22T13:34:51"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-08-21",
+    "hora": "15:30",
+    "mandante": "Sport Huancayo",
+    "visitante": "CNI",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Jugado; placar=1-0",
+    "id": "78b6e4d09ccf2773",
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "FMF",
@@ -1493,7 +1589,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "1ae624c1df401974",
-    "atualizado_em": "2026-08-21T13:49:48"
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "AUF",
@@ -2148,7 +2244,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "136b3e5718023a5a",
-    "atualizado_em": "2026-08-21T13:49:48"
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "AUF",
@@ -2180,7 +2276,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "cf5379aea07c1c52",
-    "atualizado_em": "2026-08-21T13:49:48"
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -2196,7 +2292,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "81e102e1fb2bb94e",
-    "atualizado_em": "2026-08-21T13:49:48"
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "FPF",
@@ -2355,7 +2451,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "1c2267a86608aa0b",
-    "atualizado_em": "2026-08-21T13:49:48"
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3601,7 +3697,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "1357294277e27fed",
-    "atualizado_em": "2026-08-21T13:49:48"
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3773,7 +3869,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "24175ef23c3fd980",
-    "atualizado_em": "2026-08-21T13:49:48"
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "CBF",
@@ -5172,7 +5268,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "3888c7d77725276a",
-    "atualizado_em": "2026-08-21T13:49:48"
+    "atualizado_em": "2026-08-22T13:34:51"
   },
   {
     "fonte": "CBF",
