@@ -1,6 +1,6 @@
 [INFO] FBF páginas a testar: 16
-[INFO] Janela: 2026-07-18 até 2027-02-13
-[OK] id=home | Baianão Série A | page=14 network=7 | na janela=14
+[INFO] Janela: 2026-07-25 até 2027-02-20
+[OK] id=home | Baianão Série A | page=7 network=7 | na janela=7
 [OK] id=1 | Baianão Série A | page=1 network=0 | na janela=0
 [OK] id=2 | Baianão Série A | page=2 network=0 | na janela=2
 [--] id=3 | sem jogos | linhas=73
@@ -16,10 +16,9 @@
 [OK] id=13 | Baianão Série A | page=2 network=0 | na janela=0
 [--] id=14 | sem jogos | linhas=73
 [--] id=15 | sem jogos | linhas=73
-[INFO] Debug de resolução de nomes: data/debug_fbf_resolve_nomes.json (7 tentativas)
 
-FBF jogos válidos adicionados/atualizados: 34
-Total JSON atual: 2921
+FBF jogos válidos adicionados/atualizados: 27
+Total JSON atual: 2511
 Debug páginas: data/debug_fbf_competicoes_pages.json
 Debug rede: data/debug_fbf_competicoes_network.json
 Debug jogos: data/debug_fbf_competicoes_raw.json
