@@ -1,4 +1,21 @@
 ﻿id,fonte,competicao,data,hora,pais,cidade,mandante,visitante,estadio,rodada,url,extra,atualizado_em
+484fbd1cd293aee4,FUTBOLPERUANO,Peru - Copa de la Liga,2026-08-25,15:00,Peru,,A. Atlético,UTC,,Cuartos de Final,,status=Jugado; placar=(5)1-1(4),2026-08-31T19:27:08
+db716b28ba0f230e,FUTBOLPERUANO,Peru - Copa de la Liga,2026-08-26,15:00,Peru,,Cristal,S. Huancayo,,Cuartos de Final,,status=Jugado; placar=4-1,2026-08-31T19:27:08
+69a69f0a225c5421,FUTBOLPERUANO,Peru - Copa de la Liga,2026-08-26,15:00,Peru,,Grau,Boys,,Cuartos de Final,,status=Jugado; placar=(3)2-2(4),2026-08-31T19:27:08
+e76c20781056e066,FUTBOLPERUANO,Peru - Copa de la Liga,2026-08-27,15:00,Peru,,ADT,D. Moquegua,,Cuartos de Final,,status=Jugado; placar=2-0,2026-08-31T19:27:08
+50ccf3ce662406b7,FUTBOLPERUANO,Peru - Liga 3,2026-08-29,15:00,Peru,,ADT,ASA FC,,Grupo C,,status=Jugado; placar=3-2,2026-08-31T19:27:08
+bfbeb09d9a789383,FUTBOLPERUANO,Peru - Liga 3,2026-08-29,15:00,Peru,,D. Lute,Volante,,Grupo A,,status=Jugado; placar=2-0,2026-08-31T19:27:08
+e84c1c0fe9b50a73,FUTBOLPERUANO,Peru - Liga 3,2026-08-29,15:00,Peru,,Universitario,U. Huaral,,Grupo B,,status=Jugado; placar=2-1,2026-08-31T19:27:08
+4d5f1d694cbd478f,FUTBOLPERUANO,Peru - Liga 2,2026-08-29,15:15,Peru,,CNI,Alianza UDH,,Grupo 2,,status=Jugado; placar=3-0,2026-08-31T19:27:08
+6bdc3990b7bf4d96,FUTBOLPERUANO,Peru - Liga 3,2026-08-29,15:30,Peru,,S. Pariacoto,S. Cristal,,Grupo B,,status=Jugado; placar=0-3,2026-08-31T19:27:08
+59be2554163ebfd8,FUTBOLPERUANO,Peru - Liga 1,2026-08-29,19:30,Peru,,Alianza Lima,Garcilaso,,Fase Regular,,status=Jugado; placar=0-1,2026-08-31T19:27:08
+45fadd09cd5b74b5,FUTBOLPERUANO,Peru - Liga 2,2026-08-30,10:45,Peru,,Unión Minas,Sport Huancayo,,Grupo 2,,status=Jugado; placar=2-1,2026-08-31T19:27:08
+1927e19f28689309,FUTBOLPERUANO,Peru - Liga 1,2026-08-30,11:00,Peru,,D. Moquegua,A. Atlético,,Fase Regular,,status=Jugado; placar=1-4,2026-08-31T19:27:08
+5a17281767737afa,FUTBOLPERUANO,Peru - Liga 2,2026-08-30,13:00,Peru,,Llacuabamba,U. Comercio,,Grupo 1,,status=Jugado; placar=1-1,2026-08-31T19:27:08
+2e25d0ac1d0e13e4,FUTBOLPERUANO,Peru - Liga 1,2026-08-30,13:15,Peru,,ADT,S. Huancayo,,Fase Regular,,status=Jugado; placar=1-3,2026-08-31T19:27:08
+6ee7c67b826536cc,FUTBOLPERUANO,Peru - Liga 2,2026-08-30,15:15,Peru,,Bentín Tacna,Santos FC,,Grupo 2,,status=Jugado; placar=3-2,2026-08-31T19:27:08
+dd942d8aa03413d9,FUTBOLPERUANO,Peru - Liga 1,2026-08-30,15:30,Peru,,Boys,Cristal,,Fase Regular,,status=Jugado; placar=1-0,2026-08-31T19:27:08
+85863490f9771ce0,FUTBOLPERUANO,Peru - Liga 1,2026-08-30,19:00,Peru,,Cienciano,Cusco FC,,Fase Regular,,status=Jugado; placar=1-2,2026-08-31T19:27:08
 c4e0e8ed4d1a32ce,campeonatochileno.cl,Campeonato Nacional Juvenil Femenino Clausura,2026-08-31,09:00,,,Deportes Copiapo Juvenil Fem,Deportes Antofagasta Juvenil Fem,,Fecha 6,https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/,,2026-07-13T14:46:09
 54e6636835ad8021,campeonatochileno.cl,Campeonato Nacional Juvenil Femenino Clausura,2026-08-31,10:00,,,Santiago Wanderers Juvenil Fem,Coquimbo Unido Juvenil Fem,,Fecha 6,https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/,,2026-07-14T13:55:28
 75ced0d2ef0c5135,FGF,Brasil - FGF - Copa Goiás Sub 20 da 1ª Divisão / 2026,2026-08-31,10:00,Brasil,,Anápolis,Planalto Esporte Clube,CT Valterci de Melo,4ª Rodada,https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1784&jogo=56772,status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax,2026-08-31T18:47:09
@@ -47,6 +64,7 @@ ab880ef10cb90f3d,campeonatochileno.cl,Campeonato Nacional Juvenil Femenino Claus
 0899fefe12fbea94,CBF,Brasil - Sub-17,2026-09-01,15:00,,Bezerra* Maracanaú,Fortaleza (CE),São Paulo (SP),CT Ribamar,Rodada 14,https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf,pais=Brasil; cidade=Bezerra* Maracanaú,2026-08-31T19:09:41
 8b111899cad28dad,FCF,Brasil - Ceará - Cearense Série C 2026,2026-09-01,15:00,Brasil,Fortaleza,Palmácia,Pacatuba,Presidente Vargas,RODADA 6,https://futebolcearense.com.br/2020/tabela.asp?idcamp=428,idcamp=428; fase=1a_fase; grupo=A; jogo_ref=16; fonte_dado=tabela_oficial_fcf_pdf_08-06-2026,2026-08-09T17:46:17
 dd2940dbc64c7565,FPF,Brasil - FPF - Taça Paulistana Petrobras (Amador),2026-09-01,15:00,Brasil,São José do Rio Preto,Realidade Jovem,São Bento,Estádio Benedito Teixeira,Rodada 2,https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx,status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=4; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO,2026-08-30T17:44:50
+571cf93edb39424f,FUTBOLPERUANO,Peru - Liga 1,2026-09-01,15:00,Peru,,Grau,Melgar,,Fase Regular,,status=Por jugar; placar=0-0,2026-08-31T19:27:08
 a35a762faa18fa71,CBF,Brasil - Sub-17,2026-09-01,15:30,,Belo Horizonte,Cruzeiro (MG),Flamengo (RJ),CT Toca da Raposa*,Rodada 14,https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf,pais=Brasil; cidade=Belo Horizonte,2026-08-31T19:09:41
 99694d4f508e198a,FGF,Brasil - FGF - Copa Goiás Sub 13 da 3ª Divisão / 2026,2026-09-01,15:30,Brasil,,Itaberaí Saf,Base Brasil,Rio das Pedras,1ª Rodada,https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1804&jogo=58170,status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax,2026-08-31T18:47:09
 9c124c039b441f32,FGF,Brasil - FGF - Copa Goiás Sub 13 da 3ª Divisão / 2026,2026-09-01,15:30,Brasil,,Santa Cruz,Grêmio Trindade,Divino Boró,1ª Rodada,https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1804&jogo=58169,status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax,2026-08-31T18:47:09
