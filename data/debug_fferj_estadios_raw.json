@@ -225,28 +225,6 @@
     "lng": -43.1851565
   },
   {
-    "alias_id": "1073",
-    "nome_clube": "CAMPOS ATLÉTICO ASSOCIAÇÃO",
-    "estadio": "ANGELO DE CARVALHO",
-    "localizacao": "AVENIDA ALBERTO TORRES, 714 - PARQUE LEOPOLDINA",
-    "sede": "AVENIDA ALBERTO TORRES, 714 - CAMPOS DOS GOYTACAZES",
-    "endereco_geocodificado": "AVENIDA ALBERTO TORRES, 714 - PARQUE LEOPOLDINA, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -21.7483169,
-    "lng": -41.3428751
-  },
-  {
-    "alias_id": "37",
-    "nome_clube": "CARDOSO MOREIRA F.C",
-    "estadio": "ANTONIO FERREIRA DE MEDEIROS",
-    "localizacao": "S/N",
-    "sede": "RUA EDIANA FERREIRA MEDEIROS, S/N - CARDOSO MOREIRA",
-    "endereco_geocodificado": "",
-    "fonte_endereco": "ja_catalogado",
-    "lat": -21.585,
-    "lng": -41.42
-  },
-  {
     "alias_id": "137",
     "nome_clube": "CASIMIRO DE ABREU E.C (INATIVO)",
     "estadio": "UBIRAJARA DE ALMEIDA REIS",
@@ -432,17 +410,6 @@
     "fonte_endereco": "sede",
     "lat": -22.6509732,
     "lng": -42.3970251
-  },
-  {
-    "alias_id": "380",
-    "nome_clube": "S. E. DE BUZIOS",
-    "estadio": "MUNICIPAL DE BÚZIOS",
-    "localizacao": "ESTRADA DA USINA, 23 - CENTRO",
-    "sede": "ESTRADA DA USINA, 23 - ARMAÇÃO DE BÚZIOS",
-    "endereco_geocodificado": "ESTRADA DA USINA, 23 - CENTRO, RJ, Brasil",
-    "fonte_endereco": "localizacao",
-    "lat": -22.7584928,
-    "lng": -41.887136
   },
   {
     "alias_id": "128",
@@ -1809,6 +1776,17 @@
     "lng": -43.1786
   },
   {
+    "alias_id": "169",
+    "nome_clube": "GPA AUDAX RIO E.C",
+    "estadio": "ELCYR RESENDE DE MENDONÇA",
+    "localizacao": "RUA CAPITÃO NUNES, 110 - BARREIRA (BACAXÁ)",
+    "sede": "RUA JOÃO ANTÔNIO SENDAS, 341 - SÃO JOÃO DE MERITI",
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -22.8953,
+    "lng": -42.4769
+  },
+  {
     "alias_id": "1078",
     "nome_clube": "NITEROIENSE FUTEBOL CLUBE",
     "estadio": "CEFAT - CENTRO DE FORMAÇÃO DE ATLETAS DO TROPS",
@@ -1864,6 +1842,28 @@
     "lng": -44.1739
   },
   {
+    "alias_id": "1073",
+    "nome_clube": "CAMPOS ATLÉTICO ASSOCIAÇÃO",
+    "estadio": "ANGELO DE CARVALHO",
+    "localizacao": "AVENIDA ALBERTO TORRES, 714 - PARQUE LEOPOLDINA",
+    "sede": "AVENIDA ALBERTO TORRES, 714 - CAMPOS DOS GOYTACAZES",
+    "endereco_geocodificado": "AVENIDA ALBERTO TORRES, 714 - PARQUE LEOPOLDINA, RJ, Brasil",
+    "fonte_endereco": "localizacao",
+    "lat": -21.7483169,
+    "lng": -41.3428751
+  },
+  {
+    "alias_id": "37",
+    "nome_clube": "CARDOSO MOREIRA F.C",
+    "estadio": "ANTONIO FERREIRA DE MEDEIROS",
+    "localizacao": "S/N",
+    "sede": "RUA EDIANA FERREIRA MEDEIROS, S/N - CARDOSO MOREIRA",
+    "endereco_geocodificado": "",
+    "fonte_endereco": "ja_catalogado",
+    "lat": -21.585,
+    "lng": -41.42
+  },
+  {
     "alias_id": "383",
     "nome_clube": "CIG 7 DE ABRIL",
     "estadio": "SETE DE ABRIL",
@@ -1917,6 +1917,17 @@
     "fonte_endereco": "ja_catalogado",
     "lat": -22.3708,
     "lng": -41.7869
+  },
+  {
+    "alias_id": "380",
+    "nome_clube": "S. E. DE BUZIOS",
+    "estadio": "MUNICIPAL DE BÚZIOS",
+    "localizacao": "ESTRADA DA USINA, 23 - CENTRO",
+    "sede": "ESTRADA DA USINA, 23 - ARMAÇÃO DE BÚZIOS",
+    "endereco_geocodificado": "ESTRADA DA USINA, 23 - CENTRO, RJ, Brasil",
+    "fonte_endereco": "localizacao",
+    "lat": -22.7584928,
+    "lng": -41.887136
   },
   {
     "alias_id": "113",
@@ -2016,17 +2027,6 @@
     "fonte_endereco": "sede",
     "lat": -21.6836246,
     "lng": -41.3101572
-  },
-  {
-    "alias_id": "169",
-    "nome_clube": "GPA AUDAX RIO E.C",
-    "estadio": "ELCYR RESENDE DE MENDONÇA",
-    "localizacao": "RUA CAPITÃO NUNES, 110 - BARREIRA (BACAXÁ)",
-    "sede": "RUA JOÃO ANTÔNIO SENDAS, 341 - SÃO JOÃO DE MERITI",
-    "endereco_geocodificado": "",
-    "fonte_endereco": "ja_catalogado",
-    "lat": -22.8953,
-    "lng": -42.4769
   },
   {
     "alias_id": "97",
