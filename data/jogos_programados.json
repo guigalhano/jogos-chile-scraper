@@ -1,1571 +1,5 @@
 [
   {
-    "fonte": "FBF",
-    "competicao": "Brasil - FBF - Baianão Série A",
-    "data": "2026-08-01",
-    "hora": "15:00",
-    "mandante": "Esporte Clube Bahia",
-    "visitante": "Fluminense de Feira",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "Alberto Oliveira",
-    "rodada": "Rodada 22",
-    "url": "https://www.fbf.org.br/competicoes/4/2026",
-    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=4; origem=carrossel_rodada; placar=2x3",
-    "id": "7db88583cd701b72",
-    "atualizado_em": "2026-08-31T19:59:52"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 11",
-    "data": "2026-08-02",
-    "hora": "",
-    "mandante": "Rio Branco A.C. SAF",
-    "visitante": "Pinheiros F.C.",
-    "estadio": "Estádio Arthur Gerhardt",
-    "rodada": "Jogo único",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-11-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-11-2026",
-    "pais": "Brasil",
-    "cidade": "Domingos Martins",
-    "id": "1f8951b1abed071f",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 11",
-    "data": "2026-08-02",
-    "hora": "",
-    "mandante": "Rio Branco F.C.",
-    "visitante": "RP Academy",
-    "estadio": "Campo do Manoel Plaza",
-    "rodada": "Jogo único",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-11-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-11-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "1d35872a52aa4f74",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 13",
-    "data": "2026-08-02",
-    "hora": "",
-    "mandante": "Rio Branco A.C. SAF",
-    "visitante": "RP Academy",
-    "estadio": "Estádio Arthur Gerhardt",
-    "rodada": "Jogo único",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-13-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-13-2026",
-    "pais": "Brasil",
-    "cidade": "Domingos Martins",
-    "id": "99e1a096c19e4192",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-02",
-    "hora": "",
-    "mandante": "Estrela do Norte F.C.",
-    "visitante": "S.C. Brasil Capixaba",
-    "estadio": "Sumaré",
-    "rodada": "05",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Cachoeiro de Itapemirim",
-    "id": "66d76ab0683de516",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FBF",
-    "competicao": "Brasil - FBF - Baianão Série A",
-    "data": "2026-08-02",
-    "hora": "15:00",
-    "mandante": "Fluminense de Feira",
-    "visitante": "SSA FC",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "Alberto Oliveira",
-    "rodada": "Rodada 13",
-    "url": "https://www.fbf.org.br/competicoes/2/2026",
-    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=2; origem=carrossel_rodada; placar=2x0",
-    "id": "821cc5862ec299e2",
-    "atualizado_em": "2026-08-31T19:59:52"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-05",
-    "hora": "",
-    "mandante": "Linhares F.C.",
-    "visitante": "CTE Colatina ES",
-    "estadio": "Conilon",
-    "rodada": "05",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Jaguaré",
-    "id": "e4ceada1df7ffa33",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 11",
-    "data": "2026-08-08",
-    "hora": "",
-    "mandante": "Pinheiros F.C.",
-    "visitante": "Porto Vitoria F.C.",
-    "estadio": "Estádio Arthur Gerhardt",
-    "rodada": "Ida",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-11-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-11-2026",
-    "pais": "Brasil",
-    "cidade": "Domingos Martins",
-    "id": "3edc872882d730df",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 13",
-    "data": "2026-08-08",
-    "hora": "",
-    "mandante": "Coimbra Realfor F.C.",
-    "visitante": "Porto Vitoria F.C.",
-    "estadio": "Manoel de Araújo Oliveira",
-    "rodada": "Ida",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-13-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-13-2026",
-    "pais": "Brasil",
-    "cidade": "Vila Velha",
-    "id": "d9c7d9b1757972b0",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-08",
-    "hora": "",
-    "mandante": "Audax São Mateus",
-    "visitante": "Linhares F.C.",
-    "estadio": "Sernamby",
-    "rodada": "06",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "São Mateus",
-    "id": "2deb311a49ef6934",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-08",
-    "hora": "",
-    "mandante": "CTE Colatina ES",
-    "visitante": "Doze F.C.",
-    "estadio": "Justiniano de Mello e Silva",
-    "rodada": "06",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Colatina",
-    "id": "83f404a5094448b4",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-08",
-    "hora": "",
-    "mandante": "Estrela do Norte F.C.",
-    "visitante": "Rive A.C.",
-    "estadio": "Sumaré",
-    "rodada": "06",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Cachoeiro de Itapemirim",
-    "id": "42f286cdee6ef090",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-08",
-    "hora": "",
-    "mandante": "Pinheiros F.C.",
-    "visitante": "E.C. Tupy",
-    "estadio": "Gil Bernardes",
-    "rodada": "06",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Vila Velha",
-    "id": "2c3f3d451cc2a917",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 11",
-    "data": "2026-08-09",
-    "hora": "",
-    "mandante": "Doze F.C.",
-    "visitante": "Rio Branco F.C.",
-    "estadio": "CT Solvive",
-    "rodada": "Ida",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-11-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-11-2026",
-    "pais": "Brasil",
-    "cidade": "Vila Velha",
-    "id": "ae18ff80197af61a",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 13",
-    "data": "2026-08-09",
-    "hora": "",
-    "mandante": "Doze F.C.",
-    "visitante": "Rio Branco A.C. SAF",
-    "estadio": "CT Solvive",
-    "rodada": "Ida",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-13-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-13-2026",
-    "pais": "Brasil",
-    "cidade": "Vila Velha",
-    "id": "fb72a93a201538f6",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-14",
-    "hora": "",
-    "mandante": "G.E.L.",
-    "visitante": "CTE Colatina ES",
-    "estadio": "Robertão",
-    "rodada": "07",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "b3d2f40f36e19628",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-14",
-    "hora": "",
-    "mandante": "Linhares F.C.",
-    "visitante": "Doze F.C.",
-    "estadio": "Conilon",
-    "rodada": "07",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Jaguaré",
-    "id": "eff64604ece46efb",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 11",
-    "data": "2026-08-15",
-    "hora": "",
-    "mandante": "Porto Vitoria F.C.",
-    "visitante": "Pinheiros F.C.",
-    "estadio": "Camp Nou – Barcelona",
-    "rodada": "Volta",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-11-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-11-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "eb14cf43ca5203a5",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 13",
-    "data": "2026-08-15",
-    "hora": "",
-    "mandante": "Porto Vitoria F.C.",
-    "visitante": "Coimbra Realfor F.C.",
-    "estadio": "Camp Nou – Barcelona",
-    "rodada": "Volta",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-13-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-13-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "dd3d97e34efd6317",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 13",
-    "data": "2026-08-15",
-    "hora": "",
-    "mandante": "Rio Branco A.C. SAF",
-    "visitante": "Doze F.C.",
-    "estadio": "Complexo Esportivo Hermínio Brás",
-    "rodada": "Volta",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-13-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-13-2026",
-    "pais": "Brasil",
-    "cidade": "Santa Leopoldina",
-    "id": "9025764273aa32a3",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-15",
-    "hora": "",
-    "mandante": "Rive A.C.",
-    "visitante": "E.C. Tupy",
-    "estadio": "Arsílio Caiado Ferreira",
-    "rodada": "07",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Alegre",
-    "id": "4aaadcf725154b24",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 11",
-    "data": "2026-08-16",
-    "hora": "",
-    "mandante": "Rio Branco F.C.",
-    "visitante": "Doze F.C.",
-    "estadio": "Campo do Manoel Plaza",
-    "rodada": "Volta",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-11-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-11-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "d795f0f6fc74f3bc",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-16",
-    "hora": "",
-    "mandante": "S.C. Brasil Capixaba",
-    "visitante": "Pinheiros F.C.",
-    "estadio": "Robertão",
-    "rodada": "07",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "602c90d229e44ac5",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-18",
-    "hora": "",
-    "mandante": "CTE Colatina ES",
-    "visitante": "Audax São Mateus",
-    "estadio": "Justiniano de Mello e Silva",
-    "rodada": "08",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Colatina",
-    "id": "7598f1da52991bf0",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-18",
-    "hora": "",
-    "mandante": "Doze F.C.",
-    "visitante": "G.E.L.",
-    "estadio": "Gil Bernardes",
-    "rodada": "08",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Vila Velha",
-    "id": "d5ff5743621e5395",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-19",
-    "hora": "",
-    "mandante": "E.C. Tupy",
-    "visitante": "S.C. Brasil Capixaba",
-    "estadio": "Gil Bernardes",
-    "rodada": "08",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Vila Velha",
-    "id": "bbea27bcc9479061",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-19",
-    "hora": "",
-    "mandante": "Pinheiros F.C.",
-    "visitante": "Estrela do Norte F.C.",
-    "estadio": "Sumaré",
-    "rodada": "08",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Cachoeiro de Itapemirim",
-    "id": "89b7d8d55d2ba0ba",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 11",
-    "data": "2026-08-22",
-    "hora": "",
-    "mandante": "Porto Vitoria F.C.",
-    "visitante": "Doze F.C.",
-    "estadio": "C. de Desenv. do Futebol - Geovani Silva",
-    "rodada": "Jogo único",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-11-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-11-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "539de55bbbdd4ada",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Sub 13",
-    "data": "2026-08-22",
-    "hora": "",
-    "mandante": "Porto Vitoria F.C.",
-    "visitante": "Doze F.C.",
-    "estadio": "C. de Desenv. do Futebol - Geovani Silva",
-    "rodada": "Jogo único",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-sub-13-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-sub-13-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "63d7c5da4493c535",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-22",
-    "hora": "",
-    "mandante": "Audax São Mateus",
-    "visitante": "Doze F.C.",
-    "estadio": "Sernamby",
-    "rodada": "09",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "São Mateus",
-    "id": "2da268bc0cbc46f8",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-22",
-    "hora": "",
-    "mandante": "Estrela do Norte F.C.",
-    "visitante": "E.C. Tupy",
-    "estadio": "Sumaré",
-    "rodada": "09",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Cachoeiro de Itapemirim",
-    "id": "c324eb392368a619",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-22",
-    "hora": "",
-    "mandante": "Rive A.C.",
-    "visitante": "S.C. Brasil Capixaba",
-    "estadio": "Arsílio Caiado Ferreira",
-    "rodada": "09",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Alegre",
-    "id": "f358301918f9fd3c",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FPF-PA",
-    "competicao": "Brasil - FPF-PA - Campeonato Paraense Série A3 2026",
-    "data": "2026-08-22",
-    "hora": "09:30",
-    "mandante": "Tiradentes",
-    "visitante": "Parauapebas",
-    "estadio": "CEJU - CAMPO 1",
-    "estadio_apelido": "Centro Esportivo da Juventude-PA",
-    "rodada": "RODADA 1 DE 2",
-    "url": "https://www.fpfpara.com.br/competicao/110",
-    "extra": "pais=Brasil; estado=Pará; competicao_id=110; placar=1x0",
-    "pais": "Brasil",
-    "cidade": "",
-    "id": "d5a2c6f4e5113589",
-    "atualizado_em": "2026-09-01T15:24:22"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Copa de la Liga",
-    "data": "2026-08-25",
-    "hora": "15:00",
-    "mandante": "A. Atlético",
-    "visitante": "UTC",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Cuartos de Final",
-    "url": "",
-    "extra": "status=Jugado; placar=(5)1-1(4)",
-    "id": "484fbd1cd293aee4",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-26",
-    "hora": "",
-    "mandante": "Linhares F.C.",
-    "visitante": "G.E.L.",
-    "estadio": "Conilon",
-    "rodada": "09",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Jaguaré",
-    "id": "b929e2dfb56e93df",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Copa de la Liga",
-    "data": "2026-08-26",
-    "hora": "15:00",
-    "mandante": "Cristal",
-    "visitante": "S. Huancayo",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Cuartos de Final",
-    "url": "",
-    "extra": "status=Jugado; placar=4-1",
-    "id": "db716b28ba0f230e",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Copa de la Liga",
-    "data": "2026-08-26",
-    "hora": "15:00",
-    "mandante": "Grau",
-    "visitante": "Boys",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Cuartos de Final",
-    "url": "",
-    "extra": "status=Jugado; placar=(3)2-2(4)",
-    "id": "69a69f0a225c5421",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FFERJ",
-    "competicao": "Brasil - FFERJ - Competição não identificada",
-    "data": "2026-08-27",
-    "hora": "15:00",
-    "mandante": "S.A.F Botafogo",
-    "visitante": "Volta Redonda F.C",
-    "pais": "Brasil",
-    "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO NILTON SANTOS (ENGENHÃO)",
-    "rodada": "",
-    "url": "https://www.fferj.com.br/partidas/5824",
-    "extra": "codigo_fferj=5824; fonte_tag=FERJ",
-    "id": "e6263dc9a69ec19f",
-    "atualizado_em": "2026-08-31T19:43:32"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Copa de la Liga",
-    "data": "2026-08-27",
-    "hora": "15:00",
-    "mandante": "ADT",
-    "visitante": "D. Moquegua",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Cuartos de Final",
-    "url": "",
-    "extra": "status=Jugado; placar=2-0",
-    "id": "e76c20781056e066",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-29",
-    "hora": "",
-    "mandante": "CTE Colatina ES",
-    "visitante": "Linhares F.C.",
-    "estadio": "Justiniano de Mello e Silva",
-    "rodada": "10",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Colatina",
-    "id": "09a92937fe27e8a7",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-29",
-    "hora": "",
-    "mandante": "G.E.L.",
-    "visitante": "Audax São Mateus",
-    "estadio": "Robertão",
-    "rodada": "10",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Serra",
-    "id": "3e2dbecdf4b6e546",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-29",
-    "hora": "",
-    "mandante": "Pinheiros F.C.",
-    "visitante": "Rive A.C.",
-    "estadio": "Francisco Lacerda de Aguiar",
-    "rodada": "10",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Guaçuí",
-    "id": "0c0ccf329af970b6",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FES",
-    "competicao": "Brasil - FES - Estadual Série B",
-    "data": "2026-08-29",
-    "hora": "",
-    "mandante": "S.C. Brasil Capixaba",
-    "visitante": "Estrela do Norte F.C.",
-    "estadio": "Sumaré",
-    "rodada": "10",
-    "url": "https://futebolcapixaba.com/campeonatos/estadual-serie-b-2026/",
-    "extra": "pais=Brasil; estado=Espírito Santo; competicao_slug=estadual-serie-b-2026",
-    "pais": "Brasil",
-    "cidade": "Cachoeiro de Itapemirim",
-    "id": "c97e55d7c3a84210",
-    "atualizado_em": "2026-09-01T15:33:51"
-  },
-  {
-    "fonte": "FFERJ",
-    "competicao": "Brasil - FFERJ - Competição não identificada",
-    "data": "2026-08-29",
-    "hora": "10:00",
-    "mandante": "Sociedade Esportiva Paraty",
-    "visitante": "União Central F.C",
-    "pais": "Brasil",
-    "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO MUNICIPAL MARIO P. NARDELLI",
-    "rodada": "",
-    "url": "https://www.fferj.com.br/partidas/5842",
-    "extra": "codigo_fferj=5842; fonte_tag=FERJ",
-    "id": "b49d0cb4ac0a0afa",
-    "atualizado_em": "2026-08-31T19:43:32"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-08-29",
-    "hora": "15:00",
-    "mandante": "ADT",
-    "visitante": "ASA FC",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo C",
-    "url": "",
-    "extra": "status=Jugado; placar=3-2",
-    "id": "50ccf3ce662406b7",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-08-29",
-    "hora": "15:00",
-    "mandante": "D. Lute",
-    "visitante": "Volante",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo A",
-    "url": "",
-    "extra": "status=Jugado; placar=2-0",
-    "id": "bfbeb09d9a789383",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-08-29",
-    "hora": "15:00",
-    "mandante": "Universitario",
-    "visitante": "U. Huaral",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo B",
-    "url": "",
-    "extra": "status=Jugado; placar=2-1",
-    "id": "e84c1c0fe9b50a73",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 2",
-    "data": "2026-08-29",
-    "hora": "15:15",
-    "mandante": "CNI",
-    "visitante": "Alianza UDH",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo 2",
-    "url": "",
-    "extra": "status=Jugado; placar=3-0",
-    "id": "4d5f1d694cbd478f",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-08-29",
-    "hora": "15:30",
-    "mandante": "S. Pariacoto",
-    "visitante": "S. Cristal",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo B",
-    "url": "",
-    "extra": "status=Jugado; placar=0-3",
-    "id": "6bdc3990b7bf4d96",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FPF-PA",
-    "competicao": "Brasil - FPF-PA - Campeonato Paraense Série A3 2026",
-    "data": "2026-08-29",
-    "hora": "17:00",
-    "mandante": "Parauapebas",
-    "visitante": "Tiradentes",
-    "estadio": "Estádio José Raimundo Roseno Araújo",
-    "estadio_apelido": "Rosenão",
-    "rodada": "RODADA 2 DE 2",
-    "url": "https://www.fpfpara.com.br/competicao/110/fase/355/rodada/2",
-    "extra": "pais=Brasil; estado=Pará; competicao_id=110; placar=5x0",
-    "pais": "Brasil",
-    "cidade": "",
-    "id": "a80f05cb05d87faf",
-    "atualizado_em": "2026-09-01T15:24:22"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-08-29",
-    "hora": "19:30",
-    "mandante": "Alianza Lima",
-    "visitante": "Garcilaso",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=0-1",
-    "id": "59be2554163ebfd8",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 2",
-    "data": "2026-08-30",
-    "hora": "10:45",
-    "mandante": "Unión Minas",
-    "visitante": "Sport Huancayo",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo 2",
-    "url": "",
-    "extra": "status=Jugado; placar=2-1",
-    "id": "45fadd09cd5b74b5",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-08-30",
-    "hora": "11:00",
-    "mandante": "D. Moquegua",
-    "visitante": "A. Atlético",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=1-4",
-    "id": "1927e19f28689309",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 2",
-    "data": "2026-08-30",
-    "hora": "13:00",
-    "mandante": "Llacuabamba",
-    "visitante": "U. Comercio",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo 1",
-    "url": "",
-    "extra": "status=Jugado; placar=1-1",
-    "id": "5a17281767737afa",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-08-30",
-    "hora": "13:15",
-    "mandante": "ADT",
-    "visitante": "S. Huancayo",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=1-3",
-    "id": "2e25d0ac1d0e13e4",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 2",
-    "data": "2026-08-30",
-    "hora": "15:15",
-    "mandante": "Bentín Tacna",
-    "visitante": "Santos FC",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo 2",
-    "url": "",
-    "extra": "status=Jugado; placar=3-2",
-    "id": "6ee7c67b826536cc",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-08-30",
-    "hora": "15:30",
-    "mandante": "Boys",
-    "visitante": "Cristal",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=1-0",
-    "id": "dd942d8aa03413d9",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-08-30",
-    "hora": "19:00",
-    "mandante": "Cienciano",
-    "visitante": "Cusco FC",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=1-2",
-    "id": "85863490f9771ce0",
-    "atualizado_em": "2026-08-31T19:27:08"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "09:00",
-    "mandante": "Deportes Copiapo Juvenil Fem",
-    "visitante": "Deportes Antofagasta Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "c4e0e8ed4d1a32ce",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "10:00",
-    "mandante": "Santiago Wanderers Juvenil Fem",
-    "visitante": "Coquimbo Unido Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "54e6636835ad8021",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Copa Goiás Sub 20 da 1ª Divisão / 2026",
-    "data": "2026-08-31",
-    "hora": "10:00",
-    "mandante": "Anápolis",
-    "visitante": "Planalto Esporte Clube",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "CT Valterci de Melo",
-    "rodada": "4ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1784&jogo=56772",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "75ced0d2ef0c5135",
-    "atualizado_em": "2026-08-31T18:47:09"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "11:00",
-    "mandante": "Unión Española Juvenil Fem",
-    "visitante": "Colo Colo Juvenil Fem",
-    "estadio": "Estadio Santa Laura – Cancha 2",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "72174e000e039a71",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "11:00",
-    "mandante": "Unión San Felipe Juvenil Fem",
-    "visitante": "Deportes Melipilla Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "12935e8595f69a38",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "12:00",
-    "mandante": "Huachipato Juvenil Fem",
-    "visitante": "Rangers Juvenil Fem",
-    "estadio": "Estadio Huachipato – Cancha 3",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "c4dbd09c174e4d85",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-08-31",
-    "hora": "12:00",
-    "mandante": "Real San Joaquín",
-    "visitante": "Deportes Rengo",
-    "estadio": "Municipal de Lo Barnechea",
-    "rodada": "Fecha 4",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "de90d76927461ace",
-    "atualizado_em": "2026-08-31T18:59:53"
-  },
-  {
-    "fonte": "FFERJ",
-    "competicao": "Brasil - FFERJ - Competição não identificada",
-    "data": "2026-08-31",
-    "hora": "14:45",
-    "mandante": "Barra Mansa F.C",
-    "visitante": "Campos Atlético Associação",
-    "pais": "Brasil",
-    "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO PREFEITO ISMAEL DE SOUZA LEÃO DO SUL",
-    "rodada": "",
-    "url": "https://www.fferj.com.br/partidas/5816",
-    "extra": "codigo_fferj=5816; fonte_tag=FERJ",
-    "id": "4219d44703dfc4c8",
-    "atualizado_em": "2026-08-24T14:30:12"
-  },
-  {
-    "fonte": "AUF",
-    "competicao": "Uruguay - Torneo Final 1C 2026",
-    "data": "2026-08-31",
-    "hora": "15:00",
-    "mandante": "Sud América",
-    "visitante": "Terremoto",
-    "estadio": "COMPLEJO RENTISTAS",
-    "rodada": "Fecha 6",
-    "url": "https://www.auf.org.uy/primera-divisional-c/",
-    "extra": "",
-    "pais": "Uruguay",
-    "cidade": "",
-    "id": "7a03c94efc0d2958",
-    "atualizado_em": "2026-08-31T19:06:05"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "15:30",
-    "mandante": "Magallanes Juvenil Fem",
-    "visitante": "Deportes Santa Cruz Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "b181e66e46cdd27a",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Copa Goiás Sub 20 da 1ª Divisão / 2026",
-    "data": "2026-08-31",
-    "hora": "15:30",
-    "mandante": "São Luiz",
-    "visitante": "CEC - Cerrado Esporte Clube",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "Jutair Neto",
-    "rodada": "4ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1784&jogo=56773",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "5908a413b73f4da3",
-    "atualizado_em": "2026-08-31T18:47:09"
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Taça Mané Garrincha Sub 17 da 3ª Divisão / 2026",
-    "data": "2026-08-31",
-    "hora": "15:30",
-    "mandante": "Anápolis",
-    "visitante": "Campineira",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "CT Valterci de Melo",
-    "rodada": "2ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1789&jogo=57956",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "4f20ba7928db29ca",
-    "atualizado_em": "2026-08-31T18:47:09"
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Taça Mané Garrincha Sub 17 da 3ª Divisão / 2026",
-    "data": "2026-08-31",
-    "hora": "15:30",
-    "mandante": "CRAC",
-    "visitante": "Jardim America",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "Adib Elias",
-    "rodada": "2ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1789&jogo=57958",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "c4ed2ec34ffc4dcc",
-    "atualizado_em": "2026-08-31T18:47:09"
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Taça Mané Garrincha Sub 17 da 3ª Divisão / 2026",
-    "data": "2026-08-31",
-    "hora": "15:30",
-    "mandante": "Olímpio",
-    "visitante": "Atletas de Jesus",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "Serra de Caldas",
-    "rodada": "2ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1789&jogo=57957",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "b817a77a017b77f7",
-    "atualizado_em": "2026-08-31T18:47:09"
-  },
-  {
-    "fonte": "AUF",
-    "competicao": "Uruguay - Liga AUF Uruguaya",
-    "data": "2026-08-31",
-    "hora": "15:30",
-    "mandante": "Racing",
-    "visitante": "Albion",
-    "estadio": "PARQUE OSVALDO ROBERTO",
-    "rodada": "Fecha 4",
-    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
-    "extra": "",
-    "pais": "Uruguay",
-    "cidade": "",
-    "id": "c5ee99863d8f3050",
-    "atualizado_em": "2026-08-31T19:06:05"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Sub-17",
-    "data": "2026-08-31",
-    "hora": "16:00",
-    "mandante": "Grêmio (RS)",
-    "visitante": "Internacional (RS)",
-    "estadio": "Airton Ferreira da Silva* Eldorado",
-    "cidade": "do Sul",
-    "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
-    "extra": "pais=Brasil; cidade=do Sul",
-    "id": "8c54c9096e755757",
-    "atualizado_em": "2026-08-31T19:09:41"
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Copa Goiás Sub 11 da 2ª Divisão / 2026",
-    "data": "2026-08-31",
-    "hora": "16:00",
-    "mandante": "A. E. Goianésia",
-    "visitante": "RAE SAF",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "Waldeir José de Oliveira",
-    "rodada": "1ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1807&jogo=58164",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "8b4c4ae66a5955bf",
-    "atualizado_em": "2026-08-31T18:47:09"
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Copa Goiás Sub 11 da 2ª Divisão / 2026",
-    "data": "2026-08-31",
-    "hora": "16:00",
-    "mandante": "Aparecida Esporte Clube",
-    "visitante": "Anhanguera",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "CT Sussumo Taia",
-    "rodada": "1ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1807&jogo=58165",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "1174759be271b755",
-    "atualizado_em": "2026-08-31T18:47:09"
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Copa Goiás Sub 11 da 2ª Divisão / 2026",
-    "data": "2026-08-31",
-    "hora": "16:00",
-    "mandante": "Aparecidense",
-    "visitante": "Anapolina S.a.f.",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "CT Buriti Sereno",
-    "rodada": "1ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1807&jogo=58166",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "65defc5cc419fc0f",
-    "atualizado_em": "2026-08-31T18:47:09"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "16:30",
-    "mandante": "Universidad Católica Juvenil Fem",
-    "visitante": "Deportes Limache Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "4a7c471ba534201b",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "17:45",
-    "mandante": "Unión Araucanía Juvenil Fem",
-    "visitante": "Deportes Temuco Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "73ca9a8336929a88",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Colombia - Liga BetPlay",
-    "data": "2026-08-31",
-    "hora": "18:00",
-    "mandante": "Deportivo Pasto",
-    "visitante": "Deportivo Pereira",
-    "pais": "Colombia",
-    "cidade": "Pasto",
-    "estadio": "Departamental Libertad",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401877873; status=Scheduled",
-    "id": "ba01646a7fa4c9ec",
-    "atualizado_em": "2026-08-03T16:15:02"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Primera Mercado Libre",
-    "data": "2026-08-31",
-    "hora": "18:15",
-    "mandante": "Unión La Calera",
-    "visitante": "Deportes La Serena",
-    "estadio": "Estadio Nicolás Chahuán",
-    "rodada": "Fecha 21",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
-    "extra": "",
-    "id": "26ee00c6ba95a2b1",
-    "atualizado_em": "2026-08-31T18:59:53"
-  },
-  {
-    "fonte": "AFA",
-    "competicao": "Argentina - Torneo Clausura",
-    "data": "2026-08-31",
-    "hora": "19:00",
-    "mandante": "Defensa y Justicia",
-    "visitante": "Platense",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "41015ed47ae57589",
-    "atualizado_em": "2026-08-31T19:04:32"
-  },
-  {
-    "fonte": "AFA",
-    "competicao": "Argentina - Torneo Clausura",
-    "data": "2026-08-31",
-    "hora": "19:00",
-    "mandante": "Estudiantes",
-    "visitante": "Newell’s",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "f47f92d95bcb86c0",
-    "atualizado_em": "2026-08-31T19:04:32"
-  },
-  {
-    "fonte": "FCF",
-    "competicao": "Brasil - Ceará - Cearense Série C 2026",
-    "data": "2026-08-31",
-    "hora": "19:00",
-    "mandante": "FC Acopiara",
-    "visitante": "Tianguá",
-    "pais": "Brasil",
-    "cidade": "Iguatu",
-    "estadio": "Morenão",
-    "rodada": "RODADA 6",
-    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=428",
-    "extra": "idcamp=428; fase=1a_fase; grupo=A; jogo_ref=18; fonte_dado=tabela_oficial_fcf_pdf_08-06-2026",
-    "id": "e0934532f8e5d272",
-    "atualizado_em": "2026-08-09T17:46:17"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-08-31",
-    "hora": "19:30",
-    "mandante": "Fortaleza (CE)",
-    "visitante": "Operário (PR)",
-    "estadio": "Arena Castelão",
-    "cidade": "Fortaleza",
-    "rodada": "Rodada 25",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
-    "extra": "pais=Brasil; cidade=Fortaleza",
-    "id": "abcd900dc887db8b",
-    "atualizado_em": "2026-08-31T19:09:41"
-  },
-  {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Copa Paulista Rivalo (Profissional)",
-    "data": "2026-08-31",
-    "hora": "19:30",
-    "mandante": "Grêmio Prudente",
-    "visitante": "Paulista",
-    "pais": "Brasil",
-    "cidade": "Presidente Prudente",
-    "estadio": "Estádio Municipal Paulo Constantino",
-    "rodada": "Rodada 7",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=51; grupo=06; fase=PLAY IN; canais=Metrópoles; suspencao=LIBERADO",
-    "id": "077f27402898a3b8",
-    "atualizado_em": "2026-08-31T19:36:44"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-08-31",
-    "hora": "20:00",
-    "mandante": "Cobreloa",
-    "visitante": "San Marcos de Arica",
-    "estadio": "Zorros del Desierto",
-    "rodada": "Fecha 23",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "7e8d6db5c9016a80",
-    "atualizado_em": "2026-08-31T18:59:53"
-  },
-  {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Copa Paulista Rivalo (Profissional)",
-    "data": "2026-08-31",
-    "hora": "20:00",
-    "mandante": "Comercial RP",
-    "visitante": "EC São Bernardo",
-    "pais": "Brasil",
-    "cidade": "Ribeirão Preto",
-    "estadio": "Estádio Dr. Francisco de Palma Travassos",
-    "rodada": "Rodada 7",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=52; grupo=07; fase=PLAY IN; canais=Metrópoles, Ulisses TV; suspencao=LIBERADO",
-    "id": "f9521a82c2617753",
-    "atualizado_em": "2026-08-31T19:36:44"
-  },
-  {
-    "fonte": "AUF",
-    "competicao": "Uruguay - Torneo Final 1C 2026",
-    "data": "2026-08-31",
-    "hora": "20:00",
-    "mandante": "DEPORTIVO LSM",
-    "visitante": "Bella Vista",
-    "estadio": "PARQUE PALERMO",
-    "rodada": "Fecha 6",
-    "url": "https://www.auf.org.uy/primera-divisional-c/",
-    "extra": "",
-    "pais": "Uruguay",
-    "cidade": "",
-    "id": "0d08af270c160e4a",
-    "atualizado_em": "2026-08-31T19:06:05"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Colombia - Liga BetPlay",
-    "data": "2026-08-31",
-    "hora": "20:05",
-    "mandante": "Deportivo Cali",
-    "visitante": "Atlético Bucaramanga",
-    "pais": "Colombia",
-    "cidade": "Cali",
-    "estadio": "Deportivo Cali",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401878015; status=Scheduled",
-    "id": "831a587fb357f8ba",
-    "atualizado_em": "2026-08-03T16:15:02"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Primera Mercado Libre",
-    "data": "2026-08-31",
-    "hora": "20:45",
-    "mandante": "Universidad Católica",
-    "visitante": "O'Higgins",
-    "estadio": "Claro Arena",
-    "rodada": "Fecha 21",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
-    "extra": "",
-    "id": "9e040a2e25e6a48f",
-    "atualizado_em": "2026-08-31T18:59:53"
-  },
-  {
-    "fonte": "AFA",
-    "competicao": "Argentina - Torneo Clausura",
-    "data": "2026-08-31",
-    "hora": "21:15",
-    "mandante": "Instituto",
-    "visitante": "San Lorenzo",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "19931cb68063a978",
-    "atualizado_em": "2026-08-31T19:04:32"
-  },
-  {
-    "fonte": "AFA",
-    "competicao": "Argentina - Torneo Clausura",
-    "data": "2026-08-31",
-    "hora": "21:15",
-    "mandante": "Tigre",
-    "visitante": "Barracas Central",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "b82f3ef3ed168b58",
-    "atualizado_em": "2026-08-31T19:04:32"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "3:30",
-    "mandante": "Magallanes Juvenil Fem",
-    "visitante": "Deportes Santa Cruz Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "b42d724a88f72a36",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "4:30",
-    "mandante": "Universidad Católica Juvenil Fem",
-    "visitante": "Deportes Limache Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "12d1bb835c014fa6",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "5:45",
-    "mandante": "Unión Araucanía Juvenil Fem",
-    "visitante": "Deportes Temuco Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "824a8ca3bbe3e706",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Primera Mercado Libre",
-    "data": "2026-08-31",
-    "hora": "6:15",
-    "mandante": "Unión La Calera",
-    "visitante": "Deportes La Serena",
-    "estadio": "Estadio Nicolás Chahuán",
-    "rodada": "Fecha 21",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
-    "extra": "",
-    "id": "7f15015c417ff41f",
-    "atualizado_em": "2026-08-19T12:57:38"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-08-31",
-    "hora": "8:00",
-    "mandante": "Cobreloa",
-    "visitante": "San Marcos de Arica",
-    "estadio": "Zorros del Desierto",
-    "rodada": "Fecha 23",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "555f2d274c16fce8",
-    "atualizado_em": "2026-08-19T12:57:38"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Primera Mercado Libre",
-    "data": "2026-08-31",
-    "hora": "8:45",
-    "mandante": "Universidad Católica",
-    "visitante": "O'Higgins",
-    "estadio": "Claro Arena",
-    "rodada": "Fecha 21",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
-    "extra": "",
-    "id": "67e7763e55185ec1",
-    "atualizado_em": "2026-08-19T12:57:38"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-08-31",
-    "hora": "9:00",
-    "mandante": "Deportes Copiapo Juvenil Fem",
-    "visitante": "Deportes Antofagasta Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 6",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "ab880ef10cb90f3d",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Copa Goiás Sub 20 da 2ª Divisão / 2026",
     "data": "2026-09-01",
@@ -1607,7 +41,7 @@
     "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
     "extra": "calendario.php",
     "id": "7e85f973df4f9232",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -1619,10 +53,10 @@
     "estadio": "CT Ribamar",
     "cidade": "Bezerra* Maracanaú",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Bezerra* Maracanaú",
     "id": "0899fefe12fbea94",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FCF",
@@ -1679,13 +113,13 @@
     "hora": "15:30",
     "mandante": "Cruzeiro (MG)",
     "visitante": "Flamengo (RJ)",
-    "estadio": "CT Toca da Raposa*",
-    "cidade": "Belo Horizonte",
+    "estadio": "Arena do Jacaré",
+    "cidade": "Sete Lagoas",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
-    "extra": "pais=Brasil; cidade=Belo Horizonte",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
+    "extra": "pais=Brasil; cidade=Sete Lagoas",
     "id": "a35a762faa18fa71",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -1889,7 +323,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Londrina",
     "id": "e5d9827434ef9ef0",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -1936,23 +370,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_28_08_aad76ea9dc.pdf",
     "extra": "pais=Brasil; cidade=Belo Horizonte",
     "id": "b8443d15b7c9ab65",
-    "atualizado_em": "2026-08-31T19:09:41"
-  },
-  {
-    "fonte": "FBF",
-    "competicao": "Brasil - FBF - Baianão 2026 - Sub-17",
-    "data": "2026-09-02",
-    "hora": "",
-    "mandante": "SSA FC",
-    "visitante": "BOT",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://www.fbf.org.br/",
-    "extra": "pais=Brasil; estado=Bahia; codigo_fbf=home; origem=bloco_multilinha",
-    "id": "d6707bffc9f93b51",
-    "atualizado_em": "2026-08-31T19:59:52"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -1966,7 +384,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "357defb3bab33ce7",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -1980,7 +398,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
     "extra": "",
     "id": "3582b1aca58fe90a",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -1994,7 +412,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "0829301787be3f1b",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "ESPN",
@@ -2136,7 +554,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "4acd88405f0bec0c",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "ESPN",
@@ -2260,10 +678,10 @@
     "estadio": "CAT do Caju",
     "cidade": "Curitiba",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Curitiba",
     "id": "edda45907501646b",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -2275,10 +693,10 @@
     "estadio": "Valdir Cândido De",
     "cidade": "Queirós* Guapó",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Queirós* Guapó",
     "id": "0110af2067f987b9",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -2290,10 +708,10 @@
     "estadio": "CT Evaristo de Macedo*",
     "cidade": "Dias D'Ávila",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Dias D'Ávila",
     "id": "6462c7785018f0a9",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -2305,10 +723,10 @@
     "estadio": "CFAC Juventude*",
     "cidade": "Caxias do Sul",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Caxias do Sul",
     "id": "4527b9f2a6e10e25",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -2320,10 +738,10 @@
     "estadio": "CPD",
     "cidade": "Atibaia* Atibaia",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Atibaia* Atibaia",
     "id": "cfbae1aa29e915f9",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -2335,10 +753,10 @@
     "estadio": "CT Rei Pelé*",
     "cidade": "Santos",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Santos",
     "id": "463c4b6bcc1f93e6",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FMF",
@@ -2402,7 +820,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "31e9e8488d3ef55b",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "FGF",
@@ -2510,10 +928,10 @@
     "estadio": "Arena",
     "cidade": "Barueri Barueri",
     "rodada": "Rodada 14",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Barueri Barueri",
     "id": "45c4a35dcc69ca7b",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -2527,7 +945,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "0be7a655598f3f70",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -2541,7 +959,21 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "c397596aa603de90",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
+  },
+  {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera B - Norte",
+    "data": "2026-09-02",
+    "hora": "16:00",
+    "mandante": "Julio Covarrubias",
+    "visitante": "Mun. Ovalle",
+    "estadio": "Mun. Los Jardines",
+    "rodada": "Jornada 16",
+    "url": "https://cf3.cl/torneo/tercera-b/grupo-norte/fecha/16",
+    "extra": "",
+    "id": "406d6cd6c6e7c0b6",
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FGF",
@@ -2635,7 +1067,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "af7669e4c7d57b2a",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "ESPN",
@@ -2652,6 +1084,20 @@
     "extra": "codigo_espn=401877992; status=Scheduled",
     "id": "03e7c2cbcefcb90b",
     "atualizado_em": "2026-08-03T16:15:02"
+  },
+  {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera B - Norte",
+    "data": "2026-09-02",
+    "hora": "18:30",
+    "mandante": "Dep. Ovalle",
+    "visitante": "Glorias Navales",
+    "estadio": "Diaguita Ovalle",
+    "rodada": "Jornada 17",
+    "url": "https://cf3.cl/torneo/tercera-b/grupo-norte/fecha/17",
+    "extra": "",
+    "id": "1cae37fc3c4a4e31",
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "APF",
@@ -2679,10 +1125,38 @@
     "estadio": "Divino Garcia Rosa",
     "cidade": "Goiatuba",
     "rodada": "Volta",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_31_08_444e77692c.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_31_08_53c2fe18d1.pdf",
     "extra": "pais=Brasil; cidade=Goiatuba",
     "id": "fb8f4e5c1677b270",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera B - Norte",
+    "data": "2026-09-02",
+    "hora": "20:00",
+    "mandante": "Cultural Maipú",
+    "visitante": "Tricolor de Paine",
+    "estadio": "Santiago Bueras",
+    "rodada": "Jornada 18",
+    "url": "https://cf3.cl/torneo/tercera-b/grupo-norte/fecha/18",
+    "extra": "",
+    "id": "83f22285989c63db",
+    "atualizado_em": "2026-09-01T16:20:56"
+  },
+  {
+    "fonte": "anfaterceradivision.cl/calendario",
+    "competicao": "Tercera B - Norte",
+    "data": "2026-09-02",
+    "hora": "20:00",
+    "mandante": "Cultural Maipú Metropolitana",
+    "visitante": "Tricolor de Paine Metropolitana",
+    "estadio": "02 Sep 2026, 20:00 Santiago Bueras",
+    "rodada": "",
+    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
+    "extra": "calendario.php",
+    "id": "ec8931dddd78ab90",
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "ESPN",
@@ -2712,7 +1186,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "5ea70909bfbca968",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -2727,7 +1201,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_28_08_aad76ea9dc.pdf",
     "extra": "pais=Brasil; cidade=Santos",
     "id": "7f40440f53a78a61",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -2742,7 +1216,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_28_08_aad76ea9dc.pdf",
     "extra": "pais=Brasil; cidade=Salvador",
     "id": "936ecf6257297c9e",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -2784,7 +1258,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
     "extra": "",
     "id": "d4d3236d540514f2",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FPF",
@@ -3087,7 +1561,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_28_08_aad76ea9dc.pdf",
     "extra": "pais=Brasil; cidade=Porto Alegre",
     "id": "355b68702781c894",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -3102,7 +1576,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Recife",
     "id": "cda94e99373c2c0d",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -3114,10 +1588,10 @@
     "estadio": "Rei Pelé",
     "cidade": "Maceió",
     "rodada": "Volta",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_31_08_444e77692c.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_31_08_53c2fe18d1.pdf",
     "extra": "pais=Brasil; cidade=Maceió",
     "id": "71d10669138f4499",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -3195,7 +1669,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
     "extra": "",
     "id": "52f21a1540179062",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3223,7 +1697,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "35c0db0d6a808e24",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3861,7 +2335,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "52fff3cdc006186c",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "AUF",
@@ -3877,7 +2351,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "36327c393278dc31",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "AFA",
@@ -3892,7 +2366,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "ff9a3c491390ec6c",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3906,7 +2380,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "08fccb4337342ace",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3915,12 +2389,12 @@
     "hora": "18:00",
     "mandante": "Santiago Wanderers",
     "visitante": "Deportes Iquique",
-    "estadio": "Elías Figueroa Brander",
+    "estadio": "Municipal Lucio Fariña Fernández",
     "rodada": "Fecha 24",
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "ee49412517426ec2",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -3935,7 +2409,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_31_08_dd8174f07e.pdf",
     "extra": "pais=Brasil; cidade=São Paulo",
     "id": "afa01c5f2a2cba18",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -3950,7 +2424,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_BRASILEIRO_MASCULINO_SERIE_A_SUB_20_31_08_dd8174f07e.pdf",
     "extra": "pais=Brasil; cidade=São Paulo",
     "id": "7d2c15cad3aea3ef",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "AFA",
@@ -3965,7 +2439,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "23c5c3ec15aa0cea",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -3980,7 +2454,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "5f82fbb10b4dfca4",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AUF",
@@ -3996,7 +2470,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "de821847c876418d",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "CBF",
@@ -4011,7 +2485,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Criciúma",
     "id": "3e7a483fb32d200c",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FPF",
@@ -4042,7 +2516,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=São João Del Rei",
     "id": "e745cee4ddca4686",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -4056,7 +2530,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "78812bd90a1a9f0c",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -4070,7 +2544,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "3bd6c3abb34bf922",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -4085,7 +2559,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Maceió",
     "id": "ef8965dce5fda0e8",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -4654,6 +3128,21 @@
     "atualizado_em": "2026-08-31T19:40:34"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Sub-17",
+    "data": "2026-09-05",
+    "hora": "11:00",
+    "mandante": "A Botafogo (RJ)",
+    "visitante": "Bahia (BA)",
+    "estadio": "Nilton Santos",
+    "cidade": "Rio de Janeiro",
+    "rodada": "Rodada 15",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
+    "extra": "pais=Brasil; cidade=Rio de Janeiro",
+    "id": "74c37905eaccf7c6",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-17 (SUB17)",
     "data": "2026-09-05",
@@ -5031,7 +3520,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "4a21208655ae12af",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -5045,7 +3534,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "a3db763d92385e86",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -5059,7 +3548,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
     "extra": "",
     "id": "902d197f76db6d8b",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -5087,7 +3576,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "3d8c65935367013b",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -5390,7 +3879,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "db5933e7b8eeee19",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "ESPN",
@@ -5421,7 +3910,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "1c5fa26f9ec96b21",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FPF",
@@ -6087,10 +4576,10 @@
     "estadio": "Alfredo Schürig",
     "cidade": "São Paulo",
     "rodada": "Rodada 15",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=São Paulo",
     "id": "d8c32ff867203113",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -6102,10 +4591,10 @@
     "estadio": "Gávea*",
     "cidade": "Rio de Janeiro",
     "rodada": "Rodada 15",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Rio de Janeiro",
     "id": "34e0eb4743bf6c4a",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -6162,10 +4651,10 @@
     "estadio": "Nivaldo Pereira",
     "cidade": "Nova Iguaçu",
     "rodada": "Rodada 15",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Nova Iguaçu",
     "id": "cb180c4c077dc281",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -6177,10 +4666,10 @@
     "estadio": "CT Manoel Barradas",
     "cidade": "Salvador",
     "rodada": "Rodada 15",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Salvador",
     "id": "69cf22bb5403e92d",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -6194,7 +4683,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "4e68ea958f28d8b8",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -6336,7 +4825,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "bfa705ba656b4dde",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "AUF",
@@ -6352,7 +4841,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "be4d81b18d7e944a",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "FGF",
@@ -6444,10 +4933,10 @@
     "estadio": "Arena",
     "cidade": "Barueri Barueri",
     "rodada": "Rodada 15",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Barueri Barueri",
     "id": "3c78a64251970864",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -6462,7 +4951,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "d3a43e19801e7a32",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -6477,7 +4966,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Novo Horizonte",
     "id": "1d9d6898a01638c6",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -6492,6 +4981,20 @@
     "extra": "",
     "id": "921bde085e44fe43",
     "atualizado_em": "2026-08-31T18:59:53"
+  },
+  {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera A",
+    "data": "2026-09-05",
+    "hora": "16:00",
+    "mandante": "Constitución Unido",
+    "visitante": "Malleco Unido",
+    "estadio": "Enrique Donn Müller",
+    "rodada": "Jornada 15",
+    "url": "https://cf3.cl/torneo/tercera-a/fecha/15",
+    "extra": "",
+    "id": "8974e7b857c8889e",
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FES",
@@ -7242,7 +5745,22 @@
     "extra": "",
     "pais": "Argentina",
     "id": "d979445f7a492835",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-05",
+    "hora": "17:00",
+    "mandante": "C Inter de Limeira (SP)",
+    "visitante": "Ferroviária (SP)",
+    "estadio": "Major Levi",
+    "cidade": "Sobrinho Limeira",
+    "rodada": "Rodada 1",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Sobrinho Limeira",
+    "id": "b1151cc9309a815f",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7256,7 +5774,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
     "extra": "",
     "id": "a53f1b4e373f3983",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FGF",
@@ -7302,7 +5820,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "f4e3b883dc06753c",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7316,7 +5834,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "fecbb2a152422f5e",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -7331,7 +5849,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Caxias do Sul",
     "id": "5b03deb4fb9135d9",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -7363,7 +5881,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "530fd01bfc057c7c",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "CBF",
@@ -7378,7 +5896,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Fortaleza",
     "id": "4dca26802cab0034",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "AFA",
@@ -7393,7 +5911,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "b3e3ef28f3b406ff",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FMF",
@@ -7425,7 +5943,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "33586f8ed5a8dad6",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7453,7 +5971,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "f617ca0b350f4a8c",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7467,7 +5985,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "6abc9983850ff43f",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "ESPN",
@@ -7498,7 +6016,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "85f7f9398c4e43d6",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7582,7 +6100,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "c06823e6cb03f448",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FPF",
@@ -7628,7 +6146,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "0a5f58f8c906d25a",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7690,7 +6208,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "c16afce2d14914b3",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7704,7 +6222,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "2970bccb68f19a95",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FPF",
@@ -7751,7 +6269,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Londrina",
     "id": "53da19586622b656",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7765,7 +6283,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "5aa9aa16ada84f5c",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7821,7 +6339,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
     "extra": "",
     "id": "bf2500711208d6b9",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FPF",
@@ -7853,7 +6371,21 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "302ea190969de00c",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Ascenso Femenino",
+    "data": "2026-09-06",
+    "hora": "12:00",
+    "mandante": "Everton Femenino",
+    "visitante": "Deportes Antofagasta Femenino",
+    "estadio": "Sausalito",
+    "rodada": "",
+    "url": "https://www.campeonatochileno.cl/ligas/ascenso-femenino/",
+    "extra": "",
+    "id": "86fa2a10a2a3592f",
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7867,7 +6399,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "1b9cf6339e782ca7",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7881,7 +6413,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "aca2570da3beeef6",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "ESPN",
@@ -8025,7 +6557,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "dea646c4c48bc783",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8105,7 +6637,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "016c355c0f6440f3",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "ESPN",
@@ -8231,7 +6763,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
     "extra": "",
     "id": "fa0a081f4c616a70",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8245,7 +6777,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "1b8d906667492520",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "AFA",
@@ -8260,7 +6792,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "0abdbea8e6708658",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "CBF",
@@ -8287,10 +6819,10 @@
     "estadio": "Morada dos",
     "cidade": "Quero-Queros Alvorada",
     "rodada": "Rodada 15",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Quero-Queros Alvorada",
     "id": "727ea254c8dbe352",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8304,7 +6836,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "1f3afb216a75adea",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8497,6 +7029,21 @@
     "atualizado_em": "2026-09-01T16:04:38"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-06",
+    "hora": "16:00",
+    "mandante": "B Floresta (CE)",
+    "visitante": "Maringá (PR)",
+    "estadio": "Presidente Vargas",
+    "cidade": "Fortaleza",
+    "rodada": "Rodada 1",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Fortaleza",
+    "id": "767dd5c7046375e7",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Segunda Panini",
     "data": "2026-09-06",
@@ -8634,7 +7181,22 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "6214f5db258f31e4",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série D",
+    "data": "2026-09-06",
+    "hora": "17:00",
+    "mandante": "ASA (AL)",
+    "visitante": "Uberlândia (MG)",
+    "estadio": "Coaracy Fonseca",
+    "cidade": "Arapiraca",
+    "rodada": "Ida",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_31_08_53c2fe18d1.pdf",
+    "extra": "pais=Brasil; cidade=Arapiraca",
+    "id": "80c009c641be0854",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8648,7 +7210,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "cc1f1e6082202c21",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "AFA",
@@ -8663,7 +7225,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "55a2b4c5081ab95d",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -8678,7 +7240,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "1c32158fd3cc77e6",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FGF",
@@ -8710,7 +7272,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "cca60a0fb16a00da",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "ESPN",
@@ -8741,7 +7303,22 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Campinas",
     "id": "bdcd6e79062d0909",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-06",
+    "hora": "18:30",
+    "mandante": "B Santa Cruz (PE)",
+    "visitante": "Botafogo (PB)",
+    "estadio": "Arena Pernambuco S. Lourenço",
+    "cidade": "da Mata",
+    "rodada": "Rodada 1",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=da Mata",
+    "id": "703e613d37aaf5cf",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "AFA",
@@ -8756,7 +7333,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "5258115d7f5b83d9",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8770,7 +7347,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "0123e4dce8437a60",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "AUF",
@@ -8786,7 +7363,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "1ee602a792cbf1e0",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8845,7 +7422,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "ad6a736b523d13e3",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8996,6 +7573,22 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=56; grupo=06; fase=PLAY IN; canais=Metrópoles, Ulisses TV; suspencao=LIBERADO",
     "id": "5350824a7239078e",
     "atualizado_em": "2026-08-31T19:36:44"
+  },
+  {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-07",
+    "hora": "15:00",
+    "mandante": "Albion",
+    "visitante": "Progreso",
+    "estadio": "LUIS FRANZINI",
+    "rodada": "Fecha 5",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "747530925a4d101d",
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "FGF",
@@ -9158,6 +7751,21 @@
     "atualizado_em": "2026-09-01T16:04:38"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-07",
+    "hora": "18:00",
+    "mandante": "C Paysandu (PA)",
+    "visitante": "Brusque (SC)",
+    "estadio": "Mangueirão",
+    "cidade": "Belém",
+    "rodada": "Rodada 1",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Belém",
+    "id": "8ed84028d34e3c8b",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Segunda Panini",
     "data": "2026-09-07",
@@ -9184,7 +7792,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "b958e55329bec769",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AUF",
@@ -9200,7 +7808,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "cd77bbe6c4fa9981",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9228,7 +7836,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "9c757bc4f4eb369d",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "ESPN",
@@ -9259,7 +7867,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "f97417a3bc5f0c19",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9583,10 +8191,10 @@
     "estadio": "Nilton Santos",
     "cidade": "Rio de Janeiro",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Rio de Janeiro",
     "id": "0fe31c650f3ce083",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9600,7 +8208,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "08ed94dabd1aedce",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9614,7 +8222,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "36ab249a030c887f",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FPF",
@@ -9677,7 +8285,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Cuiabá",
     "id": "2b48a2c51d2235f6",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9691,7 +8299,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "7f1de85c55122c7b",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9705,7 +8313,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "ff6b187ac20fb540",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -9720,7 +8328,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Criciúma",
     "id": "b68ad8b74d0baa4f",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CONMEBOL",
@@ -9804,10 +8412,10 @@
     "estadio": "Arena Urbsan*",
     "cidade": "Betim",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Betim",
     "id": "c89b7649fb2f6111",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -9819,10 +8427,10 @@
     "estadio": "CAT do Caju",
     "cidade": "Curitiba",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Curitiba",
     "id": "abc9de178b9c838d",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -9834,10 +8442,10 @@
     "estadio": "Valdir Cândido De",
     "cidade": "Queirós* Guapó",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Queirós* Guapó",
     "id": "17987d40043c80d7",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -9849,10 +8457,10 @@
     "estadio": "Arena MRV",
     "cidade": "Belo Horizonte",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Belo Horizonte",
     "id": "889fe76e81bf53e9",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -9864,10 +8472,10 @@
     "estadio": "CT Evaristo de Macedo*",
     "cidade": "Dias D'Ávila",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Dias D'Ávila",
     "id": "d5c02ccd52f6bdd0",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -9876,13 +8484,13 @@
     "hora": "15:00",
     "mandante": "Grêmio (RS)",
     "visitante": "Palmeiras (SP)",
-    "estadio": "Airton Ferreira da Silva* Eldorado",
+    "estadio": "Airton Ferreira da Silva Eldorado",
     "cidade": "do Sul",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=do Sul",
     "id": "9f516e6abb66c24a",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -9894,10 +8502,10 @@
     "estadio": "CPD",
     "cidade": "Atibaia* Atibaia",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Atibaia* Atibaia",
     "id": "0636ba1b30a642b9",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -9909,10 +8517,10 @@
     "estadio": "Marcelo",
     "cidade": "Portugal Cotia",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Portugal Cotia",
     "id": "096f66f37fa40db3",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FMF",
@@ -9944,7 +8552,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "82b2e95eabcc6a3e",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "FGF",
@@ -10164,7 +8772,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "a52940ffb88c3e4f",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FGF",
@@ -10243,7 +8851,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Ribeirão Preto",
     "id": "2f978fe864d0a3c8",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -10258,7 +8866,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Fortaleza",
     "id": "2e575fca3586fd8a",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -10337,7 +8945,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Belo Horizonte",
     "id": "eb4b03ae6b966727",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -10352,7 +8960,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Ponta Grossa",
     "id": "6ce90227276b0702",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -10366,7 +8974,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "85cc20dfd5f024f1",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -10380,7 +8988,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "21db4d5427551df4",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -10395,7 +9003,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "212a54c125c44980",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CONMEBOL",
@@ -10495,10 +9103,10 @@
     "estadio": "CT Ribamar",
     "cidade": "Bezerra* Maracanaú",
     "rodada": "Rodada 16",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Bezerra* Maracanaú",
     "id": "dcb6adb0c716b41c",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -10769,7 +9377,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=São Bernardo do Campo",
     "id": "65911a0f16661703",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -10784,7 +9392,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "08999188f5a83622",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -10812,7 +9420,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "23f4e0ba1bfd1068",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -10827,7 +9435,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Recife",
     "id": "2976ab0bdb7ff8e7",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CONMEBOL",
@@ -11114,7 +9722,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "be477b691a8fca58",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "ESPN",
@@ -11161,7 +9769,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "473c78170cfd5bb5",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FES",
@@ -11223,7 +9831,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "40996a407f821c62",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FMF",
@@ -11987,7 +10595,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-femenino/",
     "extra": "",
     "id": "da13edb76c04a3ee",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FPF",
@@ -12385,7 +10993,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "8ddb22cd34f47e4c",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -12676,6 +11284,22 @@
     "atualizado_em": "2026-08-03T18:13:06"
   },
   {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-12",
+    "hora": "13:00",
+    "mandante": "Racing",
+    "visitante": "Boston River",
+    "estadio": "PARQUE OSVALDO ROBERTO",
+    "rodada": "Fecha 6",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "7a7bc0f1db58fa6a",
+    "atualizado_em": "2026-09-01T16:26:25"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-09-12",
@@ -12784,7 +11408,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "32aa35d3b0722049",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -12799,7 +11423,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "b0e9cdf61f10f354",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -12813,7 +11437,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "7c809d09c6dbc44e",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -13610,6 +12234,37 @@
     "atualizado_em": "2026-08-03T16:15:02"
   },
   {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-12",
+    "hora": "16:30",
+    "mandante": "Wanderers",
+    "visitante": "Nacional",
+    "estadio": "ALFREDO VICTOR VIERA",
+    "rodada": "Fecha 6",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "8fb32f8108eaa80e",
+    "atualizado_em": "2026-09-01T16:26:25"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-12",
+    "hora": "17:00",
+    "mandante": "B Botafogo (PB)",
+    "visitante": "Floresta (CE)",
+    "estadio": "Almeidão",
+    "cidade": "João Pessoa",
+    "rodada": "Rodada 2",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=João Pessoa",
+    "id": "3e2795ae19ebc6de",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Segunda Panini",
     "data": "2026-09-12",
@@ -13651,7 +12306,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "14252d4483b09350",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "ESPN",
@@ -13683,6 +12338,37 @@
     "pais": "Argentina",
     "id": "54b9ba8cd830f4ad",
     "atualizado_em": "2026-08-29T16:35:30"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-12",
+    "hora": "19:30",
+    "mandante": "B Maringá (PR)",
+    "visitante": "Santa Cruz (PE)",
+    "estadio": "Willie Davids",
+    "cidade": "Maringá",
+    "rodada": "Rodada 2",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Maringá",
+    "id": "3c75842ebe803813",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-12",
+    "hora": "19:30",
+    "mandante": "Cerro Largo",
+    "visitante": "Central Español",
+    "estadio": "ESTADIO MUNICIPAL ARQ. ANTONIO UBILLA",
+    "rodada": "Fecha 6",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "27758ddd3d077e85",
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -13738,7 +12424,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "fccd19d09d09cd10",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "AFA",
@@ -13753,7 +12439,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "b776efa3ebed9b0c",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "ESPN",
@@ -13854,7 +12540,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
     "id": "42e976c403010e6f",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FMF",
@@ -14687,6 +13373,22 @@
     "atualizado_em": "2026-08-31T19:36:44"
   },
   {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-13",
+    "hora": "10:00",
+    "mandante": "Progreso",
+    "visitante": "Cerro",
+    "estadio": "ABRAHAM PALADINO",
+    "rodada": "Fecha 6",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "8a576d9a75a4f805",
+    "atualizado_em": "2026-09-01T16:26:25"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-14 (SUB14)",
     "data": "2026-09-13",
@@ -15430,7 +14132,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "72b0313c1d14ec63",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15444,7 +14146,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "412bd0c3263bb192",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15587,6 +14289,22 @@
     "extra": "codigo_espn=401859695; status=Scheduled",
     "id": "7a792d417322540e",
     "atualizado_em": "2026-08-03T17:40:05"
+  },
+  {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-13",
+    "hora": "13:00",
+    "mandante": "Juventud",
+    "visitante": "Danubio",
+    "estadio": "PARQUE ARTIGAS",
+    "rodada": "Fecha 6",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "4df084890956ca99",
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15761,7 +14479,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "f89cdd27e1f36e30",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -15776,7 +14494,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "58904724b8fd64cb",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15822,7 +14540,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "48c776482225bfcc",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15836,7 +14554,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "b7f034770e5fd500",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FPF",
@@ -15995,7 +14713,22 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "de26f95b374c7a60",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-13",
+    "hora": "16:00",
+    "mandante": "C Ferroviária (SP)",
+    "visitante": "Paysandu (PA)",
+    "estadio": "Fonte",
+    "cidade": "Luminosa Araraquara",
+    "rodada": "Rodada 2",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Luminosa Araraquara",
+    "id": "cd3072a4cbb65a66",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16138,6 +14871,37 @@
     "atualizado_em": "2026-08-03T16:15:02"
   },
   {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-13",
+    "hora": "16:30",
+    "mandante": "Peñarol",
+    "visitante": "Albion",
+    "estadio": "CAMPEON DEL SIGLO",
+    "rodada": "Fecha 6",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "c57dae9ef0a42310",
+    "atualizado_em": "2026-09-01T16:26:25"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série D",
+    "data": "2026-09-13",
+    "hora": "17:00",
+    "mandante": "Uberlândia (MG)",
+    "visitante": "ASA (AL)",
+    "estadio": "Parque do Sabiá",
+    "cidade": "Uberlândia",
+    "rodada": "Volta",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_D_2026_31_08_53c2fe18d1.pdf",
+    "extra": "pais=Brasil; cidade=Uberlândia",
+    "id": "fdf18d4896664d06",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-09-13",
@@ -16150,7 +14914,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "50c855928bb841cf",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FGF",
@@ -16180,7 +14944,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "904deddfb0fb0003",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -16195,7 +14959,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Caxias do Sul",
     "id": "6a5a581fd1bf1574",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -16226,7 +14990,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Fortaleza",
     "id": "50de331493d8d8df",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -16241,7 +15005,22 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Novo Horizonte",
     "id": "803f59f28f8a4ea4",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-13",
+    "hora": "18:30",
+    "mandante": "C Brusque (SC)",
+    "visitante": "Inter de Limeira (SP)",
+    "estadio": "Augusto",
+    "cidade": "Bauer* Brusque",
+    "rodada": "Rodada 2",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Bauer* Brusque",
+    "id": "90305099cf7a455e",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "AFA",
@@ -16256,7 +15035,23 @@
     "extra": "",
     "pais": "Argentina",
     "id": "6b6031f4a1b55176",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
+  },
+  {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-13",
+    "hora": "19:30",
+    "mandante": "Def. Sporting",
+    "visitante": "D. Maldonado",
+    "estadio": "LUIS FRANZINI",
+    "rodada": "Fecha 6",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "36d2ddbcce52bb5b",
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16270,7 +15065,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "cb6af6b7c4af868b",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "ESPN",
@@ -16301,7 +15096,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "9be3fd6acb273234",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16547,10 +15342,10 @@
     "estadio": "Marcelo Vieira* Duque",
     "cidade": "de Caxias",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=de Caxias",
     "id": "d4f65c28c9914fff",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -16628,7 +15423,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "551e972fccb1d5cd",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16642,7 +15437,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "fe7d0c1317fc5a76",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "AFA",
@@ -16657,7 +15452,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "c2421dd9544ddb9c",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -16672,7 +15467,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "a1bc0452a0fa2a6c",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -16687,7 +15482,23 @@
     "extra": "",
     "pais": "Argentina",
     "id": "3693c60cc3efaba9",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
+  },
+  {
+    "fonte": "AUF",
+    "competicao": "Uruguay - Liga AUF Uruguaya",
+    "data": "2026-09-14",
+    "hora": "19:00",
+    "mandante": "M.C. Torque",
+    "visitante": "Liverpool",
+    "estadio": "ESTADIO CHARRUA",
+    "rodada": "Fecha 6",
+    "url": "https://www.auf.org.uy/liga-auf-uruguaya/",
+    "extra": "",
+    "pais": "Uruguay",
+    "cidade": "",
+    "id": "500a8b6738248d88",
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "CBF",
@@ -16702,7 +15513,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Belo Horizonte",
     "id": "de6cd5d604274f3e",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -16717,7 +15528,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Ribeirão Preto",
     "id": "9e55c3ff766f988a",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16745,7 +15556,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "cb7b8cff30ee6ee9",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16759,7 +15570,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "a7b8e0f69be8a980",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "AFA",
@@ -16774,7 +15585,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "aa84b61f3d09b0ef",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -16789,7 +15600,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "2169cb017b564918",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "CBF",
@@ -16804,7 +15615,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Florianópolis",
     "id": "2971c52e418c4f22",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16916,10 +15727,10 @@
     "estadio": "CT Toca da Raposa*",
     "cidade": "Belo Horizonte",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Belo Horizonte",
     "id": "582ea75789043fcf",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -16931,10 +15742,10 @@
     "estadio": "Gávea*",
     "cidade": "Rio de Janeiro",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Rio de Janeiro",
     "id": "3beecfb0d788b457",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -16946,10 +15757,10 @@
     "estadio": "Morada dos",
     "cidade": "Quero-Queros Alvorada",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Quero-Queros Alvorada",
     "id": "7323e38f523d9382",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -16961,10 +15772,10 @@
     "estadio": "CFAC Juventude",
     "cidade": "Caxias do Sul",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Caxias do Sul",
     "id": "0f5e87ddf9f0fca7",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -16976,10 +15787,10 @@
     "estadio": "CT Rei Pelé*",
     "cidade": "Santos",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Santos",
     "id": "41a7bdbd43ec4d3b",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -16991,10 +15802,10 @@
     "estadio": "Nivaldo Pereira",
     "cidade": "Nova Iguaçu",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Nova Iguaçu",
     "id": "3c16322e75b49615",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -17006,10 +15817,10 @@
     "estadio": "CT Manoel Barradas",
     "cidade": "Salvador",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Salvador",
     "id": "8d04e29e565c69ab",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -17247,7 +16058,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "f35308a9b268e74f",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CONMEBOL",
@@ -17294,7 +16105,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Londrina",
     "id": "3f87cc7ea5454ec5",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -17309,7 +16120,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Recife",
     "id": "4a3bc9e30f4a2615",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -17323,7 +16134,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "a74bb8d46269deb6",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -17338,7 +16149,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Maceió",
     "id": "d948c72ff0b50326",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CONMEBOL",
@@ -17394,10 +16205,10 @@
     "estadio": "Alfredo Schürig",
     "cidade": "São Paulo",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=São Paulo",
     "id": "0f17f5a9fd66342a",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -17537,10 +16348,10 @@
     "estadio": "Arena",
     "cidade": "Barueri Barueri",
     "rodada": "Rodada 17",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Barueri Barueri",
     "id": "c2e3362caee15616",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -17954,7 +16765,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/ascenso-femenino/",
     "extra": "",
     "id": "f9894bc78a8b6b4a",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -17968,7 +16779,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/ascenso-femenino/",
     "extra": "",
     "id": "309b45d0f64079bb",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -17996,7 +16807,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/ascenso-femenino/",
     "extra": "",
     "id": "72b2fb17a99b81de",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FGF",
@@ -18300,7 +17111,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "9ae163b8d1c2fd8f",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -18331,7 +17142,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Fortaleza",
     "id": "fea92a73a5f895f6",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -18346,7 +17157,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=São Bernardo do Campo",
     "id": "4f9d2bc73d4f238b",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FMF",
@@ -19851,7 +18662,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "09dafa5d04960630",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -19866,7 +18677,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "f2cc7e7d5f28af18",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FPF",
@@ -20874,7 +19685,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Recife",
     "id": "698c8975f40498ac",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -21609,7 +20420,22 @@
     "extra": "",
     "pais": "Argentina",
     "id": "d516fec165b04b9b",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-19",
+    "hora": "17:00",
+    "mandante": "B Maringá (PR)",
+    "visitante": "Botafogo (PB)",
+    "estadio": "Willie Davids",
+    "cidade": "Maringá",
+    "rodada": "Rodada 3",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Maringá",
+    "id": "90bac4d646be9e6b",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -21672,7 +20498,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=São João Del Rei",
     "id": "370b3c1dd44f4108",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "AFA",
@@ -21687,7 +20513,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "107a8a56d0ad6bd6",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "CBF",
@@ -21767,7 +20593,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "b7c29e3aa3f99c3d",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FMF",
@@ -21895,7 +20721,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Campinas",
     "id": "ac684fecc0d33099",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FMF",
@@ -22070,7 +20896,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "5fa512ef8a89c1b6",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FBF",
@@ -22229,7 +21055,22 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "6185ed9c5c9021db",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-20",
+    "hora": "16:00",
+    "mandante": "B Santa Cruz (PE)",
+    "visitante": "Floresta (CE)",
+    "estadio": "Arena Pernambuco S. Lourenço",
+    "cidade": "da Mata",
+    "rodada": "Rodada 3",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=da Mata",
+    "id": "a8a07b9f4404b344",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -22324,7 +21165,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "6912c73c9cf828f2",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -22339,7 +21180,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "85adf02c365ad2f8",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "ESPN",
@@ -22370,7 +21211,37 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Londrina",
     "id": "f211a67041914a6b",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-20",
+    "hora": "18:30",
+    "mandante": "C Ferroviária (SP)",
+    "visitante": "Brusque (SC)",
+    "estadio": "Fonte",
+    "cidade": "Luminosa Araraquara",
+    "rodada": "Rodada 3",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Luminosa Araraquara",
+    "id": "471452414f8529fe",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-20",
+    "hora": "18:30",
+    "mandante": "C Paysandu (PA)",
+    "visitante": "Inter de Limeira (SP)",
+    "estadio": "Mangueirão*",
+    "cidade": "Belém",
+    "rodada": "Rodada 3",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Belém",
+    "id": "98e5cd575bc4dceb",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "AFA",
@@ -22385,7 +21256,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "fbf85a2a169a073e",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "ESPN",
@@ -22416,7 +21287,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "f338ed2e2e9f77c5",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -22431,7 +21302,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "20ebd5c7540d49e1",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FGF",
@@ -22558,7 +21429,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "775ba70f0da06eba",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "CBF",
@@ -22573,7 +21444,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Criciúma",
     "id": "61287665d9ad1c9c",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "AFA",
@@ -22588,7 +21459,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "70ce203adec51af1",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "CBF",
@@ -22603,7 +21474,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Cuiabá",
     "id": "ce122d33434dd83e",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22615,10 +21486,10 @@
     "estadio": "Arena Urbsan*",
     "cidade": "Betim",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Betim",
     "id": "ef9b97ebbac2668c",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22630,10 +21501,10 @@
     "estadio": "Valdir Cândido De",
     "cidade": "Queirós* Guapó",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Queirós* Guapó",
     "id": "3caa071ca50bcc4e",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22645,10 +21516,10 @@
     "estadio": "CT Toca da Raposa*",
     "cidade": "Belo Horizonte",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Belo Horizonte",
     "id": "ba595e1a24393162",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22660,10 +21531,10 @@
     "estadio": "Marcelo Vieira* Duque",
     "cidade": "de Caxias",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=de Caxias",
     "id": "d47aea67bc59b69b",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22675,10 +21546,10 @@
     "estadio": "Morada dos",
     "cidade": "Quero-Queros Alvorada",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Quero-Queros Alvorada",
     "id": "7a7b136e3ebd5a35",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22690,10 +21561,10 @@
     "estadio": "CFAC Juventude",
     "cidade": "Caxias do Sul",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Caxias do Sul",
     "id": "424aedecf6dbe7e1",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22705,10 +21576,10 @@
     "estadio": "CPD",
     "cidade": "Atibaia* Atibaia",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Atibaia* Atibaia",
     "id": "6255ff5a1fbbf7ab",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22720,10 +21591,10 @@
     "estadio": "Nivaldo Pereira",
     "cidade": "Nova Iguaçu",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Nova Iguaçu",
     "id": "503a4e3006cba5ff",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -22735,10 +21606,10 @@
     "estadio": "CT Manoel Barradas",
     "cidade": "Salvador",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Salvador",
     "id": "2c62aeb73a475196",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -22958,10 +21829,10 @@
     "estadio": "Marcelo",
     "cidade": "Portugal Cotia",
     "rodada": "Rodada 18",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Portugal Cotia",
     "id": "c223b03dcbeb43c3",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -23857,7 +22728,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Novo Horizonte",
     "id": "c825391aac16c4d0",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -23888,7 +22759,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "b33732d20aa3f67c",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FPF",
@@ -25038,7 +23909,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "5d82833cbe7e35c7",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "CBF",
@@ -25358,7 +24229,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Ponta Grossa",
     "id": "90990eca3943e2dc",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -25567,7 +24438,37 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Recife",
     "id": "6e417bcf2455cb14",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-26",
+    "hora": "17:00",
+    "mandante": "B Botafogo (PB)",
+    "visitante": "Maringá (PR)",
+    "estadio": "Almeidão",
+    "cidade": "João Pessoa",
+    "rodada": "Rodada 4",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=João Pessoa",
+    "id": "774334f1819b0bd7",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-26",
+    "hora": "17:00",
+    "mandante": "B Floresta (CE)",
+    "visitante": "Santa Cruz (PE)",
+    "estadio": "Presidente Vargas",
+    "cidade": "Fortaleza",
+    "rodada": "Rodada 4",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Fortaleza",
+    "id": "986404b65302ffa6",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -25598,7 +24499,22 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "fd7972b700471115",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-26",
+    "hora": "19:30",
+    "mandante": "C Inter de Limeira (SP)",
+    "visitante": "Paysandu (PA)",
+    "estadio": "Major Levi",
+    "cidade": "Sobrinho Limeira",
+    "rodada": "Ida",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Sobrinho Limeira",
+    "id": "d75ddb23ae22d872",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -25819,7 +24735,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Criciúma",
     "id": "b44891e7437059ef",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -25980,7 +24896,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Maceió",
     "id": "29c450a4dce3e9d3",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26202,7 +25118,22 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Fortaleza",
     "id": "cb96e57c6eba1530",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-09-27",
+    "hora": "18:30",
+    "mandante": "C Brusque (SC)",
+    "visitante": "Ferroviária (SP)",
+    "estadio": "Augusto",
+    "cidade": "Bauer* Brusque",
+    "rodada": "Rodada 4",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Bauer* Brusque",
+    "id": "189f1ce587540142",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "ESPN",
@@ -26457,7 +25388,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Belo Horizonte",
     "id": "01b16774528107ab",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -26678,7 +25609,7 @@
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_31_08_e4fe6d2553.pdf",
     "extra": "pais=Brasil; cidade=Ribeirão Preto",
     "id": "838fe61df26ff621",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26707,10 +25638,10 @@
     "estadio": "Sesc Venda Nova*",
     "cidade": "Belo Horizonte",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Belo Horizonte",
     "id": "1bca132ea5691827",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26722,10 +25653,10 @@
     "estadio": "CAT do Caju",
     "cidade": "Curitiba",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Curitiba",
     "id": "d2f8a350c41f33ba",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26737,10 +25668,10 @@
     "estadio": "CT Evaristo de Macedo*",
     "cidade": "Dias D'Ávila",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Dias D'Ávila",
     "id": "86308f8098d449b6",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26752,10 +25683,10 @@
     "estadio": "Nilton Santos",
     "cidade": "Rio de Janeiro",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Rio de Janeiro",
     "id": "7374f915fcab8390",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26767,10 +25698,10 @@
     "estadio": "Alfredo Schürig",
     "cidade": "São Paulo",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=São Paulo",
     "id": "5e51a8d848821dd1",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26782,10 +25713,10 @@
     "estadio": "Gávea*",
     "cidade": "Rio de Janeiro",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Rio de Janeiro",
     "id": "a48cbaf97401aad0",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26797,10 +25728,10 @@
     "estadio": "CT Ribamar",
     "cidade": "Bezerra* Maracanaú",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Bezerra* Maracanaú",
     "id": "c52cbb6b367f8ff5",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26809,13 +25740,13 @@
     "hora": "15:00",
     "mandante": "Grêmio (RS)",
     "visitante": "São Paulo (SP)",
-    "estadio": "Airton Ferreira da Silva* Eldorado",
+    "estadio": "Airton Ferreira da Silva Eldorado",
     "cidade": "do Sul",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=do Sul",
     "id": "245492e52a8db42b",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26827,10 +25758,10 @@
     "estadio": "Arena",
     "cidade": "Barueri Barueri",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Barueri Barueri",
     "id": "45a58de73398b9f8",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "CBF",
@@ -26842,10 +25773,10 @@
     "estadio": "CT Rei Pelé*",
     "cidade": "Santos",
     "rodada": "Rodada 19",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_3a25ef70d3.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_31_08_V2_4821567ebb.pdf",
     "extra": "pais=Brasil; cidade=Santos",
     "id": "56b864b55ce32685",
-    "atualizado_em": "2026-08-31T19:09:41"
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "FGF",
@@ -27136,7 +26067,7 @@
     "pais": "Uruguay",
     "cidade": "",
     "id": "5d575dd095ebf4ea",
-    "atualizado_em": "2026-08-31T19:06:05"
+    "atualizado_em": "2026-09-01T16:26:25"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -27793,7 +26724,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "babde7bdcaa2b226",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FGF",
@@ -27824,7 +26755,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "f3429dacf7226de1",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "FGF",
@@ -27933,7 +26864,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "7ce4a5b2f3180d84",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "CBF",
@@ -28273,6 +27204,36 @@
     "atualizado_em": "2026-08-31T19:40:34"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-10-03",
+    "hora": "17:00",
+    "mandante": "B Floresta (CE)",
+    "visitante": "Botafogo (PB)",
+    "estadio": "Presidente Vargas",
+    "cidade": "Fortaleza",
+    "rodada": "Rodada 5",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Fortaleza",
+    "id": "996ced983ff5c9cb",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-10-03",
+    "hora": "17:00",
+    "mandante": "B Santa Cruz (PE)",
+    "visitante": "Maringá (PR)",
+    "estadio": "Arena Pernambuco S. Lourenço",
+    "cidade": "da Mata",
+    "rodada": "Rodada 5",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=da Mata",
+    "id": "00fef61c7897d861",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-03",
@@ -28285,7 +27246,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "115347edaf4b23b0",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -28300,7 +27261,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "48a469a7d1a6da4c",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -28315,7 +27276,37 @@
     "extra": "",
     "pais": "Argentina",
     "id": "d65f53a3fbf43f72",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-10-03",
+    "hora": "19:30",
+    "mandante": "C Inter de Limeira (SP)",
+    "visitante": "Brusque (SC)",
+    "estadio": "Major Levi",
+    "cidade": "Sobrinho Limeira",
+    "rodada": "Rodada 5",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Sobrinho Limeira",
+    "id": "96e77c5e8736380e",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-10-03",
+    "hora": "19:30",
+    "mandante": "C Paysandu (PA)",
+    "visitante": "Ferroviária (SP)",
+    "estadio": "Mangueirão*",
+    "cidade": "Belém",
+    "rodada": "Rodada 5",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Belém",
+    "id": "aa24010ee493456a",
+    "atualizado_em": "2026-09-01T16:29:40"
   },
   {
     "fonte": "AFA",
@@ -28330,7 +27321,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "bebe0b0da34b4003",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -28497,7 +27488,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "40cfc0f1c8c39bf4",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -28576,7 +27567,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "d268bc7c9601acdb",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -28591,7 +27582,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "baf5003d12574954",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -28620,7 +27611,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "a7573fe363d0c578",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -28893,7 +27884,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "d80c6c4b75bb387c",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -28908,7 +27899,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "bddf734c0b50b335",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -28923,7 +27914,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "161eab335ccf9cd5",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "AFA",
@@ -28938,7 +27929,7 @@
     "extra": "",
     "pais": "Argentina",
     "id": "e7718782f78d2dea",
-    "atualizado_em": "2026-08-31T19:04:32"
+    "atualizado_em": "2026-09-01T16:25:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30019,7 +29010,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "cf3b854205d91de5",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30204,7 +29195,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "5c3cd3509a011b54",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30250,7 +29241,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "58e2cf0af47e0484",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30264,7 +29255,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "774587f4a1f12569",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FMF",
@@ -30571,6 +29562,66 @@
     "atualizado_em": "2026-08-31T19:40:34"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "B Botafogo (PB)",
+    "visitante": "Santa Cruz (PE)",
+    "estadio": "Almeidão",
+    "cidade": "João Pessoa",
+    "rodada": "Rodada 6",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=João Pessoa",
+    "id": "fa1481c8fb644daa",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "B Maringá (PR)",
+    "visitante": "Floresta (CE)",
+    "estadio": "Willie Davids",
+    "cidade": "Maringá",
+    "rodada": "Rodada 6",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Maringá",
+    "id": "38a212ed5817a407",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "C Brusque (SC)",
+    "visitante": "Paysandu (PA)",
+    "estadio": "Augusto",
+    "cidade": "Bauer* Brusque",
+    "rodada": "Rodada 6",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Bauer* Brusque",
+    "id": "d133b3855b4c2c33",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série C",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "C Ferroviária (SP)",
+    "visitante": "Inter de Limeira (SP)",
+    "estadio": "Fonte",
+    "cidade": "Luminosa Araraquara",
+    "rodada": "Rodada 6",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_C_2026_31_08_3b564fe978.pdf",
+    "extra": "pais=Brasil; cidade=Luminosa Araraquara",
+    "id": "9ede71722f327d04",
+    "atualizado_em": "2026-09-01T16:29:40"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Ascenso Caixun",
     "data": "2026-10-10",
@@ -30582,7 +29633,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "49a22578b9c41191",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30596,7 +29647,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "58cdb0ecba797962",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FMF",
@@ -30640,7 +29691,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "b9fc0b0a3eebe3c6",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30782,7 +29833,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "8fb237eb9789b75f",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30796,7 +29847,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "582822911f5550ff",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30874,7 +29925,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "31917ba3adbff2e1",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -30888,7 +29939,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "6071182ae9400bb5",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FGF",
@@ -31030,7 +30081,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "ae34064f75a8d140",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -31044,7 +30095,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
     "extra": "",
     "id": "58274f4423f3863d",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -31258,7 +30309,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "ae44a9417770c4a6",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -31288,7 +30339,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "d85f73adbac20217",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "FMF",
@@ -31382,7 +30433,7 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "0d0bcaa87c4c202e",
-    "atualizado_em": "2026-08-31T18:59:53"
+    "atualizado_em": "2026-09-01T16:20:56"
   },
   {
     "fonte": "campeonatochileno.cl",
