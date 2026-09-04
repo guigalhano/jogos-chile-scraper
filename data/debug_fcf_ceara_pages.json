@@ -42,13 +42,6 @@
     "erro": "falha ao buscar (timeout/erro de rede)"
   },
   {
-    "idcamp": "428",
-    "nome": "Série C 2026",
-    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=428",
-    "jogos": 0,
-    "erro": "falha ao buscar (timeout/erro de rede)"
-  },
-  {
     "idcamp": "430",
     "nome": "Manjadinho Sub/14 2026",
     "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=430",
@@ -66,6 +59,13 @@
     "idcamp": "429",
     "nome": "Manjadinho Sub/12 2026",
     "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=429",
+    "jogos": 0,
+    "erro": "falha ao buscar (timeout/erro de rede)"
+  },
+  {
+    "idcamp": "435",
+    "nome": "Fares Lopes 2026",
+    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=435",
     "jogos": 0,
     "erro": "falha ao buscar (timeout/erro de rede)"
   },
