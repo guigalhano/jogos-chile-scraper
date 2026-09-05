@@ -1,11 +1,11 @@
 [
   {
     "liga": "LigaPro Serie A",
-    "erro_amostra": "20260820: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.1/scoreboard?dates=20260820"
+    "erro_amostra": "20260821: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.1/scoreboard?dates=20260821"
   },
   {
     "liga": "LigaPro Serie A",
-    "erro_amostra": "20260821: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.1/scoreboard?dates=20260821"
+    "erro_amostra": "20260822: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.1/scoreboard?dates=20260822"
   },
   {
     "liga": "LigaPro Serie A",
@@ -15,11 +15,11 @@
   },
   {
     "liga": "LigaPro Serie B",
-    "erro_amostra": "20260820: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.2/scoreboard?dates=20260820"
+    "erro_amostra": "20260821: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.2/scoreboard?dates=20260821"
   },
   {
     "liga": "LigaPro Serie B",
-    "erro_amostra": "20260821: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.2/scoreboard?dates=20260821"
+    "erro_amostra": "20260822: HTTPError: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/soccer/ecu.2/scoreboard?dates=20260822"
   },
   {
     "liga": "LigaPro Serie B",
