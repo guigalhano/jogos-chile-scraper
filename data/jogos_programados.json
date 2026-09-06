@@ -480,6 +480,22 @@
     "atualizado_em": "2026-09-06T15:36:01"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-08-25",
+    "hora": "15:00",
+    "mandante": "A. Atlético",
+    "visitante": "UTC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Cuartos de Final",
+    "url": "",
+    "extra": "status=Jugado; placar=(5)1-1(4)",
+    "id": "484fbd1cd293aee4",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
     "fonte": "CONMEBOL",
     "competicao": "Conmebol - Libertadores",
     "data": "2026-08-25",
@@ -496,6 +512,38 @@
     "atualizado_em": "2026-09-06T15:36:01"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-08-26",
+    "hora": "15:00",
+    "mandante": "Cristal",
+    "visitante": "S. Huancayo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Cuartos de Final",
+    "url": "",
+    "extra": "status=Jugado; placar=4-1",
+    "id": "db716b28ba0f230e",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-08-26",
+    "hora": "15:00",
+    "mandante": "Grau",
+    "visitante": "Boys",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Cuartos de Final",
+    "url": "",
+    "extra": "status=Jugado; placar=(3)2-2(4)",
+    "id": "69a69f0a225c5421",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
     "fonte": "CONMEBOL",
     "competicao": "Conmebol - Sudamericana",
     "data": "2026-08-26",
@@ -510,6 +558,118 @@
     "extra": "codigo_conmebol=1590; status=Played; placar=1-1",
     "id": "85ec3a05db6bb2f5",
     "atualizado_em": "2026-09-06T15:36:01"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-08-27",
+    "hora": "15:00",
+    "mandante": "ADT",
+    "visitante": "D. Moquegua",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Cuartos de Final",
+    "url": "",
+    "extra": "status=Jugado; placar=2-0",
+    "id": "e76c20781056e066",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-05",
+    "hora": "10:45",
+    "mandante": "Cantolao",
+    "visitante": "Llacuabamba",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Jugado; placar=3-2",
+    "id": "b9efee67c578fbfc",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-05",
+    "hora": "13:00",
+    "mandante": "César Vallejo",
+    "visitante": "ADA Jaén",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Jugado; placar=0-1",
+    "id": "49baba062a272096",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-05",
+    "hora": "15:15",
+    "mandante": "Santos FC",
+    "visitante": "CNI",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Jugado; placar=4-1",
+    "id": "51bb46fc37c81051",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-09-05",
+    "hora": "15:30",
+    "mandante": "Callao FC",
+    "visitante": "Sport Boys",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B",
+    "url": "",
+    "extra": "status=Jugado; placar=1-3",
+    "id": "444b85a697513382",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-05",
+    "hora": "18:00",
+    "mandante": "Cusco FC",
+    "visitante": "D. Moquegua",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=2-0",
+    "id": "cea03e916ee2de54",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-05",
+    "hora": "20:30",
+    "mandante": "Universitario",
+    "visitante": "Comerciantes",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=2-2",
+    "id": "a2977160e9e7450c",
+    "atualizado_em": "2026-09-06T16:04:23"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -856,9 +1016,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=2'; placar=0-0",
     "id": "569ed28bbb3c2a73",
-    "atualizado_em": "2026-09-05T15:52:13"
+    "atualizado_em": "2026-09-06T16:04:23"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -874,7 +1034,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "9a08007d6c32885b",
-    "atualizado_em": "2026-09-05T15:52:13"
+    "atualizado_em": "2026-09-06T16:04:23"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -890,7 +1050,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "9de3e0e473d4947f",
-    "atualizado_em": "2026-09-05T15:52:13"
+    "atualizado_em": "2026-09-06T16:04:23"
   },
   {
     "fonte": "AUF",
@@ -1122,6 +1282,22 @@
     "atualizado_em": "2026-08-03T17:40:05"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-06",
+    "hora": "13:00",
+    "mandante": "Alianza UDH",
+    "visitante": "Unión Minas",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "da0f0d08410959cb",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
     "fonte": "AUF",
     "competicao": "Uruguay - Liga AUF Uruguaya",
     "data": "2026-09-06",
@@ -1170,6 +1346,22 @@
     "lon": ""
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-06",
+    "hora": "13:30",
+    "mandante": "Garcilaso",
+    "visitante": "Grau",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "a3f218c6a37cde99",
+    "atualizado_em": "2026-09-06T16:04:23"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-09-06",
@@ -1200,6 +1392,22 @@
     "extra": "codigo_espn=401877949; status=Scheduled",
     "id": "5a9eb81fb3cba634",
     "atualizado_em": "2026-08-03T16:15:02"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-09-06",
+    "hora": "14:00",
+    "mandante": "ANBA",
+    "visitante": "Nacional",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo D",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "471c20e88360dddd",
+    "atualizado_em": "2026-09-06T16:04:23"
   },
   {
     "fonte": "AUF",
@@ -1673,6 +1881,22 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=228; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "a6c5e1cfef09f7e5",
     "atualizado_em": "2026-09-05T16:13:18"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-06",
+    "hora": "15:00",
+    "mandante": "Juan Pablo II",
+    "visitante": "Alianza Lima",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "8e22e91deb1ab253",
+    "atualizado_em": "2026-09-06T16:04:23"
   },
   {
     "fonte": "AUF",
@@ -2240,6 +2464,22 @@
     "extra": "status=PreMatch; status_nome=Previo",
     "id": "b93c98b0804e8eec",
     "atualizado_em": "2026-09-06T14:26:49"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-06",
+    "hora": "18:30",
+    "mandante": "Melgar",
+    "visitante": "ADT",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "f8c29c12263cc3b6",
+    "atualizado_em": "2026-09-06T16:04:23"
   },
   {
     "fonte": "AFA",
