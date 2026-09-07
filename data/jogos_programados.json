@@ -1186,6 +1186,22 @@
     "atualizado_em": "2026-09-06T16:04:23"
   },
   {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-09-05",
+    "hora": "18:30",
+    "mandante": "Club Sportivo San Lorenzo",
+    "visitante": "Club 2 de Mayo",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Erico Galeano Segovia (Capiatá)",
+    "rodada": "Jornada 9",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-9-san-lorenzo-vs-2-de-mayo-873",
+    "extra": "status=FullTime; status_nome=Partido finalizado; placar=1-2",
+    "id": "ff3051d5f1126289",
+    "atualizado_em": "2026-09-07T16:42:35"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 1",
     "data": "2026-09-05",
@@ -1335,9 +1351,9 @@
     "estadio": "Estadio ueno Defensores del Chaco",
     "rodada": "Jornada 9",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-9-trinidense-vs-olimpia-874",
-    "extra": "status=SecondHalf; status_nome=2a Parte; placar=0-1",
+    "extra": "status=FullTime; status_nome=Partido finalizado; placar=1-2",
     "id": "169d34b30ed51173",
-    "atualizado_em": "2026-09-06T14:26:49"
+    "atualizado_em": "2026-09-07T16:42:35"
   },
   {
     "fonte": "AUF",
@@ -2790,9 +2806,9 @@
     "estadio": "Estadio Tigo La Huerta",
     "rodada": "Jornada 9",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-9-libertad-vs-rubio-nu-871",
-    "extra": "status=PreMatch; status_nome=Previo",
+    "extra": "status=FullTime; status_nome=Partido finalizado; placar=4-2",
     "id": "f978ca4532081cec",
-    "atualizado_em": "2026-09-06T14:26:49"
+    "atualizado_em": "2026-09-07T16:42:35"
   },
   {
     "fonte": "AUF",
@@ -2991,9 +3007,9 @@
     "estadio": "Estadio ueno Luis Salinas Tanasio",
     "rodada": "Jornada 9",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-9-luqueno-vs-sportivo-amel-872",
-    "extra": "status=PreMatch; status_nome=Previo",
+    "extra": "status=FullTime; status_nome=Partido finalizado; placar=1-2",
     "id": "b93c98b0804e8eec",
-    "atualizado_em": "2026-09-06T14:26:49"
+    "atualizado_em": "2026-09-07T16:42:35"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -3531,7 +3547,7 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-9-guarani-vs-recoleta-870",
     "extra": "status=PreMatch; status_nome=Previo",
     "id": "77d4ea37c381e538",
-    "atualizado_em": "2026-09-06T14:26:49"
+    "atualizado_em": "2026-09-07T16:42:35"
   },
   {
     "fonte": "CBF",
@@ -3576,7 +3592,7 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-9-cerro-porteno-vs-nacional-869",
     "extra": "status=PreMatch; status_nome=Previo",
     "id": "6390310b00a047df",
-    "atualizado_em": "2026-09-06T14:26:49"
+    "atualizado_em": "2026-09-07T16:42:35"
   },
   {
     "fonte": "AFA",
