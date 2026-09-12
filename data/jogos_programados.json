@@ -368,6 +368,70 @@
     "atualizado_em": "2026-09-12T15:39:55"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-05",
+    "hora": "15:15",
+    "mandante": "Santos FC",
+    "visitante": "CNI",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Jugado; placar=4-1",
+    "id": "51bb46fc37c81051",
+    "atualizado_em": "2026-09-12T16:07:07"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-06",
+    "hora": "13:00",
+    "mandante": "Alianza UDH",
+    "visitante": "Unión Minas",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Jugado; placar=1-1",
+    "id": "da0f0d08410959cb",
+    "atualizado_em": "2026-09-12T16:07:07"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-06",
+    "hora": "15:15",
+    "mandante": "U. Comercio",
+    "visitante": "San Martín",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Jugado; placar=1-0",
+    "id": "7afd37443e2d5c2c",
+    "atualizado_em": "2026-09-12T16:07:07"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-07",
+    "hora": "11:00",
+    "mandante": "Pirata FC",
+    "visitante": "Mannucci",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Jugado; placar=2-4",
+    "id": "d6de08e3ed80c8e1",
+    "atualizado_em": "2026-09-12T16:07:07"
+  },
+  {
     "fonte": "CONMEBOL",
     "competicao": "Conmebol - Libertadores",
     "data": "2026-09-08",
@@ -494,6 +558,54 @@
     "extra": "codigo_conmebol=1710; status=Played; placar=2-0",
     "id": "4d2a83302c818cf0",
     "atualizado_em": "2026-09-12T15:39:55"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-09-11",
+    "hora": "11:00",
+    "mandante": "Sport Boys",
+    "visitante": "S. Cristal",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B",
+    "url": "",
+    "extra": "status=Jugado; placar=1-1",
+    "id": "b045ce8e42fcba43",
+    "atualizado_em": "2026-09-12T16:07:07"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-11",
+    "hora": "15:00",
+    "mandante": "UTC",
+    "visitante": "Juan Pablo II",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=1-2",
+    "id": "c72404827d3386ee",
+    "atualizado_em": "2026-09-12T16:07:07"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-11",
+    "hora": "19:00",
+    "mandante": "Cusco FC",
+    "visitante": "Melgar",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=0-1",
+    "id": "95ff0a18236580fc",
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FMF",
@@ -1371,9 +1483,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=37'; placar=0-1",
     "id": "aec2b84761078c3b",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -1880,7 +1992,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "5d2115e0c3e0f93b",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "cf3.cl",
@@ -1980,7 +2092,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "42c9a3836452eb58",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "AUF",
@@ -2250,7 +2362,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "c048edfea4fa24ec",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "ESPN",
@@ -3374,7 +3486,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "a27a5425c9d8543d",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "AUF",
@@ -3438,7 +3550,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "d893c195f7e8107a",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "anfaterceradivision.cl/calendario",
@@ -4463,7 +4575,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "315a2bc934b96f7c",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "ESPN",

@@ -11,9 +11,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=1-2",
     "id": "18a6270a7caff396",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -27,9 +27,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=0-1",
     "id": "548e855b83bc3f45",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -43,9 +43,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=37'; placar=0-1",
     "id": "612f678effe91599",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -61,7 +61,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "1d9062d2ece9fca5",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -77,7 +77,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "7bb4a32a1fdd8254",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -93,7 +93,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "02c883e36f22e650",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -109,7 +109,7 @@
     "url": "",
     "extra": "status=Jugado; placar=4-1",
     "id": "c46726a865bec94a",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -125,7 +125,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-0",
     "id": "fd7702786410f6ae",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -141,7 +141,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-1",
     "id": "cf07f1fa19d96170",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -157,7 +157,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-4",
     "id": "c04096e8af140bfc",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -171,9 +171,9 @@
     "estadio": "",
     "rodada": "Grupo B",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=1-1",
     "id": "d3906b16062e4556",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -189,7 +189,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "8d516cd07b324765",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -205,7 +205,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "f23d7e1269ec8689",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -221,22 +221,6 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "cadc1554ebacbb65",
-    "atualizado_em": "2026-09-11T16:57:43"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Copa de la Liga",
-    "data": "2026-08-27",
-    "hora": "15:00",
-    "mandante": "ADT",
-    "visitante": "D. Moquegua",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Cuartos de Final",
-    "url": "",
-    "extra": "status=Jugado; placar=2-0",
-    "id": "ecba1b5d58956799",
-    "atualizado_em": "2026-09-11T16:57:43"
+    "atualizado_em": "2026-09-12T16:07:07"
   }
 ]
