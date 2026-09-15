@@ -1,24 +1,8 @@
 {
-  "gerado_em": "2026-09-14T18:06:39",
+  "gerado_em": "2026-09-15T16:53:43",
   "dias_verificados": 61,
   "total_eventos_lidos_nos_paises_alvo": 0,
   "dias_com_erro": [
-    {
-      "data": "2026-09-14",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-09-14",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-09-14' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "14-09-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
-        }
-      }
-    },
     {
       "data": "2026-09-15",
       "debug": {
@@ -269,9 +253,7 @@
         },
         "tentativa_2": {
           "formato": "30-09-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
+          "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
         }
       }
     },
@@ -285,9 +267,7 @@
         },
         "tentativa_2": {
           "formato": "01-10-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
+          "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
         }
       }
     },
@@ -301,9 +281,7 @@
         },
         "tentativa_2": {
           "formato": "02-10-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
+          "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
         }
       }
     },
@@ -360,8 +338,7 @@
       "debug": {
         "tentativa_1": {
           "formato": "2026-10-06",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-10-06' does not match format '%d-%m-%Y'"
+          "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
         },
         "tentativa_2": {
           "formato": "06-10-2026",
@@ -557,9 +534,7 @@
         },
         "tentativa_2": {
           "formato": "18-10-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
+          "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
         }
       }
     },
@@ -584,8 +559,8 @@
       "debug": {
         "tentativa_1": {
           "formato": "2026-10-20",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-10-20' does not match format '%d-%m-%Y'"
+          "status": 502,
+          "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
         },
         "tentativa_2": {
           "formato": "20-10-2026",
@@ -952,8 +927,8 @@
       "debug": {
         "tentativa_1": {
           "formato": "2026-11-12",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-11-12' does not match format '%d-%m-%Y'"
+          "status": 502,
+          "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
         },
         "tentativa_2": {
           "formato": "12-11-2026",
@@ -978,24 +953,25 @@
           "amostra_bruta": "{}"
         }
       }
+    },
+    {
+      "data": "2026-11-14",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-11-14",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-11-14' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "14-11-2026",
+          "status": 200,
+          "chaves_raiz": [],
+          "amostra_bruta": "{}"
+        }
+      }
     }
   ],
   "debug_amostra": [
-    {
-      "data": "2026-09-14",
-      "tentativa_1": {
-        "formato": "2026-09-14",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-09-14' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "14-09-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
-      },
-      "n_leagues": 0
-    },
     {
       "data": "2026-09-15",
       "tentativa_1": {
@@ -1230,9 +1206,7 @@
       },
       "tentativa_2": {
         "formato": "30-09-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
+        "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
       },
       "n_leagues": 0
     },
@@ -1245,9 +1219,7 @@
       },
       "tentativa_2": {
         "formato": "01-10-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
+        "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
       },
       "n_leagues": 0
     },
@@ -1260,9 +1232,7 @@
       },
       "tentativa_2": {
         "formato": "02-10-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
+        "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
       },
       "n_leagues": 0
     },
@@ -1315,8 +1285,7 @@
       "data": "2026-10-06",
       "tentativa_1": {
         "formato": "2026-10-06",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-10-06' does not match format '%d-%m-%Y'"
+        "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
       },
       "tentativa_2": {
         "formato": "06-10-2026",
@@ -1500,9 +1469,7 @@
       },
       "tentativa_2": {
         "formato": "18-10-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
+        "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
       },
       "n_leagues": 0
     },
@@ -1525,8 +1492,8 @@
       "data": "2026-10-20",
       "tentativa_1": {
         "formato": "2026-10-20",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-10-20' does not match format '%d-%m-%Y'"
+        "status": 502,
+        "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
       },
       "tentativa_2": {
         "formato": "20-10-2026",
@@ -1870,8 +1837,8 @@
       "data": "2026-11-12",
       "tentativa_1": {
         "formato": "2026-11-12",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-11-12' does not match format '%d-%m-%Y'"
+        "status": 502,
+        "body": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"
       },
       "tentativa_2": {
         "formato": "12-11-2026",
@@ -1890,6 +1857,21 @@
       },
       "tentativa_2": {
         "formato": "13-11-2026",
+        "status": 200,
+        "chaves_raiz": [],
+        "amostra_bruta": "{}"
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-11-14",
+      "tentativa_1": {
+        "formato": "2026-11-14",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-11-14' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "14-11-2026",
         "status": 200,
         "chaves_raiz": [],
         "amostra_bruta": "{}"
