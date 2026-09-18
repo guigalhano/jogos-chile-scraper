@@ -336,6 +336,150 @@
     "atualizado_em": "2026-09-18T16:34:59"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-12",
+    "hora": "15:15",
+    "mandante": "CNI",
+    "visitante": "Bentín Tacna",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Jugado; placar=1-1",
+    "id": "d9a291f83a454e1f",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-12",
+    "hora": "20:00",
+    "mandante": "Alianza Lima",
+    "visitante": "Universitario",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=1-2",
+    "id": "315a2bc934b96f7c",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-13",
+    "hora": "10:00",
+    "mandante": "D. Moquegua",
+    "visitante": "Cristal",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=1-2",
+    "id": "d357905056d668b1",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-13",
+    "hora": "13:00",
+    "mandante": "Boys",
+    "visitante": "Garcilaso",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=1-0",
+    "id": "e04ee57d9bff8c37",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-13",
+    "hora": "13:00",
+    "mandante": "Llacuabamba",
+    "visitante": "Pirata FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Jugado; placar=0-0",
+    "id": "12c41186389b04a9",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-13",
+    "hora": "15:15",
+    "mandante": "Grau",
+    "visitante": "A. Atlético",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=3-1",
+    "id": "7c716690adbd2ed3",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-13",
+    "hora": "15:15",
+    "mandante": "ADA Jaén",
+    "visitante": "U. Comercio",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Jugado; placar=1-0",
+    "id": "39059c07a2efb896",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-09-13",
+    "hora": "15:15",
+    "mandante": "San Martín",
+    "visitante": "Cantolao",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Jugado; placar=2-2",
+    "id": "0116610c02ff54f2",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-09-15",
+    "hora": "15:00",
+    "mandante": "Patriotas FC",
+    "visitante": "Valle Sagrado",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo D",
+    "url": "",
+    "extra": "status=Jugado; placar=1-3",
+    "id": "0dd3d40ac9eef43f",
+    "atualizado_em": "2026-09-18T16:59:30"
+  },
+  {
     "fonte": "CONMEBOL",
     "competicao": "Conmebol - Libertadores",
     "data": "2026-09-15",
@@ -382,6 +526,22 @@
     "extra": "codigo_conmebol=1686; status=Played; placar=1-1",
     "id": "0559fe74e9aae473",
     "atualizado_em": "2026-09-18T16:34:59"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-09-16",
+    "hora": "13:30",
+    "mandante": "S. Company",
+    "visitante": "Nacional",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo D",
+    "url": "",
+    "extra": "status=Jugado; placar=3-0",
+    "id": "9b99d917f166bb3a",
+    "atualizado_em": "2026-09-18T16:59:30"
   },
   {
     "fonte": "CONMEBOL",
@@ -549,7 +709,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "57fc410eea6e4b1c",
-    "atualizado_em": "2026-09-17T17:33:33"
+    "atualizado_em": "2026-09-18T16:59:30"
   },
   {
     "fonte": "AFA",
@@ -707,7 +867,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "b6e8c3dd341ce883",
-    "atualizado_em": "2026-09-17T17:33:33"
+    "atualizado_em": "2026-09-18T16:59:30"
   },
   {
     "fonte": "FGF",
@@ -947,7 +1107,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "c3524357b278e154",
-    "atualizado_em": "2026-09-17T17:33:33"
+    "atualizado_em": "2026-09-18T16:59:30"
   },
   {
     "fonte": "FGF",
@@ -1121,7 +1281,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "6d2efb90fdde6c95",
-    "atualizado_em": "2026-09-17T17:33:33"
+    "atualizado_em": "2026-09-18T16:59:30"
   },
   {
     "fonte": "ESPN",
@@ -13517,7 +13677,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "4b7a4d1e0bab46a6",
-    "atualizado_em": "2026-09-17T17:33:33"
+    "atualizado_em": "2026-09-18T16:59:30"
   },
   {
     "fonte": "AUF",
@@ -13693,7 +13853,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "7e32022437c57525",
-    "atualizado_em": "2026-09-17T17:33:33"
+    "atualizado_em": "2026-09-18T16:59:30"
   },
   {
     "fonte": "FGF",
