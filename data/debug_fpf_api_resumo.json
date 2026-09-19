@@ -36,7 +36,7 @@
     "IdCampeonato": 221,
     "IdCategoria": 94,
     "total_ano": 333,
-    "programados": 32,
+    "programados": 28,
     "historico": 151
   },
   {
@@ -44,7 +44,7 @@
     "IdCampeonato": 219,
     "IdCategoria": 93,
     "total_ano": 236,
-    "programados": 4,
+    "programados": 2,
     "historico": 74
   },
   {
@@ -64,20 +64,20 @@
     "historico": 185
   },
   {
-    "campeonato": "Brasil - FPF - Paulista F Sub-15 Petrobras (Amador)",
-    "IdCampeonato": 184,
-    "IdCategoria": 38,
-    "total_ano": 61,
-    "programados": 4,
-    "historico": 19
-  },
-  {
     "campeonato": "Brasil - FPF - Paulista Sub-15 (SUB15)",
     "IdCampeonato": 32,
     "IdCategoria": 17,
     "total_ano": 718,
     "programados": 49,
     "historico": 185
+  },
+  {
+    "campeonato": "Brasil - FPF - Paulista F Sub-15 Petrobras (Amador)",
+    "IdCampeonato": 184,
+    "IdCategoria": 38,
+    "total_ano": 61,
+    "programados": 4,
+    "historico": 19
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-14 (SUB14)",
@@ -88,14 +88,6 @@
     "historico": 161
   },
   {
-    "campeonato": "Brasil - FPF - Feminino Sub13 (Amador)",
-    "IdCampeonato": 235,
-    "IdCategoria": 38,
-    "total_ano": 12,
-    "programados": 12,
-    "historico": 12
-  },
-  {
     "campeonato": "Brasil - FPF - Paulista Sub-13 (SUB13)",
     "IdCampeonato": 127,
     "IdCategoria": 81,
@@ -104,20 +96,12 @@
     "historico": 161
   },
   {
-    "campeonato": "Brasil - FPF - Festival Feminino Sub-14 Petrobras - Sede Jaú (Amador)",
-    "IdCampeonato": 226,
+    "campeonato": "Brasil - FPF - Paulista F Sub-13 Petrobras (Amador)",
+    "IdCampeonato": 235,
     "IdCategoria": 38,
-    "total_ano": 16,
-    "programados": 0,
-    "historico": 16
-  },
-  {
-    "campeonato": "Brasil - FPF - Festival Feminino Sub-12 Petrobras - Sede Jaú (Amador)",
-    "IdCampeonato": 225,
-    "IdCategoria": 38,
-    "total_ano": 10,
-    "programados": 0,
-    "historico": 10
+    "total_ano": 12,
+    "programados": 12,
+    "historico": 12
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-12 (SUB12)",
@@ -134,6 +118,30 @@
     "total_ano": 546,
     "programados": 39,
     "historico": 156
+  },
+  {
+    "campeonato": "Brasil - FPF - Amador do Estado",
+    "IdCampeonato": 129,
+    "IdCategoria": 38,
+    "total_ano": 0,
+    "programados": 0,
+    "historico": 0
+  },
+  {
+    "campeonato": "Brasil - FPF - Festival Feminino Sub-14 Petrobras - Sede Jaú (Amador)",
+    "IdCampeonato": 226,
+    "IdCategoria": 38,
+    "total_ano": 16,
+    "programados": 0,
+    "historico": 16
+  },
+  {
+    "campeonato": "Brasil - FPF - Festival Feminino Sub-12 Petrobras - Sede Jaú (Amador)",
+    "IdCampeonato": 225,
+    "IdCategoria": 38,
+    "total_ano": 10,
+    "programados": 0,
+    "historico": 10
   },
   {
     "campeonato": "Brasil - FPF - Festival Paulista Sub-14 Petrobras - Sede Matão (Amador)",
@@ -164,14 +172,6 @@
     "IdCampeonato": 233,
     "IdCategoria": 38,
     "total_ano": 25,
-    "programados": 0,
-    "historico": 0
-  },
-  {
-    "campeonato": "Brasil - FPF - Amador do Estado",
-    "IdCampeonato": 129,
-    "IdCategoria": 38,
-    "total_ano": 0,
     "programados": 0,
     "historico": 0
   },

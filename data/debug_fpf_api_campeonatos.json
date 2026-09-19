@@ -72,22 +72,22 @@
     "DescricaoSite": "Paulista Sub-17"
   },
   {
-    "IdCampeonato": 184,
-    "IdCategoria": 38,
-    "Categoria": "Amador",
-    "Campeonato": "Feminino Sub15",
-    "Ordem": 9,
-    "Destaque": 0,
-    "DescricaoSite": "Paulista F Sub-15 Petrobras"
-  },
-  {
     "IdCampeonato": 32,
     "IdCategoria": 17,
     "Categoria": "SUB15",
     "Campeonato": "Paulista",
-    "Ordem": 10,
+    "Ordem": 9,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-15"
+  },
+  {
+    "IdCampeonato": 184,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Feminino Sub15",
+    "Ordem": 10,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista F Sub-15 Petrobras"
   },
   {
     "IdCampeonato": 202,
@@ -99,47 +99,29 @@
     "DescricaoSite": "Paulista Sub-14"
   },
   {
-    "IdCampeonato": 235,
-    "IdCategoria": 38,
-    "Categoria": "Amador",
-    "Campeonato": "Feminino Sub13",
-    "Ordem": 12,
-    "Destaque": 0,
-    "DescricaoSite": null
-  },
-  {
     "IdCampeonato": 127,
     "IdCategoria": 81,
     "Categoria": "SUB13",
     "Campeonato": "Paulista",
-    "Ordem": 13,
+    "Ordem": 12,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-13"
   },
   {
-    "IdCampeonato": 226,
+    "IdCampeonato": 235,
     "IdCategoria": 38,
     "Categoria": "Amador",
-    "Campeonato": "Festival Feminino Sub-14 - Sede Jaú",
-    "Ordem": 14,
+    "Campeonato": "Feminino Sub13",
+    "Ordem": 13,
     "Destaque": 0,
-    "DescricaoSite": "Festival Feminino Sub-14 Petrobras - Sede Jaú"
-  },
-  {
-    "IdCampeonato": 225,
-    "IdCategoria": 38,
-    "Categoria": "Amador",
-    "Campeonato": "Festival Feminino Sub-12 - Sede Jaú",
-    "Ordem": 15,
-    "Destaque": 0,
-    "DescricaoSite": "Festival Feminino Sub-12 Petrobras - Sede Jaú"
+    "DescricaoSite": "Paulista F Sub-13 Petrobras"
   },
   {
     "IdCampeonato": 203,
     "IdCategoria": 91,
     "Categoria": "SUB12",
     "Campeonato": "Paulista",
-    "Ordem": 16,
+    "Ordem": 14,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-12"
   },
@@ -148,16 +130,43 @@
     "IdCategoria": 80,
     "Categoria": "SUB11",
     "Campeonato": "Paulista",
-    "Ordem": 17,
+    "Ordem": 15,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-11"
+  },
+  {
+    "IdCampeonato": 129,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Amador do Estado",
+    "Ordem": 16,
+    "Destaque": 0,
+    "DescricaoSite": "Amador do Estado"
+  },
+  {
+    "IdCampeonato": 226,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-14 - Sede Jaú",
+    "Ordem": 17,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Feminino Sub-14 Petrobras - Sede Jaú"
+  },
+  {
+    "IdCampeonato": 225,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Festival Feminino Sub-12 - Sede Jaú",
+    "Ordem": 18,
+    "Destaque": 0,
+    "DescricaoSite": "Festival Feminino Sub-12 Petrobras - Sede Jaú"
   },
   {
     "IdCampeonato": 224,
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Festival Feminino Sub-14 - Sede Matão",
-    "Ordem": 18,
+    "Ordem": 19,
     "Destaque": 0,
     "DescricaoSite": "Festival Paulista Sub-14 Petrobras - Sede Matão "
   },
@@ -166,7 +175,7 @@
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Festival Feminino Sub-12 - Sede Matão",
-    "Ordem": 19,
+    "Ordem": 20,
     "Destaque": 0,
     "DescricaoSite": "Festival Paulista Sub-12 Petrobras - Sede Matão"
   },
@@ -175,7 +184,7 @@
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Festival Feminino Sub-14 - Sede Campinas",
-    "Ordem": 20,
+    "Ordem": 21,
     "Destaque": 0,
     "DescricaoSite": null
   },
@@ -184,18 +193,9 @@
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Festival Feminino Sub-12 - Sede Campinas",
-    "Ordem": 21,
-    "Destaque": 0,
-    "DescricaoSite": null
-  },
-  {
-    "IdCampeonato": 129,
-    "IdCategoria": 38,
-    "Categoria": "Amador",
-    "Campeonato": "Amador do Estado",
     "Ordem": 22,
     "Destaque": 0,
-    "DescricaoSite": "Amador do Estado"
+    "DescricaoSite": null
   },
   {
     "IdCampeonato": 178,
