@@ -12,7 +12,7 @@
     "IdCampeonato": 100,
     "IdCategoria": 70,
     "total_ano": 64,
-    "programados": 4,
+    "programados": 2,
     "historico": 40
   },
   {
@@ -20,7 +20,7 @@
     "IdCampeonato": 214,
     "IdCategoria": 38,
     "total_ano": 30,
-    "programados": 21,
+    "programados": 20,
     "historico": 30
   },
   {
@@ -29,14 +29,14 @@
     "IdCategoria": 38,
     "total_ano": 74,
     "programados": 8,
-    "historico": 26
+    "historico": 21
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-20 - Série A (SUB20 - Série A)",
     "IdCampeonato": 221,
     "IdCategoria": 94,
     "total_ano": 333,
-    "programados": 28,
+    "programados": 24,
     "historico": 151
   },
   {
@@ -44,7 +44,7 @@
     "IdCampeonato": 219,
     "IdCategoria": 93,
     "total_ano": 236,
-    "programados": 2,
+    "programados": 1,
     "historico": 74
   },
   {
@@ -60,15 +60,7 @@
     "IdCampeonato": 33,
     "IdCategoria": 18,
     "total_ano": 718,
-    "programados": 48,
-    "historico": 185
-  },
-  {
-    "campeonato": "Brasil - FPF - Paulista Sub-15 (SUB15)",
-    "IdCampeonato": 32,
-    "IdCategoria": 17,
-    "total_ano": 718,
-    "programados": 49,
+    "programados": 24,
     "historico": 185
   },
   {
@@ -78,14 +70,6 @@
     "total_ano": 61,
     "programados": 4,
     "historico": 19
-  },
-  {
-    "campeonato": "Brasil - FPF - Paulista Sub-14 (SUB14)",
-    "IdCampeonato": 202,
-    "IdCategoria": 90,
-    "total_ano": 634,
-    "programados": 33,
-    "historico": 161
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-13 (SUB13)",
@@ -108,7 +92,7 @@
     "IdCampeonato": 203,
     "IdCategoria": 91,
     "total_ano": 546,
-    "programados": 39,
+    "programados": 0,
     "historico": 156
   },
   {
@@ -116,7 +100,7 @@
     "IdCampeonato": 125,
     "IdCategoria": 80,
     "total_ano": 546,
-    "programados": 39,
+    "programados": 0,
     "historico": 156
   },
   {
@@ -336,32 +320,8 @@
     "historico": 0
   },
   {
-    "campeonato": "Brasil - FPF - Festival Paulista Sub-12 Petrobras – Sede São José do Rio Preto (Amador)",
-    "IdCampeonato": 210,
-    "IdCategoria": 38,
-    "total_ano": 0,
-    "programados": 0,
-    "historico": 0
-  },
-  {
-    "campeonato": "Brasil - FPF - Feminino Divisão Especial (Amador)",
-    "IdCampeonato": 199,
-    "IdCategoria": 38,
-    "total_ano": 0,
-    "programados": 0,
-    "historico": 0
-  },
-  {
     "campeonato": "Brasil - FPF - Sub-20 Primeira Divisão (SUB20)",
     "IdCampeonato": 25,
-    "IdCategoria": 19,
-    "total_ano": 0,
-    "programados": 0,
-    "historico": 0
-  },
-  {
-    "campeonato": "Brasil - FPF - Sub-20 Segunda Divisão (SUB20)",
-    "IdCampeonato": 28,
     "IdCategoria": 19,
     "total_ano": 0,
     "programados": 0,
