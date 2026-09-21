@@ -5268,6 +5268,22 @@
     "atualizado_em": "2026-09-20T17:12:58"
   },
   {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-09-25",
+    "hora": "16:30",
+    "mandante": "Club Sportivo Luqueño",
+    "visitante": "Club Guaraní",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio ueno Luis Salinas Tanasio",
+    "rodada": "Jornada 12",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-12-luqueno-vs-guarani-890",
+    "extra": "status=PreMatch; status_nome=Previo",
+    "id": "26e2bfe2a382734b",
+    "atualizado_em": "2026-09-21T17:14:44"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-09-25",
@@ -5297,6 +5313,22 @@
     "pais": "Argentina",
     "id": "f83f8c3d87b67cc3",
     "atualizado_em": "2026-09-20T15:49:41"
+  },
+  {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-09-25",
+    "hora": "19:00",
+    "mandante": "Club Nacional Asunción",
+    "visitante": "Sportivo Ameliano",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Arsenio Erico",
+    "rodada": "Jornada 12",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-12-nacional-vs-sportivo-amel-888",
+    "extra": "status=PreMatch; status_nome=Previo",
+    "id": "aa7881d2fddd972c",
+    "atualizado_em": "2026-09-21T17:14:44"
   },
   {
     "fonte": "CBF",
@@ -7535,6 +7567,22 @@
     "atualizado_em": "2026-09-20T15:57:14"
   },
   {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-09-26",
+    "hora": "16:30",
+    "mandante": "Club Rubio Ñú",
+    "visitante": "Club 2 de Mayo",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio La Arboleda",
+    "rodada": "Jornada 12",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-12-rubio-nu-vs-2-de-mayo-889",
+    "extra": "status=Cancelled; status_nome=Cancelado",
+    "id": "df15c57eca6ef6d1",
+    "atualizado_em": "2026-09-21T17:14:44"
+  },
+  {
     "fonte": "CBF",
     "competicao": "Brasil - Série C",
     "data": "2026-09-26",
@@ -7626,6 +7674,22 @@
     "extra": "codigo_fferj=5913; fonte_tag=FERJ",
     "id": "8165678cf83623e6",
     "atualizado_em": "2026-09-14T18:55:43"
+  },
+  {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-09-26",
+    "hora": "19:00",
+    "mandante": "Club Sportivo Trinidense",
+    "visitante": "Club Cerro Porteño",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio ueno Luis Salinas Tanasio",
+    "rodada": "Jornada 12",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-12-trinidense-vs-cerro-porteno-892",
+    "extra": "status=Cancelled; status_nome=Cancelado",
+    "id": "f88f745533753e8c",
+    "atualizado_em": "2026-09-21T17:14:44"
   },
   {
     "fonte": "AUF",
@@ -9444,6 +9508,38 @@
     "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
     "id": "98514d739bc8b904",
     "atualizado_em": "2026-09-20T15:27:31"
+  },
+  {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-09-28",
+    "hora": "16:30",
+    "mandante": "Club Sportivo San Lorenzo",
+    "visitante": "Recoleta FC",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Gunther Vogel",
+    "rodada": "Jornada 12",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-12-san-lorenzo-vs-recoleta-891",
+    "extra": "status=PreMatch; status_nome=Previo",
+    "id": "5b13adb16bac2c0b",
+    "atualizado_em": "2026-09-21T17:14:44"
+  },
+  {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-09-28",
+    "hora": "19:00",
+    "mandante": "Club Libertad",
+    "visitante": "Club Olimpia",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Tigo La Huerta",
+    "rodada": "Jornada 12",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-12-libertad-vs-olimpia-887",
+    "extra": "status=PreMatch; status_nome=Previo",
+    "id": "d85e1f0510f6d403",
+    "atualizado_em": "2026-09-21T17:14:44"
   },
   {
     "fonte": "AUF",
