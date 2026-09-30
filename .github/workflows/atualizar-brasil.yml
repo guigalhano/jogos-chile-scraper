@@ -6,6 +6,11 @@ on:
     - cron: '0 3 * * *'
   workflow_dispatch:
 
+# Sem isto o GITHUB_TOKEN vem so-leitura (padrao do repo) e o push do passo
+# "Commit changes" morre com 403 depois de toda a coleta ja ter rodado.
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
