@@ -11,6 +11,17 @@
     "lng": -43.1938
   },
   {
+    "alias_id": "13",
+    "nome_clube": "AMERICANO F.C",
+    "estadio": "EM FASE DE CONSTRUÇÃO",
+    "localizacao": "",
+    "sede": "AV PROFESSORA CARMEN CARNEIRO, 3446/3542 - CAMPOS DOS GOYTACAZES",
+    "endereco_geocodificado": "AV PROFESSORA CARMEN CARNEIRO, 3446/3542 - CAMPOS DOS GOYTACAZES, RJ, Brasil",
+    "fonte_endereco": "sede",
+    "lat": -21.6836246,
+    "lng": -41.3101572
+  },
+  {
     "alias_id": "17",
     "nome_clube": "BANGU A.C",
     "estadio": "PROLETÁRIO GUILHERME DA SILVEIRA FILHO (MOÇA BONITA)",
@@ -152,6 +163,17 @@
     "fonte_endereco": "localizacao",
     "lat": -23.0008204,
     "lng": -44.3056589
+  },
+  {
+    "alias_id": "1173",
+    "nome_clube": "AROUCA ESPORTE CLUBE RJ (INATIVO)",
+    "estadio": "Não Possui",
+    "localizacao": "",
+    "sede": "AVENIDA DAS AMÉRICAS, 2480 - RIO DE JANEIRO",
+    "endereco_geocodificado": "AVENIDA DAS AMÉRICAS, 2480 - RIO DE JANEIRO, RJ, Brasil",
+    "fonte_endereco": "sede",
+    "lat": -23.0128679,
+    "lng": -43.4600615
   },
   {
     "alias_id": "1185",
@@ -300,17 +322,6 @@
     "fonte_endereco": "localizacao",
     "lat": null,
     "lng": null
-  },
-  {
-    "alias_id": "1173",
-    "nome_clube": "IMPÉRIO SERRANO ESPORTE CLUBE (INATIVO)",
-    "estadio": "Não Possui",
-    "localizacao": "",
-    "sede": "AVENIDA MINISTRO EDGARD ROMERO, 114 - RIO DE JANEIRO",
-    "endereco_geocodificado": "AVENIDA MINISTRO EDGARD ROMERO, 114 - RIO DE JANEIRO, RJ, Brasil",
-    "fonte_endereco": "sede",
-    "lat": -22.874144,
-    "lng": -43.3365901
   },
   {
     "alias_id": "942",
@@ -627,6 +638,17 @@
     "localizacao": "",
     "sede": "PRAÇA ANTONIO FLORES TEIXEIRA, 11 - NOVA IGUAÇU",
     "endereco_geocodificado": "PRAÇA ANTONIO FLORES TEIXEIRA, 11 - NOVA IGUAÇU, RJ, Brasil",
+    "fonte_endereco": "sede",
+    "lat": null,
+    "lng": null
+  },
+  {
+    "alias_id": "313",
+    "nome_clube": "LIGA DE DESPORTOS DE PATY ALFERES (INATIVA)",
+    "estadio": "Não Possui",
+    "localizacao": "",
+    "sede": "ESTRADA CAPITÃO ZENÓBIO DA COSTA, 69/101 - PATY DE ALFERES",
+    "endereco_geocodificado": "ESTRADA CAPITÃO ZENÓBIO DA COSTA, 69/101 - PATY DE ALFERES, RJ, Brasil",
     "fonte_endereco": "sede",
     "lat": null,
     "lng": null
@@ -1034,17 +1056,6 @@
     "localizacao": "",
     "sede": "AV SÃO JOÃO EVANGELISTA, S/N - JAPERI",
     "endereco_geocodificado": "AV SÃO JOÃO EVANGELISTA, S/N - JAPERI, RJ, Brasil",
-    "fonte_endereco": "sede",
-    "lat": null,
-    "lng": null
-  },
-  {
-    "alias_id": "313",
-    "nome_clube": "LIGA DESPORTIVA PATY ALFERES (INATIVA)",
-    "estadio": "Não Possui",
-    "localizacao": "",
-    "sede": "ESTRADA CAPITÃO ZENÓBIO DA COSTA, 69/101 - PATY DE ALFERES",
-    "endereco_geocodificado": "ESTRADA CAPITÃO ZENÓBIO DA COSTA, 69/101 - PATY DE ALFERES, RJ, Brasil",
     "fonte_endereco": "sede",
     "lat": null,
     "lng": null
@@ -2016,17 +2027,6 @@
     "fonte_endereco": "ja_catalogado",
     "lat": -22.7889,
     "lng": -43.4392
-  },
-  {
-    "alias_id": "13",
-    "nome_clube": "AMERICANO F.C",
-    "estadio": "EM FASE DE CONSTRUÇÃO",
-    "localizacao": "",
-    "sede": "AV PROFESSORA CARMEN CARNEIRO, 3446/3542 - CAMPOS DOS GOYTACAZES",
-    "endereco_geocodificado": "AV PROFESSORA CARMEN CARNEIRO, 3446/3542 - CAMPOS DOS GOYTACAZES, RJ, Brasil",
-    "fonte_endereco": "sede",
-    "lat": -21.6836246,
-    "lng": -41.3101572
   },
   {
     "alias_id": "97",
