@@ -13,7 +13,7 @@
     "url": "",
     "extra": "codigo_espn=401921353; status=Full Time; placar=1-2",
     "id": "f124e85c7092f4d5",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -29,7 +29,7 @@
     "url": "",
     "extra": "codigo_espn=401921386; status=Full Time; placar=1-1",
     "id": "9c805cae2b50c087",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -45,7 +45,7 @@
     "url": "",
     "extra": "codigo_espn=401921387; status=Full Time; placar=1-2",
     "id": "a59aa242a6b17729",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -61,7 +61,7 @@
     "url": "",
     "extra": "codigo_espn=401921388; status=Full Time; placar=1-1",
     "id": "1c8976dac662de9b",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -77,7 +77,7 @@
     "url": "",
     "extra": "codigo_espn=401921338; status=Full Time; placar=1-1",
     "id": "2d90676b174eefee",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -93,7 +93,7 @@
     "url": "",
     "extra": "codigo_espn=401921354; status=Full Time; placar=2-1",
     "id": "29c7fb6a43d58e2b",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -109,7 +109,7 @@
     "url": "",
     "extra": "codigo_espn=401921389; status=Full Time; placar=2-1",
     "id": "92ba652e0250bac5",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -125,60 +125,12 @@
     "url": "",
     "extra": "codigo_espn=401921355; status=Postponed",
     "id": "1773d0f2289c4ff2",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-11",
-    "hora": "13:00",
-    "mandante": "Delfín",
-    "visitante": "Mushuc Runa",
-    "pais": "Ecuador",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401921385; status=Scheduled",
-    "id": "0c061e7c249cd937",
-    "atualizado_em": "2026-10-02T20:13:18"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-11",
-    "hora": "13:00",
-    "mandante": "Guayaquil City FC",
-    "visitante": "Emelec",
-    "pais": "Ecuador",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401921381; status=Scheduled",
-    "id": "04a51e21bc183cc6",
-    "atualizado_em": "2026-10-02T20:13:18"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-11",
-    "hora": "13:00",
-    "mandante": "Independiente del Valle",
-    "visitante": "Aucas",
-    "pais": "Ecuador",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401921351; status=Scheduled",
-    "id": "04d215cfd4c2d4b2",
-    "atualizado_em": "2026-10-02T20:13:18"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-11",
+    "data": "2026-10-09",
     "hora": "13:00",
     "mandante": "Libertad (Ecuador)",
     "visitante": "Leones",
@@ -188,30 +140,46 @@
     "rodada": "",
     "url": "",
     "extra": "codigo_espn=401921382; status=Scheduled",
-    "id": "85cb66ea0d16a525",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "id": "6562913dfd857511",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-11",
-    "hora": "13:00",
-    "mandante": "Liga de Quito",
-    "visitante": "Barcelona SC",
+    "data": "2026-10-09",
+    "hora": "15:30",
+    "mandante": "Delfín",
+    "visitante": "Mushuc Runa",
     "pais": "Ecuador",
     "cidade": "",
     "estadio": "",
     "rodada": "",
     "url": "",
-    "extra": "codigo_espn=401921350; status=Scheduled",
-    "id": "bb0a59db02b6d1cb",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "extra": "codigo_espn=401921385; status=Scheduled",
+    "id": "dd8bf46598030eae",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-11",
-    "hora": "13:00",
+    "data": "2026-10-10",
+    "hora": "11:30",
+    "mandante": "Independiente del Valle",
+    "visitante": "Aucas",
+    "pais": "Ecuador",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401921351; status=Scheduled",
+    "id": "7d36ffef04f4bc86",
+    "atualizado_em": "2026-10-03T18:52:29"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Ecuador - LigaPro Serie A",
+    "data": "2026-10-10",
+    "hora": "14:00",
     "mandante": "Manta F.C.",
     "visitante": "Técnico Universitario",
     "pais": "Ecuador",
@@ -220,30 +188,30 @@
     "rodada": "",
     "url": "",
     "extra": "codigo_espn=401921383; status=Scheduled",
-    "id": "89429002e4452a16",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "id": "ac71309c521a0994",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-11",
-    "hora": "13:00",
-    "mandante": "Orense",
-    "visitante": "Deportivo Cuenca",
+    "data": "2026-10-10",
+    "hora": "16:30",
+    "mandante": "Guayaquil City FC",
+    "visitante": "Emelec",
     "pais": "Ecuador",
     "cidade": "",
     "estadio": "",
     "rodada": "",
     "url": "",
-    "extra": "codigo_espn=401921384; status=Scheduled",
-    "id": "a4b78347d1c86e1f",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "extra": "codigo_espn=401921381; status=Scheduled",
+    "id": "67cd82f43b733241",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
     "data": "2026-10-11",
-    "hora": "13:00",
+    "hora": "11:30",
     "mandante": "Universidad Católica (Quito)",
     "visitante": "Macará",
     "pais": "Ecuador",
@@ -252,62 +220,46 @@
     "rodada": "",
     "url": "",
     "extra": "codigo_espn=401921352; status=Scheduled",
-    "id": "a7214a4793a69696",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "id": "59a95beec2a0c261",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-18",
-    "hora": "13:00",
-    "mandante": "Aucas",
-    "visitante": "Liga de Quito",
+    "data": "2026-10-11",
+    "hora": "13:45",
+    "mandante": "Orense",
+    "visitante": "Deportivo Cuenca",
     "pais": "Ecuador",
     "cidade": "",
     "estadio": "",
     "rodada": "",
     "url": "",
-    "extra": "codigo_espn=401921347; status=Scheduled",
-    "id": "1141baf4775873a1",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "extra": "codigo_espn=401921384; status=Scheduled",
+    "id": "22611451d53606d6",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-18",
-    "hora": "13:00",
-    "mandante": "Barcelona SC",
-    "visitante": "Universidad Católica (Quito)",
+    "data": "2026-10-11",
+    "hora": "16:30",
+    "mandante": "Liga de Quito",
+    "visitante": "Barcelona SC",
     "pais": "Ecuador",
     "cidade": "",
     "estadio": "",
     "rodada": "",
     "url": "",
-    "extra": "codigo_espn=401921348; status=Scheduled",
-    "id": "b94299161ec23d7e",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "extra": "codigo_espn=401921350; status=Scheduled",
+    "id": "c90a656198d2f9c3",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-18",
-    "hora": "13:00",
-    "mandante": "Delfín",
-    "visitante": "Manta F.C.",
-    "pais": "Ecuador",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401921336; status=Scheduled",
-    "id": "96c6c183fe9c61b2",
-    "atualizado_em": "2026-10-02T20:13:18"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-18",
-    "hora": "13:00",
+    "data": "2026-10-16",
+    "hora": "15:30",
     "mandante": "Deportivo Cuenca",
     "visitante": "Técnico Universitario",
     "pais": "Ecuador",
@@ -316,30 +268,14 @@
     "rodada": "",
     "url": "",
     "extra": "codigo_espn=401921380; status=Scheduled",
-    "id": "1d5b3944793e2668",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "id": "a441c3210aa04415",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-18",
-    "hora": "13:00",
-    "mandante": "Leones",
-    "visitante": "Emelec",
-    "pais": "Ecuador",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401921378; status=Scheduled",
-    "id": "7c0415350927f23c",
-    "atualizado_em": "2026-10-02T20:13:18"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-18",
-    "hora": "13:00",
+    "data": "2026-10-17",
+    "hora": "11:30",
     "mandante": "Libertad (Ecuador)",
     "visitante": "Guayaquil City FC",
     "pais": "Ecuador",
@@ -348,14 +284,14 @@
     "rodada": "",
     "url": "",
     "extra": "codigo_espn=401921379; status=Scheduled",
-    "id": "6b3708a02c5922d2",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "id": "8e978c392ef04d07",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
-    "data": "2026-10-18",
-    "hora": "13:00",
+    "data": "2026-10-17",
+    "hora": "14:00",
     "mandante": "Macará",
     "visitante": "Independiente del Valle",
     "pais": "Ecuador",
@@ -364,14 +300,78 @@
     "rodada": "",
     "url": "",
     "extra": "codigo_espn=401921349; status=Scheduled",
-    "id": "facee5cd0b35ac55",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "id": "a60ce4e3fb909375",
+    "atualizado_em": "2026-10-03T18:52:29"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Ecuador - LigaPro Serie A",
+    "data": "2026-10-17",
+    "hora": "16:30",
+    "mandante": "Aucas",
+    "visitante": "Liga de Quito",
+    "pais": "Ecuador",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401921347; status=Scheduled",
+    "id": "df05f4324480fe88",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
     "data": "2026-10-18",
-    "hora": "13:00",
+    "hora": "11:30",
+    "mandante": "Delfín",
+    "visitante": "Manta F.C.",
+    "pais": "Ecuador",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401921336; status=Scheduled",
+    "id": "d11033cad52d588d",
+    "atualizado_em": "2026-10-03T18:52:29"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Ecuador - LigaPro Serie A",
+    "data": "2026-10-18",
+    "hora": "14:00",
+    "mandante": "Leones",
+    "visitante": "Emelec",
+    "pais": "Ecuador",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401921378; status=Scheduled",
+    "id": "62276e07813ef0b3",
+    "atualizado_em": "2026-10-03T18:52:29"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Ecuador - LigaPro Serie A",
+    "data": "2026-10-18",
+    "hora": "16:30",
+    "mandante": "Barcelona SC",
+    "visitante": "Universidad Católica (Quito)",
+    "pais": "Ecuador",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401921348; status=Scheduled",
+    "id": "b2d920b1ea1656e3",
+    "atualizado_em": "2026-10-03T18:52:29"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Ecuador - LigaPro Serie A",
+    "data": "2026-10-19",
+    "hora": "15:30",
     "mandante": "Mushuc Runa",
     "visitante": "Orense",
     "pais": "Ecuador",
@@ -380,8 +380,8 @@
     "rodada": "",
     "url": "",
     "extra": "codigo_espn=401921337; status=Scheduled",
-    "id": "5b716ed5b72b83e3",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "id": "1bf68c59f59d9694",
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -397,7 +397,7 @@
     "url": "",
     "extra": "codigo_espn=401921329; status=Scheduled",
     "id": "8db2952f38023cae",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -413,7 +413,7 @@
     "url": "",
     "extra": "codigo_espn=401921334; status=Scheduled",
     "id": "a68000a01253fe1a",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -429,7 +429,7 @@
     "url": "",
     "extra": "codigo_espn=401921330; status=Scheduled",
     "id": "fabc674c28064dd6",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -445,7 +445,7 @@
     "url": "",
     "extra": "codigo_espn=401921335; status=Scheduled",
     "id": "75935744c5179466",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -461,7 +461,7 @@
     "url": "",
     "extra": "codigo_espn=401921346; status=Scheduled",
     "id": "315d941724f78992",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -477,7 +477,7 @@
     "url": "",
     "extra": "codigo_espn=401921376; status=Scheduled",
     "id": "52b62519790e39a6",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -493,7 +493,7 @@
     "url": "",
     "extra": "codigo_espn=401921375; status=Scheduled",
     "id": "9b1c30fb595897fc",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -509,7 +509,7 @@
     "url": "",
     "extra": "codigo_espn=401921377; status=Scheduled",
     "id": "d5dab7a107700125",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -525,7 +525,7 @@
     "url": "",
     "extra": "codigo_espn=401921374; status=Scheduled",
     "id": "14c1a237d1c5d060",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -541,7 +541,7 @@
     "url": "",
     "extra": "codigo_espn=401921370; status=Scheduled",
     "id": "71c5327b2e277d34",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -557,7 +557,7 @@
     "url": "",
     "extra": "codigo_espn=401921371; status=Scheduled",
     "id": "c02be487c680f3dc",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -573,7 +573,7 @@
     "url": "",
     "extra": "codigo_espn=401921324; status=Scheduled",
     "id": "f2ef99a4575aaba0",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -589,7 +589,7 @@
     "url": "",
     "extra": "codigo_espn=401921328; status=Scheduled",
     "id": "3dab2b6ec8684146",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -605,7 +605,7 @@
     "url": "",
     "extra": "codigo_espn=401921372; status=Scheduled",
     "id": "fc7273772228008d",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -621,7 +621,7 @@
     "url": "",
     "extra": "codigo_espn=401921373; status=Scheduled",
     "id": "cc27e021ea64fd5a",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -637,7 +637,7 @@
     "url": "",
     "extra": "codigo_espn=401921345; status=Scheduled",
     "id": "b05f19a7f597106d",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -653,7 +653,7 @@
     "url": "",
     "extra": "codigo_espn=401921323; status=Scheduled",
     "id": "0777f69a002d019a",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -669,7 +669,7 @@
     "url": "",
     "extra": "codigo_espn=401921321; status=Scheduled",
     "id": "46446e318629d7f2",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -685,7 +685,7 @@
     "url": "",
     "extra": "codigo_espn=401921369; status=Scheduled",
     "id": "3d7419b98be8c012",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -701,7 +701,7 @@
     "url": "",
     "extra": "codigo_espn=401921366; status=Scheduled",
     "id": "7fb7e6e7834fb2f2",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -717,7 +717,7 @@
     "url": "",
     "extra": "codigo_espn=401921365; status=Scheduled",
     "id": "45dbeb3753c57c54",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -733,7 +733,7 @@
     "url": "",
     "extra": "codigo_espn=401921322; status=Scheduled",
     "id": "aaf122c3e8452726",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -749,7 +749,7 @@
     "url": "",
     "extra": "codigo_espn=401921368; status=Scheduled",
     "id": "ff9ee3008c1a8326",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -765,7 +765,7 @@
     "url": "",
     "extra": "codigo_espn=401921367; status=Scheduled",
     "id": "2c4952a66f7302a5",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -781,7 +781,7 @@
     "url": "",
     "extra": "codigo_espn=401921320; status=Scheduled",
     "id": "b561255910b2d4da",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -797,7 +797,7 @@
     "url": "",
     "extra": "codigo_espn=401921327; status=Scheduled",
     "id": "a1e852447271c422",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -813,7 +813,7 @@
     "url": "",
     "extra": "codigo_espn=401921363; status=Scheduled",
     "id": "6bf1d8d2f785f479",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -829,7 +829,7 @@
     "url": "",
     "extra": "codigo_espn=401921333; status=Scheduled",
     "id": "8740dc856688d876",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -845,7 +845,7 @@
     "url": "",
     "extra": "codigo_espn=401921364; status=Scheduled",
     "id": "8b386c2d613998bb",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -861,7 +861,7 @@
     "url": "",
     "extra": "codigo_espn=401921326; status=Scheduled",
     "id": "d31742233399b1c7",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -877,7 +877,7 @@
     "url": "",
     "extra": "codigo_espn=401921318; status=Scheduled",
     "id": "a74d4324bf9232d1",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -893,7 +893,7 @@
     "url": "",
     "extra": "codigo_espn=401921332; status=Scheduled",
     "id": "7bdd071b94a25697",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -909,7 +909,7 @@
     "url": "",
     "extra": "codigo_espn=401921361; status=Scheduled",
     "id": "0ec5f728bf637394",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -925,7 +925,7 @@
     "url": "",
     "extra": "codigo_espn=401921317; status=Scheduled",
     "id": "d83617a944ff9bf6",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -941,7 +941,7 @@
     "url": "",
     "extra": "codigo_espn=401921362; status=Scheduled",
     "id": "204e67ec639815f6",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   },
   {
     "fonte": "ESPN",
@@ -957,6 +957,6 @@
     "url": "",
     "extra": "codigo_espn=401921319; status=Scheduled",
     "id": "fd5321b38855c1a7",
-    "atualizado_em": "2026-10-02T20:13:18"
+    "atualizado_em": "2026-10-03T18:52:29"
   }
 ]
