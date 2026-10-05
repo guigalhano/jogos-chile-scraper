@@ -1,6 +1,22 @@
 [
   {
     "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-20",
+    "hora": "13:00",
+    "mandante": "Sport Huancayo",
+    "visitante": "UTC",
+    "pais": "Peru",
+    "cidade": "Huancayo",
+    "estadio": "Estadio Huancayo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886184; status=Full Time; placar=3-2",
+    "id": "99e17143b4f80282",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
     "data": "2026-09-20",
     "hora": "13:30",
@@ -46,6 +62,22 @@
     "extra": "codigo_espn=401907919; status=Full Time; placar=1-0",
     "id": "2cdc5a5e71765edf",
     "atualizado_em": "2026-10-05T21:47:14"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-20",
+    "hora": "15:30",
+    "mandante": "Juan Pablo II",
+    "visitante": "Deportivo Moquegua",
+    "pais": "Peru",
+    "cidade": "Chongoyape",
+    "estadio": "Complejo Deportivo Juan Pablo II",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886196; status=Full Time; placar=4-0",
+    "id": "25ba517f7777e697",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -318,6 +350,22 @@
     "extra": "codigo_espn=401877961; status=Full Time; placar=0-1",
     "id": "15e7d875f0a93f8a",
     "atualizado_em": "2026-10-05T21:18:36"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-23",
+    "hora": "15:00",
+    "mandante": "ADT",
+    "visitante": "Cienciano del Cusco",
+    "pais": "Peru",
+    "cidade": "Tarma",
+    "estadio": "Estadio Unión Tarma",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886187; status=Full Time; placar=2-1",
+    "id": "b524f30931c7ce56",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -798,6 +846,22 @@
     "extra": "status=Jugado; placar=1-1",
     "id": "c95a4ebb9d1a73bc",
     "atualizado_em": "2026-10-05T21:11:44"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-09-30",
+    "hora": "15:00",
+    "mandante": "Cienciano del Cusco",
+    "visitante": "Los Chankas",
+    "pais": "Peru",
+    "cidade": "Cusco",
+    "estadio": "Estadio Inca Garcilaso de la Vega",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886198; status=Full Time; placar=1-1",
+    "id": "bdae8a4c01bfd885",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -3792,7 +3856,7 @@
     "url": "",
     "extra": "codigo_espn=401886173; status=Scheduled",
     "id": "b1d555db664a0f35",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FMF",
@@ -4248,7 +4312,7 @@
     "url": "",
     "extra": "codigo_espn=401886170; status=Scheduled",
     "id": "babb068f726030b5",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -5184,7 +5248,7 @@
     "url": "",
     "extra": "codigo_espn=401886178; status=Scheduled",
     "id": "81767dcc14dcf62e",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -6168,7 +6232,7 @@
     "url": "",
     "extra": "codigo_espn=401886171; status=Scheduled",
     "id": "93cd674c89a05512",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "AUF",
@@ -7057,7 +7121,7 @@
     "url": "",
     "extra": "codigo_espn=401886175; status=Scheduled",
     "id": "f4109d554c131dbf",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "AFA",
@@ -7698,7 +7762,7 @@
     "url": "",
     "extra": "codigo_espn=401886179; status=Scheduled",
     "id": "90f1d3f3ebba0dbe",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "AUF",
@@ -8179,7 +8243,7 @@
     "url": "",
     "extra": "codigo_espn=401886172; status=Scheduled",
     "id": "b0a403d9dfdd7616",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "AUF",
@@ -8462,7 +8526,7 @@
     "url": "",
     "extra": "codigo_espn=401886180; status=Scheduled",
     "id": "0c90966b7f59bd11",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "CBF",
@@ -8939,7 +9003,7 @@
     "url": "",
     "extra": "codigo_espn=401886174; status=Scheduled",
     "id": "cf54e210e51c8b21",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "AUF",
@@ -10813,7 +10877,7 @@
     "url": "",
     "extra": "codigo_espn=401886169; status=Scheduled",
     "id": "fa833bde8d8b3d23",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -11053,7 +11117,7 @@
     "url": "",
     "extra": "codigo_espn=401886168; status=Scheduled",
     "id": "b71069e067b8780f",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -11936,7 +12000,7 @@
     "url": "",
     "extra": "codigo_espn=401886164; status=Scheduled",
     "id": "e001618b526e8228",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FGF",
@@ -12318,7 +12382,7 @@
     "url": "",
     "extra": "codigo_espn=401886177; status=Scheduled",
     "id": "c4a9ba3cabe88c76",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -12441,7 +12505,7 @@
     "url": "",
     "extra": "codigo_espn=401886166; status=Scheduled",
     "id": "bf0a36cdf328e191",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "CBF",
@@ -12580,7 +12644,7 @@
     "url": "",
     "extra": "codigo_espn=401886176; status=Scheduled",
     "id": "55b728910ac3d63c",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -12684,7 +12748,7 @@
     "url": "",
     "extra": "codigo_espn=401886163; status=Scheduled",
     "id": "da85ffa5948be27b",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -13002,7 +13066,7 @@
     "url": "",
     "extra": "codigo_espn=401886165; status=Scheduled",
     "id": "b6122e4a2ccd49bd",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "CBF",
@@ -13217,7 +13281,7 @@
     "url": "",
     "extra": "codigo_espn=401886167; status=Scheduled",
     "id": "e468c7c81a255fc3",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "CBF",
@@ -14257,7 +14321,7 @@
     "url": "",
     "extra": "codigo_espn=401886160; status=Scheduled",
     "id": "eee8b813a4747a14",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FPF",
@@ -14289,7 +14353,7 @@
     "url": "",
     "extra": "codigo_espn=401886161; status=Scheduled",
     "id": "1791458d27d6589f",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -14732,7 +14796,7 @@
     "url": "",
     "extra": "codigo_espn=401886133; status=Scheduled",
     "id": "0ff4c77db1c7651e",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FFERJ",
@@ -15066,7 +15130,7 @@
     "url": "",
     "extra": "codigo_espn=401886132; status=Scheduled",
     "id": "c0cb4913ae735d2b",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FGF",
@@ -15364,7 +15428,7 @@
     "url": "",
     "extra": "codigo_espn=401886162; status=Scheduled",
     "id": "fba9b4dbb7c8a319",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15531,7 +15595,7 @@
     "url": "",
     "extra": "codigo_espn=401886158; status=Scheduled",
     "id": "4b0b19eaa2b7ce31",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15717,7 +15781,7 @@
     "url": "",
     "extra": "codigo_espn=401886159; status=Scheduled",
     "id": "b242b3e0aee62660",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FMF",
@@ -15811,7 +15875,7 @@
     "url": "",
     "extra": "codigo_espn=401886157; status=Scheduled",
     "id": "500b72e5c9c885c4",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FMF",
@@ -15889,7 +15953,7 @@
     "url": "",
     "extra": "codigo_espn=401886156; status=Scheduled",
     "id": "62ffd93ca0741ab3",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -16234,150 +16298,6 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "ADT",
-    "visitante": "Deportivo Moquegua",
-    "pais": "Peru",
-    "cidade": "Tarma",
-    "estadio": "Estadio Unión Tarma",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886129; status=Scheduled",
-    "id": "2ea74f48d8b0fbbf",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "Alianza Atlético",
-    "visitante": "Deportivo Garcilaso",
-    "pais": "Peru",
-    "cidade": "Sullana",
-    "estadio": "Estadio Campeones del '36",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886130; status=Scheduled",
-    "id": "68b2db6a3dc35d9d",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "Cienciano del Cusco",
-    "visitante": "Atlético Grau",
-    "pais": "Peru",
-    "cidade": "Cusco",
-    "estadio": "Estadio Inca Garcilaso de la Vega",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886152; status=Scheduled",
-    "id": "0c769e23c3c8b894",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "FC Cajamarca",
-    "visitante": "UTC",
-    "pais": "Peru",
-    "cidade": "Cajamarca",
-    "estadio": "Estadio Héroes de San Ramón",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886154; status=Scheduled",
-    "id": "03b83a83497e8a0c",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "Juan Pablo II",
-    "visitante": "Sport Huancayo",
-    "pais": "Peru",
-    "cidade": "Chongoyape",
-    "estadio": "Estadio Municipal de la Juventud",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886153; status=Scheduled",
-    "id": "3031d5d0c4449dcd",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "Los Chankas",
-    "visitante": "Cusco FC",
-    "pais": "Peru",
-    "cidade": "Apurímac",
-    "estadio": "Estadio Los Chankas",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886155; status=Scheduled",
-    "id": "55c693e30a9b7baf",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "Melgar",
-    "visitante": "Comerciantes Unidos",
-    "pais": "Peru",
-    "cidade": "Arequipa",
-    "estadio": "Estadio Monumental de la UNSA",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886150; status=Scheduled",
-    "id": "5c589d616e1ebf3f",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "Sporting Cristal",
-    "visitante": "Alianza Lima",
-    "pais": "Peru",
-    "cidade": "San Martin de Porres",
-    "estadio": "Estadio Alberto Gallardo",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886131; status=Scheduled",
-    "id": "22aaa47407ba9a9d",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-27",
-    "hora": "13:00",
-    "mandante": "Universitario",
-    "visitante": "Sport Boys",
-    "pais": "Peru",
-    "cidade": "Lima",
-    "estadio": "Estadio Monumental de Lima",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886151; status=Scheduled",
-    "id": "914b723aeaa88da1",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-27",
@@ -16451,6 +16371,22 @@
     "pais": "Argentina",
     "id": "8b69ba572cf5deb4",
     "atualizado_em": "2026-10-05T20:34:35"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-27",
+    "hora": "15:00",
+    "mandante": "Juan Pablo II",
+    "visitante": "Sport Huancayo",
+    "pais": "Peru",
+    "cidade": "Chongoyape",
+    "estadio": "Complejo Deportivo Juan Pablo II",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886153; status=Scheduled",
+    "id": "76afbd63fb5a4735",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "AFA",
@@ -16596,6 +16532,22 @@
     "atualizado_em": "2026-10-05T21:16:30"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-28",
+    "hora": "11:00",
+    "mandante": "ADT",
+    "visitante": "Deportivo Moquegua",
+    "pais": "Peru",
+    "cidade": "Tarma",
+    "estadio": "Estadio Unión Tarma",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886129; status=Scheduled",
+    "id": "3f63704739f4b15e",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
     "fonte": "FFERJ",
     "competicao": "Brasil - FFERJ - Competição não identificada",
     "data": "2026-10-28",
@@ -16642,6 +16594,22 @@
     "extra": "codigo_fferj=6172; fonte_tag=FERJ",
     "id": "3f74607196cef8b8",
     "atualizado_em": "2026-10-05T21:16:30"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-28",
+    "hora": "13:15",
+    "mandante": "FC Cajamarca",
+    "visitante": "UTC",
+    "pais": "Peru",
+    "cidade": "Cajamarca",
+    "estadio": "Estadio Héroes de San Ramón",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886154; status=Scheduled",
+    "id": "58c08d8e8e361932",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FMF",
@@ -16896,6 +16864,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-28",
+    "hora": "15:30",
+    "mandante": "Alianza Atlético",
+    "visitante": "Deportivo Garcilaso",
+    "pais": "Peru",
+    "cidade": "Sullana",
+    "estadio": "Estadio Campeones del '36",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886130; status=Scheduled",
+    "id": "3b06e255340d9280",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-28",
     "hora": "18:00",
@@ -16924,6 +16908,22 @@
     "pais": "Argentina",
     "id": "772636364d9a2f50",
     "atualizado_em": "2026-10-05T20:34:35"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-28",
+    "hora": "19:00",
+    "mandante": "Cienciano del Cusco",
+    "visitante": "Atlético Grau",
+    "pais": "Peru",
+    "cidade": "Cusco",
+    "estadio": "Estadio Inca Garcilaso de la Vega",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886152; status=Scheduled",
+    "id": "1a04d418bf1cd6c7",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "CBF",
@@ -17017,6 +17017,22 @@
     "atualizado_em": "2026-10-05T20:40:10"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-29",
+    "hora": "13:00",
+    "mandante": "Los Chankas",
+    "visitante": "Cusco FC",
+    "pais": "Peru",
+    "cidade": "Apurímac",
+    "estadio": "Estadio Los Chankas",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886155; status=Scheduled",
+    "id": "6b7c48868ad56fd4",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-29",
@@ -17093,6 +17109,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-29",
+    "hora": "15:30",
+    "mandante": "Sporting Cristal",
+    "visitante": "Alianza Lima",
+    "pais": "Peru",
+    "cidade": "San Martin de Porres",
+    "estadio": "Estadio Alberto Gallardo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886131; status=Scheduled",
+    "id": "54e3637479be89fa",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-29",
     "hora": "18:15",
@@ -17151,6 +17183,22 @@
     "extra": "pais=Brasil; cidade=Curitiba",
     "id": "61246ed42269aeb2",
     "atualizado_em": "2026-10-05T20:40:10"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-29",
+    "hora": "19:30",
+    "mandante": "Melgar",
+    "visitante": "Comerciantes Unidos",
+    "pais": "Peru",
+    "cidade": "Arequipa",
+    "estadio": "Estadio Monumental de la UNSA",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886150; status=Scheduled",
+    "id": "7a62b822c1a9161c",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "CBF",
@@ -17674,150 +17722,6 @@
     "atualizado_em": "2026-10-05T21:16:30"
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "Alianza Atlético",
-    "visitante": "Juan Pablo II",
-    "pais": "Peru",
-    "cidade": "Sullana",
-    "estadio": "Estadio Campeones del '36",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886149; status=Scheduled",
-    "id": "a9a080e8739b82bd",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "Alianza Lima",
-    "visitante": "Cienciano del Cusco",
-    "pais": "Peru",
-    "cidade": "Lima",
-    "estadio": "Estadio Alejandro Villanueva",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886148; status=Scheduled",
-    "id": "6b48ab1f0db3b85b",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "Atlético Grau",
-    "visitante": "Universitario",
-    "pais": "Peru",
-    "cidade": "Sullana",
-    "estadio": "Estadio Campeones del '36",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886126; status=Scheduled",
-    "id": "a78c3e65437c54de",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "Comerciantes Unidos",
-    "visitante": "ADT",
-    "pais": "Peru",
-    "cidade": "Cutervo, Cajamarca",
-    "estadio": "Juan Maldonado Gamarra",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886128; status=Scheduled",
-    "id": "d6181d4378a3426f",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "Cusco FC",
-    "visitante": "Sport Boys",
-    "pais": "Peru",
-    "cidade": "Cusco",
-    "estadio": "Estadio Inca Garcilaso de la Vega",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886146; status=Scheduled",
-    "id": "8115e8c0b6148a6b",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "Deportivo Moquegua",
-    "visitante": "Los Chankas",
-    "pais": "Peru",
-    "cidade": "Moquegua",
-    "estadio": "Estadio 25 de Noviembre",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886124; status=Scheduled",
-    "id": "a287f438135ca073",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "Sport Huancayo",
-    "visitante": "Melgar",
-    "pais": "Peru",
-    "cidade": "Huancayo",
-    "estadio": "Estadio Huancayo",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886127; status=Scheduled",
-    "id": "dbd54e32f8ac17d2",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "Sporting Cristal",
-    "visitante": "FC Cajamarca",
-    "pais": "Peru",
-    "cidade": "San Martin de Porres",
-    "estadio": "Estadio Alberto Gallardo",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886125; status=Scheduled",
-    "id": "39b653205049d0cc",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-31",
-    "hora": "13:00",
-    "mandante": "UTC",
-    "visitante": "Deportivo Garcilaso",
-    "pais": "Peru",
-    "cidade": "Cajabamba",
-    "estadio": "Estadio Germán Contreras",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401886147; status=Scheduled",
-    "id": "562c1953ab117fee",
-    "atualizado_em": "2026-10-04T19:42:36"
-  },
-  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - 2ª Divisão - 2026",
     "data": "2026-10-31",
@@ -18058,6 +17962,22 @@
     "atualizado_em": "2026-10-05T20:19:25"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-31",
+    "hora": "15:30",
+    "mandante": "Alianza Atlético",
+    "visitante": "Juan Pablo II",
+    "pais": "Peru",
+    "cidade": "Sullana",
+    "estadio": "Estadio Campeones del '36",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886149; status=Scheduled",
+    "id": "ebde6c354b669cd9",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
     "data": "2026-10-31",
@@ -18224,6 +18144,38 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-01",
+    "hora": "11:00",
+    "mandante": "Deportivo Moquegua",
+    "visitante": "Los Chankas",
+    "pais": "Peru",
+    "cidade": "Moquegua",
+    "estadio": "Estadio 25 de Noviembre",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886124; status=Scheduled",
+    "id": "473e6bf72dceb08c",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-01",
+    "hora": "13:15",
+    "mandante": "Cusco FC",
+    "visitante": "Sport Boys",
+    "pais": "Peru",
+    "cidade": "Cusco",
+    "estadio": "Estadio Inca Garcilaso de la Vega",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886146; status=Scheduled",
+    "id": "3ead458e109269b6",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-11-01",
@@ -18382,6 +18334,22 @@
     "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
     "id": "12f8bb2c1f1a1d4e",
     "atualizado_em": "2026-10-05T20:19:25"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-01",
+    "hora": "15:30",
+    "mandante": "Atlético Grau",
+    "visitante": "Universitario",
+    "pais": "Peru",
+    "cidade": "Trujillo",
+    "estadio": "Estadio Manische",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886126; status=Scheduled",
+    "id": "f0cfe3556f10d29f",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "CBF",
@@ -18566,6 +18534,22 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-02",
+    "hora": "11:00",
+    "mandante": "Sport Huancayo",
+    "visitante": "Melgar",
+    "pais": "Peru",
+    "cidade": "Huancayo",
+    "estadio": "Estadio Huancayo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886127; status=Scheduled",
+    "id": "6fb0d19aa7a4b509",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-11-02",
@@ -18580,6 +18564,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-02",
+    "hora": "13:15",
+    "mandante": "UTC",
+    "visitante": "Deportivo Garcilaso",
+    "pais": "Peru",
+    "cidade": "Cajabamba",
+    "estadio": "Estadio Germán Contreras",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886147; status=Scheduled",
+    "id": "21ddab605804a78e",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -18612,6 +18612,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-02",
+    "hora": "15:30",
+    "mandante": "Sporting Cristal",
+    "visitante": "FC Cajamarca",
+    "pais": "Peru",
+    "cidade": "San Martin de Porres",
+    "estadio": "Estadio Alberto Gallardo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886125; status=Scheduled",
+    "id": "09f1873a77a10a3c",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -18809,6 +18825,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-03",
+    "hora": "15:00",
+    "mandante": "Comerciantes Unidos",
+    "visitante": "ADT",
+    "pais": "Peru",
+    "cidade": "Cutervo, Cajamarca",
+    "estadio": "Juan Maldonado Gamarra",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886128; status=Scheduled",
+    "id": "4ad41c7652a02d4f",
+    "atualizado_em": "2026-10-05T22:45:47"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-11-03",
     "hora": "18:00",
@@ -18852,6 +18884,22 @@
     "extra": "pais=Brasil; cidade=Chapecó",
     "id": "de85e18cc990486e",
     "atualizado_em": "2026-10-05T20:40:10"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-03",
+    "hora": "20:00",
+    "mandante": "Alianza Lima",
+    "visitante": "Cienciano del Cusco",
+    "pais": "Peru",
+    "cidade": "Lima",
+    "estadio": "Estadio Alejandro Villanueva",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886148; status=Scheduled",
+    "id": "06008d84f36c0031",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19019,6 +19067,22 @@
     "extra": "pais=Brasil; cidade=Rio de Janeiro",
     "id": "f1555899c725326b",
     "atualizado_em": "2026-10-05T20:40:10"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-04",
+    "hora": "20:30",
+    "mandante": "Universitario",
+    "visitante": "Sport Boys",
+    "pais": "Peru",
+    "cidade": "Lima",
+    "estadio": "Estadio Monumental de Lima",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401886151; status=Scheduled",
+    "id": "9f355e76ed8e349c",
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "CBF",
@@ -19439,7 +19503,7 @@
     "url": "",
     "extra": "codigo_espn=401886141; status=Scheduled",
     "id": "028cb7b015c8df2e",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19455,7 +19519,7 @@
     "url": "",
     "extra": "codigo_espn=401886145; status=Scheduled",
     "id": "48ce64800a11c452",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19471,7 +19535,7 @@
     "url": "",
     "extra": "codigo_espn=401886142; status=Scheduled",
     "id": "e3bc0e3823da0c04",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19487,7 +19551,7 @@
     "url": "",
     "extra": "codigo_espn=401886139; status=Scheduled",
     "id": "d4b7e2932a2ed23f",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19503,7 +19567,7 @@
     "url": "",
     "extra": "codigo_espn=401886143; status=Scheduled",
     "id": "1bb4c352f836e4ed",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19519,7 +19583,7 @@
     "url": "",
     "extra": "codigo_espn=401886122; status=Scheduled",
     "id": "84b1ed673a57a78d",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19535,7 +19599,7 @@
     "url": "",
     "extra": "codigo_espn=401886144; status=Scheduled",
     "id": "36a0aa8a55a5cc86",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19551,7 +19615,7 @@
     "url": "",
     "extra": "codigo_espn=401886123; status=Scheduled",
     "id": "5428aa7bcc2ec7df",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -19567,7 +19631,7 @@
     "url": "",
     "extra": "codigo_espn=401886140; status=Scheduled",
     "id": "359cfd3f8fe12aa3",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FGF",
@@ -20790,7 +20854,7 @@
     "url": "",
     "extra": "codigo_espn=401886138; status=Scheduled",
     "id": "83076ebb282a0ac7",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -20806,7 +20870,7 @@
     "url": "",
     "extra": "codigo_espn=401886135; status=Scheduled",
     "id": "e75b49ce2be0b5ee",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -20822,7 +20886,7 @@
     "url": "",
     "extra": "codigo_espn=401886113; status=Scheduled",
     "id": "729cc547114590cd",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -20838,7 +20902,7 @@
     "url": "",
     "extra": "codigo_espn=401886121; status=Scheduled",
     "id": "f6721cd191717f5e",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -20854,7 +20918,7 @@
     "url": "",
     "extra": "codigo_espn=401886119; status=Scheduled",
     "id": "7c3e49e4ca8bf610",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -20870,7 +20934,7 @@
     "url": "",
     "extra": "codigo_espn=401886137; status=Scheduled",
     "id": "d3c52627f1647a0e",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -20886,7 +20950,7 @@
     "url": "",
     "extra": "codigo_espn=401886136; status=Scheduled",
     "id": "69b90563b4a75338",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -20900,9 +20964,9 @@
     "estadio": "Estadio Alberto Gallardo",
     "rodada": "",
     "url": "",
-    "extra": "codigo_espn=401886120; status=Scheduled",
+    "extra": "codigo_espn=401886120; status=Postponed",
     "id": "8ae71fb49e9709a0",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "ESPN",
@@ -20918,7 +20982,7 @@
     "url": "",
     "extra": "codigo_espn=401886134; status=Scheduled",
     "id": "3e79eda58e1c57a9",
-    "atualizado_em": "2026-10-04T19:42:36"
+    "atualizado_em": "2026-10-05T22:45:47"
   },
   {
     "fonte": "FGF",
