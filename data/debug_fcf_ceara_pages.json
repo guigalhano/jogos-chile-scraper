@@ -49,9 +49,16 @@
     "erro": "falha ao buscar (timeout/erro de rede)"
   },
   {
-    "idcamp": "430",
-    "nome": "Manjadinho Sub/14 2026",
-    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=430",
+    "idcamp": "437",
+    "nome": "Feminino 2026",
+    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=437",
+    "jogos": 0,
+    "erro": "falha ao buscar (timeout/erro de rede)"
+  },
+  {
+    "idcamp": "438",
+    "nome": "Feminino Sub/17 2026",
+    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=438",
     "jogos": 0,
     "erro": "falha ao buscar (timeout/erro de rede)"
   },
@@ -66,13 +73,6 @@
     "idcamp": "435",
     "nome": "Fares Lopes 2026",
     "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=435",
-    "jogos": 0,
-    "erro": "falha ao buscar (timeout/erro de rede)"
-  },
-  {
-    "idcamp": "431",
-    "nome": "Manjadinho Sub/15 - Cariri 2026",
-    "url": "https://futebolcearense.com.br/2020/tabela.asp?idcamp=431",
     "jogos": 0,
     "erro": "falha ao buscar (timeout/erro de rede)"
   },
