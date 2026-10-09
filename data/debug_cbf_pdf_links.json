@@ -37,7 +37,7 @@
   {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d/2026?documento=IMT",
     "title": "IMT",
-    "origem": "playwright_page_content:a.href;playwright_response_body:a.href",
+    "origem": "playwright_response_body:a.href",
     "id": "b58f698e9e10c40c",
     "tipo": "imt"
   },
@@ -128,7 +128,7 @@
   {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d/2026?documento=Documentos Gerais",
     "title": "Manual de competições",
-    "origem": "playwright_page_content:a.href;playwright_response_body:a.href",
+    "origem": "playwright_response_body:a.href",
     "id": "f5dd6468f74ddec5",
     "tipo": "manual"
   },
@@ -225,7 +225,7 @@
   },
   {
     "url": "https://www.bing.com/copilotsearch?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FORM=CSSCOP",
-    "title": "Pesquisar",
+    "title": "Modo de IA",
     "origem": "bing:a.href",
     "id": "db8f51cd02befa2b",
     "tipo": "pga"
@@ -266,87 +266,87 @@
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&filters=ex1%3a%22ez5_20369_20734%22&FORM=000017",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&filters=ex1%3a%22ez5_20370_20735%22&FORM=000017",
     "title": "Ano passado",
     "origem": "bing:a.href",
-    "id": "9ee71bd3dd9d637e",
+    "id": "697aa7e4eb9b32bb",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=00DD20686C576FF835DB37846D3F6ECF",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=003BEF41D5126D43260FF8ACD4D16C66",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "665353f505765a2f",
+    "id": "8fdd55afb0714fee",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=062EC2B33E08657D2089D55F3FC7640F",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=05F05141D5F564421FA746ACD4A16580",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "20e65bbeefa6023d",
+    "id": "145c26733d443a54",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=0E10967ACFF168B7354F8196CEEE697C",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=0CE77FB14A726E3829B5685C4BB66FFE",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "fab506f6a54beb98",
+    "id": "375bd13109ed1bc4",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=1A94DDA4831E6D722CA5CA4882C66C81",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=16C7012ACDB3687F33FC16C7CC966985",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "68fdef80bb467f6e",
+    "id": "ca21c5162f9340f3",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=1E5DED2FA2D96469357AFAC3A3EE6504",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=19EEBD46AB576F8F036DAAABAA4D6E48",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "951d6d9bfab3f7bd",
+    "id": "4728aa93bcbaef30",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2B29C43623A56A7E071ED3DA223A6B7B",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2317101D833064D03BD007F082566549",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "696e58627434a238",
+    "id": "41b62100778762c0",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2D5830BC804369D80A642750819C6864",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2685F67034456AEF0F59E19D35586BE4",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "cb0f7a171b8a033c",
+    "id": "3f98fd8e0fe8f3f0",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2E6E2A276A956E681D613DCB6B006FF6",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=275287499E1A6E8930B790A49F0B6F82",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "2c5fb3fcf665bfba",
+    "id": "a317d79d78c5f940",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=343871B9A7B967880A456655A62666CC",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2C9BD54D12D669162BBDC2A013EA68A9",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "6043b6ee7b5c09ad",
+    "id": "240d8b35e0b6c4a4",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=396FCF8140AD643F225FD86D416965A3",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=31E189EC5DB7674E3DB29E015C4B66FF",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "6c6bd376ed23b5f0",
+    "id": "56723dbd2e5e676b",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=3CE02D1DE54F6D2B07813AF1E4DC6C4D",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=3BE1899CE063614B30339E71E14C6009",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "ef93acd95668d8e7",
+    "id": "93199b5f6b5dbaa1",
     "tipo": "pga"
   },
   {
@@ -420,239 +420,162 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=046380b3107bf468c2e53ad1c5a6ce4d6fe32beea2acebf5991921b0fb5d379eJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=173b7639-f287-6544-2650-61d5f3b264bd&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "19cdb099dfb26dc9",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=16436572a2b59c29f3a91ae8cf28d52db27fc5d52ff8246239418d75b9e1672aJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=3bda2d30-177e-6c98-1e9b-3adc166b6d13&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=13e340d80a3aec75dd0e05e23f3c6c936f7144c6d2a9b618acf8ece43a8dd011JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=1deea32b-8bba-60f7-2bf1-b4c68a20619d&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "7f640220574cf700",
+    "id": "102fae0a636a64b2",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=16b11a83eb38cb9ad00558b8985b3f34f530362ed48c383ff38217689c3517deJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=00748587-fa17-6446-3de4-926bfb536517&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
-    "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
-    "origem": "bing:a.href",
-    "id": "254198a95bf6312d",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=1f798e4696ed50179c4b972fe2c6f723f9d016f152469016ad008c4b5562acfaJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=321c9c39-f720-6df6-130f-8bd5f60d6cf5&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
-    "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
-    "origem": "bing:a.href",
-    "id": "2b5e932153edfab5",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=2424fd4a9751569882bf83115b154a837738c444ea231a43a1f6e395f6d58dc7JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=1eb2a8cf-d72f-6e68-1fd0-bf23d61b6fd7&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
-    "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
-    "origem": "bing:a.href",
-    "id": "2e4446a7d840b457",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=34f96b87118de7e4441a119d756ac468941001823c03d5e365c4f6a1c2d674b2JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=00748587-fa17-6446-3de4-926bfb536517&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "9283917d81c3939e",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=3edaa813d34ea1428b899eb2a025e64985c3c57a15daabca6bebda39c5811005JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=321c9c39-f720-6df6-130f-8bd5f60d6cf5&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=179410049570b6d123433c100951ca6e2f0b70e4fb95216bb6955af8e241da88JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=03342367-63cc-6161-350f-348a623d607b&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "7e40e08d315cfc88",
+    "id": "d86c8f65aa4b21d7",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=46a2ec2965bd3fca1ebae9ccde2e9439c0f7016941f322e988f10f657e7e0d9aJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=11d8e49f-0ab8-6f4d-218d-f3730bcd6ea4&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=2a15d14cfed324b28a00be27295555762c1dfa7471cbdcd3243fb9374b29fedaJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=0ca3e333-fd32-645b-1da1-f4defc326597&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
+    "origem": "bing:a.href",
+    "id": "c5c6439d9f207a6a",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/ck/a?!&&p=3cfd5262e2910546d632bdca93fb29731b22fdb1c695551b28d920528c32e948JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=055c50a2-0798-65bd-3af5-474f06f064d7&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
+    "origem": "bing:a.href",
+    "id": "b28af4b80b12bbf2",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/ck/a?!&&p=42213dc6ec4b855e8d73dbda9a4a027e2bffc1c1856374cc5b802c916df6e5cfJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=1deea32b-8bba-60f7-2bf1-b4c68a20619d&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
     "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
     "origem": "bing:a.href",
-    "id": "2e4d7fe702af01e1",
+    "id": "443c8a84a10169fe",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=4a0ca96425b6734807a2e548c4f857d216d09d8273d1f7f7f237280386891db1JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=3023bff0-139b-697c-3e79-a81c126e688b&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "d4e69025b3098bc0",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=5019629f613710e4e09e37b4f7d993dfcc4635a5709f9e7988631e857113b265JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=207c2891-1124-67cf-03b4-3f7d10de6665&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "29b0ea8e31a0f9e6",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=6bf799e47c2f2d2f814e4e3a0daa7a27bc9c91dfdc49ed2ddc766e520bec9358JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=11d8e49f-0ab8-6f4d-218d-f3730bcd6ea4&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
-    "origem": "bing:a.href",
-    "id": "4098fb335085bee4",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=708654e599d9154b057022b42b1b67d43bd6c8667e91177479d62d3e0ecb1279JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=1f2f95c4-a482-6b27-0ce1-8228a56b6a09&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=4b53d07750756987700daaf731774d323f188da30e112f174ebc5d5c48cc0483JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=03342367-63cc-6161-350f-348a623d607b&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
     "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
     "origem": "bing:a.href",
-    "id": "1fd546292a3a9a31",
+    "id": "be49f1374fff80b0",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=86a8e9adaf411d5853cc80e0a21ff2a9caf9dd2d963a41139993606cb1fdf642JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=1f2f95c4-a482-6b27-0ce1-8228a56b6a09&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "112d5d25bf1103d8",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=8c853661c129bbf0b73bab6e16eceb8a5908b4ba6be648a66363f46b75fc50ccJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=27e4d195-0534-6937-0a10-c67904846817&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "d8140c3baf084080",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=8e9b53901407e49be7befa69348742494c3df3698882f8948329c726f213b7d3JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=1eb2a8cf-d72f-6e68-1fd0-bf23d61b6fd7&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "cdf9e4ccdf9475bb",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=90ae0f1074e900c027ab38b1a1a3d21282c7be175f4448d87fa2f6944b882b37JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=3023bff0-139b-697c-3e79-a81c126e688b&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
-    "origem": "bing:a.href",
-    "id": "c51c635061d44f1e",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=90b890146e546afc2e3ee9dbdc040190d9a4e7f033dac0f9bc366ce1292265adJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=11d8e49f-0ab8-6f4d-218d-f3730bcd6ea4&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "dfd8f95943a8d81e",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=9af9fa74392b8c3435194404006d18e49961ec6027d1de2f21915f9fbc399a89JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=1f2f95c4-a482-6b27-0ce1-8228a56b6a09&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
-    "origem": "bing:a.href",
-    "id": "ef0ab036332dac9e",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=a4be8e1535017c050c2c3a9d025dfa8febdecdcf0a22f61cfce1ae57e11cd16aJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=27e4d195-0534-6937-0a10-c67904846817&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
-    "origem": "bing:a.href",
-    "id": "8d78d89e72143c14",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=a7d1932bcb53981a2b2d9e1da82bf7f37b97b58e531c88ef1b2b8bdb553d1476JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=27e4d195-0534-6937-0a10-c67904846817&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=533bd16d1a7df52fe99d584175adfabcd5e724ee4af125c36c21c7e465e22f4aJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=055c50a2-0798-65bd-3af5-474f06f064d7&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
     "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
     "origem": "bing:a.href",
-    "id": "56bba260c3da7bc5",
+    "id": "cd70b157f88e83d0",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=a7d27c8a6a57b741a9d5685d3103456e91a9e0281521c2a525cf23945a4c76dcJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=1eb2a8cf-d72f-6e68-1fd0-bf23d61b6fd7&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
-    "origem": "bing:a.href",
-    "id": "ea88224e7cbd738c",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=af6f8a6d1b5a3aab1af8bc0017f0e76de9f4baca7f678401b29adead0bd7cd28JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=0075f906-3d85-602d-1d5f-eeea3ce96156&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=5e7772385c2a336b7889055df2287d98e0828a1bf69221d520f0b019ba4de192JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=34013199-4e72-6b6a-2357-26744f586a5b&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
     "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
     "origem": "bing:a.href",
-    "id": "11a28fea7b5b2afd",
+    "id": "760ed853284f3a2d",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=c1960d2ab0f2bc5998b881cb948c63aea007954354544e52412d56c29b303819JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=173b7639-f287-6544-2650-61d5f3b264bd&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=5eb1989175dae6a7244ac707116f5308e78ee0c9e29692510e37e003b308f0caJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=3b760607-b0c1-66dc-1aa4-11eab1336780&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
     "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
     "origem": "bing:a.href",
-    "id": "fb9079625170cd30",
+    "id": "e201ab5638b38d79",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=c690379b3f438362439c6b9718b1405586f82bd884788d7c3be2fed97030381cJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=3023bff0-139b-697c-3e79-a81c126e688b&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=6d74056612ae48278f15878d35a17c820e8fc8ecff55144e5be104e08f7c2426JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=30ca103c-0867-6032-0e51-07d1098b6120&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
     "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
     "origem": "bing:a.href",
-    "id": "a173fb8d4a2e8be1",
+    "id": "04760db492fea475",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=d77b1fd558c532a6854301af94f602c36559ab3a98f59838ac408dbcc02a73b4JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=207c2891-1124-67cf-03b4-3f7d10de6665&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=73b150ccfcdc39e66ad76ebde0c671064b5a1318f1cd643a9e281adc803fb0cfJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=3b760607-b0c1-66dc-1aa4-11eab1336780&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
+    "origem": "bing:a.href",
+    "id": "f66509afb0342e75",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/ck/a?!&&p=77853e2124f1f8a0dac42b309414d9f53d94d57d842c63d2e7d4bc1abf6a3382JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=01e13d55-14a9-6802-0ed2-2ab81583690f&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
+    "origem": "bing:a.href",
+    "id": "481580831db03356",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/ck/a?!&&p=a106f44e5c9667630613c3e623103ba69d6f5fc9f4592988eaeb7b0d68563cd8JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=34013199-4e72-6b6a-2357-26744f586a5b&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
+    "origem": "bing:a.href",
+    "id": "3678e99ac75771b9",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/ck/a?!&&p=a14ad7734b8dbae540877bbc43fc33a53b0d7985a5d1f1447ef271c9f35b36cbJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=0ca3e333-fd32-645b-1da1-f4defc326597&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
     "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
     "origem": "bing:a.href",
-    "id": "a3c208e88a64d844",
+    "id": "28512ea73abb69bf",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=dccefebd440e0e7d4ac4188af846baadbe0334235430a797837eda441d16685eJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=321c9c39-f720-6df6-130f-8bd5f60d6cf5&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
+    "url": "https://www.bing.com/ck/a?!&&p=a7538351ce0b6056ae860e14981e2e19d8c4c7d864fb5f5b84a21a9028c3f376JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=126bbfb4-ac73-6aa1-0d90-a859ad636beb&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "b2b6ea55e73c21cb",
+    "id": "c539c89ca5c9633b",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=df5bd2c9c0a82b53b6c6da9f4e115d40c6b39a483010c03cd9862617b52009e2JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=3bda2d30-177e-6c98-1e9b-3adc166b6d13&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "3ef024a1e1d395b9",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=e00e39fe958999000249da197b9781ec4cd51437b245e8d367b0ec6e312a8da6JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=3bda2d30-177e-6c98-1e9b-3adc166b6d13&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=aff7de58701d7f84dc76f56ea3628b451622b5e811f93f090fa7bd77fc4b7d5fJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=01e13d55-14a9-6802-0ed2-2ab81583690f&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
     "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
     "origem": "bing:a.href",
-    "id": "49735d7d21abc50b",
+    "id": "0e43ab1cbebcd74c",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=e07a2d8c754b41823880206df56beaf4509b29953fc6cf6395d73d425ccf3bdcJmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=173b7639-f287-6544-2650-61d5f3b264bd&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=bf517bb8569e476113126ab1ce1b9a7fa681bec01f80cfe12bcc937e3a1fb8dfJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=126bbfb4-ac73-6aa1-0d90-a859ad636beb&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
+    "origem": "bing:a.href",
+    "id": "021e1ecdf66dad94",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/ck/a?!&&p=cc4979a926d8fca7812042a67f89428dcba3a2610e20333958dcb90af46f3dc2JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=11b59198-bb79-6886-30a1-8675ba4b69f8&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
+    "origem": "bing:a.href",
+    "id": "25fb4ddec32937ba",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/ck/a?!&&p=d1a899b26605b764b43d98b18c4420968c0e8d79794f6d706230105d31ce1a1aJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=30ca103c-0867-6032-0e51-07d1098b6120&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "4ea3b742914fafbd",
+    "id": "b8e61fbb85c5eb72",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=e25ed7529ed05d1ed9bc28f8d9a9e3740b89bd38fd97075e6f561ebc2e0f4593JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=207c2891-1124-67cf-03b4-3f7d10de6665&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=e53da35f846809e2bf33359a1f4a101510977854738af1d0eab814a492ec3cd4JmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=0e3cc1ca-321a-62b8-0ac3-d62733ea638c&u=a1aHR0cHM6Ly9lcy53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhwZWwlQzMlQURjdWxhKQ&ntb=1",
+    "title": "wikipedia.org https://es.wikipedia.org › wiki › REC_(película)",
+    "origem": "bing:a.href",
+    "id": "f7bf11c65ee1a686",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/ck/a?!&&p=e6bc61b495abc0a1dd2b7a08c809fa4e184d2a15e2ac45936400b49c7f0277cfJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=0e3cc1ca-321a-62b8-0ac3-d62733ea638c&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "5f3bab365a6c806d",
+    "id": "8c09f23db028a826",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=e50fa731f3142433c18226018afc9a8f82f96ffd55a2a7c5ae650de88195e9b2JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=0075f906-3d85-602d-1d5f-eeea3ce96156&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=f4036210d0f49c62421b9abb259de9c5058f80f17929bd89323430e39b1e016eJmltdHM9MTc5MTUwNDAwMA&ptn=3&ver=2&hsh=4&fclid=11b59198-bb79-6886-30a1-8675ba4b69f8&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "8c131b9ee008a418",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=f445b8f88cba869f65f4e2ad183382b61c300829fe360442bae551178808d182JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=00748587-fa17-6446-3de4-926bfb536517&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
-    "origem": "bing:a.href",
-    "id": "de3c2f45624698db",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=fa07dde96a345f32979c34b628ad02fa4dc06312d0ccbbc883610c4c4c662c74JmltdHM9MTc5MTQxNzYwMA&ptn=3&ver=2&hsh=4&fclid=0075f906-3d85-602d-1d5f-eeea3ce96156&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "193e7cab116dc285",
+    "id": "1fd247f6a0fc5311",
     "tipo": "regulamento"
   },
   {
     "url": "https://www.bing.com/copilotsearch?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FORM=CSSCOP",
-    "title": "Pesquisar",
+    "title": "Modo de IA",
     "origem": "bing:a.href",
     "id": "58a214fe09fce2aa",
     "tipo": "regulamento"
@@ -679,255 +602,248 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=20B7E6C7CF1F484987E366D66EE7393D&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=04E5E7C984D246B0882ED09F11BA2C0E&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "756f331e494b782f",
+    "id": "127be1a4e71d2f21",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=20B7E6C7CF1F484987E366D66EE7393D&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=04E5E7C984D246B0882ED09F11BA2C0E&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "27cb92f9e16cb965",
+    "id": "55c67d5d94f012b0",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=20B7E6C7CF1F484987E366D66EE7393D&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=04E5E7C984D246B0882ED09F11BA2C0E&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "0f0b788a0fa26075",
+    "id": "7f24fc0d58308ca0",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=3B5D70EC4DF64023BDFF051A06023FBD&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=3FC56783B5F94DA98953B499D077FBF3&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "79f28fdd9c97dfd1",
+    "id": "da3c80f38d890741",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=3B5D70EC4DF64023BDFF051A06023FBD&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=3FC56783B5F94DA98953B499D077FBF3&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "cf99ceefd8a2107f",
+    "id": "77633cea73439709",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=3B5D70EC4DF64023BDFF051A06023FBD&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=3FC56783B5F94DA98953B499D077FBF3&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "14da5ec3ccbea4eb",
+    "id": "6da11dc7f05f1d60",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=431A7228E9E04F03B7DAFC127146B26C&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "1f495ed5b7271dac",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=431A7228E9E04F03B7DAFC127146B26C&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "3597fbbfdd71f5ad",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=431A7228E9E04F03B7DAFC127146B26C&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "4437c4075f564aca",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5CE93A0804C24643935EFA46617317DB&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "d51181130b6286b4",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5CE93A0804C24643935EFA46617317DB&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "b6d70bb968bc5ef8",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5CE93A0804C24643935EFA46617317DB&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "e9335af48b3c5fca",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=8085C4E8BFEF4620BAB47320ABEF9836&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "6fec8beb71762cc6",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=8085C4E8BFEF4620BAB47320ABEF9836&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "a27d60710b172e79",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=8085C4E8BFEF4620BAB47320ABEF9836&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "c18bb3cabf927689",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=B8F1753985B74F72908D1FE195F7D12F&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "df776cb439e181bf",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=B8F1753985B74F72908D1FE195F7D12F&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "bd76603148bfee35",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=B8F1753985B74F72908D1FE195F7D12F&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "090c0a11611718ce",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=B8F1753985B74F72908D1FE195F7D12F&first=31&FORM=PERE2",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=3FC56783B5F94DA98953B499D077FBF3&first=31&FORM=PERE2",
     "title": "4",
     "origem": "bing:a.href",
-    "id": "39dd3138bde12595",
+    "id": "6b773c3f385df619",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=BC35F0D334D649AF808F01F928ADAFEC&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=4CC23E8F81424D8987EB301D1E3B587B&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "d282815a33b2d5c1",
+    "id": "32071c4e1228895c",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=BC35F0D334D649AF808F01F928ADAFEC&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=4CC23E8F81424D8987EB301D1E3B587B&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "d074bea5c0208838",
+    "id": "239cb0996a937996",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=BC35F0D334D649AF808F01F928ADAFEC&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=4CC23E8F81424D8987EB301D1E3B587B&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "4ca3d6c44dde4760",
+    "id": "ac4d98b51e87bf43",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=C6123392554E4517BE6FF10FDCEFACDE&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=61BB6BD1A8074EC39A0468DE68B69E95&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "abcf7c0d34c42a3b",
+    "id": "aea6c7f7275ecbc8",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=C6123392554E4517BE6FF10FDCEFACDE&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=61BB6BD1A8074EC39A0468DE68B69E95&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "9d82c9e0dde1ba9f",
+    "id": "c019b111f5fd2d86",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=C6123392554E4517BE6FF10FDCEFACDE&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=61BB6BD1A8074EC39A0468DE68B69E95&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "3fc7546fb62cf8a0",
+    "id": "435e947548a6723b",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=CA8F7CA4ED2F4E72A4EE71A8A6EF1EC2&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=654893799547479394D37332A9B0499A&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "3c71ed5541fde92b",
+    "id": "07bb9afe29158e44",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=CA8F7CA4ED2F4E72A4EE71A8A6EF1EC2&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=654893799547479394D37332A9B0499A&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "e6601587b82d3ee9",
+    "id": "f27eceef832d7f28",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=CA8F7CA4ED2F4E72A4EE71A8A6EF1EC2&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=654893799547479394D37332A9B0499A&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "443a0cc7f769626b",
+    "id": "7891e8bfdde67305",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=CA8F7CA4ED2F4E72A4EE71A8A6EF1EC2&first=31&FORM=PERE2",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=98CEAA45697245639D7FF82C467B87BC&first=11&FORM=PERE",
+    "title": "2",
+    "origem": "bing:a.href",
+    "id": "47845d878c3aaed5",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=98CEAA45697245639D7FF82C467B87BC&first=11&FORM=PORE",
+    "title": "Próximo",
+    "origem": "bing:a.href",
+    "id": "d80b89e4b1363024",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=98CEAA45697245639D7FF82C467B87BC&first=21&FORM=PERE1",
+    "title": "3",
+    "origem": "bing:a.href",
+    "id": "8fad4a9ce28bac2d",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=98CEAA45697245639D7FF82C467B87BC&first=31&FORM=PERE2",
     "title": "4",
     "origem": "bing:a.href",
-    "id": "07292b2cedf72eda",
+    "id": "9568942011b8853c",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DCDA6529C55C46C0877E32AE75F32744&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=9BF4503B2B41467297AD717713266F62&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "2e06fa8ccd01a74f",
+    "id": "dc48196a71c68b6b",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DCDA6529C55C46C0877E32AE75F32744&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=9BF4503B2B41467297AD717713266F62&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "694e5fc1ac3ca147",
+    "id": "7689b609f7b07b2d",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DCDA6529C55C46C0877E32AE75F32744&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=9BF4503B2B41467297AD717713266F62&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "195db2b9ab74ba7d",
+    "id": "ae6cf3c493096e47",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DCDA6529C55C46C0877E32AE75F32744&first=31&FORM=PERE2",
-    "title": "4",
-    "origem": "bing:a.href",
-    "id": "28bf8c182de0564b",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=E562AB8BF2B046B69BE4F3E4BC1F5C46&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A691ADB91FC341E581A73B1B9BEA2D2D&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "370b81cec3c42ee8",
+    "id": "5d9494296be5e8fa",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=E562AB8BF2B046B69BE4F3E4BC1F5C46&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A691ADB91FC341E581A73B1B9BEA2D2D&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "00d0e59c5cf1e511",
+    "id": "117f27cbe7d0293f",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=E562AB8BF2B046B69BE4F3E4BC1F5C46&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A691ADB91FC341E581A73B1B9BEA2D2D&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "cd0281d2bea64fc7",
+    "id": "b8a9ad4380630ac9",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=B6EF1C6F5BF0481B9EBD852EC75EA9D6&first=11&FORM=PERE",
+    "title": "2",
+    "origem": "bing:a.href",
+    "id": "a38264e7828030ab",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=B6EF1C6F5BF0481B9EBD852EC75EA9D6&first=11&FORM=PORE",
+    "title": "Próximo",
+    "origem": "bing:a.href",
+    "id": "8f35c6b9b69d9b6f",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=B6EF1C6F5BF0481B9EBD852EC75EA9D6&first=21&FORM=PERE1",
+    "title": "3",
+    "origem": "bing:a.href",
+    "id": "f2b4bb80e8ec86c0",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DDE1FEF0314E443F9302D51272E020AC&first=11&FORM=PERE",
+    "title": "2",
+    "origem": "bing:a.href",
+    "id": "d57728a880cbb27f",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DDE1FEF0314E443F9302D51272E020AC&first=11&FORM=PORE",
+    "title": "Próximo",
+    "origem": "bing:a.href",
+    "id": "638766b8e4de2d68",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DDE1FEF0314E443F9302D51272E020AC&first=21&FORM=PERE1",
+    "title": "3",
+    "origem": "bing:a.href",
+    "id": "0061bb51b5b27452",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=E2C5CC78397E4DEEB78C8FBA2183F152&first=11&FORM=PERE",
+    "title": "2",
+    "origem": "bing:a.href",
+    "id": "c6e00c21bfe4e740",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=E2C5CC78397E4DEEB78C8FBA2183F152&first=11&FORM=PORE",
+    "title": "Próximo",
+    "origem": "bing:a.href",
+    "id": "43d40f92926d0d3a",
+    "tipo": "regulamento"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=E2C5CC78397E4DEEB78C8FBA2183F152&first=21&FORM=PERE1",
+    "title": "3",
+    "origem": "bing:a.href",
+    "id": "bd30ab4ace74c149",
     "tipo": "regulamento"
   },
   {
@@ -952,87 +868,87 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&filters=ex1%3a%22ez5_20369_20734%22&FORM=000017",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&filters=ex1%3a%22ez5_20370_20735%22&FORM=000017",
     "title": "Ano passado",
     "origem": "bing:a.href",
-    "id": "d0f1f24d689b097e",
+    "id": "0ef5553333764545",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=06D34C9062EE638D0CF65B7C6307629F",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=08A5300725CD619317AC27EA24A560F3",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "96c56861cbd44cb9",
+    "id": "4011a8443cc97414",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=07A88CC37688657408909B2F77BD6422",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=0C816806966A6BED15007FEB97866A32",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "e1b719a6e9d82847",
+    "id": "861012ab13b0a822",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=0FF52ED5FE6761D523373939FF53601C",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=1002CE4107EA6D6F0585D9AC06C06CD5",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "9a9add2512c8053d",
+    "id": "1c71da5eb65cd0d4",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=123738B8D68C6A410B8B2F54D7E06BCD",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=1A88A25ADDF06C6A1F8BB5B7DC6A6D83",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "c3b5c54f65f183f4",
+    "id": "153fb1e003492ddf",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=133F13727DF0647D16DD049E7C4065BC",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=20D8F93E22C36F93092BEED323F16EF9",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "6e59cbe19410e287",
+    "id": "f21a8f4309c53d34",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2190A4D4535868F40730B338521C69CB",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=235E4FCB08326B293AB6582609186AB3",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "56a93ceaf08ff528",
+    "id": "894c06903483c075",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2378618DC4A36CD93D6F7661C5566DBD",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=263D2E62F99A6496044F398FF868659A",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "08fa80020c204575",
+    "id": "7c6bede63b67d631",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2570C5C7668663D233DAD22B677C62D3",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=314688E982756B9A2FA39F0483846A44",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "7d1342145bae85a9",
+    "id": "69a6abf2b9c1951c",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=262DE816722562D538F9FFFA733063FE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=335E08ECF18C68E438DE1F01F08C693B",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "4fc2fdc8417fc965",
+    "id": "76211f2c8ef68710",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2EA94A92B40765DB0D635D7EB57264CE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=35E2542CDD9C63971DB043C1DC6C62ED",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "99ca1dc25c14f035",
+    "id": "ddbc9cde0eed1136",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=353C78CB35BB62A911606F27349663C8",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3B302912B2BA6D623E583EFFB3AA6C06",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "301dab02e63471e0",
+    "id": "07390988c0ab315b",
     "tipo": "regulamento"
   },
   {
@@ -1073,7 +989,7 @@
   {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d/2026?documento=Regulamento",
     "title": "Documentos",
-    "origem": "playwright_page_content:a.href;playwright_response_body:a.href",
+    "origem": "playwright_response_body:a.href",
     "id": "d5c2588c721b39f0",
     "tipo": "regulamento"
   },
@@ -1106,17 +1022,17 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_23_09_514ed50b80.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf",
-    "id": "647060aaba364461",
+    "id": "d7e197e6a22762a1",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_08_10_e67a9b4d98.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf;playwright_page_content:a.href;playwright_page_content:regex_pdf",
-    "id": "8a1ed2832675c2f8",
+    "id": "599ebc01b9915c2a",
     "tipo": "tabela_detalhada"
   },
   {
@@ -1134,10 +1050,10 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_08_10_91ceadadc9.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf",
-    "id": "68efde1f0e5e212d",
+    "id": "b44df05b6688b992",
     "tipo": "tabela_detalhada"
   },
   {
@@ -1148,15 +1064,15 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_7bf988043e.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_adbd12d273.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf",
-    "id": "bd0af7f57568a0f3",
+    "id": "81f101c08ae5e062",
     "tipo": "tabela_detalhada"
   },
   {
     "url": "https://www.bing.com/copilotsearch?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&FORM=CSSCOP",
-    "title": "Pesquisar",
+    "title": "Modo de IA",
     "origem": "bing:a.href",
     "id": "dad2d010dd02a5ad",
     "tipo": "tabela_detalhada"
@@ -1197,87 +1113,87 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&filters=ex1%3a%22ez5_20369_20734%22&FORM=000017",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&filters=ex1%3a%22ez5_20370_20735%22&FORM=000017",
     "title": "Ano passado",
     "origem": "bing:a.href",
-    "id": "ab5feae0a8c946ce",
+    "id": "32a0f87c114ca9a3",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=08D6BC1FC0BF618C065CABF3C1AD6058",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=00AEA7252389699D2179B0C8229168DF",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "c4b08b64a0346de3",
+    "id": "8d181ccac23184eb",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=12F8CABAF2ED6F151F19DD56F3AF6E33",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0B1D583B01FF6AA514254FD600536B76",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "1f149a669c075626",
+    "id": "9fba059e3c12d22d",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1609CC9E51DD6A051853DB7250276B88",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0B9C6C926E6A6D4619877B7F6F126C9D",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "24d9cb9912edde30",
+    "id": "35853f99b6f6f11f",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1E1078487E3869EA05756FA47F7E6828",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1675D3ABEB776FAE23E6C446EAF76E78",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "3c08d7ba56f1e91d",
+    "id": "d5992d27f10be7b8",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1E811CAD2F8966FE308F0B412E1C67A4",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=18B8E12A028964F7321FF6C703B76521",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "0e4fdc0db3ded953",
+    "id": "ed5c1f7e629e4ac6",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1FD68699F1A06F661B199175F0196E6D",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1C324904D6E66C7506A75EE9D7A86D4E",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "76802fd13cb2b9cc",
+    "id": "2ebc0e9a64ef81df",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=25C175F77182622327AE621B70996378",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1C371C07139B63D320A10BEA12A962B7",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "e47550ab751da93f",
+    "id": "c42419d1d31e6bb5",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=279E1766C11F6EAB390B008AC0AB6F0C",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=2DC4BD7C77246FE811EFAA9176B26EF7",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "0afeb96111f6985a",
+    "id": "415cb2e7b3fa3818",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3CAD5FE5074962390369480906A86338",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=2F40A225ECE56F230B80B5C8ED146E57",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "e15ca59e83e4f2d5",
+    "id": "cc9f8268917dad7d",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3F36AC6D5DA8687F312ABB815CF86986",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3646503BF9526364351D47D6F8A16214",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "c8f806ad2a63aea8",
+    "id": "13ba4502e8383a3a",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3F67BCCE851B6C722511AB2284FB6D51",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3753B8A9A8A86938307AAF44A9C06842",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "cde64cdd65a26dc7",
+    "id": "6ab1edb23b0be350",
     "tipo": "tabela_detalhada"
   },
   {
@@ -1325,7 +1241,7 @@
   {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-d/2026?documento=Tabela Detalhada",
     "title": "Tabela Detalhada",
-    "origem": "playwright_page_content:a.href;playwright_response_body:a.href",
+    "origem": "playwright_response_body:a.href",
     "id": "f45eb1cca33b3c8f",
     "tipo": "tabela_detalhada"
   },
