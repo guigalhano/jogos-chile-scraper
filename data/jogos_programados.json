@@ -1,21 +1,6 @@
 [
   {
     "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-09-02",
-    "hora": "",
-    "mandante": "A def. Chapecoense (SC)",
-    "visitante": "Vasco da Gama (RJ)",
-    "estadio": "Arena Condá",
-    "cidade": "Chapecó",
-    "rodada": "Rodada 21",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Chapecó; data_estimada=true",
-    "id": "9d0735fd1463eacb",
-    "atualizado_em": "2026-10-11T09:56:23"
-  },
-  {
-    "fonte": "CBF",
     "competicao": "Brasil - Série B",
     "data": "2026-08-05",
     "hora": "21:35",
@@ -26,7 +11,22 @@
     "rodada": "Rodada 19",
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
     "extra": "pais=Brasil; cidade=Goiânia; data_estimada=true",
-    "id": "0b2511ec59ff33ea",
+    "id": "e9e46b9ce64707af",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-09-02",
+    "hora": "",
+    "mandante": "A def. Chapecoense (SC)",
+    "visitante": "Vasco da Gama (RJ)",
+    "estadio": "Arena Condá",
+    "cidade": "Chapecó",
+    "rodada": "Rodada 21",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Chapecó; data_estimada=true",
+    "id": "d4a96ac1e1cd4adc",
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
@@ -1009,6 +1009,21 @@
     "atualizado_em": "2026-10-10T18:07:58"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-09-25",
+    "hora": "19:30",
+    "mandante": "Novorizontino (SP)",
+    "visitante": "São Bernardo FC (SP)",
+    "estadio": "Jorge Ismael de Biasi",
+    "cidade": "Novo Horizonte",
+    "rodada": "Rodada 30",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
+    "extra": "pais=Brasil; cidade=Novo Horizonte",
+    "id": "c825391aac16c4d0",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-09-25",
@@ -1023,21 +1038,6 @@
     "extra": "codigo_espn=401907812; status=Full Time; placar=9-0",
     "id": "7cf6003c55bfcddf",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-09-25",
-    "hora": "19:30",
-    "mandante": "Novorizontino (SP)",
-    "visitante": "São Bernardo FC (SP)",
-    "estadio": "Jorge Ismael de Biasi",
-    "cidade": "Novo Horizonte",
-    "rodada": "Rodada 30",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
-    "extra": "pais=Brasil; cidade=Novo Horizonte",
-    "id": "c825391aac16c4d0",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "ESPN",
@@ -1479,22 +1479,6 @@
     "atualizado_em": "2026-10-10T18:07:58"
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Bolivia - Copa Bolivia",
-    "data": "2026-09-30",
-    "hora": "15:00",
-    "mandante": "Real Oruro",
-    "visitante": "Always Ready",
-    "pais": "Bolivia",
-    "cidade": "Oruro",
-    "estadio": "Estadio Jesús Bermúdez",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401907808; status=Full Time; placar=2-2",
-    "id": "11aea92d20226667",
-    "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Sub-17",
     "data": "2026-09-30",
@@ -1646,6 +1630,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Copa Bolivia",
+    "data": "2026-09-30",
+    "hora": "15:00",
+    "mandante": "Real Oruro",
+    "visitante": "Always Ready",
+    "pais": "Bolivia",
+    "cidade": "Oruro",
+    "estadio": "Estadio Jesús Bermúdez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401907808; status=Full Time; placar=2-2",
+    "id": "11aea92d20226667",
+    "atualizado_em": "2026-10-10T19:05:54"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Peru - Liga 1",
     "data": "2026-09-30",
     "hora": "15:00",
@@ -1741,6 +1741,21 @@
     "atualizado_em": "2026-10-10T19:05:54"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-10-01",
+    "hora": "20:30",
+    "mandante": "Athletic (MG)",
+    "visitante": "Sport (PE)",
+    "estadio": "Arena Sicredi",
+    "cidade": "São João Del Rei",
+    "rodada": "Rodada 31",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
+    "extra": "pais=Brasil; cidade=São João Del Rei",
+    "id": "b3e85e68948c249c",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-10-01",
@@ -1755,21 +1770,6 @@
     "extra": "codigo_espn=401907806; status=Full Time; placar=0-1",
     "id": "9a7ae3adcf010427",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-10-01",
-    "hora": "20:30",
-    "mandante": "Athletic (MG)",
-    "visitante": "Sport (PE)",
-    "estadio": "Arena Sicredi",
-    "cidade": "São João Del Rei",
-    "rodada": "Rodada 31",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
-    "extra": "pais=Brasil; cidade=São João Del Rei",
-    "id": "b3e85e68948c249c",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "CBF",
@@ -1818,6 +1818,21 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-02",
+    "hora": "20:00",
+    "mandante": "São Paulo (SP)",
+    "visitante": "Santos (SP)",
+    "estadio": "Morumbis",
+    "cidade": "São Paulo",
+    "rodada": "Rodada 21",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=São Paulo",
+    "id": "0bd8902bad293590",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-10-02",
@@ -1832,21 +1847,6 @@
     "extra": "codigo_espn=401907804; status=Full Time; placar=1-1",
     "id": "522f99776182511c",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-02",
-    "hora": "20:00",
-    "mandante": "São Paulo (SP)",
-    "visitante": "Santos (SP)",
-    "estadio": "Morumbis",
-    "cidade": "São Paulo",
-    "rodada": "Rodada 21",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=São Paulo",
-    "id": "0bd8902bad293590",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "CBF",
@@ -2507,6 +2507,21 @@
     "atualizado_em": "2026-10-10T17:42:50"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Sub-17",
+    "data": "2026-10-07",
+    "hora": "17:30",
+    "mandante": "D Flamengo (RJ)",
+    "visitante": "Corinthians (SP)",
+    "estadio": "Luso Brasileiro",
+    "cidade": "Rio de Janeiro",
+    "rodada": "Rodada 1",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
+    "extra": "pais=Brasil; cidade=Rio de Janeiro",
+    "id": "45af418c0c4a24f8",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-10-07",
@@ -2521,21 +2536,6 @@
     "extra": "codigo_espn=401907901; status=Full Time; placar=1-0",
     "id": "0b9fd9af1bfb0e33",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Sub-17",
-    "data": "2026-10-07",
-    "hora": "17:30",
-    "mandante": "D Flamengo (RJ)",
-    "visitante": "Corinthians (SP)",
-    "estadio": "Luso Brasileiro",
-    "cidade": "Rio de Janeiro",
-    "rodada": "Rodada 1",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
-    "extra": "pais=Brasil; cidade=Rio de Janeiro",
-    "id": "45af418c0c4a24f8",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "CBF",
@@ -2628,38 +2628,6 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Bolivia - Copa Bolivia",
-    "data": "2026-10-07",
-    "hora": "20:30",
-    "mandante": "Guabirá",
-    "visitante": "The Strongest",
-    "pais": "Bolivia",
-    "cidade": "Montero",
-    "estadio": "Estadio Gilberto Parada",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401907902; status=Full Time; placar=2-1",
-    "id": "34a811874c054e75",
-    "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Bolivia - Copa Bolivia",
-    "data": "2026-10-07",
-    "hora": "20:30",
-    "mandante": "Oriente Petrolero",
-    "visitante": "Universitario de Vinto",
-    "pais": "Bolivia",
-    "cidade": "Santa Cruz",
-    "estadio": "Estadio Ramón Tahuichi",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401907900; status=Full Time; placar=2-0",
-    "id": "9ebab11ac825c441",
-    "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Série A",
     "data": "2026-10-07",
@@ -2718,6 +2686,38 @@
     "extra": "pais=Brasil; cidade=Goiânia",
     "id": "c66b8d4dc36bc3e5",
     "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Copa Bolivia",
+    "data": "2026-10-07",
+    "hora": "20:30",
+    "mandante": "Guabirá",
+    "visitante": "The Strongest",
+    "pais": "Bolivia",
+    "cidade": "Montero",
+    "estadio": "Estadio Gilberto Parada",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401907902; status=Full Time; placar=2-1",
+    "id": "34a811874c054e75",
+    "atualizado_em": "2026-10-10T19:05:54"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Copa Bolivia",
+    "data": "2026-10-07",
+    "hora": "20:30",
+    "mandante": "Oriente Petrolero",
+    "visitante": "Universitario de Vinto",
+    "pais": "Bolivia",
+    "cidade": "Santa Cruz",
+    "estadio": "Estadio Ramón Tahuichi",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401907900; status=Full Time; placar=2-0",
+    "id": "9ebab11ac825c441",
+    "atualizado_em": "2026-10-10T19:05:54"
   },
   {
     "fonte": "CBF",
@@ -2876,6 +2876,21 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-08",
+    "hora": "20:00",
+    "mandante": "Athletico (PR)",
+    "visitante": "Atlético (MG)",
+    "estadio": "Arena da Baixada",
+    "cidade": "Curitiba",
+    "rodada": "Rodada 29",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Curitiba",
+    "id": "3dafce0a3a43ffca",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-10-08",
@@ -2890,21 +2905,6 @@
     "extra": "codigo_espn=401907799; status=Full Time; placar=1-1",
     "id": "c01f722c3796927d",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-08",
-    "hora": "20:00",
-    "mandante": "Athletico (PR)",
-    "visitante": "Atlético (MG)",
-    "estadio": "Arena da Baixada",
-    "cidade": "Curitiba",
-    "rodada": "Rodada 29",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Curitiba",
-    "id": "3dafce0a3a43ffca",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "ESPN",
@@ -3063,6 +3063,20 @@
     "extra": "codigo_espn=401877911; status=Full Time; placar=1-0",
     "id": "36a3b324c0c03b82",
     "atualizado_em": "2026-10-10T18:07:58"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Juvenil Femenino",
+    "data": "2026-10-10",
+    "hora": "09:00",
+    "mandante": "Deportes Antofagasta Juvenil Fem",
+    "visitante": "Deportes Iquique Juvenil Fem",
+    "estadio": "Estadio Calvo y Bascuñan, Cancha 3",
+    "rodada": "Fecha 12",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
+    "extra": "",
+    "id": "b4add47cd388691f",
+    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "FFERJ",
@@ -3340,15 +3354,15 @@
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Juvenil Femenino",
     "data": "2026-10-10",
-    "hora": "09:00",
-    "mandante": "Deportes Antofagasta Juvenil Fem",
-    "visitante": "Deportes Iquique Juvenil Fem",
-    "estadio": "Estadio Calvo y Bascuñan, Cancha 3",
-    "rodada": "Fecha 12",
+    "hora": "10:00",
+    "mandante": "Atlético Colina Juvenil Fem",
+    "visitante": "Universidad Católica Juvenil Fem",
+    "estadio": "Estadio Victoria de Chacabuco",
+    "rodada": "Fecha 7",
     "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
     "extra": "",
-    "id": "b4add47cd388691f",
-    "atualizado_em": "2026-10-10T17:11:17"
+    "id": "f5638394b47d9f8c",
+    "atualizado_em": "2026-10-08T18:41:51"
   },
   {
     "fonte": "CBF",
@@ -3510,20 +3524,6 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=338; grupo=24; fase=TERCEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "99c8346c7f2cb19a",
     "atualizado_em": "2026-10-10T17:57:56"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Juvenil Femenino",
-    "data": "2026-10-10",
-    "hora": "10:00",
-    "mandante": "Atlético Colina Juvenil Fem",
-    "visitante": "Universidad Católica Juvenil Fem",
-    "estadio": "Estadio Victoria de Chacabuco",
-    "rodada": "Fecha 7",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
-    "extra": "",
-    "id": "f5638394b47d9f8c",
-    "atualizado_em": "2026-10-08T18:41:51"
   },
   {
     "fonte": "AUF",
@@ -3918,22 +3918,6 @@
     "atualizado_em": "2026-10-10T17:11:17"
   },
   {
-    "fonte": "FFERJ",
-    "competicao": "Brasil - FFERJ - Competição não identificada",
-    "data": "2026-10-10",
-    "hora": "13:00",
-    "mandante": "Resende F. C.",
-    "visitante": "S.A.F Botafogo",
-    "pais": "Brasil",
-    "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO TRABALHADOR",
-    "rodada": "",
-    "url": "https://www.fferj.com.br/partidas/5956",
-    "extra": "codigo_fferj=5956; fonte_tag=FERJ",
-    "id": "376d7d864a3b4826",
-    "atualizado_em": "2026-10-05T21:16:30"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-10",
@@ -3948,6 +3932,50 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera B - Sur",
+    "data": "2026-10-10",
+    "hora": "13:00",
+    "mandante": "V. Pérez Rosales",
+    "visitante": "Nacimiento CDSC",
+    "estadio": "Regional de Chinquihue",
+    "rodada": "Jornada 26",
+    "url": "https://cf3.cl/torneo/tercera-b/grupo-sur/fecha/26",
+    "extra": "",
+    "id": "3a68a72e20cb253b",
+    "atualizado_em": "2026-10-09T18:12:25"
+  },
+  {
+    "fonte": "anfaterceradivision.cl/calendario",
+    "competicao": "Tercera B - Sur",
+    "data": "2026-10-10",
+    "hora": "13:00",
+    "mandante": "Vicente Pérez Rosales Los Lagos",
+    "visitante": "Nacimiento Biobío",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
+    "extra": "calendario.php",
+    "id": "3034d67b54bb8996",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-10",
+    "hora": "13:00",
+    "mandante": "Resende F. C.",
+    "visitante": "S.A.F Botafogo",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO TRABALHADOR",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5956",
+    "extra": "codigo_fferj=5956; fonte_tag=FERJ",
+    "id": "376d7d864a3b4826",
+    "atualizado_em": "2026-10-05T21:16:30"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -3980,34 +4008,6 @@
     "extra": "codigo_espn=401886171; status=Full Time; placar=0-0",
     "id": "93cd674c89a05512",
     "atualizado_em": "2026-10-10T20:10:21"
-  },
-  {
-    "fonte": "cf3.cl",
-    "competicao": "Tercera B - Sur",
-    "data": "2026-10-10",
-    "hora": "13:00",
-    "mandante": "V. Pérez Rosales",
-    "visitante": "Nacimiento CDSC",
-    "estadio": "Regional de Chinquihue",
-    "rodada": "Jornada 26",
-    "url": "https://cf3.cl/torneo/tercera-b/grupo-sur/fecha/26",
-    "extra": "",
-    "id": "3a68a72e20cb253b",
-    "atualizado_em": "2026-10-09T18:12:25"
-  },
-  {
-    "fonte": "anfaterceradivision.cl/calendario",
-    "competicao": "Tercera B - Sur",
-    "data": "2026-10-10",
-    "hora": "13:00",
-    "mandante": "Vicente Pérez Rosales Los Lagos",
-    "visitante": "Nacimiento Biobío",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
-    "extra": "calendario.php",
-    "id": "3034d67b54bb8996",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "AUF",
@@ -4056,6 +4056,20 @@
     "extra": "codigo_espn=401921383; status=First Half; placar=0-0",
     "id": "90eadcb9c5b3162f",
     "atualizado_em": "2026-10-10T19:37:07"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-10-10",
+    "hora": "14:30",
+    "mandante": "Santiago City",
+    "visitante": "Colchagua",
+    "estadio": "Estadio Municipal de Lo Barnechea",
+    "rodada": "Fecha 8",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "a2971ab8c69627dc",
+    "atualizado_em": "2026-10-09T18:12:25"
   },
   {
     "fonte": "FPF",
@@ -4298,20 +4312,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-10-10",
-    "hora": "14:30",
-    "mandante": "Santiago City",
-    "visitante": "Colchagua",
-    "estadio": "Estadio Municipal de Lo Barnechea",
-    "rodada": "Fecha 8",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "a2971ab8c69627dc",
-    "atualizado_em": "2026-10-09T18:12:25"
-  },
-  {
     "fonte": "AUF",
     "competicao": "Uruguay - Liga AUF Uruguaya",
     "data": "2026-10-10",
@@ -4341,6 +4341,50 @@
     "pais": "Argentina",
     "id": "f0b852609f159e66",
     "atualizado_em": "2026-09-30T17:54:37"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-10",
+    "hora": "15:00",
+    "mandante": "Cobresal Juvenil Fem",
+    "visitante": "Audax Italiano Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 11",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "b5805f086a54729c",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-10-10",
+    "hora": "15:00",
+    "mandante": "Santiago Wanderers",
+    "visitante": "Curicó Unido",
+    "estadio": "Elías Figueroa Brander",
+    "rodada": "Fecha 27",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "58e2cf0af47e0484",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Primera Mercado Libre",
+    "data": "2026-10-10",
+    "hora": "15:00",
+    "mandante": "Cobresal",
+    "visitante": "Universidad de Concepción",
+    "estadio": "Estadio El Cobre",
+    "rodada": "Fecha 24",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
+    "extra": "",
+    "id": "774587f4a1f12569",
+    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "AFA",
@@ -4833,22 +4877,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-10",
-    "hora": "15:00",
-    "mandante": "Cobresal Juvenil Fem",
-    "visitante": "Audax Italiano Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 11",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "b5805f086a54729c",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
     "fonte": "FGF",
     "competicao": "Gauchão Série A2 2026",
     "data": "2026-10-10",
@@ -4863,34 +4891,6 @@
     "cidade": "",
     "id": "39465b58b0459edd",
     "atualizado_em": "2026-10-10T18:23:03"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-10-10",
-    "hora": "15:00",
-    "mandante": "Santiago Wanderers",
-    "visitante": "Curicó Unido",
-    "estadio": "Elías Figueroa Brander",
-    "rodada": "Fecha 27",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "58e2cf0af47e0484",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Primera Mercado Libre",
-    "data": "2026-10-10",
-    "hora": "15:00",
-    "mandante": "Cobresal",
-    "visitante": "Universidad de Concepción",
-    "estadio": "Estadio El Cobre",
-    "rodada": "Fecha 24",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
-    "extra": "",
-    "id": "774587f4a1f12569",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -4955,6 +4955,20 @@
     "cidade": "",
     "id": "093237ea4bf6d958",
     "atualizado_em": "2026-10-09T18:16:42"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-10-10",
+    "hora": "15:30",
+    "mandante": "Santiago City",
+    "visitante": "Colchagua",
+    "estadio": "Estadio Municipal de Lo Barnechea",
+    "rodada": "Fecha 8",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "4716c5978a626b15",
+    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "AFA",
@@ -5099,20 +5113,6 @@
     "atualizado_em": "2026-10-10T18:07:58"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-10-10",
-    "hora": "15:30",
-    "mandante": "Santiago City",
-    "visitante": "Colchagua",
-    "estadio": "Estadio Municipal de Lo Barnechea",
-    "rodada": "Fecha 8",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "4716c5978a626b15",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-10",
@@ -5158,6 +5158,20 @@
     "pais": "Argentina",
     "id": "7c66d873b12359dd",
     "atualizado_em": "2026-10-10T17:14:20"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-10-10",
+    "hora": "16:00",
+    "mandante": "Santiago Morning",
+    "visitante": "Real San Joaquín",
+    "estadio": "Estadio Municipal de La Pintana",
+    "rodada": "Fecha 8",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "ec5402c6157c568f",
+    "atualizado_em": "2026-09-29T17:56:27"
   },
   {
     "fonte": "AFA",
@@ -5479,20 +5493,6 @@
     "atualizado_em": "2026-10-10T18:23:03"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-10-10",
-    "hora": "16:00",
-    "mandante": "Santiago Morning",
-    "visitante": "Real San Joaquín",
-    "estadio": "Estadio Municipal de La Pintana",
-    "rodada": "Fecha 8",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "ec5402c6157c568f",
-    "atualizado_em": "2026-09-29T17:56:27"
-  },
-  {
     "fonte": "AUF",
     "competicao": "Uruguay - Segunda División Profesional",
     "data": "2026-10-10",
@@ -5507,6 +5507,62 @@
     "cidade": "",
     "id": "9e8cbcde3dd54637",
     "atualizado_em": "2026-10-09T18:16:42"
+  },
+  {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera B - Norte",
+    "data": "2026-10-10",
+    "hora": "16:30",
+    "mandante": "EF Conchalí",
+    "visitante": "Dep. Hualpén",
+    "estadio": "Mun. de Conchalí",
+    "rodada": "Jornada 26",
+    "url": "https://cf3.cl/torneo/tercera-b/grupo-sur/fecha/26",
+    "extra": "",
+    "id": "2d2f28cd50857dff",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "anfaterceradivision.cl/calendario",
+    "competicao": "Tercera B - Sur",
+    "data": "2026-10-10",
+    "hora": "16:30",
+    "mandante": "EF Conchalí Metropolitana",
+    "visitante": "Deportes Hualpén Biobío",
+    "estadio": "10 Oct 2026, 16:30 Municipal de Conchalí",
+    "rodada": "",
+    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
+    "extra": "calendario.php",
+    "id": "5d43ff7d97a22442",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera B - Sur",
+    "data": "2026-10-10",
+    "hora": "16:30",
+    "mandante": "Laja Histórico",
+    "visitante": "Deportivo Pumanque",
+    "estadio": "Facela de Laja",
+    "rodada": "Jornada 26",
+    "url": "https://cf3.cl/torneo/tercera-b/grupo-sur/fecha/26",
+    "extra": "",
+    "id": "368b00eb61421b37",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "anfaterceradivision.cl/calendario",
+    "competicao": "Tercera B - Sur",
+    "data": "2026-10-10",
+    "hora": "16:30",
+    "mandante": "Laja Histórico Biobío",
+    "visitante": "Deportivo Pumanque O'Higgins",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
+    "extra": "calendario.php",
+    "id": "622887458c10ddcc",
+    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "AFA",
@@ -5538,77 +5594,6 @@
     "extra": "codigo_espn=401921381; status=Scheduled",
     "id": "27a74e8272029279",
     "atualizado_em": "2026-10-10T19:37:07"
-  },
-  {
-    "fonte": "cf3.cl",
-    "competicao": "Tercera B - Norte",
-    "data": "2026-10-10",
-    "hora": "16:30",
-    "mandante": "EF Conchalí",
-    "visitante": "Dep. Hualpén",
-    "estadio": "Mun. de Conchalí",
-    "rodada": "Jornada 26",
-    "url": "https://cf3.cl/torneo/tercera-b/grupo-sur/fecha/26",
-    "extra": "",
-    "id": "2d2f28cd50857dff",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "anfaterceradivision.cl/calendario",
-    "competicao": "Tercera B - Sur",
-    "data": "2026-10-10",
-    "hora": "16:30",
-    "mandante": "EF Conchalí Metropolitana",
-    "visitante": "Deportes Hualpén Biobío",
-    "estadio": "10 Oct 2026, 16:30 Municipal de Conchalí",
-    "rodada": "",
-    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
-    "extra": "calendario.php",
-    "id": "5d43ff7d97a22442",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "anfaterceradivision.cl/calendario",
-    "competicao": "Tercera B - Sur",
-    "data": "2026-10-10",
-    "hora": "16:30",
-    "mandante": "Laja Histórico Biobío",
-    "visitante": "Deportivo Pumanque O'Higgins",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
-    "extra": "calendario.php",
-    "id": "622887458c10ddcc",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "cf3.cl",
-    "competicao": "Tercera B - Sur",
-    "data": "2026-10-10",
-    "hora": "16:30",
-    "mandante": "Laja Histórico",
-    "visitante": "Deportivo Pumanque",
-    "estadio": "Facela de Laja",
-    "rodada": "Jornada 26",
-    "url": "https://cf3.cl/torneo/tercera-b/grupo-sur/fecha/26",
-    "extra": "",
-    "id": "368b00eb61421b37",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "AFA",
-    "competicao": "Argentina - Torneo Clausura",
-    "data": "2026-10-10",
-    "hora": "17:00",
-    "mandante": "Central Córdoba",
-    "visitante": "Estudiantes (LP)",
-    "estadio": "",
-    "rodada": "Zona A",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "c0cc0abbb61ce3f0",
-    "atualizado_em": "2026-10-10T17:14:20"
   },
   {
     "fonte": "CBF",
@@ -5686,22 +5671,6 @@
     "atualizado_em": "2026-09-15T16:50:22"
   },
   {
-    "fonte": "FGF",
-    "competicao": "Gauchão Série A2 2026",
-    "data": "2026-10-10",
-    "hora": "17:00",
-    "mandante": "ESP",
-    "visitante": "Brasil-Pel",
-    "estadio": "Montanha dos Vinhedos",
-    "rodada": "Quartas de Final",
-    "url": "https://fgf.com.br/competicoes/profissional/24",
-    "extra": "",
-    "pais": "Brasil",
-    "cidade": "",
-    "id": "0271800cd8658537",
-    "atualizado_em": "2026-10-01T19:22:41"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Segunda Panini",
     "data": "2026-10-10",
@@ -5714,22 +5683,6 @@
     "extra": "",
     "id": "8a9c777cfc5668e7",
     "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "APF",
-    "competicao": "Paraguay - APF - Copa de Primera",
-    "data": "2026-10-10",
-    "hora": "17:00",
-    "mandante": "Club Sportivo San Lorenzo",
-    "visitante": "Club Sportivo Trinidense",
-    "pais": "Paraguay",
-    "cidade": "",
-    "estadio": "Estadio Gunther Vogel",
-    "rodada": "Jornada 14",
-    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-14-san-lorenzo-vs-trinidense-904",
-    "extra": "status=PreMatch; status_nome=Previo",
-    "id": "09edcdcb0be64136",
-    "atualizado_em": "2026-10-10T16:25:09"
   },
   {
     "fonte": "cf3.cl",
@@ -5760,6 +5713,20 @@
     "atualizado_em": "2026-10-10T17:11:17"
   },
   {
+    "fonte": "anfaterceradivision.cl/calendario",
+    "competicao": "Tercera B - Sur",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "CDSC Iberia Biobío",
+    "visitante": "Buenos Aires Maule",
+    "estadio": "10 Oct 2026, 17:00 Municipal de Los Ángeles",
+    "rodada": "",
+    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
+    "extra": "calendario.php",
+    "id": "e2916d5a6483793c",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "cf3.cl",
     "competicao": "Tercera B - Sur",
     "data": "2026-10-10",
@@ -5778,20 +5745,6 @@
     "competicao": "Tercera B - Sur",
     "data": "2026-10-10",
     "hora": "17:00",
-    "mandante": "CDSC Iberia Biobío",
-    "visitante": "Buenos Aires Maule",
-    "estadio": "10 Oct 2026, 17:00 Municipal de Los Ángeles",
-    "rodada": "",
-    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
-    "extra": "calendario.php",
-    "id": "e2916d5a6483793c",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "anfaterceradivision.cl/calendario",
-    "competicao": "Tercera B - Sur",
-    "data": "2026-10-10",
-    "hora": "17:00",
     "mandante": "Inter Concepción Biobío",
     "visitante": "Rep Ind de Hualqui Biobío",
     "estadio": "10 Oct 2026, 17:00 El Morro",
@@ -5800,6 +5753,53 @@
     "extra": "calendario.php",
     "id": "591f7f2b85c87478",
     "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "AFA",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "Central Córdoba",
+    "visitante": "Estudiantes (LP)",
+    "estadio": "",
+    "rodada": "Zona A",
+    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
+    "extra": "",
+    "pais": "Argentina",
+    "id": "c0cc0abbb61ce3f0",
+    "atualizado_em": "2026-10-10T17:14:20"
+  },
+  {
+    "fonte": "FGF",
+    "competicao": "Gauchão Série A2 2026",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "ESP",
+    "visitante": "Brasil-Pel",
+    "estadio": "Montanha dos Vinhedos",
+    "rodada": "Quartas de Final",
+    "url": "https://fgf.com.br/competicoes/profissional/24",
+    "extra": "",
+    "pais": "Brasil",
+    "cidade": "",
+    "id": "0271800cd8658537",
+    "atualizado_em": "2026-10-01T19:22:41"
+  },
+  {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "Club Sportivo San Lorenzo",
+    "visitante": "Club Sportivo Trinidense",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Gunther Vogel",
+    "rodada": "Jornada 14",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-14-san-lorenzo-vs-trinidense-904",
+    "extra": "status=PreMatch; status_nome=Previo",
+    "id": "09edcdcb0be64136",
+    "atualizado_em": "2026-10-10T16:25:09"
   },
   {
     "fonte": "ESPN",
@@ -5997,6 +5997,48 @@
     "atualizado_em": "2026-10-09T18:16:42"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-10-10",
+    "hora": "19:00",
+    "mandante": "Deportes Linares",
+    "visitante": "Trasandino",
+    "estadio": "Estadio Tucapel Bustamante de Linares",
+    "rodada": "Fecha 8",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "9d972e7293616f45",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera A",
+    "data": "2026-10-10",
+    "hora": "19:00",
+    "mandante": "Quintero Unido",
+    "visitante": "Lautaro de Buin",
+    "estadio": "Mun. de Quintero Raúl Vargas Verdejo",
+    "rodada": "Jornada 16",
+    "url": "https://cf3.cl/torneo/tercera-a/fecha/16",
+    "extra": "",
+    "id": "9be390f09521758d",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "anfaterceradivision.cl/calendario",
+    "competicao": "Tercera A",
+    "data": "2026-10-10",
+    "hora": "19:00",
+    "mandante": "Quintero Unido Valparaíso",
+    "visitante": "Lautaro Metropolitana",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
+    "extra": "calendario.php",
+    "id": "f54782ab3c4ddbaf",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - FEMININO - 2026",
     "data": "2026-10-10",
@@ -6011,20 +6053,6 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=18; cidade=Governador Valadares",
     "id": "3d7d596bf83d29b4",
     "atualizado_em": "2026-09-28T20:17:21"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-10-10",
-    "hora": "19:00",
-    "mandante": "Deportes Linares",
-    "visitante": "Trasandino",
-    "estadio": "Estadio Tucapel Bustamante de Linares",
-    "rodada": "Fecha 8",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "9d972e7293616f45",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "ESPN",
@@ -6057,34 +6085,6 @@
     "extra": "status=Por jugar; placar=0-0",
     "id": "bbb18b7443acfcba",
     "atualizado_em": "2026-10-10T17:42:50"
-  },
-  {
-    "fonte": "cf3.cl",
-    "competicao": "Tercera A",
-    "data": "2026-10-10",
-    "hora": "19:00",
-    "mandante": "Quintero Unido",
-    "visitante": "Lautaro de Buin",
-    "estadio": "Mun. de Quintero Raúl Vargas Verdejo",
-    "rodada": "Jornada 16",
-    "url": "https://cf3.cl/torneo/tercera-a/fecha/16",
-    "extra": "",
-    "id": "9be390f09521758d",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "anfaterceradivision.cl/calendario",
-    "competicao": "Tercera A",
-    "data": "2026-10-10",
-    "hora": "19:00",
-    "mandante": "Quintero Unido Valparaíso",
-    "visitante": "Lautaro Metropolitana",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
-    "extra": "calendario.php",
-    "id": "f54782ab3c4ddbaf",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "AUF",
@@ -6134,6 +6134,20 @@
     "atualizado_em": "2026-10-10T16:25:09"
   },
   {
+    "fonte": "cf3.cl",
+    "competicao": "Tercera B - Norte",
+    "data": "2026-10-10",
+    "hora": "19:30",
+    "mandante": "Prov. Talagante",
+    "visitante": "Tricolor de Paine",
+    "estadio": "Mun. Lucas Pacheco Toro",
+    "rodada": "Jornada 26",
+    "url": "https://cf3.cl/torneo/tercera-b/grupo-norte/fecha/26",
+    "extra": "",
+    "id": "70b79dc45a4b13af",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-10-10",
@@ -6148,20 +6162,6 @@
     "extra": "codigo_espn=401906471; status=Scheduled",
     "id": "25852d50d2a36803",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "cf3.cl",
-    "competicao": "Tercera B - Norte",
-    "data": "2026-10-10",
-    "hora": "19:30",
-    "mandante": "Prov. Talagante",
-    "visitante": "Tricolor de Paine",
-    "estadio": "Mun. Lucas Pacheco Toro",
-    "rodada": "Jornada 26",
-    "url": "https://cf3.cl/torneo/tercera-b/grupo-norte/fecha/26",
-    "extra": "",
-    "id": "70b79dc45a4b13af",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "ESPN",
@@ -6494,6 +6494,20 @@
     "lon": ""
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Juvenil Femenino",
+    "data": "2026-10-11",
+    "hora": "10:00",
+    "mandante": "U. de Concepción Juvenil Fem",
+    "visitante": "Deportes Puerto Montt Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 14",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
+    "extra": "",
+    "id": "34beddc9e56bc69c",
+    "atualizado_em": "2026-10-08T18:41:51"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Copa Paulista (Profissional)",
     "data": "2026-10-11",
@@ -6526,20 +6540,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Juvenil Femenino",
-    "data": "2026-10-11",
-    "hora": "10:00",
-    "mandante": "U. de Concepción Juvenil Fem",
-    "visitante": "Deportes Puerto Montt Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 14",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
-    "extra": "",
-    "id": "34beddc9e56bc69c",
-    "atualizado_em": "2026-10-08T18:41:51"
-  },
-  {
     "fonte": "AUF",
     "competicao": "Uruguay - Liga AUF Uruguaya",
     "data": "2026-10-11",
@@ -6554,22 +6554,6 @@
     "cidade": "",
     "id": "2494937ac074e551",
     "atualizado_em": "2026-10-02T17:48:58"
-  },
-  {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
-    "data": "2026-10-11",
-    "hora": "10:30",
-    "mandante": "Palmeiras",
-    "visitante": "Porto Foot Ball",
-    "pais": "Brasil",
-    "cidade": "Guarulhos",
-    "estadio": "Academia de Futebol II do Palmeiras - Campo 02",
-    "rodada": "Rodada 16",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=578; grupo=17; fase=SEGUNDA FASE; suspencao=LIBERADO",
-    "id": "b0f4dc03209944cb",
-    "atualizado_em": "2026-10-10T17:57:56"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -6598,6 +6582,22 @@
     "extra": "",
     "id": "06b5ab03425f7e8a",
     "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-11",
+    "hora": "10:30",
+    "mandante": "Palmeiras",
+    "visitante": "Porto Foot Ball",
+    "pais": "Brasil",
+    "cidade": "Guarulhos",
+    "estadio": "Academia de Futebol II do Palmeiras - Campo 02",
+    "rodada": "Rodada 16",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=578; grupo=17; fase=SEGUNDA FASE; suspencao=LIBERADO",
+    "id": "b0f4dc03209944cb",
+    "atualizado_em": "2026-10-10T17:57:56"
   },
   {
     "fonte": "FPF",
@@ -6680,22 +6680,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Paulista F Sub-15 Petrobras (Amador)",
-    "data": "2026-10-11",
-    "hora": "11:00",
-    "mandante": "Ferroviária",
-    "visitante": "São Paulo",
-    "pais": "Brasil",
-    "cidade": "Araraquara",
-    "estadio": "Estádio Municipal Dr. Ademar Pereira de Barros",
-    "rodada": "Rodada 12",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=62; grupo=09; fase=FINAL; canais=TV Brasil, YouTube Paulistão; suspencao=LIBERADO",
-    "id": "130d4da776c39c4b",
-    "atualizado_em": "2026-10-10T17:57:56"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Juvenil Femenino",
     "data": "2026-10-11",
@@ -6722,6 +6706,22 @@
     "extra": "",
     "id": "3998a1332d9cbf32",
     "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista F Sub-15 Petrobras (Amador)",
+    "data": "2026-10-11",
+    "hora": "11:00",
+    "mandante": "Ferroviária",
+    "visitante": "São Paulo",
+    "pais": "Brasil",
+    "cidade": "Araraquara",
+    "estadio": "Estádio Municipal Dr. Ademar Pereira de Barros",
+    "rodada": "Rodada 12",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=62; grupo=09; fase=FINAL; canais=TV Brasil, YouTube Paulistão; suspencao=LIBERADO",
+    "id": "130d4da776c39c4b",
+    "atualizado_em": "2026-10-10T17:57:56"
   },
   {
     "fonte": "AUF",
@@ -6880,22 +6880,6 @@
     "atualizado_em": "2026-10-10T19:37:07"
   },
   {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Paulista Sub-13 (SUB13)",
-    "data": "2026-10-11",
-    "hora": "14:00",
-    "mandante": "Grêmio Novorizontino",
-    "visitante": "Cosmopolitano",
-    "pais": "Brasil",
-    "cidade": "Novo Horizonte",
-    "estadio": "Estádio Municipal Josué Quirino de Moraes",
-    "rodada": "Rodada 17",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=641; grupo=35; fase=TERCEIRA FASE; suspencao=LIBERADO",
-    "id": "8560e07ea2db70a7",
-    "atualizado_em": "2026-10-10T17:57:56"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-11",
@@ -6910,6 +6894,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-13 (SUB13)",
+    "data": "2026-10-11",
+    "hora": "14:00",
+    "mandante": "Grêmio Novorizontino",
+    "visitante": "Cosmopolitano",
+    "pais": "Brasil",
+    "cidade": "Novo Horizonte",
+    "estadio": "Estádio Municipal Josué Quirino de Moraes",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=641; grupo=35; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "8560e07ea2db70a7",
+    "atualizado_em": "2026-10-10T17:57:56"
   },
   {
     "fonte": "ESPN",
@@ -6941,6 +6941,50 @@
     "pais": "Argentina",
     "id": "b3cf23475765c3b9",
     "atualizado_em": "2026-10-10T17:14:20"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-11",
+    "hora": "15:00",
+    "mandante": "Universidad Católica Juvenil Fem",
+    "visitante": "Santiago Morning Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 11",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "0e8a72028e345434",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-10-11",
+    "hora": "15:00",
+    "mandante": "Deportes Copiapó",
+    "visitante": "Cobreloa",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "31917ba3adbff2e1",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Primera Mercado Libre",
+    "data": "2026-10-11",
+    "hora": "15:00",
+    "mandante": "Coquimbo Unido",
+    "visitante": "Colo Colo",
+    "estadio": "Estadio Municipal Francisco Sánchez Rumoroso",
+    "rodada": "Fecha 24",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
+    "extra": "",
+    "id": "6071182ae9400bb5",
+    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "AFA",
@@ -7084,22 +7128,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-11",
-    "hora": "15:00",
-    "mandante": "Universidad Católica Juvenil Fem",
-    "visitante": "Santiago Morning Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 11",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "0e8a72028e345434",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
     "fonte": "FGF",
     "competicao": "Gauchão Série A2 2026",
     "data": "2026-10-11",
@@ -7146,34 +7174,6 @@
     "cidade": "",
     "id": "7c84e868be1f1681",
     "atualizado_em": "2026-10-10T18:23:03"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-10-11",
-    "hora": "15:00",
-    "mandante": "Deportes Copiapó",
-    "visitante": "Cobreloa",
-    "estadio": "",
-    "rodada": "Fecha 27",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "31917ba3adbff2e1",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Primera Mercado Libre",
-    "data": "2026-10-11",
-    "hora": "15:00",
-    "mandante": "Coquimbo Unido",
-    "visitante": "Colo Colo",
-    "estadio": "Estadio Municipal Francisco Sánchez Rumoroso",
-    "rodada": "Fecha 24",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
-    "extra": "",
-    "id": "6071182ae9400bb5",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "AUF",
@@ -7330,6 +7330,64 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=642; grupo=35; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "58e5fd09c3a6465a",
     "atualizado_em": "2026-10-10T17:57:56"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-11",
+    "hora": "16:00",
+    "mandante": "Atlético (MG)",
+    "visitante": "Santos (SP)",
+    "estadio": "Arena MRV",
+    "cidade": "Belo Horizonte",
+    "rodada": "Rodada 30",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Belo Horizonte",
+    "id": "c8b67a78d72f3cbc",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-10-11",
+    "hora": "16:00",
+    "mandante": "Juventude (RS)",
+    "visitante": "São Bernardo FC (SP)",
+    "estadio": "Alfredo Jaconi",
+    "cidade": "Caxias do Sul",
+    "rodada": "Rodada 33",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
+    "extra": "pais=Brasil; cidade=Caxias do Sul",
+    "id": "f6defbfaf07f527c",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-10-11",
+    "hora": "16:00",
+    "mandante": "Deportes Rengo",
+    "visitante": "Atlético Colina",
+    "estadio": "Estadio Municipal de Rengo",
+    "rodada": "Fecha 8",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "c1706e1926efcae6",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-10-11",
+    "hora": "16:00",
+    "mandante": "Santiago Morning",
+    "visitante": "Real San Joaquín",
+    "estadio": "Estadio Municipal de La Pintana",
+    "rodada": "Fecha 8",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "fb399e790cf981ed",
+    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "AFA",
@@ -7519,64 +7577,6 @@
     "atualizado_em": "2026-10-07T18:27:37"
   },
   {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-11",
-    "hora": "16:00",
-    "mandante": "Atlético (MG)",
-    "visitante": "Santos (SP)",
-    "estadio": "Arena MRV",
-    "cidade": "Belo Horizonte",
-    "rodada": "Rodada 30",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Belo Horizonte",
-    "id": "c8b67a78d72f3cbc",
-    "atualizado_em": "2026-10-11T09:56:23"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-10-11",
-    "hora": "16:00",
-    "mandante": "Juventude (RS)",
-    "visitante": "São Bernardo FC (SP)",
-    "estadio": "Alfredo Jaconi",
-    "cidade": "Caxias do Sul",
-    "rodada": "Rodada 33",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
-    "extra": "pais=Brasil; cidade=Caxias do Sul",
-    "id": "f6defbfaf07f527c",
-    "atualizado_em": "2026-10-11T09:56:23"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-10-11",
-    "hora": "16:00",
-    "mandante": "Deportes Rengo",
-    "visitante": "Atlético Colina",
-    "estadio": "Estadio Municipal de Rengo",
-    "rodada": "Fecha 8",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "c1706e1926efcae6",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-10-11",
-    "hora": "16:00",
-    "mandante": "Santiago Morning",
-    "visitante": "Real San Joaquín",
-    "estadio": "Estadio Municipal de La Pintana",
-    "rodada": "Fecha 8",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "fb399e790cf981ed",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
     "fonte": "AUF",
     "competicao": "Uruguay - Segunda División Profesional",
     "data": "2026-10-11",
@@ -7672,6 +7672,20 @@
     "atualizado_em": "2026-10-10T19:37:07"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-10-11",
+    "hora": "17:00",
+    "mandante": "General Velásquez",
+    "visitante": "Lota Schwager",
+    "estadio": "Estadio Augusto Rodríguez de San Vicente de Tagua Tagua",
+    "rodada": "Fecha 8",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "5dcf2bc40e10aa26",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Primera Nacional",
     "data": "2026-10-11",
@@ -7745,20 +7759,6 @@
     "pais": "Argentina",
     "id": "af72fe24a9a64502",
     "atualizado_em": "2026-10-10T17:14:20"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-10-11",
-    "hora": "17:00",
-    "mandante": "General Velásquez",
-    "visitante": "Lota Schwager",
-    "estadio": "Estadio Augusto Rodríguez de San Vicente de Tagua Tagua",
-    "rodada": "Fecha 8",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "5dcf2bc40e10aa26",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "APF",
@@ -8024,6 +8024,36 @@
     "atualizado_em": "2026-10-10T16:25:09"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-11",
+    "hora": "19:30",
+    "mandante": "Bahia (BA)",
+    "visitante": "Mirassol (SP)",
+    "estadio": "Arena Fonte Nova",
+    "cidade": "Salvador",
+    "rodada": "Rodada 30",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Salvador",
+    "id": "f4ca10d8a45c2768",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-11",
+    "hora": "19:30",
+    "mandante": "Coritiba (PR)",
+    "visitante": "Botafogo (RJ)",
+    "estadio": "Couto Pereira",
+    "cidade": "Curitiba",
+    "rodada": "Rodada 30",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_21_09_726a342d34.pdf",
+    "extra": "pais=Brasil; cidade=Curitiba",
+    "id": "e576afa8932f5e97",
+    "atualizado_em": "2026-09-22T16:48:57"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Primera Nacional",
     "data": "2026-10-11",
@@ -8053,36 +8083,6 @@
     "extra": "codigo_espn=401906308; status=Scheduled",
     "id": "d15272366e04919e",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-11",
-    "hora": "19:30",
-    "mandante": "Bahia (BA)",
-    "visitante": "Mirassol (SP)",
-    "estadio": "Arena Fonte Nova",
-    "cidade": "Salvador",
-    "rodada": "Rodada 30",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Salvador",
-    "id": "f4ca10d8a45c2768",
-    "atualizado_em": "2026-10-11T09:56:23"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-11",
-    "hora": "19:30",
-    "mandante": "Coritiba (PR)",
-    "visitante": "Botafogo (RJ)",
-    "estadio": "Couto Pereira",
-    "cidade": "Curitiba",
-    "rodada": "Rodada 30",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_21_09_726a342d34.pdf",
-    "extra": "pais=Brasil; cidade=Curitiba",
-    "id": "e576afa8932f5e97",
-    "atualizado_em": "2026-09-22T16:48:57"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8258,6 +8258,20 @@
     "lon": ""
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-12",
+    "hora": "10:00",
+    "mandante": "Everton Juvenil Fem",
+    "visitante": "Coquimbo Unido Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 11",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "3bea0acbfd0d89bf",
+    "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
     "data": "2026-10-12",
@@ -8288,20 +8302,6 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=36; placar_original=X; jogo_numero=7; cidade=Claudio",
     "id": "fadf068181221be8",
     "atualizado_em": "2026-09-28T20:17:21"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-12",
-    "hora": "10:00",
-    "mandante": "Everton Juvenil Fem",
-    "visitante": "Coquimbo Unido Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 11",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "3bea0acbfd0d89bf",
-    "atualizado_em": "2026-07-14T13:55:28"
   },
   {
     "fonte": "FFERJ",
@@ -8345,6 +8345,36 @@
     "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
     "extra": "",
     "id": "ae44a9417770c4a6",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-12",
+    "hora": "15:00",
+    "mandante": "Colo Colo Juvenil Fem",
+    "visitante": "Palestino Juvenil Fem",
+    "estadio": "Estadio Monumental – Cancha Sintética",
+    "rodada": "Fecha 11",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "f9dd47e67834f55f",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-10-12",
+    "hora": "15:00",
+    "mandante": "Rangers de Talca",
+    "visitante": "Unión San Felipe",
+    "estadio": "Estadio Bicentenario Iván Azócar Bernales",
+    "rodada": "Fecha 27",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "d85f73adbac20217",
     "atualizado_em": "2026-10-10T17:11:17"
   },
   {
@@ -8668,36 +8698,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-12",
-    "hora": "15:00",
-    "mandante": "Colo Colo Juvenil Fem",
-    "visitante": "Palestino Juvenil Fem",
-    "estadio": "Estadio Monumental – Cancha Sintética",
-    "rodada": "Fecha 11",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "f9dd47e67834f55f",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-10-12",
-    "hora": "15:00",
-    "mandante": "Rangers de Talca",
-    "visitante": "Unión San Felipe",
-    "estadio": "Estadio Bicentenario Iván Azócar Bernales",
-    "rodada": "Fecha 27",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "d85f73adbac20217",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
     "data": "2026-10-12",
@@ -8746,21 +8746,6 @@
     "atualizado_em": "2026-10-10T16:59:50"
   },
   {
-    "fonte": "AFA",
-    "competicao": "Argentina - Torneo Clausura",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Lanús",
-    "visitante": "Vélez",
-    "estadio": "",
-    "rodada": "Zona A",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "38a534aeb35abddb",
-    "atualizado_em": "2026-10-10T17:14:20"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Série A",
     "data": "2026-10-12",
@@ -8792,17 +8777,17 @@
   },
   {
     "fonte": "AFA",
-    "competicao": "Argentina - Primera Nacional",
+    "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-12",
-    "hora": "17:00",
-    "mandante": "Racing (Córdoba)",
-    "visitante": "Los Andes",
+    "hora": "16:00",
+    "mandante": "Lanús",
+    "visitante": "Vélez",
     "estadio": "",
-    "rodada": "",
+    "rodada": "Zona A",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
-    "id": "31f448bbb2908b90",
+    "id": "38a534aeb35abddb",
     "atualizado_em": "2026-10-10T17:14:20"
   },
   {
@@ -8834,6 +8819,21 @@
     "extra": "",
     "id": "6ed417753da21e7c",
     "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "AFA",
+    "competicao": "Argentina - Primera Nacional",
+    "data": "2026-10-12",
+    "hora": "17:00",
+    "mandante": "Racing (Córdoba)",
+    "visitante": "Los Andes",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
+    "extra": "",
+    "pais": "Argentina",
+    "id": "31f448bbb2908b90",
+    "atualizado_em": "2026-10-10T17:14:20"
   },
   {
     "fonte": "APF",
@@ -8926,21 +8926,6 @@
     "atualizado_em": "2026-10-10T17:14:20"
   },
   {
-    "fonte": "AFA",
-    "competicao": "Argentina - Primera Nacional",
-    "data": "2026-10-12",
-    "hora": "19:00",
-    "mandante": "All Boys",
-    "visitante": "Godoy Cruz",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "87a7d16193dcb0b0",
-    "atualizado_em": "2026-10-10T17:14:20"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Série B",
     "data": "2026-10-12",
@@ -8954,6 +8939,21 @@
     "extra": "pais=Brasil; cidade=Novo Horizonte",
     "id": "5b2081db9bc5acfb",
     "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "AFA",
+    "competicao": "Argentina - Primera Nacional",
+    "data": "2026-10-12",
+    "hora": "19:00",
+    "mandante": "All Boys",
+    "visitante": "Godoy Cruz",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
+    "extra": "",
+    "pais": "Argentina",
+    "id": "87a7d16193dcb0b0",
+    "atualizado_em": "2026-10-10T17:14:20"
   },
   {
     "fonte": "APF",
@@ -9133,6 +9133,51 @@
     "atualizado_em": "2026-10-10T16:59:50"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Sub-17",
+    "data": "2026-10-13",
+    "hora": "15:00",
+    "mandante": "B Palmeiras (SP)",
+    "visitante": "Atlético (MG)",
+    "estadio": "Arena",
+    "cidade": "Barueri Barueri",
+    "rodada": "Volta",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
+    "extra": "pais=Brasil; cidade=Barueri Barueri",
+    "id": "66f730ad91fb30ad",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Sub-17",
+    "data": "2026-10-13",
+    "hora": "15:00",
+    "mandante": "C Fluminense (RJ)",
+    "visitante": "Cruzeiro (MG)",
+    "estadio": "Marcelo Vieira Duque",
+    "cidade": "de Caxias",
+    "rodada": "Rodada 1",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
+    "extra": "pais=Brasil; cidade=de Caxias",
+    "id": "3df00f69d20ea69a",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Sub-17",
+    "data": "2026-10-13",
+    "hora": "15:00",
+    "mandante": "E Red Bull BragantinoSP",
+    "visitante": "Fortaleza (CE)",
+    "estadio": "CPD",
+    "cidade": "Atibaia Atibaia",
+    "rodada": "Rodada 1",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
+    "extra": "pais=Brasil; cidade=Atibaia Atibaia",
+    "id": "79dbba3cdc8ee574",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-13",
@@ -9286,51 +9331,6 @@
     "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
     "id": "522116a47e84b56c",
     "atualizado_em": "2026-10-10T16:59:50"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Sub-17",
-    "data": "2026-10-13",
-    "hora": "15:00",
-    "mandante": "B Palmeiras (SP)",
-    "visitante": "Atlético (MG)",
-    "estadio": "Arena",
-    "cidade": "Barueri Barueri",
-    "rodada": "Volta",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
-    "extra": "pais=Brasil; cidade=Barueri Barueri",
-    "id": "66f730ad91fb30ad",
-    "atualizado_em": "2026-10-11T09:56:23"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Sub-17",
-    "data": "2026-10-13",
-    "hora": "15:00",
-    "mandante": "C Fluminense (RJ)",
-    "visitante": "Cruzeiro (MG)",
-    "estadio": "Marcelo Vieira Duque",
-    "cidade": "de Caxias",
-    "rodada": "Rodada 1",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
-    "extra": "pais=Brasil; cidade=de Caxias",
-    "id": "3df00f69d20ea69a",
-    "atualizado_em": "2026-10-11T09:56:23"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Sub-17",
-    "data": "2026-10-13",
-    "hora": "15:00",
-    "mandante": "E Red Bull BragantinoSP",
-    "visitante": "Fortaleza (CE)",
-    "estadio": "CPD",
-    "cidade": "Atibaia Atibaia",
-    "rodada": "Rodada 1",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/TABELA_DETALHADA_CAMPEONATO_BRASILEIRO_MASCULINO_SUB_17_2026_09_10_c5a12e96a3.pdf",
-    "extra": "pais=Brasil; cidade=Atibaia Atibaia",
-    "id": "79dbba3cdc8ee574",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "FGF",
@@ -9507,6 +9507,20 @@
     "atualizado_em": "2026-10-06T18:30:37"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Juvenil Femenino",
+    "data": "2026-10-14",
+    "hora": "09:00",
+    "mandante": "Deportes Copiapo Juvenil Fem",
+    "visitante": "Deportes Antofagasta Juvenil Fem",
+    "estadio": "Estadio Eladio Rojas",
+    "rodada": "Fecha 5",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
+    "extra": "",
+    "id": "969e0f72a17db0a7",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "FFERJ",
     "competicao": "Brasil - FFERJ - Competição não identificada",
     "data": "2026-10-14",
@@ -9521,20 +9535,6 @@
     "extra": "codigo_fferj=6088; fonte_tag=FERJ",
     "id": "36d835d9786231e2",
     "atualizado_em": "2026-10-05T21:16:30"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Juvenil Femenino",
-    "data": "2026-10-14",
-    "hora": "09:00",
-    "mandante": "Deportes Copiapo Juvenil Fem",
-    "visitante": "Deportes Antofagasta Juvenil Fem",
-    "estadio": "Estadio Eladio Rojas",
-    "rodada": "Fecha 5",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
-    "extra": "",
-    "id": "969e0f72a17db0a7",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "FMF",
@@ -10073,6 +10073,20 @@
     "atualizado_em": "2026-10-10T18:07:58"
   },
   {
+    "fonte": "anfaterceradivision.cl/calendario",
+    "competicao": "Tercera A",
+    "data": "2026-10-14",
+    "hora": "19:00",
+    "mandante": "Quintero Unido Valparaíso",
+    "visitante": "Lautaro Metropolitana",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
+    "extra": "calendario.php",
+    "id": "0886909f91e26fd5",
+    "atualizado_em": "2026-10-08T18:41:51"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-14",
@@ -10117,20 +10131,6 @@
     "extra": "codigo_conmebol=1722; status=Fixture",
     "id": "3ea9a4fe78452abd",
     "atualizado_em": "2026-10-06T18:30:37"
-  },
-  {
-    "fonte": "anfaterceradivision.cl/calendario",
-    "competicao": "Tercera A",
-    "data": "2026-10-14",
-    "hora": "19:00",
-    "mandante": "Quintero Unido Valparaíso",
-    "visitante": "Lautaro Metropolitana",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://anfaterceradivision.cl/assets/php/calendario.php",
-    "extra": "calendario.php",
-    "id": "0886909f91e26fd5",
-    "atualizado_em": "2026-10-08T18:41:51"
   },
   {
     "fonte": "ESPN",
@@ -10447,6 +10447,21 @@
     "atualizado_em": "2026-10-10T18:07:58"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Copa do Brasil Feminina",
+    "data": "2026-10-15",
+    "hora": "19:00",
+    "mandante": "Flamengo (RJ)",
+    "visitante": "Fluminense (RJ)",
+    "estadio": "Luso Brasileiro",
+    "cidade": "Rio de Janeiro",
+    "rodada": "",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_adbd12d273.pdf",
+    "extra": "pais=Brasil; cidade=Rio de Janeiro",
+    "id": "b468824f7b77efaf",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-15",
@@ -10475,21 +10490,6 @@
     "pais": "Argentina",
     "id": "89ae26f50093ed7a",
     "atualizado_em": "2026-10-10T17:14:20"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Copa do Brasil Feminina",
-    "data": "2026-10-15",
-    "hora": "19:00",
-    "mandante": "Flamengo (RJ)",
-    "visitante": "Fluminense (RJ)",
-    "estadio": "Luso Brasileiro",
-    "cidade": "Rio de Janeiro",
-    "rodada": "",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_adbd12d273.pdf",
-    "extra": "pais=Brasil; cidade=Rio de Janeiro",
-    "id": "b468824f7b77efaf",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "AFA",
@@ -10889,21 +10889,6 @@
     "atualizado_em": "2026-10-10T17:11:17"
   },
   {
-    "fonte": "AFA",
-    "competicao": "Argentina - Torneo Clausura",
-    "data": "2026-10-16",
-    "hora": "19:00",
-    "mandante": "Defensa y Justicia",
-    "visitante": "Instituto",
-    "estadio": "",
-    "rodada": "Zona A",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "99b8715b88408d8c",
-    "atualizado_em": "2026-10-10T17:14:20"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Copa do Brasil Feminina",
     "data": "2026-10-16",
@@ -10917,6 +10902,21 @@
     "extra": "pais=Brasil; cidade=Baptista Aracajú",
     "id": "a94592ea384fb587",
     "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "AFA",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-10-16",
+    "hora": "19:00",
+    "mandante": "Defensa y Justicia",
+    "visitante": "Instituto",
+    "estadio": "",
+    "rodada": "Zona A",
+    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
+    "extra": "",
+    "pais": "Argentina",
+    "id": "99b8715b88408d8c",
+    "atualizado_em": "2026-10-10T17:14:20"
   },
   {
     "fonte": "AUF",
@@ -10950,6 +10950,21 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-16",
+    "hora": "20:00",
+    "mandante": "Mirassol (SP)",
+    "visitante": "Internacional (RS)",
+    "estadio": "José M. C. Maia",
+    "cidade": "Mirassol",
+    "rodada": "Rodada 31",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Mirassol",
+    "id": "b7495bbfb68778be",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-10-16",
@@ -10964,21 +10979,6 @@
     "extra": "codigo_espn=401906306; status=Scheduled",
     "id": "887f6475c28f33f6",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-16",
-    "hora": "20:00",
-    "mandante": "Mirassol (SP)",
-    "visitante": "Internacional (RS)",
-    "estadio": "José M. C. Maia",
-    "cidade": "Mirassol",
-    "rodada": "Rodada 31",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Mirassol",
-    "id": "b7495bbfb68778be",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "AUF",
@@ -11309,6 +11309,22 @@
     "atualizado_em": "2026-10-10T17:11:17"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-17",
+    "hora": "13:00",
+    "mandante": "Magallanes Juvenil Fem",
+    "visitante": "Palestino Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 12",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "9fb62277ac7179fc",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
     "fonte": "FFERJ",
     "competicao": "Brasil - FFERJ - Competição não identificada",
     "data": "2026-10-17",
@@ -11339,22 +11355,6 @@
     "extra": "codigo_fferj=5969; fonte_tag=FERJ",
     "id": "e9b867255bfdcfbb",
     "atualizado_em": "2026-10-05T21:16:30"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-17",
-    "hora": "13:00",
-    "mandante": "Magallanes Juvenil Fem",
-    "visitante": "Palestino Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 12",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "9fb62277ac7179fc",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
   },
   {
     "fonte": "AUF",
@@ -11389,6 +11389,22 @@
     "atualizado_em": "2026-09-28T20:17:21"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-17",
+    "hora": "14:00",
+    "mandante": "San Marcos de Arica Juvenil Fem",
+    "visitante": "Cobreloa Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 12",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "f7d4dad639a7ca2d",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-13 (SUB13)",
     "data": "2026-10-17",
@@ -11421,22 +11437,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-17",
-    "hora": "14:00",
-    "mandante": "San Marcos de Arica Juvenil Fem",
-    "visitante": "Cobreloa Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 12",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "f7d4dad639a7ca2d",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
     "data": "2026-10-17",
@@ -11467,6 +11467,34 @@
     "cidade": "",
     "id": "8cda0776128ae836",
     "atualizado_em": "2026-10-09T18:16:42"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Cobreloa",
+    "visitante": "Deportes Recoleta",
+    "estadio": "Zorros del Desierto",
+    "rodada": "Fecha 28",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "f7339e14c8ecf7a1",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Curicó Unido",
+    "visitante": "Deportes Iquique",
+    "estadio": "Estadio Bicentenario La Granja",
+    "rodada": "Fecha 28",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "fea8f34b52b40ee0",
+    "atualizado_em": "2026-09-30T17:50:52"
   },
   {
     "fonte": "AFA",
@@ -11901,34 +11929,6 @@
     "atualizado_em": "2026-10-10T18:07:58"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-10-17",
-    "hora": "15:00",
-    "mandante": "Cobreloa",
-    "visitante": "Deportes Recoleta",
-    "estadio": "Zorros del Desierto",
-    "rodada": "Fecha 28",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "f7339e14c8ecf7a1",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-10-17",
-    "hora": "15:00",
-    "mandante": "Curicó Unido",
-    "visitante": "Deportes Iquique",
-    "estadio": "Estadio Bicentenario La Granja",
-    "rodada": "Fecha 28",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "fea8f34b52b40ee0",
-    "atualizado_em": "2026-09-30T17:50:52"
-  },
-  {
     "fonte": "ESPN",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-17",
@@ -12358,6 +12358,21 @@
     "atualizado_em": "2026-10-10T17:14:20"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-17",
+    "hora": "18:00",
+    "mandante": "Botafogo (RJ)",
+    "visitante": "Chapecoense (SC)",
+    "estadio": "Nilton Santos",
+    "cidade": "Rio de Janeiro",
+    "rodada": "Rodada 31",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Rio de Janeiro",
+    "id": "463434cb6f25493e",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Copa Paulista (Profissional)",
     "data": "2026-10-17",
@@ -12388,21 +12403,6 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=347; grupo=26; fase=TERCEIRA FASE; canais=Xsports; suspencao=LIBERADO",
     "id": "9f5ad10dee1b366d",
     "atualizado_em": "2026-10-06T19:01:34"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-17",
-    "hora": "18:00",
-    "mandante": "Botafogo (RJ)",
-    "visitante": "Chapecoense (SC)",
-    "estadio": "Nilton Santos",
-    "cidade": "Rio de Janeiro",
-    "rodada": "Rodada 31",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Rio de Janeiro",
-    "id": "463434cb6f25493e",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "ESPN",
@@ -12467,6 +12467,21 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-17",
+    "hora": "19:30",
+    "mandante": "Athletico (PR)",
+    "visitante": "Palmeiras (SP)",
+    "estadio": "Arena da Baixada",
+    "cidade": "Curitiba",
+    "rodada": "Rodada 31",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Curitiba",
+    "id": "ee36152eee30b79a",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-10-17",
@@ -12481,21 +12496,6 @@
     "extra": "codigo_espn=401906465; status=Scheduled",
     "id": "ec03e306326f1801",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-17",
-    "hora": "19:30",
-    "mandante": "Athletico (PR)",
-    "visitante": "Palmeiras (SP)",
-    "estadio": "Arena da Baixada",
-    "cidade": "Curitiba",
-    "rodada": "Rodada 31",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Curitiba",
-    "id": "ee36152eee30b79a",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -13071,22 +13071,6 @@
     "atualizado_em": "2026-10-10T20:10:21"
   },
   {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Paulista Sub-13 (SUB13)",
-    "data": "2026-10-18",
-    "hora": "14:00",
-    "mandante": "Santos",
-    "visitante": "Red Bull Bragantino",
-    "pais": "Brasil",
-    "cidade": "Santos",
-    "estadio": "CT Rei Pelé - Campo I",
-    "rodada": "Rodada 18",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=650; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
-    "id": "56550fbb8a3959e5",
-    "atualizado_em": "2026-10-10T17:57:56"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-18",
@@ -13101,6 +13085,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-13 (SUB13)",
+    "data": "2026-10-18",
+    "hora": "14:00",
+    "mandante": "Santos",
+    "visitante": "Red Bull Bragantino",
+    "pais": "Brasil",
+    "cidade": "Santos",
+    "estadio": "CT Rei Pelé - Campo I",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=650; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "56550fbb8a3959e5",
+    "atualizado_em": "2026-10-10T17:57:56"
   },
   {
     "fonte": "ESPN",
@@ -13278,6 +13278,36 @@
     "atualizado_em": "2026-10-10T17:14:20"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-18",
+    "hora": "15:00",
+    "mandante": "Deportes Melipilla Juvenil Fem",
+    "visitante": "Universidad de Chile Juvenil Fem",
+    "estadio": "Estadio Soinca – Cancha 2",
+    "rodada": "Fecha 5",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "3f3fac78d71bfe3b",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-10-18",
+    "hora": "15:00",
+    "mandante": "San Marcos de Arica",
+    "visitante": "Deportes Puerto Montt",
+    "estadio": "",
+    "rodada": "Fecha 28",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "2457f12a2ae8dd14",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-10-18",
@@ -13390,36 +13420,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-18",
-    "hora": "15:00",
-    "mandante": "Deportes Melipilla Juvenil Fem",
-    "visitante": "Universidad de Chile Juvenil Fem",
-    "estadio": "Estadio Soinca – Cancha 2",
-    "rodada": "Fecha 5",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "3f3fac78d71bfe3b",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-10-18",
-    "hora": "15:00",
-    "mandante": "San Marcos de Arica",
-    "visitante": "Deportes Puerto Montt",
-    "estadio": "",
-    "rodada": "Fecha 28",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "2457f12a2ae8dd14",
-    "atualizado_em": "2026-10-10T17:11:17"
-  },
-  {
     "fonte": "AUF",
     "competicao": "Uruguay - Liga AUF Uruguaya",
     "data": "2026-10-18",
@@ -13434,6 +13434,22 @@
     "cidade": "",
     "id": "ee2ab07c6b961411",
     "atualizado_em": "2026-10-09T18:16:42"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-18",
+    "hora": "15:30",
+    "mandante": "Deportes Santa Cruz Juvenil Fem",
+    "visitante": "Colo Colo Juvenil Fem",
+    "estadio": "Estadio Municipal Santa Ana",
+    "rodada": "Fecha 12",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "6d1607e797f4b805",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
   },
   {
     "fonte": "FGF",
@@ -13468,22 +13484,6 @@
     "atualizado_em": "2026-10-10T16:59:50"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-18",
-    "hora": "15:30",
-    "mandante": "Deportes Santa Cruz Juvenil Fem",
-    "visitante": "Colo Colo Juvenil Fem",
-    "estadio": "Estadio Municipal Santa Ana",
-    "rodada": "Fecha 12",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "6d1607e797f4b805",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
     "fonte": "ESPN",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-18",
@@ -13513,38 +13513,6 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=650; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "a77c80d9893ee06c",
-    "atualizado_em": "2026-10-10T17:57:56"
-  },
-  {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
-    "data": "2026-10-18",
-    "hora": "16:00",
-    "mandante": "América",
-    "visitante": "Royal",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "João Vilela",
-    "rodada": "2ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1830&jogo=58142",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "51c571009adec01a",
-    "atualizado_em": "2026-10-10T16:59:50"
-  },
-  {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
-    "data": "2026-10-18",
-    "hora": "16:00",
-    "mandante": "São Bento",
-    "visitante": "Ferroviária",
-    "pais": "Brasil",
-    "cidade": "Sorocaba",
-    "estadio": "Estádio Municipal Walter Ribeiro",
-    "rodada": "Rodada 12",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=67; grupo=03; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
-    "id": "208aa59423ece036",
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
@@ -13621,6 +13589,38 @@
     "extra": "pais=Brasil; cidade=São Bernardo do Campo",
     "id": "3ceab8f8238134c6",
     "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "FGF",
+    "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
+    "data": "2026-10-18",
+    "hora": "16:00",
+    "mandante": "América",
+    "visitante": "Royal",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "João Vilela",
+    "rodada": "2ª Rodada",
+    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1830&jogo=58142",
+    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
+    "id": "51c571009adec01a",
+    "atualizado_em": "2026-10-10T16:59:50"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
+    "data": "2026-10-18",
+    "hora": "16:00",
+    "mandante": "São Bento",
+    "visitante": "Ferroviária",
+    "pais": "Brasil",
+    "cidade": "Sorocaba",
+    "estadio": "Estádio Municipal Walter Ribeiro",
+    "rodada": "Rodada 12",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=67; grupo=03; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
+    "id": "208aa59423ece036",
+    "atualizado_em": "2026-10-10T17:57:56"
   },
   {
     "fonte": "ESPN",
@@ -13701,6 +13701,21 @@
     "atualizado_em": "2026-10-10T19:05:54"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-10-18",
+    "hora": "18:00",
+    "mandante": "Vila Nova (GO)",
+    "visitante": "Novorizontino (SP)",
+    "estadio": "Onésio B. Alvarenga",
+    "cidade": "Goiânia",
+    "rodada": "Rodada 34",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
+    "extra": "pais=Brasil; cidade=Goiânia",
+    "id": "b4aebcd273a8a010",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-18",
@@ -13729,21 +13744,6 @@
     "pais": "Argentina",
     "id": "2ceed483723029f6",
     "atualizado_em": "2026-10-10T17:14:20"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-10-18",
-    "hora": "18:00",
-    "mandante": "Vila Nova (GO)",
-    "visitante": "Novorizontino (SP)",
-    "estadio": "Onésio B. Alvarenga",
-    "cidade": "Goiânia",
-    "rodada": "Rodada 34",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
-    "extra": "pais=Brasil; cidade=Goiânia",
-    "id": "b4aebcd273a8a010",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "ESPN",
@@ -13809,6 +13809,21 @@
     "atualizado_em": "2026-10-09T18:16:42"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-18",
+    "hora": "19:30",
+    "mandante": "Remo (PA)",
+    "visitante": "Red Bull Bragantino (SP)",
+    "estadio": "Mangueirão",
+    "cidade": "Belém",
+    "rodada": "Rodada 31",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Belém",
+    "id": "f053c75d1290d141",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-10-18",
@@ -13823,21 +13838,6 @@
     "extra": "codigo_espn=401906464; status=Scheduled",
     "id": "64713642a59e5c0b",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-18",
-    "hora": "19:30",
-    "mandante": "Remo (PA)",
-    "visitante": "Red Bull Bragantino (SP)",
-    "estadio": "Mangueirão",
-    "cidade": "Belém",
-    "rodada": "Rodada 31",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Belém",
-    "id": "f053c75d1290d141",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -14111,6 +14111,20 @@
     "atualizado_em": "2026-10-10T19:37:07"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-10-19",
+    "hora": "19:00",
+    "mandante": "Unión Española",
+    "visitante": "Deportes Copiapó",
+    "estadio": "Estadio Santa Laura Universidad SEK",
+    "rodada": "Fecha 28",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "143faebe839900be",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-19",
@@ -14139,20 +14153,6 @@
     "pais": "Argentina",
     "id": "7a25756add3f64a1",
     "atualizado_em": "2026-10-10T17:14:20"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-10-19",
-    "hora": "19:00",
-    "mandante": "Unión Española",
-    "visitante": "Deportes Copiapó",
-    "estadio": "Estadio Santa Laura Universidad SEK",
-    "rodada": "Fecha 28",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "143faebe839900be",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "CBF",
@@ -14431,22 +14431,6 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Colombia - Liga BetPlay",
-    "data": "2026-10-20",
-    "hora": "18:00",
-    "mandante": "Internacional de Bogotá",
-    "visitante": "Fortaleza CEIF",
-    "pais": "Colombia",
-    "cidade": "Bogota",
-    "estadio": "Metropolitano de Techo",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401878033; status=Scheduled",
-    "id": "79c1327d66b43bca",
-    "atualizado_em": "2026-10-10T18:07:58"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Copa Chile Coca-Cola Zero Azúcar",
     "data": "2026-10-20",
@@ -14464,6 +14448,22 @@
     "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-20",
+    "hora": "18:00",
+    "mandante": "Internacional de Bogotá",
+    "visitante": "Fortaleza CEIF",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Metropolitano de Techo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878033; status=Scheduled",
+    "id": "79c1327d66b43bca",
+    "atualizado_em": "2026-10-10T18:07:58"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-20",
     "hora": "18:30",
     "mandante": "Cúcuta Deportivo",
     "visitante": "Atlético Nacional",
@@ -14475,22 +14475,6 @@
     "extra": "codigo_espn=401878021; status=Scheduled",
     "id": "afc0969e36879285",
     "atualizado_em": "2026-10-10T18:07:58"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Bolivia - Copa Bolivia",
-    "data": "2026-10-20",
-    "hora": "19:00",
-    "mandante": "Independiente Petrolero",
-    "visitante": "Aurora",
-    "pais": "Bolivia",
-    "cidade": "Cochabamba",
-    "estadio": "Estadio Olímpico Patria",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401929988; status=Scheduled",
-    "id": "dabc81012b7e75a6",
-    "atualizado_em": "2026-10-10T19:05:54"
   },
   {
     "fonte": "CBF",
@@ -14521,6 +14505,22 @@
     "extra": "pais=Brasil; cidade=Bragança Paulista",
     "id": "bf06c0fb6497f678",
     "atualizado_em": "2026-10-07T10:09:57"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Copa Bolivia",
+    "data": "2026-10-20",
+    "hora": "19:00",
+    "mandante": "Independiente Petrolero",
+    "visitante": "Aurora",
+    "pais": "Bolivia",
+    "cidade": "Cochabamba",
+    "estadio": "Estadio Olímpico Patria",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929988; status=Scheduled",
+    "id": "dabc81012b7e75a6",
+    "atualizado_em": "2026-10-10T19:05:54"
   },
   {
     "fonte": "CBF",
@@ -14931,21 +14931,6 @@
     "atualizado_em": "2026-10-10T19:05:54"
   },
   {
-    "fonte": "AFA",
-    "competicao": "Argentina - Torneo Clausura",
-    "data": "2026-10-21",
-    "hora": "19:00",
-    "mandante": "River",
-    "visitante": "Vélez (Zona A)",
-    "estadio": "River Camp",
-    "rodada": "",
-    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
-    "extra": "",
-    "pais": "Argentina",
-    "id": "e4daf2af96dbf12a",
-    "atualizado_em": "2026-10-10T17:14:20"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Copa do Brasil Feminina",
     "data": "2026-10-21",
@@ -14959,6 +14944,21 @@
     "extra": "pais=Brasil; cidade=Campinas",
     "id": "10a30d1a9448aec7",
     "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "AFA",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-10-21",
+    "hora": "19:00",
+    "mandante": "River",
+    "visitante": "Vélez (Zona A)",
+    "estadio": "River Camp",
+    "rodada": "",
+    "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
+    "extra": "",
+    "pais": "Argentina",
+    "id": "e4daf2af96dbf12a",
+    "atualizado_em": "2026-10-10T17:14:20"
   },
   {
     "fonte": "CONMEBOL",
@@ -16011,6 +16011,20 @@
     "atualizado_em": "2026-10-10T17:14:20"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Primera Mercado Libre",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "Deportes La Serena",
+    "visitante": "Deportes Concepción",
+    "estadio": "Estadio La Portada",
+    "rodada": "Fecha 25",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
+    "extra": "",
+    "id": "2d8adc3e0aca55ff",
+    "atualizado_em": "2026-10-04T16:41:52"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-10-24",
@@ -16283,20 +16297,6 @@
     "atualizado_em": "2026-09-23T17:56:48"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Primera Mercado Libre",
-    "data": "2026-10-24",
-    "hora": "15:00",
-    "mandante": "Deportes La Serena",
-    "visitante": "Deportes Concepción",
-    "estadio": "Estadio La Portada",
-    "rodada": "Fecha 25",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
-    "extra": "",
-    "id": "2d8adc3e0aca55ff",
-    "atualizado_em": "2026-10-04T16:41:52"
-  },
-  {
     "fonte": "ESPN",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-24",
@@ -16377,6 +16377,37 @@
     "atualizado_em": "2026-10-10T16:59:50"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-10-24",
+    "hora": "16:00",
+    "mandante": "Avaí (SC)",
+    "visitante": "Botafogo (SP)",
+    "estadio": "Ressacada",
+    "cidade": "Florianópolis",
+    "rodada": "Rodada 35",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
+    "extra": "pais=Brasil; cidade=Florianópolis",
+    "id": "3ad2785605184e81",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-24",
+    "hora": "16:00",
+    "mandante": "Deportes Santa Cruz Juvenil Fem",
+    "visitante": "Magallanes Juvenil Fem",
+    "estadio": "Estadio Municipal Santa Ana",
+    "rodada": "Fecha 13",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "75369144395e7f34",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
     "data": "2026-10-24",
@@ -16455,37 +16486,6 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=8; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "119f64a5da501fca",
     "atualizado_em": "2026-10-10T17:57:56"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-10-24",
-    "hora": "16:00",
-    "mandante": "Avaí (SC)",
-    "visitante": "Botafogo (SP)",
-    "estadio": "Ressacada",
-    "cidade": "Florianópolis",
-    "rodada": "Rodada 35",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
-    "extra": "pais=Brasil; cidade=Florianópolis",
-    "id": "3ad2785605184e81",
-    "atualizado_em": "2026-10-11T09:56:23"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-24",
-    "hora": "16:00",
-    "mandante": "Deportes Santa Cruz Juvenil Fem",
-    "visitante": "Magallanes Juvenil Fem",
-    "estadio": "Estadio Municipal Santa Ana",
-    "rodada": "Fecha 13",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "75369144395e7f34",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
   },
   {
     "fonte": "CBF",
@@ -16771,6 +16771,21 @@
     "atualizado_em": "2026-10-10T17:14:20"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-24",
+    "hora": "19:30",
+    "mandante": "Chapecoense (SC)",
+    "visitante": "Fluminense (RJ)",
+    "estadio": "Arena Condá",
+    "cidade": "Chapecó",
+    "rodada": "Rodada 32",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=Chapecó",
+    "id": "0f26d3f233a4bdf2",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-10-24",
@@ -16785,21 +16800,6 @@
     "extra": "codigo_espn=401930001; status=Scheduled",
     "id": "63359d111f6a6159",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-24",
-    "hora": "19:30",
-    "mandante": "Chapecoense (SC)",
-    "visitante": "Fluminense (RJ)",
-    "estadio": "Arena Condá",
-    "cidade": "Chapecó",
-    "rodada": "Rodada 32",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=Chapecó",
-    "id": "0f26d3f233a4bdf2",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "ESPN",
@@ -16818,6 +16818,20 @@
     "atualizado_em": "2026-10-10T20:10:21"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Primera Mercado Libre",
+    "data": "2026-10-24",
+    "hora": "20:00",
+    "mandante": "O'Higgins",
+    "visitante": "Cobresal",
+    "estadio": "Estadio Codelco El Teniente",
+    "rodada": "Fecha 25",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
+    "extra": "",
+    "id": "83e6d5a1afaec2e2",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
     "data": "2026-10-24",
@@ -16832,20 +16846,6 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=74; grupo=06; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "5eecb09e6512d233",
     "atualizado_em": "2026-10-10T17:57:56"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Primera Mercado Libre",
-    "data": "2026-10-24",
-    "hora": "20:00",
-    "mandante": "O'Higgins",
-    "visitante": "Cobresal",
-    "estadio": "Estadio Codelco El Teniente",
-    "rodada": "Fecha 25",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/",
-    "extra": "",
-    "id": "83e6d5a1afaec2e2",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "ESPN",
@@ -16908,22 +16908,6 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
-    "fonte": "FMF",
-    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
-    "data": "2026-10-25",
-    "hora": "09:00",
-    "mandante": "NACIONAL VRB",
-    "visitante": "GUARANI",
-    "pais": "Brasil",
-    "cidade": "Visconde do Rio Branco",
-    "estadio": "Estádio Joseph Lambert",
-    "rodada": "RODADA 4",
-    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
-    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=114; cidade=Visconde do Rio Branco",
-    "id": "3b8fa70319732d5d",
-    "atualizado_em": "2026-09-07T18:23:22"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-25",
@@ -16938,6 +16922,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - 2ª Divisão - 2026",
+    "data": "2026-10-25",
+    "hora": "09:00",
+    "mandante": "NACIONAL VRB",
+    "visitante": "GUARANI",
+    "pais": "Brasil",
+    "cidade": "Visconde do Rio Branco",
+    "estadio": "Estádio Joseph Lambert",
+    "rodada": "RODADA 4",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=12",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=114; cidade=Visconde do Rio Branco",
+    "id": "3b8fa70319732d5d",
+    "atualizado_em": "2026-09-07T18:23:22"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -17233,38 +17233,6 @@
     "atualizado_em": "2026-10-10T17:14:20"
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Bolivia - Liga Profesional Boliviana",
-    "data": "2026-10-25",
-    "hora": "15:00",
-    "mandante": "Always Ready",
-    "visitante": "Real Oruro",
-    "pais": "Bolivia",
-    "cidade": "El Alto, La Paz.",
-    "estadio": "Municipal Villa Ingenio",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401930000; status=Scheduled",
-    "id": "7bf4e0021c6c87ba",
-    "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "FFERJ",
-    "competicao": "Brasil - FFERJ - Competição não identificada",
-    "data": "2026-10-25",
-    "hora": "15:00",
-    "mandante": "SANTA CRUZ FC",
-    "visitante": "Campos Atlético Associação",
-    "pais": "Brasil",
-    "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO LEÃO DO SUL",
-    "rodada": "",
-    "url": "https://www.fferj.com.br/partidas/6137",
-    "extra": "codigo_fferj=6137; fonte_tag=FERJ",
-    "id": "29cd43b8868615b4",
-    "atualizado_em": "2026-10-05T21:16:30"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-25",
@@ -17307,6 +17275,38 @@
     "extra": "",
     "id": "69985ccc0b15ce8a",
     "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-25",
+    "hora": "15:00",
+    "mandante": "Always Ready",
+    "visitante": "Real Oruro",
+    "pais": "Bolivia",
+    "cidade": "El Alto, La Paz.",
+    "estadio": "Municipal Villa Ingenio",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930000; status=Scheduled",
+    "id": "7bf4e0021c6c87ba",
+    "atualizado_em": "2026-10-10T19:05:54"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-25",
+    "hora": "15:00",
+    "mandante": "SANTA CRUZ FC",
+    "visitante": "Campos Atlético Associação",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO LEÃO DO SUL",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6137",
+    "extra": "codigo_fferj=6137; fonte_tag=FERJ",
+    "id": "29cd43b8868615b4",
+    "atualizado_em": "2026-10-05T21:16:30"
   },
   {
     "fonte": "ESPN",
@@ -17372,22 +17372,6 @@
     "atualizado_em": "2026-10-10T17:14:20"
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Bolivia - Liga Profesional Boliviana",
-    "data": "2026-10-25",
-    "hora": "17:15",
-    "mandante": "Aurora",
-    "visitante": "Real Tomayapo",
-    "pais": "Bolivia",
-    "cidade": "Cochabamba",
-    "estadio": "Estadio Félix Capriles",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401929999; status=Scheduled",
-    "id": "abcf7d79a2cdf91a",
-    "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-25",
@@ -17402,6 +17386,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-25",
+    "hora": "17:15",
+    "mandante": "Aurora",
+    "visitante": "Real Tomayapo",
+    "pais": "Bolivia",
+    "cidade": "Cochabamba",
+    "estadio": "Estadio Félix Capriles",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929999; status=Scheduled",
+    "id": "abcf7d79a2cdf91a",
+    "atualizado_em": "2026-10-10T19:05:54"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -17627,6 +17627,20 @@
     "lon": ""
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-26",
+    "hora": "10:00",
+    "mandante": "Colo Colo Juvenil Fem",
+    "visitante": "Unión Española Juvenil Fem",
+    "estadio": "Estadio Monumental – Cancha 5",
+    "rodada": "Fecha 13",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "516e7c83b4dd0d26",
+    "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - FEMININO SUB-20 - 2026",
     "data": "2026-10-26",
@@ -17641,20 +17655,6 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=32; placar_original=X; jogo_numero=7; cidade=Claudio",
     "id": "99dfda6571b68f4f",
     "atualizado_em": "2026-09-28T20:17:21"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-26",
-    "hora": "10:00",
-    "mandante": "Colo Colo Juvenil Fem",
-    "visitante": "Unión Española Juvenil Fem",
-    "estadio": "Estadio Monumental – Cancha 5",
-    "rodada": "Fecha 13",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "516e7c83b4dd0d26",
-    "atualizado_em": "2026-07-14T13:55:28"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -17699,6 +17699,22 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-26",
+    "hora": "15:00",
+    "mandante": "Audax Italiano Juvenil Fem",
+    "visitante": "Universidad de Chile Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 13",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "80fc2a340cfab236",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - FEMININO SUB-20 - 2026",
     "data": "2026-10-26",
@@ -17729,22 +17745,6 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=32; placar_original=X; jogo_numero=8; cidade=Belo Horizonte",
     "id": "291bfbef350070d5",
     "atualizado_em": "2026-09-28T20:17:21"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-26",
-    "hora": "15:00",
-    "mandante": "Audax Italiano Juvenil Fem",
-    "visitante": "Universidad de Chile Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 13",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "80fc2a340cfab236",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
   },
   {
     "fonte": "ESPN",
@@ -17824,22 +17824,6 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Bolivia - Liga Profesional Boliviana",
-    "data": "2026-10-26",
-    "hora": "20:00",
-    "mandante": "Bolívar",
-    "visitante": "Universitario de Vinto",
-    "pais": "Bolivia",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401930015; status=Scheduled",
-    "id": "ab4da5d451fa5d84",
-    "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Série A",
     "data": "2026-10-26",
@@ -17867,6 +17851,22 @@
     "extra": "",
     "id": "e5e636225c888b6f",
     "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-26",
+    "hora": "20:00",
+    "mandante": "Bolívar",
+    "visitante": "Universitario de Vinto",
+    "pais": "Bolivia",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930015; status=Scheduled",
+    "id": "ab4da5d451fa5d84",
+    "atualizado_em": "2026-10-10T19:05:54"
   },
   {
     "fonte": "ESPN",
@@ -18111,6 +18111,20 @@
     "atualizado_em": "2026-10-10T18:07:58"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Juvenil Femenino",
+    "data": "2026-10-28",
+    "hora": "09:00",
+    "mandante": "Deportes Copiapo Juvenil Fem",
+    "visitante": "Deportes Iquique Juvenil Fem",
+    "estadio": "Estadio Eladio Rojas",
+    "rodada": "Fecha 1",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
+    "extra": "",
+    "id": "0b12642f41011f3a",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "FFERJ",
     "competicao": "Brasil - FFERJ - Competição não identificada",
     "data": "2026-10-28",
@@ -18141,20 +18155,6 @@
     "extra": "codigo_fferj=6082; fonte_tag=FERJ",
     "id": "29a9550982e78927",
     "atualizado_em": "2026-10-05T21:16:30"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Juvenil Femenino",
-    "data": "2026-10-28",
-    "hora": "09:00",
-    "mandante": "Deportes Copiapo Juvenil Fem",
-    "visitante": "Deportes Iquique Juvenil Fem",
-    "estadio": "Estadio Eladio Rojas",
-    "rodada": "Fecha 1",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
-    "extra": "",
-    "id": "0b12642f41011f3a",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "FFERJ",
@@ -18965,6 +18965,21 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-10-30",
+    "hora": "20:00",
+    "mandante": "Corinthians (SP)",
+    "visitante": "Mirassol (SP)",
+    "estadio": "Neo Química Arena",
+    "cidade": "São Paulo",
+    "rodada": "Rodada 33",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
+    "extra": "pais=Brasil; cidade=São Paulo",
+    "id": "5cbe192351966d66",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-10-30",
@@ -18979,21 +18994,6 @@
     "extra": "codigo_espn=401930013; status=Scheduled",
     "id": "918aac63587ff4ea",
     "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-10-30",
-    "hora": "20:00",
-    "mandante": "Corinthians (SP)",
-    "visitante": "Mirassol (SP)",
-    "estadio": "Neo Química Arena",
-    "cidade": "São Paulo",
-    "rodada": "Rodada 33",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_10_e4440cfd8e.pdf",
-    "extra": "pais=Brasil; cidade=São Paulo",
-    "id": "5cbe192351966d66",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "ESPN",
@@ -19056,6 +19056,22 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=117; cidade=Uberlandia",
     "id": "0664f3eef100afd7",
     "atualizado_em": "2026-09-21T18:48:11"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-31",
+    "hora": "09:00",
+    "mandante": "Unión Araucanía Juvenil Fem",
+    "visitante": "Rangers Juvenil Fem",
+    "estadio": "Estadio Turingia",
+    "rodada": "Fecha 14",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "8c0a682070c1bd2a",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
   },
   {
     "fonte": "FFERJ",
@@ -19141,22 +19157,6 @@
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-31",
-    "hora": "09:00",
-    "mandante": "Unión Araucanía Juvenil Fem",
-    "visitante": "Rangers Juvenil Fem",
-    "estadio": "Estadio Turingia",
-    "rodada": "Fecha 14",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "8c0a682070c1bd2a",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-31",
     "hora": "09:30",
     "mandante": "Unión Española Juvenil Fem",
     "visitante": "Magallanes Juvenil Fem",
@@ -19216,6 +19216,20 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=42; placar_original=X; jogo_numero=47; cidade=Uberlandia",
     "id": "e1e399741e7eba95",
     "atualizado_em": "2026-09-28T20:17:21"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-31",
+    "hora": "11:00",
+    "mandante": "Curicó Unido Juvenil Fem",
+    "visitante": "Deportes Recoleta Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 14",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "3a8baceda0a079e3",
+    "atualizado_em": "2026-07-14T13:55:28"
   },
   {
     "fonte": "FFERJ",
@@ -19317,20 +19331,6 @@
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-31",
-    "hora": "11:00",
-    "mandante": "Curicó Unido Juvenil Fem",
-    "visitante": "Deportes Recoleta Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 14",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "3a8baceda0a079e3",
-    "atualizado_em": "2026-07-14T13:55:28"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-31",
     "hora": "12:00",
     "mandante": "Cobreloa Juvenil Fem",
     "visitante": "Deportes Copiapo Juvenil Fem",
@@ -19419,6 +19419,22 @@
     "pais": "Argentina",
     "id": "2aa669bb5172395e",
     "atualizado_em": "2026-10-10T17:14:20"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-10-31",
+    "hora": "15:00",
+    "mandante": "Huachipato Juvenil Fem",
+    "visitante": "Deportes Concepción Juvenil Fem",
+    "estadio": "Estadio Huachipato-Cancha 4",
+    "rodada": "Fecha 14",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "77cdde9b348d90a2",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
   },
   {
     "fonte": "AFA",
@@ -19612,22 +19628,6 @@
     "atualizado_em": "2026-10-10T17:57:56"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-10-31",
-    "hora": "15:00",
-    "mandante": "Huachipato Juvenil Fem",
-    "visitante": "Deportes Concepción Juvenil Fem",
-    "estadio": "Estadio Huachipato-Cancha 4",
-    "rodada": "Fecha 14",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "77cdde9b348d90a2",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano Feminino Adulto / 2026",
     "data": "2026-10-31",
@@ -19660,6 +19660,21 @@
     "atualizado_em": "2026-10-10T20:10:21"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-10-31",
+    "hora": "16:00",
+    "mandante": "Botafogo (SP)",
+    "visitante": "Sport (PE)",
+    "estadio": "Santa Cruz",
+    "cidade": "Ribeirão Preto",
+    "rodada": "Rodada 36",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
+    "extra": "pais=Brasil; cidade=Ribeirão Preto",
+    "id": "2bf1d851e404d2f7",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
     "data": "2026-10-31",
@@ -19690,21 +19705,6 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=13; placar_original=X; jogo_numero=119; cidade=Montes Claros",
     "id": "a315418b6d35f6d2",
     "atualizado_em": "2026-09-28T20:17:21"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-10-31",
-    "hora": "16:00",
-    "mandante": "Botafogo (SP)",
-    "visitante": "Sport (PE)",
-    "estadio": "Santa Cruz",
-    "cidade": "Ribeirão Preto",
-    "rodada": "Rodada 36",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
-    "extra": "pais=Brasil; cidade=Ribeirão Preto",
-    "id": "2bf1d851e404d2f7",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "AFA",
@@ -19947,6 +19947,20 @@
     "atualizado_em": "2026-10-10T17:11:17"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-11-01",
+    "hora": "10:30",
+    "mandante": "O'Higgins Juvenil Fem",
+    "visitante": "Colo Colo Juvenil Fem",
+    "estadio": "",
+    "rodada": "Fecha 14",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "1b734d00dcbc6006",
+    "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - 2ª Divisão - 2026",
     "data": "2026-11-01",
@@ -19961,20 +19975,6 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=120; cidade=Itabirinha",
     "id": "cb11ea4a6f976665",
     "atualizado_em": "2026-09-14T18:42:15"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-11-01",
-    "hora": "10:30",
-    "mandante": "O'Higgins Juvenil Fem",
-    "visitante": "Colo Colo Juvenil Fem",
-    "estadio": "",
-    "rodada": "Fecha 14",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "1b734d00dcbc6006",
-    "atualizado_em": "2026-07-14T13:55:28"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -20230,6 +20230,21 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-11-01",
+    "hora": "16:00",
+    "mandante": "Londrina (PR)",
+    "visitante": "América (MG)",
+    "estadio": "Vitorino Gonçalves Dias",
+    "cidade": "Londrina",
+    "rodada": "Rodada 36",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
+    "extra": "pais=Brasil; cidade=Londrina",
+    "id": "589386ba5d7db501",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano Feminino Adulto / 2026",
     "data": "2026-11-01",
@@ -20276,21 +20291,6 @@
     "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
     "id": "23cc5b6386e2e0da",
     "atualizado_em": "2026-09-25T16:32:13"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-11-01",
-    "hora": "16:00",
-    "mandante": "Londrina (PR)",
-    "visitante": "América (MG)",
-    "estadio": "Vitorino Gonçalves Dias",
-    "cidade": "Londrina",
-    "rodada": "Rodada 36",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
-    "extra": "pais=Brasil; cidade=Londrina",
-    "id": "589386ba5d7db501",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "ESPN",
@@ -20538,22 +20538,6 @@
     "lon": ""
   },
   {
-    "fonte": "ESPN",
-    "competicao": "Bolivia - Liga Profesional Boliviana",
-    "data": "2026-11-02",
-    "hora": "15:00",
-    "mandante": "Real Tomayapo",
-    "visitante": "Blooming",
-    "pais": "Bolivia",
-    "cidade": "Tarija",
-    "estadio": "Estadio IV Centenário",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401930019; status=Scheduled",
-    "id": "635d61a2b6258d2e",
-    "atualizado_em": "2026-10-10T19:05:54"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-11-02",
@@ -20568,6 +20552,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-11-02",
+    "hora": "15:00",
+    "mandante": "Real Tomayapo",
+    "visitante": "Blooming",
+    "pais": "Bolivia",
+    "cidade": "Tarija",
+    "estadio": "Estadio IV Centenário",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930019; status=Scheduled",
+    "id": "635d61a2b6258d2e",
+    "atualizado_em": "2026-10-10T19:05:54"
   },
   {
     "fonte": "ESPN",
@@ -21101,6 +21101,20 @@
     "atualizado_em": "2026-10-10T19:05:54"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Copa Chile Coca-Cola Zero Azúcar",
+    "data": "2026-11-04",
+    "hora": "19:00",
+    "mandante": "Coquimbo Unido",
+    "visitante": "Unión La Calera",
+    "estadio": "Estadio Municipal Francisco Sánchez Rumoroso",
+    "rodada": "",
+    "url": "https://www.campeonatochileno.cl/ligas/copa-chile-coca-cola-zero-azucar/",
+    "extra": "",
+    "id": "19729525a3650581",
+    "atualizado_em": "2026-10-10T17:11:17"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-11-04",
@@ -21115,20 +21129,6 @@
     "extra": "codigo_espn=401877896; status=Scheduled",
     "id": "ea14c520a4eb6c66",
     "atualizado_em": "2026-10-10T18:07:58"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Copa Chile Coca-Cola Zero Azúcar",
-    "data": "2026-11-04",
-    "hora": "19:00",
-    "mandante": "Coquimbo Unido",
-    "visitante": "Unión La Calera",
-    "estadio": "Estadio Municipal Francisco Sánchez Rumoroso",
-    "rodada": "",
-    "url": "https://www.campeonatochileno.cl/ligas/copa-chile-coca-cola-zero-azucar/",
-    "extra": "",
-    "id": "19729525a3650581",
-    "atualizado_em": "2026-10-10T17:11:17"
   },
   {
     "fonte": "CBF",
@@ -21898,6 +21898,21 @@
     "atualizado_em": "2026-10-10T16:59:50"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-11-07",
+    "hora": "16:00",
+    "mandante": "Avaí (SC)",
+    "visitante": "São Bernardo FC (SP)",
+    "estadio": "Ressacada",
+    "cidade": "Florianópolis",
+    "rodada": "Rodada 37",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
+    "extra": "pais=Brasil; cidade=Florianópolis",
+    "id": "0dee938d7591969d",
+    "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
     "data": "2026-11-07",
@@ -21928,21 +21943,6 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=13; placar_original=X; jogo_numero=123; cidade=Sete Lagoas",
     "id": "d583cb5059f000c2",
     "atualizado_em": "2026-09-28T20:17:21"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-11-07",
-    "hora": "16:00",
-    "mandante": "Avaí (SC)",
-    "visitante": "São Bernardo FC (SP)",
-    "estadio": "Ressacada",
-    "cidade": "Florianópolis",
-    "rodada": "Rodada 37",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_09_10_25ec926739.pdf",
-    "extra": "pais=Brasil; cidade=Florianópolis",
-    "id": "0dee938d7591969d",
-    "atualizado_em": "2026-10-11T09:56:23"
   },
   {
     "fonte": "ESPN",
@@ -23402,6 +23402,22 @@
     "atualizado_em": "2026-10-10T16:59:50"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-11-14",
+    "hora": "16:00",
+    "mandante": "Huachipato Juvenil Fem",
+    "visitante": "Deportes Temuco Juvenil Fem",
+    "estadio": "Estadio Huachipato-Cancha 4",
+    "rodada": "",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "4730ffd61824dff4",
+    "atualizado_em": "2026-07-13T14:46:09",
+    "lat": "",
+    "lon": ""
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
     "data": "2026-11-14",
@@ -23469,22 +23485,6 @@
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-11-14",
-    "hora": "16:00",
-    "mandante": "Huachipato Juvenil Fem",
-    "visitante": "Deportes Temuco Juvenil Fem",
-    "estadio": "Estadio Huachipato-Cancha 4",
-    "rodada": "",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "4730ffd61824dff4",
-    "atualizado_em": "2026-07-13T14:46:09",
-    "lat": "",
-    "lon": ""
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-11-14",
     "hora": "4:00",
     "mandante": "Huachipato Juvenil Fem",
     "visitante": "Deportes Temuco Juvenil Fem",
@@ -23524,22 +23524,6 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
-    "fonte": "FGF",
-    "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
-    "data": "2026-11-15",
-    "hora": "15:30",
-    "mandante": "Novo Horizonte",
-    "visitante": "Atlético Itumbiara",
-    "pais": "Brasil",
-    "cidade": "",
-    "estadio": "Durval Ferreira Franco",
-    "rodada": "6ª Rodada",
-    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1830&jogo=58154",
-    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
-    "id": "0731e434a8a58acd",
-    "atualizado_em": "2026-10-10T16:59:50"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-11-15",
@@ -23554,6 +23538,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "FGF",
+    "competicao": "Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026",
+    "data": "2026-11-15",
+    "hora": "15:30",
+    "mandante": "Novo Horizonte",
+    "visitante": "Atlético Itumbiara",
+    "pais": "Brasil",
+    "cidade": "",
+    "estadio": "Durval Ferreira Franco",
+    "rodada": "6ª Rodada",
+    "url": "https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1830&jogo=58154",
+    "extra": "status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax",
+    "id": "0731e434a8a58acd",
+    "atualizado_em": "2026-10-10T16:59:50"
   },
   {
     "fonte": "FGF",
@@ -23829,22 +23829,6 @@
     "atualizado_em": "2026-10-11T09:56:23"
   },
   {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Paulistão F Petrobras (Amador)",
-    "data": "2026-11-21",
-    "hora": "",
-    "mandante": "São Paulo",
-    "visitante": "Santos",
-    "pais": "Brasil",
-    "cidade": "N/D",
-    "estadio": "N/D",
-    "rodada": "Rodada 9",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=31; grupo=03; fase=PLAY IN; canais=YouTube / CazeTV, Record News, HBO Max; suspencao=LIBERADO",
-    "id": "51a12f36ba2f43cd",
-    "atualizado_em": "2026-10-10T17:57:56"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Série A",
     "data": "2026-11-21",
@@ -23978,6 +23962,22 @@
     "extra": "pais=Brasil",
     "id": "78369aa2f4c811a1",
     "atualizado_em": "2026-10-11T09:56:23"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulistão F Petrobras (Amador)",
+    "data": "2026-11-21",
+    "hora": "",
+    "mandante": "São Paulo",
+    "visitante": "Santos",
+    "pais": "Brasil",
+    "cidade": "N/D",
+    "estadio": "N/D",
+    "rodada": "Rodada 9",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=31; grupo=03; fase=PLAY IN; canais=YouTube / CazeTV, Record News, HBO Max; suspencao=LIBERADO",
+    "id": "51a12f36ba2f43cd",
+    "atualizado_em": "2026-10-10T17:57:56"
   },
   {
     "fonte": "ESPN",
