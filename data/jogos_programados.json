@@ -64,6 +64,22 @@
     "atualizado_em": "2026-10-12T21:39:17"
   },
   {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-10",
+    "hora": "11:00",
+    "mandante": "Greminho Futebol Clube",
+    "visitante": "Esporte Clube Rogi-mirim",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO CT GREMINHO",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6153",
+    "extra": "codigo_fferj=6153; fonte_tag=FERJ",
+    "id": "c8fe3e2ba59c6e0a",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-10",
@@ -1411,12 +1427,12 @@
     "visitante": "S.A.F Botafogo",
     "pais": "Brasil",
     "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO CT BANGU",
+    "estadio": "ESTÁDIO LÊONIDAS DA SILVA",
     "rodada": "",
     "url": "https://www.fferj.com.br/partidas/5693",
     "extra": "codigo_fferj=5693; fonte_tag=FERJ",
     "id": "4e61b422629c9dde",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FGF",
@@ -1728,7 +1744,7 @@
     "url": "https://www.fferj.com.br/partidas/6088",
     "extra": "codigo_fferj=6088; fonte_tag=FERJ",
     "id": "36d835d9786231e2",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -1885,22 +1901,6 @@
     "competicao": "Brasil - FFERJ - Competição não identificada",
     "data": "2026-10-14",
     "hora": "15:00",
-    "mandante": "A.D Cabofriense",
-    "visitante": "AE Araruama",
-    "pais": "Brasil",
-    "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO ALAIR CORREA",
-    "rodada": "",
-    "url": "https://www.fferj.com.br/partidas/5727",
-    "extra": "codigo_fferj=5727; fonte_tag=FERJ",
-    "id": "c8d44d9ed52a1439",
-    "atualizado_em": "2026-10-05T21:16:30"
-  },
-  {
-    "fonte": "FFERJ",
-    "competicao": "Brasil - FFERJ - Competição não identificada",
-    "data": "2026-10-14",
-    "hora": "15:00",
     "mandante": "America F.C (RJ)",
     "visitante": "Serrano F.C",
     "pais": "Brasil",
@@ -1910,7 +1910,23 @@
     "url": "https://www.fferj.com.br/partidas/5726",
     "extra": "codigo_fferj=5726; fonte_tag=FERJ",
     "id": "05fb7667eb157061",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-14",
+    "hora": "15:00",
+    "mandante": "Bonsucesso F.C",
+    "visitante": "Olaria A.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO LEONIDAS DA SILVA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5725",
+    "extra": "codigo_fferj=5725; fonte_tag=FERJ",
+    "id": "a456e35ffad6395a",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -1921,28 +1937,12 @@
     "visitante": "A.D Cabofriense",
     "pais": "Brasil",
     "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO --NÃO INFORMADO",
+    "estadio": "ESTÁDIO VALDIR BIGODE",
     "rodada": "",
     "url": "https://www.fferj.com.br/partidas/6244",
     "extra": "codigo_fferj=6244; fonte_tag=FERJ",
     "id": "3829d55d2a81367b",
-    "atualizado_em": "2026-10-05T21:16:30"
-  },
-  {
-    "fonte": "FFERJ",
-    "competicao": "Brasil - FFERJ - Competição não identificada",
-    "data": "2026-10-14",
-    "hora": "15:00",
-    "mandante": "Pérolas Negras",
-    "visitante": "São Gonçalo E.C",
-    "pais": "Brasil",
-    "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO CT A11 SPORTS",
-    "rodada": "",
-    "url": "https://www.fferj.com.br/partidas/5728",
-    "extra": "codigo_fferj=5728; fonte_tag=FERJ",
-    "id": "6cf85b9c3faaa15a",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -1953,12 +1953,28 @@
     "visitante": "AE Araruama",
     "pais": "Brasil",
     "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO --NÃO INFORMADO",
+    "estadio": "ESTÁDIO CT A11 SPORTS",
     "rodada": "",
     "url": "https://www.fferj.com.br/partidas/6243",
     "extra": "codigo_fferj=6243; fonte_tag=FERJ",
     "id": "99959dea1a0640c5",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-14",
+    "hora": "15:00",
+    "mandante": "Resende F. C.",
+    "visitante": "Americano F.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO MUNICIPAL DO TRABALHADOR (E. DO SESI)",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5729",
+    "extra": "codigo_fferj=5729; fonte_tag=FERJ",
+    "id": "00c5c09fdf63e1fd",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -1974,7 +1990,7 @@
     "url": "https://www.fferj.com.br/partidas/6245",
     "extra": "codigo_fferj=6245; fonte_tag=FERJ",
     "id": "dc856132602ea0ec",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -2536,6 +2552,38 @@
     "atualizado_em": "2026-10-12T21:07:46"
   },
   {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-15",
+    "hora": "15:00",
+    "mandante": "A.D Cabofriense",
+    "visitante": "AE Araruama",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO ALAIR CORREA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5727",
+    "extra": "codigo_fferj=5727; fonte_tag=FERJ",
+    "id": "f6f2d2df74814040",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-15",
+    "hora": "15:00",
+    "mandante": "Pérolas Negras",
+    "visitante": "São Gonçalo E.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO CT A11 SPORTS",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5728",
+    "extra": "codigo_fferj=5728; fonte_tag=FERJ",
+    "id": "89fcb62a1246f779",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Copa Goiás Sub 15 da 1ª Divisão / 2026",
     "data": "2026-10-15",
@@ -2803,6 +2851,22 @@
     "atualizado_em": "2026-10-06T18:30:37"
   },
   {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-16",
+    "hora": "09:30",
+    "mandante": "Vasco da Gama S.A.F",
+    "visitante": "São Gonçalo E.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO NIVALDO PEREIRA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5936",
+    "extra": "codigo_fferj=5936; fonte_tag=FERJ",
+    "id": "171a3cd1f0dda090",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - FEMININO SUB-17 - 2026",
     "data": "2026-10-16",
@@ -2865,6 +2929,22 @@
     "extra": "codigo_espn=401906307; status=Scheduled",
     "id": "ae3a8ae584d94563",
     "atualizado_em": "2026-10-11T19:18:22"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-16",
+    "hora": "15:00",
+    "mandante": "Madureira E.C",
+    "visitante": "Olaria A.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO ESTADIO ANICETO MOSCOSO",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6256",
+    "extra": "codigo_fferj=6256; fonte_tag=FERJ",
+    "id": "332b52b01a167f02",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -3398,7 +3478,7 @@
     "url": "https://www.fferj.com.br/partidas/6057",
     "extra": "codigo_fferj=6057; fonte_tag=FERJ",
     "id": "36a66b50a27cb678",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -3414,7 +3494,7 @@
     "url": "https://www.fferj.com.br/partidas/6058",
     "extra": "codigo_fferj=6058; fonte_tag=FERJ",
     "id": "125cca105a3d2326",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -3430,7 +3510,7 @@
     "url": "https://www.fferj.com.br/partidas/6060",
     "extra": "codigo_fferj=6060; fonte_tag=FERJ",
     "id": "67eed3023fa20d7d",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -3494,7 +3574,7 @@
     "url": "https://www.fferj.com.br/partidas/5940",
     "extra": "codigo_fferj=5940; fonte_tag=FERJ",
     "id": "3e9da12fb3207398",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -3622,7 +3702,7 @@
     "url": "https://www.fferj.com.br/partidas/5967",
     "extra": "codigo_fferj=5967; fonte_tag=FERJ",
     "id": "ced4ade05ed2a7ef",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -3638,7 +3718,7 @@
     "url": "https://www.fferj.com.br/partidas/5968",
     "extra": "codigo_fferj=5968; fonte_tag=FERJ",
     "id": "23a26a8a57dfe6be",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -3654,7 +3734,7 @@
     "url": "https://www.fferj.com.br/partidas/5970",
     "extra": "codigo_fferj=5970; fonte_tag=FERJ",
     "id": "f3bbddf9c42ee1d5",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -3773,12 +3853,12 @@
     "visitante": "Resende F. C.",
     "pais": "Brasil",
     "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO PROLETARIO GUILHERME DA SILVEIRA FILHO",
+    "estadio": "ESTÁDIO MOURÃO FILHO",
     "rodada": "",
     "url": "https://www.fferj.com.br/partidas/5972",
     "extra": "codigo_fferj=5972; fonte_tag=FERJ",
     "id": "be821d70f9da37e5",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -3794,7 +3874,23 @@
     "url": "https://www.fferj.com.br/partidas/5969",
     "extra": "codigo_fferj=5969; fonte_tag=FERJ",
     "id": "e9b867255bfdcfbb",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-17",
+    "hora": "13:00",
+    "mandante": "Fluminense F.C",
+    "visitante": "Sampaio Corrêa F.E Ltda",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO ESTÁDIO MARCELO VIEIRA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5971",
+    "extra": "codigo_fferj=5971; fonte_tag=FERJ",
+    "id": "9ae060e59c8a517f",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "AUF",
@@ -3993,12 +4089,12 @@
     "visitante": "Resende F. C.",
     "pais": "Brasil",
     "cidade": "Rio de Janeiro",
-    "estadio": "ESTÁDIO PROLETARIO GUILHERME DA SILVEIRA FILHO",
+    "estadio": "ESTÁDIO MOURÃO FILHO",
     "rodada": "",
     "url": "https://www.fferj.com.br/partidas/6062",
     "extra": "codigo_fferj=6062; fonte_tag=FERJ",
     "id": "2065e49b39aa4e5e",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -4014,7 +4110,23 @@
     "url": "https://www.fferj.com.br/partidas/6059",
     "extra": "codigo_fferj=6059; fonte_tag=FERJ",
     "id": "3886d90e8b6ebd90",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Fluminense F.C",
+    "visitante": "Sampaio Corrêa F.E Ltda",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO ESTÁDIO MARCELO VIEIRA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6061",
+    "extra": "codigo_fferj=6061; fonte_tag=FERJ",
+    "id": "564cf89267e9810c",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -4030,7 +4142,23 @@
     "url": "https://www.fferj.com.br/partidas/5941",
     "extra": "codigo_fferj=5941; fonte_tag=FERJ",
     "id": "d0a4355910915557",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Volta Redonda F.C",
+    "visitante": "União Central F.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO CT VOLTA REDONDA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5942",
+    "extra": "codigo_fferj=5942; fonte_tag=FERJ",
+    "id": "6f74ab3a560b2afd",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -5825,7 +5953,7 @@
     "url": "https://www.fferj.com.br/partidas/6130",
     "extra": "codigo_fferj=6130; fonte_tag=FERJ",
     "id": "708d39255c95d976",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FPF",
@@ -6516,7 +6644,7 @@
     "url": "https://www.fferj.com.br/partidas/6136",
     "extra": "codigo_fferj=6136; fonte_tag=FERJ",
     "id": "e14581a245ea1d83",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FGF",
@@ -7085,7 +7213,7 @@
     "url": "https://www.fferj.com.br/partidas/5958",
     "extra": "codigo_fferj=5958; fonte_tag=FERJ",
     "id": "f27e2f1838274f12",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -7101,7 +7229,7 @@
     "url": "https://www.fferj.com.br/partidas/6077",
     "extra": "codigo_fferj=6077; fonte_tag=FERJ",
     "id": "9afea703b188f1e5",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -7117,7 +7245,7 @@
     "url": "https://www.fferj.com.br/partidas/5964",
     "extra": "codigo_fferj=5964; fonte_tag=FERJ",
     "id": "13b7f855bd77089a",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "ESPN",
@@ -7256,7 +7384,7 @@
     "url": "https://www.fferj.com.br/partidas/5733",
     "extra": "codigo_fferj=5733; fonte_tag=FERJ",
     "id": "691e2fb57ef264a7",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -7272,7 +7400,7 @@
     "url": "https://www.fferj.com.br/partidas/5893",
     "extra": "codigo_fferj=5893; fonte_tag=FERJ",
     "id": "a394ce04a9c83433",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -7288,7 +7416,7 @@
     "url": "https://www.fferj.com.br/partidas/5730",
     "extra": "codigo_fferj=5730; fonte_tag=FERJ",
     "id": "09f12b35886647e8",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -7304,7 +7432,39 @@
     "url": "https://www.fferj.com.br/partidas/5734",
     "extra": "codigo_fferj=5734; fonte_tag=FERJ",
     "id": "fcef6182070b0080",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-21",
+    "hora": "15:00",
+    "mandante": "Serrano F.C",
+    "visitante": "Bonsucesso F.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO ARENA INTERFUT",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5731",
+    "extra": "codigo_fferj=5731; fonte_tag=FERJ",
+    "id": "4c25d9c899bfc1cd",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-21",
+    "hora": "15:00",
+    "mandante": "São Gonçalo E.C",
+    "visitante": "A.D Cabofriense",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5732",
+    "extra": "codigo_fferj=5732; fonte_tag=FERJ",
+    "id": "389a4070f63fe70c",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FPF",
@@ -8115,7 +8275,23 @@
     "url": "https://www.fferj.com.br/partidas/6075",
     "extra": "codigo_fferj=6075; fonte_tag=FERJ",
     "id": "a316e20e36d15bd9",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-24",
+    "hora": "09:00",
+    "mandante": "Nova Iguaçu S.A.F",
+    "visitante": "Bangu A.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO CT NOVA IGUAÇU",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6079",
+    "extra": "codigo_fferj=6079; fonte_tag=FERJ",
+    "id": "c72f4e87c5599613",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -8243,7 +8419,7 @@
     "url": "https://www.fferj.com.br/partidas/5944",
     "extra": "codigo_fferj=5944; fonte_tag=FERJ",
     "id": "3719c22177130371",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -8355,7 +8531,39 @@
     "url": "https://www.fferj.com.br/partidas/6063",
     "extra": "codigo_fferj=6063; fonte_tag=FERJ",
     "id": "eb61f7e4c533af98",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-24",
+    "hora": "11:00",
+    "mandante": "Madureira E.C",
+    "visitante": "C.R Flamengo",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO ESTADIO ANICETO MOSCOSO",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6065",
+    "extra": "codigo_fferj=6065; fonte_tag=FERJ",
+    "id": "add842e74981269d",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-24",
+    "hora": "11:00",
+    "mandante": "Nova Iguaçu S.A.F",
+    "visitante": "Bangu A.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO CT NOVA IGUAÇU",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6067",
+    "extra": "codigo_fferj=6067; fonte_tag=FERJ",
+    "id": "ae32e478eb90f9dd",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -8465,7 +8673,7 @@
     "url": "https://www.fferj.com.br/partidas/6064",
     "extra": "codigo_fferj=6064; fonte_tag=FERJ",
     "id": "c407daa51c5d0887",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -8481,7 +8689,23 @@
     "url": "https://www.fferj.com.br/partidas/6068",
     "extra": "codigo_fferj=6068; fonte_tag=FERJ",
     "id": "b903548d247733dd",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-24",
+    "hora": "13:00",
+    "mandante": "Sampaio Corrêa F.E Ltda",
+    "visitante": "Vasco da Gama S.A.F",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO LOURIVAL GOMES DE ALMEIDA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6066",
+    "extra": "codigo_fferj=6066; fonte_tag=FERJ",
+    "id": "2f53088a5af6a0d5",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -8622,7 +8846,7 @@
     "url": "https://www.fferj.com.br/partidas/5943",
     "extra": "codigo_fferj=5943; fonte_tag=FERJ",
     "id": "4d109958fcc39c20",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -8638,7 +8862,23 @@
     "url": "https://www.fferj.com.br/partidas/5946",
     "extra": "codigo_fferj=5946; fonte_tag=FERJ",
     "id": "bb3f16596920e955",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "Nova Iguaçu S.A.F",
+    "visitante": "Olaria A.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO CT NOVA IGUAÇU",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5945",
+    "extra": "codigo_fferj=5945; fonte_tag=FERJ",
+    "id": "47c8d740d0ea9d15",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -8654,7 +8894,23 @@
     "url": "https://www.fferj.com.br/partidas/6076",
     "extra": "codigo_fferj=6076; fonte_tag=FERJ",
     "id": "da6ad963c5324eed",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "Resende F. C.",
+    "visitante": "America F.C (RJ)",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO TRABALHADOR",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6080",
+    "extra": "codigo_fferj=6080; fonte_tag=FERJ",
+    "id": "4f6ffb0e8688488a",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -8670,7 +8926,7 @@
     "url": "https://www.fferj.com.br/partidas/6078",
     "extra": "codigo_fferj=6078; fonte_tag=FERJ",
     "id": "b5396ca3b02977bc",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -9874,7 +10130,7 @@
     "url": "https://www.fferj.com.br/partidas/6137",
     "extra": "codigo_fferj=6137; fonte_tag=FERJ",
     "id": "29cd43b8868615b4",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "ESPN",
@@ -10281,6 +10537,22 @@
     "atualizado_em": "2026-07-13T14:46:09",
     "lat": "",
     "lon": ""
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-26",
+    "hora": "15:00",
+    "mandante": "Futebol Clube Rio de Janeiro",
+    "visitante": "Cig 7 de Abril",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO DE LOS LARIOS",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6255",
+    "extra": "codigo_fferj=6255; fonte_tag=FERJ",
+    "id": "1fd65705623dcd45",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -10706,7 +10978,7 @@
     "url": "https://www.fferj.com.br/partidas/6086",
     "extra": "codigo_fferj=6086; fonte_tag=FERJ",
     "id": "8f27cdd310c18bdc",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -10722,7 +10994,23 @@
     "url": "https://www.fferj.com.br/partidas/6082",
     "extra": "codigo_fferj=6082; fonte_tag=FERJ",
     "id": "29a9550982e78927",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-28",
+    "hora": "09:00",
+    "mandante": "Vasco da Gama S.A.F",
+    "visitante": "Fluminense F.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO NIVALDO PEREIRA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6084",
+    "extra": "codigo_fferj=6084; fonte_tag=FERJ",
+    "id": "b0b53095263be5b2",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -10738,7 +11026,7 @@
     "url": "https://www.fferj.com.br/partidas/6177",
     "extra": "codigo_fferj=6177; fonte_tag=FERJ",
     "id": "b356755639a1d265",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -10754,7 +11042,23 @@
     "url": "https://www.fferj.com.br/partidas/6173",
     "extra": "codigo_fferj=6173; fonte_tag=FERJ",
     "id": "0c6e3fd0d80b154f",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-28",
+    "hora": "11:00",
+    "mandante": "Vasco da Gama S.A.F",
+    "visitante": "Fluminense F.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO NIVALDO PEREIRA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6175",
+    "extra": "codigo_fferj=6175; fonte_tag=FERJ",
+    "id": "a59acd3c2430ff17",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "ESPN",
@@ -10786,7 +11090,7 @@
     "url": "https://www.fferj.com.br/partidas/6176",
     "extra": "codigo_fferj=6176; fonte_tag=FERJ",
     "id": "609fe77298b078d0",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -10802,7 +11106,23 @@
     "url": "https://www.fferj.com.br/partidas/6174",
     "extra": "codigo_fferj=6174; fonte_tag=FERJ",
     "id": "3087e6f3113d6e2a",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-28",
+    "hora": "13:00",
+    "mandante": "E.C Nova Cidade",
+    "visitante": "Resende F. C.",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO JOAQUIN A FLORES",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6172",
+    "extra": "codigo_fferj=6172; fonte_tag=FERJ",
+    "id": "3f74607196cef8b8",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "ESPN",
@@ -10925,7 +11245,7 @@
     "url": "https://www.fferj.com.br/partidas/5737",
     "extra": "codigo_fferj=5737; fonte_tag=FERJ",
     "id": "28d4581afdcbf49f",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -10941,7 +11261,7 @@
     "url": "https://www.fferj.com.br/partidas/6085",
     "extra": "codigo_fferj=6085; fonte_tag=FERJ",
     "id": "7da1aa6ea0259f27",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -10957,7 +11277,55 @@
     "url": "https://www.fferj.com.br/partidas/5736",
     "extra": "codigo_fferj=5736; fonte_tag=FERJ",
     "id": "6803fea9f131bda0",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-28",
+    "hora": "15:00",
+    "mandante": "C.R Flamengo",
+    "visitante": "Sampaio Corrêa F.E Ltda",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO JOSÉ BASTOS PADILHA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6083",
+    "extra": "codigo_fferj=6083; fonte_tag=FERJ",
+    "id": "c732dd0918b5f5ed",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-28",
+    "hora": "15:00",
+    "mandante": "E.C Nova Cidade",
+    "visitante": "Resende F. C.",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO JOAQUIN A FLORES",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6081",
+    "extra": "codigo_fferj=6081; fonte_tag=FERJ",
+    "id": "93c20c723fe79c1d",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-28",
+    "hora": "15:00",
+    "mandante": "Gpa Audax Rio E.C",
+    "visitante": "Serrano F.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO CT TIGRES",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/5735",
+    "extra": "codigo_fferj=5735; fonte_tag=FERJ",
+    "id": "a9074f5e61bce2ce",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -10973,7 +11341,7 @@
     "url": "https://www.fferj.com.br/partidas/5738",
     "extra": "codigo_fferj=5738; fonte_tag=FERJ",
     "id": "b2ae98c9acec0dc5",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -10989,7 +11357,7 @@
     "url": "https://www.fferj.com.br/partidas/5739",
     "extra": "codigo_fferj=5739; fonte_tag=FERJ",
     "id": "f101146f0f8339f9",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -11671,7 +12039,7 @@
     "url": "https://www.fferj.com.br/partidas/6208",
     "extra": "codigo_fferj=6208; fonte_tag=FERJ",
     "id": "46d82f09bd274481",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -11687,7 +12055,7 @@
     "url": "https://www.fferj.com.br/partidas/6206",
     "extra": "codigo_fferj=6206; fonte_tag=FERJ",
     "id": "72300103d41a1266",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -11909,7 +12277,39 @@
     "url": "https://www.fferj.com.br/partidas/6180",
     "extra": "codigo_fferj=6180; fonte_tag=FERJ",
     "id": "85613ce10f7586de",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-31",
+    "hora": "11:00",
+    "mandante": "Madureira E.C",
+    "visitante": "Bangu A.C",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO ESTADIO ANICETO MOSCOSO",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6181",
+    "extra": "codigo_fferj=6181; fonte_tag=FERJ",
+    "id": "0b615efb0442f924",
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-31",
+    "hora": "11:00",
+    "mandante": "Vasco da Gama S.A.F",
+    "visitante": "E.C Nova Cidade",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO NIVALDO PEREIRA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6178",
+    "extra": "codigo_fferj=6178; fonte_tag=FERJ",
+    "id": "f71127db064b8283",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -12019,7 +12419,7 @@
     "url": "https://www.fferj.com.br/partidas/6182",
     "extra": "codigo_fferj=6182; fonte_tag=FERJ",
     "id": "132a226b8bf145b7",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -12035,7 +12435,23 @@
     "url": "https://www.fferj.com.br/partidas/6100",
     "extra": "codigo_fferj=6100; fonte_tag=FERJ",
     "id": "e57ce89bc96330a3",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-31",
+    "hora": "13:00",
+    "mandante": "Sampaio Corrêa F.E Ltda",
+    "visitante": "S.A.F Botafogo",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO LOURIVAL GOMES DE ALMEIDA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6179",
+    "extra": "codigo_fferj=6179; fonte_tag=FERJ",
+    "id": "f4f15da6491e39ba",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
@@ -12145,7 +12561,7 @@
     "url": "https://www.fferj.com.br/partidas/6209",
     "extra": "codigo_fferj=6209; fonte_tag=FERJ",
     "id": "4343b36bdce51dc1",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FFERJ",
@@ -12161,7 +12577,23 @@
     "url": "https://www.fferj.com.br/partidas/6098",
     "extra": "codigo_fferj=6098; fonte_tag=FERJ",
     "id": "9375cdfadd4f05ea",
-    "atualizado_em": "2026-10-05T21:16:30"
+    "atualizado_em": "2026-10-12T21:54:03"
+  },
+  {
+    "fonte": "FFERJ",
+    "competicao": "Brasil - FFERJ - Competição não identificada",
+    "data": "2026-10-31",
+    "hora": "15:00",
+    "mandante": "Sampaio Corrêa F.E Ltda",
+    "visitante": "S.A.F Botafogo",
+    "pais": "Brasil",
+    "cidade": "Rio de Janeiro",
+    "estadio": "ESTÁDIO LOURIVAL GOMES DE ALMEIDA",
+    "rodada": "",
+    "url": "https://www.fferj.com.br/partidas/6207",
+    "extra": "codigo_fferj=6207; fonte_tag=FERJ",
+    "id": "165cf73423145b96",
+    "atualizado_em": "2026-10-12T21:54:03"
   },
   {
     "fonte": "FMF",
