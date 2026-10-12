@@ -407,6 +407,8 @@
       const g = gFonte || dados.geo[r.pais + "|" + r.mandante];
       r._geo = g || null;
       r._busca = norm([r.mandante, r.visitante, r.cidade, r.estadio, g && g.local].filter(Boolean).join(" | "));
+      // Abreviacoes usuais de nomes de clube ("US Portsmouth" = United Services Portsmouth).
+      if (r._busca.includes("united services")) r._busca += " | " + r._busca.replace(/united services/g, "us");
       return r;
     }
 
