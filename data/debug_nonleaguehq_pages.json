@@ -394,7 +394,9 @@
       "2NRP": 208,
       "2SFL": 57,
       "3ES1": 70
-    }
+    },
+    "sem_nome": [],
+    "avisos": []
   },
   {
     "url": "https://www.nonleaguehq.com/fixture-finder-wales/",
@@ -415,19 +417,25 @@
       "5ALD1": 38,
       "5CLD1": 11,
       "5CLP": 66
-    }
+    },
+    "sem_nome": [],
+    "avisos": []
   },
   {
     "url": "https://www.nonleaguehq.com/fixture-finder-northern-ireland/",
-    "jogos": 435,
+    "jogos": 303,
     "por_codigo": {
       "5NAL1A": 67,
       "4NALP": 53,
       "4MULA": 57,
       "5MULB": 52,
-      "3NIPI": 132,
       "5BPL2": 36,
       "4BPLA": 38
-    }
+    },
+    "sem_nome": [
+      "Irlanda do Norte - Liga 4BPLA",
+      "Irlanda do Norte - Liga 5BPL2"
+    ],
+    "avisos": []
   }
 ]
