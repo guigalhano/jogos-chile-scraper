@@ -33,10 +33,25 @@
 -3.22198,
 "Abbey"
 ],
+"Abbey, Northern Ireland": [
+54.5362,
+-5.56046,
+"Greyabbey"
+],
+"Aber Valley, Wales": [
+51.60048,
+-3.26975,
+"Aber Valley"
+],
 "Aberavon, Wales": [
 51.60014,
 -3.79549,
 "Aberavon"
+],
+"Abercarn, Caerphilly, Wales": [
+51.64797,
+-3.12518,
+"Abercarn"
 ],
 "Aberdare, Wales": [
 51.71335,
@@ -55,9 +70,25 @@
 -2.09281,
 "Aberdeen City"
 ],
+"Aberffraw, Wales": [
+53.1915,
+-4.46437,
+"Aberffraw"
+],
+"Abergavenny, Monmouthshire, Wales": [
+51.82132,
+-3.01479,
+"Abergavenny"
+],
 "Abertillery Bluebirds, Blaenau Gwent, Wales": null,
 "Abertillery Bluebirds, Wales": null,
+"Abertillery Excelsiors, Wales": null,
 "Abertillery, Blaenau Gwent, Wales": [
+51.72995,
+-3.13599,
+"Abertillery"
+],
+"Abertillery, Wales": [
 51.72995,
 -3.13599,
 "Abertillery"
@@ -82,11 +113,20 @@
 1.54813,
 "Acle"
 ],
+"Acton, Wales": [
+53.05785,
+-2.98212,
+"Acton"
+],
+"Actonians, England": null,
+"Afan, Wales": null,
 "Airdrie, Scotland": [
 55.86612,
 -3.98048,
 "Airdrie"
 ],
+"Albert Foundry, Northern Ireland": null,
+"Albert, Northern Ireland": null,
 "Alcester, England": [
 52.21502,
 -1.86958,
@@ -170,11 +210,13 @@
 -2.35255,
 "Altrincham"
 ],
+"Altrinchamians, England": null,
 "Alvechurch, England": [
 52.35071,
 -1.95791,
 "Alvechurch CP"
 ],
+"Ambassadors, Northern Ireland": null,
 "Amersham, England": [
 51.67668,
 -0.60769,
@@ -200,6 +242,11 @@
 51.20783,
 -1.47935,
 "Andover"
+],
+"Angel, England": [
+51.5332,
+-0.10611,
+"Angel"
 ],
 "Annan, Scotland": [
 54.98733,
@@ -230,6 +277,7 @@
 -4.19252,
 "Appledore"
 ],
+"Aquinas, Northern Ireland": null,
 "Arbroath, Angus, Scotland": [
 56.55867,
 -2.58157,
@@ -267,16 +315,96 @@
 -6.65404,
 "Armagh"
 ],
+"Arms, England": [
+52.43965,
+-2.83564,
+"Craven Arms"
+],
 "Armthorpe, England": [
 53.53952,
 -1.0599,
 "Armthorpe"
+],
+"Arnold, England": [
+53.00526,
+-1.12555,
+"Arnold"
 ],
 "Arthurlie, East Renfrewshire, Scotland": [
 55.7966,
 -4.39387,
 "Arthurlie"
 ],
+"Arundel, England": [
+50.85454,
+-0.56482,
+"Arundel"
+],
+"Ascot, England": [
+51.41013,
+-0.66802,
+"Ascot"
+],
+"Ash, England": [
+51.28099,
+1.28031,
+"Ash"
+],
+"Ashbourne, England": [
+53.01733,
+-1.73427,
+"Ashbourne CP"
+],
+"Ashby Ivanhoe, England": null,
+"Ashby, England": [
+52.74713,
+-1.47121,
+"Ashby-de-la-Zouch"
+],
+"Ashford, England": [
+51.14856,
+0.87226,
+"Ashford"
+],
+"Ashington, England": [
+55.18324,
+-1.57027,
+"Ashington"
+],
+"Ashton Backwell, England": null,
+"Ashton, England": [
+50.64724,
+-3.61115,
+"Ashton"
+],
+"Ashville, England": null,
+"Aston Clinton, England": [
+51.80251,
+-0.72749,
+"Aston Clinton"
+],
+"Aston, Wales": [
+53.19751,
+-3.03835,
+"Aston"
+],
+"Athenry, Ireland": [
+53.29904,
+-8.74656,
+"Athenry"
+],
+"Athersley, England": [
+53.5806,
+-1.47275,
+"Athersley"
+],
+"Atherstone, England": [
+52.57724,
+-1.5434,
+"Atherstone"
+],
+"Atherton Collieries, England": null,
+"Atherton Laburnum, England": null,
 "Atherton, England": [
 53.52497,
 -2.49058,
@@ -294,15 +422,116 @@
 -4.29514,
 "Auchinleck"
 ],
+"Audley, England": [
+53.0535,
+-2.3025,
+"Audley"
+],
+"Aveley, England": [
+51.50011,
+0.25618,
+"Aveley"
+],
+"Avonmouth, England": [
+51.49893,
+-2.69554,
+"Avonmouth"
+],
+"Avro, England": null,
+"Awsworth, England": [
+52.99203,
+-1.28427,
+"Awsworth"
+],
+"Axminster, England": [
+50.7821,
+-2.99799,
+"Axminster"
+],
+"Aylesbury, England": [
+51.81614,
+-0.81304,
+"Aylesbury"
+],
+"Aylesford, England": [
+51.30931,
+0.48673,
+"Aylesford"
+],
+"Aylestone, England": [
+52.60402,
+-1.15401,
+"Aylestone"
+],
+"Aylsham, England": [
+52.795,
+1.25119,
+"Aylsham"
+],
 "Ayr, Scotland": [
 55.4628,
 -4.63025,
 "Ayr"
 ],
+"BN Dons, England": null,
+"BN, England": null,
+"Bacton ’, England": [
+52.84128,
+1.44588,
+"Bacton"
+],
+"Bacup, England": [
+53.70249,
+-2.20105,
+"Bacup"
+],
+"Baddoo, England": null,
+"Badshot Lea, England": [
+51.23074,
+-0.76211,
+"Badshot Lea"
+],
+"Baffins Milton, England": null,
+"Baffins, England": [
+50.80759,
+-1.05576,
+"Baffins"
+],
+"Bakewell, England": [
+53.21484,
+-1.67586,
+"Bakewell CP"
+],
 "Bala, Wales": [
 52.91122,
 -3.59947,
 "Y Bala"
+],
+"Balbriggan, Ireland": [
+53.60853,
+-6.18291,
+"Balbriggan"
+],
+"Balcombe, England": [
+51.06027,
+-0.13292,
+"Balcombe"
+],
+"Baldock, England": [
+51.989,
+-0.18821,
+"Baldock"
+],
+"Balham, England": [
+51.44475,
+-0.15129,
+"Balham"
+],
+"Ball Haye Green, England": null,
+"Ball, England": [
+52.8328,
+-3.03101,
+"Ball"
 ],
 "Ballinamallard, Northern Ireland": [
 54.42287,
@@ -314,10 +543,37 @@
 -7.78195,
 "Ballybofey"
 ],
+"Ballyclare, Northern Ireland": [
+54.75253,
+-6.00109,
+"Ballyclare"
+],
+"Ballymena Reserve, Northern Ireland": null,
 "Ballymena, Northern Ireland": [
 54.8663,
 -6.27602,
 "Ballymena"
+],
+"Ballymoney, Northern Ireland": [
+55.07027,
+-6.51728,
+"Ballymoney"
+],
+"Balti, England": null,
+"Bamber Bridge, England": [
+53.72911,
+-2.6607,
+"Bamber Bridge"
+],
+"Banbridge, Northern Ireland": [
+54.35142,
+-6.27146,
+"Banbridge"
+],
+"Banbury, England": [
+52.06018,
+-1.34028,
+"Banbury"
 ],
 "Banchory St Ternan, Aberdeenshire, Scotland": null,
 "Banchory St Ternan, Scotland": null,
@@ -330,6 +586,12 @@
 57.66455,
 -2.52175,
 "Banff"
+],
+"Bangor Reserve, Northern Ireland": null,
+"Bangor, Ireland": [
+54.15486,
+-9.72119,
+"Bangor"
 ],
 "Bangor, Northern Ireland": [
 54.6626,
@@ -344,10 +606,58 @@
 "Banks o Dee, Aberdeen City, Scotland": null,
 "Banks o Dee, Scotland": null,
 "Banks, Aberdeen City, Scotland": null,
+"Banstead, England": [
+51.3239,
+-0.19868,
+"Banstead"
+],
+"Baresi, England": null,
+"Barkabbeyans, England": null,
+"Barking, England": [
+51.53899,
+0.08042,
+"Barking"
+],
+"Barkingside, England": [
+51.58831,
+0.08487,
+"Barkingside"
+],
+"Barmouth Dyffryn, Wales": null,
+"Barmouth, Wales": [
+52.72104,
+-4.05357,
+"Barmouth"
+],
+"Barnard Castle, England": [
+54.54481,
+-1.92464,
+"Barnard Castle"
+],
+"Barnoldswick, England": [
+53.91708,
+-2.18732,
+"Barnoldswick"
+],
 "Barnsley, England": [
 53.55277,
 -1.48278,
 "Barnsley"
+],
+"Barnstaple, England": [
+51.08041,
+-4.06005,
+"Barnstaple"
+],
+"Barnston, England": [
+51.84406,
+0.38405,
+"Barnston"
+],
+"Barnton, England": [
+53.27248,
+-2.5458,
+"Barnton"
 ],
 "Barrow-in-Furness, England": [
 54.11134,
@@ -364,10 +674,86 @@
 -1.64648,
 "Barton"
 ],
+"Barwell, England": [
+52.57271,
+-1.35843,
+"Barwell"
+],
+"Basford, England": [
+53.0156,
+-2.20938,
+"Basford"
+],
+"Bashley, England": [
+50.77378,
+-1.66096,
+"Bashley"
+],
+"Basildon, England": [
+51.57024,
+0.45836,
+"Basildon"
+],
+"Basingstoke, England": [
+51.26283,
+-1.0862,
+"Basingstoke"
+],
+"Bath, England": [
+51.38139,
+-2.3597,
+"Bath"
+],
 "Bathgate, Scotland": [
 55.90092,
 -3.64148,
 "Bathgate"
+],
+"Beaconsfield, England": [
+51.60829,
+-0.65712,
+"Beaconsfield"
+],
+"Bearna Na Forbacha, Ireland": null,
+"Bearna, Ireland": [
+53.25186,
+-9.1514,
+"Bearna"
+],
+"Bearsted, England": [
+51.27206,
+0.58055,
+"Bearsted"
+],
+"Beccles, England": [
+52.45838,
+1.56229,
+"Beccles"
+],
+"Beckenham, England": [
+51.40709,
+-0.03032,
+"Beckenham"
+],
+"Bedfont, England": [
+51.45312,
+-0.43087,
+"Bedfont"
+],
+"Bedford, England": [
+52.13638,
+-0.4675,
+"Bedford"
+],
+"Bedworth, England": [
+52.47928,
+-1.46632,
+"Bedworth"
+],
+"Beeston, England": [
+53.12377,
+-2.68692,
+"Beeston"
 ],
 "Beith, North Ayrshire, Scotland": [
 55.75071,
@@ -389,18 +775,194 @@
 -4.02258,
 "Bellshill"
 ],
+"Belmont, England": [
+54.78647,
+-1.5273,
+"Belmont"
+],
+"Belper, England": [
+53.0229,
+-1.48174,
+"Belper CP"
+],
+"Belstone, England": [
+50.72519,
+-3.95705,
+"Belstone"
+],
+"Bemerton Heath Harlequins, England": null,
+"Bemerton, England": [
+51.07574,
+-1.82552,
+"Bemerton"
+],
 "Benburb, Glasgow City, Scotland": null,
 "Benburb, Scotland": null,
+"Benfleet, England": [
+51.56742,
+0.55132,
+"Benfleet"
+],
+"Bengal, England": [
+52.13785,
+-1.02499,
+"Bengal"
+],
 "Bentley, England": [
 51.98967,
 1.0751,
 "Bentley"
 ],
+"Bere Alston, England": [
+50.4797,
+-4.18699,
+"Bere Alston"
+],
+"Berkhamsted, England": [
+51.76073,
+-0.56526,
+"Berkhamsted"
+],
+"Berks, England": null,
+"Berriew, Wales": [
+52.59947,
+-3.20091,
+"Aberriw"
+],
+"Berwick, Northumberland, Scotland": null,
+"Berwick, Scotland": [
+56.05812,
+-2.72091,
+"North Berwick"
+],
 "Berwick-upon-Tweed, Scotland": null,
+"Bessbrook, Northern Ireland": [
+54.19418,
+-6.39655,
+"Bessbrook"
+],
+"Bethesda, Wales": [
+53.18091,
+-4.06144,
+"Bethesda"
+],
+"Beverley, England": [
+53.84255,
+-0.43157,
+"Beverley"
+],
+"Bewdley, England": [
+52.37548,
+-2.31624,
+"Bewdley"
+],
+"Bexhill, England": [
+50.84196,
+0.47091,
+"Bexhill-on-Sea"
+],
+"Bideford, England": [
+51.01814,
+-4.20642,
+"Bideford"
+],
+"Biggleswade, England": [
+52.0882,
+-0.2589,
+"Biggleswade"
+],
+"Bilborough TRD, England": null,
+"Bilborough, England": [
+52.96873,
+-1.22778,
+"Bilborough"
+],
+"Billericay, England": [
+51.62455,
+0.41676,
+"Billericay"
+],
+"Billingham Synthonia, England": null,
+"Billingham, England": [
+54.60728,
+-1.29109,
+"Billingham"
+],
+"Billingshurst, England": [
+51.02291,
+-0.45158,
+"Billingshurst"
+],
+"Bilston Town_, England": [
+52.57002,
+-2.08223,
+"Bilston"
+],
+"Bilston, England": [
+52.57002,
+-2.08223,
+"Bilston"
+],
+"Binfield, England": [
+51.43211,
+-0.79136,
+"Binfield"
+],
+"Bingham, England": [
+52.95157,
+-0.95224,
+"Bingham"
+],
+"Birmingham OJM, England": null,
 "Birmingham, England": [
 52.4949,
 -1.85184,
 "Birmingham"
+],
+"Birstall, England": [
+52.67698,
+-1.12037,
+"Birstall"
+],
+"Birtley, England": [
+54.89856,
+-1.57957,
+"Birtley"
+],
+"Bishop Auckland, England": [
+54.66408,
+-1.67529,
+"Bishop Auckland"
+],
+"Bishops Castle, Wales": null,
+"Bishops Cleeve, England": null,
+"Bishops Lydeard, England": [
+51.05768,
+-3.18737,
+"Bishop's Lydeard"
+],
+"Bishops Stortford, England": null,
+"Bishops Waltham, England": null,
+"Bishops, England": [
+52.49363,
+-2.99792,
+"Bishop's Castle"
+],
+"Bishops, Wales": null,
+"Bishop’s Cleeve, England": [
+51.94682,
+-2.05648,
+"Bishop's Cleeve"
+],
+"Bishop’s Stortford, England": [
+51.86763,
+0.1632,
+"Bishop's Stortford"
+],
+"Bitton, England": [
+51.43522,
+-2.44068,
+"Bitton"
 ],
 "Blackburn, England": [
 53.74933,
@@ -412,25 +974,68 @@
 -3.62274,
 "Blackburn"
 ],
+"Blackfield Langley, England": null,
+"Blackfield, England": [
+50.818,
+-1.37261,
+"Blackfield"
+],
 "Blackpool, England": [
 53.81794,
 -3.05098,
 "Blackpool"
 ],
+"Blackstones, England": null,
 "Blaen-Y-Maes, Wales": [
 51.65379,
 -3.97473,
 "Blaen-Y-Maes"
+],
+"Blaenau Ffestiniog, Wales": [
+52.99571,
+-3.93632,
+"Blaenau Ffestiniog"
+],
+"Blaenavon, Torfaen, Wales": [
+51.77282,
+-3.08438,
+"Blaenavon"
 ],
 "Blairgowrie, Perth and Kinross, Scotland": [
 56.59036,
 -3.3409,
 "Blairgowrie"
 ],
+"Blandford, England": [
+50.856,
+-2.16518,
+"Blandford Forum"
+],
 "Blantyre, South Lanarkshire, Scotland": [
 55.79352,
 -4.09231,
 "Blantyre"
+],
+"Blarney, Ireland": [
+51.93246,
+-8.5681,
+"Blarney"
+],
+"Blidworth, England": [
+53.09937,
+-1.11185,
+"Blidworth CP"
+],
+"Blofield, England": [
+52.63439,
+1.44654,
+"Blofield"
+],
+"Blyth Spartans, England": null,
+"Blyth, England": [
+55.12709,
+-1.50997,
+"Blyth"
 ],
 "Bo ness, Falkirk, Scotland": [
 56.01769,
@@ -442,12 +1047,39 @@
 -3.60736,
 "Bo'ness"
 ],
+"Boca Seniors, England": null,
+"Boca, England": null,
+"Boded, Wales": null,
+"Bognor Regis, England": [
+50.7835,
+-0.67307,
+"Bognor Regis"
+],
+"Bohemian, Ireland": null,
+"Boldmere St Michaels, England": null,
+"Boldmere, England": [
+52.54769,
+-1.84045,
+"Boldmere"
+],
+"Boldon CA, England": null,
+"Boldon, England": [
+54.94633,
+-1.43378,
+"East Boldon"
+],
+"Bolehall, England": [
+52.6315,
+-1.68084,
+"Bolehall"
+],
 "Bonagee, Ireland": null,
 "Bonar Bridge, Highland, Scotland": [
 57.89165,
 -4.3462,
 "Bonar Bridge"
 ],
+"Bonnyrigg Rose, Scotland": null,
 "Bonnyrigg, Scotland": [
 55.87512,
 -3.10591,
@@ -458,36 +1090,125 @@
 -4.51515,
 "Bonnyton"
 ],
+"Bont, Wales": [
+52.28458,
+-3.86224,
+"Pontrhydfendigaid"
+],
+"Bontnewydd, Wales": [
+53.11411,
+-4.26681,
+"Bontnewydd"
+],
+"Bootle, England": [
+53.45069,
+-2.99488,
+"Bootle"
+],
 "Borehamwood, England": [
 51.65553,
 -0.27641,
 "Borehamwood"
+],
+"Boroughmuir, Scotland": null,
+"Borrowash, England": [
+52.90869,
+-1.3762,
+"Borrowash"
+],
+"Borth, Wales": [
+52.4881,
+-4.05081,
+"Borth"
+],
+"Bosham, England": [
+50.82611,
+-0.83902,
+"Bosham"
 ],
 "Boston, England": [
 52.97766,
 -0.0238,
 "Boston"
 ],
+"Bottesford, England": [
+53.55343,
+-0.64686,
+"Bottesford"
+],
+"Bourne, England": [
+52.76823,
+-0.37716,
+"Bourne"
+],
 "Bournemouth, England": [
 50.72015,
 -1.87991,
 "Bournemouth"
+],
+"Bourneview, Northern Ireland": null,
+"Bovey Tracey, England": [
+50.60466,
+-3.68568,
+"Bovey Tracey"
+],
+"Bovingdon, England": [
+51.72344,
+-0.53271,
+"Bovingdon"
+],
+"Bow, Ceredigion, Wales": [
+52.44186,
+-4.02864,
+"Bow Street"
+],
+"Bow, Wales": [
+52.44186,
+-4.02864,
+"Bow Street"
+],
+"Bowers Pitsea, England": null,
+"Bowers, England": [
+51.56003,
+0.52872,
+"Bowers Gifford and North Benfleet"
 ],
 "Brackley, England": [
 52.0279,
 -1.14847,
 "Brackley"
 ],
+"Bracknell, England": [
+51.41657,
+-0.74939,
+"Bracknell"
+],
 "Bradford, England": [
 53.79442,
 -1.75192,
 "Bradford"
+],
+"Bradwell, England": [
+52.04869,
+-0.78541,
+"Bradwell"
 ],
 "Braintree, England": [
 51.87803,
 0.55365,
 "Braintree"
 ],
+"Brandon, England": [
+52.44823,
+0.62408,
+"Brandon"
+],
+"Brantham, England": [
+51.96699,
+1.06818,
+"Brantham"
+],
+"Brantwood, Northern Ireland": null,
 "Bray, Ireland": [
 53.20146,
 -6.1105,
@@ -503,10 +1224,28 @@
 -2.66002,
 "Brechin"
 ],
+"Brecon Corries, Powys, Wales": null,
+"Brecon Corries, Wales": null,
+"Brecon, Powys, Wales": [
+51.9472,
+-3.3917,
+"Brecon"
+],
+"Brentford, England": [
+51.4864,
+-0.32166,
+"Brentford"
+],
 "Brentwood, England": [
 51.62017,
 0.30187,
 "Brentwood"
+],
+"Brereton Social, England": null,
+"Brereton, England": [
+53.18072,
+-2.32384,
+"Brereton"
 ],
 "Brickfield, Wales": null,
 "Bridge of Don, Aberdeen City, Scotland": [
@@ -514,6 +1253,7 @@
 -2.10537,
 "Bridge of Don"
 ],
+"Bridgend, Cardiff, Wales": null,
 "Bridgend, Wales": [
 51.50499,
 -3.57567,
@@ -524,6 +1264,57 @@
 -2.41941,
 "Bridgnorth"
 ],
+"Bridgwater, England": [
+51.12834,
+-3.0037,
+"Bridgwater"
+],
+"Bridlington, England": [
+54.08224,
+-0.19086,
+"Bridlington"
+],
+"Bridon Ropes, England": null,
+"Bridon, England": null,
+"Bridport, England": [
+50.73378,
+-2.7589,
+"Bridport"
+],
+"Brigg, England": [
+53.55253,
+-0.48964,
+"Brigg"
+],
+"Brightlingsea Regent, England": null,
+"Brightlingsea, England": [
+51.81958,
+1.0143,
+"Brightlingsea"
+],
+"Brighton Electricity, England": null,
+"Brighton, England": [
+50.82146,
+-0.14006,
+"Brighton"
+],
+"Brimscombe Thrupp, England": [
+51.72861,
+-2.19073,
+"Brimscombe and Thrupp"
+],
+"Brimsdown, England": [
+51.65877,
+-0.02316,
+"Brimsdown"
+],
+"Brislington, England": [
+51.4378,
+-2.54454,
+"Brislington"
+],
+"Bristol Manor Farm, England": null,
+"Bristol Telephones, England": null,
 "Bristol, England": [
 51.44301,
 -2.58166,
@@ -534,10 +1325,73 @@
 -3.82167,
 "Briton Ferry"
 ],
+"Brixham, England": [
+50.39524,
+-3.51454,
+"Brixham"
+],
+"Broadbridge Heath, England": [
+51.06751,
+-0.36283,
+"Broadbridge Heath"
+],
+"Broadfields _, England": [
+51.62802,
+-0.27005,
+"Broadfields"
+],
+"Broadfields, England": [
+51.62802,
+-0.27005,
+"Broadfields"
+],
+"Broadheath Central, England": null,
+"Broadheath, England": [
+52.20953,
+-2.27487,
+"Broadheath"
+],
+"Broadwell, England": [
+51.94621,
+-1.69762,
+"Broadwell"
+],
+"Brockenhurst, England": [
+50.81923,
+-1.57802,
+"Brockenhurst"
+],
+"Brocton, England": [
+52.7726,
+-2.04583,
+"Brocton"
+],
+"Brodsworth Main, England": null,
+"Brodsworth, England": [
+53.55576,
+-1.22413,
+"Brodsworth"
+],
 "Bromley, England": [
 51.4028,
 0.01481,
 "Bromley"
+],
+"Bromsgrove, England": [
+52.33538,
+-2.05974,
+"Bromsgrove"
+],
+"Bromyard, England": [
+52.18847,
+-2.51073,
+"Bromyard"
+],
+"Brook House, England": null,
+"Brook, England": [
+50.92546,
+-1.61398,
+"Brook"
 ],
 "Brora, Highland, Scotland": [
 58.01104,
@@ -549,6 +1403,11 @@
 -3.85512,
 "Brora"
 ],
+"Broughton, England": [
+53.56561,
+-0.55392,
+"Broughton"
+],
 "Broughton, Wales": [
 53.16502,
 -2.98752,
@@ -558,6 +1417,11 @@
 56.46693,
 -2.8732,
 "Broughty Ferry"
+],
+"Broxburn, Scotland": [
+55.93439,
+-3.46939,
+"Broxburn"
 ],
 "Broxburn, West Lothian, Scotland": [
 55.93439,
@@ -569,6 +1433,11 @@
 -1.79049,
 "Buchanhaven"
 ],
+"Buckhurst Hill, England": [
+51.62686,
+0.04153,
+"Buckhurst Hill"
+],
 "Buckie, Moray, Scotland": [
 57.67633,
 -2.96489,
@@ -579,29 +1448,107 @@
 -2.96489,
 "Buckie"
 ],
+"Buckingham, England": [
+51.99993,
+-0.98768,
+"Buckingham"
+],
+"Buckland, England": [
+51.80273,
+-0.71367,
+"Buckland"
+],
 "Buckley, Wales": [
 53.17023,
 -3.07999,
 "Buckley"
+],
+"Bude, England": [
+50.82853,
+-4.54694,
+"Bude"
+],
+"Budleigh Salterton, England": [
+50.63105,
+-3.32998,
+"Budleigh Salterton"
+],
+"Bugbrooke St Michaels, England": null,
+"Bugbrooke, England": [
+52.20921,
+-1.00882,
+"Bugbrooke"
+],
+"Builth Wells, Powys, Wales": [
+52.14933,
+-3.4058,
+"Builth Wells"
 ],
 "Buncrana, Ireland": [
 55.13536,
 -7.45311,
 "Buncrana"
 ],
+"Bungay, England": [
+52.45622,
+1.43734,
+"Bungay"
+],
 "Bunillidh, Highland, Scotland": null,
 "Bunillidh, Scotland": null,
+"Buntingford, England": [
+51.94642,
+-0.0087,
+"Buntingford"
+],
+"Burbage Huncote, England": null,
+"Burbage, England": [
+52.52793,
+-1.34865,
+"Burbage"
+],
+"Burgess Hill, England": [
+50.95754,
+-0.13329,
+"Burgess Hill"
+],
 "Burghead, Moray, Scotland": [
 57.70168,
 -3.49017,
 "Burghead"
+],
+"Burngreave, England": [
+53.39266,
+-1.45814,
+"Burngreave"
+],
+"Burnham Ramblers, England": null,
+"Burnham, England": [
+51.53621,
+-0.65714,
+"Burnham"
 ],
 "Burnley, England": [
 53.79073,
 -2.24392,
 "Burnley"
 ],
+"Burry Port, Wales": [
+51.68582,
+-4.25022,
+"Burry Port"
+],
+"Burscough, England": [
+53.59338,
+-2.85009,
+"Burscough"
+],
 "Burton upon Trent, England": [
+52.80274,
+-1.62992,
+"Burton upon Trent"
+],
+"Burton, England": [
 52.80274,
 -1.62992,
 "Burton upon Trent"
@@ -616,13 +1563,49 @@
 0.71252,
 "Bury St Edmunds"
 ],
+"Bustleholme, England": null,
 "Buxton, England": [
 53.25934,
 -1.91008,
 "Buxton"
 ],
+"Bwlch, Wales": [
+51.89022,
+-3.23827,
+"Bwlch"
+],
+"CK Swiss Valley, Wales": null,
+"CK, Wales": null,
 "CPD Llanuwchllyn, Wales": null,
 "CPD, Wales": null,
+"CSM London, England": null,
+"CSM, England": null,
+"Cadbury Heath, England": [
+51.45076,
+-2.48534,
+"Cadbury Heath"
+],
+"Cadbury, England": [
+50.83663,
+-3.55258,
+"Cadbury"
+],
+"Caddington, England": [
+51.86566,
+-0.45619,
+"Caddington"
+],
+"Caerbryn Saron, Wales": null,
+"Caerbryn, Wales": [
+51.80552,
+-4.03801,
+"Caerbryn"
+],
+"Caerleon, Wales": [
+51.612,
+-2.9529,
+"Caerleon"
+],
 "Caernarfon, Wales": [
 53.13944,
 -4.27698,
@@ -638,9 +1621,40 @@
 -3.42878,
 "Caersws"
 ],
+"Caldecote, England": [
+52.19081,
+-0.03061,
+"Caldecote"
+],
+"Caldicot, Monmouthshire, Wales": [
+51.59125,
+-2.75176,
+"Caldicot"
+],
 "Caledonian Braves, North Lanarkshire, Scotland": null,
 "Caledonian Braves, Scotland": null,
 "Caledonian, North Lanarkshire, Scotland": null,
+"Callington, England": [
+50.50257,
+-4.31336,
+"Callington"
+],
+"Calne, England": [
+51.43886,
+-2.00132,
+"Calne"
+],
+"Camberley, England": [
+51.33928,
+-0.7461,
+"Camberley"
+],
+"Camborne School of Mines, England": null,
+"Camborne, England": [
+50.21388,
+-5.29903,
+"Camborne"
+],
 "Cambridge, England": [
 52.19758,
 0.13915,
@@ -651,12 +1665,56 @@
 -4.16859,
 "Cambuslang"
 ],
+"Camden Islington, England": null,
+"Camden, England": [
+51.5428,
+-0.16248,
+"London Borough of Camden"
+],
+"Camelford, England": [
+50.61817,
+-4.69358,
+"Camelford"
+],
 "Camelon, Falkirk, Scotland": [
 56.00407,
 -3.81655,
 "Camelon"
 ],
+"Camford, Wales": null,
+"Cammell Laird, England": null,
+"Cammell, England": null,
+"Campion, England": null,
+"Canning, England": [
+53.39814,
+-2.96669,
+"Canning / Georgian Quarter"
+],
+"Cannock, England": [
+52.68823,
+-2.03242,
+"Cannock"
+],
+"Cannons Wood, England": null,
+"Cannons, England": null,
+"Canton, Cardiff, Wales": [
+51.4778,
+-3.21126,
+"Canton"
+],
+"Canvey Island, England": [
+51.52418,
+0.60846,
+"Canvey Island"
+],
+"Cardiff Airport, Wales": null,
 "Cardiff Draconians, Wales": null,
+"Cardiff Met LFC, Wales": null,
+"Cardiff, Cardiff, Wales": [
+51.48165,
+-3.17919,
+"Cardiff"
+],
 "Cardiff, England": [
 51.98969,
 -2.13574,
@@ -666,6 +1724,11 @@
 51.48165,
 -3.17919,
 "Cardiff"
+],
+"Cardigan, Wales": [
+52.084,
+-4.66042,
+"Aberteifi / Cardigan"
 ],
 "Cardington, England": [
 52.11794,
@@ -677,10 +1740,25 @@
 -2.93623,
 "Carlisle"
 ],
+"Carlton, England": [
+53.71472,
+-1.0175,
+"Carlton"
+],
+"Carluke, Scotland": [
+55.73432,
+-3.83825,
+"Carluke"
+],
 "Carmarthen, Wales": [
 51.85913,
 -4.31159,
 "Carmarthen"
+],
+"Carno, Wales": [
+52.55753,
+-3.53389,
+"Carno"
 ],
 "Carnoustie Panmure, Angus, Scotland": null,
 "Carnoustie Panmure, Scotland": null,
@@ -688,6 +1766,63 @@
 56.50105,
 -2.7114,
 "Carnoustie"
+],
+"Carrick, Northern Ireland": [
+54.40488,
+-6.41497,
+"Carrick"
+],
+"Carrigaline, Ireland": [
+51.81496,
+-8.39227,
+"Carrigaline"
+],
+"Carshalton, England": [
+51.36579,
+-0.16109,
+"Carshalton"
+],
+"Carterton, England": [
+51.75924,
+-1.59444,
+"Carterton"
+],
+"Castell Alun, Wales": null,
+"Castell, Wales": [
+53.20657,
+-3.84566,
+"Castell"
+],
+"Castle Acre, England": [
+52.70405,
+0.68791,
+"Castle Acre"
+],
+"Castlederg, Northern Ireland": [
+54.7088,
+-7.59312,
+"Castlederg"
+],
+"Castlerea, Ireland": [
+53.7665,
+-8.48715,
+"Castlerea"
+],
+"Catholic, England": null,
+"Cefn Cribwr, Bridgend, Wales": [
+51.53206,
+-3.64988,
+"Cefn Cribwr"
+],
+"Cefn Fforest, Wales": [
+51.67232,
+-3.20986,
+"Cefn Fforest"
+],
+"Cefn, Wales": [
+51.59326,
+-3.04446,
+"Cefn"
 ],
 "Cefn, Wrexham, Wales": [
 52.98055,
@@ -699,30 +1834,188 @@
 -6.53962,
 "Celbridge"
 ],
+"Cemaes Bay, Wales": [
+53.41272,
+-4.45377,
+"Cemaes"
+],
+"Central Ajax, England": null,
+"Central, England": [
+50.83863,
+0.47339,
+"Central"
+],
+"Chadderton, England": [
+53.54546,
+-2.13783,
+"Chadderton"
+],
+"Chadwell Heath Spartans, England": null,
+"Chadwell, England": [
+51.4857,
+0.36726,
+"Chadwell St Mary"
+],
+"Chalford, England": [
+51.72707,
+-2.15465,
+"Chalford"
+],
+"Chalgrove Cavaliers, England": null,
+"Chalgrove, England": [
+51.67232,
+-1.07718,
+"Chalgrove"
+],
+"Chard, England": [
+50.87367,
+-2.95974,
+"Chard Town"
+],
+"Charnock Richard, England": [
+53.63472,
+-2.66693,
+"Charnock Richard"
+],
+"Chasetown, England": [
+52.6734,
+-1.93288,
+"Chasetown"
+],
+"Chatham, England": [
+51.38192,
+0.52656,
+"Chatham"
+],
+"Cheadle Heath Nomads, England": null,
+"Cheadle, England": [
+53.39364,
+-2.21221,
+"Cheadle"
+],
+"Cheam, England": [
+51.35762,
+-0.21624,
+"Cheam"
+],
+"Cheddar, England": [
+51.27534,
+-2.77665,
+"Cheddar"
+],
+"Chelmsford, England": [
+51.73453,
+0.47305,
+"Chelmsford"
+],
+"Chelmsfordians, England": null,
+"Chelmsley, England": [
+52.47991,
+-1.73925,
+"Chelmsley Wood"
+],
+"Cheltenham Saracens, England": null,
 "Cheltenham, England": [
 51.89957,
 -2.07116,
 "Cheltenham"
+],
+"Chepstow, Monmouthshire, Wales": [
+51.64093,
+-2.67669,
+"Chepstow"
+],
+"Chertsey, England": [
+51.3923,
+-0.50383,
+"Chertsey"
 ],
 "Chesham, England": [
 51.70629,
 -0.61231,
 "Chesham"
 ],
+"Cheshunt, England": [
+51.70205,
+-0.03359,
+"Cheshunt"
+],
+"Chester, England": [
+53.19089,
+-2.8909,
+"Chester"
+],
+"Chester-le-Street, England": [
+54.85432,
+-1.57504,
+"Chester-le-Street"
+],
 "Chesterfield, England": [
 53.23521,
 -1.42641,
 "Chesterfield"
+],
+"Chichester, England": [
+50.83649,
+-0.77917,
+"Chichester"
+],
+"Chimney Corner, Northern Ireland": null,
+"Chimney, Northern Ireland": null,
+"Chinnor, England": [
+51.70135,
+-0.91116,
+"Chinnor"
+],
+"Chippenham, England": [
+51.45876,
+-2.1159,
+"Chippenham"
+],
+"Chipperfield, England": [
+51.71034,
+-0.49427,
+"Chipperfield"
+],
+"Chipping Sodbury, England": [
+51.53822,
+-2.39265,
+"Chipping Sodbury"
+],
+"Chipstead, England": [
+51.3101,
+-0.17083,
+"Chipstead"
 ],
 "Chislehurst, England": [
 51.41157,
 0.07695,
 "Chislehurst"
 ],
+"Cholsey, England": [
+51.57516,
+-1.15352,
+"Cholsey"
+],
 "Chorley, England": [
 53.65319,
 -2.62943,
 "Chorley"
+],
+"Christchurch, England": [
+50.7349,
+-1.77789,
+"Christchurch"
+],
+"Cinderford, England": [
+51.82446,
+-2.49849,
+"Cinderford"
+],
+"Cirencester, England": [
+51.7171,
+-1.96616,
+"Cirencester"
 ],
 "Civil Service Strollers, City of Edinburgh, Scotland": null,
 "Civil Service Strollers, Scotland": null,
@@ -731,15 +2024,83 @@
 "Clachnacuddin A, Scotland": null,
 "Clachnacuddin, Highland, Scotland": null,
 "Clachnacuddin, Scotland": null,
+"Clacton Regent, England": null,
+"Clacton, England": [
+51.7884,
+1.15279,
+"Clacton-on-Sea"
+],
+"Clanfield, England": [
+50.94441,
+-0.98387,
+"Clanfield"
+],
+"Clapton, England": [
+51.5586,
+-0.05588,
+"Clapton"
+],
+"Clay Cross, England": [
+53.16528,
+-1.41324,
+"Clay Cross CP"
+],
+"Clee Hill, England": null,
+"Clee, England": [
+52.45598,
+-2.64289,
+"Clee St. Margaret"
+],
 "Cleethorpes, England": [
 53.55721,
 -0.029,
 "Cleethorpes"
 ],
+"Clevedon, England": [
+51.43606,
+-2.85265,
+"Clevedon"
+],
+"Clifton All, England": null,
+"Clifton, England": [
+51.46159,
+-2.62028,
+"Clifton"
+],
+"Cliftonville LFC, Northern Ireland": null,
+"Cliftonville Reserve, Northern Ireland": null,
+"Cliftonville, Northern Ireland": [
+54.61684,
+-5.94563,
+"Cliftonville"
+],
+"Clipstone, England": [
+51.92692,
+-0.62241,
+"Clipstone"
+],
+"Clitheroe, England": [
+53.87175,
+-2.39268,
+"Clitheroe"
+],
+"Clwb Cymric, Wales": null,
+"Clwb, Wales": null,
 "Clydach Vale, Wales": [
 51.62725,
 -3.47011,
 "Clydach Vale"
+],
+"Clydach Wasps, Wales": null,
+"Clydach, Swansea, Wales": [
+51.69643,
+-3.89163,
+"Clydach"
+],
+"Clydach, Wales": [
+51.69643,
+-3.89163,
+"Clydach"
 ],
 "Clydebank, Scotland": [
 55.90301,
@@ -751,20 +2112,56 @@
 -4.40398,
 "Clydebank"
 ],
+"Coagh, Northern Ireland": [
+54.64787,
+-6.61844,
+"Coagh"
+],
+"Coalville, England": [
+52.7258,
+-1.37414,
+"Coalville"
+],
+"Cobh Ramblers, Ireland": null,
 "Cobh, Ireland": [
 51.85023,
 -8.29506,
 "Cobh"
+],
+"Cobham, England": [
+51.33001,
+-0.41208,
+"Cobham"
+],
+"Cockfosters, England": [
+51.6479,
+-0.14741,
+"Cockfosters"
+],
+"Codicote, England": [
+51.84951,
+-0.23703,
+"Codicote"
 ],
 "Coedpoeth, Wales": [
 53.05398,
 -3.06396,
 "Coedpoeth"
 ],
+"Coggeshall, England": [
+51.88186,
+0.68187,
+"Coggeshall"
+],
 "Colchester, England": [
 51.88969,
 0.89947,
 "Colchester"
+],
+"Colden Common, England": [
+50.99882,
+-1.31714,
+"Colden Common"
 ],
 "Coldstream, Scotland": [
 55.65118,
@@ -776,6 +2173,38 @@
 -6.67186,
 "Coleraine"
 ],
+"Coleshill, England": [
+51.64799,
+-0.63275,
+"Coleshill"
+],
+"Colga, Ireland": null,
+"College, Ireland": [
+52.33132,
+-6.51785,
+"College"
+],
+"Colliers Wood, England": null,
+"Colliers, England": [
+51.69797,
+0.17072,
+"Colliers Hatch"
+],
+"Collingham, England": [
+53.90768,
+-1.41361,
+"Collingham"
+],
+"Colne, England": [
+53.85677,
+-2.16912,
+"Colne"
+],
+"Colney Heath, England": [
+51.7379,
+-0.25381,
+"Colney Heath"
+],
 "Colony, Aberdeenshire, Scotland": null,
 "Colony, Scotland": null,
 "Colwyn Bay, Wales": [
@@ -783,15 +2212,98 @@
 -3.72625,
 "Colwyn Bay"
 ],
+"Combe St Nicholas, England": [
+50.89736,
+-2.99479,
+"Combe St Nicholas"
+],
+"Comber, Northern Ireland": [
+54.54983,
+-5.74543,
+"Comber"
+],
+"Concord, England": [
+54.91275,
+-1.52232,
+"Concord"
+],
+"Congleton, England": [
+53.16353,
+-2.2108,
+"Congleton"
+],
+"Congresbury, England": [
+51.37201,
+-2.80556,
+"Congresbury"
+],
 "Connah's Quay, Wales": [
 53.2199,
 -3.06618,
 "Connah's Quay"
 ],
+"Connahs Quay, Flintshire, Wales": null,
+"Connahs Quay, Wales": null,
+"Connahs, Flintshire, Wales": null,
+"Consett, England": [
+54.85188,
+-1.83337,
+"Consett"
+],
+"Conwy, Conwy, Wales": [
+53.28118,
+-3.8287,
+"Conwy"
+],
+"Coplestonians, England": null,
+"Corby Stewart Lloyds, England": null,
+"Corby, England": [
+52.48773,
+-0.70327,
+"Corby"
+],
+"Corinthian-Casuals, England": null,
+"Cork WFC, Ireland": null,
 "Cork, Ireland": [
 51.89851,
 -8.47264,
 "Cork"
+],
+"Cornard, England": [
+52.00808,
+0.76697,
+"Little Cornard"
+],
+"Corris, Wales": [
+52.65264,
+-3.84287,
+"Corris"
+],
+"Corsham, England": [
+51.42686,
+-2.18462,
+"Corsham"
+],
+"Corwen, Denbighshire, Wales": [
+52.98047,
+-3.37317,
+"Corwen"
+],
+"Cotgrave, England": [
+52.91089,
+-1.03754,
+"Cotgrave"
+],
+"Coton Green, England": null,
+"Coton, England": [
+52.20878,
+0.06,
+"Coton"
+],
+"Cottesmore, England": [
+52.71598,
+-0.66902,
+"Cottesmore"
 ],
 "County Carlow, Ireland": [
 52.69061,
@@ -818,30 +2330,115 @@
 -3.26743,
 "Coupar Angus"
 ],
+"Cove, England": [
+50.96625,
+-3.49533,
+"Cove"
+],
+"Coventrians, England": null,
+"Coventry Alvis, England": null,
+"Coventry Colliery, England": null,
+"Coventry Copsewood, England": null,
+"Coventry Sphinx, England": null,
 "Coventry, England": [
 52.40818,
 -1.51048,
 "Coventry"
+],
+"Cowdenbeath, Fife, Scotland": [
+56.11106,
+-3.34388,
+"Cowdenbeath"
 ],
 "Cowdenbeath, Scotland": [
 56.11106,
 -3.34388,
 "Cowdenbeath"
 ],
+"Cowes, England": [
+50.76332,
+-1.29852,
+"Cowes"
+],
+"Cradley, England": [
+52.46264,
+-2.0895,
+"Cradley"
+],
+"Craigavon, Northern Ireland": [
+54.45072,
+-6.39216,
+"Craigavon"
+],
+"Cranfield, England": [
+52.06902,
+-0.60793,
+"Cranfield"
+],
+"Crawley Down Gatwick, England": null,
+"Crawley Green, England": null,
 "Crawley, England": [
 51.11034,
 -0.18011,
 "Crawley"
+],
+"Cray Valley, England": null,
+"Cray, England": [
+54.20836,
+-2.091,
+"Cray"
+],
+"Crayford, England": [
+51.45156,
+0.17872,
+"Crayford"
+],
+"Crediton, England": [
+50.78959,
+-3.65896,
+"Crediton"
 ],
 "Creetown, Dumfries and Galloway, Scotland": [
 54.90148,
 -4.37919,
 "Creetown"
 ],
+"Cressing, England": [
+51.85456,
+0.58951,
+"Cressing"
+],
+"Cresswell, England": [
+55.23529,
+-1.53987,
+"Cresswell"
+],
 "Crewe, England": [
 53.09962,
 -2.44146,
 "Crewe"
+],
+"Crewe, Northern Ireland": null,
+"Cribbs, England": [
+51.52593,
+-2.59912,
+"Cribbs Causeway"
+],
+"Croesyceiliog, Torfaen, Wales": [
+51.656,
+-3.008,
+"Croesyceiliog"
+],
+"Cromford Wirksworth, England": null,
+"Cromford, England": [
+53.10872,
+-1.56008,
+"Cromford CP"
+],
+"Crook, England": [
+54.34797,
+-2.82778,
+"Crook"
 ],
 "Crosby, England": [
 54.30188,
@@ -865,6 +2462,21 @@
 0.16359,
 "Crowborough"
 ],
+"Crowhurst, England": [
+50.88057,
+0.49699,
+"Crowhurst"
+],
+"Crowland, England": [
+52.68478,
+-0.15787,
+"Crowland"
+],
+"Crowle, England": [
+53.60781,
+-0.83264,
+"Crowle"
+],
 "Croydon, England": [
 51.3737,
 -0.10031,
@@ -874,6 +2486,34 @@
 57.41637,
 -1.85293,
 "Cruden Bay"
+],
+"Crumlin, Northern Ireland": [
+54.62062,
+-6.21494,
+"Crumlin"
+],
+"Crusaders Reserve, Northern Ireland": null,
+"Crusaders Strikers, Northern Ireland": null,
+"Crusaders, Northern Ireland": null,
+"Crymych, Wales": [
+51.97472,
+-4.64652,
+"Crymych"
+],
+"Cuckfield, England": [
+51.00551,
+-0.13932,
+"Cuckfield"
+],
+"Cuffley, England": [
+51.70778,
+-0.11367,
+"Cuffley"
+],
+"Cullompton, England": [
+50.85791,
+-3.39281,
+"Cullompton"
 ],
 "Culter, Aberdeen City, Scotland": [
 57.09611,
@@ -900,69 +2540,308 @@
 -4.2661,
 "Cumnock"
 ],
+"Curzon Ashton, England": null,
+"Curzon, England": null,
+"Cuxton, England": [
+51.37921,
+0.44999,
+"Cuxton"
+],
+"Cwmamman, Wales": [
+51.80393,
+-3.91824,
+"Cwmamman"
+],
+"Cwmbrân, Wales": [
+51.65364,
+-3.02082,
+"Cwmbrân"
+],
+"DLR Waves, Ireland": null,
+"DLR, Ireland": null,
+"Dafen, Wales": [
+51.69121,
+-4.12621,
+"Dafen"
+],
+"Dagenham Redbridge, England": null,
+"Dagenham, England": [
+51.54133,
+0.14811,
+"Dagenham"
+],
+"Daisy Hill, England": [
+53.5363,
+-2.52579,
+"Daisy Hill"
+],
 "Dalbeattie, Dumfries and Galloway, Scotland": [
 54.9307,
 -3.82007,
 "Dalbeattie"
+],
+"Darlaston, England": [
+52.57332,
+-2.03556,
+"Darlaston"
+],
+"Darlington RA, England": null,
+"Darlington, England": [
+54.52421,
+-1.55558,
+"Darlington"
+],
+"Dartford, England": [
+51.44431,
+0.21807,
+"Dartford"
+],
+"Dartmouth, England": [
+50.35148,
+-3.58384,
+"Dartmouth"
 ],
 "Darvel, East Ayrshire, Scotland": [
 55.60972,
 -4.28184,
 "Darvel"
 ],
+"Darwen, England": [
+53.6961,
+-2.46651,
+"Darwen"
+],
+"Daten, England": null,
+"Daventry, England": [
+52.25787,
+-1.16266,
+"Daventry"
+],
+"Dawley, England": [
+52.66382,
+-2.46519,
+"Dawley"
+],
+"De La Salle, England": null,
+"De, England": [
+52.59342,
+-0.2492,
+"New England"
+],
+"Deal, England": [
+51.22395,
+1.40273,
+"Deal"
+],
+"Dearne, England": [
+53.50252,
+-1.34507,
+"Wath upon Dearne"
+],
+"Debenham LC, England": null,
+"Debenham, England": [
+52.22337,
+1.18114,
+"Debenham"
+],
+"Dedham, England": [
+51.95826,
+0.99454,
+"Dedham"
+],
+"Deeping, England": [
+52.6686,
+-0.30019,
+"Deeping Gate"
+],
+"Denaby Main, England": [
+53.49151,
+-1.24818,
+"Denaby Main"
+],
 "Denbigh, Wales": [
 53.18538,
 -3.41783,
 "Denbigh"
 ],
+"Denmead, England": [
+50.90677,
+-1.08576,
+"Denmead"
+],
+"Deportivo Galicia, England": null,
+"Deportivo, England": null,
+"Derby Gazers, England": null,
+"Derby Singh Brothers, England": null,
 "Derby, England": [
 52.91422,
 -1.47199,
 "Derby"
+],
+"Dereham, England": [
+52.68021,
+0.93863,
+"Dereham"
+],
+"Derriaghy CC, Northern Ireland": null,
+"Derriaghy, Northern Ireland": [
+54.54122,
+-6.02045,
+"Derriaghy"
 ],
 "Derry, Ireland": [
 53.18207,
 -8.13695,
 "Derry"
 ],
+"Desborough, England": [
+52.4418,
+-0.82128,
+"Desborough"
+],
+"Desertmartin, Northern Ireland": [
+54.77023,
+-6.67294,
+"Desertmartin"
+],
 "Deveronside, Aberdeenshire, Scotland": null,
 "Deveronside, Scotland": null,
 "Deveronvale, Aberdeenshire, Scotland": null,
 "Deveronvale, Scotland": null,
+"Devizes, England": [
+51.3525,
+-1.99583,
+"Devizes"
+],
+"Dial Square, England": null,
+"Dial, England": [
+50.96335,
+-0.35785,
+"Dial Post"
+],
+"Didcot, England": [
+51.60636,
+-1.246,
+"Didcot"
+],
 "Dingwall, Scotland": [
 57.59548,
 -4.42843,
 "Dingwall"
+],
+"Dinnington, England": [
+53.36922,
+-1.20352,
+"Dinnington"
+],
+"Diss, England": [
+52.37691,
+1.10888,
+"Diss"
+],
+"Dobwalls, England": [
+50.45752,
+-4.51707,
+"Dobwalls"
+],
+"Dodworth Miners, England": null,
+"Dodworth, England": [
+53.54294,
+-1.52641,
+"Dodworth"
+],
+"Dolgellau, Gwynedd, Wales": [
+52.74269,
+-3.88557,
+"Dolgellau"
 ],
 "Doncaster, England": [
 53.52277,
 -1.13353,
 "Doncaster"
 ],
+"Donegal, Northern Ireland": null,
+"Dorchester, England": [
+50.71321,
+-2.43712,
+"Dorchester"
+],
 "Dorking, England": [
 51.23252,
 -0.33067,
 "Dorking"
+],
+"Douglas Hall, Ireland": null,
+"Douglas, Ireland": [
+51.87755,
+-8.43589,
+"Douglas"
+],
+"Dover, England": [
+51.12513,
+1.31342,
+"Dover"
 ],
 "Downfield, Dundee City, Scotland": [
 56.4902,
 -2.99595,
 "Downfield"
 ],
+"Downham, England": [
+53.88565,
+-2.31234,
+"Downham"
+],
+"Downton, England": [
+50.99276,
+-1.75175,
+"Downton"
+],
+"Drefach, Wales": [
+52.02334,
+-4.39922,
+"Drefach"
+],
 "Drogheda, Ireland": [
 53.71499,
 -6.35242,
 "Drogheda"
+],
+"Droitwich Spa, England": [
+52.26851,
+-2.14861,
+"Droitwich Spa"
+],
+"Dromara Village, Northern Ireland": [
+54.37985,
+-6.01798,
+"Dromara"
+],
+"Dromore, Northern Ireland": [
+54.51286,
+-7.45762,
+"Dromore"
 ],
 "Dronfield, England": [
 53.302,
 -1.47522,
 "Dronfield"
 ],
+"Dropship, England": null,
+"Droylsden, England": [
+53.4786,
+-2.1492,
+"Droylsden"
+],
 "Drumahoe, Northern Ireland": [
 54.97866,
 -7.27246,
 "Drumahoe"
+],
+"Drumaness, Northern Ireland": [
+54.36951,
+-5.85222,
+"Drumaness"
 ],
 "Drumchapel, Glasgow City, Scotland": [
 55.91224,
@@ -974,10 +2853,27 @@
 -6.26056,
 "Dublin"
 ],
+"Dudley, England": [
+52.51108,
+-2.08168,
+"Dudley"
+],
+"Duet, England": null,
 "Dufftown, Moray, Scotland": [
 57.4449,
 -3.12835,
 "Dufftown"
+],
+"Dukinfield, England": [
+53.47577,
+-2.09303,
+"Dukinfield"
+],
+"Dulwich Hamlet, England": null,
+"Dulwich, England": [
+51.44188,
+-0.08432,
+"Dulwich"
 ],
 "Dumbarton, Scotland": [
 55.94324,
@@ -1003,6 +2899,7 @@
 "Dundee North End, Scotland": null,
 "Dundee St James, Dundee City, Scotland": null,
 "Dundee St James, Scotland": null,
+"Dundee U20, Scotland": null,
 "Dundee Violet, Dundee City, Scotland": null,
 "Dundee Violet, Scotland": null,
 "Dundee, Dundee City, Scotland": [
@@ -1038,26 +2935,137 @@
 -3.91535,
 "Dunipace"
 ],
+"Dunkirk, England": [
+51.29203,
+0.97712,
+"Dunkirk"
+],
+"Dunmow, England": [
+51.87335,
+0.35798,
+"Great Dunmow"
+],
+"Dunmurry Young Men, Northern Ireland": null,
+"Dunmurry, Northern Ireland": [
+54.55161,
+-6.00643,
+"Dunmurry"
+],
+"Dunstable, England": [
+51.88613,
+-0.52093,
+"Dunstable"
+],
+"Dunston UTS, England": null,
+"Dunston, England": [
+54.95393,
+-1.64594,
+"Dunston"
+],
+"Durham Cestria LFC, England": null,
+"Durham, England": [
+54.66667,
+-1.75,
+"County Durham"
+],
+"Dussindale Hellesdon, England": null,
+"Dussindale, England": null,
 "Dyce, Aberdeen City, Scotland": [
 57.20538,
 -2.18953,
 "Dyce"
 ],
+"EL Benfica, England": null,
+"EL, England": null,
+"EMC, England": null,
+"Eagle, England": [
+53.1947,
+-0.68833,
+"Eagle"
+],
+"Earls Barton, England": [
+52.2634,
+-0.74553,
+"Earls Barton"
+],
+"Earls Colne, England": [
+51.91802,
+0.69493,
+"Earls Colne"
+],
+"Earlswood, England": [
+51.23047,
+-0.16568,
+"Earlswood"
+],
+"Easington Colliery, England": [
+54.78758,
+-1.3238,
+"Easington Colliery"
+],
+"Easington Lane, England": [
+54.80806,
+-1.43496,
+"Easington Lane"
+],
+"Easington, England": [
+51.78719,
+-1.00513,
+"Easington"
+],
+"East Belfast, Northern Ireland": null,
+"East Bergholt, England": [
+51.97842,
+1.01795,
+"East Bergholt"
+],
+"East Cowes, England": [
+50.75948,
+-1.28521,
+"East Cowes"
+],
 "East Craigie, Dundee City, Scotland": null,
 "East Craigie, Scotland": null,
+"East Grinstead, England": [
+51.12856,
+-0.0143,
+"East Grinstead"
+],
 "East Kilbride, Scotland": [
 55.76057,
 -4.17766,
 "East Kilbride"
 ],
+"East Preston, England": [
+50.80879,
+-0.48322,
+"East Preston"
+],
+"East Rail, England": null,
 "East Stirlingshire, Falkirk, Scotland": null,
 "East Stirlingshire, Scotland": null,
+"East Thurrock, England": [
+51.48314,
+0.41672,
+"East Tilbury"
+],
 "East, Dundee City, Scotland": [
 56.47212,
 -2.85407,
 "East Ferry"
 ],
+"East, England": null,
 "East, Falkirk, Scotland": null,
+"East, Northern Ireland": [
+54.87257,
+-6.15025,
+"Mid and East Antrim District"
+],
+"Eastbourne, England": [
+50.76644,
+0.27815,
+"Eastbourne"
+],
 "Easthouses Lily MW, Scotland": null,
 "Easthouses, Scotland": [
 55.88026,
@@ -1069,8 +3077,47 @@
 -1.35173,
 "Eastleigh"
 ],
+"Easton, England": [
+52.32393,
+-0.33246,
+"Easton"
+],
+"Eastwood, England": [
+53.01718,
+-1.30386,
+"Eastwood"
+],
+"Eaton Socon, England": [
+52.21539,
+-0.28901,
+"Eaton Socon"
+],
+"Ebbsfleet, England": [
+51.31352,
+1.35114,
+"Ebbsfleet"
+],
+"Ecclesfield Rose, England": null,
+"Ecclesfield, England": [
+53.44266,
+-1.46889,
+"Ecclesfield"
+],
+"Eccleshall, England": [
+52.85806,
+-2.25112,
+"Eccleshall"
+],
+"Edgware Kingsbury, England": null,
+"Edgware, England": [
+51.61764,
+-0.27674,
+"Edgware"
+],
 "Edinburgh South, Midlothian, Scotland": null,
 "Edinburgh South, Scotland": null,
+"Edinburgh U20, Scotland": null,
+"Edinburgh University U20, Scotland": null,
 "Edinburgh University, City of Edinburgh, Scotland": null,
 "Edinburgh University, Scotland": null,
 "Edinburgh, City of Edinburgh, Scotland": null,
@@ -1080,20 +3127,158 @@
 -3.18837,
 "City of Edinburgh"
 ],
+"Egham, England": [
+51.43126,
+-0.54731,
+"Egham"
+],
+"Elburton, England": [
+50.35897,
+-4.06835,
+"Elburton Village"
+],
 "Elgin, Scotland": [
 57.64879,
 -3.31485,
 "Elgin"
 ],
+"Elite, England": null,
 "Ellon, Aberdeenshire, Scotland": [
 57.36505,
 -2.07103,
 "Ellon"
 ],
+"Elmore, England": [
+51.83574,
+-2.32128,
+"Elmore"
+],
+"Elmstead, England": [
+51.87711,
+0.98998,
+"Elmstead"
+],
+"Elstow Abbey, England": null,
+"Elstow, England": [
+52.11533,
+-0.46813,
+"Elstow"
+],
+"Elton, England": [
+53.27548,
+-2.81212,
+"Elton"
+],
+"Ely, England": [
+52.39902,
+0.26204,
+"Ely"
+],
+"Ely, Wales": [
+51.47839,
+-3.25048,
+"Ely"
+],
+"Emley, England": [
+53.61538,
+-1.62925,
+"Emley"
+],
+"Enfield, England": [
+51.65209,
+-0.08102,
+"Enfield"
+],
+"Ensign, England": null,
+"Epsom Ewell, England": [
+51.33629,
+-0.26739,
+"Epsom and Ewell"
+],
+"Equinoccial, England": null,
+"Erith Belvedere, England": null,
+"Erith, England": [
+51.48082,
+0.17923,
+"Erith"
+],
+"Esh Winning Deerness Valley, England": null,
+"Esh, England": [
+54.79078,
+-1.69432,
+"Esh"
+],
+"Euxton, England": [
+53.66568,
+-2.67621,
+"Euxton"
+],
+"Evans Williams, Carmarthenshire, Wales": null,
+"Evans Williams, Wales": null,
+"Evans, Carmarthenshire, Wales": null,
+"Evans, Wales": null,
+"Everett, England": null,
+"Eversley California, England": null,
+"Eversley, England": [
+51.35333,
+-0.88809,
+"Eversley"
+],
+"Evesham, England": [
+52.09402,
+-1.94831,
+"Evesham"
+],
+"Evo, England": null,
 "Exeter, England": [
 50.72561,
 -3.52692,
 "Exeter"
+],
+"Exmouth, England": [
+50.6191,
+-3.41468,
+"Exmouth"
+],
+"Explorers, England": null,
+"Eye, England": [
+52.32263,
+1.14637,
+"Eye"
+],
+"Eynesbury, England": [
+52.21773,
+-0.26446,
+"Eynesbury"
+],
+"FCV Grace Dieu, England": null,
+"FCV, England": null,
+"FH Whistlers, England": null,
+"FH, England": null,
+"Fairfield, England": [
+52.00042,
+-0.2486,
+"Fairfield"
+],
+"Fairford, England": [
+51.71077,
+-1.782,
+"Fairford"
+],
+"Fairlop, England": [
+51.59855,
+0.08197,
+"Fairlop"
+],
+"Fakenham, England": [
+52.82992,
+0.84773,
+"Fakenham"
+],
+"Falconwood, England": [
+51.45828,
+0.08775,
+"Falconwood"
 ],
 "Falkirk, Scotland": [
 55.9992,
@@ -1105,10 +3290,118 @@
 -0.06881,
 "Falmer"
 ],
+"Falmouth, England": [
+50.15522,
+-5.06883,
+"Falmouth"
+],
+"Fareham, England": [
+50.85266,
+-1.17831,
+"Fareham"
+],
+"Farnborough, England": [
+51.29187,
+-0.75398,
+"Farnborough"
+],
+"Farnham, England": [
+51.21517,
+-0.79849,
+"Farnham"
+],
+"Farnley, England": [
+53.92814,
+-1.67492,
+"Farnley"
+],
+"Faversham Strike Force, England": null,
+"Faversham, England": [
+51.31584,
+0.89113,
+"Faversham"
+],
+"Fawley, England": [
+51.52969,
+-1.43538,
+"Fawley"
+],
+"Felinfach, Wales": [
+51.9899,
+-3.32557,
+"Felinfach"
+],
+"Felinheli, Gwynedd, Wales": [
+53.18507,
+-4.20579,
+"Y Felinheli"
+],
+"Felixstowe Walton, England": [
+51.97026,
+1.36718,
+"Old Felixstowe"
+],
+"Ferring, England": [
+50.80854,
+-0.44933,
+"Ferring"
+],
+"Ffostrasol, Wales": [
+52.10304,
+-4.37589,
+"Ffostrasol"
+],
+"Field, England": null,
+"Filton, England": [
+51.51175,
+-2.572,
+"Filton"
+],
+"Finaghy, Northern Ireland": [
+54.55556,
+-5.97984,
+"Finaghy"
+],
 "Finchley, England": [
 51.59732,
 -0.18056,
 "Finchley"
+],
+"Finedon Volta, England": null,
+"Finedon, England": [
+52.33915,
+-0.65561,
+"Finedon"
+],
+"Finglas, Ireland": [
+53.38917,
+-6.29694,
+"Finglas"
+],
+"Fisher, England": [
+50.9872,
+-1.30582,
+"Fisher's Pond"
+],
+"Fivemiletown, Northern Ireland": [
+54.37848,
+-7.31536,
+"Fivemiletown"
+],
+"Flackwell Heath, England": [
+51.60311,
+-0.71995,
+"Flackwell Heath"
+],
+"Fleet, England": [
+51.28286,
+-0.83163,
+"Fleet"
+],
+"Fleetlands, England": [
+50.83556,
+-1.16985,
+"Fleetlands"
 ],
 "Fleetwood, England": [
 53.92463,
@@ -1119,6 +3412,39 @@
 53.24928,
 -3.13453,
 "Flint"
+],
+"Flixton, England": [
+52.42989,
+1.40094,
+"Flixton"
+],
+"Foley Meir, England": null,
+"Foley, England": [
+52.3776,
+-2.26001,
+"Foley Park"
+],
+"Folkestone Invicta, England": null,
+"Folkestone, England": [
+51.07913,
+1.17941,
+"Folkestone"
+],
+"Folland, England": null,
+"Forden, Wales": [
+52.60052,
+-3.1438,
+"Forden"
+],
+"Forest Green, England": [
+51.69938,
+-2.2334,
+"Forest Green"
+],
+"Forest Row, England": [
+51.10307,
+0.04227,
+"Forest Row"
 ],
 "Forfar West End, Angus, Scotland": null,
 "Forfar West End, Scotland": null,
@@ -1134,6 +3460,11 @@
 ],
 "Formartine, Aberdeenshire, Scotland": null,
 "Formartine, Scotland": null,
+"Formby, England": [
+53.5563,
+-3.06566,
+"Formby"
+],
 "Forres Mechanics, Moray, Scotland": null,
 "Forres Mechanics, Scotland": null,
 "Forres, Moray, Scotland": [
@@ -1151,6 +3482,26 @@
 -5.11095,
 "Fort William"
 ],
+"Foxhole, England": [
+50.35798,
+-4.86248,
+"Foxhole"
+],
+"Foxton, England": [
+52.11536,
+0.06157,
+"Foxton"
+],
+"Framlingham, England": [
+52.22206,
+1.34159,
+"Framlingham"
+],
+"Frampton, England": [
+50.74326,
+-2.53807,
+"Frampton"
+],
 "Fraserburgh, Aberdeenshire, Scotland": [
 57.6936,
 -2.00515,
@@ -1161,6 +3512,71 @@
 -2.00515,
 "Fraserburgh"
 ],
+"Fremington, England": [
+51.06889,
+-4.12663,
+"Fremington"
+],
+"Frenches, England": [
+51.86016,
+0.47561,
+"Frenches Green"
+],
+"Frenford, England": null,
+"Friar Lane Epworth, England": null,
+"Friar, England": [
+52.55223,
+-1.98783,
+"Friar Park"
+],
+"Frickley, England": [
+53.57134,
+-1.29628,
+"Frickley"
+],
+"Frimley Green, England": [
+51.30272,
+-0.72802,
+"Frimley Green"
+],
+"Frome, England": [
+51.22949,
+-2.31985,
+"Frome"
+],
+"Fry, England": [
+54.68787,
+-1.55104,
+"Ferryhill"
+],
+"Fulbeck, England": [
+53.04179,
+-0.5875,
+"Fulbeck"
+],
+"Fulham, England": [
+51.47441,
+-0.20681,
+"Fulham"
+],
+"Fulwood, England": [
+53.36401,
+-1.54532,
+"Fulwood"
+],
+"Fylde, England": [
+53.79336,
+-2.89425,
+"Fylde"
+],
+"GNG Oadby, England": null,
+"GNG, England": null,
+"Gaerwen, Wales": [
+53.22349,
+-4.27339,
+"Gaerwen"
+],
+"Gainsborough Trinity, England": null,
 "Gainsborough, England": [
 53.39954,
 -0.77588,
@@ -1178,20 +3594,58 @@
 -2.80616,
 "Galashiels"
 ],
+"Galway Hibernan, Ireland": null,
 "Galway, Ireland": [
 53.27441,
 -9.04906,
 "Cathair na Gaillimhe"
 ],
+"Garden Village, Wales": [
+53.0633,
+-2.99449,
+"Garden Village"
+],
+"Garforth, England": [
+53.79048,
+-1.39252,
+"Garforth"
+],
+"Garstang, England": [
+53.90158,
+-2.77348,
+"Garstang"
+],
+"Gartcairn, Scotland": null,
+"Gas, England": null,
+"Gateshead Leam, England": null,
+"Gateshead Rutherford, England": null,
 "Gateshead, England": [
 54.96258,
 -1.60193,
 "Gateshead"
 ],
+"Gedling Miners, England": null,
+"Gedling, England": [
+53.02605,
+-1.10711,
+"Gedling"
+],
+"Giants Grave, Wales": null,
+"Giants, Wales": null,
 "Gillingham, England": [
 51.38717,
 0.54616,
 "Gillingham"
+],
+"Glais, Wales": [
+51.68938,
+-3.87738,
+"Glais"
+],
+"Glapwell, England": [
+53.19,
+-1.28484,
+"Glapwell"
 ],
 "Glasgow, Scotland": [
 55.86115,
@@ -1207,6 +3661,35 @@
 ],
 "Glentanar, Aberdeen City, Scotland": null,
 "Glentanar, Scotland": null,
+"Glentoran Belfast, Northern Ireland": null,
+"Glentoran Reserve, Northern Ireland": null,
+"Glentoran, Northern Ireland": null,
+"Glossop North End, England": null,
+"Glossop, England": [
+53.44336,
+-1.94992,
+"Glossop"
+],
+"Gloucester, England": [
+51.86537,
+-2.24582,
+"Gloucester"
+],
+"Godalming, England": [
+51.18558,
+-0.61266,
+"Godalming"
+],
+"Godmanchester, England": [
+52.31961,
+-0.17471,
+"Godmanchester"
+],
+"Golcar, England": [
+53.63998,
+-1.85594,
+"Golcar"
+],
 "Golspie Sutherland, Highland, Scotland": null,
 "Golspie Sutherland, Scotland": null,
 "Golspie, Highland, Scotland": [
@@ -1214,26 +3697,133 @@
 -3.97555,
 "Golspie"
 ],
+"Goole, England": [
+53.70356,
+-0.87159,
+"Goole"
+],
+"Gorleston, England": [
+52.57786,
+1.72734,
+"Gorleston-on-Sea"
+],
+"Gornal, England": [
+52.52194,
+-2.12788,
+"Lower Gornal"
+],
+"Gosfield, England": [
+51.93648,
+0.57157,
+"Gosfield"
+],
+"Gosport, England": [
+50.79521,
+-1.12109,
+"Gosport"
+],
+"Goytre, Wales": [
+51.59253,
+-3.75461,
+"Goytre"
+],
+"Graham Prims, England": null,
+"Graham, England": null,
+"Graig Dino, Wales": null,
+"Graig, Wales": [
+51.57933,
+-3.05933,
+"Graig"
+],
+"Granby Toxteth, England": null,
+"Granby, England": [
+52.91833,
+-0.88558,
+"Granby"
+],
+"Grangetown, England": [
+54.57718,
+-1.14704,
+"Grangetown"
+],
+"Grantham, England": [
+52.91319,
+-0.6439,
+"Grantham"
+],
 "Grantown-on-Spey, Scotland": [
 57.32951,
 -3.6104,
 "Grantown-on-Spey"
+],
+"Grays, England": [
+51.47809,
+0.32331,
+"Grays"
+],
+"Great Ayton, England": [
+54.48806,
+-1.13293,
+"Great Ayton"
+],
+"Great Bentley, England": [
+51.8563,
+1.06364,
+"Great Bentley"
+],
+"Great Shelford, England": [
+52.14693,
+0.13534,
+"Great Shelford"
+],
+"Great Wakering, England": [
+51.54295,
+0.84377,
+"Great Wakering"
+],
+"Great Yarmouth, England": [
+52.60717,
+1.73148,
+"Great Yarmouth"
+],
+"Greenfield, Wales": [
+53.28849,
+-3.20998,
+"Greenfield"
+],
+"Greengate, England": [
+53.63498,
+-2.12462,
+"Greengate"
+],
+"Greenisland, Northern Ireland": [
+54.70009,
+-5.87248,
+"Greenisland"
 ],
 "Greenock, Scotland": [
 55.94734,
 -4.75647,
 "Greenock"
 ],
+"Greenways, England": null,
 "Greenwich, England": [
 51.48208,
 -0.00454,
 "Greenwich"
 ],
+"Grenadier, England": null,
 "Gresford, Wales": [
 53.08551,
 -2.97199,
 "Gresford"
 ],
+"Gresley, England": [
+52.75456,
+-1.58213,
+"Castle Gresley"
+],
+"Gretna U20, Scotland": null,
 "Gretna, Dumfries and Galloway, Scotland": [
 54.99531,
 -3.06694,
@@ -1244,15 +3834,52 @@
 -3.06694,
 "Gretna"
 ],
+"Grimsby, England": [
+53.56714,
+-0.0788,
+"Grimsby"
+],
+"Grundisburgh, England": [
+52.11362,
+1.24723,
+"Grundisburgh"
+],
+"Guernsey, England": null,
+"Guildford, England": [
+51.23561,
+-0.57321,
+"Guildford"
+],
 "Guilsfield, Wales": [
 52.69541,
 -3.15329,
 "Guilsfield"
 ],
+"Guisborough, England": [
+54.53596,
+-1.05109,
+"Guisborough"
+],
 "Guiseley, England": [
 53.87483,
 -1.70751,
 "Guiseley"
+],
+"Gunnislake, England": [
+50.52388,
+-4.21619,
+"Gunnislake"
+],
+"Gwalchmai, Wales": [
+53.25714,
+-4.41499,
+"Gwalchmai"
+],
+"Gwalia, England": null,
+"Hackney Wick, England": [
+51.54435,
+-0.02547,
+"Hackney Wick"
 ],
 "Haddington, East Lothian, Scotland": [
 55.95561,
@@ -1264,10 +3891,36 @@
 -2.77932,
 "Haddington"
 ],
+"Hadleigh, England": [
+52.04418,
+0.95423,
+"Hadleigh"
+],
+"Hadley, England": [
+52.70478,
+-2.47737,
+"Hadley"
+],
+"Hailsham, England": [
+50.86282,
+0.27306,
+"Hailsham"
+],
 "Halesowen, England": [
 52.44921,
 -2.05146,
 "Halesowen"
+],
+"Halesworth, England": [
+52.34181,
+1.50016,
+"Halesworth"
+],
+"Halewood Apollo, England": null,
+"Halewood, England": [
+53.36023,
+-2.83027,
+"Halewood"
 ],
 "Halifax, England": [
 53.72292,
@@ -1282,30 +3935,346 @@
 "Hall Russell, Aberdeen City, Scotland": null,
 "Hall Russell, Scotland": null,
 "Hall, Aberdeen City, Scotland": null,
+"Hallam, England": [
+52.97123,
+-1.36222,
+"West Hallam"
+],
+"Hallen, England": [
+51.51694,
+-2.6494,
+"Hallen"
+],
+"Halls, England": [
+51.94188,
+-0.14658,
+"Halls Green"
+],
+"Halse, England": [
+51.0444,
+-3.22752,
+"Halse"
+],
+"Halstead, England": [
+51.9453,
+0.6425,
+"Halstead"
+],
+"Hamble, England": [
+50.85916,
+-1.31447,
+"Hamble-le-Rice"
+],
 "Hamilton, Scotland": [
 55.77591,
 -4.03344,
 "Hamilton"
+],
+"Hammersmith, England": [
+51.49204,
+-0.22364,
+"Hammersmith"
+],
+"Hampton Richmond, England": [
+51.41503,
+-0.36914,
+"Hampton"
+],
+"Hampton, England": [
+51.41503,
+-0.36914,
+"Hampton"
+],
+"Hamworthy, England": [
+50.71783,
+-2.01216,
+"Hamworthy"
+],
+"Handsworth, England": [
+53.3723,
+-1.38301,
+"Handsworth"
+],
+"Hanley, England": [
+53.02611,
+-2.17545,
+"Hanley"
+],
+"Hanwell, England": [
+51.50898,
+-0.33816,
+"Hanwell"
+],
+"Hanworth, England": [
+51.43485,
+-0.39036,
+"Hanworth"
 ],
 "Harborough, England": [
 52.53857,
 -0.92004,
 "Harborough"
 ],
+"Hardwick, England": [
+51.86239,
+-0.84335,
+"Hardwick"
+],
+"Harefield, England": [
+51.60418,
+-0.48256,
+"Harefield"
+],
+"Haringey Womens, England": null,
+"Haringey, England": [
+51.58794,
+-0.10544,
+"London Borough of Haringey"
+],
+"Harleston, England": [
+52.20242,
+0.94655,
+"Harleston"
+],
+"Harlington, England": [
+51.96461,
+-0.49157,
+"Harlington"
+],
+"Harlow, England": [
+51.76856,
+0.0949,
+"Harlow"
+],
+"Harold Hill, England": [
+51.6049,
+0.22015,
+"Harold Hill"
+],
+"Harold Wood, England": [
+51.59363,
+0.23105,
+"Harold Wood"
+],
+"Harpenden, England": [
+51.81451,
+-0.35493,
+"Harpenden"
+],
+"Harpole, England": [
+52.24122,
+-0.98881,
+"Harpole"
+],
 "Harrogate, England": [
 53.99215,
 -1.5391,
 "Harrogate"
 ],
+"Harrow, England": [
+51.59683,
+-0.3373,
+"London Borough of Harrow"
+],
+"Harrowby, England": [
+52.91194,
+-0.60754,
+"Harrowby"
+],
+"Hartlepool Pools Seniors, England": null,
+"Hartlepool Supporters, England": null,
 "Hartlepool, England": [
 54.68573,
 -1.20937,
 "Hartlepool"
 ],
+"Hartley Wintney, England": [
+51.30784,
+-0.89094,
+"Hartley Wintney"
+],
+"Hartpury University, England": null,
+"Hartpury, England": [
+51.91784,
+-2.30777,
+"Hartpury"
+],
+"Harwich Parkeston, England": null,
+"Harwich, England": [
+51.94458,
+1.28985,
+"Harwich"
+],
+"Harworth Colliery, England": null,
+"Harworth, England": [
+53.41745,
+-1.07612,
+"Harworth"
+],
+"Hashtag, England": null,
+"Hassocks, England": [
+50.92428,
+-0.14533,
+"Hassocks"
+],
+"Hastings, England": [
+50.8551,
+0.58218,
+"Hastings"
+],
+"Hatfield Peverel, England": [
+51.77319,
+0.59608,
+"Hatfield Peverel"
+],
+"Hathern, England": [
+52.79754,
+-1.25433,
+"Hathern"
+],
+"Haughley, England": [
+52.22134,
+0.9655,
+"Haughley"
+],
+"Havant Waterlooville, England": null,
+"Havant, England": [
+50.85194,
+-0.98213,
+"Havant"
+],
 "Haverfordwest, Wales": [
 51.80213,
 -4.96842,
 "Haverfordwest"
+],
+"Haverhill, England": [
+52.08327,
+0.43539,
+"Haverhill"
+],
+"Hawkinge, England": [
+51.11544,
+1.16375,
+"Hawkinge"
+],
+"Hayes Hillingdon, England": [
+51.50772,
+-0.41815,
+"Hayes"
+],
+"Hayes Yeading, England": null,
+"Hayes, England": [
+51.50772,
+-0.41815,
+"Hayes"
+],
+"Hayle, England": [
+50.18714,
+-5.41782,
+"Hayle"
+],
+"Haywards Heath, England": [
+50.99996,
+-0.10497,
+"Haywards Heath"
+],
+"Heacham, England": [
+52.90869,
+0.49408,
+"Heacham"
+],
+"Heanor, England": [
+53.01458,
+-1.3575,
+"Heanor"
+],
+"Heart of Midlothian U20, Scotland": null,
+"Heart, Scotland": null,
+"Heather St. John’s, England": null,
+"Heather, England": [
+52.69317,
+-1.42399,
+"Heather"
+],
+"Heathfield Horam, England": null,
+"Heathfield, England": [
+50.97174,
+0.2517,
+"Heathfield"
+],
+"Heaton Stannington A, England": null,
+"Heaton Stannington, England": null,
+"Heaton, England": [
+54.98485,
+-1.57691,
+"Heaton"
+],
+"Hebburn, England": [
+54.97264,
+-1.51734,
+"Hebburn"
+],
+"Hedge End, England": [
+50.91362,
+-1.30888,
+"Hedge End"
+],
+"Hednesford, England": [
+52.71138,
+-2.00254,
+"Hednesford"
+],
+"Heights, Northern Ireland": null,
+"Helston, England": [
+50.10167,
+-5.27303,
+"Helston"
+],
+"Hemel Hempstead, England": [
+51.75118,
+-0.47253,
+"Hemel Hempstead"
+],
+"Hemingfords, England": null,
+"Hemsworth Miners, England": null,
+"Hemsworth, England": [
+53.61332,
+-1.35383,
+"Hemsworth"
+],
+"Henbury Rockleaze, England": null,
+"Henbury, England": [
+53.25353,
+-2.19627,
+"Henbury"
+],
+"Hendon, England": [
+51.58972,
+-0.2216,
+"Hendon"
+],
+"Hengrove, England": [
+51.41591,
+-2.57125,
+"Hengrove"
+],
+"Henley, England": [
+51.53758,
+-0.90503,
+"Henley-on-Thames"
+],
+"Hepworth, England": [
+52.33758,
+0.91335,
+"Hepworth"
+],
+"Hereford Lads, England": null,
+"Hereford Pegasus, England": null,
+"Hereford, England": [
+52.05538,
+-2.71517,
+"Hereford"
 ],
 "Heriot Watt University, Scotland": null,
 "Heriot, Scotland": [
@@ -1313,28 +4282,221 @@
 -2.96874,
 "Heriot"
 ],
+"Herne Bay, England": [
+51.37195,
+1.1307,
+"Herne Bay"
+],
+"Hertford Heath, England": [
+51.78264,
+-0.04533,
+"Hertford Heath"
+],
+"Hertford, England": [
+51.79574,
+-0.07852,
+"Hertford"
+],
+"Hetton-le-Hole, England": [
+54.82126,
+-1.4528,
+"Hetton-le-Hole"
+],
+"Heybridge, England": [
+51.73268,
+0.77516,
+"Heybridge"
+],
+"Heyford, England": [
+52.22051,
+-1.03514,
+"Nether Heyford"
+],
+"Hibernian U20, Scotland": null,
+"Hibernian, Scotland": null,
+"Higham, England": [
+51.9819,
+0.9639,
+"Higham"
+],
+"Highfield, England": [
+50.93043,
+-1.39676,
+"Highfield"
+],
+"Highgate, England": [
+51.57064,
+-0.14924,
+"Highgate"
+],
+"Highworth, England": [
+51.63054,
+-1.7113,
+"Highworth"
+],
 "Hill Of Beath Hawthorn, Scotland": null,
 "Hill of Beath Hawthorn, Scotland": null,
 "Hill, Scotland": null,
+"Hilltop, England": [
+51.71501,
+-0.59914,
+"Hilltop"
+],
+"Hinckley, England": [
+52.54106,
+-1.37294,
+"Hinckley"
+],
+"Hindsford, England": [
+53.51863,
+-2.47891,
+"Hindsford"
+],
+"Hinton, England": [
+51.72741,
+-2.45846,
+"Hinton"
+],
+"Histon, England": [
+52.25251,
+0.10806,
+"Histon"
+],
+"Hitchin, England": [
+51.94869,
+-0.27791,
+"Hitchin"
+],
+"Hoddesdon, England": [
+51.76167,
+-0.01129,
+"Hoddesdon"
+],
+"Holbeach, England": [
+52.80421,
+0.018,
+"Holbeach CP"
+],
+"Holbrook St Michaels, England": null,
+"Holbrook, England": [
+51.98357,
+1.15777,
+"Holbrook"
+],
+"Holker, England": [
+54.18669,
+-2.98101,
+"Holker"
+],
+"Holland, England": [
+51.23807,
+0.0074,
+"Holland"
+],
+"Hollands Blair, England": null,
+"Hollands, England": null,
+"Hollington, England": [
+52.95539,
+-1.65883,
+"Hollington CP"
+],
+"Holmer Green, England": [
+51.66538,
+-0.69588,
+"Holmer Green"
+],
+"Holsworthy, England": [
+50.81238,
+-4.35263,
+"Holsworthy"
+],
+"Holt, England": [
+52.90544,
+1.09283,
+"Holt"
+],
+"Holwell, England": [
+51.98572,
+-0.30401,
+"Holwell"
+],
 "Holyhead, Wales": [
 53.31067,
 -4.6331,
 "Holyhead"
+],
+"Holyport, England": [
+51.49237,
+-0.71397,
+"Holyport"
 ],
 "Holywell, Wales": [
 53.27141,
 -3.2213,
 "Holywell"
 ],
+"Holywood, Northern Ireland": [
+54.64045,
+-5.83617,
+"Holywood"
+],
+"Home Bargains, England": null,
+"Home, England": null,
+"Honiton, England": [
+50.79969,
+-3.18909,
+"Honiton"
+],
+"Hook, England": [
+51.3679,
+-0.30715,
+"Hook"
+],
+"Horbury, England": [
+53.6603,
+-1.55524,
+"Horbury"
+],
+"Horden, England": [
+54.76394,
+-1.31639,
+"Horden"
+],
+"Horley, England": [
+51.17169,
+-0.16408,
+"Horley"
+],
+"Horncastle, England": [
+53.20873,
+-0.11695,
+"Horncastle"
+],
 "Hornchurch, England": [
 51.56177,
 0.22074,
 "Hornchurch"
 ],
+"Horndean, England": [
+50.92245,
+-1.00224,
+"Horndean"
+],
+"Horsham YM, England": null,
+"Horsham, England": [
+51.06303,
+-0.3295,
+"Horsham"
+],
 "Horwich, England": [
 53.59716,
 -2.54692,
 "Horwich"
+],
+"Hucknall, England": [
+53.03836,
+-1.20354,
+"Hucknall"
 ],
 "Huddersfield, England": [
 53.64666,
@@ -1345,6 +4507,21 @@
 53.76239,
 -0.33012,
 "Kingston upon Hull"
+],
+"Hullbridge, England": [
+51.61923,
+0.62955,
+"Hullbridge"
+],
+"Hungerford, England": [
+51.41526,
+-1.5154,
+"Hungerford"
+],
+"Huntingdon, England": [
+52.33051,
+-0.18435,
+"Huntingdon"
 ],
 "Huntly, Aberdeenshire, Scotland": [
 57.44748,
@@ -1361,11 +4538,87 @@
 -4.45391,
 "Hurlford"
 ],
+"Hurstpierpoint, England": [
+50.93346,
+-0.17814,
+"Hurstpierpoint"
+],
 "Hutchison, City of Edinburgh, Scotland": [
 55.93028,
 -3.24585,
 "Hutchison/Chesser"
 ],
+"Hutton, England": [
+54.63255,
+-2.87679,
+"Hutton"
+],
+"Hyde, England": [
+53.45087,
+-2.07826,
+"Hyde"
+],
+"Hythe Dibden, England": [
+50.86932,
+-1.41469,
+"Hythe and Dibden"
+],
+"Hythe, England": [
+51.06919,
+1.08404,
+"Hythe"
+],
+"Ilford, England": [
+51.55827,
+0.07117,
+"Ilford"
+],
+"Ilfracombe, England": [
+51.20767,
+-4.12547,
+"Ilfracombe"
+],
+"Ilkeston, England": [
+52.97084,
+-1.30916,
+"Ilkeston"
+],
+"Ilkley, England": [
+53.92573,
+-1.82444,
+"Ilkley"
+],
+"Illogan RBL, England": null,
+"Illogan, England": [
+50.24304,
+-5.2943,
+"Illogan"
+],
+"Ilminster, England": [
+50.92672,
+-2.91028,
+"Ilminster"
+],
+"Immingham, England": [
+53.616,
+-0.21367,
+"Immingham"
+],
+"Indian Gymkhana, England": null,
+"Indian, England": [
+50.39326,
+-4.93162,
+"Indian Queens"
+],
+"Infinity, England": null,
+"Ingles, England": null,
+"Inkberrow, England": [
+52.21177,
+-1.97843,
+"Inkberrow"
+],
+"Inspired Talents, Northern Ireland": null,
+"Inspired, Northern Ireland": null,
 "Invergordon, Highland, Scotland": [
 57.6884,
 -4.16921,
@@ -1388,10 +4641,25 @@
 -2.37429,
 "Inverurie"
 ],
+"Ipplepen, England": [
+50.48318,
+-3.63142,
+"Ipplepen"
+],
 "Ipswich, England": [
 52.05793,
 1.15281,
 "Ipswich"
+],
+"Irchester, England": [
+52.28174,
+-0.64677,
+"Irchester"
+],
+"Irlam, England": [
+53.44881,
+-2.42238,
+"Irlam"
 ],
 "Irvine Meadow XI, North Ayrshire, Scotland": null,
 "Irvine Meadow XI, Scotland": null,
@@ -1400,13 +4668,45 @@
 -4.66964,
 "Irvine"
 ],
+"Islandmagee, Northern Ireland": [
+54.77834,
+-5.70842,
+"Islandmagee"
+],
 "Islavale, Moray, Scotland": null,
 "Islavale, Scotland": null,
+"Isle of Man, England": null,
+"Isle, England": [
+50.67105,
+-1.33271,
+"Isle of Wight"
+],
+"Ivybridge, England": [
+50.39184,
+-3.91777,
+"Ivybridge"
+],
+"Jarrow, England": [
+54.98125,
+-1.49084,
+"Jarrow"
+],
+"Jarvis Brook, England": [
+51.04899,
+0.18668,
+"Jarvis Brook"
+],
 "Jeanfield, Perth and Kinross, Scotland": null,
 "Jeanfield, Scotland": [
 56.52036,
 -3.03124,
 "Jeanfield"
+],
+"Jersey Bulls, England": null,
+"Jersey, England": [
+51.76823,
+-0.2949,
+"Jersey Farm"
 ],
 "Johnstone Burgh, Renfrewshire, Scotland": null,
 "Johnstone Burgh, Scotland": null,
@@ -1419,6 +4719,12 @@
 55.83652,
 -4.51228,
 "Johnstone"
+],
+"Kader, England": null,
+"Keighley, England": [
+53.8684,
+-1.90205,
+"Keighley"
 ],
 "Keith, Moray, Scotland": [
 57.54273,
@@ -1435,10 +4741,45 @@
 -3.37978,
 "Kelty"
 ],
+"Kempston, England": [
+52.1192,
+-0.49302,
+"Kempston"
+],
+"Kendal, England": [
+54.32898,
+-2.74718,
+"Kendal"
+],
+"Kenilworth, England": [
+52.34505,
+-1.5816,
+"Kenilworth"
+],
+"Kennington, England": [
+51.48845,
+-0.10925,
+"Kennington"
+],
 "Kennoway, Scotland": [
 56.21149,
 -3.0491,
 "Kennoway"
+],
+"Kent, England": [
+51.24748,
+0.71051,
+"Kent"
+],
+"Kerry, Powys, Wales": [
+52.50254,
+-3.2573,
+"Ceri"
+],
+"Kerry, Wales": [
+52.50254,
+-3.2573,
+"Ceri"
 ],
 "Kersal, England": [
 53.51031,
@@ -1450,10 +4791,48 @@
 1.23713,
 "Kesgrave"
 ],
+"Kettering Nomads, England": null,
+"Kettering, England": [
+52.39942,
+-0.728,
+"Kettering"
+],
+"Keynsham, England": [
+51.41518,
+-2.49831,
+"Keynsham"
+],
+"Keyworth, England": [
+52.8727,
+-1.08809,
+"Keyworth"
+],
+"Khalsa GAD, England": null,
+"Khalsa, England": null,
 "Kidderminster, England": [
 52.38808,
 -2.24786,
 "Kidderminster"
+],
+"Kidlington, England": [
+51.82346,
+-1.28853,
+"Kidlington"
+],
+"Kidsgrove, England": [
+53.08778,
+-2.23855,
+"Kidsgrove"
+],
+"Kidwelly, Wales": [
+51.73639,
+-4.30623,
+"Kidwelly"
+],
+"Kilbarrack, Ireland": [
+53.38643,
+-6.15606,
+"Kilbarrack"
 ],
 "Kilbirnie Ladeside, North Ayrshire, Scotland": null,
 "Kilbirnie Ladeside, Scotland": null,
@@ -1462,6 +4841,22 @@
 -4.68546,
 "Kilbirnie"
 ],
+"Kilkhampton, England": [
+50.87478,
+-4.49403,
+"Kilkhampton"
+],
+"Killay, Wales": [
+51.61958,
+-4.01881,
+"Killay"
+],
+"Killymoon, Northern Ireland": [
+54.62937,
+-6.72706,
+"Killymoon Demesne"
+],
+"Kilmarnock LFC, Scotland": null,
 "Kilmarnock, Scotland": [
 55.61006,
 -4.49647,
@@ -1472,8 +4867,56 @@
 -4.6992,
 "Kilwinning"
 ],
+"Kimberley MW, England": null,
+"Kimberley Miners, England": null,
+"Kimberley, England": [
+52.99802,
+-1.25953,
+"Kimberley"
+],
+"Kings Hill, England": [
+51.27383,
+0.40601,
+"Kings Hill"
+],
+"Kings Langley, England": [
+51.71356,
+-0.4503,
+"Kings Langley"
+],
+"Kingstonian, England": null,
+"Kington, England": [
+52.20292,
+-3.02888,
+"Kington"
+],
+"King’s Lynn, England": [
+52.75387,
+0.39548,
+"King's Lynn"
+],
+"Kinmel Bay, Wales": [
+53.31198,
+-3.51692,
+"Kinmel Bay"
+],
 "Kinnoull, Perth and Kinross, Scotland": null,
 "Kinnoull, Scotland": null,
+"Kinsley, England": [
+53.62475,
+-1.36786,
+"Kinsley"
+],
+"Kintbury, England": [
+51.39931,
+-1.4508,
+"Kintbury"
+],
+"Kirby Muxloe, England": [
+52.62873,
+-1.234,
+"Kirby Muxloe"
+],
 "Kirkcaldy Dysart, Fife, Scotland": null,
 "Kirkcaldy Dysart, Scotland": null,
 "Kirkcaldy, Fife, Scotland": [
@@ -1493,41 +4936,209 @@
 -4.1549,
 "Kirkintilloch"
 ],
+"Kirkintilloch, Scotland": [
+55.93839,
+-4.1549,
+"Kirkintilloch"
+],
+"Kirkley Pakefield, England": null,
+"Kirkley, England": [
+52.46164,
+1.73543,
+"Kirkley"
+],
 "Kirriemuir, Angus, Scotland": [
 56.67311,
 -3.00439,
 "Kirriemuir"
+],
+"Kirton, England": [
+52.01085,
+1.31995,
+"Kirton"
+],
+"Kiveton, England": [
+53.34131,
+-1.26822,
+"Kiveton Park"
+],
+"Knaphill, England": [
+51.31638,
+-0.61691,
+"Knaphill"
+],
+"Knaresborough, England": [
+54.00792,
+-1.46683,
+"Knaresborough"
+],
+"Knighton, England": [
+50.67761,
+-1.19828,
+"Knighton"
+],
+"Knighton, Wales": [
+52.34435,
+-3.04956,
+"Knighton"
+],
+"Knowle, England": [
+52.39327,
+-1.73896,
+"Knowle"
 ],
 "Knowsley, England": [
 53.42524,
 -2.8236,
 "Knowsley"
 ],
+"Kodak, England": null,
+"Kulture, England": null,
+"L4, England": null,
+"LBS, England": null,
+"LIV, England": [
+53.39334,
+-2.91664,
+"Liverpool"
+],
+"Lakenheath, England": [
+52.41756,
+0.51804,
+"Lakenheath"
+],
+"Lampeter, Wales": [
+52.11305,
+-4.07876,
+"Lampeter"
+],
+"Lancaster, England": [
+54.04882,
+-2.80135,
+"Lancaster"
+],
+"Lancing, England": [
+50.82587,
+-0.32255,
+"Lancing"
+],
+"Land Cricklewood, England": null,
+"Land, England": [
+50.38483,
+-4.4274,
+"No Mans Land"
+],
+"Langford, England": [
+52.05818,
+-0.26996,
+"Langford"
+],
+"Langley, England": [
+51.23279,
+0.58197,
+"Langley"
+],
 "Largs, North Ayrshire, Scotland": [
 55.79488,
 -4.8695,
 "Largs"
 ],
+"Larkfield New Hythe, England": null,
+"Larkfield, England": [
+51.2995,
+0.44293,
+"Larkfield"
+],
+"Larkhall, England": [
+51.39666,
+-2.34718,
+"Larkhall"
+],
+"Larkspur, England": null,
+"Larne Technical, Northern Ireland": null,
 "Larne, Northern Ireland": [
 54.85085,
 -5.81831,
 "Larne"
+],
+"Launceston, England": [
+50.63651,
+-4.36044,
+"Launceston"
+],
+"Launton, England": [
+51.89769,
+-1.11597,
+"Launton"
+],
+"Laurelvale, Northern Ireland": [
+54.368,
+-6.45204,
+"Laurelvale"
+],
+"Laverstock Ford, England": [
+51.08715,
+-1.76265,
+"Laverstock"
+],
+"Leafield, England": [
+51.83494,
+-1.54319,
+"Leafield"
+],
+"Lealholm, England": [
+54.45827,
+-0.82459,
+"Lealholm"
+],
+"Leamington, England": [
+52.29134,
+-1.5364,
+"Royal Leamington Spa"
 ],
 "Leatherhead, England": [
 51.2955,
 -0.32931,
 "Leatherhead"
 ],
+"Ledbury, England": [
+52.03575,
+-2.42878,
+"Ledbury"
+],
+"Leeds Modernians, England": null,
+"Leeds UFCA, England": null,
 "Leeds, England": [
 53.79742,
 -1.54379,
 "Leeds"
 ],
+"Leek CSOB, England": null,
+"Leek, England": [
+53.10576,
+-2.02428,
+"Leek"
+],
+"Leicester Atletico, England": null,
+"Leicester Nirvana, England": null,
+"Leicester St. Andrews, England": null,
 "Leicester, England": [
 52.6362,
 -1.1332,
 "Leicester"
 ],
+"Leigh Ramblers, England": null,
+"Leigh, England": [
+53.49605,
+-2.51715,
+"Leigh"
+],
+"Leighton, England": [
+52.36581,
+-0.36608,
+"Leighton Bromswold"
+],
+"Leiston St Margarets, England": null,
+"Leiston Under 23s, England": null,
 "Leiston, England": [
 52.20648,
 1.57643,
@@ -1537,6 +5148,11 @@
 55.97255,
 -3.17095,
 "Leith"
+],
+"Letchworth Garden, England": [
+51.9795,
+-0.22946,
+"Letchworth"
 ],
 "Letham, Perth and Kinross, Scotland": [
 56.40173,
@@ -1548,6 +5164,34 @@
 -7.73544,
 "Letterkenny Municipal District"
 ],
+"Leverington, England": [
+52.68017,
+0.13413,
+"Leverington"
+],
+"Leverstock Green, England": [
+51.74747,
+-0.43163,
+"Leverstock Green"
+],
+"Lewes, England": [
+50.87461,
+0.00512,
+"Lewes"
+],
+"Lewisham, England": [
+51.46243,
+-0.01018,
+"Lewisham"
+],
+"Lex Glyndwr XI, Wales": null,
+"Lex, Wales": null,
+"Lichfield, England": [
+52.68437,
+-1.82753,
+"Lichfield"
+],
+"Limavady Reserve, Northern Ireland": null,
 "Limavady, Northern Ireland": [
 55.05049,
 -6.95051,
@@ -1558,25 +5202,117 @@
 -8.63012,
 "Limerick"
 ],
+"Linby Colliery, England": null,
+"Linby, England": [
+53.05337,
+-1.20493,
+"Linby CP"
+],
+"Lincoln Moorlands, England": null,
 "Lincoln, England": [
 53.22935,
 -0.54048,
 "Lincoln"
 ],
+"Linfield, Northern Ireland": null,
+"Lingfield, England": [
+51.17558,
+-0.01017,
+"Lingfield"
+],
+"Linlithgow Rose, Scotland": null,
+"Linlithgow Rose, West Lothian, Scotland": null,
 "Linlithgow, Scotland": [
 55.97717,
 -3.60062,
 "Linlithgow"
 ],
+"Linlithgow, West Lothian, Scotland": [
+55.97717,
+-3.60062,
+"Linlithgow"
+],
+"Linthorpe Academicals, England": null,
+"Linthorpe, England": [
+54.56048,
+-1.24374,
+"Linthorpe"
+],
+"Lisburn, Northern Ireland": [
+54.51129,
+-6.04672,
+"Lisburn"
+],
+"Liskeard, England": [
+50.45463,
+-4.46442,
+"Liskeard"
+],
+"Liss, England": [
+51.04154,
+-0.89946,
+"Liss"
+],
+"Litherland REMYCA, England": null,
+"Litherland, England": [
+53.47209,
+-2.99568,
+"Litherland"
+],
+"Little Common, England": [
+50.84636,
+0.43529,
+"Little Common"
+],
+"Little Oakley, England": [
+51.91855,
+1.22799,
+"Little Oakley"
+],
+"Little Vic, England": null,
+"Little, England": null,
+"Littlehampton, England": [
+50.80958,
+-0.54244,
+"Littlehampton"
+],
+"Littleton, England": [
+53.19472,
+-2.83681,
+"Littleton"
+],
+"Liver, England": null,
+"Liverpool NALGO, England": null,
 "Liverpool, England": [
 53.39334,
 -2.91664,
 "Liverpool"
 ],
+"Liversedge, England": [
+53.71253,
+-1.69426,
+"Liversedge"
+],
+"Livingston Wfc, Scotland": null,
 "Livingston, Scotland": [
 55.88296,
 -3.51758,
 "Livingston"
+],
+"Llanberis, Wales": [
+53.12128,
+-4.12775,
+"Llanberis"
+],
+"Llandarcy, Wales": [
+51.64232,
+-3.85691,
+"Llandarcy"
+],
+"Llandudno Junction, Wales": [
+53.28713,
+-3.8105,
+"Llandudno Junction"
 ],
 "Llandudno, Wales": [
 53.32247,
@@ -1588,15 +5324,80 @@
 -4.16202,
 "Llanelli"
 ],
+"Llanfair, Powys, Wales": [
+52.6488,
+-3.32403,
+"Llanfair Caereinion"
+],
+"Llanfairfechan, Wales": [
+53.2532,
+-3.97506,
+"Llanfairfechan"
+],
+"Llanfyllin, Wales": [
+52.76691,
+-3.27175,
+"Llanfyllin"
+],
+"Llangefni, Isle of Anglesey, Wales": [
+53.2561,
+-4.31146,
+"Llangefni"
+],
 "Llangennech, Wales": [
 51.696,
 -4.08347,
 "Llangennech"
 ],
+"Llangollen, Denbighshire, Wales": [
+52.9694,
+-3.17111,
+"Llangollen"
+],
+"Llanidloes, Powys, Wales": [
+52.44824,
+-3.54109,
+"Llanidloes"
+],
+"Llanilar, Wales": [
+52.35667,
+-4.02214,
+"Llanilar"
+],
 "Llannefydd, Conwy, Wales": [
 53.2233,
 -3.52603,
 "Llannefydd"
+],
+"Llannefydd, Wales": [
+53.2233,
+-3.52603,
+"Llannefydd"
+],
+"Llanrhaeadr, Wales": [
+53.16054,
+-3.37465,
+"Llanrhaeadr"
+],
+"Llanrug, Wales": [
+53.13886,
+-4.19869,
+"Llanrug"
+],
+"Llanrwst, Conwy, Wales": [
+53.14153,
+-3.79393,
+"Llanrwst"
+],
+"Llansannan, Wales": [
+53.17976,
+-3.59841,
+"Llansannan"
+],
+"Llansantffraid Village, Powys, Wales": [
+52.77456,
+-3.15551,
+"Llansantffraid-ym-Mechain"
 ],
 "Llantwit Fardre, Wales": [
 51.55942,
@@ -1608,6 +5409,27 @@
 -3.48578,
 "Llantwit Major"
 ],
+"Llanystumdwy, Wales": [
+52.93871,
+-4.30709,
+"Llanystumdwy"
+],
+"Llay Miners, Wales": null,
+"Llay, Wales": [
+53.09708,
+-2.99947,
+"Llay"
+],
+"Lliswerry, Wales": [
+51.58173,
+-2.95063,
+"Lliswerry"
+],
+"Llwydcoed, Rhondda Cynon Taf, Wales": [
+51.7319,
+-3.45868,
+"Llwydcoed"
+],
 "Llysfaen, Wales": [
 53.28271,
 -3.65983,
@@ -1616,6 +5438,11 @@
 "Lochee Harp, Dundee City, Scotland": null,
 "Lochee Harp, Scotland": null,
 "Lochee, Dundee City, Scotland": [
+56.47183,
+-3.0101,
+"Lochee"
+],
+"Lochee, Scotland": [
 56.47183,
 -3.0101,
 "Lochee"
@@ -1636,30 +5463,151 @@
 -3.32138,
 "Lochore"
 ],
+"Locks Heath, England": [
+50.86175,
+-1.27172,
+"Locks Heath"
+],
+"London Colney, England": [
+51.72388,
+-0.29566,
+"London Colney"
+],
+"London Fennecs, England": null,
+"London Harts, England": null,
+"London Samurai, England": null,
 "London, England": [
 51.50745,
 -0.12777,
 "Greater London"
+],
+"Long Eaton, England": [
+52.89857,
+-1.27081,
+"Long Eaton"
+],
+"Long Lane, England": [
+52.73772,
+-2.53978,
+"Long Lane"
+],
+"Long Melford, England": [
+52.07366,
+0.71521,
+"Long Melford"
+],
+"Long Stratton, England": [
+52.48783,
+1.23309,
+"Long Stratton"
+],
+"Long Sutton, England": [
+52.77679,
+0.11939,
+"Long Sutton"
+],
+"Longford, England": [
+52.9357,
+-1.67643,
+"Longford CP"
 ],
 "Longford, Ireland": [
 53.72988,
 -7.78854,
 "Longford"
 ],
+"Longlevens, England": [
+51.87792,
+-2.21706,
+"Longlevens"
+],
+"Longridge, England": [
+53.82991,
+-2.60335,
+"Longridge"
+],
 "Longside, Aberdeenshire, Scotland": [
 57.51667,
 -1.9388,
 "Longside"
+],
+"Longwell Green, England": [
+51.43794,
+-2.49186,
+"Longwell Green"
+],
+"Looe, England": [
+50.35227,
+-4.4542,
+"Looe"
+],
+"Lordswood, England": [
+50.94568,
+-1.43331,
+"Lordswood"
 ],
 "Lossiemouth, Moray, Scotland": [
 57.72208,
 -3.28146,
 "Lossiemouth"
 ],
+"Lostock Gralam, England": [
+53.27151,
+-2.46258,
+"Lostock Gralam"
+],
+"Loughborough Students, England": null,
+"Loughborough, England": [
+52.77239,
+-1.2078,
+"Loughborough"
+],
 "Loughgall, Northern Ireland": [
 54.40809,
 -6.60747,
 "Loughgall"
+],
+"Loughor, Wales": [
+51.6654,
+-4.06776,
+"Loughor"
+],
+"Louth, England": [
+53.36752,
+-0.00224,
+"Louth"
+],
+"Lower Breck, England": null,
+"Lower Maze, Northern Ireland": null,
+"Lower, England": [
+54.172,
+-3.03697,
+"Lower Allithwaite"
+],
+"Lower, Northern Ireland": [
+54.5875,
+-5.92379,
+"Lower Ormeau"
+],
+"Lowestoft, England": [
+52.47663,
+1.75376,
+"Lowestoft"
+],
+"Loxwood, England": [
+51.07309,
+-0.51854,
+"Loxwood"
+],
+"Ludgvan, England": [
+50.14526,
+-5.48816,
+"Ludgvan"
+],
+"Ludlow, England": [
+52.36799,
+-2.71931,
+"Ludlow"
 ],
 "Lurgan, Northern Ireland": [
 54.46082,
@@ -1671,15 +5619,110 @@
 -0.42303,
 "Luton"
 ],
+"Lutterworth, England": [
+52.45522,
+-1.19978,
+"Lutterworth"
+],
+"Lydd, England": [
+50.95097,
+0.90654,
+"Lydd"
+],
+"Lydney, England": [
+51.72593,
+-2.53135,
+"Lydney"
+],
+"Lye Coton Green, England": null,
+"Lye, England": [
+52.45858,
+-2.11703,
+"Lye"
+],
+"Lymington, England": [
+50.75838,
+-1.54269,
+"Lymington"
+],
+"Lymore Gardens, England": null,
+"Lymore, England": [
+50.73492,
+-1.58212,
+"Lymore"
+],
+"MSB Woolton, England": null,
+"MSB, England": null,
+"MUD Lion, England": null,
+"MUD, England": [
+51.41236,
+0.88283,
+"Mud Row"
+],
 "Macclesfield, England": [
 53.26066,
 -2.12552,
 "Macclesfield"
 ],
+"Machynlleth, Wales": [
+52.59052,
+-3.85181,
+"Machynlleth"
+],
+"Madeley, England": [
+52.63625,
+-2.45021,
+"Madeley"
+],
 "Magherafelt, Northern Ireland": [
 54.75448,
 -6.60781,
 "Magherafelt"
+],
+"Maghull, England": [
+53.51761,
+-2.94426,
+"Maghull"
+],
+"Magna, England": [
+51.61742,
+-0.30951,
+"Stanmore"
+],
+"Maiden, Northern Ireland": null,
+"Maidenhead, England": [
+51.52274,
+-0.71974,
+"Maidenhead"
+],
+"Maidstone, England": [
+51.27483,
+0.52316,
+"Maidstone"
+],
+"Maine Road, England": null,
+"Maine, England": null,
+"Maldon Tiptree, England": null,
+"Maldon, England": [
+51.71556,
+0.68435,
+"Maldon"
+],
+"Malmesbury, England": [
+51.58447,
+-2.0982,
+"Malmesbury"
+],
+"Maltby Main, England": null,
+"Maltby, England": [
+54.51379,
+-1.27921,
+"Maltby"
+],
+"Malvern, England": [
+52.11596,
+-2.3259,
+"Malvern"
 ],
 "Manchester, England": [
 53.44246,
@@ -1697,16 +5740,149 @@
 -1.19642,
 "Mansfield"
 ],
+"Marcelona, England": null,
+"March, England": [
+52.5506,
+0.08802,
+"March"
+],
+"Margate, England": [
+51.38782,
+1.38197,
+"Margate"
+],
+"Marine, England": [
+51.48708,
+-2.75122,
+"Port Marine"
+],
+"Market Drayton, England": [
+52.90454,
+-2.49184,
+"Market Drayton"
+],
+"Markethill, Northern Ireland": [
+54.2969,
+-6.52099,
+"Markethill"
+],
+"Marlow, England": [
+51.57187,
+-0.77697,
+"Marlow"
+],
+"Marshfield, Wales": [
+51.53654,
+-3.06936,
+"Marshfield"
+],
+"Marske, England": [
+54.39923,
+-1.8414,
+"Marske"
+],
+"Marston Shelton, England": null,
+"Marston, England": [
+53.27409,
+-2.49464,
+"Marston"
+],
+"Matlock, England": [
+53.13745,
+-1.55447,
+"Matlock"
+],
 "Maud, Aberdeenshire, Scotland": [
 57.52143,
 -2.12957,
 "Maud"
+],
+"May Baker Eastbrook, England": null,
+"May, England": [
+51.88333,
+-2.4274,
+"May Hill"
+],
+"Medbourne, England": [
+52.5331,
+-0.82244,
+"Medbourne"
+],
+"Meden, England": [
+53.22077,
+-1.13035,
+"Meden Vale"
+],
+"Melbourne, England": [
+52.82281,
+-1.42836,
+"Melbourne CP"
+],
+"Melksham, England": [
+51.37593,
+-2.13146,
+"Melksham"
+],
+"Melton, England": [
+52.81171,
+-0.85929,
+"Melton"
+],
+"Menai Bridge, Isle of Anglesey, Wales": [
+53.22593,
+-4.16311,
+"Menai Bridge"
+],
+"Mendip Broadwalk, England": null,
+"Mendip, England": null,
+"Meon Milton, England": null,
+"Meon, England": [
+50.82831,
+-1.24847,
+"Meon"
+],
+"Mepal Sutton, England": null,
+"Mepal, England": [
+52.40687,
+0.1184,
+"Mepal"
+],
+"Mere, England": [
+51.08944,
+-2.26844,
+"Mere"
+],
+"Meridian VP, England": null,
+"Meridian, England": null,
+"Merstham, England": [
+51.26076,
+-0.14818,
+"Merstham"
+],
+"Merthyr, England": [
+51.94165,
+-2.98196,
+"Clodock"
 ],
 "Methil, Scotland": [
 56.18488,
 -3.01326,
 "Methil"
 ],
+"Metrogas, England": null,
+"Metropolitan Police, England": null,
+"Metropolitan, England": [
+53.55277,
+-1.48278,
+"Barnsley"
+],
+"Mickleover RBL, England": null,
+"Mickleover, England": [
+52.90723,
+-1.54353,
+"Mickleover"
+],
+"Mid Annandale U20, Scotland": null,
 "Mid Annandale, Dumfries and Galloway, Scotland": null,
 "Mid Annandale, Scotland": null,
 "Mid, Dumfries and Galloway, Scotland": [
@@ -1714,20 +5890,106 @@
 -4.30172,
 "Mid Garrary"
 ],
+"Mid, Scotland": [
+56.48009,
+-2.93445,
+"Mid Craigie"
+],
 "Middlesbrough, England": [
 54.57604,
 -1.2344,
 "Middlesbrough"
 ],
+"Middlewich, England": [
+53.19274,
+-2.44532,
+"Middlewich"
+],
+"Middlezoy, England": [
+51.09437,
+-2.89725,
+"Middlezoy"
+],
+"Midhurst Easebourne, England": null,
+"Midhurst, England": [
+50.98419,
+-0.74043,
+"Midhurst"
+],
+"Midleton, Ireland": [
+51.91427,
+-8.1701,
+"Midleton"
+],
+"Mildenhall, England": [
+52.3456,
+0.51277,
+"Mildenhall"
+],
+"Mile Oak, England": [
+50.85178,
+-0.23173,
+"Mile Oak"
+],
+"Millbrook, England": [
+52.03702,
+-0.52543,
+"Millbrook"
+],
+"Milton Keynes College, England": null,
+"Milton Keynes Dons, England": null,
+"Milton Keynes Irish, England": null,
 "Milton Keynes, England": [
 52.04065,
 -0.75941,
 "Milton Keynes"
 ],
+"Milton, England": [
+52.2423,
+0.16047,
+"Milton"
+],
+"Minster, England": [
+51.33425,
+1.31598,
+"Minster"
+],
+"Mochdre, Wales": [
+52.48664,
+-3.36999,
+"Mochdre"
+],
 "Mold, Wales": [
 53.16663,
 -3.14142,
 "Mold"
+],
+"Molesey, England": [
+51.4029,
+-0.37131,
+"Molesey"
+],
+"Molly, England": null,
+"Moneyfields, England": null,
+"Moneyslane, Northern Ireland": [
+54.28817,
+-6.08759,
+"Moneyslane"
+],
+"Monmouth, Wales": [
+51.80989,
+-2.71604,
+"Monmouth"
+],
+"Montgomery, Wales": [
+52.56203,
+-3.14748,
+"Montgomery"
+],
+"Montpelier, Ireland": [
+52.75101,
+-8.49557,
+"Montpelier"
 ],
 "Montrose Roselea, Angus, Scotland": null,
 "Montrose Roselea, Scotland": null,
@@ -1741,15 +6003,76 @@
 -2.46815,
 "Montrose"
 ],
+"Moorside, England": [
+54.86532,
+-1.42674,
+"Moorside"
+],
 "Morecambe, England": [
 54.07211,
 -2.86509,
 "Morecambe"
 ],
+"Morpeth, England": [
+55.16754,
+-1.69074,
+"Morpeth"
+],
+"Morriston, Swansea, Wales": [
+51.66675,
+-3.92433,
+"Morriston"
+],
+"Mossley, England": [
+53.51306,
+-2.03583,
+"Mossley"
+],
+"Mossley, Northern Ireland": [
+54.69381,
+-5.94904,
+"Mossley"
+],
 "Motherwell, Scotland": [
 55.78935,
 -3.99042,
 "Motherwell"
+],
+"Moulton Harrox, England": null,
+"Moulton, England": [
+54.42946,
+-1.63865,
+"Moulton"
+],
+"Mountain, Wales": [
+53.31236,
+-4.6624,
+"Pentre Pella"
+],
+"Mousehole, England": [
+50.08399,
+-5.53896,
+"Mousehole"
+],
+"Moyne, Ireland": [
+52.73923,
+-7.70472,
+"Moyne"
+],
+"Mulbarton, England": [
+52.56048,
+1.24231,
+"Mulbarton"
+],
+"Mullion, England": [
+50.007,
+-5.24213,
+"Mullion"
+],
+"Mumbles, Wales": [
+51.57227,
+-3.9945,
+"Mumbles"
 ],
 "Musselburgh, East Lothian, Scotland": [
 55.94212,
@@ -1760,6 +6083,22 @@
 55.94212,
 -3.05385,
 "Musselburgh"
+],
+"Mynydd Isa Spartans, Wales": null,
+"Mynydd Llandegai, Wales": null,
+"Mynydd, Wales": [
+53.1687,
+-4.09102,
+"Mynydd Llandygái"
+],
+"NFA, Denbighshire, Wales": null,
+"NFA, Wales": null,
+"NW London, England": null,
+"NW, England": null,
+"Nailsea, England": [
+51.43342,
+-2.75851,
+"Nailsea"
 ],
 "Nailsworth, England": [
 51.69524,
@@ -1778,10 +6117,77 @@
 -3.86815,
 "Nairn"
 ],
+"Nanpean, England": [
+50.36855,
+-4.86774,
+"Nanpean"
+],
+"Nantlle, Gwynedd, Wales": [
+53.05678,
+-4.22552,
+"Nantlle"
+],
+"Nantwich, England": [
+53.06714,
+-2.52212,
+"Nantwich"
+],
+"Needham Market, England": [
+52.15285,
+1.05283,
+"Needham Market"
+],
+"Nefyn, Wales": [
+52.93562,
+-4.51917,
+"Nefyn"
+],
+"Nelson, England": [
+53.83634,
+-2.21165,
+"Nelson"
+],
+"Netherton, England": [
+52.07306,
+-2.01398,
+"Netherton"
+],
+"Nettleham, England": [
+53.26617,
+-0.48621,
+"Nettleham"
+],
+"New Bradwell St Peter, England": null,
 "New Elgin, Moray, Scotland": [
 57.63674,
 -3.30772,
 "New Elgin"
+],
+"New Inn, Wales": [
+51.69155,
+-3.01281,
+"New Inn"
+],
+"New Milton, England": [
+50.7531,
+-1.65507,
+"New Milton"
+],
+"New Romney, England": [
+50.98512,
+0.94266,
+"New Romney"
+],
+"New, England": null,
+"Newark Sherwood, England": [
+53.10895,
+-0.9443,
+"Newark and Sherwood"
+],
+"Newark, England": [
+53.07363,
+-0.80054,
+"Newark"
 ],
 "Newbiggin, England": [
 54.26723,
@@ -1793,10 +6199,37 @@
 -6.79819,
 "Newbridge"
 ],
+"Newbuildings, Northern Ireland": [
+54.95909,
+-7.35871,
+"Newbuildings"
+],
+"Newcastle Benfield, England": null,
+"Newcastle University, England": null,
 "Newcastle upon Tyne, England": [
 54.97385,
 -1.61316,
 "Newcastle upon Tyne"
+],
+"Newcastle, England": [
+54.97385,
+-1.61316,
+"Newcastle upon Tyne"
+],
+"Newent, England": [
+51.92366,
+-2.39212,
+"Newent"
+],
+"Newham, England": [
+51.53002,
+0.02931,
+"London Borough of Newham"
+],
+"Newhaven, England": [
+50.79453,
+0.04839,
+"Newhaven"
 ],
 "Newlands, Scotland": [
 55.81715,
@@ -1808,9 +6241,24 @@
 -2.19125,
 "Newmachar"
 ],
+"Newmarket, England": [
+52.24431,
+0.40655,
+"Newmarket"
+],
+"Newport Pagnell, England": [
+52.08639,
+-0.72373,
+"Newport Pagnell"
+],
 "Newport, England": [
 50.70037,
 -1.2952,
+"Newport"
+],
+"Newport, Newport, Wales": [
+51.58823,
+-2.9975,
 "Newport"
 ],
 "Newport, Wales": [
@@ -1818,10 +6266,21 @@
 -2.97525,
 "Newport"
 ],
+"Newquay, England": [
+50.41344,
+-5.08488,
+"Newquay"
+],
 "Newry, Northern Ireland": [
 54.17753,
 -6.33751,
 "Newry"
+],
+"Newton Abbot Spurs, England": null,
+"Newton Aycliffe, England": [
+54.62195,
+-1.5663,
+"Newton Aycliffe"
 ],
 "Newton Stewart, Dumfries and Galloway, Scotland": [
 54.95905,
@@ -1833,47 +6292,134 @@
 -4.48367,
 "Newton Stewart"
 ],
+"Newton, England": [
+54.31409,
+-0.75944,
+"Newton"
+],
 "Newtongrange, Midlothian, Scotland": [
 55.8664,
 -3.06662,
 "Newtongrange"
+],
+"Newtown, England": [
+50.71426,
+-1.40227,
+"Newtown"
 ],
 "Newtown, Wales": [
 52.51358,
 -3.31437,
 "Newtown"
 ],
+"Newtownabbey, Northern Ireland": [
+54.67788,
+-5.92492,
+"Newtownabbey"
+],
 "Nithsdale, Dumfries and Galloway, Scotland": null,
 "Nithsdale, Scotland": null,
+"Norsemen, England": null,
+"North Ferriby, England": [
+53.71923,
+-0.50516,
+"North Ferriby"
+],
+"North Greenford, England": null,
 "North Kilworth, England": [
 52.45231,
 -1.09874,
 "North Kilworth"
 ],
+"North Leigh, England": [
+51.82014,
+-1.43851,
+"North Leigh"
+],
+"North Ormesby, England": [
+54.57143,
+-1.21335,
+"North Ormesby"
+],
+"North Petherwin, England": [
+50.69319,
+-4.46133,
+"North Petherwin"
+],
+"North Shields, England": [
+55.00877,
+-1.4471,
+"North Shields"
+],
+"North Walkden, England": null,
+"North, England": null,
+"Northallerton, England": [
+54.34048,
+-1.43449,
+"Northallerton"
+],
+"Northampton ON Chenecks, England": null,
+"Northampton Sileby, England": null,
 "Northampton, England": [
 52.23789,
 -0.89636,
 "Northampton"
+],
+"Northfield, England": [
+52.41172,
+-1.96343,
+"Northfield"
 ],
 "Northfleet, England": [
 51.44323,
 0.33633,
 "Northfleet"
 ],
+"Northstar, England": null,
 "Northwich, England": [
 53.26025,
 -2.51451,
 "Northwich"
 ],
+"Northwood, England": [
+51.60517,
+-0.42058,
+"Northwood"
+],
+"Norton Stockton Ancients, England": null,
+"Norton, England": [
+54.12798,
+-0.78504,
+"Norton-on-Derwent"
+],
+"Norwich CEYMS, England": null,
 "Norwich, England": [
 52.62856,
 1.2924,
 "Norwich"
 ],
+"Nostell Miners, England": null,
+"Nostell, England": [
+53.64721,
+-1.38709,
+"Nostell"
+],
+"Nottingham Trent University, England": null,
 "Nottingham, England": [
 52.95342,
 -1.14965,
 "City of Nottingham"
+],
+"Notts, England": null,
+"Nuneaton, England": [
+52.5228,
+-1.46797,
+"Nuneaton"
+],
+"Oakham, England": [
+52.66666,
+-0.74997,
+"Oakham"
 ],
 "Oakley, England": [
 52.17107,
@@ -1885,10 +6431,49 @@
 -3.56699,
 "Oakley"
 ],
+"Oakwood, England": [
+53.82705,
+-1.5057,
+"Oakwood"
+],
+"Odd Down, England": [
+51.35868,
+-2.37814,
+"Odd Down"
+],
+"Okehampton, England": [
+50.73767,
+-4.00032,
+"Okehampton"
+],
 "Oldham, England": [
 53.54158,
 -2.11478,
 "Oldham"
+],
+"Oldland Abbotonians, England": null,
+"Oldland, England": [
+51.44506,
+-2.48995,
+"Oldland"
+],
+"Ollerton, England": [
+53.28393,
+-2.32961,
+"Ollerton"
+],
+"Ollscoil na Gaillimhe, Ireland": null,
+"Ollscoil, Ireland": null,
+"Ongar, England": [
+51.70595,
+0.24534,
+"Chipping Ongar"
+],
+"Oranmore Maree, Ireland": null,
+"Oranmore, Ireland": [
+53.26835,
+-8.92842,
+"Oranmore"
 ],
 "Orkney, Orkney, Scotland": null,
 "Orkney, Scotland": [
@@ -1896,37 +6481,232 @@
 -3.12969,
 "Orkney Islands"
 ],
+"Ormskirk West End, England": null,
+"Ormskirk, England": [
+53.56736,
+-2.88596,
+"Ormskirk"
+],
+"Ossett, England": [
+53.67805,
+-1.57659,
+"Ossett"
+],
 "Oswestry, Wales": null,
+"Ottery St Mary, England": [
+50.7466,
+-3.27243,
+"Ottery St. Mary"
+],
+"Oughtibridge War Memorial, England": null,
+"Oughtibridge, England": [
+53.436,
+-1.53959,
+"Oughtibridge"
+],
+"Over, England": [
+52.31522,
+0.01705,
+"Over"
+],
+"Overton, England": [
+53.99522,
+-1.15622,
+"Overton"
+],
+"Owens, England": null,
 "Oxford, England": [
 51.75201,
 -1.25785,
 "Oxford"
+],
+"Oxhey Jets, England": null,
+"Oxhey, England": [
+51.62486,
+-0.3908,
+"South Oxhey"
+],
+"PFC London, England": null,
+"PFC, England": null,
+"PILCS, Wales": null,
+"PSNI, Northern Ireland": null,
+"Padarn, Wales": null,
+"Padiham, England": [
+53.80036,
+-2.31341,
+"Padiham"
+],
+"Paget, England": null,
+"Pagham, England": [
+50.77069,
+-0.73941,
+"Pagham"
 ],
 "Paisley, Scotland": [
 55.84558,
 -4.42396,
 "Paisley"
 ],
+"Parkgate, England": [
+53.29719,
+-3.08362,
+"Parkgate"
+],
+"Parklands, England": [
+53.38009,
+-2.76042,
+"Parklands"
+],
+"Parson Drove, England": [
+52.657,
+0.02603,
+"Parson Drove"
+],
+"Paulton, England": [
+51.30539,
+-2.50515,
+"Paulton"
+],
+"Peacehaven Telscombe, England": null,
+"Peacehaven, England": [
+50.79695,
+0.0069,
+"Peacehaven"
+],
+"Peamount, Ireland": [
+53.3164,
+-6.48521,
+"Peamount"
+],
 "Pegasus, England": null,
+"Pencoed BGC, Wales": null,
+"Pencoed, Wales": [
+51.52561,
+-3.50645,
+"Pencoed"
+],
+"Pendeen, England": [
+50.15133,
+-5.66528,
+"Pendeen"
+],
 "Penicuik, Scotland": [
 55.82724,
 -3.22181,
 "Penicuik"
+],
+"Penistone Church, England": null,
+"Penistone, England": [
+53.52474,
+-1.62943,
+"Penistone"
+],
+"Penlan, Wales": [
+51.64768,
+-3.96333,
+"Penlan"
+],
+"Penmaenmawr, Wales": [
+53.26814,
+-3.92003,
+"Penmaenmawr"
+],
+"Penn Tylers Green, England": [
+51.63302,
+-0.68795,
+"Penn"
+],
+"Pennington, England": [
+54.19918,
+-3.13937,
+"Pennington"
+],
+"Penparcau, Wales": [
+52.40131,
+-4.07204,
+"Penparcau"
+],
+"Penrhiwceiber, Wales": [
+51.6694,
+-3.37097,
+"Penrhiwceiber"
+],
+"Penrhyn Bay, Wales": [
+53.3178,
+-3.77645,
+"Penrhyn Bay"
 ],
 "Penrhyn-coch, Wales": [
 52.43777,
 -3.99884,
 "Penrhyn-coch"
 ],
+"Penrhyncoch, Wales": [
+52.43777,
+-3.99884,
+"Penrhyn-coch"
+],
+"Penrhyndeudraeth, Wales": [
+52.93004,
+-4.06687,
+"Penrhyndeudraeth"
+],
+"Penrith, England": [
+54.68614,
+-2.75692,
+"Penrith"
+],
+"Penryn, England": [
+50.16855,
+-5.10341,
+"Penryn"
+],
+"Pentwynmawr, Wales": [
+51.6585,
+-3.16637,
+"Pentwyn-mawr"
+],
 "Penycae, Wales": [
 53.00092,
 -3.07667,
 "Pen-y-cae"
 ],
+"Penycae, Wrexham, Wales": [
+53.00092,
+-3.07667,
+"Pen-y-cae"
+],
+"Penydarren BGC, Wales": null,
+"Penydarren, Wales": [
+51.75718,
+-3.36866,
+"Penydarren"
+],
+"Penyffordd, Wales": [
+53.14545,
+-3.04778,
+"Penyffordd"
+],
+"Penzance, England": [
+50.11948,
+-5.53525,
+"Penzance"
+],
 "Perivale, England": [
 51.53447,
 -0.3205,
 "Perivale"
+],
+"Perranwell, England": [
+50.21621,
+-5.12116,
+"Perranwell"
+],
+"Perrywood, England": null,
+"Pershore, England": [
+52.1097,
+-2.07548,
+"Pershore"
 ],
 "Perth, Scotland": [
 56.39588,
@@ -1943,20 +6723,65 @@
 -1.78132,
 "Peterhead"
 ],
+"Petersfield, England": [
+51.00249,
+-0.9392,
+"Petersfield"
+],
+"Petts Wood Holmesdale, England": null,
+"Petts, England": [
+51.39091,
+0.07713,
+"Petts Wood"
+],
+"Pickering, England": [
+54.24566,
+-0.77656,
+"Pickering"
+],
+"Pill, Wales": null,
+"Pinchbeck, England": [
+52.81369,
+-0.16268,
+"Pinchbeck CP"
+],
+"Pinxton, England": [
+53.09487,
+-1.32423,
+"Pinxton"
+],
 "Pitmedden, Scotland": [
 57.3385,
 -2.18241,
 "Pitmedden"
 ],
+"Pitstone Ivinghoe, England": null,
+"Pitstone, England": [
+51.82565,
+-0.63173,
+"Pitstone"
+],
+"Plymouth Marjon, England": null,
+"Plymouth Parkway, England": null,
 "Plymouth, England": [
 50.37141,
 -4.14245,
 "Plymouth"
 ],
+"Plymstock, England": [
+50.36001,
+-4.09118,
+"Plymstock"
+],
 "Pollok, Glasgow City, Scotland": [
 55.83073,
 -4.34736,
 "Pollok"
+],
+"Polperro, England": [
+50.33151,
+-4.51902,
+"Polperro"
 ],
 "Pontardawe, Wales": [
 51.72199,
@@ -1968,6 +6793,34 @@
 -4.04038,
 "Pontarddulais"
 ],
+"Pontefract Collieries, England": null,
+"Pontefract, England": [
+53.69174,
+-1.31057,
+"Pontefract"
+],
+"Pontlliw, Wales": [
+51.69022,
+-4.0126,
+"Pontlliw"
+],
+"Pontyclun, Rhondda Cynon Taf, Wales": [
+51.52519,
+-3.39015,
+"Pontyclun"
+],
+"Poole, England": [
+50.71795,
+-1.98152,
+"Poole"
+],
+"Port Talbot, Wales": [
+51.59524,
+-3.78241,
+"Port Talbot"
+],
+"Port, England": null,
+"Portadown BBOB, Northern Ireland": null,
 "Portadown, Northern Ireland": [
 54.42423,
 -6.44121,
@@ -1978,16 +6831,68 @@
 -1.12473,
 "Portchester"
 ],
+"Porthcawl, Wales": [
+51.47956,
+-3.70407,
+"Porthcawl"
+],
+"Porthleven, England": [
+50.08492,
+-5.31666,
+"Porthleven"
+],
 "Porthmadog, Wales": [
 52.9256,
 -4.12969,
 "Porthmadog"
+],
+"Portishead, England": [
+51.48525,
+-2.76832,
+"Portishead"
+],
+"Portland, England": [
+50.56725,
+-2.44725,
+"Portland"
 ],
 "Portsmouth, England": [
 50.80003,
 -1.0906,
 "Portsmouth"
 ],
+"Portstewart, Northern Ireland": [
+55.18291,
+-6.7187,
+"Portstewart"
+],
+"Potters Bar, England": [
+51.69589,
+-0.18489,
+"Potters Bar"
+],
+"Potton, England": [
+52.13052,
+-0.20392,
+"Potton"
+],
+"Poynton, England": [
+53.34925,
+-2.11744,
+"Poynton"
+],
+"Prescot Cables, England": null,
+"Prescot, England": [
+53.42758,
+-2.80425,
+"Prescot"
+],
+"Prestatyn, Wales": [
+53.33456,
+-3.40295,
+"Prestatyn"
+],
+"Preston North End, England": null,
 "Preston, East Lothian, Scotland": [
 55.95462,
 -2.97988,
@@ -1998,27 +6903,173 @@
 -2.69927,
 "Preston"
 ],
+"Prestwich Heys, England": null,
+"Prestwich, England": [
+53.53043,
+-2.29602,
+"Prestwich"
+],
+"Prudhoe, England": [
+54.95449,
+-1.86468,
+"Prudhoe"
+],
+"Punjab, England": null,
+"Pwllheli, Gwynedd, Wales": [
+52.88791,
+-4.41876,
+"Pwllheli"
+],
+"Quedgeley, England": [
+51.82737,
+-2.27729,
+"Quedgeley"
+],
+"Queens Crescents, England": null,
+"Queens LFC, Scotland": null,
+"Queens, England": [
+50.39326,
+-4.93162,
+"Indian Queens"
+],
+"Queens, Scotland": null,
+"Queens, Wales": [
+53.04469,
+-2.97313,
+"Caia Park"
+],
+"Quorn, England": [
+52.7429,
+-1.17005,
+"Quorn"
+],
+"RHP Social, England": null,
+"RHP, England": null,
+"RTB Ebbw, Wales": null,
+"RTB, Wales": null,
+"Racing Warwick, England": null,
+"Racing, England": null,
+"Radcliffe, England": [
+53.55934,
+-2.32615,
+"Radcliffe"
+],
+"Radford, England": [
+51.91241,
+-1.40695,
+"Radford"
+],
+"Radnor Valley, Powys, Wales": null,
 "Radnor Valley, Wales": null,
+"Radnor, Powys, Wales": [
+52.2407,
+-3.15206,
+"New Radnor"
+],
 "Radnor, Wales": [
 52.2407,
 -3.15206,
 "New Radnor"
 ],
+"Radstock, England": [
+51.29195,
+-2.44762,
+"Radstock"
+],
+"Rainworth Miners, England": null,
+"Rainworth, England": [
+53.11909,
+-1.11877,
+"Rainworth CP"
+],
+"Ramsbottom, England": [
+53.64838,
+-2.3157,
+"Ramsbottom"
+],
+"Ramsey, England": [
+52.44941,
+-0.10211,
+"Ramsey"
+],
+"Ramsgate, England": [
+51.33347,
+1.41965,
+"Ramsgate"
+],
+"Ransomes, England": null,
 "Rathfriland, Northern Ireland": [
 54.23818,
 -6.16031,
 "Rathfriland"
+],
+"Rayleigh, England": [
+51.58688,
+0.60631,
+"Rayleigh"
+],
+"Rayners Lane, England": [
+51.57671,
+-0.3703,
+"Rayners Lane"
+],
+"Raynes, England": [
+51.41062,
+-0.23129,
+"Raynes Park"
 ],
 "Reading, England": [
 51.45642,
 -0.97007,
 "Reading"
 ],
+"Real Bedford, England": null,
+"Real Suffolk, England": null,
+"Real, England": null,
+"Redbourn, England": [
+51.79851,
+-0.39515,
+"Redbourn"
+],
+"Redbridge, England": [
+51.57658,
+0.04534,
+"Redbridge"
+],
+"Redcar U23s, England": null,
+"Redcar, England": [
+54.6179,
+-1.06879,
+"Redcar"
+],
 "Redditch, England": [
 52.30577,
 -1.94174,
 "Redditch"
 ],
+"Redgate Clayton, England": null,
+"Redgate, England": [
+53.55249,
+-3.05154,
+"Redgate"
+],
+"Redhill, England": [
+51.24047,
+-0.16828,
+"Redhill"
+],
+"Redruth, England": [
+50.23399,
+-5.22765,
+"Redruth"
+],
+"Reigate Priory, England": null,
+"Reigate, England": [
+51.23766,
+-0.20571,
+"Reigate"
+],
+"Renfrew LFC, Scotland": null,
 "Renfrew, Renfrewshire, Scotland": [
 55.87757,
 -4.38888,
@@ -2029,25 +7080,157 @@
 -4.38888,
 "Renfrew"
 ],
+"Renmore, Ireland": [
+53.27597,
+-9.02086,
+"Renmore"
+],
 "Retford, England": [
 53.32313,
 -0.94249,
 "Retford"
+],
+"Revo, England": null,
+"Rhayader, Wales": [
+52.29953,
+-3.50999,
+"Rhayader"
+],
+"Rhos Aelwyd, Wales": null,
+"Rhos Aelwyd, Wrexham, Wales": null,
+"Rhos, Wales": [
+51.71291,
+-3.82792,
+"Rhos"
+],
+"Rhos, Wrexham, Wales": [
+53.01273,
+-3.05942,
+"Rhosllanerchrugog"
+],
+"Rhostyllen, Wales": [
+53.03163,
+-3.02519,
+"Rhostyllen"
+],
+"Rhydymwyn, Wales": [
+53.19386,
+-3.19379,
+"Rhydymwyn"
 ],
 "Rhyl, Wales": [
 53.32074,
 -3.49073,
 "Rhyl"
 ],
+"Richhill, Northern Ireland": [
+54.37102,
+-6.54879,
+"Richhill"
+],
+"Richmond, England": [
+51.44055,
+-0.30764,
+"London Borough of Richmond upon Thames"
+],
+"Ringmahon, Ireland": null,
+"Ringmer, England": [
+50.90078,
+0.06324,
+"Ringmer"
+],
+"Ringwood, England": [
+50.82926,
+-1.77113,
+"Ringwood"
+],
+"Ripley, England": [
+54.04672,
+-1.56476,
+"Ripley"
+],
+"Risborough, England": [
+51.72217,
+-0.83376,
+"Princes Risborough"
+],
+"Risca, Caerphilly, Wales": [
+51.61195,
+-3.09648,
+"Risca"
+],
+"Riseley, England": [
+52.25288,
+-0.47582,
+"Riseley"
+],
 "River, England": [
 51.14101,
 1.27481,
 "River"
 ],
+"Roade, England": [
+52.1588,
+-0.89414,
+"Roade"
+],
+"Rocester, England": [
+52.9508,
+-1.84035,
+"Rocester"
+],
+"Rochdale Sacred Heart, England": null,
 "Rochdale, England": [
 53.61537,
 -2.15576,
 "Rochdale"
+],
+"Rochester, England": [
+51.38838,
+0.50492,
+"Rochester"
+],
+"Rockmount, Ireland": null,
+"Rockspur Fords, Wales": null,
+"Rockspur, Wales": null,
+"Rodings Waltham, England": null,
+"Rodings, England": [
+51.80656,
+0.29825,
+"The Rodings"
+],
+"Roffey, England": [
+51.07605,
+-0.29847,
+"Roffey"
+],
+"Rogerstone, Wales": [
+51.59171,
+-3.05468,
+"Rogerstone"
+],
+"Roman Glass St. George, England": null,
+"Roman, England": [
+51.0873,
+-0.40442,
+"Roman Gate"
+],
+"Romford, England": [
+51.57605,
+0.18226,
+"Romford"
+],
+"Romsey, England": [
+50.98914,
+-1.4999,
+"Romsey"
+],
+"Romulus, England": null,
+"Rossington Main, England": null,
+"Rossington, England": [
+53.47297,
+-1.06965,
+"Rossington"
 ],
 "Rotherham, England": [
 53.43104,
@@ -2069,15 +7252,82 @@
 -2.46443,
 "Rothienorman"
 ],
+"Rothwell, England": [
+52.42251,
+-0.79873,
+"Rothwell"
+],
+"Route One, England": null,
+"Route, England": null,
+"Royal Wootton Bassett, England": [
+51.54179,
+-1.90474,
+"Royal Wootton Bassett"
+],
+"Royston, England": [
+52.04727,
+-0.02465,
+"Royston"
+],
+"Royton, England": [
+53.56525,
+-2.12361,
+"Royton"
+],
+"Ruardean Hill, England": [
+51.85112,
+-2.5342,
+"Ruardean Hill"
+],
+"Ruddington Village, England": null,
+"Ruddington, England": [
+52.89211,
+-1.15024,
+"Ruddington"
+],
+"Rudgwick, England": [
+51.09003,
+-0.44914,
+"Rudgwick"
+],
+"Rugby, England": [
+52.37267,
+-1.262,
+"Rugby"
+],
 "Ruislip, England": [
 51.57756,
 -0.42785,
 "Ruislip"
 ],
+"Runcorn Linnets, England": null,
+"Runcorn, England": [
+53.34215,
+-2.73349,
+"Runcorn"
+],
+"Rushall, England": [
+51.27578,
+-1.85651,
+"Rushall"
+],
+"Rushden Diamonds, England": null,
+"Rushden Higham, England": null,
+"Rushden Sargents, England": null,
 "Rushden, England": [
 52.29116,
 -0.59882,
 "Rushden"
+],
+"Rusthall, England": [
+51.13871,
+0.23219,
+"Rusthall"
+],
+"Rustington, England": [
+50.81108,
+-0.51017,
+"Rustington"
 ],
 "Rutherglen Glencairn, Scotland": null,
 "Rutherglen Glencairn, South Lanarkshire, Scotland": null,
@@ -2091,21 +7341,106 @@
 -3.30524,
 "Ruthin"
 ],
+"Ryan, England": null,
+"Ryton Crawcrook, England": null,
+"Ryton, England": [
+54.97283,
+-1.76269,
+"Ryton"
+],
+"SE Dons, England": null,
+"SE Dons_, England": null,
+"SE, England": null,
+"SJR Worksop, England": null,
+"SJR, England": null,
+"SOUL Tower Hamlets, England": null,
+"SOUL, England": null,
+"Saffron Walden, England": [
+52.02157,
+0.24113,
+"Saffron Walden"
+],
+"Saffron, England": [
+52.02157,
+0.24113,
+"Saffron Walden"
+],
+"Saint, England": null,
 "Salisbury, England": [
 51.06906,
 -1.79541,
 "Salisbury"
 ],
+"Saltash, England": [
+50.40867,
+-4.21122,
+"Saltash"
+],
+"Saltdean, England": [
+50.80646,
+-0.04164,
+"Saltdean"
+],
 "Saltire, Scotland": null,
+"Saltney, Wales": [
+53.17563,
+-2.92932,
+"Saltney"
+],
+"Sandbach, England": [
+53.14392,
+-2.36226,
+"Sandbach"
+],
+"Sandhurst, England": [
+51.3503,
+-0.78727,
+"Sandhurst"
+],
+"Sandiacre, England": [
+52.92328,
+-1.28922,
+"Sandiacre"
+],
+"Sandwell, England": [
+52.51485,
+-2.01349,
+"Sandwell"
+],
+"Sarratt, England": [
+51.68124,
+-0.48862,
+"Sarratt"
+],
 "Sauchie, Clackmannanshire, Scotland": [
 56.12791,
 -3.78092,
 "Sauchie"
 ],
+"Sawbridgeworth, England": [
+51.8161,
+0.14788,
+"Sawbridgeworth"
+],
+"Sawston, England": [
+52.12523,
+0.16935,
+"Sawston"
+],
+"Sawtry, England": [
+52.43807,
+-0.28206,
+"Sawtry"
+],
 "Scarborough, England": [
 54.282,
 -0.40119,
 "Scarborough"
+],
+"Scole, England": [
+52.37795,
+1.16995,
+"Scole"
 ],
 "Scone, Perth and Kinross, Scotland": [
 56.42048,
@@ -2117,20 +7452,191 @@
 -0.64508,
 "Scunthorpe"
 ],
+"Seaford, England": [
+50.77825,
+0.11068,
+"Seaford"
+],
+"Seaham, England": [
+54.83721,
+-1.33556,
+"Seaham"
+],
+"Seapatrick, Northern Ireland": null,
+"Seaside, Wales": [
+51.67409,
+-4.17002,
+"Seaside"
+],
+"Seaton Carew, England": [
+54.66029,
+-1.18714,
+"Seaton Carew"
+],
+"Sefton, England": [
+53.57026,
+-3.06436,
+"Sefton"
+],
+"Selby, England": [
+53.78401,
+-1.06878,
+"Selby"
+],
+"Selsey, England": [
+50.73278,
+-0.79229,
+"Selsey"
+],
+"Selston, England": [
+53.07217,
+-1.30364,
+"Selston CP"
+],
+"Seven Sisters Onllwyn, Neath Port Talbot, Wales": null,
+"Seven Sisters Onllwyn, Wales": null,
+"Seven, Neath Port Talbot, Wales": [
+51.76709,
+-3.71278,
+"Seven Sisters"
+],
+"Sevenoaks, England": [
+51.27452,
+0.19613,
+"Sevenoaks"
+],
+"Shaftesbury, England": [
+51.00607,
+-2.19608,
+"Shaftesbury"
+],
+"Shamrock, Ireland": null,
+"Shankill, Northern Ireland": [
+54.60374,
+-5.94644,
+"Shankill"
+],
+"Sharpness, England": [
+51.71663,
+-2.47073,
+"Sharpness"
+],
+"Shawbury, England": [
+52.78752,
+-2.65549,
+"Shawbury"
+],
 "Sheerness, England": [
 51.43989,
 0.76209,
 "Sheerness"
+],
+"Sheerwater, England": [
+51.33404,
+-0.52764,
+"Sheerwater"
 ],
 "Sheffield, England": [
 53.38066,
 -1.47023,
 "Sheffield"
 ],
+"Shefford Campton, England": null,
+"Shefford, England": [
+52.03841,
+-0.33552,
+"Shefford"
+],
+"Shelbourne, Ireland": [
+53.17218,
+-8.0269,
+"Shelbourne"
+],
+"Shenfield Association, England": null,
+"Shenfield, England": [
+51.62953,
+0.32553,
+"Shenfield"
+],
+"Shepherds Bush, England": null,
+"Shepherds, England": [
+53.27358,
+-2.72335,
+"Shepherds Houses"
+],
+"Sheppey, England": null,
+"Shepshed, England": [
+52.75969,
+-1.30281,
+"Shepshed"
+],
+"Shepton Mallet, England": [
+51.19095,
+-2.54613,
+"Shepton Mallet"
+],
+"Sherborne, England": [
+50.95027,
+-2.51792,
+"Sherborne"
+],
+"Sherwood Colliery, England": null,
+"Sherwood, England": [
+52.98123,
+-1.15035,
+"Sherwood"
+],
+"Shifnal, England": [
+52.66759,
+-2.37299,
+"Shifnal"
+],
+"Shildon, England": [
+54.63262,
+-1.6486,
+"Shildon"
+],
+"Shipston Excelsior, England": null,
+"Shipston, England": [
+52.06302,
+-1.62473,
+"Shipston-on-Stour"
+],
+"Shire, England": [
+51.08333,
+-1.16667,
+"Hampshire"
+],
+"Shirebrook, England": [
+53.2063,
+-1.22053,
+"Shirebrook"
+],
+"Shirehampton, England": [
+51.48927,
+-2.67596,
+"Shirehampton"
+],
 "Shirley, England": [
 52.97098,
 -1.67489,
 "Shirley CP"
+],
+"Sholing, England": [
+50.9035,
+-1.35292,
+"Sholing"
+],
+"Shoreham, England": [
+50.83223,
+-0.27467,
+"Shoreham-by-Sea"
+],
+"Shortwood, England": null,
+"Shotton Colliery, England": [
+54.76186,
+-1.38617,
+"Shotton Colliery"
 ],
 "Shotts Bon Accord, Scotland": null,
 "Shotts, Scotland": [
@@ -2143,55 +7649,356 @@
 -2.75407,
 "Shrewsbury"
 ],
+"Sidmouth, England": [
+50.679,
+-3.23766,
+"Sidmouth"
+],
+"Sifil, Wales": null,
+"Sileby, England": [
+52.73088,
+-1.11155,
+"Sileby"
+],
+"Silkstone, England": [
+53.54802,
+-1.56346,
+"Silkstone"
+],
+"Silsden, England": [
+53.91318,
+-1.93747,
+"Silsden"
+],
+"Silverdale, England": [
+54.17192,
+-2.83792,
+"Silverdale"
+],
+"Sirocco Works, Northern Ireland": null,
+"Sirocco, Northern Ireland": null,
+"Sittingbourne, England": [
+51.33974,
+0.73423,
+"Sittingbourne"
+],
+"Skegness, England": [
+53.14375,
+0.3429,
+"Skegness"
+],
+"Skelmersdale, England": [
+53.55022,
+-2.77507,
+"Skelmersdale"
+],
+"Sleaford, England": [
+52.99965,
+-0.40956,
+"Sleaford"
+],
 "Sligo, Ireland": [
 54.27207,
 -8.47514,
 "Sligo"
+],
+"Slimbridge, England": [
+51.73356,
+-2.39303,
+"Slimbridge"
+],
+"Slough, England": [
+51.5111,
+-0.59407,
+"Slough"
+],
+"Snodland, England": [
+51.33492,
+0.43266,
+"Snodland"
+],
+"Soham, England": [
+52.33335,
+0.33875,
+"Soham"
 ],
 "Solihull, England": [
 52.41302,
 -1.77689,
 "Solihull"
 ],
+"South Elmsall Services, England": null,
+"South Gower, Swansea, Wales": null,
+"South Gower, Wales": null,
+"South Leeds, England": null,
+"South Liverpool, England": [
+53.37539,
+-3.00713,
+"South Tranmere"
+],
+"South Moor, England": [
+54.85846,
+-1.70383,
+"South Moor"
+],
+"South Normanton, England": [
+53.10641,
+-1.33928,
+"South Normanton"
+],
+"South Shields, England": [
+54.99874,
+-1.43218,
+"South Shields"
+],
+"South, England": null,
+"South, Swansea, Wales": null,
+"Southall, England": [
+51.51115,
+-0.37552,
+"Southall"
+],
 "Southampton, England": [
 50.90253,
 -1.40419,
 "Southampton"
+],
+"Southend Manor, England": null,
+"Southend, England": [
+51.53882,
+0.71281,
+"Southend-on-Sea"
 ],
 "Southend-on-Sea, England": [
 51.53882,
 0.71281,
 "Southend-on-Sea"
 ],
+"Southendian, England": null,
+"Southmead Sunday, England": null,
+"Southmead, England": [
+51.50217,
+-2.59662,
+"Southmead"
+],
+"Southport, England": [
+53.64874,
+-3.0045,
+"Southport"
+],
+"Southwell, England": [
+53.07825,
+-0.95508,
+"Southwell CP"
+],
 "Spalding, England": [
 52.78763,
 -0.15261,
 "Spalding"
+],
+"Spartans, England": null,
+"Spelthorne, England": [
+51.42503,
+-0.45929,
+"Spelthorne"
+],
+"Spencer, England": [
+52.24523,
+-0.91421,
+"Spencer"
 ],
 "Spennymoor, England": [
 54.69955,
 -1.60115,
 "Spennymoor"
 ],
+"Splisby, England": null,
+"Springfield, England": [
+51.75101,
+0.49692,
+"Springfield"
+],
+"Sprowston, England": [
+52.65767,
+1.32114,
+"Sprowston"
+],
+"Squires Gate, England": [
+53.78242,
+-3.04644,
+"Squires Gate"
+],
+"St Agnes, England": [
+50.29514,
+-5.20092,
+"St. Agnes"
+],
 "St Andrews, Scotland": [
 56.34037,
 -2.79504,
 "St Andrews"
+],
+"St Asaph, Denbighshire, Wales": [
+53.25756,
+-3.44386,
+"St Asaph"
 ],
 "St Austell, England": [
 50.33814,
 -4.79418,
 "St. Austell"
 ],
+"St Blazey, England": [
+50.36301,
+-4.71565,
+"St Blazey"
+],
 "St Cadocs, Glasgow City, Scotland": null,
 "St Cadocs, Scotland": null,
+"St Day, England": [
+50.2393,
+-5.18488,
+"St. Day"
+],
+"St Helens, England": [
+53.45355,
+-2.73432,
+"St Helens"
+],
+"St Ives, England": [
+50.21491,
+-5.47951,
+"St. Ives"
+],
+"St Johnstone Wfc, Scotland": null,
+"St Just, England": [
+50.12438,
+-5.67974,
+"St Just"
+],
+"St Margaretsbury, England": null,
+"St Marys, Ireland": null,
+"St Marys, Northern Ireland": null,
+"St Mawgan, England": [
+50.45479,
+-4.99778,
+"St. Mawgan"
+],
+"St Michaels DH, England": null,
+"St Neots, England": [
+52.22758,
+-0.27038,
+"St. Neots"
+],
+"St Oliver Plunkett, Northern Ireland": null,
+"St Patricks, England": null,
+"St Patricks, Ireland": null,
 "St Rochs, Glasgow City, Scotland": null,
 "St Rochs, Scotland": null,
+"St, England": [
+51.12675,
+-2.73972,
+"Street"
+],
 "St, Glasgow City, Scotland": null,
+"St, Ireland": [
+53.68257,
+-7.48969,
+"Street"
+],
+"St, Northern Ireland": [
+54.44034,
+-6.51357,
+"Scotch Street"
+],
+"St, Scotland": null,
+"St. Albans, England": [
+51.75305,
+-0.33797,
+"St Albans"
+],
+"St. Mochtas, Ireland": null,
+"St., Ireland": [
+53.68257,
+-7.48969,
+"Street"
+],
 "Stafford, England": [
 52.80632,
 -2.11638,
 "Stafford"
+],
+"Staines Lammas, England": null,
+"Staines, England": [
+51.43401,
+-0.51104,
+"Staines-upon-Thames"
+],
+"Staithes, England": [
+54.5592,
+-0.79227,
+"Staithes"
+],
+"Stalybridge, England": [
+53.48402,
+-2.05625,
+"Stalybridge"
+],
+"Stamford, England": [
+52.652,
+-0.48046,
+"Stamford"
+],
+"Stanhope Beaver, England": null,
+"Stanhope, England": [
+54.74757,
+-2.0068,
+"Stanhope"
+],
+"Stansfeld OB, England": null,
+"Stansfeld, England": null,
+"Stansted, England": [
+51.90278,
+0.1998,
+"Stansted Mountfitchet"
+],
+"Stanway, England": [
+51.88447,
+0.83507,
+"Stanway"
+],
+"Stapenhill, England": [
+52.7945,
+-1.62191,
+"Stapenhill"
+],
+"Stapleford, England": [
+52.92939,
+-1.27404,
+"Stapleford"
+],
+"Staplegrove, England": [
+51.03232,
+-3.12376,
+"Staplegrove"
+],
+"Staplehurst Monarchs, England": null,
+"Staplehurst, England": [
+51.16366,
+0.55621,
+"Staplehurst"
+],
+"Staveley MW, England": null,
+"Staveley Miners, England": null,
+"Staveley, England": [
+54.05848,
+-1.43434,
+"Staveley"
+],
+"Steeton, England": [
+53.89667,
+-1.94944,
+"Steeton"
 ],
 "Stenhousemuir, Scotland": [
 56.02583,
@@ -2203,20 +8010,66 @@
 -0.20272,
 "Stevenage"
 ],
+"Stewkley, England": [
+51.9201,
+-0.76581,
+"Stewkley"
+],
+"Steyning, England": [
+50.89022,
+-0.33022,
+"Steyning"
+],
+"Sticker, England": [
+50.31776,
+-4.83862,
+"Sticker"
+],
 "Stirling, Scotland": [
 56.11812,
 -3.936,
 "Stirling"
 ],
+"Stockport Georgians, England": null,
 "Stockport, England": [
 53.4079,
 -2.16024,
 "Stockport"
 ],
+"Stocksbridge Steels, England": null,
+"Stocksbridge, England": [
+53.48248,
+-1.59079,
+"Stocksbridge"
+],
+"Stockton, England": [
+51.13402,
+-2.03466,
+"Stockton"
+],
+"Stockwood Green, England": null,
+"Stockwood, England": [
+50.86057,
+-2.58658,
+"Stockwood"
+],
+"Stoke Gabriel Torbay Police, England": null,
+"Stoke Gifford SGS, England": null,
 "Stoke, England": [
 53.0162,
 -2.18126,
 "Stoke-on-Trent"
+],
+"Stokesley, England": [
+54.47029,
+-1.19082,
+"Stokesley"
+],
+"Stone Alleynians, England": null,
+"Stone, England": [
+52.9033,
+-2.14777,
+"Stone"
 ],
 "Stoneham, England": [
 50.96103,
@@ -2228,12 +8081,53 @@
 -2.2088,
 "Stonehaven"
 ],
+"Stonehouse, England": [
+51.74747,
+-2.28302,
+"Stonehouse"
+],
 "Stoneywood Parkvale, Aberdeen City, Scotland": null,
 "Stoneywood Parkvale, Scotland": null,
 "Stoneywood, Aberdeen City, Scotland": [
 57.19061,
 -2.17926,
 "Stoneywood"
+],
+"Stony Stratford, England": [
+52.05675,
+-0.85258,
+"Stony Stratford"
+],
+"Stopsley, England": [
+51.90034,
+-0.39558,
+"Stopsley"
+],
+"Stotfold, England": [
+52.015,
+-0.22514,
+"Stotfold"
+],
+"Stourbridge, England": [
+52.45776,
+-2.14743,
+"Stourbridge"
+],
+"Stourport, England": [
+52.33964,
+-2.28116,
+"Stourport-on-Severn"
+],
+"Stowmarket, England": [
+52.18781,
+0.99734,
+"Stowmarket"
+],
+"Stowupland Falcons, England": null,
+"Stowupland, England": [
+52.19848,
+1.02232,
+"Stowupland"
 ],
 "Strabane, Northern Ireland": [
 54.82612,
@@ -2245,27 +8139,83 @@
 -5.0262,
 "Stranraer"
 ],
+"Stratford, England": [
+52.19278,
+-1.70634,
+"Stratford-upon-Avon"
+],
+"Stratford-upon-Avon, England": [
+52.19278,
+-1.70634,
+"Stratford-upon-Avon"
+],
 "Strathspey, Highland, Scotland": null,
 "Strathspey, Scotland": null,
+"Studley, England": [
+52.26912,
+-1.8959,
+"Studley CP"
+],
+"Sturminster Newton, England": [
+50.929,
+-2.32639,
+"Sturminster Newton"
+],
 "Sudbury, England": [
 52.04015,
 0.72995,
 "Sudbury"
 ],
+"Sun Watford, England": null,
+"Sun, England": [
+53.78325,
+-1.89525,
+"Sun Side"
+],
+"Sunderland RCA, England": null,
+"Sunderland Southwick, England": null,
+"Sunderland West End, England": null,
 "Sunderland, England": [
 54.90585,
 -1.38287,
 "Sunderland"
 ],
+"Sungate, England": null,
 "Sunnybank, Aberdeen City, Scotland": [
 57.16093,
 -2.10828,
 "Froghall, Powis and Sunnybank"
 ],
+"Sunnyhill, England": [
+52.88979,
+-1.49865,
+"Sunny Hill"
+],
+"Sutton Coldfield, England": [
+52.56231,
+-1.82398,
+"Sutton Coldfield"
+],
+"Sutton Common, England": [
+52.47685,
+-2.40142,
+"Sutton"
+],
 "Sutton, England": [
 51.35744,
 -0.17361,
 "London Borough of Sutton"
+],
+"Swallownest, England": [
+53.36326,
+-1.32129,
+"Swallownest"
+],
+"Swanage Herston, England": null,
+"Swanage, England": [
+50.6087,
+-1.9572,
+"Swanage"
 ],
 "Swansea, England": null,
 "Swansea, Wales": [
@@ -2273,13 +8223,37 @@
 -3.94592,
 "Swansea"
 ],
+"Swindon Supermarine, England": null,
 "Swindon, England": [
 51.56153,
 -1.78543,
 "Swindon"
 ],
+"Swinton, England": [
+54.14933,
+-0.83939,
+"Swinton"
+],
+"TD Shipley, England": null,
+"TD, England": null,
 "TU Dublin, Ireland": null,
 "TU, Ireland": null,
+"Tadcaster, England": [
+53.8853,
+-1.2596,
+"Tadcaster"
+],
+"Tadley Calleva, England": null,
+"Tadley, England": [
+51.34145,
+-1.14468,
+"Tadley"
+],
+"Taffs Well, Wales": [
+51.54364,
+-3.26445,
+"Taffs Well"
+],
 "Tain St Duthus, Highland, Scotland": null,
 "Tain St Duthus, Scotland": null,
 "Tain, Highland, Scotland": [
@@ -2287,10 +8261,44 @@
 -4.05507,
 "Tain"
 ],
+"Takeley, England": [
+51.8819,
+0.27192,
+"Takeley"
+],
+"Talybont, Wales": [
+51.89594,
+-3.28778,
+"Talybont-on-Usk"
+],
+"Talysarn Celts, Wales": null,
+"Talysarn, Wales": null,
 "Tamworth, England": [
 52.63458,
 -1.69484,
 "Tamworth"
+],
+"Tandragee, Northern Ireland": [
+54.35251,
+-6.41236,
+"Tandragee"
+],
+"Tata Steel, Wales": null,
+"Tata, Wales": null,
+"Tattingstone, England": [
+51.99182,
+1.11,
+"Tattingstone"
+],
+"Taunton, England": [
+51.01479,
+-3.10291,
+"Taunton"
+],
+"Tavistock, England": [
+50.54962,
+-4.14464,
+"Tavistock"
 ],
 "Tayport, Fife, Scotland": [
 56.44909,
@@ -2302,28 +8310,152 @@
 -2.88072,
 "Tayport"
 ],
+"Teignmouth, England": [
+50.54634,
+-3.49578,
+"Teignmouth"
+],
 "Telford, England": [
 52.67805,
 -2.45142,
 "Telford"
+],
+"Tenterden, England": [
+51.06372,
+0.6992,
+"Tenterden"
+],
+"Teversal, England": [
+53.15228,
+-1.27951,
+"Teversal"
+],
+"Tewkesbury, England": [
+51.99379,
+-2.15496,
+"Tewkesbury"
+],
+"Thackley, England": [
+53.8438,
+-1.73329,
+"Thackley"
 ],
 "Thame, England": [
 51.74827,
 -0.97818,
 "Thame"
 ],
+"Thamesmead, England": [
+51.49893,
+0.11485,
+"Thamesmead"
+],
+"Thatcham, England": [
+51.40242,
+-1.25741,
+"Thatcham"
+],
+"Thetford, England": [
+52.4156,
+0.74871,
+"Thetford"
+],
+"Thirsk, England": [
+54.23277,
+-1.34238,
+"Thirsk"
+],
+"Thornaby, England": [
+54.5401,
+-1.29359,
+"Thornaby-on-Tees"
+],
+"Thornbury, England": [
+50.85321,
+-4.27313,
+"Thornbury"
+],
+"Thorncliffe, England": [
+53.61606,
+-1.68228,
+"Thorncliff"
+],
+"Thorne Colliery, England": null,
+"Thorne, England": [
+53.62112,
+-0.93005,
+"Thorne"
+],
+"Thornton Cleveleys, England": null,
 "Thornton Hibs, Fife, Scotland": null,
 "Thornton Hibs, Scotland": null,
+"Thornton, England": [
+52.0155,
+-0.90538,
+"Thornton"
+],
 "Thornton, Fife, Scotland": [
 56.16631,
 -3.14601,
 "Thornton"
 ],
+"Thorverton, England": [
+50.81844,
+-3.53907,
+"Thorverton"
+],
+"Thrapston Venturas, England": null,
+"Thrapston, England": [
+52.39665,
+-0.52805,
+"Thrapston"
+],
 "Threave, Scotland": null,
+"Three Bridges, England": [
+51.1182,
+-0.17005,
+"Three Bridges"
+],
+"Thurleigh, England": [
+52.21523,
+-0.45963,
+"Thurleigh"
+],
+"Thurnby, England": [
+52.62997,
+-1.04736,
+"Thurnby"
+],
 "Thurso, Highland, Scotland": [
 58.59474,
 -3.52058,
 "Thurso"
+],
+"Tilbury, England": [
+51.46161,
+0.36368,
+"Tilbury"
+],
+"Tiptree Heath, England": null,
+"Tiptree, England": [
+51.81056,
+0.75069,
+"Tiptree"
+],
+"Tiverton, England": [
+50.90256,
+-3.48758,
+"Tiverton"
+],
+"Tividale, England": [
+52.50776,
+-2.04431,
+"Tividale"
+],
+"Tobermore, Mid Ulster, Northern Ireland": [
+54.81194,
+-6.70762,
+"Tobermore"
 ],
 "Ton Pentre, Wales": [
 51.6476,
@@ -2331,20 +8463,76 @@
 "Ton Pentre"
 ],
 "Tonabrocky, Drum East, Ireland": null,
+"Tonbridge Angels, England": null,
 "Tonbridge, England": [
 51.19555,
 0.27507,
 "Tonbridge"
+],
+"Tooting Bec, England": null,
+"Tooting Mitcham, England": null,
+"Tooting, England": [
+51.42782,
+-0.16797,
+"Tooting"
+],
+"Topsham, England": [
+50.68507,
+-3.46581,
+"Topsham"
+],
+"Torpoint, England": [
+50.37554,
+-4.21425,
+"Torpoint"
 ],
 "Torquay, England": [
 50.46524,
 -3.52114,
 "Torquay"
 ],
+"Torridgeside, England": null,
+"Torrington, England": [
+50.95205,
+-4.14288,
+"Great Torrington"
+],
+"Totterdown, England": [
+51.44094,
+-2.57565,
+"Totterdown"
+],
+"Totternhoe, England": [
+51.88443,
+-0.57137,
+"Totternhoe"
+],
+"Tottington, England": [
+52.52635,
+0.7843,
+"Tottington"
+],
+"Totton Eling, England": [
+50.91964,
+-1.48946,
+"Totton"
+],
 "Totton, England": [
 50.91964,
 -1.48946,
 "Totton"
+],
+"Tow Law, England": [
+54.74363,
+-1.81425,
+"Tow Law"
+],
+"Trabzonspor UK, England": null,
+"Trabzonspor, England": null,
+"Trafford, England": [
+53.41894,
+-2.3593,
+"Trafford"
 ],
 "Tralee, Ireland": [
 52.26921,
@@ -2361,10 +8549,52 @@
 -2.95349,
 "Tranent"
 ],
+"Trearddur Bay, Isle of Anglesey, Wales": [
+53.27955,
+-4.61522,
+"Trearddur"
+],
+"Treaty, Ireland": null,
+"Tredegar, Blaenau Gwent, Wales": [
+51.77326,
+-3.24695,
+"Tredegar"
+],
+"Tregaron Turfs, Wales": null,
+"Tregaron, Wales": [
+52.22003,
+-3.93428,
+"Tregaron"
+],
+"Treherbert BGC, Rhondda Cynon Taf, Wales": null,
+"Treherbert BGC, Wales": null,
+"Treherbert, Rhondda Cynon Taf, Wales": [
+51.67437,
+-3.53513,
+"Treherbert"
+],
 "Treowen, Wales": [
 52.51024,
 -3.31254,
 "Treowen"
+],
+"Trimley Devils, England": null,
+"Trimley, England": [
+51.99097,
+1.31226,
+"Trimley St Martin"
+],
+"Tring, England": [
+51.79404,
+-0.66092,
+"Tring"
+],
+"Trojans YCG, Northern Ireland": null,
+"Trojans, Northern Ireland": null,
+"Troon, England": [
+50.1954,
+-5.27635,
+"Troon"
 ],
 "Troon, Scotland": [
 55.54379,
@@ -2376,14 +8606,835 @@
 -4.66391,
 "Troon"
 ],
+"Trooper_, England": null,
+"Trostre, Wales": [
+51.67465,
+-4.13912,
+"Trostre"
+],
 "Truro, England": [
 50.26332,
 -5.05181,
 "Truro"
+],
+"Tuffley, England": [
+51.83212,
+-2.24673,
+"Tuffley"
+],
+"Tukkers, England": null,
+"Tumble, Wales": [
+51.78625,
+-4.11395,
+"Y Tymbl / Tumble"
+],
+"Tunbridge Wells, England": [
+51.13715,
+0.26734,
+"Royal Tunbridge Wells"
 ],
 "Turnford, England": [
 51.72555,
 -0.02625,
 "Turnford"
 ],
-"Turriff
+"Turriff, Aberdeenshire, Scotland": [
+57.53748,
+-2.46408,
+"Turriff"
+],
+"Tywyn Bryncrug, Wales": null,
+"Tywyn, Wales": [
+52.58611,
+-4.08559,
+"Tywyn"
+],
+"UDA Gloucester, England": null,
+"UDA, England": null,
+"UEA, England": null,
+"Uckfield, England": [
+50.97058,
+0.09304,
+"Uckfield"
+],
+"Undy, Monmouthshire, Wales": [
+51.57841,
+-2.81378,
+"Undy"
+],
+"University College Cork, Ireland": null,
+"University of Bristol, England": null,
+"University of Exeter, England": null,
+"University of Manchester, England": null,
+"University of Stirling, Scotland": null,
+"University of Stirling, Stirling, Scotland": null,
+"University, England": null,
+"University, Ireland": null,
+"University, Stirling, Scotland": null,
+"Upper Beeding, England": [
+50.87976,
+-0.29752,
+"Upper Beeding"
+],
+"Uppermill, England": [
+53.54751,
+-2.00665,
+"Uppermill"
+],
+"Uppingham, England": [
+52.58872,
+-0.72342,
+"Uppingham"
+],
+"Uttoxeter, England": [
+52.89803,
+-1.86492,
+"Uttoxeter"
+],
+"Uxbridge, England": [
+51.54495,
+-0.48167,
+"Uxbridge"
+],
+"Vallance, England": null,
+"Varndeanians, England": null,
+"Vauxhall Motors, England": null,
+"Vauxhall, England": [
+51.48748,
+-0.12293,
+"Vauxhall"
+],
+"Versa, England": null,
+"Verwood, England": [
+50.88012,
+-1.87524,
+"Verwood"
+],
+"View, England": null,
+"Virginia Water, England": [
+51.40336,
+-0.56617,
+"Virginia Water"
+],
+"Vulcan, England": [
+53.43948,
+-2.62504,
+"Vulcan Village"
+],
+"Wadebridge, England": [
+50.51714,
+-4.83402,
+"Wadebridge"
+],
+"Wake Green, England": [
+52.44059,
+-1.87086,
+"Wake Green"
+],
+"Wakefield, England": [
+53.68295,
+-1.49673,
+"Wakefield"
+],
+"Wakering, England": [
+51.54295,
+0.84377,
+"Great Wakering"
+],
+"Walcountians, England": null,
+"Wallingford Crowmarsh, England": null,
+"Wallingford, England": [
+51.59829,
+-1.12514,
+"Wallingford"
+],
+"Walsall, England": [
+52.58479,
+-1.98227,
+"Walsall"
+],
+"Walsham-le-Willows, England": [
+52.30419,
+0.93594,
+"Walsham-le-Willows"
+],
+"Walshaw, England": [
+53.6013,
+-2.34123,
+"Walshaw"
+],
+"Waltham Abbey, England": [
+51.6805,
+0.0331,
+"Waltham Abbey"
+],
+"Waltham Forest, England": [
+51.59826,
+-0.01774,
+"London Borough of Waltham Forest"
+],
+"Walthamstow, England": [
+51.58447,
+-0.01882,
+"Walthamstow"
+],
+"Walton Hersham, England": null,
+"Walton, England": [
+54.98198,
+-2.74471,
+"Walton"
+],
+"Wantage, England": [
+51.58781,
+-1.42493,
+"Wantage"
+],
+"Warboys, England": [
+52.40415,
+-0.07936,
+"Warboys"
+],
+"Ware, England": [
+51.81091,
+-0.03117,
+"Ware"
+],
+"Wareham, England": [
+50.6869,
+-2.10984,
+"Wareham"
+],
+"Warminster, England": [
+51.20537,
+-2.18317,
+"Warminster"
+],
+"Warrenpoint, Northern Ireland": [
+54.09999,
+-6.25128,
+"Warrenpoint"
+],
+"Warrington Rylands, England": null,
+"Warrington, England": [
+53.40157,
+-2.56819,
+"Warrington"
+],
+"Washington, England": [
+54.89861,
+-1.52883,
+"Washington"
+],
+"Waterford, Ireland": [
+52.261,
+-7.11191,
+"Waterford"
+],
+"Waterloo, Wales": [
+51.58689,
+-3.1625,
+"Waterloo"
+],
+"Watford, England": [
+51.65539,
+-0.39574,
+"Watford"
+],
+"Wattstown, Wales": [
+51.63512,
+-3.41958,
+"Wattstown"
+],
+"Wattsville, Wales": [
+51.61601,
+-3.14618,
+"Wattsville"
+],
+"Waunarlwydd Galaxy, Wales": null,
+"Waunarlwydd, Wales": [
+51.64009,
+-4.01659,
+"Waunarlwydd"
+],
+"Wayside, Ireland": null,
+"Wednesfield, England": [
+52.59983,
+-2.0813,
+"Wednesfield"
+],
+"Welland, England": [
+52.05831,
+-2.29815,
+"Welland"
+],
+"Welling, England": [
+51.46222,
+0.11229,
+"Welling"
+],
+"Wellingborough Whitworth, England": null,
+"Wellingborough, England": [
+52.30189,
+-0.69373,
+"Wellingborough"
+],
+"Wellington, England": [
+50.97838,
+-3.22755,
+"Wellington"
+],
+"Wells, England": [
+51.20945,
+-2.64512,
+"Wells"
+],
+"Welshpool, Wales": [
+52.66007,
+-3.14742,
+"Welshpool"
+],
+"Welton, England": [
+52.29341,
+-1.14717,
+"Welton"
+],
+"Welwyn Garden, England": [
+51.80311,
+-0.20689,
+"Welwyn Garden City"
+],
+"Welwyn, England": [
+51.83116,
+-0.21513,
+"Welwyn"
+],
+"Wembley, England": [
+51.55315,
+-0.29576,
+"Wembley"
+],
+"Wendron, England": [
+50.14946,
+-5.23198,
+"Wendron"
+],
+"Wesham, England": [
+53.78934,
+-2.88574,
+"Wesham"
+],
+"West Auckland, England": [
+54.63146,
+-1.72276,
+"West Auckland"
+],
+"West Bridgford, England": [
+52.93108,
+-1.12567,
+"West Bridgford"
+],
+"West Bromwich, England": [
+52.51866,
+-1.99231,
+"West Bromwich"
+],
+"West Calder, Scotland": [
+55.85103,
+-3.57201,
+"West Calder"
+],
+"West Didsbury Chorlton, England": null,
+"West End, Wales": [
+51.65044,
+-3.13951,
+"West End"
+],
+"West Essex, England": null,
+"West Moor Jesmond, England": null,
+"West Wratting, England": [
+52.14618,
+0.34136,
+"West Wratting"
+],
+"West, England": null,
+"Westbury, England": [
+51.26108,
+-2.18365,
+"Westbury"
+],
+"Westdyke, Aberdeen City, Scotland": null,
+"Westdyke, Scotland": null,
+"Westfield Sussex, England": [
+50.90851,
+0.56752,
+"Westfield"
+],
+"Westfield, England": [
+50.90851,
+0.56752,
+"Westfield"
+],
+"Westfields, England": [
+52.07031,
+-2.7415,
+"Westfields"
+],
+"Westmill, England": [
+51.92635,
+-0.01144,
+"Westmill"
+],
+"Weston, England": [
+51.34719,
+-2.97789,
+"Weston-super-Mare"
+],
+"Weston-super-Mare, England": [
+51.34719,
+-2.97789,
+"Weston-super-Mare"
+],
+"Westport, Ireland": [
+53.80006,
+-9.52022,
+"Westport"
+],
+"Westside, England": null,
+"Wexford, Ireland": [
+52.33677,
+-6.46014,
+"Wexford"
+],
+"Weymouth, England": [
+50.60963,
+-2.45434,
+"Weymouth"
+],
+"Whickham, England": [
+54.94585,
+-1.67616,
+"Whickham"
+],
+"Whitburn, West Lothian, Scotland": [
+55.86678,
+-3.6849,
+"Whitburn"
+],
+"Whitby, England": [
+54.48665,
+-0.61353,
+"Whitby"
+],
+"Whitchurch Alport, England": null,
+"Whitchurch, England": [
+52.96929,
+-2.68385,
+"Whitchurch"
+],
+"Whitehawk, England": [
+50.82587,
+-0.10721,
+"Whitehawk"
+],
+"Whitehill Borden, England": null,
+"Whitehill U20, Scotland": null,
+"Whitehill, England": [
+51.09772,
+-0.86407,
+"Whitehill"
+],
+"Whitehill, Midlothian, Scotland": [
+55.8875,
+-3.03333,
+"Whitehill"
+],
+"Whitehill, Scotland": [
+55.8875,
+-3.03333,
+"Whitehill"
+],
+"Whitehills, Aberdeenshire, Scotland": [
+57.67736,
+-2.57979,
+"Whitehills"
+],
+"Whitley Bay, England": [
+55.04221,
+-1.44544,
+"Whitley Bay"
+],
+"Whitstable, England": [
+51.36063,
+1.02406,
+"Whitstable"
+],
+"Whittlesey, England": [
+52.55501,
+-0.12264,
+"Whittlesey"
+],
+"Whyteleafe, England": [
+51.31015,
+-0.07954,
+"Whyteleafe"
+],
+"Wick Bristol, England": null,
+"Wick, England": [
+52.10667,
+-2.05756,
+"Wick"
+],
+"Wick, Highland, Scotland": [
+58.44255,
+-3.09158,
+"Wick"
+],
+"Widnes, England": [
+53.36469,
+-2.72833,
+"Widnes"
+],
+"Wigan, England": [
+53.54621,
+-2.63191,
+"Wigan"
+],
+"Wigtown Bladnoch, Dumfries and Galloway, Scotland": null,
+"Wigtown Bladnoch, Scotland": null,
+"Wigtown, Dumfries and Galloway, Scotland": [
+54.8687,
+-4.44157,
+"Wigtown"
+],
+"Willand, England": [
+50.88403,
+-3.37763,
+"Willand"
+],
+"Willenhall, England": [
+52.58476,
+-2.05347,
+"Willenhall"
+],
+"Willington, England": [
+52.13686,
+-0.3763,
+"Willington"
+],
+"Willowbank, Northern Ireland": null,
+"Wimbledon, England": [
+51.42148,
+-0.2064,
+"Wimbledon"
+],
+"Wimblington, England": [
+52.51059,
+0.08162,
+"Wimblington"
+],
+"Wimborne, England": [
+50.79952,
+-1.98734,
+"Wimborne Minster"
+],
+"Wincanton, England": [
+51.05604,
+-2.41123,
+"Wincanton"
+],
+"Winchester Flyers, England": null,
+"Winchester, England": [
+51.06128,
+-1.31317,
+"Winchester"
+],
+"Windscale, England": null,
+"Windsor Eton, England": null,
+"Windsor, England": [
+51.48003,
+-0.61257,
+"Windsor"
+],
+"Wingate Finchley, England": null,
+"Wingate, England": [
+54.73094,
+-1.38103,
+"Wingate"
+],
+"Winkleigh, England": [
+50.85627,
+-3.94508,
+"Winkleigh"
+],
+"Winsford, England": [
+53.19207,
+-2.53131,
+"Winsford"
+],
+"Winslow, England": [
+51.94205,
+-0.88174,
+"Winslow"
+],
+"Winterton, England": [
+53.65495,
+-0.59797,
+"Winterton"
+],
+"Wirksworth Ivanhoe, England": null,
+"Wirksworth, England": [
+53.0822,
+-1.57321,
+"Wirksworth CP"
+],
+"Wirral, England": [
+53.34097,
+-3.05009,
+"Wirral"
+],
+"Wisbech St Mary, England": [
+52.63056,
+0.03909,
+"Wisbech St. Mary"
+],
+"Wisbech, England": [
+52.66517,
+0.16068,
+"Wisbech"
+],
+"Witchford, England": [
+52.38618,
+0.20455,
+"Witchford"
+],
+"Witham, England": [
+51.80006,
+0.6398,
+"Witham"
+],
+"Witney, England": [
+51.78388,
+-1.48529,
+"Witney"
+],
+"Witton Rose Crown, England": null,
+"Witton, England": [
+52.82717,
+1.46652,
+"Witton and Ridlington"
+],
+"Wivenhoe, England": [
+51.85553,
+0.95918,
+"Wivenhoe"
+],
+"Woking, England": [
+51.32019,
+-0.55647,
+"Woking"
+],
+"Wokingham, England": [
+51.45708,
+-0.88654,
+"Wokingham"
+],
+"Wollaton, England": [
+52.95315,
+-1.22043,
+"Wollaton"
+],
+"Wolstanton, England": [
+53.03052,
+-2.2199,
+"Wolstanton"
+],
+"Wolverhampton Casuals, England": null,
+"Wolverhampton W.F.C, England": null,
+"Wolverhampton, England": [
+52.58477,
+-2.12757,
+"Wolverhampton"
+],
+"Wombwell Main, England": null,
+"Wombwell, England": [
+53.52097,
+-1.40326,
+"Wombwell"
+],
+"Wood Lane, England": null,
+"Wood, England": [
+50.95116,
+-2.9802,
+"Wood"
+],
+"Woodbridge, England": [
+52.09413,
+1.31994,
+"Woodbridge"
+],
+"Woodford, England": [
+51.60417,
+0.03245,
+"Woodford"
+],
+"Woodley, England": [
+51.45304,
+-0.90469,
+"Woodley"
+],
+"Woodthorpe, England": [
+52.98922,
+-1.12659,
+"Woodthorpe"
+],
+"Woolton, England": [
+53.37452,
+-2.86679,
+"Woolton"
+],
+"Wootton Cross, England": null,
+"Wootton, England": [
+52.09605,
+-0.53056,
+"Wootton"
+],
+"Worcester Raiders, England": null,
+"Worcester Reservers, England": null,
+"Worcester, England": [
+52.19653,
+-2.20956,
+"Worcester"
+],
+"Workington, England": [
+54.64338,
+-3.54535,
+"Workington"
+],
+"Worksop, England": [
+53.30424,
+-1.12462,
+"Worksop"
+],
+"Wormley, England": [
+51.13541,
+-0.64671,
+"Wormley"
+],
+"Worsbrough Bridge, England": null,
+"Worsbrough, England": [
+53.53168,
+-1.46742,
+"Worsbrough"
+],
+"Worthing, England": [
+50.81154,
+-0.36997,
+"Worthing"
+],
+"Wrexham, England": null,
+"Wrexham, Wales": [
+53.04651,
+-2.99379,
+"Wrexham"
+],
+"Wroxham, England": [
+52.70654,
+1.4036,
+"Wroxham"
+],
+"Wyberton, England": [
+52.95448,
+-0.04116,
+"Wyberton"
+],
+"Wycombe, England": [
+51.63174,
+-0.75596,
+"High Wycombe"
+],
+"Wythenshawe, England": [
+53.38036,
+-2.26321,
+"Wythenshawe"
+],
+"YDP, England": null,
+"Yarm Eaglescliffe, England": null,
+"Yarm, England": [
+54.50914,
+-1.35434,
+"Yarm"
+],
+"Yarnton, England": [
+51.80461,
+-1.30894,
+"Yarnton"
+],
+"Yate, England": [
+51.54031,
+-2.41343,
+"Yate"
+],
+"Yateley, England": [
+51.34023,
+-0.82858,
+"Yateley"
+],
+"Yatton Cleeve, England": null,
+"Yatton, England": [
+51.97318,
+-2.53266,
+"Yatton"
+],
+"Yaxley, England": [
+52.51141,
+-0.24123,
+"Yaxley"
+],
+"Yeovil, England": [
+50.94205,
+-2.63186,
+"Yeovil"
+],
+"Yiewsley, England": [
+51.51291,
+-0.47144,
+"Yiewsley"
+],
+"Ynyshir, Wales": [
+51.62625,
+-3.41239,
+"Ynyshir"
+],
+"Ynystawe, Wales": [
+51.68569,
+-3.90858,
+"Ynystawe"
+],
+"Ynysygerwn, Neath Port Talbot, Wales": null,
+"Ynysygerwn, Wales": null,
+"York, England": [
+53.96566,
+-1.07431,
+"York"
+],
+"Ystrad Mynach, Wales": [
+51.64181,
+-3.2374,
+"Ystrad Mynach"
+],
+"loughrea, Ireland": [
+53.19816,
+-8.56906,
+"Loughrea"
+],
+"of Clyde, Glasgow City, Scotland": null,
+"of Clyde, Scotland": null,
+"of Liverpool, England": null,
+"of Manchester, England": null,
+"of, England": [
+52.59342,
+-0.2492,
+"New England"
+],
+"of, Glasgow City, Scotland": null
+}
