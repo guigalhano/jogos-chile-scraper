@@ -11,7 +11,7 @@ permissions:
 jobs:
   atualizar_nonleaguehq:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
 
     steps:
       - name: Baixar repositório
@@ -29,7 +29,11 @@ jobs:
 
       - name: Rodar scraper
         run: |
-          python scrap_nonleaguehq.py --dias 60 --dias-atras 15
+          python scrap_nonleaguehq.py --dias 270 --dias-atras 15
+
+      - name: Geocodificar times novos para o mapa (Nominatim, 1 req/s)
+        run: |
+          python geocodificar_reino_unido.py --max-consultas 300
 
       - name: Salvar arquivos atualizados
         run: |
@@ -38,6 +42,8 @@ jobs:
 
           mkdir -p /tmp/dados_novos
           cp data/debug_nonleaguehq_raw.json data/debug_nonleaguehq_hist_raw.json data/debug_nonleaguehq_pages.json /tmp/dados_novos/ 2>/dev/null || true
+          mkdir -p /tmp/geo_novo
+          cp data/reino_unido/geo_times.json data/reino_unido/cache_geocoding.json /tmp/geo_novo/ 2>/dev/null || true
 
           for tentativa in 1 2 3 4 5; do
             git fetch origin main
@@ -47,6 +53,9 @@ jobs:
             # jogos_programados.json do site). Re-mescla os raw desta rodada
             # contra o estado ATUAL pos-reset, como o merge_apos_reset.py faz.
             cp /tmp/dados_novos/* data/ 2>/dev/null || true
+            # Arquivos de coordenadas so este workflow escreve: copia direto.
+            mkdir -p data/reino_unido
+            cp /tmp/geo_novo/* data/reino_unido/ 2>/dev/null || true
             python reino_unido_comum.py --raw data/debug_nonleaguehq_raw.json --raw-historico data/debug_nonleaguehq_hist_raw.json
 
             git add data/reino_unido/ data/debug_nonleaguehq_raw.json data/debug_nonleaguehq_hist_raw.json data/debug_nonleaguehq_pages.json 2>/dev/null || true

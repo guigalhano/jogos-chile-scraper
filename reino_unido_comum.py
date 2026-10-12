@@ -24,7 +24,7 @@ import csv
 import hashlib
 import json
 from dataclasses import dataclass, asdict
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 try:
@@ -75,7 +75,7 @@ class Jogo:
     def to_row(self) -> dict:
         d = asdict(self)
         d["id"] = self.id
-        d["atualizado_em"] = datetime.now().isoformat(timespec="seconds")
+        d["atualizado_em"] = datetime.now(timezone.utc).isoformat(timespec="seconds")  # com fuso: a pagina converte
         return d
 
 
@@ -142,7 +142,12 @@ def salvar(rows_prog: list[dict], rows_hist: list[dict]) -> tuple[int, int]:
     # Programados = so de hoje em diante; o que ja passou fica so no historico.
     hoje = date.today().isoformat()
     merged = [r for r in merge_rows(load_json_rows(jogos_json), rows_prog) if r.get("data", "") >= hoje]
-    jogos_json.write_text(json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8")
+    # Compacto (uma linha por jogo): com a temporada inteira sao ~20 mil jogos e
+    # o reino-unido.html baixa este arquivo inteiro.
+    jogos_json.write_text(
+        "[\n" + ",\n".join(json.dumps(r, ensure_ascii=False, separators=(",", ":")) for r in merged) + "\n]\n",
+        encoding="utf-8",
+    )
     write_csv(jogos_csv, merged)
 
     merged_hist = merge_rows(load_csv_rows(hist_csv), rows_prog + rows_hist)

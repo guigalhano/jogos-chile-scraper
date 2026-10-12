@@ -32,7 +32,7 @@ por temporada, entao um jogo adiado para outra data atualiza a linha
 existente em vez de duplicar.
 
 Uso:
-  python scrap_nonleaguehq.py --dias 60 --dias-atras 15
+  python scrap_nonleaguehq.py --dias 270 --dias-atras 15
   python scrap_nonleaguehq.py --max-ligas 3          # teste rapido
 """
 
@@ -237,7 +237,7 @@ def jogos_fixture_finder(html: str, pais: str, url: str) -> tuple[list[Jogo], di
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Futebol nao-liga do Reino Unido via NonLeagueHQ")
-    parser.add_argument("--dias", type=int, default=60)
+    parser.add_argument("--dias", type=int, default=270)
     parser.add_argument("--dias-atras", type=int, default=15, dest="dias_atras")
     parser.add_argument("--timeout", type=int, default=90)
     parser.add_argument("--max-ligas", type=int, default=0, help="limita as paginas inglesas (teste)")

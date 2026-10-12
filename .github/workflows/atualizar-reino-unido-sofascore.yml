@@ -30,7 +30,7 @@ jobs:
 
       - name: Rodar scraper
         run: |
-          python scrap_reino_unido_sofascore.py --dias 60 --dias-atras 15
+          python scrap_reino_unido_sofascore.py --dias 270 --dias-atras 15
 
       - name: Salvar arquivos atualizados
         run: |

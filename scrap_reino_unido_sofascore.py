@@ -31,7 +31,7 @@ estadio errado (ex.: Denbigh Town com "Stadium mk"); a cidade costuma estar
 certa. Para corrigir um time, editar a entrada dele no cache.
 
 Uso:
-  python scrap_reino_unido_sofascore.py --dias 60 --dias-atras 15
+  python scrap_reino_unido_sofascore.py --dias 270 --dias-atras 15
   python scrap_reino_unido_sofascore.py --so 17,36   # so alguns torneios (teste)
 """
 
@@ -139,8 +139,10 @@ async (ids) => {
                 const r = await fetch(`https://www.sofascore.com/api/v1/team/${id}`);
                 if (!r.ok) return;
                 const v = ((await r.json()).team || {}).venue;
+                const c = (v && v.venueCoordinates) || {};
                 out[id] = v
-                    ? { estadio: (v.stadium || {}).name || v.name || '', cidade: (v.city || {}).name || '' }
+                    ? { estadio: (v.stadium || {}).name || v.name || '', cidade: (v.city || {}).name || '',
+                        lat: c.latitude ?? null, lng: c.longitude ?? null }
                     : { estadio: '', cidade: '' };
             } catch (e) {}
         }));
@@ -169,7 +171,7 @@ def evento_para_jogo(ev: dict, pais: str, competicao: str, venues: dict) -> Jogo
     gh = (ev.get("homeScore") or {}).get("current")
     ga = (ev.get("awayScore") or {}).get("current")
 
-    extra = [f"codigo_sofascore={ev.get('id')}"]
+    extra = [f"codigo_sofascore={ev.get('id')}", f"time_sofascore={home.get('id')}"]
     if status == "finished" and gh is not None and ga is not None:
         extra += ["status=Realizado", f"placar={gh}-{ga}"]
     elif status in ("postponed", "canceled"):
@@ -211,7 +213,7 @@ def evento_para_jogo(ev: dict, pais: str, competicao: str, venues: dict) -> Jogo
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Reino Unido + Irlanda via SofaScore/Playwright")
-    parser.add_argument("--dias", type=int, default=60)
+    parser.add_argument("--dias", type=int, default=270)
     parser.add_argument("--dias-atras", type=int, default=15, dest="dias_atras")
     parser.add_argument("--so", default="", help="lista de uniqueTournament ids separados por virgula (teste)")
     args = parser.parse_args()
@@ -267,7 +269,7 @@ def main() -> None:
         faltando = sorted({
             str((ev.get("homeTeam") or {}).get("id"))
             for _, _, evs in eventos_por_torneio for ev in evs
-        } - set(venues))
+        } - {k for k, v in venues.items() if "lat" in v})
         if faltando:
             print(f"[INFO] Buscando estadio de {len(faltando)} times sem cache...")
             try:

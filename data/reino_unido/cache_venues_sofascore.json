@@ -1,39 +1,57 @@
 {
  "1": {
   "cidade": "London",
-  "estadio": "Loftus Road Stadium"
+  "estadio": "Loftus Road Stadium",
+  "lat": 51.509402,
+  "lng": -0.232114
  },
  "10": {
   "cidade": "Stockport",
-  "estadio": "Edgeley Park"
+  "estadio": "Edgeley Park",
+  "lat": 53.399643,
+  "lng": -2.166484
  },
  "101": {
   "cidade": "Hartlepool",
-  "estadio": "Suit Direct Stadium"
+  "estadio": "Suit Direct Stadium",
+  "lat": 54.695701,
+  "lng": -1.200316
  },
  "102": {
   "cidade": "Tamworth",
-  "estadio": "The Lamb Ground"
+  "estadio": "The Lamb Ground",
+  "lat": 52.628613,
+  "lng": -1.689031
  },
  "103": {
   "cidade": "Rochdale",
-  "estadio": "Crown Oil Arena"
+  "estadio": "Crown Oil Arena",
+  "lat": -2.1799129,
+  "lng": 53.6207953
  },
  "104": {
   "cidade": "Torquay",
-  "estadio": "Plainmoor"
+  "estadio": "Plainmoor",
+  "lat": 50.477869,
+  "lng": -3.527196
  },
  "108": {
   "cidade": "Cambridge",
-  "estadio": "City Ground"
+  "estadio": "City Ground",
+  "lat": 52.203305,
+  "lng": 0.124862
  },
  "11": {
   "cidade": "Coventry",
-  "estadio": "Coventry Building Society Arena"
+  "estadio": "Coventry Building Society Arena",
+  "lat": 52.448158,
+  "lng": -1.497017
  },
  "110": {
   "cidade": "Altrincham",
-  "estadio": "Moss Lane"
+  "estadio": "Moss Lane",
+  "lat": 53.383384,
+  "lng": -2.335228
  },
  "1123884": {
   "cidade": "",
@@ -45,35 +63,51 @@
  },
  "114": {
   "cidade": "Northfleet",
-  "estadio": "Stonebridge Road Stadium"
+  "estadio": "Stonebridge Road Stadium",
+  "lat": 51.449493,
+  "lng": 0.322357
  },
  "115185": {
   "cidade": "Bridgend",
-  "estadio": "Bryntirion Park"
+  "estadio": "Bryntirion Park",
+  "lat": 53.641637,
+  "lng": -2.301317
  },
  "118": {
   "cidade": "Rushden",
-  "estadio": "Hayden Road"
+  "estadio": "Hayden Road",
+  "lat": 52.291286,
+  "lng": -0.585551
  },
  "12": {
   "cidade": "Sheffield",
-  "estadio": "Hillsborough Stadium"
+  "estadio": "Hillsborough Stadium",
+  "lat": 53.411379,
+  "lng": -1.500631
  },
  "123": {
   "cidade": "Cardington",
-  "estadio": "The New Eyrie"
+  "estadio": "The New Eyrie",
+  "lat": 40.50062,
+  "lng": -82.89351
  },
  "123522": {
   "cidade": "Ton Pentre",
-  "estadio": "Ynys Park"
+  "estadio": "Ynys Park",
+  "lat": 51.64638,
+  "lng": -3.485296
  },
  "124": {
   "cidade": "Boston",
-  "estadio": "Boston Community Stadium"
+  "estadio": "Boston Community Stadium",
+  "lat": 52.956301,
+  "lng": -0.028609
  },
  "1247603": {
   "cidade": "County Carlow",
-  "estadio": "SETU Sports Campus"
+  "estadio": "SETU Sports Campus",
+  "lat": 52.8172537,
+  "lng": -6.9451007
  },
  "1247604": {
   "cidade": "",
@@ -81,7 +115,9 @@
  },
  "1247605": {
   "cidade": "Bonagee",
-  "estadio": "Dry Arch Park"
+  "estadio": "Dry Arch Park",
+  "lat": 54.945038,
+  "lng": -7.69683
  },
  "1269488": {
   "cidade": "",
@@ -97,11 +133,15 @@
  },
  "1269997": {
   "cidade": "County Mayo",
-  "estadio": "Umbro Park"
+  "estadio": "Umbro Park",
+  "lat": 53.841312,
+  "lng": -9.288054
  },
  "128": {
   "cidade": "Woking",
-  "estadio": "Kingfield Stadium"
+  "estadio": "Kingfield Stadium",
+  "lat": 51.306322,
+  "lng": -0.558883
  },
  "1284497": {
   "cidade": "",
@@ -113,139 +153,207 @@
  },
  "129": {
   "cidade": "River",
-  "estadio": "Crabble Athletic Ground"
+  "estadio": "Crabble Athletic Ground",
+  "lat": null,
+  "lng": null
  },
  "13": {
   "cidade": "Rotherham",
-  "estadio": "New York Stadium"
+  "estadio": "New York Stadium",
+  "lat": 53.426785,
+  "lng": -1.362678
  },
  "130034": {
   "cidade": "Briton Ferry",
-  "estadio": "Old road"
+  "estadio": "Old road",
+  "lat": 51.640892,
+  "lng": -3.816424
  },
  "131": {
   "cidade": "Yeovil",
-  "estadio": "Huish Park"
+  "estadio": "Huish Park",
+  "lat": 50.95021,
+  "lng": -2.674063
  },
  "131580": {
   "cidade": "Newry",
-  "estadio": "The Showgrounds"
+  "estadio": "The Showgrounds",
+  "lat": 54.160891,
+  "lng": -6.332126
  },
  "131584": {
   "cidade": "Strabane",
-  "estadio": "Melvin Sports Arena"
+  "estadio": "Melvin Sports Arena",
+  "lat": 54.822788,
+  "lng": -7.462522
  },
  "133": {
   "cidade": "Stevenage",
-  "estadio": "Broadhall Way"
+  "estadio": "Broadhall Way",
+  "lat": 51.889648,
+  "lng": -0.193741
  },
  "134": {
   "cidade": "Burton upon Trent",
-  "estadio": "Pirelli Stadium"
+  "estadio": "Pirelli Stadium",
+  "lat": -1.6269256,
+  "lng": 52.8218506
  },
  "137382": {
   "cidade": "Galway",
-  "estadio": "Eamonn Deacy Park"
+  "estadio": "Eamonn Deacy Park",
+  "lat": 53.284642,
+  "lng": -9.056108
  },
  "14": {
   "cidade": "Nottingham",
-  "estadio": "City Ground"
+  "estadio": "City Ground",
+  "lat": 52.93733,
+  "lng": -1.12633
  },
  "140": {
   "cidade": "Thame",
-  "estadio": "ASM Stadium"
+  "estadio": "ASM Stadium",
+  "lat": 51.755162765463,
+  "lng": -0.97342208365866
  },
  "15": {
   "cidade": "Sheffield",
-  "estadio": "Bramall Lane"
+  "estadio": "Bramall Lane",
+  "lat": 53.370343,
+  "lng": -1.470714
  },
  "153372": {
   "cidade": "Cork",
-  "estadio": "Mardyke"
+  "estadio": "Mardyke",
+  "lat": 51.896771,
+  "lng": -8.490062
  },
  "157": {
   "cidade": "Gateshead",
-  "estadio": "Gateshead International Stadium"
+  "estadio": "Gateshead International Stadium",
+  "lat": 54.960946,
+  "lng": -1.579803
  },
  "159": {
   "cidade": "Harrogate",
-  "estadio": "EnviroVent Stadium"
+  "estadio": "EnviroVent Stadium",
+  "lat": 53.99078,
+  "lng": -1.5373
  },
  "167106": {
   "cidade": "Cardiff",
-  "estadio": "Cyncoed Campus"
+  "estadio": "Cyncoed Campus",
+  "lat": 51.5104,
+  "lng": -3.161168
  },
  "169": {
   "cidade": "Manchester",
-  "estadio": "Shaw View"
+  "estadio": "Shaw View",
+  "lat": 53.4467979,
+  "lng": -2.3722628
  },
  "17": {
   "cidade": "Manchester",
-  "estadio": "Etihad Stadium"
+  "estadio": "Etihad Stadium",
+  "lat": 53.483091,
+  "lng": -2.200252
  },
  "170618": {
   "cidade": "Grantown-on-Spey",
-  "estadio": "Seafield Park"
+  "estadio": "Seafield Park",
+  "lat": null,
+  "lng": null
  },
  "170620": {
   "cidade": "Gretna",
-  "estadio": "Raydale Park"
+  "estadio": "Raydale Park",
+  "lat": null,
+  "lng": null
  },
  "170622": {
   "cidade": "East Kilbride",
-  "estadio": "K-Park Training Academy"
+  "estadio": "K-Park Training Academy",
+  "lat": 55.750451,
+  "lng": -4.147557
  },
  "171": {
   "cidade": "Spennymoor",
-  "estadio": "Brewery Field"
+  "estadio": "Brewery Field",
+  "lat": 54.704541,
+  "lng": -1.599158
  },
  "173464": {
   "cidade": "Dorking",
-  "estadio": "Meadowbank Dorking"
+  "estadio": "Meadowbank Dorking",
+  "lat": 51.236497,
+  "lng": -0.331655
  },
  "175": {
   "cidade": "Stafford",
-  "estadio": "Marston Road"
+  "estadio": "Marston Road",
+  "lat": 52.814343,
+  "lng": -2.119016
  },
  "177": {
   "cidade": "Chesham",
-  "estadio": "The Meadow"
+  "estadio": "The Meadow",
+  "lat": 51.699906,
+  "lng": -0.612601
  },
  "178": {
   "cidade": "Weymouth",
-  "estadio": "Bob Lucas Stadium"
+  "estadio": "Bob Lucas Stadium",
+  "lat": 50.62037,
+  "lng": -2.485684
  },
  "18": {
   "cidade": "Cleethorpes",
-  "estadio": "Blundell Park"
+  "estadio": "Blundell Park",
+  "lat": 53.57023,
+  "lng": -0.046512
  },
  "180": {
   "cidade": "Bromley",
-  "estadio": "Hayes Lane"
+  "estadio": "Hayes Lane",
+  "lat": 51.399422,
+  "lng": -0.0161
  },
  "182": {
   "cidade": "Braintree",
-  "estadio": "Cressing Road"
+  "estadio": "Cressing Road",
+  "lat": 51.868806,
+  "lng": 0.581473
  },
  "187": {
   "cidade": "Accrington",
-  "estadio": "The Crown Ground"
+  "estadio": "The Crown Ground",
+  "lat": 53.75379,
+  "lng": -2.35863
  },
  "19": {
   "cidade": "Crewe",
-  "estadio": "Alexandra Stadium"
+  "estadio": "Alexandra Stadium",
+  "lat": 53.087402,
+  "lng": -2.435733
  },
  "190": {
   "cidade": "Crosby",
-  "estadio": "Rossett Park"
+  "estadio": "Rossett Park",
+  "lat": 53.485309,
+  "lng": -3.033264
  },
  "2": {
   "cidade": "Portsmouth",
-  "estadio": "Fratton Park"
+  "estadio": "Fratton Park",
+  "lat": 50.796324,
+  "lng": -1.063884
  },
  "20": {
   "cidade": "Gillingham",
-  "estadio": "Priestfield Stadium"
+  "estadio": "Priestfield Stadium",
+  "lat": 51.384211,
+  "lng": 0.56095
  },
  "201798": {
   "cidade": "",
@@ -253,43 +361,63 @@
  },
  "206410": {
   "cidade": "Cumbernauld",
-  "estadio": "Broadwood Stadium"
+  "estadio": "Broadwood Stadium",
+  "lat": 55.944588,
+  "lng": -4.037843
  },
  "206430": {
   "cidade": "Perivale",
-  "estadio": "Reynolds Field"
+  "estadio": "Reynolds Field",
+  "lat": null,
+  "lng": null
  },
  "206633": {
   "cidade": "Kelty",
-  "estadio": "New Central Park"
+  "estadio": "New Central Park",
+  "lat": 56.136159,
+  "lng": -3.379257
  },
  "21": {
   "cidade": "Preston",
-  "estadio": "Deepdale"
+  "estadio": "Deepdale",
+  "lat": 53.772215,
+  "lng": -2.688561
  },
  "217": {
   "cidade": "Chorley",
-  "estadio": "The Chorley Group Victory Park Stadium"
+  "estadio": "The Chorley Group Victory Park Stadium",
+  "lat": 53.646026,
+  "lng": -2.629442
  },
  "21826": {
   "cidade": "Guilsfield",
-  "estadio": "Guilsfield Community Centre Ground"
+  "estadio": "Guilsfield Community Centre Ground",
+  "lat": null,
+  "lng": null
  },
  "22": {
   "cidade": "Bradford",
-  "estadio": "Valley Parade"
+  "estadio": "Valley Parade",
+  "lat": 53.80433,
+  "lng": -1.759383
  },
  "220": {
   "cidade": "Salisbury",
-  "estadio": "Raymond McEnhill Stadium"
+  "estadio": "Raymond McEnhill Stadium",
+  "lat": 38.36067,
+  "lng": -75.59937
  },
  "223": {
   "cidade": "Guiseley",
-  "estadio": "Nethermoor Park"
+  "estadio": "Nethermoor Park",
+  "lat": 53.877267,
+  "lng": -1.719326
  },
  "227": {
   "cidade": "Yiewsley",
-  "estadio": "Honeycroft"
+  "estadio": "Honeycroft",
+  "lat": 51.514056296405,
+  "lng": -0.45764981623176
  },
  "227475": {
   "cidade": "",
@@ -297,183 +425,273 @@
  },
  "229": {
   "cidade": "Tonbridge",
-  "estadio": "Longmead Stadium"
+  "estadio": "Longmead Stadium",
+  "lat": 51.211493,
+  "lng": 0.269251
  },
  "23": {
   "cidade": "Barnsley",
-  "estadio": "Oakwell Ground"
+  "estadio": "Oakwell Ground",
+  "lat": 53.739953,
+  "lng": -1.671705
  },
  "232": {
   "cidade": "Leatherhead",
-  "estadio": "Fetcham Grove"
+  "estadio": "Fetcham Grove",
+  "lat": 51.295741,
+  "lng": -0.346219
  },
  "2346": {
   "cidade": "Motherwell",
-  "estadio": "Fir Park"
+  "estadio": "Fir Park",
+  "lat": 55.780423,
+  "lng": -3.980263
  },
  "2347": {
   "cidade": "Kilmarnock",
-  "estadio": "BBSP Rugby Park"
+  "estadio": "BBSP Rugby Park",
+  "lat": 55.604103,
+  "lng": -4.509377
  },
  "2348": {
   "cidade": "Perth",
-  "estadio": "McDiarmid Park"
+  "estadio": "McDiarmid Park",
+  "lat": 56.409871,
+  "lng": -3.476894
  },
  "2349": {
   "cidade": "Dundee",
-  "estadio": "Tannadice Park"
+  "estadio": "Tannadice Park",
+  "lat": 56.47458,
+  "lng": -2.969046
  },
  "2350": {
   "cidade": "Dunfermline",
-  "estadio": "East End Park"
+  "estadio": "East End Park",
+  "lat": 56.075646,
+  "lng": -3.441992
  },
  "2351": {
   "cidade": "Glasgow",
-  "estadio": "Ibrox"
+  "estadio": "Ibrox",
+  "lat": 55.85313,
+  "lng": -4.309292
  },
  "2352": {
   "cidade": "Glasgow",
-  "estadio": "Celtic Park"
+  "estadio": "Celtic Park",
+  "lat": 55.850181,
+  "lng": -4.206823
  },
  "2353": {
   "cidade": "Edinburgh",
-  "estadio": "Tynecastle Park"
+  "estadio": "Tynecastle Park",
+  "lat": 55.93902,
+  "lng": -3.232271
  },
  "2354": {
   "cidade": "Edinburgh",
-  "estadio": "Easter Road"
+  "estadio": "Easter Road",
+  "lat": 55.961686,
+  "lng": -3.165168
  },
  "235486": {
   "cidade": "Llantwit Major",
-  "estadio": "Windmill Ground"
+  "estadio": "Windmill Ground",
+  "lat": 51.4107,
+  "lng": -3.48632
  },
  "2355": {
   "cidade": "Aberdeen",
-  "estadio": "Pittodrie Stadium"
+  "estadio": "Pittodrie Stadium",
+  "lat": 57.159277,
+  "lng": -2.088629
  },
  "2356": {
   "cidade": "Livingston",
-  "estadio": "Almondvale Stadium"
+  "estadio": "Almondvale Stadium",
+  "lat": 55.885983,
+  "lng": -3.522009
  },
  "2357": {
   "cidade": "Dundee",
-  "estadio": "Dens Park"
+  "estadio": "Dens Park",
+  "lat": 56.474606,
+  "lng": -2.973626
  },
  "2358": {
   "cidade": "Glasgow",
-  "estadio": "Firhill Stadium"
+  "estadio": "Firhill Stadium",
+  "lat": 55.88156,
+  "lng": -4.269409
  },
  "2359": {
   "cidade": "Paisley",
-  "estadio": "St. Mirren Park"
+  "estadio": "St. Mirren Park",
+  "lat": 55.850534,
+  "lng": -4.444205
  },
  "2360": {
   "cidade": "Hamilton",
-  "estadio": "New Douglas Park"
+  "estadio": "New Douglas Park",
+  "lat": 55.782166,
+  "lng": -4.057878
  },
  "2361": {
   "cidade": "Kirkcaldy",
-  "estadio": "Stark's Park"
+  "estadio": "Stark's Park",
+  "lat": 56.099775,
+  "lng": -3.168428
  },
  "2362": {
   "cidade": "Inverness",
-  "estadio": "Caledonian Stadium"
+  "estadio": "Caledonian Stadium",
+  "lat": 57.495,
+  "lng": -4.217361
  },
  "2363": {
   "cidade": "Falkirk",
-  "estadio": "Falkirk Stadium"
+  "estadio": "Falkirk Stadium",
+  "lat": 56.005451,
+  "lng": -3.752958
  },
  "2364": {
   "cidade": "Ayr",
-  "estadio": "Somerset Park"
+  "estadio": "Somerset Park",
+  "lat": 55.469746,
+  "lng": -4.619976
  },
  "2365": {
   "cidade": "Dingwall",
-  "estadio": "Global Energy Stadium"
+  "estadio": "Global Energy Stadium",
+  "lat": 57.595758,
+  "lng": -4.419075
  },
  "2366": {
   "cidade": "Arbroath",
-  "estadio": "Gayfield Park"
+  "estadio": "Gayfield Park",
+  "lat": 56.552336,
+  "lng": -2.59148
  },
  "2367": {
   "cidade": "Airdrie",
-  "estadio": "Excelsior Stadium"
+  "estadio": "Excelsior Stadium",
+  "lat": 55.860267,
+  "lng": -3.960113
  },
  "2368": {
   "cidade": "Dumfries",
-  "estadio": "Palmerston Park"
+  "estadio": "Palmerston Park",
+  "lat": 55.070397,
+  "lng": -3.624616
  },
  "2369": {
   "cidade": "Alloa",
-  "estadio": "Recreation Park"
+  "estadio": "Recreation Park",
+  "lat": 56.11586,
+  "lng": -3.78997
  },
  "2370": {
   "cidade": "Stenhousemuir",
-  "estadio": "Ochilview Park"
+  "estadio": "Ochilview Park",
+  "lat": null,
+  "lng": null
  },
  "2371": {
   "cidade": "Stranraer",
-  "estadio": "Stair Park"
+  "estadio": "Stair Park",
+  "lat": 54.902201,
+  "lng": -5.012485
  },
  "2372": {
   "cidade": "Cowdenbeath",
-  "estadio": "Central Park"
+  "estadio": "Central Park",
+  "lat": 56.108888,
+  "lng": -3.347134
  },
  "2373": {
   "cidade": "Berwick-upon-Tweed",
-  "estadio": "Shielfield Park"
+  "estadio": "Shielfield Park",
+  "lat": 55.760067,
+  "lng": -2.015785
  },
  "2374": {
   "cidade": "Greenock",
-  "estadio": "Cappielow Park"
+  "estadio": "Cappielow Park",
+  "lat": 55.941229,
+  "lng": -4.727031
  },
  "2375": {
   "cidade": "Forfar",
-  "estadio": "Station Park"
+  "estadio": "Station Park",
+  "lat": 56.652306,
+  "lng": -2.884962
  },
  "2376": {
   "cidade": "Hamilton",
-  "estadio": "New Douglas Park"
+  "estadio": "New Douglas Park",
+  "lat": 55.782166,
+  "lng": -4.057878
  },
  "2377": {
   "cidade": "Dumbarton",
-  "estadio": "The YOUR Radio 103FM Stadium"
+  "estadio": "The YOUR Radio 103FM Stadium",
+  "lat": 55.94433,
+  "lng": -4.57061
  },
  "2378": {
   "cidade": "Brechin",
-  "estadio": "Glebe Park"
+  "estadio": "Glebe Park",
+  "lat": 56.735407,
+  "lng": -2.656722
  },
  "2379": {
   "cidade": "Stenhousemuir",
-  "estadio": "Ochilview Park"
+  "estadio": "Ochilview Park",
+  "lat": null,
+  "lng": null
  },
  "238": {
   "cidade": "Ruislip",
-  "estadio": "St Georges Stadium"
+  "estadio": "St Georges Stadium",
+  "lat": 51.57344,
+  "lng": -0.42341
  },
  "2380": {
   "cidade": "Elgin",
-  "estadio": "Borough Briggs"
+  "estadio": "Borough Briggs",
+  "lat": 57.651791,
+  "lng": -3.320829
  },
  "2382": {
   "cidade": "Methil",
-  "estadio": "Bayview Stadium"
+  "estadio": "Bayview Stadium",
+  "lat": 56.188873,
+  "lng": -2.999178
  },
  "2384": {
   "cidade": "Stirling",
-  "estadio": "Forthbank Stadium"
+  "estadio": "Forthbank Stadium",
+  "lat": 56.119073,
+  "lng": -3.912023
  },
  "2385": {
   "cidade": "Peterhead",
-  "estadio": "Balmoor Stadium"
+  "estadio": "Balmoor Stadium",
+  "lat": 57.511075,
+  "lng": -1.795837
  },
  "2386": {
   "cidade": "Montrose",
-  "estadio": "Links Park"
+  "estadio": "Links Park",
+  "lat": 56.713705,
+  "lng": -2.459112
  },
  "23895": {
   "cidade": "Bangor",
-  "estadio": "Clandeboye Park"
+  "estadio": "Clandeboye Park",
+  "lat": 54.651556,
+  "lng": -5.684319
  },
  "2391": {
   "cidade": "",
@@ -481,47 +699,69 @@
  },
  "2392": {
   "cidade": "Banff",
-  "estadio": "Princess Royal Park"
+  "estadio": "Princess Royal Park",
+  "lat": null,
+  "lng": null
  },
  "2393": {
   "cidade": "Edinburgh",
-  "estadio": "Ainslie Park"
+  "estadio": "Ainslie Park",
+  "lat": 55.971498,
+  "lng": -3.23161
  },
  "2394": {
   "cidade": "Galashiels",
-  "estadio": "Netherdale"
+  "estadio": "Netherdale",
+  "lat": null,
+  "lng": null
  },
  "2395": {
   "cidade": "Forres",
-  "estadio": "Mosset Park"
+  "estadio": "Mosset Park",
+  "lat": null,
+  "lng": null
  },
  "23955": {
   "cidade": "Annan",
-  "estadio": "Galabank"
+  "estadio": "Galabank",
+  "lat": 54.994642,
+  "lng": -3.261417
  },
  "23957": {
   "cidade": "Wimbledon",
-  "estadio": "Cherry Red Records Stadium"
+  "estadio": "Cherry Red Records Stadium",
+  "lat": 47.16971,
+  "lng": -98.45982
  },
  "23959": {
   "cidade": "Fleetwood",
-  "estadio": "Highbury Stadium"
+  "estadio": "Highbury Stadium",
+  "lat": -3.0246936,
+  "lng": 53.916397
  },
  "24": {
   "cidade": "Watford",
-  "estadio": "Vicarage Road"
+  "estadio": "Vicarage Road",
+  "lat": 51.648355,
+  "lng": -0.406955
  },
  "243928": {
   "cidade": "Celbridge",
-  "estadio": "Celbridge Football Park"
+  "estadio": "Celbridge Football Park",
+  "lat": 53.3424024,
+  "lng": -6.5104176
  },
  "25": {
   "cidade": "London",
-  "estadio": "The Den"
+  "estadio": "The Den",
+  "lat": 51.485953,
+  "lng": -0.050915
  },
  "252": {
   "cidade": "Finchley",
-  "estadio": "Maurice Rebak Stadium"
+  "estadio": "Maurice Rebak Stadium",
+  "lat": null,
+  "lng": null
  },
  "255": {
   "cidade": "",
@@ -529,31 +769,45 @@
  },
  "25935": {
   "cidade": "Brackley",
-  "estadio": "St. James Park"
+  "estadio": "St. James Park",
+  "lat": 52.03333,
+  "lng": -1.15
  },
  "25937": {
   "cidade": "Leiston",
-  "estadio": "Victory Road"
+  "estadio": "Victory Road",
+  "lat": 52.20567,
+  "lng": 1.573506
  },
  "25939": {
   "cidade": "Oxford",
-  "estadio": "Court Place Farm"
+  "estadio": "Court Place Farm",
+  "lat": 51.772827,
+  "lng": -1.227384
  },
  "25940": {
   "cidade": "Hornchurch",
-  "estadio": "Hornchurch Stadium"
+  "estadio": "Hornchurch Stadium",
+  "lat": 51.55659,
+  "lng": 0.238317
  },
  "26": {
   "cidade": "Walsall",
-  "estadio": "Bescot Stadium"
+  "estadio": "Bescot Stadium",
+  "lat": 52.565501,
+  "lng": -1.990498
  },
  "26002": {
   "cidade": "Bury St Edmunds",
-  "estadio": "Ram Meadow"
+  "estadio": "Ram Meadow",
+  "lat": 52.247754,
+  "lng": 0.720317
  },
  "26116": {
   "cidade": "Inverness",
-  "estadio": "Grant Street Park"
+  "estadio": "Grant Street Park",
+  "lat": null,
+  "lng": null
  },
  "26117": {
   "cidade": "",
@@ -561,63 +815,93 @@
  },
  "26189": {
   "cidade": "Penrhyn-coch",
-  "estadio": "Cae Baker"
+  "estadio": "Cae Baker",
+  "lat": null,
+  "lng": null
  },
  "26190": {
   "cidade": "Denbigh",
-  "estadio": "Stadium mk"
+  "estadio": "Stadium mk",
+  "lat": 52.009625,
+  "lng": -0.73354
  },
  "26252": {
   "cidade": "Edinburgh",
-  "estadio": "Meadowbank Stadium"
+  "estadio": "Meadowbank Stadium",
+  "lat": 55.95794,
+  "lng": -3.157639
  },
  "262863": {
   "cidade": "County Kerry",
-  "estadio": "Celtic Park"
+  "estadio": "Celtic Park",
+  "lat": 52.072689,
+  "lng": -9.511031
  },
  "263": {
   "cidade": "Norwich",
-  "estadio": "Carrow Road"
+  "estadio": "Carrow Road",
+  "lat": 52.622031,
+  "lng": 1.309322
  },
  "264627": {
   "cidade": "Atherton",
-  "estadio": "Alder Street"
+  "estadio": "Alder Street",
+  "lat": 53.523983,
+  "lng": -2.485915
  },
  "264637": {
   "cidade": "Crowborough",
-  "estadio": "Crowborough Community Stadium"
+  "estadio": "Crowborough Community Stadium",
+  "lat": 51.041988,
+  "lng": 0.165594
  },
  "264837": {
   "cidade": "Newbridge",
-  "estadio": "Station Road"
+  "estadio": "Station Road",
+  "lat": 53.185137,
+  "lng": -6.81065
  },
  "27": {
   "cidade": "Derby",
-  "estadio": "Pride Park Stadium"
+  "estadio": "Pride Park Stadium",
+  "lat": 52.914945,
+  "lng": -1.44832
  },
  "273626": {
   "cidade": "County Dublin",
-  "estadio": "John Hyland Park"
+  "estadio": "John Hyland Park",
+  "lat": 53.3029185,
+  "lng": -6.4303682
  },
  "274652": {
   "cidade": "Dublin",
-  "estadio": "Tolka Park"
+  "estadio": "Tolka Park",
+  "lat": 53.367557,
+  "lng": -6.251982
  },
  "28": {
   "cidade": "Reading",
-  "estadio": "Select Car Leasing Stadium"
+  "estadio": "Select Car Leasing Stadium",
+  "lat": 51.422335,
+  "lng": -0.983124
  },
  "29": {
   "cidade": "Stoke",
-  "estadio": "bet365 Stadium"
+  "estadio": "bet365 Stadium",
+  "lat": 52.98834,
+  "lng": -2.175592
  },
  "3": {
   "cidade": "Wolverhampton",
-  "estadio": "Molineux Stadium"
+  "estadio": "Molineux Stadium",
+  "lat": 52.590272,
+  "lng": -2.130408
  },
  "30": {
   "cidade": "Falmer",
-  "estadio": "American Express Stadium"
+  "estadio": "American Express Stadium",
+  "lat": null,
+  "lng": null
  },
  "309061": {
   "cidade": "",
@@ -625,83 +909,123 @@
  },
  "31": {
   "cidade": "Leicester",
-  "estadio": "King Power Stadium"
+  "estadio": "King Power Stadium",
+  "lat": 52.620397,
+  "lng": -1.142335
  },
  "3168": {
   "cidade": "Dublin",
-  "estadio": "Templeville Road"
+  "estadio": "Templeville Road",
+  "lat": null,
+  "lng": null
  },
  "3169": {
   "cidade": "Dublin",
-  "estadio": "Richmond Park"
+  "estadio": "Richmond Park",
+  "lat": 53.340859,
+  "lng": -6.316717
  },
  "3170": {
   "cidade": "Derry",
-  "estadio": "Brandywell Stadium"
+  "estadio": "Brandywell Stadium",
+  "lat": 54.991138,
+  "lng": -7.336495
  },
  "3171": {
   "cidade": "Bray",
-  "estadio": "Carlisle Grounds"
+  "estadio": "Carlisle Grounds",
+  "lat": 53.205882,
+  "lng": -6.102687
  },
  "3173": {
   "cidade": "Dublin",
-  "estadio": "Dalymount Park"
+  "estadio": "Dalymount Park",
+  "lat": 53.362076,
+  "lng": -6.274917
  },
  "3174": {
   "cidade": "Dublin",
-  "estadio": "Tolka Park"
+  "estadio": "Tolka Park",
+  "lat": 53.367557,
+  "lng": -6.251982
  },
  "3175": {
   "cidade": "Longford",
-  "estadio": "Bishopsgate"
+  "estadio": "Bishopsgate",
+  "lat": 53.72536,
+  "lng": -7.79823
  },
  "3177": {
   "cidade": "Dublin",
-  "estadio": "Tallaght Stadium"
+  "estadio": "Tallaght Stadium",
+  "lat": 53.28336,
+  "lng": -6.3738
  },
  "3179": {
   "cidade": "Dundalk",
-  "estadio": "Oriel Park"
+  "estadio": "Oriel Park",
+  "lat": 53.998227,
+  "lng": -6.416456
  },
  "3180": {
   "cidade": "Drogheda",
-  "estadio": "United Park"
+  "estadio": "United Park",
+  "lat": 53.723357,
+  "lng": -6.357377
  },
  "3181": {
   "cidade": "Ballybofey",
-  "estadio": "Finn Park"
+  "estadio": "Finn Park",
+  "lat": 54.797927,
+  "lng": -7.778649
  },
  "3185": {
   "cidade": "Cobh",
-  "estadio": "St. Colman's Park"
+  "estadio": "St. Colman's Park",
+  "lat": 51.85722,
+  "lng": -8.29917
  },
  "3190": {
   "cidade": "Sligo",
-  "estadio": "The Showgrounds"
+  "estadio": "The Showgrounds",
+  "lat": 54.270156,
+  "lng": -8.486735
  },
  "3194": {
   "cidade": "Waterford",
-  "estadio": "Waterford Regional Sports Centre"
+  "estadio": "Waterford Regional Sports Centre",
+  "lat": 52.246258,
+  "lng": -7.12483
  },
  "3198": {
   "cidade": "Athlone",
-  "estadio": "Athlone Town Stadium"
+  "estadio": "Athlone Town Stadium",
+  "lat": 53.427563,
+  "lng": -7.919345
  },
  "32": {
   "cidade": "Ipswich",
-  "estadio": "Portman Road Stadium"
+  "estadio": "Portman Road Stadium",
+  "lat": 52.054952,
+  "lng": 1.145285
  },
  "323955": {
   "cidade": "Swansea",
-  "estadio": "Sketty Lane"
+  "estadio": "Sketty Lane",
+  "lat": 51.610156,
+  "lng": -3.987625
  },
  "32467": {
   "cidade": "Galway",
-  "estadio": "Fahy's Field"
+  "estadio": "Fahy's Field",
+  "lat": null,
+  "lng": null
  },
  "328541": {
   "cidade": "Sheerness",
-  "estadio": "Holm Park"
+  "estadio": "Holm Park",
+  "lat": 51.4212077,
+  "lng": 0.7664993
  },
  "329410": {
   "cidade": "",
@@ -713,103 +1037,153 @@
  },
  "329412": {
   "cidade": "Motherwell",
-  "estadio": "Alliance Park"
+  "estadio": "Alliance Park",
+  "lat": null,
+  "lng": null
  },
  "33": {
   "cidade": "London",
-  "estadio": "Tottenham Hotspur Stadium"
+  "estadio": "Tottenham Hotspur Stadium",
+  "lat": 51.604036,
+  "lng": -0.066153
  },
  "34": {
   "cidade": "Leeds",
-  "estadio": "Elland Road"
+  "estadio": "Elland Road",
+  "lat": 53.775644,
+  "lng": -1.575748
  },
  "35": {
   "cidade": "Manchester",
-  "estadio": "Old Trafford"
+  "estadio": "Old Trafford",
+  "lat": 53.46311,
+  "lng": -2.291387
  },
  "35026": {
   "cidade": "Keith",
-  "estadio": "Kynoch Park"
+  "estadio": "Kynoch Park",
+  "lat": null,
+  "lng": null
  },
  "35029": {
   "cidade": "Fraserburgh",
-  "estadio": "Bellslea Park"
+  "estadio": "Bellslea Park",
+  "lat": 57.689369,
+  "lng": -2.005283
  },
  "35033": {
   "cidade": "Halesowen",
-  "estadio": "The Grove"
+  "estadio": "The Grove",
+  "lat": 52.453879,
+  "lng": -2.05762
  },
  "35186": {
   "cidade": "Barry",
-  "estadio": "Jenner Park"
+  "estadio": "Jenner Park",
+  "lat": 51.410914,
+  "lng": -3.26578
  },
  "36": {
   "cidade": "Middlesbrough",
-  "estadio": "Riverside"
+  "estadio": "Riverside",
+  "lat": 33.704769,
+  "lng": -117.175285
  },
  "36255": {
   "cidade": "Bala",
-  "estadio": "Maes Tegid"
+  "estadio": "Maes Tegid",
+  "lat": 52.912426,
+  "lng": -3.6015
  },
  "362881": {
   "cidade": "Reading",
-  "estadio": "Barlows Park"
+  "estadio": "Barlows Park",
+  "lat": 51.358107153382,
+  "lng": -1.1358480116303
  },
  "36381": {
   "cidade": "Buxton",
-  "estadio": "The Silverlands"
+  "estadio": "The Silverlands",
+  "lat": 43.63786,
+  "lng": -70.51894
  },
  "36467": {
   "cidade": "Borehamwood",
-  "estadio": "Meadow Park"
+  "estadio": "Meadow Park",
+  "lat": 51.662031,
+  "lng": -0.27244
  },
  "36783": {
   "cidade": "Belfast",
-  "estadio": "Loughshore Hotel Arena"
+  "estadio": "Loughshore Hotel Arena",
+  "lat": 54.58333,
+  "lng": -5.93333
  },
  "36785": {
   "cidade": "Ballinamallard",
-  "estadio": "Ferney Park"
+  "estadio": "Ferney Park",
+  "lat": 54.414323,
+  "lng": -7.599718
  },
  "37": {
   "cidade": "London",
-  "estadio": "London Stadium"
+  "estadio": "London Stadium",
+  "lat": 51.538621,
+  "lng": -0.016624
  },
  "37083": {
   "cidade": "Gresford",
-  "estadio": "Clappers Lane"
+  "estadio": "Clappers Lane",
+  "lat": 53.088979,
+  "lng": -2.980329
  },
  "37084": {
   "cidade": "Ruthin",
-  "estadio": "Memorial Playing Fields"
+  "estadio": "Memorial Playing Fields",
+  "lat": 53.11368,
+  "lng": -3.31782
  },
  "37085": {
   "cidade": "Buckley",
-  "estadio": "Globe Way Stadium"
+  "estadio": "Globe Way Stadium",
+  "lat": 53.178294,
+  "lng": -3.068402
  },
  "37086": {
   "cidade": "Llandudno",
-  "estadio": "Maesdu Park"
+  "estadio": "Maesdu Park",
+  "lat": 53.32498,
+  "lng": -3.83148
  },
  "37088": {
   "cidade": "Holyhead",
-  "estadio": "The New Oval"
+  "estadio": "The New Oval",
+  "lat": 53.30621,
+  "lng": -4.63211
  },
  "37089": {
   "cidade": "Mold",
-  "estadio": "Alyn Park"
+  "estadio": "Alyn Park",
+  "lat": null,
+  "lng": null
  },
  "37090": {
   "cidade": "Flint",
-  "estadio": "Ground Cae-y-Castell"
+  "estadio": "Ground Cae-y-Castell",
+  "lat": 53.249286,
+  "lng": -3.137344
  },
  "37097": {
   "cidade": "Clydach Vale",
-  "estadio": "King George V New Field"
+  "estadio": "King George V New Field",
+  "lat": 51.62665,
+  "lng": -3.48015
  },
  "37100": {
   "cidade": "Pontardawe",
-  "estadio": "The Recreation Ground"
+  "estadio": "The Recreation Ground",
+  "lat": null,
+  "lng": null
  },
  "372489": {
   "cidade": "",
@@ -821,35 +1195,51 @@
  },
  "37466": {
   "cidade": "Cardiff",
-  "estadio": "Cwrt-yr-Ala"
+  "estadio": "Cwrt-yr-Ala",
+  "lat": 51.469158,
+  "lng": -3.254532
  },
  "37467": {
   "cidade": "Ammanford",
-  "estadio": "Manor Road"
+  "estadio": "Manor Road",
+  "lat": 51.792297,
+  "lng": -3.995714
  },
  "37476": {
   "cidade": "Penycae",
-  "estadio": "Afoneitha Road"
+  "estadio": "Afoneitha Road",
+  "lat": 53.002699,
+  "lng": -3.061883
  },
  "377765": {
   "cidade": "Limerick",
-  "estadio": "Markets Field"
+  "estadio": "Markets Field",
+  "lat": 52.66472,
+  "lng": -8.62306
  },
  "37937": {
   "cidade": "Aberdare",
-  "estadio": "Aberaman Park"
+  "estadio": "Aberaman Park",
+  "lat": 51.693311,
+  "lng": -3.418879
  },
  "37998": {
   "cidade": "Kersal",
-  "estadio": "Peninsula"
+  "estadio": "Peninsula",
+  "lat": null,
+  "lng": null
  },
  "38": {
   "cidade": "London",
-  "estadio": "Stamford Bridge"
+  "estadio": "Stamford Bridge",
+  "lat": 51.481687,
+  "lng": -0.191034
  },
  "38001": {
   "cidade": "Truro",
-  "estadio": "Treyew Road"
+  "estadio": "Treyew Road",
+  "lat": 50.260704,
+  "lng": -5.066801
  },
  "38291": {
   "cidade": "",
@@ -857,15 +1247,21 @@
  },
  "38369": {
   "cidade": "Aberdeen",
-  "estadio": "Spain Park"
+  "estadio": "Spain Park",
+  "lat": null,
+  "lng": null
  },
  "38370": {
   "cidade": "Edinburgh",
-  "estadio": "Christie Gillies Park"
+  "estadio": "Christie Gillies Park",
+  "lat": null,
+  "lng": null
  },
  "38371": {
   "cidade": "Nairn",
-  "estadio": "Station Park"
+  "estadio": "Station Park",
+  "lat": null,
+  "lng": null
  },
  "386482": {
   "cidade": "",
@@ -877,35 +1273,51 @@
  },
  "38739": {
   "cidade": "Wesham",
-  "estadio": "Mill Farm"
+  "estadio": "Mill Farm",
+  "lat": 53.7974,
+  "lng": -2.889712
  },
  "388789": {
   "cidade": "Ystrad Mynach",
-  "estadio": "CCBC Centre for Sporting Excellence"
+  "estadio": "CCBC Centre for Sporting Excellence",
+  "lat": null,
+  "lng": null
  },
  "388794": {
   "cidade": "Ynyshir",
-  "estadio": "Ynyshir Oval"
+  "estadio": "Ynyshir Oval",
+  "lat": 51.624295,
+  "lng": -3.409114
  },
  "388797": {
   "cidade": "Wrexham",
-  "estadio": "The Ring"
+  "estadio": "The Ring",
+  "lat": null,
+  "lng": null
  },
  "39": {
   "cidade": "Newcastle upon Tyne",
-  "estadio": "St James' Park"
+  "estadio": "St James' Park",
+  "lat": 54.975469,
+  "lng": -1.621874
  },
  "39224": {
   "cidade": "Portadown",
-  "estadio": "Tandragee Road Ground"
+  "estadio": "Tandragee Road Ground",
+  "lat": 54.42302,
+  "lng": -6.44434
  },
  "39226": {
   "cidade": "Belfast",
-  "estadio": "The Dub"
+  "estadio": "The Dub",
+  "lat": 54.58333,
+  "lng": -5.93333
  },
  "39227": {
   "cidade": "Magherafelt",
-  "estadio": "Mill Meadow"
+  "estadio": "Mill Meadow",
+  "lat": 54.780414,
+  "lng": -6.554757
  },
  "392270": {
   "cidade": "",
@@ -917,39 +1329,57 @@
  },
  "39533": {
   "cidade": "Belfast",
-  "estadio": "Wilgar Park"
+  "estadio": "Wilgar Park",
+  "lat": 54.599369,
+  "lng": -5.8785
  },
  "39534": {
   "cidade": "Belfast",
-  "estadio": "Tillysburn Park"
+  "estadio": "Tillysburn Park",
+  "lat": 54.613275,
+  "lng": -5.85917
  },
  "4": {
   "cidade": "Milton Keynes",
-  "estadio": "Stadium MK"
+  "estadio": "Stadium MK",
+  "lat": 52.009625,
+  "lng": -0.73354
  },
  "40": {
   "cidade": "Birmingham",
-  "estadio": "Villa Park"
+  "estadio": "Villa Park",
+  "lat": 52.509126,
+  "lng": -1.885035
  },
  "40896": {
   "cidade": "Cork",
-  "estadio": "Turner's Cross"
+  "estadio": "Turner's Cross",
+  "lat": 51.888247,
+  "lng": -8.465011
  },
  "41": {
   "cidade": "Sunderland",
-  "estadio": "Stadium of Light"
+  "estadio": "Stadium of Light",
+  "lat": 54.914395,
+  "lng": -1.388258
  },
  "41327": {
   "cidade": "Letterkenny",
-  "estadio": "Leckview Park"
+  "estadio": "Leckview Park",
+  "lat": 54.9439653,
+  "lng": -7.7345135
  },
  "42": {
   "cidade": "London",
-  "estadio": "Emirates Stadium"
+  "estadio": "Emirates Stadium",
+  "lat": 51.55504,
+  "lng": -0.1084
  },
  "422192": {
   "cidade": "Tonabrocky, Drum East",
-  "estadio": "Drom Soccer Park"
+  "estadio": "Drom Soccer Park",
+  "lat": 53.2935476,
+  "lng": -9.1325999
  },
  "422193": {
   "cidade": "",
@@ -957,35 +1387,51 @@
  },
  "43": {
   "cidade": "London",
-  "estadio": "Craven Cottage"
+  "estadio": "Craven Cottage",
+  "lat": 51.474922,
+  "lng": -0.221745
  },
  "43204": {
   "cidade": "Warrenpoint",
-  "estadio": "Milltown"
+  "estadio": "Milltown",
+  "lat": 54.117295,
+  "lng": -6.26257
  },
  "44": {
   "cidade": "Liverpool",
-  "estadio": "Anfield"
+  "estadio": "Anfield",
+  "lat": 53.430916,
+  "lng": -2.960931
  },
  "44698": {
   "cidade": "Aberdare",
-  "estadio": "Canolfan Cwmaman"
+  "estadio": "Canolfan Cwmaman",
+  "lat": null,
+  "lng": null
  },
  "446997": {
   "cidade": "Bangor",
-  "estadio": "Nantporth Stadium"
+  "estadio": "Nantporth Stadium",
+  "lat": 44.80118,
+  "lng": -68.77781
  },
  "447010": {
   "cidade": "Newport",
-  "estadio": "Newport Stadium"
+  "estadio": "Newport Stadium",
+  "lat": 51.57379,
+  "lng": -2.959379
  },
  "447011": {
   "cidade": "Bangor",
-  "estadio": "Evans Bevans Playing Fields"
+  "estadio": "Evans Bevans Playing Fields",
+  "lat": null,
+  "lng": null
  },
  "447756": {
   "cidade": "Macclesfield",
-  "estadio": "The Leasing.com Stadium"
+  "estadio": "The Leasing.com Stadium",
+  "lat": 53.26023,
+  "lng": -2.12564
  },
  "448072": {
   "cidade": "",
@@ -993,43 +1439,63 @@
  },
  "448076": {
   "cidade": "Newlands",
-  "estadio": "Newlandsfield Park"
+  "estadio": "Newlandsfield Park",
+  "lat": null,
+  "lng": null
  },
  "45": {
   "cidade": "Southampton",
-  "estadio": "St. Mary's Stadium"
+  "estadio": "St. Mary's Stadium",
+  "lat": 50.905862,
+  "lng": -1.390877
  },
  "45005": {
   "cidade": "Colwyn Bay",
-  "estadio": "Llanelian Road"
+  "estadio": "Llanelian Road",
+  "lat": 53.286588,
+  "lng": -3.700887
  },
  "45006": {
   "cidade": "Chislehurst",
-  "estadio": "Flamingo Park"
+  "estadio": "Flamingo Park",
+  "lat": 51.42967,
+  "lng": 0.08019
  },
  "45011": {
   "cidade": "Southampton",
-  "estadio": "Mortgage Decisions Stadium"
+  "estadio": "Mortgage Decisions Stadium",
+  "lat": null,
+  "lng": null
  },
  "45362": {
   "cidade": "Brentwood",
-  "estadio": "Brentwood Centre Arena"
+  "estadio": "Brentwood Centre Arena",
+  "lat": 36.03312,
+  "lng": -86.78278
  },
  "45621": {
   "cidade": "Bo'ness",
-  "estadio": "Newtown Park"
+  "estadio": "Newtown Park",
+  "lat": null,
+  "lng": null
  },
  "45622": {
   "cidade": "Brora",
-  "estadio": "Dudgeon Park"
+  "estadio": "Dudgeon Park",
+  "lat": 58.00833,
+  "lng": -3.858492
  },
  "459718": {
   "cidade": "Tralee",
-  "estadio": "Mounthawk Park"
+  "estadio": "Mounthawk Park",
+  "lat": null,
+  "lng": null
  },
  "46": {
   "cidade": "Blackburn",
-  "estadio": "Ewood Park"
+  "estadio": "Ewood Park",
+  "lat": 53.728528,
+  "lng": -2.489225
  },
  "46149": {
   "cidade": "",
@@ -1037,27 +1503,39 @@
  },
  "46523": {
   "cidade": "Belfast",
-  "estadio": "Solitude"
+  "estadio": "Solitude",
+  "lat": 54.619505,
+  "lng": -5.947285
  },
  "47": {
   "cidade": "London",
-  "estadio": "The Valley"
+  "estadio": "The Valley",
+  "lat": 51.486392,
+  "lng": 0.036159
  },
  "47186": {
   "cidade": "Scarborough",
-  "estadio": "Flamingo Land Stadium"
+  "estadio": "Flamingo Land Stadium",
+  "lat": 43.77223,
+  "lng": -79.25666
  },
  "47279": {
   "cidade": "Wimborne",
-  "estadio": "The Cuthbury"
+  "estadio": "The Cuthbury",
+  "lat": 50.78333,
+  "lng": -1.98333
  },
  "47289": {
   "cidade": "Worthing",
-  "estadio": "Bibby Financial Services Stadium"
+  "estadio": "Bibby Financial Services Stadium",
+  "lat": 50.81795,
+  "lng": -0.37538
  },
  "48": {
   "cidade": "Liverpool",
-  "estadio": "Hill Dickinson Stadium"
+  "estadio": "Hill Dickinson Stadium",
+  "lat": 53.4251,
+  "lng": -3.0028
  },
  "483835": {
   "cidade": "",
@@ -1065,7 +1543,9 @@
  },
  "4875": {
   "cidade": "Crawley",
-  "estadio": "Broadfield Stadium"
+  "estadio": "Broadfield Stadium",
+  "lat": 51.099573,
+  "lng": -0.194743
  },
  "488700": {
   "cidade": "",
@@ -1077,35 +1557,51 @@
  },
  "488716": {
   "cidade": "Llanelli",
-  "estadio": "Stebonheath Park"
+  "estadio": "Stebonheath Park",
+  "lat": 51.6840193,
+  "lng": -4.1489173
  },
  "49": {
   "cidade": "Wigan",
-  "estadio": "The Brick Community Stadium"
+  "estadio": "The Brick Community Stadium",
+  "lat": 53.545719,
+  "lng": -2.626462
  },
  "4905": {
   "cidade": "Aberystwyth",
-  "estadio": "Park Avenue"
+  "estadio": "Park Avenue",
+  "lat": 52.40888,
+  "lng": -4.074568
  },
  "4906": {
   "cidade": "Aberavon",
-  "estadio": "Marston Stadium"
+  "estadio": "Marston Stadium",
+  "lat": null,
+  "lng": null
  },
  "4907": {
   "cidade": "Broughton",
-  "estadio": "The Airfield"
+  "estadio": "The Airfield",
+  "lat": 52.36667,
+  "lng": -0.76667
  },
  "4909": {
   "cidade": "Caernarfon",
-  "estadio": "The Oval"
+  "estadio": "The Oval",
+  "lat": 53.134659,
+  "lng": -4.267479
  },
  "4910": {
   "cidade": "Caersws",
-  "estadio": "Recreation Ground"
+  "estadio": "Recreation Ground",
+  "lat": null,
+  "lng": null
  },
  "4911": {
   "cidade": "Carmarthen",
-  "estadio": "Richmond Park"
+  "estadio": "Richmond Park",
+  "lat": 51.860652,
+  "lng": -4.300858
  },
  "491189": {
   "cidade": "",
@@ -1113,115 +1609,171 @@
  },
  "4912": {
   "cidade": "Connah's Quay",
-  "estadio": "Deeside Stadium "
+  "estadio": "Deeside Stadium ",
+  "lat": 53.22513,
+  "lng": -3.077711
  },
  "4914": {
   "cidade": "Rhyl",
-  "estadio": "Belle Vue"
+  "estadio": "Belle Vue",
+  "lat": 53.318911,
+  "lng": -3.476052
  },
  "4915": {
   "cidade": "Haverfordwest",
-  "estadio": "Bridge Meadow Stadium"
+  "estadio": "Bridge Meadow Stadium",
+  "lat": 51.809212,
+  "lng": -4.967533
  },
  "4916": {
   "cidade": "Llanelli",
-  "estadio": "Stebonheath Park"
+  "estadio": "Stebonheath Park",
+  "lat": 51.683901,
+  "lng": -4.147624
  },
  "4918": {
   "cidade": "Newtown",
-  "estadio": "Latham Park"
+  "estadio": "Latham Park",
+  "lat": 52.51152,
+  "lng": -3.322788
  },
  "4920": {
   "cidade": "Porthmadog",
-  "estadio": "Y Traeth "
+  "estadio": "Y Traeth ",
+  "lat": 52.931997,
+  "lng": -4.120413
  },
  "4921": {
   "cidade": "Oswestry",
-  "estadio": "Park Hall"
+  "estadio": "Park Hall",
+  "lat": 52.875385,
+  "lng": -3.026418
  },
  "5": {
   "cidade": "Horwich",
-  "estadio": "Toughsheet Community Stadium "
+  "estadio": "Toughsheet Community Stadium ",
+  "lat": 53.58054,
+  "lng": -2.535665
  },
  "50": {
   "cidade": "London",
-  "estadio": "Brentford Community Stadium"
+  "estadio": "Brentford Community Stadium",
+  "lat": 51.490713,
+  "lng": -0.28898
  },
  "50144": {
   "cidade": "Buncrana",
-  "estadio": "Charlie O'Donnell Sports Grounds"
+  "estadio": "Charlie O'Donnell Sports Grounds",
+  "lat": null,
+  "lng": null
  },
  "51": {
   "cidade": "Wirral",
-  "estadio": "Prenton Park"
+  "estadio": "Prenton Park",
+  "lat": 53.373679,
+  "lng": -3.032617
  },
  "512182": {
   "cidade": "Norwich",
-  "estadio": "Abode Arena"
+  "estadio": "Abode Arena",
+  "lat": 52.5622684,
+  "lng": 1.2377664
  },
  "5179": {
   "cidade": "Belfast",
-  "estadio": "The Oval"
+  "estadio": "The Oval",
+  "lat": 54.602954,
+  "lng": -5.891295
  },
  "5180": {
   "cidade": "Belfast",
-  "estadio": "Seaview"
+  "estadio": "Seaview",
+  "lat": 54.624107,
+  "lng": -5.921867
  },
  "5181": {
   "cidade": "Belfast",
-  "estadio": "Solitude"
+  "estadio": "Solitude",
+  "lat": 54.619505,
+  "lng": -5.947285
  },
  "5182": {
   "cidade": "Bangor",
-  "estadio": "Clandeboye Park"
+  "estadio": "Clandeboye Park",
+  "lat": 54.651556,
+  "lng": -5.684319
  },
  "5183": {
   "cidade": "Lurgan",
-  "estadio": "Mourneview Park"
+  "estadio": "Mourneview Park",
+  "lat": 54.454583,
+  "lng": -6.33723
  },
  "5184": {
   "cidade": "Larne",
-  "estadio": "Inver Park"
+  "estadio": "Inver Park",
+  "lat": 54.8499,
+  "lng": -5.827381
  },
  "52": {
   "cidade": "Bury",
-  "estadio": "Gigg Lane"
+  "estadio": "Gigg Lane",
+  "lat": -2.2949212,
+  "lng": 53.5805538
  },
  "5269": {
   "cidade": "Ballymena",
-  "estadio": "Ballymena Showgrounds"
+  "estadio": "Ballymena Showgrounds",
+  "lat": 54.870086,
+  "lng": -6.265054
  },
  "5270": {
   "cidade": "Coleraine",
-  "estadio": "The Showgrounds"
+  "estadio": "The Showgrounds",
+  "lat": 55.13333,
+  "lng": -6.66667
  },
  "5271": {
   "cidade": "Dungannon",
-  "estadio": "Stangmore Park"
+  "estadio": "Stangmore Park",
+  "lat": 54.489412,
+  "lng": -6.74611
  },
  "5272": {
   "cidade": "Belfast",
-  "estadio": "Windsor Park"
+  "estadio": "Windsor Park",
+  "lat": 54.582653,
+  "lng": -5.955306
  },
  "5273": {
   "cidade": "Drumahoe",
-  "estadio": "Riverside Stadium"
+  "estadio": "Riverside Stadium",
+  "lat": null,
+  "lng": null
  },
  "5274": {
   "cidade": "Limavady",
-  "estadio": "The Showgrounds"
+  "estadio": "The Showgrounds",
+  "lat": 55.05045,
+  "lng": -6.95074
  },
  "5276": {
   "cidade": "Loughgall",
-  "estadio": "Lakeview Park"
+  "estadio": "Lakeview Park",
+  "lat": null,
+  "lng": null
  },
  "5279": {
   "cidade": "Portadown",
-  "estadio": "Shamrock Park"
+  "estadio": "Shamrock Park",
+  "lat": 54.413209,
+  "lng": -6.457832
  },
  "53": {
   "cidade": "Swindon",
-  "estadio": "County Ground"
+  "estadio": "County Ground",
+  "lat": 51.564479,
+  "lng": -1.771022
  },
  "530654": {
   "cidade": "",
@@ -1229,7 +1781,9 @@
  },
  "54": {
   "cidade": "Peterborough",
-  "estadio": "Weston Homes Stadium"
+  "estadio": "Weston Homes Stadium",
+  "lat": 52.56445,
+  "lng": -0.240057
  },
  "549292": {
   "cidade": "",
@@ -1237,15 +1791,21 @@
  },
  "55": {
   "cidade": "Stoke",
-  "estadio": "Vale Park"
+  "estadio": "Vale Park",
+  "lat": 53.049956,
+  "lng": -2.192698
  },
  "56": {
   "cidade": "Nottingham",
-  "estadio": "Meadow Lane"
+  "estadio": "Meadow Lane",
+  "lat": 52.944129,
+  "lng": -1.133093
  },
  "57": {
   "cidade": "Northampton",
-  "estadio": "PTS Academy Stadium"
+  "estadio": "PTS Academy Stadium",
+  "lat": 52.235263,
+  "lng": -0.933574
  },
  "57231": {
   "cidade": "",
@@ -1257,119 +1817,177 @@
  },
  "58": {
   "cidade": "Bristol",
-  "estadio": "Ashton Gate"
+  "estadio": "Ashton Gate",
+  "lat": 51.439869,
+  "lng": -2.620341
  },
  "59": {
   "cidade": "Huddersfield",
-  "estadio": "Accu Stadium"
+  "estadio": "Accu Stadium",
+  "lat": 53.64904,
+  "lng": -1.78416
  },
  "59588": {
   "cidade": "Rathfriland",
-  "estadio": "Iveagh Park"
+  "estadio": "Iveagh Park",
+  "lat": -6.1531597,
+  "lng": 54.2464435
  },
  "6": {
   "cidade": "Burnley",
-  "estadio": "Turf Moor"
+  "estadio": "Turf Moor",
+  "lat": 53.789355,
+  "lng": -2.229895
  },
  "60": {
   "cidade": "Bournemouth",
-  "estadio": "Vitality Stadium"
+  "estadio": "Vitality Stadium",
+  "lat": 50.735181,
+  "lng": -1.838328
  },
  "61": {
   "cidade": "Cardiff",
-  "estadio": "Cardiff City Stadium"
+  "estadio": "Cardiff City Stadium",
+  "lat": 51.472821,
+  "lng": -3.202963
  },
  "6191": {
   "cidade": "Eastleigh",
-  "estadio": "Silverlake Stadium"
+  "estadio": "Silverlake Stadium",
+  "lat": 50.952451,
+  "lng": -1.371915
  },
  "62": {
   "cidade": "Wycombe",
-  "estadio": "Adams Park"
+  "estadio": "Adams Park",
+  "lat": 51.630567,
+  "lng": -0.800191
  },
  "63": {
   "cidade": "Cambridge",
-  "estadio": "Cledara Abbey Stadium"
+  "estadio": "Cledara Abbey Stadium",
+  "lat": 52.21203,
+  "lng": 0.154183
  },
  "6334": {
   "cidade": "Gainsborough",
-  "estadio": "The Northolme"
+  "estadio": "The Northolme",
+  "lat": 53.403429,
+  "lng": -0.774502
  },
  "6338": {
   "cidade": "Redditch",
-  "estadio": "The Trico"
+  "estadio": "The Trico",
+  "lat": 52.3065,
+  "lng": -1.94569
  },
  "6339": {
   "cidade": "Sutton",
-  "estadio": "Borough Sports Ground"
+  "estadio": "Borough Sports Ground",
+  "lat": 51.367437,
+  "lng": -0.20432
  },
  "64": {
   "cidade": "Wrexham",
-  "estadio": "Racecourse Ground"
+  "estadio": "Racecourse Ground",
+  "lat": 53.051824,
+  "lng": -3.003664
  },
  "65": {
   "cidade": "Oldham",
-  "estadio": "Boundary Park"
+  "estadio": "Boundary Park",
+  "lat": 53.555118,
+  "lng": -2.128418
  },
  "66": {
   "cidade": "Colchester",
-  "estadio": "Jobserve Community Stadium"
+  "estadio": "Jobserve Community Stadium",
+  "lat": 51.923439,
+  "lng": 0.897648
  },
  "67": {
   "cidade": "Blackpool",
-  "estadio": "Bloomfield Road"
+  "estadio": "Bloomfield Road",
+  "lat": 53.804364,
+  "lng": -3.041315
  },
  "68": {
   "cidade": "Chesterfield",
-  "estadio": "SMH Group  Stadium"
+  "estadio": "SMH Group  Stadium",
+  "lat": 53.253558,
+  "lng": -1.425819
  },
  "69": {
   "cidade": "Cheltenham",
-  "estadio": "Whaddon Road"
+  "estadio": "Whaddon Road",
+  "lat": 51.906178,
+  "lng": -2.060214
  },
  "7": {
   "cidade": "London",
-  "estadio": "Selhurst Park"
+  "estadio": "Selhurst Park",
+  "lat": 51.398243,
+  "lng": -0.085255
  },
  "70": {
   "cidade": "Mansfield",
-  "estadio": "One Call Stadium"
+  "estadio": "One Call Stadium",
+  "lat": 53.138056,
+  "lng": -1.200917
  },
  "71": {
   "cidade": "Plymouth",
-  "estadio": "Home Park"
+  "estadio": "Home Park",
+  "lat": 50.388121,
+  "lng": -4.150875
  },
  "7128": {
   "cidade": "Crossabeg",
-  "estadio": "Ferrycarrig Park"
+  "estadio": "Ferrycarrig Park",
+  "lat": null,
+  "lng": null
  },
  "72": {
   "cidade": "Luton",
-  "estadio": "Kenilworth Road"
+  "estadio": "Kenilworth Road",
+  "lat": 51.883975,
+  "lng": -0.429859
  },
  "73": {
   "cidade": "York",
-  "estadio": "York`s LNER Community Stadium"
+  "estadio": "York`s LNER Community Stadium",
+  "lat": 53.959382,
+  "lng": -1.081417
  },
  "74": {
   "cidade": "Swansea",
-  "estadio": "Swansea.com Stadium"
+  "estadio": "Swansea.com Stadium",
+  "lat": 51.642806,
+  "lng": -3.934739
  },
  "75": {
   "cidade": "Aldershot",
-  "estadio": "Recreation Ground"
+  "estadio": "Recreation Ground",
+  "lat": 51.248313,
+  "lng": -0.75492
  },
  "76": {
   "cidade": "Bristol",
-  "estadio": "Memorial Stadium"
+  "estadio": "Memorial Stadium",
+  "lat": 51.486259,
+  "lng": -2.583184
  },
  "76341": {
   "cidade": "Bonnyrigg",
-  "estadio": "New Dundas Park"
+  "estadio": "New Dundas Park",
+  "lat": -3.1051,
+  "lng": 55.87329
  },
  "76343": {
   "cidade": "Rothes",
-  "estadio": "Mackessack Park"
+  "estadio": "Mackessack Park",
+  "lat": null,
+  "lng": null
  },
  "76345": {
   "cidade": "",
@@ -1377,63 +1995,93 @@
  },
  "76347": {
   "cidade": "Pitmedden",
-  "estadio": "North Lodge Park"
+  "estadio": "North Lodge Park",
+  "lat": 57.338023,
+  "lng": -2.196281
  },
  "7682": {
   "cidade": "Armagh",
-  "estadio": "Holm Park"
+  "estadio": "Holm Park",
+  "lat": 54.339274,
+  "lng": -6.626222
  },
  "77": {
   "cidade": "London",
-  "estadio": "The Hive Stadium"
+  "estadio": "The Hive Stadium",
+  "lat": 51.602636,
+  "lng": -0.291708
  },
  "78": {
   "cidade": "Carlisle",
-  "estadio": "Brunton Park"
+  "estadio": "Brunton Park",
+  "lat": 54.895553,
+  "lng": -2.9136
  },
  "79": {
   "cidade": "Newport",
-  "estadio": "Rodney Parade"
+  "estadio": "Rodney Parade",
+  "lat": 51.588986,
+  "lng": -2.988485
  },
  "7942": {
   "cidade": "Solihull",
-  "estadio": "Damson Park"
+  "estadio": "Damson Park",
+  "lat": 53.641637,
+  "lng": -2.301317
  },
  "79539": {
   "cidade": "Stirling",
-  "estadio": "Forthbank Stadium"
+  "estadio": "Forthbank Stadium",
+  "lat": 56.119073,
+  "lng": -3.912023
  },
  "8": {
   "cidade": "West Bromwich",
-  "estadio": "The Hawthorns"
+  "estadio": "The Hawthorns",
+  "lat": 52.509165,
+  "lng": -1.963662
  },
  "80": {
   "cidade": "Retford",
-  "estadio": "Cannon Park"
+  "estadio": "Cannon Park",
+  "lat": 53.324449,
+  "lng": -0.918026
  },
  "80011": {
   "cidade": "Plymouth",
-  "estadio": "Bolitho Park"
+  "estadio": "Bolitho Park",
+  "lat": null,
+  "lng": null
  },
  "8062": {
   "cidade": "Aberdeen",
-  "estadio": "Balmoral Stadium"
+  "estadio": "Balmoral Stadium",
+  "lat": null,
+  "lng": null
  },
  "8063": {
   "cidade": "Huntly",
-  "estadio": "Christie Park"
+  "estadio": "Christie Park",
+  "lat": null,
+  "lng": null
  },
  "8064": {
   "cidade": "Linlithgow",
-  "estadio": "Prestonfield"
+  "estadio": "Prestonfield",
+  "lat": null,
+  "lng": null
  },
  "81": {
   "cidade": "Morecambe",
-  "estadio": "Mazuma Stadium"
+  "estadio": "Mazuma Stadium",
+  "lat": 54.061469,
+  "lng": -2.867265
  },
  "81153": {
   "cidade": "Holywell",
-  "estadio": "Holywell Town FC Stadium"
+  "estadio": "Holywell Town FC Stadium",
+  "lat": 53.27466,
+  "lng": -3.22895
  },
  "81157": {
   "cidade": "",
@@ -1449,19 +2097,27 @@
  },
  "82": {
   "cidade": "Shrewsbury",
-  "estadio": "Croud Meadow"
+  "estadio": "Croud Meadow",
+  "lat": 52.688616,
+  "lng": -2.749357
  },
  "83": {
   "cidade": "London",
-  "estadio": "Matchroom Stadium"
+  "estadio": "Matchroom Stadium",
+  "lat": -0.0135625,
+  "lng": 51.5599719
  },
  "84": {
   "cidade": "Doncaster",
-  "estadio": "Eco-Power Stadium"
+  "estadio": "Eco-Power Stadium",
+  "lat": 53.509778,
+  "lng": -1.113771
  },
  "85": {
   "cidade": "Scunthorpe",
-  "estadio": "Glanford Park"
+  "estadio": "Glanford Park",
+  "lat": 53.586813,
+  "lng": -0.695326
  },
  "853523": {
   "cidade": "",
@@ -1469,46 +2125,68 @@
  },
  "86": {
   "cidade": "Exeter",
-  "estadio": "St James Park"
+  "estadio": "St James Park",
+  "lat": -3.52751,
+  "lng": 50.7236
  },
  "87": {
   "cidade": "Halifax",
-  "estadio": "The Shay"
+  "estadio": "The Shay",
+  "lat": 53.716116,
+  "lng": -1.859149
  },
  "89": {
   "cidade": "Northampton",
-  "estadio": "Latimer Park"
+  "estadio": "Latimer Park",
+  "lat": 53.641637,
+  "lng": -2.301317
  },
  "9": {
   "cidade": "Birmingham",
-  "estadio": "St. Andrew's @ Knighthead Park"
+  "estadio": "St. Andrew's @ Knighthead Park",
+  "lat": 53.641637,
+  "lng": -2.301317
  },
  "90": {
   "cidade": "Kidderminster",
-  "estadio": "Aggborough"
+  "estadio": "Aggborough",
+  "lat": 52.384359,
+  "lng": -2.238479
  },
  "92": {
   "cidade": "Lincoln",
-  "estadio": "Sincil Bank"
+  "estadio": "Sincil Bank",
+  "lat": 53.217718,
+  "lng": -0.542177
  },
  "94": {
   "cidade": "Nailsworth",
-  "estadio": "The New Lawn"
+  "estadio": "The New Lawn",
+  "lat": 51.698987,
+  "lng": -2.237765
  },
  "95": {
   "cidade": "Oxford",
-  "estadio": "Kassam Stadium"
+  "estadio": "Kassam Stadium",
+  "lat": -1.2077029,
+  "lng": 51.716386
  },
  "96": {
   "cidade": "Hull",
-  "estadio": "MKM Stadium"
+  "estadio": "MKM Stadium",
+  "lat": 53.746226,
+  "lng": -0.367824
  },
  "97": {
   "cidade": "Barrow-in-Furness",
-  "estadio": "Holker Street"
+  "estadio": "Holker Street",
+  "lat": 54.117371,
+  "lng": -3.225989
  },
  "99": {
   "cidade": "Southend-on-Sea",
-  "estadio": "Roots Hall"
+  "estadio": "Roots Hall",
+  "lat": 51.549044,
+  "lng": 0.701549
  }
 }

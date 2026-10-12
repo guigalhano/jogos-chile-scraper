@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jogos no Reino Unido</title>
-  <meta name="description" content="Agenda dos jogos de todas as divisões da Inglaterra, Escócia, País de Gales, Irlanda e Irlanda do Norte, atualizada todo dia a partir do SofaScore e do NonLeagueHQ." />
+  <title>Mapa de Jogos UK</title>
+  <meta name="description" content="Mapa e agenda dos jogos de todas as divisões da Inglaterra, Escócia, País de Gales, Irlanda e Irlanda do Norte, atualizados todo dia." />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
   <style>
     :root {
       --bg: #07110d;
@@ -17,17 +19,20 @@
       --accent2: #8de0b3;
       --warning: #ffdca8;
       --shadow: 0 24px 80px rgba(0,0,0,.35);
+      --n1: #d7f36b;   /* profissional (niveis 1-4) */
+      --n2: #8de0b3;   /* semiprofissional (5-6) */
+      --n3: #7fb7ff;   /* amador (7+) */
+      --copa: #ffb86b;
     }
     * { box-sizing: border-box; }
+    html, body { margin: 0; }
     body {
-      margin: 0;
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:
         radial-gradient(circle at top left, rgba(141, 224, 179, .14), transparent 34rem),
         linear-gradient(180deg, #08130f 0%, var(--bg) 100%);
       background-color: var(--bg);
       color: var(--text);
-      min-height: 100vh;
     }
     a { color: var(--accent); }
     button, input, select { font: inherit; color: inherit; }
@@ -38,30 +43,31 @@
       background-size: 28px 28px;
     }
     .hero__inner {
-      max-width: 1500px; margin: 0 auto; padding: 30px 20px 24px;
+      max-width: 1500px; margin: 0 auto; padding: 26px 20px 22px;
       display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: end;
     }
-    .eyebrow { margin: 0 0 8px; color: var(--accent2); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; }
-    .eyebrow a { color: var(--accent2); text-decoration: none; }
-    .eyebrow a:hover { text-decoration: underline; }
-    h1 { margin: 0; font-size: clamp(28px, 4vw, 44px); line-height: 1.05; letter-spacing: -.02em; text-wrap: balance; }
-    .subtitle { margin: 10px 0 0; color: var(--muted); max-width: 70ch; line-height: 1.5; }
-    .stats { display: grid; grid-template-columns: repeat(4, minmax(110px, auto)); gap: 10px; }
+    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 8px; }
+    .eyebrow { margin: 0; color: var(--accent2); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; }
+    .lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; flex: none; }
+    .lang button { background: transparent; border: 0; padding: 6px 12px; cursor: pointer; font-size: 13px; font-weight: 700; color: var(--muted); }
+    .lang button[aria-pressed="true"] { background: var(--accent); color: #0b1a10; }
+    h1 { margin: 0; font-size: clamp(26px, 3.6vw, 42px); line-height: 1.05; letter-spacing: -.02em; text-wrap: balance; }
+    .subtitle { margin: 10px 0 0; color: var(--muted); max-width: 72ch; line-height: 1.5; }
+    .stats { display: grid; grid-template-columns: repeat(4, minmax(104px, auto)); gap: 10px; }
     .stats div { background: rgba(0,0,0,.22); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
     .stats strong { display: block; font-size: 22px; font-variant-numeric: tabular-nums; color: var(--accent); }
     .stats span { font-size: 12px; color: var(--muted); }
 
-    .app { max-width: 1500px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 20px; align-items: start; }
-    .sidebar { position: sticky; top: 16px; display: grid; gap: 14px; }
-    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 16px; box-shadow: var(--shadow); }
-    .panelTitle { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .app { max-width: 1500px; margin: 0 auto; padding: 18px 20px; display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 18px; align-items: start; }
+    .sidebar { display: grid; gap: 14px; min-width: 0; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 16px; box-shadow: var(--shadow); min-width: 0; }
+    .panelTitle { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; }
     .panelTitle h2 { margin: 0; font-size: 16px; }
+    .panelTitle span { color: var(--muted); font-size: 13px; }
     .linkBtn { background: none; border: 0; color: var(--accent); cursor: pointer; padding: 4px; font-size: 14px; }
-    label, .group { display: grid; gap: 6px; margin-bottom: 14px; font-size: 13px; color: var(--muted); }
-    .groupLabel { font-size: 13px; color: var(--muted); }
+    label, .group { display: grid; gap: 6px; margin-bottom: 13px; font-size: 13px; color: var(--muted); }
     select, input[type="search"], input[type="date"] {
-      width: 100%; background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 9px 10px; color: var(--text);
-      color-scheme: dark;
+      width: 100%; background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; padding: 9px 10px; color: var(--text); color-scheme: dark;
     }
     select:focus, input:focus, button:focus-visible { outline: 2px solid var(--accent2); outline-offset: 1px; }
     .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -73,63 +79,86 @@
     .chip[aria-pressed="true"] { background: var(--accent); color: #0b1a10; border-color: var(--accent); }
     .chip[aria-pressed="true"] small { color: #2f4a1a; }
     .dates { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .check { display: flex; gap: 8px; align-items: center; color: var(--text); font-size: 14px; margin: 0; }
-    .note { font-size: 12px; color: var(--muted); line-height: 1.5; margin: 0; }
+    .check { display: flex; gap: 8px; align-items: center; color: var(--text); font-size: 14px; margin: 0 0 8px; }
+    .note { font-size: 12px; color: var(--muted); line-height: 1.5; margin: 6px 0 0; }
 
-    .tabs { display: flex; gap: 6px; margin-bottom: 14px; flex-wrap: wrap; align-items: center; }
-    .tab { border: 1px solid var(--line); background: var(--panel); border-radius: 12px; padding: 9px 14px; cursor: pointer; font-weight: 600; font-size: 14px; }
+    .tabs { display: flex; gap: 6px; margin-bottom: 12px; }
+    .tab { flex: 1; border: 1px solid var(--line); background: var(--panel2); border-radius: 10px; padding: 8px 10px; cursor: pointer; font-weight: 600; font-size: 13px; }
     .tab[aria-selected="true"] { background: var(--accent); color: #0b1a10; border-color: var(--accent); }
-    .resumo { margin-left: auto; color: var(--muted); font-size: 13px; }
 
-    .dia { margin-bottom: 18px; }
+    .calendar { max-height: 760px; overflow: auto; margin: 0 -6px; padding: 0 6px; overscroll-behavior: contain; }
     .diaTitulo {
-      position: sticky; top: 0; z-index: 1; margin: 0 0 8px; padding: 10px 14px; font-size: 15px;
-      background: rgba(16,30,23,.96); border: 1px solid var(--line); border-radius: 12px; display: flex; justify-content: space-between; gap: 10px;
-      backdrop-filter: blur(6px);
+      position: sticky; top: 0; z-index: 1; margin: 10px 0 6px; padding: 7px 10px; font-size: 13px;
+      background: var(--panel2); border-radius: 9px; display: flex; justify-content: space-between; gap: 10px;
     }
-    .diaTitulo span { color: var(--muted); font-weight: 400; font-size: 13px; }
-    .jogos { display: grid; gap: 6px; }
+    .diaTitulo:first-child { margin-top: 0; }
+    .diaTitulo span { color: var(--muted); font-weight: 400; }
     .jogo {
-      display: grid; grid-template-columns: 56px minmax(0, 1.1fr) minmax(0, 1.6fr) minmax(0, 1fr); gap: 12px; align-items: center;
-      padding: 10px 14px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+      display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 4px 10px; padding: 9px 8px; border-radius: 10px; cursor: pointer;
+      border: 1px solid transparent; width: 100%; text-align: left; background: transparent;
     }
-    .jogo:hover { border-color: rgba(215,243,107,.35); }
-    .hora { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent); }
-    .hora.sem { color: var(--muted); font-weight: 400; font-size: 12px; }
-    .comp { min-width: 0; font-size: 12px; color: var(--muted); display: grid; gap: 3px; }
-    .comp b { color: var(--text); font-weight: 600; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .tags { display: flex; gap: 5px; flex-wrap: wrap; }
-    .tag { font-size: 11px; padding: 1px 7px; border-radius: 999px; background: rgba(141,224,179,.12); color: var(--accent2); white-space: nowrap; }
-    .tag.copa { background: rgba(255,220,168,.12); color: var(--warning); }
-    .times { min-width: 0; display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); gap: 10px; align-items: center; font-weight: 600; }
-    .times .m { text-align: right; overflow-wrap: anywhere; }
-    .times .v { overflow-wrap: anywhere; }
-    .vs { color: var(--muted); font-weight: 400; font-size: 13px; font-variant-numeric: tabular-nums; }
-    .vs.placar { color: var(--text); font-weight: 800; background: var(--panel2); padding: 2px 8px; border-radius: 8px; }
-    .local { min-width: 0; font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; gap: 8px; align-items: center; }
-    .local span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .local a { font-size: 12px; white-space: nowrap; text-decoration: none; }
-    .local a:hover { text-decoration: underline; }
-    .status { color: var(--warning); font-size: 11px; }
+    .jogo:hover, .jogo:focus-visible { background: rgba(255,255,255,.04); border-color: var(--line); }
+    .jogo.semMapa { cursor: default; }
+    .hora { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--accent); font-size: 13px; padding-top: 1px; }
+    .hora.sem { color: var(--muted); font-weight: 400; font-size: 11px; }
+    .jogoCorpo { min-width: 0; display: grid; gap: 3px; }
+    .times { font-weight: 600; font-size: 14px; overflow-wrap: anywhere; }
+    .times .placar { display: inline-block; margin: 0 6px; padding: 0 6px; border-radius: 6px; background: var(--panel2); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .times .x { color: var(--muted); font-weight: 400; margin: 0 5px; }
+    .meta { font-size: 12px; color: var(--muted); display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; display: inline-block; }
+    .status { color: var(--warning); }
+    .mais { display: block; margin: 12px auto 4px; border: 1px solid var(--line); background: var(--panel2); border-radius: 10px; padding: 8px 14px; cursor: pointer; font-size: 13px; }
+    .vazio { padding: 26px 10px; text-align: center; color: var(--muted); font-size: 14px; }
 
-    .vazio, .carregando { padding: 40px 20px; text-align: center; color: var(--muted); background: var(--panel); border: 1px dashed var(--line); border-radius: 16px; }
-    .mais { display: block; margin: 16px auto; border: 1px solid var(--line); background: var(--panel2); border-radius: 12px; padding: 10px 18px; cursor: pointer; }
-    footer { max-width: 1500px; margin: 0 auto; padding: 10px 20px 40px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+    .mapWrap { position: sticky; top: 12px; height: 900px; max-height: calc(100vh - 24px); min-height: 520px; border-radius: 18px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); }
+    #map { position: absolute; inset: 0; background: #aad3df; }
+    .mapStatus {
+      position: absolute; z-index: 500; left: 12px; bottom: 12px; max-width: calc(100% - 24px);
+      background: rgba(16,30,23,.92); border: 1px solid var(--line); border-radius: 10px; padding: 7px 10px; font-size: 12px; color: var(--muted);
+    }
+    .legenda {
+      position: absolute; z-index: 500; right: 12px; bottom: 12px; display: grid; gap: 4px;
+      background: rgba(16,30,23,.92); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; font-size: 12px; color: var(--muted);
+    }
+    .legenda div { display: flex; gap: 7px; align-items: center; }
+
+    /* Leaflet */
+    .leaflet-container { font: inherit; }
+    .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--panel); color: var(--text); border: 1px solid var(--line); box-shadow: var(--shadow); }
+    .leaflet-popup-content { margin: 12px 14px; min-width: 230px; max-width: 320px; }
+    .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+    .leaflet-control-attribution { background: rgba(7,17,13,.75) !important; color: var(--muted); }
+    .leaflet-control-attribution a { color: var(--accent2); }
+    .leaflet-bar a { background: var(--panel); color: var(--text); border-color: var(--line); }
+    .leaflet-bar a:hover { background: var(--panel2); }
+    .pino { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #07110d; box-shadow: 0 0 0 1px rgba(255,255,255,.4); }
+    .cluster {
+      width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 12px;
+      background: rgba(215,243,107,.9); color: #0b1a10; box-shadow: 0 0 0 6px rgba(215,243,107,.22);
+    }
+    .cluster.m { width: 42px; height: 42px; background: rgba(141,224,179,.92); box-shadow: 0 0 0 7px rgba(141,224,179,.22); }
+    .cluster.g { width: 48px; height: 48px; background: rgba(127,183,255,.92); box-shadow: 0 0 0 8px rgba(127,183,255,.22); }
+    .pop h3 { margin: 0 0 2px; font-size: 15px; }
+    .pop .loc { margin: 0 0 8px; font-size: 12px; color: var(--muted); }
+    .pop ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 7px; max-height: 260px; overflow: auto; }
+    .pop li { font-size: 13px; line-height: 1.35; border-top: 1px solid var(--line); padding-top: 7px; }
+    .pop li b { color: var(--accent); font-variant-numeric: tabular-nums; }
+    .pop li small { color: var(--muted); display: block; }
+
+    footer { max-width: 1500px; margin: 0 auto; padding: 4px 20px 32px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 
     @media (max-width: 1100px) {
       .hero__inner { grid-template-columns: 1fr; }
-      .stats { grid-template-columns: repeat(4, 1fr); }
-      .jogo { grid-template-columns: 52px minmax(0, 1fr); }
-      .comp { grid-column: 2; }
-      .times { grid-column: 1 / -1; }
-      .local { grid-column: 1 / -1; }
+      .app { grid-template-columns: 1fr; }
+      .mapWrap { position: relative; top: 0; height: 62vh; min-height: 380px; order: -1; }
+      .calendar { max-height: none; }
     }
-    @media (max-width: 860px) {
-      .app { grid-template-columns: 1fr; padding: 16px; }
-      .sidebar { position: static; }
-      .hero__inner { padding: 22px 16px 18px; }
+    @media (max-width: 640px) {
+      .app { padding: 14px 16px; }
+      .hero__inner { padding: 20px 16px 18px; }
       .stats { grid-template-columns: repeat(2, 1fr); }
-      .resumo { margin-left: 0; width: 100%; }
+      .legenda { display: none; }
     }
   </style>
 </head>
@@ -137,99 +166,161 @@
   <header class="hero">
     <div class="hero__inner">
       <div>
-        <p class="eyebrow"><a href="index.html">← América do Sul</a> · Reino Unido e Irlanda · agenda automática</p>
-        <h1>Jogos no Reino Unido e Irlanda</h1>
-        <p class="subtitle">
-          Todas as divisões da Inglaterra, Escócia, País de Gales, Irlanda e Irlanda do Norte, da elite ao futebol amador.
-          As ligas profissionais vêm do SofaScore, com horário de Londres. As ligas amadoras vêm do NonLeagueHQ, que publica só a data.
-        </p>
+        <div class="topbar">
+          <p class="eyebrow" data-i18n="eyebrow">Reino Unido e Irlanda · agenda automática</p>
+          <div class="lang" role="group" aria-label="Idioma / Language">
+            <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+        <h1 data-i18n="title">Mapa de jogos no Reino Unido e Irlanda</h1>
+        <p class="subtitle" data-i18n="subtitle">Todas as divisões da Inglaterra, Escócia, País de Gales, Irlanda e Irlanda do Norte, da elite ao futebol amador.</p>
       </div>
       <div class="stats">
-        <div><strong id="stJogos">—</strong><span>jogos filtrados</span></div>
-        <div><strong id="stComps">—</strong><span>competições</span></div>
-        <div><strong id="stTimes">—</strong><span>times</span></div>
-        <div><strong id="stAtual">—</strong><span>última atualização</span></div>
+        <div><strong id="stJogos">—</strong><span data-i18n="st_games">jogos filtrados</span></div>
+        <div><strong id="stMapa">—</strong><span data-i18n="st_map">no mapa</span></div>
+        <div><strong id="stComps">—</strong><span data-i18n="st_comps">competições</span></div>
+        <div><strong id="stAtual">—</strong><span data-i18n="st_updated">última atualização</span></div>
       </div>
     </div>
   </header>
 
   <main class="app">
     <aside class="sidebar">
-      <section class="panel" aria-label="Filtros">
+      <section class="panel" aria-labelledby="hFiltros">
         <div class="panelTitle">
-          <h2>Filtros</h2>
-          <button id="limpar" type="button" class="linkBtn">Limpar</button>
+          <h2 id="hFiltros" data-i18n="filters">Filtros</h2>
+          <button id="limpar" type="button" class="linkBtn" data-i18n="clear">Limpar</button>
         </div>
 
         <div class="group">
-          <span class="groupLabel">País</span>
+          <span data-i18n="country">País</span>
           <div class="chips" id="fPais"></div>
         </div>
 
         <div class="group">
-          <span class="groupLabel">Divisão (nível na pirâmide)</span>
+          <span data-i18n="level">Divisão (nível na pirâmide)</span>
           <div class="chips" id="fNivel"></div>
         </div>
 
         <label>
-          <span>Competição</span>
-          <select id="fComp"><option value="">Todas</option></select>
+          <span data-i18n="competition">Competição</span>
+          <select id="fComp"></select>
         </label>
 
         <label>
-          <span>Time</span>
-          <input id="fTime" type="search" placeholder="ex.: Celtic, Wrexham…" autocomplete="off" />
+          <span data-i18n="team">Time ou cidade</span>
+          <input id="fTime" type="search" autocomplete="off" data-i18n-ph="team_ph" placeholder="ex.: Celtic, Wrexham, Bristol…" />
         </label>
 
         <div class="group">
-          <span class="groupLabel">Período</span>
+          <span data-i18n="period">Período</span>
           <div class="chips" id="fPeriodo">
-            <button type="button" class="chip" data-p="hoje">Hoje</button>
-            <button type="button" class="chip" data-p="fds">Fim de semana</button>
-            <button type="button" class="chip" data-p="7">7 dias</button>
-            <button type="button" class="chip" data-p="30">30 dias</button>
-            <button type="button" class="chip" data-p="">Tudo</button>
+            <button type="button" class="chip" data-p="hoje" data-i18n="p_today">Hoje</button>
+            <button type="button" class="chip" data-p="fds" data-i18n="p_weekend">Fim de semana</button>
+            <button type="button" class="chip" data-p="7" data-i18n="p_7">7 dias</button>
+            <button type="button" class="chip" data-p="30" data-i18n="p_30">30 dias</button>
+            <button type="button" class="chip" data-p="" data-i18n="p_all">Tudo</button>
           </div>
           <div class="dates">
-            <input id="fDe" type="date" aria-label="De" />
-            <input id="fAte" type="date" aria-label="Até" />
+            <input id="fDe" type="date" aria-label="De / From" />
+            <input id="fAte" type="date" aria-label="Até / To" />
           </div>
         </div>
 
-        <label class="check"><input id="fHora" type="checkbox" /> Só jogos com horário</label>
+        <label class="check"><input id="fArea" type="checkbox" /> <span data-i18n="only_area">Só jogos na área visível do mapa</span></label>
+        <label class="check"><input id="fHora" type="checkbox" /> <span data-i18n="only_time">Só jogos com horário</span></label>
+        <p class="note" data-i18n="note_level">Nível 1 = elite. Na Inglaterra, o 5 é a National League e o 11 é o step 7 do futebol amador.</p>
       </section>
 
-      <section class="panel">
-        <p class="note">
-          <b>Divisão</b> = nível na pirâmide do país (1 = elite). Na Inglaterra, o nível 5 é a National League, o 6 é a National League North/South e assim até o step 7 (nível 11).
-          Algumas ligas amadoras de Escócia, Gales e Irlanda do Norte aparecem só com o código do NonLeagueHQ (ex.: “Liga 2NRP”).
-        </p>
+      <section class="panel" aria-labelledby="hCal">
+        <div class="tabs" role="tablist">
+          <button type="button" class="tab" role="tab" data-aba="prox" aria-selected="true" data-i18n="tab_next">Próximos jogos</button>
+          <button type="button" class="tab" role="tab" data-aba="res" aria-selected="false" data-i18n="tab_results">Resultados</button>
+        </div>
+        <div class="panelTitle">
+          <h2 id="hCal" data-i18n="calendar">Calendário</h2>
+          <span id="resumo"></span>
+        </div>
+        <div id="lista" class="calendar" aria-live="polite"><div class="vazio" data-i18n="loading">Carregando jogos…</div></div>
       </section>
     </aside>
 
-    <section aria-live="polite">
-      <div class="tabs" role="tablist">
-        <button type="button" class="tab" role="tab" data-aba="prox" aria-selected="true">Próximos jogos</button>
-        <button type="button" class="tab" role="tab" data-aba="res" aria-selected="false">Resultados recentes</button>
-        <span class="resumo" id="resumo"></span>
-      </div>
-      <div id="lista"><div class="carregando">Carregando jogos…</div></div>
+    <section class="mapWrap" aria-label="Mapa">
+      <div id="map"></div>
+      <div class="legenda" id="legenda"></div>
+      <div class="mapStatus" id="mapStatus" data-i18n="loading_map">Carregando mapa…</div>
     </section>
   </main>
 
   <footer>
-    Fontes: <a href="https://www.sofascore.com/" rel="noopener">SofaScore</a> e <a href="https://www.nonleaguehq.com/" rel="noopener">NonLeagueHQ</a>.
-    Os dados são atualizados todo dia por GitHub Actions (<code>scrap_reino_unido_sofascore.py</code> e <code>scrap_nonleaguehq.py</code>).
-    Horários no fuso de Londres (Irlanda usa o mesmo).
+    <span data-i18n="footer">Fontes: SofaScore (ligas profissionais, com horário de Londres) e NonLeagueHQ (futebol amador, só a data). Nos clubes amadores o pino marca a cidade do clube, não o estádio. Atualizado todo dia pelo</span>
+    <a href="https://github.com/guigalhano/jogos-chile-scraper" target="_blank" rel="noopener">jogos-chile-scraper</a>.
+    Mapa © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   <script>
   (() => {
     const URL_PROX = "data/reino_unido/jogos_programados.json";
     const URL_HIST = "data/reino_unido/historico_jogos.csv";
+    const URL_GEO = "data/reino_unido/geo_times.json";
     const PAISES = ["Inglaterra", "Escócia", "País de Gales", "Irlanda", "Irlanda do Norte"];
-    const BANDEIRA = { "Inglaterra": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "Escócia": "🏴󠁧󠁢󠁳󠁣󠁴󠁿", "País de Gales": "🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Irlanda": "🇮🇪", "Irlanda do Norte": "🇬🇧" };
-    const LOTE = 300;
+    const LOTE = 150;
+
+    const I18N = {
+      pt: {
+        eyebrow: "Reino Unido e Irlanda · agenda automática",
+        title: "Mapa de jogos no Reino Unido e Irlanda",
+        subtitle: "Todas as divisões da Inglaterra, Escócia, País de Gales, Irlanda e Irlanda do Norte, da elite ao futebol amador.",
+        st_games: "jogos filtrados", st_map: "no mapa", st_comps: "competições", st_updated: "última atualização",
+        filters: "Filtros", clear: "Limpar", country: "País", level: "Divisão (nível na pirâmide)", competition: "Competição",
+        all_comps: "Todas", team: "Time ou cidade", team_ph: "ex.: Celtic, Wrexham, Bristol…", period: "Período",
+        p_today: "Hoje", p_weekend: "Fim de semana", p_7: "7 dias", p_30: "30 dias", p_all: "Tudo",
+        only_area: "Só jogos na área visível do mapa", only_time: "Só jogos com horário",
+        note_level: "Nível 1 = elite. Na Inglaterra, o 5 é a National League e o 11 é o step 7 do futebol amador.",
+        tab_next: "Próximos jogos", tab_results: "Resultados", calendar: "Calendário",
+        loading: "Carregando jogos…", loading_map: "Carregando mapa…",
+        footer: "Fontes: SofaScore (ligas profissionais, com horário de Londres) e NonLeagueHQ (futebol amador, só a data). Nos clubes amadores o pino marca a cidade do clube, não o estádio. Atualizado todo dia pelo",
+        cups: "Copas", cup: "Copa", level_n: "Nível {n}", round: "Rodada", no_time: "sem hora", games: "{n} jogos", game: "1 jogo",
+        more: "Mostrar mais ({n} restantes)", empty: "Nenhum jogo com esses filtros. Amplie o período ou limpe os filtros.",
+        load_err: "Não foi possível carregar os dados ({e}).",
+        range: "{de} a {ate}", range_all: "todo o período",
+        map_status: "{m} de {n} jogos no mapa · {s} sem localização",
+        leg_pro: "Profissional (níveis 1–4)", leg_semi: "Semiprofissional (5–6)", leg_am: "Amador (7+)", leg_cup: "Copas",
+        st_postponed: "Adiado", st_cancelled: "Cancelado", st_live: "Em andamento", st_noresult: "sem resultado",
+        approx: "posição aproximada (cidade do clube)",
+        countries: { "Inglaterra": "Inglaterra", "Escócia": "Escócia", "País de Gales": "País de Gales", "Irlanda": "Irlanda", "Irlanda do Norte": "Irlanda do Norte" },
+        comps: {},
+        locale: "pt-BR",
+      },
+      en: {
+        eyebrow: "United Kingdom & Ireland · auto-updated fixtures",
+        title: "Football fixtures map: UK & Ireland",
+        subtitle: "Every division in England, Scotland, Wales, Ireland and Northern Ireland, from the top flight down to grassroots football.",
+        st_games: "matches shown", st_map: "on the map", st_comps: "competitions", st_updated: "last update",
+        filters: "Filters", clear: "Clear", country: "Country", level: "Division (pyramid level)", competition: "Competition",
+        all_comps: "All", team: "Team or town", team_ph: "e.g. Celtic, Wrexham, Bristol…", period: "Dates",
+        p_today: "Today", p_weekend: "Weekend", p_7: "7 days", p_30: "30 days", p_all: "All",
+        only_area: "Only matches in the visible map area", only_time: "Only matches with kick-off time",
+        note_level: "Level 1 = top flight. In England, level 5 is the National League and level 11 is step 7 of non-league.",
+        tab_next: "Upcoming", tab_results: "Results", calendar: "Fixtures",
+        loading: "Loading matches…", loading_map: "Loading map…",
+        footer: "Sources: SofaScore (professional leagues, UK time kick-offs) and NonLeagueHQ (non-league, dates only). For non-league clubs the pin marks the club's town, not the ground. Updated daily by",
+        cups: "Cups", cup: "Cup", level_n: "Level {n}", round: "Round", no_time: "TBC", games: "{n} matches", game: "1 match",
+        more: "Show more ({n} left)", empty: "No matches with these filters. Widen the dates or clear the filters.",
+        load_err: "Could not load the data ({e}).",
+        range: "{de} to {ate}", range_all: "all dates",
+        map_status: "{m} of {n} matches on the map · {s} without a location",
+        leg_pro: "Professional (levels 1–4)", leg_semi: "Semi-pro (5–6)", leg_am: "Non-league (7+)", leg_cup: "Cups",
+        st_postponed: "Postponed", st_cancelled: "Cancelled", st_live: "Live", st_noresult: "no result",
+        approx: "approximate location (club's town)",
+        countries: { "Inglaterra": "England", "Escócia": "Scotland", "País de Gales": "Wales", "Irlanda": "Ireland", "Irlanda do Norte": "Northern Ireland" },
+        comps: { "FA Cup - Qualificação": "FA Cup - Qualifying" },
+        locale: "en-GB",
+      },
+    };
 
     // Nivel das competicoes do SofaScore (nome depois de "País - ").
     const NIVEL_SOFA = {
@@ -239,12 +330,23 @@
       "Irlanda": { "Premier Division": 1, "First Division": 2, "FAI National League": 3 },
       "Irlanda do Norte": { "NIFL Premiership": 1, "NIFL Championship": 2 },
     };
-    // Primeiro nivel do futebol nao-liga no NonLeagueHQ, por pais.
+    // Nivel onde comeca o futebol nao-liga no NonLeagueHQ, por pais.
     const BASE_NAOLIGA = { "Inglaterra": 4, "Escócia": 4, "País de Gales": 0, "Irlanda do Norte": 0 };
 
     const $ = (id) => document.getElementById(id);
-    const estado = { aba: "prox", paises: new Set(), niveis: new Set(), comp: "", time: "", de: "", ate: "", periodo: "30", soHora: false, limite: LOTE };
-    const dados = { prox: null, res: null };
+    const estado = { lang: "pt", aba: "prox", paises: new Set(), niveis: new Set(), comp: "", time: "", de: "", ate: "", periodo: "30", soHora: false, soArea: false, limite: LOTE };
+    const dados = { prox: null, res: null, geo: {} };
+    let mapa, cluster, ultimaAtualizacao = "";
+    const marcadores = new Map(); // chave de local -> marker
+
+    const T = (k, vars) => {
+      let s = I18N[estado.lang][k] ?? I18N.pt[k] ?? k;
+      if (vars) for (const [a, b] of Object.entries(vars)) s = s.replace("{" + a + "}", b);
+      return s;
+    };
+    const fmtN = (n) => n.toLocaleString(T("locale"));
+    const nomePais = (p) => I18N[estado.lang].countries[p] || p;
+    const nomeComp = (r) => I18N[estado.lang].comps[r._nome] || r._nome;
 
     const hojeISO = () => {
       const d = new Date();
@@ -261,6 +363,13 @@
     };
     const norm = (s) => (s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
+    function corNivel(n) {
+      if (n == null) return "var(--copa)";
+      if (n <= 4) return "var(--n1)";
+      if (n <= 6) return "var(--n2)";
+      return "var(--n3)";
+    }
+
     function enriquecer(r) {
       const nome = r.competicao.includes(" - ") ? r.competicao.split(" - ").slice(1).join(" - ") : r.competicao;
       let nivel = null;
@@ -272,9 +381,12 @@
       r._nome = nome;
       r._nivel = nivel;                         // null = copa
       r._nivelKey = nivel == null ? "copa" : String(nivel);
-      r._busca = norm(r.mandante + " | " + r.visitante);
       r._placar = extraVal(r.extra, "placar");
       r._status = extraVal(r.extra, "status");
+      r._geoKey = r.pais + "|" + r.mandante;
+      const g = dados.geo[r._geoKey];
+      r._geo = g || null;
+      r._busca = norm([r.mandante, r.visitante, r.cidade, r.estadio, g && g.local].filter(Boolean).join(" | "));
       return r;
     }
 
@@ -301,9 +413,12 @@
       if (dados[aba]) return dados[aba];
       const v = "?v=" + Date.now();
       if (aba === "prox") {
-        const r = await fetch(URL_PROX + v);
-        if (!r.ok) throw new Error("HTTP " + r.status);
-        dados.prox = (await r.json()).map(enriquecer);
+        const [rj, rg] = await Promise.all([fetch(URL_PROX + v), fetch(URL_GEO + v)]);
+        if (!rj.ok) throw new Error("HTTP " + rj.status);
+        if (rg.ok) dados.geo = await rg.json();
+        const lista = await rj.json();
+        ultimaAtualizacao = lista.reduce((m, r) => (r.atualizado_em > m ? r.atualizado_em : m), "");
+        dados.prox = lista.map(enriquecer);
       } else {
         const r = await fetch(URL_HIST + v);
         if (!r.ok) throw new Error("HTTP " + r.status);
@@ -334,43 +449,52 @@
     function filtrar(lista, ignorar) {
       const [de, ate] = intervalo();
       const t = norm(estado.time.trim());
+      const area = estado.soArea && mapa ? mapa.getBounds() : null;
       return lista.filter((r) =>
         (ignorar === "pais" || !estado.paises.size || estado.paises.has(r.pais)) &&
         (ignorar === "nivel" || !estado.niveis.size || estado.niveis.has(r._nivelKey)) &&
         (ignorar === "comp" || !estado.comp || r.competicao === estado.comp) &&
         (!t || r._busca.includes(t)) &&
         (!estado.soHora || r.hora) &&
+        (!area || (r._geo && area.contains([r._geo.lat, r._geo.lng]))) &&
         r.data >= de && r.data <= ate
       );
     }
 
     function contar(lista, f) {
       const m = new Map();
-      for (const r of lista) m.set(f(r), (m.get(f(r)) || 0) + 1);
+      for (const r of lista) { const k = f(r); m.set(k, (m.get(k) || 0) + 1); }
       return m;
     }
 
-    function chip(rotulo, n, ativo, onClick) {
-      const b = document.createElement("button");
-      b.type = "button"; b.className = "chip";
+    function el(tag, cls, txt) {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      if (txt != null) e.textContent = txt;
+      return e;
+    }
+
+    function chip(rotulo, n, ativo, onClick, cor) {
+      const b = el("button", "chip");
+      b.type = "button";
       b.setAttribute("aria-pressed", ativo ? "true" : "false");
-      b.append(rotulo);
-      const s = document.createElement("small"); s.textContent = n.toLocaleString("pt-BR"); b.append(s);
+      if (cor) { const d = el("span", "dot"); d.style.background = cor; b.append(d); }
+      b.append(rotulo, el("small", null, fmtN(n)));
       b.addEventListener("click", onClick);
       return b;
     }
-
     function alternar(set, v) { set.has(v) ? set.delete(v) : set.add(v); }
 
     function renderFiltros(lista) {
       const cp = contar(filtrar(lista, "pais"), (r) => r.pais);
       $("fPais").replaceChildren(...PAISES.filter((p) => cp.get(p) || estado.paises.has(p)).map((p) =>
-        chip(`${BANDEIRA[p] || ""} ${p}`, cp.get(p) || 0, estado.paises.has(p), () => { alternar(estado.paises, p); atualizar(); })));
+        chip(nomePais(p), cp.get(p) || 0, estado.paises.has(p), () => { alternar(estado.paises, p); atualizar(); })));
 
       const cn = contar(filtrar(lista, "nivel"), (r) => r._nivelKey);
       const chaves = [...new Set([...cn.keys(), ...estado.niveis])].sort((a, b) => (a === "copa") - (b === "copa") || Number(a) - Number(b));
       $("fNivel").replaceChildren(...chaves.map((k) =>
-        chip(k === "copa" ? "Copas" : k, cn.get(k) || 0, estado.niveis.has(k), () => { alternar(estado.niveis, k); atualizar(); })));
+        chip(k === "copa" ? T("cups") : k, cn.get(k) || 0, estado.niveis.has(k), () => { alternar(estado.niveis, k); atualizar(); },
+          corNivel(k === "copa" ? null : Number(k)))));
 
       const cc = contar(filtrar(lista, "comp"), (r) => r.competicao);
       const porPais = new Map();
@@ -379,113 +503,179 @@
         if (!porPais.has(r.pais)) porPais.set(r.pais, new Map());
         porPais.get(r.pais).set(r.competicao, r);
       }
-      const sel = $("fComp");
-      const opts = [new Option("Todas", "")];
+      const opts = [new Option(T("all_comps"), "")];
       for (const p of PAISES) {
         if (!porPais.has(p)) continue;
-        const g = document.createElement("optgroup"); g.label = p;
+        const g = document.createElement("optgroup"); g.label = nomePais(p);
         [...porPais.get(p).values()]
           .sort((a, b) => (a._nivel ?? 99) - (b._nivel ?? 99) || a._nome.localeCompare(b._nome))
-          .forEach((r) => g.append(new Option(`${r._nome}${r._nivel != null ? " · nível " + r._nivel : ""} (${cc.get(r.competicao) || 0})`, r.competicao)));
+          .forEach((r) => g.append(new Option(`${nomeComp(r)}${r._nivel != null ? " · " + T("level_n", { n: r._nivel }) : ""} (${cc.get(r.competicao) || 0})`, r.competicao)));
         opts.push(g);
       }
-      sel.replaceChildren(...opts);
-      sel.value = estado.comp;
+      $("fComp").replaceChildren(...opts);
+      $("fComp").value = estado.comp;
 
       document.querySelectorAll("#fPeriodo .chip").forEach((b) =>
         b.setAttribute("aria-pressed", !estado.de && !estado.ate && b.dataset.p === estado.periodo ? "true" : "false"));
     }
 
-    const fmtDia = new Intl.DateTimeFormat("pt-BR", { weekday: "long", day: "numeric", month: "long" });
-
-    function linhaJogo(r) {
-      const el = document.createElement("article"); el.className = "jogo";
-
-      const h = document.createElement("div");
-      h.className = "hora" + (r.hora ? "" : " sem");
-      h.textContent = r.hora || "sem hora";
-
-      const c = document.createElement("div"); c.className = "comp";
-      const b = document.createElement("b"); b.textContent = r._nome; b.title = r.competicao;
-      const tags = document.createElement("div"); tags.className = "tags";
-      const t1 = document.createElement("span"); t1.className = "tag"; t1.textContent = r.pais; tags.append(t1);
-      const t2 = document.createElement("span"); t2.className = "tag" + (r._nivel == null ? " copa" : "");
-      t2.textContent = r._nivel == null ? "Copa" : "Nível " + r._nivel; tags.append(t2);
-      if (r.rodada) { const t3 = document.createElement("span"); t3.className = "tag"; t3.textContent = r.rodada.replace(/^Rodada /, "R"); tags.append(t3); }
-      c.append(b, tags);
-
-      const ts = document.createElement("div"); ts.className = "times";
-      const m = document.createElement("span"); m.className = "m"; m.textContent = r.mandante;
-      const vs = document.createElement("span");
-      if (r._placar) { vs.className = "vs placar"; vs.textContent = r._placar.replace("-", " – "); }
-      else { vs.className = "vs"; vs.textContent = "x"; }
-      const v = document.createElement("span"); v.className = "v"; v.textContent = r.visitante;
-      ts.append(m, vs, v);
-
-      const l = document.createElement("div"); l.className = "local";
-      const ls = document.createElement("span");
-      const local = [r.estadio, r.cidade].filter(Boolean).join(", ");
-      const st = ["Adiado", "Cancelado", "Em andamento"].includes(r._status) ? r._status
-        : r._status === "Sem resultado" ? "sem resultado" : "";
-      ls.textContent = local;
-      if (st) { const s = document.createElement("span"); s.className = "status"; s.textContent = (local ? " · " : "") + st; ls.append(s); }
-      l.append(ls);
-      if (r.url) {
-        const a = document.createElement("a"); a.href = r.url; a.target = "_blank"; a.rel = "noopener";
-        a.textContent = r.fonte + " ↗"; l.append(a);
-      }
-      el.append(h, c, ts, l);
-      return el;
+    function textoStatus(r) {
+      return { "Adiado": T("st_postponed"), "Cancelado": T("st_cancelled"), "Em andamento": T("st_live"), "Sem resultado": T("st_noresult") }[r._status] || "";
+    }
+    function textoRodada(r) {
+      return (r.rodada || "").replace(/^Rodada /, T("round") + " ");
     }
 
-    function renderLista(lista) {
+    function linhaJogo(r) {
+      const b = el("button", "jogo" + (r._geo ? "" : " semMapa"));
+      b.type = "button";
+      b.append(el("div", "hora" + (r.hora ? "" : " sem"), r.hora || T("no_time")));
+      const corpo = el("div", "jogoCorpo");
+      const times = el("div", "times");
+      times.append(r.mandante);
+      times.append(r._placar ? el("span", "placar", r._placar.replace("-", "–")) : el("span", "x", "x"));
+      times.append(r.visitante);
+      const meta = el("div", "meta");
+      const dot = el("span", "dot"); dot.style.background = corNivel(r._nivel);
+      const partes = [nomePais(r.pais), nomeComp(r), r._nivel == null ? T("cup") : T("level_n", { n: r._nivel }), textoRodada(r)].filter(Boolean);
+      meta.append(dot, partes.join(" · "));
+      const st = textoStatus(r);
+      if (st) meta.append(el("span", "status", "· " + st));
+      corpo.append(times, meta);
+      const local = [r.estadio, r.cidade].filter(Boolean).join(", ") || (r._geo && r._geo.fonte !== "sofascore" ? r._geo.local : "");
+      if (local) corpo.append(el("div", "meta", "📍 " + local));
+      b.append(corpo);
+      if (r._geo) b.addEventListener("click", () => focarJogo(r));
+      return b;
+    }
+
+    const fmtDia = () => new Intl.DateTimeFormat(T("locale"), { weekday: "long", day: "numeric", month: "long" });
+    const fmtCurta = (iso) => new Intl.DateTimeFormat(T("locale"), { day: "2-digit", month: "2-digit" }).format(new Date(iso + "T12:00:00"));
+
+    function ordenar(fil) {
       const res = estado.aba === "res";
-      const fil = filtrar(lista).sort((a, b) =>
-        res ? (b.data.localeCompare(a.data) || (b.hora || "").localeCompare(a.hora || ""))
+      return fil.sort((a, b) =>
+        res ? (b.data.localeCompare(a.data) || (b.hora || "").localeCompare(a.hora || "") || (a._nivel ?? 99) - (b._nivel ?? 99))
             : (a.data.localeCompare(b.data) || (a.hora || "99").localeCompare(b.hora || "99")) ||
               (a._nivel ?? 99) - (b._nivel ?? 99) || a.competicao.localeCompare(b.competicao) || a.mandante.localeCompare(b.mandante));
+    }
 
-      $("stJogos").textContent = fil.length.toLocaleString("pt-BR");
-      $("stComps").textContent = new Set(fil.map((r) => r.competicao)).size.toLocaleString("pt-BR");
-      $("stTimes").textContent = new Set(fil.flatMap((r) => [r.mandante, r.visitante])).size.toLocaleString("pt-BR");
+    function renderLista(fil) {
       const [de, ate] = intervalo();
-      $("resumo").textContent = (de === "0000" && ate === "9999") ? "período: tudo" :
-        `de ${de.split("-").reverse().join("/")} a ${ate.split("-").reverse().join("/")}`;
-
+      $("resumo").textContent = (de === "0000" && ate === "9999") ? T("range_all") : T("range", { de: fmtCurta(de), ate: fmtCurta(ate) });
       const box = $("lista");
-      if (!fil.length) {
-        const d = document.createElement("div"); d.className = "vazio";
-        d.textContent = "Nenhum jogo com esses filtros. Tente ampliar o período ou limpar os filtros.";
-        box.replaceChildren(d); return;
-      }
-      const mostrar = fil.slice(0, estado.limite);
+      if (!fil.length) { box.replaceChildren(el("div", "vazio", T("empty"))); return; }
       const frag = document.createDocumentFragment();
-      let diaAtual = null, wrap = null;
       const porDia = contar(fil, (r) => r.data);
-      for (const r of mostrar) {
+      const fd = fmtDia();
+      let diaAtual = null;
+      for (const r of fil.slice(0, estado.limite)) {
         if (r.data !== diaAtual) {
           diaAtual = r.data;
-          const sec = document.createElement("section"); sec.className = "dia";
-          const h = document.createElement("h3"); h.className = "diaTitulo";
-          const txt = fmtDia.format(new Date(r.data + "T12:00:00"));
-          h.append(txt.charAt(0).toUpperCase() + txt.slice(1));
-          const n = document.createElement("span"); n.textContent = `${porDia.get(r.data)} jogos`; h.append(n);
-          wrap = document.createElement("div"); wrap.className = "jogos";
-          sec.append(h, wrap); frag.append(sec);
+          const txt = fd.format(new Date(r.data + "T12:00:00"));
+          const h = el("h3", "diaTitulo", txt.charAt(0).toUpperCase() + txt.slice(1));
+          const n = porDia.get(r.data);
+          h.append(el("span", null, n === 1 ? T("game") : T("games", { n: fmtN(n) })));
+          frag.append(h);
         }
-        wrap.append(linhaJogo(r));
+        frag.append(linhaJogo(r));
       }
       if (fil.length > estado.limite) {
-        const b = document.createElement("button"); b.type = "button"; b.className = "mais";
-        b.textContent = `Mostrar mais (${(fil.length - estado.limite).toLocaleString("pt-BR")} restantes)`;
-        b.addEventListener("click", () => { estado.limite += LOTE * 2; renderLista(lista); });
+        const b = el("button", "mais", T("more", { n: fmtN(fil.length - estado.limite) }));
+        b.type = "button";
+        b.addEventListener("click", () => { estado.limite += LOTE * 2; renderLista(fil); });
         frag.append(b);
       }
       box.replaceChildren(frag);
     }
 
+    // ---------- mapa ----------
+    function iniciarMapa() {
+      mapa = L.map("map", { zoomControl: true, preferCanvas: true }).setView([54.3, -3.8], 6);
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(mapa);
+      cluster = L.markerClusterGroup({
+        showCoverageOnHover: false, maxClusterRadius: 45, spiderfyOnMaxZoom: true,
+        iconCreateFunction: (c) => {
+          const n = c.getChildCount();
+          return L.divIcon({ html: `<div class="cluster ${n >= 100 ? "g" : n >= 20 ? "m" : ""}">${n}</div>`, className: "", iconSize: [48, 48] });
+        },
+      });
+      mapa.addLayer(cluster);
+      let t;
+      mapa.on("moveend", () => { if (estado.soArea) { clearTimeout(t); t = setTimeout(() => atualizar({ manterMapa: true }), 150); } });
+    }
+
+    function popupLocal(jogos) {
+      const g = jogos[0]._geo;
+      const div = el("div", "pop");
+      const comSofa = jogos.find((r) => r.estadio);
+      div.append(el("h3", null, comSofa ? comSofa.estadio : jogos[0].mandante));
+      div.append(el("p", "loc", g.fonte === "sofascore" ? [comSofa && comSofa.cidade, nomePais(jogos[0].pais)].filter(Boolean).join(", ")
+        : `${g.local}, ${nomePais(jogos[0].pais)} · ${T("approx")}`));
+      const ul = el("ul");
+      for (const r of jogos.slice(0, 40)) {
+        const li = el("li");
+        li.append(el("b", null, `${fmtCurta(r.data)} ${r.hora || ""}`.trim()), " ");
+        li.append(`${r.mandante} ${r._placar ? r._placar.replace("-", "–") : "x"} ${r.visitante}`);
+        li.append(el("small", null, [nomeComp(r), textoRodada(r), textoStatus(r)].filter(Boolean).join(" · ")));
+        if (r.url) {
+          const a = el("a", null, r.fonte + " ↗"); a.href = r.url; a.target = "_blank"; a.rel = "noopener";
+          li.querySelector("small").append(" · ", a);
+        }
+        ul.append(li);
+      }
+      div.append(ul);
+      return div;
+    }
+
+    function renderMapa(fil) {
+      marcadores.clear();
+      cluster.clearLayers();
+      const porLocal = new Map();
+      for (const r of fil) {
+        if (!r._geo) continue;
+        const k = r._geo.lat.toFixed(4) + "," + r._geo.lng.toFixed(4);
+        if (!porLocal.has(k)) porLocal.set(k, []);
+        porLocal.get(k).push(r);
+      }
+      const novos = [];
+      for (const [k, jogos] of porLocal) {
+        const g = jogos[0]._geo;
+        const nivel = Math.min(...jogos.map((r) => r._nivel ?? 99));
+        const icon = L.divIcon({ html: `<div class="pino" style="background:${corNivel(nivel === 99 ? null : nivel)}"></div>`, className: "", iconSize: [14, 14] });
+        const m = L.marker([g.lat, g.lng], { icon, title: jogos[0].mandante });
+        m.bindPopup(() => popupLocal(jogos), { maxWidth: 340 });
+        marcadores.set(k, m);
+        novos.push(m);
+      }
+      cluster.addLayers(novos);
+      const noMapa = fil.filter((r) => r._geo).length;
+      $("stMapa").textContent = fmtN(noMapa);
+      $("mapStatus").textContent = T("map_status", { m: fmtN(noMapa), n: fmtN(fil.length), s: fmtN(fil.length - noMapa) });
+    }
+
+    function focarJogo(r) {
+      const k = r._geo.lat.toFixed(4) + "," + r._geo.lng.toFixed(4);
+      const m = marcadores.get(k);
+      if (!m) return;
+      if (window.matchMedia("(max-width: 1100px)").matches) document.querySelector(".mapWrap").scrollIntoView({ behavior: "smooth", block: "start" });
+      cluster.zoomToShowLayer(m, () => m.openPopup());
+    }
+
+    function renderLegenda() {
+      const itens = [["var(--n1)", "leg_pro"], ["var(--n2)", "leg_semi"], ["var(--n3)", "leg_am"], ["var(--copa)", "leg_cup"]];
+      $("legenda").replaceChildren(...itens.map(([c, k]) => {
+        const d = el("div"); const s = el("span", "dot"); s.style.background = c; d.append(s, T(k)); return d;
+      }));
+    }
+
+    // ---------- estado / URL ----------
     function salvarHash() {
       const p = new URLSearchParams();
+      if (estado.lang !== "pt") p.set("lang", estado.lang);
       if (estado.aba !== "prox") p.set("aba", estado.aba);
       if (estado.paises.size) p.set("pais", [...estado.paises].join(","));
       if (estado.niveis.size) p.set("nivel", [...estado.niveis].join(","));
@@ -493,7 +683,8 @@
       if (estado.time) p.set("time", estado.time);
       if (estado.de) p.set("de", estado.de);
       if (estado.ate) p.set("ate", estado.ate);
-      if (estado.periodo !== "30") p.set("periodo", estado.periodo || "tudo");
+      const padrao = estado.aba === "res" ? "7" : "30";
+      if (estado.periodo !== padrao) p.set("periodo", estado.periodo || "tudo");
       if (estado.soHora) p.set("hora", "1");
       const h = p.toString();
       history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
@@ -501,6 +692,11 @@
 
     function lerHash() {
       const p = new URLSearchParams(location.hash.slice(1));
+      const q = new URLSearchParams(location.search);
+      let lang = p.get("lang") || q.get("lang");
+      if (!lang) { try { lang = localStorage.getItem("uk_lang"); } catch (e) {} }
+      if (!lang) lang = (navigator.language || "").toLowerCase().startsWith("pt") ? "pt" : "en";
+      estado.lang = lang === "en" ? "en" : "pt";
       estado.aba = p.get("aba") === "res" ? "res" : "prox";
       estado.paises = new Set((p.get("pais") || "").split(",").filter(Boolean));
       estado.niveis = new Set((p.get("nivel") || "").split(",").filter(Boolean));
@@ -513,30 +709,57 @@
       estado.soHora = p.get("hora") === "1";
     }
 
-    async function atualizar() {
+    function aplicarIdioma() {
+      document.documentElement.lang = estado.lang === "en" ? "en" : "pt-BR";
+      document.querySelectorAll("[data-i18n]").forEach((e) => { e.textContent = T(e.dataset.i18n); });
+      document.querySelectorAll("[data-i18n-ph]").forEach((e) => { e.placeholder = T(e.dataset.i18nPh); });
+      document.querySelectorAll(".lang button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === estado.lang ? "true" : "false"));
+      document.title = estado.lang === "en" ? "UK Fixtures Map" : "Mapa de Jogos UK";
+      renderLegenda();
+      if (ultimaAtualizacao) {
+        const d = new Date(ultimaAtualizacao);
+        $("stAtual").textContent = new Intl.DateTimeFormat(T("locale"), { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }).format(d);
+      }
+    }
+
+    async function atualizar(opts = {}) {
       estado.limite = LOTE;
       salvarHash();
       document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", t.dataset.aba === estado.aba ? "true" : "false"));
-      $("fTime").value = estado.time; $("fDe").value = estado.de; $("fAte").value = estado.ate; $("fHora").checked = estado.soHora;
+      $("fTime").value = estado.time; $("fDe").value = estado.de; $("fAte").value = estado.ate;
+      $("fHora").checked = estado.soHora; $("fArea").checked = estado.soArea;
       let lista;
       try {
         lista = await carregar(estado.aba);
       } catch (e) {
-        const d = document.createElement("div"); d.className = "vazio";
-        d.textContent = `Não foi possível carregar os dados (${e.message}).`;
-        $("lista").replaceChildren(d); return;
+        $("lista").replaceChildren(el("div", "vazio", T("load_err", { e: e.message })));
+        $("mapStatus").textContent = T("load_err", { e: e.message });
+        return;
       }
+      aplicarIdioma();
       renderFiltros(lista);
-      renderLista(lista);
+      const fil = ordenar(filtrar(lista));
+      $("stJogos").textContent = fmtN(fil.length);
+      $("stComps").textContent = fmtN(new Set(fil.map((r) => r.competicao)).size);
+      renderLista(fil);
+      // Com "so area visivel" o mapa mostra tudo o que passa nos outros filtros,
+      // senao os pinos fora da area sumiriam e nao daria para arrastar ate eles.
+      const paraMapa = estado.soArea ? ordenar(lista.filter((r) => { const a = estado.soArea; estado.soArea = false; const ok = filtrar([r]).length; estado.soArea = a; return ok; })) : fil;
+      if (!opts.manterMapa || !estado.soArea) renderMapa(paraMapa);
     }
 
-    // Eventos
+    // ---------- eventos ----------
+    document.querySelectorAll(".lang button").forEach((b) => b.addEventListener("click", () => {
+      estado.lang = b.dataset.lang;
+      try { localStorage.setItem("uk_lang", estado.lang); } catch (e) {}
+      atualizar();
+    }));
     document.querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => {
       if (estado.aba === t.dataset.aba) return;
       estado.aba = t.dataset.aba;
       estado.periodo = estado.aba === "res" ? "7" : "30";
       estado.de = estado.ate = "";
-      $("lista").replaceChildren(Object.assign(document.createElement("div"), { className: "carregando", textContent: "Carregando…" }));
+      $("lista").replaceChildren(el("div", "vazio", T("loading")));
       atualizar();
     }));
     document.querySelectorAll("#fPeriodo .chip").forEach((b) => b.addEventListener("click", () => {
@@ -544,20 +767,20 @@
     }));
     $("fComp").addEventListener("change", (e) => { estado.comp = e.target.value; atualizar(); });
     let timer;
-    $("fTime").addEventListener("input", (e) => { clearTimeout(timer); timer = setTimeout(() => { estado.time = e.target.value; atualizar(); }, 200); });
+    $("fTime").addEventListener("input", (e) => { clearTimeout(timer); timer = setTimeout(() => { estado.time = e.target.value; atualizar(); }, 250); });
     $("fDe").addEventListener("change", (e) => { estado.de = e.target.value; atualizar(); });
     $("fAte").addEventListener("change", (e) => { estado.ate = e.target.value; atualizar(); });
     $("fHora").addEventListener("change", (e) => { estado.soHora = e.target.checked; atualizar(); });
+    $("fArea").addEventListener("change", (e) => { estado.soArea = e.target.checked; atualizar({ manterMapa: true }); });
     $("limpar").addEventListener("click", () => {
-      Object.assign(estado, { paises: new Set(), niveis: new Set(), comp: "", time: "", de: "", ate: "", soHora: false, periodo: estado.aba === "res" ? "7" : "30" });
+      Object.assign(estado, { paises: new Set(), niveis: new Set(), comp: "", time: "", de: "", ate: "", soHora: false, soArea: false, periodo: estado.aba === "res" ? "7" : "30" });
       atualizar();
     });
 
     lerHash();
-    atualizar().then(() => {
-      const ult = (dados.prox || []).reduce((m, r) => (r.atualizado_em > m ? r.atualizado_em : m), "");
-      if (ult) $("stAtual").textContent = ult.slice(8, 10) + "/" + ult.slice(5, 7) + " " + ult.slice(11, 16);
-    });
+    aplicarIdioma();
+    iniciarMapa();
+    atualizar();
   })();
   </script>
 </body>
