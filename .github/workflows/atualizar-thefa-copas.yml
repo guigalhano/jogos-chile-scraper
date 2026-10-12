@@ -1,0 +1,69 @@
+name: Atualizar Inglaterra copas da FA (thefa.com) - diário
+
+on:
+  schedule:
+    - cron: "15 8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  atualizar_thefa_copas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v5
+
+      - name: Instalar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Rodar scraper
+        run: |
+          python scrap_thefa_copas.py --dias 270 --dias-atras 15
+
+      - name: Salvar arquivos atualizados
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          mkdir -p /tmp/dados_novos
+          cp data/debug_thefa_raw.json data/debug_thefa_hist_raw.json data/debug_thefa_pages.json /tmp/dados_novos/ 2>/dev/null || true
+
+          for tentativa in 1 2 3 4 5; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Os jogos do Reino Unido ficam em data/reino_unido/ (fora do
+            # jogos_programados.json do site). Re-mescla os raw desta rodada
+            # contra o estado ATUAL pos-reset, como o merge_apos_reset.py faz.
+            cp /tmp/dados_novos/* data/ 2>/dev/null || true
+            mkdir -p data/reino_unido
+            python reino_unido_comum.py --raw data/debug_thefa_raw.json --raw-historico data/debug_thefa_hist_raw.json
+
+            git add data/reino_unido/ data/debug_thefa_raw.json data/debug_thefa_hist_raw.json data/debug_thefa_pages.json 2>/dev/null || true
+
+            if git diff --cached --quiet; then
+              echo "Sem mudanças para commitar"
+              break
+            fi
+
+            git commit -m "Atualiza copas da FA (thefa.com) - diario"
+
+            if git push origin HEAD:main; then
+              echo "Push OK na tentativa $tentativa"
+              break
+            fi
+
+            echo "Push falhou (tentativa $tentativa), tentando de novo..."
+            sleep $((RANDOM % 10 + 5))
+          done

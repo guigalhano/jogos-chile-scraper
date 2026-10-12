@@ -131,6 +131,30 @@ def write_csv(path: Path, rows: list[dict]) -> None:
             w.writerow({k: r.get(k, "") for k in FIELDS})
 
 
+def _codigo_sofascore(row: dict) -> int:
+    for parte in (row.get("extra") or "").split(";"):
+        k, _, v = parte.strip().partition("=")
+        if k == "codigo_sofascore" and v.isdigit():
+            return int(v)
+    return 0
+
+
+def sem_duplicatas_sofascore(rows: list[dict]) -> list[dict]:
+    """O SofaScore as vezes recria o evento de um jogo remarcado e o antigo
+    continua "programado" no mesmo dia. Mesmo dia + mandante + visitante:
+    fica so o evento mais novo (maior codigo_sofascore)."""
+    melhor: dict[tuple, int] = {}
+    for r in rows:
+        if r.get("fonte") == "SofaScore":
+            k = (r.get("pais"), r.get("data"), r.get("mandante"), r.get("visitante"))
+            melhor[k] = max(melhor.get(k, 0), _codigo_sofascore(r))
+    return [
+        r for r in rows
+        if r.get("fonte") != "SofaScore"
+        or _codigo_sofascore(r) == melhor[(r.get("pais"), r.get("data"), r.get("mandante"), r.get("visitante"))]
+    ]
+
+
 def salvar(rows_prog: list[dict], rows_hist: list[dict]) -> tuple[int, int]:
     """Mescla os jogos novos em data/reino_unido/. rows_prog entra nos
     programados E no historico; rows_hist so no historico."""
@@ -142,6 +166,7 @@ def salvar(rows_prog: list[dict], rows_hist: list[dict]) -> tuple[int, int]:
     # Programados = so de hoje em diante; o que ja passou fica so no historico.
     hoje = date.today().isoformat()
     merged = [r for r in merge_rows(load_json_rows(jogos_json), rows_prog) if r.get("data", "") >= hoje]
+    merged = sem_duplicatas_sofascore(merged)
     # Compacto (uma linha por jogo): com a temporada inteira sao ~20 mil jogos e
     # o reino-unido.html baixa este arquivo inteiro.
     jogos_json.write_text(
@@ -150,7 +175,7 @@ def salvar(rows_prog: list[dict], rows_hist: list[dict]) -> tuple[int, int]:
     )
     write_csv(jogos_csv, merged)
 
-    merged_hist = merge_rows(load_csv_rows(hist_csv), rows_prog + rows_hist)
+    merged_hist = sem_duplicatas_sofascore(merge_rows(load_csv_rows(hist_csv), rows_prog + rows_hist))
     write_csv(hist_csv, merged_hist)
     return len(merged), len(merged_hist)
 

@@ -21,6 +21,12 @@ Fontes (HTML estatico do WordPress/wpDataTables, requests simples funciona):
   com "League" num codigo curto (ex.: 1HL, 3NIPI, 4GCL). O primeiro digito e
   o nivel dentro do futebol nao-liga do pais. NAO ha legenda dos codigos no
   site; ver NOMES_CODIGOS abaixo (codigo desconhecido vira "Liga <codigo>").
+  ATENCAO (Escocia): o codigo NAO e confiavel. O "2ESP", por exemplo, mistura
+  jogos da East of Scotland, da North Caledonian e da North of Scotland. Por
+  isso o nome da liga vem dos confrontos: cada grupo de times que se enfrentam
+  (componente conexa do grafo de jogos da temporada) e uma liga real, e o
+  grupo e identificado por clubes-ancora (LIGAS_ANCORA). O codigo so e usado
+  quando o grupo nao tem ancora conhecida, ou tem ancoras de duas ligas.
   Gales: a Ardal (3A*, tier 3) vem daqui e nao do SofaScore, que so tem os
   resultados dela, sem os jogos programados.
 
@@ -105,6 +111,37 @@ NOMES_CODIGOS = {
     "5MULB": "Mid-Ulster League Intermediate B",
     "4NALP": "Northern Amateur League Premier",
     "5NAL1A": "Northern Amateur League 1A",
+    # Pais de Gales (confirmado pelos clubes: Castell Alun Colts, Saltney Town...)
+    "4NE1": "North East Wales League Division One",
+}
+
+# Ligas que vem do SofaScore (com horario): nao entram daqui.
+CODIGOS_DO_SOFASCORE = {"3NIPI"}  # NIFL Premier Intermediate League (SofaScore 31777)
+
+# Codigos cujo primeiro digito nao bate com o nivel real.
+NIVEL_CODIGO = {
+    "4NE1": 5,  # abaixo da North East Wales Premier (nivel 4)
+}
+
+# Ligas identificadas pelos confrontos (ver docstring). Para cada pais:
+# nome da liga -> (nivel_naoliga, clubes-ancora). Basta UMA ancora num grupo
+# de times para nomear o grupo; usar clubes estaveis, que nao mudam de liga
+# com frequencia. Montado em 12/10/2026 a partir da temporada 2026-27.
+LIGAS_ANCORA = {
+    ESCOCIA: {
+        "Highland League": (1, {"Brora Rangers", "Buckie Thistle", "Huntly", "Keith"}),
+        "Lowland League East": (1, {"Berwick Rangers", "Bonnyrigg Rose", "Linlithgow Rose", "Tranent"}),
+        "Lowland League West": (1, {"Auchinleck Talbot", "Pollok", "Gretna 2008", "Clydebank"}),
+        "East of Scotland League Premier": (2, {"Armadale Thistle", "Dunbar United", "Penicuik Athletic", "Haddington Athletic"}),
+        "West of Scotland League Premier": (2, {"Hurlford United", "Glenafton Athletic", "Darvel", "Kirkintilloch Rob Roy"}),
+        "Midlands League": (2, {"Downfield", "Carnoustie Panmure", "Dundee North End", "Lochee Harp"}),
+        "North Caledonian League": (2, {"Golspie Sutherland", "Thurso", "Halkirk United", "Orkney"}),
+        "North of Scotland League Premier": (2, {"Maud", "Dyce", "Culter", "Longside"}),
+        "South of Scotland League": (2, {"Lochar Thistle", "Mid Annandale", "Creetown", "Nithsdale Wanderers"}),
+        "East of Scotland League First Division": (3, {"Glenrothes", "Leith Athletic", "Whitehill Welfare", "Lochore Welfare"}),
+        "West of Scotland League First Division": (3, {"Bellshill Athletic", "Cambuslang Rangers", "Petershill", "Maryhill"}),
+        "North of Scotland League Championship": (3, {"Banchory St Ternan", "Cruden Bay", "Glentanar", "Dufftown"}),
+    },
 }
 
 CODIGO_RE = re.compile(r"^(\d)([A-Z][A-Z0-9]*)$")
@@ -204,35 +241,99 @@ def normalizar_codigo(codigo: str) -> str:
     return max(prefixos, key=len) if prefixos else codigo
 
 
-def jogos_fixture_finder(html: str, pais: str, url: str) -> tuple[list[Jogo], dict[str, int]]:
+def grupos_de_times(pares: list[tuple[str, str]]) -> dict[str, str]:
+    """Componentes conexas do grafo de confrontos: time -> representante."""
+    pai: dict[str, str] = {}
+
+    def raiz(x: str) -> str:
+        pai.setdefault(x, x)
+        while pai[x] != x:
+            pai[x] = pai[pai[x]]
+            x = pai[x]
+        return x
+
+    for a, b in pares:
+        ra, rb = raiz(a), raiz(b)
+        if ra != rb:
+            pai[ra] = rb
+    return {t: raiz(t) for t in pai}
+
+
+def nomear_grupos(linhas: list[dict], pais: str) -> tuple[dict[str, tuple[str, int]], list[str]]:
+    """Representante do grupo -> (liga, nivel), so para grupos com ancora unica."""
+    ancoras = LIGAS_ANCORA.get(pais)
+    if not ancoras:
+        return {}, []
+    grupo = grupos_de_times([(l["mandante"], l["visitante"]) for l in linhas])
+    times_por_grupo: dict[str, set[str]] = {}
+    for t, g in grupo.items():
+        times_por_grupo.setdefault(g, set()).add(t)
+    nomes: dict[str, tuple[str, int]] = {}
+    avisos: list[str] = []
+    for g, times in times_por_grupo.items():
+        achadas = [(liga, niv) for liga, (niv, anc) in ancoras.items() if times & anc]
+        if len(achadas) == 1:
+            nomes[g] = achadas[0]
+        elif len(achadas) > 1:
+            avisos.append(
+                "grupo com ancoras de " + " + ".join(sorted(l for l, _ in achadas))
+                + f" ({len(times)} times): usando o codigo do site"
+            )
+    return nomes, avisos
+
+
+def jogos_fixture_finder(html: str, pais: str, url: str) -> tuple[list[Jogo], dict[str, int], list[str]]:
     s = BeautifulSoup(html, "lxml")
-    jogos: list[Jogo] = []
-    por_codigo: dict[str, int] = {}
+    linhas: list[dict] = []
     t = s.find("table")
     if not t:
-        return jogos, por_codigo
+        return [], {}, []
     for tr in t.find_all("tr"):
         c = [clean(td.get_text(" ")) for td in tr.find_all("td")]
         if len(c) < 7:
             continue
-        m = CODIGO_RE.match(c[0])
-        if not m:
+        if not CODIGO_RE.match(c[0]):
             continue
-        codigo = normalizar_codigo(c[0])
+        if c[0] in CODIGOS_DO_SOFASCORE:
+            continue
         d = parse_data(c[1])
         mandante, visitante = c[2], c[6]
         if not (d and mandante and visitante):
             continue
-        liga = NOMES_CODIGOS.get(codigo, f"Liga {codigo}")
-        condado = c[7] if len(c) > 7 and c[7] not in ("", "#N/A") else ""
-        regiao = c[8] if len(c) > 8 and c[8] not in ("", "#N/A") else ""
-        loc = "; ".join(x for x in (f"condado={condado}" if condado else "", f"regiao={regiao}" if regiao else "") if x)
+        linhas.append({
+            "codigo": normalizar_codigo(c[0]), "data": d, "mandante": mandante, "visitante": visitante,
+            "gh": c[3], "ga": c[5],
+            "condado": c[7] if len(c) > 7 and c[7] not in ("", "#N/A") else "",
+            "regiao": c[8] if len(c) > 8 and c[8] not in ("", "#N/A") else "",
+        })
+    return montar_jogos_finder(linhas, pais, url)
+
+
+def montar_jogos_finder(linhas: list[dict], pais: str, url: str) -> tuple[list[Jogo], dict[str, int], list[str]]:
+    nomes, avisos = nomear_grupos(linhas, pais)
+    grupo = grupos_de_times([(l["mandante"], l["visitante"]) for l in linhas]) if nomes else {}
+    jogos: list[Jogo] = []
+    por_codigo: dict[str, int] = {}
+    for l in linhas:
+        codigo = l["codigo"]
+        g = grupo.get(l["mandante"])
+        if g in nomes:
+            liga, nivel = nomes[g]
+            origem = "confrontos"
+        else:
+            liga = NOMES_CODIGOS.get(codigo, f"Liga {codigo}")
+            nivel = NIVEL_CODIGO.get(codigo, int(CODIGO_RE.match(codigo).group(1)))
+            origem = "codigo"
+        loc = "; ".join(x for x in (
+            f"condado={l['condado']}" if l["condado"] else "",
+            f"regiao={l['regiao']}" if l["regiao"] else "",
+        ) if x)
         jogos.append(montar_jogo(
-            pais, liga, f"nivel_naoliga={m.group(1)}; codigo_liga_nlhq={codigo}",
-            d, mandante, visitante, c[3], c[5], url, loc,
+            pais, liga, f"nivel_naoliga={nivel}; codigo_liga_nlhq={codigo}; liga_por={origem}",
+            l["data"], l["mandante"], l["visitante"], l["gh"], l["ga"], url, loc,
         ))
         por_codigo[codigo] = por_codigo.get(codigo, 0) + 1
-    return jogos, por_codigo
+    return jogos, por_codigo, avisos
 
 
 def main() -> None:
@@ -270,11 +371,14 @@ def main() -> None:
 
     for pais, url in FIXTURE_FINDERS:
         try:
-            jogos, por_codigo = jogos_fixture_finder(baixar(session, url, args.timeout), pais, url)
+            jogos, por_codigo, avisos = jogos_fixture_finder(baixar(session, url, args.timeout), pais, url)
             todos += jogos
-            debug.append({"url": url, "jogos": len(jogos), "por_codigo": por_codigo})
-            sem_nome = sorted(k for k in por_codigo if k not in NOMES_CODIGOS)
-            print(f"[INFO] {pais}: {len(jogos)} jogos" + (f" (codigos sem nome: {', '.join(sem_nome)})" if sem_nome else ""))
+            sem_nome = sorted({j.competicao for j in jogos if " - Liga " in j.competicao})
+            debug.append({"url": url, "jogos": len(jogos), "por_codigo": por_codigo,
+                          "sem_nome": sem_nome, "avisos": avisos})
+            print(f"[INFO] {pais}: {len(jogos)} jogos" + (f" (sem nome: {', '.join(sem_nome)})" if sem_nome else ""))
+            for a in avisos:
+                print(f"[WARN] {pais}: {a}")
         except Exception as e:  # noqa: BLE001
             print(f"[WARN] {url}: {e}")
             debug.append({"url": url, "erro": f"{type(e).__name__}: {e}"})

@@ -1,0 +1,216 @@
+[
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
+    "status": 200,
+    "bytes": 179343
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
+    "status": 200,
+    "bytes": 13571
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-24 15:00 Warrington Rylands v Guiseley AFC @ ",
+      "2026-10-24 15:00 Bury v Prescot Cables @ ",
+      "2026-10-24 15:00 Workington AFC v Cleethorpes Town @ "
+    ]
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
+    "jogos_parseados": 12,
+    "amostra": [
+      "2026-10-24 15:00 Enfield Town v Hanworth Villa @ ",
+      "2026-10-24 15:00 Needham Market v Wingate & Finchley @ ",
+      "2026-10-24 15:00 Hastings United v Waltham Abbey @ "
+    ]
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
+    "status": 200,
+    "bytes": 178998
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
+    "status": 200,
+    "bytes": 20777
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=3",
+    "status": 200,
+    "bytes": 20540
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=4",
+    "status": 200,
+    "bytes": 7341
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-13 19:45 AFC Greenwich Borough v Tooting Bec @ ",
+      "2026-10-31 15:00 Maghull v Retford @ ",
+      "2026-10-31 15:00 Chadderton v Bottesford Town @ "
+    ]
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-31 15:00 Atherstone Town CFC v GNG Oadby Town @ ",
+      "2026-10-31 15:00 Lye Town v Eastwood Community @ ",
+      "2026-10-31 15:00 Cirencester Town v Longlevens @ "
+    ]
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=3",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-31 15:00 Colney Heath v Benfleet @ ",
+      "2026-10-31 15:00 White Ensign v Wormley Rovers @ ",
+      "2026-10-31 15:00 Lingfield v Crawley Down Gatwick @ "
+    ]
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=4",
+    "jogos_parseados": 5,
+    "amostra": [
+      "2026-10-31 15:00 Honiton Town v Devizes Town @ ",
+      "2026-10-31 15:00 Shepton Mallet AFC v Bridgwater United @ ",
+      "2026-10-31 15:00 Amesbury Town v Highworth Town @ "
+    ]
+  },
+  {
+    "copa": "FA Sunday Cup",
+    "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
+    "status": 200,
+    "bytes": 171265
+  },
+  {
+    "copa": "FA Sunday Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
+    "status": 200,
+    "bytes": 10775
+  },
+  {
+    "copa": "FA Sunday Cup",
+    "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-11-08 14:00 Hartlepool AFC Supporters v Easington CW (Sunday) @ ",
+      "2026-11-08 14:00 Sunderland Southwick v Pelton Buffs @ ",
+      "2026-11-08 14:00 Witton Park Rose & Crown v Mauretania @ "
+    ]
+  },
+  {
+    "copa": "FA Sunday Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
+    "jogos_parseados": 11,
+    "amostra": [
+      "2026-11-08 14:00 Northstar v Nags Head (Winslow) @ ",
+      "2026-11-08 14:00 Stanhope & Beaver Rangers v East London Ballers @ ",
+      "2026-11-08 14:00 Greenwich Park Rangers v The Gun @ "
+    ]
+  },
+  {
+    "copa": "Women's FA Cup",
+    "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
+    "status": 200,
+    "bytes": 140763
+  },
+  {
+    "copa": "Women's FA Cup",
+    "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
+    "status": 200,
+    "bytes": 178426
+  },
+  {
+    "copa": "Women's FA Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
+    "status": 200,
+    "bytes": 20758
+  },
+  {
+    "copa": "Women's FA Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
+    "status": 200,
+    "bytes": 10446
+  },
+  {
+    "copa": "Women's FA Cup",
+    "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-24 17:30 Harrogate Town AFC Women v Bolton Wanderers Women @ ",
+      "2026-10-25 14:00 Leeds Modernians Women v Liverpool Feds WFC @ ",
+      "2026-10-25 14:00 Norton & Stockton Ancients Ladies v AFC Fylde Women @ "
+    ]
+  },
+  {
+    "copa": "Women's FA Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-25 14:00 Leafield Athletic Ladies v Mansfield Town Ladies @ ",
+      "2026-10-25 14:00 Norwich City Women v Redditch Borough Women @ ",
+      "2026-10-25 14:00 Royston Town Women v Crewe Alexandra Women @ "
+    ]
+  },
+  {
+    "copa": "Women's FA Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
+    "jogos_parseados": 8,
+    "amostra": [
+      "2026-10-25 14:00 Swindon Town Women v Bridgwater United Women @ ",
+      "2026-10-25 14:00 Hammersmith Women v AFC Wimbledon Women @ ",
+      "2026-10-25 14:00 Fulham Women v Enfield Town Ladies @ "
+    ]
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
+    "status": 200,
+    "bytes": 175280
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
+    "status": 200,
+    "bytes": 15140
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-12 19:00 Sholing v Eastleigh @ ",
+      "2026-10-12 19:30 AFC Fylde v Cheadle Town @ ",
+      "2026-10-12 19:45 St Ives Town v Moulton @ "
+    ]
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
+    "jogos_parseados": 12,
+    "amostra": [
+      "2026-10-15 19:00 Guiseley AFC v FC Halifax Town @ ",
+      "2026-10-15 19:30 Blyth Spartans AFC v Stockton Town @ ",
+      "2026-10-15 19:45 Milton Keynes Irish v Grantham Town @ "
+    ]
+  }
+]

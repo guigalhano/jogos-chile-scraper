@@ -54,7 +54,9 @@ RAW_HISTORICO = OUT_DIR / "debug_uk_sofascore_hist_raw.json"
 DEBUG_EVENTOS = OUT_DIR / "debug_uk_sofascore_eventos.json"
 CACHE_VENUES = UK_DIR / "cache_venues_sofascore.json"
 
-# (uniqueTournament_id, pais, nome da competicao)
+# (uniqueTournament_id, pais, nome da competicao[, categoria])
+# categoria: "" = masculino adulto (padrao), "feminino" ou "reservas" (reservas
+# e base). Vai para o extra como categoria=..., e a pagina filtra por ela.
 TORNEIOS = [
     # Inglaterra - piramide ate o step 1 (National League) + copas
     (17, INGLATERRA, "Premier League"),
@@ -68,6 +70,13 @@ TORNEIOS = [
     (334, INGLATERRA, "EFL Trophy"),
     (24029, INGLATERRA, "National League Cup"),
     (346, INGLATERRA, "Community Shield"),
+    (37139, INGLATERRA, "West Midlands Regional League Division One"),
+    (36931, INGLATERRA, "Midland League Cup"),
+    (1044, INGLATERRA, "Women's Super League", "feminino"),
+    (10553, INGLATERRA, "Women's Super League 2", "feminino"),
+    (11667, INGLATERRA, "FA Women's League Cup", "feminino"),
+    # Women's FA Cup e FA Youth Cup vem do scrap_thefa_copas.py (site da FA,
+    # com estadio); o SofaScore so cobre as fases finais.
     # Escocia - SPFL + copas (Highland/Lowland e abaixo: NonLeagueHQ)
     (36, ESCOCIA, "Premiership"),
     (206, ESCOCIA, "Championship"),
@@ -76,6 +85,12 @@ TORNEIOS = [
     (347, ESCOCIA, "Scottish Cup"),
     (332, ESCOCIA, "League Cup"),
     (331, ESCOCIA, "Challenge Cup"),
+    (2054, ESCOCIA, "SWPL", "feminino"),
+    (28683, ESCOCIA, "SWPL 2", "feminino"),
+    (29219, ESCOCIA, "SWPL Cup", "feminino"),
+    (31924, ESCOCIA, "Women's Scottish Cup", "feminino"),
+    (11392, ESCOCIA, "Reserve League", "reservas"),
+    (34372, ESCOCIA, "Lowlands Development League Sub-20", "reservas"),
     # Pais de Gales - tiers 1 e 2 + copas (Ardal = tier 3: o SofaScore so tem
     # resultados, sem jogos programados -> vem do NonLeagueHQ)
     (254, GALES, "Cymru Premier"),
@@ -83,19 +98,53 @@ TORNEIOS = [
     (13821, GALES, "Cymru South"),
     (388, GALES, "Welsh Cup"),
     (367, GALES, "Welsh League Cup"),
-    # Irlanda (Republica) - League of Ireland + copas
+    (28263, GALES, "Ardal North League Cup"),
+    (28254, GALES, "Ardal South League Cup"),
+    (29015, GALES, "FAW Amateur Trophy"),
+    (31228, GALES, "Radnorshire Cup"),
+    (31245, GALES, "Central Wales Senior Cup"),
+    (23231, GALES, "Adran Premier", "feminino"),
+    (30514, GALES, "Women's Second Division", "feminino"),
+    # Irlanda (Republica) - League of Ireland, ligas provinciais + copas
     (192, IRLANDA, "Premier Division"),
     (193, IRLANDA, "First Division"),
     (36090, IRLANDA, "FAI National League"),
     (195, IRLANDA, "FAI Cup"),
     (1632, IRLANDA, "President's Cup"),
-    # Irlanda do Norte - NIFL + copas (Premier Intermediate e abaixo: NonLeagueHQ)
+    (36951, IRLANDA, "Leinster Senior League Senior Division"),
+    (22758, IRLANDA, "Munster Senior League Premier Division"),
+    (38111, IRLANDA, "Galway & District League"),
+    (38577, IRLANDA, "FAI Intermediate Cup"),
+    (24715, IRLANDA, "Leinster Senior Cup"),
+    (24544, IRLANDA, "Munster Senior Cup"),
+    (38768, IRLANDA, "Connacht Cup"),
+    (20065, IRLANDA, "Women's Premier Division", "feminino"),
+    (22727, IRLANDA, "Women's FAI Cup", "feminino"),
+    (32065, IRLANDA, "Women's President's Cup", "feminino"),
+    (38525, IRLANDA, "FAI Women's Amateur Cup", "feminino"),
+    (36561, IRLANDA, "Women's Development League Sub-23", "reservas"),
+    (38203, IRLANDA, "Women's Development League Cup Sub-23", "reservas"),
+    # Irlanda do Norte - NIFL + copas (abaixo da Premier Intermediate: NonLeagueHQ)
     (200, IRLANDA_NORTE, "NIFL Premiership"),
     (701, IRLANDA_NORTE, "NIFL Championship"),
     (767, IRLANDA_NORTE, "Irish Cup"),
     (611, IRLANDA_NORTE, "League Cup"),
     (20621, IRLANDA_NORTE, "Charity Shield"),
+    # No SofaScore o 31777 e a NIFL Premier Intermediate League (nivel 3), com
+    # horario; por isso ela nao vem mais do NonLeagueHQ (codigo 3NIPI).
+    (31777, IRLANDA_NORTE, "NIFL Premier Intermediate League"),
+    (26136, IRLANDA_NORTE, "Women's Premiership", "feminino"),
+    (25758, IRLANDA_NORTE, "Women's Championship", "feminino"),
+    (25986, IRLANDA_NORTE, "Women's Premiership League Cup", "feminino"),
+    (28830, IRLANDA_NORTE, "Women's Irish Cup", "feminino"),
+    (23276, IRLANDA_NORTE, "NIFL Reserve League", "reservas"),
 ]
+
+
+def torneio(t: tuple) -> tuple[int, str, str, str]:
+    """(id, pais, nome, categoria) - a categoria e opcional na lista."""
+    return (t[0], t[1], t[2], t[3] if len(t) > 3 else "")
+
 
 # Busca temporada atual + eventos (last/next paginados) de um torneio.
 # Para no 'last' quando passa do limite de dias para tras e no 'next'
@@ -157,7 +206,7 @@ def para_local(ts: int) -> datetime:
     return dt.astimezone(FUSO_UK) if FUSO_UK else dt
 
 
-def evento_para_jogo(ev: dict, pais: str, competicao: str, venues: dict) -> Jogo | None:
+def evento_para_jogo(ev: dict, pais: str, competicao: str, venues: dict, categoria: str = "") -> Jogo | None:
     home = ev.get("homeTeam") or {}
     away = ev.get("awayTeam") or {}
     mandante = (home.get("name") or home.get("shortName") or "").strip()
@@ -182,6 +231,8 @@ def evento_para_jogo(ev: dict, pais: str, competicao: str, venues: dict) -> Jogo
         extra.append("status=Programado")
     if FUSO_UK is None:
         extra.append("hora_utc=1")
+    if categoria:
+        extra.append(f"categoria={categoria}")
 
     ri = ev.get("roundInfo") or {}
     if ri.get("name"):
@@ -211,6 +262,15 @@ def evento_para_jogo(ev: dict, pais: str, competicao: str, venues: dict) -> Jogo
     )
 
 
+def chave_confronto_dia(ev: dict) -> tuple | None:
+    ts = ev.get("startTimestamp")
+    h = (ev.get("homeTeam") or {}).get("id")
+    a = (ev.get("awayTeam") or {}).get("id")
+    if not (ts and h and a):
+        return None
+    return (para_local(ts).date().isoformat(), h, a)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Reino Unido + Irlanda via SofaScore/Playwright")
     parser.add_argument("--dias", type=int, default=270)
@@ -235,7 +295,7 @@ def main() -> None:
     except Exception:
         venues = {}
 
-    eventos_por_torneio: list[tuple[str, str, list[dict]]] = []
+    eventos_por_torneio: list[tuple[str, str, str, list[dict]]] = []
     debug: dict[str, dict] = {}
 
     print("[INFO] Abrindo Chromium (Playwright) para contornar bloqueio do SofaScore...")
@@ -252,7 +312,8 @@ def main() -> None:
         page.goto("https://www.sofascore.com/", wait_until="domcontentloaded", timeout=60000)
         page.wait_for_timeout(1500)
 
-        for uniq_id, pais, nome in torneios:
+        for t in torneios:
+            uniq_id, pais, nome, categoria = torneio(t)
             label = f"{pais} - {nome}"
             try:
                 res = page.evaluate(JS_EVENTOS, {"uniqId": uniq_id, "tsMin": ts_min, "tsMax": ts_max})
@@ -262,13 +323,13 @@ def main() -> None:
                 continue
             eventos = [ev for ev in res.get("eventos", []) if ts_min <= (ev.get("startTimestamp") or 0) <= ts_max]
             debug[label] = {"id": uniq_id, "temporada": res.get("season"), "eventos_janela": len(eventos), "erro": res.get("erro")}
-            eventos_por_torneio.append((pais, nome, eventos))
+            eventos_por_torneio.append((pais, nome, categoria, eventos))
             print(f"  - {label} ({res.get('season') or res.get('erro')}): {len(eventos)} eventos na janela")
             time.sleep(0.5)
 
         faltando = sorted({
             str((ev.get("homeTeam") or {}).get("id"))
-            for _, _, evs in eventos_por_torneio for ev in evs
+            for _, _, _, evs in eventos_por_torneio for ev in evs
         } - {k for k, v in venues.items() if "lat" in v})
         if faltando:
             print(f"[INFO] Buscando estadio de {len(faltando)} times sem cache...")
@@ -281,11 +342,25 @@ def main() -> None:
 
     CACHE_VENUES.write_text(json.dumps(venues, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
 
+    # O SofaScore as vezes cria um evento novo quando o jogo e remarcado e
+    # deixa o antigo como "programado" no mesmo dia (ex.: o mesmo confronto
+    # as 14:00 e as 17:00). Mesmo dia + mesmo mandante + mesmo visitante:
+    # fica o evento mais novo (maior id).
+    mais_novo: dict[tuple, int] = {}
+    for _, _, _, eventos in eventos_por_torneio:
+        for ev in eventos:
+            ch = chave_confronto_dia(ev)
+            if ch:
+                mais_novo[ch] = max(mais_novo.get(ch, 0), int(ev.get("id") or 0))
+
     jogos_prog: list[Jogo] = []
     jogos_hist: list[Jogo] = []
-    for pais, nome, eventos in eventos_por_torneio:
+    for pais, nome, categoria, eventos in eventos_por_torneio:
         for ev in eventos:
-            jogo = evento_para_jogo(ev, pais, nome, venues)
+            ch = chave_confronto_dia(ev)
+            if ch and int(ev.get("id") or 0) != mais_novo[ch]:
+                continue
+            jogo = evento_para_jogo(ev, pais, nome, venues, categoria)
             if not jogo:
                 continue
             d = date.fromisoformat(jogo.data)

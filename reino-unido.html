@@ -197,6 +197,11 @@
         </div>
 
         <div class="group">
+          <span data-i18n="category">Categoria</span>
+          <div class="chips" id="fCat"></div>
+        </div>
+
+        <div class="group">
           <span data-i18n="country">País</span>
           <div class="chips" id="fPais"></div>
         </div>
@@ -257,7 +262,7 @@
   </main>
 
   <footer>
-    <span data-i18n="footer">Fontes: SofaScore (ligas profissionais, com horário de Londres) e NonLeagueHQ (futebol amador, só a data). Nos clubes amadores o pino marca a cidade do clube, não o estádio. Atualizado todo dia pelo</span>
+    <span data-i18n="footer">Fontes: SofaScore (ligas profissionais e femininas, com horário de Londres), site da FA (copas nacionais inglesas) e NonLeagueHQ (futebol amador, só a data). Nos clubes amadores o pino marca a cidade do clube, não o estádio. Atualizado todo dia pelo</span>
     <a href="https://github.com/guigalhano/jogos-chile-scraper" target="_blank" rel="noopener">jogos-chile-scraper</a>.
     Mapa © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.
   </footer>
@@ -278,14 +283,14 @@
         title: "Mapa de jogos no Reino Unido e Irlanda",
         subtitle: "Todas as divisões da Inglaterra, Escócia, País de Gales, Irlanda e Irlanda do Norte, da elite ao futebol amador.",
         st_games: "jogos filtrados", st_map: "no mapa", st_comps: "competições", st_updated: "última atualização",
-        filters: "Filtros", clear: "Limpar", country: "País", level: "Divisão (nível na pirâmide)", competition: "Competição",
+        filters: "Filtros", clear: "Limpar", category: "Categoria", cat_masc: "Masculino", cat_fem: "Feminino", cat_res: "Reservas e base", cat_all: "Todas", country: "País", level: "Divisão (nível na pirâmide)", competition: "Competição",
         all_comps: "Todas", team: "Time ou cidade", team_ph: "ex.: Celtic, Wrexham, Bristol…", period: "Período",
         p_today: "Hoje", p_weekend: "Fim de semana", p_7: "7 dias", p_30: "30 dias", p_all: "Tudo",
         only_area: "Só jogos na área visível do mapa", only_time: "Só jogos com horário",
         note_level: "Nível 1 = elite. Na Inglaterra, o 5 é a National League e o 11 é o step 7 do futebol amador.",
         tab_next: "Próximos jogos", tab_results: "Resultados", calendar: "Calendário",
         loading: "Carregando jogos…", loading_map: "Carregando mapa…",
-        footer: "Fontes: SofaScore (ligas profissionais, com horário de Londres) e NonLeagueHQ (futebol amador, só a data). Nos clubes amadores o pino marca a cidade do clube, não o estádio. Atualizado todo dia pelo",
+        footer: "Fontes: SofaScore (ligas profissionais e femininas, com horário de Londres), site da FA (copas nacionais inglesas) e NonLeagueHQ (futebol amador, só a data). Nos clubes amadores o pino marca a cidade do clube, não o estádio. Atualizado todo dia pelo",
         cups: "Copas", cup: "Copa", level_n: "Nível {n}", round: "Rodada", no_time: "sem hora", games: "{n} jogos", game: "1 jogo",
         more: "Mostrar mais ({n} restantes)", empty: "Nenhum jogo com esses filtros. Amplie o período ou limpe os filtros.",
         load_err: "Não foi possível carregar os dados ({e}).",
@@ -303,14 +308,14 @@
         title: "Football fixtures map: UK & Ireland",
         subtitle: "Every division in England, Scotland, Wales, Ireland and Northern Ireland, from the top flight down to grassroots football.",
         st_games: "matches shown", st_map: "on the map", st_comps: "competitions", st_updated: "last update",
-        filters: "Filters", clear: "Clear", country: "Country", level: "Division (pyramid level)", competition: "Competition",
+        filters: "Filters", clear: "Clear", category: "Category", cat_masc: "Men", cat_fem: "Women", cat_res: "Reserves & youth", cat_all: "All", country: "Country", level: "Division (pyramid level)", competition: "Competition",
         all_comps: "All", team: "Team or town", team_ph: "e.g. Celtic, Wrexham, Bristol…", period: "Dates",
         p_today: "Today", p_weekend: "Weekend", p_7: "7 days", p_30: "30 days", p_all: "All",
         only_area: "Only matches in the visible map area", only_time: "Only matches with kick-off time",
         note_level: "Level 1 = top flight. In England, level 5 is the National League and level 11 is step 7 of non-league.",
         tab_next: "Upcoming", tab_results: "Results", calendar: "Fixtures",
         loading: "Loading matches…", loading_map: "Loading map…",
-        footer: "Sources: SofaScore (professional leagues, UK time kick-offs) and NonLeagueHQ (non-league, dates only). For non-league clubs the pin marks the club's town, not the ground. Updated daily by",
+        footer: "Sources: SofaScore (professional and women's leagues, UK time kick-offs), The FA website (English national cups) and NonLeagueHQ (non-league, dates only). For non-league clubs the pin marks the club's town, not the ground. Updated daily by",
         cups: "Cups", cup: "Cup", level_n: "Level {n}", round: "Round", no_time: "TBC", games: "{n} matches", game: "1 match",
         more: "Show more ({n} left)", empty: "No matches with these filters. Widen the dates or clear the filters.",
         load_err: "Could not load the data ({e}).",
@@ -327,17 +332,25 @@
 
     // Nivel das competicoes do SofaScore (nome depois de "País - ").
     const NIVEL_SOFA = {
-      "Inglaterra": { "Premier League": 1, "Championship": 2, "League One": 3, "League Two": 4, "National League": 5 },
-      "Escócia": { "Premiership": 1, "Championship": 2, "League One": 3, "League Two": 4 },
-      "País de Gales": { "Cymru Premier": 1, "Cymru North": 2, "Cymru South": 2 },
-      "Irlanda": { "Premier Division": 1, "First Division": 2, "FAI National League": 3 },
-      "Irlanda do Norte": { "NIFL Premiership": 1, "NIFL Championship": 2 },
+      // Feminino e reservas: nivel dentro da propria categoria.
+      "Inglaterra": { "Premier League": 1, "Championship": 2, "League One": 3, "League Two": 4, "National League": 5,
+        "West Midlands Regional League Division One": 12, "Women's Super League": 1, "Women's Super League 2": 2 },
+      "Escócia": { "Premiership": 1, "Championship": 2, "League One": 3, "League Two": 4, "SWPL": 1, "SWPL 2": 2,
+        "Reserve League": 1, "Lowlands Development League Sub-20": 2 },
+      "País de Gales": { "Cymru Premier": 1, "Cymru North": 2, "Cymru South": 2, "Adran Premier": 1, "Women's Second Division": 2 },
+      "Irlanda": { "Premier Division": 1, "First Division": 2, "FAI National League": 3,
+        "Leinster Senior League Senior Division": 4, "Munster Senior League Premier Division": 4, "Galway & District League": 5,
+        "Women's Premier Division": 1, "Women's Development League Sub-23": 1 },
+      "Irlanda do Norte": { "NIFL Premiership": 1, "NIFL Championship": 2, "NIFL Premier Intermediate League": 3,
+        "Women's Premiership": 1, "Women's Championship": 2, "NIFL Reserve League": 1 },
     };
+    const CATEGORIAS = ["masc", "fem", "res", ""];
+    const CAT_EXTRA = { "feminino": "fem", "reservas": "res" };
     // Nivel onde comeca o futebol nao-liga no NonLeagueHQ, por pais.
     const BASE_NAOLIGA = { "Inglaterra": 4, "Escócia": 4, "País de Gales": 0, "Irlanda do Norte": 0 };
 
     const $ = (id) => document.getElementById(id);
-    const estado = { lang: "pt", aba: "prox", paises: new Set(), niveis: new Set(), comp: "", time: "", de: "", ate: "", periodo: "30", soHora: false, soArea: false, limite: LOTE };
+    const estado = { lang: "pt", aba: "prox", cat: "masc", paises: new Set(), niveis: new Set(), comp: "", time: "", de: "", ate: "", periodo: "30", soHora: false, soArea: false, limite: LOTE };
     const dados = { prox: null, res: null, geo: {} };
     let mapa, cluster, ultimaAtualizacao = "";
     const marcadores = new Map(); // chave de local -> marker
@@ -382,12 +395,16 @@
       else if (nl) nivel = (BASE_NAOLIGA[r.pais] ?? 0) + Number(nl);
       else if (NIVEL_SOFA[r.pais] && NIVEL_SOFA[r.pais][nome] != null) nivel = NIVEL_SOFA[r.pais][nome];
       r._nome = nome;
+      r._cat = CAT_EXTRA[extraVal(r.extra, "categoria")] || "masc";
       r._nivel = nivel;                         // null = copa
       r._nivelKey = nivel == null ? "copa" : String(nivel);
       r._placar = extraVal(r.extra, "placar");
       r._status = extraVal(r.extra, "status");
-      r._geoKey = r.pais + "|" + r.mandante;
-      const g = dados.geo[r._geoKey];
+      // Chave com a fonte primeiro: separa clubes homonimos de fontes diferentes
+      // (ex.: AFC Bournemouth no SofaScore x Bournemouth FC no NonLeagueHQ).
+      const gFonte = dados.geo[r.pais + "|" + r.mandante + "|" + r.fonte];
+      r._geoKey = r.pais + "|" + r.mandante + (gFonte ? "|" + r.fonte : "");
+      const g = gFonte || dados.geo[r.pais + "|" + r.mandante];
       r._geo = g || null;
       r._busca = norm([r.mandante, r.visitante, r.cidade, r.estadio, g && g.local].filter(Boolean).join(" | "));
       return r;
@@ -454,6 +471,7 @@
       const t = norm(estado.time.trim());
       const area = estado.soArea && mapa ? mapa.getBounds() : null;
       return lista.filter((r) =>
+        (ignorar === "cat" || !estado.cat || r._cat === estado.cat) &&
         (ignorar === "pais" || !estado.paises.size || estado.paises.has(r.pais)) &&
         (ignorar === "nivel" || !estado.niveis.size || estado.niveis.has(r._nivelKey)) &&
         (ignorar === "comp" || !estado.comp || r.competicao === estado.comp) &&
@@ -489,6 +507,12 @@
     function alternar(set, v) { set.has(v) ? set.delete(v) : set.add(v); }
 
     function renderFiltros(lista) {
+      const ck = contar(filtrar(lista, "cat"), (r) => r._cat);
+      $("fCat").replaceChildren(...CATEGORIAS.filter((c) => !c || ck.get(c) || estado.cat === c).map((c) =>
+        chip(T(c ? "cat_" + c : "cat_all"), c ? ck.get(c) || 0 : [...ck.values()].reduce((a, b) => a + b, 0), estado.cat === c, () => {
+          estado.cat = c; estado.niveis = new Set(); estado.comp = ""; atualizar();
+        })));
+
       const cp = contar(filtrar(lista, "pais"), (r) => r.pais);
       $("fPais").replaceChildren(...PAISES.filter((p) => cp.get(p) || estado.paises.has(p)).map((p) =>
         chip(nomePais(p), cp.get(p) || 0, estado.paises.has(p), () => { alternar(estado.paises, p); atualizar(); })));
@@ -687,6 +711,7 @@
       const p = new URLSearchParams();
       if (estado.lang !== "pt") p.set("lang", estado.lang);
       if (estado.aba !== "prox") p.set("aba", estado.aba);
+      if (estado.cat !== "masc") p.set("cat", estado.cat || "todas");
       if (estado.paises.size) p.set("pais", [...estado.paises].join(","));
       if (estado.niveis.size) p.set("nivel", [...estado.niveis].join(","));
       if (estado.comp) p.set("comp", estado.comp);
@@ -708,6 +733,8 @@
       if (!lang) lang = (navigator.language || "").toLowerCase().startsWith("pt") ? "pt" : "en";
       estado.lang = lang === "en" ? "en" : "pt";
       estado.aba = p.get("aba") === "res" ? "res" : "prox";
+      const cat = p.get("cat");
+      estado.cat = cat == null ? "masc" : cat === "todas" ? "" : CATEGORIAS.includes(cat) ? cat : "masc";
       estado.paises = new Set((p.get("pais") || "").split(",").filter(Boolean));
       estado.niveis = new Set((p.get("nivel") || "").split(",").filter(Boolean));
       estado.comp = p.get("comp") || "";
@@ -783,7 +810,7 @@
     $("fHora").addEventListener("change", (e) => { estado.soHora = e.target.checked; atualizar(); });
     $("fArea").addEventListener("change", (e) => { estado.soArea = e.target.checked; atualizar({ manterMapa: true }); });
     $("limpar").addEventListener("click", () => {
-      Object.assign(estado, { paises: new Set(), niveis: new Set(), comp: "", time: "", de: "", ate: "", soHora: false, soArea: false, periodo: estado.aba === "res" ? "7" : "30" });
+      Object.assign(estado, { cat: "masc", paises: new Set(), niveis: new Set(), comp: "", time: "", de: "", ate: "", soHora: false, soArea: false, periodo: estado.aba === "res" ? "7" : "30" });
       atualizar();
     });
 

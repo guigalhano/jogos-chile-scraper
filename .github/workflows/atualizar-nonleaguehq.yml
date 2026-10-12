@@ -57,6 +57,8 @@ jobs:
             mkdir -p data/reino_unido
             cp /tmp/geo_novo/* data/reino_unido/ 2>/dev/null || true
             python reino_unido_comum.py --raw data/debug_nonleaguehq_raw.json --raw-historico data/debug_nonleaguehq_hist_raw.json
+            # Nome das ligas pelos confrontos (Escocia) + remove versoes com nome antigo.
+            python migrar_ligas_nlhq_confrontos.py
 
             git add data/reino_unido/ data/debug_nonleaguehq_raw.json data/debug_nonleaguehq_hist_raw.json data/debug_nonleaguehq_pages.json 2>/dev/null || true
 

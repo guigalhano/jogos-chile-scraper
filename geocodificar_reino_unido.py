@@ -141,7 +141,7 @@ class Geocoder:
 
 
 def ler_mandantes() -> dict[str, dict]:
-    """pais|time -> {pais, time, time_sofascore, condado}."""
+    """pais|time (ou pais|time|fonte) -> {pais, time, time_sofascore, condado}."""
     import csv
     linhas: list[dict] = []
     if JOGOS_JSON.exists():
@@ -149,12 +149,21 @@ def ler_mandantes() -> dict[str, dict]:
     if HIST_CSV.exists():
         with HIST_CSV.open(encoding="utf-8-sig", newline="") as f:
             linhas += list(csv.DictReader(f))
+    # Nomes que existem no SofaScore: um clube com o mesmo nome vindo de outra
+    # fonte (NonLeagueHQ, FA) pode ser outro clube - ex.: "Bournemouth" e o
+    # AFC Bournemouth no SofaScore e o Bournemouth FC (Wessex) no NonLeagueHQ.
+    # Esses ficam numa chave propria "pais|time|fonte", que a pagina usa antes
+    # da chave "pais|time".
+    no_sofascore = {(r.get("pais"), r.get("mandante")) for r in linhas if r.get("fonte") == "SofaScore"}
     out: dict[str, dict] = {}
     for r in linhas:
         pais, time_ = r.get("pais", ""), r.get("mandante", "")
         if pais not in PAIS_OSM or not time_:
             continue
-        info = out.setdefault(f"{pais}|{time_}", {"pais": pais, "time": time_, "time_sofascore": "", "condado": ""})
+        chave = f"{pais}|{time_}"
+        if r.get("fonte") != "SofaScore" and (pais, time_) in no_sofascore:
+            chave += f"|{r.get('fonte', '')}"
+        info = out.setdefault(chave, {"pais": pais, "time": time_, "time_sofascore": "", "condado": ""})
         extra = r.get("extra", "") or ""
         m = re.search(r"time_sofascore=(\d+)", extra)
         if m:

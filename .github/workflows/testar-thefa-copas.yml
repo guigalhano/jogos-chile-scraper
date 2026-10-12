@@ -1,0 +1,51 @@
+name: Testar copas da FA + torneios novos do SofaScore (diagnóstico, manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  testar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v5
+
+      - name: Instalar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      # Nada aqui grava em data/reino_unido/ nem faz commit: o resultado fica
+      # no log e no artefato "diagnostico" da execução.
+      - name: Copas da FA (thefa.com), sem gravar
+        run: |
+          python scrap_thefa_copas.py --dry-run --debug-html
+
+      - name: Torneios novos do SofaScore (feminino, reservas, amador irlandês), sem gravar
+        run: |
+          cp -r data /tmp/data_original
+          python scrap_reino_unido_sofascore.py --dias 270 --dias-atras 15 --so 37139,36931,1044,10553,11667,2054,28683,29219,31924,11392,34372,28263,28254,29015,31228,31245,23231,30514,36951,22758,38111,38577,24715,24544,38768,20065,22727,32065,38525,36561,38203,31777,26136,25758,25986,28830,23276
+          cp data/debug_uk_sofascore_eventos.json /tmp/sofascore_novos_eventos.json
+          rm -rf data && cp -r /tmp/data_original data
+
+      - name: Guardar diagnóstico
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico
+          path: |
+            data/debug_thefa_pages.json
+            data/debug_thefa_raw.json
+            data/debug_thefa_html/
+            /tmp/sofascore_novos_eventos.json
