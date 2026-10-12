@@ -594,7 +594,11 @@
 
     // ---------- mapa ----------
     function iniciarMapa() {
-      mapa = L.map("map", { zoomControl: true, preferCanvas: true }).setView([54.3, -3.8], 6);
+      // Roda do mouse so da zoom depois de clicar no mapa: embutido na pagina
+      // da loja, rolar a pagina por cima do mapa nao pode virar zoom.
+      mapa = L.map("map", { zoomControl: true, preferCanvas: true, scrollWheelZoom: false }).setView([54.3, -3.8], 6);
+      mapa.on("click focus", () => mapa.scrollWheelZoom.enable());
+      mapa.on("mouseout blur", () => mapa.scrollWheelZoom.disable());
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 18,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
