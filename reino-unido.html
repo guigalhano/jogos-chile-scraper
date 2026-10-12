@@ -150,6 +150,9 @@
 
     @media (max-width: 1100px) {
       .hero__inner { grid-template-columns: 1fr; }
+      .app { grid-template-columns: 320px minmax(0, 1fr); }
+    }
+    @media (max-width: 820px) {
       .app { grid-template-columns: 1fr; }
       .mapWrap { position: relative; top: 0; height: 62vh; min-height: 380px; order: -1; }
       .calendar { max-height: none; }
@@ -604,6 +607,9 @@
         },
       });
       mapa.addLayer(cluster);
+      // Dentro de iframe (pagina da loja, loading="lazy") o container pode
+      // mudar de tamanho depois do init: sem isso o Leaflet so desenha um pedaco.
+      new ResizeObserver(() => mapa.invalidateSize()).observe($("map"));
       let t;
       mapa.on("moveend", () => { if (estado.soArea) { clearTimeout(t); t = setTimeout(() => atualizar({ manterMapa: true }), 150); } });
     }
@@ -661,7 +667,7 @@
       const k = r._geo.lat.toFixed(4) + "," + r._geo.lng.toFixed(4);
       const m = marcadores.get(k);
       if (!m) return;
-      if (window.matchMedia("(max-width: 1100px)").matches) document.querySelector(".mapWrap").scrollIntoView({ behavior: "smooth", block: "start" });
+      if (window.matchMedia("(max-width: 820px)").matches) document.querySelector(".mapWrap").scrollIntoView({ behavior: "smooth", block: "start" });
       cluster.zoomToShowLayer(m, () => m.openPopup());
     }
 
