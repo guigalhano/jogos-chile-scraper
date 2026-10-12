@@ -73,7 +73,7 @@ SUFIXOS = {
     "county", "orient", "wednesday", "hotspur", "palace", "wolves",
     "ceidwaid", "dragons", "saints", "tigers", "lions", "eagles", "magpies", "red", "blue", "blues",
     "whites", "white", "black", "comrades", "mills", "mill", "street", "boys", "old", "1st", "2nd",
-    "18th", "st.", "fp", "jfc", "afc.", "railway", "unity", "tavern",
+    "18th", "st.", "fp", "jfc", "afc.", "railway", "unity", "tavern", "services",
 }
 NUMEROS_RE = re.compile(r"\b\d+(st|nd|rd|th)?\b", re.I)
 
