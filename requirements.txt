@@ -7,3 +7,4 @@ pytesseract>=0.3.10
 playwright>=1.45.0
 EasySoccerData>=0.0.8
 curl_cffi>=0.7.0
+tzdata>=2024.1
