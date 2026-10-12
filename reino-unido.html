@@ -571,7 +571,7 @@
       const st = textoStatus(r);
       if (st) meta.append(el("span", "status", "· " + st));
       corpo.append(times, meta);
-      const local = [r.estadio, r.cidade].filter(Boolean).join(", ") || (r._geo && r._geo.fonte !== "sofascore" ? r._geo.local : "");
+      const local = [r.estadio, r.cidade].filter(Boolean).join(", ") || (r._geo && !["sofascore", "campo"].includes(r._geo.fonte) ? r._geo.local : "");
       if (local) corpo.append(el("div", "meta", "📍 " + local));
       b.append(corpo);
       if (r._geo) b.addEventListener("click", () => focarJogo(r));
@@ -649,7 +649,7 @@
       const div = el("div", "pop");
       const comSofa = jogos.find((r) => r.estadio);
       div.append(el("h3", null, comSofa ? comSofa.estadio : jogos[0].mandante));
-      div.append(el("p", "loc", g.fonte === "sofascore" ? [comSofa && comSofa.cidade, nomePais(jogos[0].pais)].filter(Boolean).join(", ")
+      div.append(el("p", "loc", ["sofascore", "campo"].includes(g.fonte) ? [comSofa && comSofa.cidade, nomePais(jogos[0].pais)].filter(Boolean).join(", ")
         : `${g.local}, ${nomePais(jogos[0].pais)} · ${T("approx")}`));
       const ul = el("ul");
       for (const r of jogos.slice(0, 40)) {

@@ -73,7 +73,7 @@ SUFIXOS = {
     "county", "orient", "wednesday", "hotspur", "palace", "wolves",
     "ceidwaid", "dragons", "saints", "tigers", "lions", "eagles", "magpies", "red", "blue", "blues",
     "whites", "white", "black", "comrades", "mills", "mill", "street", "boys", "old", "1st", "2nd",
-    "18th", "st.", "fp", "jfc", "afc.", "railway", "unity", "tavern", "services",
+    "18th", "st.", "fp", "jfc", "afc.", "railway", "unity", "tavern", "services", "us",
 }
 NUMEROS_RE = re.compile(r"\b\d+(st|nd|rd|th)?\b", re.I)
 
@@ -106,21 +106,24 @@ class Geocoder:
         self.feitas = 0
         self.session = requests.Session()
 
-    def buscar(self, lugar: str, pais: str, contexto: str = "") -> list | None:
+    def buscar(self, lugar: str, pais: str, contexto: str = "", cidade: bool = True) -> list | None:
         """[lat, lng, nome] ou None. Usa o cache; None = nao encontrado OU sem
-        cota nesta execucao (sem cota nao grava no cache)."""
+        cota nesta execucao (sem cota nao grava no cache). cidade=False busca
+        qualquer lugar (ex.: um campo), nao so cidades."""
         cc, nome_pais = PAIS_OSM[pais]
         q = ", ".join(x for x in (lugar, contexto, nome_pais) if x)
-        if q in self.cache:
-            return self.cache[q]
+        chave_cache = q if cidade else "campo: " + q
+        if chave_cache in self.cache:
+            return self.cache[chave_cache]
         if self.restantes <= 0:
             return None
         self.restantes -= 1
         self.feitas += 1
         try:
-            r = self.session.get(NOMINATIM, headers=HEADERS, timeout=30, params={
-                "q": q, "countrycodes": cc, "format": "jsonv2", "limit": 1, "featureType": "settlement",
-            })
+            params = {"q": q, "countrycodes": cc, "format": "jsonv2", "limit": 1}
+            if cidade:
+                params["featureType"] = "settlement"
+            r = self.session.get(NOMINATIM, headers=HEADERS, timeout=30, params=params)
             r.raise_for_status()
             res = r.json()
         except Exception as e:  # noqa: BLE001
@@ -133,7 +136,7 @@ class Geocoder:
             lat, lng = float(res[0]["lat"]), float(res[0]["lon"])
             if dentro(lat, lng):
                 val = [round(lat, 5), round(lng, 5), res[0].get("name") or lugar]
-        self.cache[q] = val
+        self.cache[chave_cache] = val
         return val
 
     def salvar(self) -> None:
@@ -163,7 +166,10 @@ def ler_mandantes() -> dict[str, dict]:
         chave = f"{pais}|{time_}"
         if r.get("fonte") != "SofaScore" and (pais, time_) in no_sofascore:
             chave += f"|{r.get('fonte', '')}"
-        info = out.setdefault(chave, {"pais": pais, "time": time_, "time_sofascore": "", "condado": ""})
+        info = out.setdefault(chave, {"pais": pais, "time": time_, "time_sofascore": "", "condado": "", "estadios": {}})
+        # Jogos colados do Full-Time trazem o campo do mandante.
+        if r.get("fonte") == "Full-Time" and r.get("estadio"):
+            info["estadios"][r["estadio"]] = info["estadios"].get(r["estadio"], 0) + 1
         extra = r.get("extra", "") or ""
         m = re.search(r"time_sofascore=(\d+)", extra)
         if m:
@@ -186,7 +192,7 @@ def main() -> None:
     geo = Geocoder(args.max_consultas)
     times = ler_mandantes()
     saida: dict[str, dict] = {}
-    contagem = {"sofascore": 0, "cidade": 0, "nome": 0, "sem": 0}
+    contagem = {"sofascore": 0, "campo": 0, "cidade": 0, "nome": 0, "sem": 0}
     salvo_em = 0
 
     # SofaScore primeiro (poucos times, posicao melhor), depois o resto.
@@ -201,6 +207,20 @@ def main() -> None:
                 ponto = {"lat": round(est[0], 5), "lng": round(est[1], 5), "local": v.get("estadio") or v["cidade"], "fonte": "sofascore"}
             elif cid:
                 ponto = {"lat": cid[0], "lng": cid[1], "local": v["cidade"], "fonte": "cidade"}
+        if ponto is None and t["estadios"]:
+            # Campo informado (Full-Time colado): busca o campo e confere se fica
+            # perto da cidade do nome do clube, quando ela e conhecida.
+            campo = max(t["estadios"], key=t["estadios"].get)
+            q_campo = re.sub(r"\(.*?\)", " ", campo).replace(" - ", ", ").strip(" ,")
+            achou = geo.buscar(q_campo, pais, t["condado"], cidade=False)
+            lugar = lugar_do_nome(t["time"])
+            cid = geo.buscar(lugar, pais, t["condado"]) if lugar else None
+            if cid is None and lugar and " " in lugar:
+                cid = geo.buscar(lugar.split(" ")[0], pais, t["condado"])
+            # Nome de campo se repete ("Miller Park", "King George V"): so aceita
+            # perto da cidade do clube.
+            if achou and (cid is None or dist_km((achou[0], achou[1]), (cid[0], cid[1])) <= 12):
+                ponto = {"lat": achou[0], "lng": achou[1], "local": campo, "fonte": "campo"}
         if ponto is None:
             lugar = lugar_do_nome(t["time"])
             if lugar:

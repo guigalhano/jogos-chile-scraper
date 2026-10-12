@@ -59,8 +59,11 @@ jobs:
             python reino_unido_comum.py --raw data/debug_nonleaguehq_raw.json --raw-historico data/debug_nonleaguehq_hist_raw.json
             # Nome das ligas pelos confrontos (Escocia) + remove versoes com nome antigo.
             python migrar_ligas_nlhq_confrontos.py
+            # Jogos colados a mao do FA Full-Time (data/reino_unido/fulltime_colado/):
+            # reimporta e tira do NonLeagueHQ o que eles ja cobrem.
+            python importar_fulltime_colado.py
 
-            git add data/reino_unido/ data/debug_nonleaguehq_raw.json data/debug_nonleaguehq_hist_raw.json data/debug_nonleaguehq_pages.json 2>/dev/null || true
+            git add data/reino_unido/ data/debug_fulltime_colado_raw.json data/debug_fulltime_colado_hist_raw.json data/debug_nonleaguehq_raw.json data/debug_nonleaguehq_hist_raw.json data/debug_nonleaguehq_pages.json 2>/dev/null || true
 
             if git diff --cached --quiet; then
               echo "Sem mudanças para commitar"

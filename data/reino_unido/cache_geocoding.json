@@ -238,7 +238,13 @@
 "Ampthill"
 ],
 "Andover New, England": null,
+"Andover New, Hampshire, England": null,
 "Andover, England": [
+51.20783,
+-1.47935,
+"Andover"
+],
+"Andover, Hampshire, England": [
 51.20783,
 -1.47935,
 "Andover"
@@ -943,10 +949,16 @@
 ],
 "Bishops Stortford, England": null,
 "Bishops Waltham, England": null,
+"Bishops Waltham, Hampshire, England": null,
 "Bishops, England": [
 52.49363,
 -2.99792,
 "Bishop's Castle"
+],
+"Bishops, Hampshire, England": [
+51.07906,
+-1.13067,
+"Bishops Sutton"
 ],
 "Bishops, Wales": null,
 "Bishop’s Cleeve, England": [
@@ -975,7 +987,13 @@
 "Blackburn"
 ],
 "Blackfield Langley, England": null,
+"Blackfield Langley, Hampshire, England": null,
 "Blackfield, England": [
+50.818,
+-1.37261,
+"Blackfield"
+],
+"Blackfield, Hampshire, England": [
 50.818,
 -1.37261,
 "Blackfield"
@@ -1406,6 +1424,11 @@
 "Broughton, England": [
 53.56561,
 -0.55392,
+"Broughton"
+],
+"Broughton, Hampshire, England": [
+51.10028,
+-1.57005,
 "Broughton"
 ],
 "Broughton, Wales": [
@@ -2429,6 +2452,12 @@
 -3.008,
 "Croesyceiliog"
 ],
+"Crofton, England": [
+53.65747,
+-1.43257,
+"Crofton"
+],
+"Crofton, Hampshire, England": null,
 "Cromford Wirksworth, England": null,
 "Cromford, England": [
 53.10872,
@@ -2665,6 +2694,11 @@
 "Denbigh"
 ],
 "Denmead, England": [
+50.90677,
+-1.08576,
+"Denmead"
+],
+"Denmead, Hampshire, England": [
 50.90677,
 -1.08576,
 "Denmead"
@@ -4452,6 +4486,11 @@
 -0.30715,
 "Hook"
 ],
+"Hook, Hampshire, England": [
+51.28632,
+-0.95175,
+"Hook"
+],
 "Horbury, England": [
 53.6603,
 -1.55524,
@@ -5238,6 +5277,11 @@
 -1.24374,
 "Linthorpe"
 ],
+"Liphook, Hampshire, England": [
+51.07175,
+-0.8003,
+"Liphook"
+],
 "Lisburn, Northern Ireland": [
 54.51129,
 -6.04672,
@@ -5249,6 +5293,11 @@
 "Liskeard"
 ],
 "Liss, England": [
+51.04154,
+-0.89946,
+"Liss"
+],
+"Liss, Hampshire, England": [
 51.04154,
 -0.89946,
 "Liss"
@@ -5464,6 +5513,11 @@
 "Lochore"
 ],
 "Locks Heath, England": [
+50.86175,
+-1.27172,
+"Locks Heath"
+],
+"Locks Heath, Hampshire, England": [
 50.86175,
 -1.27172,
 "Locks Heath"
@@ -5836,7 +5890,13 @@
 "Mendip Broadwalk, England": null,
 "Mendip, England": null,
 "Meon Milton, England": null,
+"Meon Milton, Hampshire, England": null,
 "Meon, England": [
+50.82831,
+-1.24847,
+"Meon"
+],
+"Meon, Hampshire, England": [
 50.82831,
 -1.24847,
 "Meon"
@@ -5971,6 +6031,7 @@
 ],
 "Molly, England": null,
 "Moneyfields, England": null,
+"Moneyfields, Hampshire, England": null,
 "Moneyslane, Northern Ireland": [
 54.28817,
 -6.08759,
@@ -6151,6 +6212,11 @@
 52.07306,
 -2.01398,
 "Netherton"
+],
+"Netley, Hampshire, England": [
+50.87607,
+-1.34872,
+"Netley"
 ],
 "Nettleham, England": [
 53.26617,
@@ -6514,6 +6580,11 @@
 -1.15622,
 "Overton"
 ],
+"Overton, Hampshire, England": [
+51.24442,
+-1.26449,
+"Overton"
+],
 "Owens, England": null,
 "Oxford, England": [
 51.75201,
@@ -6861,6 +6932,7 @@
 -1.0906,
 "Portsmouth"
 ],
+"Portsmouth, Hampshire, England": null,
 "Portstewart, Northern Ireland": [
 55.18291,
 -6.7187,
@@ -7483,6 +7555,9 @@
 -1.06878,
 "Selby"
 ],
+"Select Generation, England": null,
+"Select Generation, Hampshire, England": null,
+"Select, Hampshire, England": null,
 "Selsey, England": [
 50.73278,
 -0.79229,
@@ -7622,6 +7697,11 @@
 -1.67489,
 "Shirley CP"
 ],
+"Shirley, Hampshire, England": [
+50.79117,
+-1.74328,
+"Shirley"
+],
 "Sholing, England": [
 50.9035,
 -1.35292,
@@ -7728,6 +7808,11 @@
 "Solihull"
 ],
 "South Elmsall Services, England": null,
+"South Elmsall, England": [
+53.59749,
+-1.28101,
+"South Elmsall"
+],
 "South Gower, Swansea, Wales": null,
 "South Gower, Wales": null,
 "South Leeds, England": null,
@@ -7786,6 +7871,12 @@
 -3.0045,
 "Southport"
 ],
+"Southsea, England": [
+50.78888,
+-1.08866,
+"Southsea"
+],
+"Southsea, Hampshire, England": null,
 "Southwell, England": [
 53.07825,
 -0.95508,
@@ -8517,6 +8608,11 @@
 -1.48946,
 "Totton"
 ],
+"Totton Eling, Hampshire, England": [
+50.91964,
+-1.48946,
+"Totton"
+],
 "Totton, England": [
 50.91964,
 -1.48946,
@@ -9037,8 +9133,15 @@
 "Whitehawk"
 ],
 "Whitehill Borden, England": null,
+"Whitehill Bordon, England": null,
+"Whitehill Bordon, Hampshire, England": null,
 "Whitehill U20, Scotland": null,
 "Whitehill, England": [
+51.09772,
+-0.86407,
+"Whitehill"
+],
+"Whitehill, Hampshire, England": [
 51.09772,
 -0.86407,
 "Whitehill"
@@ -9057,6 +9160,11 @@
 57.67736,
 -2.57979,
 "Whitehills"
+],
+"Whiteley, Hampshire, England": [
+50.88612,
+-1.23646,
+"Whiteley"
 ],
 "Whitley Bay, England": [
 55.04221,
@@ -9144,6 +9252,11 @@
 ],
 "Winchester Flyers, England": null,
 "Winchester, England": [
+51.06128,
+-1.31317,
+"Winchester"
+],
+"Winchester, Hampshire, England": [
 51.06128,
 -1.31317,
 "Winchester"
@@ -9421,6 +9534,77 @@
 51.64181,
 -3.2374,
 "Ystrad Mynach"
+],
+"campo: AEC Protection Ground, Hampshire, England": [
+50.98721,
+-1.49016,
+"The AEC Protection Ground"
+],
+"campo: Broughton Sports Field, Hampshire, England": [
+51.09379,
+-1.5664,
+"Broughton Sports Field"
+],
+"campo: Cockleshell Community Sports Club, Hampshire, England": null,
+"campo: Crofton Saints, Hampshire, England": null,
+"campo: Daly Ground, Hampshire, England": null,
+"campo: Foxcotte Park, Hampshire, England": [
+51.23165,
+-1.50088,
+"Foxcotte Park"
+],
+"campo: Gang Warily, Hampshire, England": [
+50.82437,
+-1.37207,
+"Gang Warily"
+],
+"campo: King George V, Denmead, Hampshire, England": [
+50.90194,
+-1.06898,
+"King George V Playing Fields"
+],
+"campo: King George V, Hook, Hampshire, England": [
+51.2757,
+-0.97397,
+"King George V Playing Fields"
+],
+"campo: Liphook Recreation Ground, Hampshire, England": null,
+"campo: Locks Heath Recreation Ground, Hampshire, England": [
+50.86139,
+-1.26338,
+"Locks Heath Recreation Ground"
+],
+"campo: Miller Park, Hampshire, England": [
+50.86182,
+-1.19528,
+"Miller Drive"
+],
+"campo: Newman Collard Park, Hampshire, England": null,
+"campo: OASIS ACADEMY MAYFIELD, Hampshire, England": null,
+"campo: Overton Recreation Centre, Hampshire, England": [
+51.24436,
+-1.2524,
+"Overton Recreation Centre"
+],
+"campo: Portway Stadium, Hampshire, England": [
+51.21941,
+-1.51518,
+"Portway Stadium"
+],
+"campo: Priory Park, Hampshire, England": [
+50.85859,
+-1.28262,
+"Priory Park"
+],
+"campo: Select Generation U23, Hampshire, England": null,
+"campo: The AEI Stadium, Hampshire, England": null,
+"campo: The John Jenkins Stadium, Hampshire, England": null,
+"campo: University of Portsmouth, Hampshire, England": null,
+"campo: Victory Stadium, Hampshire, England": null,
+"campo: Winchester City U23, Hampshire, England": [
+51.06128,
+-1.31317,
+"Winchester"
 ],
 "loughrea, Ireland": [
 53.19816,

@@ -1601,6 +1601,12 @@
 "lng": -1.19642,
 "local": "Mansfield"
 },
+"Inglaterra|AFC Netley": {
+"fonte": "nome",
+"lat": 50.87607,
+"lng": -1.34872,
+"local": "Netley"
+},
 "Inglaterra|AFC Newbiggin": {
 "fonte": "nome",
 "lat": 54.26723,
@@ -1651,9 +1657,9 @@
 },
 "Inglaterra|AFC Shirley": {
 "fonte": "nome",
-"lat": 52.97098,
-"lng": -1.67489,
-"local": "Shirley CP"
+"lat": 50.79117,
+"lng": -1.74328,
+"local": "Shirley"
 },
 "Inglaterra|AFC Solihull": {
 "fonte": "nome",
@@ -1914,10 +1920,16 @@
 "local": "Ampthill"
 },
 "Inglaterra|Andover New Street": {
-"fonte": "nome",
-"lat": 51.20783,
-"lng": -1.47935,
-"local": "Andover"
+"fonte": "campo",
+"lat": 51.23165,
+"lng": -1.50088,
+"local": "Foxcotte Park"
+},
+"Inglaterra|Andover Town": {
+"fonte": "campo",
+"lat": 51.21941,
+"lng": -1.51518,
+"local": "Portway Stadium"
 },
 "Inglaterra|Angel": {
 "fonte": "nome",
@@ -2665,9 +2677,9 @@
 },
 "Inglaterra|Bishops Waltham Dynamos": {
 "fonte": "nome",
-"lat": 52.49363,
-"lng": -2.99792,
-"local": "Bishop's Castle"
+"lat": 51.07906,
+"lng": -1.13067,
+"local": "Bishops Sutton"
 },
 "Inglaterra|Bishop’s Cleeve": {
 "fonte": "nome",
@@ -2694,10 +2706,10 @@
 "local": "Ewood Park"
 },
 "Inglaterra|Blackfield & Langley": {
-"fonte": "nome",
-"lat": 50.818,
-"lng": -1.37261,
-"local": "Blackfield"
+"fonte": "campo",
+"lat": 50.82437,
+"lng": -1.37207,
+"local": "Gang Warily"
 },
 "Inglaterra|Blackpool": {
 "fonte": "sofascore",
@@ -3156,10 +3168,10 @@
 "local": "Brook"
 },
 "Inglaterra|Broughton": {
-"fonte": "nome",
-"lat": 53.56561,
-"lng": -0.55392,
-"local": "Broughton"
+"fonte": "campo",
+"lat": 51.09379,
+"lng": -1.5664,
+"local": "Broughton Sports Field"
 },
 "Inglaterra|Buckhurst Hill": {
 "fonte": "nome",
@@ -4133,6 +4145,18 @@
 "lng": -2.59912,
 "local": "Cribbs Causeway"
 },
+"Inglaterra|Crofton Saints": {
+"fonte": "nome",
+"lat": 53.65747,
+"lng": -1.43257,
+"local": "Crofton"
+},
+"Inglaterra|Crofton Saints Dev": {
+"fonte": "nome",
+"lat": 53.65747,
+"lng": -1.43257,
+"local": "Crofton"
+},
 "Inglaterra|Cromford & Wirksworth Town": {
 "fonte": "nome",
 "lat": 53.10872,
@@ -4332,10 +4356,10 @@
 "local": "Denaby Main"
 },
 "Inglaterra|Denmead": {
-"fonte": "nome",
-"lat": 50.90677,
-"lng": -1.08576,
-"local": "Denmead"
+"fonte": "campo",
+"lat": 50.90194,
+"lng": -1.06898,
+"local": "King George V - Denmead"
 },
 "Inglaterra|Derby County": {
 "fonte": "sofascore",
@@ -6234,10 +6258,10 @@
 "local": "Honiton"
 },
 "Inglaterra|Hook": {
-"fonte": "nome",
-"lat": 51.3679,
-"lng": -0.30715,
-"local": "Hook"
+"fonte": "campo",
+"lat": 51.2757,
+"lng": -0.97397,
+"local": "King George V - Hook"
 },
 "Inglaterra|Horbury Town": {
 "fonte": "nome",
@@ -6995,6 +7019,12 @@
 "lng": -1.24374,
 "local": "Linthorpe"
 },
+"Inglaterra|Liphook United": {
+"fonte": "nome",
+"lat": 51.07175,
+"lng": -0.8003,
+"local": "Liphook"
+},
 "Inglaterra|Liskeard Athletic": {
 "fonte": "nome",
 "lat": 50.45463,
@@ -7056,10 +7086,10 @@
 "local": "Liversedge"
 },
 "Inglaterra|Locks Heath": {
-"fonte": "nome",
-"lat": 50.86175,
-"lng": -1.27172,
-"local": "Locks Heath"
+"fonte": "campo",
+"lat": 50.86139,
+"lng": -1.26338,
+"local": "Locks Heath Recreation Ground"
 },
 "Inglaterra|London City Lionesses": {
 "fonte": "sofascore",
@@ -8190,10 +8220,10 @@
 "local": "Over"
 },
 "Inglaterra|Overton United": {
-"fonte": "nome",
-"lat": 53.99522,
-"lng": -1.15622,
-"local": "Overton"
+"fonte": "campo",
+"lat": 51.24436,
+"lng": -1.2524,
+"local": "Overton Recreation Centre"
 },
 "Inglaterra|Oxford City": {
 "fonte": "sofascore",
@@ -9419,6 +9449,12 @@
 "lng": -1.77689,
 "local": "Solihull"
 },
+"Inglaterra|South Elmsall United Services": {
+"fonte": "nome",
+"lat": 53.59749,
+"lng": -1.28101,
+"local": "South Elmsall"
+},
 "Inglaterra|South Liverpool": {
 "fonte": "nome",
 "lat": 53.37539,
@@ -9502,6 +9538,12 @@
 "lat": 53.64874,
 "lng": -3.0045,
 "local": "Southport"
+},
+"Inglaterra|Southsea Sports": {
+"fonte": "nome",
+"lat": 50.78888,
+"lng": -1.08866,
+"local": "Southsea"
 },
 "Inglaterra|Southwell City": {
 "fonte": "nome",
@@ -10559,6 +10601,12 @@
 "lng": 0.26734,
 "local": "Royal Tunbridge Wells"
 },
+"Inglaterra|US Portsmouth": {
+"fonte": "nome",
+"lat": 50.80003,
+"lng": -1.0906,
+"local": "Portsmouth"
+},
 "Inglaterra|Upper Beeding": {
 "fonte": "nome",
 "lat": 50.87976,
@@ -10991,11 +11039,17 @@
 "lng": -0.10721,
 "local": "Whitehawk"
 },
-"Inglaterra|Whitehill and Borden": {
+"Inglaterra|Whitehill & Bordon": {
 "fonte": "nome",
 "lat": 51.09772,
 "lng": -0.86407,
 "local": "Whitehill"
+},
+"Inglaterra|Whiteley Wanderers": {
+"fonte": "nome",
+"lat": 50.88612,
+"lng": -1.23646,
+"local": "Whiteley"
 },
 "Inglaterra|Whitley Bay": {
 "fonte": "nome",
@@ -11104,6 +11158,12 @@
 "lat": 51.06128,
 "lng": -1.31317,
 "local": "Winchester"
+},
+"Inglaterra|Winchester City U23": {
+"fonte": "campo",
+"lat": 51.06128,
+"lng": -1.31317,
+"local": "Winchester City U23"
 },
 "Inglaterra|Windsor & Eton": {
 "fonte": "nome",

@@ -1,0 +1,72 @@
+# Hampshire Premier Football League - jogos copiados do FA Full-Time.
+# Para atualizar: abrir o link abaixo no navegador (troque /1/25.html por /1/100.html para ver 100 por pagina),
+# selecionar a tabela de jogos, copiar e colar no lugar das linhas abaixo deste cabecalho. Depois rodar:
+#   python importar_fulltime_colado.py
+#
+# fonte: https://fulltime.thefa.com/fixtures/1/100.html?selectedSeason=493387915&selectedFixtureGroupAgeGroup=0&selectedFixtureGroupKey=1_606670393&selectedRelatedFixtureOption=2
+# condado: Hampshire
+# competicao: uhlsport Hampshire Premier League - Snr = Hampshire Premier League (Senior Division) | step 7
+# competicao: uhlsport Hampshire Premier League - One = Hampshire Premier League (Division One) | step 8
+# colado em: 2026-10-12
+SEN	13/10/26 19:30	Locks Heath		VS		Liss Athletic	Locks Heath Recreation Ground	uhlsport Hampshire Premier League - Snr
+SEN	17/10/26 14:00	Bishops Waltham Dynamos		VS		Overton United	Priory Park	uhlsport Hampshire Premier League - Snr
+SEN	17/10/26 15:00	Denmead		VS		Blackfield & Langley	King George V - Denmead	uhlsport Hampshire Premier League - Snr
+SEN	17/10/26 15:00	Liss Athletic		VS		Broughton	Newman Collard Park	uhlsport Hampshire Premier League - Snr
+HPLC	17/10/26 14:45	Whiteley Wanderers		VS		AFC Shirley	OASIS ACADEMY MAYFIELD	uhlsport Hampshire Premier League Cup
+HPLC	17/10/26 15:00	Andover Town		VS		Locks Heath	Portway Stadium	uhlsport Hampshire Premier League Cup
+GMMS	17/10/26 15:00	Liphook United		VS		US Portsmouth	Liphook Recreation Ground	HPFL George Mason Memorial Shield
+HPLC	17/10/26 15:00	Meon Milton		VS		Crofton Saints	Cockleshell Community Sports Club	uhlsport Hampshire Premier League Cup
+HPLC	17/10/26 15:00	Moneyfields Reserves		VS		Hook	The John Jenkins Stadium (3G)	uhlsport Hampshire Premier League Cup
+HPLC	17/10/26 15:00	Southsea Sports		VS		Headley United	University of Portsmouth (3G)	uhlsport Hampshire Premier League Cup
+HPLC	17/10/26 15:00	Whitehill & Bordon		VS		Nursling & Shirley	Daly Ground	uhlsport Hampshire Premier League Cup
+SEN	24/10/26 14:00	Blackfield & Langley		VS		AFC Netley	Gang Warily	uhlsport Hampshire Premier League - Snr
+SEN	24/10/26 15:00	AFC Shirley		VS		Meon Milton	Miller Park	uhlsport Hampshire Premier League - Snr
+SEN	24/10/26 15:00	Broughton		VS		Crofton Saints	Broughton Sports Field	uhlsport Hampshire Premier League - Snr
+SEN	24/10/26 15:00	Denmead		VS		US Portsmouth	King George V - Denmead	uhlsport Hampshire Premier League - Snr
+SEN	24/10/26 15:00	Hook		VS		Southsea Sports	King George V - Hook	uhlsport Hampshire Premier League - Snr
+SEN	24/10/26 15:00	Liss Athletic		VS		Bishops Waltham Dynamos	Newman Collard Park	uhlsport Hampshire Premier League - Snr
+SEN	24/10/26 15:00	Locks Heath		VS		Whitehill & Bordon	Locks Heath Recreation Ground	uhlsport Hampshire Premier League - Snr
+SEN	24/10/26 15:00	Overton United		VS		Moneyfields Reserves	Overton Recreation Centre	uhlsport Hampshire Premier League - Snr
+RCC	27/10/26 19:45	Moneyfields		VS		Liss Athletic	The John Jenkins Stadium (3G)	Russell Cotes Cup
+RCC	27/10/26 19:45	Totton & Eling		VS		Crofton Saints	Miller Park	Russell Cotes Cup
+SEN	31/10/26 14:00	Bishops Waltham Dynamos		VS		AFC Netley	Priory Park	uhlsport Hampshire Premier League - Snr
+SEN	31/10/26 14:00	Broughton		VS		Liphook United	Broughton Sports Field	uhlsport Hampshire Premier League - Snr
+SEN	31/10/26 14:00	Hook		VS		Locks Heath	King George V - Hook	uhlsport Hampshire Premier League - Snr
+SEN	31/10/26 14:00	Liss Athletic		VS		Overton United	Newman Collard Park	uhlsport Hampshire Premier League - Snr
+SEN	31/10/26 14:00	Meon Milton		VS		Denmead	Cockleshell Community Sports Club	uhlsport Hampshire Premier League - Snr
+SEN	31/10/26 14:00	Moneyfields Reserves		VS		Crofton Saints	The John Jenkins Stadium (3G)	uhlsport Hampshire Premier League - Snr
+SEN	31/10/26 14:00	Whitehill & Bordon		VS		Southsea Sports	Daly Ground	uhlsport Hampshire Premier League - Snr
+SEN	31/10/26 15:00	AFC Shirley		VS		Blackfield & Langley	Miller Park	uhlsport Hampshire Premier League - Snr	Postponed
+SEN	31/10/26 15:00	US Portsmouth		VS		Blackfield & Langley	Victory Stadium	uhlsport Hampshire Premier League - Snr
+HST	31/10/26 15:00	AFC Shirley		VS		Fareham Town Development	Miller Park	Hampshire Saturday Trophy
+NHDF	03/11/26 19:45	Andover New Street		VS		Hook	Foxcotte Park	NHDFA Senior Cup
+SEN	07/11/26 14:00	Blackfield & Langley		VS		Crofton Saints	Gang Warily	uhlsport Hampshire Premier League - Snr
+HST	07/11/26 14:00	AFC Netley		VS		Moneyfields Reserves	AEC Protection Ground	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Broughton		VS		Upham	Broughton Sports Field	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Crofton Saints Dev		VS		Denmead	Crofton Saints	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Hook		VS		Oakfield	King George V - Hook	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Liphook United		VS		Northwood St Johns	Liphook Recreation Ground	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Liss Athletic		VS		Select Generation	Newman Collard Park	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Meon Milton		VS		Hayling United	Cockleshell Community Sports Club	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Select Generation U23		VS		Locks Heath	Select Generation U23	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Southsea Sports		VS		Sporting Wessex	University of Portsmouth (3G)	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Whitehill & Bordon		VS		Waterlooville AFC	Daly Ground	Hampshire Saturday Trophy
+HST	07/11/26 14:00	Winchester City U23		VS		Overton United	Winchester City U23	Hampshire Saturday Trophy
+HST	07/11/26 15:00	US Portsmouth		VS		Bishops Waltham Dynamos	Victory Stadium	Hampshire Saturday Trophy
+SEN	10/11/26 19:30	Locks Heath		VS		Southsea Sports	Locks Heath Recreation Ground	uhlsport Hampshire Premier League - Snr
+SEN	14/11/26 14:00	Bishops Waltham Dynamos		VS		Southsea Sports	Priory Park	uhlsport Hampshire Premier League - Snr
+SEN	14/11/26 14:00	Blackfield & Langley		VS		Liphook United	Gang Warily	uhlsport Hampshire Premier League - Snr
+SEN	14/11/26 14:00	Broughton		VS		Locks Heath	Broughton Sports Field	uhlsport Hampshire Premier League - Snr
+SEN	14/11/26 14:00	Crofton Saints		VS		Meon Milton	The AEI Stadium (3G)	uhlsport Hampshire Premier League - Snr
+SEN	14/11/26 14:00	Denmead		VS		Liss Athletic	King George V - Denmead	uhlsport Hampshire Premier League - Snr
+SEN	14/11/26 14:00	Whitehill & Bordon		VS		US Portsmouth	Daly Ground	uhlsport Hampshire Premier League - Snr
+SEN	14/11/26 15:00	AFC Shirley		VS		Overton United	Miller Park	uhlsport Hampshire Premier League - Snr
+SEN	14/11/26 15:00	Moneyfields Reserves		VS		AFC Netley	The John Jenkins Stadium (3G)	uhlsport Hampshire Premier League - Snr
+SEN	28/11/26 14:00	AFC Netley		VS		Broughton	AEC Protection Ground	uhlsport Hampshire Premier League - Snr
+SEN	28/11/26 14:00	Blackfield & Langley		VS		Bishops Waltham Dynamos	Gang Warily	uhlsport Hampshire Premier League - Snr
+SEN	28/11/26 14:00	Hook		VS		Liphook United	King George V - Hook	uhlsport Hampshire Premier League - Snr
+SEN	28/11/26 14:00	Liss Athletic		VS		AFC Shirley	Newman Collard Park	uhlsport Hampshire Premier League - Snr
+SEN	28/11/26 14:00	Whitehill & Bordon		VS		Meon Milton	Daly Ground	uhlsport Hampshire Premier League - Snr
+SEN	28/11/26 15:00	Moneyfields Reserves		VS		Denmead	The John Jenkins Stadium (3G)	uhlsport Hampshire Premier League - Snr
+PDFA	28/11/26 14:00	Crofton Saints		VS		US Portsmouth	The AEI Stadium (3G)	Portsmouth Senior Cup
+PDFA	28/11/26 15:00	Southsea Sports		VS		Locks Heath	University of Portsmouth (3G)	Portsmouth Senior Cup
