@@ -9,7 +9,7 @@
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
     "status": 200,
-    "bytes": 13571
+    "bytes": 13595
   },
   {
     "copa": "FA Trophy",
@@ -35,7 +35,7 @@
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
     "status": 200,
-    "bytes": 178998
+    "bytes": 178852
   },
   {
     "copa": "FA Vase",
@@ -99,22 +99,22 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 171265
+    "bytes": 173314
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
     "status": 200,
-    "bytes": 10775
+    "bytes": 11485
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-08 14:00 Hartlepool AFC Supporters v Easington CW (Sunday) @ ",
-      "2026-11-08 14:00 Sunderland Southwick v Pelton Buffs @ ",
-      "2026-11-08 14:00 Witton Park Rose & Crown v Mauretania @ "
+      "2026-11-08 10:30 Greenwich Park Rangers v The Gun @ ",
+      "2026-11-08 11:00 MUD Red Lion v Stourport Swifts (Sunday) @ ",
+      "2026-11-08 14:00 Hartlepool AFC Supporters v Easington CW (Sunday) @ "
     ]
   },
   {
@@ -122,9 +122,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
     "jogos_parseados": 11,
     "amostra": [
+      "2026-11-08 14:00 Broadfields United (Sunday)_ v Brewster Plumbing @ ",
       "2026-11-08 14:00 Northstar v Nags Head (Winslow) @ ",
-      "2026-11-08 14:00 Stanhope & Beaver Rangers v East London Ballers @ ",
-      "2026-11-08 14:00 Greenwich Park Rangers v The Gun @ "
+      "2026-11-08 14:00 Stanhope & Beaver Rangers v East London Ballers @ "
     ]
   },
   {
@@ -137,13 +137,13 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 178426
+    "bytes": 178903
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 20758
+    "bytes": 21206
   },
   {
     "copa": "Women's FA Cup",
@@ -185,32 +185,32 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 175280
+    "bytes": 176313
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 15140
+    "bytes": 8911
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-12 19:00 Sholing v Eastleigh @ ",
-      "2026-10-12 19:30 AFC Fylde v Cheadle Town @ ",
-      "2026-10-12 19:45 St Ives Town v Moulton @ "
+      "2026-10-13 19:30 Chorley v Altrincham @ ",
+      "2026-10-13 19:30 Southend United v Needham Market @ ",
+      "2026-10-13 19:45 Slough Town v Camberley Town @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 12,
+    "jogos_parseados": 5,
     "amostra": [
-      "2026-10-15 19:00 Guiseley AFC v FC Halifax Town @ ",
-      "2026-10-15 19:30 Blyth Spartans AFC v Stockton Town @ ",
-      "2026-10-15 19:45 Milton Keynes Irish v Grantham Town @ "
+      "2026-10-16 19:45 Racing Club Warwick v Boston United @ ",
+      "2026-10-16 19:45 Chelmsford City v Leverstock Green @ ",
+      "2026-10-16 19:45 Whitstable Town v Aldershot Town @ "
     ]
   }
 ]
