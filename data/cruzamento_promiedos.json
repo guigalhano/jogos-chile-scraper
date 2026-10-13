@@ -1,24 +1,8 @@
 {
-  "gerado_em": "2026-10-12T21:16:11",
+  "gerado_em": "2026-10-13T19:12:24",
   "dias_verificados": 61,
   "total_eventos_lidos_nos_paises_alvo": 0,
   "dias_com_erro": [
-    {
-      "data": "2026-10-12",
-      "debug": {
-        "tentativa_1": {
-          "formato": "2026-10-12",
-          "status": 500,
-          "body": "Issue accurs: time data '2026-10-12' does not match format '%d-%m-%Y'"
-        },
-        "tentativa_2": {
-          "formato": "12-10-2026",
-          "status": 200,
-          "chaves_raiz": [],
-          "amostra_bruta": "{}"
-        }
-      }
-    },
     {
       "data": "2026-10-13",
       "debug": {
@@ -728,7 +712,8 @@
       "debug": {
         "tentativa_1": {
           "formato": "2026-11-26",
-          "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+          "status": 500,
+          "body": "Issue accurs: time data '2026-11-26' does not match format '%d-%m-%Y'"
         },
         "tentativa_2": {
           "formato": "26-11-2026",
@@ -977,24 +962,25 @@
           "amostra_bruta": "{}"
         }
       }
+    },
+    {
+      "data": "2026-12-12",
+      "debug": {
+        "tentativa_1": {
+          "formato": "2026-12-12",
+          "status": 500,
+          "body": "Issue accurs: time data '2026-12-12' does not match format '%d-%m-%Y'"
+        },
+        "tentativa_2": {
+          "formato": "12-12-2026",
+          "status": 200,
+          "chaves_raiz": [],
+          "amostra_bruta": "{}"
+        }
+      }
     }
   ],
   "debug_amostra": [
-    {
-      "data": "2026-10-12",
-      "tentativa_1": {
-        "formato": "2026-10-12",
-        "status": 500,
-        "body": "Issue accurs: time data '2026-10-12' does not match format '%d-%m-%Y'"
-      },
-      "tentativa_2": {
-        "formato": "12-10-2026",
-        "status": 200,
-        "chaves_raiz": [],
-        "amostra_bruta": "{}"
-      },
-      "n_leagues": 0
-    },
     {
       "data": "2026-10-13",
       "tentativa_1": {
@@ -1659,7 +1645,8 @@
       "data": "2026-11-26",
       "tentativa_1": {
         "formato": "2026-11-26",
-        "erro": "Failed to perform, curl: (28) Operation timed out after 20002 milliseconds with 0 bytes received. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+        "status": 500,
+        "body": "Issue accurs: time data '2026-11-26' does not match format '%d-%m-%Y'"
       },
       "tentativa_2": {
         "formato": "26-11-2026",
@@ -1888,6 +1875,21 @@
       },
       "tentativa_2": {
         "formato": "11-12-2026",
+        "status": 200,
+        "chaves_raiz": [],
+        "amostra_bruta": "{}"
+      },
+      "n_leagues": 0
+    },
+    {
+      "data": "2026-12-12",
+      "tentativa_1": {
+        "formato": "2026-12-12",
+        "status": 500,
+        "body": "Issue accurs: time data '2026-12-12' does not match format '%d-%m-%Y'"
+      },
+      "tentativa_2": {
+        "formato": "12-12-2026",
         "status": 200,
         "chaves_raiz": [],
         "amostra_bruta": "{}"
