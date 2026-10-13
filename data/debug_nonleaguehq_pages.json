@@ -37,7 +37,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-devon-football-league/",
-    "jogos": 159
+    "erro": "HTTPError: 500 Server Error: Internal Server Error for url: https://www.nonleaguehq.com/england-next-fixtures-devon-football-league/"
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-dorset-premier-league/",
@@ -157,7 +157,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-north-west-counties-league-division-one-north/",
-    "jogos": 314
+    "jogos": 313
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-north-west-counties-league-division-one-south/",
@@ -177,11 +177,11 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-northern-counties-east-league-division-one/",
-    "jogos": 263
+    "jogos": 264
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-northern-counties-east-league-premier/",
-    "jogos": 244
+    "jogos": 243
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-northern-league-division-one/",
@@ -241,7 +241,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-combination-league-division-one/",
-    "jogos": 258
+    "jogos": 257
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-combination-league-division-two/",
@@ -253,7 +253,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-counties-east-league-division-one/",
-    "jogos": 213
+    "jogos": 212
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-counties-east-league-premier/",
@@ -313,7 +313,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-united-counties-league-division-one/",
-    "jogos": 299
+    "jogos": 300
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-united-counties-league-premier-north/",
