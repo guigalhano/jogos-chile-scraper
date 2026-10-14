@@ -1541,7 +1541,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=343; grupo=22; fase=TERCEIRA FASE; canais=TNT; suspencao=LIBERADO",
     "id": "645f9b2d36a4c39d",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -1557,7 +1557,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=344; grupo=25; fase=TERCEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "a9be2d3bd76d7920",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -1589,7 +1589,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=342; grupo=20; fase=TERCEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "1aa7d13d11d953a1",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -2060,6 +2060,22 @@
     "atualizado_em": "2026-10-12T21:53:21"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "08:30",
+    "mandante": "Audax",
+    "visitante": "Sociedade Esportiva Lemense",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=1; suspencao=LIBERADO",
+    "id": "49269db9b78e02cf",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Juvenil Femenino",
     "data": "2026-10-17",
@@ -2170,6 +2186,38 @@
     "atualizado_em": "2026-10-12T21:53:21"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "09:00",
+    "mandante": "AEC Marília",
+    "visitante": "Taubaté Futebol Feminino",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=2; suspencao=LIBERADO",
+    "id": "b43b06bcda6f46a5",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "09:30",
+    "mandante": "AA Flamengo",
+    "visitante": "Futebol Feminino Campinas",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=3; suspencao=LIBERADO",
+    "id": "cc1295941d9b54d9",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Juvenil Femenino",
     "data": "2026-10-17",
@@ -2277,6 +2325,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "10:00",
+    "mandante": "Ferroviária",
+    "visitante": "Sociedade Esportiva Lemense",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=7; suspencao=LIBERADO",
+    "id": "0898e6a9282edcf2",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista F Sub-15 Petrobras (Amador)",
     "data": "2026-10-17",
     "hora": "10:00",
@@ -2289,7 +2353,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=63; grupo=09; fase=FINAL; canais=TV Brasil, YouTube Paulistão; suspencao=LIBERADO",
     "id": "d9b81bb77ff64b12",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "AUF",
@@ -2338,6 +2402,22 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=42; placar_original=X; jogo_numero=40; cidade=Eloi Mendes",
     "id": "7b5120956db3cf25",
     "atualizado_em": "2026-10-12T21:53:21"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "10:30",
+    "mandante": "Taubaté Futebol Feminino",
+    "visitante": "Futebol Feminino Campinas",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=8; suspencao=LIBERADO",
+    "id": "bf9a26abe877936a",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -2480,6 +2560,22 @@
     "atualizado_em": "2026-09-14T18:42:15"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "11:00",
+    "mandante": "AEC Marília",
+    "visitante": "Audax",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=9; suspencao=LIBERADO",
+    "id": "f9a50be39772eeb4",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Juvenil Femenino",
     "data": "2026-10-17",
@@ -2492,6 +2588,22 @@
     "extra": "",
     "id": "e40f315f40393730",
     "atualizado_em": "2026-10-14T16:53:45"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "11:30",
+    "mandante": "Sociedade Esportiva Lemense",
+    "visitante": "Futebol Feminino Campinas",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=13; suspencao=LIBERADO",
+    "id": "0abbc975623923e5",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "ESPN",
@@ -2524,6 +2636,22 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "12:00",
+    "mandante": "AA Flamengo",
+    "visitante": "Taubaté Futebol Feminino",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=14; suspencao=LIBERADO",
+    "id": "42a0507787483ef8",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Ascenso Caixun",
     "data": "2026-10-17",
@@ -2536,6 +2664,22 @@
     "extra": "",
     "id": "9eca5a20cccd831b",
     "atualizado_em": "2026-10-14T16:53:45"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "12:30",
+    "mandante": "Ferroviária",
+    "visitante": "Audax",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=15; suspencao=LIBERADO",
+    "id": "fd106d5758388c0e",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -2662,6 +2806,22 @@
     "atualizado_em": "2026-09-28T20:17:21"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "13:30",
+    "mandante": "Meninas em Campo",
+    "visitante": "São Bento",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=4; suspencao=LIBERADO",
+    "id": "2a93d080f4c3ec76",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-17",
@@ -2679,6 +2839,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "14:00",
+    "mandante": "AJVV",
+    "visitante": "Noroeste",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=5; suspencao=LIBERADO",
+    "id": "fc98f97eafa8cb64",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-13 (SUB13)",
     "data": "2026-10-17",
     "hora": "14:00",
@@ -2691,7 +2867,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=643; grupo=30; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "b1f75dab18b9e9a1",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -2707,7 +2883,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=648; grupo=34; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "19a4cc931e0b2837",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "ESPN",
@@ -2755,6 +2931,134 @@
     "pais": "Argentina",
     "id": "a78abd146cec4a1f",
     "atualizado_em": "2026-10-14T16:53:50"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "14:30",
+    "mandante": "Rio Branco",
+    "visitante": "ACAFF",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=6; suspencao=LIBERADO",
+    "id": "1f5b8608b5d60b72",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-17",
+    "hora": "14:30",
+    "mandante": "AA Portuguesa",
+    "visitante": "I9 Futebol Clube",
+    "pais": "Brasil",
+    "cidade": "Santos",
+    "estadio": "Estádio Ulrico Mursa",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=582; grupo=30; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "d46eadf85f6df221",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-17",
+    "hora": "14:30",
+    "mandante": "Guarani",
+    "visitante": "Corinthians",
+    "pais": "Brasil",
+    "cidade": "Amparo",
+    "estadio": "Estádio José de Araújo Cintra",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=579; grupo=27; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "9b76457a24ca3af2",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-17",
+    "hora": "14:30",
+    "mandante": "Juventus SAF",
+    "visitante": "Santos",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Estádio Comendador Roberto Ugolini",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=583; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "6149df273d2a41b5",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-17",
+    "hora": "14:30",
+    "mandante": "LG Futebol Clube",
+    "visitante": "Palmeiras",
+    "pais": "Brasil",
+    "cidade": "Serrana",
+    "estadio": "Estádio Municipal Antônio Luiz de Mattos",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=580; grupo=28; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "ca5b43a4b8a95adf",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-17",
+    "hora": "14:30",
+    "mandante": "Real Soccer",
+    "visitante": "Cosmopolitano",
+    "pais": "Brasil",
+    "cidade": "Sorocaba",
+    "estadio": "Estádio Municipal Walter Ribeiro",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=581; grupo=29; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "6602ee77298d7948",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-17",
+    "hora": "14:30",
+    "mandante": "São Caetano",
+    "visitante": "Red Bull Bragantino",
+    "pais": "Brasil",
+    "cidade": "São Caetano do Sul",
+    "estadio": "Estádio Municipal Anacleto Campanella",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=585; grupo=34; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "44e3fb320c65c72c",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-17",
+    "hora": "14:30",
+    "mandante": "São José EC SAF",
+    "visitante": "São Paulo",
+    "pais": "Brasil",
+    "cidade": "São José dos Campos",
+    "estadio": "Centro Poliesportivo João do Pulo",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=584; grupo=32; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "16e7e247258aa4a0",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3219,7 +3523,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=8; grupo=03; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "ebaedc76f039f410",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3235,7 +3539,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=9; grupo=06; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "d2778838e6b76f96",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3251,7 +3555,23 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=7; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "023858ea337c972a",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "SESI - SP",
+    "visitante": "Meninas em Campo",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=10; suspencao=LIBERADO",
+    "id": "655a1e8052e2fdb6",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3267,7 +3587,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=69; grupo=05; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "4f9dac11f7c71be3",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3283,7 +3603,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=68; grupo=04; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "ba86c5bd1e717a70",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3299,7 +3619,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=70; grupo=06; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "adb2d24668e3ce96",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3319,6 +3639,54 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Cosmopolitano",
+    "visitante": "São Paulo",
+    "pais": "Brasil",
+    "cidade": "Cosmópolis",
+    "estadio": "Estádio Thelmo de Almeida",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=583; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "c12d8b8e45aadf7b",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Paulista",
+    "visitante": "Palmeiras",
+    "pais": "Brasil",
+    "cidade": "Jundiaí",
+    "estadio": "Estádio Dr. Jayme Pinheiro de Ulhoa Cintra",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=579; grupo=27; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "cd2df57fa07a8602",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Taubaté",
+    "visitante": "Mirassol",
+    "pais": "Brasil",
+    "cidade": "Taubaté",
+    "estadio": "Estádio Joaquim de Morais Filho",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=580; grupo=30; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "a4195b108ac67c14",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-20 - Série A (SUB20 - Série A)",
     "data": "2026-10-17",
     "hora": "15:00",
@@ -3331,7 +3699,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=346; grupo=24; fase=TERCEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "54fba24dc9eaaa8e",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3347,7 +3715,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=345; grupo=27; fase=TERCEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "b3b1df3bfe540d61",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3605,6 +3973,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "15:30",
+    "mandante": "São Bento",
+    "visitante": "Noroeste",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=11; suspencao=LIBERADO",
+    "id": "e0e0a79aad5b0109",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-14 (SUB14)",
     "data": "2026-10-17",
     "hora": "15:40",
@@ -3617,7 +4001,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=643; grupo=30; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "f3404108350794d4",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -3633,7 +4017,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=347; grupo=26; fase=TERCEIRA FASE; canais=Xsports; suspencao=LIBERADO",
     "id": "ad15e42f259c3a77",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -3764,6 +4148,38 @@
     "atualizado_em": "2026-10-12T21:53:21"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "16:00",
+    "mandante": "AJVV",
+    "visitante": "ACAFF",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=12; suspencao=LIBERADO",
+    "id": "3d79dbd22a0b455e",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-17",
+    "hora": "16:00",
+    "mandante": "São José EC SAF",
+    "visitante": "Referência FC",
+    "pais": "Brasil",
+    "cidade": "São José dos Campos",
+    "estadio": "Centro Poliesportivo João do Pulo",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=584; grupo=29; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "22f3154f856ec85f",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "AUF",
     "competicao": "Uruguay - Liga AUF Uruguaya",
     "data": "2026-10-17",
@@ -3857,6 +4273,22 @@
     "atualizado_em": "2026-10-14T16:53:50"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "16:30",
+    "mandante": "Rio Branco",
+    "visitante": "Noroeste",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; suspencao=LIBERADO",
+    "id": "f9650cd45518f585",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Ecuador - LigaPro Serie A",
     "data": "2026-10-17",
@@ -3871,6 +4303,22 @@
     "extra": "codigo_espn=401921347; status=Scheduled",
     "id": "9789f84e1e953d1f",
     "atualizado_em": "2026-10-13T20:52:36"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "17:00",
+    "mandante": "ACAFF",
+    "visitante": "Meninas em Campo",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=17; suspencao=LIBERADO",
+    "id": "c9dba9923b71fdc2",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "APF",
@@ -3951,6 +4399,22 @@
     "atualizado_em": "2026-10-14T16:53:50"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "data": "2026-10-17",
+    "hora": "17:30",
+    "mandante": "SESI - SP",
+    "visitante": "São Bento",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=18; suspencao=LIBERADO",
+    "id": "9dccaab3c65e68fa",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "CBF",
     "competicao": "Brasil - Série A",
     "data": "2026-10-17",
@@ -3994,7 +4458,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=70; grupo=15; fase=FINAL; canais=YouTube Paulistão, Metrópoles, Xsports, Ulisses TV, BR IN TV; suspencao=LIBERADO",
     "id": "cb3acfe72872fece",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4289,6 +4753,22 @@
     "atualizado_em": "2026-10-12T21:53:21"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "08:30",
+    "mandante": "SESI - SP",
+    "visitante": "São Bento",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=1; suspencao=LIBERADO",
+    "id": "c1d68357d431e5a9",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - 2ª Divisão - 2026",
     "data": "2026-10-18",
@@ -4306,6 +4786,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "09:00",
+    "mandante": "ACAFF",
+    "visitante": "Primavera SAF",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=2; suspencao=LIBERADO",
+    "id": "1598f7b894439bfa",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-13 (SUB13)",
     "data": "2026-10-18",
     "hora": "09:00",
@@ -4318,7 +4814,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=649; grupo=35; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "81262b88c550bef0",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4334,7 +4830,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=645; grupo=29; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "fb0da33dd057d59f",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4350,7 +4846,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=647; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "51b0d1ada7e0b4df",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4366,7 +4862,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=644; grupo=28; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "cf3f4adb48337f7e",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4382,7 +4878,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=648; grupo=34; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "f0dc8bc14df291f5",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4398,7 +4894,23 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=646; grupo=32; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "fc3b70d6127bf304",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "09:30",
+    "mandante": "Ferroviária",
+    "visitante": "Sociedade Esportiva Lemense",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 1",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=3; suspencao=LIBERADO",
+    "id": "87f933cae015359f",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -4462,6 +4974,38 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "10:00",
+    "mandante": "São Bento",
+    "visitante": "Primavera SAF",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=4; suspencao=LIBERADO",
+    "id": "81a885d1c3999e1a",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-18",
+    "hora": "10:00",
+    "mandante": "FC Primeira Camisa",
+    "visitante": "Santos",
+    "pais": "Brasil",
+    "cidade": "São José dos Campos",
+    "estadio": "Centro Poliesportivo João do Pulo",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=585; grupo=28; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "56e41e4d4095c3c3",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-20 - Série A (SUB20 - Série A)",
     "data": "2026-10-18",
     "hora": "10:00",
@@ -4474,7 +5018,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=349; grupo=23; fase=TERCEIRA FASE; canais=Youtube Energia 97 FM; suspencao=LIBERADO",
     "id": "04541d57273f7b3d",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4490,7 +5034,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=348; grupo=21; fase=TERCEIRA FASE; canais=YouTube Ulisses TV; suspencao=LIBERADO",
     "id": "aae5788e22134dc8",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4506,7 +5050,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=242; grupo=40; fase=FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "66a37227a73516c7",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "AUF",
@@ -4542,6 +5086,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "10:30",
+    "mandante": "ACAFF",
+    "visitante": "Ferroviária",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=5; suspencao=LIBERADO",
+    "id": "50fae256da991dec",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-14 (SUB14)",
     "data": "2026-10-18",
     "hora": "10:40",
@@ -4554,7 +5114,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=647; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "e4096227a5c4080d",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4586,7 +5146,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=644; grupo=28; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "c7e024d7d53fb379",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4602,7 +5162,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=646; grupo=32; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "52bc7233577e6518",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4618,7 +5178,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=649; grupo=35; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "e2141826295b9e6e",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -4634,7 +5194,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=645; grupo=29; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "7bb1af3453ac09ae",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -4679,6 +5239,22 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "11:00",
+    "mandante": "Sociedade Esportiva Lemense",
+    "visitante": "SESI - SP",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=6; suspencao=LIBERADO",
+    "id": "602b3712958a97f6",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-18",
@@ -4707,6 +5283,22 @@
     "extra": "",
     "id": "c44ce2f42b1cf4c3",
     "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "11:30",
+    "mandante": "Ferroviária",
+    "visitante": "Primavera SAF",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=7; suspencao=LIBERADO",
+    "id": "93e4612e5d60603a",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "ESPN",
@@ -4739,6 +5331,22 @@
     "atualizado_em": "2026-07-14T13:55:28"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "12:00",
+    "mandante": "SESI - SP",
+    "visitante": "ACAFF",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=8; suspencao=LIBERADO",
+    "id": "d8a9a96cf4349b4d",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Ascenso Caixun",
     "data": "2026-10-18",
@@ -4765,6 +5373,22 @@
     "extra": "",
     "id": "744ba10900ded364",
     "atualizado_em": "2026-10-14T16:53:45"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "12:30",
+    "mandante": "Sociedade Esportiva Lemense",
+    "visitante": "São Bento",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 3",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=9; suspencao=LIBERADO",
+    "id": "afa4cbd20a2f0211",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -4830,6 +5454,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "14:00",
+    "mandante": "Primavera SAF",
+    "visitante": "SESI - SP",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 4",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=10; suspencao=LIBERADO",
+    "id": "297c9ef7f718943c",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-13 (SUB13)",
     "data": "2026-10-18",
     "hora": "14:00",
@@ -4842,7 +5482,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=650; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "56550fbb8a3959e5",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "ESPN",
@@ -4905,6 +5545,38 @@
     "extra": "",
     "id": "5aa48ac6fd533f5d",
     "atualizado_em": "2026-10-14T16:53:45"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "14:30",
+    "mandante": "Sociedade Esportiva Lemense",
+    "visitante": "ACAFF",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 4",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=11; suspencao=LIBERADO",
+    "id": "ea80fc843f679439",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-18",
+    "hora": "14:30",
+    "mandante": "Prata da Casa",
+    "visitante": "Sfera FC",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Ibrachina Arena",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=586; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "d4f9c6e03b99e077",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "AFA",
@@ -5027,7 +5699,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=11; grupo=04; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "28e32ad8d6563d77",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -5043,7 +5715,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=10; grupo=01; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "820a7e7f8219ff16",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -5059,7 +5731,23 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=12; grupo=05; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "d095026fb19b9892",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "15:00",
+    "mandante": "São Bento",
+    "visitante": "Ferroviária",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 4",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=12; suspencao=LIBERADO",
+    "id": "b0b2aef6d59c9a95",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -5079,6 +5767,38 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-18",
+    "hora": "15:00",
+    "mandante": "Audax",
+    "visitante": "Sfera FC",
+    "pais": "Brasil",
+    "cidade": "Osasco",
+    "estadio": "Estádio Municipal Prefeito José Liberatti",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=581; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "ff370e2a321c44e0",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-18",
+    "hora": "15:00",
+    "mandante": "Velo Clube",
+    "visitante": "Corinthians",
+    "pais": "Brasil",
+    "cidade": "Rio Claro",
+    "estadio": "Estádio Benito Agnelo Castellano",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=582; grupo=32; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "d50a4a50577d80ad",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Taça Paulistana Petrobras (Amador)",
     "data": "2026-10-18",
     "hora": "15:00",
@@ -5091,7 +5811,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=19; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "0f1e0863203701e8",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "AUF",
@@ -5188,6 +5908,22 @@
     "atualizado_em": "2026-10-12T20:57:39"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "15:30",
+    "mandante": "Primavera SAF",
+    "visitante": "Sociedade Esportiva Lemense",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 5",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=13; suspencao=LIBERADO",
+    "id": "f37e2b51741fb7fb",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-18",
@@ -5281,7 +6017,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=650; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "a77c80d9893ee06c",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "CBF",
@@ -5391,6 +6127,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "16:00",
+    "mandante": "ACAFF",
+    "visitante": "São Bento",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 5",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=14; suspencao=LIBERADO",
+    "id": "987140b510b8ec32",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
     "data": "2026-10-18",
     "hora": "16:00",
@@ -5403,7 +6155,23 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=67; grupo=03; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "208aa59423ece036",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-18",
+    "hora": "16:00",
+    "mandante": "Prata da Casa",
+    "visitante": "Red Bull Bragantino",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Ibrachina Arena",
+    "rodada": "Rodada 17",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=586; grupo=34; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "3725ee0958220350",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -5436,6 +6204,22 @@
     "extra": "codigo_espn=401878059; status=Scheduled",
     "id": "e9dd90e16ae8738e",
     "atualizado_em": "2026-10-13T19:59:59"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "data": "2026-10-18",
+    "hora": "16:30",
+    "mandante": "SESI - SP",
+    "visitante": "Ferroviária",
+    "pais": "Brasil",
+    "cidade": "Itapetininga",
+    "estadio": "SESI Itapetininga",
+    "rodada": "Rodada 5",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=15; suspencao=LIBERADO",
+    "id": "d6fe3a6ba7e7fc84",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "ESPN",
@@ -6847,7 +7631,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=21; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "ec69d602edda4e56",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -7221,7 +8005,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=20; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "a5575637a3939a28",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -7364,7 +8148,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=73; grupo=05; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "2d197f758bde0019",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -7770,7 +8554,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=5; grupo=01; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "e8ea3a585b8e010a",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FFERJ",
@@ -7978,7 +8762,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=6; grupo=01; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "1b3dc1c11f78957c",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8120,7 +8904,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=7; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "ef62c265e87b3491",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "AFA",
@@ -8293,7 +9077,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=13; grupo=01; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "b0a22fbbf576e808",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -8309,7 +9093,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; grupo=04; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "bb0909321cf7666e",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -8325,7 +9109,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=15; grupo=03; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "d861834552fe9416",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -8341,7 +9125,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=14; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "e0633d12fb98e114",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -8357,7 +9141,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=17; grupo=05; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "3b07e022168413de",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -8373,7 +9157,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=18; grupo=06; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "602def3a491843bd",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -8389,7 +9173,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=72; grupo=04; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "13d33e52e4deb508",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -8405,7 +9189,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=71; grupo=03; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "4a5fa38567b6d6bb",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -8628,7 +9412,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=8; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "119f64a5da501fca",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -9052,7 +9836,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=74; grupo=06; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "5eecb09e6512d233",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -11805,6 +12589,118 @@
     "atualizado_em": "2026-10-12T21:53:21"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-31",
+    "hora": "14:30",
+    "mandante": "Corinthians",
+    "visitante": "Guarani",
+    "pais": "Brasil",
+    "cidade": "Santo André",
+    "estadio": "Estádio Municipal Bruno José Daniel",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=587; grupo=27; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "a456d7a8a28612a9",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-31",
+    "hora": "14:30",
+    "mandante": "Cosmopolitano",
+    "visitante": "Real Soccer",
+    "pais": "Brasil",
+    "cidade": "Cosmópolis",
+    "estadio": "Estádio Thelmo de Almeida",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=589; grupo=29; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "c25bed6fa7b46f9c",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-31",
+    "hora": "14:30",
+    "mandante": "Palmeiras",
+    "visitante": "LG Futebol Clube",
+    "pais": "Brasil",
+    "cidade": "Guarulhos",
+    "estadio": "Academia de Futebol II do Palmeiras - Campo 02",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=588; grupo=28; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "2cfcaff2795aa166",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-31",
+    "hora": "14:30",
+    "mandante": "Red Bull Bragantino",
+    "visitante": "São Caetano",
+    "pais": "Brasil",
+    "cidade": "Atibaia",
+    "estadio": "CPD Red Bull Bragantino",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=593; grupo=34; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "6c68870bbdd7ad5e",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-31",
+    "hora": "14:30",
+    "mandante": "Santos",
+    "visitante": "Juventus SAF",
+    "pais": "Brasil",
+    "cidade": "Santos",
+    "estadio": "CT Rei Pelé - Campo I",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=590; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "12ad50ea27a56c90",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-31",
+    "hora": "14:30",
+    "mandante": "Sfera FC",
+    "visitante": "Prata da Casa",
+    "pais": "Brasil",
+    "cidade": "Jarinu",
+    "estadio": "Centro de Formação de Atletas Jarinu",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=592; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "4adcd5ebdbef479a",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-10-31",
+    "hora": "14:30",
+    "mandante": "São Paulo",
+    "visitante": "São José EC SAF",
+    "pais": "Brasil",
+    "cidade": "Osasco",
+    "estadio": "Estádio Municipal Prefeito José Liberatti",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=591; grupo=32; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "bb59c3653392f31a",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-10-31",
@@ -11928,7 +12824,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=47; grupo=03; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "109ff3a79dbb2fea",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -11944,7 +12840,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=48; grupo=04; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "a5496212a01a824c",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -11960,7 +12856,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=50; grupo=06; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "34d2c65247cdddbf",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -11976,7 +12872,39 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=49; grupo=05; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "c642d862fdbb6121",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-31",
+    "hora": "15:00",
+    "mandante": "Mirassol",
+    "visitante": "Taubaté",
+    "pais": "Brasil",
+    "cidade": "Bálsamo",
+    "estadio": "Estádio Municipal Manoel Francisco Ferreira",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=588; grupo=30; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "675f50e686096bd0",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-31",
+    "hora": "15:00",
+    "mandante": "Referência FC",
+    "visitante": "São José EC SAF",
+    "pais": "Brasil",
+    "cidade": "Embu das Artes",
+    "estadio": "Estádio Municipal Hermínio Esposito",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=587; grupo=29; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "f90129ea31fcf885",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -11992,7 +12920,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=23; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "cc8cacf0b6b24cdd",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -12008,7 +12936,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=24; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "8c5c9121bb1ad781",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -12024,7 +12952,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=22; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "eda9293939fbb6ef",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FGF",
@@ -12104,6 +13032,102 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=13; placar_original=X; jogo_numero=119; cidade=Montes Claros",
     "id": "a315418b6d35f6d2",
     "atualizado_em": "2026-10-12T21:53:21"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-31",
+    "hora": "16:00",
+    "mandante": "Corinthians",
+    "visitante": "Velo Clube",
+    "pais": "Brasil",
+    "cidade": "Santo André",
+    "estadio": "Estádio Municipal Bruno José Daniel",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=592; grupo=32; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "2a0f26dded6686dd",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-31",
+    "hora": "16:00",
+    "mandante": "Palmeiras",
+    "visitante": "Paulista",
+    "pais": "Brasil",
+    "cidade": "Guarulhos",
+    "estadio": "Academia de Futebol II do Palmeiras - Campo 02",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=589; grupo=27; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "7a4b9c2eabef8770",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-31",
+    "hora": "16:00",
+    "mandante": "Red Bull Bragantino",
+    "visitante": "Prata da Casa",
+    "pais": "Brasil",
+    "cidade": "Atibaia",
+    "estadio": "CPD Red Bull Bragantino",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=594; grupo=34; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "5ab7e2a274fd88f8",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-31",
+    "hora": "16:00",
+    "mandante": "Santos",
+    "visitante": "FC Primeira Camisa",
+    "pais": "Brasil",
+    "cidade": "Santos",
+    "estadio": "CT Rei Pelé - Campo I",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=590; grupo=28; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "9c3d51e346fa5ead",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-31",
+    "hora": "16:00",
+    "mandante": "Sfera FC",
+    "visitante": "Audax",
+    "pais": "Brasil",
+    "cidade": "Jarinu",
+    "estadio": "Centro de Formação de Atletas Jarinu",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=591; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "6089769ed6b1aae0",
+    "atualizado_em": "2026-10-14T18:09:24"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
+    "data": "2026-10-31",
+    "hora": "16:00",
+    "mandante": "São Paulo",
+    "visitante": "Cosmopolitano",
+    "pais": "Brasil",
+    "cidade": "Osasco",
+    "estadio": "Estádio Municipal Prefeito José Liberatti",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=593; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "4a4d44f2fef8d652",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "AFA",
@@ -12314,6 +13338,22 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=13; placar_original=X; jogo_numero=120; cidade=Itabirinha",
     "id": "fa19ff7dcca52f27",
     "atualizado_em": "2026-10-12T21:53:21"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
+    "data": "2026-11-01",
+    "hora": "09:00",
+    "mandante": "I9 Futebol Clube",
+    "visitante": "AA Portuguesa",
+    "pais": "Brasil",
+    "cidade": "Ribeirão Preto",
+    "estadio": "CT I9 International Academy",
+    "rodada": "Rodada 18",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=594; grupo=30; fase=TERCEIRA FASE; suspencao=LIBERADO",
+    "id": "54cae9dd18f2d37c",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -14070,7 +15110,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=25; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "08f932bb775e42e1",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -14086,7 +15126,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=26; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "8539d9a3a4cf8a11",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -14102,7 +15142,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=27; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "be5cdd66a9023045",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "ESPN",
@@ -15433,7 +16473,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=9; grupo=01; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "573cfe9ae67766ca",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FMF",
@@ -15529,7 +16569,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=10; grupo=01; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "e72cc5ff85bd840b",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15575,7 +16615,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=11; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "7dfd077d7a2107a1",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -15591,7 +16631,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=29; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "77dc4c8a1fe9def1",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -15607,7 +16647,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=28; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "9a51d60c6e5eb00d",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -15623,7 +16663,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=30; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "d77f73416be9170c",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "ESPN",
@@ -15863,7 +16903,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=12; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "17a15bdbe8f3c8a7",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16045,7 +17085,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=29; grupo=03; fase=PLAY IN; canais=YouTube / CazeTV, Record News, HBO Max; suspencao=LIBERADO",
     "id": "69607484201e99f1",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "FPF",
@@ -16061,7 +17101,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=30; grupo=02; fase=PLAY IN; canais=SporTV; suspencao=LIBERADO",
     "id": "ae473299ebf83bfa",
-    "atualizado_em": "2026-10-13T19:57:15"
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -16076,6 +17116,22 @@
     "extra": "",
     "id": "bc0e936781c58626",
     "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulistão F Petrobras (Amador)",
+    "data": "2026-11-21",
+    "hora": "",
+    "mandante": "São Paulo",
+    "visitante": "Santos",
+    "pais": "Brasil",
+    "cidade": "N/D",
+    "estadio": "N/D",
+    "rodada": "Rodada 9",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=31; grupo=03; fase=PLAY IN; canais=YouTube / CazeTV, Record News, HBO Max; suspencao=LIBERADO",
+    "id": "51a12f36ba2f43cd",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "ESPN",
@@ -16154,6 +17210,22 @@
     "extra": "",
     "id": "364fd11b540f3262",
     "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulistão F Petrobras (Amador)",
+    "data": "2026-11-22",
+    "hora": "",
+    "mandante": "Corinthians",
+    "visitante": "Red Bull Bragantino",
+    "pais": "Brasil",
+    "cidade": "N/D",
+    "estadio": "N/D",
+    "rodada": "Rodada 9",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=32; grupo=02; fase=PLAY IN; canais=SporTV; suspencao=LIBERADO",
+    "id": "d2f5bbbdca148d1b",
+    "atualizado_em": "2026-10-14T18:09:24"
   },
   {
     "fonte": "campeonatochileno.cl",
