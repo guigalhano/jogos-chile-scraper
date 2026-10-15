@@ -38,7 +38,9 @@ jobs:
           git config user.email "github-actions@github.com"
 
           mkdir -p /tmp/dados_novos
-          cp data/debug_argentina_sofascore_raw.json data/debug_argentina_sofascore_hist_raw.json data/debug_argentina_sofascore_eventos.json data/argentina/cache_venues_sofascore.json /tmp/dados_novos/ 2>/dev/null || true
+          cp data/debug_argentina_sofascore_raw.json data/debug_argentina_sofascore_hist_raw.json data/debug_argentina_sofascore_eventos.json /tmp/dados_novos/ 2>/dev/null || true
+          mkdir -p /tmp/dados_novos/argentina
+          cp data/argentina/*.json /tmp/dados_novos/argentina/ 2>/dev/null || true
 
           for tentativa in 1 2 3 4 5; do
             git fetch origin main
@@ -48,7 +50,8 @@ jobs:
             # (ver merge_apos_reset.py) e tira os jogos que a AFA tambem publica.
             cp /tmp/dados_novos/debug_argentina_sofascore_*.json data/ 2>/dev/null || true
             mkdir -p data/argentina
-            cp /tmp/dados_novos/cache_venues_sofascore.json data/argentina/ 2>/dev/null || true
+            # caches de venue, cidades do Regional e geocodificacao
+            cp /tmp/dados_novos/argentina/*.json data/argentina/ 2>/dev/null || true
             python merge_apos_reset.py --raw data/debug_argentina_sofascore_raw.json --raw-historico data/debug_argentina_sofascore_hist_raw.json
             python argentina_comum.py --dedupe
 

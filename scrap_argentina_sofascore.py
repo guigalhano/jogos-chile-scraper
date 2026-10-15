@@ -52,6 +52,7 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 from argentina_comum import FONTE_SOFASCORE, OUT_DIR, para_local
+from argentina_regional_cidades import atualizar_cidades
 
 AR_DIR = OUT_DIR / "argentina"
 RAW_JOGOS = OUT_DIR / "debug_argentina_sofascore_raw.json"
@@ -86,7 +87,8 @@ ID_LPF = 155
 # Ligas locais em que o SofaScore quase nunca tem o estadio dos times: sem
 # venue, o jogo vai para a cidade-sede da liga (aproximacao, marcada no extra
 # como local_aproximado=1). So ligas de uma cidade/microrregiao - o Regional
-# Federal Amateur e nacional e fica sem coordenada mesmo.
+# Federal Amateur e nacional: la cada time vai para a cidade da sua liga,
+# tirada da programacao do ascensodelinterior (argentina_regional_cidades.py).
 _GENERAL_ROCA = ("General Roca", -39.0333, -67.5833)
 _RIO_TERCERO = ("Río Tercero", -32.1730, -64.1141)
 SEDE_LIGA = {
@@ -266,7 +268,8 @@ def categoria_de(nome: str) -> str:
     return ""
 
 
-def evento_para_jogo(ev: dict, uid: int, cat: int, nome_sofascore: str, venues: dict) -> Jogo | None:
+def evento_para_jogo(ev: dict, uid: int, cat: int, nome_sofascore: str, venues: dict,
+                     cidades_times: dict | None = None) -> Jogo | None:
     home = ev.get("homeTeam") or {}
     away = ev.get("awayTeam") or {}
     mandante = (home.get("name") or home.get("shortName") or "").strip()
@@ -310,6 +313,10 @@ def evento_para_jogo(ev: dict, uid: int, cat: int, nome_sofascore: str, venues: 
     cidade = venue.get("cidade", "")
     if lat is None and uid in SEDE_LIGA:
         cidade, lat, lng = SEDE_LIGA[uid]
+        extra.append("local_aproximado=1")
+    elif lat is None and str(home.get("id")) in (cidades_times or {}):
+        ct = cidades_times[str(home.get("id"))]
+        cidade, lat, lng = ct["cidade"], ct["lat"], ct["lng"]
         extra.append("local_aproximado=1")
     slug = ev.get("slug", "")
     url = f"https://www.sofascore.com/football/match/{slug}/{ev.get('customId', '')}#id:{ev.get('id')}" if slug else ""
@@ -433,6 +440,8 @@ def main() -> None:
         browser.close()
 
     CACHE_VENUES.write_text(json.dumps(venues, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    cidades_times = atualizar_cidades(
+        [(nome, ev) for _, _, nome, eventos in eventos_por_torneio for ev in eventos], venues)
 
     # Jogo remarcado: o SofaScore cria evento novo e o velho continua
     # "programado" no mesmo dia. Fica o evento mais novo (maior id).
@@ -453,7 +462,7 @@ def main() -> None:
             if (ch and eid != mais_novo[ch]) or eid in ids_vistos:
                 continue
             ids_vistos.add(eid)
-            jogo = evento_para_jogo(ev, uid, cat, nome, venues)
+            jogo = evento_para_jogo(ev, uid, cat, nome, venues, cidades_times)
             if not jogo:
                 continue
             if date.fromisoformat(jogo.data) >= hoje and "status=Realizado" not in jogo.extra:
