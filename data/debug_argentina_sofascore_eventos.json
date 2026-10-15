@@ -2,267 +2,813 @@
   "Liga Profesional de Fútbol": {
     "id": 155,
     "categoria": 48,
-    "temporada": null,
+    "temporada": "Primera LPF 2026",
+    "eventos_janela": 77,
+    "erro": null
+  },
+  "Copa de la Liga Profesional": {
+    "id": 13475,
+    "categoria": 48,
+    "temporada": "Copa de la Liga 2024",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
   },
   "Copa Argentina": {
     "id": 1024,
     "categoria": 48,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Copa Argentina 2026",
+    "eventos_janela": 2,
+    "erro": null
   },
   "Primera Nacional": {
     "id": 703,
     "categoria": 48,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Primera Nacional 2026",
+    "eventos_janela": 73,
+    "erro": null
   },
   "Primera B Metropolitana": {
     "id": 1347,
     "categoria": 48,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Primera B 2026",
+    "eventos_janela": 44,
+    "erro": null
   },
   "Primera C Metropolitana": {
     "id": 11386,
     "categoria": 48,
-    "temporada": null,
+    "temporada": "Primera C 2026",
+    "eventos_janela": 23,
+    "erro": null
+  },
+  "Primera D Metropolitana": {
+    "id": 14101,
+    "categoria": 48,
+    "temporada": "Primera D Metropolitana 2023",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
   },
   "Torneo Federal A": {
     "id": 14090,
     "categoria": 48,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Torneo Federal A 2026",
+    "eventos_janela": 28,
+    "erro": null
   },
   "Supercopa Argentina": {
     "id": 1618,
     "categoria": 48,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Super Cup 2026",
+    "eventos_janela": 1,
+    "erro": null
   },
   "Campeonato de Fútbol Femenino": {
     "id": 10495,
     "categoria": 48,
-    "temporada": null,
+    "temporada": "Primera Division, Women 2026",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
+  },
+  "Trofeo de Campeones de la Liga Profesional": {
+    "id": 18436,
+    "categoria": 48,
+    "temporada": "Trofeo de Campeones 2025",
+    "eventos_janela": 0,
+    "erro": null
   },
   "Campeonato de Reserva de Primera División": {
     "id": 18817,
     "categoria": 48,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Primera LPF, Reserves 2026",
+    "eventos_janela": 108,
+    "erro": null
   },
-  "Torneo Regional Federal Amateur – Región Norte": {
-    "id": 21338,
-    "categoria": 1783,
-    "temporada": null,
+  "Supercopa Internacional": {
+    "id": 19841,
+    "categoria": 48,
+    "temporada": "Supercopa Internacional 2025",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
   },
-  "Torneo Regional Federal Amateur – Región Litoral Norte": {
-    "id": 21339,
-    "categoria": 1783,
-    "temporada": null,
+  "Copa de la Liga Reserves": {
+    "id": 20877,
+    "categoria": 48,
+    "temporada": "Copa de la Liga, Reserves 2024",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
-  },
-  "Torneo Regional Federal Amateur – Región Centro": {
-    "id": 21340,
-    "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
-  },
-  "Torneo Regional Federal Amateur – Región Litoral Sur": {
-    "id": 21341,
-    "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
-  },
-  "Torneo Regional Federal Amateur – Región Cuyo": {
-    "id": 21342,
-    "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
-  },
-  "Torneo Regional Federal Amateur – Región Pampeana Norte": {
-    "id": 21343,
-    "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
-  },
-  "Torneo Regional Federal Amateur – Región Pampeana Sur": {
-    "id": 21344,
-    "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
-  },
-  "Torneo Regional Federal Amateur – Región Patagónica": {
-    "id": 21345,
-    "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
   },
   "Torneo Regional Federal Amateur": {
     "id": 21346,
     "categoria": 1783,
-    "temporada": null,
+    "temporada": "Torneo Regional Federal Amateur 25/26",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
   },
-  "Torneo Regional Federal Juvenil Amateur": {
-    "id": 22246,
+  "Torneo Regional Federal Amateur – Región Litoral Norte": {
+    "id": 21339,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Torneo Regional Federal Amateur – Región Litoral Norte 2026",
+    "eventos_janela": 16,
+    "erro": null
   },
-  "Copa País": {
-    "id": 26840,
+  "Torneo Regional Federal Amateur – Región Centro": {
+    "id": 21340,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Torneo Regional Federal Amateur – Región Centro 2026",
+    "eventos_janela": 8,
+    "erro": null
   },
-  "Copa Córdoba": {
-    "id": 29029,
+  "Torneo Regional Federal Amateur – Región Cuyo": {
+    "id": 21342,
     "categoria": 1783,
-    "temporada": null,
+    "temporada": "Torneo Regional Federal Amateur – Región Cuyo 2026",
+    "eventos_janela": 8,
+    "erro": null
+  },
+  "Torneo Regional Federal Amateur – Región Litoral Sur": {
+    "id": 21341,
+    "categoria": 1783,
+    "temporada": "Torneo Regional Federal Amateur – Región Litoral Sur 2026",
+    "eventos_janela": 16,
+    "erro": null
+  },
+  "Torneo Regional Federal Amateur – Región Norte": {
+    "id": 21338,
+    "categoria": 1783,
+    "temporada": "Torneo Regional Federal Amateur – Región Norte 2026",
+    "eventos_janela": 16,
+    "erro": null
+  },
+  "Torneo Regional Federal Amateur – Región Patagónica": {
+    "id": 21345,
+    "categoria": 1783,
+    "temporada": "Torneo Regional Federal Amateur – Región Patagónica 2026",
+    "eventos_janela": 12,
+    "erro": null
+  },
+  "Torneo Regional Federal Amateur – Región Pampeana Sur": {
+    "id": 21344,
+    "categoria": 1783,
+    "temporada": "Torneo Regional Federal Amateur – Región Pampeana Sur 2026",
+    "eventos_janela": 9,
+    "erro": null
+  },
+  "Torneo Regional Federal Amateur – Región Pampeana Norte": {
+    "id": 21343,
+    "categoria": 1783,
+    "temporada": "Torneo Regional Federal Amateur – Región Pampeana Norte 2026",
+    "eventos_janela": 8,
+    "erro": null
+  },
+  "Liga Independiente de Las Colonias, Apertura": {
+    "id": 21835,
+    "categoria": 1783,
+    "temporada": "Liga Independiente de Las Colonias, Apertura 2026",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
   },
   "Liga Independiente de Las Colonias, Clausura": {
     "id": 21836,
     "categoria": 1783,
+    "temporada": "Liga Independiente de Las Colonias, Clausura 2026",
+    "eventos_janela": 6,
+    "erro": null
+  },
+  "Federación Cordobesa de Futbol": {
+    "id": 21898,
+    "categoria": 1783,
     "temporada": null,
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": "seasons HTTP 404"
+  },
+  "Campeonato Provincial de Clubes de Primera División": {
+    "id": 21896,
+    "categoria": 1783,
+    "temporada": "2026",
+    "eventos_janela": 0,
+    "erro": null
   },
   "Liga Regional Colón, Primera": {
     "id": 21919,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Clausura 2026",
+    "eventos_janela": 8,
+    "erro": null
   },
-  "Liga Regional de Fútbol General Roca": {
+  "Liga Regional de Fútbol General Roca": {
     "id": 21993,
+    "categoria": 1783,
+    "temporada": "Clausura 2026",
+    "eventos_janela": 12,
+    "erro": null
+  },
+  "Liga Regional Futbol del Sur - Corral de Bustos": {
+    "id": 21966,
+    "categoria": 1783,
+    "temporada": "Clausura 2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional de Coronel Suárez, Apertura": {
+    "id": 21967,
+    "categoria": 1783,
+    "temporada": "Liga Regional de Coronel Suárez, Apertura 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Villamariense de Fútbol": {
+    "id": 22026,
+    "categoria": 1783,
+    "temporada": "2024 Apertura",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Bellvillense de Fútbol": {
+    "id": 22033,
+    "categoria": 1783,
+    "temporada": "Liga Bellvillense de Fútbol 2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Supercopa de Las Colonias": {
+    "id": 22110,
+    "categoria": 1783,
+    "temporada": "Supercopa de Las Colonias 2024",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Riotercerense de Fútbol": {
+    "id": 22211,
     "categoria": 1783,
     "temporada": null,
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": "seasons HTTP 404"
+  },
+  "Liga Regional Riotercerense de Fútbol - Primera A": {
+    "id": 22182,
+    "categoria": 1783,
+    "temporada": "2026",
+    "eventos_janela": 0,
+    "erro": null
   },
   "Liga Regional Riotercerense de Fútbol - Primera B": {
     "id": 22183,
     "categoria": 1783,
+    "temporada": "Liga Regional Riotercerense de Fútbol - Primera B 2026",
+    "eventos_janela": 10,
+    "erro": null
+  },
+  "Asociación Rosarina de Fútbol": {
+    "id": 22229,
+    "categoria": 1783,
     "temporada": null,
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": "seasons HTTP 404"
+  },
+  "Liga Rosarina de Fútbol, División A": {
+    "id": 22226,
+    "categoria": 1783,
+    "temporada": "Liga Rosarina de Fútbol, División A 2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Rosarina de Fútbol, División B": {
+    "id": 22227,
+    "categoria": 1783,
+    "temporada": "Liga Rosarina de Fútbol, División B 2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Torneo Regional Federal Juvenil Amateur": {
+    "id": 22246,
+    "categoria": 1783,
+    "temporada": "2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional de Canals, Primera División": {
+    "id": 22280,
+    "categoria": 1783,
+    "temporada": "Clausura 2024",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional de Canals, División Reserva": {
+    "id": 25296,
+    "categoria": 1783,
+    "temporada": "Apertura 2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Zona Oro": {
+    "id": 22395,
+    "categoria": 1783,
+    "temporada": "2024",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Departamental de Fútbol de Punilla": {
+    "id": 22396,
+    "categoria": 1783,
+    "temporada": "Clausura 2024",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Rafaelina de Fútbol - Primera A": {
+    "id": 22598,
+    "categoria": 1783,
+    "temporada": "2024",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Santafesina de Fútbol - Primera A": {
+    "id": 22692,
+    "categoria": 1783,
+    "temporada": "Clausura 2024",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Bellvillense de Fútbol Reserva": {
+    "id": 22775,
+    "categoria": 1783,
+    "temporada": "Liga Bellvillense de Fútbol Reserva 2025",
+    "eventos_janela": 0,
+    "erro": null
   },
   "Liga Regional de Coronel Suárez, Clausura": {
     "id": 23050,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Liga Regional de Coronel Suárez, Clausura 26/27",
+    "eventos_janela": 11,
+    "erro": null
   },
-  "U20 Liga Regional de Fútbol General Roca": {
+  "Copa Hermes Desio": {
+    "id": 24107,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U20 Liga Regional de Fútbol General Roca": {
     "id": 25035,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "U20 Liga Regional de Fútbol General Roca 2026",
+    "eventos_janela": 10,
+    "erro": null
   },
-  "U15 Liga Regional de Fútbol General Roca": {
+  "U15 Liga Regional de Fútbol General Roca": {
     "id": 25036,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Clausura 2026",
+    "eventos_janela": 12,
+    "erro": null
   },
-  "U13 Liga Regional de Fútbol General Roca": {
+  "U13 Liga Regional de Fútbol General Roca": {
     "id": 25037,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Clausura 2026",
+    "eventos_janela": 10,
+    "erro": null
   },
-  "U11 Liga Regional de Fútbol General Roca": {
+  "U11 Liga Regional de Fútbol General Roca": {
     "id": 25038,
+    "categoria": 1783,
+    "temporada": "Clausura 2026",
+    "eventos_janela": 12,
+    "erro": null
+  },
+  "Liga Regional de Fútbol General Roca, Femenino": {
+    "id": 25039,
+    "categoria": 1783,
+    "temporada": "Clausura 2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Fiesta Nacional del Fútbol Infantil": {
+    "id": 25287,
     "categoria": 1783,
     "temporada": null,
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": "seasons HTTP 404"
   },
   "Liga Regional Colón, Reserva": {
     "id": 25396,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Clausura 2026",
+    "eventos_janela": 8,
+    "erro": null
   },
   "Liga Regional Colón, Femenino": {
     "id": 25397,
     "categoria": 1783,
-    "temporada": null,
+    "temporada": "Clausura 2026",
+    "eventos_janela": 9,
+    "erro": null
+  },
+  "Liga Regional Colón, Cuarta": {
+    "id": 25398,
+    "categoria": 1783,
+    "temporada": "Clausura 2026",
+    "eventos_janela": 9,
+    "erro": null
+  },
+  "Liga Regional Colón, Quinta": {
+    "id": 25399,
+    "categoria": 1783,
+    "temporada": "Clausura 2026",
+    "eventos_janela": 9,
+    "erro": null
+  },
+  "Liga Regional Colón, Sexta": {
+    "id": 25400,
+    "categoria": 1783,
+    "temporada": "Clausura 2026",
+    "eventos_janela": 9,
+    "erro": null
+  },
+  "Liga Regional Colón, Séptima": {
+    "id": 25401,
+    "categoria": 1783,
+    "temporada": "Clausura 2026",
+    "eventos_janela": 9,
+    "erro": null
+  },
+  "Liga Regional Colón, Octava": {
+    "id": 25402,
+    "categoria": 1783,
+    "temporada": "Clausura 2026",
+    "eventos_janela": 9,
+    "erro": null
+  },
+  "Liga Riotercerense de Fútbol - División Reserva A": {
+    "id": 25765,
+    "categoria": 1783,
+    "temporada": "Apertura 2025",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
+  },
+  "Liga Riotercerense de Fútbol - División Reserva B": {
+    "id": 25766,
+    "categoria": 1783,
+    "temporada": "Apertura 2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Sanjuanina": {
+    "id": 25941,
+    "categoria": 1783,
+    "temporada": "Apertura 2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional Colón, Copa Oro, Cuarta": {
+    "id": 26025,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional Colón, Copa Oro, Quinta": {
+    "id": 26026,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional Colón, Copa Oro, Sexta": {
+    "id": 26027,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional Colón, Copa Oro, Séptima": {
+    "id": 26028,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional Colón, Copa Oro, Octava": {
+    "id": 26029,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa País": {
+    "id": 26840,
+    "categoria": 1783,
+    "temporada": "Copa País 2026",
+    "eventos_janela": 4,
+    "erro": null
+  },
+  "Copa País, Región Pampeana Norte": {
+    "id": 26841,
+    "categoria": 1783,
+    "temporada": "Copa País, Región Pampeana Norte 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa País, Región Pampeana Sur": {
+    "id": 26842,
+    "categoria": 1783,
+    "temporada": "Copa País, Región Pampeana Sur 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa País, Región Centro": {
+    "id": 26844,
+    "categoria": 1783,
+    "temporada": "Copa País, Región Centro 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa País, Región Cuyo": {
+    "id": 26845,
+    "categoria": 1783,
+    "temporada": "Copa País, Región Cuyo 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa País, Región Litoral Sur": {
+    "id": 26846,
+    "categoria": 1783,
+    "temporada": "Copa País, Región Litoral Sur 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa País, Región Litoral Norte": {
+    "id": 26847,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa País, Región Norte": {
+    "id": 26848,
+    "categoria": 1783,
+    "temporada": "Copa País, Región Norte 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa País, Región Patagonica": {
+    "id": 26849,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Torneos Inferiores Newell’s Old Boys": {
+    "id": 28004,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Copa Córdoba": {
+    "id": 29029,
+    "categoria": 1783,
+    "temporada": "Copa Córdoba 2026",
+    "eventos_janela": 4,
+    "erro": null
+  },
+  "Torneo Clausura “Marcos Barlatay”": {
+    "id": 29901,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Torneos SQ3": {
+    "id": 30867,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Newell's Cup U12": {
+    "id": 31012,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Torneo Provincial Femenino": {
+    "id": 31227,
+    "categoria": 1783,
+    "temporada": "2025",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Torneo Preparación": {
+    "id": 31820,
+    "categoria": 1783,
+    "temporada": "2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Regional San Francisco": {
+    "id": 31821,
+    "categoria": 1783,
+    "temporada": "2026 Clausura",
+    "eventos_janela": 0,
+    "erro": null
   },
   "Divisional A": {
     "id": 31822,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "2026",
+    "eventos_janela": 72,
+    "erro": null
   },
   "Divisional B": {
     "id": 31823,
     "categoria": 1783,
-    "temporada": null,
+    "temporada": "2026",
+    "eventos_janela": 48,
+    "erro": null
+  },
+  "Newell's Cup U11": {
+    "id": 32038,
+    "categoria": 1783,
+    "temporada": "2026",
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": null
+  },
+  "Newell's Cup U10": {
+    "id": 32039,
+    "categoria": 1783,
+    "temporada": "2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Newell's Cup U9": {
+    "id": 32040,
+    "categoria": 1783,
+    "temporada": "2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga de Fútbol de Comodoro Rivadavia": {
+    "id": 35278,
+    "categoria": 1783,
+    "temporada": "Liga de Fútbol de Comodoro Rivadavia 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U16 Séptima LPF": {
+    "id": 35369,
+    "categoria": 1783,
+    "temporada": "Torneo Juvenil Argentino Sub-16 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U14 Novena División LPF": {
+    "id": 35591,
+    "categoria": 1783,
+    "temporada": "U14 Novena División LPF 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U15 Octava LPF": {
+    "id": 35750,
+    "categoria": 1783,
+    "temporada": "U15 Octava LPF 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U18 Quinta LPF": {
+    "id": 35807,
+    "categoria": 1783,
+    "temporada": "U18 Quinta LPF 2026",
+    "eventos_janela": 0,
+    "erro": null
   },
   "Liga Rionegrina de Fútbol": {
     "id": 35872,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Clausura 2026",
+    "eventos_janela": 7,
+    "erro": null
   },
-  "Liga de Fútbol Centro Santa Cruz": {
+  "Liga de Fútbol Valle del Chubut": {
+    "id": 35909,
+    "categoria": 1783,
+    "temporada": "Liga de Fútbol Valle del Chubut 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U19 Cuarta División": {
+    "id": 35921,
+    "categoria": 1783,
+    "temporada": "U19 Cuarta División 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U16 Supercopa Argentina": {
+    "id": 35947,
+    "categoria": 1783,
+    "temporada": "U16 Supercopa Argentina 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U16 Nacional B Juvenil": {
+    "id": 35954,
+    "categoria": 1783,
+    "temporada": "U16 Nacional B Juvenil 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "U17 Sexta LPF": {
+    "id": 36040,
+    "categoria": 1783,
+    "temporada": "U17 Sexta LPF 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga de Fútbol Centro Santa Cruz ": {
     "id": 36087,
     "categoria": 1783,
-    "temporada": null,
-    "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "temporada": "Liga de Fútbol Centro Santa Cruz  2026",
+    "eventos_janela": 24,
+    "erro": null
   },
-  "Liga Regional de Fútbol de Laboulaye": {
-    "id": 36552,
+  "Federación Santafesina de Fútbol": {
+    "id": 22636,
     "categoria": 1783,
     "temporada": null,
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": "seasons HTTP 404"
   },
   "Liga Marplatense de Fútbol": {
     "id": 37591,
     "categoria": 1783,
+    "temporada": "Liga Marplatense de Fútbol 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Rafaelina de Fútbol": {
+    "id": 22597,
+    "categoria": 1783,
     "temporada": null,
     "eventos_janela": 0,
-    "erro": "seasons HTTP 403"
+    "erro": "seasons HTTP 404"
+  },
+  "Liga Regional de Fútbol San Francisco": {
+    "id": 31819,
+    "categoria": 1783,
+    "temporada": null,
+    "eventos_janela": 0,
+    "erro": "seasons HTTP 404"
+  },
+  "Liga Regional de Fútbol de Laboulaye": {
+    "id": 36552,
+    "categoria": 1783,
+    "temporada": "Liga Regional de Fútbol de Laboulaye 2026",
+    "eventos_janela": 25,
+    "erro": null
+  },
+  "Liga Sanluiseña de Fútbol": {
+    "id": 37509,
+    "categoria": 1783,
+    "temporada": "Liga sanluiseña de fútbol  2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Santafesina de Fútbol": {
+    "id": 22691,
+    "categoria": 1783,
+    "temporada": null,
+    "eventos_janela": 0,
+    "erro": "seasons HTTP 404"
+  },
+  "Liga Santiagueña de Fútbol": {
+    "id": 37544,
+    "categoria": 1783,
+    "temporada": "Liga Santiagueña de Fútbol 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga del Sur de Bahía Blanca": {
+    "id": 37532,
+    "categoria": 1783,
+    "temporada": "Liga del Sur de Bahía Blanca 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Newell's Cup U16": {
+    "id": 38759,
+    "categoria": 1783,
+    "temporada": "Newell's Cup U16 2026",
+    "eventos_janela": 4,
+    "erro": null
+  },
+  "U20 Cuarta LPF": {
+    "id": 38845,
+    "categoria": 1783,
+    "temporada": "U20 Cuarta LPF 2026",
+    "eventos_janela": 0,
+    "erro": null
   }
 }
