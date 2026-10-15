@@ -8,7 +8,7 @@
   "Inglaterra - Championship": {
     "id": 18,
     "temporada": "Championship 26/27",
-    "eventos_janela": 461,
+    "eventos_janela": 457,
     "erro": null
   },
   "Inglaterra - League One": {
@@ -25,15 +25,11 @@
   },
   "Inglaterra - National League": {
     "id": 173,
-    "temporada": "National League 26/27",
-    "eventos_janela": 422,
-    "erro": null
+    "erro": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
   },
   "Inglaterra - FA Cup": {
     "id": 19,
-    "temporada": "FA Cup 26/27",
-    "eventos_janela": 77,
-    "erro": null
+    "erro": "Page.evaluate: Execution context was destroyed, most likely because of a navigation"
   },
   "Inglaterra - FA Cup - Qualificação": {
     "id": 1696,
@@ -74,7 +70,7 @@
   "Inglaterra - Midland League Cup": {
     "id": 36931,
     "temporada": "Midland Football League Cup 26/27",
-    "eventos_janela": 17,
+    "eventos_janela": 18,
     "erro": null
   },
   "Inglaterra - Women's Super League": {
@@ -134,7 +130,7 @@
   "Escócia - Challenge Cup": {
     "id": 331,
     "temporada": "Challenge Cup 26/27",
-    "eventos_janela": 20,
+    "eventos_janela": 36,
     "erro": null
   },
   "Escócia - SWPL": {
