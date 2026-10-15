@@ -152,16 +152,47 @@ class Jogo:
 
 JS_TORNEIOS = """
 async (cats) => {
-    const out = [];
+    const out = [], status = [];
     for (const c of cats) {
-        const r = await fetch(`https://www.sofascore.com/api/v1/category/${c}/unique-tournaments`);
+        let r;
+        try { r = await fetch(`https://www.sofascore.com/api/v1/category/${c}/unique-tournaments`); }
+        catch (e) { status.push(`${c}: ${e}`); continue; }
+        status.push(`${c}: HTTP ${r.status}`);
         if (!r.ok) continue;
         for (const g of ((await r.json()).groups || []))
             for (const t of (g.uniqueTournaments || [])) out.push({ id: t.id, nome: t.name, cat: c });
     }
-    return out;
+    return { torneios: out, status };
 }
 """
+
+# Plano B se a listagem por categoria vier vazia (no GitHub Actions o
+# primeiro fetch as vezes cai no challenge do Cloudflare): os torneios com
+# jogo em 14/10/2026. (id, categoria, nome)
+TORNEIOS_CONHECIDOS = [
+    (155, 48, "Liga Profesional de Fútbol"), (1024, 48, "Copa Argentina"), (703, 48, "Primera Nacional"),
+    (1347, 48, "Primera B Metropolitana"), (11386, 48, "Primera C Metropolitana"), (14090, 48, "Torneo Federal A"),
+    (1618, 48, "Supercopa Argentina"), (10495, 48, "Campeonato de Fútbol Femenino"),
+    (18817, 48, "Campeonato de Reserva de Primera División"),
+    (21338, 1783, "Torneo Regional Federal Amateur – Región Norte"),
+    (21339, 1783, "Torneo Regional Federal Amateur – Región Litoral Norte"),
+    (21340, 1783, "Torneo Regional Federal Amateur – Región Centro"),
+    (21341, 1783, "Torneo Regional Federal Amateur – Región Litoral Sur"),
+    (21342, 1783, "Torneo Regional Federal Amateur – Región Cuyo"),
+    (21343, 1783, "Torneo Regional Federal Amateur – Región Pampeana Norte"),
+    (21344, 1783, "Torneo Regional Federal Amateur – Región Pampeana Sur"),
+    (21345, 1783, "Torneo Regional Federal Amateur – Región Patagónica"),
+    (21346, 1783, "Torneo Regional Federal Amateur"), (22246, 1783, "Torneo Regional Federal Juvenil Amateur"),
+    (26840, 1783, "Copa País"), (29029, 1783, "Copa Córdoba"),
+    (21836, 1783, "Liga Independiente de Las Colonias, Clausura"), (21919, 1783, "Liga Regional Colón, Primera"),
+    (21993, 1783, "Liga Regional de Fútbol General Roca"), (22183, 1783, "Liga Regional Riotercerense de Fútbol - Primera B"),
+    (23050, 1783, "Liga Regional de Coronel Suárez, Clausura"), (25035, 1783, "U20 Liga Regional de Fútbol General Roca"),
+    (25036, 1783, "U15 Liga Regional de Fútbol General Roca"), (25037, 1783, "U13 Liga Regional de Fútbol General Roca"),
+    (25038, 1783, "U11 Liga Regional de Fútbol General Roca"), (25396, 1783, "Liga Regional Colón, Reserva"),
+    (25397, 1783, "Liga Regional Colón, Femenino"), (31822, 1783, "Divisional A"), (31823, 1783, "Divisional B"),
+    (35872, 1783, "Liga Rionegrina de Fútbol"), (36087, 1783, "Liga de Fútbol Centro Santa Cruz"),
+    (36552, 1783, "Liga Regional de Fútbol de Laboulaye"), (37591, 1783, "Liga Marplatense de Fútbol"),
+]
 
 # Temporada atual + eventos (last/next paginados) de um torneio, parando
 # quando passa da janela de datas para nao varrer a temporada toda.
@@ -348,9 +379,19 @@ def main() -> None:
         page.goto("https://www.sofascore.com/", wait_until="domcontentloaded", timeout=60000)
         page.wait_for_timeout(1500)
 
-        torneios = page.evaluate(JS_TORNEIOS, CATEGORIAS)
+        torneios = []
+        for tentativa in range(3):
+            res = page.evaluate(JS_TORNEIOS, CATEGORIAS)
+            torneios = res["torneios"]
+            print(f"[INFO] categorias (tentativa {tentativa + 1}): {', '.join(res['status'])} -> {len(torneios)} torneios")
+            if torneios:
+                break
+            page.wait_for_timeout(4000)
+            page.goto("https://www.sofascore.com/football/argentina", wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_timeout(3000)
         if not torneios:
-            raise SystemExit("[ERRO] SofaScore nao devolveu nenhum torneio argentino (bloqueio?)")
+            print("[WARN] listagem por categoria vazia; usando TORNEIOS_CONHECIDOS")
+            torneios = [{"id": i, "cat": c, "nome": n} for i, c, n in TORNEIOS_CONHECIDOS]
         vistos: set[int] = set()
         for t in torneios:
             uid = t["id"]
