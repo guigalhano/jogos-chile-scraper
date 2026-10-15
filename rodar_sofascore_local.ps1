@@ -46,7 +46,8 @@ try {
     git fetch -q origin main
     git reset -q --hard origin/main
 
-    # Caches de venue ficam fora do git reset (sao versionados, mas a rodada
+    # Caches (venue, cidades do Regional, geocodificacao) ficam fora do git
+    # reset (sao versionados, mas a rodada
     # pode ter acrescentado times): guardados junto com os raw.
     $tmp = Join-Path $env:TEMP "jogos_sofascore_local"
     New-Item -ItemType Directory -Force $tmp | Out-Null
@@ -58,6 +59,7 @@ try {
     $arquivos = @(
         "data\debug_argentina_sofascore_raw.json", "data\debug_argentina_sofascore_hist_raw.json",
         "data\debug_argentina_sofascore_eventos.json", "data\argentina\cache_venues_sofascore.json",
+        "data\argentina\cache_cidades_times.json", "data\argentina\cache_geocoding.json",
         "data\debug_uk_sofascore_raw.json", "data\debug_uk_sofascore_hist_raw.json",
         "data\debug_uk_sofascore_eventos.json", "data\reino_unido\cache_venues_sofascore.json"
     )
