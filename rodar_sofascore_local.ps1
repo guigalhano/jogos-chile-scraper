@@ -33,10 +33,13 @@ $log = "$Clone\logs\sofascore_local_$(Get-Date -Format yyyy-MM-dd).log"
 Start-Transcript -Path $log -Append | Out-Null
 
 function Rodar([string]$descricao, [string[]]$argumentos) {
-    Write-Output "=== $descricao"
-    & $Python @argumentos 2>&1 | ForEach-Object { "$_" }
-    if ($LASTEXITCODE -ne 0) { Write-Output "[ERRO] $descricao terminou com codigo $LASTEXITCODE" }
-    return ($LASTEXITCODE -eq 0)
+    # Out-Host: a saida do Python vai para o log (transcript) e NAO vira valor
+    # de retorno da funcao (senao $ok vira um array, sempre "verdadeiro").
+    Write-Host "=== $descricao"
+    & $Python @argumentos 2>&1 | ForEach-Object { "$_" } | Out-Host
+    $codigo = $LASTEXITCODE
+    if ($codigo -ne 0) { Write-Host "[ERRO] $descricao terminou com codigo $codigo" }
+    return ($codigo -eq 0)
 }
 
 try {
@@ -81,14 +84,14 @@ try {
         }
 
         git diff --cached --quiet
-        if ($LASTEXITCODE -eq 0) { Write-Output "Sem mudancas para commitar"; break }
+        if ($LASTEXITCODE -eq 0) { Write-Host "Sem mudancas para commitar"; break }
 
         git commit -q -m "Atualiza jogos SofaScore (Argentina + Reino Unido) - rodada local"
-        if ($SemPush) { Write-Output "[-SemPush] commit local feito, sem push"; break }
+        if ($SemPush) { Write-Host "[-SemPush] commit local feito, sem push"; break }
 
         git push -q origin HEAD:main
-        if ($LASTEXITCODE -eq 0) { Write-Output "Push OK na tentativa $tentativa"; break }
-        Write-Output "Push falhou (tentativa $tentativa), tentando de novo..."
+        if ($LASTEXITCODE -eq 0) { Write-Host "Push OK na tentativa $tentativa"; break }
+        Write-Host "Push falhou (tentativa $tentativa), tentando de novo..."
         Start-Sleep -Seconds (Get-Random -Minimum 5 -Maximum 15)
     }
 }
