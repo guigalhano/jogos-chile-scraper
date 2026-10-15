@@ -99,13 +99,13 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 173314
+    "bytes": 173425
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
     "status": 200,
-    "bytes": 11485
+    "bytes": 11718
   },
   {
     "copa": "FA Sunday Cup",
@@ -130,26 +130,26 @@
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
-    "status": 404,
-    "bytes": 140769
+    "status": 200,
+    "bytes": 140763
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 179814
+    "bytes": 180278
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 21915
+    "bytes": 22625
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
     "status": 200,
-    "bytes": 10556
+    "bytes": 10772
   },
   {
     "copa": "Women's FA Cup",
@@ -157,8 +157,8 @@
     "jogos_parseados": 20,
     "amostra": [
       "2026-10-24 17:30 Harrogate Town AFC Women v Bolton Wanderers Women @ ",
-      "2026-10-25 14:00 Leeds Modernians Women v Liverpool Feds WFC @ ",
-      "2026-10-25 14:00 Norton & Stockton Ancients Ladies v AFC Fylde Women @ "
+      "2026-10-25 12:00 Exeter City Women v Hashtag United Women @ ",
+      "2026-10-25 14:00 Leeds Modernians Women v Liverpool Feds WFC @ "
     ]
   },
   {
@@ -166,9 +166,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "jogos_parseados": 20,
     "amostra": [
+      "2026-10-25 14:00 Luton Town Ladies v Cambridge United Women @ ",
       "2026-10-25 14:00 Leafield Athletic Ladies v Mansfield Town Ladies @ ",
-      "2026-10-25 14:00 Norwich City Women v Redditch Borough Women @ ",
-      "2026-10-25 14:00 Royston Town Women v Crewe Alexandra Women @ "
+      "2026-10-25 14:00 Norwich City Women v Redditch Borough Women @ "
     ]
   },
   {
@@ -176,40 +176,25 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
     "jogos_parseados": 8,
     "amostra": [
-      "2026-10-25 14:00 Hammersmith Women v AFC Wimbledon Women @ ",
-      "2026-10-25 14:00 Fulham Women v Enfield Town Ladies @ ",
-      "2026-10-25 14:00 Winchester City Flyers Ladies v Keynsham Town Ladies @ "
+      "2026-10-25 14:00 Maidenhead United Women v Andover New Street Ladies @ ",
+      "2026-10-25 14:00 AFC Portchester Ladies v Oxford United Women @ ",
+      "2026-10-25 15:00 Harpenden Town Women v Chesterfield Women @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 175549
-  },
-  {
-    "copa": "FA Youth Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "status": 200,
-    "bytes": 5411
+    "bytes": 169661
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
-    "jogos_parseados": 20,
+    "jogos_parseados": 13,
     "amostra": [
-      "2026-10-14 19:00 Hartlepool United v Marine @ ",
-      "2026-10-14 19:30 Newcastle Town v Anstey Nomads @ ",
-      "2026-10-14 19:30 Maidenhead United v Chatham Town @ "
-    ]
-  },
-  {
-    "copa": "FA Youth Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 2,
-    "amostra": [
-      "2026-10-18 16:30 Walthamstow v Cockfosters @ ",
-      "2026-10-21 19:45 AFC Greenwich Borough v Merstham @ "
+      "2026-10-15 19:00 Guiseley AFC v FC Halifax Town @ ",
+      "2026-10-15 19:30 Blyth Spartans AFC v Stockton Town @ ",
+      "2026-10-15 19:45 Milton Keynes Irish v Grantham Town @ "
     ]
   }
 ]
