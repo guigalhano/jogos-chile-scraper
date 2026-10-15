@@ -1,8 +1,8 @@
 name: Atualizar Argentina (SofaScore - todas as competicoes) - diário
 
 on:
-  schedule:
-    - cron: "30 12 * * *"  # depois do job principal (AFA roda as 12:00)
+  # O SofaScore devolve 403 para o GitHub Actions: a rodada diaria e feita no PC
+  # (rodar_sofascore_local.ps1, Agendador de Tarefas). Aqui so manual.
   workflow_dispatch:
 
 permissions:
