@@ -1,0 +1,16 @@
+name: Diagnostico SofaScore no CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  diagnostico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - run: pip install requests curl_cffi
+      - run: python diag_sofascore_ci.py
