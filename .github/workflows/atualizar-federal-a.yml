@@ -51,6 +51,8 @@ jobs:
             if [ -f data/debug_federal_a_raw.json ]; then
               python merge_apos_reset.py --raw data/debug_federal_a_raw.json
             fi
+            # o SofaScore tambem traz o Federal A: fica a linha do ascensodelinterior
+            if [ -f argentina_comum.py ]; then python argentina_comum.py --dedupe; fi
 
             git add data/jogos_programados.csv data/jogos_programados.json data/historico_jogos.csv
             git add data/debug_federal_a_raw.json 2>/dev/null || true

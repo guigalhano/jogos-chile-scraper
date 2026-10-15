@@ -104,6 +104,8 @@ jobs:
               python merge_apos_reset.py --raw /tmp/dados_novos/diff_desta_rodada_raw.json
             fi
 
+            # Argentina: tira os jogos do SofaScore que a AFA tambem publicou
+            if [ -f argentina_comum.py ]; then python argentina_comum.py --dedupe; fi
             if [ -f corrigir_json_estadios_errados.py ]; then python corrigir_json_estadios_errados.py; fi
             if [ -f limpar_jogos_passados_programados.py ]; then python limpar_jogos_passados_programados.py; fi
 

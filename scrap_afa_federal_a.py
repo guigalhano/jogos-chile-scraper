@@ -177,6 +177,10 @@ class Partido:
     def to_row(self) -> dict:
         d = asdict(self)
         d["id"] = self.id
+        # o script.js usa lat/lng do topo da linha (o "lat=" do extra não é lido)
+        m = re.search(r"lat=(-?[\d.]+); lng=(-?[\d.]+)", self.extra)
+        if m:
+            d["lat"], d["lng"] = float(m.group(1)), float(m.group(2))
         d["atualizado_em"] = datetime.now().isoformat(timespec="seconds")
         return d
 
@@ -245,20 +249,23 @@ def parse_federal_a_secao(lines: list[str], url: str, debug_html: bool) -> list[
 
     # isola o trecho entre "TORNEO FEDERAL A" (cabeçalho da seção nesta
     # página) e o próximo torneio listado (ex.: "Primera Nacional").
-    inicio = None
-    fim = len(lines)
-    for i, l in enumerate(lines):
-        if inicio is None and re.match(r"^TORNEO FEDERAL A\b", l, re.IGNORECASE):
-            inicio = i
+    # "Torneo Federal A" aparece primeiro no MENU do site (seguido de "Torneo
+    # Regional", "Copa Argentina"...), entao a primeira ocorrencia dava uma
+    # secao vazia e o scraper devolvia 0 jogos. Fica a primeira ocorrencia
+    # cuja secao tem alguma linha com data/hora.
+    # Desde out/2026 o "Torneo Regional Federal Amateur" vem logo depois do
+    # Federal A na mesma pagina.
+    FIM_RE = re.compile(r"^(Primera Nacional|Torneo Promocional Amateur|Primera B|Primera C|Copa Argentina|Torneo Regional|Liga Profesional)\b", re.IGNORECASE)
+    secao: list[str] = []
+    for inicio, l in enumerate(lines):
+        if not re.match(r"^TORNEO FEDERAL A\b", l, re.IGNORECASE):
             continue
-        if inicio is not None and i > inicio:
-            if re.match(r"^(Primera Nacional|Torneo Promocional Amateur|Primera B|Primera C|Copa Argentina)\b", l, re.IGNORECASE):
-                fim = i
-                break
-    if inicio is None:
+        fim = next((i for i in range(inicio + 1, len(lines)) if FIM_RE.match(lines[i])), len(lines))
+        if any(DATA_HORA_RE.search(x) for x in lines[inicio:fim]):
+            secao = lines[inicio:fim]
+            break
+    if not secao:
         return []
-
-    secao = lines[inicio:fim]
 
     zona_atual = ""
     data_atual = ""
@@ -266,6 +273,11 @@ def parse_federal_a_secao(lines: list[str], url: str, debug_html: bool) -> list[
         m_zona = ZONA_RE.match(line)
         if m_zona:
             zona_atual = f"Zona {m_zona.group(1)}"
+            continue
+        # fase do mata-mata: "POR ASCENSO - SEMIFINALES - VUELTA",
+        # "REVÁLIDA - PRIMERA ETAPA - VUELTA"
+        if re.match(r"^(POR ASCENSO|REV[AÁ]LIDA|FINAL|SEMIFINAL|CUARTOS|OCTAVOS)\b", line, re.IGNORECASE) and not DATA_HORA_RE.search(line):
+            zona_atual = line.title()
             continue
 
         m_dh = DATA_HORA_RE.search(line)

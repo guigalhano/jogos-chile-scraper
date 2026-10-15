@@ -92,3 +92,16 @@ assert len(resultado) == 1, "duplicou! revise a chave de identidade"
 | Baianão (FBF) | `codigo_fbf` |
 | FFERJ (Rio) | `codigo_fferj` |
 | FMF (Minas), FMF-MT, CBF (PDF), FES | sem código estável — hash natural (fonte+competicao+data+hora+mandante+visitante) |
+| SofaScore (Argentina e Reino Unido) | `codigo_sofascore` |
+| Liga Marplatense (El Marplatense) | `codigo_lmf` (data + mandante + visitante: a hora às vezes só sai no artigo seguinte) |
+
+## Argentina: o mesmo jogo em fontes diferentes
+
+LPF, Primera Nacional, B, C, Federal A e Reserva chegam pela agenda da AFA,
+pelo ascensodelinterior (Federal A) e pelo SofaScore, cada um com o nome
+dos times escrito de um jeito. O merge por código não junta essas linhas;
+quem faz isso é o `python argentina_comum.py --dedupe`, que roda nos
+workflows da AFA, do Federal A e do SofaScore depois do merge pós-reset.
+Para ele funcionar, um scraper argentino novo precisa usar os mesmos
+rótulos de competição dos que já existem (ex.: "Argentina - Primera B",
+"Argentina - Torneo Proyección") e entrar em `PRIORIDADE_FONTE`.

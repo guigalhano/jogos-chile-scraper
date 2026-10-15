@@ -102,6 +102,10 @@ SECOES_DOMESTICAS = {
     "torneo federal a": "Argentina - Torneo Federal A",
     "promocional amateur": "Argentina - Promocional Amateur",
     "torneo proyección": "Argentina - Torneo Proyección",
+    # Em out/2026 o cabeçalho era "Torneo Proyección Clausura": sem estas
+    # chaves os jogos da Reserva caíam na seção anterior (Torneo Clausura).
+    "torneo proyección apertura": "Argentina - Torneo Proyección",
+    "torneo proyección clausura": "Argentina - Torneo Proyección",
     "fútbol femenino de primera división a": "Argentina - Fútbol Femenino Primera División A",
     "torneo femenino de primera b": "Argentina - Fútbol Femenino Primera B",
 }
@@ -273,6 +277,12 @@ def parse_afa_agenda(lines: list[str], today: date) -> list[Partido]:
                 # linha (ex.: "River (2°A) – Racing (3°A) – Estadio Florencio
                 # Sola"); nos outros torneios só aparecem 2 pedaços mesmo.
                 estadio = clean_text(" - ".join(partes[2:])) if len(partes) > 2 else ""
+                # "Aldosivi – Banfield (Zona A) – Predio": com o estádio no
+                # fim, ZONA_SUFIXO_RE (que exige a zona no final) não pega.
+                m_zona_v = ZONA_SUFIXO_RE.match(visitante)
+                if m_zona_v:
+                    visitante = clean_text(m_zona_v.group("resto"))
+                    rodada = rodada or clean_text(m_zona_v.group("zona"))
                 if mandante and visitante and len(mandante) < 60 and len(visitante) < 60:
                     partidos.append(Partido(
                         fonte="AFA",
