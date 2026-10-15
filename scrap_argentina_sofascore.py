@@ -51,8 +51,8 @@ from pathlib import Path
 
 from playwright.sync_api import sync_playwright
 
-from argentina_comum import FONTE_SOFASCORE, OUT_DIR, para_local
-from argentina_regional_cidades import atualizar_cidades
+from argentina_comum import FONTE_SOFASCORE, OUT_DIR, para_local, tokens_time
+from argentina_regional_cidades import Geocoder, atualizar_cidades
 
 AR_DIR = OUT_DIR / "argentina"
 RAW_JOGOS = OUT_DIR / "debug_argentina_sofascore_raw.json"
@@ -340,6 +340,104 @@ def evento_para_jogo(ev: dict, uid: int, cat: int, nome_sofascore: str, venues: 
     )
 
 
+RESERVA_RE = re.compile(r"^(.*?)\s+Reserves?$", re.IGNORECASE)
+
+
+# Venue que o SofaScore tem errado (time_sofascore -> o certo). Aplicado por
+# cima do cache a cada execucao.
+VENUE_CORRIGIDO = {
+    # Racing Club: o SofaScore poe o Cilindro (cidade "Buenos Aires") nas
+    # coordenadas de Cordoba
+    "3215": {"estadio": "Estadio Presidente Perón", "cidade": "Avellaneda", "lat": -34.66765, "lng": -58.36831},
+}
+
+
+def posicoes_aproximadas(eventos_por_torneio: list, venues: dict) -> dict[str, dict]:
+    """Posicao aproximada {time_sofascore: {cidade, lat, lng}} para mandantes
+    sem coordenada no SofaScore (o scraper marca com local_aproximado=1):
+
+    - "Boca Juniors Reserve" e outro time no SofaScore, sem venue: usa a
+      cidade do time principal (a Reserva joga no predio do clube, nao no
+      estadio - por isso so a cidade, sem nome de estadio);
+    - venue com cidade mas sem lat/lng (Estadio Ciudad de La Plata,
+      Chacarita em Villa Maipu...): geocodifica a cidade (cache do
+      argentina_regional_cidades.py)."""
+    nomes: dict[str, str] = {}
+    primeira: dict[str, str] = {}  # times da LPF e da Primera Nacional (os que tem Reserva)
+    mandantes: set[str] = set()
+    for uid, _, _, eventos in eventos_por_torneio:
+        for ev in eventos:
+            for lado in ("homeTeam", "awayTeam"):
+                t = ev.get(lado) or {}
+                if t.get("id") and t.get("name"):
+                    nomes[t["name"].strip().lower()] = str(t["id"])
+                    if uid in (ID_LPF, 703):
+                        primeira[t["name"].strip().lower()] = str(t["id"])
+            mandantes.add(str((ev.get("homeTeam") or {}).get("id")))
+
+    def time_principal(base: str) -> str | None:
+        """'talleres de cordoba' -> 'CA Talleres', 'racing' -> 'Racing Club':
+        o time da Primera com mais palavras em comum; no empate, o de nome
+        mais curto ('belgrano' -> 'Belgrano', nao 'Defensores de Belgrano')."""
+        # so entre os times da Primera: ha homonimos em ligas regionais (um
+        # "CA Independiente" de Pueblo San Jose roubava a Reserva do Rojo)
+        if base in primeira:
+            return primeira[base]
+        tb = tokens_time(base)
+        pontos = sorted(((len(tb & tokens_time(n)), -len(tokens_time(n)), tid) for n, tid in primeira.items()), reverse=True)
+        if pontos and pontos[0][0] > 0 and (len(pontos) == 1 or pontos[1][:2] < pontos[0][:2]):
+            return pontos[0][2]
+        return None
+
+    out: dict[str, dict] = {}
+
+    def coords(tid: str) -> dict | None:
+        v = venues.get(tid) or {}
+        if dentro_da_argentina(v.get("lat"), v.get("lng")):
+            return {"cidade": v.get("cidade", ""), "lat": v["lat"], "lng": v["lng"]}
+        return out.get(tid)
+
+    # 1 consulta/s com cache: so a primeira execucao (ou time novo) consulta
+    geo = Geocoder(max_consultas=600)
+
+    def ponto_da_cidade(cidade: str) -> dict | None:
+        # Aceita bairro (a cidade do venue as vezes e o bairro portenho:
+        # "Flores" = Riestra; o geo.cidade() do Regional descarta bairro e
+        # trocava pela cidade de Las Flores), mas nunca a provincia ("Formosa"
+        # e "San Juan" caiam no centro da provincia).
+        res = [x for x in (geo._consultar(f"{cidade}, Argentina") or [])
+               if dentro_da_argentina(x.get("lat"), x.get("lng")) and x.get("tipo") not in ("state", "province", "country")]
+        return {"cidade": cidade, "lat": res[0]["lat"], "lng": res[0]["lng"]} if res else None
+
+    # 1) venue com cidade e sem coordenada: geocodifica a cidade. Vale para
+    #    todos os times, nao so mandantes, porque a Reserva usa a posicao do
+    #    principal no passo 2. (Comparar a coordenada do venue com a cidade
+    #    dele para achar venue errado NAO funciona: a "cidade" do SofaScore
+    #    e ambigua - Olimpo vem com "Buenos Aires" = a provincia, Sanjustino
+    #    com "San Justo" que existe em Santa Fe e em Buenos Aires. Venue errado
+    #    vai para VENUE_CORRIGIDO.)
+    for nome, tid in nomes.items():
+        v = venues.get(tid) or {}
+        cidade = v.get("cidade", "")
+        if not cidade or RESERVA_RE.match(nome) or dentro_da_argentina(v.get("lat"), v.get("lng")):
+            continue
+        ponto = ponto_da_cidade(cidade)
+        if ponto:
+            out[tid] = ponto
+    # 2) Reserva: a cidade do time principal
+    for nome, tid in nomes.items():
+        m = RESERVA_RE.match(nome)
+        if not m or tid not in mandantes or coords(tid):
+            continue
+        principal = time_principal(m.group(1).strip())
+        if principal and coords(principal):
+            out[tid] = coords(principal)
+    out = {tid: v for tid, v in out.items() if tid in mandantes}
+    geo.salvar()
+    print(f"[INFO] posicao aproximada (reserva/cidade) para {len(out)} times")
+    return out
+
+
 def chave_confronto_dia(ev: dict) -> tuple | None:
     ts = ev.get("startTimestamp")
     h = (ev.get("homeTeam") or {}).get("id")
@@ -440,8 +538,10 @@ def main() -> None:
         browser.close()
 
     CACHE_VENUES.write_text(json.dumps(venues, ensure_ascii=False, indent=1, sort_keys=True), encoding="utf-8")
+    venues.update(VENUE_CORRIGIDO)  # depois de gravar: o cache guarda o que o SofaScore devolveu
     cidades_times = atualizar_cidades(
         [(nome, ev) for _, _, nome, eventos in eventos_por_torneio for ev in eventos], venues)
+    cidades_times = {**cidades_times, **posicoes_aproximadas(eventos_por_torneio, venues)}
 
     # Jogo remarcado: o SofaScore cria evento novo e o velho continua
     # "programado" no mesmo dia. Fica o evento mais novo (maior id).

@@ -36,6 +36,1300 @@
 "tipo": "state_district"
 }
 ],
+"Adolfo Alsina, Argentina": [],
+"Adrogue, Argentina": [
+{
+"lat": -34.79739,
+"lng": -58.38855,
+"nome": "Partido de Almirante Brown",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -34.79739,
+"lng": -58.38855,
+"nome": "Adrogué",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Alcorta, Argentina": [
+{
+"lat": -33.53833,
+"lng": -61.12394,
+"nome": "Municipio de Alcorta",
+"provincia": "santa fe",
+"tipo": "village"
+},
+{
+"lat": -34.65852,
+"lng": -58.78075,
+"nome": "Moreno",
+"provincia": "buenos aires",
+"tipo": "quarter"
+}
+],
+"Alicia, Argentina": [
+{
+"lat": -31.94347,
+"lng": -62.46542,
+"nome": "Alicia",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -31.9393,
+"lng": -62.4634,
+"nome": "Municipio de Alicia",
+"provincia": "cordoba",
+"tipo": "municipality"
+}
+],
+"Altos de Chipión, Argentina": [
+{
+"lat": -30.9558,
+"lng": -62.33764,
+"nome": "Altos de Chipión",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -30.9539,
+"lng": -62.33982,
+"nome": "Altos de Chipión",
+"provincia": "cordoba",
+"tipo": "municipality"
+}
+],
+"Arroyito, Argentina": [
+{
+"lat": -31.41924,
+"lng": -63.05094,
+"nome": "Arroyito",
+"provincia": "cordoba",
+"tipo": "town"
+},
+{
+"lat": -39.07452,
+"lng": -68.57155,
+"nome": "Arroyito",
+"provincia": "neuquen",
+"tipo": "village"
+},
+{
+"lat": -32.91658,
+"lng": -60.67711,
+"nome": "Rosario",
+"provincia": "santa fe",
+"tipo": "suburb"
+},
+{
+"lat": -33.02419,
+"lng": -60.64378,
+"nome": "Villa Gobernador Gálvez",
+"provincia": "santa fe",
+"tipo": "neighbourhood"
+},
+{
+"lat": -27.04067,
+"lng": -55.23863,
+"nome": "Jardín América",
+"provincia": "misiones",
+"tipo": "neighbourhood"
+}
+],
+"Bahia Blanca, Argentina": [
+{
+"lat": -38.71765,
+"lng": -62.26549,
+"nome": "Bahía Blanca",
+"provincia": "buenos aires",
+"tipo": "city"
+}
+],
+"Balnearia, Argentina": [
+{
+"lat": -31.01283,
+"lng": -62.66541,
+"nome": "Balnearia",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"Barracas, Argentina": [
+{
+"lat": -34.64529,
+"lng": -58.38756,
+"nome": "Buenos Aires",
+"provincia": "ciudad autonoma de buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -33.05181,
+"lng": -61.16668,
+"nome": "Casilda",
+"provincia": "santa fe",
+"tipo": "suburb"
+}
+],
+"Berazategui, Argentina": [
+{
+"lat": -34.76327,
+"lng": -58.21166,
+"nome": "Berazategui",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -34.84279,
+"lng": -58.14086,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Berisso, Argentina": [
+{
+"lat": -34.86886,
+"lng": -57.88287,
+"nome": "Berisso",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -34.89892,
+"lng": -57.8519,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Brinkmann, Argentina": [
+{
+"lat": -30.86649,
+"lng": -62.04312,
+"nome": "Brinkmann",
+"provincia": "cordoba",
+"tipo": "town"
+}
+],
+"Buchardo, Argentina": [
+{
+"lat": -34.72381,
+"lng": -63.50732,
+"nome": "Buchardo",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -34.72249,
+"lng": -63.50722,
+"nome": "Municipio de Buchardo",
+"provincia": "cordoba",
+"tipo": "municipality"
+}
+],
+"Buenos Aires, Argentina": [
+{
+"lat": -34.60956,
+"lng": -58.38879,
+"nome": "Buenos Aires",
+"provincia": "ciudad autonoma de buenos aires",
+"tipo": "city"
+},
+{
+"lat": -36.37899,
+"lng": -60.38559,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state"
+}
+],
+"Campana, Argentina": [
+{
+"lat": -34.16366,
+"lng": -58.95868,
+"nome": "Campana",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -34.16251,
+"lng": -58.89168,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Carhue, Argentina": [
+{
+"lat": -37.17947,
+"lng": -62.76004,
+"nome": "Carhué",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
+"Carlos Casares, Argentina": [
+{
+"lat": -35.62324,
+"lng": -61.365,
+"nome": "Carlos Casares",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Carrilobo, Argentina": [
+{
+"lat": -31.87159,
+"lng": -63.11573,
+"nome": "Carrilobo",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -31.86919,
+"lng": -63.11589,
+"nome": "Municipio de Carrilobo",
+"provincia": "cordoba",
+"tipo": "municipality"
+}
+],
+"Caseros, Argentina": [
+{
+"lat": -34.60737,
+"lng": -58.56613,
+"nome": "Caseros",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -32.47212,
+"lng": -58.47989,
+"nome": "Caseros",
+"provincia": "entre rios",
+"tipo": "municipality"
+},
+{
+"lat": -32.46304,
+"lng": -58.4787,
+"nome": "Colonia Caseros",
+"provincia": "entre rios",
+"tipo": "village"
+},
+{
+"lat": -31.41417,
+"lng": -64.20838,
+"nome": "Córdoba",
+"provincia": "cordoba",
+"tipo": "suburb"
+}
+],
+"Cipolletti, Argentina": [
+{
+"lat": -38.93134,
+"lng": -67.99059,
+"nome": "Municipio de Cipolletti",
+"provincia": "rio negro",
+"tipo": "city"
+},
+{
+"lat": -38.93554,
+"lng": -67.98958,
+"nome": "Municipio de Cipolletti",
+"provincia": "rio negro",
+"tipo": "city_district"
+},
+{
+"lat": -39.09126,
+"lng": -67.11563,
+"nome": "Villa Regina",
+"provincia": "rio negro",
+"tipo": "suburb"
+},
+{
+"lat": -31.49812,
+"lng": -68.56902,
+"nome": "",
+"provincia": "san juan",
+"tipo": "neighbourhood"
+}
+],
+"Colonia Marina, Argentina": [
+{
+"lat": -31.24895,
+"lng": -62.36386,
+"nome": "Colonia Marina",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -37.31068,
+"lng": -57.00935,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "neighbourhood"
+}
+],
+"Comandante Luis Piedrabuena, Argentina": [
+{
+"lat": -49.98304,
+"lng": -68.91874,
+"nome": "Comandante Luis Piedrabuena",
+"provincia": "santa cruz",
+"tipo": "village"
+},
+{
+"lat": -50.00168,
+"lng": -68.99307,
+"nome": "Comandante Luis Piedrabuena",
+"provincia": "santa cruz",
+"tipo": "municipality"
+}
+],
+"Concepcion del Uruguay, Argentina": [
+{
+"lat": -32.48518,
+"lng": -58.23202,
+"nome": "Concepción del Uruguay",
+"provincia": "entre rios",
+"tipo": "town"
+}
+],
+"Cordoba, Argentina": [
+{
+"lat": -31.41669,
+"lng": -64.18342,
+"nome": "Córdoba",
+"provincia": "cordoba",
+"tipo": "city"
+},
+{
+"lat": -32.02225,
+"lng": -63.96987,
+"nome": "",
+"provincia": "cordoba",
+"tipo": "state"
+}
+],
+"Coronel Pringles, Argentina": [
+{
+"lat": -33.04131,
+"lng": -65.88499,
+"nome": "",
+"provincia": "san luis",
+"tipo": "state_district"
+},
+{
+"lat": -37.98517,
+"lng": -61.34983,
+"nome": "Coronel Pringles",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -40.42504,
+"lng": -63.67219,
+"nome": "Guardia Mitre",
+"provincia": "rio negro",
+"tipo": "village"
+},
+{
+"lat": -33.28221,
+"lng": -66.33289,
+"nome": "Municipio de San Luis",
+"provincia": "san luis",
+"tipo": "suburb"
+}
+],
+"Coronel Suárez, Argentina": [
+{
+"lat": -37.45858,
+"lng": -61.9329,
+"nome": "Coronel Suárez",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Corpen Aike, Argentina": [
+{
+"lat": -49.98545,
+"lng": -69.24913,
+"nome": "",
+"provincia": "santa cruz",
+"tipo": "state_district"
+}
+],
+"Corrientes, Argentina": [
+{
+"lat": -29.01774,
+"lng": -57.88697,
+"nome": "",
+"provincia": "corrientes",
+"tipo": "state"
+},
+{
+"lat": -27.4687,
+"lng": -58.8312,
+"nome": "Corrientes",
+"provincia": "corrientes",
+"tipo": "city"
+},
+{
+"lat": -27.48187,
+"lng": -58.79559,
+"nome": "Corrientes",
+"provincia": "corrientes",
+"tipo": "city_district"
+},
+{
+"lat": -27.48187,
+"lng": -58.79559,
+"nome": "Corrientes",
+"provincia": "corrientes",
+"tipo": "city"
+}
+],
+"Devoto, Argentina": [
+{
+"lat": -31.4016,
+"lng": -62.306,
+"nome": "Devoto",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"El Arañado, Argentina": [
+{
+"lat": -31.74298,
+"lng": -62.88965,
+"nome": "Municipio de El Arañado",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -31.74298,
+"lng": -62.88965,
+"nome": "El Arañado",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"El Tío, Argentina": [
+{
+"lat": -31.38544,
+"lng": -62.82813,
+"nome": "El Tío",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -26.5837,
+"lng": -65.87829,
+"nome": "Departamento Tafí del Valle",
+"provincia": "tucuman",
+"tipo": "hamlet"
+}
+],
+"Entre Rios Province, Argentina": [
+{
+"lat": -32.12907,
+"lng": -59.50777,
+"nome": "",
+"provincia": "entre rios",
+"tipo": "state"
+}
+],
+"Flores, Argentina": [
+{
+"lat": -34.6282,
+"lng": -58.46222,
+"nome": "Buenos Aires",
+"provincia": "ciudad autonoma de buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -37.68301,
+"lng": -59.79989,
+"nome": "Benito Juárez",
+"provincia": "buenos aires",
+"tipo": "neighbourhood"
+},
+{
+"lat": -36.02213,
+"lng": -59.12353,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+},
+{
+"lat": -36.01428,
+"lng": -59.09987,
+"nome": "Las Flores",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -33.65095,
+"lng": -69.15555,
+"nome": "Distrito Vista Flores",
+"provincia": "mendoza",
+"tipo": "village"
+}
+],
+"Florida Oeste, Argentina": [
+{
+"lat": -34.53877,
+"lng": -58.51441,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "suburb"
+}
+],
+"Florida, Argentina": [
+{
+"lat": -34.53221,
+"lng": -58.49373,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -24.2493,
+"lng": -65.19195,
+"nome": "Municipio de Palpalá",
+"provincia": "jujuy",
+"tipo": "suburb"
+},
+{
+"lat": -32.03843,
+"lng": -61.21523,
+"nome": "Gálvez",
+"provincia": "santa fe",
+"tipo": "neighbourhood"
+},
+{
+"lat": -31.72615,
+"lng": -60.51184,
+"nome": "Paraná",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+},
+{
+"lat": -26.43226,
+"lng": -54.60024,
+"nome": "Municipio de Eldorado",
+"provincia": "misiones",
+"tipo": "neighbourhood"
+}
+],
+"Formosa, Argentina": [
+{
+"lat": -24.59553,
+"lng": -60.42897,
+"nome": "",
+"provincia": "formosa",
+"tipo": "state"
+},
+{
+"lat": -26.1853,
+"lng": -58.1745,
+"nome": "Municipio de Formosa",
+"provincia": "formosa",
+"tipo": "city"
+}
+],
+"Freyre, Argentina": [
+{
+"lat": -31.16452,
+"lng": -62.09631,
+"nome": "Municipio de Freyre",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"General Levalle, Argentina": [
+{
+"lat": -34.0075,
+"lng": -63.92339,
+"nome": "General Levalle",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"General Pico, Argentina": [
+{
+"lat": -35.65911,
+"lng": -63.75761,
+"nome": "General Pico",
+"provincia": "la pampa",
+"tipo": "town"
+}
+],
+"Gobernador Gregores, Argentina": [
+{
+"lat": -48.75087,
+"lng": -70.24858,
+"nome": "Gobernador Gregores",
+"provincia": "santa cruz",
+"tipo": "village"
+},
+{
+"lat": -48.76376,
+"lng": -70.23498,
+"nome": "Gobernador Gregores",
+"provincia": "santa cruz",
+"tipo": "municipality"
+},
+{
+"lat": -46.45501,
+"lng": -67.52698,
+"nome": "Atlántico",
+"provincia": "santa cruz",
+"tipo": "suburb"
+},
+{
+"lat": -46.79434,
+"lng": -67.96313,
+"nome": "Pico Truncado",
+"provincia": "santa cruz",
+"tipo": "neighbourhood"
+},
+{
+"lat": -51.6228,
+"lng": -69.2406,
+"nome": "Municipio de Río Gallegos",
+"provincia": "santa cruz",
+"tipo": "suburb"
+}
+],
+"Gobernador Julio A. Costa, Argentina": [
+{
+"lat": -34.81005,
+"lng": -58.31784,
+"nome": "Gobernador Julio A. Costa",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Gualeguaychu, Argentina": [
+{
+"lat": -33.00789,
+"lng": -58.51099,
+"nome": "Gualeguaychú",
+"provincia": "entre rios",
+"tipo": "city"
+}
+],
+"Guamini, Argentina": [
+{
+"lat": -37.01092,
+"lng": -62.42222,
+"nome": "Guaminí",
+"provincia": "buenos aires",
+"tipo": "village"
+},
+{
+"lat": -36.90483,
+"lng": -62.43696,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Ingeniero Maschwitz, Argentina": [
+{
+"lat": -34.38913,
+"lng": -58.7379,
+"nome": "Ingeniero Maschwitz",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Jose Ingenieros, Argentina": [
+{
+"lat": -34.61807,
+"lng": -58.53701,
+"nome": "José Ingenieros",
+"provincia": "buenos aires",
+"tipo": "village"
+},
+{
+"lat": -33.33386,
+"lng": -60.23261,
+"nome": "San Nicolás de los Arroyos",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -34.70509,
+"lng": -58.53794,
+"nome": "Ciudad Evita",
+"provincia": "buenos aires",
+"tipo": "quarter"
+}
+],
+"Jose Maria Jauregui, Argentina": [],
+"Junin, Argentina": [
+{
+"lat": -34.59344,
+"lng": -60.94617,
+"nome": "Junín",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -32.22051,
+"lng": -65.45674,
+"nome": "",
+"provincia": "san luis",
+"tipo": "state_district"
+},
+{
+"lat": -33.1441,
+"lng": -68.48522,
+"nome": "Distrito Ciudad",
+"provincia": "mendoza",
+"tipo": "town"
+},
+{
+"lat": -34.54436,
+"lng": -60.97068,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+},
+{
+"lat": -33.14913,
+"lng": -68.49975,
+"nome": "",
+"provincia": "mendoza",
+"tipo": "state_district"
+}
+],
+"La Cautiva, Argentina": [
+{
+"lat": -33.97949,
+"lng": -64.08341,
+"nome": "La Cautiva",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"La Francia, Argentina": [
+{
+"lat": -31.40637,
+"lng": -62.6332,
+"nome": "La Francia",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"La Matanza Partido, Argentina": [
+{
+"lat": -34.68671,
+"lng": -58.52988,
+"nome": "La Tablada",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -34.69588,
+"lng": -58.56741,
+"nome": "San Justo",
+"provincia": "buenos aires",
+"tipo": "quarter"
+},
+{
+"lat": -34.64232,
+"lng": -58.55963,
+"nome": "Ramos Mejía",
+"provincia": "buenos aires",
+"tipo": "quarter"
+},
+{
+"lat": -34.72878,
+"lng": -58.56558,
+"nome": "Isidro Casanova",
+"provincia": "buenos aires",
+"tipo": "quarter"
+},
+{
+"lat": -34.69,
+"lng": -58.59035,
+"nome": "Isidro Casanova",
+"provincia": "buenos aires",
+"tipo": "quarter"
+}
+],
+"La Para, Argentina": [
+{
+"lat": -30.89276,
+"lng": -62.99757,
+"nome": "La Para",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"La Plata, Argentina": [
+{
+"lat": -34.92068,
+"lng": -57.95376,
+"nome": "La Plata",
+"provincia": "buenos aires",
+"tipo": "city"
+}
+],
+"La Tordilla, Argentina": [
+{
+"lat": -31.24779,
+"lng": -63.06225,
+"nome": "La Tordilla",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"Laboulaye, Argentina": [
+{
+"lat": -34.12864,
+"lng": -63.39058,
+"nome": "Municipio de Laboulaye",
+"provincia": "cordoba",
+"tipo": "town"
+},
+{
+"lat": -34.13024,
+"lng": -63.38672,
+"nome": "Municipio de Laboulaye",
+"provincia": "cordoba",
+"tipo": "city_district"
+}
+],
+"Las Malvinas, Argentina": [
+{
+"lat": -34.83498,
+"lng": -68.24935,
+"nome": "Distrito Las Malvinas",
+"provincia": "mendoza",
+"tipo": "village"
+},
+{
+"lat": -34.8068,
+"lng": -58.32883,
+"nome": "Gobernador Julio A. Costa",
+"provincia": "buenos aires",
+"tipo": "quarter"
+},
+{
+"lat": -27.38744,
+"lng": -55.91763,
+"nome": "Municipio de Posadas",
+"provincia": "misiones",
+"tipo": "neighbourhood"
+},
+{
+"lat": -25.95056,
+"lng": -63.04573,
+"nome": "Las Malvinas",
+"provincia": "santiago del estero",
+"tipo": "hamlet"
+},
+{
+"lat": -32.92434,
+"lng": -60.67016,
+"nome": "Rosario",
+"provincia": "santa fe",
+"tipo": "suburb"
+}
+],
+"Las Parejas, Argentina": [
+{
+"lat": -32.68187,
+"lng": -61.5207,
+"nome": "Las Parejas",
+"provincia": "santa fe",
+"tipo": "town"
+}
+],
+"Las Varillas, Argentina": [
+{
+"lat": -31.87403,
+"lng": -62.7161,
+"nome": "Municipio de Las Varillas",
+"provincia": "cordoba",
+"tipo": "town"
+},
+{
+"lat": -31.87081,
+"lng": -62.71999,
+"nome": "Municipio de Las Varillas",
+"provincia": "cordoba",
+"tipo": "city_district"
+}
+],
+"Libertad, Argentina": [
+{
+"lat": -34.70037,
+"lng": -58.68349,
+"nome": "Libertad",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -30.04317,
+"lng": -57.82189,
+"nome": "Libertad",
+"provincia": "corrientes",
+"tipo": "village"
+},
+{
+"lat": -34.57667,
+"lng": -60.95607,
+"nome": "Junín",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -33.31322,
+"lng": -66.35904,
+"nome": "Municipio de San Luis",
+"provincia": "san luis",
+"tipo": "suburb"
+},
+{
+"lat": -34.81914,
+"lng": -58.28968,
+"nome": "Gobernador Julio A. Costa",
+"provincia": "buenos aires",
+"tipo": "quarter"
+}
+],
+"Loma Hermosa, Argentina": [
+{
+"lat": -34.56935,
+"lng": -58.60158,
+"nome": "Loma Hermosa",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -31.73698,
+"lng": -60.49633,
+"nome": "Paraná",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+},
+{
+"lat": -25.3183,
+"lng": -58.31698,
+"nome": "Loma Hermosa",
+"provincia": "formosa",
+"tipo": "hamlet"
+}
+],
+"Lomas de Zamora, Argentina": [
+{
+"lat": -34.75726,
+"lng": -58.40266,
+"nome": "Lomas de Zamora",
+"provincia": "buenos aires",
+"tipo": "city"
+}
+],
+"Lujan, Argentina": [
+{
+"lat": -34.56617,
+"lng": -59.11526,
+"nome": "Luján",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -46.56871,
+"lng": -67.67237,
+"nome": "",
+"provincia": "santa cruz",
+"tipo": "suburb"
+},
+{
+"lat": -32.36453,
+"lng": -65.93303,
+"nome": "Luján",
+"provincia": "san luis",
+"tipo": "village"
+},
+{
+"lat": -34.58985,
+"lng": -59.16357,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Maipu, Argentina": [
+{
+"lat": -32.98462,
+"lng": -68.7882,
+"nome": "Departamento Maipú",
+"provincia": "mendoza",
+"tipo": "city"
+},
+{
+"lat": -32.98462,
+"lng": -68.7882,
+"nome": "Distrito Ciudad de Maipú",
+"provincia": "mendoza",
+"tipo": "city"
+},
+{
+"lat": -36.86275,
+"lng": -57.88291,
+"nome": "Maipú",
+"provincia": "buenos aires",
+"tipo": "village"
+},
+{
+"lat": -36.89161,
+"lng": -57.58944,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+},
+{
+"lat": -31.43602,
+"lng": -64.15944,
+"nome": "Córdoba",
+"provincia": "cordoba",
+"tipo": "suburb"
+}
+],
+"Mar del Plata, Argentina": [
+{
+"lat": -37.99762,
+"lng": -57.54821,
+"nome": "Mar del Plata",
+"provincia": "buenos aires",
+"tipo": "city"
+}
+],
+"Marull, Argentina": [
+{
+"lat": -30.99393,
+"lng": -62.82535,
+"nome": "Marull",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -30.99685,
+"lng": -62.82781,
+"nome": "Municipio de Marull",
+"provincia": "cordoba",
+"tipo": "municipality"
+}
+],
+"Mataderos, Argentina": [
+{
+"lat": -34.65786,
+"lng": -58.50176,
+"nome": "Buenos Aires",
+"provincia": "ciudad autonoma de buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -37.28575,
+"lng": -59.12816,
+"nome": "Tandil",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -36.62844,
+"lng": -64.26973,
+"nome": "Santa Rosa",
+"provincia": "la pampa",
+"tipo": "suburb"
+},
+{
+"lat": -38.53865,
+"lng": -58.74118,
+"nome": "Necochea",
+"provincia": "buenos aires",
+"tipo": "quarter"
+}
+],
+"Melo, Argentina": [
+{
+"lat": -34.34876,
+"lng": -63.44521,
+"nome": "Melo",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -34.3492,
+"lng": -63.44738,
+"nome": "Municipio de Melo",
+"provincia": "cordoba",
+"tipo": "municipality"
+},
+{
+"lat": -33.75779,
+"lng": -63.4898,
+"nome": "Comuna de Pacheco de Melo",
+"provincia": "cordoba",
+"tipo": "municipality"
+}
+],
+"Mendoza, Argentina": [
+{
+"lat": -34.59703,
+"lng": -68.73048,
+"nome": "",
+"provincia": "mendoza",
+"tipo": "state"
+},
+{
+"lat": -32.88942,
+"lng": -68.84462,
+"nome": "Ciudad de Mendoza",
+"provincia": "mendoza",
+"tipo": "city"
+}
+],
+"Mercedes, Argentina": [
+{
+"lat": -34.65067,
+"lng": -59.43172,
+"nome": "Mercedes",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -29.18356,
+"lng": -58.08,
+"nome": "Municipio de Mercedes",
+"provincia": "corrientes",
+"tipo": "town"
+},
+{
+"lat": -34.69981,
+"lng": -59.43065,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Monte Maiz, Argentina": [
+{
+"lat": -33.20426,
+"lng": -62.60063,
+"nome": "Monte Maíz",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"Moron, Argentina": [
+{
+"lat": -34.65105,
+"lng": -58.62174,
+"nome": "Morón",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -34.64635,
+"lng": -58.61937,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Morteros, Argentina": [
+{
+"lat": -30.7107,
+"lng": -62.00671,
+"nome": "Morteros",
+"provincia": "cordoba",
+"tipo": "town"
+}
+],
+"Nueve de Abril, Argentina": [],
+"Parque San Martin, Argentina": [
+{
+"lat": -34.69241,
+"lng": -58.73474,
+"nome": "Merlo",
+"provincia": "buenos aires",
+"tipo": "suburb"
+}
+],
+"Pergamino, Argentina": [
+{
+"lat": -33.89749,
+"lng": -60.57505,
+"nome": "Pergamino",
+"provincia": "buenos aires",
+"tipo": "city"
+}
+],
+"Pigüe, Argentina": [
+{
+"lat": -37.6028,
+"lng": -62.40231,
+"nome": "Pigüé",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Pilar, Argentina": [
+{
+"lat": -34.45709,
+"lng": -58.91416,
+"nome": "Pilar",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -31.68144,
+"lng": -63.88238,
+"nome": "Pilar",
+"provincia": "cordoba",
+"tipo": "town"
+},
+{
+"lat": -31.44008,
+"lng": -61.25983,
+"nome": "Municipio de Pilar",
+"provincia": "santa fe",
+"tipo": "village"
+},
+{
+"lat": -31.43723,
+"lng": -61.25753,
+"nome": "Municipio de Pilar",
+"provincia": "santa fe",
+"tipo": "city_district"
+}
+],
+"Porteña, Argentina": [
+{
+"lat": -31.01412,
+"lng": -62.06205,
+"nome": "Porteña",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"Pozo del Molle, Argentina": [
+{
+"lat": -32.0213,
+"lng": -62.9193,
+"nome": "Pozo del Molle",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
 "Presidencia Roque Sáenz Peña, Argentina": [
 {
 "lat": -26.79097,
@@ -52,6 +1346,189 @@
 "tipo": "city_district"
 }
 ],
+"Presidente Roque Sáenz Peña Department, Argentina": [],
+"Presidente Roque Sáenz Peña, Argentina": [
+{
+"lat": -33.00639,
+"lng": -60.64049,
+"nome": "Rosario",
+"provincia": "santa fe",
+"tipo": "suburb"
+}
+],
+"Primeros Colonizadores, Argentina": [],
+"Pueblo San José, Argentina": [
+{
+"lat": -34.09111,
+"lng": -60.41316,
+"nome": "Villa San José",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
+"Pueblo Santa Trinidad, Argentina": [],
+"Puerto Madryn, Argentina": [
+{
+"lat": -42.76734,
+"lng": -65.03659,
+"nome": "Municipio de Puerto Madryn",
+"provincia": "chubut",
+"tipo": "city"
+}
+],
+"Puerto San Julian, Argentina": [
+{
+"lat": -49.30695,
+"lng": -67.72979,
+"nome": "Puerto San Julián",
+"provincia": "santa cruz",
+"tipo": "town"
+},
+{
+"lat": -49.30695,
+"lng": -67.72979,
+"nome": "Puerto San Julián",
+"provincia": "santa cruz",
+"tipo": "town"
+}
+],
+"Puerto Santa Cruz, Argentina": [
+{
+"lat": -50.01997,
+"lng": -68.52007,
+"nome": "Puerto Santa Cruz",
+"provincia": "santa cruz",
+"tipo": "village"
+},
+{
+"lat": -50.0359,
+"lng": -68.56013,
+"nome": "Puerto Santa Cruz",
+"provincia": "santa cruz",
+"tipo": "municipality"
+}
+],
+"Punta del Agua, Argentina": [
+{
+"lat": -35.52709,
+"lng": -68.07535,
+"nome": "Distrito Punta del Agua",
+"provincia": "mendoza",
+"tipo": "village"
+},
+{
+"lat": -33.2028,
+"lng": -65.1416,
+"nome": "Punta del Agua",
+"provincia": "cordoba",
+"tipo": "city"
+},
+{
+"lat": -32.57715,
+"lng": -63.81051,
+"nome": "Pedanía Punta del Agua",
+"provincia": "cordoba",
+"tipo": "suburb"
+},
+{
+"lat": -32.57577,
+"lng": -63.81021,
+"nome": "Pedanía Punta del Agua",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -33.20278,
+"lng": -65.14246,
+"nome": "Punta del Agua",
+"provincia": "cordoba",
+"tipo": "hamlet"
+}
+],
+"Quilmes, Argentina": [
+{
+"lat": -34.72571,
+"lng": -58.26308,
+"nome": "Quilmes",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -38.38323,
+"lng": -60.26513,
+"nome": "Tres Arroyos",
+"provincia": "buenos aires",
+"tipo": "suburb"
+}
+],
+"Rafaela, Argentina": [
+{
+"lat": -31.25269,
+"lng": -61.49168,
+"nome": "Rafaela",
+"provincia": "santa fe",
+"tipo": "city"
+}
+],
+"Ramallo, Argentina": [
+{
+"lat": -33.48494,
+"lng": -60.00446,
+"nome": "Ramallo",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -33.58957,
+"lng": -60.03683,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Resistencia, Argentina": [
+{
+"lat": -27.60488,
+"lng": -59.1932,
+"nome": "Municipio de Resistencia",
+"provincia": "chaco",
+"tipo": "municipality"
+},
+{
+"lat": -27.45111,
+"lng": -58.98652,
+"nome": "Resistencia",
+"provincia": "chaco",
+"tipo": "city"
+}
+],
+"Rio Cuarto, Argentina": [
+{
+"lat": -33.12376,
+"lng": -64.34898,
+"nome": "Río Cuarto",
+"provincia": "cordoba",
+"tipo": "city"
+}
+],
+"Rivera, Argentina": [
+{
+"lat": -37.16053,
+"lng": -63.24178,
+"nome": "Rivera",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
+"Rosario, Argentina": [
+{
+"lat": -32.95936,
+"lng": -60.6617,
+"nome": "Rosario",
+"provincia": "santa fe",
+"tipo": "city"
+}
+],
 "Río Grande, Tierra del Fuego, Argentina": [
 {
 "lat": -53.78583,
@@ -61,12 +1538,214 @@
 "tipo": "city"
 }
 ],
+"Río Primero, Argentina": [
+{
+"lat": -31.33388,
+"lng": -63.61854,
+"nome": "Río Primero",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"Sacanta, Argentina": [
+{
+"lat": -31.66345,
+"lng": -63.04791,
+"nome": "Sacanta",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -31.73806,
+"lng": -62.80823,
+"nome": "",
+"provincia": "cordoba",
+"tipo": "county"
+}
+],
+"Salta, Argentina": [
+{
+"lat": -25.22699,
+"lng": -64.5912,
+"nome": "",
+"provincia": "salta",
+"tipo": "state"
+},
+{
+"lat": -24.78929,
+"lng": -65.41032,
+"nome": "Salta",
+"provincia": "salta",
+"tipo": "city"
+}
+],
+"San Carlos de Bolivar, Argentina": [
+{
+"lat": -36.23022,
+"lng": -61.11425,
+"nome": "San Carlos de Bolívar",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
 "San Fernando del Valle de Catamarca, Argentina": [
 {
 "lat": -28.46888,
 "lng": -65.77906,
 "nome": "San Fernando del Valle de Catamarca",
 "provincia": "catamarca",
+"tipo": "city"
+}
+],
+"San Francisco, Argentina": [
+{
+"lat": -31.42498,
+"lng": -62.08403,
+"nome": "San Francisco",
+"provincia": "cordoba",
+"tipo": "town"
+},
+{
+"lat": -23.62245,
+"lng": -64.94936,
+"nome": "Municipio de San Francisco",
+"provincia": "jujuy",
+"tipo": "village"
+},
+{
+"lat": -34.46271,
+"lng": -58.96933,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -31.32167,
+"lng": -64.30266,
+"nome": "Córdoba",
+"provincia": "cordoba",
+"tipo": "suburb"
+},
+{
+"lat": -37.31737,
+"lng": -59.11669,
+"nome": "Tandil",
+"provincia": "buenos aires",
+"tipo": "suburb"
+}
+],
+"San Isidro, Argentina": [
+{
+"lat": -34.47398,
+"lng": -58.52649,
+"nome": "San Isidro",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -28.45789,
+"lng": -65.72498,
+"nome": "San Isidro",
+"provincia": "catamarca",
+"tipo": "village"
+},
+{
+"lat": -38.70638,
+"lng": -68.17432,
+"nome": "San Isidro",
+"provincia": "rio negro",
+"tipo": "village"
+},
+{
+"lat": -33.3467,
+"lng": -60.20228,
+"nome": "San Nicolás de los Arroyos",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -30.75977,
+"lng": -58.0041,
+"nome": "Chajarí",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+}
+],
+"San Juan, Argentina": [
+{
+"lat": -30.70544,
+"lng": -69.19882,
+"nome": "",
+"provincia": "san juan",
+"tipo": "state"
+},
+{
+"lat": -31.53709,
+"lng": -68.52518,
+"nome": "San Juan",
+"provincia": "san juan",
+"tipo": "city"
+}
+],
+"San Justo, Argentina": [
+{
+"lat": -34.67742,
+"lng": -58.56078,
+"nome": "San Justo",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -30.78909,
+"lng": -60.59333,
+"nome": "San Justo",
+"provincia": "santa fe",
+"tipo": "town"
+},
+{
+"lat": -32.4458,
+"lng": -58.4353,
+"nome": "San Justo",
+"provincia": "entre rios",
+"tipo": "village"
+},
+{
+"lat": -34.64392,
+"lng": -59.44341,
+"nome": "Mercedes",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -28.08191,
+"lng": -55.99018,
+"nome": "Colonia San Justo",
+"provincia": "corrientes",
+"tipo": "hamlet"
+}
+],
+"San Luis, Argentina": [
+{
+"lat": -33.89856,
+"lng": -66.06142,
+"nome": "",
+"provincia": "san luis",
+"tipo": "state"
+},
+{
+"lat": -33.30207,
+"lng": -66.33696,
+"nome": "Municipio de San Luis",
+"provincia": "san luis",
+"tipo": "city"
+}
+],
+"San Miguel de Tucuman, Argentina": [
+{
+"lat": -26.83037,
+"lng": -65.20381,
+"nome": "San Miguel de Tucumán",
+"provincia": "tucuman",
 "tipo": "city"
 }
 ],
@@ -79,6 +1758,43 @@
 "tipo": "city"
 }
 ],
+"San Miguel, Argentina": [
+{
+"lat": -34.54301,
+"lng": -58.71197,
+"nome": "San Miguel",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -28.14003,
+"lng": -66.20257,
+"nome": "San Miguel",
+"provincia": "catamarca",
+"tipo": "village"
+},
+{
+"lat": -27.99803,
+"lng": -57.58727,
+"nome": "Municipio de San Miguel",
+"provincia": "corrientes",
+"tipo": "village"
+},
+{
+"lat": -26.85428,
+"lng": -54.88842,
+"nome": "Municipio de Garuhapé",
+"provincia": "misiones",
+"tipo": "hamlet"
+},
+{
+"lat": -27.462,
+"lng": -59.01018,
+"nome": "Resistencia",
+"provincia": "chaco",
+"tipo": "suburb"
+}
+],
 "San Salvador de Jujuy, Argentina": [
 {
 "lat": -24.18526,
@@ -86,6 +1802,275 @@
 "nome": "Municipio de San Salvador de Jujuy",
 "provincia": "jujuy",
 "tipo": "city"
+}
+],
+"Santa Fe, Argentina": [
+{
+"lat": -30.31547,
+"lng": -61.16451,
+"nome": "",
+"provincia": "santa fe",
+"tipo": "state"
+},
+{
+"lat": -31.64749,
+"lng": -60.64286,
+"nome": "Santa Fe Capital",
+"provincia": "santa fe",
+"tipo": "municipality"
+},
+{
+"lat": -31.6187,
+"lng": -60.70196,
+"nome": "Santa Fe",
+"provincia": "santa fe",
+"tipo": "city"
+}
+],
+"Santiago del Estero, Argentina": [
+{
+"lat": -27.6431,
+"lng": -63.54085,
+"nome": "",
+"provincia": "santiago del estero",
+"tipo": "state"
+},
+{
+"lat": -27.78771,
+"lng": -64.25951,
+"nome": "Santiago del Estero",
+"provincia": "santiago del estero",
+"tipo": "city"
+}
+],
+"Sarandi, Argentina": [
+{
+"lat": -34.68076,
+"lng": -58.34633,
+"nome": "Sarandí",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -33.04855,
+"lng": -58.60574,
+"nome": "Límite de Ejido de Municipio de Gualeguaychú",
+"provincia": "entre rios",
+"tipo": "hamlet"
+}
+],
+"Saturnino M. Laspiur, Argentina": [],
+"Serrano, Argentina": [
+{
+"lat": -34.47107,
+"lng": -63.54008,
+"nome": "Serrano",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"Suardi, Argentina": [
+{
+"lat": -30.53428,
+"lng": -61.96106,
+"nome": "Municipio de Suardi",
+"provincia": "santa fe",
+"tipo": "village"
+}
+],
+"Tapiales, Argentina": [
+{
+"lat": -34.69897,
+"lng": -58.50778,
+"nome": "Tapiales",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Tercero Arriba Department, Argentina": [],
+"Tornquist, Argentina": [
+{
+"lat": -38.10137,
+"lng": -62.22286,
+"nome": "Tornquist",
+"provincia": "buenos aires",
+"tipo": "village"
+},
+{
+"lat": -38.26469,
+"lng": -62.1845,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"Transito, Argentina": [
+{
+"lat": -31.42428,
+"lng": -63.19446,
+"nome": "Tránsito",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -31.66444,
+"lng": -64.84966,
+"nome": "",
+"provincia": "cordoba",
+"tipo": "county"
+},
+{
+"lat": -31.42473,
+"lng": -63.19427,
+"nome": "Municipio de Tránsito",
+"provincia": "cordoba",
+"tipo": "municipality"
+}
+],
+"Tristan Suarez, Argentina": [
+{
+"lat": -34.89076,
+"lng": -58.56669,
+"nome": "Tristán Suárez",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Turdera, Argentina": [
+{
+"lat": -34.79089,
+"lng": -58.40508,
+"nome": "Turdera",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
+"Viedma, Argentina": [
+{
+"lat": -40.80843,
+"lng": -62.99472,
+"nome": "Municipio de Viedma",
+"provincia": "rio negro",
+"tipo": "town"
+},
+{
+"lat": -40.82381,
+"lng": -63.0053,
+"nome": "Municipio de Viedma",
+"provincia": "rio negro",
+"tipo": "city_district"
+}
+],
+"Villa Concepción del Tio, Argentina": [
+{
+"lat": -31.32214,
+"lng": -62.81408,
+"nome": "Villa Concepción del Tío",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
+"Villa Lynch, Argentina": [
+{
+"lat": -34.59142,
+"lng": -58.52477,
+"nome": "Villa Lynch",
+"provincia": "buenos aires",
+"tipo": "village"
+},
+{
+"lat": -40.79231,
+"lng": -62.97552,
+"nome": "Carmen de Patagones",
+"provincia": "buenos aires",
+"tipo": "suburb"
+}
+],
+"Villa Maipu, Argentina": [
+{
+"lat": -34.56831,
+"lng": -58.52222,
+"nome": "Villa Maipú",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
+"Villa Santa Rosa, Argentina": [
+{
+"lat": -31.15349,
+"lng": -63.39938,
+"nome": "Villa Santa Rosa",
+"provincia": "cordoba",
+"tipo": "village"
+},
+{
+"lat": -34.83729,
+"lng": -58.29154,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -31.74485,
+"lng": -68.31431,
+"nome": "Villa Santa Rosa",
+"provincia": "san juan",
+"tipo": "village"
+},
+{
+"lat": -31.51954,
+"lng": -68.56985,
+"nome": "",
+"provincia": "san juan",
+"tipo": "neighbourhood"
+}
+],
+"Villalonga, Argentina": [
+{
+"lat": -39.91747,
+"lng": -62.61889,
+"nome": "Villalonga",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
+"Zarate, Argentina": [
+{
+"lat": -34.09547,
+"lng": -59.02451,
+"nome": "Zárate",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -26.21613,
+"lng": -65.38438,
+"nome": "Municipio de San Pedro de Colalao",
+"provincia": "tucuman",
+"tipo": "hamlet"
+},
+{
+"lat": -34.00321,
+"lng": -59.1467,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"adrogue, Argentina": [
+{
+"lat": -34.79739,
+"lng": -58.38855,
+"nome": "Partido de Almirante Brown",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -34.79739,
+"lng": -58.38855,
+"nome": "Adrogué",
+"provincia": "buenos aires",
+"tipo": "town"
 }
 ],
 "alderete tucuman, Argentina": [],
@@ -184,6 +2169,22 @@
 "tipo": "village"
 }
 ],
+"buenos aires, Argentina": [
+{
+"lat": -34.60956,
+"lng": -58.38879,
+"nome": "Buenos Aires",
+"provincia": "ciudad autonoma de buenos aires",
+"tipo": "city"
+},
+{
+"lat": -36.37899,
+"lng": -60.38559,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state"
+}
+],
 "canals, Argentina": [
 {
 "lat": -33.56222,
@@ -198,6 +2199,15 @@
 "nome": "Municipio de Canals",
 "provincia": "cordoba",
 "tipo": "municipality"
+}
+],
+"carhue, Argentina": [
+{
+"lat": -37.17947,
+"lng": -62.76004,
+"nome": "Carhué",
+"provincia": "buenos aires",
+"tipo": "village"
 }
 ],
 "carmen de areco, Argentina": [
@@ -276,6 +2286,15 @@
 "tipo": "municipality"
 }
 ],
+"concepcion del uruguay, Argentina": [
+{
+"lat": -32.48518,
+"lng": -58.23202,
+"nome": "Concepción del Uruguay",
+"provincia": "entre rios",
+"tipo": "town"
+}
+],
 "concordia, Argentina": [
 {
 "lat": -31.34019,
@@ -290,6 +2309,15 @@
 "nome": "Concordia",
 "provincia": "entre rios",
 "tipo": "city"
+}
+],
+"coronel suárez, Argentina": [
+{
+"lat": -37.45858,
+"lng": -61.9329,
+"nome": "Coronel Suárez",
+"provincia": "buenos aires",
+"tipo": "town"
 }
 ],
 "corrientes, Argentina": [
@@ -320,6 +2348,43 @@
 "nome": "Corrientes",
 "provincia": "corrientes",
 "tipo": "city"
+}
+],
+"de abril, Argentina": [
+{
+"lat": -27.64784,
+"lng": -61.35061,
+"nome": "",
+"provincia": "chaco",
+"tipo": "state_district"
+},
+{
+"lat": -34.75536,
+"lng": -58.48538,
+"nome": "9 de Abril",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -31.45837,
+"lng": -64.12835,
+"nome": "Córdoba",
+"provincia": "cordoba",
+"tipo": "suburb"
+},
+{
+"lat": -24.81396,
+"lng": -65.40366,
+"nome": "Salta",
+"provincia": "salta",
+"tipo": "city_district"
+},
+{
+"lat": -54.8091,
+"lng": -68.32788,
+"nome": "Ushuaia",
+"provincia": "",
+"tipo": "suburb"
 }
 ],
 "del plata mar del plata, Argentina": [
@@ -354,6 +2419,33 @@
 "nome": "Municipio de Eldorado",
 "provincia": "misiones",
 "tipo": "city_district"
+}
+],
+"entre rios province, Argentina": [
+{
+"lat": -32.12907,
+"lng": -59.50777,
+"nome": "",
+"provincia": "entre rios",
+"tipo": "state"
+}
+],
+"entre rios, Argentina": [
+{
+"lat": -32.12907,
+"lng": -59.50777,
+"nome": "",
+"provincia": "entre rios",
+"tipo": "state"
+}
+],
+"entre, Argentina": [
+{
+"lat": -32.12907,
+"lng": -59.50777,
+"nome": "",
+"provincia": "entre rios",
+"tipo": "state"
 }
 ],
 "escobar, Argentina": [
@@ -432,6 +2524,80 @@
 "tipo": "village"
 }
 ],
+"flores, Argentina": [
+{
+"lat": -34.6282,
+"lng": -58.46222,
+"nome": "Buenos Aires",
+"provincia": "ciudad autonoma de buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -37.68301,
+"lng": -59.79989,
+"nome": "Benito Juárez",
+"provincia": "buenos aires",
+"tipo": "neighbourhood"
+},
+{
+"lat": -36.02213,
+"lng": -59.12353,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+},
+{
+"lat": -36.01428,
+"lng": -59.09987,
+"nome": "Las Flores",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -33.65095,
+"lng": -69.15555,
+"nome": "Distrito Vista Flores",
+"provincia": "mendoza",
+"tipo": "village"
+}
+],
+"florida, Argentina": [
+{
+"lat": -34.53221,
+"lng": -58.49373,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -24.2493,
+"lng": -65.19195,
+"nome": "Municipio de Palpalá",
+"provincia": "jujuy",
+"tipo": "suburb"
+},
+{
+"lat": -32.03843,
+"lng": -61.21523,
+"nome": "Gálvez",
+"provincia": "santa fe",
+"tipo": "neighbourhood"
+},
+{
+"lat": -31.72615,
+"lng": -60.51184,
+"nome": "Paraná",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+},
+{
+"lat": -26.43226,
+"lng": -54.60024,
+"nome": "Municipio de Eldorado",
+"provincia": "misiones",
+"tipo": "neighbourhood"
+}
+],
 "formosa, Argentina": [
 {
 "lat": -24.59553,
@@ -507,6 +2673,22 @@
 "tipo": "town"
 }
 ],
+"guamini, Argentina": [
+{
+"lat": -37.01092,
+"lng": -62.42222,
+"nome": "Guaminí",
+"provincia": "buenos aires",
+"tipo": "village"
+},
+{
+"lat": -36.90483,
+"lng": -62.43696,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
 "guemes, Argentina": [
 {
 "lat": -24.67447,
@@ -545,6 +2727,44 @@
 }
 ],
 "huracan goya, Argentina": [],
+"jose maria jauregui, Argentina": [],
+"jose maria, Argentina": [
+{
+"lat": -34.55785,
+"lng": -58.57834,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -27.49141,
+"lng": -58.76886,
+"nome": "Corrientes",
+"provincia": "corrientes",
+"tipo": "suburb"
+},
+{
+"lat": -51.64059,
+"lng": -69.21977,
+"nome": "Municipio de Río Gallegos",
+"provincia": "santa cruz",
+"tipo": "suburb"
+},
+{
+"lat": -29.1843,
+"lng": -58.09335,
+"nome": "Municipio de Mercedes",
+"provincia": "corrientes",
+"tipo": "neighbourhood"
+},
+{
+"lat": -31.86383,
+"lng": -62.71461,
+"nome": "Municipio de Las Varillas",
+"provincia": "cordoba",
+"tipo": "neighbourhood"
+}
+],
 "jujuy, Argentina": [
 {
 "lat": -23.15462,
@@ -634,6 +2854,29 @@
 "tipo": "town"
 }
 ],
+"loma hermosa, Argentina": [
+{
+"lat": -34.56935,
+"lng": -58.60158,
+"nome": "Loma Hermosa",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -31.73698,
+"lng": -60.49633,
+"nome": "Paraná",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+},
+{
+"lat": -25.3183,
+"lng": -58.31698,
+"nome": "Loma Hermosa",
+"provincia": "formosa",
+"tipo": "hamlet"
+}
+],
 "loretana, Argentina": [],
 "luis piedra buena jj, Argentina": [],
 "luis piedra buena, Argentina": [
@@ -646,6 +2889,7 @@
 }
 ],
 "mandiyu corrientes, Argentina": [],
+"maria jauregui, Argentina": [],
 "mendoza mendoza, Argentina": [
 {
 "lat": -32.99152,
@@ -669,6 +2913,29 @@
 "nome": "Ciudad de Mendoza",
 "provincia": "mendoza",
 "tipo": "city"
+}
+],
+"mercedes, Argentina": [
+{
+"lat": -34.65067,
+"lng": -59.43172,
+"nome": "Mercedes",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -29.18356,
+"lng": -58.08,
+"nome": "Municipio de Mercedes",
+"provincia": "corrientes",
+"tipo": "town"
+},
+{
+"lat": -34.69981,
+"lng": -59.43065,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
 }
 ],
 "mision, Argentina": [
@@ -708,6 +2975,15 @@
 "tipo": "municipality"
 }
 ],
+"monte maiz, Argentina": [
+{
+"lat": -33.20426,
+"lng": -62.60063,
+"nome": "Monte Maíz",
+"provincia": "cordoba",
+"tipo": "village"
+}
+],
 "necochea, Argentina": [
 {
 "lat": -38.55455,
@@ -740,6 +3016,7 @@
 "tipo": "hamlet"
 }
 ],
+"nueve de abril, Argentina": [],
 "olavarria, Argentina": [
 {
 "lat": -36.89388,
@@ -776,6 +3053,15 @@
 }
 ],
 "pedro j san pedro, Jujuy, Argentina": [],
+"pigüe, Argentina": [
+{
+"lat": -37.6028,
+"lng": -62.40231,
+"nome": "Pigüé",
+"provincia": "buenos aires",
+"tipo": "town"
+}
+],
 "posadas, Argentina": [
 {
 "lat": -27.36648,
@@ -793,6 +3079,53 @@
 }
 ],
 "presidencia roque s pena ctral, Argentina": [],
+"province, Argentina": [
+{
+"lat": -36.37899,
+"lng": -60.38559,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state"
+},
+{
+"lat": -32.12907,
+"lng": -59.50777,
+"nome": "",
+"provincia": "entre rios",
+"tipo": "state"
+},
+{
+"lat": -40.4812,
+"lng": -67.61459,
+"nome": "",
+"provincia": "rio negro",
+"tipo": "state"
+},
+{
+"lat": -38.85025,
+"lng": -69.83227,
+"nome": "",
+"provincia": "neuquen",
+"tipo": "state"
+},
+{
+"lat": -49.04686,
+"lng": -70.27054,
+"nome": "",
+"provincia": "santa cruz",
+"tipo": "state"
+}
+],
+"pueblo san josé, Argentina": [
+{
+"lat": -34.09111,
+"lng": -60.41316,
+"nome": "Villa San José",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
+"pueblo santa trinidad, Argentina": [],
 "quimili, Argentina": [
 {
 "lat": -27.64469,
@@ -913,6 +3246,61 @@
 "tipo": "suburb"
 }
 ],
+"rios province, Argentina": [
+{
+"lat": -31.07517,
+"lng": -58.02485,
+"nome": "",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+},
+{
+"lat": -31.10023,
+"lng": -58.02284,
+"nome": "",
+"provincia": "entre rios",
+"tipo": "city_block"
+},
+{
+"lat": -31.78401,
+"lng": -60.49384,
+"nome": "Paraná",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+},
+{
+"lat": -31.69044,
+"lng": -60.15925,
+"nome": "Colonia Argentina",
+"provincia": "entre rios",
+"tipo": "hamlet"
+},
+{
+"lat": -33.54237,
+"lng": -59.31573,
+"nome": "La Argentina",
+"provincia": "entre rios",
+"tipo": "hamlet"
+}
+],
+"rios, Argentina": [
+{
+"lat": -32.12907,
+"lng": -59.50777,
+"nome": "",
+"provincia": "entre rios",
+"tipo": "state"
+}
+],
+"rivera, Argentina": [
+{
+"lat": -37.16053,
+"lng": -63.24178,
+"nome": "Rivera",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
 "roque s pena ctral, Argentina": [],
 "salta salta, Argentina": [
 {
@@ -937,6 +3325,43 @@
 "nome": "Salta",
 "provincia": "salta",
 "tipo": "city"
+}
+],
+"san francisco, Argentina": [
+{
+"lat": -31.42498,
+"lng": -62.08403,
+"nome": "San Francisco",
+"provincia": "cordoba",
+"tipo": "town"
+},
+{
+"lat": -23.62245,
+"lng": -64.94936,
+"nome": "Municipio de San Francisco",
+"provincia": "jujuy",
+"tipo": "village"
+},
+{
+"lat": -34.46271,
+"lng": -58.96933,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "suburb"
+},
+{
+"lat": -31.32167,
+"lng": -64.30266,
+"nome": "Córdoba",
+"provincia": "cordoba",
+"tipo": "suburb"
+},
+{
+"lat": -37.31737,
+"lng": -59.11669,
+"nome": "Tandil",
+"provincia": "buenos aires",
+"tipo": "suburb"
 }
 ],
 "san jorge, Argentina": [
@@ -990,6 +3415,43 @@
 "nome": "San Juan",
 "provincia": "san juan",
 "tipo": "city"
+}
+],
+"san miguel, Argentina": [
+{
+"lat": -34.54301,
+"lng": -58.71197,
+"nome": "San Miguel",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -28.14003,
+"lng": -66.20257,
+"nome": "San Miguel",
+"provincia": "catamarca",
+"tipo": "village"
+},
+{
+"lat": -27.99803,
+"lng": -57.58727,
+"nome": "Municipio de San Miguel",
+"provincia": "corrientes",
+"tipo": "village"
+},
+{
+"lat": -26.85428,
+"lng": -54.88842,
+"nome": "Municipio de Garuhapé",
+"provincia": "misiones",
+"tipo": "hamlet"
+},
+{
+"lat": -27.462,
+"lng": -59.01018,
+"nome": "Resistencia",
+"provincia": "chaco",
+"tipo": "suburb"
 }
 ],
 "san nicolas, Argentina": [
@@ -1202,6 +3664,15 @@
 "tipo": "city"
 }
 ],
+"santa trinidad, Argentina": [
+{
+"lat": -37.4885,
+"lng": -61.92235,
+"nome": "Santa Trinidad",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
 "santo general guemes, Argentina": [
 {
 "lat": -24.69499,
@@ -1246,6 +3717,22 @@
 "nome": "Municipio de El Sauzalito",
 "provincia": "chaco",
 "tipo": "hamlet"
+}
+],
+"tornquist, Argentina": [
+{
+"lat": -38.10137,
+"lng": -62.22286,
+"nome": "Tornquist",
+"provincia": "buenos aires",
+"tipo": "village"
+},
+{
+"lat": -38.26469,
+"lng": -62.1845,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
 }
 ],
 "trelew, Argentina": [
@@ -1296,6 +3783,15 @@
 "nome": "Municipio de Viedma",
 "provincia": "rio negro",
 "tipo": "city_district"
+}
+],
+"villa maipu, Argentina": [
+{
+"lat": -34.56831,
+"lng": -58.52222,
+"nome": "Villa Maipú",
+"provincia": "buenos aires",
+"tipo": "town"
 }
 ],
 "villa mercedes, Argentina": [
