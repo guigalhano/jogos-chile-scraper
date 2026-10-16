@@ -25,11 +25,15 @@
   },
   "Inglaterra - National League": {
     "id": 173,
-    "erro": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
+    "temporada": "National League 26/27",
+    "eventos_janela": 420,
+    "erro": null
   },
   "Inglaterra - FA Cup": {
     "id": 19,
-    "erro": "Page.evaluate: Execution context was destroyed, most likely because of a navigation"
+    "temporada": "FA Cup 26/27",
+    "eventos_janela": 77,
+    "erro": null
   },
   "Inglaterra - FA Cup - Qualificação": {
     "id": 1696,
@@ -70,7 +74,7 @@
   "Inglaterra - Midland League Cup": {
     "id": 36931,
     "temporada": "Midland Football League Cup 26/27",
-    "eventos_janela": 18,
+    "eventos_janela": 17,
     "erro": null
   },
   "Inglaterra - Women's Super League": {
@@ -88,7 +92,7 @@
   "Inglaterra - FA Women's League Cup": {
     "id": 11667,
     "temporada": "FA Womens League Cup 26/27",
-    "eventos_janela": 61,
+    "eventos_janela": 54,
     "erro": null
   },
   "Escócia - Premiership": {
@@ -412,7 +416,7 @@
   "Irlanda do Norte - NIFL Reserve League": {
     "id": 23276,
     "temporada": "26/27",
-    "eventos_janela": 20,
+    "eventos_janela": 17,
     "erro": null
   }
 }
