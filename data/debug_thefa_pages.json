@@ -35,25 +35,25 @@
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
     "status": 200,
-    "bytes": 178075
+    "bytes": 178033
   },
   {
     "copa": "FA Vase",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
     "status": 200,
-    "bytes": 20777
+    "bytes": 20898
   },
   {
     "copa": "FA Vase",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=3",
     "status": 200,
-    "bytes": 20777
+    "bytes": 20815
   },
   {
     "copa": "FA Vase",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=4",
     "status": 200,
-    "bytes": 6426
+    "bytes": 7189
   },
   {
     "copa": "FA Vase",
@@ -70,9 +70,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-31 15:00 Lye Town v Eastwood Community @ ",
       "2026-10-31 15:00 Cirencester Town v Longlevens @ ",
-      "2026-10-31 15:00 Southwell City v Rugby Town @ "
+      "2026-10-31 15:00 Southwell City v Rugby Town @ ",
+      "2026-10-31 15:00 Gresley Rovers v Ludlow Town @ "
     ]
   },
   {
@@ -80,9 +80,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=3",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-31 15:00 White Ensign v Wormley Rovers @ ",
       "2026-10-31 15:00 Lingfield v Crawley Down Gatwick @ ",
-      "2026-10-31 15:00 Hassocks v Eastbourne United AFC @ "
+      "2026-10-31 15:00 Hassocks v Eastbourne United AFC @ ",
+      "2026-10-31 15:00 Rusthall v Haywards Heath Town @ "
     ]
   },
   {
@@ -90,9 +90,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=4",
     "jogos_parseados": 4,
     "amostra": [
-      "2026-10-31 15:00 Shepton Mallet AFC v Bridgwater United @ ",
       "2026-10-31 15:00 Amesbury Town v Highworth Town @ ",
-      "2026-10-31 15:00 Portishead Town v Clevedon Town @ "
+      "2026-10-31 15:00 Portishead Town v Clevedon Town @ ",
+      "2026-10-31 15:00 Elburton Villa v Sturminster Newton United @ "
     ]
   },
   {
@@ -143,7 +143,7 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 22625
+    "bytes": 22742
   },
   {
     "copa": "Women's FA Cup",
@@ -185,16 +185,48 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 169661
+    "bytes": 177415
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
+    "status": 200,
+    "bytes": 22478
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
+    "status": 200,
+    "bytes": 8920
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
-    "jogos_parseados": 13,
+    "jogos_parseados": 20,
     "amostra": [
-      "2026-10-15 19:00 Guiseley AFC v FC Halifax Town @ ",
-      "2026-10-15 19:30 Blyth Spartans AFC v Stockton Town @ ",
-      "2026-10-15 19:45 Milton Keynes Irish v Grantham Town @ "
+      "2026-10-16 19:00 Hertford Town v Hemel Hempstead Town @ ",
+      "2026-10-16 19:30 Pontefract Collieries v Newcastle Blue Star_ @ ",
+      "2026-10-16 19:45 Racing Club Warwick v Boston United @ "
+    ]
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-31 19:00 Chesterfield v Milton Keynes Dons @ ",
+      "2026-10-31 19:00 Northampton Town v Grimsby Town @ ",
+      "2026-10-31 19:00 Notts County v Burton Albion @ "
+    ]
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
+    "jogos_parseados": 6,
+    "amostra": [
+      "2026-10-31 19:00 Reading v Cheltenham Town @ ",
+      "2026-10-31 19:00 Street v Swindon Town @ ",
+      "2026-10-31 19:00 Bristol Rovers v Forest Green Rovers @ "
     ]
   }
 ]
