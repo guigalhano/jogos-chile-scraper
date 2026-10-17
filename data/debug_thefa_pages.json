@@ -3,7 +3,7 @@
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "status": 200,
-    "bytes": 179343
+    "bytes": 179287
   },
   {
     "copa": "FA Trophy",
@@ -35,7 +35,7 @@
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
     "status": 200,
-    "bytes": 178033
+    "bytes": 177977
   },
   {
     "copa": "FA Vase",
@@ -99,13 +99,13 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 173425
+    "bytes": 173369
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
     "status": 200,
-    "bytes": 11718
+    "bytes": 11828
   },
   {
     "copa": "FA Sunday Cup",
@@ -131,13 +131,13 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140763
+    "bytes": 140707
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 180278
+    "bytes": 180222
   },
   {
     "copa": "Women's FA Cup",
@@ -185,28 +185,28 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 177415
+    "bytes": 177241
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 22478
+    "bytes": 22484
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
     "status": 200,
-    "bytes": 8920
+    "bytes": 3821
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-16 19:00 Hertford Town v Hemel Hempstead Town @ ",
-      "2026-10-16 19:30 Pontefract Collieries v Newcastle Blue Star_ @ ",
-      "2026-10-16 19:45 Racing Club Warwick v Boston United @ "
+      "2026-10-18 16:30 Walthamstow v Cockfosters @ ",
+      "2026-10-21 19:45 AFC Greenwich Borough v Merstham @ ",
+      "2026-10-31 19:00 Chorley v Hartlepool United @ "
     ]
   },
   {
@@ -214,19 +214,17 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-31 19:00 Chesterfield v Milton Keynes Dons @ ",
-      "2026-10-31 19:00 Northampton Town v Grimsby Town @ ",
-      "2026-10-31 19:00 Notts County v Burton Albion @ "
+      "2026-10-31 19:00 St Ives Town v RC Warwick / Boston Utd @ ",
+      "2026-10-31 19:00 Mansfield Town v Peterborough United @ ",
+      "2026-10-31 19:00 Walsall v Solihull Moors @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
-    "jogos_parseados": 6,
+    "jogos_parseados": 1,
     "amostra": [
-      "2026-10-31 19:00 Reading v Cheltenham Town @ ",
-      "2026-10-31 19:00 Street v Swindon Town @ ",
-      "2026-10-31 19:00 Bristol Rovers v Forest Green Rovers @ "
+      "2026-10-31 19:00 Plymouth Argyle v Mangotsfield United @ "
     ]
   }
 ]
