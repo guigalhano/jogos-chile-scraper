@@ -2315,6 +2315,12 @@
 "lng": -0.29171,
 "local": "The Hive Stadium"
 },
+"Inglaterra|Barnet|FA": {
+"fonte": "nome",
+"lat": 51.65309,
+"lng": -0.20023,
+"local": "Chipping Barnet"
+},
 "Inglaterra|Barnoldswick Town": {
 "fonte": "nome",
 "lat": 53.91708,
@@ -2729,6 +2735,12 @@
 "lng": -3.04131,
 "local": "Bloomfield Road"
 },
+"Inglaterra|Blackpool|FA": {
+"fonte": "nome",
+"lat": 53.81794,
+"lng": -3.05098,
+"local": "Blackpool"
+},
 "Inglaterra|Blandford United": {
 "fonte": "nome",
 "lat": 50.856,
@@ -2927,6 +2939,12 @@
 "lng": -1.75938,
 "local": "Valley Parade"
 },
+"Inglaterra|Bradford City|FA": {
+"fonte": "nome",
+"lat": 53.79442,
+"lng": -1.75192,
+"local": "Bradford"
+},
 "Inglaterra|Bradford Town": {
 "fonte": "nome",
 "lat": 53.79442,
@@ -3088,6 +3106,12 @@
 "lat": 51.48626,
 "lng": -2.58318,
 "local": "Memorial Stadium"
+},
+"Inglaterra|Bristol Rovers|FA": {
+"fonte": "nome",
+"lat": 51.44301,
+"lng": -2.58166,
+"local": "City of Bristol"
 },
 "Inglaterra|Bristol Telephones": {
 "fonte": "nome",
@@ -3407,6 +3431,12 @@
 "lng": 0.15418,
 "local": "Cledara Abbey Stadium"
 },
+"Inglaterra|Cambridge United|FA": {
+"fonte": "nome",
+"lat": 52.19758,
+"lng": 0.13915,
+"local": "Cambridge"
+},
 "Inglaterra|Camden & Islington United": {
 "fonte": "nome",
 "lat": 51.5428,
@@ -3581,6 +3611,12 @@
 "lng": -2.77665,
 "local": "Cheddar"
 },
+"Inglaterra|Chelmsford / Leverstock G": {
+"fonte": "nome",
+"lat": 51.73453,
+"lng": 0.47305,
+"local": "Chelmsford"
+},
 "Inglaterra|Chelmsford City": {
 "fonte": "nome",
 "lat": 51.73453,
@@ -3670,6 +3706,12 @@
 "lat": 53.25356,
 "lng": -1.42582,
 "local": "SMH Group  Stadium"
+},
+"Inglaterra|Chesterfield|FA": {
+"fonte": "nome",
+"lat": 53.23521,
+"lng": -1.42641,
+"local": "Chesterfield"
 },
 "Inglaterra|Chichester City": {
 "fonte": "nome",
@@ -3911,6 +3953,12 @@
 "lng": 0.89765,
 "local": "Jobserve Community Stadium"
 },
+"Inglaterra|Colchester United|FA": {
+"fonte": "nome",
+"lat": 51.88969,
+"lng": 0.89947,
+"local": "Colchester"
+},
 "Inglaterra|Colden Common": {
 "fonte": "nome",
 "lat": 50.99882,
@@ -4150,6 +4198,12 @@
 "lat": 53.0874,
 "lng": -2.43573,
 "local": "Alexandra Stadium"
+},
+"Inglaterra|Crewe Alexandra|FA": {
+"fonte": "nome",
+"lat": 53.09962,
+"lng": -2.44146,
+"local": "Crewe"
 },
 "Inglaterra|Cribbs": {
 "fonte": "nome",
@@ -5101,6 +5155,12 @@
 },
 "Inglaterra|Fleetwood Town": {
 "fonte": "cidade",
+"lat": 53.92463,
+"lng": -3.00764,
+"local": "Fleetwood"
+},
+"Inglaterra|Fleetwood Town|FA": {
+"fonte": "nome",
 "lat": 53.92463,
 "lng": -3.00764,
 "local": "Fleetwood"
@@ -6101,6 +6161,12 @@
 "lng": -0.04533,
 "local": "Hertford Heath"
 },
+"Inglaterra|Hertford T / Hemel H": {
+"fonte": "nome",
+"lat": 51.79574,
+"lng": -0.07852,
+"local": "Hertford"
+},
 "Inglaterra|Hertford Town": {
 "fonte": "nome",
 "lat": 51.79574,
@@ -6935,6 +7001,12 @@
 "lng": 1.57643,
 "local": "Leiston"
 },
+"Inglaterra|Leiston|FA": {
+"fonte": "nome",
+"lat": 52.20648,
+"lng": 1.57643,
+"local": "Leiston"
+},
 "Inglaterra|Leiston|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 52.20648,
@@ -7289,6 +7361,12 @@
 "lng": -0.42303,
 "local": "Luton"
 },
+"Inglaterra|Luton Town|FA": {
+"fonte": "nome",
+"lat": 51.89107,
+"lng": -0.42303,
+"local": "Luton"
+},
 "Inglaterra|Lutterworth Athletic": {
 "fonte": "nome",
 "lat": 52.45522,
@@ -7468,6 +7546,12 @@
 "lat": 53.13806,
 "lng": -1.20092,
 "local": "One Call Stadium"
+},
+"Inglaterra|Mansfield Town|FA": {
+"fonte": "nome",
+"lat": 53.14438,
+"lng": -1.19642,
+"local": "Mansfield"
 },
 "Inglaterra|March Town United": {
 "fonte": "nome",
@@ -8045,6 +8129,12 @@
 "lng": -0.89636,
 "local": "Northampton"
 },
+"Inglaterra|Northampton Town|FA": {
+"fonte": "nome",
+"lat": 52.23789,
+"lng": -0.89636,
+"local": "Northampton"
+},
 "Inglaterra|Northfield Town": {
 "fonte": "nome",
 "lat": 52.41172,
@@ -8255,6 +8345,12 @@
 "lng": -1.25785,
 "local": "Oxford"
 },
+"Inglaterra|Oxford United|FA": {
+"fonte": "nome",
+"lat": 51.75201,
+"lng": -1.25785,
+"local": "Oxford"
+},
 "Inglaterra|Oxhey Jets": {
 "fonte": "nome",
 "lat": 51.62486,
@@ -8424,6 +8520,12 @@
 "local": "Home Park"
 },
 "Inglaterra|Plymouth Argyle Women": {
+"fonte": "nome",
+"lat": 50.37141,
+"lng": -4.14245,
+"local": "Plymouth"
+},
+"Inglaterra|Plymouth Argyle|FA": {
 "fonte": "nome",
 "lat": 50.37141,
 "lng": -4.14245,
@@ -8669,6 +8771,12 @@
 "lng": -0.97007,
 "local": "Reading"
 },
+"Inglaterra|Reading|FA": {
+"fonte": "nome",
+"lat": 51.45642,
+"lng": -0.97007,
+"local": "Reading"
+},
 "Inglaterra|Redbourn FC": {
 "fonte": "nome",
 "lat": 51.79851,
@@ -8821,6 +8929,12 @@
 },
 "Inglaterra|Rochdale": {
 "fonte": "cidade",
+"lat": 53.61537,
+"lng": -2.15576,
+"local": "Rochdale"
+},
+"Inglaterra|Rochdale AFC": {
+"fonte": "nome",
 "lat": 53.61537,
 "lng": -2.15576,
 "local": "Rochdale"
@@ -9041,6 +9155,12 @@
 "lng": -2.28133,
 "local": "Kersal"
 },
+"Inglaterra|Salford City|FA": {
+"fonte": "nome",
+"lat": 53.48775,
+"lng": -2.28919,
+"local": "Salford"
+},
 "Inglaterra|Salisbury": {
 "fonte": "cidade",
 "lat": 51.06906,
@@ -9232,6 +9352,12 @@
 "lat": 53.41138,
 "lng": -1.50063,
 "local": "Hillsborough Stadium"
+},
+"Inglaterra|Sheffield Wednesday|FA": {
+"fonte": "nome",
+"lat": 53.38066,
+"lng": -1.47023,
+"local": "Sheffield"
 },
 "Inglaterra|Shefford Town & Campton": {
 "fonte": "nome",
@@ -9923,6 +10049,12 @@
 "lng": -2.16648,
 "local": "Edgeley Park"
 },
+"Inglaterra|Stockport County|FA": {
+"fonte": "nome",
+"lat": 53.4079,
+"lng": -2.16024,
+"local": "Stockport"
+},
 "Inglaterra|Stockport Georgians": {
 "fonte": "nome",
 "lat": 53.4079,
@@ -10565,6 +10697,12 @@
 "lng": -3.03262,
 "local": "Prenton Park"
 },
+"Inglaterra|Tranmere Rovers|FA": {
+"fonte": "nome",
+"lat": 53.87166,
+"lng": -1.73074,
+"local": "Tranmere Park"
+},
 "Inglaterra|Trimley Red Devils": {
 "fonte": "nome",
 "lat": 51.99097,
@@ -10720,6 +10858,12 @@
 "lat": 52.5655,
 "lng": -1.9905,
 "local": "Bescot Stadium"
+},
+"Inglaterra|Walsall|FA": {
+"fonte": "nome",
+"lat": 52.58479,
+"lng": -1.98227,
+"local": "Walsall"
 },
 "Inglaterra|Walsham-le-Willows": {
 "fonte": "nome",
@@ -11075,6 +11219,12 @@
 "lng": -1.44544,
 "local": "Whitley Bay"
 },
+"Inglaterra|Whitstable / Aldershot": {
+"fonte": "nome",
+"lat": 51.36063,
+"lng": 1.02406,
+"local": "Whitstable"
+},
 "Inglaterra|Whitstable Town": {
 "fonte": "nome",
 "lat": 51.36063,
@@ -11118,6 +11268,12 @@
 "local": "The Brick Community Stadium"
 },
 "Inglaterra|Wigan Athletic Women": {
+"fonte": "nome",
+"lat": 53.54621,
+"lng": -2.63191,
+"local": "Wigan"
+},
+"Inglaterra|Wigan Athletic|FA": {
 "fonte": "nome",
 "lat": 53.54621,
 "lng": -2.63191,
