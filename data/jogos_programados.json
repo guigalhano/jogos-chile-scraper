@@ -545,6 +545,38 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-10-10",
+    "hora": "17:00",
+    "mandante": "Portuguesa",
+    "visitante": "Deportivo La Guaira",
+    "pais": "Venezuela",
+    "cidade": "Acarigua",
+    "estadio": "Estadio General José Antonio Páez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401903439; status=Full Time; placar=0-0",
+    "id": "bbbbe198de0f9b9b",
+    "atualizado_em": "2026-10-17T17:51:48"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-10-10",
+    "hora": "18:00",
+    "mandante": "Deportivo Táchira",
+    "visitante": "UCV FC",
+    "pais": "Venezuela",
+    "cidade": "San Cristóbal",
+    "estadio": "Estadio Pueblo Nuevo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401903440; status=Full Time; placar=4-1",
+    "id": "48016fba96a553e0",
+    "atualizado_em": "2026-10-17T17:51:48"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-10",
     "hora": "18:10",
@@ -574,6 +606,22 @@
     "extra": "codigo_espn=401906471; status=Full Time; placar=1-0",
     "id": "25852d50d2a36803",
     "atualizado_em": "2026-10-17T17:42:45"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-10-10",
+    "hora": "19:30",
+    "mandante": "Metropolitanos",
+    "visitante": "Rayo Zuliano",
+    "pais": "Venezuela",
+    "cidade": "Caracas",
+    "estadio": "Estadio Olímpico de la UCV",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401903443; status=Full Time; placar=4-0",
+    "id": "0e6c32881f02054e",
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "ESPN",
@@ -609,6 +657,38 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-10-11",
+    "hora": "16:00",
+    "mandante": "Anzoátegui FC",
+    "visitante": "Carabobo",
+    "pais": "Venezuela",
+    "cidade": "Puerto La Cruz",
+    "estadio": "Estadio Olímpico General José Antonio Anzoátegui",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401903442; status=Full Time; placar=0-1",
+    "id": "d8e7922b02e246a9",
+    "atualizado_em": "2026-10-17T17:51:48"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-10-11",
+    "hora": "16:00",
+    "mandante": "Trujillanos",
+    "visitante": "Academia Puerto Cabello",
+    "pais": "Venezuela",
+    "cidade": "Valera",
+    "estadio": "Estadio José Alberto Pérez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401903438; status=Full Time; placar=0-1",
+    "id": "aebb2156fe64fbb8",
+    "atualizado_em": "2026-10-17T17:51:48"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-11",
     "hora": "16:05",
@@ -638,6 +718,38 @@
     "extra": "codigo_espn=401906469; status=Full Time; placar=2-2",
     "id": "5e27bc51245e938f",
     "atualizado_em": "2026-10-17T17:42:45"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-10-11",
+    "hora": "17:30",
+    "mandante": "Caracas FC",
+    "visitante": "Zamora FC",
+    "pais": "Venezuela",
+    "cidade": "Caracas",
+    "estadio": "Estadio Olímpico de la UCV",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401903441; status=Full Time; placar=4-1",
+    "id": "624bea5357703a94",
+    "atualizado_em": "2026-10-17T17:51:48"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-10-11",
+    "hora": "18:00",
+    "mandante": "Monagas SC",
+    "visitante": "Estudiantes de Mérida",
+    "pais": "Venezuela",
+    "cidade": "Maturin",
+    "estadio": "Estadio Monumental de Maturín",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401903437; status=Full Time; placar=2-1",
+    "id": "3ec0ff45d2921d7d",
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "ESPN",
@@ -4161,7 +4273,7 @@
     "url": "",
     "extra": "codigo_espn=401903434; status=Scheduled",
     "id": "b4fb0ff7b8865a8f",
-    "atualizado_em": "2026-10-16T18:47:24"
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "ESPN",
@@ -4177,7 +4289,7 @@
     "url": "",
     "extra": "codigo_espn=401903432; status=Scheduled",
     "id": "160b43ebfeb32922",
-    "atualizado_em": "2026-10-16T18:47:24"
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "CBF",
@@ -4800,7 +4912,7 @@
     "url": "",
     "extra": "codigo_espn=401903433; status=Scheduled",
     "id": "d7f905e4d07a0ac9",
-    "atualizado_em": "2026-10-16T18:47:24"
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "SofaScore",
@@ -6946,7 +7058,7 @@
     "url": "",
     "extra": "codigo_espn=401903435; status=Scheduled",
     "id": "074ef1700d46d966",
-    "atualizado_em": "2026-10-16T18:47:24"
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "ESPN",
@@ -6962,7 +7074,7 @@
     "url": "",
     "extra": "codigo_espn=401903431; status=Scheduled",
     "id": "cad221c468ff6bf9",
-    "atualizado_em": "2026-10-16T18:47:24"
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "ESPN",
@@ -6978,7 +7090,7 @@
     "url": "",
     "extra": "codigo_espn=401903436; status=Scheduled",
     "id": "b920f324d77169c6",
-    "atualizado_em": "2026-10-16T18:47:24"
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "ESPN",
@@ -6994,7 +7106,7 @@
     "url": "",
     "extra": "codigo_espn=401903430; status=Scheduled",
     "id": "0f1c3482c1085f09",
-    "atualizado_em": "2026-10-16T18:47:24"
+    "atualizado_em": "2026-10-17T17:51:48"
   },
   {
     "fonte": "FPF",
