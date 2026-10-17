@@ -737,6 +737,15 @@
 "tipo": "state_district"
 }
 ],
+"Huanguelen, Argentina": [
+{
+"lat": -37.05889,
+"lng": -61.93252,
+"nome": "Huanguelén",
+"provincia": "buenos aires",
+"tipo": "village"
+}
+],
 "Ingeniero Maschwitz, Argentina": [
 {
 "lat": -34.38913,
@@ -1357,6 +1366,22 @@
 }
 ],
 "Primeros Colonizadores, Argentina": [],
+"Puan, Argentina": [
+{
+"lat": -37.54812,
+"lng": -62.76839,
+"nome": "Puan",
+"provincia": "buenos aires",
+"tipo": "village"
+},
+{
+"lat": -38.09881,
+"lng": -63.04575,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
 "Pueblo San José, Argentina": [
 {
 "lat": -34.09111,
@@ -1364,6 +1389,15 @@
 "nome": "Villa San José",
 "provincia": "buenos aires",
 "tipo": "village"
+}
+],
+"Pueblo Santa María, Argentina": [
+{
+"lat": -31.78756,
+"lng": -64.59174,
+"nome": "Comuna de Potrero de Garay",
+"provincia": "cordoba",
+"tipo": "suburb"
 }
 ],
 "Pueblo Santa Trinidad, Argentina": [],
