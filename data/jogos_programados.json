@@ -3322,6 +3322,22 @@
     "atualizado_em": "2026-10-18T08:00:36"
   },
   {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-10-16",
+    "hora": "19:20",
+    "mandante": "Recoleta FC",
+    "visitante": "Club Rubio Ñú",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Ricardo Gregor",
+    "rodada": "Jornada 15",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-15-recoleta-vs-rubio-nu-908",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=1-0",
+    "id": "44b7cd2dc8d7b73e",
+    "atualizado_em": "2026-10-18T14:50:59"
+  },
+  {
     "fonte": "CBF",
     "competicao": "Brasil - Série B",
     "data": "2026-10-16",
@@ -6356,9 +6372,9 @@
     "estadio": "Estadio Luis Alfonso Giagni",
     "rodada": "Jornada 15",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-15-guarani-vs-nacional-906",
-    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=0-2",
     "id": "0b6dd7fd32b10a27",
-    "atualizado_em": "2026-10-17T14:25:42"
+    "atualizado_em": "2026-10-18T14:50:59"
   },
   {
     "fonte": "AUF",
@@ -6794,9 +6810,9 @@
     "estadio": "Estadio ueno Defensores del Chaco",
     "rodada": "Jornada 15",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-15-olimpia-vs-2-de-mayo-907",
-    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=3-0",
     "id": "449b41a8053ea63f",
-    "atualizado_em": "2026-10-17T14:25:42"
+    "atualizado_em": "2026-10-18T14:50:59"
   },
   {
     "fonte": "CBF",
@@ -10000,7 +10016,7 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-15-cerro-porteno-vs-sportivo-amel-905",
     "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
     "id": "c459ca3987b599c5",
-    "atualizado_em": "2026-10-17T14:25:42"
+    "atualizado_em": "2026-10-18T14:50:59"
   },
   {
     "fonte": "AUF",
@@ -10307,7 +10323,23 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-15-luqueno-vs-san-lorenzo-909",
     "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
     "id": "332e9bcf5b182a08",
-    "atualizado_em": "2026-10-17T14:25:42"
+    "atualizado_em": "2026-10-18T14:50:59"
+  },
+  {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-10-18",
+    "hora": "19:20",
+    "mandante": "Club Sportivo Trinidense",
+    "visitante": "Club Libertad",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Martín Torres",
+    "rodada": "Jornada 15",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-15-trinidense-vs-libertad-910",
+    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "id": "0cc2e06ff0825803",
+    "atualizado_em": "2026-10-18T14:50:59"
   },
   {
     "fonte": "CBF",
