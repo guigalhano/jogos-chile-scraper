@@ -5086,13 +5086,16 @@
     "hora": "15:00",
     "mandante": "Kimberley (Mar del Plata)",
     "visitante": "Deportivo Rincón",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Kimberley (Mar del Plata)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "6218beeb2c6a4c8c",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Mar del Plata",
+    "lat": -38.0055,
+    "lng": -57.5426
   },
   {
     "fonte": "ESPN",
@@ -5660,13 +5663,16 @@
     "hora": "15:30",
     "mandante": "Huracán (Las Heras)",
     "visitante": "Juventud Antoniana",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Huracán Las Heras",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "8d90a0d451edcc94",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Las Heras",
+    "lat": -32.85,
+    "lng": -68.8333
   },
   {
     "fonte": "SofaScore",
@@ -5941,13 +5947,16 @@
     "hora": "16:00",
     "mandante": "Defensores de Belgrano (V.R.)",
     "visitante": "Sportivo Atlético",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Defensores de Belgrano (V. Ramallo)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "92bd9b0f8f965e08",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Villa Ramallo",
+    "lat": -33.4881,
+    "lng": -60.025
   },
   {
     "fonte": "SofaScore",
@@ -6526,13 +6535,16 @@
     "hora": "18:00",
     "mandante": "Gimnasia y Esgrima (Chivilcoy)",
     "visitante": "Defensores de Vilelas",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Gimnasia y Esgrima (Chivilcoy)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "45d62ee6a42ad29b",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Chivilcoy",
+    "lat": -34.9186,
+    "lng": -60.0154
   },
   {
     "fonte": "SofaScore",
@@ -6770,13 +6782,16 @@
     "hora": "19:00",
     "mandante": "Sol de América",
     "visitante": "Juventud Unida Universitario",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Sol de América (Formosa)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "ff7ce677eb0d41b4",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Formosa",
+    "lat": -26.1849,
+    "lng": -58.1731
   },
   {
     "fonte": "SofaScore",
@@ -6852,13 +6867,16 @@
     "hora": "19:30",
     "mandante": "Atenas (Río Cuarto)",
     "visitante": "FADEP (Mendoza)",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Atenas (Río Cuarto)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "44416e6655f62032",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Río Cuarto",
+    "lat": -33.1232,
+    "lng": -64.3499
   },
   {
     "fonte": "SofaScore",
@@ -6945,13 +6963,16 @@
     "hora": "20:00",
     "mandante": "Mitre (Posadas)",
     "visitante": "Boca Unidos",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Bartolomé Mitre (Posadas)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "313dc4c412bf7212",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Posadas",
+    "lat": -27.3671,
+    "lng": -55.8961
   },
   {
     "fonte": "SofaScore",
@@ -8622,13 +8643,16 @@
     "hora": "15:30",
     "mandante": "Alvarado",
     "visitante": "Cipolletti",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Alvarado (Mar del Plata)",
+    "rodada": "Por Ascenso - Semifinales - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "db3c29218a8c17ab",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Mar del Plata",
+    "lat": -38.0055,
+    "lng": -57.5426
   },
   {
     "fonte": "AFA",
@@ -8637,13 +8661,16 @@
     "hora": "15:30",
     "mandante": "San Martín (Formosa)",
     "visitante": "Olimpo",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de San Martín (Formosa)",
+    "rodada": "Por Ascenso - Semifinales - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "25d9b19d0dad4765",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Formosa",
+    "lat": -26.1849,
+    "lng": -58.1731
   },
   {
     "fonte": "FGF",
@@ -9247,13 +9274,16 @@
     "hora": "16:00",
     "mandante": "Douglas Haig",
     "visitante": "El Linqueño",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Douglas Haig",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "fa50d7c7629abf95",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Pergamino",
+    "lat": -33.8952,
+    "lng": -60.5738
   },
   {
     "fonte": "AFA",
@@ -9262,13 +9292,16 @@
     "hora": "16:00",
     "mandante": "Nueve de Julio",
     "visitante": "Gimnasia y Esgrima (Concepción del Uruguay)",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de 9 de Julio (Rafaela)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "47274497b1358b13",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Rafaela",
+    "lat": -31.2503,
+    "lng": -61.4867
   },
   {
     "fonte": "AFA",
@@ -9277,13 +9310,16 @@
     "hora": "16:00",
     "mandante": "Villa Mitre",
     "visitante": "Atlético Costa Brava",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Villa Mitre",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "e79d8506ff389f2d",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Bahía Blanca",
+    "lat": -38.7196,
+    "lng": -62.2724
   },
   {
     "fonte": "SofaScore",
@@ -9584,13 +9620,16 @@
     "hora": "16:15",
     "mandante": "Argentino (Pascanas)",
     "visitante": "Atlético Club San Martín",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Deportivo Argentino (Pascanas)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "3b3e7bfdf2f60c43",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "Pascanas",
+    "lat": -33.1167,
+    "lng": -63.2667
   },
   {
     "fonte": "SofaScore",
@@ -10249,13 +10288,16 @@
     "hora": "18:30",
     "mandante": "Sarmiento (Santiago del Estero)",
     "visitante": "Sportivo Belgrano",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Sarmiento (La Banda)",
+    "rodada": "Reválida - Primera Etapa - Vuelta",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "39c24566136722ec",
-    "atualizado_em": "2026-10-17T15:17:48"
+    "atualizado_em": "2026-10-17T15:17:48",
+    "cidade": "La Banda",
+    "lat": -27.7317,
+    "lng": -64.2381
   },
   {
     "fonte": "ESPN",
