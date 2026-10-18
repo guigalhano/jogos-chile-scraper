@@ -131,7 +131,7 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140707
+    "bytes": 140772
   },
   {
     "copa": "Women's FA Cup",
@@ -185,13 +185,13 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 177241
+    "bytes": 177228
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 22484
+    "bytes": 22934
   },
   {
     "copa": "FA Youth Cup",
@@ -214,7 +214,7 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-31 19:00 St Ives Town v RC Warwick / Boston Utd @ ",
+      "2026-10-31 19:00 St Ives Town v Racing Club Warwick @ ",
       "2026-10-31 19:00 Mansfield Town v Peterborough United @ ",
       "2026-10-31 19:00 Walsall v Solihull Moors @ "
     ]
