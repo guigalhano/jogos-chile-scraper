@@ -13,7 +13,7 @@
     "url": "",
     "extra": "status=Jugado; placar=4-2",
     "id": "1af62302e2b7878a",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -29,7 +29,7 @@
     "url": "",
     "extra": "status=Jugado; placar=3-1",
     "id": "db9178e104e56e57",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -43,9 +43,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=13'; placar=0-0",
+    "extra": "status=Jugado; placar=4-2",
     "id": "e58bc413354f4565",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -59,9 +59,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=0-1",
     "id": "e491b834748347e8",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -75,9 +75,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=1-4",
     "id": "202af27647e7c4d0",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -91,73 +91,73 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=1-0",
     "id": "af5fc61207f94e0d",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
-    "data": "2026-10-17",
+    "data": "2026-10-18",
     "hora": "13:00",
-    "mandante": "Unión Minas",
-    "visitante": "Pirata FC",
+    "mandante": "Ayacucho",
+    "visitante": "U. Comercio",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
     "rodada": "Grupo Campeonato A",
     "url": "",
-    "extra": "status=Jugado; placar=4-0",
-    "id": "772dc48382b0f6a7",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "extra": "status=Jugado; placar=1-1",
+    "id": "34c00929f0c9ee35",
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
-    "data": "2026-10-17",
-    "hora": "14:00",
-    "mandante": "Alianza UDH",
-    "visitante": "Mannucci",
+    "data": "2026-10-18",
+    "hora": "13:00",
+    "mandante": "Llacuabamba",
+    "visitante": "S. Huancayo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo Campeonato B",
+    "url": "",
+    "extra": "status=Jugado; placar=1-2",
+    "id": "8dcefbec6ec5e389",
+    "atualizado_em": "2026-10-19T19:09:45"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-10-18",
+    "hora": "15:15",
+    "mandante": "ADA Jaén",
+    "visitante": "Comerciantes FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo Campeonato B",
+    "url": "",
+    "extra": "status=Jugado; placar=0-1",
+    "id": "3d3b6feb5a32529e",
+    "atualizado_em": "2026-10-19T19:09:45"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-10-18",
+    "hora": "15:15",
+    "mandante": "Bentín Tacna",
+    "visitante": "San Martín",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
     "rodada": "Grupo Campeonato C",
     "url": "",
-    "extra": "status=Jugado; placar=1-1",
-    "id": "0eda3b913653d90b",
-    "atualizado_em": "2026-10-18T16:24:56"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 2",
-    "data": "2026-10-17",
-    "hora": "15:15",
-    "mandante": "César Vallejo",
-    "visitante": "CNI",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo Descenso A",
-    "url": "",
-    "extra": "status=Jugado; placar=2-1",
-    "id": "a89d94c4a6efc03a",
-    "atualizado_em": "2026-10-18T16:24:56"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 2",
-    "data": "2026-10-17",
-    "hora": "15:15",
-    "mandante": "Santos FC",
-    "visitante": "Cantolao",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo Descenso B",
-    "url": "",
-    "extra": "status=Jugado; placar=1-1",
-    "id": "848d28c5900445d5",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "extra": "status=Jugado; placar=1-2",
+    "id": "2b093a5067d26330",
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -173,7 +173,7 @@
     "url": "",
     "extra": "status=Jugado; placar=0-1",
     "id": "56a4fb3cfd903cab",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -189,7 +189,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-1",
     "id": "0bf073aa914c50cf",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -205,7 +205,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-0",
     "id": "7f8ae189a79fc5da",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -221,7 +221,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-3",
     "id": "3bf03b551b17a317",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -237,6 +237,6 @@
     "url": "",
     "extra": "status=Jugado; placar=3-0",
     "id": "2aeeb9afaff51bf3",
-    "atualizado_em": "2026-10-18T16:24:56"
+    "atualizado_em": "2026-10-19T19:09:45"
   }
 ]
