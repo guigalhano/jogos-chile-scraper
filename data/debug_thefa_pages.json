@@ -35,19 +35,19 @@
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
     "status": 200,
-    "bytes": 178107
+    "bytes": 179139
   },
   {
     "copa": "FA Vase",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
     "status": 200,
-    "bytes": 20768
+    "bytes": 20545
   },
   {
     "copa": "FA Vase",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=3",
     "status": 200,
-    "bytes": 20815
+    "bytes": 20777
   },
   {
     "copa": "FA Vase",
@@ -60,9 +60,9 @@
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-31 13:00 Belper United v Northampton On Chenecks @ ",
-      "2026-10-31 15:00 Maghull v Retford @ ",
-      "2026-10-31 15:00 Chadderton v Bottesford Town @ "
+      "2026-10-30 19:30 Shepton Mallet AFC v Bridgwater United @ ",
+      "2026-10-30 19:45 Lymore Gardens v Biggleswade United @ ",
+      "2026-10-31 13:00 Belper United v Northampton On Chenecks @ "
     ]
   },
   {
@@ -70,9 +70,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-31 15:00 Lye Town v Eastwood Community @ ",
-      "2026-10-31 15:00 Cirencester Town v Longlevens @ ",
-      "2026-10-31 15:00 Southwell City v Rugby Town @ "
+      "2026-10-31 15:00 AFC Bridgnorth v Desborough Town @ ",
+      "2026-10-31 15:00 Atherstone Town CFC v GNG Oadby Town @ ",
+      "2026-10-31 15:00 Lye Town v Eastwood Community @ "
     ]
   },
   {
@@ -80,9 +80,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=3",
     "jogos_parseados": 20,
     "amostra": [
+      "2026-10-31 15:00 White Ensign v Wormley Rovers @ ",
       "2026-10-31 15:00 Lingfield v Crawley Down Gatwick @ ",
-      "2026-10-31 15:00 Hassocks v Eastbourne United AFC @ ",
-      "2026-10-31 15:00 Rusthall v Haywards Heath Town @ "
+      "2026-10-31 15:00 Hassocks v Eastbourne United AFC @ "
     ]
   },
   {
@@ -99,13 +99,13 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 173369
+    "bytes": 173483
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
     "status": 200,
-    "bytes": 11828
+    "bytes": 11935
   },
   {
     "copa": "FA Sunday Cup",
@@ -131,7 +131,7 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140742
+    "bytes": 140707
   },
   {
     "copa": "Women's FA Cup",
@@ -185,13 +185,13 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 179513
+    "bytes": 179694
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 22995
+    "bytes": 22993
   },
   {
     "copa": "FA Youth Cup",
@@ -208,9 +208,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-31 19:00 Anstey Nomads v Leicester City @ ",
-      "2026-10-31 19:00 Port Vale v Shrewsbury Town @ ",
-      "2026-10-31 19:00 St Ives Town v Racing Club Warwick @ "
+      "2026-10-31 19:00 Milton Keynes Irish v Ilkeston Town @ ",
+      "2026-10-31 19:00 Chesterfield v Milton Keynes Dons @ ",
+      "2026-10-31 19:00 Anstey Nomads v Leicester City @ "
     ]
   }
 ]
