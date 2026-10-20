@@ -1919,6 +1919,12 @@
 "lng": -1.95791,
 "local": "Alvechurch CP"
 },
+"Inglaterra|Alvechurch FC": {
+"fonte": "sofascore",
+"lat": 52.34485,
+"lng": -1.95617,
+"local": "Lye Meadow"
+},
 "Inglaterra|Amersham Town": {
 "fonte": "nome",
 "lat": 51.67668,
@@ -1962,6 +1968,18 @@
 "local": "Annfield Plain"
 },
 "Inglaterra|Anstey Nomads": {
+"fonte": "sofascore",
+"lat": 52.67536,
+"lng": -1.18127,
+"local": "Cropston Road"
+},
+"Inglaterra|Anstey Nomads|FA": {
+"fonte": "nome",
+"lat": 52.67316,
+"lng": -1.1958,
+"local": "Anstey"
+},
+"Inglaterra|Anstey Nomads|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 52.67316,
 "lng": -1.1958,
@@ -5028,6 +5046,12 @@
 "local": "Sunny Hill"
 },
 "Inglaterra|FC United of Manchester": {
+"fonte": "sofascore",
+"lat": 53.5166,
+"lng": -2.18038,
+"local": "Broadhurst Park"
+},
+"Inglaterra|FC United of Manchester|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 52.59342,
 "lng": -0.2492,
@@ -5388,12 +5412,18 @@
 "local": "Glossop"
 },
 "Inglaterra|Gloucester City": {
+"fonte": "sofascore",
+"lat": 51.86568,
+"lng": -2.2431,
+"local": "TigerTurf Stadium"
+},
+"Inglaterra|Gloucester City Reserves": {
 "fonte": "nome",
 "lat": 51.86537,
 "lng": -2.24582,
 "local": "Gloucester"
 },
-"Inglaterra|Gloucester City Reserves": {
+"Inglaterra|Gloucester City|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 51.86537,
 "lng": -2.24582,
@@ -11574,12 +11604,18 @@
 "local": "Wootton"
 },
 "Inglaterra|Worcester City": {
+"fonte": "sofascore",
+"lat": 52.20448,
+"lng": -2.22571,
+"local": "St. George's Lane"
+},
+"Inglaterra|Worcester City Reservers": {
 "fonte": "nome",
 "lat": 52.19653,
 "lng": -2.20956,
 "local": "Worcester"
 },
-"Inglaterra|Worcester City Reservers": {
+"Inglaterra|Worcester City|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 52.19653,
 "lng": -2.20956,
@@ -12395,6 +12431,12 @@
 "lng": -8.48715,
 "local": "Castlerea"
 },
+"Irlanda|Castleview AFC": {
+"fonte": "nome",
+"lat": 51.90403,
+"lng": -8.35841,
+"local": "Castleview"
+},
 "Irlanda|Cobh Ramblers": {
 "fonte": "nome",
 "lat": 51.85023,
@@ -12467,6 +12509,12 @@
 "lng": -6.41646,
 "local": "Oriel Park"
 },
+"Irlanda|Finglas United": {
+"fonte": "nome",
+"lat": 53.38917,
+"lng": -6.29694,
+"local": "Finglas"
+},
 "Irlanda|Finglas United FC": {
 "fonte": "nome",
 "lat": 53.38917,
@@ -12503,6 +12551,12 @@
 "lng": -6.18291,
 "local": "Balbriggan"
 },
+"Irlanda|Hartstown Huntstown": {
+"fonte": "nome",
+"lat": 53.39295,
+"lng": -6.41683,
+"local": "Hartstown"
+},
 "Irlanda|Home Farm DCU": {
 "fonte": "sofascore",
 "lat": 53.36756,
@@ -12527,6 +12581,12 @@
 "lng": -9.51103,
 "local": "Celtic Park"
 },
+"Irlanda|Killester Donnycarney F.C.": {
+"fonte": "sofascore",
+"lat": 53.37322,
+"lng": -6.20431,
+"local": "Hadden Park"
+},
 "Irlanda|Letterkenny Rovers": {
 "fonte": "sofascore",
 "lat": 54.94397,
@@ -12544,6 +12604,12 @@
 "lat": 53.3424,
 "lng": -6.51042,
 "local": "Celbridge Football Park"
+},
+"Irlanda|Malahide United": {
+"fonte": "nome",
+"lat": 53.45084,
+"lng": -6.15367,
+"local": "Malahide"
 },
 "Irlanda|Mayo FC": {
 "fonte": "sofascore",
@@ -12682,6 +12748,18 @@
 "lat": 53.34086,
 "lng": -6.31672,
 "local": "Richmond Park"
+},
+"Irlanda|St. Patrick's C.Y.F.C.": {
+"fonte": "nome",
+"lat": 53.68257,
+"lng": -7.48969,
+"local": "Street"
+},
+"Irlanda|Tolka Rovers AFC": {
+"fonte": "nome",
+"lat": 53.38036,
+"lng": -6.28746,
+"local": "Tolka"
 },
 "Irlanda|Treaty United FC": {
 "fonte": "sofascore",
