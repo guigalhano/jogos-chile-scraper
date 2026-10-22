@@ -131,7 +131,7 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140742
+    "bytes": 140707
   },
   {
     "copa": "Women's FA Cup",
@@ -185,32 +185,32 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 178305
+    "bytes": 176070
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 24502
+    "bytes": 22923
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-21 19:00 Fleetwood Town v FC Halifax Town @ ",
-      "2026-10-21 19:45 AFC Greenwich Borough v Merstham @ ",
-      "2026-10-26 19:00 Luton Town v Stevenage @ "
+      "2026-10-26 19:00 Luton Town v Stevenage @ ",
+      "2026-10-26 19:30 Hayes & Yeading United v Kingstonian @ ",
+      "2026-10-26 19:30 Chippenham Town v Eastleigh @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 20,
+    "jogos_parseados": 18,
     "amostra": [
-      "2026-10-30 19:00 Hertford Town v Worthing @ ",
-      "2026-10-30 19:00 Chelmsford City v Leyton Orient @ ",
-      "2026-10-31 19:00 Salford City v Barnsley @ "
+      "2026-10-29 19:45 Barnet v Chatham Town @ ",
+      "2026-10-30 19:00 Southend United v AFC Wimbledon @ ",
+      "2026-10-30 19:00 Hertford Town v Worthing @ "
     ]
   }
 ]
