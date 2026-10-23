@@ -137,28 +137,28 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 181232
+    "bytes": 180346
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 22483
+    "bytes": 22875
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
     "status": 200,
-    "bytes": 11817
+    "bytes": 9697
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-22 19:45 Lye Town Ladies v Coton Green Ladies @ ",
       "2026-10-24 17:30 Harrogate Town AFC Women v Bolton Wanderers Women @ ",
-      "2026-10-25 12:00 Exeter City Women v Hashtag United Women @ "
+      "2026-10-25 12:00 Exeter City Women v Hashtag United Women @ ",
+      "2026-10-25 14:00 Leeds Modernians Women v Liverpool Feds WFC @ "
     ]
   },
   {
@@ -166,19 +166,19 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-25 14:00 Port Vale Women v Boldmere St Michaels Women @ ",
-      "2026-10-25 14:00 Luton Town Ladies v Cambridge United Women @ ",
-      "2026-10-25 14:00 Leafield Athletic Ladies v Mansfield Town Ladies @ "
+      "2026-10-25 14:00 Leafield Athletic Ladies v Mansfield Town Ladies @ ",
+      "2026-10-25 14:00 Norwich City Women v Redditch Borough Women @ ",
+      "2026-10-25 14:00 Royston Town Women v Crewe Alexandra Women @ "
     ]
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
-    "jogos_parseados": 9,
+    "jogos_parseados": 7,
     "amostra": [
-      "2026-10-25 14:00 Winchester City Flyers Ladies v Keynsham Town Ladies @ ",
-      "2026-10-25 14:00 Maidenhead United Women v Andover New Street Ladies @ ",
-      "2026-10-25 14:00 AFC Portchester Ladies v Oxford United Women @ "
+      "2026-10-25 15:00 Harpenden Town Women v Chesterfield Women @ ",
+      "2026-10-25 15:00 Rugby Borough Women v Sporting Khalsa Women @ ",
+      "2026-10-25 15:00 Actonians Women v Marine Academy Plymouth LFC @ "
     ]
   },
   {
@@ -191,7 +191,7 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 22923
+    "bytes": 22032
   },
   {
     "copa": "FA Youth Cup",
