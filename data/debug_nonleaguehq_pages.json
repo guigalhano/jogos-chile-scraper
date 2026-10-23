@@ -49,7 +49,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-eastern-counties-league-division-one-south/",
-    "jogos": 295
+    "jogos": 294
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-eastern-counties-league-premier/",
@@ -253,7 +253,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-counties-east-league-division-one/",
-    "jogos": 207
+    "jogos": 208
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-counties-east-league-premier/",
@@ -277,7 +277,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-spartan-south-midlands-league-division-one/",
-    "jogos": 225
+    "jogos": 223
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-spartan-south-midlands-league-division-two/",
@@ -345,7 +345,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-west-midlands-regional-league-premier/",
-    "jogos": 0
+    "erro": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-west-yorkshire-league-premier/",
