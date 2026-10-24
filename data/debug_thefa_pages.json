@@ -3,13 +3,13 @@
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "status": 200,
-    "bytes": 179287
+    "bytes": 179292
   },
   {
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
     "status": 200,
-    "bytes": 13595
+    "bytes": 14362
   },
   {
     "copa": "FA Trophy",
@@ -18,7 +18,7 @@
     "amostra": [
       "2026-10-24 15:00 Warrington Rylands v Guiseley AFC @ ",
       "2026-10-24 15:00 Bury v Prescot Cables @ ",
-      "2026-10-24 15:00 Workington AFC v Cleethorpes Town @ "
+      "2026-10-24 15:00 Leek Town v Bootle @ "
     ]
   },
   {
@@ -26,9 +26,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
     "jogos_parseados": 12,
     "amostra": [
-      "2026-10-24 15:00 Enfield Town v Hanworth Villa @ ",
       "2026-10-24 15:00 Needham Market v Wingate & Finchley @ ",
-      "2026-10-24 15:00 Hastings United v Waltham Abbey @ "
+      "2026-10-24 15:00 Hastings United v Waltham Abbey @ ",
+      "2026-10-24 15:00 Berkhamsted v Cray Wanderers @ "
     ]
   },
   {
@@ -143,13 +143,13 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 22875
+    "bytes": 22883
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
     "status": 200,
-    "bytes": 9697
+    "bytes": 10459
   },
   {
     "copa": "Women's FA Cup",
@@ -176,9 +176,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
     "jogos_parseados": 7,
     "amostra": [
-      "2026-10-25 15:00 Harpenden Town Women v Chesterfield Women @ ",
       "2026-10-25 15:00 Rugby Borough Women v Sporting Khalsa Women @ ",
-      "2026-10-25 15:00 Actonians Women v Marine Academy Plymouth LFC @ "
+      "2026-10-25 15:00 Actonians Women v Marine Academy Plymouth LFC @ ",
+      "2026-10-25 15:00 Queens Park Rangers Women v Lewes Women @ "
     ]
   },
   {
