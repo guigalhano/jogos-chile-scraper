@@ -1,5 +1,53 @@
 [
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-23",
+    "hora": "13:00",
+    "mandante": "UTC",
+    "visitante": "Melgar",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=1-2",
+    "id": "1755582a061e6bbe",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-10-23",
+    "hora": "15:00",
+    "mandante": "Binacional",
+    "visitante": "Santos FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo Descenso B",
+    "url": "",
+    "extra": "status=Jugado; placar=1-2",
+    "id": "c3401424153c8680",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-23",
+    "hora": "15:15",
+    "mandante": "Grau",
+    "visitante": "ADT",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=1-1",
+    "id": "8b067fd57043771c",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
     "fonte": "FMF",
     "competicao": "Brasil - FMF - 2ª Divisão - 2026",
     "data": "2026-10-24",
@@ -775,7 +823,23 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "3949100065acd28d",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-10-24",
+    "hora": "11:00",
+    "mandante": "S. Cristal",
+    "visitante": "Pacífico FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 1",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "c30d6440ef276065",
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "ESPN",
@@ -849,7 +913,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "998d7dd1a554a3ad",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "ESPN",
@@ -941,7 +1005,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "1c0da12c3d8b44cc",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -1557,6 +1621,54 @@
     "atualizado_em": "2026-10-23T17:58:04"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "J. Aurich",
+    "visitante": "J. Cautivo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "7daa32878b48e796",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "Universitario",
+    "visitante": "Alianza Lima",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "9c9303a447e8dd47",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "Valle Sagrado",
+    "visitante": "S. Company",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 3",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "74fe7f9160d5a58b",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-24",
@@ -1586,7 +1698,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "7cc7a7235dc40513",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3046,6 +3158,22 @@
     "atualizado_em": "2026-10-24T15:40:40"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-24",
+    "hora": "21:30",
+    "mandante": "Universitario",
+    "visitante": "Juan Pablo II",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "5ef339a612678032",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-10-24",
@@ -3225,7 +3353,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "808da11fad158ac9",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3255,7 +3383,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "e91037032341eafb",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "ESPN",

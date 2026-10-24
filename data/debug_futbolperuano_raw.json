@@ -11,9 +11,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por iniciar; placar=0-0",
+    "extra": "status=Jugado; placar=1-2",
     "id": "1953eb3c3b2d7c2f",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -27,9 +27,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=1-1",
     "id": "cb6887841752aee4",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -45,7 +45,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "7db5ff29d0e740a7",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -61,13 +61,13 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "502313e628b64177",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-24",
-    "hora": "20:30",
+    "hora": "21:30",
     "mandante": "Universitario",
     "visitante": "Juan Pablo II",
     "pais": "Peru",
@@ -76,8 +76,8 @@
     "rodada": "Fase Regular",
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
-    "id": "bc71cd77773c2b64",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "id": "3b1a8ef9d10c6624",
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -93,7 +93,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "93f2a60174c4989b",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -107,9 +107,9 @@
     "estadio": "",
     "rodada": "Grupo Descenso B",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=1-2",
     "id": "e9273675d48d25e5",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -125,7 +125,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "991ef14d4c9cd1a3",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -141,7 +141,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "aa96281171968a57",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -157,70 +157,70 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "525bd07ac6c4fad9",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "atualizado_em": "2026-10-24T16:28:21"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
-    "data": "2026-10-17",
-    "hora": "15:00",
-    "mandante": "S. Pariacoto",
-    "visitante": "Universitario",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo B",
-    "url": "",
-    "extra": "status=Jugado; placar=0-1",
-    "id": "56a4fb3cfd903cab",
-    "atualizado_em": "2026-10-23T17:47:45"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-10-17",
-    "hora": "15:00",
-    "mandante": "Alianza Lima",
-    "visitante": "Sport Boys",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo B",
-    "url": "",
-    "extra": "status=Jugado; placar=2-1",
-    "id": "0bf073aa914c50cf",
-    "atualizado_em": "2026-10-23T17:47:45"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-10-17",
-    "hora": "15:00",
-    "mandante": "Coopsol",
-    "visitante": "U. Huaral",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo B",
-    "url": "",
-    "extra": "status=Jugado; placar=2-0",
-    "id": "7f8ae189a79fc5da",
-    "atualizado_em": "2026-10-23T17:47:45"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-10-17",
-    "hora": "15:00",
+    "data": "2026-10-24",
+    "hora": "11:00",
     "mandante": "S. Cristal",
     "visitante": "Pacífico FC",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
-    "rodada": "Grupo B",
+    "rodada": "Grupo 1",
     "url": "",
-    "extra": "status=Jugado; placar=2-3",
-    "id": "3bf03b551b17a317",
-    "atualizado_em": "2026-10-23T17:47:45"
+    "extra": "status=Por jugar",
+    "id": "4d6e62302ae08a66",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "J. Aurich",
+    "visitante": "J. Cautivo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "d96b8aba2b982f30",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "Universitario",
+    "visitante": "Alianza Lima",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 2",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "e940a4e646d1731a",
+    "atualizado_em": "2026-10-24T16:28:21"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-10-24",
+    "hora": "15:00",
+    "mandante": "Valle Sagrado",
+    "visitante": "S. Company",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 3",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "a55b53b5b63f6516",
+    "atualizado_em": "2026-10-24T16:28:21"
   }
 ]
