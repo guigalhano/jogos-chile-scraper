@@ -2,38 +2,6 @@
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 1",
-    "data": "2026-10-23",
-    "hora": "13:00",
-    "mandante": "UTC",
-    "visitante": "Melgar",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=1-2",
-    "id": "1953eb3c3b2d7c2f",
-    "atualizado_em": "2026-10-24T16:28:21"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-23",
-    "hora": "15:15",
-    "mandante": "Grau",
-    "visitante": "ADT",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=1-1",
-    "id": "cb6887841752aee4",
-    "atualizado_em": "2026-10-24T16:28:21"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
     "data": "2026-10-24",
     "hora": "12:45",
     "mandante": "S. Huancayo",
@@ -43,9 +11,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=4-1",
     "id": "7db5ff29d0e740a7",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -59,15 +27,15 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=3-1",
     "id": "502313e628b64177",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-24",
-    "hora": "21:30",
+    "hora": "20:30",
     "mandante": "Universitario",
     "visitante": "Juan Pablo II",
     "pais": "Peru",
@@ -75,9 +43,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
-    "id": "3b1a8ef9d10c6624",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "extra": "status=Jugado; placar=3-0",
+    "id": "bc71cd77773c2b64",
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -93,23 +61,39 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "93f2a60174c4989b",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 2",
-    "data": "2026-10-23",
-    "hora": "15:00",
-    "mandante": "Binacional",
-    "visitante": "Santos FC",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-25",
+    "hora": "13:15",
+    "mandante": "D. Moquegua",
+    "visitante": "Alianza Lima",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
-    "rodada": "Grupo Descenso B",
+    "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Jugado; placar=1-2",
-    "id": "e9273675d48d25e5",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "3ffba0d4d2c8eed4",
+    "atualizado_em": "2026-10-25T16:59:43"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-25",
+    "hora": "15:30",
+    "mandante": "Boys",
+    "visitante": "FC Cajamarca",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "f6bcafff620b4899",
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -123,9 +107,9 @@
     "estadio": "",
     "rodada": "Grupo Campeonato A",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=1-2",
     "id": "991ef14d4c9cd1a3",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -139,9 +123,25 @@
     "estadio": "",
     "rodada": "Grupo Campeonato B",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=1-1",
     "id": "aa96281171968a57",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-10-25",
+    "hora": "13:00",
+    "mandante": "Sport Huancayo",
+    "visitante": "Comerciantes FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo Campeonato B",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "c61dc555f74ed125",
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -157,7 +157,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "525bd07ac6c4fad9",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -171,9 +171,9 @@
     "estadio": "",
     "rodada": "Grupo 1",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=4-1",
     "id": "4d6e62302ae08a66",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -187,9 +187,9 @@
     "estadio": "",
     "rodada": "Grupo 2",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=0-0",
     "id": "d96b8aba2b982f30",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -203,9 +203,9 @@
     "estadio": "",
     "rodada": "Grupo 2",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=0-1",
     "id": "e940a4e646d1731a",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -219,8 +219,8 @@
     "estadio": "",
     "rodada": "Grupo 3",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=Jugado; placar=3-1",
     "id": "a55b53b5b63f6516",
-    "atualizado_em": "2026-10-24T16:28:21"
+    "atualizado_em": "2026-10-25T16:59:43"
   }
 ]
