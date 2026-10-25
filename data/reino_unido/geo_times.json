@@ -3323,6 +3323,12 @@
 "lng": -2.24392,
 "local": "Burnley"
 },
+"Inglaterra|Burradon and New Fordley": {
+"fonte": "nome",
+"lat": 55.04651,
+"lng": -1.57844,
+"local": "Burradon"
+},
 "Inglaterra|Burscough": {
 "fonte": "nome",
 "lat": 53.59338,
@@ -4150,6 +4156,12 @@
 "lat": 52.46264,
 "lng": -2.0895,
 "local": "Cradley"
+},
+"Inglaterra|Cramlington United": {
+"fonte": "nome",
+"lat": 55.08563,
+"lng": -1.59068,
+"local": "Cramlington"
 },
 "Inglaterra|Cranfield United": {
 "fonte": "nome",
@@ -5483,6 +5495,12 @@
 "lng": 0.57157,
 "local": "Gosfield"
 },
+"Inglaterra|Gosforth Bohemians": {
+"fonte": "nome",
+"lat": 54.4234,
+"lng": -3.42569,
+"local": "Gosforth"
+},
 "Inglaterra|Gosport Borough": {
 "fonte": "nome",
 "lat": 50.79521,
@@ -5710,6 +5728,12 @@
 "lat": 51.9453,
 "lng": 0.6425,
 "local": "Halstead"
+},
+"Inglaterra|Haltwhistle Jubilee": {
+"fonte": "nome",
+"lat": 54.97053,
+"lng": -2.45822,
+"local": "Haltwhistle"
 },
 "Inglaterra|Hamble Club": {
 "fonte": "nome",
@@ -6052,6 +6076,12 @@
 "lat": 50.99996,
 "lng": -0.10497,
 "local": "Haywards Heath"
+},
+"Inglaterra|Hazlerigg Victory": {
+"fonte": "nome",
+"lat": 55.03824,
+"lng": -1.64016,
+"local": "Hazlerigg"
 },
 "Inglaterra|Heacham": {
 "fonte": "nome",
@@ -6718,6 +6748,12 @@
 "lat": 50.87478,
 "lng": -4.49403,
 "local": "Kilkhampton"
+},
+"Inglaterra|Killingworth": {
+"fonte": "nome",
+"lat": 55.03557,
+"lng": -1.5674,
+"local": "Killingworth"
 },
 "Inglaterra|Kimberley MW Reserves": {
 "fonte": "nome",
@@ -8003,6 +8039,18 @@
 "lng": -1.61316,
 "local": "Newcastle upon Tyne"
 },
+"Inglaterra|Newcastle Chemfica": {
+"fonte": "nome",
+"lat": 54.97385,
+"lng": -1.61316,
+"local": "Newcastle upon Tyne"
+},
+"Inglaterra|Newcastle East End": {
+"fonte": "nome",
+"lat": 54.97385,
+"lng": -1.61316,
+"local": "Newcastle upon Tyne"
+},
 "Inglaterra|Newcastle Town": {
 "fonte": "nome",
 "lat": 54.97385,
@@ -8136,6 +8184,12 @@
 "local": "North Petherwin"
 },
 "Inglaterra|North Shields": {
+"fonte": "nome",
+"lat": 55.00877,
+"lng": -1.4471,
+"local": "North Shields"
+},
+"Inglaterra|North Shields Athletic": {
 "fonte": "nome",
 "lat": 55.00877,
 "lng": -1.4471,
@@ -8614,6 +8668,12 @@
 "lat": 53.69174,
 "lng": -1.31057,
 "local": "Pontefract"
+},
+"Inglaterra|Ponteland United": {
+"fonte": "nome",
+"lat": 55.04988,
+"lng": -1.74351,
+"local": "Ponteland"
 },
 "Inglaterra|Poole Town": {
 "fonte": "nome",
@@ -10805,6 +10865,12 @@
 "lng": -1.0906,
 "local": "Portsmouth"
 },
+"Inglaterra|United Services Portsmouth": {
+"fonte": "nome",
+"lat": 50.80003,
+"lng": -1.0906,
+"local": "Portsmouth"
+},
 "Inglaterra|Upper Beeding": {
 "fonte": "nome",
 "lat": 50.87976,
@@ -10900,6 +10966,18 @@
 "lat": 51.59829,
 "lng": -1.12514,
 "local": "Wallingford"
+},
+"Inglaterra|Wallington": {
+"fonte": "nome",
+"lat": 51.98724,
+"lng": -0.11906,
+"local": "Wallington"
+},
+"Inglaterra|Wallsend Boys Club": {
+"fonte": "nome",
+"lat": 54.99119,
+"lng": -1.5342,
+"local": "Wallsend"
 },
 "Inglaterra|Walsall": {
 "fonte": "sofascore",
@@ -11189,6 +11267,12 @@
 "lng": -2.7415,
 "local": "Westfields"
 },
+"Inglaterra|Westland Sports": {
+"fonte": "nome",
+"lat": 51.87533,
+"lng": 0.06513,
+"local": "Westland Green"
+},
 "Inglaterra|Westmill": {
 "fonte": "nome",
 "lat": 51.92635,
@@ -11218,6 +11302,12 @@
 "lat": 53.44936,
 "lng": -2.25747,
 "local": "Whalley Range"
+},
+"Inglaterra|Whaplode Drove Rovers": {
+"fonte": "nome",
+"lat": 52.70311,
+"lng": -0.04959,
+"local": "Whaplode Drove"
 },
 "Inglaterra|Whickham": {
 "fonte": "nome",
@@ -12323,6 +12413,12 @@
 "lng": -5.93333,
 "local": "Donegal Celtic Park"
 },
+"Irlanda do Norte|Seagoe": {
+"fonte": "nome",
+"lat": 54.43476,
+"lng": -6.42191,
+"local": "Seagoe"
+},
 "Irlanda do Norte|Shankill United": {
 "fonte": "nome",
 "lat": 54.60374,
@@ -12358,6 +12454,18 @@
 "lat": 54.81194,
 "lng": -6.70762,
 "local": "Tobermore"
+},
+"Irlanda do Norte|Tullyvallen": {
+"fonte": "nome",
+"lat": 54.16522,
+"lng": -6.63151,
+"local": "Altnamaken"
+},
+"Irlanda do Norte|Valley Rangers": {
+"fonte": "nome",
+"lat": 54.81462,
+"lng": -6.27228,
+"local": "Crevilly-Valley"
 },
 "Irlanda do Norte|Warrenpoint Town": {
 "fonte": "sofascore",
@@ -13564,6 +13672,12 @@
 "lat": 53.28713,
 "lng": -3.8105,
 "local": "Llandudno Junction"
+},
+"País de Gales|Llandudno Swifts": {
+"fonte": "nome",
+"lat": 53.32247,
+"lng": -3.82433,
+"local": "Llandudno"
 },
 "País de Gales|Llanelli Town AFC": {
 "fonte": "sofascore",
