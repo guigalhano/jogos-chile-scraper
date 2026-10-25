@@ -3673,6 +3673,22 @@
     "atualizado_em": "2026-10-24T18:25:40"
   },
   {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-10-23",
+    "hora": "17:00",
+    "mandante": "Club Rubio Ñú",
+    "visitante": "Club Guaraní",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio La Arboleda",
+    "rodada": "Jornada 16",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-16-rubio-nu-vs-guarani-914",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=0-2",
+    "id": "c4e85adcb76a9352",
+    "atualizado_em": "2026-10-25T15:06:33"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-23",
@@ -3702,6 +3718,22 @@
     "extra": "pais=Brasil; cidade=Ponta Grossa",
     "id": "1f91148d2b5637f1",
     "atualizado_em": "2026-10-25T08:21:37"
+  },
+  {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-10-23",
+    "hora": "19:30",
+    "mandante": "Club Libertad",
+    "visitante": "Club Sportivo Luqueño",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Tigo La Huerta",
+    "rodada": "Jornada 16",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-16-libertad-vs-luqueno-912",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=1-0",
+    "id": "9d08bae61a15ce8c",
+    "atualizado_em": "2026-10-25T15:06:33"
   },
   {
     "fonte": "CBF",
@@ -6266,9 +6298,9 @@
     "estadio": "Estadio Arsenio Erico",
     "rodada": "Jornada 16",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-16-nacional-vs-trinidense-913",
-    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=0-1",
     "id": "6176b67624d47af6",
-    "atualizado_em": "2026-10-24T14:51:37"
+    "atualizado_em": "2026-10-25T15:06:33"
   },
   {
     "fonte": "ESPN",
@@ -6595,9 +6627,9 @@
     "estadio": "Estadio Río Parapití",
     "rodada": "Jornada 16",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-16-2-de-mayo-vs-recoleta-911",
-    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=1-1",
     "id": "22f9d30901e511ce",
-    "atualizado_em": "2026-10-24T14:51:37"
+    "atualizado_em": "2026-10-25T15:06:33"
   },
   {
     "fonte": "CBF",
@@ -6991,9 +7023,9 @@
     "estadio": "Estadio Ameliano Villeta",
     "rodada": "Jornada 16",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-16-sportivo-amel-vs-olimpia-915",
-    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=2-3",
     "id": "9bc894fbbc7cb45f",
-    "atualizado_em": "2026-10-24T14:51:37"
+    "atualizado_em": "2026-10-25T15:06:33"
   },
   {
     "fonte": "AUF",
@@ -9948,7 +9980,7 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-16-san-lorenzo-vs-cerro-porteno-916",
     "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
     "id": "83c39d8a20e35e87",
-    "atualizado_em": "2026-10-24T14:51:37"
+    "atualizado_em": "2026-10-25T15:06:33"
   },
   {
     "fonte": "AUF",
