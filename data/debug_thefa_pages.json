@@ -3,14 +3,46 @@
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "status": 200,
-    "bytes": 161862
+    "bytes": 179923
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
+    "status": 200,
+    "bytes": 20878
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=3",
+    "status": 200,
+    "bytes": 3688
   },
   {
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-10-27 19:45 Workington AFC v Cleethorpes Town @ ",
+      "2026-11-14 15:00 Hebburn Town v Guiseley AFC @ ",
+      "2026-11-14 15:00 Ashton United v Workington / Cleethorpes Town @ "
+    ]
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-11-14 15:00 Hereford v Brackley Town @ ",
+      "2026-11-14 15:00 Newmarket Town v Oxford City @ ",
+      "2026-11-14 15:00 Merthyr Town v Harborough Town @ "
+    ]
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=3",
     "jogos_parseados": 1,
     "amostra": [
-      "2026-10-27 19:45 Workington AFC v Cleethorpes Town @ "
+      "2026-11-14 15:00 Weston Super Mare v Farnborough @ "
     ]
   },
   {
@@ -119,48 +151,16 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 179824
-  },
-  {
-    "copa": "Women's FA Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
-    "status": 200,
-    "bytes": 23221
-  },
-  {
-    "copa": "Women's FA Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
-    "status": 200,
-    "bytes": 7774
+    "bytes": 166802
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
-    "jogos_parseados": 20,
+    "jogos_parseados": 7,
     "amostra": [
-      "2026-10-25 14:00 Leeds Modernians Women v Liverpool Feds WFC @ ",
-      "2026-10-25 14:00 Norton & Stockton Ancients Ladies v AFC Fylde Women @ ",
-      "2026-10-25 14:00 Grimsby Town Women v Stockport County LFC @ "
-    ]
-  },
-  {
-    "copa": "Women's FA Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
-    "jogos_parseados": 20,
-    "amostra": [
-      "2026-10-25 14:00 St Agnes AFC Ladies v Portishead Town Ladies @ ",
-      "2026-10-25 14:00 Gwalia United v Yate Town Ladies @ ",
-      "2026-10-25 14:00 Haringey Borough Women's v Dulwich Hamlet Women @ "
-    ]
-  },
-  {
-    "copa": "Women's FA Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=3",
-    "jogos_parseados": 5,
-    "amostra": [
+      "2026-11-01 14:00 Workington Town Women v Mancunian Unity Women @ ",
       "2026-11-01 14:00 Wigan Athletic Women v Chester-Le-Street Town Ladies @ ",
-      "2026-11-01 14:00 Preston North End Women v i2i International Soccer Academy Women @ ",
-      "2026-11-01 14:00 South Shields Women v SJR Worksop Women @ "
+      "2026-11-01 14:00 Preston North End Women v i2i International Soccer Academy Women @ "
     ]
   },
   {
