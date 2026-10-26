@@ -12497,6 +12497,18 @@
 "lng": -7.94259,
 "local": "Athlone"
 },
+"Irlanda|Avondale United": {
+"fonte": "nome",
+"lat": 52.91192,
+"lng": -6.22461,
+"local": "Avondale"
+},
+"Irlanda|Bandon FC": {
+"fonte": "nome",
+"lat": 51.74617,
+"lng": -8.73693,
+"local": "Bandon"
+},
 "Irlanda|Bangor Celtic FC": {
 "fonte": "nome",
 "lat": 54.15486,
@@ -12538,6 +12550,12 @@
 "lat": 51.81496,
 "lng": -8.39227,
 "local": "Carrigaline"
+},
+"Irlanda|Castlebar Celtic": {
+"fonte": "nome",
+"lat": 53.85684,
+"lng": -9.29797,
+"local": "Castlebar"
 },
 "Irlanda|Castlerea Celtic": {
 "fonte": "nome",
@@ -12701,6 +12719,12 @@
 "lng": -6.20431,
 "local": "Hadden Park"
 },
+"Irlanda|Kinsale": {
+"fonte": "nome",
+"lat": 51.70574,
+"lng": -8.52298,
+"local": "Kinsale"
+},
 "Irlanda|Letterkenny Rovers": {
 "fonte": "sofascore",
 "lat": 54.94397,
@@ -12827,6 +12851,12 @@
 "lng": -8.0269,
 "local": "Shelbourne"
 },
+"Irlanda|Skerries Town": {
+"fonte": "nome",
+"lat": 53.58064,
+"lng": -6.10669,
+"local": "Skerries"
+},
 "Irlanda|Sligo Rovers": {
 "fonte": "sofascore",
 "lat": 54.27016,
@@ -12851,6 +12881,12 @@
 "lng": -7.48969,
 "local": "Street"
 },
+"Irlanda|St. Bernard's United": {
+"fonte": "nome",
+"lat": 53.68257,
+"lng": -7.48969,
+"local": "Street"
+},
 "Irlanda|St. Mochtas": {
 "fonte": "nome",
 "lat": 53.68257,
@@ -12868,6 +12904,12 @@
 "lat": 53.68257,
 "lng": -7.48969,
 "local": "Street"
+},
+"Irlanda|Temple United AFC": {
+"fonte": "nome",
+"lat": 53.34567,
+"lng": -8.60991,
+"local": "Temple"
 },
 "Irlanda|Tolka Rovers AFC": {
 "fonte": "nome",
@@ -13354,6 +13396,12 @@
 "lat": 53.41272,
 "lng": -4.45377,
 "local": "Cemaes"
+},
+"País de Gales|Cerrigydrudion": {
+"fonte": "nome",
+"lat": 53.02523,
+"lng": -3.56036,
+"local": "Cerrigydrudion"
 },
 "País de Gales|Chepstow Town": {
 "fonte": "nome",
