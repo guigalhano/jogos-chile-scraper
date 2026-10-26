@@ -53,6 +53,15 @@
   "time": "Independencia Fútbol Club",
   "visto_em": "2026-10-21"
  },
+ "1134638": {
+  "cidade": "Nueva Esperanza",
+  "lado": "visitante",
+  "lat": -26.20041,
+  "lng": -64.24028,
+  "texto": "nueva esperanza",
+  "time": "Los Verdes-Matadero",
+  "visto_em": "2026-10-26"
+ },
  "1134723": {
   "cidade": "Villa Mercedes",
   "lado": "mandante",
@@ -60,7 +69,7 @@
   "lng": -65.49543,
   "texto": "vm villa mercedes",
   "time": "Defensores de Belgrano de Justo Daract",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
  },
  "1135602": {
   "cidade": "San Salvador de Jujuy",
@@ -96,7 +105,7 @@
   "lng": -65.20381,
   "texto": "alderete tucuman",
   "time": "Ateneo Parroquial",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
  },
  "1135617": {
   "cidade": "San Miguel de Tucumán",
@@ -184,9 +193,18 @@
   "lado": "mandante",
   "lat": -23.80934,
   "lng": -64.79217,
-  "texto": "lgsm lib gral san martin",
+  "texto": "lgsm lib gral san martin a h",
   "time": "Sportivo Alberdi",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
+ },
+ "1264969": {
+  "cidade": "Monte Quemado",
+  "lado": "mandante",
+  "lat": -25.80349,
+  "lng": -62.83036,
+  "texto": "mq monte quemado",
+  "time": "Juventud Unida El Triangulo",
+  "visto_em": "2026-10-26"
  },
  "1264982": {
   "cidade": "Belén",
@@ -197,14 +215,23 @@
   "time": "San Luis Belen",
   "visto_em": "2026-10-17"
  },
- "1264986": {
+ "1264985": {
   "cidade": "Añatuya",
   "lado": "visitante",
   "lat": -28.45937,
   "lng": -62.83595,
   "texto": "anatuya",
+  "time": "Unión Lugones",
+  "visto_em": "2026-10-26"
+ },
+ "1264986": {
+  "cidade": "Añatuya",
+  "lado": "mandante",
+  "lat": -28.45937,
+  "lng": -62.83595,
+  "texto": "anatuya ctral",
   "time": "Social Pinto",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "1265007": {
   "cidade": "Quimilí",
@@ -222,7 +249,7 @@
   "lng": -57.63244,
   "texto": "mdq mar del plata",
   "time": "Quilmes MdP",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
  },
  "1265123": {
   "cidade": "Necochea",
@@ -285,7 +312,7 @@
   "lng": -68.33051,
   "texto": "sr san rafael",
   "time": "Deportivo Goudge",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
  },
  "1265139": {
   "cidade": "Quines",
@@ -310,9 +337,36 @@
   "lado": "mandante",
   "lat": -35.02485,
   "lng": -58.42411,
-  "texto": "sv san vicente ba los",
+  "texto": "sv san vicente ba",
   "time": "SETIA",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
+ },
+ "1265186": {
+  "cidade": "Zárate",
+  "lado": "mandante",
+  "lat": -34.09547,
+  "lng": -59.02451,
+  "texto": "zarate",
+  "time": "11 de Febrero",
+  "visto_em": "2026-10-26"
+ },
+ "1265187": {
+  "cidade": "Carmen de Areco",
+  "lado": "mandante",
+  "lat": -34.37666,
+  "lng": -59.82273,
+  "texto": "ca carmen de areco 9 de",
+  "time": "Recreativo",
+  "visto_em": "2026-10-26"
+ },
+ "1265189": {
+  "cidade": "San Nicolás de los Arroyos",
+  "lado": "visitante",
+  "lat": -33.32771,
+  "lng": -60.21659,
+  "texto": "sn san nicolas",
+  "time": "SOMISA",
+  "visto_em": "2026-10-26"
  },
  "1268315": {
   "cidade": "Formosa",
@@ -321,7 +375,16 @@
   "lng": -58.1745,
   "texto": "formosa",
   "time": "Municipal de Laishi",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
+ },
+ "188414": {
+  "cidade": "Paraná",
+  "lado": "mandante",
+  "lat": -31.73301,
+  "lng": -60.52985,
+  "texto": "parana",
+  "time": "Atlético Paraná",
+  "visto_em": "2026-10-26"
  },
  "195779": {
   "cidade": "San Salvador de Jujuy",
@@ -331,6 +394,15 @@
   "texto": "jujuy los",
   "time": "Altos Hornos Zapla",
   "visto_em": "2026-10-21"
+ },
+ "238192": {
+  "cidade": "Ciudad de General Alvear",
+  "lado": "visitante",
+  "lat": -34.97762,
+  "lng": -67.69635,
+  "texto": "ga gral alvear m",
+  "time": "Sport Club Pacífico",
+  "visto_em": "2026-10-26"
  },
  "253216": {
   "cidade": "Santa Fe",
@@ -348,7 +420,7 @@
   "lng": -58.13562,
   "texto": "colon er",
   "time": "Achirense",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
  },
  "269925": {
   "cidade": "Carmen de Areco",
@@ -359,6 +431,15 @@
   "time": "Sportsman",
   "visto_em": "2026-10-17"
  },
+ "275607": {
+  "cidade": "Cipolletti",
+  "lado": "visitante",
+  "lat": -38.93134,
+  "lng": -67.99059,
+  "texto": "cipolletti",
+  "time": "Deportivo Roca",
+  "visto_em": "2026-10-26"
+ },
  "313703": {
   "cidade": "Santa Fe",
   "lado": "mandante",
@@ -366,7 +447,7 @@
   "lng": -60.70196,
   "texto": "santa fe",
   "time": "Colón San Justo",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "314092": {
   "cidade": "Rafaela",
@@ -376,6 +457,24 @@
   "texto": "rafaela",
   "time": "CS Ben Hur",
   "visto_em": "2026-10-21"
+ },
+ "314298": {
+  "cidade": "Córdoba",
+  "lado": "visitante",
+  "lat": -31.41669,
+  "lng": -64.18342,
+  "texto": "cordoba",
+  "time": "General Paz Juniors",
+  "visto_em": "2026-10-26"
+ },
+ "315390": {
+  "cidade": "Belén de Escobar",
+  "lado": "visitante",
+  "lat": -34.34532,
+  "lng": -58.79507,
+  "texto": "arg e escobar",
+  "time": "Deportivo Malvinas",
+  "visto_em": "2026-10-26"
  },
  "339887": {
   "cidade": "Oncativo",
@@ -395,14 +494,32 @@
   "time": "Racing Olavarría",
   "visto_em": "2026-10-21"
  },
+ "340448": {
+  "cidade": "Salto",
+  "lado": "visitante",
+  "lat": -34.29178,
+  "lng": -60.25449,
+  "texto": "salto salto",
+  "time": "Defensores de Salto",
+  "visto_em": "2026-10-26"
+ },
+ "343220": {
+  "cidade": "San Fernando del Valle de Catamarca",
+  "lado": "visitante",
+  "lat": -28.46888,
+  "lng": -65.77906,
+  "texto": "catamarca",
+  "time": "Américo Tesorieri",
+  "visto_em": "2026-10-26"
+ },
  "374052": {
   "cidade": "Salta",
   "lado": "mandante",
   "lat": -24.78929,
   "lng": -65.41032,
-  "texto": "s salta los",
+  "texto": "s salta",
   "time": "Villa San Antonio",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "374658": {
   "cidade": "San Salvador de Jujuy",
@@ -411,7 +528,7 @@
   "lng": -65.29948,
   "texto": "jujuy",
   "time": "Talleres de Perico",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
  },
  "374660": {
   "cidade": "Posadas",
@@ -429,7 +546,16 @@
   "lng": -62.26549,
   "texto": "bb bahia blanca",
   "time": "Huracán Ingeniero White",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
+ },
+ "458350": {
+  "cidade": "Mendoza",
+  "lado": "mandante",
+  "lat": -32.88942,
+  "lng": -68.84462,
+  "texto": "mza mendoza",
+  "time": "Argentino Mendoza",
+  "visto_em": "2026-10-26"
  },
  "495211": {
   "cidade": "Río Grande",
@@ -438,7 +564,7 @@
   "lng": -67.70186,
   "texto": "rg rio grande",
   "time": "Camioneros de Río Grande",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "495214": {
   "cidade": "Río Gallegos",
@@ -447,7 +573,16 @@
   "lng": -69.21504,
   "texto": "rio gallegos",
   "time": "Atlético Boxing Club",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
+ },
+ "495221": {
+  "cidade": "Comodoro Rivadavia",
+  "lado": "visitante",
+  "lat": -45.8632,
+  "lng": -67.47526,
+  "texto": "newbery cr comodoro rivadavia",
+  "time": "Jorge Newbery de Comodoro Rivadavia",
+  "visto_em": "2026-10-26"
  },
  "495223": {
   "cidade": "Trelew",
@@ -456,7 +591,52 @@
   "lng": -65.30944,
   "texto": "trelew",
   "time": "Juan José Moreno",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
+ },
+ "495226": {
+  "cidade": "San Carlos de Bariloche",
+  "lado": "mandante",
+  "lat": -41.13348,
+  "lng": -71.31015,
+  "texto": "san carlos de bariloche",
+  "time": "Cruz del Sur",
+  "visto_em": "2026-10-26"
+ },
+ "495230": {
+  "cidade": "Neuquén",
+  "lado": "mandante",
+  "lat": -38.95197,
+  "lng": -68.05917,
+  "texto": "neuquen",
+  "time": "Maronese",
+  "visto_em": "2026-10-26"
+ },
+ "495231": {
+  "cidade": "Neuquén",
+  "lado": "visitante",
+  "lat": -38.95197,
+  "lng": -68.05917,
+  "texto": "nq neuquen",
+  "time": "San Patricio del Chañar",
+  "visto_em": "2026-10-26"
+ },
+ "495232": {
+  "cidade": "Neuquén",
+  "lado": "visitante",
+  "lat": -38.95197,
+  "lng": -68.05917,
+  "texto": "neuquen",
+  "time": "Alianza Cutral Có",
+  "visto_em": "2026-10-26"
+ },
+ "495235": {
+  "cidade": "San Carlos de Bariloche",
+  "lado": "visitante",
+  "lat": -41.13348,
+  "lng": -71.31015,
+  "texto": "bari san carlos de bariloche",
+  "time": "Estudiantes Unidos",
+  "visto_em": "2026-10-26"
  },
  "495267": {
   "cidade": "Necochea",
@@ -476,6 +656,24 @@
   "time": "Atlético Villegas",
   "visto_em": "2026-10-21"
  },
+ "495373": {
+  "cidade": "General Villegas",
+  "lado": "visitante",
+  "lat": -35.03259,
+  "lng": -63.01485,
+  "texto": "gv gral villegas",
+  "time": "Santa Rita",
+  "visto_em": "2026-10-26"
+ },
+ "495396": {
+  "cidade": "Olavarría",
+  "lado": "visitante",
+  "lat": -36.89388,
+  "lng": -60.32317,
+  "texto": "estudiantes o olavarria",
+  "time": "Estudiantes Olavarría",
+  "visto_em": "2026-10-26"
+ },
  "495404": {
   "cidade": "Veinticinco de Mayo",
   "lado": "visitante",
@@ -485,6 +683,24 @@
   "time": "CA Argentinos 25 de Mayo",
   "visto_em": "2026-10-21"
  },
+ "495480": {
+  "cidade": "Chascomús",
+  "lado": "visitante",
+  "lat": -35.57869,
+  "lng": -58.01383,
+  "texto": "chascomus",
+  "time": "Atlético Chascomús",
+  "visto_em": "2026-10-26"
+ },
+ "495483": {
+  "cidade": "La Plata",
+  "lado": "visitante",
+  "lat": -34.92068,
+  "lng": -57.95376,
+  "texto": "lp la plata",
+  "time": "San Lorenzo de Villa Castells",
+  "visto_em": "2026-10-26"
+ },
  "495493": {
   "cidade": "San Nicolás de los Arroyos",
   "lado": "mandante",
@@ -492,7 +708,43 @@
   "lng": -60.21659,
   "texto": "fc sn san nicolas",
   "time": "Atlético Paraná",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
+ },
+ "495530": {
+  "cidade": "Chacabuco",
+  "lado": "visitante",
+  "lat": -34.64236,
+  "lng": -60.47088,
+  "texto": "chacabuco chacabuco",
+  "time": "9 de Julio Chacabuco",
+  "visto_em": "2026-10-26"
+ },
+ "495531": {
+  "cidade": "Junín",
+  "lado": "mandante",
+  "lat": -34.59344,
+  "lng": -60.94617,
+  "texto": "j junin",
+  "time": "Villa Belgrano",
+  "visto_em": "2026-10-26"
+ },
+ "495532": {
+  "cidade": "Junín",
+  "lado": "visitante",
+  "lat": -34.59344,
+  "lng": -60.94617,
+  "texto": "junin",
+  "time": "Academia Javier Mascherano",
+  "visto_em": "2026-10-26"
+ },
+ "495544": {
+  "cidade": "Malargüe",
+  "lado": "visitante",
+  "lat": -35.46838,
+  "lng": -69.58473,
+  "texto": "malargue",
+  "time": "Deportivo Malargüe",
+  "visto_em": "2026-10-26"
  },
  "495547": {
   "cidade": "Eugenio Bustos",
@@ -528,7 +780,7 @@
   "lng": -58.79507,
   "texto": "escobar",
   "time": "La Fraternidad",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "495580": {
   "cidade": "Paraná",
@@ -546,16 +798,16 @@
   "lng": -60.9304,
   "texto": "e esperanza",
   "time": "Juventud Esperanza",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "495671": {
   "cidade": "San Miguel de Tucumán",
   "lado": "mandante",
   "lat": -26.83037,
   "lng": -65.20381,
-  "texto": "fc t tucuman at",
+  "texto": "fc t tucuman",
   "time": "Concepción FC",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "495681": {
   "cidade": "San Pedro de Jujuy",
@@ -591,7 +843,7 @@
   "lng": -55.89429,
   "texto": "posadas",
   "time": "La Picada",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "495711": {
   "cidade": "Eldorado",
@@ -618,7 +870,7 @@
   "lng": -59.26498,
   "texto": "goya goya",
   "time": "Huracán (Goya)",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
  },
  "495735": {
   "cidade": "Las Palmas",
@@ -645,7 +897,16 @@
   "lng": -61.08595,
   "texto": "las brenas",
   "time": "Unión y Fuerza",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
+ },
+ "495836": {
+  "cidade": "La Rioja",
+  "lado": "visitante",
+  "lat": -29.41274,
+  "lng": -66.85588,
+  "texto": "la rioja",
+  "time": "Defensores de la Boca",
+  "visto_em": "2026-10-26"
  },
  "495849": {
   "cidade": "San Fernando del Valle de Catamarca",
@@ -654,7 +915,34 @@
   "lng": -65.77906,
   "texto": "catamarca",
   "time": "Villa Cubas",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
+ },
+ "495856": {
+  "cidade": "Villa María",
+  "lado": "visitante",
+  "lat": -32.41062,
+  "lng": -63.24358,
+  "texto": "vm villa maria",
+  "time": "CA Alumni",
+  "visto_em": "2026-10-26"
+ },
+ "495876": {
+  "cidade": "Termas de Río Hondo",
+  "lado": "visitante",
+  "lat": -27.49593,
+  "lng": -64.86408,
+  "texto": "termas termas de rio hondo",
+  "time": "25 de Mayo TRH",
+  "visto_em": "2026-10-26"
+ },
+ "495877": {
+  "cidade": "Santiago del Estero",
+  "lado": "mandante",
+  "lat": -27.78771,
+  "lng": -64.25951,
+  "texto": "del estero los",
+  "time": "Unión Santiago",
+  "visto_em": "2026-10-26"
  },
  "495879": {
   "cidade": "El Bobadal",
@@ -688,9 +976,9 @@
   "lado": "mandante",
   "lat": -33.56222,
   "lng": -62.88506,
-  "texto": "canals",
+  "texto": "canals gral",
   "time": "Canalense",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "52292": {
   "cidade": "San Juan",
@@ -718,6 +1006,24 @@
   "texto": "g goya",
   "time": "Sportivo Santa Lucía",
   "visto_em": "2026-10-17"
+ },
+ "930842": {
+  "cidade": "Tilisarao",
+  "lado": "visitante",
+  "lat": -32.73123,
+  "lng": -65.29147,
+  "texto": "til tilisarao",
+  "time": "San Martin de Merlo",
+  "visto_em": "2026-10-26"
+ },
+ "930846": {
+  "cidade": "Córdoba",
+  "lado": "mandante",
+  "lat": -31.41669,
+  "lng": -64.18342,
+  "texto": "cba cordoba",
+  "time": "Camioneros de Cordóba",
+  "visto_em": "2026-10-26"
  },
  "930895": {
   "cidade": "Paraná",
@@ -753,7 +1059,16 @@
   "lng": -68.52518,
   "texto": "vk san juan",
   "time": "Unión Villa Krause",
-  "visto_em": "2026-10-19"
+  "visto_em": "2026-10-26"
+ },
+ "931083": {
+  "cidade": "Río Gallegos",
+  "lado": "visitante",
+  "lat": -51.62153,
+  "lng": -69.21504,
+  "texto": "rio gallegos",
+  "time": "Escorpión FC",
+  "visto_em": "2026-10-26"
  },
  "931089": {
   "cidade": "San Miguel de Tucumán",
@@ -764,6 +1079,15 @@
   "time": "Estación Experimental",
   "visto_em": "2026-10-17"
  },
+ "931101": {
+  "cidade": "Río Gallegos",
+  "lado": "visitante",
+  "lat": -51.62153,
+  "lng": -69.21504,
+  "texto": "rio gallegos",
+  "time": "CSD Bancruz",
+  "visto_em": "2026-10-26"
+ },
  "931108": {
   "cidade": "Cipolletti",
   "lado": "mandante",
@@ -771,16 +1095,25 @@
   "lng": -67.99059,
   "texto": "cipolletti",
   "time": "Atlético Regina",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
  },
  "931110": {
   "cidade": "Viedma",
   "lado": "mandante",
   "lat": -40.80843,
   "lng": -62.99472,
-  "texto": "vie viedma sd",
+  "texto": "vie viedma",
   "time": "Jorge Newbery (Carmen de Patagones)",
-  "visto_em": "2026-10-17"
+  "visto_em": "2026-10-26"
+ },
+ "931122": {
+  "cidade": "San Pedro",
+  "lado": "visitante",
+  "lat": -33.67581,
+  "lng": -59.66272,
+  "texto": "sp san pedro",
+  "time": "Mitre (San Pedro)",
+  "visto_em": "2026-10-26"
  },
  "931124": {
   "cidade": "Baradero",
@@ -789,6 +1122,33 @@
   "lng": -59.50518,
   "texto": "baradero",
   "time": "Atlético Baradero",
-  "visto_em": "2026-10-21"
+  "visto_em": "2026-10-26"
+ },
+ "931152": {
+  "cidade": "Mar del Plata",
+  "lado": "visitante",
+  "lat": -38.08526,
+  "lng": -57.63244,
+  "texto": "mdq mar del plata",
+  "time": "Deportivo Norte",
+  "visto_em": "2026-10-26"
+ },
+ "931157": {
+  "cidade": "General Pico",
+  "lado": "visitante",
+  "lat": -35.65911,
+  "lng": -63.75761,
+  "texto": "gp general pico",
+  "time": "All Boys (Trenel)",
+  "visto_em": "2026-10-26"
+ },
+ "934834": {
+  "cidade": "Santiago del Estero",
+  "lado": "visitante",
+  "lat": -27.78771,
+  "lng": -64.25951,
+  "texto": "sgo santiago del estero",
+  "time": "Central Argentino de La Banda",
+  "visto_em": "2026-10-26"
  }
 }

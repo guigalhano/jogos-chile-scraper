@@ -2109,6 +2109,7 @@
 ],
 "alderete tucuman, Argentina": [],
 "alderete, Argentina": [],
+"anatuya ctral, Argentina": [],
 "anatuya, Argentina": [
 {
 "lat": -28.45937,
@@ -2157,6 +2158,7 @@
 "tipo": "state_district"
 }
 ],
+"bari san carlos de bariloche, Argentina": [],
 "belen, Argentina": [
 {
 "lat": -27.6496,
@@ -2255,6 +2257,59 @@
 ],
 "central norte t tucuman, Argentina": [],
 "central norte t, Argentina": [],
+"chacabuco, Argentina": [
+{
+"lat": -32.74145,
+"lng": -65.20613,
+"nome": "",
+"provincia": "san luis",
+"tipo": "state_district"
+},
+{
+"lat": -34.64236,
+"lng": -60.47088,
+"nome": "Chacabuco",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -34.80574,
+"lng": -58.29238,
+"nome": "San Juan Bautista",
+"provincia": "buenos aires",
+"tipo": "quarter"
+},
+{
+"lat": -31.53011,
+"lng": -68.5672,
+"nome": "San Juan",
+"provincia": "san juan",
+"tipo": "neighbourhood"
+},
+{
+"lat": -31.09041,
+"lng": -59.32481,
+"nome": "Chacabuco",
+"provincia": "entre rios",
+"tipo": "hamlet"
+}
+],
+"chascomus, Argentina": [
+{
+"lat": -35.57869,
+"lng": -58.01383,
+"nome": "Chascomús",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -35.59778,
+"lng": -57.87503,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
 "cipolletti, Argentina": [
 {
 "lat": -38.93134,
@@ -2320,6 +2375,15 @@
 "tipo": "municipality"
 }
 ],
+"comodoro rivadavia, Argentina": [
+{
+"lat": -45.8632,
+"lng": -67.47526,
+"nome": "Municipio de Comodoro Rivadavia",
+"provincia": "chubut",
+"tipo": "city"
+}
+],
 "concepcion del uruguay, Argentina": [
 {
 "lat": -32.48518,
@@ -2343,6 +2407,22 @@
 "nome": "Concordia",
 "provincia": "entre rios",
 "tipo": "city"
+}
+],
+"cordoba, Argentina": [
+{
+"lat": -31.41669,
+"lng": -64.18342,
+"nome": "Córdoba",
+"provincia": "cordoba",
+"tipo": "city"
+},
+{
+"lat": -32.02225,
+"lng": -63.96987,
+"nome": "",
+"provincia": "cordoba",
+"tipo": "state"
 }
 ],
 "coronel suárez, Argentina": [
@@ -2384,6 +2464,7 @@
 "tipo": "city"
 }
 ],
+"ctral, Argentina": [],
 "de abril, Argentina": [
 {
 "lat": -27.64784,
@@ -2419,6 +2500,31 @@
 "nome": "Ushuaia",
 "provincia": "",
 "tipo": "suburb"
+}
+],
+"del estero santiago del estero, Argentina": [
+{
+"lat": -29.53495,
+"lng": -62.26615,
+"nome": "Argentina",
+"provincia": "santiago del estero",
+"tipo": "village"
+}
+],
+"del estero, Argentina": [
+{
+"lat": -31.52985,
+"lng": -68.63334,
+"nome": "",
+"provincia": "san juan",
+"tipo": "neighbourhood"
+},
+{
+"lat": -27.6431,
+"lng": -63.54085,
+"nome": "",
+"provincia": "santiago del estero",
+"tipo": "state"
 }
 ],
 "del plata mar del plata, Argentina": [
@@ -2549,6 +2655,32 @@
 "tipo": "city_district"
 }
 ],
+"estero santiago del estero, Argentina": [
+{
+"lat": -29.53495,
+"lng": -62.26615,
+"nome": "Argentina",
+"provincia": "santiago del estero",
+"tipo": "village"
+}
+],
+"estero, Argentina": [
+{
+"lat": -27.6431,
+"lng": -63.54085,
+"nome": "",
+"provincia": "santiago del estero",
+"tipo": "state"
+},
+{
+"lat": -27.78771,
+"lng": -64.25951,
+"nome": "Santiago del Estero",
+"provincia": "santiago del estero",
+"tipo": "city"
+}
+],
+"estudiantes o olavarria, Argentina": [],
 "eugenio bustos, Argentina": [
 {
 "lat": -33.77895,
@@ -2646,6 +2778,22 @@
 "nome": "Municipio de Formosa",
 "provincia": "formosa",
 "tipo": "city"
+}
+],
+"general alvear, Mendoza, Argentina": [
+{
+"lat": -34.97762,
+"lng": -67.69635,
+"nome": "Distrito Ciudad de General Alvear",
+"provincia": "mendoza",
+"tipo": "town"
+},
+{
+"lat": -35.24466,
+"lng": -67.09644,
+"nome": "",
+"provincia": "mendoza",
+"tipo": "state_district"
 }
 ],
 "general guemes, Argentina": [
@@ -2808,12 +2956,65 @@
 "tipo": "state"
 }
 ],
+"junin, Argentina": [
+{
+"lat": -34.59344,
+"lng": -60.94617,
+"nome": "Junín",
+"provincia": "buenos aires",
+"tipo": "city"
+},
+{
+"lat": -32.22051,
+"lng": -65.45674,
+"nome": "",
+"provincia": "san luis",
+"tipo": "state_district"
+},
+{
+"lat": -33.1441,
+"lng": -68.48522,
+"nome": "Distrito Ciudad",
+"provincia": "mendoza",
+"tipo": "town"
+},
+{
+"lat": -34.54436,
+"lng": -60.97068,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+},
+{
+"lat": -33.14913,
+"lng": -68.49975,
+"nome": "",
+"provincia": "mendoza",
+"tipo": "state_district"
+}
+],
 "la plata, Argentina": [
 {
 "lat": -34.92068,
 "lng": -57.95376,
 "nome": "La Plata",
 "provincia": "buenos aires",
+"tipo": "city"
+}
+],
+"la rioja, Argentina": [
+{
+"lat": -29.78246,
+"lng": -67.11471,
+"nome": "",
+"provincia": "la rioja",
+"tipo": "state"
+},
+{
+"lat": -29.41274,
+"lng": -66.85588,
+"nome": "La Rioja",
+"provincia": "la rioja",
 "tipo": "city"
 }
 ],
@@ -2922,6 +3123,22 @@
 "tipo": "suburb"
 }
 ],
+"malargue, Argentina": [
+{
+"lat": -35.46838,
+"lng": -69.58473,
+"nome": "Malargüe",
+"provincia": "mendoza",
+"tipo": "town"
+},
+{
+"lat": -36.13249,
+"lng": -69.3472,
+"nome": "",
+"provincia": "mendoza",
+"tipo": "state_district"
+}
+],
 "mandiyu corrientes, Argentina": [],
 "maria jauregui, Argentina": [],
 "mendoza mendoza, Argentina": [
@@ -3018,6 +3235,29 @@
 "tipo": "village"
 }
 ],
+"monte quemado, Argentina": [
+{
+"lat": -25.80349,
+"lng": -62.83036,
+"nome": "Monte Quemado",
+"provincia": "santiago del estero",
+"tipo": "town"
+},
+{
+"lat": -26.15675,
+"lng": -64.41057,
+"nome": "Monte Quemado",
+"provincia": "santiago del estero",
+"tipo": "hamlet"
+},
+{
+"lat": -25.86819,
+"lng": -59.2702,
+"nome": "Monte Quemado",
+"provincia": "formosa",
+"tipo": "hamlet"
+}
+],
 "necochea, Argentina": [
 {
 "lat": -38.55455,
@@ -3034,6 +3274,23 @@
 "tipo": "neighbourhood"
 }
 ],
+"neuquen, Argentina": [
+{
+"lat": -38.85025,
+"lng": -69.83227,
+"nome": "",
+"provincia": "neuquen",
+"tipo": "state"
+},
+{
+"lat": -38.95197,
+"lng": -68.05917,
+"nome": "Neuquén",
+"provincia": "neuquen",
+"tipo": "city"
+}
+],
+"newbery cr comodoro rivadavia, Argentina": [],
 "norte t tucuman, Argentina": [
 {
 "lat": -26.89291,
@@ -3048,6 +3305,43 @@
 "nome": "Municipio de San José de La Cocha",
 "provincia": "tucuman",
 "tipo": "hamlet"
+}
+],
+"nueva esperanza, Argentina": [
+{
+"lat": -41.14647,
+"lng": -71.29132,
+"nome": "San Carlos de Bariloche",
+"provincia": "rio negro",
+"tipo": "suburb"
+},
+{
+"lat": -38.90131,
+"lng": -68.13234,
+"nome": "Neuquén",
+"provincia": "neuquen",
+"tipo": "suburb"
+},
+{
+"lat": -23.91502,
+"lng": -64.30936,
+"nome": "Nueva Esperanza",
+"provincia": "jujuy",
+"tipo": "village"
+},
+{
+"lat": -26.20041,
+"lng": -64.24028,
+"nome": "Nueva Esperanza",
+"provincia": "santiago del estero",
+"tipo": "village"
+},
+{
+"lat": -22.54022,
+"lng": -63.79095,
+"nome": "Tartagal",
+"provincia": "salta",
+"tipo": "quarter"
 }
 ],
 "nueve de abril, Argentina": [],
@@ -3358,6 +3652,45 @@
 "lng": -65.41032,
 "nome": "Salta",
 "provincia": "salta",
+"tipo": "city"
+}
+],
+"salto, Argentina": [
+{
+"lat": -34.29178,
+"lng": -60.25449,
+"nome": "Salto",
+"provincia": "buenos aires",
+"tipo": "town"
+},
+{
+"lat": -30.75272,
+"lng": -57.9735,
+"nome": "Chajarí",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+},
+{
+"lat": -32.02708,
+"lng": -60.31512,
+"nome": "Crespo",
+"provincia": "entre rios",
+"tipo": "neighbourhood"
+},
+{
+"lat": -34.24764,
+"lng": -60.30352,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "state_district"
+}
+],
+"san carlos de bariloche, Argentina": [
+{
+"lat": -41.13348,
+"lng": -71.31015,
+"nome": "San Carlos de Bariloche",
+"provincia": "rio negro",
 "tipo": "city"
 }
 ],
@@ -3707,6 +4040,31 @@
 "tipo": "village"
 }
 ],
+"santiago del estero santiago del estero, Argentina": [
+{
+"lat": -29.53495,
+"lng": -62.26615,
+"nome": "Argentina",
+"provincia": "santiago del estero",
+"tipo": "village"
+}
+],
+"santiago del estero, Argentina": [
+{
+"lat": -27.6431,
+"lng": -63.54085,
+"nome": "",
+"provincia": "santiago del estero",
+"tipo": "state"
+},
+{
+"lat": -27.78771,
+"lng": -64.25951,
+"nome": "Santiago del Estero",
+"provincia": "santiago del estero",
+"tipo": "city"
+}
+],
 "santo general guemes, Argentina": [
 {
 "lat": -24.69499,
@@ -3751,6 +4109,24 @@
 "nome": "Municipio de El Sauzalito",
 "provincia": "chaco",
 "tipo": "hamlet"
+}
+],
+"termas de rio hondo, Argentina": [
+{
+"lat": -27.49593,
+"lng": -64.86408,
+"nome": "Termas de Río Hondo",
+"provincia": "santiago del estero",
+"tipo": "town"
+}
+],
+"tilisarao, Argentina": [
+{
+"lat": -32.73123,
+"lng": -65.29147,
+"nome": "Tilisarao",
+"provincia": "san luis",
+"tipo": "village"
 }
 ],
 "tornquist, Argentina": [
@@ -3826,6 +4202,43 @@
 "nome": "Villa Maipú",
 "provincia": "buenos aires",
 "tipo": "town"
+}
+],
+"villa maria, Argentina": [
+{
+"lat": -32.41062,
+"lng": -63.24358,
+"nome": "Villa María",
+"provincia": "cordoba",
+"tipo": "town"
+},
+{
+"lat": -38.96836,
+"lng": -68.06319,
+"nome": "Neuquén",
+"provincia": "neuquen",
+"tipo": "suburb"
+},
+{
+"lat": -33.34884,
+"lng": -60.23264,
+"nome": "San Nicolás de los Arroyos",
+"provincia": "buenos aires",
+"tipo": "quarter"
+},
+{
+"lat": -27.44511,
+"lng": -58.9977,
+"nome": "Resistencia",
+"provincia": "chaco",
+"tipo": "suburb"
+},
+{
+"lat": -34.53197,
+"lng": -59.12086,
+"nome": "",
+"provincia": "buenos aires",
+"tipo": "neighbourhood"
 }
 ],
 "villa mercedes, Argentina": [
