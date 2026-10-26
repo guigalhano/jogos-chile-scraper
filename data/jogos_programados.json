@@ -3544,6 +3544,24 @@
     "atualizado_em": "2026-10-26T08:51:29"
   },
   {
+    "fonte": "AFA-FederalA",
+    "competicao": "Argentina - Torneo Federal A",
+    "data": "2026-10-23",
+    "hora": "22:00",
+    "mandante": "Juventud Antoniana",
+    "visitante": "Sol de América (Formosa)",
+    "estadio": "Sede de Juventud Antoniana",
+    "rodada": "Reválida - Segunda Etapa - Ida",
+    "url": "https://ascensodelinterior.com.ar/noticias/36889/la-programacion-del-fin-de-semana/",
+    "extra": "pais=Argentina; provincia=Salta; lat=-24.7859; lng=-65.4117; fonte_dados=ascensodelinterior.com.ar",
+    "pais": "Argentina",
+    "cidade": "Salta",
+    "id": "14fcb524227801f6",
+    "lat": -24.7859,
+    "lng": -65.4117,
+    "atualizado_em": "2026-10-26T18:17:36"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
     "data": "2026-10-24",
@@ -3749,6 +3767,24 @@
     "extra": "codigo_espn=401886132; status=Full Time; placar=3-1",
     "id": "c0cb4913ae735d2b",
     "atualizado_em": "2026-10-25T19:07:23"
+  },
+  {
+    "fonte": "AFA-FederalA",
+    "competicao": "Argentina - Torneo Federal A",
+    "data": "2026-10-24",
+    "hora": "15:45",
+    "mandante": "Deportivo Argentino (Pascanas)",
+    "visitante": "Kimberley (Mar del Plata)",
+    "estadio": "Sede de Deportivo Argentino (Pascanas)",
+    "rodada": "Reválida - Segunda Etapa - Ida",
+    "url": "https://ascensodelinterior.com.ar/noticias/36889/la-programacion-del-fin-de-semana/",
+    "extra": "pais=Argentina; provincia=Córdoba; lat=-33.1167; lng=-63.2667; fonte_dados=ascensodelinterior.com.ar",
+    "pais": "Argentina",
+    "cidade": "Pascanas",
+    "id": "04d370f7f9641595",
+    "lat": -33.1167,
+    "lng": -63.2667,
+    "atualizado_em": "2026-10-26T18:17:36"
   },
   {
     "fonte": "CBF",
@@ -4894,13 +4930,16 @@
     "hora": "15:00",
     "mandante": "Sportivo At.",
     "visitante": "Alvarado",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Sportivo A.C. (Las Parejas)",
+    "rodada": "Reválida - Segunda Etapa - Ida",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "a410fa5cd5009021",
-    "atualizado_em": "2026-10-25T15:51:10"
+    "atualizado_em": "2026-10-25T15:51:10",
+    "cidade": "Cañada de Gómez",
+    "lat": -32.8225,
+    "lng": -61.3989
   },
   {
     "fonte": "ESPN",
@@ -5653,13 +5692,16 @@
     "hora": "16:00",
     "mandante": "Boca Unidos",
     "visitante": "Gim Y Esgrima Ch",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Boca Unidos",
+    "rodada": "Reválida - Segunda Etapa - Ida",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "0992cb3f772a3b29",
-    "atualizado_em": "2026-10-25T15:51:10"
+    "atualizado_em": "2026-10-25T15:51:10",
+    "cidade": "Corrientes",
+    "lat": -27.4806,
+    "lng": -58.8341
   },
   {
     "fonte": "AFA",
@@ -5668,13 +5710,16 @@
     "hora": "16:00",
     "mandante": "G. Y Esgrima Cu",
     "visitante": "Olimpo",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Gimnasia y Esgrima (Concepción del Uruguay)",
+    "rodada": "Reválida - Segunda Etapa - Ida",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "996ec71608267487",
-    "atualizado_em": "2026-10-25T15:51:10"
+    "atualizado_em": "2026-10-25T15:51:10",
+    "cidade": "Concepción del Uruguay",
+    "lat": -32.4825,
+    "lng": -58.2372
   },
   {
     "fonte": "AFA",
@@ -5683,13 +5728,16 @@
     "hora": "16:00",
     "mandante": "Sarmiento Sgo",
     "visitante": "Atenas Rc",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Sarmiento (La Banda)",
+    "rodada": "Reválida - Segunda Etapa - Ida",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "19f15485f6b69bfb",
-    "atualizado_em": "2026-10-25T15:51:10"
+    "atualizado_em": "2026-10-25T15:51:10",
+    "cidade": "La Banda",
+    "lat": -27.7317,
+    "lng": -64.2381
   },
   {
     "fonte": "AFA",
@@ -5698,13 +5746,16 @@
     "hora": "16:00",
     "mandante": "Villa Mitre",
     "visitante": "Douglas Haig",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Sede de Villa Mitre",
+    "rodada": "Reválida - Segunda Etapa - Ida",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "7948823389c8748c",
-    "atualizado_em": "2026-10-25T15:51:10"
+    "atualizado_em": "2026-10-25T15:51:10",
+    "cidade": "Bahía Blanca",
+    "lat": -38.7196,
+    "lng": -62.2724
   },
   {
     "fonte": "SofaScore",
