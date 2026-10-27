@@ -530,7 +530,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=766; grupo=47; fase=QUARTA FASE; suspencao=LIBERADO",
     "id": "802136c5ef647b57",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -546,7 +546,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=765; grupo=43; fase=QUARTA FASE; suspencao=LIBERADO",
     "id": "122251697dd62a54",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "ESPN",
@@ -1973,7 +1973,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=354; grupo=31; fase=QUARTAS DE FINAL; canais=Xsports, Youtube Energia 97 FM; suspencao=LIBERADO",
     "id": "03497520e5e01381",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "CBF",
@@ -2199,7 +2199,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=355; grupo=28; fase=QUARTAS DE FINAL; canais=YouTube Ulisses TV; suspencao=LIBERADO",
     "id": "692a4dde799e4f4e",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -2215,7 +2215,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=356; grupo=29; fase=QUARTAS DE FINAL; canais=YouTube Ulisses TV; suspencao=LIBERADO",
     "id": "0aa6dfd39d97caa2",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FGF",
@@ -2530,6 +2530,22 @@
     "atualizado_em": "2026-10-26T19:40:14"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
+    "data": "2026-10-30",
+    "hora": "21:00",
+    "mandante": "São Paulo",
+    "visitante": "Ferroviária",
+    "pais": "Brasil",
+    "cidade": "Santana de Parnaíba",
+    "estadio": "Estádio Municipal Prefeito Gabriel Marques da Silva",
+    "rodada": "Rodada 14",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=75; grupo=07; fase=SEMIFINAL; canais=TV Brasil, YouTube Paulistão; suspencao=LIBERADO",
+    "id": "e518d42138543a37",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Ascenso Caixun",
     "data": "2026-10-30",
@@ -2778,6 +2794,54 @@
     "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=12; placar_original=X; jogo_numero=118; cidade=Nova Lima",
     "id": "a076e85dc828241d",
     "atualizado_em": "2026-10-19T19:26:58"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-15 (SUB15)",
+    "data": "2026-10-31",
+    "hora": "09:00",
+    "mandante": "Cosmopolitano",
+    "visitante": "Santos",
+    "pais": "Brasil",
+    "cidade": "Cosmópolis",
+    "estadio": "Estádio Thelmo de Almeida",
+    "rodada": "Rodada 25",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=767; grupo=50; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "66ae73a9f675d85c",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-15 (SUB15)",
+    "data": "2026-10-31",
+    "hora": "09:00",
+    "mandante": "Red Bull Bragantino",
+    "visitante": "Ibrachina FC",
+    "pais": "Brasil",
+    "cidade": "Atibaia",
+    "estadio": "CPD Red Bull Bragantino",
+    "rodada": "Rodada 25",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=769; grupo=53; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "e0c802af78230cef",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-15 (SUB15)",
+    "data": "2026-10-31",
+    "hora": "09:00",
+    "mandante": "São Paulo",
+    "visitante": "Palmeiras",
+    "pais": "Brasil",
+    "cidade": "Cotia",
+    "estadio": "Marcelo Portugal Gouvêa (Laudo Natel)",
+    "rodada": "Rodada 25",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=768; grupo=51; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "c884abed62b079f1",
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3277,7 +3341,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=587; grupo=27; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "a456d7a8a28612a9",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3293,7 +3357,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=589; grupo=29; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "c25bed6fa7b46f9c",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3309,7 +3373,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=588; grupo=28; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "2cfcaff2795aa166",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3325,7 +3389,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=593; grupo=34; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "6c68870bbdd7ad5e",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3341,7 +3405,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=590; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "12ad50ea27a56c90",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3357,7 +3421,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=592; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "4adcd5ebdbef479a",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3373,7 +3437,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=591; grupo=32; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "bb59c3653392f31a",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "AFA",
@@ -3720,6 +3784,54 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Amador do Estado",
+    "data": "2026-10-31",
+    "hora": "15:00",
+    "mandante": "Santa Rita FC (LARFA)",
+    "visitante": "EC Azulão (MGC)",
+    "pais": "Brasil",
+    "cidade": "Leme",
+    "estadio": "Estádio Municipal Bruno Lazzarini",
+    "rodada": "Rodada 4",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=20; grupo=10; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "04af7a485e2a8455",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Amador do Estado",
+    "data": "2026-10-31",
+    "hora": "15:00",
+    "mandante": "UNIDOS DO TANQUE (ATB)",
+    "visitante": "BSC/PM NUPORANGA (BRK)",
+    "pais": "Brasil",
+    "cidade": "Atibaia",
+    "estadio": "Estádio Municipal Salvador Russani",
+    "rodada": "Rodada 4",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=19; grupo=09; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "d5b4d84d6d02be03",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Amador do Estado",
+    "data": "2026-10-31",
+    "hora": "15:00",
+    "mandante": "Vasquinho (RBP)",
+    "visitante": "União FC (ATB)",
+    "pais": "Brasil",
+    "cidade": "Ribeirão Pires",
+    "estadio": "Est. Mun. Valentino Redivo",
+    "rodada": "Rodada 4",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=21; grupo=07; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "2857ea1e486fa693",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista F Sub-17 Petrobras (Amador)",
     "data": "2026-10-31",
     "hora": "15:00",
@@ -3732,7 +3844,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=47; grupo=03; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "109ff3a79dbb2fea",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3748,7 +3860,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=48; grupo=04; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "a5496212a01a824c",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3764,7 +3876,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=50; grupo=06; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "34d2c65247cdddbf",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3784,6 +3896,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
+    "data": "2026-10-31",
+    "hora": "15:00",
+    "mandante": "Palmeiras",
+    "visitante": "Corinthians",
+    "pais": "Brasil",
+    "cidade": "Barueri",
+    "estadio": "Estádio Mun. Orlando Batista Novelli",
+    "rodada": "Rodada 14",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=76; grupo=08; fase=SEMIFINAL; canais=TV Brasil, YouTube Paulistão; suspencao=LIBERADO",
+    "id": "341d8c61a1120173",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
     "data": "2026-10-31",
     "hora": "15:00",
@@ -3796,7 +3924,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=588; grupo=30; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "675f50e686096bd0",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3812,7 +3940,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=587; grupo=29; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "f90129ea31fcf885",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3828,7 +3956,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=23; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "cc8cacf0b6b24cdd",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3844,7 +3972,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=24; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "8c5c9121bb1ad781",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -3860,7 +3988,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=22; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "eda9293939fbb6ef",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -4082,7 +4210,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=592; grupo=32; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "2a0f26dded6686dd",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -4098,7 +4226,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=589; grupo=27; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "7a4b9c2eabef8770",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -4114,7 +4242,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=594; grupo=34; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "5ab7e2a274fd88f8",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -4130,7 +4258,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=590; grupo=28; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "9c3d51e346fa5ead",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -4146,7 +4274,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=591; grupo=31; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "6089769ed6b1aae0",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -4162,7 +4290,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=593; grupo=33; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "4a4d44f2fef8d652",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "AUF",
@@ -5182,7 +5310,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=594; grupo=30; fase=TERCEIRA FASE; suspencao=LIBERADO",
     "id": "54cae9dd18f2d37c",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -5198,7 +5326,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=651; grupo=36; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "6d0710d5fbf1f0f5",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -5214,7 +5342,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=652; grupo=37; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "220e8fd6c70a8f08",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -5230,7 +5358,23 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=653; grupo=38; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "a691baff8d6fadff",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-15 (SUB15)",
+    "data": "2026-11-01",
+    "hora": "09:00",
+    "mandante": "Corinthians",
+    "visitante": "Mirassol",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Estádio Alfredo Schürig",
+    "rodada": "Rodada 25",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=770; grupo=52; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "5d27a4a4ff930775",
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -5294,6 +5438,22 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Amador do Estado",
+    "data": "2026-11-01",
+    "hora": "10:00",
+    "mandante": "CA Bandeirante (BRK)",
+    "visitante": "Nova Detroit (SJC)",
+    "pais": "Brasil",
+    "cidade": "Brodowski",
+    "estadio": "Mário Lima Santos",
+    "rodada": "Rodada 4",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=22; grupo=08; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "a52551340c889631",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista F Sub-17 Petrobras (Amador)",
     "data": "2026-11-01",
     "hora": "10:00",
@@ -5306,7 +5466,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=49; grupo=05; fase=QUARTAS DE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "eb9b6eb7464134b9",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "AUF",
@@ -5400,7 +5560,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=651; grupo=36; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "f156cebbdbe0002d",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -5416,7 +5576,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=654; grupo=39; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "dfeb0ea1fa1b7d88",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -5432,7 +5592,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=652; grupo=37; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "34ac7858690d7934",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -5462,7 +5622,23 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=654; grupo=39; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "0713fd745355f91d",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-14 (SUB14)",
+    "data": "2026-11-01",
+    "hora": "11:00",
+    "mandante": "Corinthians",
+    "visitante": "Santos",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Estádio Alfredo Schürig",
+    "rodada": "Rodada 19",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=653; grupo=38; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "d464698fcf6092a0",
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -5478,7 +5654,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=357; grupo=30; fase=QUARTAS DE FINAL; canais=TNT; suspencao=LIBERADO",
     "id": "6c7196a4c7f3abbf",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "ESPN",
@@ -9216,6 +9392,70 @@
     "atualizado_em": "2026-10-19T19:26:58"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-15 (SUB15)",
+    "data": "2026-11-07",
+    "hora": "09:00",
+    "mandante": "Ibrachina FC",
+    "visitante": "Red Bull Bragantino",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Ibrachina Arena",
+    "rodada": "Rodada 26",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=774; grupo=53; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "2b9a1c0fb77acdf1",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-15 (SUB15)",
+    "data": "2026-11-07",
+    "hora": "09:00",
+    "mandante": "Mirassol",
+    "visitante": "Corinthians",
+    "pais": "Brasil",
+    "cidade": "Bálsamo",
+    "estadio": "Estádio Municipal Manoel Francisco Ferreira",
+    "rodada": "Rodada 26",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=773; grupo=52; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "770040f1f92269c2",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-15 (SUB15)",
+    "data": "2026-11-07",
+    "hora": "09:00",
+    "mandante": "Palmeiras",
+    "visitante": "São Paulo",
+    "pais": "Brasil",
+    "cidade": "Barueri",
+    "estadio": "Estádio Mun. Orlando Batista Novelli",
+    "rodada": "Rodada 26",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=772; grupo=51; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "af55ba5cbf311f02",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista Sub-15 (SUB15)",
+    "data": "2026-11-07",
+    "hora": "09:00",
+    "mandante": "Santos",
+    "visitante": "Cosmopolitano",
+    "pais": "Brasil",
+    "cidade": "Santos",
+    "estadio": "CT Rei Pelé - Campo I",
+    "rodada": "Rodada 26",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=771; grupo=50; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "a594d35593c3f5e7",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Campeonato Goiano Feminino Adulto / 2026",
     "data": "2026-11-07",
@@ -9509,6 +9749,70 @@
   },
   {
     "fonte": "FPF",
+    "competicao": "Brasil - FPF - Amador do Estado",
+    "data": "2026-11-07",
+    "hora": "15:00",
+    "mandante": "BSC/PM NUPORANGA (BRK)",
+    "visitante": "UNIDOS DO TANQUE (ATB)",
+    "pais": "Brasil",
+    "cidade": "Nuporanga",
+    "estadio": "Estádio José Martins de Barros Junior",
+    "rodada": "Rodada 5",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=25; grupo=09; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "abd0e87e159185a5",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Amador do Estado",
+    "data": "2026-11-07",
+    "hora": "15:00",
+    "mandante": "EC Azulão (MGC)",
+    "visitante": "Santa Rita FC (LARFA)",
+    "pais": "Brasil",
+    "cidade": "Mogi das Cruzes",
+    "estadio": "Estádio Municipal Francisco Ribeiro Nogueira",
+    "rodada": "Rodada 5",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=26; grupo=10; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "48dc1ea90c42ef7c",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Amador do Estado",
+    "data": "2026-11-07",
+    "hora": "15:00",
+    "mandante": "Nova Detroit (SJC)",
+    "visitante": "CA Bandeirante (BRK)",
+    "pais": "Brasil",
+    "cidade": "São José dos Campos",
+    "estadio": "Praça Hélio Dias (Campo de Futebol do Parque Santa Rita)",
+    "rodada": "Rodada 5",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=24; grupo=08; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "e44f3fdc7c12c1a2",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Amador do Estado",
+    "data": "2026-11-07",
+    "hora": "15:00",
+    "mandante": "União FC (ATB)",
+    "visitante": "Vasquinho (RBP)",
+    "pais": "Brasil",
+    "cidade": "Atibaia",
+    "estadio": "Estádio Municipal Salvador Russani",
+    "rodada": "Rodada 5",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=23; grupo=07; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
+    "id": "60a10b5ed9c31a1a",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
     "competicao": "Brasil - FPF - Taça Paulistana Petrobras (Amador)",
     "data": "2026-11-07",
     "hora": "15:00",
@@ -9521,7 +9825,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=25; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "08f932bb775e42e1",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -9537,7 +9841,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=26; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "8539d9a3a4cf8a11",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -9553,7 +9857,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=27; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "be5cdd66a9023045",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FGF",
@@ -9946,7 +10250,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=656; grupo=37; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "446b61b779d4e7f0",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -9962,7 +10266,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=655; grupo=36; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "a7a3ab38c78ad304",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -9978,7 +10282,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=657; grupo=38; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "d59ef50b63e4d170",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -9994,7 +10298,23 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=658; grupo=39; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "48349b9f90103d55",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
+    "data": "2026-11-08",
+    "hora": "10:00",
+    "mandante": "Ferroviária",
+    "visitante": "São Paulo",
+    "pais": "Brasil",
+    "cidade": "Araraquara",
+    "estadio": "Estádio Municipal Dr. Ademar Pereira de Barros",
+    "rodada": "Rodada 15",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=77; grupo=07; fase=SEMIFINAL; canais=TV Brasil, YouTube Paulistão; suspencao=LIBERADO",
+    "id": "cff47ff0e7d2c6f7",
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FMF",
@@ -10026,7 +10346,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=655; grupo=36; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "3fd828749ae788d0",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -10042,7 +10362,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=658; grupo=39; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "8789ea49c8480e88",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -10058,7 +10378,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=657; grupo=38; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "7f0cbfcefcf63ab0",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -10074,7 +10394,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=656; grupo=37; fase=QUARTAS DE FINAL; suspencao=LIBERADO",
     "id": "8a7d85a3813759e2",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "CBF",
@@ -11463,6 +11783,22 @@
     "atualizado_em": "2026-10-26T20:16:33"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
+    "data": "2026-11-09",
+    "hora": "21:00",
+    "mandante": "Corinthians",
+    "visitante": "Palmeiras",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Estádio Alfredo Schürig",
+    "rodada": "Rodada 15",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=78; grupo=08; fase=SEMIFINAL; canais=TV Brasil, YouTube Paulistão; suspencao=LIBERADO",
+    "id": "8d9e9bdb11d4e89d",
+    "atualizado_em": "2026-10-27T18:53:19"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Proyección",
     "data": "2026-11-10",
@@ -11878,7 +12214,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=9; grupo=01; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "573cfe9ae67766ca",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FMF",
@@ -11974,7 +12310,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=10; grupo=01; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "e72cc5ff85bd840b",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -12020,7 +12356,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=11; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "7dfd077d7a2107a1",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "SofaScore",
@@ -12188,7 +12524,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=29; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "77dc4c8a1fe9def1",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -12204,7 +12540,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=28; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "9a51d60c6e5eb00d",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -12220,7 +12556,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=30; grupo=01; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "d77f73416be9170c",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "ESPN",
@@ -12460,7 +12796,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=12; grupo=02; fase=PRIMEIRA FASE; suspencao=LIBERADO",
     "id": "17a15bdbe8f3c8a7",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -13106,7 +13442,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=29; grupo=03; fase=PLAY IN; canais=YouTube / CazeTV, Record News, HBO Max; suspencao=LIBERADO",
     "id": "69607484201e99f1",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "FPF",
@@ -13122,7 +13458,7 @@
     "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=30; grupo=02; fase=PLAY IN; canais=SporTV; suspencao=LIBERADO",
     "id": "ae473299ebf83bfa",
-    "atualizado_em": "2026-10-26T19:31:27"
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -13153,6 +13489,22 @@
     "extra": "codigo_espn=401930226; status=Scheduled",
     "id": "9d1d4c82c29394ab",
     "atualizado_em": "2026-10-26T20:16:33"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulistão F Petrobras (Amador)",
+    "data": "2026-11-21",
+    "hora": "",
+    "mandante": "São Paulo",
+    "visitante": "Santos",
+    "pais": "Brasil",
+    "cidade": "N/D",
+    "estadio": "N/D",
+    "rodada": "Rodada 9",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=31; grupo=03; fase=PLAY IN; canais=YouTube / CazeTV, Record News, HBO Max; suspencao=LIBERADO",
+    "id": "51a12f36ba2f43cd",
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "SofaScore",
@@ -13411,6 +13763,22 @@
     "extra": "",
     "id": "364fd11b540f3262",
     "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulistão F Petrobras (Amador)",
+    "data": "2026-11-22",
+    "hora": "",
+    "mandante": "Corinthians",
+    "visitante": "Red Bull Bragantino",
+    "pais": "Brasil",
+    "cidade": "N/D",
+    "estadio": "N/D",
+    "rodada": "Rodada 9",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=32; grupo=02; fase=PLAY IN; canais=SporTV; suspencao=LIBERADO",
+    "id": "d2f5bbbdca148d1b",
+    "atualizado_em": "2026-10-27T18:53:19"
   },
   {
     "fonte": "campeonatochileno.cl",
