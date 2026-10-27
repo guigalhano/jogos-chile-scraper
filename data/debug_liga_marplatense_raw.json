@@ -1,234 +1,6 @@
 [
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Atlético Mar del Plata",
-    "visitante": "El Cañón",
-    "estadio": "Cancha de Atlético Mar del Plata",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_atletico-mar-del-plata_el-canon; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "3c557840233f3c16",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Boca (MdP)",
-    "visitante": "Unión (MdP)",
-    "estadio": "Cancha de Boca",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_boca-mdp_union-mdp; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "dbc2d897c6f6fde8",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Cadetes de San Martín",
-    "visitante": "Chapadmalal",
-    "estadio": "Cancha de Cadetes de San Martín",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_cadetes-de-san-martin_chapadmalal; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "5d7885f85449519b",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Círculo Deportivo",
-    "visitante": "General Mitre (MdP)",
-    "estadio": "Cancha de Círculo Deportivo",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_circulo-deportivo_general-mitre-mdp; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "6223f8250c06f767",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Deportivo Norte",
-    "visitante": "General Urquiza (MdP)",
-    "estadio": "Cancha de Deportivo Norte",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_deportivo-norte_general-urquiza-mdp; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "9e9c694a3dc1c6b7",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "El Siciliano",
-    "visitante": "Banfield (MdP)",
-    "estadio": "Cancha de El Siciliano",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_el-siciliano_banfield-mdp; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "e86a821fa0403385",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Independiente (MdP)",
-    "visitante": "Alvarado",
-    "estadio": "Cancha de Independiente",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_independiente-mdp_alvarado; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "fe6527c124dc3e36",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Libertad (MdP)",
-    "visitante": "Quilmes (MdP)",
-    "estadio": "Cancha de Libertad",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_libertad-mdp_quilmes-mdp; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "23324e2f89791107",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Once Unidos",
-    "visitante": "San Lorenzo (MdP)",
-    "estadio": "Cancha de Once Unidos",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_once-unidos_san-lorenzo-mdp; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "e54ad9b0ba42fddb",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Racing (MdP)",
-    "visitante": "San Isidro (MdP)",
-    "estadio": "Cancha de Racing",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_racing-mdp_san-isidro-mdp; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "85f8cd2e21de7467",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "San José (MdP)",
-    "visitante": "Kimberley",
-    "estadio": "Cancha de San José",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_san-jose-mdp_kimberley; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "4cf8f333543886b9",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
-    "data": "2026-10-12",
-    "hora": "16:00",
-    "mandante": "Talleres (MdP)",
-    "visitante": "Argentinos del Sud",
-    "estadio": "Cancha de Talleres",
-    "rodada": "Fecha 9",
-    "url": "https://www.elmarplatense.com/la-fecha-9-define-los-ultimos-lugares-directos-a-octavos-1",
-    "extra": "pais=Argentina; codigo_lmf=2026-10-12_talleres-mdp_argentinos-del-sud; provincia=Buenos Aires; estado=Buenos Aires; cidade=Mar del Plata; liga=Liga Marplatense de Fútbol; fonte_dados=elmarplatense.com",
-    "fonte": "El Marplatense",
-    "pais": "Argentina",
-    "cidade": "Mar del Plata",
-    "lat": -38.0055,
-    "lng": -57.5426,
-    "escopo": "Regional",
-    "id": "8410f0b92e7e410b",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
-  },
-  {
-    "competicao": "Argentina - Liga Marplatense - Primera División",
     "data": "2026-10-14",
     "hora": "16:00",
     "mandante": "Al Ver Verás",
@@ -244,7 +16,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "11debc8e8e2e2529",
-    "atualizado_em": "2026-10-26T19:17:49+00:00"
+    "atualizado_em": "2026-10-27T00:25:48+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -263,7 +35,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "bfd0705689047e2a",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -282,7 +54,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "cf1941ad153cd20d",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -301,7 +73,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "3379a3c723f09850",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -320,7 +92,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "ed6fae9edda873c6",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -339,7 +111,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "41ed9958c9853dbb",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -358,7 +130,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "e4f0eedd5469b372",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -377,7 +149,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "d01505a70c49030a",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -396,7 +168,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "fed3a5d9174a11f1",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -415,7 +187,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "e27c5e280b770a84",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -434,7 +206,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "3aabdb7dfb6bd1a5",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -453,7 +225,7 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "c18e39d71993b98f",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   },
   {
     "competicao": "Argentina - Liga Marplatense - Primera División",
@@ -472,6 +244,6 @@
     "lng": -57.5426,
     "escopo": "Regional",
     "id": "a1e041479af2fb43",
-    "atualizado_em": "2026-10-26T19:17:24+00:00"
+    "atualizado_em": "2026-10-27T00:25:19+00:00"
   }
 ]
