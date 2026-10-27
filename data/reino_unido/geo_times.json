@@ -2495,6 +2495,12 @@
 "lng": -0.41379,
 "local": "Cardington"
 },
+"Inglaterra|Bedford Town|FA": {
+"fonte": "nome",
+"lat": 52.13638,
+"lng": -0.4675,
+"local": "Bedford"
+},
 "Inglaterra|Bedford Town|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 52.13638,
@@ -2980,6 +2986,12 @@
 "lat": 51.86881,
 "lng": 0.58147,
 "local": "Cressing Road"
+},
+"Inglaterra|Braintree Town|FA": {
+"fonte": "nome",
+"lat": 51.87803,
+"lng": 0.55365,
+"local": "Braintree"
 },
 "Inglaterra|Braintree Town|NonLeagueHQ": {
 "fonte": "nome",
@@ -4379,6 +4391,12 @@
 "lng": -1.55558,
 "local": "Darlington"
 },
+"Inglaterra|Darlington_": {
+"fonte": "nome",
+"lat": 54.52421,
+"lng": -1.55558,
+"local": "Darlington"
+},
 "Inglaterra|Dartford": {
 "fonte": "nome",
 "lat": 51.44431,
@@ -4576,6 +4594,12 @@
 "lat": 51.14101,
 "lng": 1.27481,
 "local": "River"
+},
+"Inglaterra|Dover Athletic|FA": {
+"fonte": "nome",
+"lat": 51.12513,
+"lng": 1.31342,
+"local": "Dover"
 },
 "Inglaterra|Dover Athletic|NonLeagueHQ": {
 "fonte": "nome",
@@ -5681,6 +5705,12 @@
 "lng": -2.05762,
 "local": "The Grove"
 },
+"Inglaterra|Halesowen Town|FA": {
+"fonte": "nome",
+"lat": 52.44921,
+"lng": -2.05146,
+"local": "Halesowen"
+},
 "Inglaterra|Halesowen Town|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 52.44921,
@@ -6766,6 +6796,12 @@
 "lat": 52.99802,
 "lng": -1.25953,
 "local": "Kimberley"
+},
+"Inglaterra|King's Lynn Town": {
+"fonte": "nome",
+"lat": 52.75387,
+"lng": 0.39548,
+"local": "King's Lynn"
 },
 "Inglaterra|Kings Hill": {
 "fonte": "nome",
@@ -9275,6 +9311,12 @@
 "lng": -1.79541,
 "local": "Salisbury"
 },
+"Inglaterra|Salisbury|FA": {
+"fonte": "nome",
+"lat": 51.06906,
+"lng": -1.79541,
+"local": "Salisbury"
+},
 "Inglaterra|Salisbury|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 51.06906,
@@ -9832,6 +9874,12 @@
 "lat": 54.70454,
 "lng": -1.59916,
 "local": "Brewery Field"
+},
+"Inglaterra|Spennymoor Town|FA": {
+"fonte": "nome",
+"lat": 54.69955,
+"lng": -1.60115,
+"local": "Spennymoor"
 },
 "Inglaterra|Spennymoor Town|NonLeagueHQ": {
 "fonte": "nome",
@@ -11279,6 +11327,12 @@
 "lng": -0.01144,
 "local": "Westmill"
 },
+"Inglaterra|Weston Super Mare": {
+"fonte": "nome",
+"lat": 51.34719,
+"lng": -2.97789,
+"local": "Weston-super-Mare"
+},
 "Inglaterra|Weston-super-Mare": {
 "fonte": "nome",
 "lat": 51.34719,
@@ -11453,6 +11507,12 @@
 "lng": -1.98734,
 "local": "Wimborne Minster"
 },
+"Inglaterra|Wimborne Town|FA": {
+"fonte": "nome",
+"lat": 50.79952,
+"lng": -1.98734,
+"local": "Wimborne Minster"
+},
 "Inglaterra|Wimborne Town|NonLeagueHQ": {
 "fonte": "nome",
 "lat": 50.79952,
@@ -11494,6 +11554,12 @@
 "lat": 51.59732,
 "lng": -0.18056,
 "local": "Finchley"
+},
+"Inglaterra|Wingate & Finchley|FA": {
+"fonte": "nome",
+"lat": 54.73094,
+"lng": -1.38103,
+"local": "Wingate"
 },
 "Inglaterra|Wingate & Finchley|NonLeagueHQ": {
 "fonte": "nome",

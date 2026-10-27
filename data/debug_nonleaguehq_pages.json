@@ -65,7 +65,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-essex-senior-league/",
-    "jogos": 258
+    "jogos": 257
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-essex-suffolk-border-league-premier/",
@@ -201,7 +201,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-northern-premier-league-premier/",
-    "jogos": 289
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-northern-premier-league-west/",
@@ -213,11 +213,11 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-oxfordshire-senior-league-premier/",
-    "jogos": 5
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-peterborough-district-league-premier/",
-    "jogos": 6
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-salop-football-league-premier/",
@@ -225,7 +225,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-sheffield-hallamshire-senior-league-premier/",
-    "jogos": 8
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-somerset-county-league-premier/",
@@ -233,35 +233,35 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-south-west-peninsula-league-premier-east/",
-    "jogos": 166
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-south-west-peninsula-league-premier-west/",
-    "jogos": 159
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-combination-league-division-one/",
-    "jogos": 235
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-combination-league-division-two/",
-    "jogos": 6
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-combination-league-premier/",
-    "jogos": 241
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-counties-east-league-division-one/",
-    "jogos": 198
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-counties-east-league-premier/",
-    "jogos": 195
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-league-division-one-central/",
-    "jogos": 306
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-southern-league-division-one-south/",
@@ -289,11 +289,11 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-st-piran-league-premier-east/",
-    "jogos": 153
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-st-piran-league-premier-west/",
-    "jogos": 167
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-staffordshire-county-senior-league/",
@@ -301,7 +301,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-suffolk-ipswich-league-senior-division/",
-    "jogos": 9
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-surrey-premier-county-league-premier/",
@@ -345,7 +345,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-west-midlands-regional-league-premier/",
-    "jogos": 0
+    "erro": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-west-yorkshire-league-premier/",
@@ -357,7 +357,7 @@
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-western-league-premier/",
-    "jogos": 179
+    "jogos": 180
   },
   {
     "url": "https://www.nonleaguehq.com/england-next-fixtures-wiltshire-senior-league-premier/",
@@ -373,20 +373,20 @@
   },
   {
     "url": "https://www.nonleaguehq.com/english-next-fixtures-national-league-north/",
-    "jogos": 395
+    "jogos": 394
   },
   {
     "url": "https://www.nonleaguehq.com/english-next-fixtures-national-league-south/",
-    "jogos": 395
+    "jogos": 0
   },
   {
     "url": "https://www.nonleaguehq.com/fixture-finder-scotland/",
-    "jogos": 2097,
+    "jogos": 2092,
     "por_codigo": {
       "3NRC": 193,
       "1HL": 304,
-      "1LLE": 237,
-      "1LLW": 270,
+      "1LLE": 234,
+      "1LLW": 268,
       "2ESP": 368,
       "2WSP": 157,
       "3ML1": 167,
