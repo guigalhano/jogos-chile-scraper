@@ -2,38 +2,6 @@
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 1",
-    "data": "2026-10-25",
-    "hora": "15:30",
-    "mandante": "Boys",
-    "visitante": "FC Cajamarca",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=4-2",
-    "id": "f6bcafff620b4899",
-    "atualizado_em": "2026-10-27T18:36:15"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-10-25",
-    "hora": "18:00",
-    "mandante": "Garcilaso",
-    "visitante": "Los Chankas",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=4-1",
-    "id": "90a4616af5e6dc6e",
-    "atualizado_em": "2026-10-27T18:36:15"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
     "data": "2026-10-27",
     "hora": "15:00",
     "mandante": "Juan Pablo II",
@@ -43,9 +11,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=2-0",
     "id": "4f4b2229e218d36f",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -59,9 +27,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=2-0",
     "id": "32cd6548fd45bb16",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -75,9 +43,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=27'; placar=0-1",
     "id": "2c2ddba1dfeb4d6b",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -93,7 +61,39 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "1d074ddc586b1a22",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "atualizado_em": "2026-10-28T18:42:46"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-28",
+    "hora": "19:00",
+    "mandante": "Cienciano",
+    "visitante": "Grau",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "7902afd375672c05",
+    "atualizado_em": "2026-10-28T18:42:46"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-10-29",
+    "hora": "13:00",
+    "mandante": "Los Chankas",
+    "visitante": "Cusco FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "53470c2d0238ee8d",
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -109,7 +109,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-2",
     "id": "c61dc555f74ed125",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -125,7 +125,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-2",
     "id": "525bd07ac6c4fad9",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -141,7 +141,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-0",
     "id": "b03e86d9924e8506",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -157,70 +157,70 @@
     "url": "",
     "extra": "status=Jugado; placar=1-0",
     "id": "bb0a869f5d720dc0",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
-    "data": "2026-10-25",
-    "hora": "15:30",
-    "mandante": "Volante",
-    "visitante": "S. Domingo",
+    "data": "2026-10-28",
+    "hora": "11:00",
+    "mandante": "Pacífico FC",
+    "visitante": "Volante",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
     "rodada": "Grupo 1",
     "url": "",
-    "extra": "status=Jugado; placar=0-1",
-    "id": "144b52619ce1f281",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "extra": "status=Jugado; placar=6-1",
+    "id": "1efa668dd5a346f1",
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
-    "data": "2026-10-25",
-    "hora": "14:00",
-    "mandante": "D. Ucrania",
-    "visitante": "ASA FC",
+    "data": "2026-10-28",
+    "hora": "15:00",
+    "mandante": "S. Company",
+    "visitante": "D. Ucrania",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
     "rodada": "Grupo 3",
     "url": "",
-    "extra": "status=Jugado; placar=3-2",
-    "id": "65273d807ef11a1e",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "extra": "status=Por jugar",
+    "id": "72476d944ad8937a",
+    "atualizado_em": "2026-10-28T18:42:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
-    "data": "2026-10-25",
+    "data": "2026-10-28",
+    "hora": "14:00",
+    "mandante": "Melgar",
+    "visitante": "UDA",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo 4",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "e6df2bcb5f5e1229",
+    "atualizado_em": "2026-10-28T18:42:46"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-10-28",
     "hora": "15:00",
-    "mandante": "Nacional",
-    "visitante": "Melgar",
+    "mandante": "Ecosem",
+    "visitante": "Nacional",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
     "rodada": "Grupo 4",
     "url": "",
-    "extra": "status=Jugado; placar=0-2",
-    "id": "3e996f9f8e195dc0",
-    "atualizado_em": "2026-10-27T18:36:15"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 3",
-    "data": "2026-10-25",
-    "hora": "15:30",
-    "mandante": "UDA",
-    "visitante": "Ecosem",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Grupo 4",
-    "url": "",
-    "extra": "status=Jugado; placar=2-3",
-    "id": "f0fe7e2400295340",
-    "atualizado_em": "2026-10-27T18:36:15"
+    "extra": "status=Por jugar",
+    "id": "ad5f8a5aca2fb21b",
+    "atualizado_em": "2026-10-28T18:42:46"
   }
 ]
