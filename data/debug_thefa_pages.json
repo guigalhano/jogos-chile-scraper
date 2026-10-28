@@ -3,28 +3,22 @@
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "status": 200,
-    "bytes": 179923
+    "bytes": 179156
   },
   {
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
     "status": 200,
-    "bytes": 20878
-  },
-  {
-    "copa": "FA Trophy",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=3",
-    "status": 200,
-    "bytes": 3688
+    "bytes": 20710
   },
   {
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-27 19:45 Workington AFC v Cleethorpes Town @ ",
       "2026-11-14 15:00 Hebburn Town v Guiseley AFC @ ",
-      "2026-11-14 15:00 Ashton United v Workington / Cleethorpes Town @ "
+      "2026-11-14 15:00 Ashton United v Workington AFC @ ",
+      "2026-11-14 15:00 Bridlington Town AFC v Macclesfield @ "
     ]
   },
   {
@@ -32,17 +26,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-14 15:00 Hereford v Brackley Town @ ",
       "2026-11-14 15:00 Newmarket Town v Oxford City @ ",
-      "2026-11-14 15:00 Merthyr Town v Harborough Town @ "
-    ]
-  },
-  {
-    "copa": "FA Trophy",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=3",
-    "jogos_parseados": 1,
-    "amostra": [
-      "2026-11-14 15:00 Weston Super Mare v Farnborough @ "
+      "2026-11-14 15:00 Merthyr Town v Harborough Town @ ",
+      "2026-11-14 15:00 Billericay Town v Waltham Abbey @ "
     ]
   },
   {
@@ -145,70 +131,70 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140750
+    "bytes": 140681
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 178636
+    "bytes": 180256
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 12070
+    "bytes": 13825
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
+      "2026-11-01 13:00 Lye Town Women v Coton Green Ladies @ ",
       "2026-11-01 14:00 Workington Town Women v Mancunian Unity Women @ ",
-      "2026-11-01 14:00 Wigan Athletic Women v Chester-Le-Street Town Ladies @ ",
-      "2026-11-01 14:00 Preston North End Women v i2i International Soccer Academy Women @ "
+      "2026-11-01 14:00 Wigan Athletic Women v Chester-Le-Street Town Ladies @ "
     ]
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
-    "jogos_parseados": 11,
+    "jogos_parseados": 13,
     "amostra": [
-      "2026-11-15 13:00 Gwalia United v Oxford United Women @ ",
-      "2026-11-15 13:00 Real Bedford Women v Fulham Women @ ",
-      "2026-11-15 13:00 Keynsham Town Ladies v Millwall Lionesses LFC @ "
+      "2026-11-15 13:00 South Shields Women / SJR Worksop Women v Halifax Women @ ",
+      "2026-11-15 13:00 Moneyfields Women v Bristol Rovers Women's @ ",
+      "2026-11-15 13:00 Gwalia United v Oxford United Women @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 175741
+    "bytes": 176715
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 17648
+    "bytes": 11719
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-27 19:00 Crewe Alexandra v Oldham Athletic AFC @ ",
-      "2026-10-27 19:00 Wigan Athletic v York City @ ",
-      "2026-10-27 19:00 Northampton Town v Grimsby Town @ "
+      "2026-10-28 19:00 Stockport County v Rotherham United @ ",
+      "2026-10-28 19:00 Bradford City v Huddersfield Town @ ",
+      "2026-10-28 19:00 Notts County v Burton Albion @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 14,
+    "jogos_parseados": 9,
     "amostra": [
-      "2026-10-30 19:00 Slough Town v Gillingham @ ",
-      "2026-10-30 19:30 Cobham v Merstham @ ",
-      "2026-10-30 19:45 St Ives Town v Racing Club Warwick @ "
+      "2026-11-03 19:00 Blackpool v Accrington Stanley @ ",
+      "2026-11-03 19:00 Port Vale v Shrewsbury Town @ ",
+      "2026-11-03 19:00 Leiston v Bromley @ "
     ]
   }
 ]
