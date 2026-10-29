@@ -1,5 +1,101 @@
 [
   {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-14",
+    "hora": "16:30",
+    "mandante": "Atlético Junior",
+    "visitante": "Deportivo Pereira",
+    "pais": "Colombia",
+    "cidade": "Barranquilla",
+    "estadio": "Romelio Martínez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878008; status=Full Time; placar=1-1",
+    "id": "1f5b1e476de84555",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Copa BetPlay",
+    "data": "2026-10-14",
+    "hora": "20:30",
+    "mandante": "Atlético Nacional",
+    "visitante": "Independiente Medellín",
+    "pais": "Colombia",
+    "cidade": "Medellin",
+    "estadio": "Atanasio Girardot",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929277; status=Full Time; placar=3-2",
+    "id": "7c08cc11894b879c",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Copa BetPlay",
+    "data": "2026-10-15",
+    "hora": "18:00",
+    "mandante": "Internacional de Bogotá",
+    "visitante": "Llaneros FC",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Metropolitano de Techo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929276; status=Full Time; placar=4-1",
+    "id": "0815d55b330d1ed2",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Boyacá Chicó FC",
+    "visitante": "Atlético Nacional",
+    "pais": "Colombia",
+    "cidade": "Tunja",
+    "estadio": "La Independencia",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877851; status=Full Time; placar=1-4",
+    "id": "6ce18b47ee1cb0c1",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-17",
+    "hora": "18:00",
+    "mandante": "Millonarios",
+    "visitante": "Jaguares de Córdoba",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Estadio Nemesio Camacho El Campín",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878048; status=Full Time; placar=4-1",
+    "id": "a66bee46d7bc24e5",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-17",
+    "hora": "20:10",
+    "mandante": "Independiente Medellín",
+    "visitante": "Once Caldas",
+    "pais": "Colombia",
+    "cidade": "Medellin",
+    "estadio": "Atanasio Girardot",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878030; status=Full Time; placar=0-2",
+    "id": "a95eead7217eadb0",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
     "competicao": "Argentina - Liga Marplatense - Primera División",
     "data": "2026-10-18",
     "hora": "",
@@ -228,6 +324,278 @@
     "atualizado_em": "2026-10-29T18:57:53+00:00"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-18",
+    "hora": "14:00",
+    "mandante": "Águilas Doradas",
+    "visitante": "Deportes Tolima",
+    "pais": "Colombia",
+    "cidade": "Medellin",
+    "estadio": "Atanasio Girardot",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877774; status=Full Time; placar=2-1",
+    "id": "5d641e3defefc460",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-18",
+    "hora": "16:00",
+    "mandante": "Atlético Bucaramanga",
+    "visitante": "América de Cali",
+    "pais": "Colombia",
+    "cidade": "Bucaramanga",
+    "estadio": "Estadio Alfonso López",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878059; status=Full Time; placar=1-1",
+    "id": "e9dd90e16ae8738e",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-18",
+    "hora": "18:05",
+    "mandante": "Llaneros FC",
+    "visitante": "Independiente Santa Fe",
+    "pais": "Colombia",
+    "cidade": "Villavicencio",
+    "estadio": "Estadio Bello Horizonte - Rey Pele",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877840; status=Full Time; placar=1-0",
+    "id": "4641016154d88fa4",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-18",
+    "hora": "20:10",
+    "mandante": "Deportivo Cali",
+    "visitante": "Atlético Junior",
+    "pais": "Colombia",
+    "cidade": "Cali",
+    "estadio": "Deportivo Cali",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877905; status=Full Time; placar=0-0",
+    "id": "efc15c0b19c3dad0",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-19",
+    "hora": "20:05",
+    "mandante": "Deportivo Pasto",
+    "visitante": "Alianza FC",
+    "pais": "Colombia",
+    "cidade": "Pasto",
+    "estadio": "Departamental Libertad",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878019; status=Full Time; placar=0-1",
+    "id": "288d5ec8138dcf60",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-20",
+    "hora": "16:30",
+    "mandante": "Deportivo Pereira",
+    "visitante": "Boyacá Chicó FC",
+    "pais": "Colombia",
+    "cidade": "Cali",
+    "estadio": "Deportivo Cali",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878040; status=Full Time; placar=2-0",
+    "id": "56e5308a94381daa",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-20",
+    "hora": "18:15",
+    "mandante": "Internacional de Bogotá",
+    "visitante": "Fortaleza CEIF",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Metropolitano de Techo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878033; status=Full Time; placar=2-1",
+    "id": "5b08e7d9f4bfac25",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-20",
+    "hora": "18:30",
+    "mandante": "Cúcuta Deportivo",
+    "visitante": "Atlético Nacional",
+    "pais": "Colombia",
+    "cidade": "Cúcuta",
+    "estadio": "General Santander",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878021; status=Full Time; placar=1-0",
+    "id": "afc0969e36879285",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-20",
+    "hora": "20:30",
+    "mandante": "Millonarios",
+    "visitante": "Once Caldas",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Estadio Nemesio Camacho El Campín",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877892; status=Full Time; placar=1-1",
+    "id": "89795e980c92c6cd",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-21",
+    "hora": "18:15",
+    "mandante": "Llaneros FC",
+    "visitante": "Deportivo Cali",
+    "pais": "Colombia",
+    "cidade": "Villavicencio",
+    "estadio": "Estadio Bello Horizonte - Rey Pele",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878012; status=Full Time; placar=0-3",
+    "id": "5b01e472f09f1375",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Copa BetPlay",
+    "data": "2026-10-21",
+    "hora": "19:30",
+    "mandante": "Barranquilla FC",
+    "visitante": "América de Cali",
+    "pais": "Colombia",
+    "cidade": "Barranquilla",
+    "estadio": "Romelio Martínez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929247; status=Full Time; placar=0-4",
+    "id": "c72c2fb765aeb4f1",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-21",
+    "hora": "20:20",
+    "mandante": "Independiente Santa Fe",
+    "visitante": "Jaguares de Córdoba",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Estadio Nemesio Camacho El Campín",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877844; status=Full Time; placar=2-1",
+    "id": "b8f2eefea29b3a39",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-22",
+    "hora": "20:00",
+    "mandante": "Atlético Nacional",
+    "visitante": "Deportivo Pasto",
+    "pais": "Colombia",
+    "cidade": "Medellin",
+    "estadio": "Atanasio Girardot",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877877; status=Full Time; placar=3-0",
+    "id": "53ea1ea5f89e472b",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-23",
+    "hora": "18:00",
+    "mandante": "Boyacá Chicó FC",
+    "visitante": "Atlético Bucaramanga",
+    "pais": "Colombia",
+    "cidade": "Tunja",
+    "estadio": "La Independencia",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877907; status=Full Time; placar=1-0",
+    "id": "d3453823ee61acda",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-23",
+    "hora": "20:10",
+    "mandante": "Atlético Junior",
+    "visitante": "Águilas Doradas",
+    "pais": "Colombia",
+    "cidade": "Barranquilla",
+    "estadio": "Romelio Martínez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877773; status=Full Time; placar=1-0",
+    "id": "4c4a384903ce524b",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-24",
+    "hora": "18:05",
+    "mandante": "América de Cali",
+    "visitante": "Cúcuta Deportivo",
+    "pais": "Colombia",
+    "cidade": "Cali",
+    "estadio": "Pascual Guerrero",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878057; status=Full Time; placar=3-1",
+    "id": "6c5422598114a94d",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-24",
+    "hora": "20:15",
+    "mandante": "Once Caldas",
+    "visitante": "Deportivo Pereira",
+    "pais": "Colombia",
+    "cidade": "Manizales",
+    "estadio": "Palogrande",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877895; status=Full Time; placar=1-1",
+    "id": "9b57e9b130998c96",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
     "data": "2026-10-25",
@@ -260,6 +628,22 @@
     "atualizado_em": "2026-10-29T18:51:38"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-25",
+    "hora": "14:00",
+    "mandante": "Fortaleza CEIF",
+    "visitante": "Deportivo Cali",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Metropolitano de Techo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877906; status=Full Time; placar=1-1",
+    "id": "8068ac1c87e7d8ce",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
     "data": "2026-10-25",
@@ -276,6 +660,54 @@
     "atualizado_em": "2026-10-29T18:51:38"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-25",
+    "hora": "16:05",
+    "mandante": "Alianza FC",
+    "visitante": "Internacional de Bogotá",
+    "pais": "Colombia",
+    "cidade": "Valledupar",
+    "estadio": "Armando Maestre Pavajeau",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878036; status=Full Time; placar=1-0",
+    "id": "c932241dc81eff0c",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-25",
+    "hora": "18:10",
+    "mandante": "Atlético Nacional",
+    "visitante": "Independiente Medellín",
+    "pais": "Colombia",
+    "cidade": "Medellin",
+    "estadio": "Atanasio Girardot",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878052; status=Full Time; placar=2-1",
+    "id": "0c8c35bc2c977e73",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-25",
+    "hora": "20:15",
+    "mandante": "Deportes Tolima",
+    "visitante": "Deportivo Pasto",
+    "pais": "Colombia",
+    "cidade": "Ibague",
+    "estadio": "Estadio Manuel Murillo Toro",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877918; status=Full Time; placar=0-1",
+    "id": "fe842d9bdc602751",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
     "data": "2026-10-26",
@@ -290,6 +722,70 @@
     "extra": "status=Jugado; placar=1-0",
     "id": "5a0444ed18c325f3",
     "atualizado_em": "2026-10-29T18:51:38"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-26",
+    "hora": "18:00",
+    "mandante": "Jaguares de Córdoba",
+    "visitante": "Llaneros FC",
+    "pais": "Colombia",
+    "cidade": "Montería",
+    "estadio": "Estadio Jaraguay (Municipal de Montería)",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401878065; status=Full Time; placar=1-0",
+    "id": "d5c571bed81ab8e1",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-26",
+    "hora": "20:05",
+    "mandante": "Independiente Santa Fe",
+    "visitante": "Atlético Bucaramanga",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Estadio Nemesio Camacho El Campín",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877841; status=Full Time; placar=2-1",
+    "id": "43b284c1600da563",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-27",
+    "hora": "18:00",
+    "mandante": "Cúcuta Deportivo",
+    "visitante": "Águilas Doradas",
+    "pais": "Colombia",
+    "cidade": "Cúcuta",
+    "estadio": "General Santander",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877953; status=Full Time; placar=0-2",
+    "id": "cb6a14e9c9362631",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-27",
+    "hora": "20:05",
+    "mandante": "Boyacá Chicó FC",
+    "visitante": "Atlético Junior",
+    "pais": "Colombia",
+    "cidade": "Tunja",
+    "estadio": "La Independencia",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877861; status=Full Time; placar=1-1",
+    "id": "996935122db937b8",
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -404,6 +900,22 @@
     "atualizado_em": "2026-10-29T18:51:38"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-28",
+    "hora": "18:00",
+    "mandante": "Once Caldas",
+    "visitante": "Alianza FC",
+    "pais": "Colombia",
+    "cidade": "Manizales",
+    "estadio": "Palogrande",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877998; status=Full Time; placar=1-0",
+    "id": "8ec4ec5e78372d15",
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 1",
     "data": "2026-10-28",
@@ -418,6 +930,22 @@
     "extra": "status=Jugado; placar=3-0",
     "id": "f2d30ce5752c469e",
     "atualizado_em": "2026-10-29T18:51:38"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-10-28",
+    "hora": "20:05",
+    "mandante": "Internacional de Bogotá",
+    "visitante": "Independiente Medellín",
+    "pais": "Colombia",
+    "cidade": "Bogota",
+    "estadio": "Metropolitano de Techo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877878; status=Full Time; placar=3-1",
+    "id": "92a3e356e4f57668",
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -673,7 +1201,7 @@
     "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-29",
-    "hora": "18:15",
+    "hora": "18:30",
     "mandante": "América de Cali",
     "visitante": "Fortaleza CEIF",
     "pais": "Colombia",
@@ -682,8 +1210,8 @@
     "rodada": "",
     "url": "",
     "extra": "codigo_espn=401878035; status=Scheduled",
-    "id": "c60a4236e4aa2325",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "id": "ebfc62f56ca9da60",
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "AFA",
@@ -795,7 +1323,7 @@
     "url": "",
     "extra": "codigo_espn=401877845; status=Scheduled",
     "id": "e170c135a0faad7b",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "CBF",
@@ -1104,7 +1632,7 @@
     "url": "",
     "extra": "codigo_espn=401877995; status=Scheduled",
     "id": "df00339898521f82",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -1288,7 +1816,7 @@
     "url": "",
     "extra": "codigo_espn=401878044; status=Scheduled",
     "id": "8edd458c10720fed",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "SofaScore",
@@ -4086,7 +4614,7 @@
     "url": "",
     "extra": "codigo_espn=401878071; status=Scheduled",
     "id": "5f63e9febbefb2d6",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "AFA",
@@ -5996,7 +6524,7 @@
     "url": "",
     "extra": "codigo_espn=401877913; status=Scheduled",
     "id": "943c0072d760bd78",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "AUF",
@@ -6185,7 +6713,7 @@
     "url": "",
     "extra": "codigo_espn=401878061; status=Scheduled",
     "id": "9a0b640e056b3f04",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "CBF",
@@ -6392,7 +6920,7 @@
     "url": "",
     "extra": "codigo_espn=401930556; status=Scheduled",
     "id": "a326475a94d1e1c9",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "SofaScore",
@@ -6778,7 +7306,7 @@
     "url": "",
     "extra": "codigo_espn=401877772; status=Scheduled",
     "id": "e2510e814340a69c",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -6944,7 +7472,7 @@
     "url": "",
     "extra": "codigo_espn=401877914; status=Scheduled",
     "id": "f8c082b9e1983668",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "CBF",
@@ -7254,7 +7782,7 @@
     "url": "",
     "extra": "codigo_espn=401877912; status=Scheduled",
     "id": "eb0cbeb838d42fea",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -7382,7 +7910,7 @@
     "url": "",
     "extra": "codigo_espn=401877896; status=Scheduled",
     "id": "a294fe02537e9b54",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -7583,7 +8111,7 @@
     "url": "",
     "extra": "codigo_espn=401877959; status=Scheduled",
     "id": "083149d6b40c97ab",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7742,7 +8270,7 @@
     "url": "",
     "extra": "codigo_espn=401877910; status=Scheduled",
     "id": "ed31bbd85322078b",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -8124,7 +8652,7 @@
     "url": "",
     "extra": "codigo_espn=401877916; status=Scheduled",
     "id": "3554922bba4662d4",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "CBF",
@@ -8474,7 +9002,7 @@
     "url": "",
     "extra": "codigo_espn=401877771; status=Scheduled",
     "id": "9abba3db2184ceb5",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8891,7 +9419,7 @@
     "url": "",
     "extra": "codigo_espn=401878070; status=Scheduled",
     "id": "a0455d155213d269",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "CBF",
@@ -9013,7 +9541,7 @@
     "url": "",
     "extra": "codigo_espn=401878041; status=Scheduled",
     "id": "0a78c6c2ce269345",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9091,7 +9619,7 @@
     "url": "",
     "extra": "codigo_espn=401877908; status=Scheduled",
     "id": "691a4b9021a06e70",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9404,7 +9932,7 @@
     "url": "",
     "extra": "codigo_espn=401878064; status=Scheduled",
     "id": "d872f57091139f23",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9681,7 +10209,7 @@
     "url": "",
     "extra": "codigo_espn=401877917; status=Scheduled",
     "id": "5a4154ff09996d05",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9697,7 +10225,7 @@
     "url": "",
     "extra": "codigo_espn=401878029; status=Scheduled",
     "id": "a511aa7c3dea2cc1",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9713,7 +10241,7 @@
     "url": "",
     "extra": "codigo_espn=401878043; status=Scheduled",
     "id": "8cbb8bb645b8dfa2",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9729,7 +10257,7 @@
     "url": "",
     "extra": "codigo_espn=401877893; status=Scheduled",
     "id": "faff4e1d4e703354",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9745,7 +10273,23 @@
     "url": "",
     "extra": "codigo_espn=401878034; status=Scheduled",
     "id": "4a1f47f653a35f64",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Colombia - Liga BetPlay",
+    "data": "2026-11-08",
+    "hora": "15:30",
+    "mandante": "Deportivo Pereira",
+    "visitante": "América de Cali",
+    "pais": "Colombia",
+    "cidade": "Pereira",
+    "estadio": "Hernán Ramirez Villegas",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401877919; status=Scheduled",
+    "id": "b3aed3d20eb67c6e",
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9761,7 +10305,7 @@
     "url": "",
     "extra": "codigo_espn=401877838; status=Scheduled",
     "id": "6b42de019aad3370",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9777,7 +10321,7 @@
     "url": "",
     "extra": "codigo_espn=401877890; status=Scheduled",
     "id": "632208e55578ebf2",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9793,7 +10337,7 @@
     "url": "",
     "extra": "codigo_espn=401878024; status=Scheduled",
     "id": "561e35a3faaef345",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -9809,7 +10353,7 @@
     "url": "",
     "extra": "codigo_espn=401877770; status=Scheduled",
     "id": "bb79cb3fd5259b78",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -10236,7 +10780,7 @@
     "url": "",
     "extra": "codigo_espn=401878067; status=Scheduled",
     "id": "d6c2be1b7496bcbd",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "CBF",
@@ -10748,7 +11292,7 @@
     "url": "",
     "extra": "codigo_espn=401877901; status=Scheduled",
     "id": "5271094a08d908f8",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "CBF",
@@ -10840,7 +11384,7 @@
     "url": "",
     "extra": "codigo_espn=401878031; status=Scheduled",
     "id": "bd31b5ad0452934e",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "ESPN",
@@ -10888,7 +11432,7 @@
     "url": "",
     "extra": "codigo_espn=401877958; status=Scheduled",
     "id": "c8564d13122eaf19",
-    "atualizado_em": "2026-10-28T19:12:04"
+    "atualizado_em": "2026-10-29T19:21:05"
   },
   {
     "fonte": "campeonatochileno.cl",
