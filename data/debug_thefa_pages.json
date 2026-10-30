@@ -131,13 +131,13 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140707
+    "bytes": 140717
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 179365
+    "bytes": 179485
   },
   {
     "copa": "Women's FA Cup",
@@ -169,32 +169,32 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 176620
+    "bytes": 177649
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 5510
+    "bytes": 20030
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-10-29 19:00 Chorley v Hartlepool United @ ",
-      "2026-10-29 19:00 Rochdale AFC v Cheadle Town @ ",
-      "2026-10-29 19:00 Milton Keynes Irish v Ilkeston Town @ "
+      "2026-10-30 19:00 Southend United v AFC Wimbledon @ ",
+      "2026-10-30 19:00 Hertford Town v Worthing @ ",
+      "2026-10-30 19:00 Chelmsford City v Leyton Orient @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 3,
+    "jogos_parseados": 19,
     "amostra": [
-      "2026-11-04 19:00 Colchester United v AFC Sudbury @ ",
-      "2026-11-04 19:30 Blyth Spartans AFC v Doncaster Rovers @ ",
-      "2026-11-04 19:30 Oxford United v Hereford @ "
+      "2026-11-21 19:00 Cheadle Town v Sheff Wed / Gateshead @ ",
+      "2026-11-21 19:00 Stockport County v Blyth Spar / Doncaster R @ ",
+      "2026-11-21 19:00 Leicester City v Chesterf'ld / MK Dons @ "
     ]
   }
 ]
