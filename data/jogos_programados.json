@@ -6626,13 +6626,16 @@
     "hora": "15:00",
     "mandante": "Kimberley (Mar del Plata)",
     "visitante": "Argentino de Pascanas",
-    "estadio": "",
+    "estadio": "Sede de Kimberley (Mar del Plata)",
     "rodada": "Round 3",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "5db3224b48a005a1",
-    "atualizado_em": "2026-10-29T18:16:36"
+    "atualizado_em": "2026-10-29T18:16:36",
+    "cidade": "Mar del Plata",
+    "lat": -38.0055,
+    "lng": -57.5426
   },
   {
     "fonte": "SofaScore",
@@ -7248,13 +7251,16 @@
     "hora": "16:00",
     "mandante": "Gimnasia y Esgrima (Chivilcoy)",
     "visitante": "Boca Unidos",
-    "estadio": "",
+    "estadio": "Sede de Gimnasia y Esgrima (Chivilcoy)",
     "rodada": "Round 3",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "8648f493dc0c6ddd",
-    "atualizado_em": "2026-10-29T18:16:36"
+    "atualizado_em": "2026-10-29T18:16:36",
+    "cidade": "Chivilcoy",
+    "lat": -34.9186,
+    "lng": -60.0154
   },
   {
     "fonte": "SofaScore",
@@ -8067,13 +8073,16 @@
     "hora": "19:00",
     "mandante": "Sol de América",
     "visitante": "Juventud Antoniana",
-    "estadio": "",
+    "estadio": "Sede de Sol de América (Formosa)",
     "rodada": "Round 3",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "b95b589afd813627",
-    "atualizado_em": "2026-10-29T18:16:36"
+    "atualizado_em": "2026-10-29T18:16:36",
+    "cidade": "Formosa",
+    "lat": -26.1849,
+    "lng": -58.1731
   },
   {
     "fonte": "AUF",
