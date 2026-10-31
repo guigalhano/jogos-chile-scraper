@@ -2771,6 +2771,12 @@
 "lng": -3.04131,
 "local": "Bloomfield Road"
 },
+"Inglaterra|Blackpool / Accrington": {
+"fonte": "nome",
+"lat": 53.81794,
+"lng": -3.05098,
+"local": "Blackpool"
+},
 "Inglaterra|Blackpool|FA": {
 "fonte": "nome",
 "lat": 53.81794,
@@ -3972,6 +3978,12 @@
 "local": "Owen Street Sports Ground"
 },
 "Inglaterra|Cobham": {
+"fonte": "nome",
+"lat": 51.33001,
+"lng": -0.41208,
+"local": "Cobham"
+},
+"Inglaterra|Cobham / Merstham": {
 "fonte": "nome",
 "lat": 51.33001,
 "lng": -0.41208,
@@ -5663,6 +5675,12 @@
 "lng": -0.0788,
 "local": "Grimsby"
 },
+"Inglaterra|Grimsby Town|FA": {
+"fonte": "nome",
+"lat": 53.56714,
+"lng": -0.0788,
+"local": "Grimsby"
+},
 "Inglaterra|Grundisburgh": {
 "fonte": "nome",
 "lat": 52.11362,
@@ -6288,6 +6306,12 @@
 "local": "Hertford Heath"
 },
 "Inglaterra|Hertford T / Hemel H": {
+"fonte": "nome",
+"lat": 51.79574,
+"lng": -0.07852,
+"local": "Hertford"
+},
+"Inglaterra|Hertford T / Worthing": {
 "fonte": "nome",
 "lat": 51.79574,
 "lng": -0.07852,
@@ -7097,6 +7121,12 @@
 "lng": -1.14234,
 "local": "King Power Stadium"
 },
+"Inglaterra|Leicester City|FA": {
+"fonte": "nome",
+"lat": 52.6362,
+"lng": -1.1332,
+"local": "Leicester"
+},
 "Inglaterra|Leicester Nirvana": {
 "fonte": "nome",
 "lat": 52.6362,
@@ -7138,6 +7168,12 @@
 "lat": 52.20567,
 "lng": 1.57351,
 "local": "Victory Road"
+},
+"Inglaterra|Leiston / Bromley": {
+"fonte": "nome",
+"lat": 52.20648,
+"lng": 1.57643,
+"local": "Leiston"
 },
 "Inglaterra|Leiston St Margarets": {
 "fonte": "nome",
@@ -8723,6 +8759,12 @@
 "lng": -0.63173,
 "local": "Pitstone"
 },
+"Inglaterra|Plymouth / Mangotsfield": {
+"fonte": "nome",
+"lat": 50.37141,
+"lng": -4.14245,
+"local": "Plymouth"
+},
 "Inglaterra|Plymouth Argyle": {
 "fonte": "sofascore",
 "lat": 50.38812,
@@ -9805,6 +9847,12 @@
 },
 "Inglaterra|Solihull Moors": {
 "fonte": "cidade",
+"lat": 52.41302,
+"lng": -1.77689,
+"local": "Solihull"
+},
+"Inglaterra|Solihull Moors|FA": {
+"fonte": "nome",
 "lat": 52.41302,
 "lng": -1.77689,
 "local": "Solihull"
@@ -11980,6 +12028,12 @@
 "lat": 51.63057,
 "lng": -0.80019,
 "local": "Adams Park"
+},
+"Inglaterra|Wycombe Wanderers|FA": {
+"fonte": "nome",
+"lat": 51.63174,
+"lng": -0.75596,
+"local": "High Wycombe"
 },
 "Inglaterra|Wythenshawe FC": {
 "fonte": "nome",
