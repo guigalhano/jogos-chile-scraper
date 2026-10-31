@@ -1,6 +1,54 @@
 [
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-16",
+    "hora": "15:00",
+    "mandante": "ABB",
+    "visitante": "Real Potosí",
+    "pais": "Bolivia",
+    "cidade": "El Alto, La Paz.",
+    "estadio": "Municipal Villa Ingenio",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401906307; status=Full Time; placar=0-1",
+    "id": "ae3a8ae584d94563",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-16",
+    "hora": "20:00",
+    "mandante": "Real Tomayapo",
+    "visitante": "GV San José",
+    "pais": "Bolivia",
+    "cidade": "Tarija",
+    "estadio": "Estadio IV Centenário",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401906306; status=Full Time; placar=1-0",
+    "id": "887f6475c28f33f6",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-17",
+    "hora": "15:00",
+    "mandante": "Real Oruro",
+    "visitante": "Aurora",
+    "pais": "Bolivia",
+    "cidade": "Oruro",
+    "estadio": "Estadio Jesús Bermúdez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401906466; status=Full Time; placar=1-0",
+    "id": "0eb668a4f3aff403",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-17",
     "hora": "15:00",
@@ -17,6 +65,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-17",
+    "hora": "17:15",
+    "mandante": "Universitario de Vinto",
+    "visitante": "San Antonio Bulo Bulo",
+    "pais": "Bolivia",
+    "cidade": "Cochabamba",
+    "estadio": "Estadio Félix Capriles",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401906305; status=Full Time; placar=2-1",
+    "id": "cd5fc2c2f010c4b1",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-17",
     "hora": "18:00",
@@ -30,6 +94,22 @@
     "extra": "codigo_espn=401878048; status=Full Time; placar=4-1",
     "id": "a66bee46d7bc24e5",
     "atualizado_em": "2026-10-31T18:04:09"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-17",
+    "hora": "19:30",
+    "mandante": "Blooming",
+    "visitante": "Independiente Petrolero",
+    "pais": "Bolivia",
+    "cidade": "Santa Cruz",
+    "estadio": "Estadio Ramón Tahuichi",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401906465; status=Full Time; placar=0-0",
+    "id": "ec03e306326f1801",
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -293,6 +373,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-18",
+    "hora": "15:00",
+    "mandante": "Nacional Potosí",
+    "visitante": "Bolívar",
+    "pais": "Bolivia",
+    "cidade": "Potosí",
+    "estadio": "Estadio Víctor Agustín Ugarte",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401906304; status=Full Time; placar=0-1",
+    "id": "9ccc6b9c2fdd13c3",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-18",
     "hora": "16:00",
@@ -309,6 +405,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-18",
+    "hora": "17:15",
+    "mandante": "The Strongest",
+    "visitante": "Always Ready",
+    "pais": "Bolivia",
+    "cidade": "La Paz",
+    "estadio": "Estadio Hernando Siles",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401906303; status=Full Time; placar=2-1",
+    "id": "cf61594fccea0b52",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-18",
     "hora": "18:05",
@@ -322,6 +434,22 @@
     "extra": "codigo_espn=401877840; status=Full Time; placar=1-0",
     "id": "4641016154d88fa4",
     "atualizado_em": "2026-10-31T18:04:09"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-18",
+    "hora": "19:30",
+    "mandante": "Guabirá",
+    "visitante": "Oriente Petrolero",
+    "pais": "Bolivia",
+    "cidade": "Montero",
+    "estadio": "Estadio Gilberto Parada",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401906464; status=Full Time; placar=1-1",
+    "id": "64713642a59e5c0b",
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -405,6 +533,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Copa Bolivia",
+    "data": "2026-10-20",
+    "hora": "19:00",
+    "mandante": "Independiente Petrolero",
+    "visitante": "Aurora",
+    "pais": "Bolivia",
+    "cidade": "Cochabamba",
+    "estadio": "Estadio Olímpico Patria",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929988; status=Full Time; placar=4-0",
+    "id": "dabc81012b7e75a6",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-20",
     "hora": "20:30",
@@ -437,6 +581,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Copa Bolivia",
+    "data": "2026-10-21",
+    "hora": "18:30",
+    "mandante": "Real Potosí",
+    "visitante": "Bolívar",
+    "pais": "Bolivia",
+    "cidade": "Potosí",
+    "estadio": "Estadio Víctor Agustín Ugarte",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929801; status=Full Time; placar=3-1",
+    "id": "3d9edff646ba966d",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Copa BetPlay",
     "data": "2026-10-21",
     "hora": "19:30",
@@ -466,6 +626,38 @@
     "extra": "codigo_espn=401877844; status=Full Time; placar=2-1",
     "id": "b8f2eefea29b3a39",
     "atualizado_em": "2026-10-31T18:04:09"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Copa Bolivia",
+    "data": "2026-10-21",
+    "hora": "20:30",
+    "mandante": "Oriente Petrolero",
+    "visitante": "Nacional Potosí",
+    "pais": "Bolivia",
+    "cidade": "Santa Cruz",
+    "estadio": "Estadio Ramón Tahuichi",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929800; status=Full Time; placar=3-2",
+    "id": "a7f845ebeef57036",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Copa Bolivia",
+    "data": "2026-10-22",
+    "hora": "20:00",
+    "mandante": "Always Ready",
+    "visitante": "The Strongest",
+    "pais": "Bolivia",
+    "cidade": "El Alto, La Paz.",
+    "estadio": "Municipal Villa Ingenio",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929987; status=Full Time; placar=1-1",
+    "id": "994c5176d9fdefd0",
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -517,6 +709,38 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-24",
+    "hora": "16:20",
+    "mandante": "GV San José",
+    "visitante": "Blooming",
+    "pais": "Bolivia",
+    "cidade": "Oruro",
+    "estadio": "Estadio Jesús Bermúdez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930017; status=Full Time; placar=2-1",
+    "id": "af1a77dee1bb66e4",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-24",
+    "hora": "17:15",
+    "mandante": "San Antonio Bulo Bulo",
+    "visitante": "Real Potosí",
+    "pais": "Bolivia",
+    "cidade": "Cochabamba",
+    "estadio": "Estadio Félix Capriles",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930002; status=Full Time; placar=2-1",
+    "id": "a959b40d12fe88ad",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-24",
     "hora": "18:05",
@@ -530,6 +754,22 @@
     "extra": "codigo_espn=401878057; status=Full Time; placar=3-1",
     "id": "6c5422598114a94d",
     "atualizado_em": "2026-10-31T18:04:09"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-24",
+    "hora": "19:30",
+    "mandante": "Independiente Petrolero",
+    "visitante": "ABB",
+    "pais": "Bolivia",
+    "cidade": "Cochabamba",
+    "estadio": "Estadio Olímpico Patria",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930001; status=Full Time; placar=4-2",
+    "id": "63359d111f6a6159",
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -596,6 +836,22 @@
     "atualizado_em": "2026-10-31T18:04:09"
   },
   {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-25",
+    "hora": "15:00",
+    "mandante": "Always Ready",
+    "visitante": "Real Oruro",
+    "pais": "Bolivia",
+    "cidade": "El Alto, La Paz.",
+    "estadio": "Municipal Villa Ingenio",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930000; status=Full Time; placar=5-1",
+    "id": "7bf4e0021c6c87ba",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 2",
     "data": "2026-10-25",
@@ -629,6 +885,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-25",
+    "hora": "17:15",
+    "mandante": "Aurora",
+    "visitante": "Real Tomayapo",
+    "pais": "Bolivia",
+    "cidade": "Cochabamba",
+    "estadio": "Estadio Félix Capriles",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929999; status=Full Time; placar=1-0",
+    "id": "abcf7d79a2cdf91a",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-25",
     "hora": "18:10",
@@ -642,6 +914,22 @@
     "extra": "codigo_espn=401878052; status=Full Time; placar=2-1",
     "id": "0c8c35bc2c977e73",
     "atualizado_em": "2026-10-31T18:04:09"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-25",
+    "hora": "19:30",
+    "mandante": "Oriente Petrolero",
+    "visitante": "The Strongest",
+    "pais": "Bolivia",
+    "cidade": "Santa Cruz",
+    "estadio": "Estadio Ramón Tahuichi",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930016; status=Full Time; placar=2-1",
+    "id": "267312415691bae2",
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -677,6 +965,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-26",
+    "hora": "18:00",
+    "mandante": "Nacional Potosí",
+    "visitante": "Guabirá",
+    "pais": "Bolivia",
+    "cidade": "Potosí",
+    "estadio": "Estadio Víctor Agustín Ugarte",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401929998; status=Full Time; placar=3-0",
+    "id": "c0b29e83b623e889",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Colombia - Liga BetPlay",
     "data": "2026-10-26",
     "hora": "18:00",
@@ -690,6 +994,22 @@
     "extra": "codigo_espn=401878065; status=Full Time; placar=1-0",
     "id": "d5c571bed81ab8e1",
     "atualizado_em": "2026-10-31T18:04:09"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-26",
+    "hora": "20:00",
+    "mandante": "Bolívar",
+    "visitante": "Universitario de Vinto",
+    "pais": "Bolivia",
+    "cidade": "La Paz",
+    "estadio": "Estadio Hernando Siles",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930015; status=Full Time; placar=2-1",
+    "id": "ab4da5d451fa5d84",
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -930,6 +1250,38 @@
     "extra": "codigo_espn=401877995; status=Full Time; placar=1-0",
     "id": "df00339898521f82",
     "atualizado_em": "2026-10-31T18:04:09"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-30",
+    "hora": "18:00",
+    "mandante": "Real Potosí",
+    "visitante": "Independiente Petrolero",
+    "pais": "Bolivia",
+    "cidade": "Potosí",
+    "estadio": "Estadio Víctor Agustín Ugarte",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930003; status=Full Time; placar=1-1",
+    "id": "1418959f57482c6e",
+    "atualizado_em": "2026-10-31T19:00:19"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Bolivia - Liga Profesional Boliviana",
+    "data": "2026-10-30",
+    "hora": "20:00",
+    "mandante": "Oriente Petrolero",
+    "visitante": "Aurora",
+    "pais": "Bolivia",
+    "cidade": "Santa Cruz",
+    "estadio": "Estadio Ramón Tahuichi",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930013; status=Full Time; placar=1-1",
+    "id": "918aac63587ff4ea",
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -2662,7 +3014,7 @@
     "url": "",
     "extra": "codigo_espn=401930012; status=Scheduled",
     "id": "3a7ec3f4e347733a",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "FFERJ",
@@ -3958,7 +4310,7 @@
     "url": "",
     "extra": "codigo_espn=401930022; status=Scheduled",
     "id": "6f2e8ad208007575",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "CBF",
@@ -5418,7 +5770,7 @@
     "url": "",
     "extra": "codigo_espn=401930021; status=Scheduled",
     "id": "f4f3047bd24b704a",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "AUF",
@@ -6016,7 +6368,7 @@
     "url": "",
     "extra": "codigo_espn=401930020; status=Scheduled",
     "id": "ceabd019639b6ab8",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "SofaScore",
@@ -6335,7 +6687,7 @@
     "url": "",
     "extra": "codigo_espn=401930011; status=Scheduled",
     "id": "ccfbfd676946c90e",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -6996,7 +7348,7 @@
     "url": "",
     "extra": "codigo_espn=401929986; status=Scheduled",
     "id": "afe633a63df26e48",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -7012,7 +7364,7 @@
     "url": "",
     "extra": "codigo_espn=401930019; status=Scheduled",
     "id": "ebd76655c3c84185",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "CBF",
@@ -7943,7 +8295,7 @@
     "url": "",
     "extra": "codigo_espn=401929985; status=Scheduled",
     "id": "58493cfc77799879",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -8102,7 +8454,7 @@
     "url": "",
     "extra": "codigo_espn=401929984; status=Scheduled",
     "id": "480ae7bf3b14ad61",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -8413,7 +8765,7 @@
     "url": "",
     "extra": "codigo_espn=401929983; status=Scheduled",
     "id": "6fc150180fbc3a7e",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "CBF",
@@ -8619,7 +8971,7 @@
     "url": "",
     "extra": "codigo_espn=401930010; status=Scheduled",
     "id": "f7dc63c29311fcb8",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "CBF",
@@ -9544,7 +9896,7 @@
     "url": "",
     "extra": "codigo_espn=401930009; status=Scheduled",
     "id": "69ca294d6cd5a58c",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "FPF",
@@ -9892,7 +10244,7 @@
     "url": "",
     "extra": "codigo_espn=401930008; status=Scheduled",
     "id": "dc0edd29ac89ac1a",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -10013,7 +10365,7 @@
     "url": "",
     "extra": "codigo_espn=401930018; status=Scheduled",
     "id": "fcb8a9c3b7ea32e7",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -10512,7 +10864,7 @@
     "url": "",
     "extra": "codigo_espn=401930007; status=Scheduled",
     "id": "a38eb6d5bbd31758",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "FMF",
@@ -11835,7 +12187,7 @@
     "url": "",
     "extra": "codigo_espn=401930006; status=Scheduled",
     "id": "e9b1c686de51d56f",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -11971,7 +12323,7 @@
     "url": "",
     "extra": "codigo_espn=401930005; status=Scheduled",
     "id": "748add65187a25b5",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -12109,7 +12461,7 @@
     "url": "",
     "extra": "codigo_espn=401930004; status=Scheduled",
     "id": "941d81d082a93301",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "FPF",
@@ -12401,7 +12753,7 @@
     "url": "",
     "extra": "codigo_espn=401930229; status=Scheduled",
     "id": "ef15e4f61cfb94ac",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "SofaScore",
@@ -13857,7 +14209,7 @@
     "url": "",
     "extra": "codigo_espn=401930227; status=Scheduled",
     "id": "929c2ed5912a6cc8",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "FGF",
@@ -14011,7 +14363,7 @@
     "url": "",
     "extra": "codigo_espn=401930226; status=Scheduled",
     "id": "9d1d4c82c29394ab",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "CBF",
@@ -14326,7 +14678,7 @@
     "url": "",
     "extra": "codigo_espn=401930041; status=Scheduled",
     "id": "554b7ee4c616939d",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -14373,7 +14725,7 @@
     "url": "",
     "extra": "codigo_espn=401930040; status=Scheduled",
     "id": "907df292126011d8",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "CBF",
@@ -14420,7 +14772,7 @@
     "url": "",
     "extra": "codigo_espn=401930030; status=Scheduled",
     "id": "e8ec54f1afb5f24a",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -14541,7 +14893,7 @@
     "url": "",
     "extra": "codigo_espn=401930029; status=Scheduled",
     "id": "442a227ea06970db",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -14764,7 +15116,7 @@
     "url": "",
     "extra": "codigo_espn=401930039; status=Scheduled",
     "id": "c724091dcb5e3ba5",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -14826,7 +15178,7 @@
     "url": "",
     "extra": "codigo_espn=401930028; status=Scheduled",
     "id": "44fa3644510f880a",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -14886,7 +15238,7 @@
     "url": "",
     "extra": "codigo_espn=401930027; status=Scheduled",
     "id": "e7ab84ee411015ef",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -14902,7 +15254,7 @@
     "url": "",
     "extra": "codigo_espn=401930038; status=Scheduled",
     "id": "ab32f35578803f1c",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "CBF",
@@ -14993,7 +15345,7 @@
     "url": "",
     "extra": "codigo_espn=401930225; status=Scheduled",
     "id": "168ab45926c8a2b5",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "CBF",
@@ -15024,7 +15376,7 @@
     "url": "",
     "extra": "codigo_espn=401930026; status=Scheduled",
     "id": "6cb6a0d34649ed5a",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15040,7 +15392,7 @@
     "url": "",
     "extra": "codigo_espn=401930037; status=Scheduled",
     "id": "1e38f7fc3124598d",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "SofaScore",
@@ -15208,7 +15560,7 @@
     "url": "",
     "extra": "codigo_espn=401930025; status=Scheduled",
     "id": "53ff12a89a10fbab",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15224,7 +15576,7 @@
     "url": "",
     "extra": "codigo_espn=401930036; status=Scheduled",
     "id": "fe194886ff8a1758",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15240,7 +15592,7 @@
     "url": "",
     "extra": "codigo_espn=401930035; status=Scheduled",
     "id": "0a5ff715ac82a58e",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15270,7 +15622,7 @@
     "url": "",
     "extra": "codigo_espn=401930014; status=Scheduled",
     "id": "6a2a1461954e6ff9",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15382,7 +15734,7 @@
     "url": "",
     "extra": "codigo_espn=401930024; status=Scheduled",
     "id": "75bbf37265e20afb",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15398,7 +15750,7 @@
     "url": "",
     "extra": "codigo_espn=401930023; status=Scheduled",
     "id": "6bb4dc3c53d5aed7",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -15444,7 +15796,7 @@
     "url": "",
     "extra": "codigo_espn=401930045; status=Scheduled",
     "id": "b5d3ec04e95ef36d",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15460,7 +15812,7 @@
     "url": "",
     "extra": "codigo_espn=401930034; status=Scheduled",
     "id": "cc2ff522b3348b3e",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15476,7 +15828,7 @@
     "url": "",
     "extra": "codigo_espn=401930044; status=Scheduled",
     "id": "87b01d75bffdf1e5",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15492,7 +15844,7 @@
     "url": "",
     "extra": "codigo_espn=401930033; status=Scheduled",
     "id": "17405099df26c23a",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15508,7 +15860,7 @@
     "url": "",
     "extra": "codigo_espn=401930032; status=Scheduled",
     "id": "e95edc58e29d652d",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15524,7 +15876,7 @@
     "url": "",
     "extra": "codigo_espn=401930043; status=Scheduled",
     "id": "397384017653e9ec",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15540,7 +15892,7 @@
     "url": "",
     "extra": "codigo_espn=401930031; status=Scheduled",
     "id": "c3d1a224cc4f903a",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "ESPN",
@@ -15556,7 +15908,7 @@
     "url": "",
     "extra": "codigo_espn=401930042; status=Scheduled",
     "id": "95d190b9cc5c0594",
-    "atualizado_em": "2026-10-30T19:49:18"
+    "atualizado_em": "2026-10-31T19:00:19"
   },
   {
     "fonte": "FGF",
