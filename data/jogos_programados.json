@@ -5307,25 +5307,6 @@
   },
   {
     "fonte": "SofaScore",
-    "competicao": "Argentina - Liga Amateur Platense (A)",
-    "data": "2026-10-31",
-    "hora": "15:00",
-    "mandante": "Polideportivo Gonnet",
-    "visitante": "Unidos de Olmos",
-    "pais": "Argentina",
-    "cidade": "Manuel B. Gonnet",
-    "estadio": "SFP Gonnet",
-    "rodada": "Fecha 11",
-    "url": "https://www.sofascore.com/football/match/polideportivo-gonnet-unidos-de-olmos/XzZcsqxxh#id:17415274",
-    "extra": "pais=Argentina; codigo_sofascore=17415274; time_sofascore=931116; status=Programado; fonte_dados=sofascore",
-    "lat": -34.9102226,
-    "lng": -58.0370686,
-    "escopo": "Regional",
-    "id": "c140fa90e84094f9",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
-  },
-  {
-    "fonte": "SofaScore",
     "competicao": "Argentina - Liga Rionegrina de Fútbol",
     "data": "2026-10-31",
     "hora": "15:00",
@@ -5510,13 +5491,16 @@
     "hora": "15:00",
     "mandante": "Boca",
     "visitante": "River",
-    "estadio": "",
+    "estadio": "Alberto Jose Armando",
     "rodada": "Interzonal",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "edab4e4c22ca737c",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.61315,
+    "lng": -58.37723
   },
   {
     "fonte": "AFA",
@@ -6990,13 +6974,16 @@
     "hora": "18:30",
     "mandante": "Belgrano",
     "visitante": "Barracas Central",
-    "estadio": "",
+    "estadio": "Estadio Julio César Villagra",
     "rodada": "Zona B",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "989c33483181271e",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Cordoba",
+    "lat": -31.403544,
+    "lng": -64.206289
   },
   {
     "fonte": "AFA",
@@ -7005,13 +6992,16 @@
     "hora": "18:30",
     "mandante": "Newell’s",
     "visitante": "Unión",
-    "estadio": "",
+    "estadio": "Estadio Marcelo Bielsa",
     "rodada": "Zona A",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "e1ba426f7c6a1952",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Rosario",
+    "lat": -32.956167,
+    "lng": -60.661371
   },
   {
     "fonte": "AFA",
@@ -7174,13 +7164,16 @@
     "hora": "20:45",
     "mandante": "Lanús",
     "visitante": "Gimnasia (Mza.)",
-    "estadio": "",
+    "estadio": "Estadio Ciudad de Lanus",
     "rodada": "Zona A",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "7fed2930f7c9a7d0",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.60956,
+    "lng": -58.38879
   },
   {
     "fonte": "SofaScore",
@@ -7306,6 +7299,42 @@
     "atualizado_em": "2026-10-29T18:16:33"
   },
   {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Sexta",
+    "data": "2026-11-01",
+    "hora": "09:00",
+    "mandante": "2 de Abril (6ta)",
+    "visitante": "San Cayetano (6ta)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/2-de-abril-6ta-san-cayetano-6ta/oBdesPNde#id:17454853",
+    "extra": "pais=Argentina; codigo_sofascore=17454853; time_sofascore=509440; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "b7a629bf72c7d107",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Sexta",
+    "data": "2026-11-01",
+    "hora": "09:00",
+    "mandante": "Falucho (6ta)",
+    "visitante": "Sp. Tirolesa (6ta)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/sp-tirolesa-6ta-falucho-6ta/tBdesRNde#id:17454852",
+    "extra": "pais=Argentina; codigo_sofascore=17454852; time_sofascore=508818; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "b832661b69f4c6e8",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-11 (SUB11)",
     "data": "2026-11-01",
@@ -7428,6 +7457,42 @@
     "extra": "",
     "id": "c644b1685157cd53",
     "atualizado_em": "2026-10-28T18:10:08"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Séptima",
+    "data": "2026-11-01",
+    "hora": "10:00",
+    "mandante": "2 de Abril (7ma)",
+    "visitante": "San Cayetano (7ma)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/2-de-abril-7ma-san-cayetano-7ma/kCdesHNde#id:17454855",
+    "extra": "pais=Argentina; codigo_sofascore=17454855; time_sofascore=509432; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "9b7749d700541bf0",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Séptima",
+    "data": "2026-11-01",
+    "hora": "10:00",
+    "mandante": "Falucho (7ma)",
+    "visitante": "Sp. Tirolesa (7ma)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/sp-tirolesa-7ma-falucho-7ma/oCdesFNde#id:17454854",
+    "extra": "pais=Argentina; codigo_sofascore=17454854; time_sofascore=508864; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "1c1fd1fdb02a60ee",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "FGF",
@@ -7616,6 +7681,96 @@
     "extra": "",
     "id": "fae856cb9d488665",
     "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Femenino",
+    "data": "2026-11-01",
+    "hora": "11:00",
+    "mandante": "Alem (DF)",
+    "visitante": "Sp. Forchieri",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/alem-df-sp-forchieri/NAdesFOvj#id:17454813",
+    "extra": "pais=Argentina; codigo_sofascore=17454813; time_sofascore=1176980; status=Programado; fonte_dados=sofascore",
+    "categoria": "Femenino",
+    "escopo": "Regional",
+    "id": "697b5afaebfb1d01",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Femenino",
+    "data": "2026-11-01",
+    "hora": "11:00",
+    "mandante": "Alianza",
+    "visitante": "Parque Guerrero",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/parque-guerrero-alianza/OAdesTAde#id:17454809",
+    "extra": "pais=Argentina; codigo_sofascore=17454809; time_sofascore=508789; status=Programado; fonte_dados=sofascore",
+    "categoria": "Femenino",
+    "escopo": "Regional",
+    "id": "63b800f83c107873",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Femenino",
+    "data": "2026-11-01",
+    "hora": "11:00",
+    "mandante": "Bochas",
+    "visitante": "Quirquinchos",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/bochas-quirquinchos/vudesMAde#id:17454812",
+    "extra": "pais=Argentina; codigo_sofascore=17454812; time_sofascore=508787; status=Programado; fonte_dados=sofascore",
+    "categoria": "Femenino",
+    "escopo": "Regional",
+    "id": "7848b0dbff71cca1",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Femenino",
+    "data": "2026-11-01",
+    "hora": "11:00",
+    "mandante": "Colón (VdT)",
+    "visitante": "Santa Elena",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/colon-vdt-santa-elena/pudesuude#id:17454808",
+    "extra": "pais=Argentina; codigo_sofascore=17454808; time_sofascore=508469; status=Programado; fonte_dados=sofascore",
+    "categoria": "Femenino",
+    "escopo": "Regional",
+    "id": "2d5b86defb0571c8",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Femenino",
+    "data": "2026-11-01",
+    "hora": "11:00",
+    "mandante": "Deportivo Colón",
+    "visitante": "Jockey Club",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/jockey-club-deportivo-colon/wudesLOvj#id:17454807",
+    "extra": "pais=Argentina; codigo_sofascore=17454807; time_sofascore=508471; status=Programado; fonte_dados=sofascore",
+    "categoria": "Femenino",
+    "escopo": "Regional",
+    "id": "9fd40756ffaacbd7",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -7814,6 +7969,42 @@
   },
   {
     "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Cuarta",
+    "data": "2026-11-01",
+    "hora": "12:00",
+    "mandante": "2 de Abril (4ta)",
+    "visitante": "San Cayetano (4ta)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/2-de-abril-4ta-san-cayetano-4ta/yudeshBde#id:17454860",
+    "extra": "pais=Argentina; codigo_sofascore=17454860; time_sofascore=508807; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "a4fd8df0e988808e",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Cuarta",
+    "data": "2026-11-01",
+    "hora": "12:00",
+    "mandante": "Falucho (4ta)",
+    "visitante": "Sp. Tirolesa (4ta)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/sp-tirolesa-4ta-falucho-4ta/CudesjBde#id:17454859",
+    "extra": "pais=Argentina; codigo_sofascore=17454859; time_sofascore=508477; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "a263cbe254c3ce2d",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
     "competicao": "Argentina - Liga Rionegrina de Fútbol",
     "data": "2026-11-01",
     "hora": "12:00",
@@ -7829,7 +8020,7 @@
     "lng": -62.921520732146,
     "escopo": "Regional",
     "id": "a197db8366eb116b",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -7897,6 +8088,132 @@
   },
   {
     "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Octava",
+    "data": "2026-11-01",
+    "hora": "12:30",
+    "mandante": "Alem (DF) (8va)",
+    "visitante": "Sp. Forchieri (8va)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/alem-df-8va-sp-forchieri-8va/nFdesCOvj#id:17454821",
+    "extra": "pais=Argentina; codigo_sofascore=17454821; time_sofascore=1176977; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "6d84d359a3050358",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Octava",
+    "data": "2026-11-01",
+    "hora": "12:30",
+    "mandante": "Alianza (8va)",
+    "visitante": "Parque Guerrero (8va)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/alianza-8va-parque-guerrero-8va/iFdespFde#id:17454817",
+    "extra": "pais=Argentina; codigo_sofascore=17454817; time_sofascore=509015; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "3d97d2f830e56d49",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Octava",
+    "data": "2026-11-01",
+    "hora": "12:30",
+    "mandante": "Alianza (8va)",
+    "visitante": "Quilmes (8va)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/alianza-8va-quilmes-8va/jFdespFde#id:17454819",
+    "extra": "pais=Argentina; codigo_sofascore=17454819; time_sofascore=509015; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "dfe1276c16b49dbb",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Octava",
+    "data": "2026-11-01",
+    "hora": "12:30",
+    "mandante": "Bochas (8va)",
+    "visitante": "Quirquinchos (8va)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/bochas-8va-quirquinchos-8va/QCdeshFde#id:17454820",
+    "extra": "pais=Argentina; codigo_sofascore=17454820; time_sofascore=509007; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "3a52175725379310",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Octava",
+    "data": "2026-11-01",
+    "hora": "12:30",
+    "mandante": "Colón (VdT) (8va)",
+    "visitante": "Santa Elena (8va)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/colon-vdt-8va-santa-elena-8va/LCdesPCde#id:17454816",
+    "extra": "pais=Argentina; codigo_sofascore=17454816; time_sofascore=508890; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "fae692473cb36b6f",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Octava",
+    "data": "2026-11-01",
+    "hora": "12:30",
+    "mandante": "Deportivo Colón (8va)",
+    "visitante": "Jockey Club (8va)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/jockey-club-8va-deportivo-colon-8va/RCdesDOvj#id:17454815",
+    "extra": "pais=Argentina; codigo_sofascore=17454815; time_sofascore=508892; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "a969ab94b80fea25",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Octava",
+    "data": "2026-11-01",
+    "hora": "12:30",
+    "mandante": "Independiente (8va)",
+    "visitante": "Mi Granja (8va)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/mi-granja-8va-independiente-8va/lFdesEOvj#id:17454822",
+    "extra": "pais=Argentina; codigo_sofascore=17454822; time_sofascore=509011; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "bd9cc7b17d553331",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
     "competicao": "Argentina - Torneo Regional Federal Amateur – Región Pampeana Norte",
     "data": "2026-11-01",
     "hora": "12:30",
@@ -7911,7 +8228,7 @@
     "lat": -35.57869,
     "lng": -58.01383,
     "id": "11530f23a66173d9",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -7925,31 +8242,12 @@
     "estadio": "El fortin de la Rivera",
     "rodada": "Torneo Campeonato - Grupo 4 - Fecha 4",
     "url": "https://www.sofascore.com/football/match/24-de-septiembre-a-sportivo-balnearia/tnpjsLnpj#id:17280934",
-    "extra": "pais=Argentina; codigo_sofascore=17280934; time_sofascore=1163186; status=Programado; fonte_dados=sofascore",
+    "extra": "pais=Argentina; codigo_sofascore=17280934; time_sofascore=1163186; status=Adiado; fonte_dados=sofascore",
     "lat": -31.4071955,
     "lng": -63.0494347,
     "escopo": "Regional",
     "id": "d0bf67e6a3210b13",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Liga Regional San Francisco - Divisional B",
-    "data": "2026-11-01",
-    "hora": "13:00",
-    "mandante": "La Milka (SF)",
-    "visitante": "Filodramatico Alicia",
-    "pais": "Argentina",
-    "cidade": "San Francisco",
-    "estadio": "Club Atletico La Milka",
-    "rodada": "Torneo Campeonato - Grupo 1 - Fecha 4",
-    "url": "https://www.sofascore.com/football/match/filodramatico-alicia-la-milka-sf/Zmpjsvnpj#id:17280700",
-    "extra": "pais=Argentina; codigo_sofascore=17280700; time_sofascore=1163149; status=Programado; fonte_dados=sofascore",
-    "lat": -31.4454733,
-    "lng": -62.0789907,
-    "escopo": "Regional",
-    "id": "e456028b4f1bbd59",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -7963,12 +8261,12 @@
     "estadio": "Nelido Merigge",
     "rodada": "Clausura - Fecha 13",
     "url": "https://www.sofascore.com/football/match/ca-leandroalem-ca-independiente-rivera/nzcesLavj#id:17448139",
-    "extra": "pais=Argentina; codigo_sofascore=17448139; time_sofascore=506213; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "extra": "pais=Argentina; codigo_sofascore=17448139; time_sofascore=506213; status=Em andamento; fonte_dados=sofascore; local_aproximado=1",
     "lat": -37.4547,
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "c44b745153488dd6",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -7982,12 +8280,12 @@
     "estadio": "Eduardo Gairaud",
     "rodada": "Clausura - Fecha 13",
     "url": "https://www.sofascore.com/football/match/deportivo-argentino-de-pigue-club-sarmiento/yzcesfrhe#id:17448145",
-    "extra": "pais=Argentina; codigo_sofascore=17448145; time_sofascore=506223; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "extra": "pais=Argentina; codigo_sofascore=17448145; time_sofascore=506223; status=Em andamento; fonte_dados=sofascore; local_aproximado=1",
     "lat": -37.4547,
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "73cc9e10a047d494",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8001,12 +8299,12 @@
     "estadio": "Humberto Petrelli",
     "rodada": "Clausura - Fecha 13",
     "url": "https://www.sofascore.com/football/match/ca-penarol-union-pigue/uzcesBzce#id:17448163",
-    "extra": "pais=Argentina; codigo_sofascore=17448163; time_sofascore=506219; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "extra": "pais=Argentina; codigo_sofascore=17448163; time_sofascore=506219; status=Em andamento; fonte_dados=sofascore; local_aproximado=1",
     "lat": -37.4547,
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "470acfb9071314cf",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8025,7 +8323,7 @@
     "lng": -63.0,
     "escopo": "Regional",
     "id": "1d7e42b33457d58a",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8039,11 +8337,11 @@
     "estadio": "Estadio de los Inmigrantes",
     "rodada": "Fecha 42",
     "url": "https://www.sofascore.com/football/match/cs-dock-sud-argentino-de-merlo/lLEbsfiic#id:15276509",
-    "extra": "pais=Argentina; codigo_sofascore=15276509; time_sofascore=270405; status=Programado; fonte_dados=sofascore",
+    "extra": "pais=Argentina; codigo_sofascore=15276509; time_sofascore=270405; status=Em andamento; fonte_dados=sofascore",
     "lat": -34.657749,
     "lng": -58.344439,
     "id": "905e2e4744f27aef",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8057,11 +8355,11 @@
     "estadio": "Estadio Miguel Ángel Recondo",
     "rodada": "1/8",
     "url": "https://www.sofascore.com/football/match/deportivo-villalonga-comision-de-actividades-infantiles/NLosZQLc#id:17373316",
-    "extra": "pais=Argentina; codigo_sofascore=17373316; time_sofascore=342099; status=Programado; fonte_dados=sofascore",
+    "extra": "pais=Argentina; codigo_sofascore=17373316; time_sofascore=342099; status=Em andamento; fonte_dados=sofascore",
     "lat": -39.907221351536,
     "lng": -62.63223805864,
     "id": "836424b9f6d8fb39",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8075,11 +8373,11 @@
     "estadio": "",
     "rodada": "1/8",
     "url": "https://www.sofascore.com/football/match/atletico-regina-san-patricio-del-chanar/GeYdsixxh#id:17373331",
-    "extra": "pais=Argentina; codigo_sofascore=17373331; time_sofascore=495231; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "extra": "pais=Argentina; codigo_sofascore=17373331; time_sofascore=495231; status=Em andamento; fonte_dados=sofascore; local_aproximado=1",
     "lat": -38.95197,
     "lng": -68.05917,
     "id": "1b7fd05fbb5fd58d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AUF",
@@ -8174,6 +8472,132 @@
     "atualizado_em": "2026-10-31T19:37:20"
   },
   {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Reserva",
+    "data": "2026-11-01",
+    "hora": "13:40",
+    "mandante": "Agraria Reserva",
+    "visitante": "Quilmes Villa Allende Reserva",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/quilmes-villa-allende-reserva-agraria-reserva/ECdestRGi#id:17454826",
+    "extra": "pais=Argentina; codigo_sofascore=17454826; time_sofascore=508879; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "5390cb3be93f0e4a",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Reserva",
+    "data": "2026-11-01",
+    "hora": "13:40",
+    "mandante": "Alem (DF) Reserva",
+    "visitante": "Sp. Forchieri Reserva",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/alem-df-reserva-sp-forchieri-reserva/DCdesJOvj#id:17454828",
+    "extra": "pais=Argentina; codigo_sofascore=17454828; time_sofascore=1176984; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "4ae32781a924bb42",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Reserva",
+    "data": "2026-11-01",
+    "hora": "13:40",
+    "mandante": "Alianza Reserva",
+    "visitante": "Parque Guerrero Reserva",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/alianza-reserva-parque-guerrero-reserva/zCdesFCde#id:17454825",
+    "extra": "pais=Argentina; codigo_sofascore=17454825; time_sofascore=508880; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "ebea86af4db8621b",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Reserva",
+    "data": "2026-11-01",
+    "hora": "13:40",
+    "mandante": "Bochas Reserva",
+    "visitante": "Quirquinchos Reserva",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/bochas-reserva-quirquinchos-reserva/XmdesGCde#id:17454827",
+    "extra": "pais=Argentina; codigo_sofascore=17454827; time_sofascore=508881; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "0b853c232f0aadb3",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Reserva",
+    "data": "2026-11-01",
+    "hora": "13:40",
+    "mandante": "Colón (VdT) Reserva",
+    "visitante": "Santa Elena Reserva",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/santa-elena-reserva-colon-vdt-reserva/WmdesYpde#id:17454824",
+    "extra": "pais=Argentina; codigo_sofascore=17454824; time_sofascore=508146; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "bff590bdbf157022",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Reserva",
+    "data": "2026-11-01",
+    "hora": "13:40",
+    "mandante": "Deportivo Colón Reserva",
+    "visitante": "Jockey Club Reserva",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/jockey-club-reserva-deportivo-colon-reserva/ZmdesIOvj#id:17454823",
+    "extra": "pais=Argentina; codigo_sofascore=17454823; time_sofascore=508149; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "2cc37f49534e06a0",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Reserva",
+    "data": "2026-11-01",
+    "hora": "13:40",
+    "mandante": "Independiente Reserva",
+    "visitante": "Mi Granja Reserva",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/mi-granja-reserva-independiente-reserva/BCdesHOvj#id:17454829",
+    "extra": "pais=Argentina; codigo_sofascore=17454829; time_sofascore=508876; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "e4f7b3e13b267fd6",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
     "data": "2026-11-01",
@@ -8201,12 +8625,12 @@
     "estadio": "Pedro Glock",
     "rodada": "Clausura - Fecha 13",
     "url": "https://www.sofascore.com/football/match/csdg-san-martin-deportivo-rivera/hzceslzce#id:17448202",
-    "extra": "pais=Argentina; codigo_sofascore=17448202; time_sofascore=506211; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "extra": "pais=Argentina; codigo_sofascore=17448202; time_sofascore=506211; status=Em andamento; fonte_dados=sofascore; local_aproximado=1",
     "lat": -37.4547,
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "ab03f7cb8eea0ad5",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -8249,6 +8673,42 @@
     "extra": "",
     "id": "ff06427f9c57a3f6",
     "atualizado_em": "2026-10-31T17:04:13"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Quinta",
+    "data": "2026-11-01",
+    "hora": "15:00",
+    "mandante": "2 de Abril (5ta)",
+    "visitante": "San Cayetano (5ta)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/2-de-abril-5ta-san-cayetano-5ta/LydesdCde#id:17454858",
+    "extra": "pais=Argentina; codigo_sofascore=17454858; time_sofascore=508853; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "99662414b5aa1f78",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Quinta",
+    "data": "2026-11-01",
+    "hora": "15:00",
+    "mandante": "Falucho (5ta)",
+    "visitante": "Sp. Tirolesa (5ta)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/sp-tirolesa-5ta-falucho-5ta/PydesfCde#id:17454857",
+    "extra": "pais=Argentina; codigo_sofascore=17454857; time_sofascore=508690; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "81fae77eb1185dc9",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -8315,7 +8775,7 @@
     "lng": -68.5138291,
     "escopo": "Regional",
     "id": "c842848c5488cf93",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8334,7 +8794,7 @@
     "lng": -68.92375223547,
     "escopo": "Regional",
     "id": "5edfe220a033ba17",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8353,7 +8813,26 @@
     "lng": -70.2511136,
     "escopo": "Regional",
     "id": "a0dbbae33ea7588d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga de Fútbol Centro Santa Cruz",
+    "data": "2026-11-01",
+    "hora": "15:30",
+    "mandante": "Racing Club San Julian",
+    "visitante": "Club Atlético Cruz del Sur",
+    "pais": "Argentina",
+    "cidade": "Puerto San Julian",
+    "estadio": "Estadio Francisco \"Pancho\" Novoa",
+    "rodada": "Fecha 6",
+    "url": "https://www.sofascore.com/football/match/racing-club-san-julian-club-atletico-cruz-del-sur/nALisuALi#id:17031062",
+    "extra": "pais=Argentina; codigo_sofascore=17031062; time_sofascore=1091269; status=Programado; fonte_dados=sofascore",
+    "lat": -49.298267422301,
+    "lng": -67.730879140478,
+    "escopo": "Regional",
+    "id": "1f33a899b159a46d",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "FGF",
@@ -8386,6 +8865,125 @@
     "extra": "codigo_espn=401886126; status=Scheduled",
     "id": "f0cfe3556f10d29f",
     "atualizado_em": "2026-10-31T20:05:50"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Primera",
+    "data": "2026-11-01",
+    "hora": "15:40",
+    "mandante": "Agraria",
+    "visitante": "Quilmes",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Liga Regional Colón, Primera - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/agraria-quilmes/wbceszbce#id:17454834",
+    "extra": "pais=Argentina; codigo_sofascore=17454834; time_sofascore=505074; status=Programado; fonte_dados=sofascore",
+    "escopo": "Regional",
+    "id": "6c18dff71c25d650",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Primera",
+    "data": "2026-11-01",
+    "hora": "15:40",
+    "mandante": "Alem",
+    "visitante": "Sportivo Forchieri",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Liga Regional Colón, Primera - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/alem-sportivo-forchieri/irYdsPNvj#id:17454836",
+    "extra": "pais=Argentina; codigo_sofascore=17454836; time_sofascore=1176940; status=Programado; fonte_dados=sofascore",
+    "escopo": "Regional",
+    "id": "36c7e1969a88e972",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Primera",
+    "data": "2026-11-01",
+    "hora": "15:40",
+    "mandante": "Alianza Jesús María",
+    "visitante": "Parque Guerrero",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Liga Regional Colón, Primera - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/parque-guerrero-alianza-jesus-maria/pVbesDbce#id:17454833",
+    "extra": "pais=Argentina; codigo_sofascore=17454833; time_sofascore=504765; status=Programado; fonte_dados=sofascore",
+    "escopo": "Regional",
+    "id": "e3c9a98ca48cdd9a",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Primera",
+    "data": "2026-11-01",
+    "hora": "15:40",
+    "mandante": "Bochas SC (CC)",
+    "visitante": "CSD Quirquinchos Verdes (RC)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Liga Regional Colón, Primera - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/bochas-sc-cc-csd-quirquinchos-verdes-rc/mVbesqVbe#id:17454835",
+    "extra": "pais=Argentina; codigo_sofascore=17454835; time_sofascore=504766; status=Programado; fonte_dados=sofascore",
+    "escopo": "Regional",
+    "id": "02c02be99f9fca2a",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Primera",
+    "data": "2026-11-01",
+    "hora": "15:40",
+    "mandante": "Colón (Villa del Totoral)",
+    "visitante": "Santa Elena",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Liga Regional Colón, Primera - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/colon-villa-del-totoral-santa-elena/CbcesEbce#id:17454832",
+    "extra": "pais=Argentina; codigo_sofascore=17454832; time_sofascore=505079; status=Programado; fonte_dados=sofascore",
+    "escopo": "Regional",
+    "id": "e30c948e47ece4d9",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Primera",
+    "data": "2026-11-01",
+    "hora": "15:40",
+    "mandante": "Deportivo Colón",
+    "visitante": "Jockey Club GP",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Liga Regional Colón, Primera - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/jockey-club-gp-deportivo-colon/hrYdsxbce#id:17454831",
+    "extra": "pais=Argentina; codigo_sofascore=17454831; time_sofascore=495857; status=Programado; fonte_dados=sofascore",
+    "escopo": "Regional",
+    "id": "1311900057780924",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Primera",
+    "data": "2026-11-01",
+    "hora": "15:40",
+    "mandante": "Independiente",
+    "visitante": "Mi Granja",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Liga Regional Colón, Primera - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/mi-granja-independiente/vbcesGxZj#id:17454837",
+    "extra": "pais=Argentina; codigo_sofascore=17454837; time_sofascore=505070; status=Programado; fonte_dados=sofascore",
+    "escopo": "Regional",
+    "id": "467e0175c03164e4",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "CBF",
@@ -8447,6 +9045,25 @@
   },
   {
     "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Amateur Platense (A)",
+    "data": "2026-11-01",
+    "hora": "16:00",
+    "mandante": "Polideportivo Gonnet",
+    "visitante": "Unidos de Olmos",
+    "pais": "Argentina",
+    "cidade": "Manuel B. Gonnet",
+    "estadio": "SFP Gonnet",
+    "rodada": "Fecha 11",
+    "url": "https://www.sofascore.com/football/match/polideportivo-gonnet-unidos-de-olmos/XzZcsqxxh#id:17415274",
+    "extra": "pais=Argentina; codigo_sofascore=17415274; time_sofascore=931116; status=Programado; fonte_dados=sofascore",
+    "lat": -34.9102226,
+    "lng": -58.0370686,
+    "escopo": "Regional",
+    "id": "539a7af30b603310",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
     "competicao": "Argentina - Liga Regional de Coronel Suárez, Clausura",
     "data": "2026-11-01",
     "hora": "16:00",
@@ -8462,7 +9079,7 @@
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "54dc924af81bba61",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8481,7 +9098,7 @@
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "7aa3a1c9c263ba2c",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8500,7 +9117,7 @@
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "c4966e5f7cb7409b",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8519,7 +9136,7 @@
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "d5564b71e7585fad",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8538,7 +9155,7 @@
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "f274875ca1c8ae31",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8557,7 +9174,7 @@
     "lng": -61.9334,
     "escopo": "Regional",
     "id": "78f9f8052a998498",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8575,7 +9192,7 @@
     "lat": -26.83037,
     "lng": -65.20381,
     "id": "8ff9fb8242e05e47",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "FGF",
@@ -8705,7 +9322,7 @@
     "lat": -26.20041,
     "lng": -64.24028,
     "id": "b08daba46c8361f1",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AUF",
@@ -8728,25 +9345,6 @@
     "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
     "data": "2026-11-01",
     "hora": "17:00",
-    "mandante": "Proyecto Crecer (SF)",
-    "visitante": "Pueblos Unidos",
-    "pais": "Argentina",
-    "cidade": "Primeros Colonizadores",
-    "estadio": "Proyecto Crecer",
-    "rodada": "Zona Repechaje - Grupo 2 - Fecha 4",
-    "url": "https://www.sofascore.com/football/match/pueblos-unidos-proyecto-crecer-sf/anpjsInpj#id:17280648",
-    "extra": "pais=Argentina; codigo_sofascore=17280648; time_sofascore=1163150; status=Programado; fonte_dados=sofascore",
-    "lat": -31.4040747,
-    "lng": -62.0788589,
-    "escopo": "Regional",
-    "id": "6ca0f660d07b9ac1",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
-    "data": "2026-11-01",
-    "hora": "17:00",
     "mandante": "San Jorge de Brinkmann",
     "visitante": "CD Cultural La Francia",
     "pais": "Argentina",
@@ -8754,12 +9352,12 @@
     "estadio": "Club San Jorge",
     "rodada": "Zona Campeonato - Grupo 4 - Fecha 4",
     "url": "https://www.sofascore.com/football/match/san-jorge-de-brinkmann-cd-cultural-la-francia/DVbesQmpj#id:17280555",
-    "extra": "pais=Argentina; codigo_sofascore=17280555; time_sofascore=1163141; status=Programado; fonte_dados=sofascore",
+    "extra": "pais=Argentina; codigo_sofascore=17280555; time_sofascore=1163141; status=Adiado; fonte_dados=sofascore",
     "lat": -30.863711,
     "lng": -62.0461695,
     "escopo": "Regional",
     "id": "96cdac95b2cbcf2f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8773,31 +9371,12 @@
     "estadio": "CJAC Sportivo Belgrano US",
     "rodada": "Zona Repechaje - Grupo 1 - Fecha 4",
     "url": "https://www.sofascore.com/football/match/manuel-belgrano-rp-sportivo-belgrano-lp/rnpjsFnpj#id:17280633",
-    "extra": "pais=Argentina; codigo_sofascore=17280633; time_sofascore=1163167; status=Programado; fonte_dados=sofascore",
+    "extra": "pais=Argentina; codigo_sofascore=17280633; time_sofascore=1163167; status=Adiado; fonte_dados=sofascore",
     "lat": -30.898312,
     "lng": -63.000805,
     "escopo": "Regional",
     "id": "1c0cd13292bf9dc1",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Liga Regional San Francisco - Divisional B",
-    "data": "2026-11-01",
-    "hora": "17:00",
-    "mandante": "El Trébol de El Tio",
-    "visitante": "Guido Spano Marull",
-    "pais": "Argentina",
-    "cidade": "El Tío",
-    "estadio": "Antonio Palmero",
-    "rodada": "Torneo Campeonato - Grupo 3 - Fecha 4",
-    "url": "https://www.sofascore.com/football/match/guido-spano-marull-el-trebol-de-el-tio/Xmpjspnpj#id:17280915",
-    "extra": "pais=Argentina; codigo_sofascore=17280915; time_sofascore=1163147; status=Programado; fonte_dados=sofascore",
-    "lat": -31.388504,
-    "lng": -62.828637,
-    "escopo": "Regional",
-    "id": "ea69135acbcc1275",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "APF",
@@ -8861,7 +9440,26 @@
     "lat": -32.41062,
     "lng": -63.24358,
     "id": "0a04fb9ede4f4cf9",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
+    "data": "2026-11-01",
+    "hora": "18:00",
+    "mandante": "Proyecto Crecer (SF)",
+    "visitante": "Pueblos Unidos",
+    "pais": "Argentina",
+    "cidade": "Primeros Colonizadores",
+    "estadio": "Proyecto Crecer",
+    "rodada": "Zona Repechaje - Grupo 2 - Fecha 4",
+    "url": "https://www.sofascore.com/football/match/pueblos-unidos-proyecto-crecer-sf/anpjsInpj#id:17280648",
+    "extra": "pais=Argentina; codigo_sofascore=17280648; time_sofascore=1163150; status=Programado; fonte_dados=sofascore",
+    "lat": -31.4040747,
+    "lng": -62.0788589,
+    "escopo": "Regional",
+    "id": "3025404364bc1b30",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8875,12 +9473,12 @@
     "estadio": "Estadio del Club Sportivo Suardi",
     "rodada": "Zona Campeonato - Grupo 4 - Fecha 4",
     "url": "https://www.sofascore.com/football/match/cultural-a-sportivo-suardi/brxhsHnpj#id:17280554",
-    "extra": "pais=Argentina; codigo_sofascore=17280554; time_sofascore=930851; status=Programado; fonte_dados=sofascore",
+    "extra": "pais=Argentina; codigo_sofascore=17280554; time_sofascore=930851; status=Adiado; fonte_dados=sofascore",
     "lat": -30.536852724873,
     "lng": -61.955181565544,
     "escopo": "Regional",
     "id": "edeb9d0c72b2a1dd",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8898,7 +9496,7 @@
     "lat": -31.41669,
     "lng": -64.18342,
     "id": "b0f240b3bd1af840",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8916,7 +9514,7 @@
     "lat": -32.73123,
     "lng": -65.29147,
     "id": "0ddfe4da448bc362",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8934,7 +9532,7 @@
     "lat": -31.73301,
     "lng": -60.52985,
     "id": "00c2a8eb2e0b3669",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -8952,7 +9550,7 @@
     "lat": -38.93134,
     "lng": -67.99059,
     "id": "f13430fa3523cc93",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -9017,6 +9615,25 @@
   },
   {
     "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional B",
+    "data": "2026-11-01",
+    "hora": "18:30",
+    "mandante": "El Trébol de El Tio",
+    "visitante": "Guido Spano Marull",
+    "pais": "Argentina",
+    "cidade": "El Tío",
+    "estadio": "Antonio Palmero",
+    "rodada": "Torneo Campeonato - Grupo 3 - Fecha 4",
+    "url": "https://www.sofascore.com/football/match/guido-spano-marull-el-trebol-de-el-tio/Xmpjspnpj#id:17280915",
+    "extra": "pais=Argentina; codigo_sofascore=17280915; time_sofascore=1163147; status=Programado; fonte_dados=sofascore",
+    "lat": -31.388504,
+    "lng": -62.828637,
+    "escopo": "Regional",
+    "id": "5e5a09768cf61507",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
     "competicao": "Argentina - Primera Nacional",
     "data": "2026-11-01",
     "hora": "18:30",
@@ -9031,7 +9648,7 @@
     "lat": -26.836204,
     "lng": -65.229789,
     "id": "537199d8016b8598",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9063,7 +9680,7 @@
     "lat": -24.783361,
     "lng": -65.404189,
     "id": "29a1f4705da71feb",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9081,7 +9698,7 @@
     "lat": -51.62153,
     "lng": -69.21504,
     "id": "6e6976d644421c79",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AUF",
@@ -9107,7 +9724,7 @@
     "mandante": "Atenas (Río Cuarto)",
     "visitante": "Sarmiento (Santiago del Estero)",
     "estadio": "",
-    "rodada": "",
+    "rodada": "Round 3",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
@@ -9130,7 +9747,7 @@
     "lat": -35.03259,
     "lng": -63.01485,
     "id": "d89ba957dd348e19",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -9197,7 +9814,26 @@
     "lng": -62.0095892,
     "escopo": "Regional",
     "id": "37c3c69c33bf29c8",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional B",
+    "data": "2026-11-01",
+    "hora": "20:00",
+    "mandante": "La Milka (SF)",
+    "visitante": "Filodramatico Alicia",
+    "pais": "Argentina",
+    "cidade": "San Francisco",
+    "estadio": "Club Atletico La Milka",
+    "rodada": "Torneo Campeonato - Grupo 1 - Fecha 4",
+    "url": "https://www.sofascore.com/football/match/filodramatico-alicia-la-milka-sf/Zmpjsvnpj#id:17280700",
+    "extra": "pais=Argentina; codigo_sofascore=17280700; time_sofascore=1163149; status=Programado; fonte_dados=sofascore",
+    "lat": -31.4454733,
+    "lng": -62.0789907,
+    "escopo": "Regional",
+    "id": "f2dff161b0d39025",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9215,7 +9851,7 @@
     "lat": -31.25269,
     "lng": -61.49168,
     "id": "e31a7250de1d8f3c",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9233,7 +9869,7 @@
     "lat": -34.29178,
     "lng": -60.25449,
     "id": "af1149279c943271",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AUF",
@@ -9300,7 +9936,7 @@
     "lng": -62.817977,
     "escopo": "Regional",
     "id": "ae26e6664a93d3bb",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9318,7 +9954,7 @@
     "lat": -34.97762,
     "lng": -67.69635,
     "id": "7cda9f07e8dafe90",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AUF",
@@ -9335,6 +9971,44 @@
     "cidade": "",
     "id": "e9b8402272eb1f41",
     "atualizado_em": "2026-10-31T17:07:24"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Riotercerense de Fútbol - Primera B",
+    "data": "2026-11-01",
+    "hora": "21:15",
+    "mandante": "Juventud Alianza Despeñaderos",
+    "visitante": "Deportivo Italiano",
+    "pais": "Argentina",
+    "cidade": "Río Tercero",
+    "estadio": "",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/deportivo-italiano-juventud-alianza-despenaderos/jHeesBQTj#id:17468318",
+    "extra": "pais=Argentina; codigo_sofascore=17468318; time_sofascore=511609; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -32.173,
+    "lng": -64.1141,
+    "escopo": "Regional",
+    "id": "c8a9b67c6086ca93",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Riotercerense de Fútbol - Primera B",
+    "data": "2026-11-01",
+    "hora": "21:30",
+    "mandante": "Náutico y Deportivo Rumipal",
+    "visitante": "Juventud Unida Punta del Agua",
+    "pais": "Argentina",
+    "cidade": "Río Tercero",
+    "estadio": "",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/nautico-y-deportivo-rumipal-juventud-unida-punta-del-agua/nHeeszHee#id:17468304",
+    "extra": "pais=Argentina; codigo_sofascore=17468304; time_sofascore=511624; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -32.173,
+    "lng": -64.1141,
+    "escopo": "Regional",
+    "id": "58e6d1463afda30c",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9472,7 +10146,7 @@
     "lat": -34.61651,
     "lng": -58.497747,
     "id": "51c345b96ce0d09d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -9538,7 +10212,7 @@
     "lat": -34.715415,
     "lng": -58.249045,
     "id": "4b9921b6b9a45b09",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9556,7 +10230,7 @@
     "lat": -34.6766,
     "lng": -58.56058,
     "id": "8dbefdcb7ef95c4d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9574,7 +10248,7 @@
     "lat": -34.593801,
     "lng": -58.488491,
     "id": "d9858118baaef328",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9592,7 +10266,7 @@
     "lat": -34.09814,
     "lng": -59.02858,
     "id": "ba6438323ff2bf3d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9610,7 +10284,7 @@
     "lat": -34.61315,
     "lng": -58.37723,
     "id": "7ee86fcf3739af84",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9628,7 +10302,7 @@
     "lat": -34.662009,
     "lng": -58.63178,
     "id": "357480211a334e29",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9646,7 +10320,7 @@
     "lat": -31.250822,
     "lng": -61.481441,
     "id": "887b06627f3bdae1",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -9664,7 +10338,7 @@
     "lat": -34.56831,
     "lng": -58.52222,
     "id": "a6be97f82d93c15f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -9891,13 +10565,16 @@
     "hora": "19:00",
     "mandante": "Defensa y Justicia",
     "visitante": "Independiente",
-    "estadio": "",
+    "estadio": "Estadio Norberto Tomaghello",
     "rodada": "Zona A",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "f1822547614dd4e8",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Gobernador Julio A. Costa",
+    "lat": -34.821763,
+    "lng": -58.286537
   },
   {
     "fonte": "AFA",
@@ -9906,13 +10583,16 @@
     "hora": "19:00",
     "mandante": "Platense",
     "visitante": "Central Córdoba",
-    "estadio": "",
+    "estadio": "Estadio Ciudad de Vicente Lopez",
     "rodada": "Zona A",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "f4cc59fbb27c778e",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Florida",
+    "lat": -34.53221,
+    "lng": -58.49373
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -9960,7 +10640,7 @@
     "lng": -60.969403283052,
     "escopo": "Regional",
     "id": "264113bd64ce3be3",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AUF",
@@ -10046,13 +10726,16 @@
     "hora": "21:15",
     "mandante": "Atlético Tucumán",
     "visitante": "Argentinos",
-    "estadio": "",
+    "estadio": "Estadio Monumental Jose Fierro",
     "rodada": "Zona B",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "a9419163b705f823",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "San Miguel de Tucuman",
+    "lat": -26.812887,
+    "lng": -65.199543
   },
   {
     "fonte": "AFA",
@@ -10061,13 +10744,16 @@
     "hora": "21:15",
     "mandante": "Ind. Rivadavia Mza.",
     "visitante": "Banfield",
-    "estadio": "",
+    "estadio": "Estadio Bautista Gargantini",
     "rodada": "Zona B",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "6c5dff885e0574c4",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Mendoza",
+    "lat": -32.89084,
+    "lng": -68.82717
   },
   {
     "fonte": "SofaScore",
@@ -10086,7 +10772,7 @@
     "lng": -60.9299961,
     "escopo": "Regional",
     "id": "2ed5b707d8397aa0",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -10105,7 +10791,7 @@
     "lng": -60.958084308295,
     "escopo": "Regional",
     "id": "40fe9bf5c338a405",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -10124,7 +10810,7 @@
     "lng": -60.930814922663,
     "escopo": "Regional",
     "id": "cfefc84b73ce50fe",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -10142,7 +10828,7 @@
     "lat": -31.53709,
     "lng": -68.52518,
     "id": "a2156163e4522fff",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -10161,7 +10847,7 @@
     "lng": -62.337868,
     "escopo": "Regional",
     "id": "2618b05da9c86495",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -10180,7 +10866,7 @@
     "lng": -62.0847,
     "escopo": "Regional",
     "id": "7728ccf2cdf2406a",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -10237,7 +10923,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "2c2d5839fd36c38e",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.754461,
+    "lng": -58.10874,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10252,7 +10942,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "aa3eb0f0ef415f5e",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Mendoza",
+    "lat": -32.89084,
+    "lng": -68.82717,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10267,7 +10961,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "a3959d80d3e9ff29",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.60956,
+    "lng": -58.38879,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10282,7 +10980,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "82539586d8f1700b",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Rosario",
+    "lat": -32.956167,
+    "lng": -60.661371,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10297,7 +10999,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "e1ba0b8fb5878b92",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Junin",
+    "lat": -34.585261,
+    "lng": -60.929308,
+    "categoria": "Sub23"
   },
   {
     "fonte": "FGF",
@@ -10460,7 +11166,7 @@
     "lng": -64.246145,
     "escopo": "Regional",
     "id": "180f95766d44151e",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -10506,7 +11212,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "3f67cb0affbf220a",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.545293,
+    "lng": -58.449739,
+    "categoria": "Sub23"
   },
   {
     "fonte": "CBF",
@@ -10583,7 +11293,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "905a258963b2c29f",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Mar del Plata",
+    "lat": -38.017903,
+    "lng": -57.582386,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10598,7 +11312,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "e02297ebee4ba510",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Flores",
+    "lat": -34.6282,
+    "lng": -58.46222,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10613,7 +11331,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "be3cb653fe5a2b0b",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "La Plata",
+    "lat": -34.91109,
+    "lng": -57.933166,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10628,7 +11350,8 @@
     "extra": "",
     "pais": "Argentina",
     "id": "b13e78521d41eee3",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10643,7 +11366,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "08f9542b978b8017",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Santa Fe",
+    "lat": -31.631949,
+    "lng": -60.71568,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -10658,7 +11385,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "061e0da6071a115e",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.635338,
+    "lng": -58.520679,
+    "categoria": "Sub23"
   },
   {
     "fonte": "FGF",
@@ -10894,7 +11625,7 @@
     "lng": -64.206289,
     "escopo": "Regional",
     "id": "81a0339751621d47",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -10913,7 +11644,7 @@
     "lng": -64.347675,
     "escopo": "Regional",
     "id": "3c0661814948581f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -11008,7 +11739,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17443130; time_sofascore=1304154; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "c249c64eb33e6c90",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AFA",
@@ -11040,7 +11771,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17452070; time_sofascore=330251; status=Programado; fonte_dados=sofascore",
     "categoria": "Femenino",
     "id": "524b558184a5cd2e",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AFA",
@@ -11055,7 +11786,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "a442bc7363847313",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "San Miguel de Tucuman",
+    "lat": -26.812887,
+    "lng": -65.199543,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -11070,7 +11805,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "57691d919ada40e1",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Cordoba",
+    "lat": -31.403544,
+    "lng": -64.206289,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -11085,7 +11824,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "f81c6f8241f83080",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Gobernador Julio A. Costa",
+    "lat": -34.821763,
+    "lng": -58.286537,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -11100,7 +11843,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "aef870d416e587f1",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Rio Cuarto",
+    "lat": -33.114845,
+    "lng": -64.347675,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -11115,7 +11862,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "1c48c7ae69c4a385",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.643066,
+    "lng": -58.396798,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -11130,7 +11881,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "1942387877ee8575",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Avellaneda",
+    "lat": -34.66765,
+    "lng": -58.36831,
+    "categoria": "Sub23"
   },
   {
     "fonte": "FGF",
@@ -12226,7 +12981,7 @@
     "lng": -57.958883,
     "escopo": "Regional",
     "id": "34ac5b9cb3b3833e",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -12245,7 +13000,7 @@
     "lng": -58.010679,
     "escopo": "Regional",
     "id": "d2d8a6a78e55efb2",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -12262,7 +13017,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17415287; time_sofascore=1303230; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "578374fd79bb672f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -12281,7 +13036,7 @@
     "lng": -57.886759,
     "escopo": "Regional",
     "id": "a2eb88770ae5e761",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -12300,7 +13055,7 @@
     "lng": -57.882313,
     "escopo": "Regional",
     "id": "21c2ed41a1782d2a",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -12317,7 +13072,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17415225; time_sofascore=1303227; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "99b227f7a25e9a84",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -12336,7 +13091,7 @@
     "lng": -58.054739,
     "escopo": "Regional",
     "id": "029d1307975ad0e6",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -12355,7 +13110,7 @@
     "lng": -57.95376,
     "escopo": "Regional",
     "id": "5b8713ba63692440",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -13245,7 +14000,7 @@
     "lat": -35.049539,
     "lng": -58.746916,
     "id": "cbae9b394890a4da",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13263,7 +14018,7 @@
     "lat": -34.657901,
     "lng": -58.46454,
     "id": "b4d730e088a62f73",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13279,7 +14034,7 @@
     "url": "https://www.sofascore.com/football/match/leones-de-rosario-fc-sportivo-barracas/inFbsNvoj#id:17452185",
     "extra": "pais=Argentina; codigo_sofascore=17452185; time_sofascore=1161038; status=Programado; fonte_dados=sofascore",
     "id": "188fb41c6563f8b7",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -13502,7 +14257,7 @@
     "lng": -67.7209098,
     "escopo": "Regional",
     "id": "511adde732dbc9ae",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13521,7 +14276,26 @@
     "lng": -68.921386,
     "escopo": "Regional",
     "id": "b4493929d81e6d58",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga de Fútbol Centro Santa Cruz",
+    "data": "2026-11-08",
+    "hora": "15:30",
+    "mandante": "Club Sportivo Santa Cruz",
+    "visitante": "Club Deportivo Jupiter",
+    "pais": "Argentina",
+    "cidade": "Puerto Santa Cruz",
+    "estadio": "Estadio Centenario",
+    "rodada": "Fecha 7",
+    "url": "https://www.sofascore.com/football/match/club-deportivo-jupiter-club-sportivo-santa-cruz/pALisqALi#id:17031093",
+    "extra": "pais=Argentina; codigo_sofascore=17031093; time_sofascore=1091265; status=Programado; fonte_dados=sofascore",
+    "lat": -50.026747150703,
+    "lng": -68.518033414576,
+    "escopo": "Regional",
+    "id": "abfe8d90254f4585",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13540,7 +14314,7 @@
     "lng": -67.733626451038,
     "escopo": "Regional",
     "id": "b945c689b8cb804d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "FGF",
@@ -13763,7 +14537,25 @@
     "lat": -28.46888,
     "lng": -65.77906,
     "id": "8b3bcdada1f3a2c7",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Copa País",
+    "data": "2026-11-08",
+    "hora": "16:00",
+    "mandante": "Liga de San Jorge",
+    "visitante": "Liga de Bahía Blanca",
+    "pais": "Argentina",
+    "cidade": "San Jorge",
+    "estadio": "",
+    "rodada": "Semifinals",
+    "url": "https://www.sofascore.com/football/match/liga-de-bahia-blanca-liga-de-san-jorge/JWMisKAck#id:17442305",
+    "extra": "pais=Argentina; codigo_sofascore=17442305; time_sofascore=1094834; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -31.89628,
+    "lng": -61.85972,
+    "id": "444a45b2b04eb654",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13782,7 +14574,7 @@
     "lng": -62.100918,
     "escopo": "Regional",
     "id": "c6137aa8463277cc",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13801,7 +14593,7 @@
     "lng": -62.011777,
     "escopo": "Regional",
     "id": "c7e463040574cc80",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13820,7 +14612,7 @@
     "lng": -62.625517,
     "escopo": "Regional",
     "id": "de25de9383d0f78f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13839,7 +14631,7 @@
     "lng": -63.066462,
     "escopo": "Regional",
     "id": "82f6db275c393efd",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13858,7 +14650,7 @@
     "lng": -62.02979,
     "escopo": "Regional",
     "id": "f460b2dc7edbdffc",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13877,7 +14669,7 @@
     "lng": -61.965657610201,
     "escopo": "Regional",
     "id": "cda500b85eca64b3",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13896,7 +14688,7 @@
     "lng": -63.627049,
     "escopo": "Regional",
     "id": "c1a84b22194f4842",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13915,7 +14707,7 @@
     "lng": -62.064961,
     "escopo": "Regional",
     "id": "3e361dbf92086c05",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13934,7 +14726,7 @@
     "lng": -63.062044,
     "escopo": "Regional",
     "id": "a2eb73d47550af90",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13953,7 +14745,7 @@
     "lng": -62.99546,
     "escopo": "Regional",
     "id": "1b11411d213d43f3",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13972,7 +14764,7 @@
     "lng": -62.297001,
     "escopo": "Regional",
     "id": "e3b54cdedc70c54f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -13991,7 +14783,7 @@
     "lng": -63.040666,
     "escopo": "Regional",
     "id": "38db3ee98dd17159",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14010,7 +14802,7 @@
     "lng": -63.111629,
     "escopo": "Regional",
     "id": "bbc4b065de2c0ce0",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14029,7 +14821,7 @@
     "lng": -62.713176,
     "escopo": "Regional",
     "id": "83e3d8365e8e3129",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14048,7 +14840,7 @@
     "lng": -62.11539,
     "escopo": "Regional",
     "id": "4b8cb095de291e0d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14067,7 +14859,7 @@
     "lng": -62.3632195,
     "escopo": "Regional",
     "id": "74f04f2d9bffc3ba",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14086,7 +14878,7 @@
     "lng": -62.4625654,
     "escopo": "Regional",
     "id": "8ac717f58a56157a",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14105,7 +14897,7 @@
     "lng": -62.8250096,
     "escopo": "Regional",
     "id": "c64af8ad583373d0",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14124,7 +14916,7 @@
     "lng": -62.6643964,
     "escopo": "Regional",
     "id": "1f7fe44a2f8b6bcc",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14143,7 +14935,7 @@
     "lng": -62.488473,
     "escopo": "Regional",
     "id": "be7332057f14535d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -14193,7 +14985,7 @@
     "lng": -63.406049,
     "escopo": "Regional",
     "id": "4b79ea2c31b9f47c",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14212,7 +15004,7 @@
     "lng": -63.3861111,
     "escopo": "Regional",
     "id": "29ac6cd7025a2f29",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14231,7 +15023,7 @@
     "lng": -63.9260504,
     "escopo": "Regional",
     "id": "e73607a327277f06",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14250,7 +15042,7 @@
     "lng": -63.391,
     "escopo": "Regional",
     "id": "f0c264033618460c",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14269,7 +15061,7 @@
     "lng": -63.50283,
     "escopo": "Regional",
     "id": "1214daa70d1dc9ed",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14288,7 +15080,7 @@
     "lng": -64.084089,
     "escopo": "Regional",
     "id": "9b01777a11324389",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14307,7 +15099,7 @@
     "lng": -63.5253823,
     "escopo": "Regional",
     "id": "fe3cc52917e37a7b",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14325,7 +15117,7 @@
     "lat": -38.017903,
     "lng": -57.582386,
     "id": "9889734419eb71e7",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14343,7 +15135,7 @@
     "lat": -34.754461,
     "lng": -58.10874,
     "id": "01e721107e80ec08",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14361,7 +15153,7 @@
     "lat": -34.750774,
     "lng": -58.387558,
     "id": "295e79b9278b3c42",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14379,7 +15171,7 @@
     "lat": -34.647016,
     "lng": -58.396189,
     "id": "f8653419ebe59bcf",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14397,7 +15189,7 @@
     "lat": -34.61315,
     "lng": -58.37723,
     "id": "ed6da64ed723454a",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14415,7 +15207,7 @@
     "lat": -34.670223,
     "lng": -58.371038,
     "id": "c447574bf7b9cb30",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14433,7 +15225,7 @@
     "lat": -31.368847,
     "lng": -64.246145,
     "id": "ed511fd0cd063067",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14451,7 +15243,7 @@
     "lat": -27.7938,
     "lng": -64.26413,
     "id": "4bccad4f5856d397",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14469,7 +15261,7 @@
     "lat": -31.631949,
     "lng": -60.71568,
     "id": "9800cd342b4fefb6",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14487,7 +15279,7 @@
     "lat": -34.91109,
     "lng": -57.933166,
     "id": "57fb3c0bc445476d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14505,7 +15297,7 @@
     "lat": -32.884152,
     "lng": -68.864233,
     "id": "9685243cc5f4ca88",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14523,7 +15315,7 @@
     "lat": -31.383697,
     "lng": -64.180445,
     "id": "2fe9eba3d43c70e9",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14541,7 +15333,7 @@
     "lat": -32.914023,
     "lng": -60.674499,
     "id": "4ebfd5f936690728",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14559,7 +15351,7 @@
     "lat": -34.652081,
     "lng": -58.440045,
     "id": "1dfc9496e29cd8c8",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -14577,7 +15369,7 @@
     "lat": -34.449307,
     "lng": -58.542266,
     "id": "801eb94f9c11f251",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "FMF",
@@ -14930,7 +15722,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "362c2e60fdcf4a10",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "San Miguel de Tucuman",
+    "lat": -26.812887,
+    "lng": -65.199543,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -14945,7 +15741,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "e8a36fe6a0d67af5",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "La Plata",
+    "lat": -34.92068,
+    "lng": -57.95376,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -14960,7 +15760,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "5467d6a3c1978924",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Mendoza",
+    "lat": -32.884152,
+    "lng": -68.864233,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -14975,7 +15779,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "d8d1976854d75d5a",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Quilmes",
+    "lat": -34.741766,
+    "lng": -58.25197,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -14990,7 +15798,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "378dab8ab138171f",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.449307,
+    "lng": -58.542266,
+    "categoria": "Sub23"
   },
   {
     "fonte": "FGF",
@@ -15021,7 +15833,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "a21b2076057f693a",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Cordoba",
+    "lat": -31.368847,
+    "lng": -64.246145,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15036,7 +15852,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "af23aa71530f0a6c",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Rafaela",
+    "lat": -31.250822,
+    "lng": -61.481441,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15051,7 +15871,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "9b474392bd30fcb4",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.750774,
+    "lng": -58.387558,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15066,7 +15890,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "e76a1617cf1ca9e1",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.61315,
+    "lng": -58.37723,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15081,7 +15909,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "b9d2c5e8538636bb",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.670223,
+    "lng": -58.371038,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15096,7 +15928,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "617d8e22a319d92b",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Cordoba",
+    "lat": -31.383697,
+    "lng": -64.180445,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15111,7 +15947,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "65226ebcc22b90c0",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Florida",
+    "lat": -34.53221,
+    "lng": -58.49373,
+    "categoria": "Sub23"
   },
   {
     "fonte": "FGF",
@@ -15193,7 +16033,7 @@
     "lat": -34.92068,
     "lng": -57.95376,
     "id": "4e0bcceda39bf330",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "AFA",
@@ -15208,7 +16048,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "6eaf9c612e3e78e6",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Barracas",
+    "lat": -34.647016,
+    "lng": -58.396189,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15223,7 +16067,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "b6c1df33a963f57e",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Santa Fe",
+    "lat": -31.663217,
+    "lng": -60.725246,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15238,7 +16086,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "a2101fb793e33224",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Mendoza",
+    "lat": -32.889621,
+    "lng": -68.879901,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15253,7 +16105,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "2e80f6ecbe9d84a7",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.643066,
+    "lng": -58.396798,
+    "categoria": "Sub23"
   },
   {
     "fonte": "AFA",
@@ -15268,7 +16124,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "4800b9e77d742dd6",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Arroyo Seco",
+    "lat": -33.1685396,
+    "lng": -60.521566,
+    "categoria": "Sub23"
   },
   {
     "fonte": "FGF",
@@ -15315,7 +16175,11 @@
     "extra": "",
     "pais": "Argentina",
     "id": "47c1ec3a0f84844f",
-    "atualizado_em": "2026-10-31T17:04:15"
+    "atualizado_em": "2026-10-31T17:04:15",
+    "cidade": "Buenos Aires",
+    "lat": -34.61315,
+    "lng": -58.37723,
+    "categoria": "Sub23"
   },
   {
     "fonte": "SofaScore",
@@ -15605,7 +16469,7 @@
     "lng": -58.024552,
     "escopo": "Regional",
     "id": "c052c7065d36f8d2",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -15624,7 +16488,7 @@
     "lng": -57.971072028125,
     "escopo": "Regional",
     "id": "f45501954ec2cee7",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -15643,7 +16507,7 @@
     "lng": -57.9657884,
     "escopo": "Regional",
     "id": "b1a60b412d0dfb12",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -15662,7 +16526,7 @@
     "lng": -57.936042,
     "escopo": "Regional",
     "id": "a37117fc8ec9f25d",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -15681,7 +16545,7 @@
     "lng": -57.8783289,
     "escopo": "Regional",
     "id": "3c7a5d4a9113e9f0",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -15700,7 +16564,7 @@
     "lng": -58.00825,
     "escopo": "Regional",
     "id": "57f6d16904c69a8a",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -15719,7 +16583,7 @@
     "lng": -58.0370686,
     "escopo": "Regional",
     "id": "ced4496b10d0ae5a",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -15738,7 +16602,7 @@
     "lng": -58.035218,
     "escopo": "Regional",
     "id": "68e006d10c1a82ba",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "FPF",
@@ -16073,7 +16937,7 @@
     "lat": -34.750774,
     "lng": -58.387558,
     "id": "22ab488e6db966c2",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "CBF",
@@ -16177,7 +17041,26 @@
     "extra": "pais=Argentina; codigo_sofascore=17031123; time_sofascore=1091263; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "7b5215c5e138c7b9",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga de Fútbol Centro Santa Cruz",
+    "data": "2026-11-15",
+    "hora": "15:30",
+    "mandante": "Club Atlético Santa Cruz",
+    "visitante": "Asociación Club Atlético San Julian",
+    "pais": "Argentina",
+    "cidade": "Puerto Santa Cruz",
+    "estadio": "Estadio Atlético Santa Cruz ",
+    "rodada": "Fecha 8",
+    "url": "https://www.sofascore.com/football/match/asociacion-club-atletico-san-julian-club-atletico-santa-cruz/mALisoALi#id:17031115",
+    "extra": "pais=Argentina; codigo_sofascore=17031115; time_sofascore=1091262; status=Programado; fonte_dados=sofascore",
+    "lat": -50.0198676,
+    "lng": -68.5138291,
+    "escopo": "Regional",
+    "id": "dc7c4284d8751709",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16196,7 +17079,26 @@
     "lng": -68.92375223547,
     "escopo": "Regional",
     "id": "c7ca80c958c6afaa",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga de Fútbol Centro Santa Cruz",
+    "data": "2026-11-15",
+    "hora": "15:30",
+    "mandante": "Racing Club San Julian",
+    "visitante": "Club Sportivo Santa Cruz",
+    "pais": "Argentina",
+    "cidade": "Puerto San Julian",
+    "estadio": "Estadio Francisco \"Pancho\" Novoa",
+    "rodada": "Fecha 8",
+    "url": "https://www.sofascore.com/football/match/racing-club-san-julian-club-sportivo-santa-cruz/pALisuALi#id:17031120",
+    "extra": "pais=Argentina; codigo_sofascore=17031120; time_sofascore=1091269; status=Programado; fonte_dados=sofascore",
+    "lat": -49.298267422301,
+    "lng": -67.730879140478,
+    "escopo": "Regional",
+    "id": "773d353bdc5c90e9",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "FGF",
@@ -16231,7 +17133,7 @@
     "lng": -62.100918,
     "escopo": "Regional",
     "id": "d371f92a597b4160",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16250,7 +17152,7 @@
     "lng": -62.8974434,
     "escopo": "Regional",
     "id": "d8e229737f06a157",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16269,7 +17171,7 @@
     "lng": -62.625517,
     "escopo": "Regional",
     "id": "263e4d718e2d9fe0",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16288,7 +17190,7 @@
     "lng": -62.02979,
     "escopo": "Regional",
     "id": "4191fcd87c1e12aa",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16307,7 +17209,7 @@
     "lng": -62.668871,
     "escopo": "Regional",
     "id": "a666161326f0aa6b",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16326,7 +17228,7 @@
     "lng": -63.627049,
     "escopo": "Regional",
     "id": "6cf23b5d294a4d2e",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16345,7 +17247,7 @@
     "lng": -62.0788589,
     "escopo": "Regional",
     "id": "fc8ba6f3869232aa",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16364,7 +17266,7 @@
     "lng": -62.99546,
     "escopo": "Regional",
     "id": "0ed8a46711926386",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16383,7 +17285,7 @@
     "lng": -62.297001,
     "escopo": "Regional",
     "id": "ad0443953ba4de9f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16402,7 +17304,7 @@
     "lng": -61.955181565544,
     "escopo": "Regional",
     "id": "58f4110a4133da01",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16421,7 +17323,7 @@
     "lng": -62.0095892,
     "escopo": "Regional",
     "id": "554d323b7d4d1377",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16440,7 +17342,7 @@
     "lng": -62.465515,
     "escopo": "Regional",
     "id": "ec7097ab1b121f3f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16459,7 +17361,7 @@
     "lng": -63.0494347,
     "escopo": "Regional",
     "id": "a0fe45939b1d81fe",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16478,7 +17380,7 @@
     "lng": -63.111629,
     "escopo": "Regional",
     "id": "a9c1bb7ffb1afaae",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16497,7 +17399,7 @@
     "lng": -62.713176,
     "escopo": "Regional",
     "id": "3c78f9eca3f48dfa",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16516,7 +17418,7 @@
     "lng": -63.399078,
     "escopo": "Regional",
     "id": "cc49c3f6ca450b24",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16535,7 +17437,7 @@
     "lng": -62.3632195,
     "escopo": "Regional",
     "id": "9ad9f2092a09eeff",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16554,7 +17456,7 @@
     "lng": -62.828637,
     "escopo": "Regional",
     "id": "6b49de53d8b1e9ce",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16573,7 +17475,7 @@
     "lng": -62.0789907,
     "escopo": "Regional",
     "id": "6b3fe89741e7726f",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16592,7 +17494,7 @@
     "lng": -62.488473,
     "escopo": "Regional",
     "id": "a79bddbf23557aef",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -16947,7 +17849,7 @@
     "lng": -58.010679,
     "escopo": "Regional",
     "id": "6cabe1e95d910e3e",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16964,7 +17866,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17415278; time_sofascore=1303230; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "626ffd861cceb3ca",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -16983,7 +17885,7 @@
     "lng": -57.886759,
     "escopo": "Regional",
     "id": "683bd0e7d5ff66ef",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -17002,7 +17904,7 @@
     "lng": -57.936042,
     "escopo": "Regional",
     "id": "4efb55b2e221c72a",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -17021,7 +17923,7 @@
     "lng": -57.882313,
     "escopo": "Regional",
     "id": "27ddb0c78fe344aa",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -17038,7 +17940,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17415212; time_sofascore=1303227; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "6dcc690b5d679e34",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -17057,7 +17959,7 @@
     "lng": -58.054739,
     "escopo": "Regional",
     "id": "8cc0c6ae04ec7a0e",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -17076,7 +17978,7 @@
     "lng": -57.95376,
     "escopo": "Regional",
     "id": "dfb3f4ca8194acac",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -17990,7 +18892,7 @@
     "lng": -58.024552,
     "escopo": "Regional",
     "id": "ec0693f5a83e45f2",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -18009,7 +18911,7 @@
     "lng": -57.971072028125,
     "escopo": "Regional",
     "id": "add26ad516373417",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -18028,7 +18930,7 @@
     "lng": -57.958883,
     "escopo": "Regional",
     "id": "5b2b8d0a883326b4",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -18047,7 +18949,7 @@
     "lng": -57.9657884,
     "escopo": "Regional",
     "id": "7528802bfafc7a9e",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -18066,7 +18968,7 @@
     "lng": -57.882313,
     "escopo": "Regional",
     "id": "2f5cb29abe783988",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -18085,7 +18987,7 @@
     "lng": -57.8783289,
     "escopo": "Regional",
     "id": "ed8433a4c3f33040",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -18104,7 +19006,7 @@
     "lng": -58.00825,
     "escopo": "Regional",
     "id": "19c7d974456dbd89",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -18123,7 +19025,7 @@
     "lng": -58.035218,
     "escopo": "Regional",
     "id": "f0d877b43b9c6b62",
-    "atualizado_em": "2026-10-31T16:02:28+00:00"
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
@@ -18360,6 +19262,42 @@
     "extra": "",
     "id": "2962f895b457d715",
     "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Cuarta",
+    "data": "2026-12-01",
+    "hora": "09:00",
+    "mandante": "Agraria (4ta)",
+    "visitante": "Quilmes (4ta)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/agraria-4ta-quilmes-4ta/gBdeslBde#id:17454800",
+    "extra": "pais=Argentina; codigo_sofascore=17454800; time_sofascore=508811; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "8acd5a9020f2d25e",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional Colón, Quinta",
+    "data": "2026-12-01",
+    "hora": "10:00",
+    "mandante": "Agraria (5ta)",
+    "visitante": "Quilmes (5ta)",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular - Fecha 13",
+    "url": "https://www.sofascore.com/football/match/agraria-5ta-quilmes-5ta/bCdeshCde#id:17454792",
+    "extra": "pais=Argentina; codigo_sofascore=17454792; time_sofascore=508857; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "8e49947ff8a20782",
+    "atualizado_em": "2026-11-01T17:33:35+00:00"
   },
   {
     "fonte": "ESPN",
