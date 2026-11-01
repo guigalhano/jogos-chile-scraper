@@ -35,59 +35,11 @@
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
     "status": 200,
-    "bytes": 177865
-  },
-  {
-    "copa": "FA Vase",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
-    "status": 200,
-    "bytes": 20897
-  },
-  {
-    "copa": "FA Vase",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=3",
-    "status": 200,
-    "bytes": 20789
-  },
-  {
-    "copa": "FA Vase",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=4",
-    "status": 200,
-    "bytes": 3797
+    "bytes": 161170
   },
   {
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
-    "jogos_parseados": 20,
-    "amostra": [
-      "2026-10-31 15:00 Maghull v Retford @ ",
-      "2026-10-31 15:00 Chadderton v Bottesford Town @ ",
-      "2026-10-31 15:00 Thornton Cleveleys v Billingham Town @ "
-    ]
-  },
-  {
-    "copa": "FA Vase",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
-    "jogos_parseados": 20,
-    "amostra": [
-      "2026-10-31 15:00 Cirencester Town v Longlevens @ ",
-      "2026-10-31 15:00 Southwell City v Rugby Town @ ",
-      "2026-10-31 15:00 Gresley Rovers v Ludlow Town @ "
-    ]
-  },
-  {
-    "copa": "FA Vase",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=3",
-    "jogos_parseados": 20,
-    "amostra": [
-      "2026-10-31 15:00 Rusthall v Haywards Heath Town @ ",
-      "2026-10-31 15:00 Larkfield & New Hythe v East Grinstead Town @ ",
-      "2026-10-31 15:00 Harefield United v Snodland Town @ "
-    ]
-  },
-  {
-    "copa": "FA Vase",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=4",
     "jogos_parseados": 1,
     "amostra": [
       "2026-11-01 15:00 Northwich Victoria v Yarm & Eaglescliffe @ "
@@ -129,38 +81,38 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140707
+    "bytes": 140773
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 179572
+    "bytes": 178085
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 13148
+    "bytes": 6936
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-01 14:00 Workington Town Women v Mancunian Unity Women @ ",
-      "2026-11-01 14:00 Wigan Athletic Women v Chester-Le-Street Town Ladies @ ",
-      "2026-11-01 14:00 Preston North End Women v i2i International Soccer Academy Women @ "
+      "2026-11-08 14:00 Lye Town Women v Peterborough United Women @ ",
+      "2026-11-15 12:00 Norwich City Women v AFC Bournemouth Women @ ",
+      "2026-11-15 13:00 Chesterfield Women v Leafield Athletic Ladies @ "
     ]
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
-    "jogos_parseados": 12,
+    "jogos_parseados": 5,
     "amostra": [
-      "2026-11-15 13:00 South Shields Women / SJR Worksop Women v Halifax Women @ ",
-      "2026-11-15 13:00 Moneyfields Women v Bristol Rovers Women's @ ",
-      "2026-11-15 13:00 Gwalia United v Oxford United Women @ "
+      "2026-11-15 13:00 Maidenhead United Women v AFC Wimbledon Women @ ",
+      "2026-11-15 13:00 Milton Keynes Dons Women v Chatham Town Women @ ",
+      "2026-11-15 13:00 Dulwich Hamlet Women v Portishead Town Ladies @ "
     ]
   },
   {
