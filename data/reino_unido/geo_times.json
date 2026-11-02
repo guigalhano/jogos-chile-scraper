@@ -2693,6 +2693,12 @@
 "lng": -1.85184,
 "local": "Birmingham"
 },
+"Inglaterra|Birmingham United": {
+"fonte": "nome",
+"lat": 52.4949,
+"lng": -1.85184,
+"local": "Birmingham"
+},
 "Inglaterra|Birstall United": {
 "fonte": "nome",
 "lat": 52.67698,
@@ -5267,6 +5273,12 @@
 "lng": -0.65561,
 "local": "Finedon"
 },
+"Inglaterra|Fishburn Park": {
+"fonte": "nome",
+"lat": 54.68291,
+"lng": -1.43624,
+"local": "Fishburn"
+},
 "Inglaterra|Fisher": {
 "fonte": "nome",
 "lat": 50.9872,
@@ -5728,6 +5740,12 @@
 "lat": 51.23561,
 "lng": -0.57321,
 "local": "Guildford"
+},
+"Inglaterra|Guisborough Reserves": {
+"fonte": "nome",
+"lat": 54.53596,
+"lng": -1.05109,
+"local": "Guisborough"
 },
 "Inglaterra|Guisborough Town": {
 "fonte": "nome",
@@ -6473,6 +6491,12 @@
 "lng": 0.0074,
 "local": "Holland"
 },
+"Inglaterra|Holland Sports": {
+"fonte": "nome",
+"lat": 51.23807,
+"lng": 0.0074,
+"local": "Holland"
+},
 "Inglaterra|Hollington United": {
 "fonte": "nome",
 "lat": 52.95539,
@@ -6796,6 +6820,12 @@
 "lat": 51.48845,
 "lng": -0.10925,
 "local": "Kennington"
+},
+"Inglaterra|Kensington Dragons": {
+"fonte": "nome",
+"lat": 51.49899,
+"lng": -0.19912,
+"local": "Kensington"
 },
 "Inglaterra|Kent United": {
 "fonte": "nome",
@@ -7313,6 +7343,12 @@
 "lng": -0.54048,
 "local": "Lincoln"
 },
+"Inglaterra|Lindfield": {
+"fonte": "nome",
+"lat": 51.01295,
+"lng": -0.08077,
+"local": "Lindfield"
+},
 "Inglaterra|Lingfield": {
 "fonte": "nome",
 "lat": 51.17558,
@@ -7432,6 +7468,12 @@
 "lat": 51.50745,
 "lng": -0.12777,
 "local": "Greater London"
+},
+"Inglaterra|Long Buckby": {
+"fonte": "nome",
+"lat": 52.30256,
+"lng": -1.08068,
+"local": "Long Buckby"
 },
 "Inglaterra|Long Eaton United": {
 "fonte": "nome",
@@ -8501,6 +8543,12 @@
 "lng": -1.13309,
 "local": "Meadow Lane"
 },
+"Inglaterra|Nuneaton Griff": {
+"fonte": "nome",
+"lat": 52.5228,
+"lng": -1.46797,
+"local": "Nuneaton"
+},
 "Inglaterra|Nuneaton Town": {
 "fonte": "nome",
 "lat": 52.5228,
@@ -9035,6 +9083,12 @@
 "lng": 1.41965,
 "local": "Ramsgate"
 },
+"Inglaterra|Raunds Town": {
+"fonte": "nome",
+"lat": 52.34671,
+"lng": -0.52654,
+"local": "Raunds"
+},
 "Inglaterra|Rayleigh Town": {
 "fonte": "nome",
 "lat": 51.58688,
@@ -9156,6 +9210,12 @@
 "local": "Redruth"
 },
 "Inglaterra|Reigate Priory": {
+"fonte": "nome",
+"lat": 51.23766,
+"lng": -0.20571,
+"local": "Reigate"
+},
+"Inglaterra|Reigate Priory Reserves": {
 "fonte": "nome",
 "lat": 51.23766,
 "lng": -0.20571,
@@ -9292,6 +9352,12 @@
 "lat": 53.47297,
 "lng": -1.06965,
 "local": "Rossington"
+},
+"Inglaterra|Rotherfield": {
+"fonte": "nome",
+"lat": 51.05985,
+"lng": 0.22704,
+"local": "Rotherfield"
 },
 "Inglaterra|Rotherham United": {
 "fonte": "sofascore",
@@ -12791,6 +12857,12 @@
 "lng": -6.22461,
 "local": "Avondale"
 },
+"Irlanda|Ballina Town": {
+"fonte": "nome",
+"lat": 54.11434,
+"lng": -9.15321,
+"local": "Ballina"
+},
 "Irlanda|Bandon FC": {
 "fonte": "nome",
 "lat": 51.74617,
@@ -12826,6 +12898,12 @@
 "lat": 54.94504,
 "lng": -7.69683,
 "local": "Dry Arch Park"
+},
+"Irlanda|Boyle Celtic": {
+"fonte": "nome",
+"lat": 53.97233,
+"lng": -8.30126,
+"local": "Boyle"
 },
 "Irlanda|Bray Wanderers": {
 "fonte": "sofascore",
@@ -12905,6 +12983,12 @@
 "lng": -8.47264,
 "local": "Cork"
 },
+"Irlanda|Crossmolina": {
+"fonte": "nome",
+"lat": 54.1,
+"lng": -9.31667,
+"local": "Crossmolina"
+},
 "Irlanda|Derry City": {
 "fonte": "cidade",
 "lat": 53.18207,
@@ -12934,6 +13018,12 @@
 "lat": 53.99823,
 "lng": -6.41646,
 "local": "Oriel Park"
+},
+"Irlanda|Dunmore Town": {
+"fonte": "nome",
+"lat": 53.61905,
+"lng": -8.74226,
+"local": "Dunmore"
 },
 "Irlanda|Finglas United": {
 "fonte": "nome",
@@ -13025,6 +13115,12 @@
 "lng": -8.52298,
 "local": "Kinsale"
 },
+"Irlanda|Knocknacarra": {
+"fonte": "nome",
+"lat": 53.26873,
+"lng": -9.10909,
+"local": "Knocknacarra"
+},
 "Irlanda|Letterkenny Rovers": {
 "fonte": "sofascore",
 "lat": 54.94397,
@@ -13072,6 +13168,12 @@
 "lat": 52.75101,
 "lng": -8.49557,
 "local": "Montpelier"
+},
+"Irlanda|Moylough 79": {
+"fonte": "nome",
+"lat": 53.48808,
+"lng": -8.5678,
+"local": "Moylough"
 },
 "Irlanda|Moyne Villa AFC": {
 "fonte": "nome",
@@ -13204,6 +13306,12 @@
 "lat": 53.68257,
 "lng": -7.48969,
 "local": "Street"
+},
+"Irlanda|Strand Celtic FC": {
+"fonte": "nome",
+"lat": 53.35843,
+"lng": -6.24162,
+"local": "North Strand"
 },
 "Irlanda|Temple United AFC": {
 "fonte": "nome",
