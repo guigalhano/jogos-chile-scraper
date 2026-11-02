@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-11-07",
+    "hora": "15:00",
+    "mandante": "AMERICA SAF",
+    "visitante": "CRUZEIRO - SAF",
+    "pais": "Brasil",
+    "cidade": "Santa Luzia",
+    "estadio": "Estádio Victor Andrade de Brito - Frimisa",
+    "rodada": "RODADA 1",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=22; cidade=Santa Luzia",
+    "id": "e42ef0ff5f4aa5e6",
+    "atualizado_em": "2026-11-02T22:27:46"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-11-07",
+    "hora": "15:00",
+    "mandante": "ATLÉTICO SAF",
+    "visitante": "ITABIRITO",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Arena Gregorão",
+    "rodada": "RODADA 1",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=23; cidade=Contagem",
+    "id": "f5101a95c86bf186",
+    "atualizado_em": "2026-11-02T22:27:46"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-11-14",
+    "hora": "15:00",
+    "mandante": "CRUZEIRO - SAF",
+    "visitante": "AMERICA SAF",
+    "pais": "Brasil",
+    "cidade": "Belo Horizonte",
+    "estadio": "Toca da Raposa I",
+    "rodada": "RODADA 2",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=24; cidade=Belo Horizonte",
+    "id": "4304449448a4f01f",
+    "atualizado_em": "2026-11-02T22:27:46"
+  },
+  {
+    "fonte": "FMF",
+    "competicao": "Brasil - FMF - FEMININO - 2026",
+    "data": "2026-11-15",
+    "hora": "15:00",
+    "mandante": "ITABIRITO",
+    "visitante": "ATLÉTICO SAF",
+    "pais": "Brasil",
+    "cidade": "Contagem",
+    "estadio": "Arena Gregorão",
+    "rodada": "RODADA 2",
+    "url": "https://www.fmf.com.br/Competicoes/ProxJogos.aspx?d=7",
+    "extra": "pais=Brasil; estado=Minas Gerais; codigo_fmf=7; placar_original=X; jogo_numero=25; cidade=Contagem",
+    "id": "d1428bf6ce71740c",
+    "atualizado_em": "2026-11-02T22:27:46"
+  }
+]
