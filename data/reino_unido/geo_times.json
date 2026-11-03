@@ -3083,6 +3083,12 @@
 "lng": -3.0037,
 "local": "Bridgwater"
 },
+"Inglaterra|Bridgwater United Women": {
+"fonte": "nome",
+"lat": 51.12834,
+"lng": -3.0037,
+"local": "Bridgwater"
+},
 "Inglaterra|Bridlington Town": {
 "fonte": "nome",
 "lat": 54.08224,
@@ -10067,6 +10073,12 @@
 "lng": -1.08866,
 "local": "Southsea"
 },
+"Inglaterra|Southwater": {
+"fonte": "nome",
+"lat": 51.02421,
+"lng": -0.35232,
+"local": "Southwater"
+},
 "Inglaterra|Southwell City": {
 "fonte": "nome",
 "lat": 53.07825,
@@ -10162,6 +10174,12 @@
 "lat": 51.34719,
 "lng": -2.97789,
 "local": "Weston-super-Mare"
+},
+"Inglaterra|Sporting ’87": {
+"fonte": "nome",
+"lat": 52.53102,
+"lng": -1.26491,
+"local": "England"
 },
 "Inglaterra|Springfield": {
 "fonte": "nome",
@@ -12989,6 +13007,12 @@
 "lng": -9.31667,
 "local": "Crossmolina"
 },
+"Irlanda|Crumlin United": {
+"fonte": "sofascore",
+"lat": 53.32313,
+"lng": -6.31554,
+"local": "Pearse Park"
+},
 "Irlanda|Derry City": {
 "fonte": "cidade",
 "lat": 53.18207,
@@ -13427,6 +13451,12 @@
 "lng": -3.01479,
 "local": "Abergavenny"
 },
+"País de Gales|Abermule": {
+"fonte": "nome",
+"lat": 52.5453,
+"lng": -3.23421,
+"local": "Abermule"
+},
 "País de Gales|Abertillery Bluebirds": {
 "fonte": "nome",
 "lat": 51.72995,
@@ -13690,6 +13720,12 @@
 "lat": 51.67238,
 "lng": -3.17839,
 "local": "Caerphilly"
+},
+"País de Gales|Caersws Development": {
+"fonte": "nome",
+"lat": 52.51669,
+"lng": -3.42878,
+"local": "Caersws"
 },
 "País de Gales|Caersws FC": {
 "fonte": "cidade",
@@ -14044,6 +14080,12 @@
 "lat": 51.80921,
 "lng": -4.96753,
 "local": "Bridge Meadow Stadium"
+},
+"País de Gales|Hawarden Rangers": {
+"fonte": "nome",
+"lat": 53.18478,
+"lng": -3.02666,
+"local": "Hawarden"
 },
 "País de Gales|Holyhead Hotspur FC": {
 "fonte": "sofascore",

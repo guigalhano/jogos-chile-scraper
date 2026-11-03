@@ -17,6 +17,8 @@
 -2.86198,
 "Speke"
 ],
+"ASC Brighton, England": null,
+"ASC, England": null,
 "Abbey Hey, England": null,
 "Abbey Hulton, England": [
 53.03532,
@@ -79,6 +81,11 @@
 51.82132,
 -3.01479,
 "Abergavenny"
+],
+"Abermule, Wales": [
+52.5453,
+-3.23421,
+"Abermule"
 ],
 "Abertillery Bluebirds, Blaenau Gwent, Wales": null,
 "Abertillery Bluebirds, Wales": null,
@@ -2594,6 +2601,11 @@
 -1.85293,
 "Cruden Bay"
 ],
+"Crumlin, Ireland": [
+53.32023,
+-6.31617,
+"Crumlin"
+],
 "Crumlin, Northern Ireland": [
 54.62062,
 -6.21494,
@@ -4314,6 +4326,11 @@
 52.08327,
 0.43539,
 "Haverhill"
+],
+"Hawarden, Wales": [
+53.18478,
+-3.02666,
+"Hawarden"
 ],
 "Hawkinge, England": [
 51.11544,
@@ -6587,6 +6604,7 @@
 -5.92492,
 "Newtownabbey"
 ],
+"Newtowne, Northern Ireland": null,
 "Nithsdale, Dumfries and Galloway, Scotland": null,
 "Nithsdale, Scotland": null,
 "Norsemen, England": null,
@@ -8123,6 +8141,11 @@
 "Southsea"
 ],
 "Southsea, Hampshire, England": null,
+"Southwater, England": [
+51.02421,
+-0.35232,
+"Southwater"
+],
 "Southwell, England": [
 53.07825,
 -0.95508,
@@ -9949,5 +9972,10 @@
 -0.2492,
 "New England"
 ],
-"of, Glasgow City, Scotland": null
+"of, Glasgow City, Scotland": null,
+"’, England": [
+52.53102,
+-1.26491,
+"England"
+]
 }
