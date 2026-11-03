@@ -73,7 +73,7 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
     "status": 200,
-    "bytes": 10996
+    "bytes": 10076
   },
   {
     "copa": "FA Sunday Cup",
@@ -88,30 +88,30 @@
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
-    "jogos_parseados": 10,
+    "jogos_parseados": 9,
     "amostra": [
-      "2026-11-08 14:00 Broadfields United (Sunday)_ v Brewster Plumbing @ ",
       "2026-11-08 14:00 Northstar v Nags Head (Winslow) @ ",
-      "2026-11-08 14:00 Baddoo v Baiteze Squad @ "
+      "2026-11-08 14:00 Baddoo v Baiteze Squad @ ",
+      "2026-11-08 14:00 Trabzonspor UK v Mehmetcik Galata @ "
     ]
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140707
+    "bytes": 140721
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 179707
+    "bytes": 180375
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 7137
+    "bytes": 7496
   },
   {
     "copa": "Women's FA Cup",
@@ -128,37 +128,37 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "jogos_parseados": 5,
     "amostra": [
-      "2026-11-15 13:00 Marine Academy Plymouth LFC v Brentford Women @ ",
-      "2026-11-15 13:00 Maidenhead United Women v AFC Wimbledon Women @ ",
-      "2026-11-15 13:00 Milton Keynes Dons Women v Chatham Town Women @ "
+      "2026-11-15 14:00 Boldmere St Michaels Women v Stockport County LFC @ ",
+      "2026-11-15 14:00 Gwalia United v Oxford United Women @ ",
+      "2026-11-15 14:00 Real Bedford Women v Fulham Women @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 177057
+    "bytes": 177833
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 14194
+    "bytes": 13164
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-02 19:00 Sheffield Wednesday v Gateshead @ ",
       "2026-11-03 19:00 Salford City v Barnsley @ ",
-      "2026-11-03 19:00 Blackpool v Accrington Stanley @ "
+      "2026-11-03 19:00 Blackpool v Accrington Stanley @ ",
+      "2026-11-03 19:00 Port Vale v Shrewsbury Town @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 12,
+    "jogos_parseados": 11,
     "amostra": [
       "2026-11-21 19:00 Port Vale / Shrewsbury v Fleetwood Town @ ",
       "2026-11-21 19:00 Grimsby Town v Chorley @ ",
