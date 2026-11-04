@@ -13,7 +13,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "5af51b09e902e0bf",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -29,7 +29,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-0",
     "id": "a703ccc545eb00d6",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -45,7 +45,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-3",
     "id": "cfb4a82294081ac3",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -61,7 +61,7 @@
     "url": "",
     "extra": "status=Jugado; placar=5-0",
     "id": "2bdaad68f4630cfe",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -75,9 +75,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por iniciar; placar=0-0",
+    "extra": "status=Jugado; placar=2-2",
     "id": "a4fa03e4d1d506b5",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -91,9 +91,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=1-0",
     "id": "9b54acd980c9fcb4",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -109,7 +109,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-2",
     "id": "0bb5df7c7af3c796",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -125,7 +125,7 @@
     "url": "",
     "extra": "status=Jugado; placar=5-1",
     "id": "8fc1c65a601755bc",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -141,7 +141,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-2",
     "id": "4bbb350a794bb038",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -157,7 +157,7 @@
     "url": "",
     "extra": "status=Jugado; placar=0-1",
     "id": "7cf124a3f1acb517",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -171,9 +171,9 @@
     "estadio": "",
     "rodada": "Fase Final Grupo 2",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=En juego; placar=0-0",
     "id": "a972d8a41b64aa88",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -187,9 +187,9 @@
     "estadio": "",
     "rodada": "Fase Final Grupo 2",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=En juego; placar=0-0",
     "id": "d111346be2ceca7b",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -203,9 +203,9 @@
     "estadio": "",
     "rodada": "Fase Final Grupo 3",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=En juego; placar=1-2",
     "id": "151977d735b35ab2",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -219,8 +219,24 @@
     "estadio": "",
     "rodada": "Fase Final Grupo 3",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=En juego; placar=1-0",
     "id": "a810ff7af2bce109",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-11-15",
+    "hora": "17:00",
+    "mandante": "Cristal",
+    "visitante": "A. Atlético",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Final",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "2e80cdb19684c72a",
+    "atualizado_em": "2026-11-04T20:20:31"
   }
 ]

@@ -1,6 +1,150 @@
 [
   {
     "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-10-31",
+    "hora": "15:15",
+    "mandante": "ADA Jaén",
+    "visitante": "Sport Huancayo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo Campeonato B",
+    "url": "",
+    "extra": "status=Jugado; placar=5-1",
+    "id": "c551ea9a43877bb5",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-10-31",
+    "hora": "15:15",
+    "mandante": "Alianza UDH",
+    "visitante": "San Martín",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo Campeonato C",
+    "url": "",
+    "extra": "status=Jugado; placar=0-1",
+    "id": "6b9572f61586e5cc",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-10-31",
+    "hora": "15:15",
+    "mandante": "Comerciantes FC",
+    "visitante": "Llacuabamba",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo Campeonato B",
+    "url": "",
+    "extra": "status=Jugado; placar=1-2",
+    "id": "e6e756f8801577f7",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-10-31",
+    "hora": "15:15",
+    "mandante": "Mannucci",
+    "visitante": "Bentín Tacna",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo Campeonato C",
+    "url": "",
+    "extra": "status=Jugado; placar=2-2",
+    "id": "a5d037224be2b2f3",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-02",
+    "hora": "11:00",
+    "mandante": "S. Huancayo",
+    "visitante": "Melgar",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=2-0",
+    "id": "b654f3d7b2ef9621",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-02",
+    "hora": "13:15",
+    "mandante": "UTC",
+    "visitante": "Garcilaso",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=2-3",
+    "id": "4acf82079344b671",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-02",
+    "hora": "15:30",
+    "mandante": "Cristal",
+    "visitante": "FC Cajamarca",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=5-0",
+    "id": "1b4c0948ea35859a",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-03",
+    "hora": "15:00",
+    "mandante": "Comerciantes",
+    "visitante": "ADT",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=2-2",
+    "id": "0b875955b8f7d2cd",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-03",
+    "hora": "20:00",
+    "mandante": "Alianza Lima",
+    "visitante": "Cienciano",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=1-0",
+    "id": "260c693979943158",
+    "atualizado_em": "2026-11-04T20:20:31"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
     "data": "2026-11-04",
     "hora": "14:00",
@@ -11,9 +155,9 @@
     "estadio": "",
     "rodada": "Fase Final Grupo 3",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=En juego; placar=1-2",
     "id": "2a8cd3a1721abe3c",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "AFA",
@@ -117,9 +261,9 @@
     "estadio": "",
     "rodada": "Fase Final Grupo 2",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=En juego; placar=0-0",
     "id": "a8dd5c99f431391f",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -133,9 +277,9 @@
     "estadio": "",
     "rodada": "Fase Final Grupo 2",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=En juego; placar=0-0",
     "id": "e6d6bf85a1305416",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -149,9 +293,9 @@
     "estadio": "",
     "rodada": "Fase Final Grupo 3",
     "url": "",
-    "extra": "status=Por jugar",
+    "extra": "status=En juego; placar=1-0",
     "id": "9cac0a3df471df88",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "FGF",
@@ -593,7 +737,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "35fb99a9e16f10fd",
-    "atualizado_em": "2026-11-03T20:00:05"
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "SofaScore",
@@ -9357,6 +9501,22 @@
     "lng": -71.31015,
     "id": "9d047b27942a61eb",
     "atualizado_em": "2026-11-04T13:02:11+00:00"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-11-15",
+    "hora": "17:00",
+    "mandante": "Cristal",
+    "visitante": "A. Atlético",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Final",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "62f0e0f72feb5190",
+    "atualizado_em": "2026-11-04T20:20:31"
   },
   {
     "fonte": "campeonatochileno.cl",
