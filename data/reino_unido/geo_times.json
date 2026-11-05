@@ -3269,6 +3269,12 @@
 "lng": -0.0161,
 "local": "Hayes Lane"
 },
+"Inglaterra|Bromley|FA": {
+"fonte": "nome",
+"lat": 51.4028,
+"lng": 0.01481,
+"local": "Bromley"
+},
 "Inglaterra|Bromsgrove Sporting": {
 "fonte": "nome",
 "lat": 52.33538,
@@ -9874,6 +9880,12 @@
 "lat": 52.68862,
 "lng": -2.74936,
 "local": "Croud Meadow"
+},
+"Inglaterra|Shrewsbury Town|FA": {
+"fonte": "nome",
+"lat": 52.70775,
+"lng": -2.75407,
+"local": "Shrewsbury"
 },
 "Inglaterra|Sidmouth Town": {
 "fonte": "nome",
