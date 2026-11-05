@@ -3685,6 +3685,22 @@
     "atualizado_em": "2026-11-04T21:36:18"
   },
   {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-11-03",
+    "hora": "17:00",
+    "mandante": "Club 2 de Mayo",
+    "visitante": "Club Sportivo Trinidense",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Río Parapití",
+    "rodada": "Jornada 18",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-18-2-de-mayo-vs-trinidense-923",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=0-0",
+    "id": "c75287bfab0a4606",
+    "atualizado_em": "2026-11-05T19:00:48"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Venezuela - Liga FUTVE (Primera División)",
     "data": "2026-11-03",
@@ -3761,6 +3777,22 @@
     "extra": "pais=Brasil; cidade=Chapecó",
     "id": "de85e18cc990486e",
     "atualizado_em": "2026-11-05T10:49:10"
+  },
+  {
+    "fonte": "APF",
+    "competicao": "Paraguay - APF - Copa de Primera",
+    "data": "2026-11-03",
+    "hora": "19:30",
+    "mandante": "Club Nacional Asunción",
+    "visitante": "Club Sportivo San Lorenzo",
+    "pais": "Paraguay",
+    "cidade": "",
+    "estadio": "Estadio Arsenio Erico",
+    "rodada": "Jornada 18",
+    "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-18-nacional-vs-san-lorenzo-925",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=0-2",
+    "id": "894217cf9995455b",
+    "atualizado_em": "2026-11-05T19:00:48"
   },
   {
     "fonte": "ESPN",
@@ -4202,9 +4234,9 @@
     "estadio": "Estadio Tigo La Huerta",
     "rodada": "Jornada 18",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-18-libertad-vs-cerro-porteno-924",
-    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=0-1",
     "id": "f26959900931f930",
-    "atualizado_em": "2026-11-04T18:52:13"
+    "atualizado_em": "2026-11-05T19:00:48"
   },
   {
     "fonte": "APF",
@@ -4218,9 +4250,9 @@
     "estadio": "Estadio Ameliano Villeta",
     "rodada": "Jornada 18",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-18-sportivo-amel-vs-guarani-928",
-    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=0-1",
     "id": "7889bf25602bf7ad",
-    "atualizado_em": "2026-11-04T18:52:13"
+    "atualizado_em": "2026-11-05T19:00:48"
   },
   {
     "fonte": "SofaScore",
@@ -4450,9 +4482,9 @@
     "estadio": "Estadio ueno Defensores del Chaco",
     "rodada": "Jornada 18",
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-18-olimpia-vs-recoleta-926",
-    "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
+    "extra": "status=FullTime; status_nome=El partido ha finalizado y el resultado es definitivo; placar=4-1",
     "id": "8f5d1bcd63b4aec7",
-    "atualizado_em": "2026-11-04T18:52:13"
+    "atualizado_em": "2026-11-05T19:00:48"
   },
   {
     "fonte": "CBF",
@@ -4814,7 +4846,7 @@
     "url": "https://www.apf.org.py/partidos/temporada-2026-paraguay-primera-division-clausura-18-rubio-nu-vs-luqueno-927",
     "extra": "status=PreMatch; status_nome=El partido aún no ha comenzado",
     "id": "7df46a3bc4793fe4",
-    "atualizado_em": "2026-11-04T18:52:13"
+    "atualizado_em": "2026-11-05T19:00:48"
   },
   {
     "fonte": "SofaScore",
