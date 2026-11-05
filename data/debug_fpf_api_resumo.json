@@ -8,35 +8,11 @@
     "historico": 4
   },
   {
-    "campeonato": "Brasil - FPF - Copa Paulista (Profissional)",
-    "IdCampeonato": 100,
-    "IdCategoria": 70,
-    "total_ano": 70,
-    "programados": 0,
-    "historico": 8
-  },
-  {
     "campeonato": "Brasil - FPF - Taça Paulistana Petrobras (Amador)",
     "IdCampeonato": 214,
     "IdCategoria": 38,
     "total_ano": 30,
     "programados": 6,
-    "historico": 20
-  },
-  {
-    "campeonato": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
-    "IdCampeonato": 236,
-    "IdCategoria": 38,
-    "total_ano": 15,
-    "programados": 0,
-    "historico": 15
-  },
-  {
-    "campeonato": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
-    "IdCampeonato": 237,
-    "IdCategoria": 38,
-    "total_ano": 18,
-    "programados": 0,
     "historico": 18
   },
   {
@@ -53,15 +29,7 @@
     "IdCategoria": 94,
     "total_ano": 361,
     "programados": 4,
-    "historico": 52
-  },
-  {
-    "campeonato": "Brasil - FPF - Paulista Sub-20 - Série B (SUB20 - Série B)",
-    "IdCampeonato": 219,
-    "IdCategoria": 93,
-    "total_ano": 242,
-    "programados": 0,
-    "historico": 7
+    "historico": 51
   },
   {
     "campeonato": "Brasil - FPF - Paulista F Sub-17 Petrobras (Amador)",
@@ -69,7 +37,7 @@
     "IdCategoria": 38,
     "total_ano": 54,
     "programados": 4,
-    "historico": 18
+    "historico": 12
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-17 (SUB17)",
@@ -88,20 +56,12 @@
     "historico": 81
   },
   {
-    "campeonato": "Brasil - FPF - Paulista F Sub-15 Petrobras (Amador)",
-    "IdCampeonato": 184,
-    "IdCategoria": 38,
-    "total_ano": 63,
-    "programados": 0,
-    "historico": 6
-  },
-  {
     "campeonato": "Brasil - FPF - Paulista Sub-14 (SUB14)",
     "IdCampeonato": 202,
     "IdCategoria": 90,
     "total_ano": 658,
     "programados": 4,
-    "historico": 57
+    "historico": 41
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-13 (SUB13)",
@@ -109,7 +69,7 @@
     "IdCategoria": 81,
     "total_ano": 658,
     "programados": 4,
-    "historico": 57
+    "historico": 41
   },
   {
     "campeonato": "Brasil - FPF - Paulista F Sub-13 Petrobras (Amador)",
@@ -144,12 +104,60 @@
     "historico": 26
   },
   {
+    "campeonato": "Brasil - FPF - Torneio F Sub-13 Petrobras - Sede Sorocaba (Amador)",
+    "IdCampeonato": 229,
+    "IdCategoria": 38,
+    "total_ano": 12,
+    "programados": 12,
+    "historico": 12
+  },
+  {
+    "campeonato": "Brasil - FPF - Torneio F Sub-15 Petrobras - Sede Sorocaba (Amador)",
+    "IdCampeonato": 230,
+    "IdCategoria": 38,
+    "total_ano": 12,
+    "programados": 12,
+    "historico": 12
+  },
+  {
     "campeonato": "Brasil - FPF - Copa Paulista F Petrobras (Amador)",
     "IdCampeonato": 178,
     "IdCategoria": 38,
     "total_ano": 0,
     "programados": 0,
     "historico": 0
+  },
+  {
+    "campeonato": "Brasil - FPF - Paulista F Sub-15 Petrobras (Amador)",
+    "IdCampeonato": 184,
+    "IdCategoria": 38,
+    "total_ano": 63,
+    "programados": 0,
+    "historico": 6
+  },
+  {
+    "campeonato": "Brasil - FPF - Paulista Sub-20 - Série B (SUB20 - Série B)",
+    "IdCampeonato": 219,
+    "IdCategoria": 93,
+    "total_ano": 242,
+    "programados": 0,
+    "historico": 6
+  },
+  {
+    "campeonato": "Brasil - FPF - Festival Feminino Sub-12 - Sede Itapetininga (Amador)",
+    "IdCampeonato": 236,
+    "IdCategoria": 38,
+    "total_ano": 15,
+    "programados": 0,
+    "historico": 15
+  },
+  {
+    "campeonato": "Brasil - FPF - Festival Feminino Sub-14 - Sede Itapetininga (Amador)",
+    "IdCampeonato": 237,
+    "IdCategoria": 38,
+    "total_ano": 18,
+    "programados": 0,
+    "historico": 18
   },
   {
     "campeonato": "Brasil - FPF - Festival Feminino Sub-14 Petrobras - Sede Jaú (Amador)",
@@ -256,12 +264,12 @@
     "historico": 0
   },
   {
-    "campeonato": "Brasil - FPF - Torneio F Sub-15 Petrobras - Sede Sorocaba (Amador)",
-    "IdCampeonato": 230,
-    "IdCategoria": 38,
-    "total_ano": 12,
-    "programados": 12,
-    "historico": 12
+    "campeonato": "Brasil - FPF - Copa Paulista (Profissional)",
+    "IdCampeonato": 100,
+    "IdCategoria": 70,
+    "total_ano": 70,
+    "programados": 0,
+    "historico": 7
   },
   {
     "campeonato": "Brasil - FPF - Torneio F Sub-14 Petrobras – Sede Sorocaba (Amador)",
@@ -310,14 +318,6 @@
     "total_ano": 0,
     "programados": 0,
     "historico": 0
-  },
-  {
-    "campeonato": "Brasil - FPF - Torneio F Sub-13 Petrobras - Sede Sorocaba (Amador)",
-    "IdCampeonato": 229,
-    "IdCategoria": 38,
-    "total_ano": 12,
-    "programados": 12,
-    "historico": 12
   },
   {
     "campeonato": "Brasil - FPF - Torneio F Sub-12 Petrobras - Sede Sorocaba (Amador)",
