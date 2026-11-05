@@ -11,25 +11,9 @@
     "estadio": "",
     "rodada": "Fase Regular",
     "url": "",
-    "extra": "status=Por jugar; placar=0-0",
+    "extra": "status=Jugado; placar=2-2",
     "id": "5af51b09e902e0bf",
-    "atualizado_em": "2026-11-04T20:20:31"
-  },
-  {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-11-02",
-    "hora": "11:00",
-    "mandante": "S. Huancayo",
-    "visitante": "Melgar",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=2-0",
-    "id": "a703ccc545eb00d6",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -45,7 +29,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-3",
     "id": "cfb4a82294081ac3",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -61,7 +45,7 @@
     "url": "",
     "extra": "status=Jugado; placar=5-0",
     "id": "2bdaad68f4630cfe",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -77,7 +61,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-2",
     "id": "a4fa03e4d1d506b5",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -93,7 +77,23 @@
     "url": "",
     "extra": "status=Jugado; placar=1-0",
     "id": "9b54acd980c9fcb4",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-06",
+    "hora": "15:00",
+    "mandante": "Grau",
+    "visitante": "Cusco FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Por jugar; placar=0-0",
+    "id": "71807d0b5c6e2c38",
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -109,7 +109,7 @@
     "url": "",
     "extra": "status=Jugado; placar=1-2",
     "id": "0bb5df7c7af3c796",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -125,7 +125,7 @@
     "url": "",
     "extra": "status=Jugado; placar=5-1",
     "id": "8fc1c65a601755bc",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -141,7 +141,7 @@
     "url": "",
     "extra": "status=Jugado; placar=2-2",
     "id": "4bbb350a794bb038",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -157,71 +157,71 @@
     "url": "",
     "extra": "status=Jugado; placar=0-1",
     "id": "7cf124a3f1acb517",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
     "data": "2026-11-04",
-    "hora": "15:00",
-    "mandante": "Universitario",
-    "visitante": "J. Cautivo",
+    "hora": "15:30",
+    "mandante": "S. Cristal",
+    "visitante": "S. Domingo",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
-    "rodada": "Fase Final Grupo 2",
+    "rodada": "Fase Final Grupo 1",
     "url": "",
-    "extra": "status=En juego; placar=0-0",
-    "id": "a972d8a41b64aa88",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "extra": "status=Jugado; placar=6-1",
+    "id": "8e7e0f35bb76755e",
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
     "data": "2026-11-04",
-    "hora": "15:00",
-    "mandante": "J. Aurich",
-    "visitante": "Alianza Lima",
+    "hora": "15:30",
+    "mandante": "Volante",
+    "visitante": "Pacífico FC",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
-    "rodada": "Fase Final Grupo 2",
+    "rodada": "Fase Final Grupo 1",
     "url": "",
-    "extra": "status=En juego; placar=0-0",
-    "id": "d111346be2ceca7b",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "extra": "status=Jugado; placar=2-3",
+    "id": "7e5c5d0c983f4234",
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
     "data": "2026-11-04",
-    "hora": "14:00",
-    "mandante": "D. Ucrania",
-    "visitante": "S. Company",
+    "hora": "15:30",
+    "mandante": "UDA",
+    "visitante": "Melgar",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
-    "rodada": "Fase Final Grupo 3",
+    "rodada": "Fase Final Grupo 4",
     "url": "",
-    "extra": "status=En juego; placar=1-2",
-    "id": "151977d735b35ab2",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "extra": "status=Jugado; placar=2-5",
+    "id": "e2e1d960f34de082",
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
     "competicao": "Peru - Liga 3",
     "data": "2026-11-04",
-    "hora": "15:00",
-    "mandante": "Valle Sagrado",
-    "visitante": "ASA FC",
+    "hora": "18:00",
+    "mandante": "Nacional",
+    "visitante": "Ecosem",
     "pais": "Peru",
     "cidade": "",
     "estadio": "",
-    "rodada": "Fase Final Grupo 3",
+    "rodada": "Fase Final Grupo 4",
     "url": "",
-    "extra": "status=En juego; placar=1-0",
-    "id": "a810ff7af2bce109",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "extra": "status=Jugado; placar=2-1",
+    "id": "da73d35ba388f917",
+    "atualizado_em": "2026-11-05T20:31:17"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -237,6 +237,6 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "2e80cdb19684c72a",
-    "atualizado_em": "2026-11-04T20:20:31"
+    "atualizado_em": "2026-11-05T20:31:17"
   }
 ]
