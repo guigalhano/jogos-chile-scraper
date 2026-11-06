@@ -99,7 +99,7 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140703
+    "bytes": 140707
   },
   {
     "copa": "Women's FA Cup",
@@ -137,30 +137,16 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 180580
-  },
-  {
-    "copa": "FA Youth Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "status": 200,
-    "bytes": 3598
+    "bytes": 179791
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-05 19:00 Cambridge United v Walthamstow @ ",
       "2026-11-10 19:00 Luton Town v Gillingham @ ",
-      "2026-11-13 19:00 Bradford City v Crewe Alexandra @ "
-    ]
-  },
-  {
-    "copa": "FA Youth Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 1,
-    "amostra": [
-      "2026-11-21 19:00 Barnet v Colchester / AFC Sudbury @ "
+      "2026-11-13 19:00 Bradford City v Crewe Alexandra @ ",
+      "2026-11-13 20:00 Ilkeston Town v Tranmere Rovers @ "
     ]
   }
 ]
