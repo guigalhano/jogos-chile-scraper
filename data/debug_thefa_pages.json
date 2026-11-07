@@ -99,19 +99,19 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140707
+    "bytes": 140772
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 180584
+    "bytes": 180808
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 7764
+    "bytes": 7762
   },
   {
     "copa": "Women's FA Cup",
@@ -128,7 +128,7 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "jogos_parseados": 5,
     "amostra": [
-      "2026-11-15 14:00 Real Bedford Women v Fulham Women @ ",
+      "2026-11-15 14:00 Keynsham Town Ladies v Millwall Lionesses LFC @ ",
       "2026-11-15 14:00 Maidenhead United Women v AFC Wimbledon Women @ ",
       "2026-11-15 14:00 Bridgwater United Women v Lewes Women @ "
     ]
@@ -137,7 +137,7 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 179791
+    "bytes": 179827
   },
   {
     "copa": "FA Youth Cup",
@@ -146,7 +146,7 @@
     "amostra": [
       "2026-11-10 19:00 Luton Town v Gillingham @ ",
       "2026-11-13 19:00 Bradford City v Crewe Alexandra @ ",
-      "2026-11-13 20:00 Ilkeston Town v Tranmere Rovers @ "
+      "2026-11-13 19:00 Hertford Town v Cambridge United @ "
     ]
   }
 ]
