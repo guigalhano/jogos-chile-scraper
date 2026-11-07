@@ -182,13 +182,13 @@
   "País de Gales - Cymru North": {
     "id": 13820,
     "temporada": "Cymru Championship, North 26/27",
-    "eventos_janela": 153,
+    "eventos_janela": 156,
     "erro": null
   },
   "País de Gales - Cymru South": {
     "id": 13821,
     "temporada": "Cymru Championship South 26/27",
-    "eventos_janela": 163,
+    "eventos_janela": 165,
     "erro": null
   },
   "País de Gales - Welsh Cup": {
@@ -289,15 +289,11 @@
   },
   "Irlanda - Galway & District League": {
     "id": 38111,
-    "temporada": "Galway & district league 26/27",
-    "eventos_janela": 95,
-    "erro": null
+    "erro": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
   },
   "Irlanda - FAI Intermediate Cup": {
     "id": 38577,
-    "temporada": "FAI Intermediate Cup 26/27",
-    "eventos_janela": 0,
-    "erro": null
+    "erro": "Page.evaluate: Execution context was destroyed, most likely because of a navigation"
   },
   "Irlanda - Leinster Senior Cup": {
     "id": 24715,
@@ -356,13 +352,13 @@
   "Irlanda do Norte - NIFL Premiership": {
     "id": 200,
     "temporada": "Premiership 26/27",
-    "eventos_janela": 128,
+    "eventos_janela": 133,
     "erro": null
   },
   "Irlanda do Norte - NIFL Championship": {
     "id": 701,
     "temporada": "Championship 26/27",
-    "eventos_janela": 144,
+    "eventos_janela": 149,
     "erro": null
   },
   "Irlanda do Norte - Irish Cup": {
@@ -386,7 +382,7 @@
   "Irlanda do Norte - NIFL Premier Intermediate League": {
     "id": 31777,
     "temporada": "NIFL Premier Intermediate League 26/27",
-    "eventos_janela": 89,
+    "eventos_janela": 94,
     "erro": null
   },
   "Irlanda do Norte - Women's Premiership": {
