@@ -67,70 +67,66 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 173483
+    "bytes": 173355
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
     "status": 200,
-    "bytes": 10076
+    "bytes": 1731
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-08 10:30 Greenwich Park Rangers v The Gun @ ",
       "2026-11-08 11:00 MUD Red Lion v Stourport Swifts (Sunday) @ ",
-      "2026-11-08 13:00 Molly v Black Bull @ "
+      "2026-11-08 13:00 Molly v Black Bull @ ",
+      "2026-11-08 14:00 Hartlepool AFC Supporters v Easington CW (Sunday) @ "
     ]
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
-    "jogos_parseados": 9,
-    "amostra": [
-      "2026-11-08 14:00 Northstar v Nags Head (Winslow) @ ",
-      "2026-11-08 14:00 Baddoo v Baiteze Squad @ ",
-      "2026-11-08 14:00 Trabzonspor UK v Mehmetcik Galata @ "
-    ]
+    "jogos_parseados": 0,
+    "amostra": []
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140772
+    "bytes": 140707
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 180808
+    "bytes": 180041
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 7762
+    "bytes": 6733
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-08 14:00 Lye Town Women v Peterborough United Women @ ",
       "2026-11-14 15:00 Dulwich Hamlet Women v Portishead Town Ladies @ ",
-      "2026-11-15 12:00 Norwich City Women v AFC Bournemouth Women @ "
+      "2026-11-15 12:00 Norwich City Women v AFC Bournemouth Women @ ",
+      "2026-11-15 13:00 Derby County Women v Bolton Wanderers Women @ "
     ]
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
-    "jogos_parseados": 5,
+    "jogos_parseados": 4,
     "amostra": [
-      "2026-11-15 14:00 Keynsham Town Ladies v Millwall Lionesses LFC @ ",
       "2026-11-15 14:00 Maidenhead United Women v AFC Wimbledon Women @ ",
-      "2026-11-15 14:00 Bridgwater United Women v Lewes Women @ "
+      "2026-11-15 14:00 Bridgwater United Women v Lewes Women @ ",
+      "2026-11-15 15:00 Chesterfield Women v Leafield Athletic Ladies @ "
     ]
   },
   {
