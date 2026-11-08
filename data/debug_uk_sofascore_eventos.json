@@ -2,13 +2,13 @@
   "Inglaterra - Premier League": {
     "id": 17,
     "temporada": "Premier League 26/27",
-    "eventos_janela": 310,
+    "eventos_janela": 313,
     "erro": null
   },
   "Inglaterra - Championship": {
     "id": 18,
     "temporada": "Championship 26/27",
-    "eventos_janela": 419,
+    "eventos_janela": 418,
     "erro": null
   },
   "Inglaterra - League One": {
@@ -26,7 +26,7 @@
   "Inglaterra - National League": {
     "id": 173,
     "temporada": "National League 26/27",
-    "eventos_janela": 399,
+    "eventos_janela": 398,
     "erro": null
   },
   "Inglaterra - FA Cup": {
@@ -80,7 +80,7 @@
   "Inglaterra - Women's Super League": {
     "id": 1044,
     "temporada": "Super League Women 26/27",
-    "eventos_janela": 140,
+    "eventos_janela": 143,
     "erro": null
   },
   "Inglaterra - Women's Super League 2": {
@@ -122,7 +122,7 @@
   "Escócia - Scottish Cup": {
     "id": 347,
     "temporada": "Scottish Cup 26/27",
-    "eventos_janela": 44,
+    "eventos_janela": 43,
     "erro": null
   },
   "Escócia - League Cup": {
@@ -176,19 +176,19 @@
   "País de Gales - Cymru Premier": {
     "id": 254,
     "temporada": "Cymru Premier 26/27",
-    "eventos_janela": 136,
+    "eventos_janela": 130,
     "erro": null
   },
   "País de Gales - Cymru North": {
     "id": 13820,
     "temporada": "Cymru Championship, North 26/27",
-    "eventos_janela": 156,
+    "eventos_janela": 155,
     "erro": null
   },
   "País de Gales - Cymru South": {
     "id": 13821,
     "temporada": "Cymru Championship South 26/27",
-    "eventos_janela": 165,
+    "eventos_janela": 159,
     "erro": null
   },
   "País de Gales - Welsh Cup": {
@@ -248,7 +248,7 @@
   "Irlanda - Premier Division": {
     "id": 192,
     "temporada": "Premier Division 2026",
-    "eventos_janela": 16,
+    "eventos_janela": 11,
     "erro": null
   },
   "Irlanda - First Division": {
@@ -289,11 +289,15 @@
   },
   "Irlanda - Galway & District League": {
     "id": 38111,
-    "erro": "Page.evaluate: Execution context was destroyed, most likely because of a navigation."
+    "temporada": "Galway & district league 26/27",
+    "eventos_janela": 95,
+    "erro": null
   },
   "Irlanda - FAI Intermediate Cup": {
     "id": 38577,
-    "erro": "Page.evaluate: Execution context was destroyed, most likely because of a navigation"
+    "temporada": "FAI Intermediate Cup 26/27",
+    "eventos_janela": 0,
+    "erro": null
   },
   "Irlanda - Leinster Senior Cup": {
     "id": 24715,
@@ -352,13 +356,13 @@
   "Irlanda do Norte - NIFL Premiership": {
     "id": 200,
     "temporada": "Premiership 26/27",
-    "eventos_janela": 133,
+    "eventos_janela": 128,
     "erro": null
   },
   "Irlanda do Norte - NIFL Championship": {
     "id": 701,
     "temporada": "Championship 26/27",
-    "eventos_janela": 149,
+    "eventos_janela": 142,
     "erro": null
   },
   "Irlanda do Norte - Irish Cup": {
@@ -382,7 +386,7 @@
   "Irlanda do Norte - NIFL Premier Intermediate League": {
     "id": 31777,
     "temporada": "NIFL Premier Intermediate League 26/27",
-    "eventos_janela": 94,
+    "eventos_janela": 89,
     "erro": null
   },
   "Irlanda do Norte - Women's Premiership": {
