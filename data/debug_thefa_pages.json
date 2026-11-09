@@ -67,41 +67,29 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 173355
-  },
-  {
-    "copa": "FA Sunday Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
-    "status": 200,
-    "bytes": 1731
+    "bytes": 168334
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
-    "jogos_parseados": 20,
+    "jogos_parseados": 16,
     "amostra": [
-      "2026-11-08 11:00 MUD Red Lion v Stourport Swifts (Sunday) @ ",
-      "2026-11-08 13:00 Molly v Black Bull @ ",
-      "2026-11-08 14:00 Hartlepool AFC Supporters v Easington CW (Sunday) @ "
+      "2026-12-06 13:00 Black Bull v Custys @ ",
+      "2026-12-06 13:00 Witton Park Rose & Crown v Home Bargains @ ",
+      "2026-12-06 13:00 Sunderland Southwick v Hartlepool AFC Supporters @ "
     ]
-  },
-  {
-    "copa": "FA Sunday Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=2&page=2",
-    "jogos_parseados": 0,
-    "amostra": []
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140707
+    "bytes": 140721
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 180041
+    "bytes": 180046
   },
   {
     "copa": "Women's FA Cup",
@@ -133,7 +121,7 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 179827
+    "bytes": 181130
   },
   {
     "copa": "FA Youth Cup",
@@ -141,8 +129,8 @@
     "jogos_parseados": 20,
     "amostra": [
       "2026-11-10 19:00 Luton Town v Gillingham @ ",
-      "2026-11-13 19:00 Bradford City v Crewe Alexandra @ ",
-      "2026-11-13 19:00 Hertford Town v Cambridge United @ "
+      "2026-11-12 19:00 Blackpool v Burton Albion @ ",
+      "2026-11-13 19:00 Bradford City v Crewe Alexandra @ "
     ]
   }
 ]
