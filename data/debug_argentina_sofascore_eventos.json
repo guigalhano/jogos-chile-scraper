@@ -3,7 +3,7 @@
     "id": 155,
     "categoria": 48,
     "temporada": "Primera LPF 2026",
-    "eventos_janela": 24,
+    "eventos_janela": 19,
     "erro": null
   },
   "Copa de la Liga Profesional": {
@@ -24,7 +24,7 @@
     "id": 703,
     "categoria": 48,
     "temporada": "Primera Nacional 2026",
-    "eventos_janela": 13,
+    "eventos_janela": 11,
     "erro": null
   },
   "Primera B Metropolitana": {
@@ -52,7 +52,7 @@
     "id": 14090,
     "categoria": 48,
     "temporada": "Torneo Federal A 2026",
-    "eventos_janela": 11,
+    "eventos_janela": 9,
     "erro": null
   },
   "Supercopa Argentina": {
@@ -66,7 +66,7 @@
     "id": 10495,
     "categoria": 48,
     "temporada": "Primera Division, Women 2026",
-    "eventos_janela": 8,
+    "eventos_janela": 15,
     "erro": null
   },
   "Trofeo de Campeones de la Liga Profesional": {
@@ -115,49 +115,49 @@
     "id": 21340,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Centro 2026",
-    "eventos_janela": 12,
+    "eventos_janela": 8,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Cuyo": {
     "id": 21342,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Cuyo 2026",
-    "eventos_janela": 7,
+    "eventos_janela": 5,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Litoral Sur": {
     "id": 21341,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Litoral Sur 2026",
-    "eventos_janela": 7,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Norte": {
     "id": 21338,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Norte 2026",
-    "eventos_janela": 7,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Patagónica": {
     "id": 21345,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Patagónica 2026",
-    "eventos_janela": 13,
+    "eventos_janela": 8,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Pampeana Sur": {
     "id": 21344,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Pampeana Sur 2026",
-    "eventos_janela": 7,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Pampeana Norte": {
     "id": 21343,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Pampeana Norte 2026",
-    "eventos_janela": 11,
+    "eventos_janela": 8,
     "erro": null
   },
   "Liga Independiente de Las Colonias, Apertura": {
@@ -255,7 +255,7 @@
     "id": 22183,
     "categoria": 1783,
     "temporada": "Liga Regional Riotercerense de Fútbol - Primera B 2026",
-    "eventos_janela": 6,
+    "eventos_janela": 4,
     "erro": null
   },
   "Asociación Rosarina de Fútbol": {
@@ -339,7 +339,7 @@
     "id": 23050,
     "categoria": 1783,
     "temporada": "Liga Regional de Coronel Suárez, Clausura 26/27",
-    "eventos_janela": 18,
+    "eventos_janela": 8,
     "erro": null
   },
   "Copa Hermes Desio": {
@@ -409,7 +409,7 @@
     "id": 25398,
     "categoria": 1783,
     "temporada": "Clausura 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 3,
     "erro": null
   },
   "Liga Regional Colón, Quinta": {
@@ -500,7 +500,7 @@
     "id": 26840,
     "categoria": 1783,
     "temporada": "Copa País 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 3,
     "erro": null
   },
   "Copa País, Región Pampeana Norte": {
@@ -619,14 +619,14 @@
     "id": 31822,
     "categoria": 1783,
     "temporada": "2026",
-    "eventos_janela": 34,
+    "eventos_janela": 29,
     "erro": null
   },
   "Divisional B": {
     "id": 31823,
     "categoria": 1783,
     "temporada": "2026",
-    "eventos_janela": 22,
+    "eventos_janela": 18,
     "erro": null
   },
   "Newell's Cup U11": {
@@ -689,7 +689,7 @@
     "id": 35872,
     "categoria": 1783,
     "temporada": "Clausura 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 2,
     "erro": null
   },
   "Liga de Fútbol Valle del Chubut": {
@@ -731,7 +731,7 @@
     "id": 36087,
     "categoria": 1783,
     "temporada": "Liga de Fútbol Centro Santa Cruz  2026",
-    "eventos_janela": 12,
+    "eventos_janela": 8,
     "erro": null
   },
   "Federación Santafesina de Fútbol": {
@@ -762,6 +762,13 @@
     "eventos_janela": 12,
     "erro": null
   },
+  "Liga Lujanense de Fútbol - Primera División": {
+    "id": 39952,
+    "categoria": 1783,
+    "temporada": "Liga Lujanense de Fútbol - Primera División 26/27",
+    "eventos_janela": 0,
+    "erro": null
+  },
   "Liga Marplatense de Fútbol": {
     "id": 37591,
     "categoria": 1783,
@@ -787,7 +794,7 @@
     "id": 36552,
     "categoria": 1783,
     "temporada": "Liga Regional de Fútbol de Laboulaye 2026",
-    "eventos_janela": 7,
+    "eventos_janela": 15,
     "erro": null
   },
   "Liga Regional de Fútbol del Bermejo, Reserve": {
