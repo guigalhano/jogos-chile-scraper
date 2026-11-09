@@ -1,4 +1,18 @@
 ﻿id,fonte,competicao,data,hora,pais,cidade,mandante,visitante,estadio,rodada,url,extra,atualizado_em
+c551ea9a43877bb5,FUTBOLPERUANO,Peru - Liga 2,2026-10-31,15:15,Peru,,ADA Jaén,Sport Huancayo,,Grupo Campeonato B,,status=Jugado; placar=5-1,2026-11-09T22:55:24
+6b9572f61586e5cc,FUTBOLPERUANO,Peru - Liga 2,2026-10-31,15:15,Peru,,Alianza UDH,San Martín,,Grupo Campeonato C,,status=Jugado; placar=0-1,2026-11-09T22:55:24
+e6e756f8801577f7,FUTBOLPERUANO,Peru - Liga 2,2026-10-31,15:15,Peru,,Comerciantes FC,Llacuabamba,,Grupo Campeonato B,,status=Jugado; placar=1-2,2026-11-09T22:55:24
+a5d037224be2b2f3,FUTBOLPERUANO,Peru - Liga 2,2026-10-31,15:15,Peru,,Mannucci,Bentín Tacna,,Grupo Campeonato C,,status=Jugado; placar=2-2,2026-11-09T22:55:24
+abb3799d0d0e7370,FUTBOLPERUANO,Peru - Liga 1,2026-11-07,18:00,Peru,,Melgar,Juan Pablo II,,Fase Regular,,status=Jugado; placar=2-1,2026-11-09T22:55:24
+69d8721be6d323d2,FUTBOLPERUANO,Peru - Liga 1,2026-11-07,20:30,Peru,,Cienciano,S. Huancayo,,Fase Regular,,status=Jugado; placar=1-2,2026-11-09T22:55:24
+983c8d8488d4d3b1,FUTBOLPERUANO,Peru - Liga 1,2026-11-08,13:00,Peru,,Los Chankas,Alianza Lima,,Fase Regular,,status=Jugado; placar=1-1,2026-11-09T22:55:24
+f590dc6e5dd2405f,FUTBOLPERUANO,Peru - Liga 3,2026-11-08,15:00,Peru,,Alianza Lima,J. Cautivo,,Fase Final Grupo 2,,status=Jugado; placar=1-0,2026-11-09T22:55:24
+f978b70c28e22a18,FUTBOLPERUANO,Peru - Liga 1,2026-11-08,15:30,Peru,,Boys,UTC,,Fase Regular,,status=Jugado; placar=0-0,2026-11-09T22:55:24
+0c0d51d8441e4547,FUTBOLPERUANO,Peru - Liga 3,2026-11-08,15:30,Peru,,ASA FC,S. Company,,Fase Final Grupo 3,,status=Jugado; placar=2-0,2026-11-09T22:55:24
+cf189c51932faa06,FUTBOLPERUANO,Peru - Liga 3,2026-11-08,15:30,Peru,,S. Domingo,Pacífico FC,,Fase Final Grupo 1,,status=Jugado; placar=3-4,2026-11-09T22:55:24
+eab49d03d6545390,FUTBOLPERUANO,Peru - Liga 3,2026-11-08,15:30,Peru,,Volante,S. Cristal,,Fase Final Grupo 1,,status=Jugado; placar=0-1,2026-11-09T22:55:24
+5e72fd553de58b3c,FUTBOLPERUANO,Peru - Liga 1,2026-11-08,18:00,Peru,,Garcilaso,Comerciantes,,Fase Regular,,status=Jugado; placar=0-0,2026-11-09T22:55:24
+4b83d5b60be5981f,FUTBOLPERUANO,Peru - Liga 1,2026-11-08,20:30,Peru,,Universitario,D. Moquegua,,Fase Regular,,status=Jugado; placar=2-2,2026-11-09T22:55:24
 747cf9080cfa32fd,campeonatochileno.cl,Campeonato Nacional Juvenil Femenino Clausura,2026-11-09,13:00,,,Deportes Iquique Juvenil Fem,San Marcos de Arica Juvenil Fem,,Fecha 15,https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/,,2026-07-13T14:46:09
 8d5a1511c5b22b8b,ESPN,Ecuador - LigaPro Serie A,2026-11-09,13:00,Ecuador,Ambato,Mushuc Runa,Delfín,Estadio COAC Mushuc Runa,,,codigo_espn=401921368; status=Scheduled,2026-11-08T20:01:48
 4f59690bac76b348,FPF,Brasil - FPF - Paulista Sub-20 - Série A (SUB20 - Série A),2026-11-09,15:00,Brasil,Barueri,Palmeiras,Santos,Estádio Mun. Orlando Batista Novelli,Rodada 22,https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx,status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=359; grupo=33; fase=SEMIFINAL; canais=TNT; suspencao=LIBERADO,2026-11-08T18:28:27
@@ -243,7 +257,7 @@ d3a4672dcee18fcc,SofaScore,Argentina - Torneo Regional Federal Amateur – Regi�
 f5d410c886713d2b,SofaScore,Argentina - Torneo Regional Federal Amateur – Región Patagónica,2026-11-15,17:00,Argentina,Río Grande,Camioneros de Río Grande,Escorpión FC,,Quarterfinals,https://www.sofascore.com/football/match/escorpion-fc-camioneros-de-rio-grande/leYdsIwxh#id:17482974,pais=Argentina; codigo_sofascore=17482974; time_sofascore=495211; status=Programado; fonte_dados=sofascore; local_aproximado=1,2026-11-08T14:31:37+00:00
 7e1f0ec9d78add74,SofaScore,Argentina - Torneo Regional Federal Amateur – Región Patagónica,2026-11-15,17:00,Argentina,,Comision de Actividades Infantiles,Jorge Newbery de Comodoro Rivadavia,,Quarterfinals,https://www.sofascore.com/football/match/jorge-newbery-de-comodoro-rivadavia-comision-de-actividades-infantiles/NLosweYd#id:17483000,pais=Argentina; codigo_sofascore=17483000; time_sofascore=36838; status=Programado; fonte_dados=sofascore,2026-11-08T14:31:37+00:00
 9d047b27942a61eb,SofaScore,Argentina - Torneo Regional Federal Amateur – Región Patagónica,2026-11-15,17:00,Argentina,San Carlos de Bariloche,Estudiantes Unidos,Alianza Cutral Có,,Quarterfinals,https://www.sofascore.com/football/match/estudiantes-unidos-alianza-cutral-co/HeYdsKeYd#id:17483026,pais=Argentina; codigo_sofascore=17483026; time_sofascore=495235; status=Programado; fonte_dados=sofascore; local_aproximado=1,2026-11-08T14:31:37+00:00
-62f0e0f72feb5190,FUTBOLPERUANO,Peru - Copa de la Liga,2026-11-15,17:00,Peru,,Cristal,A. Atlético,,Final,,status=Por jugar,2026-11-08T18:16:43
+62f0e0f72feb5190,FUTBOLPERUANO,Peru - Copa de la Liga,2026-11-15,17:00,Peru,,Cristal,A. Atlético,,Final,,status=Por jugar,2026-11-09T22:55:24
 36bb15d6c55f45cf,campeonatochileno.cl,Liga de Segunda Panini,2026-11-15,18:00,,,Colchagua,Deportes Linares,Estadio Jorge Silva,Fecha 12,https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/,,2026-11-04T19:35:31
 14dbaabf36c67e49,AUF,Uruguay - Liga AUF Uruguaya,2026-11-15,20:00,Uruguay,,Def. Sporting,Peñarol,LUIS FRANZINI,Fecha 14,https://www.auf.org.uy/liga-auf-uruguaya/,,2026-11-09T22:09:55
 d559aa886934164d,campeonatochileno.cl,Campeonato Nacional Juvenil Femenino Clausura,2026-11-15,3:30,,,Santiago Wanderers Juvenil Fem,O'Higgins Juvenil Fem,,,https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/,,2026-07-14T13:55:28
