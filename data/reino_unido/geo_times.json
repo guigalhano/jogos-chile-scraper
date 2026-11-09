@@ -1325,6 +1325,12 @@
 "lng": -2.79504,
 "local": "St Andrews"
 },
+"Escócia|St Cuthbert Wanderers": {
+"fonte": "nome",
+"lat": 55.10554,
+"lng": -4.16395,
+"local": "St John's Town of Dalry"
+},
 "Escócia|St. Johnstone": {
 "fonte": "sofascore",
 "lat": 56.40987,
@@ -4132,6 +4138,12 @@
 "lat": 54.85188,
 "lng": -1.83337,
 "local": "Consett"
+},
+"Inglaterra|Copthorne": {
+"fonte": "nome",
+"lat": 51.13759,
+"lng": -0.11978,
+"local": "Copthorne"
 },
 "Inglaterra|Corby Stewart & Lloyds": {
 "fonte": "nome",
@@ -9971,6 +9983,12 @@
 "lng": 0.43266,
 "local": "Snodland"
 },
+"Inglaterra|Snodland Town Reserves": {
+"fonte": "nome",
+"lat": 51.33492,
+"lng": 0.43266,
+"local": "Snodland"
+},
 "Inglaterra|Soham Town Rangers": {
 "fonte": "nome",
 "lat": 52.33335,
@@ -10582,6 +10600,12 @@
 "lat": 51.90034,
 "lng": -0.39558,
 "local": "Stopsley"
+},
+"Inglaterra|Storrington": {
+"fonte": "nome",
+"lat": 50.91845,
+"lng": -0.45555,
+"local": "Storrington"
 },
 "Inglaterra|Stotfold": {
 "fonte": "nome",
@@ -12743,6 +12767,12 @@
 "lng": -5.94728,
 "local": "Solitude"
 },
+"Irlanda do Norte|Newmills": {
+"fonte": "nome",
+"lat": 54.55169,
+"lng": -6.74048,
+"local": "Newmills"
+},
 "Irlanda do Norte|Newry City AFC": {
 "fonte": "sofascore",
 "lat": 54.16089,
@@ -14159,6 +14189,12 @@
 "lng": -3.04956,
 "local": "Knighton"
 },
+"País de Gales|Lampeter Town": {
+"fonte": "nome",
+"lat": 52.11305,
+"lng": -4.07876,
+"local": "Lampeter"
+},
 "País de Gales|Lampeter Town Reserves": {
 "fonte": "nome",
 "lat": 52.11305,
@@ -14170,6 +14206,12 @@
 "lat": 53.12128,
 "lng": -4.12775,
 "local": "Llanberis"
+},
+"País de Gales|Llanboidy": {
+"fonte": "nome",
+"lat": 51.87885,
+"lng": -4.59297,
+"local": "Llanboidy"
 },
 "País de Gales|Llandarcy": {
 "fonte": "nome",
