@@ -83,19 +83,19 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140721
+    "bytes": 140729
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 180046
+    "bytes": 180923
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
     "status": 200,
-    "bytes": 6733
+    "bytes": 7767
   },
   {
     "copa": "Women's FA Cup",
@@ -110,18 +110,18 @@
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
-    "jogos_parseados": 4,
+    "jogos_parseados": 5,
     "amostra": [
+      "2026-11-15 14:00 Keynsham Town Ladies v Millwall Lionesses LFC @ ",
       "2026-11-15 14:00 Maidenhead United Women v AFC Wimbledon Women @ ",
-      "2026-11-15 14:00 Bridgwater United Women v Lewes Women @ ",
-      "2026-11-15 15:00 Chesterfield Women v Leafield Athletic Ladies @ "
+      "2026-11-15 14:00 Bridgwater United Women v Lewes Women @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 181130
+    "bytes": 180110
   },
   {
     "copa": "FA Youth Cup",
