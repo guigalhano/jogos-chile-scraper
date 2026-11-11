@@ -3,7 +3,7 @@
     "id": 155,
     "categoria": 48,
     "temporada": "Primera LPF 2026",
-    "eventos_janela": 25,
+    "eventos_janela": 23,
     "erro": null
   },
   "Copa de la Liga Profesional": {
@@ -80,7 +80,7 @@
     "id": 18817,
     "categoria": 48,
     "temporada": "Primera LPF, Reserves 2026",
-    "eventos_janela": 36,
+    "eventos_janela": 30,
     "erro": null
   },
   "Supercopa Internacional": {
@@ -122,7 +122,7 @@
     "id": 21342,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Cuyo 2026",
-    "eventos_janela": 5,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Litoral Sur": {
@@ -570,7 +570,7 @@
     "id": 29029,
     "categoria": 1783,
     "temporada": "Copa Córdoba 2026",
-    "eventos_janela": 5,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Clausura “Marcos Barlatay”": {
@@ -619,14 +619,14 @@
     "id": 31822,
     "categoria": 1783,
     "temporada": "2026",
-    "eventos_janela": 29,
+    "eventos_janela": 24,
     "erro": null
   },
   "Divisional B": {
     "id": 31823,
     "categoria": 1783,
     "temporada": "2026",
-    "eventos_janela": 18,
+    "eventos_janela": 16,
     "erro": null
   },
   "Newell's Cup U11": {
@@ -759,7 +759,7 @@
     "id": 39522,
     "categoria": 1783,
     "temporada": "Liga Deportiva del Oeste 2026",
-    "eventos_janela": 11,
+    "eventos_janela": 8,
     "erro": null
   },
   "Liga Lujanense de Fútbol - Primera División": {
@@ -836,6 +836,13 @@
     "id": 37544,
     "categoria": 1783,
     "temporada": "Liga Santiagueña de Fútbol 2026",
+    "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga de Fútbol de Comodoro Rivadavia - Reserve": {
+    "id": 40059,
+    "categoria": 1783,
+    "temporada": "26/27",
     "eventos_janela": 0,
     "erro": null
   },
