@@ -3,7 +3,7 @@
     "id": 155,
     "categoria": 48,
     "temporada": "Primera LPF 2026",
-    "eventos_janela": 19,
+    "eventos_janela": 25,
     "erro": null
   },
   "Copa de la Liga Profesional": {
@@ -24,21 +24,21 @@
     "id": 703,
     "categoria": 48,
     "temporada": "Primera Nacional 2026",
-    "eventos_janela": 11,
+    "eventos_janela": 8,
     "erro": null
   },
   "Primera B Metropolitana": {
     "id": 1347,
     "categoria": 48,
     "temporada": "Primera B 2026",
-    "eventos_janela": 14,
+    "eventos_janela": 10,
     "erro": null
   },
   "Primera C Metropolitana": {
     "id": 11386,
     "categoria": 48,
     "temporada": "Primera C 2026",
-    "eventos_janela": 7,
+    "eventos_janela": 6,
     "erro": null
   },
   "Primera D Metropolitana": {
@@ -255,7 +255,7 @@
     "id": 22183,
     "categoria": 1783,
     "temporada": "Liga Regional Riotercerense de Fútbol - Primera B 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 2,
     "erro": null
   },
   "Asociación Rosarina de Fútbol": {
@@ -339,7 +339,7 @@
     "id": 23050,
     "categoria": 1783,
     "temporada": "Liga Regional de Coronel Suárez, Clausura 26/27",
-    "eventos_janela": 8,
+    "eventos_janela": 12,
     "erro": null
   },
   "Copa Hermes Desio": {
@@ -570,7 +570,7 @@
     "id": 29029,
     "categoria": 1783,
     "temporada": "Copa Córdoba 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 5,
     "erro": null
   },
   "Torneo Clausura “Marcos Barlatay”": {
@@ -759,7 +759,7 @@
     "id": 39522,
     "categoria": 1783,
     "temporada": "Liga Deportiva del Oeste 2026",
-    "eventos_janela": 12,
+    "eventos_janela": 11,
     "erro": null
   },
   "Liga Lujanense de Fútbol - Primera División": {
@@ -774,6 +774,13 @@
     "categoria": 1783,
     "temporada": "Liga Marplatense de Fútbol 2026",
     "eventos_janela": 0,
+    "erro": null
+  },
+  "Liga Marplatense de Fútbol - Reserve": {
+    "id": 40000,
+    "categoria": 1783,
+    "temporada": "Liga Marplatense de Fútbol - Reserve 2026",
+    "eventos_janela": 63,
     "erro": null
   },
   "Liga Rafaelina de Fútbol": {

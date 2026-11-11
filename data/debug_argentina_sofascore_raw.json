@@ -1,6 +1,150 @@
 [
   {
     "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-22",
+    "hora": "19:00",
+    "mandante": "Boca Juniors",
+    "visitante": "Independiente Rivadavia",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "Alberto Jose Armando",
+    "rodada": "",
+    "url": "https://www.sofascore.com/football/match/independiente-rivadavia-boca-juniors/cobsRLo#id:17530527",
+    "extra": "pais=Argentina; codigo_sofascore=17530527; time_sofascore=3202; status=Programado; fonte_dados=sofascore",
+    "lat": -34.61315,
+    "lng": -58.37723,
+    "id": "6c46335330a720f5",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-22",
+    "hora": "19:00",
+    "mandante": "River Plate",
+    "visitante": "CA Lanús",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "Estadio Mâs Monumental",
+    "rodada": "",
+    "url": "https://www.sofascore.com/football/match/ca-lanus-river-plate/lobstob#id:17530529",
+    "extra": "pais=Argentina; codigo_sofascore=17530529; time_sofascore=3211; status=Programado; fonte_dados=sofascore",
+    "lat": -34.545293,
+    "lng": -58.449739,
+    "id": "0029a138d0dcb519",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-22",
+    "hora": "19:00",
+    "mandante": "Argentinos Juniors",
+    "visitante": "CA Independiente",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "Diego Armando Maradona",
+    "rodada": "",
+    "url": "https://www.sofascore.com/football/match/argentinos-juniors-ca-independiente/jobsqob#id:17530532",
+    "extra": "pais=Argentina; codigo_sofascore=17530532; time_sofascore=3216; status=Programado; fonte_dados=sofascore",
+    "lat": -34.754461,
+    "lng": -58.10874,
+    "id": "093d5a7c12accde3",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-22",
+    "hora": "19:00",
+    "mandante": "Vélez Sarsfield",
+    "visitante": "Club Atlético Belgrano",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "Jose Amalfitani",
+    "rodada": "",
+    "url": "https://www.sofascore.com/football/match/velez-sarsfield-club-atletico-belgrano/dobsiob#id:17530530",
+    "extra": "pais=Argentina; codigo_sofascore=17530530; time_sofascore=3208; status=Programado; fonte_dados=sofascore",
+    "lat": -34.635338,
+    "lng": -58.520679,
+    "id": "0309fd0249e6cd20",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-22",
+    "hora": "19:00",
+    "mandante": "Rosario Central",
+    "visitante": "Gimnasia y Esgrima Mendoza",
+    "pais": "Argentina",
+    "cidade": "Rosario",
+    "estadio": "Gigante de Arroyito",
+    "rodada": "",
+    "url": "https://www.sofascore.com/football/match/gimnasia-y-esgrima-mendoza-rosario-central/robsQtAb#id:17530528",
+    "extra": "pais=Argentina; codigo_sofascore=17530528; time_sofascore=3217; status=Programado; fonte_dados=sofascore",
+    "lat": -32.914023,
+    "lng": -60.674499,
+    "id": "cb20c66834363d51",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-22",
+    "hora": "19:00",
+    "mandante": "Instituto De Córdoba",
+    "visitante": "Huracán",
+    "pais": "Argentina",
+    "cidade": "Cordoba",
+    "estadio": "Estadio Presidente Peron",
+    "rodada": "",
+    "url": "https://www.sofascore.com/football/match/huracan-instituto-de-cordoba/MYbsEcd#id:17530533",
+    "extra": "pais=Argentina; codigo_sofascore=17530533; time_sofascore=4937; status=Programado; fonte_dados=sofascore",
+    "lat": -31.383697,
+    "lng": -64.180445,
+    "id": "1d80680d042cac85",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-22",
+    "hora": "19:00",
+    "mandante": "Defensa y Justicia",
+    "visitante": "Barracas Central",
+    "pais": "Argentina",
+    "cidade": "Gobernador Julio A. Costa",
+    "estadio": "Estadio Norberto Tomaghello",
+    "rodada": "",
+    "url": "https://www.sofascore.com/football/match/barracas-central-defensa-y-justicia/OLostnB#id:17530531",
+    "extra": "pais=Argentina; codigo_sofascore=17530531; time_sofascore=36839; status=Programado; fonte_dados=sofascore",
+    "lat": -34.821763,
+    "lng": -58.286537,
+    "id": "ddb1e64120671265",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-22",
+    "hora": "19:00",
+    "mandante": "Gimnasia y Esgrima",
+    "visitante": "Newell's Old Boys",
+    "pais": "Argentina",
+    "cidade": "La Plata",
+    "estadio": "Estadio Juan Carmelo Zerillo",
+    "rodada": "",
+    "url": "https://www.sofascore.com/football/match/newells-old-boys-gimnasia-y-esgrima/fobsmob#id:17530520",
+    "extra": "pais=Argentina; codigo_sofascore=17530520; time_sofascore=3205; status=Programado; fonte_dados=sofascore",
+    "lat": -34.91109,
+    "lng": -57.933166,
+    "id": "1a48f9d90b67a6f7",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
     "competicao": "Argentina - Copa Argentina",
     "data": "2026-11-14",
     "hora": "19:00",
@@ -15,7 +159,7 @@
     "lat": -34.750774,
     "lng": -58.387558,
     "id": "22ab488e6db966c2",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -33,7 +177,7 @@
     "lat": -34.61315,
     "lng": -58.37723,
     "id": "7e4677c3edb76eb9",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -51,7 +195,7 @@
     "lat": -31.663217,
     "lng": -60.725246,
     "id": "02f2c520e952f2aa",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -69,7 +213,7 @@
     "lat": -34.61315,
     "lng": -58.37723,
     "id": "bbc1c9b2c5b84df1",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -87,7 +231,7 @@
     "lat": -34.662009,
     "lng": -58.63178,
     "id": "93f078eb2cd100fb",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -105,7 +249,7 @@
     "lat": -24.18465,
     "lng": -65.321791,
     "id": "fa486142a035777f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -123,7 +267,7 @@
     "lat": -42.7692,
     "lng": -65.03851,
     "id": "1a7c9bb17dc1f2e8",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -141,7 +285,7 @@
     "lat": -34.78241,
     "lng": -58.400015,
     "id": "2aad75be15f90228",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -159,25 +303,7 @@
     "lat": -32.889621,
     "lng": -68.879901,
     "id": "35560f569ffc75cb",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Primera B",
-    "data": "2026-11-11",
-    "hora": "19:00",
-    "mandante": "Club Comunicaciones",
-    "visitante": "Arsenal de Sarandí",
-    "pais": "Argentina",
-    "cidade": "Buenos Aires",
-    "estadio": "Estadio Alfredo Ramos",
-    "rodada": "Quarterfinals",
-    "url": "https://www.sofascore.com/football/match/club-comunicaciones-arsenal-de-sarandi/wobsbaV#id:17489118",
-    "extra": "pais=Argentina; codigo_sofascore=17489118; time_sofascore=112501; status=Programado; fonte_dados=sofascore",
-    "lat": -34.593801,
-    "lng": -58.488491,
-    "id": "8b98f90ca5bf8c02",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -195,43 +321,25 @@
     "lat": -34.46889,
     "lng": -58.9195,
     "id": "68892937c0f78aac",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
     "competicao": "Argentina - Primera B",
-    "data": "2026-11-11",
-    "hora": "19:00",
-    "mandante": "Deportivo Armenio",
-    "visitante": "Sportivo Italiano",
+    "data": "2026-11-14",
+    "hora": "18:00",
+    "mandante": "Club Comunicaciones",
+    "visitante": "Arsenal de Sarandí",
     "pais": "Argentina",
-    "cidade": "Ingeniero Maschwitz",
-    "estadio": "Estadio Republica de Armenia",
+    "cidade": "Buenos Aires",
+    "estadio": "Estadio Alfredo Ramos",
     "rodada": "Quarterfinals",
-    "url": "https://www.sofascore.com/football/match/deportivo-armenio-sportivo-italiano/TLosfmM#id:17489124",
-    "extra": "pais=Argentina; codigo_sofascore=17489124; time_sofascore=93105; status=Programado; fonte_dados=sofascore",
-    "lat": -34.38839,
-    "lng": -58.73761,
-    "id": "046603927c2fa944",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Primera B",
-    "data": "2026-11-11",
-    "hora": "19:00",
-    "mandante": "Villa Dálmine",
-    "visitante": "Camioneros",
-    "pais": "Argentina",
-    "cidade": "Campana",
-    "estadio": "Estadio Jorge Ruben Varela",
-    "rodada": "Quarterfinals",
-    "url": "https://www.sofascore.com/football/match/camioneros-villa-dalmine/jaVshBbc#id:17489123",
-    "extra": "pais=Argentina; codigo_sofascore=17489123; time_sofascore=112509; status=Programado; fonte_dados=sofascore",
-    "lat": -34.16874,
-    "lng": -58.95914,
-    "id": "183ce4b271de206b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "url": "https://www.sofascore.com/football/match/club-comunicaciones-arsenal-de-sarandi/wobsbaV#id:17489118",
+    "extra": "pais=Argentina; codigo_sofascore=17489118; time_sofascore=112501; status=Programado; fonte_dados=sofascore",
+    "lat": -34.593801,
+    "lng": -58.488491,
+    "id": "0cae992f31f80c82",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -249,7 +357,7 @@
     "lat": -34.67839,
     "lng": -58.340605,
     "id": "32ade600b5c9a8de",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -263,11 +371,11 @@
     "estadio": "Estadio de Talleres",
     "rodada": "Quarterfinals",
     "url": "https://www.sofascore.com/football/match/real-pilar-talleres-remedios-de-escalada/myFbsaAgc#id:17489121",
-    "extra": "pais=Argentina; codigo_sofascore=17489121; time_sofascore=201162; status=Programado; fonte_dados=sofascore",
+    "extra": "pais=Argentina; codigo_sofascore=17489121; time_sofascore=201162; status=Adiado; fonte_dados=sofascore",
     "lat": -34.61315,
     "lng": -58.37723,
     "id": "4d157b87ea6075ac",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -285,7 +393,25 @@
     "lat": -34.46889,
     "lng": -58.9195,
     "id": "6b3142e1a111c483",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Primera B",
+    "data": "2026-11-14",
+    "hora": "19:00",
+    "mandante": "Deportivo Armenio",
+    "visitante": "Sportivo Italiano",
+    "pais": "Argentina",
+    "cidade": "Ingeniero Maschwitz",
+    "estadio": "Estadio Republica de Armenia",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/deportivo-armenio-sportivo-italiano/TLosfmM#id:17489124",
+    "extra": "pais=Argentina; codigo_sofascore=17489124; time_sofascore=93105; status=Programado; fonte_dados=sofascore",
+    "lat": -34.38839,
+    "lng": -58.73761,
+    "id": "5943f9a33672a9fc",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -303,12 +429,48 @@
     "lat": -34.738037,
     "lng": -58.517237,
     "id": "955313844acd6ab0",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
     "competicao": "Argentina - Primera B",
     "data": "2026-11-14",
+    "hora": "19:00",
+    "mandante": "Villa Dálmine",
+    "visitante": "Camioneros",
+    "pais": "Argentina",
+    "cidade": "Campana",
+    "estadio": "Estadio Jorge Ruben Varela",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/camioneros-villa-dalmine/jaVshBbc#id:17489123",
+    "extra": "pais=Argentina; codigo_sofascore=17489123; time_sofascore=112509; status=Programado; fonte_dados=sofascore",
+    "lat": -34.16874,
+    "lng": -58.95914,
+    "id": "7f64657c54badfd4",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Primera B",
+    "data": "2026-11-21",
+    "hora": "14:00",
+    "mandante": "Talleres Remedios de Escalada",
+    "visitante": "Real Pilar",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "Estadio de Talleres",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/real-pilar-talleres-remedios-de-escalada/myFbsaAgc#id:17533940",
+    "extra": "pais=Argentina; codigo_sofascore=17533940; time_sofascore=201162; status=Programado; fonte_dados=sofascore",
+    "lat": -34.61315,
+    "lng": -58.37723,
+    "id": "8813ffc3bfc59622",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Primera B",
+    "data": "2026-11-21",
     "hora": "19:00",
     "mandante": "Camioneros",
     "visitante": "Villa Dálmine",
@@ -318,8 +480,8 @@
     "rodada": "Quarterfinals",
     "url": "https://www.sofascore.com/football/match/camioneros-villa-dalmine/jaVshBbc#id:17489122",
     "extra": "pais=Argentina; codigo_sofascore=17489122; time_sofascore=253807; status=Programado; fonte_dados=sofascore",
-    "id": "94813481417de298",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "id": "9720cf1ea484b82f",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -337,7 +499,7 @@
     "lat": -35.049539,
     "lng": -58.746916,
     "id": "6c91a4edc2259cce",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -355,7 +517,7 @@
     "lat": -34.657901,
     "lng": -58.46454,
     "id": "3ad612988075f61a",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -371,7 +533,7 @@
     "url": "https://www.sofascore.com/football/match/leones-de-rosario-fc-sportivo-barracas/inFbsNvoj#id:17502043",
     "extra": "pais=Argentina; codigo_sofascore=17502043; time_sofascore=1161038; status=Programado; fonte_dados=sofascore",
     "id": "22169255d482b13f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -387,7 +549,7 @@
     "url": "https://www.sofascore.com/football/match/kimberley-olimpo/xobsDiLc#id:17498245",
     "extra": "pais=Argentina; codigo_sofascore=17498245; time_sofascore=340428; status=Programado; fonte_dados=sofascore",
     "id": "e8b45ebfd72b3985",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -405,7 +567,7 @@
     "lat": -38.727168,
     "lng": -62.275899,
     "id": "0b6bd458b4ffcaa5",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -423,7 +585,7 @@
     "lat": -38.017903,
     "lng": -57.582386,
     "id": "73c65a9cc5b5837b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -439,7 +601,7 @@
     "url": "https://www.sofascore.com/football/match/gimnasia-de-chivilcoy-douglas-haig/ZyFsKAGi#id:17472475",
     "extra": "pais=Argentina; codigo_sofascore=17472475; time_sofascore=1078785; status=Programado; fonte_dados=sofascore",
     "id": "6895ef685643834a",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -457,7 +619,7 @@
     "lat": -38.936392,
     "lng": -68.003754,
     "id": "de240bef3e3844f5",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -475,7 +637,7 @@
     "lat": -34.92068,
     "lng": -57.95376,
     "id": "e2cac7a5ce3aa8e2",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -492,7 +654,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17520570; time_sofascore=508369; status=Programado; fonte_dados=sofascore",
     "categoria": "Femenino",
     "id": "84ae5be8a4b506fc",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -511,7 +673,7 @@
     "lng": -58.38879,
     "categoria": "Femenino",
     "id": "4dc8552442022f36",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -528,7 +690,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17520575; time_sofascore=460684; status=Programado; fonte_dados=sofascore",
     "categoria": "Femenino",
     "id": "986270330991a77c",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -545,7 +707,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17520574; time_sofascore=265452; status=Programado; fonte_dados=sofascore",
     "categoria": "Femenino",
     "id": "24a137e8c0b7dd3e",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -562,7 +724,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17520571; time_sofascore=330302; status=Programado; fonte_dados=sofascore",
     "categoria": "Femenino",
     "id": "f7b8e62c3c20869f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -579,7 +741,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17520572; time_sofascore=1072343; status=Programado; fonte_dados=sofascore",
     "categoria": "Femenino",
     "id": "bd9d34cf06608691",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -596,119 +758,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17520576; time_sofascore=299521; status=Programado; fonte_dados=sofascore",
     "categoria": "Femenino",
     "id": "3c69f8732397883c",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Torneo Proyección",
-    "data": "2026-11-10",
-    "hora": "15:00",
-    "mandante": "Tigre Reserve",
-    "visitante": "Vélez Sarsfield Reserve",
-    "pais": "Argentina",
-    "cidade": "Buenos Aires",
-    "estadio": "",
-    "rodada": "Group A - Fecha 17",
-    "url": "https://www.sofascore.com/football/match/velez-sarsfield-reserve-tigre-reserve/frUbsEpac#id:17212580",
-    "extra": "pais=Argentina; codigo_sofascore=17212580; time_sofascore=235855; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -34.449307,
-    "lng": -58.542266,
-    "categoria": "Sub23",
-    "id": "608803f2c6048262",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Torneo Proyección",
-    "data": "2026-11-10",
-    "hora": "15:00",
-    "mandante": "Atlético Tucumán Reserve",
-    "visitante": "Unión Santa Fe Reserve",
-    "pais": "Argentina",
-    "cidade": "San Miguel de Tucuman",
-    "estadio": "",
-    "rodada": "Group A - Fecha 17",
-    "url": "https://www.sofascore.com/football/match/atletico-tucuman-reserve-union-santa-fe-reserve/grUbsyzac#id:17212575",
-    "extra": "pais=Argentina; codigo_sofascore=17212575; time_sofascore=251223; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -26.812887,
-    "lng": -65.199543,
-    "categoria": "Sub23",
-    "id": "c22849eaf4e1e5fe",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Torneo Proyección",
-    "data": "2026-11-10",
-    "hora": "15:00",
-    "mandante": "Gimnasia y Esgrima Mendoza Reserve",
-    "visitante": "Aldosivi Reserve",
-    "pais": "Argentina",
-    "cidade": "Mendoza",
-    "estadio": "",
-    "rodada": "Group A - Fecha 17",
-    "url": "https://www.sofascore.com/football/match/gimnasia-y-esgrima-mendoza-reserve-aldosivi-reserve/FrVbsnCbd#id:17212577",
-    "extra": "pais=Argentina; codigo_sofascore=17212577; time_sofascore=378863; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -32.884152,
-    "lng": -68.864233,
-    "categoria": "Sub23",
-    "id": "204de90fded2efac",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Torneo Proyección",
-    "data": "2026-11-10",
-    "hora": "15:00",
-    "mandante": "Estudiantes de La Plata Reserve",
-    "visitante": "San Martin Reserve",
-    "pais": "Argentina",
-    "cidade": "La Plata",
-    "estadio": "",
-    "rodada": "Group B - Fecha 17",
-    "url": "https://www.sofascore.com/football/match/san-martin-reserve-estudiantes-de-la-plata-reserve/irUbsDeWb#id:17212576",
-    "extra": "pais=Argentina; codigo_sofascore=17212576; time_sofascore=235858; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -34.92068,
-    "lng": -57.95376,
-    "categoria": "Sub23",
-    "id": "a926fb4cee07f528",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Torneo Proyección",
-    "data": "2026-11-10",
-    "hora": "15:00",
-    "mandante": "Quilmes Reserve",
-    "visitante": "Independiente Rivadavia De Mendoza Reserve",
-    "pais": "Argentina",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Group B - Fecha 17",
-    "url": "https://www.sofascore.com/football/match/independiente-rivadavia-de-mendoza-reserve-quilmes-reserve/ErVbsNhld#id:17212578",
-    "extra": "pais=Argentina; codigo_sofascore=17212578; time_sofascore=238379; status=Programado; fonte_dados=sofascore",
-    "categoria": "Sub23",
-    "id": "9099487178ce4e2b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Torneo Proyección",
-    "data": "2026-11-10",
-    "hora": "17:00",
-    "mandante": "Talleres de Córdoba Reserve",
-    "visitante": "Sarmiento Reserve",
-    "pais": "Argentina",
-    "cidade": "Cordoba",
-    "estadio": "",
-    "rodada": "Group A - Fecha 17",
-    "url": "https://www.sofascore.com/football/match/sarmiento-reserve-talleres-de-cordoba-reserve/gvacsEEcc#id:17212579",
-    "extra": "pais=Argentina; codigo_sofascore=17212579; time_sofascore=251006; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -31.368847,
-    "lng": -64.246145,
-    "categoria": "Sub23",
-    "id": "a3d2cacc722c2de7",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -727,7 +777,7 @@
     "lng": -58.387558,
     "categoria": "Sub23",
     "id": "f0961d139f19db37",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -746,7 +796,7 @@
     "lng": -64.180445,
     "categoria": "Sub23",
     "id": "a9e854f8a72c75e7",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -765,7 +815,7 @@
     "lng": -58.371038,
     "categoria": "Sub23",
     "id": "3c50438b338df78b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -775,16 +825,14 @@
     "mandante": "Atletico Rafaela Reserve",
     "visitante": "Belgrano Reserve",
     "pais": "Argentina",
-    "cidade": "Rafaela",
+    "cidade": "",
     "estadio": "",
     "rodada": "Group B - Fecha 17",
     "url": "https://www.sofascore.com/football/match/atletico-rafaela-reserve-belgrano-reserve/IyZbsMMcc#id:17212583",
-    "extra": "pais=Argentina; codigo_sofascore=17212583; time_sofascore=256887; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -31.250822,
-    "lng": -61.481441,
+    "extra": "pais=Argentina; codigo_sofascore=17212583; time_sofascore=256887; status=Programado; fonte_dados=sofascore",
     "categoria": "Sub23",
     "id": "a08f6a1a839e033f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -803,7 +851,7 @@
     "lng": -58.37723,
     "categoria": "Sub23",
     "id": "dcf111785aad9357",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -822,7 +870,26 @@
     "lng": -58.49373,
     "categoria": "Sub23",
     "id": "433e8f0c7b8229f9",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Proyección",
+    "data": "2026-11-11",
+    "hora": "17:00",
+    "mandante": "Talleres de Córdoba Reserve",
+    "visitante": "Sarmiento Reserve",
+    "pais": "Argentina",
+    "cidade": "Cordoba",
+    "estadio": "",
+    "rodada": "Group A - Fecha 17",
+    "url": "https://www.sofascore.com/football/match/sarmiento-reserve-talleres-de-cordoba-reserve/gvacsEEcc#id:17212579",
+    "extra": "pais=Argentina; codigo_sofascore=17212579; time_sofascore=251006; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -31.368847,
+    "lng": -64.246145,
+    "categoria": "Sub23",
+    "id": "f18766c74cb21572",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -841,7 +908,7 @@
     "lng": -60.521566,
     "categoria": "Sub23",
     "id": "2b393e64268abb2c",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -860,7 +927,7 @@
     "lng": -58.396189,
     "categoria": "Sub23",
     "id": "fba8b67ba34dab9d",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -879,7 +946,7 @@
     "lng": -68.879901,
     "categoria": "Sub23",
     "id": "1d4b037595fada28",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -898,7 +965,7 @@
     "lng": -60.725246,
     "categoria": "Sub23",
     "id": "efbe8262bfde98d2",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -917,7 +984,7 @@
     "lng": -58.396798,
     "categoria": "Sub23",
     "id": "ee6359c0878e9b4f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -936,7 +1003,7 @@
     "lng": -58.37723,
     "categoria": "Sub23",
     "id": "da5f64451e635fcc",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -954,7 +1021,7 @@
     "lat": -29.1444,
     "lng": -59.26498,
     "id": "1129b9a7ad618435",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -972,7 +1039,7 @@
     "lat": -26.1853,
     "lng": -58.1745,
     "id": "c5e6b09279fabc2d",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -990,7 +1057,7 @@
     "lat": -31.41669,
     "lng": -64.18342,
     "id": "913b8fd14e3d43e0",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1008,7 +1075,7 @@
     "lat": -27.78771,
     "lng": -64.25951,
     "id": "2d1513f910d16fbc",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1026,7 +1093,7 @@
     "lat": -27.78771,
     "lng": -64.25951,
     "id": "b28a9fe51ec782bf",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1044,7 +1111,7 @@
     "lat": -28.46888,
     "lng": -65.77906,
     "id": "8fc6bc4323793229",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1062,7 +1129,7 @@
     "lat": -33.68664,
     "lng": -65.49543,
     "id": "ee60015e1ab39e7d",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1080,7 +1147,7 @@
     "lat": -34.97762,
     "lng": -67.69635,
     "id": "ef978f677a15c860",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1098,7 +1165,7 @@
     "lat": -31.25269,
     "lng": -61.49168,
     "id": "2a2ee4b1f9623321",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1116,7 +1183,7 @@
     "lat": -33.00937,
     "lng": -58.51722,
     "id": "8f67dfc8d6c0f20f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1134,7 +1201,7 @@
     "lat": -24.18526,
     "lng": -65.29948,
     "id": "d8a62b86248a85c8",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1152,7 +1219,7 @@
     "lat": -26.83037,
     "lng": -65.20381,
     "id": "ae5905558b623aae",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1168,7 +1235,7 @@
     "url": "https://www.sofascore.com/football/match/jorge-newbery-de-comodoro-rivadavia-comision-de-actividades-infantiles/NLosweYd#id:17483000",
     "extra": "pais=Argentina; codigo_sofascore=17483000; time_sofascore=36838; status=Programado; fonte_dados=sofascore",
     "id": "7e1f0ec9d78add74",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1186,7 +1253,7 @@
     "lat": -38.93134,
     "lng": -67.99059,
     "id": "898d0328cf98d32b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1204,7 +1271,7 @@
     "lat": -41.13348,
     "lng": -71.31015,
     "id": "9d047b27942a61eb",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1222,7 +1289,7 @@
     "lat": -53.78583,
     "lng": -67.70186,
     "id": "f5d410c886713d2b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1240,7 +1307,7 @@
     "lat": -38.71765,
     "lng": -62.26549,
     "id": "d3a4672dcee18fcc",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1258,7 +1325,7 @@
     "lat": -38.08526,
     "lng": -57.63244,
     "id": "8892f1332c5ab150",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1276,7 +1343,7 @@
     "lat": -34.34532,
     "lng": -58.79507,
     "id": "d9432b469c0d15a5",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1294,7 +1361,7 @@
     "lat": -34.64236,
     "lng": -60.47088,
     "id": "260882cff33e809c",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1312,7 +1379,7 @@
     "lat": -33.32771,
     "lng": -60.21659,
     "id": "133d524654f5c516",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1330,7 +1397,83 @@
     "lat": -34.92068,
     "lng": -57.95376,
     "id": "5ac5dfdcd48e2264",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional de Coronel Suárez, Clausura",
+    "data": "2026-11-15",
+    "hora": "17:00",
+    "mandante": "CSDyC El Progreso",
+    "visitante": "Racing Club",
+    "pais": "Argentina",
+    "cidade": "Coronel Suárez",
+    "estadio": "Estadio 21 de Agosto",
+    "rodada": "Clausura, Playoffs - Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/racing-club-csdyc-el-progreso/mzcesxzce#id:17531133",
+    "extra": "pais=Argentina; codigo_sofascore=17531133; time_sofascore=506212; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -37.4547,
+    "lng": -61.9334,
+    "escopo": "Regional",
+    "id": "4fa796556d85dd67",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional de Coronel Suárez, Clausura",
+    "data": "2026-11-15",
+    "hora": "17:00",
+    "mandante": "CA Tiro Federal",
+    "visitante": "Blanco y Negro",
+    "pais": "Argentina",
+    "cidade": "Coronel Suárez",
+    "estadio": "Polideportivo de Tiro",
+    "rodada": "Clausura, Playoffs - Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/blanco-y-negro-ca-tiro-federal/izcesqzce#id:17531137",
+    "extra": "pais=Argentina; codigo_sofascore=17531137; time_sofascore=506208; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -37.4547,
+    "lng": -61.9334,
+    "escopo": "Regional",
+    "id": "cc692b7670b1a970",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional de Coronel Suárez, Clausura",
+    "data": "2026-11-15",
+    "hora": "17:00",
+    "mandante": "CA Independiente Rivera",
+    "visitante": "CA San Martín",
+    "pais": "Argentina",
+    "cidade": "Coronel Suárez",
+    "estadio": "Nelido Merigge",
+    "rodada": "Clausura, Playoffs - Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/ca-san-martin-ca-independiente-rivera/nzceszzce#id:17531131",
+    "extra": "pais=Argentina; codigo_sofascore=17531131; time_sofascore=506213; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -37.4547,
+    "lng": -61.9334,
+    "escopo": "Regional",
+    "id": "5f62f7f3c4d2886d",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional de Coronel Suárez, Clausura",
+    "data": "2026-11-15",
+    "hora": "17:00",
+    "mandante": "CA Peñarol",
+    "visitante": "Deportivo Rivera",
+    "pais": "Argentina",
+    "cidade": "Coronel Suárez",
+    "estadio": "Estadio 19 de Marzo",
+    "rodada": "Clausura, Playoffs - Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/ca-penarol-deportivo-rivera/hzcesBzce#id:17531134",
+    "extra": "pais=Argentina; codigo_sofascore=17531134; time_sofascore=506226; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -37.4547,
+    "lng": -61.9334,
+    "escopo": "Regional",
+    "id": "4b066cce7a407dbb",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1348,26 +1491,45 @@
     "lat": -31.89628,
     "lng": -61.85972,
     "id": "9aa9bb3936558309",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
-    "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
-    "data": "2026-11-09",
-    "hora": "17:00",
-    "mandante": "Juniors de Suardi",
-    "visitante": "Sportivo Belgrano",
+    "competicao": "Argentina - Copa Córdoba",
+    "data": "2026-11-11",
+    "hora": "00:00",
+    "mandante": "Club Atlético Belgrano",
+    "visitante": "Instituto De Córdoba",
     "pais": "Argentina",
-    "cidade": "Suardi",
-    "estadio": "Asociación Deportiva Juniors Club ADJC",
-    "rodada": "Zona Campeonato - Grupo 3 - Fecha 5",
-    "url": "https://www.sofascore.com/football/match/juniors-de-suardi-sportivo-belgrano/onBsTmpj#id:17280537",
-    "extra": "pais=Argentina; codigo_sofascore=17280537; time_sofascore=1163143; status=Programado; fonte_dados=sofascore",
-    "lat": -30.540211975712,
-    "lng": -61.965657610201,
+    "cidade": "Cordoba",
+    "estadio": "Estadio Julio César Villagra",
+    "rodada": "Semifinals",
+    "url": "https://www.sofascore.com/football/match/instituto-de-cordoba-club-atletico-belgrano/dobsMYb#id:17535365",
+    "extra": "pais=Argentina; codigo_sofascore=17535365; time_sofascore=3203; status=Programado; fonte_dados=sofascore",
+    "lat": -31.403544,
+    "lng": -64.206289,
     "escopo": "Regional",
-    "id": "40042b88864866c5",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "id": "258f7d8db772b287",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Copa Córdoba",
+    "data": "2026-11-11",
+    "hora": "00:00",
+    "mandante": "CA Talleres",
+    "visitante": "Estudiantes de Río Cuarto",
+    "pais": "Argentina",
+    "cidade": "Cordoba",
+    "estadio": "Mario Alberto Kempes",
+    "rodada": "Semifinals",
+    "url": "https://www.sofascore.com/football/match/estudiantes-de-rio-cuarto-ca-talleres/kobsUIgc#id:17535367",
+    "extra": "pais=Argentina; codigo_sofascore=17535367; time_sofascore=3210; status=Programado; fonte_dados=sofascore",
+    "lat": -31.368847,
+    "lng": -64.246145,
+    "escopo": "Regional",
+    "id": "36fcd23237789254",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1386,7 +1548,7 @@
     "lng": -62.8974434,
     "escopo": "Regional",
     "id": "d8e229737f06a157",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1405,7 +1567,7 @@
     "lng": -63.627049,
     "escopo": "Regional",
     "id": "6cf23b5d294a4d2e",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1424,7 +1586,7 @@
     "lng": -61.955181565544,
     "escopo": "Regional",
     "id": "58f4110a4133da01",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1443,7 +1605,7 @@
     "lng": -62.625517,
     "escopo": "Regional",
     "id": "263e4d718e2d9fe0",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1462,7 +1624,7 @@
     "lng": -62.0095892,
     "escopo": "Regional",
     "id": "554d323b7d4d1377",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1481,7 +1643,7 @@
     "lng": -62.100918,
     "escopo": "Regional",
     "id": "d371f92a597b4160",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1500,7 +1662,7 @@
     "lng": -62.0788589,
     "escopo": "Regional",
     "id": "fc8ba6f3869232aa",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1519,7 +1681,7 @@
     "lng": -62.99546,
     "escopo": "Regional",
     "id": "0ed8a46711926386",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1538,7 +1700,7 @@
     "lng": -62.465515,
     "escopo": "Regional",
     "id": "ec7097ab1b121f3f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1557,7 +1719,7 @@
     "lng": -62.297001,
     "escopo": "Regional",
     "id": "ad0443953ba4de9f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1576,7 +1738,7 @@
     "lng": -62.02979,
     "escopo": "Regional",
     "id": "4191fcd87c1e12aa",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1595,7 +1757,7 @@
     "lng": -62.668871,
     "escopo": "Regional",
     "id": "a666161326f0aa6b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1614,7 +1776,7 @@
     "lng": -62.0789907,
     "escopo": "Regional",
     "id": "6b3fe89741e7726f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1633,7 +1795,7 @@
     "lng": -62.488473,
     "escopo": "Regional",
     "id": "a79bddbf23557aef",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1652,7 +1814,7 @@
     "lng": -62.713176,
     "escopo": "Regional",
     "id": "3c78f9eca3f48dfa",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1671,7 +1833,7 @@
     "lng": -63.0494347,
     "escopo": "Regional",
     "id": "a0fe45939b1d81fe",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1690,7 +1852,7 @@
     "lng": -63.111629,
     "escopo": "Regional",
     "id": "a9c1bb7ffb1afaae",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1709,7 +1871,7 @@
     "lng": -63.399078,
     "escopo": "Regional",
     "id": "cc49c3f6ca450b24",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1728,7 +1890,7 @@
     "lng": -62.828637,
     "escopo": "Regional",
     "id": "6b49de53d8b1e9ce",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1747,7 +1909,7 @@
     "lng": -62.3632195,
     "escopo": "Regional",
     "id": "9ad9f2092a09eeff",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1766,7 +1928,7 @@
     "lng": -68.5138291,
     "escopo": "Regional",
     "id": "dc7c4284d8751709",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1785,7 +1947,7 @@
     "lng": -68.92375223547,
     "escopo": "Regional",
     "id": "c7ca80c958c6afaa",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1804,7 +1966,7 @@
     "lng": -67.730879140478,
     "escopo": "Regional",
     "id": "773d353bdc5c90e9",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1821,7 +1983,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17031123; time_sofascore=1091263; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "7b5215c5e138c7b9",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1840,7 +2002,7 @@
     "lng": -58.035218,
     "escopo": "Regional",
     "id": "68e006d10c1a82ba",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1859,7 +2021,7 @@
     "lng": -57.971072028125,
     "escopo": "Regional",
     "id": "f45501954ec2cee7",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1878,7 +2040,7 @@
     "lng": -58.0370686,
     "escopo": "Regional",
     "id": "ced4496b10d0ae5a",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1897,7 +2059,7 @@
     "lng": -58.00825,
     "escopo": "Regional",
     "id": "57f6d16904c69a8a",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1916,7 +2078,7 @@
     "lng": -58.024552,
     "escopo": "Regional",
     "id": "c052c7065d36f8d2",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1935,7 +2097,7 @@
     "lng": -57.936042,
     "escopo": "Regional",
     "id": "a37117fc8ec9f25d",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1954,7 +2116,7 @@
     "lng": -57.9657884,
     "escopo": "Regional",
     "id": "b1a60b412d0dfb12",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1973,7 +2135,7 @@
     "lng": -57.8783289,
     "escopo": "Regional",
     "id": "3c7a5d4a9113e9f0",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -1992,7 +2154,7 @@
     "lng": -57.882313,
     "escopo": "Regional",
     "id": "27ddb0c78fe344aa",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2009,7 +2171,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17415278; time_sofascore=1303230; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "626ffd861cceb3ca",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2028,7 +2190,7 @@
     "lng": -58.054739,
     "escopo": "Regional",
     "id": "8cc0c6ae04ec7a0e",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2047,7 +2209,7 @@
     "lng": -57.95376,
     "escopo": "Regional",
     "id": "dfb3f4ca8194acac",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2066,7 +2228,7 @@
     "lng": -57.936042,
     "escopo": "Regional",
     "id": "4efb55b2e221c72a",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2085,7 +2247,7 @@
     "lng": -58.010679,
     "escopo": "Regional",
     "id": "6cabe1e95d910e3e",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2102,7 +2264,7 @@
     "extra": "pais=Argentina; codigo_sofascore=17415212; time_sofascore=1303227; status=Programado; fonte_dados=sofascore",
     "escopo": "Regional",
     "id": "6dcc690b5d679e34",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2121,7 +2283,7 @@
     "lng": -57.886759,
     "escopo": "Regional",
     "id": "683bd0e7d5ff66ef",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2140,7 +2302,7 @@
     "lng": -57.882313,
     "escopo": "Regional",
     "id": "2f5cb29abe783988",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2159,7 +2321,7 @@
     "lng": -58.035218,
     "escopo": "Regional",
     "id": "f0d877b43b9c6b62",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2178,7 +2340,7 @@
     "lng": -57.971072028125,
     "escopo": "Regional",
     "id": "add26ad516373417",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2197,7 +2359,7 @@
     "lng": -58.00825,
     "escopo": "Regional",
     "id": "19c7d974456dbd89",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2216,7 +2378,7 @@
     "lng": -57.8783289,
     "escopo": "Regional",
     "id": "ed8433a4c3f33040",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2235,7 +2397,7 @@
     "lng": -57.958883,
     "escopo": "Regional",
     "id": "5b2b8d0a883326b4",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2254,7 +2416,7 @@
     "lng": -58.024552,
     "escopo": "Regional",
     "id": "ec0693f5a83e45f2",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2273,7 +2435,7 @@
     "lng": -57.9657884,
     "escopo": "Regional",
     "id": "7528802bfafc7a9e",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2292,7 +2454,7 @@
     "lng": -60.926994,
     "escopo": "Regional",
     "id": "b786675de521908b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2311,7 +2473,7 @@
     "lng": -60.94617,
     "escopo": "Regional",
     "id": "dd8647686af3fc9f",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2330,7 +2492,659 @@
     "lng": -60.955204349187,
     "escopo": "Regional",
     "id": "d6b5300199747c4b",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Aldosivi Reserve",
+    "visitante": "Unión de Mar Del Plata",
+    "pais": "Argentina",
+    "cidade": "Mar del Plata",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/aldosivi-reserve-union-de-mar-del-plata/vUAbsFrVb#id:17535257",
+    "extra": "pais=Argentina; codigo_sofascore=17535257; time_sofascore=238380; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -38.017903,
+    "lng": -57.582386,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "2666a9b301a37ea5",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "San José Reserve",
+    "visitante": "Atlético Mar del Plata",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/san-jose-reserve-atletico-mar-del-plata/Zxxhsdpzk#id:17535268",
+    "extra": "pais=Argentina; codigo_sofascore=17535268; time_sofascore=1310753; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "4d714b5ed8f86e95",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Al Ver Verás Reserve",
+    "visitante": "Chapadmalal Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/chapadmalal-reserve-al-ver-veras-reserve/OozksPozk#id:17535256",
+    "extra": "pais=Argentina; codigo_sofascore=17535256; time_sofascore=1310739; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "850aef0ca618609d",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Quilmes Mar del Plata Reserve",
+    "visitante": "Talleres de Mar Del Plata Reserve",
+    "pais": "Argentina",
+    "cidade": "La Plata",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/quilmes-mar-del-plata-reserve-talleres-de-mar-del-plata-reserve/Qozksnpzk#id:17535258",
+    "extra": "pais=Argentina; codigo_sofascore=17535258; time_sofascore=1310763; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.92068,
+    "lng": -57.95376,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "d4065c46b47c7461",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Círculo Deportivo Reserve",
+    "visitante": "Sportivo San Isidro Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/circulo-deportivo-reserve-sportivo-san-isidro-reserve/Rozksmpzk#id:17535259",
+    "extra": "pais=Argentina; codigo_sofascore=17535259; time_sofascore=1310762; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "eb06f7214683acc6",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Alvarado Reserve",
+    "visitante": "Nación (MdP) Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/alvarado-reserve-nacion-mdp-reserve/Tozkslpzk#id:17535260",
+    "extra": "pais=Argentina; codigo_sofascore=17535260; time_sofascore=1310761; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "ebe86b4edfdd34fc",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Kimberly Reserve",
+    "visitante": "Libertad (MdP) Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/kimberly-reserve-libertad-mdp-reserve/Uozkskpzk#id:17535261",
+    "extra": "pais=Argentina; codigo_sofascore=17535261; time_sofascore=1310760; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "0018b829f148aff9",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Argentinos del Sud Reserve",
+    "visitante": "Independiente (MdP) Reserve",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/argentinos-del-sud-reserve-independiente-mdp-reserve/Vozksjpzk#id:17535262",
+    "extra": "pais=Argentina; codigo_sofascore=17535262; time_sofascore=1310759; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.754461,
+    "lng": -58.10874,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "655ef582ff9e055d",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "River Plate (Mar del Plata) Reserve",
+    "visitante": "General Urquiza Reserve",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/river-plate-mar-del-plata-reserve-general-urquiza-reserve/Wozksipzk#id:17535263",
+    "extra": "pais=Argentina; codigo_sofascore=17535263; time_sofascore=1310758; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.545293,
+    "lng": -58.449739,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "3a24575c22060ca8",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Once Unidos Reserve",
+    "visitante": "Deportivo Norte Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/once-unidos-reserve-deportivo-norte-reserve/Xozkshpzk#id:17535264",
+    "extra": "pais=Argentina; codigo_sofascore=17535264; time_sofascore=1310757; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "bfe7f55ad766d123",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Almagro Florida Reserve",
+    "visitante": "Cadetes Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/almagro-florida-reserve-cadetes-reserve/Yozksgpzk#id:17535265",
+    "extra": "pais=Argentina; codigo_sofascore=17535265; time_sofascore=1310756; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "d564508575e65722",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "General Mitre Reserve",
+    "visitante": "Boca Juniors (Mar del Plata) Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/general-mitre-reserve-boca-juniors-mar-del-plata-reserve/Zozksfpzk#id:17535266",
+    "extra": "pais=Argentina; codigo_sofascore=17535266; time_sofascore=1310755; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "58937668b379668c",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "San Lorenzo Mar del Plata Reserve",
+    "visitante": "Banfield Mar del Plata Reserve",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/san-lorenzo-mar-del-plata-reserve-banfield-mar-del-plata-reserve/apzksepzk#id:17535267",
+    "extra": "pais=Argentina; codigo_sofascore=17535267; time_sofascore=1310754; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.652081,
+    "lng": -58.440045,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "68f9dfa03692411e",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-11",
+    "hora": "13:05",
+    "mandante": "Colegiales (MdP) Reserve",
+    "visitante": "El Cañón Reserve",
+    "pais": "Argentina",
+    "cidade": "Florida Oeste",
+    "estadio": "",
+    "rodada": "Fecha 26",
+    "url": "https://www.sofascore.com/football/match/colegiales-mdp-reserve-el-canon-reserve/bpzkscpzk#id:17535269",
+    "extra": "pais=Argentina; codigo_sofascore=17535269; time_sofascore=1310752; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.53767,
+    "lng": -58.51456,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "cd0b46bbcfe89e11",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-14",
+    "hora": "13:05",
+    "mandante": "Unión de Mar Del Plata",
+    "visitante": "Chapadmalal Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 25",
+    "url": "https://www.sofascore.com/football/match/chapadmalal-reserve-union-de-mar-del-plata/vUAbsPozk#id:17535255",
+    "extra": "pais=Argentina; codigo_sofascore=17535255; time_sofascore=189720; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "e386a79c22994f19",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-14",
+    "hora": "13:05",
+    "mandante": "El Cañón Reserve",
+    "visitante": "San José Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 25",
+    "url": "https://www.sofascore.com/football/match/san-jose-reserve-el-canon-reserve/bpzksdpzk#id:17535243",
+    "extra": "pais=Argentina; codigo_sofascore=17535243; time_sofascore=1310751; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "a9009782daad74ef",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-14",
+    "hora": "13:05",
+    "mandante": "Banfield Mar del Plata Reserve",
+    "visitante": "General Mitre Reserve",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "",
+    "rodada": "Fecha 25",
+    "url": "https://www.sofascore.com/football/match/general-mitre-reserve-banfield-mar-del-plata-reserve/apzksfpzk#id:17535245",
+    "extra": "pais=Argentina; codigo_sofascore=17535245; time_sofascore=1310750; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.750774,
+    "lng": -58.387558,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "857bdc1219ab2342",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-14",
+    "hora": "13:05",
+    "mandante": "Cadetes Reserve",
+    "visitante": "Once Unidos Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 25",
+    "url": "https://www.sofascore.com/football/match/once-unidos-reserve-cadetes-reserve/Yozkshpzk#id:17535247",
+    "extra": "pais=Argentina; codigo_sofascore=17535247; time_sofascore=1310748; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "07fa86a0bbbf5548",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-14",
+    "hora": "13:05",
+    "mandante": "General Urquiza Reserve",
+    "visitante": "Argentinos del Sud Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 25",
+    "url": "https://www.sofascore.com/football/match/argentinos-del-sud-reserve-general-urquiza-reserve/Wozksjpzk#id:17535249",
+    "extra": "pais=Argentina; codigo_sofascore=17535249; time_sofascore=1310746; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "ed2d7029682cc77c",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-14",
+    "hora": "13:05",
+    "mandante": "Libertad (MdP) Reserve",
+    "visitante": "Alvarado Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 25",
+    "url": "https://www.sofascore.com/football/match/alvarado-reserve-libertad-mdp-reserve/Uozkslpzk#id:17535251",
+    "extra": "pais=Argentina; codigo_sofascore=17535251; time_sofascore=1310744; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "1200b70743bd8136",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-14",
+    "hora": "13:05",
+    "mandante": "Sportivo San Isidro Reserve",
+    "visitante": "Quilmes Mar del Plata Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 25",
+    "url": "https://www.sofascore.com/football/match/quilmes-mar-del-plata-reserve-sportivo-san-isidro-reserve/Rozksnpzk#id:17535253",
+    "extra": "pais=Argentina; codigo_sofascore=17535253; time_sofascore=1310742; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "8acd2e2d3901ffd2",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Chapadmalal Reserve",
+    "visitante": "Aldosivi Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/chapadmalal-reserve-aldosivi-reserve/FrVbsPozk#id:17535283",
+    "extra": "pais=Argentina; codigo_sofascore=17535283; time_sofascore=1310740; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "a363c406a6982a29",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Atlético Mar del Plata",
+    "visitante": "Colegiales (MdP) Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/colegiales-mdp-reserve-atletico-mar-del-plata/Zxxhscpzk#id:17535271",
+    "extra": "pais=Argentina; codigo_sofascore=17535271; time_sofascore=931149; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "10f9296c1c7a915e",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Unión de Mar Del Plata",
+    "visitante": "Quilmes Mar del Plata Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/quilmes-mar-del-plata-reserve-union-de-mar-del-plata/vUAbsnpzk#id:17535282",
+    "extra": "pais=Argentina; codigo_sofascore=17535282; time_sofascore=189720; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "ced475a0eb090ac8",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "El Cañón Reserve",
+    "visitante": "Al Ver Verás Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/el-canon-reserve-al-ver-veras-reserve/Oozksbpzk#id:17535270",
+    "extra": "pais=Argentina; codigo_sofascore=17535270; time_sofascore=1310751; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "dd20083617d5c3c1",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Banfield Mar del Plata Reserve",
+    "visitante": "San José Reserve",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/san-jose-reserve-banfield-mar-del-plata-reserve/apzksdpzk#id:17535272",
+    "extra": "pais=Argentina; codigo_sofascore=17535272; time_sofascore=1310750; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.750774,
+    "lng": -58.387558,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "e337c1941d7fd39a",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Boca Juniors (Mar del Plata) Reserve",
+    "visitante": "San Lorenzo Mar del Plata Reserve",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/san-lorenzo-mar-del-plata-reserve-boca-juniors-mar-del-plata-reserve/Zozksepzk#id:17535273",
+    "extra": "pais=Argentina; codigo_sofascore=17535273; time_sofascore=1310749; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.61315,
+    "lng": -58.37723,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "c4ca0e4491686565",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Cadetes Reserve",
+    "visitante": "General Mitre Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/general-mitre-reserve-cadetes-reserve/Yozksfpzk#id:17535274",
+    "extra": "pais=Argentina; codigo_sofascore=17535274; time_sofascore=1310748; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "8cd736836cedfcb6",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Deportivo Norte Reserve",
+    "visitante": "Almagro Florida Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/almagro-florida-reserve-deportivo-norte-reserve/Xozksgpzk#id:17535275",
+    "extra": "pais=Argentina; codigo_sofascore=17535275; time_sofascore=1310747; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "e362896ae6038fef",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "General Urquiza Reserve",
+    "visitante": "Once Unidos Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/once-unidos-reserve-general-urquiza-reserve/Wozkshpzk#id:17535276",
+    "extra": "pais=Argentina; codigo_sofascore=17535276; time_sofascore=1310746; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "8be6dffcb78839bd",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Independiente (MdP) Reserve",
+    "visitante": "River Plate (Mar del Plata) Reserve",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/river-plate-mar-del-plata-reserve-independiente-mdp-reserve/Vozksipzk#id:17535277",
+    "extra": "pais=Argentina; codigo_sofascore=17535277; time_sofascore=1310745; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -34.670223,
+    "lng": -58.371038,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "23a13d372351dcfd",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Libertad (MdP) Reserve",
+    "visitante": "Argentinos del Sud Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/argentinos-del-sud-reserve-libertad-mdp-reserve/Uozksjpzk#id:17535278",
+    "extra": "pais=Argentina; codigo_sofascore=17535278; time_sofascore=1310744; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "88436511bdf416ae",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Nación (MdP) Reserve",
+    "visitante": "Kimberly Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/kimberly-reserve-nacion-mdp-reserve/Tozkskpzk#id:17535279",
+    "extra": "pais=Argentina; codigo_sofascore=17535279; time_sofascore=1310743; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "286d88ac2c6d5a1e",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Sportivo San Isidro Reserve",
+    "visitante": "Alvarado Reserve",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/alvarado-reserve-sportivo-san-isidro-reserve/Rozkslpzk#id:17535280",
+    "extra": "pais=Argentina; codigo_sofascore=17535280; time_sofascore=1310742; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "8bddfb7a8b84651e",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Marplatense de Fútbol - Reserve",
+    "data": "2026-11-15",
+    "hora": "13:05",
+    "mandante": "Talleres de Mar Del Plata Reserve",
+    "visitante": "Círculo Deportivo Reserve",
+    "pais": "Argentina",
+    "cidade": "Cordoba",
+    "estadio": "",
+    "rodada": "Fecha 27",
+    "url": "https://www.sofascore.com/football/match/circulo-deportivo-reserve-talleres-de-mar-del-plata-reserve/Qozksmpzk#id:17535281",
+    "extra": "pais=Argentina; codigo_sofascore=17535281; time_sofascore=1310741; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -31.368847,
+    "lng": -64.246145,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "a354de9638f85541",
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2349,7 +3163,7 @@
     "lng": -63.391,
     "escopo": "Regional",
     "id": "198e3faed303da42",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2368,7 +3182,7 @@
     "lng": -63.381046,
     "escopo": "Regional",
     "id": "026a540846f19fea",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2387,7 +3201,7 @@
     "lng": -63.5253823,
     "escopo": "Regional",
     "id": "c331552be6024965",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2406,7 +3220,7 @@
     "lng": -63.3922032,
     "escopo": "Regional",
     "id": "362e4bc97ec4ab3e",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2425,7 +3239,7 @@
     "lng": -63.3861111,
     "escopo": "Regional",
     "id": "6c1f422c30f4e202",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2444,7 +3258,7 @@
     "lng": -63.534992,
     "escopo": "Regional",
     "id": "5a64c96200834a7d",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2463,7 +3277,7 @@
     "lng": -63.268848,
     "escopo": "Regional",
     "id": "9be4676947c61100",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -2482,6 +3296,6 @@
     "lng": -63.9260504,
     "escopo": "Regional",
     "id": "11feadc8b7724241",
-    "atualizado_em": "2026-11-09T23:26:08+00:00"
+    "atualizado_em": "2026-11-11T03:00:55+00:00"
   }
 ]
