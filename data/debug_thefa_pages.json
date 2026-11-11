@@ -83,7 +83,7 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140729
+    "bytes": 140728
   },
   {
     "copa": "Women's FA Cup",
@@ -121,16 +121,16 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 180110
+    "bytes": 178431
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
-    "jogos_parseados": 20,
+    "jogos_parseados": 19,
     "amostra": [
-      "2026-11-10 19:00 Luton Town v Gillingham @ ",
       "2026-11-12 19:00 Blackpool v Burton Albion @ ",
-      "2026-11-13 19:00 Bradford City v Crewe Alexandra @ "
+      "2026-11-13 19:00 Bradford City v Crewe Alexandra @ ",
+      "2026-11-13 19:00 Hertford Town v Cambridge United @ "
     ]
   }
 ]
