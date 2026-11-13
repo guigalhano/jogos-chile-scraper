@@ -8,8 +8,8 @@
   {
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
-    "status": 200,
-    "bytes": 20710
+    "status": 504,
+    "bytes": 1313
   },
   {
     "copa": "FA Trophy",
@@ -19,16 +19,6 @@
       "2026-11-14 15:00 Hebburn Town v Guiseley AFC @ ",
       "2026-11-14 15:00 Ashton United v Workington AFC @ ",
       "2026-11-14 15:00 Bridlington Town AFC v Macclesfield @ "
-    ]
-  },
-  {
-    "copa": "FA Trophy",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
-    "jogos_parseados": 20,
-    "amostra": [
-      "2026-11-14 15:00 Newmarket Town v Oxford City @ ",
-      "2026-11-14 15:00 Merthyr Town v Harborough Town @ ",
-      "2026-11-14 15:00 Billericay Town v Waltham Abbey @ "
     ]
   },
   {
@@ -67,23 +57,23 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 168792
+    "bytes": 169337
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "jogos_parseados": 16,
     "amostra": [
-      "2026-12-06 13:00 Black Bull v Custys @ ",
       "2026-12-06 13:00 Witton Park Rose & Crown v Home Bargains @ ",
-      "2026-12-06 13:00 Sunderland Southwick v Hartlepool AFC Supporters @ "
+      "2026-12-06 13:00 Sunderland Southwick v Hartlepool AFC Supporters @ ",
+      "2026-12-06 13:00 Thackley Athletic v FC Childwall @ "
     ]
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
-    "status": 200,
-    "bytes": 140737
+    "status": 404,
+    "bytes": 140713
   },
   {
     "copa": "Women's FA Cup",
@@ -121,16 +111,48 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 178431
+    "bytes": 179776
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
+    "status": 200,
+    "bytes": 21829
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
+    "status": 200,
+    "bytes": 12373
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
-    "jogos_parseados": 19,
+    "jogos_parseados": 20,
     "amostra": [
-      "2026-11-12 19:00 Blackpool v Burton Albion @ ",
       "2026-11-13 19:00 Bradford City v Crewe Alexandra @ ",
-      "2026-11-13 19:00 Hertford Town v Cambridge United @ "
+      "2026-11-13 19:00 Hertford Town v Cambridge United @ ",
+      "2026-11-13 20:00 Ilkeston Town v Tranmere Rovers @ "
+    ]
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-12-12 19:00 Luton Town v Hertford T / Cambridge U @ ",
+      "2026-12-12 19:00 Sunderland AFC v Aston Villa @ ",
+      "2026-12-12 19:00 Sheffield United v Wolverhampton Wanderers @ "
+    ]
+  },
+  {
+    "copa": "FA Youth Cup",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
+    "jogos_parseados": 10,
+    "amostra": [
+      "2026-12-12 19:00 Wrexham AFC v Cobham / Exeter City @ ",
+      "2026-12-12 19:00 Burnley v Manchester United @ ",
+      "2026-12-12 19:00 Grimsby T / Chorley v Brighton & Hove Albion @ "
     ]
   }
 ]
