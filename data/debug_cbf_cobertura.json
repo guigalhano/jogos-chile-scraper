@@ -2,20 +2,20 @@
   {
     "competicao": "Brasil - Série A",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_09_11_053e1416ec.pdf",
-    "jogos_futuros_na_tabela": 32,
+    "jogos_futuros_na_tabela": 30,
     "cobertura_ate": "2026-12-02",
-    "dias_restantes": 18,
+    "dias_restantes": 17,
     "status": "ok",
-    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-12-02 (18 dias)."
+    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-12-02 (17 dias)."
   },
   {
     "competicao": "Brasil - Série B",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_13_11_4df87a1a54.pdf",
-    "jogos_futuros_na_tabela": 9,
+    "jogos_futuros_na_tabela": 2,
     "cobertura_ate": "2026-11-28",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "status": "ok",
-    "mensagem": "'Brasil - Série B' cobre jogos futuros ate 2026-11-28 (14 dias)."
+    "mensagem": "'Brasil - Série B' cobre jogos futuros ate 2026-11-28 (13 dias)."
   },
   {
     "competicao": "Brasil - Série C",
@@ -49,9 +49,9 @@
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_Feminina_2026_852edaece8.pdf",
     "jogos_futuros_na_tabela": 1,
     "cobertura_ate": "2026-11-15",
-    "dias_restantes": 1,
+    "dias_restantes": 0,
     "status": "critico",
-    "mensagem": "'Brasil - Copa do Brasil Feminina' so tem jogos futuros ate 2026-11-15 (1 dia(s)) -- cobertura prestes a se esgotar. Atualize o link/seed para o proximo lote de rodadas."
+    "mensagem": "'Brasil - Copa do Brasil Feminina' so tem jogos futuros ate 2026-11-15 (0 dia(s)) -- cobertura prestes a se esgotar. Atualize o link/seed para o proximo lote de rodadas."
   },
   {
     "competicao": "Brasil - Série A Sub-20",
