@@ -12719,6 +12719,12 @@
 "lng": -5.74543,
 "local": "Comber"
 },
+"Irlanda do Norte|Cookstown Youth": {
+"fonte": "nome",
+"lat": 54.64367,
+"lng": -6.7416,
+"local": "Cookstown"
+},
 "Irlanda do Norte|Crumlin Star": {
 "fonte": "nome",
 "lat": 54.62062,
@@ -13145,6 +13151,12 @@
 "lng": -6.26257,
 "local": "Milltown"
 },
+"Irlanda do Norte|Windmill Stars": {
+"fonte": "nome",
+"lat": 54.34643,
+"lng": -7.64772,
+"local": "Windmill Hill"
+},
 "Irlanda|Arklow Town": {
 "fonte": "nome",
 "lat": 52.79822,
@@ -13181,11 +13193,23 @@
 "lng": -6.22461,
 "local": "Avondale"
 },
+"Irlanda|Ayrfield United": {
+"fonte": "nome",
+"lat": 53.39469,
+"lng": -6.18181,
+"local": "Ayrfield Ward 1986"
+},
 "Irlanda|Ballina Town": {
 "fonte": "nome",
 "lat": 54.11434,
 "lng": -9.15321,
 "local": "Ballina"
+},
+"Irlanda|Ballyoulster United": {
+"fonte": "nome",
+"lat": 53.33966,
+"lng": -6.51416,
+"local": "Ballyoulster"
 },
 "Irlanda|Bandon FC": {
 "fonte": "nome",
@@ -13289,6 +13313,12 @@
 "lng": -6.51785,
 "local": "College"
 },
+"Irlanda|Collinstown": {
+"fonte": "cidade",
+"lat": 53.34938,
+"lng": -6.26056,
+"local": "Dublin"
+},
 "Irlanda|Cork City": {
 "fonte": "sofascore",
 "lat": 51.88825,
@@ -13354,6 +13384,12 @@
 "lat": 53.61905,
 "lng": -8.74226,
 "local": "Dunmore"
+},
+"Irlanda|Enniskerry YC": {
+"fonte": "nome",
+"lat": 53.19273,
+"lng": -6.17036,
+"local": "Enniskerry"
 },
 "Irlanda|Finglas United": {
 "fonte": "nome",
@@ -13451,6 +13487,12 @@
 "lng": -9.10909,
 "local": "Knocknacarra"
 },
+"Irlanda|Leixlip United AFC": {
+"fonte": "nome",
+"lat": 53.36448,
+"lng": -6.48974,
+"local": "Leixlip ED"
+},
 "Irlanda|Letterkenny Rovers": {
 "fonte": "sofascore",
 "lat": 54.94397,
@@ -13505,6 +13547,12 @@
 "lng": -8.1701,
 "local": "Midleton"
 },
+"Irlanda|Monread": {
+"fonte": "nome",
+"lat": 53.23291,
+"lng": -6.65325,
+"local": "Monread South"
+},
 "Irlanda|Montpelier FC": {
 "fonte": "nome",
 "lat": 52.75101,
@@ -13553,6 +13601,12 @@
 "lng": -6.48521,
 "local": "Peamount"
 },
+"Irlanda|Raheny United": {
+"fonte": "nome",
+"lat": 53.3802,
+"lng": -6.17515,
+"local": "Raheny"
+},
 "Irlanda|Renmore": {
 "fonte": "nome",
 "lat": 53.27597,
@@ -13564,6 +13618,12 @@
 "lat": 53.27597,
 "lng": -9.02086,
 "local": "Renmore"
+},
+"Irlanda|Rush Athletic": {
+"fonte": "nome",
+"lat": 53.52204,
+"lng": -6.0909,
+"local": "Rush"
 },
 "Irlanda|Salthill Devon FC": {
 "fonte": "sofascore",
@@ -13660,6 +13720,12 @@
 "lat": 53.35843,
 "lng": -6.24162,
 "local": "North Strand"
+},
+"Irlanda|Swords Celtic FC": {
+"fonte": "nome",
+"lat": 53.45948,
+"lng": -6.21917,
+"local": "Swords"
 },
 "Irlanda|Temple United AFC": {
 "fonte": "nome",
