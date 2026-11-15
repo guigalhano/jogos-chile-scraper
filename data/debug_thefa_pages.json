@@ -3,27 +3,11 @@
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "status": 200,
-    "bytes": 179156
-  },
-  {
-    "copa": "FA Trophy",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
-    "status": 200,
-    "bytes": 1731
+    "bytes": 160235
   },
   {
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
-    "jogos_parseados": 20,
-    "amostra": [
-      "2026-11-14 15:00 Hebburn Town v Guiseley AFC @ ",
-      "2026-11-14 15:00 Ashton United v Workington AFC @ ",
-      "2026-11-14 15:00 Bridlington Town AFC v Macclesfield @ "
-    ]
-  },
-  {
-    "copa": "FA Trophy",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
     "jogos_parseados": 0,
     "amostra": []
   },
@@ -79,38 +63,21 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140720
+    "bytes": 140681
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 180923
-  },
-  {
-    "copa": "Women's FA Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
-    "status": 200,
-    "bytes": 6733
+    "bytes": 161835
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
-    "jogos_parseados": 20,
+    "jogos_parseados": 2,
     "amostra": [
-      "2026-11-14 15:00 Dulwich Hamlet Women v Portishead Town Ladies @ ",
-      "2026-11-15 12:00 Norwich City Women v AFC Bournemouth Women @ ",
-      "2026-11-15 13:00 Derby County Women v Bolton Wanderers Women @ "
-    ]
-  },
-  {
-    "copa": "Women's FA Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=5&page=2",
-    "jogos_parseados": 4,
-    "amostra": [
-      "2026-11-15 14:00 Maidenhead United Women v AFC Wimbledon Women @ ",
-      "2026-11-15 14:00 Bridgwater United Women v Lewes Women @ ",
-      "2026-11-15 15:00 Chesterfield Women v Leafield Athletic Ladies @ "
+      "2026-11-15 15:00 Chesterfield Women v Leafield Athletic Ladies @ ",
+      "2026-11-15 15:00 Barking Women v Cambridge United Women @ "
     ]
   },
   {
