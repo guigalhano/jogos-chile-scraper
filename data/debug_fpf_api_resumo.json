@@ -16,27 +16,35 @@
     "historico": 15
   },
   {
+    "campeonato": "Brasil - FPF - Copinha F Petrobras (Junior)",
+    "IdCampeonato": 204,
+    "IdCategoria": 45,
+    "total_ano": 30,
+    "programados": 30,
+    "historico": 30
+  },
+  {
     "campeonato": "Brasil - FPF - Paulista F Sub-20 Petrobras (Amador)",
     "IdCampeonato": 196,
     "IdCategoria": 38,
     "total_ano": 79,
-    "programados": 1,
+    "programados": 0,
     "historico": 13
   },
   {
     "campeonato": "Brasil - FPF - Paulista Sub-20 - Série A (SUB20 - Série A)",
     "IdCampeonato": 221,
     "IdCategoria": 94,
-    "total_ano": 361,
-    "programados": 0,
-    "historico": 28
+    "total_ano": 363,
+    "programados": 2,
+    "historico": 30
   },
   {
     "campeonato": "Brasil - FPF - Paulista F Sub-17 Petrobras (Amador)",
     "IdCampeonato": 161,
     "IdCategoria": 38,
     "total_ano": 54,
-    "programados": 1,
+    "programados": 0,
     "historico": 12
   },
   {
@@ -60,7 +68,7 @@
     "IdCampeonato": 202,
     "IdCategoria": 90,
     "total_ano": 662,
-    "programados": 4,
+    "programados": 2,
     "historico": 29
   },
   {
@@ -68,7 +76,7 @@
     "IdCampeonato": 127,
     "IdCategoria": 81,
     "total_ano": 662,
-    "programados": 3,
+    "programados": 2,
     "historico": 29
   },
   {
@@ -206,14 +214,6 @@
     "total_ano": 25,
     "programados": 0,
     "historico": 0
-  },
-  {
-    "campeonato": "Brasil - FPF - Copinha F Petrobras (Junior)",
-    "IdCampeonato": 204,
-    "IdCategoria": 45,
-    "total_ano": 30,
-    "programados": 30,
-    "historico": 30
   },
   {
     "campeonato": "Brasil - FPF - Copinha Sil (Junior)",
