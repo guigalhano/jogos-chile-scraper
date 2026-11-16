@@ -3,13 +3,33 @@
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "status": 200,
-    "bytes": 160235
+    "bytes": 179031
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
+    "status": 200,
+    "bytes": 13556
   },
   {
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
-    "jogos_parseados": 0,
-    "amostra": []
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-12-12 15:00 Scunthorpe United v Hebburn Town @ ",
+      "2026-12-12 15:00 Hartlepool United v Ashton United @ ",
+      "2026-12-12 15:00 Carlisle United AFC v Southport @ "
+    ]
+  },
+  {
+    "copa": "FA Trophy",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=2",
+    "jogos_parseados": 12,
+    "amostra": [
+      "2026-12-12 15:00 Truro City v Walton & Hersham @ ",
+      "2026-12-12 15:00 Oxford City v Eastbourne Borough @ ",
+      "2026-12-12 15:00 Slough Town v Billericay Town @ "
+    ]
   },
   {
     "copa": "FA Vase",
@@ -47,7 +67,7 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 169337
+    "bytes": 169468
   },
   {
     "copa": "FA Sunday Cup",
@@ -63,22 +83,19 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140681
+    "bytes": 140706
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 161835
+    "bytes": 159157
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
-    "jogos_parseados": 2,
-    "amostra": [
-      "2026-11-15 15:00 Chesterfield Women v Leafield Athletic Ladies @ ",
-      "2026-11-15 15:00 Barking Women v Cambridge United Women @ "
-    ]
+    "jogos_parseados": 0,
+    "amostra": []
   },
   {
     "copa": "FA Youth Cup",
