@@ -35,7 +35,7 @@
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
     "status": 200,
-    "bytes": 178137
+    "bytes": 178251
   },
   {
     "copa": "FA Vase",
@@ -67,62 +67,66 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 169468
+    "bytes": 169697
   },
   {
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "jogos_parseados": 16,
     "amostra": [
+      "2026-12-06 12:00 Sunderland Southwick v Hartlepool AFC Supporters @ ",
       "2026-12-06 13:00 Witton Park Rose & Crown v Home Bargains @ ",
-      "2026-12-06 13:00 Sunderland Southwick v Hartlepool AFC Supporters @ ",
-      "2026-12-06 13:00 Thackley Athletic v FC Childwall @ "
+      "2026-12-06 13:00 Wrekin View v Stourport Swifts (Sunday) @ "
     ]
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140706
+    "bytes": 140707
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 159157
+    "bytes": 177506
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
-    "jogos_parseados": 0,
-    "amostra": []
+    "jogos_parseados": 19,
+    "amostra": [
+      "2026-11-18 19:45 Lye Town Women v Peterborough United Women @ ",
+      "2026-12-13 13:00 Sheffield United Women v Burnley Women @ ",
+      "2026-12-13 13:00 Nottingham Forest Women v Sunderland AFC Women @ "
+    ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 179451
+    "bytes": 180221
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 21957
+    "bytes": 22069
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
     "status": 200,
-    "bytes": 9534
+    "bytes": 8522
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-16 19:30 Bromley v AFC Wimbledon @ ",
       "2026-11-17 19:00 Wigan Athletic v Mansfield Town @ ",
-      "2026-11-17 19:00 Shrewsbury Town v Fleetwood Town @ "
+      "2026-11-17 19:00 Shrewsbury Town v Fleetwood Town @ ",
+      "2026-11-17 19:00 Bristol Rovers v Oxford United @ "
     ]
   },
   {
@@ -138,7 +142,7 @@
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
-    "jogos_parseados": 7,
+    "jogos_parseados": 6,
     "amostra": [
       "2026-12-12 19:00 Wycombe W / Leyton O v Wigan Ath / Mansfield @ ",
       "2026-12-12 19:00 Derby County v Chelsea @ ",
