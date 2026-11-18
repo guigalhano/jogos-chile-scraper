@@ -83,7 +83,7 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140707
+    "bytes": 140742
   },
   {
     "copa": "Women's FA Cup",
@@ -105,28 +105,28 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 180221
+    "bytes": 179788
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 22069
+    "bytes": 22616
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
     "status": 200,
-    "bytes": 8522
+    "bytes": 3683
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-17 19:00 Wigan Athletic v Mansfield Town @ ",
-      "2026-11-17 19:00 Shrewsbury Town v Fleetwood Town @ ",
-      "2026-11-17 19:00 Bristol Rovers v Oxford United @ "
+      "2026-11-18 19:00 Stockport County v Blyth Spartans AFC @ ",
+      "2026-11-18 19:00 Grimsby Town v Chorley @ ",
+      "2026-11-18 19:00 Barnet v AFC Sudbury @ "
     ]
   },
   {
@@ -134,19 +134,17 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-12-12 19:00 Norwich City v Preston North End @ ",
-      "2026-12-12 19:00 Fulham v Swansea City @ ",
-      "2026-12-12 19:00 Coventry City v Reading / Swindon T @ "
+      "2026-12-12 19:00 Barnet / AFC Sudbury v Oxford United @ ",
+      "2026-12-12 19:00 Lincoln City v Leeds United AFC @ ",
+      "2026-12-12 19:00 Blackburn Rovers v Crewe Alexandra @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
-    "jogos_parseados": 6,
+    "jogos_parseados": 1,
     "amostra": [
-      "2026-12-12 19:00 Wycombe W / Leyton O v Wigan Ath / Mansfield @ ",
-      "2026-12-12 19:00 Derby County v Chelsea @ ",
-      "2026-12-12 19:00 Stoke City v Charlton Athletic @ "
+      "2026-12-12 19:00 Chippenham / Kingstonian v Bristol City @ "
     ]
   }
 ]
