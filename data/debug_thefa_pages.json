@@ -67,7 +67,7 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 169697
+    "bytes": 169927
   },
   {
     "copa": "FA Sunday Cup",
@@ -83,68 +83,54 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140742
+    "bytes": 140681
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 177506
+    "bytes": 180004
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
-    "jogos_parseados": 19,
+    "jogos_parseados": 20,
     "amostra": [
-      "2026-11-18 19:45 Lye Town Women v Peterborough United Women @ ",
-      "2026-12-13 13:00 Sheffield United Women v Burnley Women @ ",
-      "2026-12-13 13:00 Nottingham Forest Women v Sunderland AFC Women @ "
+      "2026-11-22 13:00 Lye Town Women v Peterborough United Women @ ",
+      "2026-11-29 13:00 Lye Town Women / Peterborough United Women v Rugby Borough Women @ ",
+      "2026-12-13 12:00 Norwich City Women v Bristol City Women @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 179788
+    "bytes": 180973
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 22616
-  },
-  {
-    "copa": "FA Youth Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
-    "status": 200,
-    "bytes": 3683
+    "bytes": 20409
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-18 19:00 Stockport County v Blyth Spartans AFC @ ",
-      "2026-11-18 19:00 Grimsby Town v Chorley @ ",
-      "2026-11-18 19:00 Barnet v AFC Sudbury @ "
+      "2026-11-19 19:30 Chippenham Town v Kingstonian @ ",
+      "2026-11-20 19:00 Leicester City v Milton Keynes Dons @ ",
+      "2026-11-20 19:30 Cheadle Town v Sheffield Wednesday @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 20,
+    "jogos_parseados": 18,
     "amostra": [
-      "2026-12-12 19:00 Barnet / AFC Sudbury v Oxford United @ ",
-      "2026-12-12 19:00 Lincoln City v Leeds United AFC @ ",
-      "2026-12-12 19:00 Blackburn Rovers v Crewe Alexandra @ "
-    ]
-  },
-  {
-    "copa": "FA Youth Cup",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=3",
-    "jogos_parseados": 1,
-    "amostra": [
-      "2026-12-12 19:00 Chippenham / Kingstonian v Bristol City @ "
+      "2026-12-12 19:00 Sunderland AFC v Aston Villa @ ",
+      "2026-12-12 19:00 Norwich City v Preston North End @ ",
+      "2026-12-12 19:00 Coventry City v Swindon Town @ "
     ]
   }
 ]
