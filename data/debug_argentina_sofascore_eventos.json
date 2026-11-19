@@ -24,14 +24,14 @@
     "id": 703,
     "categoria": 48,
     "temporada": "Primera Nacional 2026",
-    "eventos_janela": 8,
+    "eventos_janela": 16,
     "erro": null
   },
   "Primera B Metropolitana": {
     "id": 1347,
     "categoria": 48,
     "temporada": "Primera B 2026",
-    "eventos_janela": 9,
+    "eventos_janela": 8,
     "erro": null
   },
   "Primera C Metropolitana": {
@@ -66,7 +66,7 @@
     "id": 10495,
     "categoria": 48,
     "temporada": "Primera Division, Women 2026",
-    "eventos_janela": 18,
+    "eventos_janela": 21,
     "erro": null
   },
   "Trofeo de Campeones de la Liga Profesional": {
@@ -80,7 +80,7 @@
     "id": 18817,
     "categoria": 48,
     "temporada": "Primera LPF, Reserves 2026",
-    "eventos_janela": 31,
+    "eventos_janela": 24,
     "erro": null
   },
   "Supercopa Internacional": {
@@ -108,56 +108,56 @@
     "id": 21339,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Litoral Norte 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Centro": {
     "id": 21340,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Centro 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 8,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Cuyo": {
     "id": 21342,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Cuyo 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Litoral Sur": {
     "id": 21341,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Litoral Sur 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Norte": {
     "id": 21338,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Norte 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Patagónica": {
     "id": 21345,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Patagónica 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 8,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Pampeana Sur": {
     "id": 21344,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Pampeana Sur 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 4,
     "erro": null
   },
   "Torneo Regional Federal Amateur – Región Pampeana Norte": {
     "id": 21343,
     "categoria": 1783,
     "temporada": "Torneo Regional Federal Amateur – Región Pampeana Norte 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 8,
     "erro": null
   },
   "Liga Independiente de Las Colonias, Apertura": {
@@ -199,7 +199,7 @@
     "id": 21993,
     "categoria": 1783,
     "temporada": "Clausura 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 6,
     "erro": null
   },
   "Liga Regional Futbol del Sur - Corral de Bustos": {
@@ -360,21 +360,21 @@
     "id": 25036,
     "categoria": 1783,
     "temporada": "Clausura 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 3,
     "erro": null
   },
   "U13 Liga Regional de Fútbol General Roca": {
     "id": 25037,
     "categoria": 1783,
     "temporada": "Clausura 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 3,
     "erro": null
   },
   "U11 Liga Regional de Fútbol General Roca": {
     "id": 25038,
     "categoria": 1783,
     "temporada": "Clausura 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 3,
     "erro": null
   },
   "Liga Regional de Fútbol General Roca, Femenino": {
@@ -597,8 +597,8 @@
   "Torneo Provincial Femenino": {
     "id": 31227,
     "categoria": 1783,
-    "temporada": "2025",
-    "eventos_janela": 0,
+    "temporada": "Torneo Provincial Femenino 2026",
+    "eventos_janela": 9,
     "erro": null
   },
   "Torneo Preparación": {
@@ -787,7 +787,14 @@
     "id": 40000,
     "categoria": 1783,
     "temporada": "Liga Marplatense de Fútbol - Reserve 2026",
-    "eventos_janela": 35,
+    "eventos_janela": 21,
+    "erro": null
+  },
+  "Liga Mendocina de Reserva": {
+    "id": 40320,
+    "categoria": 1783,
+    "temporada": "Liga Mendocina de Reserva 26/27",
+    "eventos_janela": 0,
     "erro": null
   },
   "Liga Rafaelina de Fútbol": {
