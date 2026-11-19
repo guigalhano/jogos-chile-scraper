@@ -1,4 +1,16 @@
 ﻿id,fonte,competicao,data,hora,pais,cidade,mandante,visitante,estadio,rodada,url,extra,atualizado_em
+cdbaa2e8e7b78233,FUTBOLPERUANO,Peru - Liga 2,2026-11-14,15:30,Peru,,ADA Jaén,Mannucci,,Semifinales,,status=Jugado; placar=0-0,2026-11-19T21:15:01
+faac3915c2c413d4,FUTBOLPERUANO,Peru - Liga 2,2026-11-15,10:45,Peru,,San Martín,U. Comercio,,Semifinales,,status=Jugado; placar=1-1,2026-11-19T21:15:01
+9fec84e21bccb13a,FUTBOLPERUANO,Peru - Liga 3,2026-11-15,12:00,Peru,,S. Company,Valle Sagrado,,Fase Final Grupo 3,,status=Jugado; placar=5-3,2026-11-19T21:15:01
+a350ed025a4ef974,FUTBOLPERUANO,Peru - Liga 3,2026-11-15,13:00,Peru,,Ecosem,UDA,,Fase Final Grupo 4,,status=Jugado; placar=13-1,2026-11-19T21:15:01
+aee8b8cefeab833e,FUTBOLPERUANO,Peru - Liga 3,2026-11-15,14:00,Peru,,Melgar,Nacional,,Fase Final Grupo 4,,status=Jugado; placar=3-4,2026-11-19T21:15:01
+b8af0b82bcd22e1d,FUTBOLPERUANO,Peru - Liga 1,2026-11-15,15:15,Peru,,Juan Pablo II,Garcilaso,,Fase Regular,,status=Jugado; placar=2-2,2026-11-19T21:15:01
+a16ebcf3e4977a1b,FUTBOLPERUANO,Peru - Liga 3,2026-11-15,15:30,Peru,,ASA FC,D. Ucrania,,Fase Final Grupo 3,,status=Jugado; placar=4-2,2026-11-19T21:15:01
+62f0e0f72feb5190,FUTBOLPERUANO,Peru - Copa de la Liga,2026-11-15,17:00,Peru,,Cristal,A. Atlético,,Final,,status=Jugado; placar=2-0,2026-11-19T21:15:01
+ffcec761e780d489,FUTBOLPERUANO,Peru - Liga 1,2026-11-16,13:00,Peru,,UTC,Los Chankas,,Fase Regular,,status=Jugado; placar=5-3,2026-11-19T21:15:01
+2bdb25ae2b01a873,FUTBOLPERUANO,Peru - Liga 1,2026-11-16,15:15,Peru,,Cusco FC,ADT,,Fase Regular,,status=Jugado; placar=2-2,2026-11-19T21:15:01
+0b4688608256ac3c,FUTBOLPERUANO,Peru - Liga 1,2026-11-16,15:15,Peru,,D. Moquegua,Grau,,Fase Regular,,status=Jugado; placar=2-1,2026-11-19T21:15:01
+7ecfaf5eea3fbb0c,FUTBOLPERUANO,Peru - Liga 1,2026-11-18,15:00,Peru,,A. Atlético,Melgar,,Fase Regular,,status=Jugado; placar=1-1,2026-11-19T21:15:01
 be964c8cd5b965fc,SofaScore,Argentina - Fútbol Femenino Primera División A,2026-11-19,15:00,Argentina,Buenos Aires,Ferro Carril Oeste,River Plate,Estadio Arquitecto Ricardo Etcheverry,Fecha 7,https://www.sofascore.com/football/match/ferro-carril-oeste-river-plate/iXfcsEInd#id:17578129,pais=Argentina; codigo_sofascore=17578129; time_sofascore=409179; status=Programado; fonte_dados=sofascore,2026-11-18T13:02:29+00:00
 3e072e6939cc2fcb,SofaScore,Argentina - Torneo Proyección,2026-11-19,15:00,Argentina,,Aldosivi Reserve,Godoy Cruz Reserve,,Group A - Fecha 18,https://www.sofascore.com/football/match/godoy-cruz-reserve-aldosivi-reserve/FrVbsbpWb#id:17558033,pais=Argentina; codigo_sofascore=17558033; time_sofascore=238380; status=Programado; fonte_dados=sofascore,2026-11-18T13:02:29+00:00
 a1104c010af27bdb,FGF,Brasil - FGF - Copa Goiás Sub 15 da 2ª Divisão / 2026,2026-11-19,15:00,Brasil,,Cristianópols FC,CEC - Cerrado Esporte Clube,Sandoval Prudente,2ª Rodada,https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1790&jogo=60649,status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax,2026-11-12T19:35:45
@@ -73,6 +85,7 @@ f42a53a12a137998,FPF,Brasil - FPF - Amador do Estado,2026-11-21,15:00,Brasil,Nup
 9d341456ffdf4ffd,FGF,Gauchão Série B 2026,2026-11-21,15:00,Brasil,,FCV,RSC,CT Futvida,Final,https://fgf.com.br/competicoes/profissional/25,,2026-11-18T21:45:49
 f59bf10d413c0007,FGF,Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026,2026-11-21,15:30,Brasil,,Real Clube,Itumbiara,Jk,7ª Rodada,https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1830&jogo=58159,status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax,2026-11-19T20:01:39
 4b71644a7a3cd3a4,ESPN,Peru - Liga 1,2026-11-21,15:30,Peru,Lima,Alianza Lima,FC Cajamarca,Estadio Alejandro Villanueva,,,codigo_espn=401886135; status=Scheduled,2026-11-18T22:58:35
+ec60c41c9a21d59f,FUTBOLPERUANO,Peru - Liga 1,2026-11-21,15:30,Peru,,Alianza Lima,FC Cajamarca,,Fase Regular,,status=Por jugar; placar=0-0,2026-11-19T21:15:01
 addd014dc5000f78,campeonatochileno.cl,Campeonato Nacional Juvenil Femenino Clausura,2026-11-21,16:00,,,Colo Colo Juvenil Fem,Huachipato Juvenil Fem,Estadio Monumental – Cancha 6,,https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/,,2026-07-13T14:46:09
 55020a8ae4a46baf,FGF,Brasil - FGF - Copa Goiás Sub 11 da 1ª Divisão / 2026,2026-11-21,16:00,Brasil,,Goiás,Cewg,CT Edmo Pinheiro,1ª Rodada,https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1780&jogo=60976,status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax,2026-11-18T20:02:23
 8492d77172af6865,FPF,Brasil - FPF - Paulista Sub-12 (SUB12),2026-11-21,16:00,Brasil,São Paulo,Corinthians,Palmeiras,Estádio Alfredo Schürig,Rodada 21,https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx,status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=604; grupo=39; fase=SEMIFINAL; suspencao=LIBERADO,2026-11-18T21:33:09
@@ -116,7 +129,7 @@ de5df51e750933e8,ESPN,Ecuador - LigaPro Serie A,2026-11-22,14:00,Ecuador,Machala
 442a227ea06970db,ESPN,Bolivia - Liga Profesional Boliviana,2026-11-22,15:00,Bolivia,Potosí,Real Potosí,Bolívar,Estadio Víctor Agustín Ugarte,,,codigo_espn=401930029; status=Scheduled,2026-11-18T22:27:28
 d927dd12b5ecb173,ESPN,Peru - Liga 1,2026-11-22,15:00,Peru,Huancayo,Sport Huancayo,Universitario,Estadio Huancayo,,,codigo_espn=401886136; status=Scheduled,2026-11-18T22:58:35
 a0d132d6a872bea4,ESPN,Peru - Liga 1,2026-11-22,15:00,Peru,San Martin de Porres,Sporting Cristal,Cienciano del Cusco,Estadio Alberto Gallardo,,,codigo_espn=401886120; status=Scheduled,2026-11-18T22:58:35
-860e8f1e89e56f4f,FUTBOLPERUANO,Peru - Liga 2,2026-11-22,15:00,Peru,,U. Comercio,San Martín,,Semifinales,,status=Por jugar,2026-11-18T21:13:13
+860e8f1e89e56f4f,FUTBOLPERUANO,Peru - Liga 2,2026-11-22,15:00,Peru,,U. Comercio,San Martín,,Semifinales,,status=Por jugar,2026-11-19T21:15:01
 09e48f1c0af0dd29,AFA,Argentina - Primera C,2026-11-22,15:30,Argentina,,Estrella del Sur,Cañuelas F.C.,,Semifinals,https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa,,2026-11-19T20:18:29
 334fd03c05412025,FGF,Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026,2026-11-22,15:30,Brasil,,América,Associacao Atletica Rioverdense,João Vilela,7ª Rodada,https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1830&jogo=58158,status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax,2026-11-16T21:41:32
 08ba828d91e2e88c,FGF,Brasil - FGF - Campeonato Goiano de Profissionais da 3ª Divisão / 2026,2026-11-22,15:30,Brasil,,Real Clube,Itumbiara,Jk,7ª Rodada,https://www.fgf.esp.br/pt/competicoes/jogo.php?id=1830&jogo=58159,status=Programado; pais=Brasil; estado=Goiás; fonte=api_ajax,2026-11-15T18:31:17
@@ -161,7 +174,7 @@ efe99973f83451eb,SofaScore,Argentina - Liga Regional Riotercerense de Fútbol - 
 bf2c1dfe23bcea5e,CBF,Brasil - Série A,2026-11-22,19:30,,Bragança Paulista,Red Bull Bragantino (SP),Vasco da Gama (RJ),Cícero S. Marques,Rodada 36,https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf,pais=Brasil; cidade=Bragança Paulista,2026-11-19T20:38:50
 17c63c21e85b6565,AFA-FederalA,Argentina - Torneo Federal A,2026-11-22,19:30,Argentina,La Banda,Sarmiento (La Banda),Cipolletti,Sede de Sarmiento (La Banda),,https://ascensodelinterior.com.ar/noticias/37016/la-programacion-del-fin-de-semana/,pais=Argentina; provincia=Santiago del Estero; lat=-27.7317; lng=-64.2381; fonte_dados=ascensodelinterior.com.ar,2026-11-19T19:59:10
 44fa3644510f880a,ESPN,Bolivia - Liga Profesional Boliviana,2026-11-22,19:30,Bolivia,Cochabamba,San Antonio Bulo Bulo,Always Ready,Estadio Félix Capriles,,,codigo_espn=401930028; status=Scheduled,2026-11-18T22:27:28
-c9bb33c620c42e7e,FUTBOLPERUANO,Peru - Liga 2,2026-11-22,19:30,Peru,,Mannucci,ADA Jaén,,Semifinales,,status=Por jugar,2026-11-18T21:13:13
+c9bb33c620c42e7e,FUTBOLPERUANO,Peru - Liga 2,2026-11-22,19:30,Peru,,Mannucci,ADA Jaén,,Semifinales,,status=Por jugar,2026-11-19T21:15:01
 d1affa47a7991b88,campeonatochileno.cl,Liga de Primera Mercado Libre,2026-11-22,20:30,,,Deportes Limache,Deportes La Serena,Municipal Lucio Fariña Fernández,Fecha 28,https://www.campeonatochileno.cl/ligas/liga-de-primera-mercado-libre/,,2026-11-19T20:18:26
 dac817753e6116ea,AFA,Argentina - Torneo Clausura,2026-11-22,22:00,Argentina,,Instituto,Huracán,,,https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa,,2026-11-18T20:14:55
 142fc6ba209b0a62,AFA,Argentina - Torneo Clausura,2026-11-22,22:00,Argentina,,Instituto,"Huracán,",,,https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa,,2026-11-19T20:18:29
