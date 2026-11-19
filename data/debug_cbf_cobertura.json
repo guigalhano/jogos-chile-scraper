@@ -1,21 +1,21 @@
 [
   {
     "competicao": "Brasil - Série A",
-    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_16_11_84aba21463.pdf",
-    "jogos_futuros_na_tabela": 30,
+    "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
+    "jogos_futuros_na_tabela": 24,
     "cobertura_ate": "2026-12-02",
-    "dias_restantes": 14,
+    "dias_restantes": 13,
     "status": "ok",
-    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-12-02 (14 dias)."
+    "mensagem": "'Brasil - Série A' cobre jogos futuros ate 2026-12-02 (13 dias)."
   },
   {
     "competicao": "Brasil - Série B",
     "pdf_url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_16_11_f445df8d86.pdf",
     "jogos_futuros_na_tabela": 4,
     "cobertura_ate": "2026-11-28",
-    "dias_restantes": 10,
-    "status": "ok",
-    "mensagem": "'Brasil - Série B' cobre jogos futuros ate 2026-11-28 (10 dias)."
+    "dias_restantes": 9,
+    "status": "atencao",
+    "mensagem": "'Brasil - Série B' cobre jogos futuros so ate 2026-11-28 (9 dias) -- vale planejar a atualizacao do link/seed em breve."
   },
   {
     "competicao": "Brasil - Série C",
