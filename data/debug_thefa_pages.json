@@ -83,13 +83,13 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140681
+    "bytes": 140709
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 180004
+    "bytes": 180221
   },
   {
     "copa": "Women's FA Cup",
@@ -105,32 +105,32 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 180973
+    "bytes": 180297
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 20409
+    "bytes": 19513
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-19 19:30 Chippenham Town v Kingstonian @ ",
       "2026-11-20 19:00 Leicester City v Milton Keynes Dons @ ",
-      "2026-11-20 19:30 Cheadle Town v Sheffield Wednesday @ "
+      "2026-11-20 19:30 Cheadle Town v Sheffield Wednesday @ ",
+      "2026-11-20 19:30 Cobham v Exeter City @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 18,
+    "jogos_parseados": 17,
     "amostra": [
-      "2026-12-12 19:00 Sunderland AFC v Aston Villa @ ",
       "2026-12-12 19:00 Norwich City v Preston North End @ ",
-      "2026-12-12 19:00 Coventry City v Swindon Town @ "
+      "2026-12-12 19:00 Coventry City v Swindon Town @ ",
+      "2026-12-12 19:00 Stockport County v Leicester / MK Dons @ "
     ]
   }
 ]
