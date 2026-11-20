@@ -145,6 +145,38 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-07",
+    "hora": "19:00",
+    "mandante": "Caracas FC",
+    "visitante": "Academia Puerto Cabello",
+    "pais": "Venezuela",
+    "cidade": "Caracas",
+    "estadio": "Estadio Olímpico de la UCV",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930996; status=Full Time; placar=1-2",
+    "id": "00ebdd61e15d0675",
+    "atualizado_em": "2026-11-20T22:13:48"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-07",
+    "hora": "19:00",
+    "mandante": "Monagas SC",
+    "visitante": "Deportivo Táchira",
+    "pais": "Venezuela",
+    "cidade": "Maturin",
+    "estadio": "Estadio Monumental de Maturín",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930970; status=Full Time; placar=0-2",
+    "id": "82cc0ebd0993d055",
+    "atualizado_em": "2026-11-20T22:13:48"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-11-07",
     "hora": "19:30",
@@ -228,6 +260,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-08",
+    "hora": "17:00",
+    "mandante": "Portuguesa",
+    "visitante": "Metropolitanos",
+    "pais": "Venezuela",
+    "cidade": "Acarigua",
+    "estadio": "Estadio General José Antonio Páez",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930965; status=Full Time; placar=2-2",
+    "id": "e0a7fdb79b784f4d",
+    "atualizado_em": "2026-11-20T22:13:48"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-11-08",
     "hora": "17:15",
@@ -241,6 +289,22 @@
     "extra": "codigo_espn=401930006; status=Full Time; placar=1-0",
     "id": "e9b1c686de51d56f",
     "atualizado_em": "2026-11-20T22:05:42"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-08",
+    "hora": "17:30",
+    "mandante": "Deportivo La Guaira",
+    "visitante": "Carabobo",
+    "pais": "Venezuela",
+    "cidade": "Caracas",
+    "estadio": "Estadio Olímpico de la UCV",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930991; status=Full Time; placar=0-0",
+    "id": "456190841241955b",
+    "atualizado_em": "2026-11-20T22:13:48"
   },
   {
     "fonte": "ESPN",
@@ -401,6 +465,22 @@
     "extra": "codigo_espn=401878034; status=Full Time; placar=0-1",
     "id": "5749a00a58572c6a",
     "atualizado_em": "2026-11-20T21:37:50"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-12",
+    "hora": "18:00",
+    "mandante": "Academia Puerto Cabello",
+    "visitante": "Monagas SC",
+    "pais": "Venezuela",
+    "cidade": "Carabobo",
+    "estadio": "Complejo Deportivo Socialista",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930994; status=Full Time; placar=0-1",
+    "id": "ff52fb17c155a1f6",
+    "atualizado_em": "2026-11-20T22:13:48"
   },
   {
     "fonte": "ESPN",
@@ -2141,6 +2221,22 @@
     "competicao": "Venezuela - Liga FUTVE (Primera División)",
     "data": "2026-11-21",
     "hora": "17:30",
+    "mandante": "Carabobo",
+    "visitante": "Portuguesa",
+    "pais": "Venezuela",
+    "cidade": "Valencia",
+    "estadio": "Estadio Misael Delgado",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930989; status=Scheduled",
+    "id": "6be5f1202b0a71de",
+    "atualizado_em": "2026-11-20T22:13:48"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-21",
+    "hora": "17:30",
     "mandante": "Deportivo Táchira",
     "visitante": "Caracas FC",
     "pais": "Venezuela",
@@ -2150,7 +2246,7 @@
     "url": "",
     "extra": "codigo_espn=401930995; status=Scheduled",
     "id": "0a18bdab894a13a4",
-    "atualizado_em": "2026-11-19T22:39:30"
+    "atualizado_em": "2026-11-20T22:13:48"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -3311,7 +3407,7 @@
     "url": "",
     "extra": "codigo_espn=401930990; status=Scheduled",
     "id": "c4181147fa4463e4",
-    "atualizado_em": "2026-11-19T22:39:30"
+    "atualizado_em": "2026-11-20T22:13:48"
   },
   {
     "fonte": "ESPN",
@@ -3328,22 +3424,6 @@
     "extra": "codigo_espn=401930039; status=Scheduled",
     "id": "c724091dcb5e3ba5",
     "atualizado_em": "2026-11-20T22:05:42"
-  },
-  {
-    "fonte": "ESPN",
-    "competicao": "Venezuela - Liga FUTVE (Primera División)",
-    "data": "2026-11-22",
-    "hora": "17:30",
-    "mandante": "Carabobo",
-    "visitante": "Portuguesa",
-    "pais": "Venezuela",
-    "cidade": "Valencia",
-    "estadio": "Estadio Misael Delgado",
-    "rodada": "",
-    "url": "",
-    "extra": "codigo_espn=401930989; status=Scheduled",
-    "id": "788f8a000eb58d62",
-    "atualizado_em": "2026-11-19T22:39:30"
   },
   {
     "fonte": "campeonatochileno.cl",
