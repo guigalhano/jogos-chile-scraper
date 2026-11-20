@@ -52,21 +52,21 @@
     "id": 14090,
     "categoria": 48,
     "temporada": "Torneo Federal A 2026",
-    "eventos_janela": 9,
+    "eventos_janela": 8,
     "erro": null
   },
   "Supercopa Argentina": {
     "id": 1618,
     "categoria": 48,
     "temporada": "Super Cup 2026",
-    "eventos_janela": 1,
+    "eventos_janela": 0,
     "erro": null
   },
   "Campeonato de Fútbol Femenino": {
     "id": 10495,
     "categoria": 48,
     "temporada": "Primera Division, Women 2026",
-    "eventos_janela": 21,
+    "eventos_janela": 15,
     "erro": null
   },
   "Trofeo de Campeones de la Liga Profesional": {
@@ -80,7 +80,7 @@
     "id": 18817,
     "categoria": 48,
     "temporada": "Primera LPF, Reserves 2026",
-    "eventos_janela": 24,
+    "eventos_janela": 20,
     "erro": null
   },
   "Supercopa Internacional": {
@@ -255,7 +255,7 @@
     "id": 22183,
     "categoria": 1783,
     "temporada": "Liga Regional Riotercerense de Fútbol - Primera B 2026",
-    "eventos_janela": 4,
+    "eventos_janela": 2,
     "erro": null
   },
   "Asociación Rosarina de Fútbol": {
@@ -689,7 +689,7 @@
     "id": 35872,
     "categoria": 1783,
     "temporada": "Clausura 2026",
-    "eventos_janela": 2,
+    "eventos_janela": 1,
     "erro": null
   },
   "Liga de Fútbol Valle del Chubut": {
@@ -766,7 +766,7 @@
     "id": 39522,
     "categoria": 1783,
     "temporada": "Liga Deportiva del Oeste 2026",
-    "eventos_janela": 5,
+    "eventos_janela": 1,
     "erro": null
   },
   "Liga Lujanense de Fútbol - Primera División": {
@@ -788,6 +788,13 @@
     "categoria": 1783,
     "temporada": "Liga Marplatense de Fútbol - Reserve 2026",
     "eventos_janela": 21,
+    "erro": null
+  },
+  "Liga Master Cat 40": {
+    "id": 40359,
+    "categoria": 1783,
+    "temporada": "Comercio Central Unidos Reserva 2027",
+    "eventos_janela": 0,
     "erro": null
   },
   "Liga Mendocina de Reserva": {
