@@ -83,22 +83,22 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140681
+    "bytes": 140772
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 180339
+    "bytes": 178542
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
-    "jogos_parseados": 20,
+    "jogos_parseados": 19,
     "amostra": [
-      "2026-11-22 13:00 Lye Town Women v Peterborough United Women @ ",
       "2026-11-29 13:00 Lye Town Women / Peterborough United Women v Rugby Borough Women @ ",
-      "2026-12-13 12:00 Norwich City Women v Bristol City Women @ "
+      "2026-12-13 12:00 Norwich City Women v Bristol City Women @ ",
+      "2026-12-13 13:00 Sheffield United Women v Burnley Women @ "
     ]
   },
   {
