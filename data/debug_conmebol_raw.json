@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Libertadores",
+    "data": "2026-11-28",
+    "hora": "17:00",
+    "mandante": "Palmeiras",
+    "visitante": "Estudiantes",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Centenario",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/libertadores/es/fixture/view/1683",
+    "extra": "codigo_conmebol=1683; status=Fixture",
+    "id": "54367b28ab576505",
+    "atualizado_em": "2026-11-22T19:53:18"
+  },
+  {
+    "fonte": "CONMEBOL",
+    "competicao": "Conmebol - Sudamericana",
+    "data": "2026-11-21",
+    "hora": "19:30",
+    "mandante": "Atlético MG",
+    "visitante": "Boca",
+    "pais": "Conmebol",
+    "cidade": "",
+    "estadio": "Estadio Metropolitano Roberto Meléndez",
+    "rodada": "",
+    "url": "https://gol.conmebol.com/sudamericana/es/fixture/view/1727",
+    "extra": "codigo_conmebol=1727; status=Played; placar=0-2",
+    "id": "e205091e93fa9d40",
+    "atualizado_em": "2026-11-22T19:53:18"
+  }
+]
