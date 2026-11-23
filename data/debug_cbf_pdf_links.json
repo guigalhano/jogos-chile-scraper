@@ -16,7 +16,7 @@
   {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=IMT",
     "title": "IMT",
-    "origem": "requests_page:a.href;requests_asset:a.href;playwright_response_body:a.href;playwright_page_content:a.href",
+    "origem": "requests_page:a.href;requests_asset:a.href;playwright_response_body:a.href",
     "id": "5176f2b51bc579c1",
     "tipo": "imt"
   },
@@ -107,7 +107,7 @@
   {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Documentos Gerais",
     "title": "Manual de competições",
-    "origem": "requests_page:a.href;requests_asset:a.href;playwright_response_body:a.href;playwright_page_content:a.href",
+    "origem": "requests_page:a.href;requests_asset:a.href;playwright_response_body:a.href",
     "id": "497bd338a4f4ae0b",
     "tipo": "manual"
   },
@@ -224,710 +224,10 @@
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=00173c560752a2838d52c5f3da1f72a104ccaf373524df5433dbc0786b0c863eJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "f419fcc210ba48a7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=02775e8c478e3246f177a8d2103d7816f0bd2311a83805dd7b9552d49e2a891fJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "87f4cd131d45b41c",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=037109d92fba90814006a881fb66baaa686cfeda468cad4363cf72346dc8b32bJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "f623f82aa80e6458",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=07e531d136edb96f77124fc40f142076ebb10d6ea5ef1b43a27cc29255b01938JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "d292bc208bc9f7f4",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=08207eed190db78c529579c34cd23991c6fef81b6659543d303c12105c1e93f7JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "420cad0540e5a9f2",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=09c75b200778450a05b4a616e601c52b1e4b2165729b9f77599a6cb81c5a6e73JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "eb54a85385f7060b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=0a23e9b7449473738cbac1edbf6caaf2be6ebab4078ce676045752a1138c6727JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "c124256725698655",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=0af7ed91f6c8376e32c752118e4649acf07e8da089b063715be6f4a57e685ff6JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "5ae29764183f3a57",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=0bfaf6c7cded0d8249c2a85c3e615a98575617030dff3df74a4e7ae1c8c0bad0JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "68aebb28c64e8b78",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=17961cdb510f9f37cad706598af949f7bc8267ad83b37896e532a23f18426bfcJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "e9aad380900b00df",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=18402a55b9bf4a601493c9ea47b21727c70016bca90b193ffa8128ebf15ba8f9JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "1716b4d93d97eb41",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=1b7fbc3f3e8b7661cc9dd4aa23ef65d8c90046f724d3577898b774df3574d8b6JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "69eb6fa0431dd90a",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=1d847e4ef73156b57dbc3b8a0d2648b758268f5003d32ecdf6c441576b291c6cJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "4ff0f9fc1fedbcf4",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=2123f76ffa31a89949410dad1e527d9ad3dc758602d13457f068231d59aafba2JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "cb2b98fd12849a54",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=23569eb5cc419d0383b774f83844283fe67e59f18b0698d2225c0ea00c83022fJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "7abd53f8fa2820f4",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=25d707c3b698095eacf6414613d5ba99d2bab9e9b734aa8025e7eedacd9f79f4JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "89057ce3203a2962",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=26b3d5a8dd6793a1de4ff516b871c918c09575cfd96077ba97c3f787839e5961JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "3b54df945e69acb6",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=274b64d4963eb39494fac4454fee963c984cf4a810436e103416c6b28fb0b932JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "3618d6006bfbe5bb",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=2827556eef1965be599b6924f66ecbbb9ad4181b4f936eefbf895a6a8805be85JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "b0a046b9fab7d46e",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=29c6b608968b87cd48aad9b67396b7f930c8408a6fda1e832c9505fc177a8aa4JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "06097eb4c2ca373a",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=2e852e4448335a7b36ac9c3aab14599178c627fee3c00f7158442e9ffaa56f9fJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "ac307771dbb0194b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=31865514546e82438f667184307ba16e56690476dada5dd078872e14aa6c5a58JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUEdBX1RvdXI&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › PGA_Tour | PGA Tour - Wikipedia",
-    "origem": "bing:a.href",
-    "id": "d2fe0ffef5cee12a",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=32e262af7ca9f42f078c4ee7fc74152008fa1cf15497d2fc62aca9d40ace966fJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "0a437e05642e0fd0",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=3925a1b79763cdbf26979670836ef578e1c659d24116b414519978438dfd30c0JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "970ef7a931ef7d9b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=433fcb4d45d911fcd69f573ae52ee69573988da0752823578753eee7d37daabbJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "d84509b34089e8d4",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=43546cf4deba5165498c0fb90ed32e30eb506bba8a683871add7467cc21f3fdaJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "60baf4b05d738687",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=448d965786d29369bd24e38fbbc3b78daebc5896f0ccae20bf772abe218770a6JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "b21d892a5d28cd8d",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=486944c5bafe8bededb5ae9298d9d04ad9a6fab4af66dfc9b6f3b557b99175afJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "784ed38af804beee",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=4e2c2441d8935851bc33cbdf2936fffaeaf0ae4a29f6f2ed9dccfe220fd59312JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "a88f9915a503b42e",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=549c4dc3b979a7069708f621c53c7a3f1268e77dda937d99d101c8483643591eJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "13a2d894ad1c4865",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=55bc91a97f2be6ceab306dbe6294301c9d5478c081f7f7d29a6b03ad3c9c17cdJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "8c6321e39ad21b27",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=5e2c2d7196216c8ba1998e6ddc867d1637ce0e4fe0b3956271c655919e1299dcJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "f6bcd9d15a439031",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=61ce4ed84aa861efa3c2cadd68439df09c3ea5e0ea555e61c5dcf837a1c257b6JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "db8bdbe64e4145f1",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=623161aa52c10d680e7385046f938b97481d20bf64ff38caef9d4eb13dfc9a40JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "f379b5bbf10f54a0",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=6508efbd99006bb05b5be16193d2883dc3cb84bdd146f0dda675a3b47cfdce07JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "2ebaf973fa3e78c9",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=688016a01d8ae00f090884c842c8e9677445c8828d573616394191829c8e52ffJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "ead931f6cb66da59",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=72402a087e842ee14cdcc29a2eca42023273d048ef7a54a6263f8834e0ac8a08JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "a2285e969f26e782",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=7398f59040cd05f3ec4c174511f417b611e03dced706b560a4e75ee3be94d472JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "466228c01a908a0b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=7511fbb437506a0cf5aa9a1ec6438b08d4707aa52ac08eb913032d8935080318JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "23dd7735ccd430c0",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=76a70ce327249e2b80b48bb9b1e73c7721c89a56fa92b2c37efad511cb6f58f9JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "279053fb976396c7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=77290f8e3856e816d80f6aaecfa50a7c04cf5b2147f6f466bea0de3daeb08571JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "6cd03fa043706336",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=779bf189616154dd669a14989d53be424ad18171e326864b1a7f59efb2f13f7cJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "e697f0ae3acfd0a0",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=78c1cbe7038537e9a836d00dec6d6ea83c79e22c5bcb149c201309860f261614JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "f7493d7f30473210",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=7f627500a0630748297b151ff39d769e1e7100561331e1a72ea23cb3e28da18fJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "13cb9cec07c885c6",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=7fa03f5f0ed1a80127d9d3ba5d2669c32b2e917b04563f287f5482088140b9c9JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "db554f7c6fbeb4d5",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=80761f970b2567fc83771ddce2d44e7704ccb926d37705fe87abf4462ed0e678JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "1aff0b4bb9928823",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=809716481f8e813293f2c9bcced9b827830d1379f09bd6296c7f0b744f76e79eJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "d38fccb2d1c440ff",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=83a923adc63938cdaaa365146c5438c6ffd7047a08c4d6dcb2b16ac8e9521060JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "ed5bd45936b765ee",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=85e28d3f33c046697b4e29a2c76d2495ec495685871c5a60d7b1064bb309d19bJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "44db02e662a26ca9",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=86cebcd0c210f75b1ca5114733c389f01a66adeabcf2713288b5d24a5fda867dJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "3146d8c4c3ad3b54",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=86ea331674498b17a64cc0773d08d7c98216f96d38b6cf8117917abae1c11fbeJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "f7f6ea51ac241456",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=886cd86d942013b2e402413f6e4ef39055f457869069156da1abec96737624beJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "74208c346d25f3c1",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=8b447b5c45d8c79bc4ed00b30465932e551b17704d561cad9cb7c743d8bf05fbJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "db6a30003cbed87b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=8ee1d051edc756bfa985bbaa1b8474f6c1afdabe9a8bcac4ce415f62e6f03d4fJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "084d7a43b95a5f34",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=8f831b234bac3d9a25942bc7c6cf8d0d14809a2f947d71f5aac0abea9957fa6cJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "420940e655b00163",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=8fe54044f2ca4ffd8455c9e7dcb29a8641da388e0d4581021340e992e629de17JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "7dfb92fa60a9bcc0",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=9047e78937df8251bcc93674b1dc0ae106fd1028533aac6d38bd693b08c95485JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "11bc0403c7e21d5d",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=931bac57bdbb467b561a2522eb6dd85709084c7d3b1de844a573bbb9edf39fd9JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "3987e1af529eced1",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=963fd1609bae64c2be56e33f50694406792a82cc21684e1ee6300df6b71f7610JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "b9c37c1d343ad732",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=965d742a08ba236d9ec6e65c8b7f23c30c51a248cd6f36f4eba3717ab0de585fJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "abc219161bb484dc",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=978ece955e6dbfe306780020d22cf666dc359deef20eb63eb664851ccf8ed081JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "7ed4ccfdfec20da7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=97da6a57dec33692914b903cc5d4234c4fba2ecfb489b6c2ad62162851e608c5JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "6a812d8103e626fa",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=982afe3d9e8576312ce35ba58bb8f3e5005e0e8b3ec2555182eff435c59bf358JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "87f8f3631a0ef176",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=9cc07a6368958cd137e1e09aa399a0c8688c12cca1d8da5df4513b0423b9d740JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "9e1ecc4d1b4fa88c",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=9ce252cf79c29ccfeaea50b98e506763ef6d35689dd745bdd2ae3b5e84844e8aJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "76ac9299392c5942",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=a2003fa2411c283bf49e1e9942d29caa9b04d07c581be4f905f0cc8df8b46a94JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "577e0d6c172915f7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=a40b7491eb18f1af1c6c7cb4e6a7ff3fb786ea107d0a1f2b0e1763f21df7b462JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "15ff74ec0531a13c",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=a804fef3916db7dabcdd22f3e2618ff4ccb10379287fcaa592f62c09a0ae58b8JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "101d75232de8d5df",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=afc43742160f1fb9289061112f7f38f07c8bcffa79abac18fad7ee19030376ebJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "5372037c4daec4a9",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=ba815fef0215cda9adb04f7d78981311d44c6b4af9a09be457f39d7f2e416110JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "e37cbcc6c82ef96c",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=bbcfe5aafef48752d1a32ef30c1e7266eeacf38c8f46bad6c1c4e0f08fe1c02bJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "e5b6b151cf3a7728",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=bbd92f91facc7eef3f5bb9ed5fa56b8bd7fb22846595c0f049bfb30dd065ddc8JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "0d744e5edb3c463b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=bc2d599946edd90da7f58bed640ae10f97b2c97daac7d7e9320faea26f9d6e87JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "17cc6481e49ed4c0",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=c43bcd2cf1dab59c21caf3ab4244d5c4f825179d8f07f54f41503f478cd37374JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "6ea95dddda709734",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=c73573a3bd400026fd782d2a044c4d67a630558a22e7e7219897e7eba849888dJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3d96452d-048e-6de0-2bcc-5d3405136c84&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "7f867c1c9b590963",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=c7a142ad9917c733b9a4db13c57d1c89d6f99bcfc3b300422846cb6282d047b1JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "e9ee572e2ee283cd",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=c81cfaf75809d45ee31ff2e6f447082b170bae89607c4b560c8e2cf41604be63JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=30086c36-47f0-659d-14d5-742f4690643a&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "00a02614077911cf",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=cb9b936adc188de649b6886a65b5dac0792fd574c8a0f8b10bcf3694a001aa9eJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "5632873a938435a7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=cbaf0753a6416a3e1fbec550dcf4bfb3ece45b994a214327e7fcb4cd8bf06a51JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "2c9e74ec702c1ac7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=ccd93d2a05017085d1a88a8c300ccfe84f9f071f693328c41803e751e92cecddJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vY2hhbm5lbC9VQ0t3R1paTXJoTllLenVjQ3RUUFkyTnc&ntb=1",
-    "title": "PGA Tour - YouTube",
-    "origem": "bing:a.href",
-    "id": "5fa2eb4561b2582c",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=ccf9e249817e7db14015b8c630170521ec34bb585a30e1ff2e0ca65b80b0384cJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "686f89f3542163ef",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=cddbe3a57670d404df16066400e9d26b510c917cd5025e3c854698f7c5a85c5dJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "f1b5a6991dc116ca",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=cea5f59d46007bd9b280a2c9dcd99f452c64fb66c40d97483fa62ec1993ecea5JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "bfbe02b64cb9b121",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=d0d1cfece020ae05a01ec34323e6baba67dfbdf8792c6f07b6ab4137e1748162JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "4bec08c9dda5f797",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=d364671c7d05166f10868819ee87ac2e9ae40784860e83fe282283153aa8f187JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "fa3b2915061b3c67",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=d7281cac67e34797920a347d7ad364dc81032306ba28a9aa846da0171d62d4a9JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "720b81ee452c1ba9",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=d7f3ea5466043f379e96792b21e87a1e4d0cc5e6c19eb4f43e2055db3728ff44JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "09dd5ae18083b20b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=dc3a3a8d70ac7045c10fd47c1bc1c20e231970e370ae7c39f95508fea66288f0JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ef8dd25-d240-6c85-3a1f-c53cd32f6d4d&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "121beb0cc7354771",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=e55948be9009aad3005e60e1165a4434c0295c70e705047ae75f6d965071a706JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "0ffaee8f88967959",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=e5f5a9625c339fab7095f3c35c1a22ea7099590031edb7ff5ce08f7629d7387bJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=31092fc6-fc38-6743-22c8-37dffd4566d2&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "1bf580deb8a9f031",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=e7d5efe83db3ea904112cdb25f99e9b332fd90790a9fe5bfadcb409d74fbd9a5JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cuZ29sZmNoYW5uZWwuY29tL3BnYS10b3Vy&ntb=1",
-    "title": "golfchannel.com https://www.golfchannel.com › pga-tour | PGA Tour Golf: News, Schedule, Highlights & More - Golf Channel",
-    "origem": "bing:a.href",
-    "id": "2a26174359ee7e73",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=ed9eab16630e19fbf19b8f14a6b00da6641e2501cae65bcf013f72961bd1eb83JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=086bd745-fe11-6932-2b22-cf5cff9b6850&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS9ldmVudHMvbGVhZGVyYm9hcmRzL3BnYS10b3Vy&ntb=1",
-    "title": "pga.com https://www.pga.com › events › leaderboards › pga-tour | Leaderboard - PGA TOUR - Butterfield Bermuda Championship",
-    "origem": "bing:a.href",
-    "id": "d008e598873c3509",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=eda19b24d685ef276bf82cdb4525a2e0fb7c7108d3645accf2e9c3a895fca0a3JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2ecd0fd9-abb8-6c9f-2678-17c0aa9a6dfc&u=a1aHR0cHM6Ly93d3cucGdhLmNvbS8&ntb=1",
-    "title": "pga.com https://www.pga.com | PGA of America",
-    "origem": "bing:a.href",
-    "id": "ebbaf6d8f2c5e985",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=ef7dd92ea58da288a34bbcccf5b6f24585a7314d1e681cc76c46ff2891e49d69JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=21296398-2a5e-6aee-2eb6-7b812b986b22&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "3095ed26e1acfcd7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=efa4b3abd2b3e0d9d55a23aeac9f6851a5686adb1b6a6963d0836c540e887302JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmLw&ntb=1",
-    "title": "Golf News, Scores, Stats, Standings and Rumors - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "0c9f5bae40a0f7a7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=f880e825223463f9071f4732889c9cb63709b6d903530becce91e101976462e5JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=052857ee-afee-6cc1-0c2e-4ff7aea16d0c&u=a1aHR0cHM6Ly93d3cuY2Jzc3BvcnRzLmNvbS9nb2xmL2xlYWRlcmJvYXJkL3BnYS10b3VyLw&ntb=1",
-    "title": "cbssports.com https://www.cbssports.com › golf › leaderboard › pga-tour | PGA Tour Leaderboard - CBS Sports",
-    "origem": "bing:a.href",
-    "id": "a8028a5b26575069",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=faa9adca49a61cbddb465d008a39a531cc049f144e3a30bf47215621000ddf84JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=24ad035d-ae3a-60e9-0bfb-1b44af90612d&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20v&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com | PGATOUR.COM - Official Home of Golf and the FedExCup - PGA TOUR",
-    "origem": "bing:a.href",
-    "id": "674690f05cb04feb",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=fbd6f7c2fa1cf11aa30691e91940b52ea060067a41ac593f8c2fe00787c04fd1JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1c1a130c-8ed2-6321-3078-0b158ff2623b&u=a1aHR0cHM6Ly93d3cucGdhdG91ci5jb20vbGVhZGVyYm9hcmQ&ntb=1",
-    "title": "pgatour.com https://www.pgatour.com › leaderboard | The RSM Classic 2026 Golf Leaderboard - PGA Tour",
-    "origem": "bing:a.href",
-    "id": "d97784b373caa065",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=fd6392e0e12406bb386cb88c083d41c6c582520fe6a75c69ae8802dd3828022eJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=3db15e89-f4b0-6587-289c-4690f53664e7&u=a1aHR0cHM6Ly93d3cucGdhLm9yZy8&ntb=1",
-    "title": "pga.org https://www.pga.org | PGA of America | Home",
-    "origem": "bing:a.href",
-    "id": "8b8ee4b95c14bd3e",
-    "tipo": "pga"
-  },
-  {
     "url": "https://www.bing.com/copilotsearch?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FORM=CSSCOP",
-    "title": "Modo De IA | Pesquisar",
+    "title": "Modo De IA",
     "origem": "bing:a.href",
     "id": "db8f51cd02befa2b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/copilotsearch?q=site:stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn filetype:pdf \"PGA_Brasileiro_Serie_A_2026\"&form=CSBSBX",
-    "title": "",
-    "origem": "bing:a.href",
-    "id": "d1026dd4ae6b5590",
     "tipo": "pga"
   },
   {
@@ -942,237 +242,6 @@
     "title": "Todas",
     "origem": "bing:a.href",
     "id": "0a02d0924950cf7b",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=27A02E4D4E984F7C9D1714799766C6EC&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "9528231c10c1aaf0",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=27A02E4D4E984F7C9D1714799766C6EC&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "a56298bcb2d9fd0e",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=27A02E4D4E984F7C9D1714799766C6EC&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "025c141cb7058665",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=2B4E0C8D12F749EA99C10689D835907D&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "6f6e553022c3b86f",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=2B4E0C8D12F749EA99C10689D835907D&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "8f9ba69007ee8246",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=2B4E0C8D12F749EA99C10689D835907D&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "b1b6b2ec785c42dc",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=6347FD3CA5F34C10985A3F59B3D43EBB&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "1df070a48a3772b6",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=6347FD3CA5F34C10985A3F59B3D43EBB&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "32e8aaf0845a44b0",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=6347FD3CA5F34C10985A3F59B3D43EBB&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "687c29883b4626bf",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=84C04F8D6119403D9D7697C65473353B&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "554a27c820fbc70f",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=84C04F8D6119403D9D7697C65473353B&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "f209ba10092962ba",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=84C04F8D6119403D9D7697C65473353B&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "78d4fb5c032432e9",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8B6E35676F0E43D5B419B6DD9B31C1C2&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "c6c71f2e0b4792c7",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8B6E35676F0E43D5B419B6DD9B31C1C2&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "868c5be407edc6b1",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8B6E35676F0E43D5B419B6DD9B31C1C2&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "e59c149f45c79ce5",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8BF506E24AA34727A066F3C9D6493A44&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "784fd4f891c95154",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8BF506E24AA34727A066F3C9D6493A44&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "c30a18e5c0e7dde1",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8BF506E24AA34727A066F3C9D6493A44&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "05bcc55527962199",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8C53FBCAF3CF4BEEB2C9BFC676634E78&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "44dc2fd0b9ecd1b5",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8C53FBCAF3CF4BEEB2C9BFC676634E78&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "dcbc3ac4630580c3",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=8C53FBCAF3CF4BEEB2C9BFC676634E78&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "a66f0ce5eacefa1c",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=AA9CD029E50141A384E921ED2223CA25&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "4d8b07c83ba743b1",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=AA9CD029E50141A384E921ED2223CA25&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "97e5e9d89bf81d96",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=AA9CD029E50141A384E921ED2223CA25&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "f54b777b1f262837",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=AF11058180B8407BBAB0D074DC42A624&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "2931180c1865dd03",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=AF11058180B8407BBAB0D074DC42A624&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "fc16a87d46fe3744",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=AF11058180B8407BBAB0D074DC42A624&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "3835c9bf09c286bb",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=B265C398968848FCBFAA5A5BFB047ED6&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "30e08684febc5648",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=B265C398968848FCBFAA5A5BFB047ED6&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "86015384515da4d1",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=B265C398968848FCBFAA5A5BFB047ED6&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "05e8f184546c432d",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=FFC51B66551C49CB95F052444DC25A43&first=11&FORM=PERE",
-    "title": "2",
-    "origem": "bing:a.href",
-    "id": "0fb1e711bd77770c",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=FFC51B66551C49CB95F052444DC25A43&first=11&FORM=PORE",
-    "title": "Próximo",
-    "origem": "bing:a.href",
-    "id": "8d7ce138c62ae7a8",
-    "tipo": "pga"
-  },
-  {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&FPIG=FFC51B66551C49CB95F052444DC25A43&first=21&FORM=PERE1",
-    "title": "3",
-    "origem": "bing:a.href",
-    "id": "ca4e68de426853b3",
     "tipo": "pga"
   },
   {
@@ -1197,87 +266,94 @@
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&filters=ex1%3a%22ez5_20414_20779%22&FORM=000017",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&filters=ex1%3a%22ez5_20415_20780%22&FORM=000017",
     "title": "Ano passado",
     "origem": "bing:a.href",
-    "id": "e429b304f15ffd0f",
+    "id": "67b93111dbee41c9",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=0304344C6E0462460DD22C556F4B6341",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=079592598C7F63331F638A438D446296",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "6e63692fad2f4b86",
+    "id": "37f7f32093a08753",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=06433D5C53B26AAA219B254552906BE5",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=127F5863902E624F39D04079917F6355",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "99601e3226659dd7",
+    "id": "f88ca56babd94590",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=0695EFF68AB2636B09EAF7EF8B18629E",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=14642904FEA6685F2CFA311EFFF66935",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "f22241d7d2242ce6",
+    "id": "9ecf74d73ad4c65a",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=0CC344DD6A8B6D1812D55CC46B166C76",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=1A7CAF7440D064D72B87B76E41B7651C",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "36ae1b78fcc7032d",
+    "id": "a7bfe359fa322f0e",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=125992CAF4AA6E0407D68AD3F52C6F30",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=22B82724CAA0694B24E83F3ECB316815",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "42123456a0cb8184",
+    "id": "d419df7278fcabb4",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=1CC9D1AF0E8B639131C7C9B60FF6624C",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=2801BEF61CE368AA0C1FA6EC1D4669A3",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "d12fbc4587c88ebc",
+    "id": "e7e20cbab0e18df2",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=1E6AD0D96A916E112558C8C06BB16F7A",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=30D73F8259DA6A0205012798585D6B2F",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "ed22e6d8c126a451",
+    "id": "6208ae88a53cdcd1",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=27310C01C28E61A400FA1418C3486001",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=30EED36DEDCE6CE426C4CB77EC3B6D36",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "ad20248ac48bbe82",
+    "id": "1a1284120cdbb820",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=282BB85A9DFB6B8A2955A0439C946A99",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=332EAB050B4C6ED03200B31F0A616FE6",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "50979d356458b93e",
+    "id": "0193cc3c53505a15",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=3982E806F6E5655015BBF01FF7856461",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=3361C2891FAF6D1C2159DA931E976CF0",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "24e920b248b47709",
+    "id": "54eb2be80d417a4c",
     "tipo": "pga"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=3B20DAEFBA7D695F0DD6C2F6BBF76853",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&setlang=en&sid=380908CB23B165D40D5710D122BE6423",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "1066dc98fb1f73c9",
+    "id": "a8d8c1c89dba2d64",
+    "tipo": "pga"
+  },
+  {
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22PGA_Brasileiro_Serie_A_2026%22&webscp=1&FORM=HDRWSC",
+    "title": "Web",
+    "origem": "bing:a.href",
+    "id": "1c40283fdc3ca9cb",
     "tipo": "pga"
   },
   {
@@ -1297,7 +373,7 @@
   {
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/REC_Brasileiro_Serie_A_2026_c984f8cf05.pdf",
     "title": "",
-    "origem": "playwright_response_body:regex_pdf;playwright_page_content:a.href;playwright_page_content:regex_pdf",
+    "origem": "playwright_response_body:regex_pdf",
     "id": "db411aa274f75c77",
     "tipo": "regulamento"
   },
@@ -1351,162 +427,85 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=0a579f53fbd9fea3a48fde5d329bcb07c3d39e5fa32f803e4996eee89cf7bccdJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ce2e6bd-b4c4-6803-0b0c-fea4b5ee69c5&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=0050b26e5cdfa6f3f45c1cd1f2a2266dcdd18970781663533816ba02f4563918JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=2ac098ce-3ec8-6a42-3c2a-80d43f936bd3&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "8831669d24c9c665",
+    "id": "2bfd208238002c12",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=197dfc7647841fcb8007bec3d36dbb50f06b7e5ad812fa90631fa3e06edf6c10JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=06d16c49-1dfc-6972-3958-74501c056806&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=118de072dae49b82fca2d7a56475a5fb55f5d8b46e25614f628aa128a220ef6bJmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=29266aa5-7a74-67e6-2f12-72bf7baa6603&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "e9e4dd67588681ea",
+    "id": "341564c1e0daa672",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=2541116db893dfe66e3d39607eaea69833e1db39c5e080ce6f9504b0287add53JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=04e4b6e2-8562-62f8-2dce-aefb847063a1&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "17481040494cf74d",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=2690f4430d964439f2cc3e01c58d3f3c4c96ada51e87e567468c3069b742cdf9JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1b221aa4-cefb-6efa-0137-02bdcfec6f5f&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=123c3c0f0dbe1421150f63008f913db0dc7d75658d460676904db60d99be6b84JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=127d85fc-baa4-6833-115a-9de6bb8f69a1&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "2c9ed64de7214a60",
+    "id": "939a8cae77f5585b",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=391a891b7914a2dc114a09f2c1b2a6e9865db60c813f50e664b703c059c38ab8JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2085ebd2-3a94-688e-1b88-f3cb3b0369b6&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=1a39581227ac011bf229b869d87d2939db9f3ae158b238080f88258e5922dce8JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=3bc0176b-cf71-64b2-12e6-0f71ce06657f&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "150c53b74eed950e",
+    "id": "29648821c4e999a0",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=44f2e0b6ca422196c5b7e6ad58ecad4263ff06a86b103e61a1be944fc421877aJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0c2320b9-4863-6257-32d3-38a0499a6391&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "2b35900fe38c503a",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=47c2082137fe5ebf7cfce19ba494a2a431da3b11bba18a049d45114fcb5a6b4eJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=215af13f-8a35-6165-30fc-e9268bb160fb&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=1d5d5ae213276ea84181fd6a338f7f89cb8bcc305f6900faf36a493390df55b0JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=0fac244b-5073-6c48-02ab-3c5151b26de2&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "56c2100e86e1bea4",
+    "id": "76166e313eaf7659",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=734e6c4a459b36b8023c6d3d05b595004b8caf3650d94b6fd78ea033f26eae58JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=317e0dc6-57ba-6b3e-3245-15df56986af1&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=202f56113ee0d6aae64b1a3fd5a8d7edbd93502d4958abea56d108f1f17b8b94JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=37738759-5099-6b3c-3d20-9f4351566a46&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "eebd4f61eaac694c",
+    "id": "bd62113b38d717b8",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=89ac9643e1dd7e04285d183c8c229afc94512faaf310746f1195c0b015a8bcf3JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=070e6393-64dd-6e5a-052a-7b8a651c6f74&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "6f20ef79010f1bd3",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=a46f33abaecba3af43f652d7ef8b809da2963c37fb030e52b3f1226aa4fba513JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=317e0dc6-57ba-6b3e-3245-15df56986af1&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "a4e26f3918f83602",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=a61f203c8756afd07ad131921d953f60aba4af495c6183ea9bb166fcbbe057e6JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0c2320b9-4863-6257-32d3-38a0499a6391&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=95d04f46bf71c97b37987d580582a46db0f15345dc2a3853a1ab62e44568a401JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=3b2f5e41-b1f0-6874-2215-465bb0136984&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "9199df05f1cc6051",
+    "id": "e0a175426180e875",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=ac8cf08d2868b05a6f79ef6c58516ceefaa49e032484a77cbe3e7af4340e27ccJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=014a2b36-41b8-6303-17ba-332f402262dd&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=ca12d144a41d8dcea12856ab4d2a8ab3d83283e7b1444cc94daae3d4ff5d35a9JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=2e4fc455-1b15-621d-3458-dc4f1a846326&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "147032f480d9f590",
+    "id": "7e65615ef47eb5d2",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=ad7e56b10f6fc8246f374241f16988b70e093f8fa09a4983c6b3e768ca1d8ddfJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2085ebd2-3a94-688e-1b88-f3cb3b0369b6&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "70d137c7d8953534",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=b73ddc1b68dab93993e6c5835870c8919bb63d821a072152c6ccf81b63502250JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=04e4b6e2-8562-62f8-2dce-aefb847063a1&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=e3a353f4d54a38de5d461e824499bf6e6c99a88df584c13c567a693ce4b68a6eJmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=113070df-7c80-6dd1-1d3c-68c57d9f6ce4&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "de6dd86e3ace15a9",
+    "id": "f69196720bc6a807",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=b7ef26cf3f34df0116323b46c730884dd9ec7e56b622803a4232333cd4c3b67aJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2f93f1df-f0bb-6d95-1542-e9c6f13a6c6b&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "6ceacb774994c6ea",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=bdde1753e753db6e1fac2dfc038eee48c117e1eaf54da60e222ab12c98a5851fJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=215af13f-8a35-6165-30fc-e9268bb160fb&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "9aa5e0f67a537df3",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=cef6c33dc1759fe2f10ad4df1af2b9f6dee4741cfbb7ee5fbe63bcf14e264c53JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=014a2b36-41b8-6303-17ba-332f402262dd&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "b7fc28446137ee1d",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=da0201dccf188abeec3617d6ecc84f4ce7e9ff294feeeb09d93c7ae910222c7aJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=0ce2e6bd-b4c4-6803-0b0c-fea4b5ee69c5&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "7dde2deeea5097fe",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=dc919bc35bc399ba5c861bb7d0b7eb87c6ded7b7aa589fb5a997d49f39ccd430JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=06d16c49-1dfc-6972-3958-74501c056806&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "ed781b7f3a73e259",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=de2d0faa1387ac32bf62b80ea098cb3a2d4cf34594f32aa53c7cb262696a0f9cJmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=070e6393-64dd-6e5a-052a-7b8a651c6f74&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=f42279e79849f4c745d3f337af025db0d961d535f3cf12fc910e3fca62b6bfd9JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=3b11618c-df87-6667-3800-7996de6467f0&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "2d7885ef5e8ba257",
+    "id": "da10073d8a33627d",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/ck/a?!&&p=e5a37d972e0ce3aaa56b96feb3e50f9e1aa787c876cc21272bd4bdb89a6a8756JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=1b221aa4-cefb-6efa-0137-02bdcfec6f5f&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUkVDXyhmaWxtX3Nlcmllcyk&ntb=1",
-    "title": "wikipedia.org https://en.wikipedia.org › wiki › REC_(film_series)",
-    "origem": "bing:a.href",
-    "id": "1e0e8f946c68f5d4",
-    "tipo": "regulamento"
-  },
-  {
-    "url": "https://www.bing.com/ck/a?!&&p=eee1f3cd77234cf3537d4f18f3ee8b39149f5f846fdf19d1910e56cd2db08661JmltdHM9MTc5NTMwNTYwMA&ptn=3&ver=2&hsh=4&fclid=2f93f1df-f0bb-6d95-1542-e9c6f13a6c6b&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
+    "url": "https://www.bing.com/ck/a?!&&p=fe7bbde418b9d60819de6c6ce37eb5c582121f4a83411c4bb6d49b61193563c9JmltdHM9MTc5NTM5MjAwMA&ptn=3&ver=2&hsh=4&fclid=22adc539-c294-62ef-037e-dd23c38f6358&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUmVjXyhmaWxtKQ&ntb=1",
     "title": "wikipedia.org https://en.wikipedia.org › wiki › Rec_(film)",
     "origem": "bing:a.href",
-    "id": "3e9bc1d36fd07e6f",
+    "id": "6fa7307a4fb5a2f2",
     "tipo": "regulamento"
   },
   {
     "url": "https://www.bing.com/copilotsearch?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FORM=CSSCOP",
-    "title": "Modo De IA | Pesquisar",
+    "title": "Modo De IA",
     "origem": "bing:a.href",
     "id": "58a214fe09fce2aa",
     "tipo": "regulamento"
@@ -1533,234 +532,234 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=0909D0AF48FD4AB6AA355EF42BF1F7CF&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=07EB38E7809644FDAC29A5BD4A6E331E&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "c784aba0c9febc1f",
+    "id": "e2b730b2bef23c11",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=0909D0AF48FD4AB6AA355EF42BF1F7CF&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=07EB38E7809644FDAC29A5BD4A6E331E&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "8970f3466fe634ed",
+    "id": "3a9d4c27574b01a0",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=0909D0AF48FD4AB6AA355EF42BF1F7CF&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=07EB38E7809644FDAC29A5BD4A6E331E&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "f14c5dc9dba90b45",
+    "id": "fb337d614c6b3986",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=1C4776FD08214887949F46716E915247&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=1A6A54793AB24F25ADEC2C9198874923&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "27f82d29bb133329",
+    "id": "63420872dfd41631",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=1C4776FD08214887949F46716E915247&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=1A6A54793AB24F25ADEC2C9198874923&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "d8f3d36845eb24e3",
+    "id": "0dac4566b91a36f9",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=1C4776FD08214887949F46716E915247&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=1A6A54793AB24F25ADEC2C9198874923&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "cfbee55818b83880",
+    "id": "7fff48082cd3f50a",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=2968F1A7B275488EA1B5B5336325E92D&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=2CF9B6CAF1C0484EA6090B539F6078EA&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "9264870d11a3851e",
+    "id": "d4047cf36eefb0ed",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=2968F1A7B275488EA1B5B5336325E92D&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=2CF9B6CAF1C0484EA6090B539F6078EA&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "5d76cebcdce048e7",
+    "id": "3f88c30dbbd05671",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=2968F1A7B275488EA1B5B5336325E92D&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=2CF9B6CAF1C0484EA6090B539F6078EA&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "64e9256de3bb2572",
+    "id": "5597f2cab03fdd2b",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=4583D805BAC54851A6A09381AC199E62&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5B33584010E5438E99791C28F4F199BE&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "5d91e9bdbef50cb0",
+    "id": "988771e74426422c",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=4583D805BAC54851A6A09381AC199E62&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5B33584010E5438E99791C28F4F199BE&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "8ad22e3aafad8240",
+    "id": "646fff02759c2681",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=4583D805BAC54851A6A09381AC199E62&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5B33584010E5438E99791C28F4F199BE&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "646100c5c4d045c3",
+    "id": "cb91f1fc1cc447e5",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=6A9879048D6F4A539C5019F582132DFB&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5EB36AA8D51746B8990F63EF41E66C70&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "aa17e046a4b109c2",
+    "id": "a9f5630e43d7dd07",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=6A9879048D6F4A539C5019F582132DFB&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5EB36AA8D51746B8990F63EF41E66C70&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "5e6c0892f00c3eb6",
+    "id": "7641b7ee73ce2f54",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=6A9879048D6F4A539C5019F582132DFB&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=5EB36AA8D51746B8990F63EF41E66C70&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "fa5d6ca3e85363e0",
+    "id": "e5ee777f2c44860c",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=6E72E8C3186B47518AC40DDDDEB40BBD&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=66CE23DDFB494BF3B316658F535DF77F&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "467ed5a58696e1db",
+    "id": "5e600d46c484474c",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=6E72E8C3186B47518AC40DDDDEB40BBD&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=66CE23DDFB494BF3B316658F535DF77F&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "71273d5c0c2f8a0e",
+    "id": "3d79c508919cc82e",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=6E72E8C3186B47518AC40DDDDEB40BBD&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=66CE23DDFB494BF3B316658F535DF77F&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "70c6f6debd05d30e",
+    "id": "64b0529e25df505d",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=751624BB88384588B525FAADBFAC31D1&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=79AAE1559C0A4C3E8A30F6E7CC1F8E5F&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "b60a0cbf9d268aa6",
+    "id": "c220ee1a39bce0d1",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=751624BB88384588B525FAADBFAC31D1&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=79AAE1559C0A4C3E8A30F6E7CC1F8E5F&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "d9c049faabc00ef0",
+    "id": "0d6d40948459e0c5",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=751624BB88384588B525FAADBFAC31D1&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=79AAE1559C0A4C3E8A30F6E7CC1F8E5F&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "9062195197f2f0f5",
+    "id": "35769a7688f32d4d",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=9FAB34B7CC304CFABD110414B0D9A38F&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=7B1798379A6F4C2F96E98591093464D2&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "9027c83b004810e7",
+    "id": "9bfcaa7d257a4731",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=9FAB34B7CC304CFABD110414B0D9A38F&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=7B1798379A6F4C2F96E98591093464D2&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "d80b80a4681111de",
+    "id": "42cb378bacc8195d",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=9FAB34B7CC304CFABD110414B0D9A38F&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=7B1798379A6F4C2F96E98591093464D2&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "09f95620fa330147",
+    "id": "c9aaa5efd4b0055a",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DC3C645ABA214E29A56815B39F0B3C0C&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A6BC7ABCA4374EACA08CF958748785F5&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "4fa183d29f2063b1",
+    "id": "36af333b728fc836",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DC3C645ABA214E29A56815B39F0B3C0C&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A6BC7ABCA4374EACA08CF958748785F5&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "e9ff3fa8a5fa16b2",
+    "id": "6e6c5c9e03bb37cc",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=DC3C645ABA214E29A56815B39F0B3C0C&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A6BC7ABCA4374EACA08CF958748785F5&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "42ad42bf3e6cfda0",
+    "id": "151c2392fed826c3",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=EA379F2C8084434DBA03FF605E3361C6&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A88FB79C7AEE468197E4DA31C17E80FB&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "119ddee994c96072",
+    "id": "3aeec9c554a25fe1",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=EA379F2C8084434DBA03FF605E3361C6&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A88FB79C7AEE468197E4DA31C17E80FB&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "036911123454e40d",
+    "id": "fb4419af38ac1cc0",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=EA379F2C8084434DBA03FF605E3361C6&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=A88FB79C7AEE468197E4DA31C17E80FB&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "d7ba059c94a51571",
+    "id": "28c4b0cc2d567a09",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=F2196DC5F41E4F1394F18720E1C4EF7D&first=11&FORM=PERE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=AEE85393EA074AB18724614921112CA1&first=11&FORM=PERE",
     "title": "2",
     "origem": "bing:a.href",
-    "id": "0715b94c5a34c0f4",
+    "id": "fb7a786620c9262c",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=F2196DC5F41E4F1394F18720E1C4EF7D&first=11&FORM=PORE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=AEE85393EA074AB18724614921112CA1&first=11&FORM=PORE",
     "title": "Próximo",
     "origem": "bing:a.href",
-    "id": "7a984f3229d0e5e9",
+    "id": "024a37e93b542292",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=F2196DC5F41E4F1394F18720E1C4EF7D&first=21&FORM=PERE1",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&FPIG=AEE85393EA074AB18724614921112CA1&first=21&FORM=PERE1",
     "title": "3",
     "origem": "bing:a.href",
-    "id": "a5bb3e27060d332a",
+    "id": "c3532c83c23c19c0",
     "tipo": "regulamento"
   },
   {
@@ -1785,87 +784,87 @@
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&filters=ex1%3a%22ez5_20414_20779%22&FORM=000017",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&filters=ex1%3a%22ez5_20415_20780%22&FORM=000017",
     "title": "Ano passado",
     "origem": "bing:a.href",
-    "id": "937434631172fc26",
+    "id": "40bc7b9631c9f997",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=00E8A7788AAD6279152ABF618B546365",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=027CDA0EAEC968890837C214AFBE6947",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "12428e4ed8cb8cf9",
+    "id": "b109d569e44c401d",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=069D48A3CEB06103047850BACF2A6027",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=066B8124B0EA69982E7B993EB17B6836",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "92824598b07b82ff",
+    "id": "88891b3d0c7c2397",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=0ED9F19EF47C63813D38E987F55662BA",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=08864290DAC9618F19895A8ADB2A60A5",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "1696c27907c86ade",
+    "id": "92a6fcfb4b254089",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=10D1276512526BC334E43F7C13AB6A47",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=0B54906979F26B9D36E7887378D96A87",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "13e114b33e807775",
+    "id": "af25d37f4ac7e037",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=116C5CCD94F260BA33B744D495E06132",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=12A0F92C33DF64E80F9AE13632106567",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "0c852f814f3591cd",
+    "id": "221bcfbe5975ad22",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=166E39FB07F0625F32D821E206316361",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=1705EED643D8600F3B04F6CC423B61A1",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "6f82e26e0242bb33",
+    "id": "6af1ad2291b416ac",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=1A3620F3676C6BA0048338EA66E86A6B",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=1946A08D09726D3E035DB89708AC6CC7",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "a7d97d7bdb0af4d8",
+    "id": "55b85c7bab5f6142",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2164CF1F0CFB636C2283D7060DEC6211",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=1B24A9E4D4EF68E4260EB1FED52E69D3",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "1deeea462b0e3b9e",
+    "id": "1745a56ade7cd8c9",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=2659FCA5746A602A161EE4BC7548617E",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=1D7D7D53B6416A57174C6549B75E6BE7",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "f642a24901ab9d7e",
+    "id": "0b18fbc751ba3884",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3BD3751E97F66FB112926D0796616E33",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=23784077FC4366B52CBD586DFD58677A",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "0e2113771c7c810c",
+    "id": "4ce35138e7b50ddb",
     "tipo": "regulamento"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3FB7E43C23986A7F1CD2FC2522196B89",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22REC_Brasileiro_Serie_A_2026%22&setlang=en&sid=3B46C038AB01688138B4D822AA5A6913",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "8f81090ffa750406",
+    "id": "a81c56b5826fb8eb",
     "tipo": "regulamento"
   },
   {
@@ -1892,7 +891,7 @@
   {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Regulamento",
     "title": "Documentos",
-    "origem": "requests_page:a.href;requests_asset:a.href;playwright_response_body:a.href;playwright_page_content:a.href",
+    "origem": "requests_page:a.href;requests_asset:a.href;playwright_response_body:a.href",
     "id": "c0187b7241953cbc",
     "tipo": "regulamento"
   },
@@ -1953,10 +952,10 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_23_11_cbf5ffbe46.pdf",
     "title": "",
-    "origem": "playwright_response_body:regex_pdf;playwright_page_content:a.href;playwright_page_content:regex_pdf",
-    "id": "336de542173da3b1",
+    "origem": "playwright_response_body:regex_pdf",
+    "id": "c226e28f60d74401",
     "tipo": "tabela_detalhada"
   },
   {
@@ -1974,17 +973,17 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_16_11_f445df8d86.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_23_11_03a43a08de.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf",
-    "id": "3e34866c97e8ce26",
+    "id": "23cb97326b6c2770",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_09_11_721123563f.pdf",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Copa_do_Brasil_2026_23_11_771762522c.pdf",
     "title": "",
     "origem": "playwright_response_body:regex_pdf",
-    "id": "d4b5b5f92803a69a",
+    "id": "63f79b3b27f2a48d",
     "tipo": "tabela_detalhada"
   },
   {
@@ -1996,7 +995,7 @@
   },
   {
     "url": "https://www.bing.com/copilotsearch?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&FORM=CSSCOP",
-    "title": "Modo De IA | Pesquisar",
+    "title": "Modo De IA",
     "origem": "bing:a.href",
     "id": "dad2d010dd02a5ad",
     "tipo": "tabela_detalhada"
@@ -2037,87 +1036,87 @@
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&filters=ex1%3a%22ez5_20414_20779%22&FORM=000017",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&filters=ex1%3a%22ez5_20415_20780%22&FORM=000017",
     "title": "Ano passado",
     "origem": "bing:a.href",
-    "id": "083efe5d81cfc1e5",
+    "id": "7bc77f2383fa02ed",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=05C84BA680A06E9D088953BF81F66F5D",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=03B1F74A21F2637B2782EF502074628C",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "58b86d7609f1fc8f",
+    "id": "503a1e67b44a1d80",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=14110682933563073A531E9B92D06260",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=06F6514C77E366281360495676CE67A5",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "a2ebeaa96bafe476",
+    "id": "0dc2ff542a16c724",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=18BAA8B920DE61101FAFB0A021C5601C",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0A2D2EA8C63F61F2078736B2C7DE60C3",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "0d0e16ac998a4321",
+    "id": "9f71759841a66346",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1DEE3EA755DB65D1137426BE54B1644A",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0CC45EA1C03E6E15241A46BBC1DF6F7E",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "cd2e0e164d3987e3",
+    "id": "822857bc0b4fd68f",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1FB057B3964D6AB6295B4FAA97756BDE",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=0D6143C823C76FD61D295BD222706E3D",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "744113acb894c6d4",
+    "id": "3c5b2018d29fc7cd",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=1FB63262AB8162B4342D2A7BAA636332",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=11371D1F76A561CC1EB3050577F46028",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "346ed2d1779d3826",
+    "id": "4985615332989aaa",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=208C8DB66337600A1A8A95AF62036190",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=114147D8FB4D674A32075FC2FA786676",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "47765e71bf743e65",
+    "id": "99304228f94476b1",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=2D0A4C394410621336AA542045DC632C",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=24FF4E1DC1BD69D508755607C05F68C3",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "e063348c6dc8a11e",
+    "id": "039e5712d90cd46b",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=2D2CC27DCDA46BF13C5EDA64CC9C6AA2",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=254CEE281A9667EF1E18F6321B32661B",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "1f4815c79c68c9da",
+    "id": "50f10c6efb383e9e",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=35E18243DFF165590ABC9A5ADE516481",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=32046172E0096B7A310A7968E1B06AAF",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "31a24631f4961422",
+    "id": "cf1229786a98eb4a",
     "tipo": "tabela_detalhada"
   },
   {
-    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=36842EFD4E7D695A305C36E44FF76854",
+    "url": "https://www.bing.com/search?q=site%3astcbfsiteprdimgbrs.blob.core.windows.net%2fimg-site%2fcdn+filetype%3apdf+%22Tabela_Detalhada%22+%22Serie_A_2026%22&setlang=en&sid=3D94C884A9426A6F3F2CD09EA87A6B68",
     "title": "English",
     "origem": "bing:a.href",
-    "id": "a08b2ec4d0705797",
+    "id": "44a33db4c17b9990",
     "tipo": "tabela_detalhada"
   },
   {
@@ -2151,7 +1150,7 @@
   {
     "url": "https://www.cbf.com.br/futebol-brasileiro/tabelas/campeonato-brasileiro/serie-a/2026?documento=Tabela Detalhada",
     "title": "Tabela Detalhada",
-    "origem": "requests_page:a.href;requests_asset:a.href;playwright_response_body:a.href;playwright_page_content:a.href",
+    "origem": "requests_page:a.href;requests_asset:a.href;playwright_response_body:a.href",
     "id": "2d62104c3a43f083",
     "tipo": "tabela_detalhada"
   },
