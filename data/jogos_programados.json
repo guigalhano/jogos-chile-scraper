@@ -11,7 +11,7 @@
     "rodada": "Rodada 19",
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_16_11_f445df8d86.pdf",
     "extra": "pais=Brasil; cidade=Goiânia; data_estimada=true",
-    "id": "0b2511ec59ff33ea",
+    "id": "e9e46b9ce64707af",
     "atualizado_em": "2026-11-23T12:19:46"
   },
   {
@@ -1725,6 +1725,21 @@
     "atualizado_em": "2026-11-22T21:02:03"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-11-12",
+    "hora": "19:00",
+    "mandante": "Ponte Preta (SP)",
+    "visitante": "Operário (PR)",
+    "estadio": "Ítalo",
+    "cidade": "Limongi Indaiatuba",
+    "rodada": "Rodada 38",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_16_11_f445df8d86.pdf",
+    "extra": "pais=Brasil; cidade=Limongi Indaiatuba",
+    "id": "0b1fc4e8ae359671",
+    "atualizado_em": "2026-11-23T12:19:46"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-11-12",
@@ -1739,21 +1754,6 @@
     "extra": "codigo_espn=401930227; status=Full Time; placar=5-5",
     "id": "0ba06aeef5302e48",
     "atualizado_em": "2026-11-22T20:54:33"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-11-12",
-    "hora": "19:00",
-    "mandante": "Ponte Preta (SP)",
-    "visitante": "Operário (PR)",
-    "estadio": "Ítalo",
-    "cidade": "Limongi Indaiatuba",
-    "rodada": "Rodada 38",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_16_11_f445df8d86.pdf",
-    "extra": "pais=Brasil; cidade=Limongi Indaiatuba",
-    "id": "0b1fc4e8ae359671",
-    "atualizado_em": "2026-11-23T12:19:46"
   },
   {
     "fonte": "ESPN",
@@ -2193,22 +2193,6 @@
     "atualizado_em": "2026-11-22T20:13:15"
   },
   {
-    "fonte": "FUTBOLPERUANO",
-    "competicao": "Peru - Liga 1",
-    "data": "2026-11-16",
-    "hora": "15:15",
-    "mandante": "D. Moquegua",
-    "visitante": "Grau",
-    "pais": "Peru",
-    "cidade": "",
-    "estadio": "",
-    "rodada": "Fase Regular",
-    "url": "",
-    "extra": "status=Jugado; placar=2-1",
-    "id": "0b4688608256ac3c",
-    "atualizado_em": "2026-11-22T20:13:15"
-  },
-  {
     "fonte": "ESPN",
     "competicao": "Peru - Liga 1",
     "data": "2026-11-16",
@@ -2223,6 +2207,22 @@
     "extra": "codigo_espn=401886121; status=Full Time; placar=2-2",
     "id": "c1f347034230ceed",
     "atualizado_em": "2026-11-22T21:54:42"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 1",
+    "data": "2026-11-16",
+    "hora": "15:15",
+    "mandante": "D. Moquegua",
+    "visitante": "Grau",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Fase Regular",
+    "url": "",
+    "extra": "status=Jugado; placar=2-1",
+    "id": "0b4688608256ac3c",
+    "atualizado_em": "2026-11-22T20:13:15"
   },
   {
     "fonte": "ESPN",
@@ -2305,6 +2305,21 @@
     "atualizado_em": "2026-11-22T21:54:42"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-18",
+    "hora": "19:30",
+    "mandante": "Coritiba (PR)",
+    "visitante": "Santos (SP)",
+    "estadio": "Couto Pereira",
+    "cidade": "Curitiba",
+    "rodada": "Rodada 35",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
+    "extra": "pais=Brasil; cidade=Curitiba",
+    "id": "35cc24e3cd9c4cb6",
+    "atualizado_em": "2026-11-23T12:19:46"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-11-18",
@@ -2319,21 +2334,6 @@
     "extra": "codigo_espn=401930226; status=Full Time; placar=3-1",
     "id": "79a1718cd1674bd5",
     "atualizado_em": "2026-11-22T20:54:33"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-18",
-    "hora": "19:30",
-    "mandante": "Coritiba (PR)",
-    "visitante": "Santos (SP)",
-    "estadio": "Couto Pereira",
-    "cidade": "Curitiba",
-    "rodada": "Rodada 35",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
-    "extra": "pais=Brasil; cidade=Curitiba",
-    "id": "35cc24e3cd9c4cb6",
-    "atualizado_em": "2026-11-23T12:19:46"
   },
   {
     "fonte": "CBF",
@@ -2821,6 +2821,20 @@
     "atualizado_em": "2026-11-23T12:19:46"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Juvenil Femenino",
+    "data": "2026-11-22",
+    "hora": "09:00",
+    "mandante": "Colo Colo Juvenil Fem",
+    "visitante": "Deportes Iquique Juvenil Fem",
+    "estadio": "Estadio Monumental – Cancha 2",
+    "rodada": "",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
+    "extra": "",
+    "id": "c3639c32e42efa59",
+    "atualizado_em": "2026-11-22T19:16:20"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Paulista Sub-12 (SUB12)",
     "data": "2026-11-22",
@@ -2851,20 +2865,6 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=662; grupo=40; fase=SEMIFINAL; suspencao=LIBERADO",
     "id": "dae6ea3a31de0afc",
     "atualizado_em": "2026-11-22T20:27:54"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Juvenil Femenino",
-    "data": "2026-11-22",
-    "hora": "09:00",
-    "mandante": "Colo Colo Juvenil Fem",
-    "visitante": "Deportes Iquique Juvenil Fem",
-    "estadio": "Estadio Monumental – Cancha 2",
-    "rodada": "",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-juvenil-femenino/",
-    "extra": "",
-    "id": "c3639c32e42efa59",
-    "atualizado_em": "2026-11-22T19:16:20"
   },
   {
     "fonte": "FGF",
@@ -3258,6 +3258,36 @@
     "atualizado_em": "2026-11-16T21:41:32"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-22",
+    "hora": "16:00",
+    "mandante": "Athletico (PR)",
+    "visitante": "Remo (PA)",
+    "estadio": "Arena da Baixada",
+    "cidade": "Curitiba",
+    "rodada": "Rodada 36",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
+    "extra": "pais=Brasil; cidade=Curitiba",
+    "id": "d8051a3c16dd2b10",
+    "atualizado_em": "2026-11-23T12:19:46"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-11-22",
+    "hora": "16:00",
+    "mandante": "Criciúma (SC)",
+    "visitante": "Fortaleza (CE)",
+    "estadio": "Heriberto Hulse",
+    "cidade": "Criciúma",
+    "rodada": "Ida",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_16_11_f445df8d86.pdf",
+    "extra": "pais=Brasil; cidade=Criciúma",
+    "id": "932e6902dd96aefc",
+    "atualizado_em": "2026-11-23T12:19:46"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-11-22",
@@ -3353,36 +3383,6 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=362; grupo=34; fase=FINAL; canais=TNT, YouTube Ulisses TV, Xsports, Youtube Energia 97 FM; suspencao=LIBERADO",
     "id": "e635deebdfa15cbd",
     "atualizado_em": "2026-11-22T20:27:54"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-22",
-    "hora": "16:00",
-    "mandante": "Athletico (PR)",
-    "visitante": "Remo (PA)",
-    "estadio": "Arena da Baixada",
-    "cidade": "Curitiba",
-    "rodada": "Rodada 36",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
-    "extra": "pais=Brasil; cidade=Curitiba",
-    "id": "d8051a3c16dd2b10",
-    "atualizado_em": "2026-11-23T12:19:46"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-11-22",
-    "hora": "16:00",
-    "mandante": "Criciúma (SC)",
-    "visitante": "Fortaleza (CE)",
-    "estadio": "Heriberto Hulse",
-    "cidade": "Criciúma",
-    "rodada": "Ida",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_16_11_f445df8d86.pdf",
-    "extra": "pais=Brasil; cidade=Criciúma",
-    "id": "932e6902dd96aefc",
-    "atualizado_em": "2026-11-23T12:19:46"
   },
   {
     "fonte": "SofaScore",
@@ -3516,25 +3516,6 @@
     "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
     "data": "2026-11-22",
     "hora": "17:00",
-    "mandante": "Sociedad Sportiva Devoto",
-    "visitante": "Sportivo Suardi",
-    "pais": "Argentina",
-    "cidade": "Devoto",
-    "estadio": "Centenario",
-    "rodada": "Playoffs - Quarterfinals",
-    "url": "https://www.sofascore.com/football/match/sportivo-suardi-sociedad-sportiva-devoto/uVbesbrxh#id:17584009",
-    "extra": "pais=Argentina; codigo_sofascore=17584009; time_sofascore=504769; status=Programado; fonte_dados=sofascore",
-    "lat": -31.405895,
-    "lng": -62.297001,
-    "escopo": "Regional",
-    "id": "fc41ac0ffd640b9b",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
-    "data": "2026-11-22",
-    "hora": "17:00",
     "mandante": "Social de Chipion",
     "visitante": "AD El Arañado",
     "pais": "Argentina",
@@ -3547,6 +3528,25 @@
     "lng": -62.337868,
     "escopo": "Regional",
     "id": "30f561142a99c1cc",
+    "atualizado_em": "2026-11-22T15:05:17+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
+    "data": "2026-11-22",
+    "hora": "17:00",
+    "mandante": "Sociedad Sportiva Devoto",
+    "visitante": "Sportivo Suardi",
+    "pais": "Argentina",
+    "cidade": "Devoto",
+    "estadio": "Centenario",
+    "rodada": "Playoffs - Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/sportivo-suardi-sociedad-sportiva-devoto/uVbesbrxh#id:17584009",
+    "extra": "pais=Argentina; codigo_sofascore=17584009; time_sofascore=504769; status=Programado; fonte_dados=sofascore",
+    "lat": -31.405895,
+    "lng": -62.297001,
+    "escopo": "Regional",
+    "id": "fc41ac0ffd640b9b",
     "atualizado_em": "2026-11-22T15:05:17+00:00"
   },
   {
@@ -3764,43 +3764,6 @@
     "atualizado_em": "2026-11-22T20:54:33"
   },
   {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Liga Regional de Fútbol de Laboulaye",
-    "data": "2026-11-22",
-    "hora": "18:00",
-    "mandante": "Club Sportivo Norte (Laboulaye)",
-    "visitante": "Huracan Laboulaye",
-    "pais": "Argentina",
-    "cidade": "Laboulaye",
-    "estadio": "Parque Colón",
-    "rodada": "Quarterfinals",
-    "url": "https://www.sofascore.com/football/match/club-sportivo-norte-laboulaye-huracan-laboulaye/XZdjsNrkj#id:17523241",
-    "extra": "pais=Argentina; codigo_sofascore=17523241; time_sofascore=1150888; status=Programado; fonte_dados=sofascore",
-    "lat": -34.1158333,
-    "lng": -63.3861111,
-    "escopo": "Regional",
-    "id": "4d729e59eade8889",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Torneo Regional Federal Amateur – Región Norte",
-    "data": "2026-11-22",
-    "hora": "18:00",
-    "mandante": "Altos Hornos Zapla",
-    "visitante": "Concepción FC",
-    "pais": "Argentina",
-    "cidade": "San Salvador de Jujuy",
-    "estadio": "",
-    "rodada": "Región Norte - Playoffs - Final",
-    "url": "https://www.sofascore.com/football/match/concepcion-fc-altos-hornos-zapla/EpDbswnYd#id:17586353",
-    "extra": "pais=Argentina; codigo_sofascore=17586353; time_sofascore=195779; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -24.18526,
-    "lng": -65.29948,
-    "id": "8e26c0da35ccb83c",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
-  },
-  {
     "fonte": "campeonatochileno.cl",
     "competicao": "Liga de Primera Mercado Libre",
     "data": "2026-11-22",
@@ -3841,6 +3804,43 @@
     "extra": "",
     "id": "b62fb56af6a8af61",
     "atualizado_em": "2026-11-22T19:16:20"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional de Fútbol de Laboulaye",
+    "data": "2026-11-22",
+    "hora": "18:00",
+    "mandante": "Club Sportivo Norte (Laboulaye)",
+    "visitante": "Huracan Laboulaye",
+    "pais": "Argentina",
+    "cidade": "Laboulaye",
+    "estadio": "Parque Colón",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/club-sportivo-norte-laboulaye-huracan-laboulaye/XZdjsNrkj#id:17523241",
+    "extra": "pais=Argentina; codigo_sofascore=17523241; time_sofascore=1150888; status=Programado; fonte_dados=sofascore",
+    "lat": -34.1158333,
+    "lng": -63.3861111,
+    "escopo": "Regional",
+    "id": "4d729e59eade8889",
+    "atualizado_em": "2026-11-22T15:05:17+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Regional Federal Amateur – Región Norte",
+    "data": "2026-11-22",
+    "hora": "18:00",
+    "mandante": "Altos Hornos Zapla",
+    "visitante": "Concepción FC",
+    "pais": "Argentina",
+    "cidade": "San Salvador de Jujuy",
+    "estadio": "",
+    "rodada": "Región Norte - Playoffs - Final",
+    "url": "https://www.sofascore.com/football/match/concepcion-fc-altos-hornos-zapla/EpDbswnYd#id:17586353",
+    "extra": "pais=Argentina; codigo_sofascore=17586353; time_sofascore=195779; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -24.18526,
+    "lng": -65.29948,
+    "id": "8e26c0da35ccb83c",
+    "atualizado_em": "2026-11-22T15:05:17+00:00"
   },
   {
     "fonte": "APF",
@@ -3997,6 +3997,21 @@
     "atualizado_em": "2026-11-22T15:05:17+00:00"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-22",
+    "hora": "19:30",
+    "mandante": "Red Bull Bragantino (SP)",
+    "visitante": "Vasco da Gama (RJ)",
+    "estadio": "Cícero S. Marques",
+    "cidade": "Bragança Paulista",
+    "rodada": "Rodada 36",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
+    "extra": "pais=Brasil; cidade=Bragança Paulista",
+    "id": "bf2c1dfe23bcea5e",
+    "atualizado_em": "2026-11-23T12:19:46"
+  },
+  {
     "fonte": "AFA-FederalA",
     "competicao": "Argentina - Torneo Federal A",
     "data": "2026-11-22",
@@ -4029,21 +4044,6 @@
     "extra": "codigo_espn=401930028; status=Scheduled",
     "id": "44fa3644510f880a",
     "atualizado_em": "2026-11-22T20:54:33"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-22",
-    "hora": "19:30",
-    "mandante": "Red Bull Bragantino (SP)",
-    "visitante": "Vasco da Gama (RJ)",
-    "estadio": "Cícero S. Marques",
-    "cidade": "Bragança Paulista",
-    "rodada": "Rodada 36",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
-    "extra": "pais=Brasil; cidade=Bragança Paulista",
-    "id": "bf2c1dfe23bcea5e",
-    "atualizado_em": "2026-11-23T12:19:46"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -4209,6 +4209,20 @@
     "atualizado_em": "2026-11-22T19:16:23"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
+    "data": "2026-11-23",
+    "hora": "11:00",
+    "mandante": "Universidad de Chile Juvenil Fem",
+    "visitante": "U. de Concepción Juvenil Fem",
+    "estadio": "",
+    "rodada": "",
+    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
+    "extra": "",
+    "id": "06ba16ebc7ff759e",
+    "atualizado_em": "2026-07-14T13:55:28"
+  },
+  {
     "fonte": "SofaScore",
     "competicao": "Argentina - Liga Regional Colón, Octava",
     "data": "2026-11-23",
@@ -4225,20 +4239,6 @@
     "escopo": "Regional",
     "id": "5f65b7e9c376f540",
     "atualizado_em": "2026-11-22T15:05:17+00:00"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Campeonato Nacional Juvenil Femenino Clausura",
-    "data": "2026-11-23",
-    "hora": "11:00",
-    "mandante": "Universidad de Chile Juvenil Fem",
-    "visitante": "U. de Concepción Juvenil Fem",
-    "estadio": "",
-    "rodada": "",
-    "url": "https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/",
-    "extra": "",
-    "id": "06ba16ebc7ff759e",
-    "atualizado_em": "2026-07-14T13:55:28"
   },
   {
     "fonte": "SofaScore",
@@ -4311,6 +4311,42 @@
     "atualizado_em": "2026-11-22T20:54:33"
   },
   {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-23",
+    "hora": "15:30",
+    "mandante": "Albion FC U12",
+    "visitante": "Leones U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B - Fecha 1",
+    "url": "https://www.sofascore.com/football/match/leones-u12-albion-fc-u12/zkojsfMBk#id:17617089",
+    "extra": "pais=Argentina; codigo_sofascore=17617089; time_sofascore=1160524; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "de0e2ceca901d577",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-23",
+    "hora": "15:30",
+    "mandante": "Inter Miami U12",
+    "visitante": "Alianza Lima U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B - Fecha 1",
+    "url": "https://www.sofascore.com/football/match/alianza-lima-u12-inter-miami-u12/UNaesYtLj#id:17617093",
+    "extra": "pais=Argentina; codigo_sofascore=17617093; time_sofascore=501944; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "fd3d55ee05c18b1b",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
     "fonte": "AFA",
     "competicao": "Argentina - Primera C",
     "data": "2026-11-23",
@@ -4367,12 +4403,13 @@
     "mandante": "Banfield",
     "visitante": "Huracán, en Banfield principal",
     "estadio": "",
-    "rodada": "",
+    "rodada": "Fecha 15",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "c075587c6d2e69fa",
-    "atualizado_em": "2026-11-22T19:16:23"
+    "atualizado_em": "2026-11-22T19:16:23",
+    "categoria": "Femenino"
   },
   {
     "fonte": "AFA",
@@ -4531,7 +4568,7 @@
     "lat": -31.53709,
     "lng": -68.52518,
     "id": "85e771c2176e711c",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "CBF",
@@ -4565,6 +4602,42 @@
     "atualizado_em": "2026-11-22T20:27:54"
   },
   {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-24",
+    "hora": "14:00",
+    "mandante": "NOB Colombia U12",
+    "visitante": "Deportivo LSM U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo A - Fecha 2",
+    "url": "https://www.sofascore.com/football/match/nob-colombia-u12-deportivo-lsm-u12/DkojsgMBk#id:17617091",
+    "extra": "pais=Argentina; codigo_sofascore=17617091; time_sofascore=1316856; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "3c8562e76f26f3c8",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-24",
+    "hora": "14:00",
+    "mandante": "Newell's Old Boys U12",
+    "visitante": "Sport Boys U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo A - Fecha 2",
+    "url": "https://www.sofascore.com/football/match/newells-old-boys-u12-sport-boys-u12/EMJisBkoj#id:17617097",
+    "extra": "pais=Argentina; codigo_sofascore=17617097; time_sofascore=1160526; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "9d9cb07d6449216a",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Copinha F Petrobras (Junior)",
     "data": "2026-11-24",
@@ -4579,6 +4652,42 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=8; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "18dcb24764d1d3b6",
     "atualizado_em": "2026-11-22T20:27:54"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-24",
+    "hora": "15:30",
+    "mandante": "Albion FC U12",
+    "visitante": "Alianza Lima U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B - Fecha 2",
+    "url": "https://www.sofascore.com/football/match/alianza-lima-u12-albion-fc-u12/zkojsYtLj#id:17617094",
+    "extra": "pais=Argentina; codigo_sofascore=17617094; time_sofascore=1160524; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "c90b92e889e6b7f0",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-24",
+    "hora": "15:30",
+    "mandante": "Inter Miami U12",
+    "visitante": "Leones U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B - Fecha 2",
+    "url": "https://www.sofascore.com/football/match/leones-u12-inter-miami-u12/UNaesfMBk#id:17617090",
+    "extra": "pais=Argentina; codigo_sofascore=17617090; time_sofascore=501944; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "9bab304c45ecfa85",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "FPF",
@@ -4628,6 +4737,20 @@
     "atualizado_em": "2026-11-22T20:31:35"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Copa Chile Coca-Cola Zero Azúcar",
+    "data": "2026-11-24",
+    "hora": "19:00",
+    "mandante": "Coquimbo Unido",
+    "visitante": "Unión La Calera",
+    "estadio": "Estadio Municipal Francisco Sánchez Rumoroso",
+    "rodada": "",
+    "url": "https://www.campeonatochileno.cl/ligas/copa-chile-coca-cola-zero-azucar/",
+    "extra": "",
+    "id": "667da65c01fcd7f2",
+    "atualizado_em": "2026-11-22T19:16:20"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Copinha F Petrobras (Junior)",
     "data": "2026-11-24",
@@ -4642,20 +4765,6 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=1; canais=CazeTV; suspencao=LIBERADO",
     "id": "bdfa3ed2cbc412a2",
     "atualizado_em": "2026-11-22T20:27:54"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Copa Chile Coca-Cola Zero Azúcar",
-    "data": "2026-11-24",
-    "hora": "19:00",
-    "mandante": "Coquimbo Unido",
-    "visitante": "Unión La Calera",
-    "estadio": "Estadio Municipal Francisco Sánchez Rumoroso",
-    "rodada": "",
-    "url": "https://www.campeonatochileno.cl/ligas/copa-chile-coca-cola-zero-azucar/",
-    "extra": "",
-    "id": "667da65c01fcd7f2",
-    "atualizado_em": "2026-11-22T19:16:20"
   },
   {
     "fonte": "FPF",
@@ -4705,7 +4814,7 @@
     "categoria": "Femenino",
     "escopo": "Regional",
     "id": "506db5090efd98c9",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "FPF",
@@ -4739,7 +4848,7 @@
     "categoria": "Femenino",
     "escopo": "Regional",
     "id": "c9082cda5e3a368e",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -4758,7 +4867,7 @@
     "lng": -64.180445,
     "escopo": "Regional",
     "id": "6b93b23ba3fbcb49",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "FPF",
@@ -4775,6 +4884,42 @@
     "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=3; canais=YouTube Paulistão; suspencao=LIBERADO",
     "id": "58826352f1449233",
     "atualizado_em": "2026-11-22T20:27:54"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-25",
+    "hora": "14:00",
+    "mandante": "Deportivo LSM U12",
+    "visitante": "Sport Boys U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo A - Fecha 3",
+    "url": "https://www.sofascore.com/football/match/deportivo-lsm-u12-sport-boys-u12/EMJisDkoj#id:17617098",
+    "extra": "pais=Argentina; codigo_sofascore=17617098; time_sofascore=1160528; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "1e96a350cf46c26e",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-25",
+    "hora": "14:00",
+    "mandante": "Newell's Old Boys U12",
+    "visitante": "NOB Colombia U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo A - Fecha 3",
+    "url": "https://www.sofascore.com/football/match/nob-colombia-u12-newells-old-boys-u12/BkojsgMBk#id:17617092",
+    "extra": "pais=Argentina; codigo_sofascore=17617092; time_sofascore=1160526; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "5a2aad67722fc068",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "FGF",
@@ -4810,6 +4955,42 @@
   },
   {
     "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-25",
+    "hora": "15:30",
+    "mandante": "Inter Miami U12",
+    "visitante": "Albion FC U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B - Fecha 3",
+    "url": "https://www.sofascore.com/football/match/albion-fc-u12-inter-miami-u12/UNaeszkoj#id:17617079",
+    "extra": "pais=Argentina; codigo_sofascore=17617079; time_sofascore=501944; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "0ee09da51967d0ac",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Newell's Cup U12",
+    "data": "2026-11-25",
+    "hora": "15:30",
+    "mandante": "Leones U12",
+    "visitante": "Alianza Lima U12",
+    "pais": "Argentina",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Grupo B - Fecha 3",
+    "url": "https://www.sofascore.com/football/match/leones-u12-alianza-lima-u12/YtLjsfMBk#id:17617095",
+    "extra": "pais=Argentina; codigo_sofascore=17617095; time_sofascore=1316855; status=Programado; fonte_dados=sofascore",
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "ea9527daefcc176a",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
     "competicao": "Argentina - Torneo Proyección",
     "data": "2026-11-25",
     "hora": "16:00",
@@ -4825,7 +5006,7 @@
     "lng": -58.38879,
     "categoria": "Sub23",
     "id": "62447404b4562ffb",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "FPF",
@@ -4876,7 +5057,7 @@
     "lng": -64.180445,
     "categoria": "Sub23",
     "id": "2d46d037fbbb6103",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "ESPN",
@@ -4948,13 +5129,16 @@
     "hora": "21:00",
     "mandante": "Boca",
     "visitante": "Ind. Rivadavia Mza.",
-    "estadio": "",
-    "rodada": "",
+    "estadio": "Alberto Jose Armando",
+    "rodada": "Round of 16",
     "url": "https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa",
     "extra": "",
     "pais": "Argentina",
     "id": "898689cee2268300",
-    "atualizado_em": "2026-11-22T19:16:23"
+    "atualizado_em": "2026-11-22T19:16:23",
+    "cidade": "Buenos Aires",
+    "lat": -34.61315,
+    "lng": -58.37723
   },
   {
     "fonte": "FPF",
@@ -5005,7 +5189,21 @@
     "lng": -58.520679,
     "categoria": "Sub23",
     "id": "c3c49593268a3089",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-11-26",
+    "hora": "19:00",
+    "mandante": "Santiago Wanderers",
+    "visitante": "Deportes Recoleta",
+    "estadio": "Elías Figueroa Brander",
+    "rodada": "",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "c1517a381e2dfb78",
+    "atualizado_em": "2026-11-22T19:16:20"
   },
   {
     "fonte": "SofaScore",
@@ -5024,21 +5222,7 @@
     "lng": -58.371038,
     "categoria": "Sub23",
     "id": "6ccd858c61642a55",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-11-26",
-    "hora": "19:00",
-    "mandante": "Santiago Wanderers",
-    "visitante": "Deportes Recoleta",
-    "estadio": "Elías Figueroa Brander",
-    "rodada": "",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "c1517a381e2dfb78",
-    "atualizado_em": "2026-11-22T19:16:20"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "CBF",
@@ -5119,7 +5303,7 @@
     "lng": -58.37723,
     "categoria": "Femenino",
     "id": "d4c566058d2d7005",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "ESPN",
@@ -5234,42 +5418,6 @@
     "atualizado_em": "2026-11-22T20:54:33"
   },
   {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - U20 Liga Regional de Fútbol General Roca",
-    "data": "2026-11-27",
-    "hora": "20:00",
-    "mandante": "C. D. Moto Kart U20",
-    "visitante": "F. C. Villa Huidobro U20",
-    "pais": "Argentina",
-    "cidade": "General Roca",
-    "estadio": "",
-    "rodada": "Semifinals",
-    "url": "https://www.sofascore.com/football/match/f-villa-huidobro-u20-c-moto-kart-u20/RMcesXMce#id:17557372",
-    "extra": "pais=Argentina; codigo_sofascore=17557372; time_sofascore=506892; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -39.0333,
-    "lng": -67.5833,
-    "categoria": "Sub23",
-    "escopo": "Regional",
-    "id": "dee72a6682c89fbf",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
-  },
-  {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Copinha F Petrobras (Junior)",
-    "data": "2026-11-27",
-    "hora": "20:00",
-    "mandante": "Ferroviária",
-    "visitante": "Grêmio (RS)",
-    "pais": "Brasil",
-    "cidade": "São Paulo",
-    "estadio": "Centro Esportivo Recreativo Educativo do Trabalhador",
-    "rodada": "Rodada 2",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; canais=YouTube Paulistão; suspencao=LIBERADO",
-    "id": "9b358569f0e723a5",
-    "atualizado_em": "2026-11-22T20:27:54"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Série A",
     "data": "2026-11-27",
@@ -5314,6 +5462,42 @@
     "atualizado_em": "2026-11-22T19:16:20"
   },
   {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - U20 Liga Regional de Fútbol General Roca",
+    "data": "2026-11-27",
+    "hora": "20:00",
+    "mandante": "C. D. Moto Kart U20",
+    "visitante": "F. C. Villa Huidobro U20",
+    "pais": "Argentina",
+    "cidade": "General Roca",
+    "estadio": "",
+    "rodada": "Semifinals",
+    "url": "https://www.sofascore.com/football/match/f-villa-huidobro-u20-c-moto-kart-u20/RMcesXMce#id:17557372",
+    "extra": "pais=Argentina; codigo_sofascore=17557372; time_sofascore=506892; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -39.0333,
+    "lng": -67.5833,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "dee72a6682c89fbf",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Copinha F Petrobras (Junior)",
+    "data": "2026-11-27",
+    "hora": "20:00",
+    "mandante": "Ferroviária",
+    "visitante": "Grêmio (RS)",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Centro Esportivo Recreativo Educativo do Trabalhador",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; canais=YouTube Paulistão; suspencao=LIBERADO",
+    "id": "9b358569f0e723a5",
+    "atualizado_em": "2026-11-22T20:27:54"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Copinha F Petrobras (Junior)",
     "data": "2026-11-27",
@@ -5347,7 +5531,7 @@
     "categoria": "Sub23",
     "escopo": "Regional",
     "id": "20dd11d75bf53000",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "FGF",
@@ -5476,7 +5660,7 @@
     "lng": -58.024552,
     "escopo": "Regional",
     "id": "ec0693f5a83e45f2",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5495,7 +5679,7 @@
     "lng": -57.971072028125,
     "escopo": "Regional",
     "id": "add26ad516373417",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5514,7 +5698,7 @@
     "lng": -57.958883,
     "escopo": "Regional",
     "id": "5b2b8d0a883326b4",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5533,7 +5717,7 @@
     "lng": -57.9657884,
     "escopo": "Regional",
     "id": "7528802bfafc7a9e",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5552,7 +5736,7 @@
     "lng": -57.882313,
     "escopo": "Regional",
     "id": "2f5cb29abe783988",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5571,7 +5755,7 @@
     "lng": -57.8783289,
     "escopo": "Regional",
     "id": "ed8433a4c3f33040",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5590,7 +5774,7 @@
     "lng": -58.00825,
     "escopo": "Regional",
     "id": "19c7d974456dbd89",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5609,7 +5793,7 @@
     "lng": -58.035218,
     "escopo": "Regional",
     "id": "f0d877b43b9c6b62",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "ESPN",
@@ -5692,6 +5876,42 @@
     "atualizado_em": "2026-11-22T20:38:23"
   },
   {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Primera C",
+    "data": "2026-11-28",
+    "hora": "15:30",
+    "mandante": "Berazategui",
+    "visitante": "Sportivo Barracas",
+    "pais": "Argentina",
+    "cidade": "Berazategui",
+    "estadio": "Estadio Norman Lee",
+    "rodada": "Semifinals",
+    "url": "https://www.sofascore.com/football/match/berazategui-sportivo-barracas/inFbsGVhc#id:17617574",
+    "extra": "pais=Argentina; codigo_sofascore=17617574; time_sofascore=269781; status=Programado; fonte_dados=sofascore",
+    "lat": -34.758744,
+    "lng": -58.197052,
+    "id": "42cbdf9b99bc9a23",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Primera C",
+    "data": "2026-11-28",
+    "hora": "15:30",
+    "mandante": "Cañuelas FC",
+    "visitante": "Estrella Del Sur",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "Estadio Jorge Alfredo Arín",
+    "rodada": "Semifinals",
+    "url": "https://www.sofascore.com/football/match/estrella-del-sur-canuelas-fc/GRacsyXDi#id:17617573",
+    "extra": "pais=Argentina; codigo_sofascore=17617573; time_sofascore=252131; status=Programado; fonte_dados=sofascore",
+    "lat": -35.049539,
+    "lng": -58.746916,
+    "id": "324a6bd841daa3d2",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Copa Goiás Sub 11 da 1ª Divisão / 2026",
     "data": "2026-11-28",
@@ -5723,25 +5943,7 @@
     "lat": -34.61315,
     "lng": -58.37723,
     "id": "fa272cda7698b28e",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Primera Nacional",
-    "data": "2026-11-28",
-    "hora": "16:00",
-    "mandante": "Deportivo Madryn",
-    "visitante": "Gimnasia Y Esgrima De Jujuy",
-    "pais": "Argentina",
-    "cidade": "Puerto Madryn",
-    "estadio": "Estadio Abel Sastre",
-    "rodada": "Round 2",
-    "url": "https://www.sofascore.com/football/match/deportivo-madryn-gimnasiaesgrima-de-jujuy/RfcsvRNb#id:17586729",
-    "extra": "pais=Argentina; codigo_sofascore=17586729; time_sofascore=222120; status=Programado; fonte_dados=sofascore",
-    "lat": -42.7692,
-    "lng": -65.03851,
-    "id": "708743579aab61d2",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5759,7 +5961,7 @@
     "lat": -34.662009,
     "lng": -58.63178,
     "id": "7db79857a3b44ef6",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -5777,7 +5979,7 @@
     "lat": -34.890696,
     "lng": -58.563298,
     "id": "3c1b58edfa5c0844",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "ESPN",
@@ -5914,6 +6116,24 @@
     "extra": "pais=Brasil; cidade=Rio de Janeiro",
     "id": "7ef1dcf4a83dbfb1",
     "atualizado_em": "2026-11-23T12:19:46"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Primera Nacional",
+    "data": "2026-11-28",
+    "hora": "21:00",
+    "mandante": "Deportivo Madryn",
+    "visitante": "Gimnasia Y Esgrima De Jujuy",
+    "pais": "Argentina",
+    "cidade": "Puerto Madryn",
+    "estadio": "Estadio Abel Sastre",
+    "rodada": "Round 2",
+    "url": "https://www.sofascore.com/football/match/deportivo-madryn-gimnasiaesgrima-de-jujuy/RfcsvRNb#id:17586729",
+    "extra": "pais=Argentina; codigo_sofascore=17586729; time_sofascore=222120; status=Programado; fonte_dados=sofascore",
+    "lat": -42.7692,
+    "lng": -65.03851,
+    "id": "1a2b8645def629d2",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "FPF",
@@ -6074,22 +6294,6 @@
     "atualizado_em": "2026-11-22T20:54:33"
   },
   {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Paulista F Sub-13 Petrobras (Amador)",
-    "data": "2026-11-29",
-    "hora": "16:00",
-    "mandante": "Ferroviária",
-    "visitante": "Corinthians",
-    "pais": "Brasil",
-    "cidade": "Rio Claro",
-    "estadio": "CAT José Felicio Castellano",
-    "rodada": "Rodada 4",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; grupo=FINAL; fase=FASE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
-    "id": "e97ccc1d6669f90d",
-    "atualizado_em": "2026-11-22T20:27:54"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Série A",
     "data": "2026-11-29",
@@ -6120,6 +6324,22 @@
     "atualizado_em": "2026-11-23T12:19:46"
   },
   {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Paulista F Sub-13 Petrobras (Amador)",
+    "data": "2026-11-29",
+    "hora": "16:00",
+    "mandante": "Ferroviária",
+    "visitante": "Corinthians",
+    "pais": "Brasil",
+    "cidade": "Rio Claro",
+    "estadio": "CAT José Felicio Castellano",
+    "rodada": "Rodada 4",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; grupo=FINAL; fase=FASE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO",
+    "id": "e97ccc1d6669f90d",
+    "atualizado_em": "2026-11-22T20:27:54"
+  },
+  {
     "fonte": "SofaScore",
     "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
     "data": "2026-11-29",
@@ -6136,7 +6356,26 @@
     "lng": -62.02979,
     "escopo": "Regional",
     "id": "120616c6698755de",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
+    "data": "2026-11-29",
+    "hora": "17:00",
+    "mandante": "Social de Chipion",
+    "visitante": "Sociedad Cultural La Para",
+    "pais": "Argentina",
+    "cidade": "Altos de Chipión",
+    "estadio": "Social de Chipion",
+    "rodada": "Relegation Playoffs - Final",
+    "url": "https://www.sofascore.com/football/match/social-de-chipion-sociedad-cultural-la-para/onpjsqnpj#id:17621957",
+    "extra": "pais=Argentina; codigo_sofascore=17621957; time_sofascore=1163166; status=Programado; fonte_dados=sofascore",
+    "lat": -30.960892,
+    "lng": -62.337868,
+    "escopo": "Regional",
+    "id": "82eea282567cb205",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6155,7 +6394,7 @@
     "lng": -61.955181565544,
     "escopo": "Regional",
     "id": "d995d9e6a92b0253",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6174,7 +6413,7 @@
     "lng": -62.0095892,
     "escopo": "Regional",
     "id": "69e59f257418877c",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6193,7 +6432,83 @@
     "lng": -62.465515,
     "escopo": "Regional",
     "id": "6f7bef4f1c026358",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional B",
+    "data": "2026-11-29",
+    "hora": "17:00",
+    "mandante": "Alianza Carrilobo",
+    "visitante": "Ateneo Juvenil Acción (SR)",
+    "pais": "Argentina",
+    "cidade": "Carrilobo",
+    "estadio": "Polideportivo Centenario",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/ateneo-juvenil-accion-sr-alianza-carrilobo/ynpjsGnpj#id:17614224",
+    "extra": "pais=Argentina; codigo_sofascore=17614224; time_sofascore=1163173; status=Programado; fonte_dados=sofascore",
+    "lat": -31.872718,
+    "lng": -63.111629,
+    "escopo": "Regional",
+    "id": "b4b736c4a8b6d432",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional B",
+    "data": "2026-11-29",
+    "hora": "17:00",
+    "mandante": "Almafuerte",
+    "visitante": "Antartida Argentina (SF)",
+    "pais": "Argentina",
+    "cidade": "Las Varillas",
+    "estadio": "Cancha de fútbol Club Almafuerte",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/antartida-argentina-sf-almafuerte/frYdsdnpj#id:17614220",
+    "extra": "pais=Argentina; codigo_sofascore=17614220; time_sofascore=495855; status=Programado; fonte_dados=sofascore",
+    "lat": -31.879716,
+    "lng": -62.713176,
+    "escopo": "Regional",
+    "id": "8d2dd557c14fc731",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional B",
+    "data": "2026-11-29",
+    "hora": "17:00",
+    "mandante": "Colonia Marina FC",
+    "visitante": "La Milka (SF)",
+    "pais": "Argentina",
+    "cidade": "Colonia Marina",
+    "estadio": "Colonia Marina Football Club",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/colonia-marina-fc-la-milka-sf/Zmpjscnpj#id:17614210",
+    "extra": "pais=Argentina; codigo_sofascore=17614210; time_sofascore=1163152; status=Programado; fonte_dados=sofascore",
+    "lat": -31.2514995,
+    "lng": -62.3632195,
+    "escopo": "Regional",
+    "id": "92353f1594025793",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional B",
+    "data": "2026-11-29",
+    "hora": "17:00",
+    "mandante": "Sportivo Pozo del Molle",
+    "visitante": "El Trébol de El Tio",
+    "pais": "Argentina",
+    "cidade": "Pozo del Molle",
+    "estadio": "Club Sportivo Pozo Del Molle",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/sportivo-pozo-del-molle-el-trebol-de-el-tio/Xmpjsznpj#id:17614215",
+    "extra": "pais=Argentina; codigo_sofascore=17614215; time_sofascore=1163174; status=Programado; fonte_dados=sofascore",
+    "lat": -32.02597,
+    "lng": -62.916864,
+    "escopo": "Regional",
+    "id": "02ed264ca531bd84",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6211,7 +6526,7 @@
     "lat": -38.936392,
     "lng": -68.003754,
     "id": "1a95f459f830849c",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6229,7 +6544,7 @@
     "lat": -38.727168,
     "lng": -62.275899,
     "id": "510d571fb0d9fa24",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6247,7 +6562,7 @@
     "lat": -31.41669,
     "lng": -64.18342,
     "id": "cde029906bbf9e9d",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6265,7 +6580,7 @@
     "lat": -28.46888,
     "lng": -65.77906,
     "id": "7198122a04747f52",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6283,7 +6598,7 @@
     "lat": -34.97762,
     "lng": -67.69635,
     "id": "2e45ce8a54f41f6b",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6301,7 +6616,7 @@
     "lat": -29.1444,
     "lng": -59.26498,
     "id": "b15be417aaf01166",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6319,7 +6634,7 @@
     "lat": -33.00937,
     "lng": -58.51722,
     "id": "cef7d360f9f56e23",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6337,7 +6652,7 @@
     "lat": -26.83037,
     "lng": -65.20381,
     "id": "ec4cd97332f1db5d",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6355,7 +6670,7 @@
     "lat": -34.59344,
     "lng": -60.94617,
     "id": "c56ebf495e8a440a",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6373,7 +6688,7 @@
     "lat": -33.32771,
     "lng": -60.21659,
     "id": "aeeb8edce97f8fef",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6391,7 +6706,7 @@
     "lat": -36.89388,
     "lng": -60.32317,
     "id": "507c1194948242e3",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6409,7 +6724,7 @@
     "lat": -51.62153,
     "lng": -69.21504,
     "id": "b363df58108e2419",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "SofaScore",
@@ -6427,7 +6742,7 @@
     "lat": -40.80843,
     "lng": -62.99472,
     "id": "e03fff30ba08cae3",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "ESPN",
@@ -6519,6 +6834,42 @@
     "atualizado_em": "2026-11-23T12:19:46"
   },
   {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-29",
+    "hora": "19:00",
+    "mandante": "Rosario Central",
+    "visitante": "Barracas Central",
+    "pais": "Argentina",
+    "cidade": "Rosario",
+    "estadio": "Gigante de Arroyito",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/barracas-central-rosario-central/robstnB#id:17617622",
+    "extra": "pais=Argentina; codigo_sofascore=17617622; time_sofascore=3217; status=Programado; fonte_dados=sofascore",
+    "lat": -32.914023,
+    "lng": -60.674499,
+    "id": "ec06b03085f27f3b",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Torneo Clausura",
+    "data": "2026-11-29",
+    "hora": "19:00",
+    "mandante": "Vélez Sarsfield",
+    "visitante": "CA Independiente",
+    "pais": "Argentina",
+    "cidade": "Buenos Aires",
+    "estadio": "Jose Amalfitani",
+    "rodada": "Quarterfinals",
+    "url": "https://www.sofascore.com/football/match/ca-independiente-velez-sarsfield/iobsjob#id:17617623",
+    "extra": "pais=Argentina; codigo_sofascore=17617623; time_sofascore=3208; status=Programado; fonte_dados=sofascore",
+    "lat": -34.635338,
+    "lng": -58.520679,
+    "id": "15701a052e69fba2",
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Venezuela - Liga FUTVE (Primera División)",
     "data": "2026-11-29",
@@ -6535,6 +6886,21 @@
     "atualizado_em": "2026-11-22T21:02:03"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-29",
+    "hora": "19:30",
+    "mandante": "Atlético (MG)",
+    "visitante": "Vasco da Gama (RJ)",
+    "estadio": "Arena MRV",
+    "cidade": "Belo Horizonte",
+    "rodada": "Rodada 37",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
+    "extra": "pais=Brasil; cidade=Belo Horizonte",
+    "id": "04991053e604bb56",
+    "atualizado_em": "2026-11-23T12:19:46"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-11-29",
@@ -6549,21 +6915,6 @@
     "extra": "codigo_espn=401930023; status=Scheduled",
     "id": "6bb4dc3c53d5aed7",
     "atualizado_em": "2026-11-22T20:54:33"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-29",
-    "hora": "19:30",
-    "mandante": "Atlético (MG)",
-    "visitante": "Vasco da Gama (RJ)",
-    "estadio": "Arena MRV",
-    "cidade": "Belo Horizonte",
-    "rodada": "Rodada 37",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_19_11_7afc9e99eb.pdf",
-    "extra": "pais=Brasil; cidade=Belo Horizonte",
-    "id": "04991053e604bb56",
-    "atualizado_em": "2026-11-23T12:19:46"
   },
   {
     "fonte": "campeonatochileno.cl",
@@ -7042,7 +7393,7 @@
     "lat": -34.61315,
     "lng": -58.37723,
     "id": "584aa5bab6d70f41",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "ESPN",
@@ -7296,7 +7647,7 @@
     "lat": -31.89628,
     "lng": -61.85972,
     "id": "3dac536211971ae5",
-    "atualizado_em": "2026-11-22T15:05:17+00:00"
+    "atualizado_em": "2026-11-23T22:01:20+00:00"
   },
   {
     "fonte": "ESPN",
