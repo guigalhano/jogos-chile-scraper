@@ -1,4 +1,18 @@
 ﻿id,fonte,competicao,data,hora,pais,cidade,mandante,visitante,estadio,rodada,url,extra,atualizado_em
+faac3915c2c413d4,FUTBOLPERUANO,Peru - Liga 2,2026-11-15,10:45,Peru,,San Martín,U. Comercio,,Semifinales,,status=Jugado; placar=1-1,2026-11-24T00:39:13
+62f0e0f72feb5190,FUTBOLPERUANO,Peru - Copa de la Liga,2026-11-15,17:00,Peru,,Cristal,A. Atlético,,Final,,status=Jugado; placar=2-0,2026-11-24T00:39:13
+2bdb25ae2b01a873,FUTBOLPERUANO,Peru - Liga 1,2026-11-16,15:15,Peru,,Cusco FC,ADT,,Fase Regular,,status=Jugado; placar=2-2,2026-11-24T00:39:13
+0b4688608256ac3c,FUTBOLPERUANO,Peru - Liga 1,2026-11-16,15:15,Peru,,D. Moquegua,Grau,,Fase Regular,,status=Jugado; placar=2-1,2026-11-24T00:39:13
+7ecfaf5eea3fbb0c,FUTBOLPERUANO,Peru - Liga 1,2026-11-18,15:00,Peru,,A. Atlético,Melgar,,Fase Regular,,status=Jugado; placar=1-1,2026-11-24T00:39:13
+34368b201659008d,FUTBOLPERUANO,Peru - Liga 3,2026-11-21,15:00,Peru,,Alianza Lima,Universitario,,Fase Final Grupo 2,,status=Jugado; placar=1-1,2026-11-24T00:39:13
+a26228d08fd43ab5,FUTBOLPERUANO,Peru - Liga 3,2026-11-21,15:00,Peru,,J. Cautivo,J. Aurich,,Fase Final Grupo 2,,status=Jugado; placar=0-1,2026-11-24T00:39:13
+9b0333cab47f8996,FUTBOLPERUANO,Peru - Liga 3,2026-11-21,15:00,Peru,,Pacífico FC,S. Cristal,,Fase Final Grupo 1,,status=Jugado; placar=3-2,2026-11-24T00:39:13
+f4920d7f82483ce6,FUTBOLPERUANO,Peru - Liga 3,2026-11-21,15:00,Peru,,S. Domingo,Volante,,Fase Final Grupo 1,,status=Jugado; placar=5-0,2026-11-24T00:39:13
+ec60c41c9a21d59f,FUTBOLPERUANO,Peru - Liga 1,2026-11-21,15:30,Peru,,Alianza Lima,FC Cajamarca,,Fase Regular,,status=Jugado; placar=5-0,2026-11-24T00:39:13
+ec9c77bfbd2b2562,FUTBOLPERUANO,Peru - Liga 1,2026-11-22,15:00,Peru,,Cristal,Cienciano,,Fase Regular,,status=Jugado; placar=4-1,2026-11-24T00:39:13
+8c428914fe46aa2d,FUTBOLPERUANO,Peru - Liga 1,2026-11-22,15:00,Peru,,S. Huancayo,Universitario,,Fase Regular,,status=Jugado; placar=4-1,2026-11-24T00:39:13
+860e8f1e89e56f4f,FUTBOLPERUANO,Peru - Liga 2,2026-11-22,15:00,Peru,,U. Comercio,San Martín,,Semifinales,,status=Jugado; placar=0-1,2026-11-24T00:39:13
+c9bb33c620c42e7e,FUTBOLPERUANO,Peru - Liga 2,2026-11-22,19:30,Peru,,Mannucci,ADA Jaén,,Semifinales,,status=Jugado; placar=0-1,2026-11-24T00:39:13
 2af8645e41c6d108,AFA,Argentina - Fútbol Femenino Primera División A,2026-11-23,10:00,Argentina,,River,Talleres,River Camp,,https://www.afa.com.ar/Sitio/posts/la-agenda-de-la-afa,,2026-11-23T23:39:17
 06ba16ebc7ff759e,campeonatochileno.cl,Campeonato Nacional Juvenil Femenino Clausura,2026-11-23,11:00,,,Universidad de Chile Juvenil Fem,U. de Concepción Juvenil Fem,,,https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/,,2026-07-14T13:55:28
 5f65b7e9c376f540,SofaScore,"Argentina - Liga Regional Colón, Octava",2026-11-23,11:00,Argentina,,Quirquinchos (8va),Deportivo Colón (8va),,Semifinals,https://www.sofascore.com/football/match/deportivo-colon-8va-quirquinchos-8va/QCdesRCde#id:17605734,pais=Argentina; codigo_sofascore=17605734; time_sofascore=508891; status=Programado; fonte_dados=sofascore,2026-11-22T15:05:17+00:00
@@ -128,6 +142,7 @@ c8f009194b92d0ff,FPF,Brasil - FPF - Paulista Sub-12 (SUB12),2026-11-29,10:30,Bra
 2472cd9ad27f0f3d,campeonatochileno.cl,Campeonato Nacional Juvenil Femenino Clausura,2026-11-29,12:00,,,Deportes Iquique Juvenil Fem,Unión Española Juvenil Fem,,,https://www.campeonatochileno.cl/ligas/campeonato-nacional-juvenil-femenino-clausura/,,2026-07-14T13:55:28
 e16fdc4a2332aa2b,FPF,Brasil - FPF - Paulista F Sub-13 Petrobras (Amador),2026-11-29,14:00,Brasil,Rio Claro,São Paulo,SESI - SP,CAT José Felicio Castellano,Rodada 4,https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx,status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=15; canais=YouTube Paulistão; suspencao=LIBERADO,2026-11-22T20:27:54
 6a2a1461954e6ff9,ESPN,Bolivia - Liga Profesional Boliviana,2026-11-29,15:00,Bolivia,Cochabamba,Aurora,The Strongest,Estadio Félix Capriles,,,codigo_espn=401930014; status=Scheduled,2026-11-22T20:54:33
+71c24d48407f65ad,FUTBOLPERUANO,Peru - Liga 2,2026-11-29,15:00,Peru,,U. Comercio,Mannucci,,Repechaje,,status=Por jugar,2026-11-24T00:39:13
 b2d233b83d25da65,CBF,Brasil - Série A,2026-11-29,16:00,,Curitiba,Coritiba (PR),Flamengo (RJ),Couto Pereira,Rodada 37,https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_23_11_cbf5ffbe46.pdf,pais=Brasil; cidade=Curitiba,2026-11-23T23:57:52
 db68c1bf0cb7bfc4,CBF,Brasil - Série A,2026-11-29,16:00,,Salvador,Vitória (BA),Santos (SP),Barradão,Rodada 37,https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_23_11_cbf5ffbe46.pdf,pais=Brasil; cidade=Salvador,2026-11-23T23:57:52
 e97ccc1d6669f90d,FPF,Brasil - FPF - Paulista F Sub-13 Petrobras (Amador),2026-11-29,16:00,Brasil,Rio Claro,Ferroviária,Corinthians,CAT José Felicio Castellano,Rodada 4,https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx,status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; grupo=FINAL; fase=FASE FINAL; canais=YouTube Paulistão; suspencao=LIBERADO,2026-11-22T20:27:54
