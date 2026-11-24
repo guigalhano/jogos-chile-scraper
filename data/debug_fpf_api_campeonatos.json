@@ -9,13 +9,13 @@
     "DescricaoSite": "Paulistão F Petrobras"
   },
   {
-    "IdCampeonato": 214,
+    "IdCampeonato": 178,
     "IdCategoria": 38,
     "Categoria": "Amador",
-    "Campeonato": "Taça Paulistana Feminino",
+    "Campeonato": "Copa Paulista Feminino",
     "Ordem": 2,
     "Destaque": 0,
-    "DescricaoSite": "Taça Paulistana Petrobras"
+    "DescricaoSite": "Copa Paulista F Petrobras"
   },
   {
     "IdCampeonato": 204,
@@ -27,38 +27,20 @@
     "DescricaoSite": "Copinha F Petrobras"
   },
   {
-    "IdCampeonato": 196,
-    "IdCategoria": 38,
-    "Categoria": "Amador",
-    "Campeonato": "Feminino Sub20",
-    "Ordem": 4,
-    "Destaque": 0,
-    "DescricaoSite": "Paulista F Sub-20 Petrobras"
-  },
-  {
     "IdCampeonato": 221,
     "IdCategoria": 94,
     "Categoria": "SUB20 - Série A",
     "Campeonato": "Paulista",
-    "Ordem": 5,
+    "Ordem": 4,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-20 - Série A"
-  },
-  {
-    "IdCampeonato": 161,
-    "IdCategoria": 38,
-    "Categoria": "Amador",
-    "Campeonato": "Feminino Sub17",
-    "Ordem": 6,
-    "Destaque": 0,
-    "DescricaoSite": "Paulista F Sub-17 Petrobras"
   },
   {
     "IdCampeonato": 33,
     "IdCategoria": 18,
     "Categoria": "SUB17",
     "Campeonato": "Paulista",
-    "Ordem": 7,
+    "Ordem": 5,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-17"
   },
@@ -67,7 +49,7 @@
     "IdCategoria": 17,
     "Categoria": "SUB15",
     "Campeonato": "Paulista",
-    "Ordem": 8,
+    "Ordem": 6,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-15"
   },
@@ -76,7 +58,7 @@
     "IdCategoria": 90,
     "Categoria": "SUB14",
     "Campeonato": "Paulista",
-    "Ordem": 9,
+    "Ordem": 7,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-14"
   },
@@ -85,7 +67,7 @@
     "IdCategoria": 81,
     "Categoria": "SUB13",
     "Campeonato": "Paulista",
-    "Ordem": 10,
+    "Ordem": 8,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-13"
   },
@@ -94,7 +76,7 @@
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Feminino Sub13",
-    "Ordem": 11,
+    "Ordem": 9,
     "Destaque": 0,
     "DescricaoSite": "Paulista F Sub-13 Petrobras"
   },
@@ -103,7 +85,7 @@
     "IdCategoria": 91,
     "Categoria": "SUB12",
     "Campeonato": "Paulista",
-    "Ordem": 12,
+    "Ordem": 10,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-12"
   },
@@ -112,7 +94,7 @@
     "IdCategoria": 80,
     "Categoria": "SUB11",
     "Campeonato": "Paulista",
-    "Ordem": 13,
+    "Ordem": 11,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-11"
   },
@@ -121,16 +103,25 @@
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Amador do Estado",
-    "Ordem": 14,
+    "Ordem": 12,
     "Destaque": 0,
     "DescricaoSite": "Amador do Estado"
+  },
+  {
+    "IdCampeonato": 214,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Taça Paulistana Feminino",
+    "Ordem": 13,
+    "Destaque": 0,
+    "DescricaoSite": "Taça Paulistana Petrobras"
   },
   {
     "IdCampeonato": 229,
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Torneio Feminino Sub-13 - Sede Sorocaba",
-    "Ordem": 15,
+    "Ordem": 14,
     "Destaque": 0,
     "DescricaoSite": "Torneio F Sub-13 Petrobras - Sede Sorocaba"
   },
@@ -139,36 +130,45 @@
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Torneio Feminino Sub-15 - Sede Sorocaba",
-    "Ordem": 16,
+    "Ordem": 15,
     "Destaque": 0,
     "DescricaoSite": "Torneio F Sub-15 Petrobras - Sede Sorocaba"
-  },
-  {
-    "IdCampeonato": 178,
-    "IdCategoria": 38,
-    "Categoria": "Amador",
-    "Campeonato": "Copa Paulista Feminino",
-    "Ordem": 17,
-    "Destaque": 0,
-    "DescricaoSite": "Copa Paulista F Petrobras"
   },
   {
     "IdCampeonato": 184,
     "IdCategoria": 38,
     "Categoria": "Amador",
     "Campeonato": "Feminino Sub15",
-    "Ordem": 18,
+    "Ordem": 16,
     "Destaque": 0,
     "DescricaoSite": "Paulista F Sub-15 Petrobras"
+  },
+  {
+    "IdCampeonato": 161,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Feminino Sub17",
+    "Ordem": 17,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista F Sub-17 Petrobras"
   },
   {
     "IdCampeonato": 219,
     "IdCategoria": 93,
     "Categoria": "SUB20 - Série B",
     "Campeonato": "Paulista",
-    "Ordem": 19,
+    "Ordem": 18,
     "Destaque": 0,
     "DescricaoSite": "Paulista Sub-20 - Série B"
+  },
+  {
+    "IdCampeonato": 196,
+    "IdCategoria": 38,
+    "Categoria": "Amador",
+    "Campeonato": "Feminino Sub20",
+    "Ordem": 19,
+    "Destaque": 0,
+    "DescricaoSite": "Paulista F Sub-20 Petrobras"
   },
   {
     "IdCampeonato": 236,
