@@ -113,6 +113,22 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-12",
+    "hora": "18:00",
+    "mandante": "Academia Puerto Cabello",
+    "visitante": "Monagas SC",
+    "pais": "Venezuela",
+    "cidade": "Carabobo",
+    "estadio": "Complejo Deportivo Socialista",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930994; status=Full Time; placar=0-1",
+    "id": "ff52fb17c155a1f6",
+    "atualizado_em": "2026-11-24T23:52:25"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-11-12",
     "hora": "19:00",
@@ -545,6 +561,38 @@
   },
   {
     "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-21",
+    "hora": "17:30",
+    "mandante": "Carabobo",
+    "visitante": "Portuguesa",
+    "pais": "Venezuela",
+    "cidade": "Valencia",
+    "estadio": "Estadio Misael Delgado",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930989; status=Full Time; placar=1-1",
+    "id": "6be5f1202b0a71de",
+    "atualizado_em": "2026-11-24T23:52:25"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-21",
+    "hora": "17:30",
+    "mandante": "Deportivo Táchira",
+    "visitante": "Caracas FC",
+    "pais": "Venezuela",
+    "cidade": "San Cristóbal",
+    "estadio": "Estadio Pueblo Nuevo",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930995; status=Full Time; placar=2-1",
+    "id": "0a18bdab894a13a4",
+    "atualizado_em": "2026-11-24T23:52:25"
+  },
+  {
+    "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-11-21",
     "hora": "19:30",
@@ -606,6 +654,22 @@
     "extra": "status=Jugado; placar=0-1",
     "id": "860e8f1e89e56f4f",
     "atualizado_em": "2026-11-24T22:57:03"
+  },
+  {
+    "fonte": "ESPN",
+    "competicao": "Venezuela - Liga FUTVE (Primera División)",
+    "data": "2026-11-22",
+    "hora": "17:00",
+    "mandante": "Metropolitanos",
+    "visitante": "Deportivo La Guaira",
+    "pais": "Venezuela",
+    "cidade": "Caracas",
+    "estadio": "Estadio Olímpico de la UCV",
+    "rodada": "",
+    "url": "",
+    "extra": "codigo_espn=401930990; status=Full Time; placar=1-5",
+    "id": "c4181147fa4463e4",
+    "atualizado_em": "2026-11-24T23:52:25"
   },
   {
     "fonte": "ESPN",
@@ -3266,7 +3330,7 @@
     "url": "",
     "extra": "codigo_espn=401934195; status=Scheduled",
     "id": "53668e2117fc67e9",
-    "atualizado_em": "2026-11-24T02:10:37"
+    "atualizado_em": "2026-11-24T23:52:25"
   },
   {
     "fonte": "campeonatochileno.cl",
