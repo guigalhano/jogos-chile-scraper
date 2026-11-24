@@ -2,14 +2,8 @@
   {
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
-    "status": 504,
-    "bytes": 1313
-  },
-  {
-    "copa": "FA Trophy",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=1",
     "status": 200,
-    "bytes": 20527
+    "bytes": 179031
   },
   {
     "copa": "FA Trophy",
@@ -19,7 +13,7 @@
   },
   {
     "copa": "FA Trophy",
-    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=3&page=1",
+    "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "jogos_parseados": 20,
     "amostra": [
       "2026-12-12 15:00 Scunthorpe United v Hebburn Town @ ",
@@ -40,8 +34,34 @@
   {
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
-    "status": 504,
-    "bytes": 1313
+    "status": 200,
+    "bytes": 178251
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
+    "status": 200,
+    "bytes": 14392
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
+    "jogos_parseados": 20,
+    "amostra": [
+      "2026-11-28 15:00 Nelson v Shildon AFC @ ",
+      "2026-11-28 15:00 West Didsbury & Chorlton AFC v Retford @ ",
+      "2026-11-28 15:00 Woolton v Bishop Auckland @ "
+    ]
+  },
+  {
+    "copa": "FA Vase",
+    "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=4&page=2",
+    "jogos_parseados": 12,
+    "amostra": [
+      "2026-11-28 15:00 Larkfield & New Hythe v Crawley Down Gatwick @ ",
+      "2026-11-28 15:00 Harefield United v Phoenix Sports @ ",
+      "2026-11-28 15:00 Rusthall v Hassocks @ "
+    ]
   },
   {
     "copa": "FA Sunday Cup",
@@ -62,14 +82,14 @@
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
-    "status": 504,
-    "bytes": 1313
+    "status": 200,
+    "bytes": 140707
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 178776
+    "bytes": 179006
   },
   {
     "copa": "Women's FA Cup",
@@ -85,32 +105,32 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 179477
+    "bytes": 177933
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 18439
+    "bytes": 17299
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-24 19:00 Plymouth Argyle v St Ives Town @ ",
       "2026-11-26 19:00 Solihull Moors v Barnsley @ ",
-      "2026-12-02 19:00 Sheffield Wednesday v Southampton @ "
+      "2026-12-02 19:00 Sheffield Wednesday v Southampton @ ",
+      "2026-12-02 19:00 Luton Town v Cambridge United @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 14,
+    "jogos_parseados": 13,
     "amostra": [
+      "2026-12-09 19:00 Norwich City v Preston North End @ ",
       "2026-12-09 20:00 Ilkeston Town v Hull City @ ",
-      "2026-12-10 19:00 Queens Park Rangers v Middlesbrough @ ",
-      "2026-12-10 19:00 Wrexham AFC v Exeter City @ "
+      "2026-12-10 19:00 Queens Park Rangers v Middlesbrough @ "
     ]
   }
 ]
