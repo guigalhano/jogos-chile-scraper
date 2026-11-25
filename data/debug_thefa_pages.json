@@ -3,7 +3,7 @@
     "copa": "FA Trophy",
     "url": "https://www.thefa.com/competitions/fa-trophy/fixtures",
     "status": 200,
-    "bytes": 179031
+    "bytes": 180447
   },
   {
     "copa": "FA Trophy",
@@ -35,7 +35,7 @@
     "copa": "FA Vase",
     "url": "https://www.thefa.com/competitions/fa-vase/fixtures",
     "status": 200,
-    "bytes": 178251
+    "bytes": 179667
   },
   {
     "copa": "FA Vase",
@@ -67,7 +67,7 @@
     "copa": "FA Sunday Cup",
     "url": "https://www.thefa.com/competitions/grassroots/fa-sunday-cup/fixtures",
     "status": 200,
-    "bytes": 170152
+    "bytes": 171568
   },
   {
     "copa": "FA Sunday Cup",
@@ -83,13 +83,13 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 140707
+    "bytes": 142146
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 179006
+    "bytes": 181565
   },
   {
     "copa": "Women's FA Cup",
@@ -97,21 +97,21 @@
     "jogos_parseados": 19,
     "amostra": [
       "2026-11-29 13:00 Peterborough United Women v Rugby Borough Women @ ",
-      "2026-12-13 12:00 Norwich City Women v Bristol City Women @ ",
-      "2026-12-13 13:00 Sheffield United Women v Burnley Women @ "
+      "2026-12-12 12:15 Nottingham Forest Women v Sunderland AFC Women @ ",
+      "2026-12-13 12:00 Norwich City Women v Bristol City Women @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 177933
+    "bytes": 178780
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 17299
+    "bytes": 18622
   },
   {
     "copa": "FA Youth Cup",
@@ -128,9 +128,9 @@
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "jogos_parseados": 13,
     "amostra": [
-      "2026-12-09 19:00 Norwich City v Preston North End @ ",
-      "2026-12-09 20:00 Ilkeston Town v Hull City @ ",
-      "2026-12-10 19:00 Queens Park Rangers v Middlesbrough @ "
+      "2026-12-05 18:00 Wycombe Wanderers v Wigan Athletic @ ",
+      "2026-12-08 19:00 Shrewsbury Town v Blackpool @ ",
+      "2026-12-08 19:00 Stoke City v Charlton Athletic @ "
     ]
   }
 ]
