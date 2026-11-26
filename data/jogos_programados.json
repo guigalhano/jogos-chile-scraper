@@ -11,7 +11,7 @@
     "rodada": "Rodada 19",
     "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_23_11_03a43a08de.pdf",
     "extra": "pais=Brasil; cidade=Goiânia; data_estimada=true",
-    "id": "0b2511ec59ff33ea",
+    "id": "e9e46b9ce64707af",
     "atualizado_em": "2026-11-26T12:21:16"
   },
   {
@@ -876,6 +876,21 @@
     "atualizado_em": "2026-11-25T23:36:16"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série B",
+    "data": "2026-11-12",
+    "hora": "19:00",
+    "mandante": "Ponte Preta (SP)",
+    "visitante": "Operário (PR)",
+    "estadio": "Ítalo",
+    "cidade": "Limongi Indaiatuba",
+    "rodada": "Rodada 38",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_23_11_03a43a08de.pdf",
+    "extra": "pais=Brasil; cidade=Limongi Indaiatuba",
+    "id": "0b1fc4e8ae359671",
+    "atualizado_em": "2026-11-26T12:21:16"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-11-12",
@@ -890,21 +905,6 @@
     "extra": "codigo_espn=401930227; status=Full Time; placar=5-5",
     "id": "0ba06aeef5302e48",
     "atualizado_em": "2026-11-25T23:27:24"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série B",
-    "data": "2026-11-12",
-    "hora": "19:00",
-    "mandante": "Ponte Preta (SP)",
-    "visitante": "Operário (PR)",
-    "estadio": "Ítalo",
-    "cidade": "Limongi Indaiatuba",
-    "rodada": "Rodada 38",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_Brasileiro_Serie_B_2026_23_11_03a43a08de.pdf",
-    "extra": "pais=Brasil; cidade=Limongi Indaiatuba",
-    "id": "0b1fc4e8ae359671",
-    "atualizado_em": "2026-11-26T12:21:16"
   },
   {
     "fonte": "ESPN",
@@ -1376,6 +1376,21 @@
     "atualizado_em": "2026-11-26T00:31:40"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-18",
+    "hora": "19:30",
+    "mandante": "Coritiba (PR)",
+    "visitante": "Santos (SP)",
+    "estadio": "Couto Pereira",
+    "cidade": "Curitiba",
+    "rodada": "Rodada 35",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
+    "extra": "pais=Brasil; cidade=Curitiba",
+    "id": "35cc24e3cd9c4cb6",
+    "atualizado_em": "2026-11-26T12:21:16"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Copa Bolivia",
     "data": "2026-11-18",
@@ -1390,21 +1405,6 @@
     "extra": "codigo_espn=401930226; status=Full Time; placar=3-1",
     "id": "79a1718cd1674bd5",
     "atualizado_em": "2026-11-25T23:27:24"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-18",
-    "hora": "19:30",
-    "mandante": "Coritiba (PR)",
-    "visitante": "Santos (SP)",
-    "estadio": "Couto Pereira",
-    "cidade": "Curitiba",
-    "rodada": "Rodada 35",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
-    "extra": "pais=Brasil; cidade=Curitiba",
-    "id": "35cc24e3cd9c4cb6",
-    "atualizado_em": "2026-11-26T12:21:16"
   },
   {
     "fonte": "CBF",
@@ -2000,6 +2000,21 @@
     "atualizado_em": "2026-11-26T12:21:16"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-22",
+    "hora": "19:30",
+    "mandante": "Red Bull Bragantino (SP)",
+    "visitante": "Vasco da Gama (RJ)",
+    "estadio": "Cícero S. Marques",
+    "cidade": "Bragança Paulista",
+    "rodada": "Rodada 36",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
+    "extra": "pais=Brasil; cidade=Bragança Paulista",
+    "id": "bf2c1dfe23bcea5e",
+    "atualizado_em": "2026-11-26T12:21:16"
+  },
+  {
     "fonte": "ESPN",
     "competicao": "Bolivia - Liga Profesional Boliviana",
     "data": "2026-11-22",
@@ -2014,21 +2029,6 @@
     "extra": "codigo_espn=401930028; status=Full Time; placar=0-3",
     "id": "44fa3644510f880a",
     "atualizado_em": "2026-11-25T23:27:24"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-22",
-    "hora": "19:30",
-    "mandante": "Red Bull Bragantino (SP)",
-    "visitante": "Vasco da Gama (RJ)",
-    "estadio": "Cícero S. Marques",
-    "cidade": "Bragança Paulista",
-    "rodada": "Rodada 36",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
-    "extra": "pais=Brasil; cidade=Bragança Paulista",
-    "id": "bf2c1dfe23bcea5e",
-    "atualizado_em": "2026-11-26T12:21:16"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -2565,6 +2565,20 @@
     "atualizado_em": "2026-11-25T21:25:48"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Ascenso Caixun",
+    "data": "2026-11-26",
+    "hora": "19:00",
+    "mandante": "Santiago Wanderers",
+    "visitante": "Deportes Recoleta",
+    "estadio": "Elías Figueroa Brander",
+    "rodada": "",
+    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
+    "extra": "",
+    "id": "c1517a381e2dfb78",
+    "atualizado_em": "2026-11-25T21:25:48"
+  },
+  {
     "fonte": "SofaScore",
     "competicao": "Argentina - Torneo Proyección",
     "data": "2026-11-26",
@@ -2582,20 +2596,6 @@
     "categoria": "Sub23",
     "id": "6ccd858c61642a55",
     "atualizado_em": "2026-11-25T13:02:47+00:00"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Ascenso Caixun",
-    "data": "2026-11-26",
-    "hora": "19:00",
-    "mandante": "Santiago Wanderers",
-    "visitante": "Deportes Recoleta",
-    "estadio": "Elías Figueroa Brander",
-    "rodada": "",
-    "url": "https://www.campeonatochileno.cl/ligas/liga-de-ascenso-caixun/",
-    "extra": "",
-    "id": "c1517a381e2dfb78",
-    "atualizado_em": "2026-11-25T21:25:48"
   },
   {
     "fonte": "CBF",
@@ -2841,42 +2841,6 @@
     "atualizado_em": "2026-11-25T13:02:47+00:00"
   },
   {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - U20 Liga Regional de Fútbol General Roca",
-    "data": "2026-11-27",
-    "hora": "20:00",
-    "mandante": "C. D. Moto Kart U20",
-    "visitante": "F. C. Villa Huidobro U20",
-    "pais": "Argentina",
-    "cidade": "General Roca",
-    "estadio": "",
-    "rodada": "Semifinals",
-    "url": "https://www.sofascore.com/football/match/f-villa-huidobro-u20-c-moto-kart-u20/RMcesXMce#id:17557372",
-    "extra": "pais=Argentina; codigo_sofascore=17557372; time_sofascore=506892; status=Programado; fonte_dados=sofascore; local_aproximado=1",
-    "lat": -39.0333,
-    "lng": -67.5833,
-    "categoria": "Sub23",
-    "escopo": "Regional",
-    "id": "dee72a6682c89fbf",
-    "atualizado_em": "2026-11-25T13:02:47+00:00"
-  },
-  {
-    "fonte": "FPF",
-    "competicao": "Brasil - FPF - Copinha F Petrobras (Junior)",
-    "data": "2026-11-27",
-    "hora": "20:00",
-    "mandante": "Ferroviária",
-    "visitante": "Grêmio (RS)",
-    "pais": "Brasil",
-    "cidade": "São Paulo",
-    "estadio": "Centro Esportivo Recreativo Educativo do Trabalhador",
-    "rodada": "Rodada 2",
-    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
-    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; grupo=C - IBIRAPUERA; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
-    "id": "9b358569f0e723a5",
-    "atualizado_em": "2026-11-25T22:42:07"
-  },
-  {
     "fonte": "CBF",
     "competicao": "Brasil - Série A",
     "data": "2026-11-27",
@@ -2919,6 +2883,42 @@
     "extra": "",
     "id": "86a571c348effdcb",
     "atualizado_em": "2026-11-25T21:25:48"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - U20 Liga Regional de Fútbol General Roca",
+    "data": "2026-11-27",
+    "hora": "20:00",
+    "mandante": "C. D. Moto Kart U20",
+    "visitante": "F. C. Villa Huidobro U20",
+    "pais": "Argentina",
+    "cidade": "General Roca",
+    "estadio": "",
+    "rodada": "Semifinals",
+    "url": "https://www.sofascore.com/football/match/f-villa-huidobro-u20-c-moto-kart-u20/RMcesXMce#id:17557372",
+    "extra": "pais=Argentina; codigo_sofascore=17557372; time_sofascore=506892; status=Programado; fonte_dados=sofascore; local_aproximado=1",
+    "lat": -39.0333,
+    "lng": -67.5833,
+    "categoria": "Sub23",
+    "escopo": "Regional",
+    "id": "dee72a6682c89fbf",
+    "atualizado_em": "2026-11-25T13:02:47+00:00"
+  },
+  {
+    "fonte": "FPF",
+    "competicao": "Brasil - FPF - Copinha F Petrobras (Junior)",
+    "data": "2026-11-27",
+    "hora": "20:00",
+    "mandante": "Ferroviária",
+    "visitante": "Grêmio (RS)",
+    "pais": "Brasil",
+    "cidade": "São Paulo",
+    "estadio": "Centro Esportivo Recreativo Educativo do Trabalhador",
+    "rodada": "Rodada 2",
+    "url": "https://www.futebolpaulista.com.br/Competicoes/Tabela.aspx",
+    "extra": "status=Programado; pais=Brasil; estado=São Paulo; fonte=api_ashx; jogo_numero=16; grupo=C - IBIRAPUERA; fase=PRIMEIRA FASE; canais=YouTube Paulistão; suspencao=LIBERADO",
+    "id": "9b358569f0e723a5",
+    "atualizado_em": "2026-11-25T22:42:07"
   },
   {
     "fonte": "APF",
@@ -3775,6 +3775,21 @@
     "atualizado_em": "2026-11-25T21:25:48"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-28",
+    "hora": "21:00",
+    "mandante": "Botafogo (RJ)",
+    "visitante": "Bahia (BA)",
+    "estadio": "Nilton Santos",
+    "cidade": "Rio de Janeiro",
+    "rodada": "Rodada 37",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
+    "extra": "pais=Brasil; cidade=Rio de Janeiro",
+    "id": "7ef1dcf4a83dbfb1",
+    "atualizado_em": "2026-11-26T12:21:16"
+  },
+  {
     "fonte": "SofaScore",
     "competicao": "Argentina - Primera Nacional",
     "data": "2026-11-28",
@@ -3791,21 +3806,6 @@
     "lng": -65.03851,
     "id": "1a2b8645def629d2",
     "atualizado_em": "2026-11-25T13:02:47+00:00"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-28",
-    "hora": "21:00",
-    "mandante": "Botafogo (RJ)",
-    "visitante": "Bahia (BA)",
-    "estadio": "Nilton Santos",
-    "cidade": "Rio de Janeiro",
-    "rodada": "Rodada 37",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
-    "extra": "pais=Brasil; cidade=Rio de Janeiro",
-    "id": "7ef1dcf4a83dbfb1",
-    "atualizado_em": "2026-11-26T12:21:16"
   },
   {
     "fonte": "FPF",
@@ -4062,6 +4062,36 @@
     "atualizado_em": "2026-11-25T22:15:01"
   },
   {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-29",
+    "hora": "16:00",
+    "mandante": "Coritiba (PR)",
+    "visitante": "Flamengo (RJ)",
+    "estadio": "Couto Pereira",
+    "cidade": "Curitiba",
+    "rodada": "Rodada 37",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
+    "extra": "pais=Brasil; cidade=Curitiba",
+    "id": "b2d233b83d25da65",
+    "atualizado_em": "2026-11-26T12:21:16"
+  },
+  {
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
+    "data": "2026-11-29",
+    "hora": "16:00",
+    "mandante": "Vitória (BA)",
+    "visitante": "Santos (SP)",
+    "estadio": "Barradão",
+    "cidade": "Salvador",
+    "rodada": "Rodada 37",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
+    "extra": "pais=Brasil; cidade=Salvador",
+    "id": "db68c1bf0cb7bfc4",
+    "atualizado_em": "2026-11-26T12:21:16"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Copa Paulista F Petrobras (Amador)",
     "data": "2026-11-29",
@@ -4094,36 +4124,6 @@
     "atualizado_em": "2026-11-25T22:42:07"
   },
   {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-29",
-    "hora": "16:00",
-    "mandante": "Coritiba (PR)",
-    "visitante": "Flamengo (RJ)",
-    "estadio": "Couto Pereira",
-    "cidade": "Curitiba",
-    "rodada": "Rodada 37",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
-    "extra": "pais=Brasil; cidade=Curitiba",
-    "id": "b2d233b83d25da65",
-    "atualizado_em": "2026-11-26T12:21:16"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-29",
-    "hora": "16:00",
-    "mandante": "Vitória (BA)",
-    "visitante": "Santos (SP)",
-    "estadio": "Barradão",
-    "cidade": "Salvador",
-    "rodada": "Rodada 37",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
-    "extra": "pais=Brasil; cidade=Salvador",
-    "id": "db68c1bf0cb7bfc4",
-    "atualizado_em": "2026-11-26T12:21:16"
-  },
-  {
     "fonte": "SofaScore",
     "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
     "data": "2026-11-29",
@@ -4140,6 +4140,25 @@
     "lng": -62.02979,
     "escopo": "Regional",
     "id": "120616c6698755de",
+    "atualizado_em": "2026-11-25T13:02:48+00:00"
+  },
+  {
+    "fonte": "SofaScore",
+    "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
+    "data": "2026-11-29",
+    "hora": "17:00",
+    "mandante": "Social de Chipion",
+    "visitante": "Sociedad Cultural La Para",
+    "pais": "Argentina",
+    "cidade": "Altos de Chipión",
+    "estadio": "Social de Chipion",
+    "rodada": "Relegation Playoffs - Final",
+    "url": "https://www.sofascore.com/football/match/social-de-chipion-sociedad-cultural-la-para/onpjsqnpj#id:17621957",
+    "extra": "pais=Argentina; codigo_sofascore=17621957; time_sofascore=1163166; status=Programado; fonte_dados=sofascore",
+    "lat": -30.960892,
+    "lng": -62.337868,
+    "escopo": "Regional",
+    "id": "82eea282567cb205",
     "atualizado_em": "2026-11-25T13:02:48+00:00"
   },
   {
@@ -4197,25 +4216,6 @@
     "lng": -62.465515,
     "escopo": "Regional",
     "id": "6f7bef4f1c026358",
-    "atualizado_em": "2026-11-25T13:02:48+00:00"
-  },
-  {
-    "fonte": "SofaScore",
-    "competicao": "Argentina - Liga Regional San Francisco - Divisional A",
-    "data": "2026-11-29",
-    "hora": "17:00",
-    "mandante": "Social de Chipion",
-    "visitante": "Sociedad Cultural La Para",
-    "pais": "Argentina",
-    "cidade": "Altos de Chipión",
-    "estadio": "Social de Chipion",
-    "rodada": "Relegation Playoffs - Final",
-    "url": "https://www.sofascore.com/football/match/social-de-chipion-sociedad-cultural-la-para/onpjsqnpj#id:17621957",
-    "extra": "pais=Argentina; codigo_sofascore=17621957; time_sofascore=1163166; status=Programado; fonte_dados=sofascore",
-    "lat": -30.960892,
-    "lng": -62.337868,
-    "escopo": "Regional",
-    "id": "82eea282567cb205",
     "atualizado_em": "2026-11-25T13:02:48+00:00"
   },
   {
@@ -4669,6 +4669,34 @@
     "atualizado_em": "2026-11-25T23:36:16"
   },
   {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-11-29",
+    "hora": "19:00",
+    "mandante": "Deportes Rengo",
+    "visitante": "Provincial Ovalle",
+    "estadio": "Estadio Municipal de Rengo",
+    "rodada": "Fecha 14",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "feb0307cf74c030a",
+    "atualizado_em": "2026-11-25T21:25:48"
+  },
+  {
+    "fonte": "campeonatochileno.cl",
+    "competicao": "Liga de Segunda Panini",
+    "data": "2026-11-29",
+    "hora": "19:00",
+    "mandante": "Trasandino",
+    "visitante": "Santiago City",
+    "estadio": "Estadio Regional de Los Andes",
+    "rodada": "Fecha 14",
+    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
+    "extra": "",
+    "id": "b914512c3f7fc579",
+    "atualizado_em": "2026-11-25T21:25:48"
+  },
+  {
     "fonte": "SofaScore",
     "competicao": "Argentina - Torneo Clausura",
     "data": "2026-11-29",
@@ -4723,32 +4751,19 @@
     "atualizado_em": "2026-11-25T13:02:47+00:00"
   },
   {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
+    "fonte": "CBF",
+    "competicao": "Brasil - Série A",
     "data": "2026-11-29",
-    "hora": "19:00",
-    "mandante": "Deportes Rengo",
-    "visitante": "Provincial Ovalle",
-    "estadio": "Estadio Municipal de Rengo",
-    "rodada": "Fecha 14",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "feb0307cf74c030a",
-    "atualizado_em": "2026-11-25T21:25:48"
-  },
-  {
-    "fonte": "campeonatochileno.cl",
-    "competicao": "Liga de Segunda Panini",
-    "data": "2026-11-29",
-    "hora": "19:00",
-    "mandante": "Trasandino",
-    "visitante": "Santiago City",
-    "estadio": "Estadio Regional de Los Andes",
-    "rodada": "Fecha 14",
-    "url": "https://www.campeonatochileno.cl/ligas/segunda-la-liga-2d/",
-    "extra": "",
-    "id": "b914512c3f7fc579",
-    "atualizado_em": "2026-11-25T21:25:48"
+    "hora": "19:30",
+    "mandante": "Atlético (MG)",
+    "visitante": "Vasco da Gama (RJ)",
+    "estadio": "Arena MRV",
+    "cidade": "Belo Horizonte",
+    "rodada": "Rodada 37",
+    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
+    "extra": "pais=Brasil; cidade=Belo Horizonte",
+    "id": "04991053e604bb56",
+    "atualizado_em": "2026-11-26T12:21:16"
   },
   {
     "fonte": "ESPN",
@@ -4765,21 +4780,6 @@
     "extra": "codigo_espn=401930023; status=Scheduled",
     "id": "6bb4dc3c53d5aed7",
     "atualizado_em": "2026-11-25T23:27:24"
-  },
-  {
-    "fonte": "CBF",
-    "competicao": "Brasil - Série A",
-    "data": "2026-11-29",
-    "hora": "19:30",
-    "mandante": "Atlético (MG)",
-    "visitante": "Vasco da Gama (RJ)",
-    "estadio": "Arena MRV",
-    "cidade": "Belo Horizonte",
-    "rodada": "Rodada 37",
-    "url": "https://stcbfsiteprdimgbrs.blob.core.windows.net/img-site/cdn/Tabela_Detalhada_BSA_2026_25_11_d5826c3a93.pdf",
-    "extra": "pais=Brasil; cidade=Belo Horizonte",
-    "id": "04991053e604bb56",
-    "atualizado_em": "2026-11-26T12:21:16"
   },
   {
     "fonte": "APF",
