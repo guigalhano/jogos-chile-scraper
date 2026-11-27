@@ -1,5 +1,85 @@
 [
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Copa de la Liga",
+    "data": "2026-11-15",
+    "hora": "17:00",
+    "mandante": "Cristal",
+    "visitante": "A. Atlético",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Final",
+    "url": "",
+    "extra": "status=Jugado; placar=2-0",
+    "id": "62f0e0f72feb5190",
+    "atualizado_em": "2026-11-27T21:51:25"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-11-22",
+    "hora": "15:00",
+    "mandante": "U. Comercio",
+    "visitante": "San Martín",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Semifinales",
+    "url": "",
+    "extra": "status=Jugado; placar=0-1",
+    "id": "860e8f1e89e56f4f",
+    "atualizado_em": "2026-11-27T21:51:25"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 2",
+    "data": "2026-11-22",
+    "hora": "19:30",
+    "mandante": "Mannucci",
+    "visitante": "ADA Jaén",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Semifinales",
+    "url": "",
+    "extra": "status=Jugado; placar=0-1",
+    "id": "c9bb33c620c42e7e",
+    "atualizado_em": "2026-11-27T21:51:25"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-11-25",
+    "hora": "15:00",
+    "mandante": "Ecosem",
+    "visitante": "ASA FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Cuartos de Final",
+    "url": "",
+    "extra": "status=Jugado; placar=1-0",
+    "id": "877bc6b3fcfaf959",
+    "atualizado_em": "2026-11-27T21:51:25"
+  },
+  {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-11-25",
+    "hora": "15:00",
+    "mandante": "J. Cautivo",
+    "visitante": "S. Cristal",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Cuartos de Final",
+    "url": "",
+    "extra": "status=Jugado; placar=0-0",
+    "id": "2c066163af7a0185",
+    "atualizado_em": "2026-11-27T21:51:25"
+  },
+  {
     "fonte": "FPF",
     "competicao": "Brasil - FPF - Copinha F Petrobras (Junior)",
     "data": "2026-11-27",
@@ -614,6 +694,22 @@
     "atualizado_em": "2026-11-26T22:32:09"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-11-28",
+    "hora": "11:00",
+    "mandante": "S. Cristal",
+    "visitante": "J. Cautivo",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Cuartos de Final",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "1f23ba5bf61240aa",
+    "atualizado_em": "2026-11-27T21:51:25"
+  },
+  {
     "fonte": "SofaScore",
     "competicao": "Argentina - Liga Regional Colón, Octava",
     "data": "2026-11-28",
@@ -1182,6 +1278,22 @@
     "atualizado_em": "2026-11-27T00:40:39"
   },
   {
+    "fonte": "FUTBOLPERUANO",
+    "competicao": "Peru - Liga 3",
+    "data": "2026-11-28",
+    "hora": "15:00",
+    "mandante": "Alianza Lima",
+    "visitante": "Pacífico FC",
+    "pais": "Peru",
+    "cidade": "",
+    "estadio": "",
+    "rodada": "Cuartos de Final",
+    "url": "",
+    "extra": "status=Por jugar",
+    "id": "1f9a8b4a4f5937d4",
+    "atualizado_em": "2026-11-27T21:51:25"
+  },
+  {
     "fonte": "FGF",
     "competicao": "Brasil - FGF - Copa Goiás Sub 11 da 1ª Divisão / 2026",
     "data": "2026-11-28",
@@ -1726,7 +1838,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "9ad04c4ae098dfac",
-    "atualizado_em": "2026-11-26T22:11:23"
+    "atualizado_em": "2026-11-27T21:51:25"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -1742,7 +1854,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "07b2bee4efb448fa",
-    "atualizado_em": "2026-11-26T22:11:23"
+    "atualizado_em": "2026-11-27T21:51:25"
   },
   {
     "fonte": "FUTBOLPERUANO",
@@ -1758,7 +1870,7 @@
     "url": "",
     "extra": "status=Por jugar",
     "id": "71c24d48407f65ad",
-    "atualizado_em": "2026-11-26T22:11:23"
+    "atualizado_em": "2026-11-27T21:51:25"
   },
   {
     "fonte": "SofaScore",
@@ -3275,7 +3387,7 @@
     "url": "",
     "extra": "status=Por jugar; placar=0-0",
     "id": "7b5cfad9a6edfa83",
-    "atualizado_em": "2026-11-26T22:11:23"
+    "atualizado_em": "2026-11-27T21:51:25"
   },
   {
     "fonte": "FPF",
