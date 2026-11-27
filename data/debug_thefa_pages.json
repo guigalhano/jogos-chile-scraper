@@ -83,13 +83,13 @@
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 142176
+    "bytes": 142143
   },
   {
     "copa": "Women's FA Cup",
     "url": "https://www.thefa.com/competitions/the-womens-fa-cup/fixtures",
     "status": 200,
-    "bytes": 181565
+    "bytes": 181732
   },
   {
     "copa": "Women's FA Cup",
@@ -105,32 +105,32 @@
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "status": 200,
-    "bytes": 178780
+    "bytes": 178003
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
     "status": 200,
-    "bytes": 18622
+    "bytes": 16940
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/competitions/fa-youth-cup/fixtures",
     "jogos_parseados": 20,
     "amostra": [
-      "2026-11-26 19:00 Solihull Moors v Barnsley @ ",
       "2026-12-02 19:00 Sheffield Wednesday v Southampton @ ",
-      "2026-12-02 19:00 Luton Town v Cambridge United @ "
+      "2026-12-02 19:00 Luton Town v Cambridge United @ ",
+      "2026-12-02 19:00 Sheffield United v Wolverhampton Wanderers @ "
     ]
   },
   {
     "copa": "FA Youth Cup",
     "url": "https://www.thefa.com/Competitions/Fixtures/Fixtures?competitionId=6&page=2",
-    "jogos_parseados": 13,
+    "jogos_parseados": 12,
     "amostra": [
-      "2026-12-05 18:00 Wycombe Wanderers v Wigan Athletic @ ",
       "2026-12-08 19:00 Shrewsbury Town v Blackpool @ ",
-      "2026-12-08 19:00 Stoke City v Charlton Athletic @ "
+      "2026-12-08 19:00 Stoke City v Charlton Athletic @ ",
+      "2026-12-08 19:00 Kingstonian v Bristol City @ "
     ]
   }
 ]
